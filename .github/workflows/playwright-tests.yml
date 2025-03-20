@@ -160,38 +160,33 @@ jobs:
         with:
           repository: SunilsForge/WJ-5_Pub
           token: ${{ secrets.PRIVATE_REPO_PAT }}
-          path: private-repo
+        #   path: private-repo
           fetch-depth: 1
       - name: Collect System Information
         run: |
-          mkdir -p private-repo/system-info
-          echo "=== System Information for Shard ${{ matrix.shard }} ===" > private-repo/system-info/specs.txt
-          echo "CPU Information:" >> private-repo/system-info/specs.txt
-          lscpu >> private-repo/system-info/specs.txt
-          echo -e "\nMemory Information:" >> private-repo/system-info/specs.txt
-          free -h >> private-repo/system-info/specs.txt
-          echo -e "\nDisk Information:" >> private-repo/system-info/specs.txt
-          df -h >> private-repo/system-info/specs.txt
-          echo -e "\nSystem Load:" >> private-repo/system-info/specs.txt
-          uptime >> private-repo/system-info/specs.txt
-          echo -e "\nContainer Information:" >> private-repo/system-info/specs.txt
-          cat /etc/os-release >> private-repo/system-info/specs.txt
-
+          mkdir -p system-info
+          echo "=== System Information for Shard ${{ matrix.shard }} ===" > system-info/specs.txt
+          echo "CPU Information:" >> system-info/specs.txt
+          lscpu >> system-info/specs.txt
+          echo -e "\nMemory Information:" >> system-info/specs.txt
+          free -h >> system-info/specs.txt
+          echo -e "\nDisk Information:" >> system-info/specs.txt
+          df -h >> system-info/specs.txt
+          echo -e "\nSystem Load:" >> system-info/specs.txt
+          uptime >> system-info/specs.txt
+          echo -e "\nContainer Information:" >> system-info/specs.txt
+          cat /etc/os-release >> system-info/specs.txt
       - name: Set up Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
-          cache-dependency-path: private-repo/package-lock.json
       - name: Install dependencies
         run: |
-          cd private-repo
           npm ci
           npx playwright install-deps
       - name: Install Playwright browsers
-        run: |
-          cd private-repo
-          npx playwright install ${{ inputs.browser }}
+        run: npx playwright install ${{ inputs.browser }}
       - name: Run Playwright tests
         id: run_tests
         continue-on-error: true
@@ -202,7 +197,6 @@ jobs:
           TRACE_MODE: ${{ github.event.inputs.trace_mode }}
           CI: "true"
         run: |
-          cd private-repo
           echo "Running shard ${{ matrix.shard }} of ${{ github.event.inputs.shard_count }}"
           npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
             --grep '${{ github.event.inputs.test_pattern }}' \
@@ -216,22 +210,29 @@ jobs:
         with:
           name: playwright-report-shard-${{ matrix.shard }}
           path: |
-            private-repo/playwright-report/*
-            private-repo/test-results/*
-            private-repo/system-info/*
+            playwright-report/
+            test-results/
+            system-info/
           retention-days: 90
       - name: Create status file
         if: always()
         run: |
-          mkdir -p private-repo/playwright-report/test-status
-          echo "${{ steps.run_tests.outcome }}" > private-repo/playwright-report/test-status/status.txt
-          echo "Shard: ${{ matrix.shard }}" >> private-repo/playwright-report/test-status/status.txt
-          echo "Environment: ${{ github.event.inputs.environment }}" >> private-repo/playwright-report/test-status/status.txt
-          echo "Browser: ${{ github.event.inputs.browser }}" >> private-repo/playwright-report/test-status/status.txt
-          echo "Test Pattern: ${{ github.event.inputs.test_pattern }}" >> private-repo/playwright-report/test-status/status.txt
-          echo "Retries: ${{ env.NUM_RETRIES }}" >> private-repo/playwright-report/test-status/status.txt
-          echo "Video Mode: ${{ github.event.inputs.video_mode }}" >> private-repo/playwright-report/test-status/status.txt
-          echo "Trace Mode: ${{ github.event.inputs.trace_mode }}" >> private-repo/playwright-report/test-status/status.txt
+          mkdir -p test-status
+          echo "${{ steps.run_tests.outcome }}" > test-status/status.txt
+          echo "Shard: ${{ matrix.shard }}" >> test-status/status.txt
+          echo "Environment: ${{ github.event.inputs.environment }}" >> test-status/status.txt
+          echo "Browser: ${{ github.event.inputs.browser }}" >> test-status/status.txt
+          echo "Test Pattern: ${{ github.event.inputs.test_pattern }}" >> test-status/status.txt
+          echo "Retries: ${{ env.NUM_RETRIES }}" >> test-status/status.txt
+          echo "Video Mode: ${{ github.event.inputs.video_mode }}" >> test-status/status.txt
+          echo "Trace Mode: ${{ github.event.inputs.trace_mode }}" >> test-status/status.txt
+      - name: Upload status
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-status-shard-${{ matrix.shard }}
+          path: test-status/
+          retention-days: 30
 
   merge-reports:
     name: Merge Reports
@@ -449,12 +450,12 @@ jobs:
             <div class="container">
               <h1>Playwright Test Reports</h1>
           EOF
-            # Add pre-run notes if they exist
-            if [ -f "all-artifacts/run-metadata/pre-run-notes.txt" ]; then
+          # Add pre-run notes if they exist
+          if [ -f "all-artifacts/run-metadata/pre-run-notes.txt" ]; then
             echo "<div class='notes-section'><h3>Pre-Run Notes</h3><p>$(cat all-artifacts/run-metadata/pre-run-notes.txt)</p></div>" >> merged-report/index.html
-            fi
-            # Add meta information
-            cat << EOF >> merged-report/index.html
+          fi
+          # Add meta information
+          cat << EOF >> merged-report/index.html
               <div class='meta-info'>
                 <p><strong>Environment:</strong> ${{ inputs.environment }}</p>
                 <p><strong>Browser:</strong> ${{ inputs.browser }}</p>
@@ -468,28 +469,28 @@ jobs:
               <div class='report-container'>
           EOF
           # Process each shard's report and system info
-            for ((i=1; i<=${{ inputs.shard_count }}; i++)); do
-              report_source="all-artifacts/playwright-report-shard-$i"
-              if [ -d "$report_source" ]; then
-                mkdir -p "merged-report/shard-$i"
-                cp -r "$report_source"/* "merged-report/shard-$i/"
-                # Handle status and system info with corrected paths
-                status_file="$report_source/playwright-report/test-status/status.txt"
-                system_info_file="$report_source/system-info/specs.txt"
-                status="N/A"
-                status_class="status-neutral"
-                if [ -f "$status_file" ]; then
-                  status=$(head -n 1 "$status_file")
-                  if [ "$status" = "success" ]; then
-                    status_class="status-success"
-                  else
-                    status_class="status-failure"
-                  fi
+          for ((i=1; i<=${{ inputs.shard_count }}; i++)); do
+            report_source="all-artifacts/playwright-report-shard-$i"
+            status_file="all-artifacts/test-status-shard-$i/status.txt"
+            system_info_file="$report_source/system-info/specs.txt"
+            if [ -d "$report_source" ]; then
+              mkdir -p "merged-report/shard-$i"
+              cp -r "$report_source"/* "merged-report/shard-$i/"
+              status="N/A"
+              status_class="status-neutral"
+              if [ -f "$status_file" ]; then
+                status=$(head -n 1 "$status_file")
+                if [ "$status" = "success" ]; then
+                  status_class="status-success"
+                else
+                  status_class="status-failure"
                 fi
-                system_info="System information not available"
-                if [ -f "$system_info_file" ]; then
-                  system_info=$(cat "$system_info_file")
-                fi
+              fi
+              # Read system info
+              system_info="System information not available"
+              if [ -f "$system_info_file" ]; then
+                system_info=$(cat "$system_info_file")
+              fi
               cat << EOF >> merged-report/index.html
               <div class='report-wrapper'>
                 <div class='report-link'>
@@ -499,6 +500,7 @@ jobs:
                     <button class='expand-btn' data-shard='$i'>➤</button>
                   </div>
                 </div>
+
                 <div class='report-details' id='shard-$i-details'>
                   <div class='system-info-header'>
                     <button class='system-info-toggle' data-shard='$i'>
