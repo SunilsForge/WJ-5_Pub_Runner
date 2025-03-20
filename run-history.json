@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "8",
+    "timestamp": "20250320_000000",
+    "runReason": "General test run",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@RDGBAS)(?=.*@TestDe)"
+  },
+  {
     "runNumber": "6",
     "timestamp": "20250320_000000",
     "runReason": "card (?=.*@MATRCZ)(?=.*@TestDe)",
