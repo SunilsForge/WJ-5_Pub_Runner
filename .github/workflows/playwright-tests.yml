@@ -143,7 +143,7 @@ jobs:
         with:
           name: run-metadata
           path: run-metadata/
-          retention-days: 30
+          retention-days: 90
 
   test:
     needs: prepare
@@ -164,23 +164,25 @@ jobs:
           fetch-depth: 1
       - name: Collect System Information
         run: |
-          mkdir -p system-info
-          echo "=== System Information for Shard ${{ matrix.shard }} ===" > system-info/specs.txt
-          echo "CPU Information:" >> system-info/specs.txt
-          lscpu >> system-info/specs.txt
-          echo -e "\nMemory Information:" >> system-info/specs.txt
-          free -h >> system-info/specs.txt
-          echo -e "\nDisk Information:" >> system-info/specs.txt
-          df -h >> system-info/specs.txt
-          echo -e "\nSystem Load:" >> system-info/specs.txt
-          uptime >> system-info/specs.txt
-          echo -e "\nContainer Information:" >> system-info/specs.txt
-          cat /etc/os-release >> system-info/specs.txt
+          mkdir -p private-repo/playwright-report/system-info
+          echo "=== System Information for Shard ${{ matrix.shard }} ===" > private-repo/playwright-report/system-info/specs.txt
+          echo "CPU Information:" >> private-repo/playwright-report/system-info/specs.txt
+          lscpu >> private-repo/playwright-report/system-info/specs.txt
+          echo -e "\nMemory Information:" >> private-repo/playwright-report/system-info/specs.txt
+          free -h >> private-repo/playwright-report/system-info/specs.txt
+          echo -e "\nDisk Information:" >> private-repo/playwright-report/system-info/specs.txt
+          df -h >> private-repo/playwright-report/system-info/specs.txt
+          echo -e "\nSystem Load:" >> private-repo/playwright-report/system-info/specs.txt
+          uptime >> private-repo/playwright-report/system-info/specs.txt
+          echo -e "\nContainer Information:" >> private-repo/playwright-report/system-info/specs.txt
+          cat /etc/os-release >> private-repo/playwright-report/system-info/specs.txt
+
       - name: Set up Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
+          cache-dependency-path: private-repo/package-lock.json
       - name: Install dependencies
         run: |
           cd private-repo
@@ -214,30 +216,22 @@ jobs:
         with:
           name: playwright-report-shard-${{ matrix.shard }}
           path: |
-            private-repo/
-            playwright-report/
-            test-results/
+            private-repo/playwright-report/
+            private-repo/test-results/
             system-info/
-          retention-days: 30
+          retention-days: 90
       - name: Create status file
         if: always()
         run: |
-          mkdir -p test-status
-          echo "${{ steps.run_tests.outcome }}" > test-status/status.txt
-          echo "Shard: ${{ matrix.shard }}" >> test-status/status.txt
-          echo "Environment: ${{ github.event.inputs.environment }}" >> test-status/status.txt
-          echo "Browser: ${{ github.event.inputs.browser }}" >> test-status/status.txt
-          echo "Test Pattern: ${{ github.event.inputs.test_pattern }}" >> test-status/status.txt
-          echo "Retries: ${{ env.NUM_RETRIES }}" >> test-status/status.txt
-          echo "Video Mode: ${{ github.event.inputs.video_mode }}" >> test-status/status.txt
-          echo "Trace Mode: ${{ github.event.inputs.trace_mode }}" >> test-status/status.txt
-      - name: Upload status
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-status-shard-${{ matrix.shard }}
-          path: test-status/
-          retention-days: 30
+            mkdir -p private-repo/playwright-report/test-status
+            echo "${{ steps.run_tests.outcome }}" > private-repo/playwright-report/test-status/status.txt
+            echo "Shard: ${{ matrix.shard }}" >> private-repo/playwright-report/test-status/status.txt
+            echo "Environment: ${{ github.event.inputs.environment }}" >> private-repo/playwright-report/test-status/status.txt
+            echo "Browser: ${{ github.event.inputs.browser }}" >> private-repo/playwright-report/test-status/status.txt
+            echo "Test Pattern: ${{ github.event.inputs.test_pattern }}" >> private-repo/playwright-report/test-status/status.txt
+            echo "Retries: ${{ env.NUM_RETRIES }}" >> private-repo/playwright-report/test-status/status.txt
+            echo "Video Mode: ${{ github.event.inputs.video_mode }}" >> private-repo/playwright-report/test-status/status.txt
+            echo "Trace Mode: ${{ github.event.inputs.trace_mode }}" >> private-repo/playwright-report/test-status/status.txt
 
   merge-reports:
     name: Merge Reports
@@ -609,7 +603,7 @@ jobs:
         with:
           name: merged-playwright-report
           path: merged-report/
-          retention-days: 30
+          retention-days: 90
 
   # The deploy-report job is completely rewritten
   deploy-report:
@@ -737,7 +731,7 @@ jobs:
               <div class="info-box">
                 <h3>📋 Access Complete Artifacts</h3>
                 <p>You can access the complete test results, including these large files, from the GitHub Actions artifacts.</p>
-                <p>The artifacts are stored for 30 days and contain all test results, including videos, traces, and screenshots.</p>
+                <p>The artifacts are stored for 90 days and contain all test results, including videos, traces, and screenshots.</p>
                 <p>To download the artifacts:</p>
                 <ol>
                   <li>Go to the GitHub Actions run page (link below)</li>
@@ -1276,3 +1270,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
