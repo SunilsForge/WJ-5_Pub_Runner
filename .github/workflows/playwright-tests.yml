@@ -1,4 +1,4 @@
-name: Playwright Sharded Tests with Historical Reports
+name: Playwright Tests Runner for WJ-5
 
 on:
   workflow_dispatch:
