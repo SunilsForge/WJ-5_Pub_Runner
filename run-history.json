@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "6",
+    "timestamp": "20250320_000000",
+    "runReason": "card (?=.*@MATRCZ)(?=.*@TestDe)",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@MATRCZ)(?=.*@TestDe)"
+  },
+  {
     "runNumber": "5",
     "timestamp": "20250320_000000",
     "runReason": "card Notes after fixing 4040 trial 1 ",
