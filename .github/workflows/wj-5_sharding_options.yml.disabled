@@ -143,7 +143,7 @@ jobs:
         with:
           name: run-metadata
           path: run-metadata/
-          retention-days: 90
+          retention-days: 30
 
   test:
     needs: prepare
@@ -155,12 +155,9 @@ jobs:
       fail-fast: false
       matrix: ${{fromJson(needs.prepare.outputs.matrix)}}
     steps:
-      - name: Checkout private repository
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          repository: SunilsForge/WJ-5_Pub
-          token: ${{ secrets.PRIVATE_REPO_PAT }}
-        #   path: private-repo
           fetch-depth: 1
       - name: Collect System Information
         run: |
@@ -213,7 +210,7 @@ jobs:
             playwright-report/
             test-results/
             system-info/
-          retention-days: 90
+          retention-days: 30
       - name: Create status file
         if: always()
         run: |
@@ -604,7 +601,7 @@ jobs:
         with:
           name: merged-playwright-report
           path: merged-report/
-          retention-days: 90
+          retention-days: 30
 
   # The deploy-report job is completely rewritten
   deploy-report:
@@ -630,7 +627,7 @@ jobs:
           ref: gh-pages
           path: gh-pages
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT }}
 
       - name: Initialize gh-pages if needed
         run: |
@@ -732,7 +729,7 @@ jobs:
               <div class="info-box">
                 <h3>📋 Access Complete Artifacts</h3>
                 <p>You can access the complete test results, including these large files, from the GitHub Actions artifacts.</p>
-                <p>The artifacts are stored for 90 days and contain all test results, including videos, traces, and screenshots.</p>
+                <p>The artifacts are stored for 30 days and contain all test results, including videos, traces, and screenshots.</p>
                 <p>To download the artifacts:</p>
                 <ol>
                   <li>Go to the GitHub Actions run page (link below)</li>
@@ -1208,7 +1205,7 @@ jobs:
           cd gh-pages
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git remote set-url origin https://${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git
 
       - name: Commit and Push Changes
         run: |
@@ -1271,5 +1268,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
