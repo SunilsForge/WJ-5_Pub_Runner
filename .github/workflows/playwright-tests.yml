@@ -216,22 +216,22 @@ jobs:
         with:
           name: playwright-report-shard-${{ matrix.shard }}
           path: |
-            private-repo/playwright-report/
-            private-repo/test-results/
-            system-info/
+            private-repo/playwright-report/*
+            private-repo/test-results/*
+            private-repo/system-info/*
           retention-days: 90
       - name: Create status file
         if: always()
         run: |
-            mkdir -p private-repo/playwright-report/test-status
-            echo "${{ steps.run_tests.outcome }}" > private-repo/playwright-report/test-status/status.txt
-            echo "Shard: ${{ matrix.shard }}" >> private-repo/playwright-report/test-status/status.txt
-            echo "Environment: ${{ github.event.inputs.environment }}" >> private-repo/playwright-report/test-status/status.txt
-            echo "Browser: ${{ github.event.inputs.browser }}" >> private-repo/playwright-report/test-status/status.txt
-            echo "Test Pattern: ${{ github.event.inputs.test_pattern }}" >> private-repo/playwright-report/test-status/status.txt
-            echo "Retries: ${{ env.NUM_RETRIES }}" >> private-repo/playwright-report/test-status/status.txt
-            echo "Video Mode: ${{ github.event.inputs.video_mode }}" >> private-repo/playwright-report/test-status/status.txt
-            echo "Trace Mode: ${{ github.event.inputs.trace_mode }}" >> private-repo/playwright-report/test-status/status.txt
+          mkdir -p private-repo/playwright-report/test-status
+          echo "${{ steps.run_tests.outcome }}" > private-repo/playwright-report/test-status/status.txt
+          echo "Shard: ${{ matrix.shard }}" >> private-repo/playwright-report/test-status/status.txt
+          echo "Environment: ${{ github.event.inputs.environment }}" >> private-repo/playwright-report/test-status/status.txt
+          echo "Browser: ${{ github.event.inputs.browser }}" >> private-repo/playwright-report/test-status/status.txt
+          echo "Test Pattern: ${{ github.event.inputs.test_pattern }}" >> private-repo/playwright-report/test-status/status.txt
+          echo "Retries: ${{ env.NUM_RETRIES }}" >> private-repo/playwright-report/test-status/status.txt
+          echo "Video Mode: ${{ github.event.inputs.video_mode }}" >> private-repo/playwright-report/test-status/status.txt
+          echo "Trace Mode: ${{ github.event.inputs.trace_mode }}" >> private-repo/playwright-report/test-status/status.txt
 
   merge-reports:
     name: Merge Reports
@@ -468,28 +468,28 @@ jobs:
               <div class='report-container'>
           EOF
           # Process each shard's report and system info
-          for ((i=1; i<=${{ inputs.shard_count }}; i++)); do
-            report_source="all-artifacts/playwright-report-shard-$i"
-            status_file="all-artifacts/test-status-shard-$i/status.txt"
-            system_info_file="$report_source/system-info/specs.txt"
-            if [ -d "$report_source" ]; then
-              mkdir -p "merged-report/shard-$i"
-              cp -r "$report_source"/* "merged-report/shard-$i/"
-              status="N/A"
-              status_class="status-neutral"
-              if [ -f "$status_file" ]; then
-                status=$(head -n 1 "$status_file")
-                if [ "$status" = "success" ]; then
-                  status_class="status-success"
-                else
-                  status_class="status-failure"
+            for ((i=1; i<=${{ inputs.shard_count }}; i++)); do
+              report_source="all-artifacts/playwright-report-shard-$i"
+              if [ -d "$report_source" ]; then
+                mkdir -p "merged-report/shard-$i"
+                cp -r "$report_source"/* "merged-report/shard-$i/"
+                # Handle status and system info
+                status_file="$report_source/playwright-report/status.txt"  # Adjust if status.txt is elsewhere
+                system_info_file="$report_source/system-info/specs.txt"
+                status="N/A"
+                status_class="status-neutral"
+                if [ -f "$status_file" ]; then
+                  status=$(head -n 1 "$status_file")
+                  if [ "$status" = "success" ]; then
+                    status_class="status-success"
+                  else
+                    status_class="status-failure"
+                  fi
                 fi
-              fi
-              # Read system info
-              system_info="System information not available"
-              if [ -f "$system_info_file" ]; then
-                system_info=$(cat "$system_info_file")
-              fi
+                system_info="System information not available"
+                if [ -f "$system_info_file" ]; then
+                  system_info=$(cat "$system_info_file")
+                fi
               cat << EOF >> merged-report/index.html
               <div class='report-wrapper'>
                 <div class='report-link'>
