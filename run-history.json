@@ -1,1 +1,18 @@
-[{"runNumber": "3", "timestamp": "20250320_000000", "runReason": "Card notes test 01", "environment": "stage", "browser": "chrome", "testPattern": "(?=.*@RDGBAS)(?=.*@TestDe)"}]
+[
+  {
+    "runNumber": "4",
+    "timestamp": "20250320_000000",
+    "runReason": "Card notes 02",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@OVSYN)(?=.*@TestDe)"
+  },
+  {
+    "runNumber": "3",
+    "timestamp": "20250320_000000",
+    "runReason": "Card notes test 01",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@RDGBAS)(?=.*@TestDe)"
+  }
+]
