@@ -618,7 +618,7 @@ jobs:
           for ((i=1; i<=${{ github.event.inputs.shard_count }}; i++)); do
             source_file="all-artifacts/playwright-report-shard-$i/playwright-report/index.html"
             if [ -f "$source_file" ]; then
-              cp "$source_file" "all-index/shard-${i}_index.html"
+              cp "$source_file" "all-index/${i}_index.html"
             else
               echo "Warning: $source_file not found"
             fi
