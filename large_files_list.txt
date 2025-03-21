@@ -1,4 +1,0 @@
-Large file detected: shard-5/playwright-report/data/86a2b7d51c266e832097609720c8e2b6a234885a.zip (173.77 MB)
-Large file detected: shard-5/playwright-report/data/5d7389cc9254bd1d995d62aa180cb31fca45d066.zip (172.86 MB)
-Large file detected: shard-5/test-results/derived_scores(compounds &-8656c-GIA-cluster-generate-report-chrome/trace.zip (172.86 MB)
-Large file detected: shard-5/test-results/derived_scores(compounds &-8656c-GIA-cluster-generate-report-chrome-retry1/trace.zip (173.77 MB)
