@@ -1,8 +1,13 @@
-name: Playwright Sharded Tests with Historical Reports
+name: Playwright Tests Runner for WJ-5
 
 on:
   workflow_dispatch:
     inputs:
+      branch: # New input
+        description: "Branch in the private repo (SunilsForge/WJ-5_Pub) to run tests from"
+        required: true
+        default: "main" # Default to main branch
+        type: string
       environment:
         description: "Test environment (prodCanada/ prod/ prodTest/ stage/ qa)"
         required: true
@@ -160,8 +165,9 @@ jobs:
         with:
           repository: SunilsForge/WJ-5_Pub
           token: ${{ secrets.PRIVATE_REPO_PAT }}
-        #   path: private-repo
+          ref: ${{ github.event.inputs.branch }}
           fetch-depth: 1
+
       - name: Collect System Information
         run: |
           mkdir -p system-info
