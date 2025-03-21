@@ -612,6 +612,27 @@ jobs:
           path: merged-report/
           retention-days: 90
 
+      - name: Create All-Index artifact
+        run: |
+          mkdir -p all-index
+          for ((i=1; i<=${{ github.event.inputs.shard_count }}; i++)); do
+            source_file="all-artifacts/playwright-report-shard-$i/playwright-report/index.html"
+            if [ -f "$source_file" ]; then
+              cp "$source_file" "all-index/${i}_index.html"
+            else
+              echo "Warning: $source_file not found"
+            fi
+          done
+          echo "Contents of all-index:"
+          ls -l all-index
+
+      - name: Upload All-Index artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: All-Index
+          path: all-index/
+          retention-days: 90
+
   # The deploy-report job is completely rewritten
   deploy-report:
     name: Deploy Report to GitHub Pages
@@ -668,7 +689,7 @@ jobs:
 
           # Copy files (excluding large ones)
           echo "Copying files to gh-pages branch directory..."
-          rsync -av --exclude="*.zip" --exclude="*.png" --exclude="*.jpg" --exclude="*.jpeg" --exclude="*.mp4" --exclude="*.webm" \
+          rsync -av --exclude="*.zip" --exclude="*.mp4" --exclude="*.webm" \
             --exclude="*.gif" --exclude="*.trace" --exclude="*.webp" --max-size=100M \
             "../new-report/" "reports/${{ steps.run-info.outputs.run_number }}/"
 
