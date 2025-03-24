@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "20",
+    "timestamp": "20250324_000000",
+    "runReason": "checking if the timer fix works ",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@DerivedScores"
+  },
+  {
     "runNumber": "19",
     "timestamp": "20250324_000000",
     "runReason": "GIA cluster NUMPAT timer fix ",
