@@ -51,7 +51,7 @@ on:
       video_mode:
         description: "Video recording mode"
         required: true
-        default: "on-first-retry"
+        default: "off"
         type: choice
         options:
           - "on"
@@ -79,7 +79,7 @@ on:
       run_reason:
         description: "Short reason for triggering this run (e.g., 'Smoke test', 'Bug fix validation')"
         required: true
-        default: "General test run"
+        default: "Env_@Tag_Reason"
         type: string
 
 env:
