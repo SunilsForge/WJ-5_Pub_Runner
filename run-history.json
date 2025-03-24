@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "19",
+    "timestamp": "20250324_000000",
+    "runReason": "GIA cluster NUMPAT timer fix ",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@DerivedScores"
+  },
+  {
     "runNumber": "18",
     "timestamp": "20250324_000000",
     "runReason": "After fixing this tablet control issue",
