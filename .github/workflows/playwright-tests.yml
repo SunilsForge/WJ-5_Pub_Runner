@@ -13,7 +13,7 @@ on:
         required: true
         default: "stage"
       test_pattern:
-        description: "Test pattern {e.g., @Smoke,\n @TestDe|@DerivedScores,\n (?=.*@RDGBAS)(?=.*@DerivedScores),\n (?=.*@DerivedScores)(?=.*(@PHNMAN|@RDGBAS)),\n (?=.*@Smoke)(?=.*(@TestDe|@DerivedScores|@SingleTable|@MultiTable))}"
+        description: "Test pattern {e.g., @Smoke,   @TestDe|@DerivedScores,   (?=.*@RDGBAS)(?=.*@DerivedScores),    (?=.*@DerivedScores)(?=.*(@PHNMAN|@RDGBAS)),    (?=.*@Smoke)(?=.*(@TestDe|@DerivedScores|@SingleTable|@MultiTable))   }"
         required: true
         default: "(?=.*@RDGBAS)(?=.*@DerivedScores)"
       shard_count:
