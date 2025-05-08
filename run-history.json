@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "43",
+    "timestamp": "20250508_000000",
+    "runReason": "Just a smoke run (@TestDe|@DerivedScores))",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*(@TestDe|@DerivedScores))"
+  },
+  {
     "runNumber": "42",
     "timestamp": "20250502_000000",
     "runReason": "Runnin Derived Scores in STAge as a part of May release",
