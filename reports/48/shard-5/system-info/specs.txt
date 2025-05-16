@@ -47,17 +47,17 @@ Swap:          4.0Gi          0B       4.0Gi
 -e 
 Disk Information:
 Filesystem      Size  Used Avail Use% Mounted on
-overlay          72G   51G   21G  72% /
+overlay          72G   51G   22G  71% /
 tmpfs            64M     0   64M   0% /dev
 shm              64M     0   64M   0% /dev/shm
-/dev/root        72G   51G   21G  72% /__w
+/dev/root        72G   51G   22G  71% /__t
 tmpfs           3.2G  1.2M  3.2G   1% /run/docker.sock
 tmpfs           7.9G     0  7.9G   0% /proc/acpi
 tmpfs           7.9G     0  7.9G   0% /proc/scsi
 tmpfs           7.9G     0  7.9G   0% /sys/firmware
 -e 
 System Load:
- 06:26:51 up 1 min,  0 user,  load average: 0.95, 0.29, 0.10
+ 08:04:23 up 1 min,  0 user,  load average: 0.86, 0.26, 0.09
 -e 
 Container Information:
 PRETTY_NAME="Ubuntu 24.04.1 LTS"
