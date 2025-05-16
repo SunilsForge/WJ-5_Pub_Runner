@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "50",
+    "timestamp": "20250516_000000",
+    "runReason": "rechecking failed (?=.*@DerivedScores)(?=.*(@PHNAWR|@RDGFLU)) in prod canada as part of 16 may prod release ",
+    "environment": "prodCanada",
+    "browser": "chrome",
+    "testPattern": "(?=.*@DerivedScores)(?=.*(@PHNAWR|@RDGFLU))"
+  },
+  {
     "runNumber": "49",
     "timestamp": "20250516_000000",
     "runReason": "Running @TestDe|@DerivedScores after prod reelease 16 may 25 in prod canada",
