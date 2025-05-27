@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "57",
+    "timestamp": "20250527_000000",
+    "runReason": "Running @TestDe|@DerivedScores in STAGE as a part of June 16 release",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "56",
     "timestamp": "20250527_000000",
     "runReason": "running the AE GE scripts after change M to m in Months in derived scores",
