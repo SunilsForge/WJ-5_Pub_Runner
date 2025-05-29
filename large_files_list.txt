@@ -1,2 +1,0 @@
-Large file detected: shard-6/playwright-report/data/db1f71fa52331c33fc8ca164b0f26129f83676d9.zip (123.48 MB)
-Large file detected: shard-6/test-results/derived_scores(compounds &-5e48d-BAS-cluster-generate-report-chrome/trace.zip (123.48 MB)
