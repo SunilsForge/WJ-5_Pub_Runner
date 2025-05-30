@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "61",
+    "timestamp": "20250530_000000",
+    "runReason": "V3 - (11:28 pm) AE_GE_endTEstpopUp / @TestDe|@DerivedScores , running again in STAGE as a part of JUNE release",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "60",
     "timestamp": "20250530_000000",
     "runReason": "V3 (16:09 IST) - AE_GE_endTEstpopUp / @TestDe|@DerivedScores , running again in STAGE as a part of JUNE release",
