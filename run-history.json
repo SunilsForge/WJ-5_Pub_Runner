@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "64",
+    "timestamp": "20250604_000000",
+    "runReason": "Rinning in STAGE to check AE GE after FIx ",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*(@TestDe|@DerivedScores))"
+  },
+  {
     "runNumber": "63",
     "timestamp": "20250603_000000",
     "runReason": "Running in STAGE 18:52 after BigBoss-changes",
