@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "65",
+    "timestamp": "20250604_000000",
+    "runReason": "Running the full Regression of DeriveScores after the Bug fix AE-GE 17:03",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@DerivedScores"
+  },
+  {
     "runNumber": "64",
     "timestamp": "20250604_000000",
     "runReason": "Rinning in STAGE to check AE GE after FIx ",
