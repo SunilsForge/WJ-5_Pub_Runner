@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "66",
+    "timestamp": "20250605_000000",
+    "runReason": "13:41 Runnin full regression of derivedScores in qa due to AE GE validation after bharathi's request",
+    "environment": "qa",
+    "browser": "chrome",
+    "testPattern": "@DerivedScores"
+  },
+  {
     "runNumber": "65",
     "timestamp": "20250604_000000",
     "runReason": "Running the full Regression of DeriveScores after the Bug fix AE-GE 17:03",
