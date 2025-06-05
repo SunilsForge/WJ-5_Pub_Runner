@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "68",
+    "timestamp": "20250605_000000",
+    "runReason": "JUs trunning DerivedScores to check if the QA issues as told by Bharathi is seen in STAGE after deployment ",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@DerivedScores"
+  },
+  {
     "runNumber": "67",
     "timestamp": "20250605_000000",
     "runReason": "13:41 Runnin full regression of derivedScores in stage due to AE GE validation after bharathi's request",
