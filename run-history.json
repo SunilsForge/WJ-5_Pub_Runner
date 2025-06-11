@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "69",
+    "timestamp": "20250611_000000",
+    "runReason": "Full regression of @TestDe|@DerivedScores in STAEG before PROD release",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "68",
     "timestamp": "20250605_000000",
     "runReason": "JUs trunning DerivedScores to check if the QA issues as told by Bharathi is seen in STAGE after deployment ",
