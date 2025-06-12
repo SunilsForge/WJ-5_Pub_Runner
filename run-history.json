@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "70",
+    "timestamp": "20250612_000000",
+    "runReason": "Running @TestDe|@DerivedScores after Demitry score later fix before night prod release ",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "69",
     "timestamp": "20250612_000000",
     "runReason": "Full regression of @TestDe|@DerivedScores in STAEG before PROD release",
