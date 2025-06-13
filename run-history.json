@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "71",
+    "timestamp": "20250613_000000",
+    "runReason": "Running tested data export and scores after prod release deployment",
+    "environment": "Prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "70",
     "timestamp": "20250612_000000",
     "runReason": "Running @TestDe|@DerivedScores after Demitry score later fix before night prod release ",
