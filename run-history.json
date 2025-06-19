@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "74",
+    "timestamp": "20250619_000000",
+    "runReason": "Just eunning @BC5 since the riversides one seems to be out of memory ",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@BC5"
+  },
+  {
     "runNumber": "73",
     "timestamp": "20250613_000000",
     "runReason": "Running regreesion of @TestDe|@DerivedScores after prod deployment 15:53 IST - Run 2",
