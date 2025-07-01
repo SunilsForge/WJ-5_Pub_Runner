@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "75",
+    "timestamp": "20250701_000000",
+    "runReason": "Running regression of @TestDe|@DerivedScores in STAGE for june release ",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "74",
     "timestamp": "20250619_000000",
     "runReason": "Just eunning @BC5 since the riversides one seems to be out of memory ",
