@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "79",
+    "timestamp": "20250716_000000",
+    "runReason": "Running @TestDe|@DerivedScores in prodCanada to check for bugs",
+    "environment": "prodCanada",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "78",
     "timestamp": "20250716_000000",
     "runReason": "Running @TestDe|@DerivedScores in prod to check for bugs",
