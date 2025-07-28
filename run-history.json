@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "83",
+    "timestamp": "20250728_000000",
+    "runReason": "Running smoke in PROD Canada wrt (?=.*@Smoke)(?=.*(@TestDe|@DerivedScores",
+    "environment": "prodCanada",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*(@TestDe|@DerivedScores))"
+  },
+  {
     "runNumber": "80",
     "timestamp": "20250716_000000",
     "runReason": "Running @TestDe|@DerivedScores in prodCanada to check for bugs",
