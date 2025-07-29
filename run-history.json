@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "84",
+    "timestamp": "20250729_000000",
+    "runReason": "Running (?=.*@Smoke)(?=.*(@TestDe|@DerivedScores in STAGE to check if those got impacted due to this Review modes and Stuff",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*(@TestDe|@DerivedScores))"
+  },
+  {
     "runNumber": "83",
     "timestamp": "20250728_000000",
     "runReason": "Running smoke in PROD Canada wrt (?=.*@Smoke)(?=.*(@TestDe|@DerivedScores",
