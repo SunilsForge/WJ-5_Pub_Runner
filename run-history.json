@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "92",
+    "timestamp": "20250822_000000",
+    "runReason": "Running full regression in STAGE as a part of STAGE release",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "91",
     "timestamp": "20250821_000000",
     "runReason": "Running to check the Identity API working back in STAGE",
