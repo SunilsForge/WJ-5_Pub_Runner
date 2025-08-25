@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "96",
+    "timestamp": "20250825_000000",
+    "runReason": "Just checking the login issue in CI",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@OVSYN)(?=.*@TestDe)"
+  },
+  {
     "runNumber": "95",
     "timestamp": "20250825_000000",
     "runReason": "Running after fixing the reologgin issue and added some waitforloading diapper code ",
