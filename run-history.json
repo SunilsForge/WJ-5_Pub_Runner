@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "93",
+    "timestamp": "20250825_000000",
+    "runReason": "Running one more",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "92",
     "timestamp": "20250822_000000",
     "runReason": "Running full regression in STAGE as a part of STAGE release",
