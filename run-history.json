@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "97",
+    "timestamp": "20250825_000000",
+    "runReason": "Alright running again ful regression in STAGE",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "96",
     "timestamp": "20250825_000000",
     "runReason": "Just checking the login issue in CI",
