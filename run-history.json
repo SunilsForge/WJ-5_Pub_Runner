@@ -8,6 +8,14 @@
     "testPattern": "@TestDe|@DerivedScores"
   },
   {
+    "runNumber": "101",
+    "timestamp": "20250905_000000",
+    "runReason": "Running Regression post Hot Fix",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "100",
     "timestamp": "20250904_000000",
     "runReason": "running in STAG due to HOT fix in prod",
