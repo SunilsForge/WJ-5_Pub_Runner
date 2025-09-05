@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "102",
+    "timestamp": "20250905_000000",
+    "runReason": "Running Regression post Hot Fix in prod Canada",
+    "environment": "prodCanada",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "100",
     "timestamp": "20250904_000000",
     "runReason": "running in STAG due to HOT fix in prod",
