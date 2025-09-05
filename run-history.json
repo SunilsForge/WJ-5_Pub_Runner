@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "104",
+    "timestamp": "20250905_000000",
+    "runReason": "trial 2",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*@TestDe)"
+  },
+  {
     "runNumber": "103",
     "timestamp": "20250905_000000",
     "runReason": "Running since updated the pipeline and the package double blast ",
