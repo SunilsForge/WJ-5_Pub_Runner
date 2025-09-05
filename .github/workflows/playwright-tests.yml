@@ -90,7 +90,7 @@ env:
   SLOW_MODE_DELAY_IN_MS: 0
   CI: "true"
   PLAYWRIGHT_WORKERS: 1
-  NODE_VERSION: "20"
+  NODE_VERSION: "22"
 
 permissions:
   contents: write
@@ -103,7 +103,7 @@ permissions:
 jobs:
   # [prepare, test, merge-reports jobs unchanged as per your instruction]
   prepare:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
@@ -155,13 +155,13 @@ jobs:
     name: "Shard ${{ matrix.shard }}"
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.49.1-noble
+      image: mcr.microsoft.com/playwright:v1.55.0-jammy
     strategy:
       fail-fast: false
       matrix: ${{fromJson(needs.prepare.outputs.matrix)}}
     steps:
       - name: Checkout private repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: SunilsForge/WJ-5_Pub
           token: ${{ secrets.PRIVATE_REPO_PAT }}
@@ -183,10 +183,15 @@ jobs:
           echo -e "\nContainer Information:" >> system-info/specs.txt
           cat /etc/os-release >> system-info/specs.txt
       - name: Set up Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
       - name: Install dependencies
         run: |
           npm ci
@@ -247,13 +252,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download all artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           path: all-artifacts
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
+      - name: Cache npm dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: npm-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
       - name: Create merged report directory
         run: |
           mkdir -p merged-report
@@ -264,7 +274,7 @@ jobs:
           <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Playwright Test Reports</title>
+            <title>Playwright Test Run Summary</title>
             <style>
               :root {
                 --primary-color: #0366d6;
@@ -652,7 +662,7 @@ jobs:
           echo "timestamp=$(date -d "${{ github.event.workflow_run.created_at || github.event.created_at }}" +'%Y%m%d_%H%M%S')" >> $GITHUB_OUTPUT
 
       - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: gh-pages
           path: gh-pages
@@ -672,7 +682,7 @@ jobs:
           fi
 
       - name: Download merged report
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: merged-playwright-report
           path: new-report
@@ -1288,7 +1298,7 @@ jobs:
           fi
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
