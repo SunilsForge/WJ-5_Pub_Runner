@@ -1,0 +1,77 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - button [ref=e7] [cursor=pointer]
+    - button [ref=e8] [cursor=pointer]:
+      - generic [ref=e9] [cursor=pointer]: Number-Pattern Matching
+    - generic [ref=e11]:
+      - button [ref=e12] [cursor=pointer]
+      - button [ref=e13] [cursor=pointer]
+      - button [ref=e14] [cursor=pointer]
+      - generic [ref=e17] [cursor=pointer]:
+        - img [ref=e18] [cursor=pointer]
+        - img [ref=e22] [cursor=pointer]
+  - region [ref=e27]:
+    - generic [ref=e28]:
+      - button [ref=e29]:
+        - img [ref=e31]
+      - generic [ref=e35]:
+        - generic [ref=e38]: Starting Point
+        - radio [checked] [ref=e41]:
+          - generic [ref=e42]: Intro 1
+          - img [ref=e43]
+        - radio [checked] [ref=e48]:
+          - generic [ref=e49]: Sample A, Trial 1
+          - img [ref=e50]
+        - radio [checked] [ref=e53]:
+          - generic [ref=e54]: Sample A, Trial 2
+          - img [ref=e55]
+        - radio [checked] [ref=e58]:
+          - generic [ref=e59]: Sample B, Trial 1
+          - img [ref=e60]
+        - radio [checked] [ref=e63]:
+          - generic [ref=e64]: Sample B, Trial 2
+          - img [ref=e65]
+        - radio [checked] [ref=e68]:
+          - generic [ref=e69]: Practice
+          - img [ref=e70]
+        - radio [checked] [ref=e73]:
+          - generic [ref=e74]: Test Items
+          - img [ref=e75]
+        - generic [ref=e79]: End of Items
+    - generic [ref=e81]:
+      - generic [ref=e82]:
+        - img [ref=e83]
+        - generic [ref=e88]:
+          - generic [ref=e89]: Practice Exercise
+          - paragraph [ref=e90]:
+            - strong [ref=e92]: Now you will see six more rows of numbers on your screen. Tap the two numbers that are alike in each row. Work as quickly as you can without making mistakes. If you do make a mistake, just tap the one you want to change and then tap your new answer. When you are done, tap the Done button at the bottom of your screen. Go ahead.
+          - paragraph [ref=e93]:
+            - button [ref=e96] [cursor=pointer]: Start Practice Exercise
+      - generic [ref=e97]:
+        - img [ref=e98]
+        - paragraph [ref=e104]:
+          - text: "If the examinee pauses for more than 5 seconds, say:"
+          - strong [ref=e106]: Go ahead and choose the two that are alike.
+        - button [ref=e107] [cursor=pointer]: ✕
+      - generic [ref=e108]:
+        - button [ref=e109] [cursor=pointer]:
+          - img [ref=e110] [cursor=pointer]
+        - generic [ref=e114]:
+          - generic [ref=e115]: "0"
+          - generic [ref=e116]: ITEM SCORE
+        - button [disabled] [ref=e118]:
+          - img [ref=e119]
+  - region [ref=e122]:
+    - generic [ref=e124]:
+      - button [ref=e125] [cursor=pointer]
+      - button [ref=e126] [cursor=pointer]
+      - button [ref=e127] [cursor=pointer]
+      - button [ref=e128] [cursor=pointer]
+    - generic [ref=e130]:
+      - img [ref=e131]
+      - generic [ref=e136]: You are now in control of the examinee’s view.
+    - img [ref=e139]
+```

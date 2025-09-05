@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "106",
+    "timestamp": "20250905_000000",
+    "runReason": "Again full regression in Prod after the dependencies updates in boath pipeline and package ",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "105",
     "timestamp": "20250905_000000",
     "runReason": "again 3",

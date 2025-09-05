@@ -1,0 +1,70 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - button [ref=e7] [cursor=pointer]
+    - button [ref=e8] [cursor=pointer]:
+      - generic [ref=e9] [cursor=pointer]: Math Facts Fluency
+    - generic [ref=e11]:
+      - button [ref=e12] [cursor=pointer]
+      - button [ref=e13] [cursor=pointer]
+      - button [ref=e14] [cursor=pointer]
+      - generic [ref=e17] [cursor=pointer]:
+        - img [ref=e18] [cursor=pointer]
+        - img [ref=e22] [cursor=pointer]
+  - region [ref=e27]:
+    - generic [ref=e28]:
+      - button [ref=e29]:
+        - img [ref=e31]
+      - generic [ref=e35]:
+        - generic [ref=e38]: Starting Point
+        - radio [checked] [ref=e41]:
+          - generic [ref=e42]: Practice
+          - img [ref=e43]
+        - radio [checked] [ref=e48]:
+          - generic [ref=e49]: Test Items
+          - img [ref=e50]
+        - generic [ref=e54]: End of Items
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - img [ref=e58]
+        - generic [ref=e63]:
+          - generic [ref=e64]: Practice Exercise
+          - paragraph [ref=e65]:
+            - text: Make sure that the examinee has the Response Booklet and a pencil. Open the Response Booklet to the page with Math Facts Fluency
+            - strong [ref=e66]: Introduction 1
+            - text: ". Say:"
+            - strong [ref=e67]:
+              - generic [ref=e68]: I want you to do some math problems. When I tell you to begin, turn the page in your Response Booklet and do the problems. Work as quickly as you can without making mistakes. Be sure to watch the signs. Are you ready?
+            - text: "Confirm that the examinee is ready to begin, then say:"
+            - strong [ref=e70]: Turn the page and begin.
+            - strong [ref=e71]:
+              - button [ref=e74] [cursor=pointer]: Start Practice Exercise
+          - paragraph [ref=e75]
+          - paragraph [ref=e76]: Allow the examinee to work for 20 seconds. If the examinee completes the last item before the time is up, click the blue timer button.
+      - generic [ref=e78]:
+        - generic [ref=e79]: "Practice Exercise:"
+        - button [disabled] [ref=e80]:
+          - generic [ref=e81]:
+            - img [ref=e82]
+            - img [ref=e86]
+        - spinbutton [disabled] [ref=e91]
+      - generic [ref=e92]:
+        - button [ref=e93] [cursor=pointer]:
+          - img [ref=e94] [cursor=pointer]
+        - button [ref=e98] [cursor=pointer]:
+          - img [ref=e99] [cursor=pointer]
+        - generic [ref=e102]:
+          - generic [ref=e103]: "0"
+          - generic [ref=e104]: ITEM SCORE
+        - button [disabled] [ref=e106]:
+          - img [ref=e107]
+  - region [ref=e110]:
+    - generic [ref=e112]:
+      - button [ref=e113] [cursor=pointer]
+      - button [ref=e114] [cursor=pointer]
+      - button [ref=e115] [cursor=pointer]
+      - button [ref=e116] [cursor=pointer]
+    - img [ref=e119]
+```
