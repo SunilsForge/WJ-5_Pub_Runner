@@ -90,7 +90,7 @@ env:
   SLOW_MODE_DELAY_IN_MS: 0
   CI: "true"
   PLAYWRIGHT_WORKERS: 1
-  NODE_VERSION: "22"
+  NODE_VERSION: "20"
 
 permissions:
   contents: write
@@ -155,7 +155,7 @@ jobs:
     name: "Shard ${{ matrix.shard }}"
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.55.0-jammy
+      image: mcr.microsoft.com/playwright:v1.55.0-noble
     strategy:
       fail-fast: false
       matrix: ${{fromJson(needs.prepare.outputs.matrix)}}
