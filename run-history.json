@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "107",
+    "timestamp": "20250925_000000",
+    "runReason": "Running @TestDe|@DerivedScores in STAGE since since some hot fix went to stage",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "106",
     "timestamp": "20250905_000000",
     "runReason": "Again full regression in Prod after the dependencies updates in boath pipeline and package ",
