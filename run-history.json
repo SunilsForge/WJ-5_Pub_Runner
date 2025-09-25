@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "108",
+    "timestamp": "20250925_000000",
+    "runReason": "running smoke in stage as a part od release testing hotFix",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*(@TestDe|@DerivedScores))"
+  },
+  {
     "runNumber": "107",
     "timestamp": "20250925_000000",
     "runReason": "Running @TestDe|@DerivedScores in STAGE since since some hot fix went to stage",
