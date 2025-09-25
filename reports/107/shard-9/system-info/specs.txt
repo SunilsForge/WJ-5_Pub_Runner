@@ -50,14 +50,14 @@ Filesystem      Size  Used Avail Use% Mounted on
 overlay          72G   53G   20G  74% /
 tmpfs            64M     0   64M   0% /dev
 shm              64M     0   64M   0% /dev/shm
-/dev/root        72G   53G   20G  74% /__t
+/dev/root        72G   53G   20G  74% /__w
 tmpfs           3.2G  1.2M  3.2G   1% /run/docker.sock
 tmpfs           7.9G     0  7.9G   0% /proc/acpi
 tmpfs           7.9G     0  7.9G   0% /proc/scsi
 tmpfs           7.9G     0  7.9G   0% /sys/firmware
 -e 
 System Load:
- 11:14:52 up 1 min,  0 user,  load average: 1.53, 0.59, 0.21
+ 11:43:53 up 5 min,  0 user,  load average: 0.91, 0.39, 0.17
 -e 
 Container Information:
 PRETTY_NAME="Ubuntu 24.04.2 LTS"

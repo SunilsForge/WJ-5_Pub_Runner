@@ -1,0 +1,814 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic [active]:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S08PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S08PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - generic [ref=e15]: "|"
+                - button "Subscription Details" [ref=e16] [cursor=pointer]
+                - generic [ref=e17]: "|"
+                - button "Sign Out" [ref=e18] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e19]:
+          - menubar [ref=e21]:
+            - menuitem "Dashboard" [ref=e23] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e25] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e27] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e29] [cursor=pointer]: Staff
+            - menuitem "Reports" [disabled] [ref=e31] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e32] [cursor=pointer]
+            - menuitem "Resources" [ref=e35] [cursor=pointer]: Resources
+        - main [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]:
+              - generic [ref=e39]:
+                - heading "My Test Assignments" [level=1] [ref=e40]
+                - button "Create New Test Assignment" [ref=e41] [cursor=pointer]
+              - generic [ref=e42]:
+                - generic [ref=e45]:
+                  - textbox [ref=e46]
+                  - button [ref=e47] [cursor=pointer]
+                - generic [ref=e48]:
+                  - button "Active" [ref=e49] [cursor=pointer]
+                  - button "Closed" [ref=e50] [cursor=pointer]
+              - generic [ref=e51]:
+                - generic [ref=e52]: Examinee
+                - generic [ref=e53]: Test Set
+                - generic [ref=e54]: Date Created
+                - generic [ref=e55]: Status
+                - generic [ref=e56]: Actions
+                - button "N52710A62218, Napoleon Form A 09/25/2025 ●Submitted" [ref=e57] [cursor=pointer]:
+                  - generic [ref=e59] [cursor=pointer]: N52710A62218, Napoleon
+                  - generic [ref=e61] [cursor=pointer]:
+                    - generic [ref=e62] [cursor=pointer]: Form A
+                    - img [ref=e64] [cursor=pointer]
+                  - generic [ref=e67] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e70] [cursor=pointer]:
+                    - generic [ref=e71] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e72] [cursor=pointer]:
+                    - button [disabled] [ref=e73]:
+                      - img [ref=e74]
+                    - button [disabled] [ref=e78]:
+                      - img [ref=e79]
+                    - button "Generate Report" [ref=e82] [cursor=pointer]:
+                      - img [ref=e83] [cursor=pointer]
+                - button "N17708A87020, Tre Form A 09/25/2025 ●Submitted" [ref=e86] [cursor=pointer]:
+                  - generic [ref=e88] [cursor=pointer]: N17708A87020, Tre
+                  - generic [ref=e90] [cursor=pointer]:
+                    - generic [ref=e91] [cursor=pointer]: Form A
+                    - img [ref=e93] [cursor=pointer]
+                  - generic [ref=e96] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e99] [cursor=pointer]:
+                    - generic [ref=e100] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e101] [cursor=pointer]:
+                    - button [disabled] [ref=e102]:
+                      - img [ref=e103]
+                    - button [disabled] [ref=e107]:
+                      - img [ref=e108]
+                    - button "Generate Report" [ref=e111] [cursor=pointer]:
+                      - img [ref=e112] [cursor=pointer]
+                - button "N82651A4933, Jules Form A 09/25/2025 ●Submitted" [ref=e115] [cursor=pointer]:
+                  - generic [ref=e117] [cursor=pointer]: N82651A4933, Jules
+                  - generic [ref=e119] [cursor=pointer]:
+                    - generic [ref=e120] [cursor=pointer]: Form A
+                    - img [ref=e122] [cursor=pointer]
+                  - generic [ref=e125] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e128] [cursor=pointer]:
+                    - generic [ref=e129] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e130] [cursor=pointer]:
+                    - button [disabled] [ref=e131]:
+                      - img [ref=e132]
+                    - button [disabled] [ref=e136]:
+                      - img [ref=e137]
+                    - button "Generate Report" [ref=e140] [cursor=pointer]:
+                      - img [ref=e141] [cursor=pointer]
+                - button "N15324A76337, Wilfred Form A 09/25/2025 ●Submitted" [ref=e144] [cursor=pointer]:
+                  - generic [ref=e146] [cursor=pointer]: N15324A76337, Wilfred
+                  - generic [ref=e148] [cursor=pointer]:
+                    - generic [ref=e149] [cursor=pointer]: Form A
+                    - img [ref=e151] [cursor=pointer]
+                  - generic [ref=e154] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e157] [cursor=pointer]:
+                    - generic [ref=e158] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e159] [cursor=pointer]:
+                    - button [disabled] [ref=e160]:
+                      - img [ref=e161]
+                    - button [disabled] [ref=e165]:
+                      - img [ref=e166]
+                    - button "Generate Report" [ref=e169] [cursor=pointer]:
+                      - img [ref=e170] [cursor=pointer]
+                - button "N76959A29787, Amos Form A 09/25/2025 ●Submitted" [ref=e173] [cursor=pointer]:
+                  - generic [ref=e175] [cursor=pointer]: N76959A29787, Amos
+                  - generic [ref=e177] [cursor=pointer]:
+                    - generic [ref=e178] [cursor=pointer]: Form A
+                    - img [ref=e180] [cursor=pointer]
+                  - generic [ref=e183] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e186] [cursor=pointer]:
+                    - generic [ref=e187] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e188] [cursor=pointer]:
+                    - button [disabled] [ref=e189]:
+                      - img [ref=e190]
+                    - button [disabled] [ref=e194]:
+                      - img [ref=e195]
+                    - button "Generate Report" [ref=e198] [cursor=pointer]:
+                      - img [ref=e199] [cursor=pointer]
+                - button "N30582A93246, Gianni Form A 09/25/2025 ●Submitted" [ref=e202] [cursor=pointer]:
+                  - generic [ref=e204] [cursor=pointer]: N30582A93246, Gianni
+                  - generic [ref=e206] [cursor=pointer]:
+                    - generic [ref=e207] [cursor=pointer]: Form A
+                    - img [ref=e209] [cursor=pointer]
+                  - generic [ref=e212] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e215] [cursor=pointer]:
+                    - generic [ref=e216] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e217] [cursor=pointer]:
+                    - button [disabled] [ref=e218]:
+                      - img [ref=e219]
+                    - button [disabled] [ref=e223]:
+                      - img [ref=e224]
+                    - button "Generate Report" [ref=e227] [cursor=pointer]:
+                      - img [ref=e228] [cursor=pointer]
+                - button "N58333A89070, Mossie Form A 09/25/2025 ●Submitted" [ref=e231] [cursor=pointer]:
+                  - generic [ref=e233] [cursor=pointer]: N58333A89070, Mossie
+                  - generic [ref=e235] [cursor=pointer]:
+                    - generic [ref=e236] [cursor=pointer]: Form A
+                    - img [ref=e238] [cursor=pointer]
+                  - generic [ref=e241] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e244] [cursor=pointer]:
+                    - generic [ref=e245] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e246] [cursor=pointer]:
+                    - button [disabled] [ref=e247]:
+                      - img [ref=e248]
+                    - button [disabled] [ref=e252]:
+                      - img [ref=e253]
+                    - button "Generate Report" [ref=e256] [cursor=pointer]:
+                      - img [ref=e257] [cursor=pointer]
+                - button "N42840A72696, Cydney Form A 09/25/2025 ●Submitted" [ref=e260] [cursor=pointer]:
+                  - generic [ref=e262] [cursor=pointer]: N42840A72696, Cydney
+                  - generic [ref=e264] [cursor=pointer]:
+                    - generic [ref=e265] [cursor=pointer]: Form A
+                    - img [ref=e267] [cursor=pointer]
+                  - generic [ref=e270] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e273] [cursor=pointer]:
+                    - generic [ref=e274] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e275] [cursor=pointer]:
+                    - button [disabled] [ref=e276]:
+                      - img [ref=e277]
+                    - button [disabled] [ref=e281]:
+                      - img [ref=e282]
+                    - button "Generate Report" [ref=e285] [cursor=pointer]:
+                      - img [ref=e286] [cursor=pointer]
+                - button "N22439A9283, Andreanne Form A 09/25/2025 ●Submitted" [ref=e289] [cursor=pointer]:
+                  - generic [ref=e291] [cursor=pointer]: N22439A9283, Andreanne
+                  - generic [ref=e293] [cursor=pointer]:
+                    - generic [ref=e294] [cursor=pointer]: Form A
+                    - img [ref=e296] [cursor=pointer]
+                  - generic [ref=e299] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e302] [cursor=pointer]:
+                    - generic [ref=e303] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e304] [cursor=pointer]:
+                    - button [disabled] [ref=e305]:
+                      - img [ref=e306]
+                    - button [disabled] [ref=e310]:
+                      - img [ref=e311]
+                    - button "Generate Report" [ref=e314] [cursor=pointer]:
+                      - img [ref=e315] [cursor=pointer]
+                - button "N19627A58387, Martine Form A 09/25/2025 ●Submitted" [ref=e318] [cursor=pointer]:
+                  - generic [ref=e320] [cursor=pointer]: N19627A58387, Martine
+                  - generic [ref=e322] [cursor=pointer]:
+                    - generic [ref=e323] [cursor=pointer]: Form A
+                    - img [ref=e325] [cursor=pointer]
+                  - generic [ref=e328] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e331] [cursor=pointer]:
+                    - generic [ref=e332] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e333] [cursor=pointer]:
+                    - button [disabled] [ref=e334]:
+                      - img [ref=e335]
+                    - button [disabled] [ref=e339]:
+                      - img [ref=e340]
+                    - button "Generate Report" [ref=e343] [cursor=pointer]:
+                      - img [ref=e344] [cursor=pointer]
+                - button "N19614A73949, Uriel Form A 09/25/2025 ●Submitted" [ref=e347] [cursor=pointer]:
+                  - generic [ref=e349] [cursor=pointer]: N19614A73949, Uriel
+                  - generic [ref=e351] [cursor=pointer]:
+                    - generic [ref=e352] [cursor=pointer]: Form A
+                    - img [ref=e354] [cursor=pointer]
+                  - generic [ref=e357] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e360] [cursor=pointer]:
+                    - generic [ref=e361] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e362] [cursor=pointer]:
+                    - button [disabled] [ref=e363]:
+                      - img [ref=e364]
+                    - button [disabled] [ref=e368]:
+                      - img [ref=e369]
+                    - button "Generate Report" [ref=e372] [cursor=pointer]:
+                      - img [ref=e373] [cursor=pointer]
+                - button "N95994A48888, Travis Form A 09/25/2025 ●Submitted" [ref=e376] [cursor=pointer]:
+                  - generic [ref=e378] [cursor=pointer]: N95994A48888, Travis
+                  - generic [ref=e380] [cursor=pointer]:
+                    - generic [ref=e381] [cursor=pointer]: Form A
+                    - img [ref=e383] [cursor=pointer]
+                  - generic [ref=e386] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e389] [cursor=pointer]:
+                    - generic [ref=e390] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e391] [cursor=pointer]:
+                    - button [disabled] [ref=e392]:
+                      - img [ref=e393]
+                    - button [disabled] [ref=e397]:
+                      - img [ref=e398]
+                    - button "Generate Report" [ref=e401] [cursor=pointer]:
+                      - img [ref=e402] [cursor=pointer]
+                - button "N89123A83046, Alessandra Form A 09/25/2025 ●Submitted" [ref=e405] [cursor=pointer]:
+                  - generic [ref=e407] [cursor=pointer]: N89123A83046, Alessandra
+                  - generic [ref=e409] [cursor=pointer]:
+                    - generic [ref=e410] [cursor=pointer]: Form A
+                    - img [ref=e412] [cursor=pointer]
+                  - generic [ref=e415] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e418] [cursor=pointer]:
+                    - generic [ref=e419] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e420] [cursor=pointer]:
+                    - button [disabled] [ref=e421]:
+                      - img [ref=e422]
+                    - button [disabled] [ref=e426]:
+                      - img [ref=e427]
+                    - button "Generate Report" [ref=e430] [cursor=pointer]:
+                      - img [ref=e431] [cursor=pointer]
+                - button "N64098A80340, Macie Form A 09/25/2025 ●Not Started" [ref=e434] [cursor=pointer]:
+                  - generic [ref=e436] [cursor=pointer]: N64098A80340, Macie
+                  - generic [ref=e438] [cursor=pointer]:
+                    - generic [ref=e439] [cursor=pointer]: Form A
+                    - img [ref=e441] [cursor=pointer]
+                  - generic [ref=e444] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e447] [cursor=pointer]:
+                    - generic [ref=e448] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e449] [cursor=pointer]:
+                    - button [disabled] [ref=e450]:
+                      - img [ref=e451]
+                    - button [disabled] [ref=e455]:
+                      - img [ref=e456]
+                    - button [ref=e459] [cursor=pointer]:
+                      - img [ref=e460] [cursor=pointer]
+                - button "N32483A42891, Ray Form A 09/25/2025 ●Submitted" [ref=e462] [cursor=pointer]:
+                  - generic [ref=e464] [cursor=pointer]: N32483A42891, Ray
+                  - generic [ref=e466] [cursor=pointer]:
+                    - generic [ref=e467] [cursor=pointer]: Form A
+                    - img [ref=e469] [cursor=pointer]
+                  - generic [ref=e472] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e475] [cursor=pointer]:
+                    - generic [ref=e476] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e477] [cursor=pointer]:
+                    - button [disabled] [ref=e478]:
+                      - img [ref=e479]
+                    - button [disabled] [ref=e483]:
+                      - img [ref=e484]
+                    - button "Generate Report" [ref=e487] [cursor=pointer]:
+                      - img [ref=e488] [cursor=pointer]
+                - button "N97257A79469, Milton Form A 09/25/2025 ●Not Started" [ref=e491] [cursor=pointer]:
+                  - generic [ref=e493] [cursor=pointer]: N97257A79469, Milton
+                  - generic [ref=e495] [cursor=pointer]:
+                    - generic [ref=e496] [cursor=pointer]: Form A
+                    - img [ref=e498] [cursor=pointer]
+                  - generic [ref=e501] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e504] [cursor=pointer]:
+                    - generic [ref=e505] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e506] [cursor=pointer]:
+                    - button [disabled] [ref=e507]:
+                      - img [ref=e508]
+                    - button [disabled] [ref=e512]:
+                      - img [ref=e513]
+                    - button [ref=e516] [cursor=pointer]:
+                      - img [ref=e517] [cursor=pointer]
+                - button "N83689A35641, Deanna Form A 09/25/2025 ●Not Started" [ref=e519] [cursor=pointer]:
+                  - generic [ref=e521] [cursor=pointer]: N83689A35641, Deanna
+                  - generic [ref=e523] [cursor=pointer]:
+                    - generic [ref=e524] [cursor=pointer]: Form A
+                    - img [ref=e526] [cursor=pointer]
+                  - generic [ref=e529] [cursor=pointer]: 09/25/2025
+                  - generic [ref=e532] [cursor=pointer]:
+                    - generic [ref=e533] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e534] [cursor=pointer]:
+                    - button [disabled] [ref=e535]:
+                      - img [ref=e536]
+                    - button [disabled] [ref=e540]:
+                      - img [ref=e541]
+                    - button [ref=e544] [cursor=pointer]:
+                      - img [ref=e545] [cursor=pointer]
+                - button "N95989A2382, Reta Form A 09/04/2025 ●Submitted" [ref=e547] [cursor=pointer]:
+                  - generic [ref=e549] [cursor=pointer]: N95989A2382, Reta
+                  - generic [ref=e551] [cursor=pointer]:
+                    - generic [ref=e552] [cursor=pointer]: Form A
+                    - img [ref=e554] [cursor=pointer]
+                  - generic [ref=e557] [cursor=pointer]: 09/04/2025
+                  - generic [ref=e560] [cursor=pointer]:
+                    - generic [ref=e561] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e562] [cursor=pointer]:
+                    - button [disabled] [ref=e563]:
+                      - img [ref=e564]
+                    - button [disabled] [ref=e568]:
+                      - img [ref=e569]
+                    - button "Generate Report" [ref=e572] [cursor=pointer]:
+                      - img [ref=e573] [cursor=pointer]
+                - button "N91839A19739, Friedrich Form A 09/04/2025 ●Submitted" [ref=e576] [cursor=pointer]:
+                  - generic [ref=e578] [cursor=pointer]: N91839A19739, Friedrich
+                  - generic [ref=e580] [cursor=pointer]:
+                    - generic [ref=e581] [cursor=pointer]: Form A
+                    - img [ref=e583] [cursor=pointer]
+                  - generic [ref=e586] [cursor=pointer]: 09/04/2025
+                  - generic [ref=e589] [cursor=pointer]:
+                    - generic [ref=e590] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e591] [cursor=pointer]:
+                    - button [disabled] [ref=e592]:
+                      - img [ref=e593]
+                    - button [disabled] [ref=e597]:
+                      - img [ref=e598]
+                    - button "Generate Report" [ref=e601] [cursor=pointer]:
+                      - img [ref=e602] [cursor=pointer]
+                - button "N16458A81008, Allie Form A 09/04/2025 ●Submitted" [ref=e605] [cursor=pointer]:
+                  - generic [ref=e607] [cursor=pointer]: N16458A81008, Allie
+                  - generic [ref=e609] [cursor=pointer]:
+                    - generic [ref=e610] [cursor=pointer]: Form A
+                    - img [ref=e612] [cursor=pointer]
+                  - generic [ref=e615] [cursor=pointer]: 09/04/2025
+                  - generic [ref=e618] [cursor=pointer]:
+                    - generic [ref=e619] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e620] [cursor=pointer]:
+                    - button [disabled] [ref=e621]:
+                      - img [ref=e622]
+                    - button [disabled] [ref=e626]:
+                      - img [ref=e627]
+                    - button "Generate Report" [ref=e630] [cursor=pointer]:
+                      - img [ref=e631] [cursor=pointer]
+                - button "N91821A25117, Kaci Form A 09/04/2025 ●Submitted" [ref=e634] [cursor=pointer]:
+                  - generic [ref=e636] [cursor=pointer]: N91821A25117, Kaci
+                  - generic [ref=e638] [cursor=pointer]:
+                    - generic [ref=e639] [cursor=pointer]: Form A
+                    - img [ref=e641] [cursor=pointer]
+                  - generic [ref=e644] [cursor=pointer]: 09/04/2025
+                  - generic [ref=e647] [cursor=pointer]:
+                    - generic [ref=e648] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e649] [cursor=pointer]:
+                    - button [disabled] [ref=e650]:
+                      - img [ref=e651]
+                    - button [disabled] [ref=e655]:
+                      - img [ref=e656]
+                    - button "Generate Report" [ref=e659] [cursor=pointer]:
+                      - img [ref=e660] [cursor=pointer]
+                - button "N85329A28611, Vivien Form A 09/04/2025 ●Submitted" [ref=e663] [cursor=pointer]:
+                  - generic [ref=e665] [cursor=pointer]: N85329A28611, Vivien
+                  - generic [ref=e667] [cursor=pointer]:
+                    - generic [ref=e668] [cursor=pointer]: Form A
+                    - img [ref=e670] [cursor=pointer]
+                  - generic [ref=e673] [cursor=pointer]: 09/04/2025
+                  - generic [ref=e676] [cursor=pointer]:
+                    - generic [ref=e677] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e678] [cursor=pointer]:
+                    - button [disabled] [ref=e679]:
+                      - img [ref=e680]
+                    - button [disabled] [ref=e684]:
+                      - img [ref=e685]
+                    - button "Generate Report" [ref=e688] [cursor=pointer]:
+                      - img [ref=e689] [cursor=pointer]
+                - button "N23369A73464, Triston Form A 09/04/2025 ●Submitted" [ref=e692] [cursor=pointer]:
+                  - generic [ref=e694] [cursor=pointer]: N23369A73464, Triston
+                  - generic [ref=e696] [cursor=pointer]:
+                    - generic [ref=e697] [cursor=pointer]: Form A
+                    - img [ref=e699] [cursor=pointer]
+                  - generic [ref=e702] [cursor=pointer]: 09/04/2025
+                  - generic [ref=e705] [cursor=pointer]:
+                    - generic [ref=e706] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e707] [cursor=pointer]:
+                    - button [disabled] [ref=e708]:
+                      - img [ref=e709]
+                    - button [disabled] [ref=e713]:
+                      - img [ref=e714]
+                    - button "Generate Report" [ref=e717] [cursor=pointer]:
+                      - img [ref=e718] [cursor=pointer]
+                - button "N75162A88464, Burdette Form A 07/01/2025 ●Not Started" [ref=e721] [cursor=pointer]:
+                  - generic [ref=e723] [cursor=pointer]: N75162A88464, Burdette
+                  - generic [ref=e725] [cursor=pointer]:
+                    - generic [ref=e726] [cursor=pointer]: Form A
+                    - img [ref=e728] [cursor=pointer]
+                  - generic [ref=e731] [cursor=pointer]: 07/01/2025
+                  - generic [ref=e734] [cursor=pointer]:
+                    - generic [ref=e735] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e736] [cursor=pointer]:
+                    - button [disabled] [ref=e737]:
+                      - img [ref=e738]
+                    - button [disabled] [ref=e742]:
+                      - img [ref=e743]
+                    - button [ref=e746] [cursor=pointer]:
+                      - img [ref=e747] [cursor=pointer]
+                - button "N64817A29105, Zaria Form A 06/12/2025 ●Expired" [ref=e749] [cursor=pointer]:
+                  - generic [ref=e751] [cursor=pointer]: N64817A29105, Zaria
+                  - generic [ref=e753] [cursor=pointer]:
+                    - generic [ref=e754] [cursor=pointer]: Form A
+                    - img [ref=e756] [cursor=pointer]
+                  - generic [ref=e759] [cursor=pointer]: 06/12/2025
+                  - generic [ref=e762] [cursor=pointer]:
+                    - generic [ref=e763] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e765] [cursor=pointer]:
+                    - img [ref=e766] [cursor=pointer]
+                - button "N25745A69361, Stephanie Form A 06/12/2025 ●Expired" [ref=e769] [cursor=pointer]:
+                  - generic [ref=e771] [cursor=pointer]: N25745A69361, Stephanie
+                  - generic [ref=e773] [cursor=pointer]:
+                    - generic [ref=e774] [cursor=pointer]: Form A
+                    - img [ref=e776] [cursor=pointer]
+                  - generic [ref=e779] [cursor=pointer]: 06/12/2025
+                  - generic [ref=e782] [cursor=pointer]:
+                    - generic [ref=e783] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e785] [cursor=pointer]:
+                    - img [ref=e786] [cursor=pointer]
+                - button "N72849A54477, Duane Form A 06/12/2025 ●Expired" [ref=e789] [cursor=pointer]:
+                  - generic [ref=e791] [cursor=pointer]: N72849A54477, Duane
+                  - generic [ref=e793] [cursor=pointer]:
+                    - generic [ref=e794] [cursor=pointer]: Form A
+                    - img [ref=e796] [cursor=pointer]
+                  - generic [ref=e799] [cursor=pointer]: 06/12/2025
+                  - generic [ref=e802] [cursor=pointer]:
+                    - generic [ref=e803] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e805] [cursor=pointer]:
+                    - img [ref=e806] [cursor=pointer]
+                - button "N45870A3112, Mike Form A 06/12/2025 ●Expired" [ref=e809] [cursor=pointer]:
+                  - generic [ref=e811] [cursor=pointer]: N45870A3112, Mike
+                  - generic [ref=e813] [cursor=pointer]:
+                    - generic [ref=e814] [cursor=pointer]: Form A
+                    - img [ref=e816] [cursor=pointer]
+                  - generic [ref=e819] [cursor=pointer]: 06/12/2025
+                  - generic [ref=e822] [cursor=pointer]:
+                    - generic [ref=e823] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e825] [cursor=pointer]:
+                    - img [ref=e826] [cursor=pointer]
+                - button "N35926A6565, Harold Form A 06/03/2025 ●Expired" [ref=e829] [cursor=pointer]:
+                  - generic [ref=e831] [cursor=pointer]: N35926A6565, Harold
+                  - generic [ref=e833] [cursor=pointer]:
+                    - generic [ref=e834] [cursor=pointer]: Form A
+                    - img [ref=e836] [cursor=pointer]
+                  - generic [ref=e839] [cursor=pointer]: 06/03/2025
+                  - generic [ref=e842] [cursor=pointer]:
+                    - generic [ref=e843] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e845] [cursor=pointer]:
+                    - img [ref=e846] [cursor=pointer]
+                - button "N81495A64068, Glenna Form A 06/03/2025 ●Expired" [ref=e849] [cursor=pointer]:
+                  - generic [ref=e851] [cursor=pointer]: N81495A64068, Glenna
+                  - generic [ref=e853] [cursor=pointer]:
+                    - generic [ref=e854] [cursor=pointer]: Form A
+                    - img [ref=e856] [cursor=pointer]
+                  - generic [ref=e859] [cursor=pointer]: 06/03/2025
+                  - generic [ref=e862] [cursor=pointer]:
+                    - generic [ref=e863] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e865] [cursor=pointer]:
+                    - img [ref=e866] [cursor=pointer]
+                - button "N21198A91817, Arne Form A 06/03/2025 ●Expired" [ref=e869] [cursor=pointer]:
+                  - generic [ref=e871] [cursor=pointer]: N21198A91817, Arne
+                  - generic [ref=e873] [cursor=pointer]:
+                    - generic [ref=e874] [cursor=pointer]: Form A
+                    - img [ref=e876] [cursor=pointer]
+                  - generic [ref=e879] [cursor=pointer]: 06/03/2025
+                  - generic [ref=e882] [cursor=pointer]:
+                    - generic [ref=e883] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e885] [cursor=pointer]:
+                    - img [ref=e886] [cursor=pointer]
+                - button "N23954A4745, Brooklyn Form A 06/03/2025 ●Expired" [ref=e889] [cursor=pointer]:
+                  - generic [ref=e891] [cursor=pointer]: N23954A4745, Brooklyn
+                  - generic [ref=e893] [cursor=pointer]:
+                    - generic [ref=e894] [cursor=pointer]: Form A
+                    - img [ref=e896] [cursor=pointer]
+                  - generic [ref=e899] [cursor=pointer]: 06/03/2025
+                  - generic [ref=e902] [cursor=pointer]:
+                    - generic [ref=e903] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e905] [cursor=pointer]:
+                    - img [ref=e906] [cursor=pointer]
+                - button "N94072A45224, Dameon Form A 06/03/2025 ●Expired" [ref=e909] [cursor=pointer]:
+                  - generic [ref=e911] [cursor=pointer]: N94072A45224, Dameon
+                  - generic [ref=e913] [cursor=pointer]:
+                    - generic [ref=e914] [cursor=pointer]: Form A
+                    - img [ref=e916] [cursor=pointer]
+                  - generic [ref=e919] [cursor=pointer]: 06/03/2025
+                  - generic [ref=e922] [cursor=pointer]:
+                    - generic [ref=e923] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e925] [cursor=pointer]:
+                    - img [ref=e926] [cursor=pointer]
+                - button "N14397A77331, Bartholome Form A 06/03/2025 ●Expired" [ref=e929] [cursor=pointer]:
+                  - generic [ref=e931] [cursor=pointer]: N14397A77331, Bartholome
+                  - generic [ref=e933] [cursor=pointer]:
+                    - generic [ref=e934] [cursor=pointer]: Form A
+                    - img [ref=e936] [cursor=pointer]
+                  - generic [ref=e939] [cursor=pointer]: 06/03/2025
+                  - generic [ref=e942] [cursor=pointer]:
+                    - generic [ref=e943] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e945] [cursor=pointer]:
+                    - img [ref=e946] [cursor=pointer]
+                - button "N8337A16363, Eden Form A 05/30/2025 ●Expired" [ref=e949] [cursor=pointer]:
+                  - generic [ref=e951] [cursor=pointer]: N8337A16363, Eden
+                  - generic [ref=e953] [cursor=pointer]:
+                    - generic [ref=e954] [cursor=pointer]: Form A
+                    - img [ref=e956] [cursor=pointer]
+                  - generic [ref=e959] [cursor=pointer]: 05/30/2025
+                  - generic [ref=e962] [cursor=pointer]:
+                    - generic [ref=e963] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e965] [cursor=pointer]:
+                    - img [ref=e966] [cursor=pointer]
+                - button "N250A67028, Fletcher Form A 05/30/2025 ●Expired" [ref=e969] [cursor=pointer]:
+                  - generic [ref=e971] [cursor=pointer]: N250A67028, Fletcher
+                  - generic [ref=e973] [cursor=pointer]:
+                    - generic [ref=e974] [cursor=pointer]: Form A
+                    - img [ref=e976] [cursor=pointer]
+                  - generic [ref=e979] [cursor=pointer]: 05/30/2025
+                  - generic [ref=e982] [cursor=pointer]:
+                    - generic [ref=e983] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e985] [cursor=pointer]:
+                    - img [ref=e986] [cursor=pointer]
+                - button "N38573A18531, Scarlett Form A 05/28/2025 ●Not Started" [ref=e989] [cursor=pointer]:
+                  - generic [ref=e991] [cursor=pointer]: N38573A18531, Scarlett
+                  - generic [ref=e993] [cursor=pointer]:
+                    - generic [ref=e994] [cursor=pointer]: Form A
+                    - img [ref=e996] [cursor=pointer]
+                  - generic [ref=e999] [cursor=pointer]: 05/28/2025
+                  - generic [ref=e1002] [cursor=pointer]:
+                    - generic [ref=e1003] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e1004] [cursor=pointer]:
+                    - button [disabled] [ref=e1005]:
+                      - img [ref=e1006]
+                    - button [disabled] [ref=e1010]:
+                      - img [ref=e1011]
+                    - button [ref=e1014] [cursor=pointer]:
+                      - img [ref=e1015] [cursor=pointer]
+                - button "N78338A26305, Lizzie Form A 05/28/2025 ●Expired" [ref=e1017] [cursor=pointer]:
+                  - generic [ref=e1019] [cursor=pointer]: N78338A26305, Lizzie
+                  - generic [ref=e1021] [cursor=pointer]:
+                    - generic [ref=e1022] [cursor=pointer]: Form A
+                    - img [ref=e1024] [cursor=pointer]
+                  - generic [ref=e1027] [cursor=pointer]: 05/28/2025
+                  - generic [ref=e1030] [cursor=pointer]:
+                    - generic [ref=e1031] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1033] [cursor=pointer]:
+                    - img [ref=e1034] [cursor=pointer]
+                - button "N57853A55311, Kirk Form A 02/10/2025 ●Expired" [ref=e1037] [cursor=pointer]:
+                  - generic [ref=e1039] [cursor=pointer]: N57853A55311, Kirk
+                  - generic [ref=e1041] [cursor=pointer]:
+                    - generic [ref=e1042] [cursor=pointer]: Form A
+                    - img [ref=e1044] [cursor=pointer]
+                  - generic [ref=e1047] [cursor=pointer]: 02/10/2025
+                  - generic [ref=e1050] [cursor=pointer]:
+                    - generic [ref=e1051] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1053] [cursor=pointer]:
+                    - img [ref=e1054] [cursor=pointer]
+                - button "N19028A67944, Dangelo Form A 02/10/2025 ●Expired" [ref=e1057] [cursor=pointer]:
+                  - generic [ref=e1059] [cursor=pointer]: N19028A67944, Dangelo
+                  - generic [ref=e1061] [cursor=pointer]:
+                    - generic [ref=e1062] [cursor=pointer]: Form A
+                    - img [ref=e1064] [cursor=pointer]
+                  - generic [ref=e1067] [cursor=pointer]: 02/10/2025
+                  - generic [ref=e1070] [cursor=pointer]:
+                    - generic [ref=e1071] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1073] [cursor=pointer]:
+                    - img [ref=e1074] [cursor=pointer]
+                - button "N59963A72731, Cara Form A 02/10/2025 ●Expired" [ref=e1077] [cursor=pointer]:
+                  - generic [ref=e1079] [cursor=pointer]: N59963A72731, Cara
+                  - generic [ref=e1081] [cursor=pointer]:
+                    - generic [ref=e1082] [cursor=pointer]: Form A
+                    - img [ref=e1084] [cursor=pointer]
+                  - generic [ref=e1087] [cursor=pointer]: 02/10/2025
+                  - generic [ref=e1090] [cursor=pointer]:
+                    - generic [ref=e1091] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1093] [cursor=pointer]:
+                    - img [ref=e1094] [cursor=pointer]
+                - button "N2754A43943, Gregg Form A 01/29/2025 ●Expired" [ref=e1097] [cursor=pointer]:
+                  - generic [ref=e1099] [cursor=pointer]: N2754A43943, Gregg
+                  - generic [ref=e1101] [cursor=pointer]:
+                    - generic [ref=e1102] [cursor=pointer]: Form A
+                    - img [ref=e1104] [cursor=pointer]
+                  - generic [ref=e1107] [cursor=pointer]: 01/29/2025
+                  - generic [ref=e1110] [cursor=pointer]:
+                    - generic [ref=e1111] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1113] [cursor=pointer]:
+                    - img [ref=e1114] [cursor=pointer]
+                - button "N2282A51579, Summer Form A 01/29/2025 ●Expired" [ref=e1117] [cursor=pointer]:
+                  - generic [ref=e1119] [cursor=pointer]: N2282A51579, Summer
+                  - generic [ref=e1121] [cursor=pointer]:
+                    - generic [ref=e1122] [cursor=pointer]: Form A
+                    - img [ref=e1124] [cursor=pointer]
+                  - generic [ref=e1127] [cursor=pointer]: 01/29/2025
+                  - generic [ref=e1130] [cursor=pointer]:
+                    - generic [ref=e1131] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1133] [cursor=pointer]:
+                    - img [ref=e1134] [cursor=pointer]
+                - button "N43859A63478, Adan Form A 01/29/2025 ●Expired" [ref=e1137] [cursor=pointer]:
+                  - generic [ref=e1139] [cursor=pointer]: N43859A63478, Adan
+                  - generic [ref=e1141] [cursor=pointer]:
+                    - generic [ref=e1142] [cursor=pointer]: Form A
+                    - img [ref=e1144] [cursor=pointer]
+                  - generic [ref=e1147] [cursor=pointer]: 01/29/2025
+                  - generic [ref=e1150] [cursor=pointer]:
+                    - generic [ref=e1151] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1153] [cursor=pointer]:
+                    - img [ref=e1154] [cursor=pointer]
+                - button "N93367A15787, Jamil Form A 01/29/2025 ●Expired" [ref=e1157] [cursor=pointer]:
+                  - generic [ref=e1159] [cursor=pointer]: N93367A15787, Jamil
+                  - generic [ref=e1161] [cursor=pointer]:
+                    - generic [ref=e1162] [cursor=pointer]: Form A
+                    - img [ref=e1164] [cursor=pointer]
+                  - generic [ref=e1167] [cursor=pointer]: 01/29/2025
+                  - generic [ref=e1170] [cursor=pointer]:
+                    - generic [ref=e1171] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1173] [cursor=pointer]:
+                    - img [ref=e1174] [cursor=pointer]
+                - button "N46007A82240, Ilene Form A 01/29/2025 ●Expired" [ref=e1177] [cursor=pointer]:
+                  - generic [ref=e1179] [cursor=pointer]: N46007A82240, Ilene
+                  - generic [ref=e1181] [cursor=pointer]:
+                    - generic [ref=e1182] [cursor=pointer]: Form A
+                    - img [ref=e1184] [cursor=pointer]
+                  - generic [ref=e1187] [cursor=pointer]: 01/29/2025
+                  - generic [ref=e1190] [cursor=pointer]:
+                    - generic [ref=e1191] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1193] [cursor=pointer]:
+                    - img [ref=e1194] [cursor=pointer]
+                - button "N76373A6002, Dino Form A 01/29/2025 ●Expired" [ref=e1197] [cursor=pointer]:
+                  - generic [ref=e1199] [cursor=pointer]: N76373A6002, Dino
+                  - generic [ref=e1201] [cursor=pointer]:
+                    - generic [ref=e1202] [cursor=pointer]: Form A
+                    - img [ref=e1204] [cursor=pointer]
+                  - generic [ref=e1207] [cursor=pointer]: 01/29/2025
+                  - generic [ref=e1210] [cursor=pointer]:
+                    - generic [ref=e1211] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1213] [cursor=pointer]:
+                    - img [ref=e1214] [cursor=pointer]
+                - button "N67903A18473, Daphne Form A 01/23/2025 ●Expired" [ref=e1217] [cursor=pointer]:
+                  - generic [ref=e1219] [cursor=pointer]: N67903A18473, Daphne
+                  - generic [ref=e1221] [cursor=pointer]:
+                    - generic [ref=e1222] [cursor=pointer]: Form A
+                    - img [ref=e1224] [cursor=pointer]
+                  - generic [ref=e1227] [cursor=pointer]: 01/23/2025
+                  - generic [ref=e1230] [cursor=pointer]:
+                    - generic [ref=e1231] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1233] [cursor=pointer]:
+                    - img [ref=e1234] [cursor=pointer]
+                - button "N21451A89607, Lizeth Form A 01/23/2025 ●Expired" [ref=e1237] [cursor=pointer]:
+                  - generic [ref=e1239] [cursor=pointer]: N21451A89607, Lizeth
+                  - generic [ref=e1241] [cursor=pointer]:
+                    - generic [ref=e1242] [cursor=pointer]: Form A
+                    - img [ref=e1244] [cursor=pointer]
+                  - generic [ref=e1247] [cursor=pointer]: 01/23/2025
+                  - generic [ref=e1250] [cursor=pointer]:
+                    - generic [ref=e1251] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1253] [cursor=pointer]:
+                    - img [ref=e1254] [cursor=pointer]
+                - button "N77993A39271, Marco Form A 01/23/2025 ●Expired" [ref=e1257] [cursor=pointer]:
+                  - generic [ref=e1259] [cursor=pointer]: N77993A39271, Marco
+                  - generic [ref=e1261] [cursor=pointer]:
+                    - generic [ref=e1262] [cursor=pointer]: Form A
+                    - img [ref=e1264] [cursor=pointer]
+                  - generic [ref=e1267] [cursor=pointer]: 01/23/2025
+                  - generic [ref=e1270] [cursor=pointer]:
+                    - generic [ref=e1271] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1273] [cursor=pointer]:
+                    - img [ref=e1274] [cursor=pointer]
+                - button "N50474A19353, Aileen Form A 01/23/2025 ●Expired" [ref=e1277] [cursor=pointer]:
+                  - generic [ref=e1279] [cursor=pointer]: N50474A19353, Aileen
+                  - generic [ref=e1281] [cursor=pointer]:
+                    - generic [ref=e1282] [cursor=pointer]: Form A
+                    - img [ref=e1284] [cursor=pointer]
+                  - generic [ref=e1287] [cursor=pointer]: 01/23/2025
+                  - generic [ref=e1290] [cursor=pointer]:
+                    - generic [ref=e1291] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1293] [cursor=pointer]:
+                    - img [ref=e1294] [cursor=pointer]
+                - button "N80047A82009, Ramiro Form A 01/23/2025 ●Expired" [ref=e1297] [cursor=pointer]:
+                  - generic [ref=e1299] [cursor=pointer]: N80047A82009, Ramiro
+                  - generic [ref=e1301] [cursor=pointer]:
+                    - generic [ref=e1302] [cursor=pointer]: Form A
+                    - img [ref=e1304] [cursor=pointer]
+                  - generic [ref=e1307] [cursor=pointer]: 01/23/2025
+                  - generic [ref=e1310] [cursor=pointer]:
+                    - generic [ref=e1311] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1313] [cursor=pointer]:
+                    - img [ref=e1314] [cursor=pointer]
+                - button "N23701A9339, Zora Form A 01/23/2025 ●Expired" [ref=e1317] [cursor=pointer]:
+                  - generic [ref=e1319] [cursor=pointer]: N23701A9339, Zora
+                  - generic [ref=e1321] [cursor=pointer]:
+                    - generic [ref=e1322] [cursor=pointer]: Form A
+                    - img [ref=e1324] [cursor=pointer]
+                  - generic [ref=e1327] [cursor=pointer]: 01/23/2025
+                  - generic [ref=e1330] [cursor=pointer]:
+                    - generic [ref=e1331] [cursor=pointer]: ●
+                    - text: Expired
+                  - button "Generate Report" [ref=e1333] [cursor=pointer]:
+                    - img [ref=e1334] [cursor=pointer]
+            - generic [ref=e1337]:
+              - generic [ref=e1340]:
+                - img [ref=e1341]
+                - heading "Notifications Center" [level=3] [ref=e1345]
+              - generic [ref=e1346]:
+                - generic [ref=e1348]:
+                  - img [ref=e1349]
+                  - heading "Resources" [level=3] [ref=e1353]
+                - list [ref=e1354]:
+                  - listitem [ref=e1355]:
+                    - button "Riverside Learn" [ref=e1356] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e1357] [cursor=pointer]
+                      - img [ref=e1359] [cursor=pointer]
+                  - listitem [ref=e1361]:
+                    - button "Onboarding Tutorial Videos" [ref=e1362] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e1363] [cursor=pointer]
+                      - img [ref=e1365] [cursor=pointer]
+                  - listitem [ref=e1367]:
+                    - button "Quick Reference Guides" [ref=e1368] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e1369] [cursor=pointer]
+                      - img [ref=e1371] [cursor=pointer]
+                - generic [ref=e1374]: View All
+      - contentinfo [ref=e1375]:
+        - generic [ref=e1376]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e1377] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/?__hstc=20581799.e586e70be0fae076b84ce074858ccb36.1758800690596.1758800690596.1758806912131.2&__hssc=20581799.2.1758806912131&__hsfp=1408774332
+          - img "Riverside Insights Website" [ref=e1378] [cursor=pointer]
+        - generic [ref=e1379]:
+          - link "Riverside Insights Facebook" [ref=e1380] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e1381] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e1382] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e1383] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e1384] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e1385] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e1386] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e1387] [cursor=pointer]
+        - generic [ref=e1388]:
+          - link "Terms of Use" [ref=e1389] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.e586e70be0fae076b84ce074858ccb36.1758800690596.1758800690596.1758806912131.2&__hssc=20581799.2.1758806912131&__hsfp=1408774332
+          - generic [ref=e1390]: "|"
+          - link "Privacy Policy" [ref=e1391] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.e586e70be0fae076b84ce074858ccb36.1758800690596.1758800690596.1758806912131.2&__hssc=20581799.2.1758806912131&__hsfp=1408774332
+        - generic [ref=e1392]: Footer region end
+  - region "Chat Widget" [ref=e1393]:
+    - iframe [ref=e1394]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e1396]
+```
