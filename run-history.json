@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "113",
+    "timestamp": "20250926_000000",
+    "runReason": "Runnin (?=.*@Smoke)(?=.*(@TestDe|@DerivedScores)) after RON restarted the servers",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*(@TestDe|@DerivedScores))"
+  },
+  {
     "runNumber": "112",
     "timestamp": "20250926_000000",
     "runReason": "running (?=.*@Smoke)(?=.*(@TestDe)) since STAGE gas failed ",
