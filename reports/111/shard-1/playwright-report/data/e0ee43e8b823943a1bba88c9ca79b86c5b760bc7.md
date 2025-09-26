@@ -1,0 +1,505 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner "Clinical Products Header" [ref=e2]:
+    - generic [ref=e3]:
+      - button "Skip to main Content" [ref=e4]
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /products
+      - generic [ref=e6]: Riverside Insights Logo
+      - generic [ref=e7]:
+        - heading "Hello S01PwAut25Ex_01 ln" [level=2] [ref=e8]:
+          - generic [ref=e9]: Hello
+          - button "S01PwAut25Ex_01 ln" [ref=e10] [cursor=pointer]
+        - navigation [ref=e13]:
+          - button "Contact Us" [ref=e14] [cursor=pointer]
+          - button "| Subscription Details" [ref=e15] [cursor=pointer]
+          - button "| Sign Out" [ref=e16] [cursor=pointer]
+  - navigation "Navigation toolbar" [ref=e17]:
+    - menubar [ref=e19]:
+      - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+      - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+      - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+      - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+      - menuitem "Reports" [ref=e29] [cursor=pointer]:
+        - text: Reports
+        - img [ref=e30] [cursor=pointer]
+      - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+    - generic [ref=e34]:
+      - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+      - generic [ref=e36]: Offline Mode
+  - main [ref=e37]:
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - heading "My Test Assignments" [level=1] [ref=e41]
+          - button "Create New Test Assignment" [ref=e42] [cursor=pointer]
+        - generic [ref=e43]:
+          - generic [ref=e46]:
+            - textbox [ref=e47]
+            - button [ref=e48] [cursor=pointer]
+          - generic [ref=e49]:
+            - button "Active" [ref=e50] [cursor=pointer]
+            - button "Closed" [ref=e51] [cursor=pointer]
+        - generic [ref=e52]:
+          - generic "This is the student or individual being assessed." [ref=e53]: Examinee
+          - generic [ref=e54]: Test Set
+          - generic [ref=e55]: Days Left to Edit
+          - generic [ref=e56]: Status
+          - generic [ref=e57]: Actions
+          - button "N70713A52619, Ally Form A 30 days ●Submitted" [ref=e58] [cursor=pointer]:
+            - generic [ref=e60] [cursor=pointer]: N70713A52619, Ally
+            - generic [ref=e62] [cursor=pointer]:
+              - generic [ref=e63] [cursor=pointer]: Form A
+              - img [ref=e65] [cursor=pointer]
+            - generic [ref=e68] [cursor=pointer]: 30 days
+            - generic [ref=e71] [cursor=pointer]:
+              - generic [ref=e72] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e73] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e74] [cursor=pointer]:
+                - img [ref=e75] [cursor=pointer]
+              - button "Add tests to test set" [ref=e79] [cursor=pointer]:
+                - img [ref=e80] [cursor=pointer]
+              - button [ref=e83] [cursor=pointer]:
+                - img [ref=e84] [cursor=pointer]
+          - button "N12926A98012, Marlon Form A 30 days ●Submitted" [ref=e86] [cursor=pointer]:
+            - generic [ref=e88] [cursor=pointer]: N12926A98012, Marlon
+            - generic [ref=e90] [cursor=pointer]:
+              - generic [ref=e91] [cursor=pointer]: Form A
+              - img [ref=e93] [cursor=pointer]
+            - generic [ref=e96] [cursor=pointer]: 30 days
+            - generic [ref=e99] [cursor=pointer]:
+              - generic [ref=e100] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e101] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e102] [cursor=pointer]:
+                - img [ref=e103] [cursor=pointer]
+              - button "Add tests to test set" [ref=e107] [cursor=pointer]:
+                - img [ref=e108] [cursor=pointer]
+              - button [ref=e111] [cursor=pointer]:
+                - img [ref=e112] [cursor=pointer]
+          - button "N46986A53461, Jane Form A — ●Not Started" [ref=e114] [cursor=pointer]:
+            - generic [ref=e116] [cursor=pointer]: N46986A53461, Jane
+            - generic [ref=e118] [cursor=pointer]:
+              - generic [ref=e119] [cursor=pointer]: Form A
+              - img [ref=e121] [cursor=pointer]
+            - generic [ref=e124] [cursor=pointer]: —
+            - generic [ref=e127] [cursor=pointer]:
+              - generic [ref=e128] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e129] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e130] [cursor=pointer]:
+                - img [ref=e131] [cursor=pointer]
+              - button "Add tests to test set" [ref=e135] [cursor=pointer]:
+                - img [ref=e136] [cursor=pointer]
+              - button [ref=e139] [cursor=pointer]:
+                - img [ref=e140] [cursor=pointer]
+          - button "N3087A61692, Wellington Form A — ●Not Started" [ref=e142] [cursor=pointer]:
+            - generic [ref=e144] [cursor=pointer]: N3087A61692, Wellington
+            - generic [ref=e146] [cursor=pointer]:
+              - generic [ref=e147] [cursor=pointer]: Form A
+              - img [ref=e149] [cursor=pointer]
+            - generic [ref=e152] [cursor=pointer]: —
+            - generic [ref=e155] [cursor=pointer]:
+              - generic [ref=e156] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e157] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e158] [cursor=pointer]:
+                - img [ref=e159] [cursor=pointer]
+              - button "Add tests to test set" [ref=e163] [cursor=pointer]:
+                - img [ref=e164] [cursor=pointer]
+              - button [ref=e167] [cursor=pointer]:
+                - img [ref=e168] [cursor=pointer]
+          - button "N17910A90476, Laron Form A — ●Not Started" [ref=e170] [cursor=pointer]:
+            - generic [ref=e172] [cursor=pointer]: N17910A90476, Laron
+            - generic [ref=e174] [cursor=pointer]:
+              - generic [ref=e175] [cursor=pointer]: Form A
+              - img [ref=e177] [cursor=pointer]
+            - generic [ref=e180] [cursor=pointer]: —
+            - generic [ref=e183] [cursor=pointer]:
+              - generic [ref=e184] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e185] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e186] [cursor=pointer]:
+                - img [ref=e187] [cursor=pointer]
+              - button "Add tests to test set" [ref=e191] [cursor=pointer]:
+                - img [ref=e192] [cursor=pointer]
+              - button [ref=e195] [cursor=pointer]:
+                - img [ref=e196] [cursor=pointer]
+          - button "N25479A18529, Toy Form A — ●Not Started" [ref=e198] [cursor=pointer]:
+            - generic [ref=e200] [cursor=pointer]: N25479A18529, Toy
+            - generic [ref=e202] [cursor=pointer]:
+              - generic [ref=e203] [cursor=pointer]: Form A
+              - img [ref=e205] [cursor=pointer]
+            - generic [ref=e208] [cursor=pointer]: —
+            - generic [ref=e211] [cursor=pointer]:
+              - generic [ref=e212] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e213] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e214] [cursor=pointer]:
+                - img [ref=e215] [cursor=pointer]
+              - button "Add tests to test set" [ref=e219] [cursor=pointer]:
+                - img [ref=e220] [cursor=pointer]
+              - button [ref=e223] [cursor=pointer]:
+                - img [ref=e224] [cursor=pointer]
+          - button "N11626A54794, Shanelle Form A — ●Not Started" [ref=e226] [cursor=pointer]:
+            - generic [ref=e228] [cursor=pointer]: N11626A54794, Shanelle
+            - generic [ref=e230] [cursor=pointer]:
+              - generic [ref=e231] [cursor=pointer]: Form A
+              - img [ref=e233] [cursor=pointer]
+            - generic [ref=e236] [cursor=pointer]: —
+            - generic [ref=e239] [cursor=pointer]:
+              - generic [ref=e240] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e241] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e242] [cursor=pointer]:
+                - img [ref=e243] [cursor=pointer]
+              - button "Add tests to test set" [ref=e247] [cursor=pointer]:
+                - img [ref=e248] [cursor=pointer]
+              - button [ref=e251] [cursor=pointer]:
+                - img [ref=e252] [cursor=pointer]
+          - button "N57181A23160, Rudy Form A — ●Not Started" [ref=e254] [cursor=pointer]:
+            - generic [ref=e256] [cursor=pointer]: N57181A23160, Rudy
+            - generic [ref=e258] [cursor=pointer]:
+              - generic [ref=e259] [cursor=pointer]: Form A
+              - img [ref=e261] [cursor=pointer]
+            - generic [ref=e264] [cursor=pointer]: —
+            - generic [ref=e267] [cursor=pointer]:
+              - generic [ref=e268] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e269] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e270] [cursor=pointer]:
+                - img [ref=e271] [cursor=pointer]
+              - button "Add tests to test set" [ref=e275] [cursor=pointer]:
+                - img [ref=e276] [cursor=pointer]
+              - button [ref=e279] [cursor=pointer]:
+                - img [ref=e280] [cursor=pointer]
+          - button "N92770A75539, Elody Form A — ●Not Started" [ref=e282] [cursor=pointer]:
+            - generic [ref=e284] [cursor=pointer]: N92770A75539, Elody
+            - generic [ref=e286] [cursor=pointer]:
+              - generic [ref=e287] [cursor=pointer]: Form A
+              - img [ref=e289] [cursor=pointer]
+            - generic [ref=e292] [cursor=pointer]: —
+            - generic [ref=e295] [cursor=pointer]:
+              - generic [ref=e296] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e297] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e298] [cursor=pointer]:
+                - img [ref=e299] [cursor=pointer]
+              - button "Add tests to test set" [ref=e303] [cursor=pointer]:
+                - img [ref=e304] [cursor=pointer]
+              - button [ref=e307] [cursor=pointer]:
+                - img [ref=e308] [cursor=pointer]
+          - button "N6870A49869, Faye Form A — ●Not Started" [ref=e310] [cursor=pointer]:
+            - generic [ref=e312] [cursor=pointer]: N6870A49869, Faye
+            - generic [ref=e314] [cursor=pointer]:
+              - generic [ref=e315] [cursor=pointer]: Form A
+              - img [ref=e317] [cursor=pointer]
+            - generic [ref=e320] [cursor=pointer]: —
+            - generic [ref=e323] [cursor=pointer]:
+              - generic [ref=e324] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e325] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e326] [cursor=pointer]:
+                - img [ref=e327] [cursor=pointer]
+              - button "Add tests to test set" [ref=e331] [cursor=pointer]:
+                - img [ref=e332] [cursor=pointer]
+              - button [ref=e335] [cursor=pointer]:
+                - img [ref=e336] [cursor=pointer]
+          - button "N93312A94092, Dion Form A — ●Not Started" [ref=e338] [cursor=pointer]:
+            - generic [ref=e340] [cursor=pointer]: N93312A94092, Dion
+            - generic [ref=e342] [cursor=pointer]:
+              - generic [ref=e343] [cursor=pointer]: Form A
+              - img [ref=e345] [cursor=pointer]
+            - generic [ref=e348] [cursor=pointer]: —
+            - generic [ref=e351] [cursor=pointer]:
+              - generic [ref=e352] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e353] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e354] [cursor=pointer]:
+                - img [ref=e355] [cursor=pointer]
+              - button "Add tests to test set" [ref=e359] [cursor=pointer]:
+                - img [ref=e360] [cursor=pointer]
+              - button [ref=e363] [cursor=pointer]:
+                - img [ref=e364] [cursor=pointer]
+          - button "N63995A62283, Johann Form A — ●Not Started" [ref=e366] [cursor=pointer]:
+            - generic [ref=e368] [cursor=pointer]: N63995A62283, Johann
+            - generic [ref=e370] [cursor=pointer]:
+              - generic [ref=e371] [cursor=pointer]: Form A
+              - img [ref=e373] [cursor=pointer]
+            - generic [ref=e376] [cursor=pointer]: —
+            - generic [ref=e379] [cursor=pointer]:
+              - generic [ref=e380] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e381] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e382] [cursor=pointer]:
+                - img [ref=e383] [cursor=pointer]
+              - button "Add tests to test set" [ref=e387] [cursor=pointer]:
+                - img [ref=e388] [cursor=pointer]
+              - button [ref=e391] [cursor=pointer]:
+                - img [ref=e392] [cursor=pointer]
+          - button "N4012A761, Alessandro Form A — ●Not Started" [ref=e394] [cursor=pointer]:
+            - generic [ref=e396] [cursor=pointer]: N4012A761, Alessandro
+            - generic [ref=e398] [cursor=pointer]:
+              - generic [ref=e399] [cursor=pointer]: Form A
+              - img [ref=e401] [cursor=pointer]
+            - generic [ref=e404] [cursor=pointer]: —
+            - generic [ref=e407] [cursor=pointer]:
+              - generic [ref=e408] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e409] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e410] [cursor=pointer]:
+                - img [ref=e411] [cursor=pointer]
+              - button "Add tests to test set" [ref=e415] [cursor=pointer]:
+                - img [ref=e416] [cursor=pointer]
+              - button [ref=e419] [cursor=pointer]:
+                - img [ref=e420] [cursor=pointer]
+          - button "N57182A19031, Carmine Form A — ●Not Started" [ref=e422] [cursor=pointer]:
+            - generic [ref=e424] [cursor=pointer]: N57182A19031, Carmine
+            - generic [ref=e426] [cursor=pointer]:
+              - generic [ref=e427] [cursor=pointer]: Form A
+              - img [ref=e429] [cursor=pointer]
+            - generic [ref=e432] [cursor=pointer]: —
+            - generic [ref=e435] [cursor=pointer]:
+              - generic [ref=e436] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e437] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e438] [cursor=pointer]:
+                - img [ref=e439] [cursor=pointer]
+              - button "Add tests to test set" [ref=e443] [cursor=pointer]:
+                - img [ref=e444] [cursor=pointer]
+              - button [ref=e447] [cursor=pointer]:
+                - img [ref=e448] [cursor=pointer]
+          - button "N936A17613, Haskell Form A — ●Not Started" [ref=e450] [cursor=pointer]:
+            - generic [ref=e452] [cursor=pointer]: N936A17613, Haskell
+            - generic [ref=e454] [cursor=pointer]:
+              - generic [ref=e455] [cursor=pointer]: Form A
+              - img [ref=e457] [cursor=pointer]
+            - generic [ref=e460] [cursor=pointer]: —
+            - generic [ref=e463] [cursor=pointer]:
+              - generic [ref=e464] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e465] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e466] [cursor=pointer]:
+                - img [ref=e467] [cursor=pointer]
+              - button "Add tests to test set" [ref=e471] [cursor=pointer]:
+                - img [ref=e472] [cursor=pointer]
+              - button [ref=e475] [cursor=pointer]:
+                - img [ref=e476] [cursor=pointer]
+          - button "N84072A59918, Joelle Form A — ●Not Started" [ref=e478] [cursor=pointer]:
+            - generic [ref=e480] [cursor=pointer]: N84072A59918, Joelle
+            - generic [ref=e482] [cursor=pointer]:
+              - generic [ref=e483] [cursor=pointer]: Form A
+              - img [ref=e485] [cursor=pointer]
+            - generic [ref=e488] [cursor=pointer]: —
+            - generic [ref=e491] [cursor=pointer]:
+              - generic [ref=e492] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e493] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e494] [cursor=pointer]:
+                - img [ref=e495] [cursor=pointer]
+              - button "Add tests to test set" [ref=e499] [cursor=pointer]:
+                - img [ref=e500] [cursor=pointer]
+              - button [ref=e503] [cursor=pointer]:
+                - img [ref=e504] [cursor=pointer]
+          - button "N9585A47368, Beryl Form A — ●Not Started" [ref=e506] [cursor=pointer]:
+            - generic [ref=e508] [cursor=pointer]: N9585A47368, Beryl
+            - generic [ref=e510] [cursor=pointer]:
+              - generic [ref=e511] [cursor=pointer]: Form A
+              - img [ref=e513] [cursor=pointer]
+            - generic [ref=e516] [cursor=pointer]: —
+            - generic [ref=e519] [cursor=pointer]:
+              - generic [ref=e520] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e521] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e522] [cursor=pointer]:
+                - img [ref=e523] [cursor=pointer]
+              - button "Add tests to test set" [ref=e527] [cursor=pointer]:
+                - img [ref=e528] [cursor=pointer]
+              - button [ref=e531] [cursor=pointer]:
+                - img [ref=e532] [cursor=pointer]
+          - button "N74367A38046, Catherine Form A — ●Not Started" [ref=e534] [cursor=pointer]:
+            - generic [ref=e536] [cursor=pointer]: N74367A38046, Catherine
+            - generic [ref=e538] [cursor=pointer]:
+              - generic [ref=e539] [cursor=pointer]: Form A
+              - img [ref=e541] [cursor=pointer]
+            - generic [ref=e544] [cursor=pointer]: —
+            - generic [ref=e547] [cursor=pointer]:
+              - generic [ref=e548] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e549] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e550] [cursor=pointer]:
+                - img [ref=e551] [cursor=pointer]
+              - button "Add tests to test set" [ref=e555] [cursor=pointer]:
+                - img [ref=e556] [cursor=pointer]
+              - button [ref=e559] [cursor=pointer]:
+                - img [ref=e560] [cursor=pointer]
+          - button "N26740A3299, Lilly Form A — ●Not Started" [ref=e562] [cursor=pointer]:
+            - generic [ref=e564] [cursor=pointer]: N26740A3299, Lilly
+            - generic [ref=e566] [cursor=pointer]:
+              - generic [ref=e567] [cursor=pointer]: Form A
+              - img [ref=e569] [cursor=pointer]
+            - generic [ref=e572] [cursor=pointer]: —
+            - generic [ref=e575] [cursor=pointer]:
+              - generic [ref=e576] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e577] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e578] [cursor=pointer]:
+                - img [ref=e579] [cursor=pointer]
+              - button "Add tests to test set" [ref=e583] [cursor=pointer]:
+                - img [ref=e584] [cursor=pointer]
+              - button [ref=e587] [cursor=pointer]:
+                - img [ref=e588] [cursor=pointer]
+          - button "N77185A19554, Carlo Form A — ●Not Started" [ref=e590] [cursor=pointer]:
+            - generic [ref=e592] [cursor=pointer]: N77185A19554, Carlo
+            - generic [ref=e594] [cursor=pointer]:
+              - generic [ref=e595] [cursor=pointer]: Form A
+              - img [ref=e597] [cursor=pointer]
+            - generic [ref=e600] [cursor=pointer]: —
+            - generic [ref=e603] [cursor=pointer]:
+              - generic [ref=e604] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e605] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e606] [cursor=pointer]:
+                - img [ref=e607] [cursor=pointer]
+              - button "Add tests to test set" [ref=e611] [cursor=pointer]:
+                - img [ref=e612] [cursor=pointer]
+              - button [ref=e615] [cursor=pointer]:
+                - img [ref=e616] [cursor=pointer]
+          - button "N60213A67031, Elisha Form A — ●Not Started" [ref=e618] [cursor=pointer]:
+            - generic [ref=e620] [cursor=pointer]: N60213A67031, Elisha
+            - generic [ref=e622] [cursor=pointer]:
+              - generic [ref=e623] [cursor=pointer]: Form A
+              - img [ref=e625] [cursor=pointer]
+            - generic [ref=e628] [cursor=pointer]: —
+            - generic [ref=e631] [cursor=pointer]:
+              - generic [ref=e632] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e633] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e634] [cursor=pointer]:
+                - img [ref=e635] [cursor=pointer]
+              - button "Add tests to test set" [ref=e639] [cursor=pointer]:
+                - img [ref=e640] [cursor=pointer]
+              - button [ref=e643] [cursor=pointer]:
+                - img [ref=e644] [cursor=pointer]
+          - button "N92798A16182, Kiera Form A — ●Not Started" [ref=e646] [cursor=pointer]:
+            - generic [ref=e648] [cursor=pointer]: N92798A16182, Kiera
+            - generic [ref=e650] [cursor=pointer]:
+              - generic [ref=e651] [cursor=pointer]: Form A
+              - img [ref=e653] [cursor=pointer]
+            - generic [ref=e656] [cursor=pointer]: —
+            - generic [ref=e659] [cursor=pointer]:
+              - generic [ref=e660] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e661] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e662] [cursor=pointer]:
+                - img [ref=e663] [cursor=pointer]
+              - button "Add tests to test set" [ref=e667] [cursor=pointer]:
+                - img [ref=e668] [cursor=pointer]
+              - button [ref=e671] [cursor=pointer]:
+                - img [ref=e672] [cursor=pointer]
+          - button "N75351A29632, Dixie Form A — ●Not Started" [ref=e674] [cursor=pointer]:
+            - generic [ref=e676] [cursor=pointer]: N75351A29632, Dixie
+            - generic [ref=e678] [cursor=pointer]:
+              - generic [ref=e679] [cursor=pointer]: Form A
+              - img [ref=e681] [cursor=pointer]
+            - generic [ref=e684] [cursor=pointer]: —
+            - generic [ref=e687] [cursor=pointer]:
+              - generic [ref=e688] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e689] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e690] [cursor=pointer]:
+                - img [ref=e691] [cursor=pointer]
+              - button "Add tests to test set" [ref=e695] [cursor=pointer]:
+                - img [ref=e696] [cursor=pointer]
+              - button [ref=e699] [cursor=pointer]:
+                - img [ref=e700] [cursor=pointer]
+          - button "N60891A86859, Pink Form A — ●Not Started" [ref=e702] [cursor=pointer]:
+            - generic [ref=e704] [cursor=pointer]: N60891A86859, Pink
+            - generic [ref=e706] [cursor=pointer]:
+              - generic [ref=e707] [cursor=pointer]: Form A
+              - img [ref=e709] [cursor=pointer]
+            - generic [ref=e712] [cursor=pointer]: —
+            - generic [ref=e715] [cursor=pointer]:
+              - generic [ref=e716] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e717] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e718] [cursor=pointer]:
+                - img [ref=e719] [cursor=pointer]
+              - button "Add tests to test set" [ref=e723] [cursor=pointer]:
+                - img [ref=e724] [cursor=pointer]
+              - button [ref=e727] [cursor=pointer]:
+                - img [ref=e728] [cursor=pointer]
+          - button "N42451A8155, Edwardo Form A — ●Not Started" [ref=e730] [cursor=pointer]:
+            - generic [ref=e732] [cursor=pointer]: N42451A8155, Edwardo
+            - generic [ref=e734] [cursor=pointer]:
+              - generic [ref=e735] [cursor=pointer]: Form A
+              - img [ref=e737] [cursor=pointer]
+            - generic [ref=e740] [cursor=pointer]: —
+            - generic [ref=e743] [cursor=pointer]:
+              - generic [ref=e744] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e745] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e746] [cursor=pointer]:
+                - img [ref=e747] [cursor=pointer]
+              - button "Add tests to test set" [ref=e751] [cursor=pointer]:
+                - img [ref=e752] [cursor=pointer]
+              - button [ref=e755] [cursor=pointer]:
+                - img [ref=e756] [cursor=pointer]
+          - button "N94966A45197, Madison Form A — ●Not Started" [ref=e758] [cursor=pointer]:
+            - generic [ref=e760] [cursor=pointer]: N94966A45197, Madison
+            - generic [ref=e762] [cursor=pointer]:
+              - generic [ref=e763] [cursor=pointer]: Form A
+              - img [ref=e765] [cursor=pointer]
+            - generic [ref=e768] [cursor=pointer]: —
+            - generic [ref=e771] [cursor=pointer]:
+              - generic [ref=e772] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e773] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e774] [cursor=pointer]:
+                - img [ref=e775] [cursor=pointer]
+              - button "Add tests to test set" [ref=e779] [cursor=pointer]:
+                - img [ref=e780] [cursor=pointer]
+              - button [ref=e783] [cursor=pointer]:
+                - img [ref=e784] [cursor=pointer]
+          - button "N43850A59040, Josefa Form A — ●Not Started" [ref=e786] [cursor=pointer]:
+            - generic [ref=e788] [cursor=pointer]: N43850A59040, Josefa
+            - generic [ref=e790] [cursor=pointer]:
+              - generic [ref=e791] [cursor=pointer]: Form A
+              - img [ref=e793] [cursor=pointer]
+            - generic [ref=e796] [cursor=pointer]: —
+            - generic [ref=e799] [cursor=pointer]:
+              - generic [ref=e800] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e801] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e802] [cursor=pointer]:
+                - img [ref=e803] [cursor=pointer]
+              - button "Add tests to test set" [ref=e807] [cursor=pointer]:
+                - img [ref=e808] [cursor=pointer]
+              - button [ref=e811] [cursor=pointer]:
+                - img [ref=e812] [cursor=pointer]
+      - generic [ref=e814]:
+        - generic [ref=e817]:
+          - img [ref=e818]
+          - heading "Notifications Center" [level=3] [ref=e822]
+        - generic [ref=e823]:
+          - generic [ref=e825]:
+            - img [ref=e826]
+            - heading "Resources" [level=3] [ref=e830]
+          - list [ref=e831]:
+            - listitem [ref=e832]:
+              - button "Riverside Learn" [ref=e833] [cursor=pointer]:
+                - heading "Riverside Learn" [level=6] [ref=e834] [cursor=pointer]
+                - img [ref=e836] [cursor=pointer]
+            - listitem [ref=e838]:
+              - button "Onboarding Tutorial Videos" [ref=e839] [cursor=pointer]:
+                - heading "Onboarding Tutorial Videos" [level=6] [ref=e840] [cursor=pointer]
+                - img [ref=e842] [cursor=pointer]
+            - listitem [ref=e844]:
+              - button "Quick Reference Guides" [ref=e845] [cursor=pointer]:
+                - heading "Quick Reference Guides" [level=6] [ref=e846] [cursor=pointer]
+                - img [ref=e848] [cursor=pointer]
+          - generic [ref=e851]: View All
+```

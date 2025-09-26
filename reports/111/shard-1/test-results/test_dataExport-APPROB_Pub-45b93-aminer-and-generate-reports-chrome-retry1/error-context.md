@@ -1,0 +1,106 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S01PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S01PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - heading "REPORT CENTER" [level=1] [ref=e39]
+            - navigation [ref=e40]:
+              - tablist [ref=e41]:
+                - tab "Report Library" [selected] [ref=e42] [cursor=pointer]
+                - button "Zoom In" [ref=e43] [cursor=pointer]:
+                  - img "Zoom Page In Icon" [ref=e44] [cursor=pointer]
+            - grid [ref=e54]:
+              - generic [ref=e55]:
+                - generic [ref=e58]: Report Name
+                - generic [ref=e61]: Status
+                - generic [ref=e64]: Date Created
+                - generic [ref=e67]: Actions
+              - rowgroup [ref=e68]:
+                - row "Report Name Test_DataExport_AutoFilter_Template_N37135A80198 Status Completed Date Created 09/26/2025 08:22 AM Download/Print Delete View Data Export Format" [ref=e69]:
+                  - gridcell "Report Name Test_DataExport_AutoFilter_Template_N37135A80198" [ref=e71]: Test_DataExport_AutoFilter_Template_N37135A80198
+                  - gridcell "Status Completed" [ref=e73]: Completed
+                  - gridcell "Date Created 09/26/2025 08:22 AM" [ref=e75]: 09/26/2025 08:22 AM
+                  - generic [ref=e76]:
+                    - link "Download/Print" [ref=e77] [cursor=pointer]:
+                      - gridcell "Download/Print" [active] [ref=e78] [cursor=pointer]
+                    - gridcell "Delete" [ref=e80] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e81] [cursor=pointer]
+                - row "Report Name Test_DataExport_AutoFilter_Template_N70713A52619 Status Completed Date Created 09/26/2025 08:20 AM Download/Print Delete View Data Export Format" [ref=e83]:
+                  - gridcell "Report Name Test_DataExport_AutoFilter_Template_N70713A52619" [ref=e85]: Test_DataExport_AutoFilter_Template_N70713A52619
+                  - gridcell "Status Completed" [ref=e87]: Completed
+                  - gridcell "Date Created 09/26/2025 08:20 AM" [ref=e89]: 09/26/2025 08:20 AM
+                  - generic [ref=e90]:
+                    - link "Download/Print" [ref=e91] [cursor=pointer]:
+                      - gridcell "Download/Print" [ref=e92] [cursor=pointer]
+                    - gridcell "Delete" [ref=e94] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e95] [cursor=pointer]
+                - row "Report Name Test_DataExport_AutoFilter_Template_N12926A98012 Status Completed Date Created 09/26/2025 08:18 AM Download/Print Delete View Data Export Format" [ref=e97]:
+                  - gridcell "Report Name Test_DataExport_AutoFilter_Template_N12926A98012" [ref=e99]: Test_DataExport_AutoFilter_Template_N12926A98012
+                  - gridcell "Status Completed" [ref=e101]: Completed
+                  - gridcell "Date Created 09/26/2025 08:18 AM" [ref=e103]: 09/26/2025 08:18 AM
+                  - generic [ref=e104]:
+                    - link "Download/Print" [ref=e105] [cursor=pointer]:
+                      - gridcell "Download/Print" [ref=e106] [cursor=pointer]
+                    - gridcell "Delete" [ref=e108] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e109] [cursor=pointer]
+      - contentinfo [ref=e111]:
+        - generic [ref=e112]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e113] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/?__hstc=94725763.614bcf2210bb740f62af3b6d488fb0f8.1758892486592.1758892486592.1758892486592.1&__hssc=94725763.3.1758892486592&__hsfp=1408774332
+          - img "Riverside Insights Website" [ref=e114] [cursor=pointer]
+        - generic [ref=e115]:
+          - link "Riverside Insights Facebook" [ref=e116] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e117] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e118] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e119] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e120] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e121] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e122] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e123] [cursor=pointer]
+        - generic [ref=e124]:
+          - img "build status widget" [ref=e125]
+          - link "Terms of Use" [ref=e126] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=94725763.614bcf2210bb740f62af3b6d488fb0f8.1758892486592.1758892486592.1758892486592.1&__hssc=94725763.3.1758892486592&__hsfp=1408774332
+          - generic [ref=e127]: "|"
+          - link "Privacy Policy" [ref=e128] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=94725763.614bcf2210bb740f62af3b6d488fb0f8.1758892486592.1758892486592.1758892486592.1&__hssc=94725763.3.1758892486592&__hsfp=1408774332
+        - generic [ref=e129]: Footer region end
+```

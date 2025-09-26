@@ -1,4 +1,0 @@
-Large file detected: shard-1/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/trace.zip (120.70 MB)
-Large file detected: shard-1/playwright-report/data/2e65a9bc3472182421eaff6d331c630b15a9014e.zip (120.70 MB)
-Large file detected: shard-2/test-results/test_dataExport-CALC_Pub-C-654d4-ct-test-and-validate-report-chrome/trace.zip (122.83 MB)
-Large file detected: shard-2/playwright-report/data/9e7700d402d44229cb843c28afaa85c43b3f1c34.zip (122.83 MB)
