@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "114",
+    "timestamp": "20250929_000000",
+    "runReason": "Running (?=.*@Smoke)(?=.*(@TestDe|@DerivedScores in prod as a part of patching ",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*(@TestDe|@DerivedScores))"
+  },
+  {
     "runNumber": "113",
     "timestamp": "20250926_000000",
     "runReason": "Runnin (?=.*@Smoke)(?=.*(@TestDe|@DerivedScores)) after RON restarted the servers",
