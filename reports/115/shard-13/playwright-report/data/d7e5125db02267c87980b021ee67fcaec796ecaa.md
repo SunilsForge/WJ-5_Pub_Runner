@@ -1,0 +1,121 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - main [ref=e4]:
+      - generic [ref=e6]:
+        - button [ref=e7]: Skip to main Content
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /products
+        - generic [ref=e9]: Riverside Insights Logo
+        - generic [ref=e10]:
+          - heading [level=2] [ref=e11]:
+            - generic [ref=e12]: Hello
+            - button [ref=e13] [cursor=pointer]: 07PwAut25AH ln
+          - navigation [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: https://riversideinsights.com/explore?__hstc=20581799.c47e21ab6e3d837e7d03635ae4a79c59.1759153029680.1759153029680.1759153029680.1&__hssc=20581799.1.1759153029680&__hsfp=1408774332
+              - text: Shop Now
+            - generic [ref=e18]: "|"
+            - button [ref=e19] [cursor=pointer]: Contact Us
+            - generic [ref=e20]: "|"
+            - button [ref=e21] [cursor=pointer]: Sign Out
+      - button [ref=e29] [cursor=pointer]: Update Profile
+      - generic [ref=e32]: "To access scoring and reporting, please make a selection below:"
+      - menubar [ref=e33]:
+        - menuitem [ref=e34] [cursor=pointer]
+      - generic [ref=e35]:
+        - menubar [ref=e36]:
+          - button [ref=e37] [cursor=pointer]:
+            - generic [ref=e38] [cursor=pointer]: Riverside Updates
+          - button [ref=e39] [cursor=pointer]:
+            - generic [ref=e40] [cursor=pointer]: Webinars
+          - button [ref=e41] [cursor=pointer]:
+            - generic [ref=e42] [cursor=pointer]: Blog Posts
+          - button [ref=e43] [cursor=pointer]:
+            - generic [ref=e44] [cursor=pointer]: Forums
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - heading [level=2] [ref=e47]:
+              - link [ref=e48] [cursor=pointer]:
+                - /url: https://info.riversideinsights.com/hubfs/WJ%20V%20Release%20Notes/BTS%202025%20Release%20Notes%208_29.docx?__hstc=20581799.c47e21ab6e3d837e7d03635ae4a79c59.1759153029680.1759153029680.1759153029680.1&__hssc=20581799.1.1759153029680&__hsfp=1408774332
+                - text: Back To School 2025 Release Notes
+            - img [ref=e50]
+          - generic [ref=e51]:
+            - heading [level=2] [ref=e52]:
+              - link [ref=e53] [cursor=pointer]:
+                - /url: https://info.riversideinsights.com/hubfs/Riverside%20Score%20Updates/RS%20-%20ERF%20License%20Info%20for%20Account%20Holders%20and%20Admins.pdf?__hstc=20581799.c47e21ab6e3d837e7d03635ae4a79c59.1759153029680.1759153029680.1759153029680.1&__hssc=20581799.1.1759153029680&__hsfp=1408774332
+                - text: Electronic Record Forms (ERFs) License Information
+            - img [ref=e55]
+    - contentinfo [ref=e56]:
+      - generic [ref=e57]: Footer region,
+      - link [ref=e58] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/?__hstc=20581799.c47e21ab6e3d837e7d03635ae4a79c59.1759153029680.1759153029680.1759153029680.1&__hssc=20581799.1.1759153029680&__hsfp=1408774332
+        - img [ref=e59] [cursor=pointer]
+      - generic [ref=e60]:
+        - link [ref=e61] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e62] [cursor=pointer]
+        - link [ref=e63] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e64] [cursor=pointer]
+        - link [ref=e65] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e66] [cursor=pointer]
+        - link [ref=e67] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e68] [cursor=pointer]
+      - generic [ref=e69]:
+        - img [ref=e70]
+        - button [ref=e71] [cursor=pointer]
+        - button [ref=e72] [cursor=pointer]
+      - generic [ref=e73]:
+        - img [ref=e74]
+        - generic [ref=e75]:
+          - button [ref=e76] [cursor=pointer]
+          - button [ref=e77] [cursor=pointer]
+          - button [ref=e78] [cursor=pointer]
+      - generic [ref=e79]:
+        - link [ref=e80] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.c47e21ab6e3d837e7d03635ae4a79c59.1759153029680.1759153029680.1759153029680.1&__hssc=20581799.1.1759153029680&__hsfp=1408774332
+          - text: Terms of Use
+        - generic [ref=e81]: "|"
+        - link [ref=e82] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.c47e21ab6e3d837e7d03635ae4a79c59.1759153029680.1759153029680.1759153029680.1&__hssc=20581799.1.1759153029680&__hsfp=1408774332
+          - text: Privacy Policy
+      - generic [ref=e83]: Footer region end
+  - dialog [active] [ref=e85]:
+    - alert "Terms And Condition" [ref=e86]:
+      - generic [ref=e88]:
+        - heading "Updated Terms & Conditions" [level=1] [ref=e89]
+        - paragraph [ref=e90]:
+          - text: By clicking the "I Accept" button below, you
+          - text: acknowledge and agree you have read and are
+          - text: bound by our
+          - generic [ref=e91]:
+            - link "Conditions of Sale" [ref=e92] [cursor=pointer]:
+              - /url: https://cms.riversideinsights.com/uploads/c0947c29721d40e5b9f0766a46f1a029.pdf?__hstc=20581799.c47e21ab6e3d837e7d03635ae4a79c59.1759153029680.1759153029680.1759153029680.1&__hssc=20581799.1.1759153029680&__hsfp=1408774332
+            - text: ","
+          - link "Test Disclosure Policy" [ref=e93] [cursor=pointer]:
+            - /url: https://cms.riversideinsights.com/uploads/9a570895f3554a609cb9eed6ecdf0b01.pdf?__hstc=20581799.c47e21ab6e3d837e7d03635ae4a79c59.1759153029680.1759153029680.1759153029680.1&__hssc=20581799.1.1759153029680&__hsfp=1408774332
+          - text: ","
+          - link "Subprocessors Policy" [ref=e94] [cursor=pointer]:
+            - /url: https://riversideinsights.com/support/subprocessors?__hstc=20581799.c47e21ab6e3d837e7d03635ae4a79c59.1759153029680.1759153029680.1759153029680.1&__hssc=20581799.1.1759153029680&__hsfp=1408774332
+          - text: ", and"
+          - link "Clinical Privacy Policy" [ref=e95] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?_ga=2.86004952.1533759812.1703041794-901451856.1702325815&__hstc=20581799.c47e21ab6e3d837e7d03635ae4a79c59.1759153029680.1759153029680.1759153029680.1&__hssc=20581799.1.1759153029680&__hsfp=1408774332
+          - text: ", and"
+          - link "Terms of Use" [ref=e96] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.c47e21ab6e3d837e7d03635ae4a79c59.1759153029680.1759153029680.1759153029680.1&__hssc=20581799.1.1759153029680&__hsfp=1408774332
+          - text: .
+        - generic [ref=e97]:
+          - button "Decline" [ref=e98] [cursor=pointer]
+          - button "I Accept" [ref=e99] [cursor=pointer]
+  - region "Chat Widget" [ref=e100]:
+    - iframe [ref=e101]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e103]
+```

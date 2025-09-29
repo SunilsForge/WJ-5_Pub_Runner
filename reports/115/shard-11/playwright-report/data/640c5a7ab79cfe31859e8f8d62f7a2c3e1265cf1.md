@@ -1,0 +1,353 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: S11PwAut25Ex_01 ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - generic [ref=e15]: "|"
+              - button [ref=e16] [cursor=pointer]: Subscription Details
+              - generic [ref=e17]: "|"
+              - button [ref=e18] [cursor=pointer]: Sign Out
+      - navigation [ref=e19]:
+        - menubar [ref=e21]:
+          - menuitem [ref=e23] [cursor=pointer]: Dashboard
+          - menuitem [ref=e25] [cursor=pointer]: Test Sets
+          - menuitem [ref=e27] [cursor=pointer]: Examinees
+          - menuitem [ref=e29] [cursor=pointer]: Staff
+          - menuitem [ref=e31] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e32] [cursor=pointer]
+          - menuitem [ref=e35] [cursor=pointer]: Resources
+      - main [ref=e36]:
+        - generic [ref=e37]:
+          - heading [level=1] [ref=e38]: EXAMINEE MANAGEMENT
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - generic [ref=e43]:
+                - textbox [ref=e44]
+                - button [ref=e45] [cursor=pointer]
+              - generic [ref=e46]:
+                - generic [ref=e47]: Filter Examinees
+                - button [ref=e48] [cursor=pointer]: Reset
+              - generic [ref=e52]:
+                - generic [ref=e53]:
+                  - text: DOB
+                  - generic [ref=e54]: ", Type in text"
+                - generic [ref=e55]:
+                  - textbox [ref=e56]
+                  - button [ref=e57] [cursor=pointer]
+            - generic [ref=e59]:
+              - generic [ref=e60]:
+                - button [ref=e61] [cursor=pointer]: Add Examinee
+                - button [ref=e62] [cursor=pointer]: Create Test Assignment
+              - generic [ref=e64]:
+                - generic [ref=e65]: First Name
+                - generic [ref=e66]: Last Name
+                - generic [ref=e67]: Examinee ID
+                - generic [ref=e68]: DOB
+                - generic [ref=e69]: Actions
+                - button [ref=e71] [cursor=pointer]: Hassan
+                - button [ref=e73] [cursor=pointer]: N17777A59685
+                - generic [ref=e74]: N17777A59685
+                - generic [ref=e75]: 09/29/2020
+                - generic [ref=e76]:
+                  - button [ref=e77] [cursor=pointer]
+                  - button [ref=e78] [cursor=pointer]:
+                    - img [ref=e79] [cursor=pointer]
+                  - button [ref=e83] [cursor=pointer]:
+                    - img [ref=e84] [cursor=pointer]
+                - button [ref=e95] [cursor=pointer]: Hassie
+                - button [ref=e97] [cursor=pointer]: N70531A98732
+                - generic [ref=e98]: N70531A98732
+                - generic [ref=e99]: 09/29/2020
+                - generic [ref=e100]:
+                  - button [ref=e101] [cursor=pointer]
+                  - button [ref=e102] [cursor=pointer]:
+                    - img [ref=e103] [cursor=pointer]
+                  - button [ref=e107] [cursor=pointer]:
+                    - img [ref=e108] [cursor=pointer]
+                - button [ref=e119] [cursor=pointer]: Emile
+                - button [ref=e121] [cursor=pointer]: N56228A4764
+                - generic [ref=e122]: N56228A4764
+                - generic [ref=e123]: 09/29/2020
+                - generic [ref=e124]:
+                  - button [ref=e125] [cursor=pointer]
+                  - button [ref=e126] [cursor=pointer]:
+                    - img [ref=e127] [cursor=pointer]
+                  - button [ref=e131] [cursor=pointer]:
+                    - img [ref=e132] [cursor=pointer]
+                - button [ref=e143] [cursor=pointer]: Ignacio
+                - button [ref=e145] [cursor=pointer]: N74109A72986
+                - generic [ref=e146]: N74109A72986
+                - generic [ref=e147]: 07/16/2020
+                - generic [ref=e148]:
+                  - button [ref=e149] [cursor=pointer]
+                  - button [ref=e150] [cursor=pointer]:
+                    - img [ref=e151] [cursor=pointer]
+                  - button [ref=e155] [cursor=pointer]:
+                    - img [ref=e156] [cursor=pointer]
+                - button [ref=e167] [cursor=pointer]: Ludie
+                - button [ref=e169] [cursor=pointer]: N53815A96385
+                - generic [ref=e170]: N53815A96385
+                - generic [ref=e171]: 07/16/2020
+                - generic [ref=e172]:
+                  - button [ref=e173] [cursor=pointer]
+                  - button [ref=e174] [cursor=pointer]:
+                    - img [ref=e175] [cursor=pointer]
+                  - button [ref=e179] [cursor=pointer]:
+                    - img [ref=e180] [cursor=pointer]
+                - button [ref=e191] [cursor=pointer]: Ralph
+                - button [ref=e193] [cursor=pointer]: N89803A74429
+                - generic [ref=e194]: N89803A74429
+                - generic [ref=e195]: 07/16/2020
+                - generic [ref=e196]:
+                  - button [ref=e197] [cursor=pointer]
+                  - button [ref=e198] [cursor=pointer]:
+                    - img [ref=e199] [cursor=pointer]
+                  - button [ref=e203] [cursor=pointer]:
+                    - img [ref=e204] [cursor=pointer]
+                - button [ref=e215] [cursor=pointer]: Katharina
+                - button [ref=e217] [cursor=pointer]: N23704A92013
+                - generic [ref=e218]: N23704A92013
+                - generic [ref=e219]: 07/16/2020
+                - generic [ref=e220]:
+                  - button [ref=e221] [cursor=pointer]
+                  - button [ref=e222] [cursor=pointer]:
+                    - img [ref=e223] [cursor=pointer]
+                  - button [ref=e227] [cursor=pointer]:
+                    - img [ref=e228] [cursor=pointer]
+                - button [ref=e239] [cursor=pointer]: Everett
+                - button [ref=e241] [cursor=pointer]: N23936A87015
+                - generic [ref=e242]: N23936A87015
+                - generic [ref=e243]: 07/16/2021
+                - generic [ref=e244]:
+                  - button [ref=e245] [cursor=pointer]
+                  - button [ref=e246] [cursor=pointer]:
+                    - img [ref=e247] [cursor=pointer]
+                  - button [ref=e251] [cursor=pointer]:
+                    - img [ref=e252] [cursor=pointer]
+                - button [ref=e263] [cursor=pointer]: Sean
+                - button [ref=e265] [cursor=pointer]: N78096A18907
+                - generic [ref=e266]: N78096A18907
+                - generic [ref=e267]: 07/16/2021
+                - generic [ref=e268]:
+                  - button [ref=e269] [cursor=pointer]
+                  - button [ref=e270] [cursor=pointer]:
+                    - img [ref=e271] [cursor=pointer]
+                  - button [ref=e275] [cursor=pointer]:
+                    - img [ref=e276] [cursor=pointer]
+                - button [ref=e287] [cursor=pointer]: Oceane
+                - button [ref=e289] [cursor=pointer]: N55278A75296
+                - generic [ref=e290]: N55278A75296
+                - generic [ref=e291]: 07/16/2021
+                - generic [ref=e292]:
+                  - button [ref=e293] [cursor=pointer]
+                  - button [ref=e294] [cursor=pointer]:
+                    - img [ref=e295] [cursor=pointer]
+                  - button [ref=e299] [cursor=pointer]:
+                    - img [ref=e300] [cursor=pointer]
+                - button [ref=e311] [cursor=pointer]: Eden
+                - button [ref=e313] [cursor=pointer]: N81475A45047
+                - generic [ref=e314]: N81475A45047
+                - generic [ref=e315]: 07/16/2021
+                - generic [ref=e316]:
+                  - button [ref=e317] [cursor=pointer]
+                  - button [ref=e318] [cursor=pointer]:
+                    - img [ref=e319] [cursor=pointer]
+                  - button [ref=e323] [cursor=pointer]:
+                    - img [ref=e324] [cursor=pointer]
+                - button [ref=e335] [cursor=pointer]: Jadyn
+                - button [ref=e337] [cursor=pointer]: N58939A99185
+                - generic [ref=e338]: N58939A99185
+                - generic [ref=e339]: 02/12/2021
+                - generic [ref=e340]:
+                  - button [ref=e341] [cursor=pointer]
+                  - button [ref=e342] [cursor=pointer]:
+                    - img [ref=e343] [cursor=pointer]
+                  - button [ref=e347] [cursor=pointer]:
+                    - img [ref=e348] [cursor=pointer]
+                - button [ref=e359] [cursor=pointer]: Darian
+                - button [ref=e361] [cursor=pointer]: N98731A28252
+                - generic [ref=e362]: N98731A28252
+                - generic [ref=e363]: 02/12/2021
+                - generic [ref=e364]:
+                  - button [ref=e365] [cursor=pointer]
+                  - button [ref=e366] [cursor=pointer]:
+                    - img [ref=e367] [cursor=pointer]
+                  - button [ref=e371] [cursor=pointer]:
+                    - img [ref=e372] [cursor=pointer]
+                - button [ref=e383] [cursor=pointer]: Dell
+                - button [ref=e385] [cursor=pointer]: N85720A6870
+                - generic [ref=e386]: N85720A6870
+                - generic [ref=e387]: 02/12/2021
+                - generic [ref=e388]:
+                  - button [ref=e389] [cursor=pointer]
+                  - button [ref=e390] [cursor=pointer]:
+                    - img [ref=e391] [cursor=pointer]
+                  - button [ref=e395] [cursor=pointer]:
+                    - img [ref=e396] [cursor=pointer]
+                - button [ref=e407] [cursor=pointer]: Anika
+                - button [ref=e409] [cursor=pointer]: N63817A62382
+                - generic [ref=e410]: N63817A62382
+                - generic [ref=e411]: 02/12/2020
+                - generic [ref=e412]:
+                  - button [ref=e413] [cursor=pointer]
+                  - button [ref=e414] [cursor=pointer]:
+                    - img [ref=e415] [cursor=pointer]
+                  - button [ref=e419] [cursor=pointer]:
+                    - img [ref=e420] [cursor=pointer]
+                - button [ref=e431] [cursor=pointer]: Arden
+                - button [ref=e433] [cursor=pointer]: N18171A4698
+                - generic [ref=e434]: N18171A4698
+                - generic [ref=e435]: 02/12/2020
+                - generic [ref=e436]:
+                  - button [ref=e437] [cursor=pointer]
+                  - button [ref=e438] [cursor=pointer]:
+                    - img [ref=e439] [cursor=pointer]
+                  - button [ref=e443] [cursor=pointer]:
+                    - img [ref=e444] [cursor=pointer]
+                - button [ref=e455] [cursor=pointer]: Ernesto
+                - button [ref=e457] [cursor=pointer]: N74056A65970
+                - generic [ref=e458]: N74056A65970
+                - generic [ref=e459]: 02/12/2020
+                - generic [ref=e460]:
+                  - button [ref=e461] [cursor=pointer]
+                  - button [ref=e462] [cursor=pointer]:
+                    - img [ref=e463] [cursor=pointer]
+                  - button [ref=e467] [cursor=pointer]:
+                    - img [ref=e468] [cursor=pointer]
+                - button [ref=e479] [cursor=pointer]: Meaghan
+                - button [ref=e481] [cursor=pointer]: N61146A34502
+                - generic [ref=e482]: N61146A34502
+                - generic [ref=e483]: 02/12/2021
+                - generic [ref=e484]:
+                  - button [ref=e485] [cursor=pointer]
+                  - button [ref=e486] [cursor=pointer]:
+                    - img [ref=e487] [cursor=pointer]
+                  - button [ref=e491] [cursor=pointer]:
+                    - img [ref=e492] [cursor=pointer]
+                - button [ref=e503] [cursor=pointer]: Mac
+                - button [ref=e505] [cursor=pointer]: N98267A45872
+                - generic [ref=e506]: N98267A45872
+                - generic [ref=e507]: 02/12/2021
+                - generic [ref=e508]:
+                  - button [ref=e509] [cursor=pointer]
+                  - button [ref=e510] [cursor=pointer]:
+                    - img [ref=e511] [cursor=pointer]
+                  - button [ref=e515] [cursor=pointer]:
+                    - img [ref=e516] [cursor=pointer]
+                - button [ref=e527] [cursor=pointer]: Zella
+                - button [ref=e529] [cursor=pointer]: N67301A41307
+                - generic [ref=e530]: N67301A41307
+                - generic [ref=e531]: 02/12/2021
+                - generic [ref=e532]:
+                  - button [ref=e533] [cursor=pointer]
+                  - button [ref=e534] [cursor=pointer]:
+                    - img [ref=e535] [cursor=pointer]
+                  - button [ref=e539] [cursor=pointer]:
+                    - img [ref=e540] [cursor=pointer]
+                - button [ref=e551] [cursor=pointer]: Francesca
+                - button [ref=e553] [cursor=pointer]: N27541A45840
+                - generic [ref=e554]: N27541A45840
+                - generic [ref=e555]: 02/12/2020
+                - generic [ref=e556]:
+                  - button [ref=e557] [cursor=pointer]
+                  - button [ref=e558] [cursor=pointer]:
+                    - img [ref=e559] [cursor=pointer]
+                  - button [ref=e563] [cursor=pointer]:
+                    - img [ref=e564] [cursor=pointer]
+                - button [ref=e575] [cursor=pointer]: Nestor
+                - button [ref=e577] [cursor=pointer]: N16919A61829
+                - generic [ref=e578]: N16919A61829
+                - generic [ref=e579]: 02/12/2020
+                - generic [ref=e580]:
+                  - button [ref=e581] [cursor=pointer]
+                  - button [ref=e582] [cursor=pointer]:
+                    - img [ref=e583] [cursor=pointer]
+                  - button [ref=e587] [cursor=pointer]:
+                    - img [ref=e588] [cursor=pointer]
+                - button [ref=e599] [cursor=pointer]: Linda
+                - button [ref=e601] [cursor=pointer]: N91859A36543
+                - generic [ref=e602]: N91859A36543
+                - generic [ref=e603]: 02/12/2020
+                - generic [ref=e604]:
+                  - button [ref=e605] [cursor=pointer]
+                  - button [ref=e606] [cursor=pointer]:
+                    - img [ref=e607] [cursor=pointer]
+                  - button [ref=e611] [cursor=pointer]:
+                    - img [ref=e612] [cursor=pointer]
+    - contentinfo [ref=e622]:
+      - generic [ref=e623]: Footer region,
+      - link [ref=e624] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/?__hstc=20581799.882f0bf7d043bba178c91197521dd9e1.1759152972626.1759152972626.1759152972626.1&__hssc=20581799.4.1759152972626&__hsfp=1408774332
+        - img [ref=e625] [cursor=pointer]
+      - generic [ref=e626]:
+        - link [ref=e627] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e628] [cursor=pointer]
+        - link [ref=e629] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e630] [cursor=pointer]
+        - link [ref=e631] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e632] [cursor=pointer]
+        - link [ref=e633] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e634] [cursor=pointer]
+      - generic [ref=e635]:
+        - link [ref=e636] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.882f0bf7d043bba178c91197521dd9e1.1759152972626.1759152972626.1759152972626.1&__hssc=20581799.4.1759152972626&__hsfp=1408774332
+          - text: Terms of Use
+        - generic [ref=e637]: "|"
+        - link [ref=e638] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.882f0bf7d043bba178c91197521dd9e1.1759152972626.1759152972626.1759152972626.1&__hssc=20581799.4.1759152972626&__hsfp=1408774332
+          - text: Privacy Policy
+      - generic [ref=e639]: Footer region end
+  - region "Chat Widget" [ref=e640]:
+    - iframe [ref=e641]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e643]
+  - dialog [ref=e646]:
+    - generic [ref=e647]:
+      - heading "Create Test Assignment" [level=1] [ref=e648]
+      - generic [ref=e656]:
+        - generic [ref=e657]:
+          - generic [ref=e658]: Examinee
+          - generic [ref=e659]: Complete
+        - generic [ref=e660]:
+          - generic [ref=e661]: Test Sets
+          - generic [ref=e662]: In Progress
+        - generic [ref=e663]:
+          - generic [ref=e664]: Settings
+          - generic [ref=e665]: Incomplete
+    - generic [ref=e666]:
+      - heading "Select a Test Set" [level=3] [ref=e667]
+      - generic [ref=e671]:
+        - generic "Select Test Set" [ref=e672]: Test Set Name
+        - tree "Select Test Set" [ref=e673] [cursor=pointer]:
+          - generic [ref=e674] [cursor=pointer]: Select Test Set
+          - generic [ref=e675]:
+            - generic [ref=e678]:
+              - textbox [ref=e679]: Form A
+              - button "Search" [ref=e680] [cursor=pointer]
+            - list
+    - generic [ref=e682]:
+      - button "Cancel" [ref=e683] [cursor=pointer]
+      - generic [ref=e684]:
+        - button "Back" [ref=e685] [cursor=pointer]
+        - button "Next" [disabled] [ref=e686]
+```
