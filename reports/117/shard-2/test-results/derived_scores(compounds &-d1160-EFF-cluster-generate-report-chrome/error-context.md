@@ -1,0 +1,309 @@
+# Page snapshot
+
+```yaml
+- dialog [active] [ref=e2]:
+  - generic [ref=e3]:
+    - button "Main Navigation" [ref=e4] [cursor=pointer]
+    - button "Review Mode" [ref=e5]
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - 'button "Name: N99925A59553, Gertrude DOB: 10/16/2020 Age: 5 Grade: Kindergarten" [ref=e8] [cursor=pointer]'
+        - button "Open Notes" [disabled] [ref=e9]
+      - generic [ref=e11]: Examinee Not Connected
+  - generic [ref=e12]:
+    - heading "Review Mode Dashboard" [level=2] [ref=e13]
+    - generic [ref=e14]: Navigate to any test to review content, edit scores, resolve flags, listen to audio recordings, and more.
+  - generic [ref=e15]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - img [ref=e19]
+        - generic [ref=e21]: Form AB
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - button "(NYA) Not Yet Administered Oral Vocabulary–Synonyms" [ref=e24] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e25] [cursor=pointer]
+            - generic [ref=e29] [cursor=pointer]: Oral Vocabulary–Synonyms
+          - button "✕" [ref=e30] [cursor=pointer]
+        - generic [ref=e31]:
+          - button "(NYA) Not Yet Administered Oral Vocabulary–Antonyms" [ref=e32] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e33] [cursor=pointer]
+            - generic [ref=e37] [cursor=pointer]: Oral Vocabulary–Antonyms
+          - button "✕" [ref=e38] [cursor=pointer]
+        - generic [ref=e39]:
+          - button "(NYA) Not Yet Administered Matrices" [ref=e40] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e41] [cursor=pointer]
+            - generic [ref=e45] [cursor=pointer]: Matrices
+          - button "✕" [ref=e46] [cursor=pointer]
+        - generic [ref=e47]:
+          - button "(NYA) Not Yet Administered Spatial Relations" [ref=e48] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e49] [cursor=pointer]
+            - generic [ref=e53] [cursor=pointer]: Spatial Relations
+          - button "✕" [ref=e54] [cursor=pointer]
+        - generic [ref=e55]:
+          - button "(NYA) Not Yet Administered Story Recall" [ref=e56] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e57] [cursor=pointer]
+            - generic [ref=e61] [cursor=pointer]: Story Recall
+          - button "✕" [ref=e62] [cursor=pointer]
+        - generic [ref=e63]:
+          - button "(NYA) Not Yet Administered Semantic Word Retrieval" [ref=e64] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e65] [cursor=pointer]
+            - generic [ref=e69] [cursor=pointer]: Semantic Word Retrieval
+          - button "✕" [ref=e70] [cursor=pointer]
+        - generic [ref=e71]:
+          - button "Complete Verbal Attention" [ref=e72] [cursor=pointer]:
+            - img "Complete" [ref=e73] [cursor=pointer]
+            - generic [ref=e77] [cursor=pointer]: Verbal Attention
+          - button "✕" [ref=e78] [cursor=pointer]
+        - generic [ref=e79]:
+          - button "Complete Number-Pattern Matching" [ref=e80] [cursor=pointer]:
+            - img "Complete" [ref=e81] [cursor=pointer]
+            - generic [ref=e85] [cursor=pointer]: Number-Pattern Matching
+          - button "✕" [ref=e86] [cursor=pointer]
+        - generic [ref=e87]:
+          - button "(NYA) Not Yet Administered Verbal Analogies" [ref=e88] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e89] [cursor=pointer]
+            - generic [ref=e93] [cursor=pointer]: Verbal Analogies
+          - button "✕" [ref=e94] [cursor=pointer]
+        - generic [ref=e95]:
+          - button "(NYA) Not Yet Administered Analysis-Synthesis" [ref=e96] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e97] [cursor=pointer]
+            - generic [ref=e101] [cursor=pointer]: Analysis-Synthesis
+          - button "✕" [ref=e102] [cursor=pointer]
+        - generic [ref=e103]:
+          - button "(NYA) Not Yet Administered Numbers Reversed" [ref=e104] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e105] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Numbers Reversed
+          - button "✕" [ref=e110] [cursor=pointer]
+        - generic [ref=e111]:
+          - button "(NYA) Not Yet Administered Letter-Pattern Matching" [ref=e112] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e113] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Letter-Pattern Matching
+          - button "✕" [ref=e118] [cursor=pointer]
+        - generic [ref=e119]:
+          - button "(NYA) Not Yet Administered Phonemic Word Retrieval" [ref=e120] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e121] [cursor=pointer]
+            - generic [ref=e125] [cursor=pointer]: Phonemic Word Retrieval
+          - button "✕" [ref=e126] [cursor=pointer]
+        - generic [ref=e127]:
+          - button "(NYA) Not Yet Administered Story Comprehension" [ref=e128] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e129] [cursor=pointer]
+            - generic [ref=e133] [cursor=pointer]: Story Comprehension
+          - button "✕" [ref=e134] [cursor=pointer]
+        - generic [ref=e135]:
+          - button "(NYA) Not Yet Administered Block Rotation" [ref=e136] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e137] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Block Rotation
+          - button "✕" [ref=e142] [cursor=pointer]
+        - generic [ref=e143]:
+          - button "(NYA) Not Yet Administered Rapid Phoneme Naming" [ref=e144] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e145] [cursor=pointer]
+            - generic [ref=e149] [cursor=pointer]: Rapid Phoneme Naming
+          - button "✕" [ref=e150] [cursor=pointer]
+        - generic [ref=e151]:
+          - button "(NYA) Not Yet Administered Picture Vocabulary" [ref=e152] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e153] [cursor=pointer]
+            - generic [ref=e157] [cursor=pointer]: Picture Vocabulary
+          - button "✕" [ref=e158] [cursor=pointer]
+        - generic [ref=e159]:
+          - button "(NYA) Not Yet Administered Oral Comprehension" [ref=e160] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e161] [cursor=pointer]
+            - generic [ref=e165] [cursor=pointer]: Oral Comprehension
+          - button "✕" [ref=e166] [cursor=pointer]
+        - generic [ref=e167]:
+          - button "(NYA) Not Yet Administered Oral Language Samples" [ref=e168] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e169] [cursor=pointer]
+            - generic [ref=e173] [cursor=pointer]: Oral Language Samples
+          - button "✕" [ref=e174] [cursor=pointer]
+        - generic [ref=e175]:
+          - button "(NYA) Not Yet Administered Academic Vocabulary" [ref=e176] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e177] [cursor=pointer]
+            - generic [ref=e181] [cursor=pointer]: Academic Vocabulary
+          - button "✕" [ref=e182] [cursor=pointer]
+        - generic [ref=e183]:
+          - button "(NYA) Not Yet Administered Letter-Word Identification" [ref=e184] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e185] [cursor=pointer]
+            - generic [ref=e189] [cursor=pointer]: Letter-Word Identification
+          - button "✕" [ref=e190] [cursor=pointer]
+        - generic [ref=e191]:
+          - button "(NYA) Not Yet Administered Passage Comprehension" [ref=e192] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e193] [cursor=pointer]
+            - generic [ref=e197] [cursor=pointer]: Passage Comprehension
+          - button "✕" [ref=e198] [cursor=pointer]
+        - generic [ref=e199]:
+          - button "(NYA) Not Yet Administered Word Attack" [ref=e200] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e201] [cursor=pointer]
+            - generic [ref=e205] [cursor=pointer]: Word Attack
+          - button "✕" [ref=e206] [cursor=pointer]
+        - generic [ref=e207]:
+          - button "(NYA) Not Yet Administered Sentence Reading Fluency" [ref=e208] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e209] [cursor=pointer]
+            - generic [ref=e213] [cursor=pointer]: Sentence Reading Fluency
+          - button "✕" [ref=e214] [cursor=pointer]
+        - generic [ref=e215]:
+          - button "(NYA) Not Yet Administered Word Reading Fluency" [ref=e216] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e217] [cursor=pointer]
+            - generic [ref=e221] [cursor=pointer]: Word Reading Fluency
+          - button "✕" [ref=e222] [cursor=pointer]
+        - generic [ref=e223]:
+          - button "(NYA) Not Yet Administered Paragraph Reading Comprehension" [ref=e224] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e225] [cursor=pointer]
+            - generic [ref=e229] [cursor=pointer]: Paragraph Reading Comprehension
+          - button "✕" [ref=e230] [cursor=pointer]
+        - generic [ref=e231]:
+          - button "(NYA) Not Yet Administered Calculation" [ref=e232] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e233] [cursor=pointer]
+            - generic [ref=e237] [cursor=pointer]: Calculation
+          - button "✕" [ref=e238] [cursor=pointer]
+        - generic [ref=e239]:
+          - button "(NYA) Not Yet Administered Applied Problems" [ref=e240] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e241] [cursor=pointer]
+            - generic [ref=e245] [cursor=pointer]: Applied Problems
+          - button "✕" [ref=e246] [cursor=pointer]
+        - generic [ref=e247]:
+          - button "(NYA) Not Yet Administered Math Facts Fluency" [ref=e248] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e249] [cursor=pointer]
+            - generic [ref=e253] [cursor=pointer]: Math Facts Fluency
+          - button "✕" [ref=e254] [cursor=pointer]
+        - generic [ref=e255]:
+          - button "(NYA) Not Yet Administered Math Problem Identification" [ref=e256] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e257] [cursor=pointer]
+            - generic [ref=e261] [cursor=pointer]: Math Problem Identification
+          - button "✕" [ref=e262] [cursor=pointer]
+        - generic [ref=e263]:
+          - button "(NYA) Not Yet Administered Sentence Writing Accuracy" [ref=e264] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e265] [cursor=pointer]
+            - generic [ref=e269] [cursor=pointer]: Sentence Writing Accuracy
+          - button "✕" [ref=e270] [cursor=pointer]
+        - generic [ref=e271]:
+          - button "(NYA) Not Yet Administered Written Language Samples" [ref=e272] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e273] [cursor=pointer]
+            - generic [ref=e277] [cursor=pointer]: Written Language Samples
+          - button "✕" [ref=e278] [cursor=pointer]
+        - generic [ref=e279]:
+          - button "(NYA) Not Yet Administered Spelling" [ref=e280] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e281] [cursor=pointer]
+            - generic [ref=e285] [cursor=pointer]: Spelling
+          - button "✕" [ref=e286] [cursor=pointer]
+        - generic [ref=e287]:
+          - button "(NYA) Not Yet Administered Spelling of Sounds" [ref=e288] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e289] [cursor=pointer]
+            - generic [ref=e293] [cursor=pointer]: Spelling of Sounds
+          - button "✕" [ref=e294] [cursor=pointer]
+        - generic [ref=e295]:
+          - button "(NYA) Not Yet Administered Sentence Writing Fluency" [ref=e296] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e297] [cursor=pointer]
+            - generic [ref=e301] [cursor=pointer]: Sentence Writing Fluency
+          - button "✕" [ref=e302] [cursor=pointer]
+        - generic [ref=e303]:
+          - button "(NYA) Not Yet Administered Academic Facts" [ref=e304] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e305] [cursor=pointer]
+            - generic [ref=e309] [cursor=pointer]: Academic Facts
+          - button "✕" [ref=e310] [cursor=pointer]
+        - generic [ref=e311]:
+          - button "(NYA) Not Yet Administered Sound Blending" [ref=e312] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e313] [cursor=pointer]
+            - generic [ref=e317] [cursor=pointer]: Sound Blending
+          - button "✕" [ref=e318] [cursor=pointer]
+        - generic [ref=e319]:
+          - button "(NYA) Not Yet Administered Segmentation" [ref=e320] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e321] [cursor=pointer]
+            - generic [ref=e325] [cursor=pointer]: Segmentation
+          - button "✕" [ref=e326] [cursor=pointer]
+        - generic [ref=e327]:
+          - button "(NYA) Not Yet Administered Sound Deletion" [ref=e328] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e329] [cursor=pointer]
+            - generic [ref=e333] [cursor=pointer]: Sound Deletion
+          - button "✕" [ref=e334] [cursor=pointer]
+        - generic [ref=e335]:
+          - button "(NYA) Not Yet Administered Sound Substitution" [ref=e336] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e337] [cursor=pointer]
+            - generic [ref=e341] [cursor=pointer]: Sound Substitution
+          - button "✕" [ref=e342] [cursor=pointer]
+        - generic [ref=e343]:
+          - button "(NYA) Not Yet Administered Memory for Words" [ref=e344] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e345] [cursor=pointer]
+            - generic [ref=e349] [cursor=pointer]: Memory for Words
+          - button "✕" [ref=e350] [cursor=pointer]
+        - generic [ref=e351]:
+          - button "(NYA) Not Yet Administered Sentence Repetition" [ref=e352] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e353] [cursor=pointer]
+            - generic [ref=e357] [cursor=pointer]: Sentence Repetition
+          - button "✕" [ref=e358] [cursor=pointer]
+        - generic [ref=e359]:
+          - button "(NYA) Not Yet Administered Rapid Picture Naming" [ref=e360] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e361] [cursor=pointer]
+            - generic [ref=e365] [cursor=pointer]: Rapid Picture Naming
+          - button "✕" [ref=e366] [cursor=pointer]
+        - generic [ref=e367]:
+          - button "(NYA) Not Yet Administered Rapid Letter Naming" [ref=e368] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e369] [cursor=pointer]
+            - generic [ref=e373] [cursor=pointer]: Rapid Letter Naming
+          - button "✕" [ref=e374] [cursor=pointer]
+        - generic [ref=e375]:
+          - button "(NYA) Not Yet Administered General Information–Where" [ref=e376] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e377] [cursor=pointer]
+            - generic [ref=e381] [cursor=pointer]: General Information–Where
+          - button "✕" [ref=e382] [cursor=pointer]
+        - generic [ref=e383]:
+          - button "(NYA) Not Yet Administered General Information–What" [ref=e384] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e385] [cursor=pointer]
+            - generic [ref=e389] [cursor=pointer]: General Information–What
+          - button "✕" [ref=e390] [cursor=pointer]
+        - generic [ref=e391]:
+          - button "(NYA) Not Yet Administered Letter Writing Fluency" [ref=e392] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e393] [cursor=pointer]
+            - generic [ref=e397] [cursor=pointer]: Letter Writing Fluency
+          - button "✕" [ref=e398] [cursor=pointer]
+        - generic [ref=e399]:
+          - button "(NYA) Not Yet Administered Magnitude Comparison" [ref=e400] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e401] [cursor=pointer]
+            - generic [ref=e405] [cursor=pointer]: Magnitude Comparison
+          - button "✕" [ref=e406] [cursor=pointer]
+        - generic [ref=e407]:
+          - button "(NYA) Not Yet Administered Nonsense Word Repetition" [ref=e408] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e409] [cursor=pointer]
+            - generic [ref=e413] [cursor=pointer]: Nonsense Word Repetition
+          - button "✕" [ref=e414] [cursor=pointer]
+        - generic [ref=e415]:
+          - button "(NYA) Not Yet Administered Number Series" [ref=e416] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e417] [cursor=pointer]
+            - generic [ref=e421] [cursor=pointer]: Number Series
+          - button "✕" [ref=e422] [cursor=pointer]
+        - generic [ref=e423]:
+          - button "(NYA) Not Yet Administered Oral Reading" [ref=e424] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e425] [cursor=pointer]
+            - generic [ref=e429] [cursor=pointer]: Oral Reading
+          - button "✕" [ref=e430] [cursor=pointer]
+        - generic [ref=e431]:
+          - button "(NYA) Not Yet Administered Sound Reversal" [ref=e432] [cursor=pointer]:
+            - img "(NYA) Not Yet Administered" [ref=e433] [cursor=pointer]
+            - generic [ref=e437] [cursor=pointer]: Sound Reversal
+          - button "✕" [ref=e438] [cursor=pointer]
+      - button "+ Add Test" [ref=e439] [cursor=pointer]
+    - generic [ref=e441]:
+      - generic [ref=e443]: Loading results...
+      - generic [ref=e445]:
+        - generic [ref=e446]:
+          - heading "Score Later *" [level=4] [ref=e447]:
+            - text: Score Later
+            - generic [ref=e448]: "*"
+          - generic [ref=e449]: No items
+          - heading "Needs Attention *" [level=4] [ref=e450]:
+            - text: Needs Attention
+            - generic [ref=e451]: "*"
+          - generic [ref=e452]: No items
+          - heading "Invalidated Tests Not available for reporting" [level=4] [ref=e453]:
+            - text: Invalidated Tests
+            - generic [ref=e454]: Not available for reporting
+          - generic [ref=e455]: No items
+        - generic [ref=e456]:
+          - heading "Flagged Items" [level=4] [ref=e457]
+          - generic [ref=e458]: No items
+      - generic [ref=e459]:
+        - generic [ref=e460]: "*"
+        - text: Resolution required for inclusion in score report
+  - generic [ref=e461]:
+    - generic [ref=e462]: "Warning: Changing scores may result in the need to administer additional items to examinee to retrieve valid test scores."
+    - button "Exit Review Mode" [ref=e463] [cursor=pointer]
+    - button "Submit Test Assignment" [disabled] [ref=e464]
+```
