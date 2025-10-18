@@ -1,0 +1,90 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 06PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "06PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - generic [ref=e15]: "|"
+                - button "Subscription Details" [ref=e16] [cursor=pointer]
+                - generic [ref=e17]: "|"
+                - button "Sign Out" [ref=e18] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e19]:
+          - menubar [ref=e21]:
+            - menuitem "Dashboard" [ref=e23] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e25] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e27] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e29] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e31] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e32] [cursor=pointer]
+            - menuitem "Resources" [ref=e35] [cursor=pointer]: Resources
+        - main [ref=e36]:
+          - generic [ref=e37]:
+            - heading "REPORT CENTER" [level=1] [ref=e38]
+            - navigation [ref=e39]:
+              - tablist [ref=e40]:
+                - tab "Report Library" [selected] [ref=e41] [cursor=pointer]
+                - button "Zoom In" [ref=e42] [cursor=pointer]:
+                  - img "Zoom Page In Icon" [ref=e43] [cursor=pointer]
+            - grid [ref=e53]:
+              - generic [ref=e54]:
+                - generic [ref=e57]: Report Name
+                - generic [ref=e60]: Status
+                - generic [ref=e63]: Date Created
+                - generic [ref=e66]: Actions
+              - rowgroup [ref=e67]:
+                - row "Report Name Test_DataExport_AutoFilter_Template_N70444A68274 Status Completed Date Created 10/18/2025 12:44 AM Download/Print Delete View Data Export Format" [ref=e68]:
+                  - gridcell "Report Name Test_DataExport_AutoFilter_Template_N70444A68274" [ref=e70]: Test_DataExport_AutoFilter_Template_N70444A68274
+                  - gridcell "Status Completed" [ref=e72]: Completed
+                  - gridcell "Date Created 10/18/2025 12:44 AM" [ref=e74]: 10/18/2025 12:44 AM
+                  - generic [ref=e75]:
+                    - link "Download/Print" [ref=e76] [cursor=pointer]:
+                      - gridcell "Download/Print" [active] [ref=e77] [cursor=pointer]
+                    - gridcell "Delete" [ref=e79] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e80] [cursor=pointer]
+      - contentinfo [ref=e82]:
+        - generic [ref=e83]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e84] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/?__hstc=20581799.4365a86393cbdb7d67742e527edccc97.1760766162327.1760766162327.1760766162327.1&__hssc=20581799.2.1760766162327&__hsfp=1408774332
+          - img "Riverside Insights Website" [ref=e85] [cursor=pointer]
+        - generic [ref=e86]:
+          - link "Riverside Insights Facebook" [ref=e87] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e88] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e89] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e90] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e91] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e92] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e93] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e94] [cursor=pointer]
+        - generic [ref=e95]:
+          - link "Terms of Use" [ref=e96] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.4365a86393cbdb7d67742e527edccc97.1760766162327.1760766162327.1760766162327.1&__hssc=20581799.2.1760766162327&__hsfp=1408774332
+          - generic [ref=e97]: "|"
+          - link "Privacy Policy" [ref=e98] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.4365a86393cbdb7d67742e527edccc97.1760766162327.1760766162327.1760766162327.1&__hssc=20581799.2.1760766162327&__hsfp=1408774332
+        - generic [ref=e99]: Footer region end
+  - region "Chat Widget" [ref=e100]:
+    - iframe [ref=e101]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e103]
+```
