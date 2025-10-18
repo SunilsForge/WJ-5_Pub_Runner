@@ -1,0 +1,115 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - button "Show Main Navigation" [ref=e7] [cursor=pointer]
+    - button "Letter-Word Identification 680" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9] [cursor=pointer]: Letter-Word Identification
+    - generic [ref=e11]:
+      - 'button "Name: N45181A47799, Korbin DOB: 10/18/2020 Age: 5 Grade: Kindergarten" [ref=e12] [cursor=pointer]'
+      - button "Open Notes" [ref=e13] [cursor=pointer]
+      - button "Your browser is blocking voice capture" [ref=e14] [cursor=pointer]
+  - region "Examiner Assessment view" [ref=e15]:
+    - generic [ref=e16]:
+      - button "Expand/Collapse Navigation" [ref=e17]:
+        - img [ref=e19]
+      - generic [ref=e23]:
+        - generic [ref=e26]: Starting Point
+        - radio "Intro 1" [checked] [ref=e29]:
+          - generic [ref=e30]: Intro 1
+          - img [ref=e31]
+        - generic [ref=e35]:
+          - radio "A Items 1 - 4" [ref=e36]:
+            - generic [ref=e37]:
+              - generic [ref=e38]: A
+              - generic [ref=e39]: Items 1 - 4
+            - img [ref=e40]
+          - generic [ref=e44]: Block A
+          - radio "Item 1" [checked] [ref=e46]:
+            - generic [ref=e47]: Item 1
+            - img [ref=e48]
+          - radio "Item 2" [checked] [ref=e53]:
+            - generic [ref=e54]: Item 2
+            - img [ref=e55]
+          - radio "Item 3" [checked] [ref=e58]:
+            - generic [ref=e59]: Item 3
+            - img [ref=e60]
+          - radio "Item 4" [checked] [ref=e63]:
+            - generic [ref=e64]: Item 4
+            - img [ref=e65]
+        - radio "Intro 2" [checked] [ref=e68]:
+          - generic [ref=e69]: Intro 2
+          - img [ref=e70]
+        - radio "Intro 3" [checked] [ref=e73]:
+          - generic [ref=e74]: Intro 3
+          - img [ref=e75]
+        - radio "B Items 5 - 15" [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e80]: B
+            - generic [ref=e81]: Items 5 - 15
+          - img [ref=e82]
+        - radio "Intro 4" [checked] [ref=e85]:
+          - generic [ref=e86]: Intro 4
+          - img [ref=e87]
+        - radio "C Items 16 - 89" [ref=e90]:
+          - generic [ref=e91]:
+            - generic [ref=e92]: C
+            - generic [ref=e93]: Items 16 - 89
+          - img [ref=e94]
+        - generic [ref=e98]: End of Items
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - img [ref=e102]
+        - generic [ref=e107]:
+          - generic [ref=e108]: Item 1
+          - paragraph [ref=e109]:
+            - strong [ref=e111]:
+              - text: Tap the
+              - generic [ref=e112]: W
+              - text: .
+      - generic [ref=e113]:
+        - img [ref=e114]
+        - radio "W" [ref=e118] [cursor=pointer]
+      - generic [ref=e119]:
+        - img [ref=e120]
+        - radio "Incorrect" [ref=e124] [cursor=pointer]
+      - generic [ref=e125]:
+        - radio "I Donʼt Know" [ref=e126] [cursor=pointer]
+        - radio "No Response" [ref=e127] [cursor=pointer]
+      - generic [ref=e128]:
+        - button "View Test Information" [ref=e129] [cursor=pointer]:
+          - img [ref=e130] [cursor=pointer]
+        - button "Flag Item" [ref=e134] [cursor=pointer]:
+          - img [ref=e135] [cursor=pointer]
+        - generic [ref=e138]:
+          - generic [ref=e139]: "0"
+          - 'generic "itemId: 16876" [ref=e140]': ITEM SCORE
+        - generic [ref=e141]:
+          - text: Basal
+          - img [ref=e144]
+        - generic [ref=e156]:
+          - text: Ceiling
+          - img [ref=e159]
+        - button "Go on to" [disabled] [ref=e172]:
+          - img [ref=e173]
+  - region "Examinee View" [ref=e176]:
+    - generic [ref=e178]:
+      - button "Hide examinee content - content is currently displayed" [ref=e179] [cursor=pointer]
+      - button "Activate Tablet Control" [ref=e180] [cursor=pointer]
+      - button "Connection Status - Comms Up" [ref=e181] [cursor=pointer]
+      - button "Collapse examinee view" [ref=e182] [cursor=pointer]
+    - generic [ref=e184]:
+      - button [ref=e185]:
+        - generic [ref=e186]: H
+      - button [ref=e187]:
+        - generic [ref=e188]: C
+      - button [ref=e189]:
+        - generic [ref=e190]: A
+      - button [ref=e191]:
+        - generic [ref=e192]: S
+      - button [ref=e193]:
+        - generic [ref=e194]: B
+      - button [ref=e195]:
+        - generic [ref=e196]: W
+```

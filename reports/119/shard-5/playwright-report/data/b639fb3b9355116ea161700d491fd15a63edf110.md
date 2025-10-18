@@ -1,0 +1,230 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic [ref=e1]:
+    - banner "Clinical Products Header" [ref=e2]:
+      - generic [ref=e3]:
+        - button "Skip to main Content" [ref=e4]
+        - link [ref=e5] [cursor=pointer]:
+          - /url: /products
+        - generic [ref=e6]: Riverside Insights Logo
+        - generic [ref=e7]:
+          - heading "Hello S05PwAut25Ex_01 ln" [level=2] [ref=e8]:
+            - generic [ref=e9]: Hello
+            - button "S05PwAut25Ex_01 ln" [ref=e10] [cursor=pointer]
+          - navigation [ref=e13]:
+            - button "Contact Us" [ref=e14] [cursor=pointer]
+            - generic [ref=e15]: "|"
+            - button "Subscription Details" [ref=e16] [cursor=pointer]
+            - generic [ref=e17]: "|"
+            - button "Sign Out" [ref=e18] [cursor=pointer]
+    - navigation "Navigation toolbar" [ref=e19]:
+      - menubar [ref=e21]:
+        - menuitem "Dashboard" [ref=e23] [cursor=pointer]: Dashboard
+        - menuitem "Test Sets" [ref=e25] [cursor=pointer]: Test Sets
+        - menuitem "Examinees" [ref=e27] [cursor=pointer]: Examinees
+        - menuitem "Staff" [ref=e29] [cursor=pointer]: Staff
+        - menuitem "Reports" [ref=e31] [cursor=pointer]:
+          - text: Reports
+          - img [ref=e32] [cursor=pointer]
+        - menuitem "Resources" [ref=e35] [cursor=pointer]: Resources
+    - main [ref=e36]:
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - heading "My Test Assignments" [level=1] [ref=e40]
+            - button "Create New Test Assignment" [ref=e41] [cursor=pointer]
+          - generic [ref=e42]:
+            - generic [ref=e45]:
+              - textbox [ref=e46]
+              - button [ref=e47] [cursor=pointer]
+            - generic [ref=e48]:
+              - button "Active" [ref=e49] [cursor=pointer]
+              - button "Closed" [ref=e50] [cursor=pointer]
+          - generic [ref=e51]:
+            - generic [ref=e52]: Examinee
+            - generic [ref=e53]: Test Set
+            - generic [ref=e54]: Date Created
+            - generic [ref=e55]: Status
+            - generic [ref=e56]: Actions
+            - button "N23607A5774, Amya Form A 10/18/2025 ●Submitted" [ref=e57] [cursor=pointer]:
+              - generic [ref=e59] [cursor=pointer]: N23607A5774, Amya
+              - generic [ref=e61] [cursor=pointer]:
+                - generic [ref=e62] [cursor=pointer]: Form A
+                - img [ref=e64] [cursor=pointer]
+              - generic [ref=e67] [cursor=pointer]: 10/18/2025
+              - generic [ref=e70] [cursor=pointer]:
+                - generic [ref=e71] [cursor=pointer]: ●
+                - text: Submitted
+              - generic [ref=e72] [cursor=pointer]:
+                - button "Edit Assignment" [ref=e73] [cursor=pointer]:
+                  - img [ref=e74] [cursor=pointer]
+                - button "Add tests to test set" [ref=e78] [cursor=pointer]:
+                  - img [ref=e79] [cursor=pointer]
+                - button "Generate Report" [ref=e82] [cursor=pointer]:
+                  - img [ref=e83] [cursor=pointer]
+            - button "N72068A69017, Karley Form A 10/18/2025 ●Submitted" [ref=e86] [cursor=pointer]:
+              - generic [ref=e88] [cursor=pointer]: N72068A69017, Karley
+              - generic [ref=e90] [cursor=pointer]:
+                - generic [ref=e91] [cursor=pointer]: Form A
+                - img [ref=e93] [cursor=pointer]
+              - generic [ref=e96] [cursor=pointer]: 10/18/2025
+              - generic [ref=e99] [cursor=pointer]:
+                - generic [ref=e100] [cursor=pointer]: ●
+                - text: Submitted
+              - generic [ref=e101] [cursor=pointer]:
+                - button "Edit Assignment" [ref=e102] [cursor=pointer]:
+                  - img [ref=e103] [cursor=pointer]
+                - button "Add tests to test set" [ref=e107] [cursor=pointer]:
+                  - img [ref=e108] [cursor=pointer]
+                - button "Generate Report" [ref=e111] [cursor=pointer]:
+                  - img [ref=e112] [cursor=pointer]
+            - button "N3172A57490, Rafaela Form A 09/29/2025 ●Submitted" [ref=e115] [cursor=pointer]:
+              - generic [ref=e117] [cursor=pointer]: N3172A57490, Rafaela
+              - generic [ref=e119] [cursor=pointer]:
+                - generic [ref=e120] [cursor=pointer]: Form A
+                - img [ref=e122] [cursor=pointer]
+              - generic [ref=e125] [cursor=pointer]: 09/29/2025
+              - generic [ref=e128] [cursor=pointer]:
+                - generic [ref=e129] [cursor=pointer]: ●
+                - text: Submitted
+              - generic [ref=e130] [cursor=pointer]:
+                - button "Edit Assignment" [ref=e131] [cursor=pointer]:
+                  - img [ref=e132] [cursor=pointer]
+                - button "Add tests to test set" [ref=e136] [cursor=pointer]:
+                  - img [ref=e137] [cursor=pointer]
+                - button "Generate Report" [ref=e140] [cursor=pointer]:
+                  - img [ref=e141] [cursor=pointer]
+            - button "N16130A79289, Dusty Form A 09/29/2025 ●Submitted" [ref=e144] [cursor=pointer]:
+              - generic [ref=e146] [cursor=pointer]: N16130A79289, Dusty
+              - generic [ref=e148] [cursor=pointer]:
+                - generic [ref=e149] [cursor=pointer]: Form A
+                - img [ref=e151] [cursor=pointer]
+              - generic [ref=e154] [cursor=pointer]: 09/29/2025
+              - generic [ref=e157] [cursor=pointer]:
+                - generic [ref=e158] [cursor=pointer]: ●
+                - text: Submitted
+              - generic [ref=e159] [cursor=pointer]:
+                - button "Edit Assignment" [ref=e160] [cursor=pointer]:
+                  - img [ref=e161] [cursor=pointer]
+                - button "Add tests to test set" [ref=e165] [cursor=pointer]:
+                  - img [ref=e166] [cursor=pointer]
+                - button "Generate Report" [ref=e169] [cursor=pointer]:
+                  - img [ref=e170] [cursor=pointer]
+            - button "N79557A20617, Miracle Form A 08/28/2025 ●Not Started" [ref=e173] [cursor=pointer]:
+              - generic [ref=e175] [cursor=pointer]: N79557A20617, Miracle
+              - generic [ref=e177] [cursor=pointer]:
+                - generic [ref=e178] [cursor=pointer]: Form A
+                - img [ref=e180] [cursor=pointer]
+              - generic [ref=e183] [cursor=pointer]: 08/28/2025
+              - generic [ref=e186] [cursor=pointer]:
+                - generic [ref=e187] [cursor=pointer]: ●
+                - text: Not Started
+              - generic [ref=e188] [cursor=pointer]:
+                - button "Edit Assignment" [ref=e189] [cursor=pointer]:
+                  - img [ref=e190] [cursor=pointer]
+                - button "Add tests to test set" [ref=e194] [cursor=pointer]:
+                  - img [ref=e195] [cursor=pointer]
+                - button [ref=e198] [cursor=pointer]:
+                  - img [ref=e199] [cursor=pointer]
+            - button "N64054A89150, Estrella Form A 08/28/2025 ●Not Started" [ref=e201] [cursor=pointer]:
+              - generic [ref=e203] [cursor=pointer]: N64054A89150, Estrella
+              - generic [ref=e205] [cursor=pointer]:
+                - generic [ref=e206] [cursor=pointer]: Form A
+                - img [ref=e208] [cursor=pointer]
+              - generic [ref=e211] [cursor=pointer]: 08/28/2025
+              - generic [ref=e214] [cursor=pointer]:
+                - generic [ref=e215] [cursor=pointer]: ●
+                - text: Not Started
+              - generic [ref=e216] [cursor=pointer]:
+                - button "Edit Assignment" [ref=e217] [cursor=pointer]:
+                  - img [ref=e218] [cursor=pointer]
+                - button "Add tests to test set" [ref=e222] [cursor=pointer]:
+                  - img [ref=e223] [cursor=pointer]
+                - button [ref=e226] [cursor=pointer]:
+                  - img [ref=e227] [cursor=pointer]
+            - button "N83832A99901, Stephany Form A 08/28/2025 ●Not Started" [ref=e229] [cursor=pointer]:
+              - generic [ref=e231] [cursor=pointer]: N83832A99901, Stephany
+              - generic [ref=e233] [cursor=pointer]:
+                - generic [ref=e234] [cursor=pointer]: Form A
+                - img [ref=e236] [cursor=pointer]
+              - generic [ref=e239] [cursor=pointer]: 08/28/2025
+              - generic [ref=e242] [cursor=pointer]:
+                - generic [ref=e243] [cursor=pointer]: ●
+                - text: Not Started
+              - generic [ref=e244] [cursor=pointer]:
+                - button "Edit Assignment" [ref=e245] [cursor=pointer]:
+                  - img [ref=e246] [cursor=pointer]
+                - button "Add tests to test set" [ref=e250] [cursor=pointer]:
+                  - img [ref=e251] [cursor=pointer]
+                - button [ref=e254] [cursor=pointer]:
+                  - img [ref=e255] [cursor=pointer]
+            - button "N91983A31295, Elva Form A 09/04/2025 ●Expired" [ref=e257] [cursor=pointer]:
+              - generic [ref=e259] [cursor=pointer]: N91983A31295, Elva
+              - generic [ref=e261] [cursor=pointer]:
+                - generic [ref=e262] [cursor=pointer]: Form A
+                - img [ref=e264] [cursor=pointer]
+              - generic [ref=e267] [cursor=pointer]: 09/04/2025
+              - generic [ref=e270] [cursor=pointer]:
+                - generic [ref=e271] [cursor=pointer]: ●
+                - text: Expired
+              - button "Generate Report" [ref=e273] [cursor=pointer]:
+                - img [ref=e274] [cursor=pointer]
+            - button "N16860A19063, Liliane Form A 08/29/2025 ●Expired" [ref=e277] [cursor=pointer]:
+              - generic [ref=e279] [cursor=pointer]: N16860A19063, Liliane
+              - generic [ref=e281] [cursor=pointer]:
+                - generic [ref=e282] [cursor=pointer]: Form A
+                - img [ref=e284] [cursor=pointer]
+              - generic [ref=e287] [cursor=pointer]: 08/29/2025
+              - generic [ref=e290] [cursor=pointer]:
+                - generic [ref=e291] [cursor=pointer]: ●
+                - text: Expired
+              - button "Generate Report" [ref=e293] [cursor=pointer]:
+                - img [ref=e294] [cursor=pointer]
+        - generic [ref=e297]:
+          - generic [ref=e298]:
+            - generic [ref=e300]:
+              - img [ref=e301]
+              - heading "Notifications Center" [level=3] [ref=e305]
+            - generic [ref=e307]:
+              - generic [ref=e308]: 10/15/2025
+              - paragraph [ref=e309]:
+                - generic [ref=e310]: The RiversideScore platform will be down for maintenance on Friday, October 17th, from 8:00 PM
+                - generic [ref=e311]: to 12:00 AM CST.
+                - generic [ref=e312]: During this time, access will be unavailable. If you have any questions, please contact
+                - generic [ref=e313]: "Customer Support Monday- Friday 8AM- 4PM CST at:"
+              - paragraph [ref=e314]:
+                - generic [ref=e315]: "Tel:"
+                - link "800-323-9540" [ref=e316] [cursor=pointer]:
+                  - /url: tel:8003239540
+                - generic [ref=e318]: "Email:"
+                - link "Inquiry@service.riversideinsights.com" [ref=e319] [cursor=pointer]:
+                  - /url: mailto:Inquiry@service.riversideinsights.com
+              - paragraph [ref=e321]:
+                - generic [ref=e322]: We appreciate your patience as we work to improve the experience!
+          - generic [ref=e323]:
+            - generic [ref=e325]:
+              - img [ref=e326]
+              - heading "Resources" [level=3] [ref=e330]
+            - list [ref=e331]:
+              - listitem [ref=e332]:
+                - button "Riverside Learn" [ref=e333] [cursor=pointer]:
+                  - heading "Riverside Learn" [level=6] [ref=e334] [cursor=pointer]
+                  - img [ref=e336] [cursor=pointer]
+              - listitem [ref=e338]:
+                - button "Onboarding Tutorial Videos" [ref=e339] [cursor=pointer]:
+                  - heading "Onboarding Tutorial Videos" [level=6] [ref=e340] [cursor=pointer]
+                  - img [ref=e342] [cursor=pointer]
+              - listitem [ref=e344]:
+                - button "Quick Reference Guides" [ref=e345] [cursor=pointer]:
+                  - heading "Quick Reference Guides" [level=6] [ref=e346] [cursor=pointer]
+                  - img [ref=e348] [cursor=pointer]
+            - generic [ref=e351]: View All
+  - region "Chat Widget" [ref=e352]:
+    - iframe [ref=e353]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e355]
+```

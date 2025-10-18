@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "119",
+    "timestamp": "20251018_000000",
+    "runReason": "Regression run in ProdCanada After hot fix 18 Oct 2025",
+    "environment": "prodCanada",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*(@TestDe|@DerivedScores))"
+  },
+  {
     "runNumber": "118",
     "timestamp": "20251018_000000",
     "runReason": "Regression run in Prod After hot fix 18 Oct 2025",

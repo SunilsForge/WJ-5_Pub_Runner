@@ -1,0 +1,126 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - img [ref=e2]:
+    - generic [ref=e4]: Loading - 0%
+  - dialog [ref=e7]:
+    - generic [ref=e8]:
+      - button "Main Navigation" [ref=e9] [cursor=pointer]
+      - button "Passage Comprehension" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11] [cursor=pointer]: Passage Comprehension
+      - 'button "Name: N37935A33725, Augustus DOB: 10/18/2021 Age: 4 Grade: Kindergarten" [ref=e14] [cursor=pointer]'
+    - generic [ref=e16]:
+      - heading "Passage Comprehension" [level=2] [ref=e17]
+      - generic [ref=e18]:
+        - generic [ref=e19]: Read the instructions below or
+        - button "begin the test." [ref=e20] [cursor=pointer]
+    - generic [ref=e21]:
+      - heading "Things to Know:" [level=2] [ref=e23]
+      - generic [ref=e27]: This test uses voice capture.
+      - button "Check Audio Settings" [ref=e28] [cursor=pointer]
+    - generic [ref=e29]:
+      - paragraph [ref=e30]: Administration Overview
+      - generic [ref=e31]:
+        - generic [ref=e32]: ✦
+        - paragraph [ref=e34]:
+          - text: "Unless the scoring key indicates otherwise, accept only one-word responses as correct. If the examinee gives a two-word response, say:"
+          - strong [ref=e35]:
+            - generic [ref=e36]:
+              - text: Tell me
+              - generic [ref=e37]: just
+              - text: one word.
+          - text: "Very young examinees may sometimes respond to this query by saying a word that is unrelated to the item. If that happens, redirect the examinee by saying:"
+          - strong [ref=e38]:
+            - generic [ref=e39]:
+              - text: Tell me
+              - generic [ref=e40]: just
+              - text: one word that goes in the blank space.
+      - generic [ref=e41]:
+        - generic [ref=e42]: ✦
+        - paragraph [ref=e44]: Do not penalize the examinee for mispronunciations resulting from articulation errors, dialect variations, or regional speech patterns.
+      - generic [ref=e45]:
+        - generic [ref=e46]: ✦
+        - paragraph [ref=e48]:
+          - text: Score a response
+          - generic [ref=e49]: correct
+          - text: if it differs from the correct response(s) provided only in verb tense or number (singular/plural), unless the scoring key indicates otherwise.
+      - generic [ref=e50]:
+        - generic [ref=e51]: ✦
+        - paragraph [ref=e53]:
+          - text: Score a response
+          - generic [ref=e54]: incorrect
+          - text: if the examinee substitutes a different part of speech, such as a noun for a verb, unless the scoring key indicates otherwise.
+      - generic [ref=e55]:
+        - generic [ref=e56]: ✦
+        - paragraph [ref=e58]:
+          - text: Do
+          - generic [ref=e59]: not
+          - text: tell the examinee
+          - generic [ref=e60]: any
+          - text: words on this test.
+      - generic [ref=e61]:
+        - generic [ref=e62]: ✦
+        - paragraph [ref=e64]: Examinees should read the passages silently. Some examinees, especially younger ones, may read aloud. If this happens, ask the examinee to read silently. If the examinee continues to read aloud, do not insist on silent reading.
+      - generic [ref=e65]:
+        - generic [ref=e66]: ✦
+        - paragraph [ref=e68]: If the examinee has finished reading the passage but does not appear actively engaged in trying to answer the item after a reasonable amount of time, encourage a response. If the examinee still does not respond, select No Response.
+      - generic [ref=e69]:
+        - generic [ref=e70]: ✦
+        - paragraph [ref=e72]: The test ends when the examinee fails to meet the continuation requirements.
+      - generic [ref=e73]:
+        - generic [ref=e74]: ✦
+        - paragraph [ref=e76]: This test contains one or more Sample Items.
+      - generic [ref=e77]:
+        - generic [ref=e78]: ✦
+        - paragraph [ref=e80]: The platform selects an appropriate starting point based on the examinee’s age or grade/education level.
+      - generic [ref=e81]:
+        - generic [ref=e82]: ✦
+        - paragraph [ref=e84]: Basal and ceiling rules apply to Block B only.
+      - generic [ref=e85]:
+        - generic [ref=e86]: ✦
+        - paragraph [ref=e88]: Some items on this test require the examinee to respond by tapping the tablet. If necessary—for instance, if the examinee is unable to tap or if the examinee verbally requests to change a tapped response—you can activate control of the tablet and use your cursor to click the examinee’s response.
+      - generic [ref=e89]:
+        - generic [ref=e90]: ✦
+        - paragraph [ref=e92]:
+          - text: "Basal: 5 consecutive lowest-numbered items administered correct or the first item in the block"
+          - text: "Ceiling: 5 consecutive highest-numbered items administered incorrect"
+          - generic [ref=e93]: and
+          - text: no higher-numbered items administered are correct,
+          - generic [ref=e94]: or
+          - text: the last item in the block
+      - paragraph [ref=e95]: Scoring
+      - generic [ref=e96]:
+        - generic [ref=e97]: ✦
+        - paragraph [ref=e99]: If the examinee provides a response that requires querying, click the response and follow the instructions to query for more information. Then select the response option from the scoring key that matches the examinee’s next response.
+      - generic [ref=e100]:
+        - generic [ref=e101]: ✦
+        - paragraph [ref=e103]: The platform assigns 1 point for correct responses and 0 points for incorrect responses.
+      - generic [ref=e104]:
+        - generic [ref=e105]: ✦
+        - paragraph [ref=e107]: The platform computes the total test score by summing the item scores across all administered blocks of items, including 1 point for each unadministered item below the basal in Block B, if it was administered.
+      - generic [ref=e108]:
+        - generic [ref=e109]: ✦
+        - paragraph [ref=e111]: For each item administered, select the response option from the scoring key that matches the examinee’s response. If the examinee provides a response that is not listed in the scoring key, use the Other option to assign it a score of 1 (correct) or 0 (incorrect).
+      - generic [ref=e112]:
+        - generic [ref=e113]: ✦
+        - paragraph [ref=e115]: The platform automatically scores tapped items correct or incorrect.
+    - button "Letʼs Begin" [ref=e117] [cursor=pointer]
+  - dialog [active] [ref=e119]:
+    - generic [ref=e120]:
+      - generic [ref=e121]:
+        - generic [ref=e123]: Before you start the test, please confirm the starting point.
+        - button "Close Dialog" [ref=e124] [cursor=pointer]: ✕
+      - generic [ref=e126]: "Test Name: Passage Comprehension"
+      - combobox [ref=e127]:
+        - option "Ages 4 to 6" [selected]
+        - option "Age 7"
+        - option "Ages 8 to 9"
+        - option "Ages 10 to 11"
+        - option "Age 12 to Average Adult"
+        - option "Above Average Adult"
+      - generic [ref=e129]:
+        - img [ref=e130]
+        - generic [ref=e133]: Voice Capture is active.
+        - button "Start Test" [ref=e134] [cursor=pointer]
+```
