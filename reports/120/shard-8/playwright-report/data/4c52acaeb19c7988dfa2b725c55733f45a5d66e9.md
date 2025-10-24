@@ -1,0 +1,144 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - button "Show Main Navigation" [ref=e7] [cursor=pointer]
+    - button "Matrices 692" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9] [cursor=pointer]: Matrices
+    - generic [ref=e11]:
+      - 'button "Name: N80960A65112, Alberto DOB: 10/24/2020 Age: 5 Grade: Kindergarten" [ref=e12] [cursor=pointer]'
+      - button "Open Notes" [ref=e13] [cursor=pointer]
+      - button "Your browser is blocking voice capture" [ref=e14] [cursor=pointer]
+  - region "Examiner Assessment view" [ref=e15]:
+    - generic [ref=e16]:
+      - button "Expand/Collapse Navigation" [ref=e17]:
+        - img [ref=e19]
+      - generic [ref=e23]:
+        - generic [ref=e26]: Starting Point
+        - radio "Intro 1" [checked] [ref=e29]:
+          - generic [ref=e30]: Intro 1
+          - img [ref=e31]
+        - generic [ref=e35]:
+          - radio "A Items 1 - 8" [ref=e36]:
+            - generic [ref=e37]:
+              - generic [ref=e38]: A
+              - generic [ref=e39]: Items 1 - 8
+            - img [ref=e40]
+          - generic [ref=e44]: Block A
+          - radio "Item 1" [checked] [ref=e46]:
+            - generic [ref=e47]: Item 1
+            - img [ref=e48]
+          - radio "Item 2" [checked] [ref=e53]:
+            - generic [ref=e54]: Item 2
+            - img [ref=e55]
+          - radio "Item 3" [checked] [ref=e58]:
+            - generic [ref=e59]: Item 3
+            - img [ref=e60]
+          - radio "Item 4" [checked] [ref=e63]:
+            - generic [ref=e64]: Item 4
+            - img [ref=e65]
+          - radio "Item 5" [checked] [ref=e68]:
+            - generic [ref=e69]: Item 5
+            - img [ref=e70]
+          - radio "Item 6" [checked] [ref=e73]:
+            - generic [ref=e74]: Item 6
+            - img [ref=e75]
+          - radio "Item 7" [checked] [ref=e78]:
+            - generic [ref=e79]: Item 7
+            - img [ref=e80]
+          - radio "Item 8" [checked] [ref=e83]:
+            - generic [ref=e84]: Item 8
+            - img [ref=e85]
+        - radio "B Items 9 - 16" [ref=e88]:
+          - generic [ref=e89]:
+            - generic [ref=e90]: B
+            - generic [ref=e91]: Items 9 - 16
+          - img [ref=e92]
+        - radio "Intro 2" [checked] [ref=e95]:
+          - generic [ref=e96]: Intro 2
+          - img [ref=e97]
+        - radio "Sample A, Trial 1" [checked] [ref=e100]:
+          - generic [ref=e101]: Sample A, Trial 1
+          - img [ref=e102]
+        - radio "Sample A, Trial 2" [checked] [ref=e105]:
+          - generic [ref=e106]: Sample A, Trial 2
+          - img [ref=e107]
+        - radio "Intro 3" [checked] [ref=e110]:
+          - generic [ref=e111]: Intro 3
+          - img [ref=e112]
+        - radio "Sample B, Trial 1" [checked] [ref=e115]:
+          - generic [ref=e116]: Sample B, Trial 1
+          - img [ref=e117]
+        - radio "Sample B, Trial 2" [checked] [ref=e120]:
+          - generic [ref=e121]: Sample B, Trial 2
+          - img [ref=e122]
+        - radio "C Items 17 - 24" [ref=e125]:
+          - generic [ref=e126]:
+            - generic [ref=e127]: C
+            - generic [ref=e128]: Items 17 - 24
+          - img [ref=e129]
+        - radio "D Items 25 - 32" [ref=e132]:
+          - generic [ref=e133]:
+            - generic [ref=e134]: D
+            - generic [ref=e135]: Items 25 - 32
+          - img [ref=e136]
+        - generic [ref=e140]: End of Items
+      - button [ref=e142]:
+        - img [ref=e143]
+    - generic [ref=e146]:
+      - generic [ref=e147]:
+        - img [ref=e148]
+        - generic [ref=e153]:
+          - generic [ref=e154]: Block A, Item 1
+          - paragraph [ref=e155]:
+            - text: "Point to Pictures A through D on the Examinee’s View and say:"
+            - strong [ref=e157]: Which of these pictures goes here
+            - text: (point to the empty box)
+            - strong [ref=e159]: "?"
+      - generic [ref=e160]:
+        - img [ref=e161]
+        - paragraph [ref=e167]: Encourage a response. If the examinee still does not respond, select No Response and advance to the next item.
+      - generic [ref=e168]:
+        - img [ref=e169]
+        - radio "Correct" [ref=e173] [cursor=pointer]
+      - generic [ref=e174]:
+        - img [ref=e175]
+        - radio "Incorrect" [ref=e179] [cursor=pointer]
+      - generic [ref=e180]:
+        - radio "I Donʼt Know" [ref=e181] [cursor=pointer]
+        - radio "No Response" [ref=e182] [cursor=pointer]
+      - generic [ref=e183]:
+        - button "View Test Information" [ref=e184] [cursor=pointer]:
+          - img [ref=e185] [cursor=pointer]
+        - button "Flag Item" [ref=e189] [cursor=pointer]:
+          - img [ref=e190] [cursor=pointer]
+        - generic [ref=e193]:
+          - generic [ref=e194]: "0"
+          - 'generic "itemId: 17219" [ref=e195]': ITEM SCORE
+        - button "Go on to" [disabled] [ref=e197]:
+          - img [ref=e198]
+  - region "Examinee View" [ref=e201]:
+    - generic [ref=e203]:
+      - button "Hide examinee content - content is currently displayed" [ref=e204] [cursor=pointer]
+      - button "Deactivate Tablet Control" [ref=e205] [cursor=pointer]
+      - button "Connection Status - Comms Up" [ref=e206] [cursor=pointer]
+      - button "Collapse examinee view" [ref=e207] [cursor=pointer]
+    - generic [ref=e209]:
+      - img [ref=e210]
+      - generic [ref=e215]: You are now in control of the examinee’s view.
+    - generic [ref=e217]:
+      - img [ref=e219]
+      - button [ref=e220]:
+        - img [ref=e221]
+        - generic [ref=e222]: A
+      - button [ref=e223]:
+        - img [ref=e224]
+        - generic [ref=e225]: B
+      - button [ref=e226]:
+        - img [ref=e227]
+        - generic [ref=e231]: C
+      - button [ref=e232]:
+        - img [ref=e233]
+        - generic [ref=e234]: D
+```
