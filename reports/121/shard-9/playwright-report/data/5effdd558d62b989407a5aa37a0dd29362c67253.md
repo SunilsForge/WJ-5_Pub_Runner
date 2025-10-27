@@ -1,0 +1,115 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - button "Show Main Navigation" [ref=e7] [cursor=pointer]
+    - button "Matrices 673" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9] [cursor=pointer]: Matrices
+    - generic [ref=e11]:
+      - 'button "Name: N35260A97596, Cali DOB: 10/27/2020 Age: 5 Grade: Kindergarten" [ref=e12] [cursor=pointer]'
+      - button "Open Notes" [ref=e13] [cursor=pointer]
+      - button "Your browser is blocking voice capture" [ref=e14] [cursor=pointer]
+  - region "Examiner Assessment view" [ref=e15]:
+    - generic [ref=e16]:
+      - button "Expand/Collapse Navigation" [ref=e17]:
+        - img [ref=e19]
+      - generic [ref=e23]:
+        - generic [ref=e26]: Starting Point
+        - radio "Intro 1" [checked] [ref=e29]:
+          - generic [ref=e30]: Intro 1
+          - img [ref=e31]
+        - radio "A Items 1 - 8" [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: A
+            - generic [ref=e39]: Items 1 - 8
+          - img [ref=e40]
+        - radio "B Items 9 - 16" [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]: B
+            - generic [ref=e48]: Items 9 - 16
+          - img [ref=e49]
+        - radio "Intro 2" [checked] [ref=e52]:
+          - generic [ref=e53]: Intro 2
+          - img [ref=e54]
+        - radio "Sample A, Trial 1" [checked] [ref=e59]:
+          - generic [ref=e60]: Sample A, Trial 1
+          - img [ref=e61]
+        - radio "Sample A, Trial 2" [checked] [ref=e66]:
+          - generic [ref=e67]: Sample A, Trial 2
+          - img [ref=e68]
+        - radio "Intro 3" [checked] [ref=e71]:
+          - generic [ref=e72]: Intro 3
+          - img [ref=e73]
+        - radio "Sample B, Trial 1" [checked] [ref=e76]:
+          - generic [ref=e77]: Sample B, Trial 1
+          - img [ref=e78]
+        - radio "Sample B, Trial 2" [checked] [ref=e81]:
+          - generic [ref=e82]: Sample B, Trial 2
+          - img [ref=e83]
+        - radio "C Items 17 - 24" [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: C
+            - generic [ref=e89]: Items 17 - 24
+          - img [ref=e90]
+        - radio "D Items 25 - 32" [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]: D
+            - generic [ref=e96]: Items 25 - 32
+          - img [ref=e97]
+        - generic [ref=e101]: End of Items
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - img [ref=e105]
+        - generic [ref=e110]:
+          - generic [ref=e111]: Sample Item A, Trial 1
+          - paragraph [ref=e112]:
+            - text: "Point to the empty box in the puzzle on the Examinee’s View and say:"
+            - strong [ref=e113]:
+              - generic [ref=e114]: Tap the picture that goes here.
+            - text: "If the examinee responds by naming a picture label, say:"
+            - strong [ref=e115]:
+              - generic [ref=e116]: Tap the picture that goes in the box.
+      - generic [ref=e117]:
+        - img [ref=e118]
+        - radio "Correct" [ref=e122] [cursor=pointer]
+      - generic [ref=e123]:
+        - img [ref=e124]
+        - radio "Incorrect" [ref=e128] [cursor=pointer]
+      - generic [ref=e129]:
+        - radio "I Donʼt Know" [ref=e130] [cursor=pointer]
+        - radio "No Response" [ref=e131] [cursor=pointer]
+      - generic [ref=e132]:
+        - button "View Test Information" [ref=e133] [cursor=pointer]:
+          - img [ref=e134] [cursor=pointer]
+        - button "Flag Item" [ref=e138] [cursor=pointer]:
+          - img [ref=e139] [cursor=pointer]
+        - generic [ref=e142]:
+          - generic [ref=e143]: "0"
+          - 'generic "itemId: 16764" [ref=e144]': ITEM SCORE
+        - button "Go on to" [disabled] [ref=e146]:
+          - img [ref=e147]
+  - region "Examinee View" [ref=e150]:
+    - generic [ref=e152]:
+      - button "Hide examinee content - content is currently displayed" [ref=e153] [cursor=pointer]
+      - button "Deactivate Tablet Control" [ref=e154] [cursor=pointer]
+      - button "Connection Status - Comms Up" [ref=e155] [cursor=pointer]
+      - button "Collapse examinee view" [ref=e156] [cursor=pointer]
+    - generic [ref=e158]:
+      - img [ref=e159]
+      - generic [ref=e164]: You are now in control of the examinee’s view.
+    - generic [ref=e166]:
+      - img [ref=e168]
+      - button [ref=e169]:
+        - img [ref=e170]
+        - generic [ref=e171]: A
+      - button [ref=e172]:
+        - img [ref=e173]
+        - generic [ref=e177]: B
+      - button [ref=e178]:
+        - img [ref=e179]
+        - generic [ref=e180]: C
+      - button [ref=e181]:
+        - img [ref=e182]
+        - generic [ref=e183]: D
+```

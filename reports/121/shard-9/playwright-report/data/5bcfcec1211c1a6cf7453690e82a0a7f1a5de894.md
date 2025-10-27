@@ -1,0 +1,126 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - button "Show Main Navigation" [ref=e7] [cursor=pointer]
+    - button "Letter-Word Identification 679" [ref=e8] [cursor=pointer]:
+      - generic [ref=e9] [cursor=pointer]: Letter-Word Identification
+    - generic [ref=e11]:
+      - 'button "Name: N94320A88834, Conor DOB: 10/27/2020 Age: 5 Grade: Kindergarten" [ref=e12] [cursor=pointer]'
+      - button "Open Notes" [ref=e13] [cursor=pointer]
+      - button "Your browser is blocking voice capture" [ref=e14] [cursor=pointer]
+  - region "Examiner Assessment view" [ref=e15]:
+    - generic [ref=e16]:
+      - button "Expand/Collapse Navigation" [ref=e17]:
+        - img [ref=e19]
+      - generic [ref=e23]:
+        - generic [ref=e26]: Starting Point
+        - radio "Intro 1" [checked] [ref=e29]:
+          - generic [ref=e30]: Intro 1
+          - img [ref=e31]
+        - radio "A Items 1 - 4" [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: A
+            - generic [ref=e39]: Items 1 - 4
+          - img [ref=e40]
+        - radio "Intro 2" [checked] [ref=e45]:
+          - generic [ref=e46]: Intro 2
+          - img [ref=e47]
+        - radio "Intro 3" [checked] [ref=e52]:
+          - generic [ref=e53]: Intro 3
+          - img [ref=e54]
+        - generic [ref=e56]:
+          - radio "B Items 5 - 15" [ref=e57]:
+            - generic [ref=e58]:
+              - generic [ref=e59]: B
+              - generic [ref=e60]: Items 5 - 15
+            - img [ref=e61]
+          - generic [ref=e65]: Block B
+          - radio "Item 5" [checked] [ref=e67]:
+            - generic [ref=e68]: Item 5
+            - img [ref=e69]
+          - radio "Item 6" [checked] [ref=e74]:
+            - generic [ref=e75]: Item 6
+            - img [ref=e76]
+          - radio "Item 7" [checked] [ref=e79]:
+            - generic [ref=e80]: Item 7
+            - img [ref=e81]
+          - radio "Item 8" [checked] [ref=e84]:
+            - generic [ref=e85]: Item 8
+            - img [ref=e86]
+          - radio "Item 9" [checked] [ref=e89]:
+            - generic [ref=e90]: Item 9
+            - img [ref=e91]
+          - radio "Item 10" [checked] [ref=e94]:
+            - generic [ref=e95]: Item 10
+            - img [ref=e96]
+          - radio "Item 11" [checked] [ref=e99]:
+            - generic [ref=e100]: Item 11
+            - img [ref=e101]
+          - radio "Item 12" [checked] [ref=e104]:
+            - generic [ref=e105]: Item 12
+            - img [ref=e106]
+          - radio "Item 13" [checked] [ref=e109]:
+            - generic [ref=e110]: Item 13
+            - img [ref=e111]
+          - radio "Item 14" [checked] [ref=e114]:
+            - generic [ref=e115]: Item 14
+            - img [ref=e116]
+          - radio "Item 15" [checked] [ref=e119]:
+            - generic [ref=e120]: Item 15
+            - img [ref=e121]
+        - radio "Intro 4" [checked] [ref=e124]:
+          - generic [ref=e125]: Intro 4
+          - img [ref=e126]
+        - radio "C Items 16 - 89" [ref=e129]:
+          - generic [ref=e130]:
+            - generic [ref=e131]: C
+            - generic [ref=e132]: Items 16 - 89
+          - img [ref=e133]
+        - generic [ref=e137]: End of Items
+      - button [ref=e139]:
+        - img [ref=e140]
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - img [ref=e145]
+        - generic [ref=e150]:
+          - generic [ref=e151]: Item 5
+          - paragraph [ref=e152]:
+            - strong [ref=e154]: What is the name of this letter?
+      - generic [ref=e155]:
+        - img [ref=e156]
+        - paragraph [ref=e162]: Encourage a response. If the examinee still does not respond, select No Response and advance to the next item.
+      - generic [ref=e163]:
+        - img [ref=e164]
+        - radio "B" [ref=e168] [cursor=pointer]
+      - generic [ref=e169]:
+        - img [ref=e170]
+        - radio "Incorrect" [ref=e174] [cursor=pointer]
+      - generic [ref=e175]:
+        - radio "I Donʼt Know" [ref=e176] [cursor=pointer]
+        - radio "No Response" [ref=e177] [cursor=pointer]
+      - generic [ref=e178]:
+        - button "View Test Information" [ref=e179] [cursor=pointer]:
+          - img [ref=e180] [cursor=pointer]
+        - button "Flag Item" [ref=e184] [cursor=pointer]:
+          - img [ref=e185] [cursor=pointer]
+        - generic [ref=e188]:
+          - generic [ref=e189]: "0"
+          - 'generic "itemId: 17622" [ref=e190]': ITEM SCORE
+        - generic [ref=e191]:
+          - text: Basal
+          - img [ref=e194]
+        - generic [ref=e206]:
+          - text: Ceiling
+          - img [ref=e209]
+        - button "Go on to" [disabled] [ref=e222]:
+          - img [ref=e223]
+  - region "Examinee View" [ref=e226]:
+    - generic [ref=e228]:
+      - button "Hide examinee content - content is currently displayed" [ref=e229] [cursor=pointer]
+      - button "Activate Tablet Control" [ref=e230] [cursor=pointer]
+      - button "Connection Status - Comms Up" [ref=e231] [cursor=pointer]
+      - button "Collapse examinee view" [ref=e232] [cursor=pointer]
+    - generic [ref=e235]: B
+```
