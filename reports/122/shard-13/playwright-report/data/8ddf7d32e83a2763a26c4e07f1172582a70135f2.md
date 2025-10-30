@@ -1,0 +1,66 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - main [ref=e4]:
+      - generic [ref=e6]:
+        - button [ref=e7]: Skip to main Content
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /products
+        - generic [ref=e9]: Riverside Insights Logo
+        - generic [ref=e10]:
+          - heading [level=2] [ref=e11]:
+            - generic [ref=e12]: Hello
+            - button [ref=e13] [cursor=pointer]: 07PwAut25AH ln
+          - navigation [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: https://riversideinsights.com/explore
+              - text: Shop Now
+            - button [ref=e18] [cursor=pointer]: "| Contact Us"
+            - button [ref=e19] [cursor=pointer]: "| Subscription Details"
+            - button [ref=e20] [cursor=pointer]: "| Sign Out"
+      - button [ref=e28] [cursor=pointer]: Update Profile
+      - generic [ref=e31]: "To access scoring and reporting, please make a selection below:"
+      - menubar [ref=e32]:
+        - menuitem [ref=e33] [cursor=pointer]
+    - contentinfo [ref=e35]:
+      - generic [ref=e36]: Footer region,
+      - link [ref=e37] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com
+        - img [ref=e38] [cursor=pointer]
+      - generic [ref=e39]:
+        - link [ref=e40] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e41] [cursor=pointer]
+        - link [ref=e42] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e43] [cursor=pointer]
+        - link [ref=e44] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e45] [cursor=pointer]
+        - link [ref=e46] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e47] [cursor=pointer]
+      - generic [ref=e48]:
+        - link [ref=e49] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e50]: "|"
+        - link [ref=e51] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e52]: Footer region end
+  - dialog [active] [ref=e55]:
+    - button "Close" [ref=e56]: ×
+    - paragraph [ref=e60]: Feature Announcement
+    - heading "🌸 Spring Into What’s Next – Highlights from Our Spring Release 🌼" [level=2] [ref=e64]:
+      - strong [ref=e65]: 🌸 Spring Into What’s Next – Highlights from Our Spring Release 🌼
+    - generic [ref=e68]:
+      - paragraph [ref=e69]: "Big things are blooming! Here’s what’s new:"
+      - paragraph [ref=e70]: 📝 Item Detail Report – Print-ready PDFs with item-level scores, notes, and more.
+      - paragraph [ref=e71]: 📊 Score Report Upgrades – Cleaner Word format, helpful interpretation descriptors, and printable Webpage Reports.
+      - paragraph [ref=e72]: 🧪 7 New Tests – Including the all-new Rapid Automatized Naming (RAN) Test Set!
+      - paragraph [ref=e73]: ✨ Usability Tweaks – Small changes, big impact.
+    - button "Okay, got it!" [ref=e77]
+```
