@@ -1,0 +1,84 @@
+# Page snapshot
+
+```yaml
+- dialog [active] [ref=e2]:
+  - generic [ref=e3]:
+    - button "Main Navigation" [ref=e4] [cursor=pointer]
+    - button "Analysis-Synthesis" [ref=e5] [cursor=pointer]:
+      - generic [ref=e6] [cursor=pointer]: Analysis-Synthesis
+    - button "Examinee Information" [ref=e9] [cursor=pointer]:
+      - img [ref=e10] [cursor=pointer]
+      - generic [ref=e13] [cursor=pointer]:
+        - generic [ref=e14] [cursor=pointer]: N61418A19448, Alexane
+        - generic [ref=e15] [cursor=pointer]: "Age: 5y Grade: Kindergarten"
+  - generic [ref=e17]:
+    - heading "Analysis-Synthesis" [level=2] [ref=e18]
+    - generic [ref=e19]:
+      - generic [ref=e20]: Read the instructions below or
+      - button "begin the test." [ref=e21] [cursor=pointer]
+  - generic [ref=e22]:
+    - heading "Things to Know:" [level=2] [ref=e24]
+    - generic [ref=e28]: This test presents some instructions via video animations.
+    - generic [ref=e32]: This test uses voice capture.
+    - button "Check Audio Settings" [ref=e33] [cursor=pointer]
+  - generic [ref=e34]:
+    - paragraph [ref=e35]: Administration Overview
+    - generic [ref=e36]:
+      - generic [ref=e37]: ✦
+      - paragraph [ref=e39]:
+        - text: Before testing, adjust the volume to a
+        - generic [ref=e40]: comfortably loud level
+        - text: on the examinee’s headphones or tablet speaker.
+    - generic [ref=e41]:
+      - generic [ref=e42]: ✦
+      - paragraph [ref=e44]:
+        - text: Test tasks are introduced with short videos. Confirm that the examinee is ready before starting each video. Play each video only
+        - generic [ref=e45]: one time
+        - text: .
+    - generic [ref=e46]:
+      - generic [ref=e47]: ✦
+      - paragraph [ref=e49]: On Sample Item A through Item 28, acknowledge the correct responses by nodding or saying a word such as “Good” or “Right.” Make sure that the examinee has finished responding before you acknowledge the response.
+    - generic [ref=e50]:
+      - generic [ref=e51]: ✦
+      - paragraph [ref=e53]:
+        - text: On Items 29 through 35, do
+        - generic [ref=e54]: not
+        - text: acknowledge correct responses.
+    - generic [ref=e55]:
+      - generic [ref=e56]: ✦
+      - paragraph [ref=e58]: Items 1 through 25 each have a 30-second time limit, and Items 26 through 35 each have a 1-minute time limit. The platform alerts you when the item time limit is reached. When this happens, select No Response and then follow the on-screen instructions.
+    - generic [ref=e59]:
+      - generic [ref=e60]: ✦
+      - paragraph [ref=e62]: For incorrect responses on Trial 1 of Sample Items A through E, corrective feedback is provided by short videos that play automatically.
+    - generic [ref=e63]:
+      - generic [ref=e64]: ✦
+      - paragraph [ref=e66]: The test ends when the examinee fails to meet the continuation requirements.
+    - generic [ref=e67]:
+      - generic [ref=e68]: ✦
+      - paragraph [ref=e70]: This test contains one or more Sample Items.
+    - generic [ref=e71]:
+      - generic [ref=e72]: ✦
+      - paragraph [ref=e74]: All examinees begin with the Color Pretest. Examinees who pass the Color Pretest advance to the test items. Examinees who fail the Color Pretest will not receive a score for this test.
+    - generic [ref=e75]:
+      - generic [ref=e76]: ✦
+      - paragraph [ref=e78]: Testing begins with Item 1.
+    - paragraph [ref=e79]: Scoring
+    - generic [ref=e80]:
+      - generic [ref=e81]: ✦
+      - paragraph [ref=e83]: For each item administered, select the response option from the scoring key that matches the examinee’s response. If the examinee provides an incorrect response that is not listed in the scoring key, select Incorrect.
+    - generic [ref=e84]:
+      - generic [ref=e85]: ✦
+      - paragraph [ref=e87]: If the examinee provides a response that requires querying, click the response and follow the instructions to query for more information. Then select the response option from the scoring key that matches the examinee’s next response.
+    - generic [ref=e88]:
+      - generic [ref=e89]: ✦
+      - paragraph [ref=e91]: The platform assigns 1 point for correct responses and 0 points for incorrect responses.
+    - generic [ref=e92]:
+      - generic [ref=e93]: ✦
+      - paragraph [ref=e95]: The platform computes the total test score by summing the item scores for all administered test items.
+  - generic [ref=e96]:
+    - button "Letʼs Begin" [ref=e97] [cursor=pointer]
+    - button "SCROLL FOR MORE ↓" [ref=e98] [cursor=pointer]:
+      - text: SCROLL
+      - text: FOR MORE
+      - text: ↓
+```

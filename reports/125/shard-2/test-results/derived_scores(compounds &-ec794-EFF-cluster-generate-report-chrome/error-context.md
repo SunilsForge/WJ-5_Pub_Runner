@@ -1,0 +1,174 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - button [ref=e7] [cursor=pointer]
+      - generic [ref=e8]:
+        - button [ref=e9] [cursor=pointer]: Number-Pattern Matching
+        - button [ref=e10] [cursor=pointer]:
+          - img [ref=e11] [cursor=pointer]
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - button [ref=e16] [cursor=pointer]:
+            - img [ref=e17] [cursor=pointer]
+            - generic [ref=e20] [cursor=pointer]:
+              - generic [ref=e21] [cursor=pointer]: N26721A54741, Lester
+              - generic [ref=e22] [cursor=pointer]: "Age: 5y Grade: Kindergarten"
+          - button [ref=e23] [cursor=pointer]
+          - generic [ref=e26] [cursor=pointer]:
+            - img [ref=e27] [cursor=pointer]
+            - img [ref=e31] [cursor=pointer]
+        - generic [ref=e36]:
+          - button [ref=e37] [cursor=pointer]:
+            - generic [ref=e38] [cursor=pointer]: Flag
+          - button [ref=e39] [cursor=pointer]:
+            - generic [ref=e40] [cursor=pointer]: Note
+    - region [ref=e41]:
+      - generic [ref=e42]:
+        - button [ref=e43]:
+          - img [ref=e45]
+        - generic [ref=e49]:
+          - generic [ref=e52]: Starting Point
+          - radio [checked] [ref=e55]:
+            - generic [ref=e56]: Intro 1
+            - img [ref=e57]
+          - radio [checked] [ref=e62]:
+            - generic [ref=e63]: Sample A, Trial 1
+            - img [ref=e64]
+          - radio [checked] [ref=e67]:
+            - generic [ref=e68]: Sample A, Trial 2
+            - img [ref=e69]
+          - radio [checked] [ref=e72]:
+            - generic [ref=e73]: Sample B, Trial 1
+            - img [ref=e74]
+          - radio [checked] [ref=e77]:
+            - generic [ref=e78]: Sample B, Trial 2
+            - img [ref=e79]
+          - radio [checked] [ref=e82]:
+            - generic [ref=e83]: Practice
+            - img [ref=e84]
+          - radio [checked] [ref=e87]:
+            - generic [ref=e88]: Test Items
+            - img [ref=e89]
+          - generic [ref=e95]: End of Items
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - img [ref=e99]
+          - generic [ref=e104]:
+            - generic [ref=e105]: Test Items
+            - paragraph [ref=e106]:
+              - strong [ref=e108]: Now you will see more rows of numbers like these. Tap the two numbers that are alike in each row. Start at the top of your screen and do each row. When you get to the bottom of your screen, tap Next. Keep working until I tell you to stop. Work as quickly as you can without making mistakes. If you do make a mistake, just tap the one you want to change and then tap your new answer. You will have three minutes. Are you ready?
+              - text: "Confirm that the examinee is ready to begin, and then say:"
+              - strong [ref=e110]: Go ahead.
+            - paragraph [ref=e111]:
+              - button [disabled] [ref=e114]: Start the timer and display the test items
+        - generic [ref=e115]:
+          - img [ref=e116]
+          - paragraph [ref=e122]: If necessary, remind the examinee to tap Next at the bottom of the screen.
+          - button [ref=e123] [cursor=pointer]: ✕
+        - generic [ref=e124]:
+          - generic [ref=e125]:
+            - generic [ref=e126]: "90"
+            - generic [ref=e127]: ITEM SCORE
+          - button [ref=e129] [cursor=pointer]: End Test
+    - region [ref=e130]:
+      - generic [ref=e132]:
+        - button [ref=e133] [cursor=pointer]:
+          - generic [ref=e134] [cursor=pointer]: Hide
+        - button [ref=e135] [cursor=pointer]:
+          - generic [ref=e136] [cursor=pointer]: Control
+        - button [ref=e137] [cursor=pointer]
+        - button [ref=e138] [cursor=pointer]
+      - generic [ref=e140]:
+        - img [ref=e141]
+        - generic [ref=e146]: You are now in control of the examinee’s view.
+      - generic [ref=e148]:
+        - generic [ref=e149]:
+          - generic [ref=e151]:
+            - radio [disabled] [ref=e152]: "583"
+            - radio [checked] [disabled] [ref=e153]: "385"
+            - radio [disabled] [ref=e154]: "358"
+            - radio [checked] [disabled] [ref=e155]: "385"
+            - radio [disabled] [ref=e156]: "538"
+            - radio [disabled] [ref=e157]: "835"
+          - generic [ref=e159]:
+            - radio [checked] [disabled] [ref=e160]: "970"
+            - radio [disabled] [ref=e161]: "790"
+            - radio [disabled] [ref=e162]: "907"
+            - radio [disabled] [ref=e163]: "097"
+            - radio [checked] [disabled] [ref=e164]: "970"
+            - radio [disabled] [ref=e165]: "079"
+          - generic [ref=e167]:
+            - radio [checked] [disabled] [ref=e168]: "461"
+            - radio [disabled] [ref=e169]: "614"
+            - radio [checked] [disabled] [ref=e170]: "461"
+            - radio [disabled] [ref=e171]: "164"
+            - radio [disabled] [ref=e172]: "416"
+            - radio [disabled] [ref=e173]: "641"
+          - generic [ref=e175]:
+            - radio [disabled] [ref=e176]: "972"
+            - radio [disabled] [ref=e177]: "729"
+            - radio [checked] [disabled] [ref=e178]: "279"
+            - radio [disabled] [ref=e179]: "297"
+            - radio [disabled] [ref=e180]: "792"
+            - radio [checked] [disabled] [ref=e181]: "279"
+          - generic [ref=e183]:
+            - radio [disabled] [ref=e184]: "805"
+            - radio [disabled] [ref=e185]: "508"
+            - radio [checked] [disabled] [ref=e186]: "850"
+            - radio [disabled] [ref=e187]: "558"
+            - radio [disabled] [ref=e188]: "550"
+            - radio [checked] [disabled] [ref=e189]: "850"
+          - generic [ref=e191]:
+            - radio [checked] [disabled] [ref=e192]: "613"
+            - radio [disabled] [ref=e193]: "631"
+            - radio [disabled] [ref=e194]: "361"
+            - radio [checked] [disabled] [ref=e195]: "613"
+            - radio [disabled] [ref=e196]: "316"
+            - radio [disabled] [ref=e197]: "313"
+          - generic [ref=e199]:
+            - radio [checked] [disabled] [ref=e200]: "243"
+            - radio [disabled] [ref=e201]: "342"
+            - radio [disabled] [ref=e202]: "324"
+            - radio [disabled] [ref=e203]: "423"
+            - radio [disabled] [ref=e204]: "234"
+            - radio [checked] [disabled] [ref=e205]: "243"
+          - generic [ref=e207]:
+            - radio [checked] [disabled] [ref=e208]: "956"
+            - radio [disabled] [ref=e209]: "695"
+            - radio [disabled] [ref=e210]: "965"
+            - radio [checked] [disabled] [ref=e211]: "956"
+            - radio [disabled] [ref=e212]: "596"
+            - radio [disabled] [ref=e213]: "595"
+          - generic [ref=e215]:
+            - radio [disabled] [ref=e216]: "708"
+            - radio [checked] [disabled] [ref=e217]: "807"
+            - radio [disabled] [ref=e218]: "780"
+            - radio [disabled] [ref=e219]: "870"
+            - radio [checked] [disabled] [ref=e220]: "807"
+            - radio [disabled] [ref=e221]: "878"
+          - generic [ref=e223]:
+            - radio [disabled] [ref=e224]: "131"
+            - radio [disabled] [ref=e225]: "134"
+            - radio [checked] [disabled] [ref=e226]: "413"
+            - radio [disabled] [ref=e227]: "431"
+            - radio [disabled] [ref=e228]: "143"
+            - radio [checked] [disabled] [ref=e229]: "413"
+        - generic [ref=e230]:
+          - generic [ref=e231]: 9/9
+          - button [disabled] [ref=e232]: Done
+      - img [ref=e236]
+  - dialog [active] [ref=e254]:
+    - generic [ref=e255]:
+      - generic [ref=e258]:
+        - img [ref=e259]
+        - generic [ref=e271]:
+          - generic [ref=e272]: Time is up.
+          - text: "Say:"
+          - generic [ref=e273]: Stop.
+      - generic [ref=e275]:
+        - button "Close" [ref=e276] [cursor=pointer]
+        - button "End Test" [ref=e278] [cursor=pointer]
+```

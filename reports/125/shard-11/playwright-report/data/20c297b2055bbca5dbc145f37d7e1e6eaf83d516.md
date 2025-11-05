@@ -1,0 +1,120 @@
+# Page snapshot
+
+```yaml
+- dialog [active] [ref=e2]:
+  - generic [ref=e3]:
+    - button "Main Navigation" [ref=e4] [cursor=pointer]
+    - button "Oral Vocabulary–Synonyms" [ref=e5] [cursor=pointer]:
+      - generic [ref=e6] [cursor=pointer]: Oral Vocabulary–Synonyms
+    - button "Examinee Information" [ref=e9] [cursor=pointer]:
+      - img [ref=e10] [cursor=pointer]
+      - generic [ref=e13] [cursor=pointer]:
+        - generic [ref=e14] [cursor=pointer]: N72048A19405, Lora
+        - generic [ref=e15] [cursor=pointer]: "Age: 5y Grade: Kindergarten"
+  - generic [ref=e17]:
+    - heading "Oral Vocabulary–Synonyms" [level=2] [ref=e18]
+    - generic [ref=e19]:
+      - generic [ref=e20]: Read the instructions below or
+      - button "begin the test." [ref=e21] [cursor=pointer]
+  - generic [ref=e22]:
+    - heading "Things to Know:" [level=2] [ref=e24]
+    - generic [ref=e28]: This test presents items via audio recording.
+    - generic [ref=e32]: This test uses voice capture.
+    - button "Check Audio Settings" [ref=e33] [cursor=pointer]
+  - generic [ref=e34]:
+    - paragraph [ref=e35]: Administration Overview
+    - generic [ref=e36]:
+      - generic [ref=e37]: ✦
+      - paragraph [ref=e39]:
+        - text: Before testing, adjust the volume to a
+        - generic [ref=e40]: comfortably loud level
+        - text: on the examinee’s headphones or tablet speaker.
+    - generic [ref=e41]:
+      - generic [ref=e42]: ✦
+      - paragraph [ref=e44]: Look away from the examinee while an item is being presented from the audio recording. After the two beeps, look expectantly at the examinee.
+    - generic [ref=e45]:
+      - generic [ref=e46]: ✦
+      - paragraph [ref=e48]:
+        - text: "Basal: 5 consecutive lowest-numbered items administered correct or Item 1"
+        - text: "Ceiling: 5 consecutive highest-numbered items administered incorrect"
+        - generic [ref=e49]: and
+        - text: no higher-numbered items administered are correct,
+        - generic [ref=e50]: or
+        - text: the last item on the test
+    - generic [ref=e51]:
+      - generic [ref=e52]: ✦
+      - paragraph [ref=e54]:
+        - text: "Unless the scoring key indicates otherwise, accept only one-word responses as correct. If the examinee gives a two-word response, say:"
+        - strong [ref=e55]:
+          - generic [ref=e56]:
+            - text: Tell me
+            - generic [ref=e57]: just
+            - text: one word.
+        - text: "Very young examinees may sometimes respond to this query by saying a word that is unrelated to the item. If that happens, redirect the examinee by saying:"
+        - strong [ref=e58]:
+          - generic [ref=e59]:
+            - text: Tell me
+            - generic [ref=e60]: just
+            - text: one word for [word].
+    - generic [ref=e61]:
+      - generic [ref=e62]: ✦
+      - paragraph [ref=e64]: Do not penalize the examinee for mispronunciations resulting from articulation errors, dialect variations, or regional speech patterns.
+    - generic [ref=e65]:
+      - generic [ref=e66]: ✦
+      - paragraph [ref=e68]: The platform will administer Oral Vocabulary–Synonyms first, followed immediately by Oral Vocabulary–Antonyms.
+    - generic [ref=e69]:
+      - generic [ref=e70]: ✦
+      - paragraph [ref=e72]: Know the exact pronunciation of each test item before administering this test.
+    - generic [ref=e73]:
+      - generic [ref=e74]: ✦
+      - paragraph [ref=e76]: Present Sample Item A orally. Present Sample Item B and all test items from the audio recording.
+    - generic [ref=e77]:
+      - generic [ref=e78]: ✦
+      - paragraph [ref=e80]: If the examinee demonstrates difficulty with the audio recording, you may present all items orally. If presenting items orally, say each item exactly as it is presented on the audio recording.
+    - generic [ref=e81]:
+      - generic [ref=e82]: ✦
+      - paragraph [ref=e84]: The platform alerts you when 30 seconds have elapsed on any test item. Encourage the examinee to respond. If the examinee does not appear to be actively engaged in the item, select No Response.
+    - generic [ref=e85]:
+      - generic [ref=e86]: ✦
+      - paragraph [ref=e88]:
+        - text: Score a response
+        - generic [ref=e89]: correct
+        - text: if it differs from the correct response(s) provided only in verb tense or number (singular/plural), unless the scoring key indicates otherwise.
+    - generic [ref=e90]:
+      - generic [ref=e91]: ✦
+      - paragraph [ref=e93]:
+        - text: Score a response
+        - generic [ref=e94]: incorrect
+        - text: if the examinee substitutes a different part of speech, such as a noun for a verb, unless the scoring key indicates otherwise.
+    - generic [ref=e95]:
+      - generic [ref=e96]: ✦
+      - paragraph [ref=e98]: You may repeat any item on this test if the examinee requests it.
+    - generic [ref=e99]:
+      - generic [ref=e100]: ✦
+      - paragraph [ref=e102]: This test contains one or more Sample Items.
+    - generic [ref=e103]:
+      - generic [ref=e104]: ✦
+      - paragraph [ref=e106]: The platform selects an appropriate starting point based on the examinee’s age or grade/education level.
+    - generic [ref=e107]:
+      - generic [ref=e108]: ✦
+      - paragraph [ref=e110]: The test ends when the examinee has met the basal and ceiling requirements.
+    - paragraph [ref=e111]: Scoring
+    - generic [ref=e112]:
+      - generic [ref=e113]: ✦
+      - paragraph [ref=e115]: If the examinee provides a response that requires querying, click the response and follow the instructions to query for more information. Then select the response option from the scoring key that matches the examinee’s next response.
+    - generic [ref=e116]:
+      - generic [ref=e117]: ✦
+      - paragraph [ref=e119]: The platform assigns 1 point for correct responses and 0 points for incorrect responses.
+    - generic [ref=e120]:
+      - generic [ref=e121]: ✦
+      - paragraph [ref=e123]: The platform computes the total test score by summing the item scores for all administered items and adding 1 point for each unadministered item below the basal.
+    - generic [ref=e124]:
+      - generic [ref=e125]: ✦
+      - paragraph [ref=e127]: For each item administered, select the response option from the scoring key that matches the examinee’s response. If the examinee provides a response that is not listed in the scoring key, use the Other option to assign it a score of 1 (correct) or 0 (incorrect).
+  - generic [ref=e128]:
+    - button "Letʼs Begin" [ref=e129] [cursor=pointer]
+    - button "SCROLL FOR MORE ↓" [ref=e130] [cursor=pointer]:
+      - text: SCROLL
+      - text: FOR MORE
+      - text: ↓
+```

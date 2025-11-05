@@ -1,0 +1,174 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - button [ref=e7] [cursor=pointer]
+      - generic [ref=e8]:
+        - button [ref=e9] [cursor=pointer]: Letter-Pattern Matching
+        - button [ref=e10] [cursor=pointer]:
+          - img [ref=e11] [cursor=pointer]
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - button [ref=e16] [cursor=pointer]:
+            - img [ref=e17] [cursor=pointer]
+            - generic [ref=e20] [cursor=pointer]:
+              - generic [ref=e21] [cursor=pointer]: N58694A44211, Samara
+              - generic [ref=e22] [cursor=pointer]: "Age: 5y Grade: Kindergarten"
+          - button [ref=e23] [cursor=pointer]
+          - generic [ref=e26] [cursor=pointer]:
+            - img [ref=e27] [cursor=pointer]
+            - img [ref=e31] [cursor=pointer]
+        - generic [ref=e36]:
+          - button [ref=e37] [cursor=pointer]:
+            - generic [ref=e38] [cursor=pointer]: Flag
+          - button [ref=e39] [cursor=pointer]:
+            - generic [ref=e40] [cursor=pointer]: Note
+    - region [ref=e41]:
+      - generic [ref=e42]:
+        - button [ref=e43]:
+          - img [ref=e45]
+        - generic [ref=e49]:
+          - generic [ref=e52]: Starting Point
+          - radio [checked] [ref=e55]:
+            - generic [ref=e56]: Intro 1
+            - img [ref=e57]
+          - radio [checked] [ref=e62]:
+            - generic [ref=e63]: Sample A, Trial 1
+            - img [ref=e64]
+          - radio [checked] [ref=e67]:
+            - generic [ref=e68]: Sample A, Trial 2
+            - img [ref=e69]
+          - radio [checked] [ref=e72]:
+            - generic [ref=e73]: Sample B, Trial 1
+            - img [ref=e74]
+          - radio [checked] [ref=e77]:
+            - generic [ref=e78]: Sample B, Trial 2
+            - img [ref=e79]
+          - radio [checked] [ref=e82]:
+            - generic [ref=e83]: Practice
+            - img [ref=e84]
+          - radio [checked] [ref=e87]:
+            - generic [ref=e88]: Test Items
+            - img [ref=e89]
+          - generic [ref=e95]: End of Items
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - img [ref=e99]
+          - generic [ref=e104]:
+            - generic [ref=e105]: Test Items
+            - paragraph [ref=e106]:
+              - strong [ref=e108]: Now you will see more rows of letters like these. Tap the two letters or sets of letters that are alike in each row. Start at the top of your screen and do each row. When you get to the bottom of your screen, tap Next. Keep working until I tell you to stop. Work as quickly as you can without making mistakes. If you do make a mistake, just tap the one you want to change and then tap your new answer. You will have three minutes. Are you ready?
+              - text: "Confirm that the examinee is ready to begin, and then say:"
+              - strong [ref=e110]: Go ahead.
+            - paragraph [ref=e111]:
+              - button [disabled] [ref=e114]: Start the timer and display the test items
+        - generic [ref=e115]:
+          - img [ref=e116]
+          - paragraph [ref=e122]: If necessary, remind the examinee to tap Next at the bottom of the screen.
+          - button [ref=e123] [cursor=pointer]: ✕
+        - generic [ref=e124]:
+          - generic [ref=e125]:
+            - generic [ref=e126]: "100"
+            - generic [ref=e127]: ITEM SCORE
+          - button [ref=e129] [cursor=pointer]: End Test
+    - region [ref=e130]:
+      - generic [ref=e132]:
+        - button [ref=e133] [cursor=pointer]:
+          - generic [ref=e134] [cursor=pointer]: Hide
+        - button [ref=e135] [cursor=pointer]:
+          - generic [ref=e136] [cursor=pointer]: Control
+        - button [ref=e137] [cursor=pointer]
+        - button [ref=e138] [cursor=pointer]
+      - generic [ref=e140]:
+        - img [ref=e141]
+        - generic [ref=e146]: You are now in control of the examinee’s view.
+      - generic [ref=e148]:
+        - generic [ref=e149]:
+          - generic [ref=e151]:
+            - radio [disabled] [ref=e152]: wfni
+            - radio [checked] [disabled] [ref=e153]: wign
+            - radio [disabled] [ref=e154]: hrwi
+            - radio [checked] [disabled] [ref=e155]: wign
+            - radio [disabled] [ref=e156]: angw
+            - radio [disabled] [ref=e157]: wngi
+          - generic [ref=e159]:
+            - radio [checked] [disabled] [ref=e160]: borp
+            - radio [disabled] [ref=e161]: pflo
+            - radio [disabled] [ref=e162]: prbo
+            - radio [disabled] [ref=e163]: rtpo
+            - radio [checked] [disabled] [ref=e164]: borp
+            - radio [disabled] [ref=e165]: fbor
+          - generic [ref=e167]:
+            - radio [disabled] [ref=e168]: rmbo
+            - radio [checked] [disabled] [ref=e169]: corm
+            - radio [checked] [disabled] [ref=e170]: corm
+            - radio [disabled] [ref=e171]: korc
+            - radio [disabled] [ref=e172]: myrc
+            - radio [disabled] [ref=e173]: drmo
+          - generic [ref=e175]:
+            - radio [disabled] [ref=e176]: rsoe
+            - radio [checked] [disabled] [ref=e177]: vore
+            - radio [disabled] [ref=e178]: mvre
+            - radio [disabled] [ref=e179]: rveo
+            - radio [disabled] [ref=e180]: veor
+            - radio [checked] [disabled] [ref=e181]: vore
+          - generic [ref=e183]:
+            - radio [checked] [disabled] [ref=e184]: drub
+            - radio [disabled] [ref=e185]: dtub
+            - radio [disabled] [ref=e186]: kbru
+            - radio [checked] [disabled] [ref=e187]: drub
+            - radio [disabled] [ref=e188]: urbd
+            - radio [disabled] [ref=e189]: dtru
+          - generic [ref=e191]:
+            - radio [disabled] [ref=e192]: tsof
+            - radio [checked] [disabled] [ref=e193]: poss
+            - radio [disabled] [ref=e194]: spto
+            - radio [disabled] [ref=e195]: poxs
+            - radio [disabled] [ref=e196]: spos
+            - radio [checked] [disabled] [ref=e197]: poss
+          - generic [ref=e199]:
+            - radio [checked] [disabled] [ref=e200]: dain
+            - radio [disabled] [ref=e201]: nbai
+            - radio [disabled] [ref=e202]: badn
+            - radio [checked] [disabled] [ref=e203]: dain
+            - radio [disabled] [ref=e204]: dria
+            - radio [disabled] [ref=e205]: ndia
+          - generic [ref=e207]:
+            - radio [disabled] [ref=e208]: gltu
+            - radio [disabled] [ref=e209]: orlu
+            - radio [disabled] [ref=e210]: hglu
+            - radio [checked] [disabled] [ref=e211]: goul
+            - radio [disabled] [ref=e212]: tugo
+            - radio [checked] [disabled] [ref=e213]: goul
+          - generic [ref=e215]:
+            - radio [disabled] [ref=e216]: ftwi
+            - radio [checked] [disabled] [ref=e217]: wift
+            - radio [disabled] [ref=e218]: tfiw
+            - radio [checked] [disabled] [ref=e219]: wift
+            - radio [disabled] [ref=e220]: iftw
+            - radio [disabled] [ref=e221]: wfit
+          - generic [ref=e223]:
+            - radio [checked] [disabled] [ref=e224]: grap
+            - radio [disabled] [ref=e225]: pgra
+            - radio [checked] [disabled] [ref=e226]: grap
+            - radio [disabled] [ref=e227]: rapg
+            - radio [disabled] [ref=e228]: prga
+            - radio [disabled] [ref=e229]: gapr
+        - generic [ref=e230]:
+          - generic [ref=e231]: 10/10
+          - button [disabled] [ref=e232]: Done
+      - img [ref=e236]
+  - dialog [active] [ref=e254]:
+    - generic [ref=e255]:
+      - generic [ref=e258]:
+        - img [ref=e259]
+        - generic [ref=e271]:
+          - generic [ref=e272]: Time is up.
+          - text: "Say:"
+          - generic [ref=e273]: Stop.
+      - generic [ref=e275]:
+        - button "Close" [ref=e276] [cursor=pointer]
+        - button "End Test" [ref=e278] [cursor=pointer]
+```
