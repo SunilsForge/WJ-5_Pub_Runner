@@ -733,56 +733,55 @@ jobs:
           echo "Contents of run history file:"
           cat run-history.json
 
-          # Prune old runs based on inputs.keep_last_runs or inputs.min_run_number
-          echo "Evaluating pruning policy..."
+          # Also persist an explicitly named full copy for clarity (never pruned)
+          if [ -f "run-history.master.json" ]; then
+            echo "Updating master run history..."
+            jq --argjson newRun "$CURRENT_RUN" '
+              if (map(.runNumber == $newRun.runNumber) | any) then
+                map(if .runNumber == $newRun.runNumber then $newRun else . end)
+              else
+                . + [$newRun]
+              end | sort_by(.runNumber | tonumber) | reverse
+            ' run-history.master.json > run-history.master.tmp && mv run-history.master.tmp run-history.master.json
+          else
+            echo "Creating master run history..."
+            cp run-history.json run-history.master.json
+          fi
+
+          # Build pruned view without altering the full archive or deleting any reports
+          echo "Evaluating pruning policy for deploy view..."
           KEEP_LAST="${{ github.event.inputs.keep_last_runs }}"
           MIN_RUN="${{ github.event.inputs.min_run_number }}"
           # Normalize empty values
           if [ -z "$KEEP_LAST" ]; then KEEP_LAST="50"; fi
-          # Determine which policy to use: min_run_number overrides keep_last_runs if provided
+          # Determine which policy to use for deploy: min_run_number overrides keep_last_runs if provided
+          mkdir -p ../site-deploy
+          DEPLOY_DIR="../site-deploy"
+          mkdir -p "$DEPLOY_DIR/reports"
+          # Prepare pruned run-history.json content for deploy
           if [ -n "$MIN_RUN" ]; then
-            echo "Pruning using min_run_number >= $MIN_RUN"
-            # Remove directories with run number < MIN_RUN
-            if [ -d "reports" ]; then
-              for d in reports/*; do
-                if [ -d "$d" ]; then
-                  base=$(basename "$d")
-                  if [[ "$base" =~ ^[0-9]+$ ]] && [ "$base" -lt "$MIN_RUN" ]; then
-                    echo "Pruning run dir: $d"
-                    rm -rf "$d"
-                  fi
-                fi
-              done
-            fi
-            # Prune run-history.json entries
-            if [ -f "run-history.json" ]; then
-              jq --argjson min "$MIN_RUN" '[.[] | select((.runNumber|tonumber) >= $min)] | sort_by(.runNumber | tonumber) | reverse' run-history.json > run-history.tmp && mv run-history.tmp run-history.json
-            fi
+            echo "Deploy view: keeping runs with runNumber >= $MIN_RUN"
+            jq --argjson min "$MIN_RUN" '[.[] | select((.runNumber|tonumber) >= $min)] | sort_by(.runNumber | tonumber) | reverse' run-history.json > "$DEPLOY_DIR/run-history.json"
+            # Collect kept run numbers for copying
+            mapfile -t KEPT_RUNS < <(jq -r '.[].runNumber' "$DEPLOY_DIR/run-history.json")
           else
-            echo "Pruning to keep last $KEEP_LAST runs"
-            # Build a sorted list of numeric run directories (desc), keep top N, delete rest
-            if [ -d "reports" ]; then
-              mapfile -t RUN_DIRS < <(find reports -maxdepth 1 -mindepth 1 -type d -printf "%f\n" | grep -E '^[0-9]+$' | sort -nr)
-              echo "Found ${#RUN_DIRS[@]} run directories"
-              if [ "${#RUN_DIRS[@]}" -gt "$KEEP_LAST" ]; then
-                KEEP_SET=("${RUN_DIRS[@]:0:$KEEP_LAST}")
-                DELETE_SET=("${RUN_DIRS[@]:$KEEP_LAST}")
-                echo "Keeping: ${KEEP_SET[*]}"
-                for r in "${DELETE_SET[@]}"; do
-                  echo "Pruning run dir: reports/$r"
-                  rm -rf "reports/$r"
-                done
-                # Prune run-history.json to only kept runs
-                if [ -f "run-history.json" ]; then
-                  # Build jq filter array
-                  KEPT_JSON=$(printf '"%s",' "${KEEP_SET[@]}" | sed 's/,$//')
-                  jq --argjson kept "[$KEPT_JSON]" '[.[] | select(.runNumber as $n | ($kept | index($n)))] | sort_by(.runNumber | tonumber) | reverse' run-history.json > run-history.tmp && mv run-history.tmp run-history.json
-                fi
-              else
-                echo "No pruning needed; total runs <= $KEEP_LAST"
-              fi
-            fi
+            echo "Deploy view: keeping last $KEEP_LAST runs"
+            # From run-history.json, take top N newest by runNumber
+            jq --argjson n "$KEEP_LAST" 'sort_by(.runNumber | tonumber) | reverse | .[:$n]' run-history.json > "$DEPLOY_DIR/run-history.json"
+            mapfile -t KEPT_RUNS < <(jq -r '.[].runNumber' "$DEPLOY_DIR/run-history.json")
           fi
+          echo "Deploy will include runs: ${KEPT_RUNS[*]}"
+          # Copy index (it fetches run-history.json dynamically)
+          cp index.html "$DEPLOY_DIR/index.html"
+          # Copy only kept run directories into deploy payload
+          for r in "${KEPT_RUNS[@]}"; do
+            if [ -d "reports/$r" ]; then
+              mkdir -p "$DEPLOY_DIR/reports/$r"
+              rsync -av "reports/$r/" "$DEPLOY_DIR/reports/$r/"
+            else
+              echo "Warning: reports/$r not found while building deploy payload"
+            fi
+          done
 
           # Handle large files (unchanged logic)
           echo "Checking for large files..."
@@ -1363,7 +1362,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: gh-pages
+          path: site-deploy
 
       - name: Deploy to GitHub Pages
         id: deployment
