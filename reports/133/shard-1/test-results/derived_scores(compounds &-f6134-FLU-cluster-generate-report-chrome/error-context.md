@@ -1,0 +1,76 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - button "Show Main Navigation" [ref=e7] [cursor=pointer]
+    - generic [ref=e8]:
+      - button "Sentence Reading Fluency 615" [ref=e9] [cursor=pointer]: Sentence Reading Fluency
+      - button "View Test Information" [ref=e10] [cursor=pointer]:
+        - img [ref=e11] [cursor=pointer]
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - button "Examinee Information" [ref=e16] [cursor=pointer]:
+          - img [ref=e17] [cursor=pointer]
+          - generic [ref=e20] [cursor=pointer]:
+            - generic [ref=e21] [cursor=pointer]: N96992A3420, Lincoln
+            - generic [ref=e22] [cursor=pointer]: "Age: 5y Grade: Kindergarten"
+        - button "Your browser is blocking voice capture" [ref=e23] [cursor=pointer]
+        - generic [ref=e26] [cursor=pointer]:
+          - img [ref=e27] [cursor=pointer]
+          - img [ref=e31] [cursor=pointer]
+      - generic [ref=e36]:
+        - button "Flag Item" [ref=e37] [cursor=pointer]:
+          - generic [ref=e38] [cursor=pointer]: Flag
+        - button "Open Notes" [ref=e39] [cursor=pointer]:
+          - generic [ref=e40] [cursor=pointer]: Note
+  - region "Examiner Assessment view" [ref=e41]:
+    - generic [ref=e42]:
+      - button "Expand/Collapse Navigation" [ref=e43]:
+        - img [ref=e45]
+      - generic [ref=e49]:
+        - generic [ref=e52]: Starting Point
+        - radio "Intro 1" [checked] [ref=e55]:
+          - generic [ref=e56]: Intro 1
+          - img [ref=e57]
+        - radio "Sample A, Trial 1" [checked] [ref=e62]:
+          - generic [ref=e63]: Sample A, Trial 1
+          - img [ref=e64]
+        - radio "Sample A, Trial 2" [checked] [ref=e67]:
+          - generic [ref=e68]: Sample A, Trial 2
+          - img [ref=e69]
+        - radio "Sample B, Trial 1" [checked] [ref=e72]:
+          - generic [ref=e73]: Sample B, Trial 1
+          - img [ref=e74]
+        - radio "Sample B, Trial 2" [checked] [ref=e77]:
+          - generic [ref=e78]: Sample B, Trial 2
+          - img [ref=e79]
+        - radio "Practice" [checked] [ref=e82]:
+          - generic [ref=e83]: Practice
+          - img [ref=e84]
+        - radio "Test Items" [checked] [ref=e87]:
+          - generic [ref=e88]: Test Items
+          - img [ref=e89]
+        - generic [ref=e95]: End of Items
+    - generic [ref=e97]:
+      - generic [ref=e98]:
+        - img [ref=e99]
+        - generic [ref=e104]: You have finished this test.
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107]: "120"
+          - 'generic "itemId: -13917" [ref=e108]': ITEM SCORE
+        - button "End Test" [ref=e110] [cursor=pointer]
+  - region "Examinee View" [ref=e111]:
+    - generic [ref=e113]:
+      - button "Hide examinee content - content is currently displayed" [ref=e114] [cursor=pointer]:
+        - generic [ref=e115] [cursor=pointer]: Hide
+      - button "Deactivate Tablet Control" [ref=e116] [cursor=pointer]:
+        - generic [ref=e117] [cursor=pointer]: Control
+      - button "Connection Status - Comms Up" [ref=e118] [cursor=pointer]
+      - button "Collapse examinee view" [ref=e119] [cursor=pointer]
+    - generic [ref=e121]:
+      - img [ref=e122]
+      - generic [ref=e127]: You are now in control of the examinee’s view.
+    - img [ref=e130]
+```
