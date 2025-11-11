@@ -3,6 +3,15 @@ name: Playwright Tests Runner for WJ-5
 on:
   workflow_dispatch:
     inputs:
+      keep_last_runs:
+        description: "How many recent runs to keep on GitHub Pages (older runs pruned)"
+        required: false
+        default: "50"
+        type: string
+      min_run_number:
+        description: "Alternative: keep runs with run number >= this value (overrides keep_last_runs if provided)"
+        required: false
+        type: string
       branch: # New input
         description: "Branch in the private repo (SunilsForge/WJ-5_Pub) to run tests from"
         required: true
@@ -723,6 +732,57 @@ jobs:
           fi
           echo "Contents of run history file:"
           cat run-history.json
+
+          # Prune old runs based on inputs.keep_last_runs or inputs.min_run_number
+          echo "Evaluating pruning policy..."
+          KEEP_LAST="${{ github.event.inputs.keep_last_runs }}"
+          MIN_RUN="${{ github.event.inputs.min_run_number }}"
+          # Normalize empty values
+          if [ -z "$KEEP_LAST" ]; then KEEP_LAST="50"; fi
+          # Determine which policy to use: min_run_number overrides keep_last_runs if provided
+          if [ -n "$MIN_RUN" ]; then
+            echo "Pruning using min_run_number >= $MIN_RUN"
+            # Remove directories with run number < MIN_RUN
+            if [ -d "reports" ]; then
+              for d in reports/*; do
+                if [ -d "$d" ]; then
+                  base=$(basename "$d")
+                  if [[ "$base" =~ ^[0-9]+$ ]] && [ "$base" -lt "$MIN_RUN" ]; then
+                    echo "Pruning run dir: $d"
+                    rm -rf "$d"
+                  fi
+                fi
+              done
+            fi
+            # Prune run-history.json entries
+            if [ -f "run-history.json" ]; then
+              jq --argjson min "$MIN_RUN" '[.[] | select((.runNumber|tonumber) >= $min)] | sort_by(.runNumber | tonumber) | reverse' run-history.json > run-history.tmp && mv run-history.tmp run-history.json
+            fi
+          else
+            echo "Pruning to keep last $KEEP_LAST runs"
+            # Build a sorted list of numeric run directories (desc), keep top N, delete rest
+            if [ -d "reports" ]; then
+              mapfile -t RUN_DIRS < <(find reports -maxdepth 1 -mindepth 1 -type d -printf "%f\n" | grep -E '^[0-9]+$' | sort -nr)
+              echo "Found ${#RUN_DIRS[@]} run directories"
+              if [ "${#RUN_DIRS[@]}" -gt "$KEEP_LAST" ]; then
+                KEEP_SET=("${RUN_DIRS[@]:0:$KEEP_LAST}")
+                DELETE_SET=("${RUN_DIRS[@]:$KEEP_LAST}")
+                echo "Keeping: ${KEEP_SET[*]}"
+                for r in "${DELETE_SET[@]}"; do
+                  echo "Pruning run dir: reports/$r"
+                  rm -rf "reports/$r"
+                done
+                # Prune run-history.json to only kept runs
+                if [ -f "run-history.json" ]; then
+                  # Build jq filter array
+                  KEPT_JSON=$(printf '"%s",' "${KEEP_SET[@]}" | sed 's/,$//')
+                  jq --argjson kept "[$KEPT_JSON]" '[.[] | select(.runNumber as $n | ($kept | index($n)))] | sort_by(.runNumber | tonumber) | reverse' run-history.json > run-history.tmp && mv run-history.tmp run-history.json
+                fi
+              else
+                echo "No pruning needed; total runs <= $KEEP_LAST"
+              fi
+            fi
+          fi
 
           # Handle large files (unchanged logic)
           echo "Checking for large files..."
