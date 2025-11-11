@@ -3,15 +3,6 @@ name: Playwright Tests Runner for WJ-5
 on:
   workflow_dispatch:
     inputs:
-      keep_last_runs:
-        description: "How many recent runs to keep on GitHub Pages (older runs pruned)"
-        required: false
-        default: "50"
-        type: string
-      min_run_number:
-        description: "Alternative: keep runs with run number >= this value (overrides keep_last_runs if provided)"
-        required: false
-        type: string
       branch: # New input
         description: "Branch in the private repo (SunilsForge/WJ-5_Pub) to run tests from"
         required: true
@@ -752,9 +743,11 @@ jobs:
         run: |
           cd gh-pages
           echo "Evaluating pruning policy for deploy view..."
-          KEEP_LAST="${{ github.event.inputs.keep_last_runs }}"
-          MIN_RUN="${{ github.event.inputs.min_run_number }}"
-          if [ -z "$KEEP_LAST" ]; then KEEP_LAST="50"; fi
+          # Parse retention from run_reason to avoid exceeding inputs limit
+          RUN_REASON="${{ inputs.run_reason }}"
+          KEEP_LAST=$(echo "$RUN_REASON" | sed -n 's/.*keep_last=\([0-9]\+\).*/\1/p')
+          MIN_RUN=$(echo "$RUN_REASON" | sed -n 's/.*min_run=\([0-9]\+\).*/\1/p')
+          if [ -z "$KEEP_LAST" ] && [ -z "$MIN_RUN" ]; then KEEP_LAST="50"; fi
           mkdir -p ../site-deploy
           DEPLOY_DIR="../site-deploy"
           mkdir -p "$DEPLOY_DIR/reports"
