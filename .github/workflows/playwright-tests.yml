@@ -3,6 +3,11 @@ name: Playwright Tests Runner for WJ-5
 on:
   workflow_dispatch:
     inputs:
+      keep_last_runs:
+        description: "How many recent runs to publish on Pages"
+        required: true
+        default: "50"
+        type: string
       branch: # New input
         description: "Branch in the private repo (SunilsForge/WJ-5_Pub) to run tests from"
         required: true
@@ -72,12 +77,8 @@ on:
           - "retain-on-failure"
           - "retain-on-first-failure"
           - "retry-with-trace"
-      pre_run_notes:
-        description: "Notes before running the tests (purpose, context, etc.)"
-        required: false
-        type: string
       run_reason:
-        description: "Short reason for triggering this run (e.g., 'Smoke test', 'Bug fix validation')"
+        description: "Reason/context for the run (also saved as pre-run notes). You may append optional directives like 'min_run=120'."
         required: true
         default: "Env_@Tag_Reason"
         type: string
@@ -137,13 +138,13 @@ jobs:
           esac
 
       - name: Save pre-run notes
-        if: inputs.pre_run_notes != ''
+        if: inputs.run_reason != ''
         run: |
           mkdir -p run-metadata
-          echo "${{ inputs.pre_run_notes }}" > run-metadata/pre-run-notes.txt
+          echo "${{ inputs.run_reason }}" > run-metadata/pre-run-notes.txt
 
       - name: Upload pre-run notes
-        if: inputs.pre_run_notes != ''
+        if: inputs.run_reason != ''
         uses: actions/upload-artifact@v4
         with:
           name: run-metadata
@@ -690,7 +691,7 @@ jobs:
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Organize reports
+      - name: Organize reports (copy and histories)
         run: |
           cd gh-pages
 
@@ -724,25 +725,71 @@ jobs:
           echo "Contents of run history file:"
           cat run-history.json
 
-          # Handle large files (unchanged logic)
+          # Also persist an explicitly named full copy for clarity (never pruned)
+          if [ -f "run-history.master.json" ]; then
+            echo "Updating master run history..."
+            jq --argjson newRun "$CURRENT_RUN" '
+              if (map(.runNumber == $newRun.runNumber) | any) then
+                map(if .runNumber == $newRun.runNumber then $newRun else . end)
+              else
+                . + [$newRun]
+              end | sort_by(.runNumber | tonumber) | reverse
+            ' run-history.master.json > run-history.master.tmp && mv run-history.master.tmp run-history.master.json
+          else
+            echo "Creating master run history..."
+            cp run-history.json run-history.master.json
+          fi
+
+      - name: Build pruned deploy view
+        run: |
+          cd gh-pages
+          echo "Evaluating pruning policy for deploy view..."
+          # Prefer explicit keep_last_runs input; still parse optional min_run from run_reason
+          KEEP_LAST="${{ github.event.inputs.keep_last_runs }}"
+          RUN_REASON="${{ inputs.run_reason }}"
+          MIN_RUN=$(echo "$RUN_REASON" | sed -n 's/.*min_run=\([0-9]\+\).*/\1/p')
+          if [ -z "$KEEP_LAST" ] && [ -z "$MIN_RUN" ]; then KEEP_LAST="50"; fi
+          mkdir -p ../site-deploy
+          DEPLOY_DIR="../site-deploy"
+          mkdir -p "$DEPLOY_DIR/reports"
+          if [ -n "$MIN_RUN" ]; then
+            echo "Deploy view: keeping runs with runNumber >= $MIN_RUN"
+            jq --argjson min "$MIN_RUN" '[.[] | select((.runNumber|tonumber) >= $min)] | sort_by(.runNumber | tonumber) | reverse' run-history.json > "$DEPLOY_DIR/run-history.json"
+            mapfile -t KEPT_RUNS < <(jq -r '.[].runNumber' "$DEPLOY_DIR/run-history.json")
+          else
+            echo "Deploy view: keeping last $KEEP_LAST runs"
+            jq --argjson n "$KEEP_LAST" 'sort_by(.runNumber | tonumber) | reverse | .[:$n]' run-history.json > "$DEPLOY_DIR/run-history.json"
+            mapfile -t KEPT_RUNS < <(jq -r '.[].runNumber' "$DEPLOY_DIR/run-history.json")
+          fi
+          echo "Deploy will include runs: ${KEPT_RUNS[*]}"
+          cp index.html "$DEPLOY_DIR/index.html"
+          for r in "${KEPT_RUNS[@]}"; do
+            if [ -d "reports/$r" ]; then
+              mkdir -p "$DEPLOY_DIR/reports/$r"
+              rsync -av "reports/$r/" "$DEPLOY_DIR/reports/$r/"
+            else
+              echo "Warning: reports/$r not found while building deploy payload"
+            fi
+          done
+
+      - name: Handle large files in deploy view
+        run: |
+          cd gh-pages
+          DEPLOY_DIR="../site-deploy"
+          RUN_DIR="$DEPLOY_DIR/reports/${{ steps.run-info.outputs.run_number }}"
+          mkdir -p "$RUN_DIR/large-files-info"
           echo "Checking for large files..."
-          large_files=()
-          large_file_sizes=()
           max_file_size=$((100 * 1024 * 1024)) # 100MB in bytes
           find ../new-report -type f -size +${max_file_size}c | while read -r file; do
             file_size=$(du -b "$file" | cut -f1)
             file_size_mb=$(echo "scale=2; $file_size / 1048576" | bc)
             relative_path=${file#../new-report/}
-            large_files+=("$relative_path")
-            large_file_sizes+=("$file_size_mb")
             echo "Large file detected: $relative_path ($file_size_mb MB)"
-          done > large_files_list.txt
-
+            echo "Large file detected: $relative_path ($file_size_mb MB)" >> large_files_list.txt
+          done
           if [ -s large_files_list.txt ]; then
-            echo "Creating placeholders for large files..."
-            mkdir -p "reports/${{ steps.run-info.outputs.run_number }}/large-files-info"
-            cp large_files_list.txt "reports/${{ steps.run-info.outputs.run_number }}/large-files-info/"
-            cat > "reports/${{ steps.run-info.outputs.run_number }}/large-files-info/index.html" << EOF
+            cp large_files_list.txt "$RUN_DIR/large-files-info/"
+            cat > "$RUN_DIR/large-files-info/index.html" << EOF
             <!DOCTYPE html>
             <html>
             <head>
@@ -792,8 +839,8 @@ jobs:
                 echo "          <tr>
                   <td>$file_path</td>
                   <td>$file_size MB</td>
-                </tr>" >> "reports/${{ steps.run-info.outputs.run_number }}/large-files-info/index.html"
-                placeholder_dir=$(dirname "reports/${{ steps.run-info.outputs.run_number }}/$file_path")
+                </tr>" >> "$RUN_DIR/large-files-info/index.html"
+                placeholder_dir=$(dirname "$RUN_DIR/$file_path")
                 mkdir -p "$placeholder_dir"
                 placeholder_file_html="${placeholder_dir}/$(basename "${file_path%.*}").html"
                 cat > "$placeholder_file_html" << EOF_PLACEHOLDER
@@ -824,7 +871,7 @@ jobs:
           EOF_PLACEHOLDER
               fi
             done < large_files_list.txt
-            cat >> "reports/${{ steps.run-info.outputs.run_number }}/large-files-info/index.html" << EOF
+            cat >> "$RUN_DIR/large-files-info/index.html" << EOF
               </table>
               <a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" 
                  class="artifact-link" target="_blank" style="font-size: 16px; padding: 12px 24px; text-align: center; display: block; margin: 20px auto; max-width: 300px;">
@@ -834,13 +881,13 @@ jobs:
             </body>
             </html>
           EOF
-            if [ -f "reports/${{ steps.run-info.outputs.run_number }}/index.html" ]; then
+            if [ -f "$RUN_DIR/index.html" ]; then
               sed -i '/<body>/a \
               <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0;"> \
                 <h3 style="margin-top: 0;">⚠️ Some files were too large to be included in this report</h3> \
                 <p>Some large files from test results have been excluded from this GitHub Pages deployment due to GitHub file size limits.</p> \
                 <p><a href="large-files-info/index.html" style="color: #0366d6;">View information about excluded files</a></p> \
-              </div>' "reports/${{ steps.run-info.outputs.run_number }}/index.html"
+              </div>' "$RUN_DIR/index.html"
             fi
           fi
 
@@ -1300,10 +1347,20 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Select deploy path
+        id: select-deploy
+        run: |
+          if [ -d "site-deploy" ] && [ -n "$(ls -A site-deploy 2>/dev/null)" ]; then
+            echo "path=site-deploy" >> $GITHUB_OUTPUT
+          else
+            echo "Fallback to gh-pages"
+            echo "path=gh-pages" >> $GITHUB_OUTPUT
+          fi
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: gh-pages
+          path: ${{ steps.select-deploy.outputs.path }}
 
       - name: Deploy to GitHub Pages
         id: deployment
