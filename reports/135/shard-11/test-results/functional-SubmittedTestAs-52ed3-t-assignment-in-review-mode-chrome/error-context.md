@@ -1,0 +1,187 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - button "Show Main Navigation" [ref=e7] [cursor=pointer]
+    - generic [ref=e8]:
+      - button "Oral Vocabulary–Synonyms 680" [ref=e9] [cursor=pointer]: Oral Vocabulary–Synonyms
+      - button "View Test Information" [ref=e10] [cursor=pointer]:
+        - img [ref=e11] [cursor=pointer]
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - button "Examinee Information" [ref=e16] [cursor=pointer]:
+          - img [ref=e17] [cursor=pointer]
+          - generic [ref=e20] [cursor=pointer]:
+            - generic [ref=e21] [cursor=pointer]: N20159A16539, Adrain
+            - generic [ref=e22] [cursor=pointer]: "Age: 5y Grade: Kindergarten"
+        - button "Start Voice Capture" [disabled] [ref=e23]
+      - generic [ref=e24]:
+        - button "Flag Item" [ref=e25] [cursor=pointer]:
+          - generic [ref=e26] [cursor=pointer]: Flag
+        - button "Open Notes" [ref=e27] [cursor=pointer]:
+          - generic [ref=e28] [cursor=pointer]: Note
+  - region "Examiner Assessment view" [ref=e29]:
+    - generic [ref=e30]:
+      - button "Expand/Collapse Navigation" [ref=e31]:
+        - img [ref=e33]
+      - generic [ref=e37]:
+        - img [ref=e38]
+        - generic [ref=e42]:
+          - text: Select Item
+          - text: Response
+      - button [ref=e43]:
+        - img [ref=e44]
+      - generic [ref=e47]:
+        - generic [ref=e50]: Starting Point
+        - radio "Intro 1" [checked] [ref=e53]:
+          - generic [ref=e54]: Intro 1
+          - img [ref=e55]
+        - radio "Sample A, Trial 1" [checked] [ref=e60]:
+          - generic [ref=e61]: Sample A, Trial 1
+          - img [ref=e62]
+        - radio "Sample A, Trial 2" [checked] [ref=e65]:
+          - generic [ref=e66]: Sample A, Trial 2
+          - img [ref=e67]
+        - radio "Intro 2" [checked] [ref=e70]:
+          - generic [ref=e71]: Intro 2
+          - img [ref=e72]
+        - radio "Sample B, Trial 1" [checked] [ref=e77]:
+          - generic [ref=e78]: Sample B, Trial 1
+          - img [ref=e79]
+        - radio "Sample B, Trial 2" [checked] [ref=e82]:
+          - generic [ref=e83]: Sample B, Trial 2
+          - img [ref=e84]
+        - radio "Item 1" [checked] [ref=e87]:
+          - generic [ref=e88]: Item 1
+          - img [ref=e89]
+        - radio "Item 2" [checked] [ref=e92]:
+          - generic [ref=e93]: Item 2
+          - img [ref=e94]
+        - radio "Item 3" [checked] [ref=e97]:
+          - generic [ref=e98]: Item 3
+          - img [ref=e99]
+        - radio "Item 4" [checked] [ref=e102]:
+          - generic [ref=e103]: Item 4
+          - img [ref=e104]
+        - radio "Item 5" [checked] [ref=e107]:
+          - generic [ref=e108]: Item 5
+          - img [ref=e109]
+        - radio "Item 6" [checked] [ref=e112]:
+          - generic [ref=e113]: Item 6
+          - img [ref=e114]
+        - radio "Item 7" [checked] [ref=e117]:
+          - generic [ref=e118]: Item 7
+          - img [ref=e119]
+        - radio "Item 8" [checked] [ref=e122]:
+          - generic [ref=e123]: Item 8
+          - img [ref=e124]
+        - radio "Item 9" [checked] [ref=e127]:
+          - generic [ref=e128]: Item 9
+          - img [ref=e129]
+        - radio "Item 10" [checked] [ref=e132]:
+          - generic [ref=e133]: Item 10
+          - img [ref=e134]
+        - radio "Item 11" [checked] [ref=e137]:
+          - generic [ref=e138]: Item 11
+          - img [ref=e139]
+        - radio "Item 12" [checked] [ref=e142]:
+          - generic [ref=e143]: Item 12
+          - img [ref=e144]
+        - radio "Item 13" [checked] [ref=e147]:
+          - generic [ref=e148]: Item 13
+          - img [ref=e149]
+        - radio "Item 14" [checked] [ref=e152]:
+          - generic [ref=e153]: Item 14
+          - img [ref=e154]
+        - radio "Item 15" [checked] [ref=e157]:
+          - generic [ref=e158]: Item 15
+          - img [ref=e159]
+        - radio "Item 16" [checked] [ref=e162]:
+          - generic [ref=e163]: Item 16
+          - img [ref=e164]
+        - radio "Item 17" [checked] [ref=e167]:
+          - generic [ref=e168]: Item 17
+          - img [ref=e169]
+        - radio "Item 18" [checked] [ref=e172]:
+          - generic [ref=e173]: Item 18
+          - img [ref=e174]
+        - radio "Item 19" [checked] [ref=e177]:
+          - generic [ref=e178]: Item 19
+          - img [ref=e179]
+        - radio "Item 20" [checked] [ref=e182]:
+          - generic [ref=e183]: Item 20
+          - img [ref=e184]
+        - radio "Item 21" [checked] [ref=e187]:
+          - generic [ref=e188]: Item 21
+          - img [ref=e189]
+        - radio "Item 22" [checked] [ref=e192]:
+          - generic [ref=e193]: Item 22
+          - img [ref=e194]
+        - radio "Item 23" [checked] [ref=e197]:
+          - generic [ref=e198]: Item 23
+          - img [ref=e199]
+        - radio "Item 24" [checked] [ref=e202]:
+          - generic [ref=e203]: Item 24
+          - img [ref=e204]
+        - radio "Item 25" [checked] [ref=e207]:
+          - generic [ref=e208]: Item 25
+          - img [ref=e209]
+        - generic [ref=e213]: End of Items
+      - button [ref=e215]:
+        - img [ref=e216]
+    - generic [ref=e219]:
+      - generic [ref=e220]:
+        - img [ref=e221]
+        - generic [ref=e226]:
+          - generic [ref=e227]: Item 3
+          - generic [ref=e228]:
+            - button "Play" [ref=e229] [cursor=pointer]:
+              - img [ref=e230] [cursor=pointer]
+            - generic [ref=e233]: 00'03"
+            - button "Jump to position" [ref=e234]
+          - paragraph [ref=e236]:
+            - strong [ref=e238]: mom
+      - generic [ref=e239]:
+        - img [ref=e240]
+        - generic [ref=e243]:
+          - radio "mother" [ref=e244] [cursor=pointer]
+          - radio "ma" [ref=e245] [cursor=pointer]
+          - radio "mama" [ref=e246] [cursor=pointer]
+          - radio "momma" [ref=e247] [cursor=pointer]
+          - radio "mommy" [ref=e248] [cursor=pointer]
+          - radio "parent" [ref=e249] [cursor=pointer]
+      - generic [ref=e250]:
+        - img [ref=e251]
+        - radio "dad" [active] [ref=e255] [cursor=pointer]
+      - generic [ref=e256]:
+        - img [ref=e257]
+        - radio "examinee says a name" [ref=e261] [cursor=pointer]
+      - generic [ref=e262]:
+        - img [ref=e263]
+        - generic [ref=e268]:
+          - generic [ref=e269]: "Other:"
+          - generic [ref=e270]:
+            - radio "0" [ref=e271] [cursor=pointer]
+            - radio "1" [ref=e272] [cursor=pointer]
+          - 'textbox "Optional: Examinee''s Response" [ref=e273]'
+      - generic [ref=e274]:
+        - radio "I Donʼt Know" [ref=e275] [cursor=pointer]
+        - radio "No Response" [ref=e276] [cursor=pointer]
+      - generic [ref=e277]:
+        - generic [ref=e278]:
+          - generic [ref=e279]: "0"
+          - 'generic "itemId: 17746" [ref=e280]': ITEM SCORE
+        - generic [ref=e281]:
+          - text: Basal
+          - img [ref=e284]
+        - generic [ref=e287]:
+          - text: Ceiling
+          - img [ref=e290]
+        - button "Back to Review" [disabled] [ref=e302]
+  - region "Examinee View" [ref=e303]:
+    - generic [ref=e305]:
+      - generic [ref=e306]: Examinee Not Connected
+      - button "Collapse examinee view" [ref=e307] [cursor=pointer]
+    - generic [ref=e310]: mom
+```
