@@ -1,0 +1,138 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic [active]:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 07PwAut25Ex_01 ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "07PwAut25Ex_01 ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [ref=e44]
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [ref=e47] [cursor=pointer]
+                  - button "Closed" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]: Loading...
+              - generic [ref=e51]:
+                - generic "This is the student or individual being assessed." [ref=e52]: Examinee
+                - generic [ref=e53]: Test Set
+                - generic [ref=e54]: Days Left to Edit
+                - generic [ref=e55]: Status
+                - generic [ref=e56]: Actions
+                - button "N56936A86789, Shanel Form A 30 days ● In Progress Edit Assignment Add tests to test set" [disabled] [ref=e57] [cursor=pointer]:
+                  - generic [ref=e59] [cursor=pointer]: N56936A86789, Shanel
+                  - generic [ref=e62] [cursor=pointer]: Form A
+                  - generic [ref=e64] [cursor=pointer]: 30 days
+                  - generic [ref=e65] [cursor=pointer]:
+                    - generic [ref=e66] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e67] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e68] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e69] [cursor=pointer]
+                    - button [ref=e70] [cursor=pointer]
+                - button "N92047A66719, Willow Form A 30 days ● In Progress Edit Assignment Add tests to test set" [disabled] [ref=e71] [cursor=pointer]:
+                  - generic [ref=e73] [cursor=pointer]: N92047A66719, Willow
+                  - generic [ref=e76] [cursor=pointer]: Form A
+                  - generic [ref=e78] [cursor=pointer]: 30 days
+                  - generic [ref=e79] [cursor=pointer]:
+                    - generic [ref=e80] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e81] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e82] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e83] [cursor=pointer]
+                    - button [ref=e84] [cursor=pointer]
+            - generic [ref=e85]:
+              - generic [ref=e86]:
+                - generic [ref=e88]:
+                  - img [ref=e89]
+                  - heading "Notifications Center" [level=3] [ref=e93]
+                - generic [ref=e95]:
+                  - generic [ref=e96]: 11/07/2025
+                  - paragraph [ref=e97]:
+                    - generic [ref=e98]: The RiversideScore platform will be down for maintenance on Friday, November 14th, from 8:00 PM
+                    - generic [ref=e99]: to 12:00 AM CST.
+                    - generic [ref=e100]: During this time, access will be unavailable. If you have any questions, please contact
+                    - generic [ref=e101]: "Customer Support Monday- Friday 8AM- 4PM CST at:"
+                  - paragraph [ref=e102]:
+                    - generic [ref=e103]: "Tel:"
+                    - link "800-323-9540" [ref=e104] [cursor=pointer]:
+                      - /url: tel:8003239540
+                    - generic [ref=e106]: "Email:"
+                    - link "Inquiry@service.riversideinsights.com" [ref=e107] [cursor=pointer]:
+                      - /url: mailto:Inquiry@service.riversideinsights.com
+                  - paragraph [ref=e109]:
+                    - generic [ref=e110]: We appreciate your patience as we work to improve the experience!
+              - generic [ref=e111]:
+                - generic [ref=e113]:
+                  - img [ref=e114]
+                  - heading "Resources" [level=3] [ref=e118]
+                - list [ref=e119]:
+                  - listitem [ref=e120]:
+                    - button "Riverside Learn" [ref=e121] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e122] [cursor=pointer]
+                      - img [ref=e124] [cursor=pointer]
+                  - listitem [ref=e126]:
+                    - button "Onboarding Tutorial Videos" [ref=e127] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e128] [cursor=pointer]
+                      - img [ref=e130] [cursor=pointer]
+                  - listitem [ref=e132]:
+                    - button "Quick Reference Guides" [ref=e133] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e134] [cursor=pointer]
+                      - img [ref=e136] [cursor=pointer]
+                - generic [ref=e139]: View All
+      - contentinfo [ref=e140]:
+        - generic [ref=e141]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e142] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e143] [cursor=pointer]
+        - generic [ref=e144]:
+          - link "Riverside Insights Facebook" [ref=e145] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e146] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e147] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e148] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e149] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e150] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e151] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e152] [cursor=pointer]
+        - generic [ref=e153]:
+          - link "Terms of Use" [ref=e154] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e155]: "|"
+          - link "Privacy Policy" [ref=e156] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e157]: Footer region end
+```
