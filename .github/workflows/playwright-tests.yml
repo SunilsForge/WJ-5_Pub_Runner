@@ -34,6 +34,8 @@ on:
           - "8"
           - "10"
           - "15"
+          - "20"
+          - "25"
       browser:
         description: "Browser to run tests on"
         required: true
@@ -131,6 +133,12 @@ jobs:
               ;;
             "15")
               echo "matrix={\"shard\":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]}" >> $GITHUB_OUTPUT
+              ;;
+            "20")
+              echo "matrix={\"shard\":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]}" >> $GITHUB_OUTPUT
+              ;;
+            "25")
+              echo "matrix={\"shard\":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]}" >> $GITHUB_OUTPUT
               ;;
             *)
               echo "matrix={\"shard\":[1]}" >> $GITHUB_OUTPUT
