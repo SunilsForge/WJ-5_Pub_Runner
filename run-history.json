@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "137",
+    "timestamp": "20251117_000000",
+    "runReason": "Runnign smoke with review mode in prod canada along with credentials update",
+    "environment": "prodCanada",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*(@TestDe|@DerivedScores))|@InProgressTestAssignments|@SubmittedTestAssignments"
+  },
+  {
     "runNumber": "136",
     "timestamp": "20251117_000000",
     "runReason": "Running Smoke and the Review mode scripts in Prod international",
