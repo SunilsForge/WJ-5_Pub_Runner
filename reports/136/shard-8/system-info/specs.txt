@@ -42,7 +42,7 @@ Vulnerability Tsx async abort:        Not affected
 -e 
 Memory Information:
                total        used        free      shared  buff/cache   available
-Mem:            15Gi       978Mi       5.5Gi        45Mi       9.5Gi        14Gi
+Mem:            15Gi       1.0Gi       5.5Gi        45Mi       9.5Gi        14Gi
 Swap:          4.0Gi          0B       4.0Gi
 -e 
 Disk Information:
@@ -57,7 +57,7 @@ tmpfs           7.9G     0  7.9G   0% /proc/scsi
 tmpfs           7.9G     0  7.9G   0% /sys/firmware
 -e 
 System Load:
- 16:36:29 up 1 min,  0 user,  load average: 1.05, 0.37, 0.13
+ 07:55:02 up 1 min,  0 user,  load average: 1.44, 0.45, 0.16
 -e 
 Container Information:
 PRETTY_NAME="Ubuntu 24.04.2 LTS"

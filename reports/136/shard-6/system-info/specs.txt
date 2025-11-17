@@ -42,7 +42,7 @@ Vulnerability Tsx async abort:        Not affected
 -e 
 Memory Information:
                total        used        free      shared  buff/cache   available
-Mem:            15Gi       970Mi       5.5Gi        44Mi       9.5Gi        14Gi
+Mem:            15Gi       1.0Gi       5.5Gi        45Mi       9.5Gi        14Gi
 Swap:          4.0Gi          0B       4.0Gi
 -e 
 Disk Information:
@@ -50,14 +50,14 @@ Filesystem      Size  Used Avail Use% Mounted on
 overlay          72G   57G   16G  79% /
 tmpfs            64M     0   64M   0% /dev
 shm              64M     0   64M   0% /dev/shm
-/dev/root        72G   57G   16G  79% /__t
+/dev/root        72G   57G   16G  79% /__e
 tmpfs           3.2G  1.2M  3.2G   1% /run/docker.sock
 tmpfs           7.9G     0  7.9G   0% /proc/acpi
 tmpfs           7.9G     0  7.9G   0% /proc/scsi
 tmpfs           7.9G     0  7.9G   0% /sys/firmware
 -e 
 System Load:
- 16:36:29 up 1 min,  0 user,  load average: 1.23, 0.39, 0.14
+ 07:55:01 up 1 min,  0 user,  load average: 0.87, 0.28, 0.10
 -e 
 Container Information:
 PRETTY_NAME="Ubuntu 24.04.2 LTS"
