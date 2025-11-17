@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "138",
+    "timestamp": "20251117_000000",
+    "runReason": "full regression of @TestDe|@DerivedScores after the code changes for timer in Prod",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores"
+  },
+  {
     "runNumber": "137",
     "timestamp": "20251117_000000",
     "runReason": "Runnign smoke with review mode in prod canada along with credentials update",
