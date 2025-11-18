@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "141",
+    "timestamp": "20251118_000000",
+    "runReason": "Running testDE and drived scores in prod after cloud flare issue",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*(@TestDe|@DerivedScores))"
+  },
+  {
     "runNumber": "140",
     "timestamp": "20251118_000000",
     "runReason": "Running full regression of @TestDe|@DerivedScores|@InProgressTestAssignments|@SubmittedTestAssignments in prod international",
