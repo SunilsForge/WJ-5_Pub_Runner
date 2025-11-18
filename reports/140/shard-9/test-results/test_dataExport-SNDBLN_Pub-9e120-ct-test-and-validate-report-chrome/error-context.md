@@ -1,0 +1,292 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic [active]:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S10PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S10PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [ref=e44]
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [ref=e47] [cursor=pointer]
+                  - button "Closed" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+                - generic [ref=e51]: Test Set
+                - generic [ref=e52]: Days Left to Edit
+                - generic [ref=e53]: Status
+                - generic [ref=e54]: Actions
+                - button "N97299A25959, Hallie Form A 29 days ● Submitted" [ref=e55] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N97299A25959, Hallie
+                  - generic [ref=e60] [cursor=pointer]: Form A
+                  - generic [ref=e62] [cursor=pointer]: 29 days
+                  - generic [ref=e63] [cursor=pointer]:
+                    - generic [ref=e64] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e65] [cursor=pointer]:
+                    - button [disabled] [ref=e66]
+                    - button [disabled] [ref=e67]
+                    - button [ref=e68] [cursor=pointer]
+                - button "N25571A20426, Chester Form A — ● Not Started" [ref=e69] [cursor=pointer]:
+                  - generic [ref=e71] [cursor=pointer]: N25571A20426, Chester
+                  - generic [ref=e74] [cursor=pointer]: Form A
+                  - generic [ref=e76] [cursor=pointer]: —
+                  - generic [ref=e77] [cursor=pointer]:
+                    - generic [ref=e78] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e79] [cursor=pointer]:
+                    - button [disabled] [ref=e80]
+                    - button [disabled] [ref=e81]
+                    - button [ref=e82] [cursor=pointer]
+                - button "N71933A75740, Griffin Form A 29 days ● Submitted" [ref=e83] [cursor=pointer]:
+                  - generic [ref=e85] [cursor=pointer]: N71933A75740, Griffin
+                  - generic [ref=e88] [cursor=pointer]: Form A
+                  - generic [ref=e90] [cursor=pointer]: 29 days
+                  - generic [ref=e91] [cursor=pointer]:
+                    - generic [ref=e92] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e93] [cursor=pointer]:
+                    - button [disabled] [ref=e94]
+                    - button [disabled] [ref=e95]
+                    - button [ref=e96] [cursor=pointer]
+                - button "N3419A35719, Filiberto Form A 29 days ● Submitted" [ref=e97] [cursor=pointer]:
+                  - generic [ref=e99] [cursor=pointer]: N3419A35719, Filiberto
+                  - generic [ref=e102] [cursor=pointer]: Form A
+                  - generic [ref=e104] [cursor=pointer]: 29 days
+                  - generic [ref=e105] [cursor=pointer]:
+                    - generic [ref=e106] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e107] [cursor=pointer]:
+                    - button [disabled] [ref=e108]
+                    - button [disabled] [ref=e109]
+                    - button [ref=e110] [cursor=pointer]
+                - button "N37649A88877, Isobel Form A — ● Not Started" [ref=e111] [cursor=pointer]:
+                  - generic [ref=e113] [cursor=pointer]: N37649A88877, Isobel
+                  - generic [ref=e116] [cursor=pointer]: Form A
+                  - generic [ref=e118] [cursor=pointer]: —
+                  - generic [ref=e119] [cursor=pointer]:
+                    - generic [ref=e120] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e121] [cursor=pointer]:
+                    - button [disabled] [ref=e122]
+                    - button [disabled] [ref=e123]
+                    - button [ref=e124] [cursor=pointer]
+                - button "N43784A72180, Dovie Form A 29 days ● Submitted" [ref=e125] [cursor=pointer]:
+                  - generic [ref=e127] [cursor=pointer]: N43784A72180, Dovie
+                  - generic [ref=e130] [cursor=pointer]: Form A
+                  - generic [ref=e132] [cursor=pointer]: 29 days
+                  - generic [ref=e133] [cursor=pointer]:
+                    - generic [ref=e134] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e135] [cursor=pointer]:
+                    - button [disabled] [ref=e136]
+                    - button [disabled] [ref=e137]
+                    - button [ref=e138] [cursor=pointer]
+                - button "N71009A79305, Cindy Form A — ● Not Started" [ref=e139] [cursor=pointer]:
+                  - generic [ref=e141] [cursor=pointer]: N71009A79305, Cindy
+                  - generic [ref=e144] [cursor=pointer]: Form A
+                  - generic [ref=e146] [cursor=pointer]: —
+                  - generic [ref=e147] [cursor=pointer]:
+                    - generic [ref=e148] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e149] [cursor=pointer]:
+                    - button [disabled] [ref=e150]
+                    - button [disabled] [ref=e151]
+                    - button [ref=e152] [cursor=pointer]
+                - button "N20324A45959, Nettie Form A 29 days ● Submitted" [ref=e153] [cursor=pointer]:
+                  - generic [ref=e155] [cursor=pointer]: N20324A45959, Nettie
+                  - generic [ref=e158] [cursor=pointer]: Form A
+                  - generic [ref=e160] [cursor=pointer]: 29 days
+                  - generic [ref=e161] [cursor=pointer]:
+                    - generic [ref=e162] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e163] [cursor=pointer]:
+                    - button [disabled] [ref=e164]
+                    - button [disabled] [ref=e165]
+                    - button [ref=e166] [cursor=pointer]
+                - button "N1381A26637, Tamara Form A 29 days ● Submitted" [ref=e167] [cursor=pointer]:
+                  - generic [ref=e169] [cursor=pointer]: N1381A26637, Tamara
+                  - generic [ref=e172] [cursor=pointer]: Form A
+                  - generic [ref=e174] [cursor=pointer]: 29 days
+                  - generic [ref=e175] [cursor=pointer]:
+                    - generic [ref=e176] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e177] [cursor=pointer]:
+                    - button [disabled] [ref=e178]
+                    - button [disabled] [ref=e179]
+                    - button [ref=e180] [cursor=pointer]
+                - button "N60396A82817, Lucas Form A 29 days ● Submitted" [ref=e181] [cursor=pointer]:
+                  - generic [ref=e183] [cursor=pointer]: N60396A82817, Lucas
+                  - generic [ref=e186] [cursor=pointer]: Form A
+                  - generic [ref=e188] [cursor=pointer]: 29 days
+                  - generic [ref=e189] [cursor=pointer]:
+                    - generic [ref=e190] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e191] [cursor=pointer]:
+                    - button [disabled] [ref=e192]
+                    - button [disabled] [ref=e193]
+                    - button [ref=e194] [cursor=pointer]
+                - button "N1603A61929, Willow Form A 29 days ● Submitted" [ref=e195] [cursor=pointer]:
+                  - generic [ref=e197] [cursor=pointer]: N1603A61929, Willow
+                  - generic [ref=e200] [cursor=pointer]: Form A
+                  - generic [ref=e202] [cursor=pointer]: 29 days
+                  - generic [ref=e203] [cursor=pointer]:
+                    - generic [ref=e204] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e205] [cursor=pointer]:
+                    - button [disabled] [ref=e206]
+                    - button [disabled] [ref=e207]
+                    - button [ref=e208] [cursor=pointer]
+                - button "N39287A24831, Destinee Form A 29 days ● Submitted" [ref=e209] [cursor=pointer]:
+                  - generic [ref=e211] [cursor=pointer]: N39287A24831, Destinee
+                  - generic [ref=e214] [cursor=pointer]: Form A
+                  - generic [ref=e216] [cursor=pointer]: 29 days
+                  - generic [ref=e217] [cursor=pointer]:
+                    - generic [ref=e218] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e219] [cursor=pointer]:
+                    - button [disabled] [ref=e220]
+                    - button [disabled] [ref=e221]
+                    - button [ref=e222] [cursor=pointer]
+                - button "N55157A37975, Karina Form A 29 days ● Submitted" [ref=e223] [cursor=pointer]:
+                  - generic [ref=e225] [cursor=pointer]: N55157A37975, Karina
+                  - generic [ref=e228] [cursor=pointer]: Form A
+                  - generic [ref=e230] [cursor=pointer]: 29 days
+                  - generic [ref=e231] [cursor=pointer]:
+                    - generic [ref=e232] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e233] [cursor=pointer]:
+                    - button [disabled] [ref=e234]
+                    - button [disabled] [ref=e235]
+                    - button [ref=e236] [cursor=pointer]
+                - button "N16063A9085, Adelbert Form A — ● Not Started" [ref=e237] [cursor=pointer]:
+                  - generic [ref=e239] [cursor=pointer]: N16063A9085, Adelbert
+                  - generic [ref=e242] [cursor=pointer]: Form A
+                  - generic [ref=e244] [cursor=pointer]: —
+                  - generic [ref=e245] [cursor=pointer]:
+                    - generic [ref=e246] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e247] [cursor=pointer]:
+                    - button [disabled] [ref=e248]
+                    - button [disabled] [ref=e249]
+                    - button [ref=e250] [cursor=pointer]
+                - button "N82107A31688, Mozelle Form A 0 days ● Expired Generate Report" [ref=e251] [cursor=pointer]:
+                  - generic [ref=e253] [cursor=pointer]: N82107A31688, Mozelle
+                  - generic [ref=e256] [cursor=pointer]: Form A
+                  - generic [ref=e258] [cursor=pointer]: 0 days
+                  - generic [ref=e259] [cursor=pointer]:
+                    - generic [ref=e260] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e261] [cursor=pointer]:
+                    - button "Generate Report" [ref=e262] [cursor=pointer]
+                    - button [ref=e263] [cursor=pointer]
+                - button "N87167A51807, Santina Form A 0 days ● Expired Generate Report" [ref=e264] [cursor=pointer]:
+                  - generic [ref=e266] [cursor=pointer]: N87167A51807, Santina
+                  - generic [ref=e269] [cursor=pointer]: Form A
+                  - generic [ref=e271] [cursor=pointer]: 0 days
+                  - generic [ref=e272] [cursor=pointer]:
+                    - generic [ref=e273] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e274] [cursor=pointer]:
+                    - button "Generate Report" [ref=e275] [cursor=pointer]
+                    - button [ref=e276] [cursor=pointer]
+                - button "N77562A90976, Albertha Form A 0 days ● Expired Generate Report" [ref=e277] [cursor=pointer]:
+                  - generic [ref=e279] [cursor=pointer]: N77562A90976, Albertha
+                  - generic [ref=e282] [cursor=pointer]: Form A
+                  - generic [ref=e284] [cursor=pointer]: 0 days
+                  - generic [ref=e285] [cursor=pointer]:
+                    - generic [ref=e286] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e287] [cursor=pointer]:
+                    - button "Generate Report" [ref=e288] [cursor=pointer]
+                    - button [ref=e289] [cursor=pointer]
+                - button "N38635A51955, Beatrice Form A 0 days ● Expired Generate Report" [ref=e290] [cursor=pointer]:
+                  - generic [ref=e292] [cursor=pointer]: N38635A51955, Beatrice
+                  - generic [ref=e295] [cursor=pointer]: Form A
+                  - generic [ref=e297] [cursor=pointer]: 0 days
+                  - generic [ref=e298] [cursor=pointer]:
+                    - generic [ref=e299] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e300] [cursor=pointer]:
+                    - button "Generate Report" [ref=e301] [cursor=pointer]
+                    - button [ref=e302] [cursor=pointer]
+            - generic [ref=e303]:
+              - generic [ref=e306]:
+                - img [ref=e307]
+                - heading "Notifications Center" [level=3] [ref=e311]
+              - generic [ref=e312]:
+                - generic [ref=e314]:
+                  - img [ref=e315]
+                  - heading "Resources" [level=3] [ref=e319]
+                - list [ref=e320]:
+                  - listitem [ref=e321]:
+                    - button "Riverside Learn" [ref=e322] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e323] [cursor=pointer]
+                      - img [ref=e325] [cursor=pointer]
+                  - listitem [ref=e327]:
+                    - button "Onboarding Tutorial Videos" [ref=e328] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e329] [cursor=pointer]
+                      - img [ref=e331] [cursor=pointer]
+                  - listitem [ref=e333]:
+                    - button "Quick Reference Guides" [ref=e334] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e335] [cursor=pointer]
+                      - img [ref=e337] [cursor=pointer]
+                - generic [ref=e340]: View All
+      - contentinfo [ref=e341]:
+        - generic [ref=e342]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e343] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/?__hstc=20581799.15fd5189bfe9f224a074e9fc369f6a31.1763441770959.1763441770959.1763441770959.1&__hssc=20581799.1.1763441770960&__hsfp=1408774332
+          - img "Riverside Insights Website" [ref=e344] [cursor=pointer]
+        - generic [ref=e345]:
+          - link "Riverside Insights Facebook" [ref=e346] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e347] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e348] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e349] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e350] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e351] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e352] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e353] [cursor=pointer]
+        - generic [ref=e354]:
+          - link "Terms of Use" [ref=e355] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.15fd5189bfe9f224a074e9fc369f6a31.1763441770959.1763441770959.1763441770959.1&__hssc=20581799.1.1763441770960&__hsfp=1408774332
+          - generic [ref=e356]: "|"
+          - link "Privacy Policy" [ref=e357] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.15fd5189bfe9f224a074e9fc369f6a31.1763441770959.1763441770959.1763441770959.1&__hssc=20581799.1.1763441770960&__hsfp=1408774332
+        - generic [ref=e358]: Footer region end
+```

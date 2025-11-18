@@ -1,0 +1,99 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic [active]:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S11PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S11PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [ref=e44]
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [ref=e47] [cursor=pointer]
+                  - button "Closed" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+                - generic [ref=e51]: Test Set
+                - generic [ref=e52]: Days Left to Edit
+                - generic [ref=e53]: Status
+                - generic [ref=e54]: Actions
+                - generic [ref=e56]: No Test Assignments have been created.
+            - generic [ref=e57]:
+              - generic [ref=e60]:
+                - img [ref=e61]
+                - heading "Notifications Center" [level=3] [ref=e65]
+              - generic [ref=e66]:
+                - generic [ref=e68]:
+                  - img [ref=e69]
+                  - heading "Resources" [level=3] [ref=e73]
+                - list [ref=e74]:
+                  - listitem [ref=e75]:
+                    - button "Riverside Learn" [ref=e76] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e77] [cursor=pointer]
+                      - img [ref=e79] [cursor=pointer]
+                  - listitem [ref=e81]:
+                    - button "Onboarding Tutorial Videos" [ref=e82] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e83] [cursor=pointer]
+                      - img [ref=e85] [cursor=pointer]
+                  - listitem [ref=e87]:
+                    - button "Quick Reference Guides" [ref=e88] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e89] [cursor=pointer]
+                      - img [ref=e91] [cursor=pointer]
+                - generic [ref=e94]: View All
+      - contentinfo [ref=e95]:
+        - generic [ref=e96]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e97] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/?__hstc=20581799.d00cd0e9f06de8785457b6cc205a8fc5.1763440494567.1763440494567.1763440494567.1&__hssc=20581799.1.1763440494568&__hsfp=1408774332
+          - img "Riverside Insights Website" [ref=e98] [cursor=pointer]
+        - generic [ref=e99]:
+          - link "Riverside Insights Facebook" [ref=e100] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e101] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e102] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e103] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e104] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e105] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e106] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e107] [cursor=pointer]
+        - generic [ref=e108]:
+          - link "Terms of Use" [ref=e109] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.d00cd0e9f06de8785457b6cc205a8fc5.1763440494567.1763440494567.1763440494567.1&__hssc=20581799.1.1763440494568&__hsfp=1408774332
+          - generic [ref=e110]: "|"
+          - link "Privacy Policy" [ref=e111] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.d00cd0e9f06de8785457b6cc205a8fc5.1763440494567.1763440494567.1763440494567.1&__hssc=20581799.1.1763440494568&__hsfp=1408774332
+        - generic [ref=e112]: Footer region end
+```
