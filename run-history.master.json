@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "139",
+    "timestamp": "20251118_000000",
+    "runReason": "Running full regression of @TestDe|@DerivedScores|@InProgressTestAssignments|@SubmittedTestAssignments in prod as a part of Hot fix release",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@InProgressTestAssignments|@SubmittedTestAssignments"
+  },
+  {
     "runNumber": "138",
     "timestamp": "20251117_000000",
     "runReason": "full regression of @TestDe|@DerivedScores after the code changes for timer in Prod",
