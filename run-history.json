@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "144",
+    "timestamp": "20251204_000000",
+    "runReason": "(?=.*@TestDe)(?=.*(@OVSYN|@OVANT)) pendo trial 2",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@TestDe)(?=.*(@OVSYN|@OVANT))"
+  },
+  {
     "runNumber": "143",
     "timestamp": "20251204_000000",
     "runReason": "running for pendo with network and traces on Trial 01",
