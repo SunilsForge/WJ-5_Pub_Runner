@@ -1,0 +1,570 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic [active]:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S07PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S07PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [ref=e44]
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [ref=e47] [cursor=pointer]
+                  - button "Closed" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+                - generic [ref=e51]: Test Set
+                - generic [ref=e52]: Days Left to Edit
+                - generic [ref=e53]: Status
+                - generic [ref=e54]: Actions
+                - button "N56487A44562, Fanny Form A — ● Not Started" [ref=e55] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N56487A44562, Fanny
+                  - generic [ref=e60] [cursor=pointer]: Form A
+                  - generic [ref=e62] [cursor=pointer]: —
+                  - generic [ref=e63] [cursor=pointer]:
+                    - generic [ref=e64] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e65] [cursor=pointer]:
+                    - button [disabled] [ref=e66]
+                    - button [disabled] [ref=e67]
+                    - button [ref=e68] [cursor=pointer]
+                - button "N64566A96179, Isidro Form A 0 days ● Expired Generate Report" [ref=e69] [cursor=pointer]:
+                  - generic [ref=e71] [cursor=pointer]: N64566A96179, Isidro
+                  - generic [ref=e74] [cursor=pointer]: Form A
+                  - generic [ref=e76] [cursor=pointer]: 0 days
+                  - generic [ref=e77] [cursor=pointer]:
+                    - generic [ref=e78] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e79] [cursor=pointer]:
+                    - button "Generate Report" [ref=e80] [cursor=pointer]
+                    - button [ref=e81] [cursor=pointer]
+                - button "N81343A51043, Claud Form A — ● Not Started" [ref=e82] [cursor=pointer]:
+                  - generic [ref=e84] [cursor=pointer]: N81343A51043, Claud
+                  - generic [ref=e87] [cursor=pointer]: Form A
+                  - generic [ref=e89] [cursor=pointer]: —
+                  - generic [ref=e90] [cursor=pointer]:
+                    - generic [ref=e91] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e92] [cursor=pointer]:
+                    - button [disabled] [ref=e93]
+                    - button [disabled] [ref=e94]
+                    - button [ref=e95] [cursor=pointer]
+                - button "N50554A71346, Edd Form A — ● Not Started" [ref=e96] [cursor=pointer]:
+                  - generic [ref=e98] [cursor=pointer]: N50554A71346, Edd
+                  - generic [ref=e101] [cursor=pointer]: Form A
+                  - generic [ref=e103] [cursor=pointer]: —
+                  - generic [ref=e104] [cursor=pointer]:
+                    - generic [ref=e105] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e106] [cursor=pointer]:
+                    - button [disabled] [ref=e107]
+                    - button [disabled] [ref=e108]
+                    - button [ref=e109] [cursor=pointer]
+                - button "N11030A56706, Jules Form A 0 days ● Expired Generate Report" [ref=e110] [cursor=pointer]:
+                  - generic [ref=e112] [cursor=pointer]: N11030A56706, Jules
+                  - generic [ref=e115] [cursor=pointer]: Form A
+                  - generic [ref=e117] [cursor=pointer]: 0 days
+                  - generic [ref=e118] [cursor=pointer]:
+                    - generic [ref=e119] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e120] [cursor=pointer]:
+                    - button "Generate Report" [ref=e121] [cursor=pointer]
+                    - button [ref=e122] [cursor=pointer]
+                - button "N17680A24981, Mattie Form A 0 days ● Expired Generate Report" [ref=e123] [cursor=pointer]:
+                  - generic [ref=e125] [cursor=pointer]: N17680A24981, Mattie
+                  - generic [ref=e128] [cursor=pointer]: Form A
+                  - generic [ref=e130] [cursor=pointer]: 0 days
+                  - generic [ref=e131] [cursor=pointer]:
+                    - generic [ref=e132] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e133] [cursor=pointer]:
+                    - button "Generate Report" [ref=e134] [cursor=pointer]
+                    - button [ref=e135] [cursor=pointer]
+                - button "N81056A47483, Abigale Form A 0 days ● Expired Generate Report" [ref=e136] [cursor=pointer]:
+                  - generic [ref=e138] [cursor=pointer]: N81056A47483, Abigale
+                  - generic [ref=e141] [cursor=pointer]: Form A
+                  - generic [ref=e143] [cursor=pointer]: 0 days
+                  - generic [ref=e144] [cursor=pointer]:
+                    - generic [ref=e145] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e146] [cursor=pointer]:
+                    - button "Generate Report" [ref=e147] [cursor=pointer]
+                    - button [ref=e148] [cursor=pointer]
+                - button "N56669A52693, Estel Form A 0 days ● Expired Generate Report" [ref=e149] [cursor=pointer]:
+                  - generic [ref=e151] [cursor=pointer]: N56669A52693, Estel
+                  - generic [ref=e154] [cursor=pointer]: Form A
+                  - generic [ref=e156] [cursor=pointer]: 0 days
+                  - generic [ref=e157] [cursor=pointer]:
+                    - generic [ref=e158] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e159] [cursor=pointer]:
+                    - button "Generate Report" [ref=e160] [cursor=pointer]
+                    - button [ref=e161] [cursor=pointer]
+                - button "N97300A92568, Kendrick Form A 0 days ● Expired Generate Report" [ref=e162] [cursor=pointer]:
+                  - generic [ref=e164] [cursor=pointer]: N97300A92568, Kendrick
+                  - generic [ref=e167] [cursor=pointer]: Form A
+                  - generic [ref=e169] [cursor=pointer]: 0 days
+                  - generic [ref=e170] [cursor=pointer]:
+                    - generic [ref=e171] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e172] [cursor=pointer]:
+                    - button "Generate Report" [ref=e173] [cursor=pointer]
+                    - button [ref=e174] [cursor=pointer]
+                - button "N31775A10289, Oma Form A 0 days ● Expired Generate Report" [ref=e175] [cursor=pointer]:
+                  - generic [ref=e177] [cursor=pointer]: N31775A10289, Oma
+                  - generic [ref=e180] [cursor=pointer]: Form A
+                  - generic [ref=e182] [cursor=pointer]: 0 days
+                  - generic [ref=e183] [cursor=pointer]:
+                    - generic [ref=e184] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e185] [cursor=pointer]:
+                    - button "Generate Report" [ref=e186] [cursor=pointer]
+                    - button [ref=e187] [cursor=pointer]
+                - button "N7863A74321, Abdiel Form A 0 days ● Expired Generate Report" [ref=e188] [cursor=pointer]:
+                  - generic [ref=e190] [cursor=pointer]: N7863A74321, Abdiel
+                  - generic [ref=e193] [cursor=pointer]: Form A
+                  - generic [ref=e195] [cursor=pointer]: 0 days
+                  - generic [ref=e196] [cursor=pointer]:
+                    - generic [ref=e197] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e198] [cursor=pointer]:
+                    - button "Generate Report" [ref=e199] [cursor=pointer]
+                    - button [ref=e200] [cursor=pointer]
+                - button "N25665A22028, Shea Form A 0 days ● Expired Generate Report" [ref=e201] [cursor=pointer]:
+                  - generic [ref=e203] [cursor=pointer]: N25665A22028, Shea
+                  - generic [ref=e206] [cursor=pointer]: Form A
+                  - generic [ref=e208] [cursor=pointer]: 0 days
+                  - generic [ref=e209] [cursor=pointer]:
+                    - generic [ref=e210] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e211] [cursor=pointer]:
+                    - button "Generate Report" [ref=e212] [cursor=pointer]
+                    - button [ref=e213] [cursor=pointer]
+                - button "N13256A73600, Tomas Form A 0 days ● Expired Generate Report" [ref=e214] [cursor=pointer]:
+                  - generic [ref=e216] [cursor=pointer]: N13256A73600, Tomas
+                  - generic [ref=e219] [cursor=pointer]: Form A
+                  - generic [ref=e221] [cursor=pointer]: 0 days
+                  - generic [ref=e222] [cursor=pointer]:
+                    - generic [ref=e223] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e224] [cursor=pointer]:
+                    - button "Generate Report" [ref=e225] [cursor=pointer]
+                    - button [ref=e226] [cursor=pointer]
+                - button "N35041A77744, Tito Form A 0 days ● Expired Generate Report" [ref=e227] [cursor=pointer]:
+                  - generic [ref=e229] [cursor=pointer]: N35041A77744, Tito
+                  - generic [ref=e232] [cursor=pointer]: Form A
+                  - generic [ref=e234] [cursor=pointer]: 0 days
+                  - generic [ref=e235] [cursor=pointer]:
+                    - generic [ref=e236] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e237] [cursor=pointer]:
+                    - button "Generate Report" [ref=e238] [cursor=pointer]
+                    - button [ref=e239] [cursor=pointer]
+                - button "N67406A44462, Viva Form A 0 days ● Expired Generate Report" [ref=e240] [cursor=pointer]:
+                  - generic [ref=e242] [cursor=pointer]: N67406A44462, Viva
+                  - generic [ref=e245] [cursor=pointer]: Form A
+                  - generic [ref=e247] [cursor=pointer]: 0 days
+                  - generic [ref=e248] [cursor=pointer]:
+                    - generic [ref=e249] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e250] [cursor=pointer]:
+                    - button "Generate Report" [ref=e251] [cursor=pointer]
+                    - button [ref=e252] [cursor=pointer]
+                - button "N71373A96810, Gabriella Form A 0 days ● Expired Generate Report" [ref=e253] [cursor=pointer]:
+                  - generic [ref=e255] [cursor=pointer]: N71373A96810, Gabriella
+                  - generic [ref=e258] [cursor=pointer]: Form A
+                  - generic [ref=e260] [cursor=pointer]: 0 days
+                  - generic [ref=e261] [cursor=pointer]:
+                    - generic [ref=e262] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e263] [cursor=pointer]:
+                    - button "Generate Report" [ref=e264] [cursor=pointer]
+                    - button [ref=e265] [cursor=pointer]
+                - button "N52521A86088, Bret Form A 0 days ● Expired Generate Report" [ref=e266] [cursor=pointer]:
+                  - generic [ref=e268] [cursor=pointer]: N52521A86088, Bret
+                  - generic [ref=e271] [cursor=pointer]: Form A
+                  - generic [ref=e273] [cursor=pointer]: 0 days
+                  - generic [ref=e274] [cursor=pointer]:
+                    - generic [ref=e275] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e276] [cursor=pointer]:
+                    - button "Generate Report" [ref=e277] [cursor=pointer]
+                    - button [ref=e278] [cursor=pointer]
+                - button "N72296A99966, Jacinthe Form A — ● Not Started" [ref=e279] [cursor=pointer]:
+                  - generic [ref=e281] [cursor=pointer]: N72296A99966, Jacinthe
+                  - generic [ref=e284] [cursor=pointer]: Form A
+                  - generic [ref=e286] [cursor=pointer]: —
+                  - generic [ref=e287] [cursor=pointer]:
+                    - generic [ref=e288] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e289] [cursor=pointer]:
+                    - button [disabled] [ref=e290]
+                    - button [disabled] [ref=e291]
+                    - button [ref=e292] [cursor=pointer]
+                - button "N33801A78171, Hilda Form A 0 days ● Expired Generate Report" [ref=e293] [cursor=pointer]:
+                  - generic [ref=e295] [cursor=pointer]: N33801A78171, Hilda
+                  - generic [ref=e298] [cursor=pointer]: Form A
+                  - generic [ref=e300] [cursor=pointer]: 0 days
+                  - generic [ref=e301] [cursor=pointer]:
+                    - generic [ref=e302] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e303] [cursor=pointer]:
+                    - button "Generate Report" [ref=e304] [cursor=pointer]
+                    - button [ref=e305] [cursor=pointer]
+                - button "N91757A30032, Mabel Form A 0 days ● Expired Generate Report" [ref=e306] [cursor=pointer]:
+                  - generic [ref=e308] [cursor=pointer]: N91757A30032, Mabel
+                  - generic [ref=e311] [cursor=pointer]: Form A
+                  - generic [ref=e313] [cursor=pointer]: 0 days
+                  - generic [ref=e314] [cursor=pointer]:
+                    - generic [ref=e315] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e316] [cursor=pointer]:
+                    - button "Generate Report" [ref=e317] [cursor=pointer]
+                    - button [ref=e318] [cursor=pointer]
+                - button "N54241A42190, Demarcus Form A 0 days ● Expired Generate Report" [ref=e319] [cursor=pointer]:
+                  - generic [ref=e321] [cursor=pointer]: N54241A42190, Demarcus
+                  - generic [ref=e324] [cursor=pointer]: Form A
+                  - generic [ref=e326] [cursor=pointer]: 0 days
+                  - generic [ref=e327] [cursor=pointer]:
+                    - generic [ref=e328] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e329] [cursor=pointer]:
+                    - button "Generate Report" [ref=e330] [cursor=pointer]
+                    - button [ref=e331] [cursor=pointer]
+                - button "N46433A7715, Mya Form A 0 days ● Expired Generate Report" [ref=e332] [cursor=pointer]:
+                  - generic [ref=e334] [cursor=pointer]: N46433A7715, Mya
+                  - generic [ref=e337] [cursor=pointer]: Form A
+                  - generic [ref=e339] [cursor=pointer]: 0 days
+                  - generic [ref=e340] [cursor=pointer]:
+                    - generic [ref=e341] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e342] [cursor=pointer]:
+                    - button "Generate Report" [ref=e343] [cursor=pointer]
+                    - button [ref=e344] [cursor=pointer]
+                - button "N73076A67006, Asia Form A 0 days ● Expired Generate Report" [ref=e345] [cursor=pointer]:
+                  - generic [ref=e347] [cursor=pointer]: N73076A67006, Asia
+                  - generic [ref=e350] [cursor=pointer]: Form A
+                  - generic [ref=e352] [cursor=pointer]: 0 days
+                  - generic [ref=e353] [cursor=pointer]:
+                    - generic [ref=e354] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e355] [cursor=pointer]:
+                    - button "Generate Report" [ref=e356] [cursor=pointer]
+                    - button [ref=e357] [cursor=pointer]
+                - button "N62816A77523, Scarlett Form A 0 days ● Expired Generate Report" [ref=e358] [cursor=pointer]:
+                  - generic [ref=e360] [cursor=pointer]: N62816A77523, Scarlett
+                  - generic [ref=e363] [cursor=pointer]: Form A
+                  - generic [ref=e365] [cursor=pointer]: 0 days
+                  - generic [ref=e366] [cursor=pointer]:
+                    - generic [ref=e367] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e368] [cursor=pointer]:
+                    - button "Generate Report" [ref=e369] [cursor=pointer]
+                    - button [ref=e370] [cursor=pointer]
+                - button "N26312A78411, Daniela Form A — ● Not Started" [ref=e371] [cursor=pointer]:
+                  - generic [ref=e373] [cursor=pointer]: N26312A78411, Daniela
+                  - generic [ref=e376] [cursor=pointer]: Form A
+                  - generic [ref=e378] [cursor=pointer]: —
+                  - generic [ref=e379] [cursor=pointer]:
+                    - generic [ref=e380] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e381] [cursor=pointer]:
+                    - button [disabled] [ref=e382]
+                    - button [disabled] [ref=e383]
+                    - button [ref=e384] [cursor=pointer]
+                - button "N14631A33850, Jaydon Form A 0 days ● Expired Generate Report" [ref=e385] [cursor=pointer]:
+                  - generic [ref=e387] [cursor=pointer]: N14631A33850, Jaydon
+                  - generic [ref=e390] [cursor=pointer]: Form A
+                  - generic [ref=e392] [cursor=pointer]: 0 days
+                  - generic [ref=e393] [cursor=pointer]:
+                    - generic [ref=e394] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e395] [cursor=pointer]:
+                    - button "Generate Report" [ref=e396] [cursor=pointer]
+                    - button [ref=e397] [cursor=pointer]
+                - button "N38886A62284, Emil Form A — ● Not Started" [ref=e398] [cursor=pointer]:
+                  - generic [ref=e400] [cursor=pointer]: N38886A62284, Emil
+                  - generic [ref=e403] [cursor=pointer]: Form A
+                  - generic [ref=e405] [cursor=pointer]: —
+                  - generic [ref=e406] [cursor=pointer]:
+                    - generic [ref=e407] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e408] [cursor=pointer]:
+                    - button [disabled] [ref=e409]
+                    - button [disabled] [ref=e410]
+                    - button [ref=e411] [cursor=pointer]
+                - button "N97242A2747, Demario Form A 0 days ● Expired Generate Report" [ref=e412] [cursor=pointer]:
+                  - generic [ref=e414] [cursor=pointer]: N97242A2747, Demario
+                  - generic [ref=e417] [cursor=pointer]: Form A
+                  - generic [ref=e419] [cursor=pointer]: 0 days
+                  - generic [ref=e420] [cursor=pointer]:
+                    - generic [ref=e421] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e422] [cursor=pointer]:
+                    - button "Generate Report" [ref=e423] [cursor=pointer]
+                    - button [ref=e424] [cursor=pointer]
+                - button "N81251A32128, Kamille Form A 0 days ● Expired Generate Report" [ref=e425] [cursor=pointer]:
+                  - generic [ref=e427] [cursor=pointer]: N81251A32128, Kamille
+                  - generic [ref=e430] [cursor=pointer]: Form A
+                  - generic [ref=e432] [cursor=pointer]: 0 days
+                  - generic [ref=e433] [cursor=pointer]:
+                    - generic [ref=e434] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e435] [cursor=pointer]:
+                    - button "Generate Report" [ref=e436] [cursor=pointer]
+                    - button [ref=e437] [cursor=pointer]
+                - button "N56656A40007, Emanuel Form A 0 days ● Expired Generate Report" [ref=e438] [cursor=pointer]:
+                  - generic [ref=e440] [cursor=pointer]: N56656A40007, Emanuel
+                  - generic [ref=e443] [cursor=pointer]: Form A
+                  - generic [ref=e445] [cursor=pointer]: 0 days
+                  - generic [ref=e446] [cursor=pointer]:
+                    - generic [ref=e447] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e448] [cursor=pointer]:
+                    - button "Generate Report" [ref=e449] [cursor=pointer]
+                    - button [ref=e450] [cursor=pointer]
+                - button "N74927A92941, Vinnie Form A 0 days ● Expired Generate Report" [ref=e451] [cursor=pointer]:
+                  - generic [ref=e453] [cursor=pointer]: N74927A92941, Vinnie
+                  - generic [ref=e456] [cursor=pointer]: Form A
+                  - generic [ref=e458] [cursor=pointer]: 0 days
+                  - generic [ref=e459] [cursor=pointer]:
+                    - generic [ref=e460] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e461] [cursor=pointer]:
+                    - button "Generate Report" [ref=e462] [cursor=pointer]
+                    - button [ref=e463] [cursor=pointer]
+                - button "N41547A87408, Jamarcus Form A 0 days ● Expired Generate Report" [ref=e464] [cursor=pointer]:
+                  - generic [ref=e466] [cursor=pointer]: N41547A87408, Jamarcus
+                  - generic [ref=e469] [cursor=pointer]: Form A
+                  - generic [ref=e471] [cursor=pointer]: 0 days
+                  - generic [ref=e472] [cursor=pointer]:
+                    - generic [ref=e473] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e474] [cursor=pointer]:
+                    - button "Generate Report" [ref=e475] [cursor=pointer]
+                    - button [ref=e476] [cursor=pointer]
+                - button "N70249A41747, Leo Form A 0 days ● Expired Generate Report" [ref=e477] [cursor=pointer]:
+                  - generic [ref=e479] [cursor=pointer]: N70249A41747, Leo
+                  - generic [ref=e482] [cursor=pointer]: Form A
+                  - generic [ref=e484] [cursor=pointer]: 0 days
+                  - generic [ref=e485] [cursor=pointer]:
+                    - generic [ref=e486] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e487] [cursor=pointer]:
+                    - button "Generate Report" [ref=e488] [cursor=pointer]
+                    - button [ref=e489] [cursor=pointer]
+                - button "N66310A88280, Telly Form A 0 days ● Expired Generate Report" [ref=e490] [cursor=pointer]:
+                  - generic [ref=e492] [cursor=pointer]: N66310A88280, Telly
+                  - generic [ref=e495] [cursor=pointer]: Form A
+                  - generic [ref=e497] [cursor=pointer]: 0 days
+                  - generic [ref=e498] [cursor=pointer]:
+                    - generic [ref=e499] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e500] [cursor=pointer]:
+                    - button "Generate Report" [ref=e501] [cursor=pointer]
+                    - button [ref=e502] [cursor=pointer]
+                - button "N17231A51548, Maida Form A 0 days ● Expired Generate Report" [ref=e503] [cursor=pointer]:
+                  - generic [ref=e505] [cursor=pointer]: N17231A51548, Maida
+                  - generic [ref=e508] [cursor=pointer]: Form A
+                  - generic [ref=e510] [cursor=pointer]: 0 days
+                  - generic [ref=e511] [cursor=pointer]:
+                    - generic [ref=e512] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e513] [cursor=pointer]:
+                    - button "Generate Report" [ref=e514] [cursor=pointer]
+                    - button [ref=e515] [cursor=pointer]
+                - button "N83602A2441, Cedrick Form A 0 days ● Expired Generate Report" [ref=e516] [cursor=pointer]:
+                  - generic [ref=e518] [cursor=pointer]: N83602A2441, Cedrick
+                  - generic [ref=e521] [cursor=pointer]: Form A
+                  - generic [ref=e523] [cursor=pointer]: 0 days
+                  - generic [ref=e524] [cursor=pointer]:
+                    - generic [ref=e525] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e526] [cursor=pointer]:
+                    - button "Generate Report" [ref=e527] [cursor=pointer]
+                    - button [ref=e528] [cursor=pointer]
+                - button "N59984A45562, Rosario Form A 0 days ● Expired Generate Report" [ref=e529] [cursor=pointer]:
+                  - generic [ref=e531] [cursor=pointer]: N59984A45562, Rosario
+                  - generic [ref=e534] [cursor=pointer]: Form A
+                  - generic [ref=e536] [cursor=pointer]: 0 days
+                  - generic [ref=e537] [cursor=pointer]:
+                    - generic [ref=e538] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e539] [cursor=pointer]:
+                    - button "Generate Report" [ref=e540] [cursor=pointer]
+                    - button [ref=e541] [cursor=pointer]
+                - button "N80818A57446, Manley Form A 0 days ● Expired Generate Report" [ref=e542] [cursor=pointer]:
+                  - generic [ref=e544] [cursor=pointer]: N80818A57446, Manley
+                  - generic [ref=e547] [cursor=pointer]: Form A
+                  - generic [ref=e549] [cursor=pointer]: 0 days
+                  - generic [ref=e550] [cursor=pointer]:
+                    - generic [ref=e551] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e552] [cursor=pointer]:
+                    - button "Generate Report" [ref=e553] [cursor=pointer]
+                    - button [ref=e554] [cursor=pointer]
+                - button "N83777A85562, Kyla Form A 0 days ● Expired Generate Report" [ref=e555] [cursor=pointer]:
+                  - generic [ref=e557] [cursor=pointer]: N83777A85562, Kyla
+                  - generic [ref=e560] [cursor=pointer]: Form A
+                  - generic [ref=e562] [cursor=pointer]: 0 days
+                  - generic [ref=e563] [cursor=pointer]:
+                    - generic [ref=e564] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e565] [cursor=pointer]:
+                    - button "Generate Report" [ref=e566] [cursor=pointer]
+                    - button [ref=e567] [cursor=pointer]
+                - button "N63836A39225, Chance Form A 0 days ● Expired Generate Report" [ref=e568] [cursor=pointer]:
+                  - generic [ref=e570] [cursor=pointer]: N63836A39225, Chance
+                  - generic [ref=e573] [cursor=pointer]: Form A
+                  - generic [ref=e575] [cursor=pointer]: 0 days
+                  - generic [ref=e576] [cursor=pointer]:
+                    - generic [ref=e577] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e578] [cursor=pointer]:
+                    - button "Generate Report" [ref=e579] [cursor=pointer]
+                    - button [ref=e580] [cursor=pointer]
+                - button "N71953A30289, Ted Form A 0 days ● Expired Generate Report" [ref=e581] [cursor=pointer]:
+                  - generic [ref=e583] [cursor=pointer]: N71953A30289, Ted
+                  - generic [ref=e586] [cursor=pointer]: Form A
+                  - generic [ref=e588] [cursor=pointer]: 0 days
+                  - generic [ref=e589] [cursor=pointer]:
+                    - generic [ref=e590] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e591] [cursor=pointer]:
+                    - button "Generate Report" [ref=e592] [cursor=pointer]
+                    - button [ref=e593] [cursor=pointer]
+                - button "N4109A77274, Kaylah Form A 0 days ● Expired Generate Report" [ref=e594] [cursor=pointer]:
+                  - generic [ref=e596] [cursor=pointer]: N4109A77274, Kaylah
+                  - generic [ref=e599] [cursor=pointer]: Form A
+                  - generic [ref=e601] [cursor=pointer]: 0 days
+                  - generic [ref=e602] [cursor=pointer]:
+                    - generic [ref=e603] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e604] [cursor=pointer]:
+                    - button "Generate Report" [ref=e605] [cursor=pointer]
+                    - button [ref=e606] [cursor=pointer]
+                - button "N30643A27300, Rick Form A 0 days ● Expired Generate Report" [ref=e607] [cursor=pointer]:
+                  - generic [ref=e609] [cursor=pointer]: N30643A27300, Rick
+                  - generic [ref=e612] [cursor=pointer]: Form A
+                  - generic [ref=e614] [cursor=pointer]: 0 days
+                  - generic [ref=e615] [cursor=pointer]:
+                    - generic [ref=e616] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e617] [cursor=pointer]:
+                    - button "Generate Report" [ref=e618] [cursor=pointer]
+                    - button [ref=e619] [cursor=pointer]
+                - button "N44811A82698, Dannie Form A 0 days ● Expired Generate Report" [ref=e620] [cursor=pointer]:
+                  - generic [ref=e622] [cursor=pointer]: N44811A82698, Dannie
+                  - generic [ref=e625] [cursor=pointer]: Form A
+                  - generic [ref=e627] [cursor=pointer]: 0 days
+                  - generic [ref=e628] [cursor=pointer]:
+                    - generic [ref=e629] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e630] [cursor=pointer]:
+                    - button "Generate Report" [ref=e631] [cursor=pointer]
+                    - button [ref=e632] [cursor=pointer]
+                - button "N54188A71939, Larue Form A 0 days ● Expired Generate Report" [ref=e633] [cursor=pointer]:
+                  - generic [ref=e635] [cursor=pointer]: N54188A71939, Larue
+                  - generic [ref=e638] [cursor=pointer]: Form A
+                  - generic [ref=e640] [cursor=pointer]: 0 days
+                  - generic [ref=e641] [cursor=pointer]:
+                    - generic [ref=e642] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e643] [cursor=pointer]:
+                    - button "Generate Report" [ref=e644] [cursor=pointer]
+                    - button [ref=e645] [cursor=pointer]
+                - button "N66249A22725, Hannah Form A 0 days ● Expired Generate Report" [ref=e646] [cursor=pointer]:
+                  - generic [ref=e648] [cursor=pointer]: N66249A22725, Hannah
+                  - generic [ref=e651] [cursor=pointer]: Form A
+                  - generic [ref=e653] [cursor=pointer]: 0 days
+                  - generic [ref=e654] [cursor=pointer]:
+                    - generic [ref=e655] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e656] [cursor=pointer]:
+                    - button "Generate Report" [ref=e657] [cursor=pointer]
+                    - button [ref=e658] [cursor=pointer]
+            - generic [ref=e659]:
+              - generic [ref=e662]:
+                - img [ref=e663]
+                - heading "Notifications Center" [level=3] [ref=e667]
+              - generic [ref=e668]:
+                - generic [ref=e670]:
+                  - img [ref=e671]
+                  - heading "Resources" [level=3] [ref=e675]
+                - list [ref=e676]:
+                  - listitem [ref=e677]:
+                    - button "Riverside Learn" [ref=e678] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e679] [cursor=pointer]
+                      - img [ref=e681] [cursor=pointer]
+                  - listitem [ref=e683]:
+                    - button "Onboarding Tutorial Videos" [ref=e684] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e685] [cursor=pointer]
+                      - img [ref=e687] [cursor=pointer]
+                  - listitem [ref=e689]:
+                    - button "Quick Reference Guides" [ref=e690] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e691] [cursor=pointer]
+                      - img [ref=e693] [cursor=pointer]
+                - generic [ref=e696]: View All
+      - contentinfo [ref=e697]:
+        - generic [ref=e698]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e699] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/?__hstc=20581799.76f52f4edc6fe7ebd60a536ee4b57423.1764942009761.1764942009761.1764942009761.1&__hssc=20581799.1.1764942009761&__hsfp=1408774332
+          - img "Riverside Insights Website" [ref=e700] [cursor=pointer]
+        - generic [ref=e701]:
+          - link "Riverside Insights Facebook" [ref=e702] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e703] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e704] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e705] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e706] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e707] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e708] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e709] [cursor=pointer]
+        - generic [ref=e710]:
+          - link "Terms of Use" [ref=e711] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.76f52f4edc6fe7ebd60a536ee4b57423.1764942009761.1764942009761.1764942009761.1&__hssc=20581799.1.1764942009761&__hsfp=1408774332
+          - generic [ref=e712]: "|"
+          - link "Privacy Policy" [ref=e713] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.76f52f4edc6fe7ebd60a536ee4b57423.1764942009761.1764942009761.1764942009761.1&__hssc=20581799.1.1764942009761&__hsfp=1408774332
+        - generic [ref=e714]: Footer region end
+  - region "Chat Widget" [ref=e715]:
+    - iframe [ref=e716]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e718]
+```
