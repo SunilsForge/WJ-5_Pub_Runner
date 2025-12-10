@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "148",
+    "timestamp": "20251210_000000",
+    "runReason": "running ((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@InProgressTestAssignments)|(?:@SubmittedTestAssignments) pendo changes in STAGE trial 02",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@InProgressTestAssignments)|(?:@SubmittedTestAssignments)"
+  },
+  {
     "runNumber": "147",
     "timestamp": "20251210_000000",
     "runReason": "Running ((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@InProgressTestAssignments)|(?:@SubmittedTestAssignments) Just trial to check the SCOP of PENDO",

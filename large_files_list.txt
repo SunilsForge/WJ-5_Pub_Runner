@@ -130,3 +130,7 @@ Large file detected: shard-10/test-results/test_dataExport-APPROB_Pub-45b93-amin
 Large file detected: shard-10/playwright-report/data/0b7a7b46e0012b67d5a43e54184469eb84c63163.zip (119.99 MB)
 Large file detected: shard-2/test-results/derived_scores(compounds &-d3528-MEM-cluster-generate-report-chrome/trace.zip (143.08 MB)
 Large file detected: shard-2/playwright-report/data/079886f4f181203f6d747816ab15dd98bde6f9bc.zip (143.08 MB)
+Large file detected: shard-8/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome/trace.zip (157.63 MB)
+Large file detected: shard-8/playwright-report/data/1254353742330a0837289e356513e9af20fb0ea0.zip (157.63 MB)
+Large file detected: shard-6/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome/trace.zip (140.62 MB)
+Large file detected: shard-6/playwright-report/data/70ed71c041830e1f87831dbe90cb7e3461698ff6.zip (140.62 MB)
