@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "150",
+    "timestamp": "20251211_000000",
+    "runReason": "running (?=.*@RDGFLU)(?=.*@DerivedScores) in STAGE to validate that END test thing",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@RDGFLU)(?=.*@DerivedScores)"
+  },
+  {
     "runNumber": "149",
     "timestamp": "20251211_000000",
     "runReason": "running SMOKE in stage as a part of Hot fix release",
