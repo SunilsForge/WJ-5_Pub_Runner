@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "149",
+    "timestamp": "20251211_000000",
+    "runReason": "running SMOKE in stage as a part of Hot fix release",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@InProgressTestAssignments)|(?:@SubmittedTestAssignments)"
+  },
+  {
     "runNumber": "148",
     "timestamp": "20251210_000000",
     "runReason": "running ((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@InProgressTestAssignments)|(?:@SubmittedTestAssignments) pendo changes in STAGE trial 02",
