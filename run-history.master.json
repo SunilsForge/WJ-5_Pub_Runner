@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "156",
+    "timestamp": "20251212_000000",
+    "runReason": "running SMOKE (?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)) in prod canada after hot fix PENDO fix",
+    "environment": "prodCanada",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores))"
+  },
+  {
     "runNumber": "155",
     "timestamp": "20251212_000000",
     "runReason": "Runnning SMOKE (?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)) in PROD after HOT fix release PRNDO update",
