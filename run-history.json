@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "155",
+    "timestamp": "20251212_000000",
+    "runReason": "Runnning SMOKE (?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)) in PROD after HOT fix release PRNDO update",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores))"
+  },
+  {
     "runNumber": "154",
     "timestamp": "20251212_000000",
     "runReason": "running ((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments) in ProdCanada after Hot Fix",
