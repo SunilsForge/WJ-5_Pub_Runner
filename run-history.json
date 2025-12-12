@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "153",
+    "timestamp": "20251212_000000",
+    "runReason": "running ((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments) after HotFix release ",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)"
+  },
+  {
     "runNumber": "152",
     "timestamp": "20251211_000000",
     "runReason": "rinning @InProgressTestAssignments in prod since bharathi asked",
