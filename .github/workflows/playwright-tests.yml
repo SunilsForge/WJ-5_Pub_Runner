@@ -21,6 +21,18 @@ on:
         description: "Test pattern {e.g., @Smoke,   @TestDe|@DerivedScores,   (?=.*@RDGBAS)(?=.*@DerivedScores),    (?=.*@DerivedScores)(?=.*(@PHNMAN|@RDGBAS)),    (?=.*@Smoke)(?=.*(@TestDe|@DerivedScores|@SingleTable|@MultiTable))   }"
         required: true
         default: "(?=.*@RDGBAS)(?=.*@DerivedScores)"
+      credential_set:
+        description: "Team member credential set (Aut_Eng_01 = default CI creds)"
+        required: true
+        default: "Aut_Eng_01"
+        type: choice
+        options:
+          - "Aut_Eng_01"
+          - "Aut_Eng_02"
+          - "Aut_Eng_03"
+          - "Aut_Eng_04"
+          - "Aut_Eng_05"
+          - "Aut_Eng_06"
       shard_count:
         description: "Number of shards"
         required: true
@@ -87,6 +99,7 @@ on:
 
 env:
   TEST_ENV: ${{ github.event_name == 'workflow_dispatch' && inputs.environment || 'stage' }}
+  CREDENTIAL_SET: ${{ github.event.inputs.credential_set }}
   NUM_RETRIES: ${{ github.event.inputs.num_retries }}
   VIDEO_MODE: ${{ github.event.inputs.video_mode }}
   TRACE_MODE: ${{ github.event.inputs.trace_mode }}
@@ -213,6 +226,7 @@ jobs:
         env:
           SHARD_COUNT: ${{ github.event.inputs.shard_count }}
           SHARD_NUMBER: ${{ matrix.shard }}
+          CREDENTIAL_SET: ${{ env.CREDENTIAL_SET }}
           VIDEO_MODE: ${{ github.event.inputs.video_mode }}
           TRACE_MODE: ${{ github.event.inputs.trace_mode }}
           CI: "true"
