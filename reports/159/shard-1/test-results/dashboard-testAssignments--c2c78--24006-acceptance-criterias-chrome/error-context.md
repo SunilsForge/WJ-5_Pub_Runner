@@ -1,0 +1,88 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S02PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S02PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [active] [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - heading "EXAMINEE MANAGEMENT" [level=1] [ref=e36]
+            - generic [ref=e37]:
+              - generic [ref=e38]:
+                - generic [ref=e41]:
+                  - textbox [ref=e42]
+                  - button [ref=e43] [cursor=pointer]
+                - generic [ref=e44]:
+                  - generic [ref=e45]: Filter Examinees
+                  - button "Reset" [ref=e46] [cursor=pointer]
+                - generic [ref=e49]:
+                  - generic [ref=e50]:
+                    - generic [ref=e51]:
+                      - text: DOB
+                      - generic [ref=e52]: ", Type in text"
+                    - generic [ref=e53]:
+                      - textbox "DOB , Type in text" [ref=e54]
+                      - button "Show Calendar" [ref=e55] [cursor=pointer]
+                  - application "Use arrow keys to navigate and enter to select a date"
+              - generic [ref=e57]:
+                - generic [ref=e58]:
+                  - button "Add Examinee" [ref=e59] [cursor=pointer]
+                  - button "Create Test Assignment" [ref=e60] [cursor=pointer]
+                - generic [ref=e62]: Loading...
+                - generic [ref=e64]:
+                  - generic [ref=e65]: First Name
+                  - generic [ref=e66]: Last Name
+                  - generic [ref=e67]: Examinee ID
+                  - generic [ref=e68]: DOB
+                  - generic [ref=e69]: Actions
+      - contentinfo [ref=e70]:
+        - generic [ref=e71]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e72] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/?__hstc=20581799.d4fc804b8fa1438bf1710d9a94ca2a95.1766045321229.1766045321229.1766045321229.1&__hssc=20581799.2.1766045321229&__hsfp=1408774332
+          - img "Riverside Insights Website" [ref=e73] [cursor=pointer]
+        - generic [ref=e74]:
+          - link "Riverside Insights Facebook" [ref=e75] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e76] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e77] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e78] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e79] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e80] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e81] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e82] [cursor=pointer]
+        - generic [ref=e83]:
+          - link "Terms of Use" [ref=e84] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.d4fc804b8fa1438bf1710d9a94ca2a95.1766045321229.1766045321229.1766045321229.1&__hssc=20581799.2.1766045321229&__hsfp=1408774332
+          - generic [ref=e85]: "|"
+          - link "Privacy Policy" [ref=e86] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.d4fc804b8fa1438bf1710d9a94ca2a95.1766045321229.1766045321229.1766045321229.1&__hssc=20581799.2.1766045321229&__hsfp=1408774332
+        - generic [ref=e87]: Footer region end
+```

@@ -1,0 +1,393 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic [active]:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 10PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "10PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [ref=e44]
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [ref=e47] [cursor=pointer]
+                  - button "Closed" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+                - generic [ref=e51]: Test Set
+                - generic [ref=e52]: Days Left to Edit
+                - generic [ref=e53]: Status
+                - generic [ref=e54]: Actions
+                - button "N54048A64028, Camylle General Intellectual Ability (GIA) (+1 more) — ● Not Started Edit Assignment Add tests to test set" [ref=e55] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N54048A64028, Camylle
+                  - generic [ref=e60] [cursor=pointer]: General Intellectual Ability (GIA) (+1 more)
+                  - generic [ref=e62] [cursor=pointer]: —
+                  - generic [ref=e63] [cursor=pointer]:
+                    - generic [ref=e64] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e65] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e66] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e67] [cursor=pointer]
+                    - button [ref=e68] [cursor=pointer]
+                - button "N54048A64028, Camylle Rapid Automatized Naming (RAN) — ● Not Started Edit Assignment Add tests to test set" [ref=e69] [cursor=pointer]:
+                  - generic [ref=e71] [cursor=pointer]: N54048A64028, Camylle
+                  - generic [ref=e74] [cursor=pointer]: Rapid Automatized Naming (RAN)
+                  - generic [ref=e76] [cursor=pointer]: —
+                  - generic [ref=e77] [cursor=pointer]:
+                    - generic [ref=e78] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e79] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e80] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e81] [cursor=pointer]
+                    - button [ref=e82] [cursor=pointer]
+                - button "N4360A82563, Rylan Broad Achievement — ● Not Started Edit Assignment Add tests to test set" [ref=e83] [cursor=pointer]:
+                  - generic [ref=e85] [cursor=pointer]: N4360A82563, Rylan
+                  - generic [ref=e88] [cursor=pointer]: Broad Achievement
+                  - generic [ref=e90] [cursor=pointer]: —
+                  - generic [ref=e91] [cursor=pointer]:
+                    - generic [ref=e92] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e93] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e94] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e95] [cursor=pointer]
+                    - button [ref=e96] [cursor=pointer]
+                - button "N8944A93633, Keyon Dyslexia Test Set — ● Not Started Edit Assignment Add tests to test set" [ref=e97] [cursor=pointer]:
+                  - generic [ref=e99] [cursor=pointer]: N8944A93633, Keyon
+                  - generic [ref=e102] [cursor=pointer]: Dyslexia Test Set
+                  - generic [ref=e104] [cursor=pointer]: —
+                  - generic [ref=e105] [cursor=pointer]:
+                    - generic [ref=e106] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e107] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e108] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e109] [cursor=pointer]
+                    - button [ref=e110] [cursor=pointer]
+                - button "N83145A66496, Deontae Dyslexia Test Set (+1 more) — ● Not Started Edit Assignment Add tests to test set" [ref=e111] [cursor=pointer]:
+                  - generic [ref=e113] [cursor=pointer]: N83145A66496, Deontae
+                  - generic [ref=e116] [cursor=pointer]: Dyslexia Test Set (+1 more)
+                  - generic [ref=e118] [cursor=pointer]: —
+                  - generic [ref=e119] [cursor=pointer]:
+                    - generic [ref=e120] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e121] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e122] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e123] [cursor=pointer]
+                    - button [ref=e124] [cursor=pointer]
+                - button "N53512A44140, Will Rapid Automatized Naming (RAN) — ● Not Started Edit Assignment Add tests to test set" [ref=e125] [cursor=pointer]:
+                  - generic [ref=e127] [cursor=pointer]: N53512A44140, Will
+                  - generic [ref=e130] [cursor=pointer]: Rapid Automatized Naming (RAN)
+                  - generic [ref=e132] [cursor=pointer]: —
+                  - generic [ref=e133] [cursor=pointer]:
+                    - generic [ref=e134] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e135] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e136] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e137] [cursor=pointer]
+                    - button [ref=e138] [cursor=pointer]
+                - button "N61800A22930, Jordi General Intellectual Ability (GIA) — ● Not Started Edit Assignment Add tests to test set" [ref=e139] [cursor=pointer]:
+                  - generic [ref=e141] [cursor=pointer]: N61800A22930, Jordi
+                  - generic [ref=e144] [cursor=pointer]: General Intellectual Ability (GIA)
+                  - generic [ref=e146] [cursor=pointer]: —
+                  - generic [ref=e147] [cursor=pointer]:
+                    - generic [ref=e148] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e149] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e150] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e151] [cursor=pointer]
+                    - button [ref=e152] [cursor=pointer]
+                - button "N36180A40996, Lamar Form A (+3 more) 30 days ● In Progress" [ref=e153] [cursor=pointer]:
+                  - generic [ref=e155] [cursor=pointer]: N36180A40996, Lamar
+                  - generic [ref=e158] [cursor=pointer]: Form A (+3 more)
+                  - generic [ref=e160] [cursor=pointer]: 30 days
+                  - generic [ref=e161] [cursor=pointer]:
+                    - generic [ref=e162] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e163] [cursor=pointer]:
+                    - button [disabled] [ref=e164]
+                    - button [disabled] [ref=e165]
+                    - button [ref=e166] [cursor=pointer]
+                - button "N69200A80937, Maurine Form A 29 days ● In Progress" [ref=e167] [cursor=pointer]:
+                  - generic [ref=e169] [cursor=pointer]: N69200A80937, Maurine
+                  - generic [ref=e172] [cursor=pointer]: Form A
+                  - generic [ref=e174] [cursor=pointer]: 29 days
+                  - generic [ref=e175] [cursor=pointer]:
+                    - generic [ref=e176] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e177] [cursor=pointer]:
+                    - button [disabled] [ref=e178]
+                    - button [disabled] [ref=e179]
+                    - button [ref=e180] [cursor=pointer]
+                - button "N43663A50125, Hudson Form A 29 days ● In Progress" [ref=e181] [cursor=pointer]:
+                  - generic [ref=e183] [cursor=pointer]: N43663A50125, Hudson
+                  - generic [ref=e186] [cursor=pointer]: Form A
+                  - generic [ref=e188] [cursor=pointer]: 29 days
+                  - generic [ref=e189] [cursor=pointer]:
+                    - generic [ref=e190] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e191] [cursor=pointer]:
+                    - button [disabled] [ref=e192]
+                    - button [disabled] [ref=e193]
+                    - button [ref=e194] [cursor=pointer]
+                - button "N75113A9423, Lennie Form A 29 days ● In Progress" [ref=e195] [cursor=pointer]:
+                  - generic [ref=e197] [cursor=pointer]: N75113A9423, Lennie
+                  - generic [ref=e200] [cursor=pointer]: Form A
+                  - generic [ref=e202] [cursor=pointer]: 29 days
+                  - generic [ref=e203] [cursor=pointer]:
+                    - generic [ref=e204] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e205] [cursor=pointer]:
+                    - button [disabled] [ref=e206]
+                    - button [disabled] [ref=e207]
+                    - button [ref=e208] [cursor=pointer]
+                - button "N63169A89390, Alfreda Form A 29 days ● In Progress" [ref=e209] [cursor=pointer]:
+                  - generic [ref=e211] [cursor=pointer]: N63169A89390, Alfreda
+                  - generic [ref=e214] [cursor=pointer]: Form A
+                  - generic [ref=e216] [cursor=pointer]: 29 days
+                  - generic [ref=e217] [cursor=pointer]:
+                    - generic [ref=e218] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e219] [cursor=pointer]:
+                    - button [disabled] [ref=e220]
+                    - button [disabled] [ref=e221]
+                    - button [ref=e222] [cursor=pointer]
+                - button "N37831A56800, Rafael Form A 24 days ● Submitted" [ref=e223] [cursor=pointer]:
+                  - generic [ref=e225] [cursor=pointer]: N37831A56800, Rafael
+                  - generic [ref=e228] [cursor=pointer]: Form A
+                  - generic [ref=e230] [cursor=pointer]: 24 days
+                  - generic [ref=e231] [cursor=pointer]:
+                    - generic [ref=e232] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e233] [cursor=pointer]:
+                    - button [disabled] [ref=e234]
+                    - button [disabled] [ref=e235]
+                    - button [ref=e236] [cursor=pointer]
+                - button "N39602A12426, Elmore Form A 23 days ● Submitted" [ref=e237] [cursor=pointer]:
+                  - generic [ref=e239] [cursor=pointer]: N39602A12426, Elmore
+                  - generic [ref=e242] [cursor=pointer]: Form A
+                  - generic [ref=e244] [cursor=pointer]: 23 days
+                  - generic [ref=e245] [cursor=pointer]:
+                    - generic [ref=e246] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e247] [cursor=pointer]:
+                    - button [disabled] [ref=e248]
+                    - button [disabled] [ref=e249]
+                    - button [ref=e250] [cursor=pointer]
+                - button "N98949A59658, Boris Form A 23 days ● Submitted" [ref=e251] [cursor=pointer]:
+                  - generic [ref=e253] [cursor=pointer]: N98949A59658, Boris
+                  - generic [ref=e256] [cursor=pointer]: Form A
+                  - generic [ref=e258] [cursor=pointer]: 23 days
+                  - generic [ref=e259] [cursor=pointer]:
+                    - generic [ref=e260] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e261] [cursor=pointer]:
+                    - button [disabled] [ref=e262]
+                    - button [disabled] [ref=e263]
+                    - button [ref=e264] [cursor=pointer]
+                - button "N88535A99038, Kody Form A 0 days ● Expired Generate Report" [ref=e265] [cursor=pointer]:
+                  - generic [ref=e267] [cursor=pointer]: N88535A99038, Kody
+                  - generic [ref=e270] [cursor=pointer]: Form A
+                  - generic [ref=e272] [cursor=pointer]: 0 days
+                  - generic [ref=e273] [cursor=pointer]:
+                    - generic [ref=e274] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e275] [cursor=pointer]:
+                    - button "Generate Report" [ref=e276] [cursor=pointer]
+                    - button [ref=e277] [cursor=pointer]
+                - button "N81561A35324, Quentin Form A 0 days ● Expired Generate Report" [ref=e278] [cursor=pointer]:
+                  - generic [ref=e280] [cursor=pointer]: N81561A35324, Quentin
+                  - generic [ref=e283] [cursor=pointer]: Form A
+                  - generic [ref=e285] [cursor=pointer]: 0 days
+                  - generic [ref=e286] [cursor=pointer]:
+                    - generic [ref=e287] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e288] [cursor=pointer]:
+                    - button "Generate Report" [ref=e289] [cursor=pointer]
+                    - button [ref=e290] [cursor=pointer]
+                - button "N58077A19867, Hayden Jennifer Bednar_1750696200319 0 days ● Expired Generate Report" [ref=e291] [cursor=pointer]:
+                  - generic [ref=e293] [cursor=pointer]: N58077A19867, Hayden
+                  - generic [ref=e296] [cursor=pointer]: Jennifer Bednar_1750696200319
+                  - generic [ref=e298] [cursor=pointer]: 0 days
+                  - generic [ref=e299] [cursor=pointer]:
+                    - generic [ref=e300] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e301] [cursor=pointer]:
+                    - button "Generate Report" [ref=e302] [cursor=pointer]
+                    - button [ref=e303] [cursor=pointer]
+                - button "N48199A60682, Constance Cassandra Howe III_1750694183427 0 days ● Expired Generate Report" [ref=e304] [cursor=pointer]:
+                  - generic [ref=e306] [cursor=pointer]: N48199A60682, Constance
+                  - generic [ref=e309] [cursor=pointer]: Cassandra Howe III_1750694183427
+                  - generic [ref=e311] [cursor=pointer]: 0 days
+                  - generic [ref=e312] [cursor=pointer]:
+                    - generic [ref=e313] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e314] [cursor=pointer]:
+                    - button "Generate Report" [ref=e315] [cursor=pointer]
+                    - button [ref=e316] [cursor=pointer]
+                - button "N58268A72782, Reba Bobbie Borer_1750693315239 0 days ● Expired Generate Report" [ref=e317] [cursor=pointer]:
+                  - generic [ref=e319] [cursor=pointer]: N58268A72782, Reba
+                  - generic [ref=e322] [cursor=pointer]: Bobbie Borer_1750693315239
+                  - generic [ref=e324] [cursor=pointer]: 0 days
+                  - generic [ref=e325] [cursor=pointer]:
+                    - generic [ref=e326] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e327] [cursor=pointer]:
+                    - button "Generate Report" [ref=e328] [cursor=pointer]
+                    - button [ref=e329] [cursor=pointer]
+                - button "N32041A36930, Ewell Adrienne Altenwerth_1750692345314 0 days ● Expired Generate Report" [ref=e330] [cursor=pointer]:
+                  - generic [ref=e332] [cursor=pointer]: N32041A36930, Ewell
+                  - generic [ref=e335] [cursor=pointer]: Adrienne Altenwerth_1750692345314
+                  - generic [ref=e337] [cursor=pointer]: 0 days
+                  - generic [ref=e338] [cursor=pointer]:
+                    - generic [ref=e339] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e340] [cursor=pointer]:
+                    - button "Generate Report" [ref=e341] [cursor=pointer]
+                    - button [ref=e342] [cursor=pointer]
+                - button "N93159A95054, Oral Lucas Hane_1750691618116 0 days ● Expired Generate Report" [ref=e343] [cursor=pointer]:
+                  - generic [ref=e345] [cursor=pointer]: N93159A95054, Oral
+                  - generic [ref=e348] [cursor=pointer]: Lucas Hane_1750691618116
+                  - generic [ref=e350] [cursor=pointer]: 0 days
+                  - generic [ref=e351] [cursor=pointer]:
+                    - generic [ref=e352] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e353] [cursor=pointer]:
+                    - button "Generate Report" [ref=e354] [cursor=pointer]
+                    - button [ref=e355] [cursor=pointer]
+                - button "N95604A24714, Katheryn Terri Langworth_1750690322937 0 days ● Expired Generate Report" [ref=e356] [cursor=pointer]:
+                  - generic [ref=e358] [cursor=pointer]: N95604A24714, Katheryn
+                  - generic [ref=e361] [cursor=pointer]: Terri Langworth_1750690322937
+                  - generic [ref=e363] [cursor=pointer]: 0 days
+                  - generic [ref=e364] [cursor=pointer]:
+                    - generic [ref=e365] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e366] [cursor=pointer]:
+                    - button "Generate Report" [ref=e367] [cursor=pointer]
+                    - button [ref=e368] [cursor=pointer]
+                - button "N35513A29228, Alia Annette Pollich IV_1750333909653 0 days ● Expired Generate Report" [ref=e369] [cursor=pointer]:
+                  - generic [ref=e371] [cursor=pointer]: N35513A29228, Alia
+                  - generic [ref=e374] [cursor=pointer]: Annette Pollich IV_1750333909653
+                  - generic [ref=e376] [cursor=pointer]: 0 days
+                  - generic [ref=e377] [cursor=pointer]:
+                    - generic [ref=e378] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e379] [cursor=pointer]:
+                    - button "Generate Report" [ref=e380] [cursor=pointer]
+                    - button [ref=e381] [cursor=pointer]
+                - button "N29280A44672, Alessandro Kelli Mosciski MD_1750332903678 0 days ● Expired Generate Report" [ref=e382] [cursor=pointer]:
+                  - generic [ref=e384] [cursor=pointer]: N29280A44672, Alessandro
+                  - generic [ref=e387] [cursor=pointer]: Kelli Mosciski MD_1750332903678
+                  - generic [ref=e389] [cursor=pointer]: 0 days
+                  - generic [ref=e390] [cursor=pointer]:
+                    - generic [ref=e391] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e392] [cursor=pointer]:
+                    - button "Generate Report" [ref=e393] [cursor=pointer]
+                    - button [ref=e394] [cursor=pointer]
+                - button "N78583A84810, Maritza Marcos Cole_1750325454028 0 days ● Expired Generate Report" [ref=e395] [cursor=pointer]:
+                  - generic [ref=e397] [cursor=pointer]: N78583A84810, Maritza
+                  - generic [ref=e400] [cursor=pointer]: Marcos Cole_1750325454028
+                  - generic [ref=e402] [cursor=pointer]: 0 days
+                  - generic [ref=e403] [cursor=pointer]:
+                    - generic [ref=e404] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e405] [cursor=pointer]:
+                    - button "Generate Report" [ref=e406] [cursor=pointer]
+                    - button [ref=e407] [cursor=pointer]
+                - button "N61660A44797, Dave Angelica Willms_1750270025100 0 days ● Expired Generate Report" [ref=e408] [cursor=pointer]:
+                  - generic [ref=e410] [cursor=pointer]: N61660A44797, Dave
+                  - generic [ref=e413] [cursor=pointer]: Angelica Willms_1750270025100
+                  - generic [ref=e415] [cursor=pointer]: 0 days
+                  - generic [ref=e416] [cursor=pointer]:
+                    - generic [ref=e417] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e418] [cursor=pointer]:
+                    - button "Generate Report" [ref=e419] [cursor=pointer]
+                    - button [ref=e420] [cursor=pointer]
+                - button "N67058A6516, Vito Form A 0 days ● Expired Generate Report" [ref=e421] [cursor=pointer]:
+                  - generic [ref=e423] [cursor=pointer]: N67058A6516, Vito
+                  - generic [ref=e426] [cursor=pointer]: Form A
+                  - generic [ref=e428] [cursor=pointer]: 0 days
+                  - generic [ref=e429] [cursor=pointer]:
+                    - generic [ref=e430] [cursor=pointer]: ●
+                    - text: Expired
+                  - generic [ref=e431] [cursor=pointer]:
+                    - button "Generate Report" [ref=e432] [cursor=pointer]
+                    - button [ref=e433] [cursor=pointer]
+            - generic [ref=e434]:
+              - generic [ref=e437]:
+                - img [ref=e438]
+                - heading "Notifications Center" [level=3] [ref=e442]
+              - generic [ref=e443]:
+                - generic [ref=e445]:
+                  - img [ref=e446]
+                  - heading "Resources" [level=3] [ref=e450]
+                - list [ref=e451]:
+                  - listitem [ref=e452]:
+                    - button "Riverside Learn" [ref=e453] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e454] [cursor=pointer]
+                      - img [ref=e456] [cursor=pointer]
+                  - listitem [ref=e458]:
+                    - button "Onboarding Tutorial Videos" [ref=e459] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e460] [cursor=pointer]
+                      - img [ref=e462] [cursor=pointer]
+                  - listitem [ref=e464]:
+                    - button "Quick Reference Guides" [ref=e465] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e466] [cursor=pointer]
+                      - img [ref=e468] [cursor=pointer]
+                - generic [ref=e471]: View All
+      - contentinfo [ref=e472]:
+        - generic [ref=e473]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e474] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/?__hstc=20581799.6290e7a9dcf6b0a968eb943615fc57e8.1766048311212.1766048311212.1766048311212.1&__hssc=20581799.1.1766048311212&__hsfp=1408774332
+          - img "Riverside Insights Website" [ref=e475] [cursor=pointer]
+        - generic [ref=e476]:
+          - link "Riverside Insights Facebook" [ref=e477] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e478] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e479] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e480] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e481] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e482] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e483] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e484] [cursor=pointer]
+        - generic [ref=e485]:
+          - link "Terms of Use" [ref=e486] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.6290e7a9dcf6b0a968eb943615fc57e8.1766048311212.1766048311212.1766048311212.1&__hssc=20581799.1.1766048311212&__hsfp=1408774332
+          - generic [ref=e487]: "|"
+          - link "Privacy Policy" [ref=e488] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.6290e7a9dcf6b0a968eb943615fc57e8.1766048311212.1766048311212.1766048311212.1&__hssc=20581799.1.1766048311212&__hsfp=1408774332
+        - generic [ref=e489]: Footer region end
+```
