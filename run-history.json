@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "160",
+    "timestamp": "20251222_000000",
+    "runReason": "just monday regression run",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@InProgressTestAssignments|@SubmittedTestAssignments|@TestAssignments"
+  },
+  {
     "runNumber": "159",
     "timestamp": "20251218_000000",
     "runReason": "full regression in Prod",
