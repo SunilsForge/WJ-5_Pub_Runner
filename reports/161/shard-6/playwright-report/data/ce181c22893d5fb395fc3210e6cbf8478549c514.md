@@ -1,0 +1,258 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello Sai SangeeAH07" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "Sai SangeeAH07" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [ref=e44]
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [ref=e47] [cursor=pointer]
+                  - button "Closed" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+                - generic [ref=e51]: Test Set
+                - generic [ref=e52]: Days Left to Edit
+                - generic [ref=e53]: Status
+                - generic [ref=e54]: Actions
+                - button "N6417A93963, Shanelle MG_1767021796812 30 days ● Submitted" [ref=e55] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N6417A93963, Shanelle
+                  - generic [ref=e60] [cursor=pointer]: MG_1767021796812
+                  - generic [ref=e62] [cursor=pointer]: 30 days
+                  - generic [ref=e63] [cursor=pointer]:
+                    - generic [ref=e64] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e65] [cursor=pointer]:
+                    - button [disabled] [ref=e66]
+                    - button [disabled] [ref=e67]
+                    - button [ref=e68] [cursor=pointer]
+                - button "N1328A96029, Arely Honda_1767021528268 30 days ● Submitted" [ref=e69] [cursor=pointer]:
+                  - generic [ref=e71] [cursor=pointer]: N1328A96029, Arely
+                  - generic [ref=e74] [cursor=pointer]: Honda_1767021528268
+                  - generic [ref=e76] [cursor=pointer]: 30 days
+                  - generic [ref=e77] [cursor=pointer]:
+                    - generic [ref=e78] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e79] [cursor=pointer]:
+                    - button [disabled] [ref=e80]
+                    - button [disabled] [ref=e81]
+                    - button [ref=e82] [cursor=pointer]
+                - button "N12826A86973, Myrna Fiat_1767021262743 30 days ● Submitted" [ref=e83] [cursor=pointer]:
+                  - generic [ref=e85] [cursor=pointer]: N12826A86973, Myrna
+                  - generic [ref=e88] [cursor=pointer]: Fiat_1767021262743
+                  - generic [ref=e90] [cursor=pointer]: 30 days
+                  - generic [ref=e91] [cursor=pointer]:
+                    - generic [ref=e92] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e93] [cursor=pointer]:
+                    - button [disabled] [ref=e94]
+                    - button [disabled] [ref=e95]
+                    - button [ref=e96] [cursor=pointer]
+                - button "N90683A73558, Aron Mitsubishi_1767021044429 30 days ● Submitted" [ref=e97] [cursor=pointer]:
+                  - generic [ref=e99] [cursor=pointer]: N90683A73558, Aron
+                  - generic [ref=e102] [cursor=pointer]: Mitsubishi_1767021044429
+                  - generic [ref=e104] [cursor=pointer]: 30 days
+                  - generic [ref=e105] [cursor=pointer]:
+                    - generic [ref=e106] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e107] [cursor=pointer]:
+                    - button [disabled] [ref=e108]
+                    - button [disabled] [ref=e109]
+                    - button [ref=e110] [cursor=pointer]
+                - button "N21855A32610, Cyril Mercedes Benz_1767020813851 30 days ● Submitted" [ref=e111] [cursor=pointer]:
+                  - generic [ref=e113] [cursor=pointer]: N21855A32610, Cyril
+                  - generic [ref=e116] [cursor=pointer]: Mercedes Benz_1767020813851
+                  - generic [ref=e118] [cursor=pointer]: 30 days
+                  - generic [ref=e119] [cursor=pointer]:
+                    - generic [ref=e120] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e121] [cursor=pointer]:
+                    - button [disabled] [ref=e122]
+                    - button [disabled] [ref=e123]
+                    - button [ref=e124] [cursor=pointer]
+                - button "N38501A30243, Jessie Mahindra & Mahindra_1767020595519 30 days ● Submitted" [ref=e125] [cursor=pointer]:
+                  - generic [ref=e127] [cursor=pointer]: N38501A30243, Jessie
+                  - generic [ref=e130] [cursor=pointer]: Mahindra & Mahindra_1767020595519
+                  - generic [ref=e132] [cursor=pointer]: 30 days
+                  - generic [ref=e133] [cursor=pointer]:
+                    - generic [ref=e134] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e135] [cursor=pointer]:
+                    - button [disabled] [ref=e136]
+                    - button [disabled] [ref=e137]
+                    - button [ref=e138] [cursor=pointer]
+                - button "N23135A82047, Tremaine Mercedes Benz_1767020391579 30 days ● Submitted" [ref=e139] [cursor=pointer]:
+                  - generic [ref=e141] [cursor=pointer]: N23135A82047, Tremaine
+                  - generic [ref=e144] [cursor=pointer]: Mercedes Benz_1767020391579
+                  - generic [ref=e146] [cursor=pointer]: 30 days
+                  - generic [ref=e147] [cursor=pointer]:
+                    - generic [ref=e148] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e149] [cursor=pointer]:
+                    - button [disabled] [ref=e150]
+                    - button [disabled] [ref=e151]
+                    - button [ref=e152] [cursor=pointer]
+                - button "N81285A7100, Madisyn Aston Martin_1767020120396 30 days ● Submitted" [ref=e153] [cursor=pointer]:
+                  - generic [ref=e155] [cursor=pointer]: N81285A7100, Madisyn
+                  - generic [ref=e158] [cursor=pointer]: Aston Martin_1767020120396
+                  - generic [ref=e160] [cursor=pointer]: 30 days
+                  - generic [ref=e161] [cursor=pointer]:
+                    - generic [ref=e162] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e163] [cursor=pointer]:
+                    - button [disabled] [ref=e164]
+                    - button [disabled] [ref=e165]
+                    - button [ref=e166] [cursor=pointer]
+                - button "N75491A26725, Cassandre Mahindra & Mahindra_1767019852946 30 days ● Submitted" [ref=e167] [cursor=pointer]:
+                  - generic [ref=e169] [cursor=pointer]: N75491A26725, Cassandre
+                  - generic [ref=e172] [cursor=pointer]: Mahindra & Mahindra_1767019852946
+                  - generic [ref=e174] [cursor=pointer]: 30 days
+                  - generic [ref=e175] [cursor=pointer]:
+                    - generic [ref=e176] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e177] [cursor=pointer]:
+                    - button [disabled] [ref=e178]
+                    - button [disabled] [ref=e179]
+                    - button [ref=e180] [cursor=pointer]
+                - button "N20804A70220, Maximo Jeep_1767019623812 30 days ● Submitted" [ref=e181] [cursor=pointer]:
+                  - generic [ref=e183] [cursor=pointer]: N20804A70220, Maximo
+                  - generic [ref=e186] [cursor=pointer]: Jeep_1767019623812
+                  - generic [ref=e188] [cursor=pointer]: 30 days
+                  - generic [ref=e189] [cursor=pointer]:
+                    - generic [ref=e190] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e191] [cursor=pointer]:
+                    - button [disabled] [ref=e192]
+                    - button [disabled] [ref=e193]
+                    - button [ref=e194] [cursor=pointer]
+                - button "N56779A78247, Zoie Tata_1767019409308 30 days ● Submitted" [ref=e195] [cursor=pointer]:
+                  - generic [ref=e197] [cursor=pointer]: N56779A78247, Zoie
+                  - generic [ref=e200] [cursor=pointer]: Tata_1767019409308
+                  - generic [ref=e202] [cursor=pointer]: 30 days
+                  - generic [ref=e203] [cursor=pointer]:
+                    - generic [ref=e204] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e205] [cursor=pointer]:
+                    - button [disabled] [ref=e206]
+                    - button [disabled] [ref=e207]
+                    - button [ref=e208] [cursor=pointer]
+                - button "N12579A48926, Blake Aston Martin_1767019187261 30 days ● Submitted" [ref=e209] [cursor=pointer]:
+                  - generic [ref=e211] [cursor=pointer]: N12579A48926, Blake
+                  - generic [ref=e214] [cursor=pointer]: Aston Martin_1767019187261
+                  - generic [ref=e216] [cursor=pointer]: 30 days
+                  - generic [ref=e217] [cursor=pointer]:
+                    - generic [ref=e218] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e219] [cursor=pointer]:
+                    - button [disabled] [ref=e220]
+                    - button [disabled] [ref=e221]
+                    - button [ref=e222] [cursor=pointer]
+                - button "N55598A15596, Teagan Bugatti_1767018987788 30 days ● In Progress" [ref=e223] [cursor=pointer]:
+                  - generic [ref=e225] [cursor=pointer]: N55598A15596, Teagan
+                  - generic [ref=e228] [cursor=pointer]: Bugatti_1767018987788
+                  - generic [ref=e230] [cursor=pointer]: 30 days
+                  - generic [ref=e231] [cursor=pointer]:
+                    - generic [ref=e232] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e233] [cursor=pointer]:
+                    - button [disabled] [ref=e234]
+                    - button [disabled] [ref=e235]
+                    - button [ref=e236] [cursor=pointer]
+                - button "N16726A35279, Tracy Honda_1767018781572 30 days ● Submitted" [ref=e237] [cursor=pointer]:
+                  - generic [ref=e239] [cursor=pointer]: N16726A35279, Tracy
+                  - generic [ref=e242] [cursor=pointer]: Honda_1767018781572
+                  - generic [ref=e244] [cursor=pointer]: 30 days
+                  - generic [ref=e245] [cursor=pointer]:
+                    - generic [ref=e246] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e247] [cursor=pointer]:
+                    - button [disabled] [ref=e248]
+                    - button [disabled] [ref=e249]
+                    - button [ref=e250] [cursor=pointer]
+            - generic [ref=e251]:
+              - generic [ref=e254]:
+                - img [ref=e255]
+                - heading "Notifications Center" [level=3] [ref=e259]
+              - generic [ref=e260]:
+                - generic [ref=e262]:
+                  - img [ref=e263]
+                  - heading "Resources" [level=3] [ref=e267]
+                - list [ref=e268]:
+                  - listitem [ref=e269]:
+                    - button "Riverside Learn" [ref=e270] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e271] [cursor=pointer]
+                      - img [ref=e273] [cursor=pointer]
+                  - listitem [ref=e275]:
+                    - button "Onboarding Tutorial Videos" [ref=e276] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e277] [cursor=pointer]
+                      - img [ref=e279] [cursor=pointer]
+                  - listitem [ref=e281]:
+                    - button "Quick Reference Guides" [ref=e282] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e283] [cursor=pointer]
+                      - img [ref=e285] [cursor=pointer]
+                - generic [ref=e288]: View All
+      - contentinfo [ref=e289]:
+        - generic [ref=e290]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e291] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/?__hstc=20581799.80f6611f62283b5850c44986f6244549.1767021779403.1767021779403.1767021779403.1&__hssc=20581799.2.1767021779403&__hsfp=1408774332
+          - img "Riverside Insights Website" [ref=e292] [cursor=pointer]
+        - generic [ref=e293]:
+          - link "Riverside Insights Facebook" [ref=e294] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e295] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e296] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e297] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e298] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e299] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e300] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e301] [cursor=pointer]
+        - generic [ref=e302]:
+          - link "Terms of Use" [ref=e303] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.80f6611f62283b5850c44986f6244549.1767021779403.1767021779403.1767021779403.1&__hssc=20581799.2.1767021779403&__hsfp=1408774332
+          - generic [ref=e304]: "|"
+          - link "Privacy Policy" [ref=e305] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.80f6611f62283b5850c44986f6244549.1767021779403.1767021779403.1767021779403.1&__hssc=20581799.2.1767021779403&__hsfp=1408774332
+        - generic [ref=e306]: Footer region end
+  - region "Chat Widget" [ref=e307]:
+    - iframe [ref=e308]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e310]
+```

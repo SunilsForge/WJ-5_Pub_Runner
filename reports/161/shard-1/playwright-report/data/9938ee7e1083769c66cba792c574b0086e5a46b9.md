@@ -1,0 +1,236 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic [active]:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello Sai SangeeAH02" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "Sai SangeeAH02" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [ref=e44]
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [ref=e47] [cursor=pointer]
+                  - button "Closed" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+                - generic [ref=e51]: Test Set
+                - generic [ref=e52]: Days Left to Edit
+                - generic [ref=e53]: Status
+                - generic [ref=e54]: Actions
+                - button "N44787A98138, Zion Josh Hauck DDS_1766731125308 27 days ● Submitted" [ref=e55] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N44787A98138, Zion
+                  - generic [ref=e60] [cursor=pointer]: Josh Hauck DDS_1766731125308
+                  - generic [ref=e62] [cursor=pointer]: 27 days
+                  - generic [ref=e63] [cursor=pointer]:
+                    - generic [ref=e64] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e65] [cursor=pointer]:
+                    - button [disabled] [ref=e66]
+                    - button [disabled] [ref=e67]
+                    - button [ref=e68] [cursor=pointer]
+                - button "N98340A82895, Adah Freddie Kautzer_1766730872401 27 days ● Submitted" [ref=e69] [cursor=pointer]:
+                  - generic [ref=e71] [cursor=pointer]: N98340A82895, Adah
+                  - generic [ref=e74] [cursor=pointer]: Freddie Kautzer_1766730872401
+                  - generic [ref=e76] [cursor=pointer]: 27 days
+                  - generic [ref=e77] [cursor=pointer]:
+                    - generic [ref=e78] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e79] [cursor=pointer]:
+                    - button [disabled] [ref=e80]
+                    - button [disabled] [ref=e81]
+                    - button [ref=e82] [cursor=pointer]
+                - button "N76504A48981, Matteo Minnie Windler_1766730644362 27 days ● Submitted" [ref=e83] [cursor=pointer]:
+                  - generic [ref=e85] [cursor=pointer]: N76504A48981, Matteo
+                  - generic [ref=e88] [cursor=pointer]: Minnie Windler_1766730644362
+                  - generic [ref=e90] [cursor=pointer]: 27 days
+                  - generic [ref=e91] [cursor=pointer]:
+                    - generic [ref=e92] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e93] [cursor=pointer]:
+                    - button [disabled] [ref=e94]
+                    - button [disabled] [ref=e95]
+                    - button [ref=e96] [cursor=pointer]
+                - button "N5773A62007, Marie Juanita McLaughlin_1766730359570 (+1 more) 27 days ● Submitted" [ref=e97] [cursor=pointer]:
+                  - generic [ref=e99] [cursor=pointer]: N5773A62007, Marie
+                  - generic [ref=e102] [cursor=pointer]: Juanita McLaughlin_1766730359570 (+1 more)
+                  - generic [ref=e104] [cursor=pointer]: 27 days
+                  - generic [ref=e105] [cursor=pointer]:
+                    - generic [ref=e106] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e107] [cursor=pointer]:
+                    - button [disabled] [ref=e108]
+                    - button [disabled] [ref=e109]
+                    - button [ref=e110] [cursor=pointer]
+                - button "N93589A74318, May Miss Angelina Stoltenberg_1766730116491 27 days ● Submitted" [ref=e111] [cursor=pointer]:
+                  - generic [ref=e113] [cursor=pointer]: N93589A74318, May
+                  - generic [ref=e116] [cursor=pointer]: Miss Angelina Stoltenberg_1766730116491
+                  - generic [ref=e118] [cursor=pointer]: 27 days
+                  - generic [ref=e119] [cursor=pointer]:
+                    - generic [ref=e120] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e121] [cursor=pointer]:
+                    - button [disabled] [ref=e122]
+                    - button [disabled] [ref=e123]
+                    - button [ref=e124] [cursor=pointer]
+                - button "N76514A44365, Humberto Jana Bergstrom_1766729857549 27 days ● Submitted" [ref=e125] [cursor=pointer]:
+                  - generic [ref=e127] [cursor=pointer]: N76514A44365, Humberto
+                  - generic [ref=e130] [cursor=pointer]: Jana Bergstrom_1766729857549
+                  - generic [ref=e132] [cursor=pointer]: 27 days
+                  - generic [ref=e133] [cursor=pointer]:
+                    - generic [ref=e134] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e135] [cursor=pointer]:
+                    - button [disabled] [ref=e136]
+                    - button [disabled] [ref=e137]
+                    - button [ref=e138] [cursor=pointer]
+                - button "N77372A56460, Dana Jeremy Erdman-Graham_1766729633211 27 days ● Submitted" [ref=e139] [cursor=pointer]:
+                  - generic [ref=e141] [cursor=pointer]: N77372A56460, Dana
+                  - generic [ref=e144] [cursor=pointer]: Jeremy Erdman-Graham_1766729633211
+                  - generic [ref=e146] [cursor=pointer]: 27 days
+                  - generic [ref=e147] [cursor=pointer]:
+                    - generic [ref=e148] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e149] [cursor=pointer]:
+                    - button [disabled] [ref=e150]
+                    - button [disabled] [ref=e151]
+                    - button [ref=e152] [cursor=pointer]
+                - button "N68314A2720, Lindsey Miss Antonia Mayer_1766729249856 27 days ● Submitted" [ref=e153] [cursor=pointer]:
+                  - generic [ref=e155] [cursor=pointer]: N68314A2720, Lindsey
+                  - generic [ref=e158] [cursor=pointer]: Miss Antonia Mayer_1766729249856
+                  - generic [ref=e160] [cursor=pointer]: 27 days
+                  - generic [ref=e161] [cursor=pointer]:
+                    - generic [ref=e162] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e163] [cursor=pointer]:
+                    - button [disabled] [ref=e164]
+                    - button [disabled] [ref=e165]
+                    - button [ref=e166] [cursor=pointer]
+                - button "N47873A74012, Nella Lee Renner_1766728867152 27 days ● Submitted" [ref=e167] [cursor=pointer]:
+                  - generic [ref=e169] [cursor=pointer]: N47873A74012, Nella
+                  - generic [ref=e172] [cursor=pointer]: Lee Renner_1766728867152
+                  - generic [ref=e174] [cursor=pointer]: 27 days
+                  - generic [ref=e175] [cursor=pointer]:
+                    - generic [ref=e176] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e177] [cursor=pointer]:
+                    - button [disabled] [ref=e178]
+                    - button [disabled] [ref=e179]
+                    - button [ref=e180] [cursor=pointer]
+                - button "N80206A6503, Iva Kellie Kiehn_1766728479872 26 days ● Submitted" [ref=e181] [cursor=pointer]:
+                  - generic [ref=e183] [cursor=pointer]: N80206A6503, Iva
+                  - generic [ref=e186] [cursor=pointer]: Kellie Kiehn_1766728479872
+                  - generic [ref=e188] [cursor=pointer]: 26 days
+                  - generic [ref=e189] [cursor=pointer]:
+                    - generic [ref=e190] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e191] [cursor=pointer]:
+                    - button [disabled] [ref=e192]
+                    - button [disabled] [ref=e193]
+                    - button [ref=e194] [cursor=pointer]
+                - button "N47341A81853, Milo Julian Lubowitz_1766728070797 26 days ● Submitted" [ref=e195] [cursor=pointer]:
+                  - generic [ref=e197] [cursor=pointer]: N47341A81853, Milo
+                  - generic [ref=e200] [cursor=pointer]: Julian Lubowitz_1766728070797
+                  - generic [ref=e202] [cursor=pointer]: 26 days
+                  - generic [ref=e203] [cursor=pointer]:
+                    - generic [ref=e204] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e205] [cursor=pointer]:
+                    - button [disabled] [ref=e206]
+                    - button [disabled] [ref=e207]
+                    - button [ref=e208] [cursor=pointer]
+                - button "N26649A48018, Billie Mathew Graham DVM_1766727661557 26 days ● Submitted" [ref=e209] [cursor=pointer]:
+                  - generic [ref=e211] [cursor=pointer]: N26649A48018, Billie
+                  - generic [ref=e214] [cursor=pointer]: Mathew Graham DVM_1766727661557
+                  - generic [ref=e216] [cursor=pointer]: 26 days
+                  - generic [ref=e217] [cursor=pointer]:
+                    - generic [ref=e218] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e219] [cursor=pointer]:
+                    - button [disabled] [ref=e220]
+                    - button [disabled] [ref=e221]
+                    - button [ref=e222] [cursor=pointer]
+            - generic [ref=e223]:
+              - generic [ref=e226]:
+                - img [ref=e227]
+                - heading "Notifications Center" [level=3] [ref=e231]
+              - generic [ref=e232]:
+                - generic [ref=e234]:
+                  - img [ref=e235]
+                  - heading "Resources" [level=3] [ref=e239]
+                - list [ref=e240]:
+                  - listitem [ref=e241]:
+                    - button "Riverside Learn" [ref=e242] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e243] [cursor=pointer]
+                      - img [ref=e245] [cursor=pointer]
+                  - listitem [ref=e247]:
+                    - button "Onboarding Tutorial Videos" [ref=e248] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e249] [cursor=pointer]
+                      - img [ref=e251] [cursor=pointer]
+                  - listitem [ref=e253]:
+                    - button "Quick Reference Guides" [ref=e254] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e255] [cursor=pointer]
+                      - img [ref=e257] [cursor=pointer]
+                - generic [ref=e260]: View All
+      - contentinfo [ref=e261]:
+        - generic [ref=e262]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e263] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/?__hstc=20581799.2a6080f494a9c5ca4e910740add5424c.1767018760684.1767018760684.1767018760684.1&__hssc=20581799.1.1767018760684&__hsfp=1408774332
+          - img "Riverside Insights Website" [ref=e264] [cursor=pointer]
+        - generic [ref=e265]:
+          - link "Riverside Insights Facebook" [ref=e266] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e267] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e268] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e269] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e270] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e271] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e272] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e273] [cursor=pointer]
+        - generic [ref=e274]:
+          - link "Terms of Use" [ref=e275] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.2a6080f494a9c5ca4e910740add5424c.1767018760684.1767018760684.1767018760684.1&__hssc=20581799.1.1767018760684&__hsfp=1408774332
+          - generic [ref=e276]: "|"
+          - link "Privacy Policy" [ref=e277] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.2a6080f494a9c5ca4e910740add5424c.1767018760684.1767018760684.1767018760684.1&__hssc=20581799.1.1767018760684&__hsfp=1408774332
+        - generic [ref=e278]: Footer region end
+  - region "Chat Widget" [ref=e279]:
+    - iframe [ref=e280]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e282]
+```

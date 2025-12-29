@@ -1,0 +1,148 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello Sai SangeeAH07" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "Sai SangeeAH07" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [ref=e44]
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [ref=e47] [cursor=pointer]
+                  - button "Closed" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+                - generic [ref=e51]: Test Set
+                - generic [ref=e52]: Days Left to Edit
+                - generic [ref=e53]: Status
+                - generic [ref=e54]: Actions
+                - button "N56779A78247, Zoie Tata_1767019409308 30 days ● Submitted" [ref=e55] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N56779A78247, Zoie
+                  - generic [ref=e60] [cursor=pointer]: Tata_1767019409308
+                  - generic [ref=e62] [cursor=pointer]: 30 days
+                  - generic [ref=e63] [cursor=pointer]:
+                    - generic [ref=e64] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e65] [cursor=pointer]:
+                    - button [disabled] [ref=e66]
+                    - button [disabled] [ref=e67]
+                    - button [ref=e68] [cursor=pointer]
+                - button "N12579A48926, Blake Aston Martin_1767019187261 30 days ● Submitted" [ref=e69] [cursor=pointer]:
+                  - generic [ref=e71] [cursor=pointer]: N12579A48926, Blake
+                  - generic [ref=e74] [cursor=pointer]: Aston Martin_1767019187261
+                  - generic [ref=e76] [cursor=pointer]: 30 days
+                  - generic [ref=e77] [cursor=pointer]:
+                    - generic [ref=e78] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e79] [cursor=pointer]:
+                    - button [disabled] [ref=e80]
+                    - button [disabled] [ref=e81]
+                    - button [ref=e82] [cursor=pointer]
+                - button "N55598A15596, Teagan Bugatti_1767018987788 30 days ● In Progress" [ref=e83] [cursor=pointer]:
+                  - generic [ref=e85] [cursor=pointer]: N55598A15596, Teagan
+                  - generic [ref=e88] [cursor=pointer]: Bugatti_1767018987788
+                  - generic [ref=e90] [cursor=pointer]: 30 days
+                  - generic [ref=e91] [cursor=pointer]:
+                    - generic [ref=e92] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e93] [cursor=pointer]:
+                    - button [disabled] [ref=e94]
+                    - button [disabled] [ref=e95]
+                    - button [ref=e96] [cursor=pointer]
+                - button "N16726A35279, Tracy Honda_1767018781572 30 days ● Submitted" [ref=e97] [cursor=pointer]:
+                  - generic [ref=e99] [cursor=pointer]: N16726A35279, Tracy
+                  - generic [ref=e102] [cursor=pointer]: Honda_1767018781572
+                  - generic [ref=e104] [cursor=pointer]: 30 days
+                  - generic [ref=e105] [cursor=pointer]:
+                    - generic [ref=e106] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e107] [cursor=pointer]:
+                    - button [disabled] [ref=e108]
+                    - button [disabled] [ref=e109]
+                    - button [ref=e110] [cursor=pointer]
+            - generic [ref=e111]:
+              - generic [ref=e114]:
+                - img [ref=e115]
+                - heading "Notifications Center" [level=3] [ref=e119]
+              - generic [ref=e120]:
+                - generic [ref=e122]:
+                  - img [ref=e123]
+                  - heading "Resources" [level=3] [ref=e127]
+                - list [ref=e128]:
+                  - listitem [ref=e129]:
+                    - button "Riverside Learn" [ref=e130] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e131] [cursor=pointer]
+                      - img [ref=e133] [cursor=pointer]
+                  - listitem [ref=e135]:
+                    - button "Onboarding Tutorial Videos" [ref=e136] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e137] [cursor=pointer]
+                      - img [ref=e139] [cursor=pointer]
+                  - listitem [ref=e141]:
+                    - button "Quick Reference Guides" [ref=e142] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e143] [cursor=pointer]
+                      - img [ref=e145] [cursor=pointer]
+                - generic [ref=e148]: View All
+      - contentinfo [ref=e149]:
+        - generic [ref=e150]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e151] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/?__hstc=20581799.a2b95efa979c195c9fb6fe4af1ce9a69.1767019392377.1767019392377.1767019392377.1&__hssc=20581799.2.1767019392377&__hsfp=1408774332
+          - img "Riverside Insights Website" [ref=e152] [cursor=pointer]
+        - generic [ref=e153]:
+          - link "Riverside Insights Facebook" [ref=e154] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e155] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e156] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e157] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e158] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e159] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e160] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e161] [cursor=pointer]
+        - generic [ref=e162]:
+          - link "Terms of Use" [ref=e163] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.a2b95efa979c195c9fb6fe4af1ce9a69.1767019392377.1767019392377.1767019392377.1&__hssc=20581799.2.1767019392377&__hsfp=1408774332
+          - generic [ref=e164]: "|"
+          - link "Privacy Policy" [ref=e165] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.a2b95efa979c195c9fb6fe4af1ce9a69.1767019392377.1767019392377.1767019392377.1&__hssc=20581799.2.1767019392377&__hsfp=1408774332
+        - generic [ref=e166]: Footer region end
+  - region "Chat Widget" [ref=e167]:
+    - iframe [ref=e168]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e170]
+```
