@@ -1,0 +1,692 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic [active]:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 59Pw Aut25AH" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "59Pw Aut25AH" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [ref=e44]
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [ref=e47] [cursor=pointer]
+                  - button "Closed" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+                - generic [ref=e51]: Test Set
+                - generic [ref=e52]: Days Left to Edit
+                - generic [ref=e53]: Status
+                - generic [ref=e54]: Actions
+                - button "N97601A62905, Margaretta Subaru_1767093539857 30 days ● Submitted" [ref=e55] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N97601A62905, Margaretta
+                  - generic [ref=e60] [cursor=pointer]: Subaru_1767093539857
+                  - generic [ref=e62] [cursor=pointer]: 30 days
+                  - generic [ref=e63] [cursor=pointer]:
+                    - generic [ref=e64] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e65] [cursor=pointer]:
+                    - button [disabled] [ref=e66]
+                    - button [disabled] [ref=e67]
+                    - button [ref=e68] [cursor=pointer]
+                - button "N66696A75856, Dino Aston Martin_1767093329631 30 days ● Submitted" [ref=e69] [cursor=pointer]:
+                  - generic [ref=e71] [cursor=pointer]: N66696A75856, Dino
+                  - generic [ref=e74] [cursor=pointer]: Aston Martin_1767093329631
+                  - generic [ref=e76] [cursor=pointer]: 30 days
+                  - generic [ref=e77] [cursor=pointer]:
+                    - generic [ref=e78] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e79] [cursor=pointer]:
+                    - button [disabled] [ref=e80]
+                    - button [disabled] [ref=e81]
+                    - button [ref=e82] [cursor=pointer]
+                - button "N87255A91370, Lavinia Dr. Wesley Pfannerstill_1766731255839 (+1 more) 26 days ● Submitted" [ref=e83] [cursor=pointer]:
+                  - generic [ref=e85] [cursor=pointer]: N87255A91370, Lavinia
+                  - generic [ref=e88] [cursor=pointer]: Dr. Wesley Pfannerstill_1766731255839 (+1 more)
+                  - generic [ref=e90] [cursor=pointer]: 26 days
+                  - generic [ref=e91] [cursor=pointer]:
+                    - generic [ref=e92] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e93] [cursor=pointer]:
+                    - button [disabled] [ref=e94]
+                    - button [disabled] [ref=e95]
+                    - button [ref=e96] [cursor=pointer]
+                - button "N818A84413, Finn Elaine Lakin_1766731021785 (+1 more) 26 days ● In Progress" [ref=e97] [cursor=pointer]:
+                  - generic [ref=e99] [cursor=pointer]: N818A84413, Finn
+                  - generic [ref=e102] [cursor=pointer]: Elaine Lakin_1766731021785 (+1 more)
+                  - generic [ref=e104] [cursor=pointer]: 26 days
+                  - generic [ref=e105] [cursor=pointer]:
+                    - generic [ref=e106] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e107] [cursor=pointer]:
+                    - button [disabled] [ref=e108]
+                    - button [disabled] [ref=e109]
+                    - button [ref=e110] [cursor=pointer]
+                - button "N95022A83604, Juliet Ms. Tami Hoeger_1766730763479 26 days ● Submitted" [ref=e111] [cursor=pointer]:
+                  - generic [ref=e113] [cursor=pointer]: N95022A83604, Juliet
+                  - generic [ref=e116] [cursor=pointer]: Ms. Tami Hoeger_1766730763479
+                  - generic [ref=e118] [cursor=pointer]: 26 days
+                  - generic [ref=e119] [cursor=pointer]:
+                    - generic [ref=e120] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e121] [cursor=pointer]:
+                    - button [disabled] [ref=e122]
+                    - button [disabled] [ref=e123]
+                    - button [ref=e124] [cursor=pointer]
+                - button "N5026A53814, Princess Donnie Schneider_1766730496844 26 days ● In Progress" [ref=e125] [cursor=pointer]:
+                  - generic [ref=e127] [cursor=pointer]: N5026A53814, Princess
+                  - generic [ref=e130] [cursor=pointer]: Donnie Schneider_1766730496844
+                  - generic [ref=e132] [cursor=pointer]: 26 days
+                  - generic [ref=e133] [cursor=pointer]:
+                    - generic [ref=e134] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e135] [cursor=pointer]:
+                    - button [disabled] [ref=e136]
+                    - button [disabled] [ref=e137]
+                    - button [ref=e138] [cursor=pointer]
+                - button "N21429A87877, Johnathon Francis Rolfson Jr._1766730231163 26 days ● In Progress" [ref=e139] [cursor=pointer]:
+                  - generic [ref=e141] [cursor=pointer]: N21429A87877, Johnathon
+                  - generic [ref=e144] [cursor=pointer]: Francis Rolfson Jr._1766730231163
+                  - generic [ref=e146] [cursor=pointer]: 26 days
+                  - generic [ref=e147] [cursor=pointer]:
+                    - generic [ref=e148] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e149] [cursor=pointer]:
+                    - button [disabled] [ref=e150]
+                    - button [disabled] [ref=e151]
+                    - button [ref=e152] [cursor=pointer]
+                - button "N12588A27613, Cara Terence Hayes_1766729916680 26 days ● In Progress" [ref=e153] [cursor=pointer]:
+                  - generic [ref=e155] [cursor=pointer]: N12588A27613, Cara
+                  - generic [ref=e158] [cursor=pointer]: Terence Hayes_1766729916680
+                  - generic [ref=e160] [cursor=pointer]: 26 days
+                  - generic [ref=e161] [cursor=pointer]:
+                    - generic [ref=e162] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e163] [cursor=pointer]:
+                    - button [disabled] [ref=e164]
+                    - button [disabled] [ref=e165]
+                    - button [ref=e166] [cursor=pointer]
+                - button "N22113A36561, Xzavier Claude Hickle_1766729604514 26 days ● In Progress" [ref=e167] [cursor=pointer]:
+                  - generic [ref=e169] [cursor=pointer]: N22113A36561, Xzavier
+                  - generic [ref=e172] [cursor=pointer]: Claude Hickle_1766729604514
+                  - generic [ref=e174] [cursor=pointer]: 26 days
+                  - generic [ref=e175] [cursor=pointer]:
+                    - generic [ref=e176] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e177] [cursor=pointer]:
+                    - button [disabled] [ref=e178]
+                    - button [disabled] [ref=e179]
+                    - button [ref=e180] [cursor=pointer]
+                - button "N21427A55354, Al Cornelius Russel I_1766729329905 26 days ● Submitted" [ref=e181] [cursor=pointer]:
+                  - generic [ref=e183] [cursor=pointer]: N21427A55354, Al
+                  - generic [ref=e186] [cursor=pointer]: Cornelius Russel I_1766729329905
+                  - generic [ref=e188] [cursor=pointer]: 26 days
+                  - generic [ref=e189] [cursor=pointer]:
+                    - generic [ref=e190] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e191] [cursor=pointer]:
+                    - button [disabled] [ref=e192]
+                    - button [disabled] [ref=e193]
+                    - button [ref=e194] [cursor=pointer]
+                - button "N65489A1926, Merle Brad Connelly_1766729069084 26 days ● Submitted" [ref=e195] [cursor=pointer]:
+                  - generic [ref=e197] [cursor=pointer]: N65489A1926, Merle
+                  - generic [ref=e200] [cursor=pointer]: Brad Connelly_1766729069084
+                  - generic [ref=e202] [cursor=pointer]: 26 days
+                  - generic [ref=e203] [cursor=pointer]:
+                    - generic [ref=e204] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e205] [cursor=pointer]:
+                    - button [disabled] [ref=e206]
+                    - button [disabled] [ref=e207]
+                    - button [ref=e208] [cursor=pointer]
+                - button "N88868A55577, Lucy Alton Keeling_1766728811174 26 days ● In Progress" [ref=e209] [cursor=pointer]:
+                  - generic [ref=e211] [cursor=pointer]: N88868A55577, Lucy
+                  - generic [ref=e214] [cursor=pointer]: Alton Keeling_1766728811174
+                  - generic [ref=e216] [cursor=pointer]: 26 days
+                  - generic [ref=e217] [cursor=pointer]:
+                    - generic [ref=e218] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e219] [cursor=pointer]:
+                    - button [disabled] [ref=e220]
+                    - button [disabled] [ref=e221]
+                    - button [ref=e222] [cursor=pointer]
+                - button "N59970A82065, Elda Marguerite Mohr_1766728552494 25 days ● In Progress" [ref=e223] [cursor=pointer]:
+                  - generic [ref=e225] [cursor=pointer]: N59970A82065, Elda
+                  - generic [ref=e228] [cursor=pointer]: Marguerite Mohr_1766728552494
+                  - generic [ref=e230] [cursor=pointer]: 25 days
+                  - generic [ref=e231] [cursor=pointer]:
+                    - generic [ref=e232] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e233] [cursor=pointer]:
+                    - button [disabled] [ref=e234]
+                    - button [disabled] [ref=e235]
+                    - button [ref=e236] [cursor=pointer]
+                - button "N33232A34753, Marlene Shane Schoen_1766728220589 25 days ● Submitted" [ref=e237] [cursor=pointer]:
+                  - generic [ref=e239] [cursor=pointer]: N33232A34753, Marlene
+                  - generic [ref=e242] [cursor=pointer]: Shane Schoen_1766728220589
+                  - generic [ref=e244] [cursor=pointer]: 25 days
+                  - generic [ref=e245] [cursor=pointer]:
+                    - generic [ref=e246] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e247] [cursor=pointer]:
+                    - button [disabled] [ref=e248]
+                    - button [disabled] [ref=e249]
+                    - button [ref=e250] [cursor=pointer]
+                - button "N96172A69303, Faustino Laura Welch_1766727859281 25 days ● Submitted" [ref=e251] [cursor=pointer]:
+                  - generic [ref=e253] [cursor=pointer]: N96172A69303, Faustino
+                  - generic [ref=e256] [cursor=pointer]: Laura Welch_1766727859281
+                  - generic [ref=e258] [cursor=pointer]: 25 days
+                  - generic [ref=e259] [cursor=pointer]:
+                    - generic [ref=e260] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e261] [cursor=pointer]:
+                    - button [disabled] [ref=e262]
+                    - button [disabled] [ref=e263]
+                    - button [ref=e264] [cursor=pointer]
+                - button "N35519A5139, Fabiola Mable Kilback_1766727545216 25 days ● Submitted" [ref=e265] [cursor=pointer]:
+                  - generic [ref=e267] [cursor=pointer]: N35519A5139, Fabiola
+                  - generic [ref=e270] [cursor=pointer]: Mable Kilback_1766727545216
+                  - generic [ref=e272] [cursor=pointer]: 25 days
+                  - generic [ref=e273] [cursor=pointer]:
+                    - generic [ref=e274] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e275] [cursor=pointer]:
+                    - button [disabled] [ref=e276]
+                    - button [disabled] [ref=e277]
+                    - button [ref=e278] [cursor=pointer]
+                - button "N41936A82417, Leon Casey Kreiger_1766727233307 25 days ● Submitted" [ref=e279] [cursor=pointer]:
+                  - generic [ref=e281] [cursor=pointer]: N41936A82417, Leon
+                  - generic [ref=e284] [cursor=pointer]: Casey Kreiger_1766727233307
+                  - generic [ref=e286] [cursor=pointer]: 25 days
+                  - generic [ref=e287] [cursor=pointer]:
+                    - generic [ref=e288] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e289] [cursor=pointer]:
+                    - button [disabled] [ref=e290]
+                    - button [disabled] [ref=e291]
+                    - button [ref=e292] [cursor=pointer]
+                - button "N23023A99618, Jamison Enrique White_1765553992411 12 days ● In Progress" [ref=e293] [cursor=pointer]:
+                  - generic [ref=e295] [cursor=pointer]: N23023A99618, Jamison
+                  - generic [ref=e298] [cursor=pointer]: Enrique White_1765553992411
+                  - generic [ref=e300] [cursor=pointer]: 12 days
+                  - generic [ref=e301] [cursor=pointer]:
+                    - generic [ref=e302] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e303] [cursor=pointer]:
+                    - button [disabled] [ref=e304]
+                    - button [disabled] [ref=e305]
+                    - button [ref=e306] [cursor=pointer]
+                - button "N72748A22821, Eleanora Wallace Kuhn II_1765553787859 12 days ● In Progress" [ref=e307] [cursor=pointer]:
+                  - generic [ref=e309] [cursor=pointer]: N72748A22821, Eleanora
+                  - generic [ref=e312] [cursor=pointer]: Wallace Kuhn II_1765553787859
+                  - generic [ref=e314] [cursor=pointer]: 12 days
+                  - generic [ref=e315] [cursor=pointer]:
+                    - generic [ref=e316] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e317] [cursor=pointer]:
+                    - button [disabled] [ref=e318]
+                    - button [disabled] [ref=e319]
+                    - button [ref=e320] [cursor=pointer]
+                - button "N5084A17792, Ariel Blanca Windler_1765553584486 12 days ● In Progress" [ref=e321] [cursor=pointer]:
+                  - generic [ref=e323] [cursor=pointer]: N5084A17792, Ariel
+                  - generic [ref=e326] [cursor=pointer]: Blanca Windler_1765553584486
+                  - generic [ref=e328] [cursor=pointer]: 12 days
+                  - generic [ref=e329] [cursor=pointer]:
+                    - generic [ref=e330] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e331] [cursor=pointer]:
+                    - button [disabled] [ref=e332]
+                    - button [disabled] [ref=e333]
+                    - button [ref=e334] [cursor=pointer]
+                - button "N26267A94192, Tanya Kristie Greenfelder_1765553391683 12 days ● In Progress" [ref=e335] [cursor=pointer]:
+                  - generic [ref=e337] [cursor=pointer]: N26267A94192, Tanya
+                  - generic [ref=e340] [cursor=pointer]: Kristie Greenfelder_1765553391683
+                  - generic [ref=e342] [cursor=pointer]: 12 days
+                  - generic [ref=e343] [cursor=pointer]:
+                    - generic [ref=e344] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e345] [cursor=pointer]:
+                    - button [disabled] [ref=e346]
+                    - button [disabled] [ref=e347]
+                    - button [ref=e348] [cursor=pointer]
+                - button "N78677A51838, Wilburn Dominic Watsica_1765553197575 12 days ● In Progress" [ref=e349] [cursor=pointer]:
+                  - generic [ref=e351] [cursor=pointer]: N78677A51838, Wilburn
+                  - generic [ref=e354] [cursor=pointer]: Dominic Watsica_1765553197575
+                  - generic [ref=e356] [cursor=pointer]: 12 days
+                  - generic [ref=e357] [cursor=pointer]:
+                    - generic [ref=e358] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e359] [cursor=pointer]:
+                    - button [disabled] [ref=e360]
+                    - button [disabled] [ref=e361]
+                    - button [ref=e362] [cursor=pointer]
+                - button "N63107A58146, Vidal Darryl Kuvalis_1765553003566 12 days ● In Progress" [ref=e363] [cursor=pointer]:
+                  - generic [ref=e365] [cursor=pointer]: N63107A58146, Vidal
+                  - generic [ref=e368] [cursor=pointer]: Darryl Kuvalis_1765553003566
+                  - generic [ref=e370] [cursor=pointer]: 12 days
+                  - generic [ref=e371] [cursor=pointer]:
+                    - generic [ref=e372] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e373] [cursor=pointer]:
+                    - button [disabled] [ref=e374]
+                    - button [disabled] [ref=e375]
+                    - button [ref=e376] [cursor=pointer]
+                - button "N56886A30772, Nikki Mr. Arturo Bosco PhD_1765552800072 12 days ● In Progress" [ref=e377] [cursor=pointer]:
+                  - generic [ref=e379] [cursor=pointer]: N56886A30772, Nikki
+                  - generic [ref=e382] [cursor=pointer]: Mr. Arturo Bosco PhD_1765552800072
+                  - generic [ref=e384] [cursor=pointer]: 12 days
+                  - generic [ref=e385] [cursor=pointer]:
+                    - generic [ref=e386] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e387] [cursor=pointer]:
+                    - button [disabled] [ref=e388]
+                    - button [disabled] [ref=e389]
+                    - button [ref=e390] [cursor=pointer]
+                - button "N12989A71527, Delpha Sadie Ziemann_1765552596476 12 days ● In Progress" [ref=e391] [cursor=pointer]:
+                  - generic [ref=e393] [cursor=pointer]: N12989A71527, Delpha
+                  - generic [ref=e396] [cursor=pointer]: Sadie Ziemann_1765552596476
+                  - generic [ref=e398] [cursor=pointer]: 12 days
+                  - generic [ref=e399] [cursor=pointer]:
+                    - generic [ref=e400] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e401] [cursor=pointer]:
+                    - button [disabled] [ref=e402]
+                    - button [disabled] [ref=e403]
+                    - button [ref=e404] [cursor=pointer]
+                - button "N113A94136, Myrna Miss Rosemary Howell_1765552393878 12 days ● In Progress" [ref=e405] [cursor=pointer]:
+                  - generic [ref=e407] [cursor=pointer]: N113A94136, Myrna
+                  - generic [ref=e410] [cursor=pointer]: Miss Rosemary Howell_1765552393878
+                  - generic [ref=e412] [cursor=pointer]: 12 days
+                  - generic [ref=e413] [cursor=pointer]:
+                    - generic [ref=e414] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e415] [cursor=pointer]:
+                    - button [disabled] [ref=e416]
+                    - button [disabled] [ref=e417]
+                    - button [ref=e418] [cursor=pointer]
+                - button "N32282A60481, Ciara Dr. Lucy Stracke_1765552190543 12 days ● In Progress" [ref=e419] [cursor=pointer]:
+                  - generic [ref=e421] [cursor=pointer]: N32282A60481, Ciara
+                  - generic [ref=e424] [cursor=pointer]: Dr. Lucy Stracke_1765552190543
+                  - generic [ref=e426] [cursor=pointer]: 12 days
+                  - generic [ref=e427] [cursor=pointer]:
+                    - generic [ref=e428] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e429] [cursor=pointer]:
+                    - button [disabled] [ref=e430]
+                    - button [disabled] [ref=e431]
+                    - button [ref=e432] [cursor=pointer]
+                - button "N41514A18268, Jazmyne Eddie Beahan_1765551987412 12 days ● In Progress" [ref=e433] [cursor=pointer]:
+                  - generic [ref=e435] [cursor=pointer]: N41514A18268, Jazmyne
+                  - generic [ref=e438] [cursor=pointer]: Eddie Beahan_1765551987412
+                  - generic [ref=e440] [cursor=pointer]: 12 days
+                  - generic [ref=e441] [cursor=pointer]:
+                    - generic [ref=e442] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e443] [cursor=pointer]:
+                    - button [disabled] [ref=e444]
+                    - button [disabled] [ref=e445]
+                    - button [ref=e446] [cursor=pointer]
+                - button "N68259A22624, Bret Ms. Hannah Roob_1765551784374 12 days ● In Progress" [ref=e447] [cursor=pointer]:
+                  - generic [ref=e449] [cursor=pointer]: N68259A22624, Bret
+                  - generic [ref=e452] [cursor=pointer]: Ms. Hannah Roob_1765551784374
+                  - generic [ref=e454] [cursor=pointer]: 12 days
+                  - generic [ref=e455] [cursor=pointer]:
+                    - generic [ref=e456] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e457] [cursor=pointer]:
+                    - button [disabled] [ref=e458]
+                    - button [disabled] [ref=e459]
+                    - button [ref=e460] [cursor=pointer]
+                - button "N47471A63845, Anais Nathan Orn_1765551579435 12 days ● In Progress" [ref=e461] [cursor=pointer]:
+                  - generic [ref=e463] [cursor=pointer]: N47471A63845, Anais
+                  - generic [ref=e466] [cursor=pointer]: Nathan Orn_1765551579435
+                  - generic [ref=e468] [cursor=pointer]: 12 days
+                  - generic [ref=e469] [cursor=pointer]:
+                    - generic [ref=e470] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e471] [cursor=pointer]:
+                    - button [disabled] [ref=e472]
+                    - button [disabled] [ref=e473]
+                    - button [ref=e474] [cursor=pointer]
+                - button "N36343A68543, Lillie Mr. Tom Cartwright_1765551375547 12 days ● In Progress" [ref=e475] [cursor=pointer]:
+                  - generic [ref=e477] [cursor=pointer]: N36343A68543, Lillie
+                  - generic [ref=e480] [cursor=pointer]: Mr. Tom Cartwright_1765551375547
+                  - generic [ref=e482] [cursor=pointer]: 12 days
+                  - generic [ref=e483] [cursor=pointer]:
+                    - generic [ref=e484] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e485] [cursor=pointer]:
+                    - button [disabled] [ref=e486]
+                    - button [disabled] [ref=e487]
+                    - button [ref=e488] [cursor=pointer]
+                - button "N8203A16834, Virginia Leonard Tillman-Renner_1765551172457 12 days ● In Progress" [ref=e489] [cursor=pointer]:
+                  - generic [ref=e491] [cursor=pointer]: N8203A16834, Virginia
+                  - generic [ref=e494] [cursor=pointer]: Leonard Tillman-Renner_1765551172457
+                  - generic [ref=e496] [cursor=pointer]: 12 days
+                  - generic [ref=e497] [cursor=pointer]:
+                    - generic [ref=e498] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e499] [cursor=pointer]:
+                    - button [disabled] [ref=e500]
+                    - button [disabled] [ref=e501]
+                    - button [ref=e502] [cursor=pointer]
+                - button "N50251A1965, Reynold Dan Crona_1765550968474 12 days ● In Progress" [ref=e503] [cursor=pointer]:
+                  - generic [ref=e505] [cursor=pointer]: N50251A1965, Reynold
+                  - generic [ref=e508] [cursor=pointer]: Dan Crona_1765550968474
+                  - generic [ref=e510] [cursor=pointer]: 12 days
+                  - generic [ref=e511] [cursor=pointer]:
+                    - generic [ref=e512] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e513] [cursor=pointer]:
+                    - button [disabled] [ref=e514]
+                    - button [disabled] [ref=e515]
+                    - button [ref=e516] [cursor=pointer]
+                - button "N61441A15866, Jeremie Karla McCullough_1765550765519 12 days ● In Progress" [ref=e517] [cursor=pointer]:
+                  - generic [ref=e519] [cursor=pointer]: N61441A15866, Jeremie
+                  - generic [ref=e522] [cursor=pointer]: Karla McCullough_1765550765519
+                  - generic [ref=e524] [cursor=pointer]: 12 days
+                  - generic [ref=e525] [cursor=pointer]:
+                    - generic [ref=e526] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e527] [cursor=pointer]:
+                    - button [disabled] [ref=e528]
+                    - button [disabled] [ref=e529]
+                    - button [ref=e530] [cursor=pointer]
+                - button "N81819A71568, Kim Dominick Littel-Yost_1765550561704 12 days ● In Progress" [ref=e531] [cursor=pointer]:
+                  - generic [ref=e533] [cursor=pointer]: N81819A71568, Kim
+                  - generic [ref=e536] [cursor=pointer]: Dominick Littel-Yost_1765550561704
+                  - generic [ref=e538] [cursor=pointer]: 12 days
+                  - generic [ref=e539] [cursor=pointer]:
+                    - generic [ref=e540] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e541] [cursor=pointer]:
+                    - button [disabled] [ref=e542]
+                    - button [disabled] [ref=e543]
+                    - button [ref=e544] [cursor=pointer]
+                - button "N83230A33326, Leonardo Lawrence Stracke_1765550358099 12 days ● In Progress" [ref=e545] [cursor=pointer]:
+                  - generic [ref=e547] [cursor=pointer]: N83230A33326, Leonardo
+                  - generic [ref=e550] [cursor=pointer]: Lawrence Stracke_1765550358099
+                  - generic [ref=e552] [cursor=pointer]: 12 days
+                  - generic [ref=e553] [cursor=pointer]:
+                    - generic [ref=e554] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e555] [cursor=pointer]:
+                    - button [disabled] [ref=e556]
+                    - button [disabled] [ref=e557]
+                    - button [ref=e558] [cursor=pointer]
+                - button "N46145A99790, Jonas Jessie Mohr_1765550146028 12 days ● In Progress" [ref=e559] [cursor=pointer]:
+                  - generic [ref=e561] [cursor=pointer]: N46145A99790, Jonas
+                  - generic [ref=e564] [cursor=pointer]: Jessie Mohr_1765550146028
+                  - generic [ref=e566] [cursor=pointer]: 12 days
+                  - generic [ref=e567] [cursor=pointer]:
+                    - generic [ref=e568] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e569] [cursor=pointer]:
+                    - button [disabled] [ref=e570]
+                    - button [disabled] [ref=e571]
+                    - button [ref=e572] [cursor=pointer]
+                - button "N88076A84334, Cathy Merle Kuhn_1765549943368 12 days ● In Progress" [ref=e573] [cursor=pointer]:
+                  - generic [ref=e575] [cursor=pointer]: N88076A84334, Cathy
+                  - generic [ref=e578] [cursor=pointer]: Merle Kuhn_1765549943368
+                  - generic [ref=e580] [cursor=pointer]: 12 days
+                  - generic [ref=e581] [cursor=pointer]:
+                    - generic [ref=e582] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e583] [cursor=pointer]:
+                    - button [disabled] [ref=e584]
+                    - button [disabled] [ref=e585]
+                    - button [ref=e586] [cursor=pointer]
+                - button "N83369A68017, Zola Michelle Lowe_1765549739587 12 days ● In Progress" [ref=e587] [cursor=pointer]:
+                  - generic [ref=e589] [cursor=pointer]: N83369A68017, Zola
+                  - generic [ref=e592] [cursor=pointer]: Michelle Lowe_1765549739587
+                  - generic [ref=e594] [cursor=pointer]: 12 days
+                  - generic [ref=e595] [cursor=pointer]:
+                    - generic [ref=e596] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e597] [cursor=pointer]:
+                    - button [disabled] [ref=e598]
+                    - button [disabled] [ref=e599]
+                    - button [ref=e600] [cursor=pointer]
+                - button "N33420A44966, Drake Ms. Carolyn Kautzer_1765549450984 12 days ● In Progress" [ref=e601] [cursor=pointer]:
+                  - generic [ref=e603] [cursor=pointer]: N33420A44966, Drake
+                  - generic [ref=e606] [cursor=pointer]: Ms. Carolyn Kautzer_1765549450984
+                  - generic [ref=e608] [cursor=pointer]: 12 days
+                  - generic [ref=e609] [cursor=pointer]:
+                    - generic [ref=e610] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e611] [cursor=pointer]:
+                    - button [disabled] [ref=e612]
+                    - button [disabled] [ref=e613]
+                    - button [ref=e614] [cursor=pointer]
+                - button "N4998A16619, Kraig Kelley Rice IV_1765549258247 12 days ● In Progress" [ref=e615] [cursor=pointer]:
+                  - generic [ref=e617] [cursor=pointer]: N4998A16619, Kraig
+                  - generic [ref=e620] [cursor=pointer]: Kelley Rice IV_1765549258247
+                  - generic [ref=e622] [cursor=pointer]: 12 days
+                  - generic [ref=e623] [cursor=pointer]:
+                    - generic [ref=e624] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e625] [cursor=pointer]:
+                    - button [disabled] [ref=e626]
+                    - button [disabled] [ref=e627]
+                    - button [ref=e628] [cursor=pointer]
+                - button "N41591A41401, Rosie Miss Estelle West_1765549065644 12 days ● In Progress" [ref=e629] [cursor=pointer]:
+                  - generic [ref=e631] [cursor=pointer]: N41591A41401, Rosie
+                  - generic [ref=e634] [cursor=pointer]: Miss Estelle West_1765549065644
+                  - generic [ref=e636] [cursor=pointer]: 12 days
+                  - generic [ref=e637] [cursor=pointer]:
+                    - generic [ref=e638] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e639] [cursor=pointer]:
+                    - button [disabled] [ref=e640]
+                    - button [disabled] [ref=e641]
+                    - button [ref=e642] [cursor=pointer]
+                - button "N74936A62929, Lola Jaime Adams_1765548872358 12 days ● In Progress" [ref=e643] [cursor=pointer]:
+                  - generic [ref=e645] [cursor=pointer]: N74936A62929, Lola
+                  - generic [ref=e648] [cursor=pointer]: Jaime Adams_1765548872358
+                  - generic [ref=e650] [cursor=pointer]: 12 days
+                  - generic [ref=e651] [cursor=pointer]:
+                    - generic [ref=e652] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e653] [cursor=pointer]:
+                    - button [disabled] [ref=e654]
+                    - button [disabled] [ref=e655]
+                    - button [ref=e656] [cursor=pointer]
+                - button "N56741A43556, Jayme Mary Langosh_1765548680797 12 days ● In Progress" [ref=e657] [cursor=pointer]:
+                  - generic [ref=e659] [cursor=pointer]: N56741A43556, Jayme
+                  - generic [ref=e662] [cursor=pointer]: Mary Langosh_1765548680797
+                  - generic [ref=e664] [cursor=pointer]: 12 days
+                  - generic [ref=e665] [cursor=pointer]:
+                    - generic [ref=e666] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e667] [cursor=pointer]:
+                    - button [disabled] [ref=e668]
+                    - button [disabled] [ref=e669]
+                    - button [ref=e670] [cursor=pointer]
+                - button "N69131A53836, Genevieve Naomi O'Reilly_1765548486624 12 days ● In Progress" [ref=e671] [cursor=pointer]:
+                  - generic [ref=e673] [cursor=pointer]: N69131A53836, Genevieve
+                  - generic [ref=e676] [cursor=pointer]: Naomi O'Reilly_1765548486624
+                  - generic [ref=e678] [cursor=pointer]: 12 days
+                  - generic [ref=e679] [cursor=pointer]:
+                    - generic [ref=e680] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e681] [cursor=pointer]:
+                    - button [disabled] [ref=e682]
+                    - button [disabled] [ref=e683]
+                    - button [ref=e684] [cursor=pointer]
+                - button "N77185A31542, Candelario Darlene Nikolaus MD_1765548285644 12 days ● In Progress" [ref=e685] [cursor=pointer]:
+                  - generic [ref=e687] [cursor=pointer]: N77185A31542, Candelario
+                  - generic [ref=e690] [cursor=pointer]: Darlene Nikolaus MD_1765548285644
+                  - generic [ref=e692] [cursor=pointer]: 12 days
+                  - generic [ref=e693] [cursor=pointer]:
+                    - generic [ref=e694] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e695] [cursor=pointer]:
+                    - button [disabled] [ref=e696]
+                    - button [disabled] [ref=e697]
+                    - button [ref=e698] [cursor=pointer]
+                - button "N28290A38192, Ulices Salvador Klein_1765548093843 12 days ● In Progress" [ref=e699] [cursor=pointer]:
+                  - generic [ref=e701] [cursor=pointer]: N28290A38192, Ulices
+                  - generic [ref=e704] [cursor=pointer]: Salvador Klein_1765548093843
+                  - generic [ref=e706] [cursor=pointer]: 12 days
+                  - generic [ref=e707] [cursor=pointer]:
+                    - generic [ref=e708] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e709] [cursor=pointer]:
+                    - button [disabled] [ref=e710]
+                    - button [disabled] [ref=e711]
+                    - button [ref=e712] [cursor=pointer]
+                - button "N19575A79685, Macie Erma Bartoletti_1765547901240 12 days ● In Progress" [ref=e713] [cursor=pointer]:
+                  - generic [ref=e715] [cursor=pointer]: N19575A79685, Macie
+                  - generic [ref=e718] [cursor=pointer]: Erma Bartoletti_1765547901240
+                  - generic [ref=e720] [cursor=pointer]: 12 days
+                  - generic [ref=e721] [cursor=pointer]:
+                    - generic [ref=e722] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e723] [cursor=pointer]:
+                    - button [disabled] [ref=e724]
+                    - button [disabled] [ref=e725]
+                    - button [ref=e726] [cursor=pointer]
+                - button "N54353A74056, Germaine Dr. Jeanne Wisozk_1765547707931 12 days ● In Progress" [ref=e727] [cursor=pointer]:
+                  - generic [ref=e729] [cursor=pointer]: N54353A74056, Germaine
+                  - generic [ref=e732] [cursor=pointer]: Dr. Jeanne Wisozk_1765547707931
+                  - generic [ref=e734] [cursor=pointer]: 12 days
+                  - generic [ref=e735] [cursor=pointer]:
+                    - generic [ref=e736] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e737] [cursor=pointer]:
+                    - button [disabled] [ref=e738]
+                    - button [disabled] [ref=e739]
+                    - button [ref=e740] [cursor=pointer]
+                - button "N46264A55705, Mauricio Faye Okuneva_1765547515068 12 days ● In Progress" [ref=e741] [cursor=pointer]:
+                  - generic [ref=e743] [cursor=pointer]: N46264A55705, Mauricio
+                  - generic [ref=e746] [cursor=pointer]: Faye Okuneva_1765547515068
+                  - generic [ref=e748] [cursor=pointer]: 12 days
+                  - generic [ref=e749] [cursor=pointer]:
+                    - generic [ref=e750] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e751] [cursor=pointer]:
+                    - button [disabled] [ref=e752]
+                    - button [disabled] [ref=e753]
+                    - button [ref=e754] [cursor=pointer]
+                - button "N80107A59277, Precious Robin Spinka_1765547322409 12 days ● In Progress" [ref=e755] [cursor=pointer]:
+                  - generic [ref=e757] [cursor=pointer]: N80107A59277, Precious
+                  - generic [ref=e760] [cursor=pointer]: Robin Spinka_1765547322409
+                  - generic [ref=e762] [cursor=pointer]: 12 days
+                  - generic [ref=e763] [cursor=pointer]:
+                    - generic [ref=e764] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e765] [cursor=pointer]:
+                    - button [disabled] [ref=e766]
+                    - button [disabled] [ref=e767]
+                    - button [ref=e768] [cursor=pointer]
+                - button "N53426A48002, Lewis Felicia Larson V_1765547126152 12 days ● In Progress" [ref=e769] [cursor=pointer]:
+                  - generic [ref=e771] [cursor=pointer]: N53426A48002, Lewis
+                  - generic [ref=e774] [cursor=pointer]: Felicia Larson V_1765547126152
+                  - generic [ref=e776] [cursor=pointer]: 12 days
+                  - generic [ref=e777] [cursor=pointer]:
+                    - generic [ref=e778] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e779] [cursor=pointer]:
+                    - button [disabled] [ref=e780]
+                    - button [disabled] [ref=e781]
+                    - button [ref=e782] [cursor=pointer]
+                - button "N75939A56253, Annalise Orville Weber_1765529833647 12 days ● In Progress" [ref=e783] [cursor=pointer]:
+                  - generic [ref=e785] [cursor=pointer]: N75939A56253, Annalise
+                  - generic [ref=e788] [cursor=pointer]: Orville Weber_1765529833647
+                  - generic [ref=e790] [cursor=pointer]: 12 days
+                  - generic [ref=e791] [cursor=pointer]:
+                    - generic [ref=e792] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e793] [cursor=pointer]:
+                    - button [disabled] [ref=e794]
+                    - button [disabled] [ref=e795]
+                    - button [ref=e796] [cursor=pointer]
+                - button "N98269A15109, Madaline Wilfred Ziemann_1765528964949 12 days ● In Progress" [ref=e797] [cursor=pointer]:
+                  - generic [ref=e799] [cursor=pointer]: N98269A15109, Madaline
+                  - generic [ref=e802] [cursor=pointer]: Wilfred Ziemann_1765528964949
+                  - generic [ref=e804] [cursor=pointer]: 12 days
+                  - generic [ref=e805] [cursor=pointer]:
+                    - generic [ref=e806] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e807] [cursor=pointer]:
+                    - button [disabled] [ref=e808]
+                    - button [disabled] [ref=e809]
+                    - button [ref=e810] [cursor=pointer]
+            - generic [ref=e811]:
+              - generic [ref=e814]:
+                - img [ref=e815]
+                - heading "Notifications Center" [level=3] [ref=e819]
+              - generic [ref=e820]:
+                - generic [ref=e822]:
+                  - img [ref=e823]
+                  - heading "Resources" [level=3] [ref=e827]
+                - list [ref=e828]:
+                  - listitem [ref=e829]:
+                    - button "Riverside Learn" [ref=e830] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e831] [cursor=pointer]
+                      - img [ref=e833] [cursor=pointer]
+                  - listitem [ref=e835]:
+                    - button "Onboarding Tutorial Videos" [ref=e836] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e837] [cursor=pointer]
+                      - img [ref=e839] [cursor=pointer]
+                  - listitem [ref=e841]:
+                    - button "Quick Reference Guides" [ref=e842] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e843] [cursor=pointer]
+                      - img [ref=e845] [cursor=pointer]
+                - generic [ref=e848]: View All
+      - contentinfo [ref=e849]:
+        - generic [ref=e850]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e851] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/?__hstc=20581799.77dcf6623dfec2ff725c53bcfd22a8fc.1767093768324.1767093768324.1767093768324.1&__hssc=20581799.1.1767093768324&__hsfp=1408774332
+          - img "Riverside Insights Website" [ref=e852] [cursor=pointer]
+        - generic [ref=e853]:
+          - link "Riverside Insights Facebook" [ref=e854] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e855] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e856] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e857] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e858] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e859] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e860] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e861] [cursor=pointer]
+        - generic [ref=e862]:
+          - link "Terms of Use" [ref=e863] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.77dcf6623dfec2ff725c53bcfd22a8fc.1767093768324.1767093768324.1767093768324.1&__hssc=20581799.1.1767093768324&__hsfp=1408774332
+          - generic [ref=e864]: "|"
+          - link "Privacy Policy" [ref=e865] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.77dcf6623dfec2ff725c53bcfd22a8fc.1767093768324.1767093768324.1767093768324.1&__hssc=20581799.1.1767093768324&__hsfp=1408774332
+        - generic [ref=e866]: Footer region end
+```
