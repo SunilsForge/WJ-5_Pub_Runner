@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "166",
+    "timestamp": "20260105_000000",
+    "runReason": "running full regression after LWIDNT TestDe code fixes",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@InProgressTestAssignments|@SubmittedTestAssignments|@TestAssignments|@ChatBot"
+  },
+  {
     "runNumber": "165",
     "timestamp": "20260102_000000",
     "runReason": "Running Reg after changes",
