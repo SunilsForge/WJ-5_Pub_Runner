@@ -1,0 +1,140 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: 10PwAut25AH ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| Subscription Details"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30] [cursor=pointer]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+      - main [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - heading [level=1] [ref=e38]: My Test Assignments
+              - button [ref=e39] [cursor=pointer]: Create New Test Assignment
+            - generic [ref=e40]:
+              - generic [ref=e43]:
+                - textbox [ref=e44]: N18417A341, Alexanne
+                - button [ref=e45] [cursor=pointer]
+              - generic [ref=e46]:
+                - button [disabled] [ref=e47]: Active
+                - button [disabled] [ref=e48]: Closed
+            - generic [ref=e49]:
+              - generic [ref=e50]: Examinee
+              - generic [ref=e51]: Test Set
+              - generic [ref=e52]: Days Left to Edit
+              - generic [ref=e53]: Status
+              - generic [ref=e54]: Actions
+              - button [ref=e55] [cursor=pointer]:
+                - generic [ref=e57] [cursor=pointer]: N18417A341, Alexanne
+                - generic [ref=e60] [cursor=pointer]: General Intellectual Ability (GIA)
+                - generic [ref=e62] [cursor=pointer]: —
+                - generic [ref=e63] [cursor=pointer]:
+                  - generic [ref=e64] [cursor=pointer]: ●
+                  - text: Not Started
+                - generic [ref=e65] [cursor=pointer]:
+                  - button [ref=e66] [cursor=pointer]
+                  - button [ref=e67] [cursor=pointer]
+                  - button [ref=e68] [cursor=pointer]
+          - generic [ref=e69]:
+            - generic [ref=e72]:
+              - img [ref=e73]
+              - heading [level=3] [ref=e77]: Notifications Center
+            - generic [ref=e78]:
+              - generic [ref=e80]:
+                - img [ref=e81]
+                - heading [level=3] [ref=e85]: Resources
+              - list [ref=e86]:
+                - listitem [ref=e87]:
+                  - button [ref=e88] [cursor=pointer]:
+                    - heading [level=6] [ref=e89] [cursor=pointer]: Riverside Learn
+                    - img [ref=e91] [cursor=pointer]
+                - listitem [ref=e93]:
+                  - button [ref=e94] [cursor=pointer]:
+                    - heading [level=6] [ref=e95] [cursor=pointer]: Onboarding Tutorial Videos
+                    - img [ref=e97] [cursor=pointer]
+                - listitem [ref=e99]:
+                  - button [ref=e100] [cursor=pointer]:
+                    - heading [level=6] [ref=e101] [cursor=pointer]: Quick Reference Guides
+                    - img [ref=e103] [cursor=pointer]
+              - button [ref=e106] [cursor=pointer]: View All
+    - contentinfo [ref=e107]:
+      - generic [ref=e108]: Footer region,
+      - link [ref=e109] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/?__hstc=20581799.e372ce78827a3953cb331575f5880692.1767878271468.1767878271468.1767878271468.1&__hssc=20581799.2.1767878271468&__hsfp=1408774332
+        - img [ref=e110] [cursor=pointer]
+      - generic [ref=e111]:
+        - link [ref=e112] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e113] [cursor=pointer]
+        - link [ref=e114] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e115] [cursor=pointer]
+        - link [ref=e116] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e117] [cursor=pointer]
+        - link [ref=e118] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e119] [cursor=pointer]
+      - generic [ref=e120]:
+        - link [ref=e121] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.e372ce78827a3953cb331575f5880692.1767878271468.1767878271468.1767878271468.1&__hssc=20581799.2.1767878271468&__hsfp=1408774332
+          - text: Terms of Use
+        - generic [ref=e122]: "|"
+        - link [ref=e123] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.e372ce78827a3953cb331575f5880692.1767878271468.1767878271468.1767878271468.1&__hssc=20581799.2.1767878271468&__hsfp=1408774332
+          - text: Privacy Policy
+      - generic [ref=e124]: Footer region end
+  - region "Chat Widget" [ref=e125]:
+    - iframe [ref=e126]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e128]
+  - dialog [ref=e131]:
+    - generic [ref=e132]:
+      - heading "Edit Test Assignment" [level=1] [ref=e133]
+      - generic [ref=e141]:
+        - generic [ref=e142]:
+          - generic [ref=e143]: Examinee
+          - generic [ref=e144]: Complete
+        - generic [ref=e145]:
+          - generic [ref=e146]: Test Sets
+          - generic [ref=e147]: In Progress
+        - generic [ref=e148]:
+          - generic [ref=e149]: Settings
+          - generic [ref=e150]: Complete
+    - generic [ref=e151]:
+      - heading "Select a Test Set" [level=3] [ref=e152]
+      - generic [ref=e156]:
+        - generic "Select Test Set" [ref=e157]: Test Set Name
+        - tree "Select Test Set" [ref=e158] [cursor=pointer]:
+          - generic [ref=e159] [cursor=pointer]: Select Test Set
+    - generic [ref=e161]:
+      - button "Cancel" [ref=e162] [cursor=pointer]
+      - generic [ref=e163]:
+        - button "Back" [ref=e164] [cursor=pointer]
+        - button "Update" [disabled] [ref=e165]
+```

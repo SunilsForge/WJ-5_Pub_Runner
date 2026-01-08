@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "167",
+    "timestamp": "20260108_000000",
+    "runReason": "Running full regression in STAGE as a part of PROD release ",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@InProgressTestAssignments|@SubmittedTestAssignments|@TestAssignments"
+  },
+  {
     "runNumber": "166",
     "timestamp": "20260105_000000",
     "runReason": "running full regression after LWIDNT TestDe code fixes",

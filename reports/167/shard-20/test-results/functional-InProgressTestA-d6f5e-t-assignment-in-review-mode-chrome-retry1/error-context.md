@@ -1,0 +1,483 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - dialog [ref=e2]:
+    - generic [ref=e3]:
+      - button "Main Navigation" [ref=e4] [cursor=pointer]
+      - button "Semantic Word Retrieval" [ref=e5] [cursor=pointer]:
+        - generic [ref=e6] [cursor=pointer]: Semantic Word Retrieval
+      - button "Examinee Information" [ref=e9] [cursor=pointer]:
+        - img [ref=e10] [cursor=pointer]
+        - generic [ref=e13] [cursor=pointer]:
+          - generic [ref=e14] [cursor=pointer]: N37986A47785, Nicklaus
+          - generic [ref=e15] [cursor=pointer]: "Age: 5y Grade: Kindergarten"
+    - generic [ref=e17]:
+      - heading "Semantic Word Retrieval" [level=2] [ref=e18]
+      - generic [ref=e19]:
+        - generic [ref=e20]: Read the instructions below or
+        - button "begin the test." [ref=e21] [cursor=pointer]
+    - generic [ref=e22]:
+      - heading "Things to Know:" [level=2] [ref=e24]
+      - generic [ref=e28]: This test uses voice capture.
+      - generic [ref=e32]: This test includes timed items.
+      - button "Check Audio Settings" [ref=e33] [cursor=pointer]
+    - generic [ref=e34]:
+      - paragraph [ref=e35]: Administration Overview
+      - generic [ref=e36]:
+        - generic [ref=e37]: ✦
+        - paragraph [ref=e39]: Each item on this test has a 1-minute time limit.
+      - generic [ref=e40]:
+        - generic [ref=e41]: ✦
+        - paragraph [ref=e43]:
+          - text: "If the examinee pauses for 5 seconds, say:"
+          - strong [ref=e44]:
+            - generic [ref=e46]: Go ahead. Say the words as quickly as you can.
+      - generic [ref=e47]:
+        - generic [ref=e48]: ✦
+        - paragraph [ref=e50]: Do not penalize the examinee for mispronunciations resulting from articulation errors, dialect variations, or regional speech patterns.
+      - generic [ref=e51]:
+        - generic [ref=e52]: ✦
+        - paragraph [ref=e54]: Testing begins with Item 1.
+      - generic [ref=e55]:
+        - generic [ref=e56]: ✦
+        - paragraph [ref=e58]: The test ends after all items have been administered.
+      - paragraph [ref=e59]: Scoring
+      - generic [ref=e60]:
+        - generic [ref=e61]: ✦
+        - paragraph [ref=e63]:
+          - text: Click the plus (+) button on the counter one time for each correct response the examinee provides. If you click the plus button too many times, click the minus (–) button to adjust the count. Do
+          - generic [ref=e64]: not
+          - text: use the minus (–) button to record incorrect responses.
+      - generic [ref=e65]:
+        - generic [ref=e66]: ✦
+        - paragraph [ref=e68]:
+          - text: Count each unique response only
+          - generic [ref=e69]: one time
+          - text: .
+      - generic [ref=e70]:
+        - generic [ref=e71]: ✦
+        - paragraph [ref=e73]: The platform computes the total test score by summing the number of correct responses across all items.
+    - generic [ref=e74]:
+      - button "Letʼs Begin" [ref=e75] [cursor=pointer]
+      - button "SCROLL FOR MORE ↓" [ref=e76] [cursor=pointer]:
+        - text: SCROLL
+        - text: FOR MORE
+        - text: ↓
+  - dialog [active] [ref=e78]:
+    - generic [ref=e79]:
+      - button "Main Navigation" [ref=e80] [cursor=pointer]
+      - button "Review Mode" [ref=e81]
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - button "Examinee Information" [ref=e84] [cursor=pointer]:
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e88] [cursor=pointer]:
+              - generic [ref=e89] [cursor=pointer]: N37986A47785, Nicklaus
+              - generic [ref=e90] [cursor=pointer]: "Age: 5y Grade: Kindergarten"
+          - button "Open Notes" [ref=e91] [cursor=pointer]:
+            - generic [ref=e92] [cursor=pointer]: Note
+        - generic [ref=e94]: Examinee Not Connected
+    - generic [ref=e95]:
+      - heading "Review Mode Dashboard" [level=2] [ref=e96]
+      - generic [ref=e97]: Navigate to any test to review content, edit scores, resolve flags, listen to audio recordings, and more.
+    - generic [ref=e98]:
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - img [ref=e102]
+          - generic [ref=e104]: Form A (+2 more)
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - button "In Progress + Score Error + Flag Analysis-Synthesis" [ref=e107] [cursor=pointer]:
+              - img "In Progress + Score Error + Flag" [ref=e108] [cursor=pointer]
+              - generic [ref=e112] [cursor=pointer]: Analysis-Synthesis
+            - button "✕" [ref=e113] [cursor=pointer]
+          - generic [ref=e114]:
+            - button "(NYA) Not Yet Administered Applied Problems" [ref=e115] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e116] [cursor=pointer]
+              - generic [ref=e120] [cursor=pointer]: Applied Problems
+            - button "✕" [ref=e121] [cursor=pointer]
+          - generic [ref=e122]:
+            - button "In Progress + Score Error + Flag Block Rotation" [ref=e123] [cursor=pointer]:
+              - img "In Progress + Score Error + Flag" [ref=e124] [cursor=pointer]
+              - generic [ref=e128] [cursor=pointer]: Block Rotation
+            - button "✕" [ref=e129] [cursor=pointer]
+          - generic [ref=e130]:
+            - button "In Progress + Flag Calculation" [ref=e131] [cursor=pointer]:
+              - img "In Progress + Flag" [ref=e132] [cursor=pointer]
+              - generic [ref=e140] [cursor=pointer]: Calculation
+            - button "✕" [ref=e141] [cursor=pointer]
+          - generic [ref=e142]:
+            - button "In Progress Letter-Word Identification" [ref=e143] [cursor=pointer]:
+              - img "In Progress" [ref=e144] [cursor=pointer]
+              - generic [ref=e152] [cursor=pointer]: Letter-Word Identification
+            - button "✕" [ref=e153] [cursor=pointer]
+          - generic [ref=e154]:
+            - button "(NYA) Not Yet Administered Letter-Pattern Matching" [ref=e155] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e156] [cursor=pointer]
+              - generic [ref=e160] [cursor=pointer]: Letter-Pattern Matching
+            - button "✕" [ref=e161] [cursor=pointer]
+          - generic [ref=e162]:
+            - button "Score Later + Flag Math Facts Fluency" [ref=e163] [cursor=pointer]:
+              - img "Score Later + Flag" [ref=e164] [cursor=pointer]
+              - generic [ref=e168] [cursor=pointer]: Math Facts Fluency
+            - button "✕" [ref=e169] [cursor=pointer]
+          - generic [ref=e170]:
+            - button "(NYA) Not Yet Administered Math Problem Identification" [ref=e171] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e172] [cursor=pointer]
+              - generic [ref=e176] [cursor=pointer]: Math Problem Identification
+            - button "✕" [ref=e177] [cursor=pointer]
+          - generic [ref=e178]:
+            - button "(NYA) Not Yet Administered Matrices" [ref=e179] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e180] [cursor=pointer]
+              - generic [ref=e184] [cursor=pointer]: Matrices
+            - button "✕" [ref=e185] [cursor=pointer]
+          - button "Invalidated* Number-Pattern Matching" [ref=e187] [cursor=pointer]:
+            - img "Invalidated*" [ref=e188] [cursor=pointer]
+            - generic [ref=e192] [cursor=pointer]: Number-Pattern Matching
+          - generic [ref=e193]:
+            - button "(NYA) Not Yet Administered Oral Comprehension" [ref=e194] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e195] [cursor=pointer]
+              - generic [ref=e199] [cursor=pointer]: Oral Comprehension
+            - button "✕" [ref=e200] [cursor=pointer]
+          - generic [ref=e201]:
+            - button "(NYA) Not Yet Administered Numbers Reversed" [ref=e202] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e203] [cursor=pointer]
+              - generic [ref=e207] [cursor=pointer]: Numbers Reversed
+            - button "✕" [ref=e208] [cursor=pointer]
+          - generic [ref=e209]:
+            - button "(NYA) Not Yet Administered Oral Language Samples" [ref=e210] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e211] [cursor=pointer]
+              - generic [ref=e215] [cursor=pointer]: Oral Language Samples
+            - button "✕" [ref=e216] [cursor=pointer]
+          - generic [ref=e217]:
+            - button "(NYA) Not Yet Administered Oral Vocabulary–Synonyms" [ref=e218] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e219] [cursor=pointer]
+              - generic [ref=e223] [cursor=pointer]: Oral Vocabulary–Synonyms
+            - button "✕" [ref=e224] [cursor=pointer]
+          - generic [ref=e225]:
+            - button "(NYA) Not Yet Administered Oral Vocabulary–Antonyms" [ref=e226] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e227] [cursor=pointer]
+              - generic [ref=e231] [cursor=pointer]: Oral Vocabulary–Antonyms
+            - button "✕" [ref=e232] [cursor=pointer]
+          - generic [ref=e233]:
+            - button "(NYA) Not Yet Administered Paragraph Reading Comprehension" [ref=e234] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e235] [cursor=pointer]
+              - generic [ref=e239] [cursor=pointer]: Paragraph Reading Comprehension
+            - button "✕" [ref=e240] [cursor=pointer]
+          - generic [ref=e241]:
+            - button "(NYA) Not Yet Administered Passage Comprehension" [ref=e242] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e243] [cursor=pointer]
+              - generic [ref=e247] [cursor=pointer]: Passage Comprehension
+            - button "✕" [ref=e248] [cursor=pointer]
+          - generic [ref=e249]:
+            - button "(NYA) Not Yet Administered Phonemic Word Retrieval" [ref=e250] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e251] [cursor=pointer]
+              - generic [ref=e255] [cursor=pointer]: Phonemic Word Retrieval
+            - button "✕" [ref=e256] [cursor=pointer]
+          - generic [ref=e257]:
+            - button "(NYA) Not Yet Administered Picture Vocabulary" [ref=e258] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e259] [cursor=pointer]
+              - generic [ref=e263] [cursor=pointer]: Picture Vocabulary
+            - button "✕" [ref=e264] [cursor=pointer]
+          - button "Invalidated* Semantic Word Retrieval" [ref=e266] [cursor=pointer]:
+            - img "Invalidated*" [ref=e267] [cursor=pointer]
+            - generic [ref=e271] [cursor=pointer]: Semantic Word Retrieval
+          - generic [ref=e272]:
+            - button "(NYA) Not Yet Administered Sentence Reading Fluency" [ref=e273] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e274] [cursor=pointer]
+              - generic [ref=e278] [cursor=pointer]: Sentence Reading Fluency
+            - button "✕" [ref=e279] [cursor=pointer]
+          - generic [ref=e280]:
+            - button "(NYA) Not Yet Administered Sentence Writing Fluency" [ref=e281] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e282] [cursor=pointer]
+              - generic [ref=e286] [cursor=pointer]: Sentence Writing Fluency
+            - button "✕" [ref=e287] [cursor=pointer]
+          - generic [ref=e288]:
+            - button "(NYA) Not Yet Administered Sentence Writing Accuracy" [ref=e289] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e290] [cursor=pointer]
+              - generic [ref=e294] [cursor=pointer]: Sentence Writing Accuracy
+            - button "✕" [ref=e295] [cursor=pointer]
+          - generic [ref=e296]:
+            - button "(NYA) Not Yet Administered Spatial Relations" [ref=e297] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e298] [cursor=pointer]
+              - generic [ref=e302] [cursor=pointer]: Spatial Relations
+            - button "✕" [ref=e303] [cursor=pointer]
+          - generic [ref=e304]:
+            - button "(NYA) Not Yet Administered Story Comprehension" [ref=e305] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e306] [cursor=pointer]
+              - generic [ref=e310] [cursor=pointer]: Story Comprehension
+            - button "✕" [ref=e311] [cursor=pointer]
+          - generic [ref=e312]:
+            - button "(NYA) Not Yet Administered Spelling" [ref=e313] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e314] [cursor=pointer]
+              - generic [ref=e318] [cursor=pointer]: Spelling
+            - button "✕" [ref=e319] [cursor=pointer]
+          - generic [ref=e320]:
+            - button "Complete + Flag Story Recall" [ref=e321] [cursor=pointer]:
+              - img "Complete + Flag" [ref=e322] [cursor=pointer]
+              - generic [ref=e325] [cursor=pointer]: Story Recall
+            - button "✕" [ref=e326] [cursor=pointer]
+          - generic [ref=e327]:
+            - button "(NYA) Not Yet Administered Verbal Analogies" [ref=e328] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e329] [cursor=pointer]
+              - generic [ref=e333] [cursor=pointer]: Verbal Analogies
+            - button "✕" [ref=e334] [cursor=pointer]
+          - generic [ref=e335]:
+            - button "(NYA) Not Yet Administered Verbal Attention" [ref=e336] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e337] [cursor=pointer]
+              - generic [ref=e341] [cursor=pointer]: Verbal Attention
+            - button "✕" [ref=e342] [cursor=pointer]
+          - generic [ref=e343]:
+            - button "(NYA) Not Yet Administered Word Attack" [ref=e344] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e345] [cursor=pointer]
+              - generic [ref=e349] [cursor=pointer]: Word Attack
+            - button "✕" [ref=e350] [cursor=pointer]
+          - generic [ref=e351]:
+            - button "(NYA) Not Yet Administered Word Reading Fluency" [ref=e352] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e353] [cursor=pointer]
+              - generic [ref=e357] [cursor=pointer]: Word Reading Fluency
+            - button "✕" [ref=e358] [cursor=pointer]
+          - generic [ref=e359]:
+            - button "Score Later Written Language Samples" [ref=e360] [cursor=pointer]:
+              - img "Score Later" [ref=e361] [cursor=pointer]
+              - generic [ref=e365] [cursor=pointer]: Written Language Samples
+            - button "✕" [ref=e366] [cursor=pointer]
+          - generic [ref=e367]:
+            - button "Complete + Flag Academic Vocabulary" [ref=e368] [cursor=pointer]:
+              - img "Complete + Flag" [ref=e369] [cursor=pointer]
+              - generic [ref=e372] [cursor=pointer]: Academic Vocabulary
+            - button "✕" [ref=e373] [cursor=pointer]
+          - generic [ref=e374]:
+            - button "(NYA) Not Yet Administered General Information–Where" [ref=e375] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e376] [cursor=pointer]
+              - generic [ref=e380] [cursor=pointer]: General Information–Where
+            - button "✕" [ref=e381] [cursor=pointer]
+          - generic [ref=e382]:
+            - button "(NYA) Not Yet Administered General Information–What" [ref=e383] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e384] [cursor=pointer]
+              - generic [ref=e388] [cursor=pointer]: General Information–What
+            - button "✕" [ref=e389] [cursor=pointer]
+          - generic [ref=e390]:
+            - button "(NYA) Not Yet Administered Memory for Words" [ref=e391] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e392] [cursor=pointer]
+              - generic [ref=e396] [cursor=pointer]: Memory for Words
+            - button "✕" [ref=e397] [cursor=pointer]
+          - generic [ref=e398]:
+            - button "(NYA) Not Yet Administered Nonsense Word Repetition" [ref=e399] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e400] [cursor=pointer]
+              - generic [ref=e404] [cursor=pointer]: Nonsense Word Repetition
+            - button "✕" [ref=e405] [cursor=pointer]
+          - generic [ref=e406]:
+            - button "In Progress + Score Error Number Series" [ref=e407] [cursor=pointer]:
+              - img "In Progress + Score Error" [ref=e408] [cursor=pointer]
+              - generic [ref=e412] [cursor=pointer]: Number Series
+            - button "✕" [ref=e413] [cursor=pointer]
+          - generic [ref=e414]:
+            - button "(NYA) Not Yet Administered Oral Reading" [ref=e415] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e416] [cursor=pointer]
+              - generic [ref=e420] [cursor=pointer]: Oral Reading
+            - button "✕" [ref=e421] [cursor=pointer]
+          - button "Invalidated* Rapid Letter Naming" [ref=e423] [cursor=pointer]:
+            - img "Invalidated*" [ref=e424] [cursor=pointer]
+            - generic [ref=e428] [cursor=pointer]: Rapid Letter Naming
+          - button "Invalidated* Rapid Phoneme Naming" [ref=e430] [cursor=pointer]:
+            - img "Invalidated*" [ref=e431] [cursor=pointer]
+            - generic [ref=e435] [cursor=pointer]: Rapid Phoneme Naming
+          - generic [ref=e436]:
+            - button "(NYA) Not Yet Administered Rapid Picture Naming" [ref=e437] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e438] [cursor=pointer]
+              - generic [ref=e442] [cursor=pointer]: Rapid Picture Naming
+            - button "✕" [ref=e443] [cursor=pointer]
+          - generic [ref=e444]:
+            - button "(NYA) Not Yet Administered Segmentation" [ref=e445] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e446] [cursor=pointer]
+              - generic [ref=e450] [cursor=pointer]: Segmentation
+            - button "✕" [ref=e451] [cursor=pointer]
+          - generic [ref=e452]:
+            - button "(NYA) Not Yet Administered Sentence Repetition" [ref=e453] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e454] [cursor=pointer]
+              - generic [ref=e458] [cursor=pointer]: Sentence Repetition
+            - button "✕" [ref=e459] [cursor=pointer]
+          - generic [ref=e460]:
+            - button "(NYA) Not Yet Administered Sound Blending" [ref=e461] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e462] [cursor=pointer]
+              - generic [ref=e466] [cursor=pointer]: Sound Blending
+            - button "✕" [ref=e467] [cursor=pointer]
+          - generic [ref=e468]:
+            - button "(NYA) Not Yet Administered Sound Deletion" [ref=e469] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e470] [cursor=pointer]
+              - generic [ref=e474] [cursor=pointer]: Sound Deletion
+            - button "✕" [ref=e475] [cursor=pointer]
+          - generic [ref=e476]:
+            - button "(NYA) Not Yet Administered Sound Reversal" [ref=e477] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e478] [cursor=pointer]
+              - generic [ref=e482] [cursor=pointer]: Sound Reversal
+            - button "✕" [ref=e483] [cursor=pointer]
+          - generic [ref=e484]:
+            - button "(NYA) Not Yet Administered Sound Substitution" [ref=e485] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e486] [cursor=pointer]
+              - generic [ref=e490] [cursor=pointer]: Sound Substitution
+            - button "✕" [ref=e491] [cursor=pointer]
+          - generic [ref=e492]:
+            - button "(NYA) Not Yet Administered Spelling of Sounds" [ref=e493] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e494] [cursor=pointer]
+              - generic [ref=e498] [cursor=pointer]: Spelling of Sounds
+            - button "✕" [ref=e499] [cursor=pointer]
+          - button "Invalidated** Rapid Number Naming" [ref=e501] [cursor=pointer]:
+            - img "Invalidated**" [ref=e502] [cursor=pointer]
+            - generic [ref=e506] [cursor=pointer]: Rapid Number Naming
+          - generic [ref=e507]:
+            - button "(NYA) Not Yet Administered Rapid Number Naming (Backup Form)" [ref=e508] [cursor=pointer]:
+              - img "(NYA) Not Yet Administered" [ref=e509] [cursor=pointer]
+              - generic [ref=e513] [cursor=pointer]: Rapid Number Naming (Backup Form)
+            - button "✕" [ref=e514] [cursor=pointer]
+        - button "+ Add Test" [ref=e515] [cursor=pointer]
+      - generic [ref=e517]:
+        - heading "Administration Summary" [level=2] [ref=e519]
+        - generic [ref=e520]:
+          - generic [ref=e521]:
+            - heading "Score Later *" [level=4] [ref=e522]:
+              - text: Score Later
+              - generic [ref=e523]: "*"
+            - 'button "Math Facts Fluency Score: - Score Later Score Later" [ref=e524] [cursor=pointer]':
+              - generic [ref=e525] [cursor=pointer]: Math Facts Fluency
+              - generic [ref=e526] [cursor=pointer]: "Score: -"
+              - generic [ref=e527] [cursor=pointer]: Score Later
+              - img "Score Later" [ref=e529] [cursor=pointer]
+            - 'button "Written Language Samples Score: - Score Later Score Later" [ref=e533] [cursor=pointer]':
+              - generic [ref=e534] [cursor=pointer]: Written Language Samples
+              - generic [ref=e535] [cursor=pointer]: "Score: -"
+              - generic [ref=e536] [cursor=pointer]: Score Later
+              - img "Score Later" [ref=e538] [cursor=pointer]
+            - heading "Needs Attention *" [level=4] [ref=e542]:
+              - text: Needs Attention
+              - generic [ref=e543]: "*"
+            - 'button "Analysis-Synthesis Score: - *Requires Examinee Complete + Score Error" [ref=e544] [cursor=pointer]':
+              - generic [ref=e545] [cursor=pointer]: Analysis-Synthesis
+              - generic [ref=e546] [cursor=pointer]: "Score: -"
+              - generic [ref=e547] [cursor=pointer]: "*Requires Examinee"
+              - img "Complete + Score Error" [ref=e549] [cursor=pointer]
+            - 'button "Block Rotation Score: - *Requires Examinee Complete + Score Error" [ref=e553] [cursor=pointer]':
+              - generic [ref=e554] [cursor=pointer]: Block Rotation
+              - generic [ref=e555] [cursor=pointer]: "Score: -"
+              - generic [ref=e556] [cursor=pointer]: "*Requires Examinee"
+              - img "Complete + Score Error" [ref=e558] [cursor=pointer]
+            - 'button "Number Series Score: - *Requires Examinee Complete + Score Error" [ref=e562] [cursor=pointer]':
+              - generic [ref=e563] [cursor=pointer]: Number Series
+              - generic [ref=e564] [cursor=pointer]: "Score: -"
+              - generic [ref=e565] [cursor=pointer]: "*Requires Examinee"
+              - img "Complete + Score Error" [ref=e567] [cursor=pointer]
+            - heading "Invalidated Tests Not available for reporting" [level=4] [ref=e571]:
+              - text: Invalidated Tests
+              - generic [ref=e572]: Not available for reporting
+            - button "Number-Pattern Matching Invalidated*" [ref=e573] [cursor=pointer]:
+              - text: Number-Pattern Matching
+              - img "Invalidated*" [ref=e575] [cursor=pointer]
+            - button "Semantic Word Retrieval Invalidated*" [ref=e579] [cursor=pointer]:
+              - text: Semantic Word Retrieval
+              - img "Invalidated*" [ref=e581] [cursor=pointer]
+            - button "Rapid Letter Naming Invalidated*" [ref=e585] [cursor=pointer]:
+              - text: Rapid Letter Naming
+              - img "Invalidated*" [ref=e587] [cursor=pointer]
+            - button "Rapid Phoneme Naming Invalidated*" [ref=e591] [cursor=pointer]:
+              - text: Rapid Phoneme Naming
+              - img "Invalidated*" [ref=e593] [cursor=pointer]
+            - button "Rapid Number Naming Invalidated**" [ref=e597] [cursor=pointer]:
+              - text: Rapid Number Naming
+              - img "Invalidated**" [ref=e599] [cursor=pointer]
+          - generic [ref=e603]:
+            - heading "Flagged Items" [level=4] [ref=e604]
+            - heading "Analysis-Synthesis" [level=5] [ref=e605]
+            - 'button "Color Pretest: Yellow, Trial 1 Score: 1 yellow squares" [ref=e606] [cursor=pointer]':
+              - generic [ref=e607] [cursor=pointer]: "Color Pretest: Yellow, Trial 1"
+              - generic [ref=e608] [cursor=pointer]: "Score: 1"
+              - generic [ref=e609] [cursor=pointer]: yellow squares
+              - img [ref=e611] [cursor=pointer]
+            - 'button "Item 1 Score: 1 blue" [ref=e614] [cursor=pointer]':
+              - generic [ref=e615] [cursor=pointer]: Item 1
+              - generic [ref=e616] [cursor=pointer]: "Score: 1"
+              - generic [ref=e617] [cursor=pointer]: blue
+              - img [ref=e619] [cursor=pointer]
+            - 'button "Item 2 Score: 1 black" [ref=e622] [cursor=pointer]':
+              - generic [ref=e623] [cursor=pointer]: Item 2
+              - generic [ref=e624] [cursor=pointer]: "Score: 1"
+              - generic [ref=e625] [cursor=pointer]: black
+              - img [ref=e627] [cursor=pointer]
+            - 'button "Sample Item B, Trial 1 Score: 1 black" [ref=e630] [cursor=pointer]':
+              - generic [ref=e631] [cursor=pointer]: Sample Item B, Trial 1
+              - generic [ref=e632] [cursor=pointer]: "Score: 1"
+              - generic [ref=e633] [cursor=pointer]: black
+              - img [ref=e635] [cursor=pointer]
+            - 'button "Item 6 Score: 0 blue and black" [ref=e638] [cursor=pointer]':
+              - generic [ref=e639] [cursor=pointer]: Item 6
+              - generic [ref=e640] [cursor=pointer]: "Score: 0"
+              - generic [ref=e641] [cursor=pointer]: blue and black
+              - img [ref=e643] [cursor=pointer]
+            - heading "Block Rotation" [level=5] [ref=e646]
+            - 'button "Sample Item A, Trial 1 Score: 1 A|C" [ref=e647] [cursor=pointer]':
+              - generic [ref=e648] [cursor=pointer]: Sample Item A, Trial 1
+              - generic [ref=e649] [cursor=pointer]: "Score: 1"
+              - generic [ref=e650] [cursor=pointer]: A|C
+              - img [ref=e652] [cursor=pointer]
+            - 'button "Item 2 Score: 0 B|D" [ref=e655] [cursor=pointer]':
+              - generic [ref=e656] [cursor=pointer]: Item 2
+              - generic [ref=e657] [cursor=pointer]: "Score: 0"
+              - generic [ref=e658] [cursor=pointer]: B|D
+              - img [ref=e660] [cursor=pointer]
+            - 'button "Item 4 Score: 1 B|D" [ref=e663] [cursor=pointer]':
+              - generic [ref=e664] [cursor=pointer]: Item 4
+              - generic [ref=e665] [cursor=pointer]: "Score: 1"
+              - generic [ref=e666] [cursor=pointer]: B|D
+              - img [ref=e668] [cursor=pointer]
+            - heading "Calculation" [level=5] [ref=e671]
+            - 'button "Sample Item A Score: 1" [ref=e672] [cursor=pointer]':
+              - generic [ref=e673] [cursor=pointer]: Sample Item A
+              - generic [ref=e674] [cursor=pointer]: "Score: 1"
+              - img [ref=e676] [cursor=pointer]
+            - 'button "Sample Item B Score: 1" [ref=e679] [cursor=pointer]':
+              - generic [ref=e680] [cursor=pointer]: Sample Item B
+              - generic [ref=e681] [cursor=pointer]: "Score: 1"
+              - img [ref=e683] [cursor=pointer]
+            - 'button "Item 5 Score: 0" [ref=e686] [cursor=pointer]':
+              - generic [ref=e687] [cursor=pointer]: Item 5
+              - generic [ref=e688] [cursor=pointer]: "Score: 0"
+              - generic [ref=e692] [cursor=pointer]:
+                - img [ref=e693] [cursor=pointer]
+                - img [ref=e699] [cursor=pointer]
+              - img [ref=e707] [cursor=pointer]
+            - heading "Math Facts Fluency" [level=5] [ref=e710]
+            - 'button "Practice Exercise Score: 0" [ref=e711] [cursor=pointer]':
+              - generic [ref=e712] [cursor=pointer]: Practice Exercise
+              - generic [ref=e713] [cursor=pointer]: "Score: 0"
+              - img [ref=e715] [cursor=pointer]
+            - heading "Story Recall" [level=5] [ref=e718]
+            - 'button "Story 1 Score: 4 The cat and the bird" [ref=e719] [cursor=pointer]':
+              - generic [ref=e720] [cursor=pointer]: Story 1
+              - generic [ref=e721] [cursor=pointer]: "Score: 4"
+              - generic [ref=e722] [cursor=pointer]: The cat and the bird
+              - img [ref=e724] [cursor=pointer]
+            - 'button "Story 4 Score: 4 Glow-in-the-dark stars" [ref=e727] [cursor=pointer]':
+              - generic [ref=e728] [cursor=pointer]: Story 4
+              - generic [ref=e729] [cursor=pointer]: "Score: 4"
+              - generic [ref=e730] [cursor=pointer]: Glow-in-the-dark stars
+              - img [ref=e732] [cursor=pointer]
+            - heading "Academic Vocabulary" [level=5] [ref=e735]
+            - 'button "Item 3 Score: 1 What are these? (crayons)" [ref=e736] [cursor=pointer]':
+              - generic [ref=e737] [cursor=pointer]: Item 3
+              - generic [ref=e738] [cursor=pointer]: "Score: 1"
+              - generic [ref=e739] [cursor=pointer]: What are these? (crayons)
+              - img [ref=e741] [cursor=pointer]
+            - 'button "Item 7 Score: 0 What is this? (calendar)" [ref=e744] [cursor=pointer]':
+              - generic [ref=e745] [cursor=pointer]: Item 7
+              - generic [ref=e746] [cursor=pointer]: "Score: 0"
+              - generic [ref=e747] [cursor=pointer]: What is this? (calendar)
+              - img [ref=e749] [cursor=pointer]
+        - generic [ref=e752]:
+          - generic [ref=e753]: "*"
+          - text: Resolve all Score Later and Needs Attention items before submitting. When sharing, coordinate with your collaborator.
+    - generic [ref=e754]:
+      - generic [ref=e755]: "Warning: Changing scores may result in the need to administer additional items to examinee to retrieve valid test scores."
+      - button "Exit Review Mode" [ref=e756] [cursor=pointer]
+      - button "Submit Test Assignment" [disabled] [ref=e757]
+```
