@@ -57,7 +57,7 @@ tmpfs           7.9G     0  7.9G   0% /proc/scsi
 tmpfs           7.9G     0  7.9G   0% /sys/firmware
 -e 
 System Load:
- 16:12:54 up 5 min,  0 user,  load average: 0.84, 0.32, 0.14
+ 16:19:23 up 1 min,  0 user,  load average: 1.58, 0.58, 0.21
 -e 
 Container Information:
 PRETTY_NAME="Ubuntu 24.04.2 LTS"
