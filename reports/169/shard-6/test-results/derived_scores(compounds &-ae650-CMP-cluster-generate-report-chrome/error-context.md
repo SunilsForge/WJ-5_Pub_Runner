@@ -1,0 +1,250 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: S07PwAut25AH ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| Subscription Details"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30] [cursor=pointer]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+      - main [ref=e34]:
+        - generic [ref=e35]:
+          - heading [level=1] [ref=e36]: REPORT CENTER
+          - navigation [ref=e37]:
+            - tablist [ref=e38]:
+              - tab [selected] [ref=e39] [cursor=pointer]: Report Library
+              - button [ref=e40] [cursor=pointer]:
+                - img [ref=e41] [cursor=pointer]
+          - grid [ref=e51]:
+            - generic [ref=e52]:
+              - generic [ref=e55]: Report Name
+              - generic [ref=e58]: Status
+              - generic [ref=e61]: Date Created
+              - generic [ref=e64]: Actions
+            - rowgroup [ref=e65]:
+              - row [ref=e66]:
+                - gridcell [ref=e68]: Derived_Score_AutoFilter_Template_N75436A93167
+                - gridcell [ref=e70]: Completed
+                - gridcell [ref=e72]: 01/22/2026 11:17 PM
+                - generic [ref=e73]:
+                  - link [ref=e74] [cursor=pointer]:
+                    - gridcell [ref=e75] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e77] [cursor=pointer]: Delete
+                  - img [ref=e78] [cursor=pointer]
+              - row [ref=e80]:
+                - gridcell [ref=e82]: Derived_Score_AutoFilter_Template_N77465A24569
+                - gridcell [ref=e84]: Completed
+                - gridcell [ref=e86]: 01/22/2026 11:12 PM
+                - generic [ref=e87]:
+                  - link [ref=e88] [cursor=pointer]:
+                    - gridcell [ref=e89] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e91] [cursor=pointer]: Delete
+                  - img [ref=e92] [cursor=pointer]
+              - row [ref=e94]:
+                - gridcell [ref=e96]: Derived_Score_AutoFilter_Template_N62345A64029
+                - gridcell [ref=e98]: Completed
+                - gridcell [ref=e100]: 01/22/2026 11:08 PM
+                - generic [ref=e101]:
+                  - link [ref=e102] [cursor=pointer]:
+                    - gridcell [ref=e103] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e105] [cursor=pointer]: Delete
+                  - img [ref=e106] [cursor=pointer]
+              - row [ref=e108]:
+                - gridcell [ref=e110]: Derived_Score_AutoFilter_Template_N47540A25118
+                - gridcell [ref=e112]: Completed
+                - gridcell [ref=e114]: 01/22/2026 11:02 PM
+                - generic [ref=e115]:
+                  - link [ref=e116] [cursor=pointer]:
+                    - gridcell [ref=e117] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e119] [cursor=pointer]: Delete
+                  - img [ref=e120] [cursor=pointer]
+              - row [ref=e122]:
+                - gridcell [ref=e124]: Derived_Score_AutoFilter_Template_N33721A43945
+                - gridcell [ref=e126]: Completed
+                - gridcell [ref=e128]: 01/22/2026 10:56 PM
+                - generic [ref=e129]:
+                  - link [ref=e130] [cursor=pointer]:
+                    - gridcell [ref=e131] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e133] [cursor=pointer]: Delete
+                  - img [ref=e134] [cursor=pointer]
+              - row [ref=e136]:
+                - gridcell [ref=e138]: Derived_Score_AutoFilter_Template_N97850A55783
+                - gridcell [ref=e140]: Completed
+                - gridcell [ref=e142]: 01/22/2026 10:52 PM
+                - generic [ref=e143]:
+                  - link [ref=e144] [cursor=pointer]:
+                    - gridcell [ref=e145] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e147] [cursor=pointer]: Delete
+                  - img [ref=e148] [cursor=pointer]
+              - row [ref=e150]:
+                - gridcell [ref=e152]: Derived_Score_AutoFilter_Template_N56706A95207
+                - gridcell [ref=e154]: Completed
+                - gridcell [ref=e156]: 01/05/2026 09:03 AM
+                - generic [ref=e157]:
+                  - link [ref=e158] [cursor=pointer]:
+                    - gridcell [ref=e159] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e161] [cursor=pointer]: Delete
+                  - img [ref=e162] [cursor=pointer]
+              - row [ref=e164]:
+                - gridcell [ref=e166]: Derived_Score_AutoFilter_Template_N13839A3795
+                - gridcell [ref=e168]: Completed
+                - gridcell [ref=e170]: 01/05/2026 09:01 AM
+                - generic [ref=e171]:
+                  - link [ref=e172] [cursor=pointer]:
+                    - gridcell [ref=e173] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e175] [cursor=pointer]: Delete
+                  - img [ref=e176] [cursor=pointer]
+              - row [ref=e178]:
+                - gridcell [ref=e180]: Derived_Score_AutoFilter_Template_N24997A81061
+                - gridcell [ref=e182]: Completed
+                - gridcell [ref=e184]: 01/05/2026 08:57 AM
+                - generic [ref=e185]:
+                  - link [ref=e186] [cursor=pointer]:
+                    - gridcell [ref=e187] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e189] [cursor=pointer]: Delete
+                  - img [ref=e190] [cursor=pointer]
+              - row [ref=e192]:
+                - gridcell [ref=e194]: Derived_Score_AutoFilter_Template_N4559A72086
+                - gridcell [ref=e196]: Completed
+                - gridcell [ref=e198]: 01/05/2026 08:52 AM
+                - generic [ref=e199]:
+                  - link [ref=e200] [cursor=pointer]:
+                    - gridcell [ref=e201] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e203] [cursor=pointer]: Delete
+                  - img [ref=e204] [cursor=pointer]
+              - row [ref=e206]:
+                - gridcell [ref=e208]: Derived_Score_AutoFilter_Template_N66759A48402
+                - gridcell [ref=e210]: Completed
+                - gridcell [ref=e212]: 01/02/2026 04:54 AM
+                - generic [ref=e213]:
+                  - link [ref=e214] [cursor=pointer]:
+                    - gridcell [ref=e215] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e217] [cursor=pointer]: Delete
+                  - img [ref=e218] [cursor=pointer]
+              - row [ref=e220]:
+                - gridcell [ref=e222]: Derived_Score_AutoFilter_Template_N57726A98130
+                - gridcell [ref=e224]: Completed
+                - gridcell [ref=e226]: 01/02/2026 04:51 AM
+                - generic [ref=e227]:
+                  - link [ref=e228] [cursor=pointer]:
+                    - gridcell [ref=e229] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e231] [cursor=pointer]: Delete
+                  - img [ref=e232] [cursor=pointer]
+              - row [ref=e234]:
+                - gridcell [ref=e236]: Derived_Score_AutoFilter_Template_N97202A42840
+                - gridcell [ref=e238]: Completed
+                - gridcell [ref=e240]: 01/02/2026 04:47 AM
+                - generic [ref=e241]:
+                  - link [ref=e242] [cursor=pointer]:
+                    - gridcell [ref=e243] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e245] [cursor=pointer]: Delete
+                  - img [ref=e246] [cursor=pointer]
+              - row [ref=e248]:
+                - gridcell [ref=e250]: Derived_Score_AutoFilter_Template_N20072A16516
+                - gridcell [ref=e252]: Completed
+                - gridcell [ref=e254]: 01/02/2026 04:42 AM
+                - generic [ref=e255]:
+                  - link [ref=e256] [cursor=pointer]:
+                    - gridcell [ref=e257] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e259] [cursor=pointer]: Delete
+                  - img [ref=e260] [cursor=pointer]
+              - row [ref=e262]:
+                - gridcell [ref=e264]: Derived_Score_AutoFilter_Template_N91537A35305
+                - gridcell [ref=e266]: Completed
+                - gridcell [ref=e268]: 12/30/2025 08:37 AM
+                - generic [ref=e269]:
+                  - link [ref=e270] [cursor=pointer]:
+                    - gridcell [ref=e271] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e273] [cursor=pointer]: Delete
+                  - img [ref=e274] [cursor=pointer]
+              - row [ref=e276]:
+                - gridcell [ref=e278]: Derived_Score_AutoFilter_Template_N92235A6330
+                - gridcell [ref=e280]: Completed
+                - gridcell [ref=e282]: 12/30/2025 08:35 AM
+                - generic [ref=e283]:
+                  - link [ref=e284] [cursor=pointer]:
+                    - gridcell [ref=e285] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e287] [cursor=pointer]: Delete
+                  - img [ref=e288] [cursor=pointer]
+              - row [ref=e290]:
+                - gridcell [ref=e292]: Derived_Score_AutoFilter_Template_N53762A48945
+                - gridcell [ref=e294]: Completed
+                - gridcell [ref=e296]: 12/30/2025 08:33 AM
+                - generic [ref=e297]:
+                  - link [ref=e298] [cursor=pointer]:
+                    - gridcell [ref=e299] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e301] [cursor=pointer]: Delete
+                  - img [ref=e302] [cursor=pointer]
+              - row [ref=e304]:
+                - gridcell [ref=e306]: Derived_Score_AutoFilter_Template_N89977A29459
+                - gridcell [ref=e308]: Completed
+                - gridcell [ref=e310]: 12/30/2025 08:29 AM
+                - generic [ref=e311]:
+                  - link [ref=e312] [cursor=pointer]:
+                    - gridcell [ref=e313] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e315] [cursor=pointer]: Delete
+                  - img [ref=e316] [cursor=pointer]
+              - row [ref=e318]:
+                - gridcell [ref=e320]: Derived_Score_AutoFilter_Template_N9367A24814
+                - gridcell [ref=e322]: Completed
+                - gridcell [ref=e324]: 12/30/2025 08:24 AM
+                - generic [ref=e325]:
+                  - link [ref=e326] [cursor=pointer]:
+                    - gridcell [ref=e327] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e329] [cursor=pointer]: Delete
+                  - img [ref=e330] [cursor=pointer]
+    - contentinfo [ref=e332]:
+      - generic [ref=e333]: Footer region,
+      - link [ref=e334] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img [ref=e335] [cursor=pointer]
+      - generic [ref=e336]:
+        - link [ref=e337] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e338] [cursor=pointer]
+        - link [ref=e339] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e340] [cursor=pointer]
+        - link [ref=e341] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e342] [cursor=pointer]
+        - link [ref=e343] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e344] [cursor=pointer]
+      - generic [ref=e345]:
+        - link [ref=e346] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e347]: "|"
+        - link [ref=e348] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e349]: Footer region end
+  - alertdialog [active] [ref=e351]:
+    - main "Expiration warning" [ref=e352]:
+      - heading "Session Expiring" [level=1] [ref=e353]
+      - generic [ref=e354]: Session will expire in 5 minutes, press continue to extend time.
+    - navigation [ref=e355]:
+      - button "Continue" [ref=e356] [cursor=pointer]
+```

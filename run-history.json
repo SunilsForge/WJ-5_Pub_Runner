@@ -8,6 +8,14 @@
     "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments|@ChatBot|((?=.*@SPAREL)(?=.*@Content))"
   },
   {
+    "runNumber": "169",
+    "timestamp": "20260123_000000",
+    "runReason": "Prod Jan release regression ",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@InProgressTestAssignments|@SubmittedTestAssignments|@DashboardTestAssignments|@ChatBot|((?=.*@SPAREL)(?=.*@Content))"
+  },
+  {
     "runNumber": "168",
     "timestamp": "20260121_000000",
     "runReason": "big boss run",

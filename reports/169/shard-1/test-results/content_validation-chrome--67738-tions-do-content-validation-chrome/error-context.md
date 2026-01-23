@@ -1,0 +1,640 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner "Clinical Products Header" [ref=e2]:
+    - generic [ref=e3]:
+      - button "Skip to main Content" [ref=e4]
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /products
+      - generic [ref=e6]: Riverside Insights Logo
+      - generic [ref=e7]:
+        - heading "Hello S02PwAut25Ex_02 ln" [level=2] [ref=e8]:
+          - generic [ref=e9]: Hello
+          - button "S02PwAut25Ex_02 ln" [ref=e10] [cursor=pointer]
+        - navigation [ref=e13]:
+          - button "Contact Us" [ref=e14] [cursor=pointer]
+          - button "| Subscription Details" [ref=e15] [cursor=pointer]
+          - button "| Sign Out" [ref=e16] [cursor=pointer]
+  - navigation "Navigation toolbar" [ref=e17]:
+    - menubar [ref=e19]:
+      - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+      - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+      - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+      - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+      - menuitem "Reports" [ref=e29] [cursor=pointer]:
+        - text: Reports
+        - img [ref=e30] [cursor=pointer]
+      - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - heading "My Test Assignments" [level=1] [ref=e38]
+          - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+        - generic [ref=e40]:
+          - generic [ref=e43]:
+            - textbox [ref=e44]
+            - button [ref=e45] [cursor=pointer]
+          - generic [ref=e46]:
+            - button "Active" [ref=e47] [cursor=pointer]
+            - button "Closed" [ref=e48] [cursor=pointer]
+        - generic [ref=e49]:
+          - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+          - generic [ref=e51]: Test Set
+          - generic [ref=e52]: Days Left to Edit
+          - generic [ref=e53]: Status
+          - generic [ref=e54]: Actions
+          - button "N21250A33916, Jeramy Form AB 29 days ● Submitted Edit Assignment Add tests to test set" [ref=e55] [cursor=pointer]:
+            - generic [ref=e57] [cursor=pointer]: N21250A33916, Jeramy
+            - generic [ref=e60] [cursor=pointer]: Form AB
+            - generic [ref=e62] [cursor=pointer]: 29 days
+            - generic [ref=e63] [cursor=pointer]:
+              - generic [ref=e64] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e65] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e66] [cursor=pointer]
+              - button "Add tests to test set" [ref=e67] [cursor=pointer]
+              - button [ref=e68] [cursor=pointer]
+          - button "N85990A36537, Peggie Form AB 12 days ● Submitted Edit Assignment Add tests to test set" [ref=e69] [cursor=pointer]:
+            - generic [ref=e71] [cursor=pointer]: N85990A36537, Peggie
+            - generic [ref=e74] [cursor=pointer]: Form AB
+            - generic [ref=e76] [cursor=pointer]: 12 days
+            - generic [ref=e77] [cursor=pointer]:
+              - generic [ref=e78] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e79] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e80] [cursor=pointer]
+              - button "Add tests to test set" [ref=e81] [cursor=pointer]
+              - button [ref=e82] [cursor=pointer]
+          - button "N84750A91490, Bridget Form AB 12 days ● Submitted Edit Assignment Add tests to test set" [ref=e83] [cursor=pointer]:
+            - generic [ref=e85] [cursor=pointer]: N84750A91490, Bridget
+            - generic [ref=e88] [cursor=pointer]: Form AB
+            - generic [ref=e90] [cursor=pointer]: 12 days
+            - generic [ref=e91] [cursor=pointer]:
+              - generic [ref=e92] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e93] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e94] [cursor=pointer]
+              - button "Add tests to test set" [ref=e95] [cursor=pointer]
+              - button [ref=e96] [cursor=pointer]
+          - button "N68473A30286, Esther Form AB 12 days ● Submitted Edit Assignment Add tests to test set" [ref=e97] [cursor=pointer]:
+            - generic [ref=e99] [cursor=pointer]: N68473A30286, Esther
+            - generic [ref=e102] [cursor=pointer]: Form AB
+            - generic [ref=e104] [cursor=pointer]: 12 days
+            - generic [ref=e105] [cursor=pointer]:
+              - generic [ref=e106] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e107] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e108] [cursor=pointer]
+              - button "Add tests to test set" [ref=e109] [cursor=pointer]
+              - button [ref=e110] [cursor=pointer]
+          - button "N21A40624, Nikolas Form AB 12 days ● Submitted Edit Assignment Add tests to test set" [ref=e111] [cursor=pointer]:
+            - generic [ref=e113] [cursor=pointer]: N21A40624, Nikolas
+            - generic [ref=e116] [cursor=pointer]: Form AB
+            - generic [ref=e118] [cursor=pointer]: 12 days
+            - generic [ref=e119] [cursor=pointer]:
+              - generic [ref=e120] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e121] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e122] [cursor=pointer]
+              - button "Add tests to test set" [ref=e123] [cursor=pointer]
+              - button [ref=e124] [cursor=pointer]
+          - button "N73739A22499, Naomie Form AB 12 days ● Submitted Edit Assignment Add tests to test set" [ref=e125] [cursor=pointer]:
+            - generic [ref=e127] [cursor=pointer]: N73739A22499, Naomie
+            - generic [ref=e130] [cursor=pointer]: Form AB
+            - generic [ref=e132] [cursor=pointer]: 12 days
+            - generic [ref=e133] [cursor=pointer]:
+              - generic [ref=e134] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e135] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e136] [cursor=pointer]
+              - button "Add tests to test set" [ref=e137] [cursor=pointer]
+              - button [ref=e138] [cursor=pointer]
+          - button "N93463A34696, Jacques Form AB 12 days ● Submitted Edit Assignment Add tests to test set" [ref=e139] [cursor=pointer]:
+            - generic [ref=e141] [cursor=pointer]: N93463A34696, Jacques
+            - generic [ref=e144] [cursor=pointer]: Form AB
+            - generic [ref=e146] [cursor=pointer]: 12 days
+            - generic [ref=e147] [cursor=pointer]:
+              - generic [ref=e148] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e149] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e150] [cursor=pointer]
+              - button "Add tests to test set" [ref=e151] [cursor=pointer]
+              - button [ref=e152] [cursor=pointer]
+          - button "N69827A53281, Nova Form AB 12 days ● Submitted Edit Assignment Add tests to test set" [ref=e153] [cursor=pointer]:
+            - generic [ref=e155] [cursor=pointer]: N69827A53281, Nova
+            - generic [ref=e158] [cursor=pointer]: Form AB
+            - generic [ref=e160] [cursor=pointer]: 12 days
+            - generic [ref=e161] [cursor=pointer]:
+              - generic [ref=e162] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e163] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e164] [cursor=pointer]
+              - button "Add tests to test set" [ref=e165] [cursor=pointer]
+              - button [ref=e166] [cursor=pointer]
+          - button "N45457A59068, Shirley Form AB 12 days ● Submitted Edit Assignment Add tests to test set" [ref=e167] [cursor=pointer]:
+            - generic [ref=e169] [cursor=pointer]: N45457A59068, Shirley
+            - generic [ref=e172] [cursor=pointer]: Form AB
+            - generic [ref=e174] [cursor=pointer]: 12 days
+            - generic [ref=e175] [cursor=pointer]:
+              - generic [ref=e176] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e177] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e178] [cursor=pointer]
+              - button "Add tests to test set" [ref=e179] [cursor=pointer]
+              - button [ref=e180] [cursor=pointer]
+          - button "N89131A97740, Americo Form AB 9 days ● Submitted Edit Assignment Add tests to test set" [ref=e181] [cursor=pointer]:
+            - generic [ref=e183] [cursor=pointer]: N89131A97740, Americo
+            - generic [ref=e186] [cursor=pointer]: Form AB
+            - generic [ref=e188] [cursor=pointer]: 9 days
+            - generic [ref=e189] [cursor=pointer]:
+              - generic [ref=e190] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e191] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e192] [cursor=pointer]
+              - button "Add tests to test set" [ref=e193] [cursor=pointer]
+              - button [ref=e194] [cursor=pointer]
+          - button "N9782A59528, Shirley Form AB 9 days ● Submitted Edit Assignment Add tests to test set" [ref=e195] [cursor=pointer]:
+            - generic [ref=e197] [cursor=pointer]: N9782A59528, Shirley
+            - generic [ref=e200] [cursor=pointer]: Form AB
+            - generic [ref=e202] [cursor=pointer]: 9 days
+            - generic [ref=e203] [cursor=pointer]:
+              - generic [ref=e204] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e205] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e206] [cursor=pointer]
+              - button "Add tests to test set" [ref=e207] [cursor=pointer]
+              - button [ref=e208] [cursor=pointer]
+          - button "N38884A28087, Camden Form AB 9 days ● Submitted Edit Assignment Add tests to test set" [ref=e209] [cursor=pointer]:
+            - generic [ref=e211] [cursor=pointer]: N38884A28087, Camden
+            - generic [ref=e214] [cursor=pointer]: Form AB
+            - generic [ref=e216] [cursor=pointer]: 9 days
+            - generic [ref=e217] [cursor=pointer]:
+              - generic [ref=e218] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e219] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e220] [cursor=pointer]
+              - button "Add tests to test set" [ref=e221] [cursor=pointer]
+              - button [ref=e222] [cursor=pointer]
+          - button "N49257A29008, Urban Form AB 9 days ● Submitted Edit Assignment Add tests to test set" [ref=e223] [cursor=pointer]:
+            - generic [ref=e225] [cursor=pointer]: N49257A29008, Urban
+            - generic [ref=e228] [cursor=pointer]: Form AB
+            - generic [ref=e230] [cursor=pointer]: 9 days
+            - generic [ref=e231] [cursor=pointer]:
+              - generic [ref=e232] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e233] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e234] [cursor=pointer]
+              - button "Add tests to test set" [ref=e235] [cursor=pointer]
+              - button [ref=e236] [cursor=pointer]
+          - button "N22515A81000, Myah Form AB 9 days ● Submitted Edit Assignment Add tests to test set" [ref=e237] [cursor=pointer]:
+            - generic [ref=e239] [cursor=pointer]: N22515A81000, Myah
+            - generic [ref=e242] [cursor=pointer]: Form AB
+            - generic [ref=e244] [cursor=pointer]: 9 days
+            - generic [ref=e245] [cursor=pointer]:
+              - generic [ref=e246] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e247] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e248] [cursor=pointer]
+              - button "Add tests to test set" [ref=e249] [cursor=pointer]
+              - button [ref=e250] [cursor=pointer]
+          - button "N53481A8627, Shanon Form AB 9 days ● Submitted Edit Assignment Add tests to test set" [ref=e251] [cursor=pointer]:
+            - generic [ref=e253] [cursor=pointer]: N53481A8627, Shanon
+            - generic [ref=e256] [cursor=pointer]: Form AB
+            - generic [ref=e258] [cursor=pointer]: 9 days
+            - generic [ref=e259] [cursor=pointer]:
+              - generic [ref=e260] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e261] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e262] [cursor=pointer]
+              - button "Add tests to test set" [ref=e263] [cursor=pointer]
+              - button [ref=e264] [cursor=pointer]
+          - button "N35228A77407, Tristin Form AB 6 days ● Submitted Edit Assignment Add tests to test set" [ref=e265] [cursor=pointer]:
+            - generic [ref=e267] [cursor=pointer]: N35228A77407, Tristin
+            - generic [ref=e270] [cursor=pointer]: Form AB
+            - generic [ref=e272] [cursor=pointer]: 6 days
+            - generic [ref=e273] [cursor=pointer]:
+              - generic [ref=e274] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e275] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e276] [cursor=pointer]
+              - button "Add tests to test set" [ref=e277] [cursor=pointer]
+              - button [ref=e278] [cursor=pointer]
+          - button "N93338A16706, Marjorie Form AB 6 days ● Submitted Edit Assignment Add tests to test set" [ref=e279] [cursor=pointer]:
+            - generic [ref=e281] [cursor=pointer]: N93338A16706, Marjorie
+            - generic [ref=e284] [cursor=pointer]: Form AB
+            - generic [ref=e286] [cursor=pointer]: 6 days
+            - generic [ref=e287] [cursor=pointer]:
+              - generic [ref=e288] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e289] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e290] [cursor=pointer]
+              - button "Add tests to test set" [ref=e291] [cursor=pointer]
+              - button [ref=e292] [cursor=pointer]
+          - button "N75810A82928, Electa Form AB 6 days ● Submitted Edit Assignment Add tests to test set" [ref=e293] [cursor=pointer]:
+            - generic [ref=e295] [cursor=pointer]: N75810A82928, Electa
+            - generic [ref=e298] [cursor=pointer]: Form AB
+            - generic [ref=e300] [cursor=pointer]: 6 days
+            - generic [ref=e301] [cursor=pointer]:
+              - generic [ref=e302] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e303] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e304] [cursor=pointer]
+              - button "Add tests to test set" [ref=e305] [cursor=pointer]
+              - button [ref=e306] [cursor=pointer]
+          - button "N85878A43690, Joana Form AB 6 days ● Submitted Edit Assignment Add tests to test set" [ref=e307] [cursor=pointer]:
+            - generic [ref=e309] [cursor=pointer]: N85878A43690, Joana
+            - generic [ref=e312] [cursor=pointer]: Form AB
+            - generic [ref=e314] [cursor=pointer]: 6 days
+            - generic [ref=e315] [cursor=pointer]:
+              - generic [ref=e316] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e317] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e318] [cursor=pointer]
+              - button "Add tests to test set" [ref=e319] [cursor=pointer]
+              - button [ref=e320] [cursor=pointer]
+          - button "N45670A27447, Theo Form AB 6 days ● Submitted Edit Assignment Add tests to test set" [ref=e321] [cursor=pointer]:
+            - generic [ref=e323] [cursor=pointer]: N45670A27447, Theo
+            - generic [ref=e326] [cursor=pointer]: Form AB
+            - generic [ref=e328] [cursor=pointer]: 6 days
+            - generic [ref=e329] [cursor=pointer]:
+              - generic [ref=e330] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e331] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e332] [cursor=pointer]
+              - button "Add tests to test set" [ref=e333] [cursor=pointer]
+              - button [ref=e334] [cursor=pointer]
+          - button "N62846A82423, Elody Form AB 6 days ● Submitted Edit Assignment Add tests to test set" [ref=e335] [cursor=pointer]:
+            - generic [ref=e337] [cursor=pointer]: N62846A82423, Elody
+            - generic [ref=e340] [cursor=pointer]: Form AB
+            - generic [ref=e342] [cursor=pointer]: 6 days
+            - generic [ref=e343] [cursor=pointer]:
+              - generic [ref=e344] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e345] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e346] [cursor=pointer]
+              - button "Add tests to test set" [ref=e347] [cursor=pointer]
+              - button [ref=e348] [cursor=pointer]
+          - button "N60091A84712, Geraldine Form AB — ● Not Started Edit Assignment Add tests to test set" [ref=e349] [cursor=pointer]:
+            - generic [ref=e351] [cursor=pointer]: N60091A84712, Geraldine
+            - generic [ref=e354] [cursor=pointer]: Form AB
+            - generic [ref=e356] [cursor=pointer]: —
+            - generic [ref=e357] [cursor=pointer]:
+              - generic [ref=e358] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e359] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e360] [cursor=pointer]
+              - button "Add tests to test set" [ref=e361] [cursor=pointer]
+              - button [ref=e362] [cursor=pointer]
+          - button "N59585A69842, Paxton Form AB — ● Not Started Edit Assignment Add tests to test set" [ref=e363] [cursor=pointer]:
+            - generic [ref=e365] [cursor=pointer]: N59585A69842, Paxton
+            - generic [ref=e368] [cursor=pointer]: Form AB
+            - generic [ref=e370] [cursor=pointer]: —
+            - generic [ref=e371] [cursor=pointer]:
+              - generic [ref=e372] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e373] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e374] [cursor=pointer]
+              - button "Add tests to test set" [ref=e375] [cursor=pointer]
+              - button [ref=e376] [cursor=pointer]
+          - button "N12625A11792, Colin Form AB (+2 more) 0 days ● Expired Generate Report" [ref=e377] [cursor=pointer]:
+            - generic [ref=e379] [cursor=pointer]: N12625A11792, Colin
+            - generic [ref=e382] [cursor=pointer]: Form AB (+2 more)
+            - generic [ref=e384] [cursor=pointer]: 0 days
+            - generic [ref=e385] [cursor=pointer]:
+              - generic [ref=e386] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e387] [cursor=pointer]:
+              - button "Generate Report" [ref=e388] [cursor=pointer]
+              - button [ref=e389] [cursor=pointer]
+          - button "N12457A15455, Leopold Form AB (+2 more) 0 days ● Expired Generate Report" [ref=e390] [cursor=pointer]:
+            - generic [ref=e392] [cursor=pointer]: N12457A15455, Leopold
+            - generic [ref=e395] [cursor=pointer]: Form AB (+2 more)
+            - generic [ref=e397] [cursor=pointer]: 0 days
+            - generic [ref=e398] [cursor=pointer]:
+              - generic [ref=e399] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e400] [cursor=pointer]:
+              - button "Generate Report" [ref=e401] [cursor=pointer]
+              - button [ref=e402] [cursor=pointer]
+          - button "N36749A90338, Hertha Form AB (+2 more) 0 days ● Expired Generate Report" [ref=e403] [cursor=pointer]:
+            - generic [ref=e405] [cursor=pointer]: N36749A90338, Hertha
+            - generic [ref=e408] [cursor=pointer]: Form AB (+2 more)
+            - generic [ref=e410] [cursor=pointer]: 0 days
+            - generic [ref=e411] [cursor=pointer]:
+              - generic [ref=e412] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e413] [cursor=pointer]:
+              - button "Generate Report" [ref=e414] [cursor=pointer]
+              - button [ref=e415] [cursor=pointer]
+          - button "N57593A82138, Sidney Form AB 0 days ● Expired Generate Report" [ref=e416] [cursor=pointer]:
+            - generic [ref=e418] [cursor=pointer]: N57593A82138, Sidney
+            - generic [ref=e421] [cursor=pointer]: Form AB
+            - generic [ref=e423] [cursor=pointer]: 0 days
+            - generic [ref=e424] [cursor=pointer]:
+              - generic [ref=e425] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e426] [cursor=pointer]:
+              - button "Generate Report" [ref=e427] [cursor=pointer]
+              - button [ref=e428] [cursor=pointer]
+          - button "N19710A41332, Jewel Form AB 0 days ● Expired Generate Report" [ref=e429] [cursor=pointer]:
+            - generic [ref=e431] [cursor=pointer]: N19710A41332, Jewel
+            - generic [ref=e434] [cursor=pointer]: Form AB
+            - generic [ref=e436] [cursor=pointer]: 0 days
+            - generic [ref=e437] [cursor=pointer]:
+              - generic [ref=e438] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e439] [cursor=pointer]:
+              - button "Generate Report" [ref=e440] [cursor=pointer]
+              - button [ref=e441] [cursor=pointer]
+          - button "N92713A49999, Birdie Form AB 0 days ● Expired Generate Report" [ref=e442] [cursor=pointer]:
+            - generic [ref=e444] [cursor=pointer]: N92713A49999, Birdie
+            - generic [ref=e447] [cursor=pointer]: Form AB
+            - generic [ref=e449] [cursor=pointer]: 0 days
+            - generic [ref=e450] [cursor=pointer]:
+              - generic [ref=e451] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e452] [cursor=pointer]:
+              - button "Generate Report" [ref=e453] [cursor=pointer]
+              - button [ref=e454] [cursor=pointer]
+          - button "N39649A59898, Verona Form AB 0 days ● Expired Generate Report" [ref=e455] [cursor=pointer]:
+            - generic [ref=e457] [cursor=pointer]: N39649A59898, Verona
+            - generic [ref=e460] [cursor=pointer]: Form AB
+            - generic [ref=e462] [cursor=pointer]: 0 days
+            - generic [ref=e463] [cursor=pointer]:
+              - generic [ref=e464] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e465] [cursor=pointer]:
+              - button "Generate Report" [ref=e466] [cursor=pointer]
+              - button [ref=e467] [cursor=pointer]
+          - button "N58200A41091, Stephen Form AB 0 days ● Expired Generate Report" [ref=e468] [cursor=pointer]:
+            - generic [ref=e470] [cursor=pointer]: N58200A41091, Stephen
+            - generic [ref=e473] [cursor=pointer]: Form AB
+            - generic [ref=e475] [cursor=pointer]: 0 days
+            - generic [ref=e476] [cursor=pointer]:
+              - generic [ref=e477] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e478] [cursor=pointer]:
+              - button "Generate Report" [ref=e479] [cursor=pointer]
+              - button [ref=e480] [cursor=pointer]
+          - button "N27235A93330, Coty Form AB 0 days ● Expired Generate Report" [ref=e481] [cursor=pointer]:
+            - generic [ref=e483] [cursor=pointer]: N27235A93330, Coty
+            - generic [ref=e486] [cursor=pointer]: Form AB
+            - generic [ref=e488] [cursor=pointer]: 0 days
+            - generic [ref=e489] [cursor=pointer]:
+              - generic [ref=e490] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e491] [cursor=pointer]:
+              - button "Generate Report" [ref=e492] [cursor=pointer]
+              - button [ref=e493] [cursor=pointer]
+          - button "N29231A17266, Herman Form AB 0 days ● Expired Generate Report" [ref=e494] [cursor=pointer]:
+            - generic [ref=e496] [cursor=pointer]: N29231A17266, Herman
+            - generic [ref=e499] [cursor=pointer]: Form AB
+            - generic [ref=e501] [cursor=pointer]: 0 days
+            - generic [ref=e502] [cursor=pointer]:
+              - generic [ref=e503] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e504] [cursor=pointer]:
+              - button "Generate Report" [ref=e505] [cursor=pointer]
+              - button [ref=e506] [cursor=pointer]
+          - button "N34637A56543, Devon Form AB 0 days ● Expired Generate Report" [ref=e507] [cursor=pointer]:
+            - generic [ref=e509] [cursor=pointer]: N34637A56543, Devon
+            - generic [ref=e512] [cursor=pointer]: Form AB
+            - generic [ref=e514] [cursor=pointer]: 0 days
+            - generic [ref=e515] [cursor=pointer]:
+              - generic [ref=e516] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e517] [cursor=pointer]:
+              - button "Generate Report" [ref=e518] [cursor=pointer]
+              - button [ref=e519] [cursor=pointer]
+          - button "N44136A63337, Demarco Form AB 0 days ● Expired Generate Report" [ref=e520] [cursor=pointer]:
+            - generic [ref=e522] [cursor=pointer]: N44136A63337, Demarco
+            - generic [ref=e525] [cursor=pointer]: Form AB
+            - generic [ref=e527] [cursor=pointer]: 0 days
+            - generic [ref=e528] [cursor=pointer]:
+              - generic [ref=e529] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e530] [cursor=pointer]:
+              - button "Generate Report" [ref=e531] [cursor=pointer]
+              - button [ref=e532] [cursor=pointer]
+          - button "N85002A31815, Albertha Form AB 0 days ● Expired Generate Report" [ref=e533] [cursor=pointer]:
+            - generic [ref=e535] [cursor=pointer]: N85002A31815, Albertha
+            - generic [ref=e538] [cursor=pointer]: Form AB
+            - generic [ref=e540] [cursor=pointer]: 0 days
+            - generic [ref=e541] [cursor=pointer]:
+              - generic [ref=e542] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e543] [cursor=pointer]:
+              - button "Generate Report" [ref=e544] [cursor=pointer]
+              - button [ref=e545] [cursor=pointer]
+          - button "N6654A39991, Delaney Form AB 0 days ● Expired Generate Report" [ref=e546] [cursor=pointer]:
+            - generic [ref=e548] [cursor=pointer]: N6654A39991, Delaney
+            - generic [ref=e551] [cursor=pointer]: Form AB
+            - generic [ref=e553] [cursor=pointer]: 0 days
+            - generic [ref=e554] [cursor=pointer]:
+              - generic [ref=e555] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e556] [cursor=pointer]:
+              - button "Generate Report" [ref=e557] [cursor=pointer]
+              - button [ref=e558] [cursor=pointer]
+          - button "N17017A99056, Deron Form AB 0 days ● Expired Generate Report" [ref=e559] [cursor=pointer]:
+            - generic [ref=e561] [cursor=pointer]: N17017A99056, Deron
+            - generic [ref=e564] [cursor=pointer]: Form AB
+            - generic [ref=e566] [cursor=pointer]: 0 days
+            - generic [ref=e567] [cursor=pointer]:
+              - generic [ref=e568] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e569] [cursor=pointer]:
+              - button "Generate Report" [ref=e570] [cursor=pointer]
+              - button [ref=e571] [cursor=pointer]
+          - button "N74151A23470, Delaney Form AB 0 days ● Expired Generate Report" [ref=e572] [cursor=pointer]:
+            - generic [ref=e574] [cursor=pointer]: N74151A23470, Delaney
+            - generic [ref=e577] [cursor=pointer]: Form AB
+            - generic [ref=e579] [cursor=pointer]: 0 days
+            - generic [ref=e580] [cursor=pointer]:
+              - generic [ref=e581] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e582] [cursor=pointer]:
+              - button "Generate Report" [ref=e583] [cursor=pointer]
+              - button [ref=e584] [cursor=pointer]
+          - button "N58208A92790, Colton Form AB 0 days ● Expired Generate Report" [ref=e585] [cursor=pointer]:
+            - generic [ref=e587] [cursor=pointer]: N58208A92790, Colton
+            - generic [ref=e590] [cursor=pointer]: Form AB
+            - generic [ref=e592] [cursor=pointer]: 0 days
+            - generic [ref=e593] [cursor=pointer]:
+              - generic [ref=e594] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e595] [cursor=pointer]:
+              - button "Generate Report" [ref=e596] [cursor=pointer]
+              - button [ref=e597] [cursor=pointer]
+          - button "N20323A22242, Aniya Form AB 0 days ● Expired Generate Report" [ref=e598] [cursor=pointer]:
+            - generic [ref=e600] [cursor=pointer]: N20323A22242, Aniya
+            - generic [ref=e603] [cursor=pointer]: Form AB
+            - generic [ref=e605] [cursor=pointer]: 0 days
+            - generic [ref=e606] [cursor=pointer]:
+              - generic [ref=e607] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e608] [cursor=pointer]:
+              - button "Generate Report" [ref=e609] [cursor=pointer]
+              - button [ref=e610] [cursor=pointer]
+          - button "N65373A27907, Sharon Form AB 0 days ● Expired Generate Report" [ref=e611] [cursor=pointer]:
+            - generic [ref=e613] [cursor=pointer]: N65373A27907, Sharon
+            - generic [ref=e616] [cursor=pointer]: Form AB
+            - generic [ref=e618] [cursor=pointer]: 0 days
+            - generic [ref=e619] [cursor=pointer]:
+              - generic [ref=e620] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e621] [cursor=pointer]:
+              - button "Generate Report" [ref=e622] [cursor=pointer]
+              - button [ref=e623] [cursor=pointer]
+          - button "N19681A57244, Skylar Form AB 0 days ● Expired Generate Report" [ref=e624] [cursor=pointer]:
+            - generic [ref=e626] [cursor=pointer]: N19681A57244, Skylar
+            - generic [ref=e629] [cursor=pointer]: Form AB
+            - generic [ref=e631] [cursor=pointer]: 0 days
+            - generic [ref=e632] [cursor=pointer]:
+              - generic [ref=e633] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e634] [cursor=pointer]:
+              - button "Generate Report" [ref=e635] [cursor=pointer]
+              - button [ref=e636] [cursor=pointer]
+          - button "N77162A49865, Dee Form AB 0 days ● Expired Generate Report" [ref=e637] [cursor=pointer]:
+            - generic [ref=e639] [cursor=pointer]: N77162A49865, Dee
+            - generic [ref=e642] [cursor=pointer]: Form AB
+            - generic [ref=e644] [cursor=pointer]: 0 days
+            - generic [ref=e645] [cursor=pointer]:
+              - generic [ref=e646] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e647] [cursor=pointer]:
+              - button "Generate Report" [ref=e648] [cursor=pointer]
+              - button [ref=e649] [cursor=pointer]
+          - button "N73757A23510, Brock Form AB 0 days ● Expired Generate Report" [ref=e650] [cursor=pointer]:
+            - generic [ref=e652] [cursor=pointer]: N73757A23510, Brock
+            - generic [ref=e655] [cursor=pointer]: Form AB
+            - generic [ref=e657] [cursor=pointer]: 0 days
+            - generic [ref=e658] [cursor=pointer]:
+              - generic [ref=e659] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e660] [cursor=pointer]:
+              - button "Generate Report" [ref=e661] [cursor=pointer]
+              - button [ref=e662] [cursor=pointer]
+          - button "N78021A31331, Garth Form AB 0 days ● Expired Generate Report" [ref=e663] [cursor=pointer]:
+            - generic [ref=e665] [cursor=pointer]: N78021A31331, Garth
+            - generic [ref=e668] [cursor=pointer]: Form AB
+            - generic [ref=e670] [cursor=pointer]: 0 days
+            - generic [ref=e671] [cursor=pointer]:
+              - generic [ref=e672] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e673] [cursor=pointer]:
+              - button "Generate Report" [ref=e674] [cursor=pointer]
+              - button [ref=e675] [cursor=pointer]
+          - button "N52014A83964, Andres Form AB 0 days ● Expired Generate Report" [ref=e676] [cursor=pointer]:
+            - generic [ref=e678] [cursor=pointer]: N52014A83964, Andres
+            - generic [ref=e681] [cursor=pointer]: Form AB
+            - generic [ref=e683] [cursor=pointer]: 0 days
+            - generic [ref=e684] [cursor=pointer]:
+              - generic [ref=e685] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e686] [cursor=pointer]:
+              - button "Generate Report" [ref=e687] [cursor=pointer]
+              - button [ref=e688] [cursor=pointer]
+          - button "N79205A14776, Peyton Form AB 0 days ● Expired Generate Report" [ref=e689] [cursor=pointer]:
+            - generic [ref=e691] [cursor=pointer]: N79205A14776, Peyton
+            - generic [ref=e694] [cursor=pointer]: Form AB
+            - generic [ref=e696] [cursor=pointer]: 0 days
+            - generic [ref=e697] [cursor=pointer]:
+              - generic [ref=e698] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e699] [cursor=pointer]:
+              - button "Generate Report" [ref=e700] [cursor=pointer]
+              - button [ref=e701] [cursor=pointer]
+          - button "N4149A7752, Meghan Form AB 0 days ● Expired Generate Report" [ref=e702] [cursor=pointer]:
+            - generic [ref=e704] [cursor=pointer]: N4149A7752, Meghan
+            - generic [ref=e707] [cursor=pointer]: Form AB
+            - generic [ref=e709] [cursor=pointer]: 0 days
+            - generic [ref=e710] [cursor=pointer]:
+              - generic [ref=e711] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e712] [cursor=pointer]:
+              - button "Generate Report" [ref=e713] [cursor=pointer]
+              - button [ref=e714] [cursor=pointer]
+          - button "N97760A69825, Brando Form AB 0 days ● Expired Generate Report" [ref=e715] [cursor=pointer]:
+            - generic [ref=e717] [cursor=pointer]: N97760A69825, Brando
+            - generic [ref=e720] [cursor=pointer]: Form AB
+            - generic [ref=e722] [cursor=pointer]: 0 days
+            - generic [ref=e723] [cursor=pointer]:
+              - generic [ref=e724] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e725] [cursor=pointer]:
+              - button "Generate Report" [ref=e726] [cursor=pointer]
+              - button [ref=e727] [cursor=pointer]
+          - button "N61884A43791, Annamae Form AB 0 days ● Expired Generate Report" [ref=e728] [cursor=pointer]:
+            - generic [ref=e730] [cursor=pointer]: N61884A43791, Annamae
+            - generic [ref=e733] [cursor=pointer]: Form AB
+            - generic [ref=e735] [cursor=pointer]: 0 days
+            - generic [ref=e736] [cursor=pointer]:
+              - generic [ref=e737] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e738] [cursor=pointer]:
+              - button "Generate Report" [ref=e739] [cursor=pointer]
+              - button [ref=e740] [cursor=pointer]
+          - button "N85186A3373, Noelia Form AB 0 days ● Expired Generate Report" [ref=e741] [cursor=pointer]:
+            - generic [ref=e743] [cursor=pointer]: N85186A3373, Noelia
+            - generic [ref=e746] [cursor=pointer]: Form AB
+            - generic [ref=e748] [cursor=pointer]: 0 days
+            - generic [ref=e749] [cursor=pointer]:
+              - generic [ref=e750] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e751] [cursor=pointer]:
+              - button "Generate Report" [ref=e752] [cursor=pointer]
+              - button [ref=e753] [cursor=pointer]
+          - button "N12280A73382, Kennith Form AB 0 days ● Expired Generate Report" [ref=e754] [cursor=pointer]:
+            - generic [ref=e756] [cursor=pointer]: N12280A73382, Kennith
+            - generic [ref=e759] [cursor=pointer]: Form AB
+            - generic [ref=e761] [cursor=pointer]: 0 days
+            - generic [ref=e762] [cursor=pointer]:
+              - generic [ref=e763] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e764] [cursor=pointer]:
+              - button "Generate Report" [ref=e765] [cursor=pointer]
+              - button [ref=e766] [cursor=pointer]
+      - generic [ref=e767]:
+        - generic [ref=e768]:
+          - generic [ref=e770]:
+            - img [ref=e771]
+            - heading "Notifications Center" [level=3] [ref=e775]
+          - generic [ref=e777]:
+            - generic [ref=e778]: 01/14/2026
+            - paragraph [ref=e779]:
+              - generic [ref=e780]: The RiversideScore platform will be down for maintenance on Thursday, January 22nd, from 8:00 PM
+              - generic [ref=e781]: to 12:00 AM CST.
+              - generic [ref=e782]: During this time, access will be unavailable. If you have any questions, please contact
+              - generic [ref=e783]: "Customer Support Monday- Friday 8AM- 4PM CST at:"
+            - paragraph [ref=e784]:
+              - generic [ref=e785]: "Tel:"
+              - link "800-323-9540" [ref=e786] [cursor=pointer]:
+                - /url: tel:8003239540
+              - generic [ref=e788]: "Email:"
+              - link "Inquiry@service.riversideinsights.com" [ref=e789] [cursor=pointer]:
+                - /url: mailto:Inquiry@service.riversideinsights.com
+            - paragraph [ref=e791]:
+              - generic [ref=e792]: We appreciate your patience as we work to improve the experience!
+        - generic [ref=e793]:
+          - generic [ref=e795]:
+            - img [ref=e796]
+            - heading "Resources" [level=3] [ref=e800]
+          - list [ref=e801]:
+            - listitem [ref=e802]:
+              - button "Riverside Learn" [ref=e803] [cursor=pointer]:
+                - heading "Riverside Learn" [level=6] [ref=e804] [cursor=pointer]
+                - img [ref=e806] [cursor=pointer]
+            - listitem [ref=e808]:
+              - button "Onboarding Tutorial Videos" [ref=e809] [cursor=pointer]:
+                - heading "Onboarding Tutorial Videos" [level=6] [ref=e810] [cursor=pointer]
+                - img [ref=e812] [cursor=pointer]
+            - listitem [ref=e814]:
+              - button "Quick Reference Guides" [ref=e815] [cursor=pointer]:
+                - heading "Quick Reference Guides" [level=6] [ref=e816] [cursor=pointer]
+                - img [ref=e818] [cursor=pointer]
+          - button "View All" [ref=e821] [cursor=pointer]
+```
