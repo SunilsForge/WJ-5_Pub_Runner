@@ -1,0 +1,87 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main "Clinical Login" [ref=e4]:
+    - generic [ref=e5]:
+      - img "Riverside Insights Logo" [ref=e6]
+      - heading "Looking for the USA login page? Click Here" [level=4] [ref=e8]:
+        - text: Looking for the USA login page?
+        - link "Click Here" [ref=e9] [cursor=pointer]:
+          - /url: https://riversidescore.com
+      - heading "Riverside Updates" [level=1] [ref=e10]
+      - generic [ref=e13]:
+        - paragraph [ref=e14]:
+          - generic [ref=e15]: The RiversideScore platform will be down for maintenance on Thursday, January 22nd, from 8:00 PM
+          - generic [ref=e16]: to 12:00 AM CST.
+          - generic [ref=e17]: During this time, access will be unavailable. If you have any questions, please contact
+          - generic [ref=e18]: "Customer Support Monday- Friday 8AM- 4PM CST at:"
+        - paragraph [ref=e19]:
+          - generic [ref=e20]: "Tel:"
+          - link "800-323-9540" [ref=e21] [cursor=pointer]:
+            - /url: tel:8003239540
+          - generic [ref=e23]: "Email:"
+          - link "Inquiry@service.riversideinsights.com" [ref=e24] [cursor=pointer]:
+            - /url: mailto:Inquiry@service.riversideinsights.com
+        - paragraph [ref=e26]:
+          - generic [ref=e27]: We appreciate your patience as we work to improve the experience!
+    - generic [ref=e28]:
+      - img "Riverside Score Logo" [ref=e29]
+      - form "Sign in details" [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]: USERNAME
+          - textbox "USERNAME" [active] [ref=e34]
+          - generic [ref=e36]: PASSWORD
+          - textbox "PASSWORD" [ref=e38]
+          - button "Sign In" [ref=e39] [cursor=pointer]
+          - generic [ref=e40]:
+            - checkbox "Remember Me" [ref=e41] [cursor=pointer]:
+              - generic [ref=e42] [cursor=pointer]: Remember Me
+            - link "Forgot my password" [ref=e45] [cursor=pointer]:
+              - /url: /forgot
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - text: For help accessing
+        - generic [ref=e48]: Riverside Score™
+        - text: ", see the"
+        - link "online help" [ref=e49] [cursor=pointer]:
+          - /url: https://onlinehelp.riversideinsights.com/Help/Riverside_Score/index.htm#t=Overview.htm
+        - text: for signing in.
+      - link "Check Platform Status" [ref=e51] [cursor=pointer]:
+        - /url: https://riversideinsights.com/platform-status
+  - contentinfo [ref=e52]:
+    - generic [ref=e53]: Footer region,
+    - link "w w w dot riverside insights dot com" [ref=e54] [cursor=pointer]:
+      - /url: https://www.riversideinsights.com/
+      - img "Riverside Insights Website" [ref=e55] [cursor=pointer]
+    - generic [ref=e56]:
+      - link "Riverside Insights Facebook" [ref=e57] [cursor=pointer]:
+        - /url: https://www.facebook.com/RiversideInsights/
+        - img "Riverside Insights Facebook" [ref=e58] [cursor=pointer]
+      - link "Riverside Insights Twitter" [ref=e59] [cursor=pointer]:
+        - /url: https://twitter.com/1BillionLives
+        - img "Riverside Insights Twitter" [ref=e60] [cursor=pointer]
+      - link "Riverside Insights LinkedIn" [ref=e61] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/riverside-insights/
+        - img "Riverside Insights LinkedIn" [ref=e62] [cursor=pointer]
+      - link "Riverside Insights Instagram" [ref=e63] [cursor=pointer]:
+        - /url: https://www.instagram.com/riversideinsightsassessments/
+        - img "Riverside Insights Instagram" [ref=e64] [cursor=pointer]
+    - generic [ref=e65]:
+      - img "WJ IV Mobile Data Solution" [ref=e66]
+      - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e67] [cursor=pointer]
+      - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e68] [cursor=pointer]
+    - generic [ref=e69]:
+      - img "Bdi 3 Mobile Data Solution" [ref=e70]
+      - generic [ref=e71]:
+        - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e72] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from Google Play" [ref=e73] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from App Store" [ref=e74] [cursor=pointer]
+    - generic [ref=e75]:
+      - link "Terms of Use" [ref=e76] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - generic [ref=e77]: "|"
+      - link "Privacy Policy" [ref=e78] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+    - generic [ref=e79]: Footer region end
+```

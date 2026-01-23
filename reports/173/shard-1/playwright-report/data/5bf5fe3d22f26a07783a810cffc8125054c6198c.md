@@ -1,0 +1,130 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner "Clinical Products Header" [ref=e2]:
+    - generic [ref=e3]:
+      - button "Skip to main Content" [ref=e4]
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /products
+      - generic [ref=e6]: Riverside Insights Logo
+      - generic [ref=e7]:
+        - heading "Hello S02PwAut25Ex_02 ln" [level=2] [ref=e8]:
+          - generic [ref=e9]: Hello
+          - button "S02PwAut25Ex_02 ln" [ref=e10] [cursor=pointer]
+        - navigation [ref=e13]:
+          - button "Contact Us" [ref=e14] [cursor=pointer]
+          - button "| Subscription Details" [ref=e15] [cursor=pointer]
+          - button "| Sign Out" [ref=e16] [cursor=pointer]
+  - navigation "Navigation toolbar" [ref=e17]:
+    - menubar [ref=e19]:
+      - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+      - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+      - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+      - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+      - menuitem "Reports" [ref=e29] [cursor=pointer]:
+        - text: Reports
+        - img [ref=e30] [cursor=pointer]
+      - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - heading "My Test Assignments" [level=1] [ref=e38]
+          - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+        - generic [ref=e40]:
+          - generic [ref=e43]:
+            - textbox [ref=e44]
+            - button [ref=e45] [cursor=pointer]
+          - generic [ref=e46]:
+            - button "Active" [ref=e47] [cursor=pointer]
+            - button "Closed" [ref=e48] [cursor=pointer]
+        - generic [ref=e49]:
+          - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+          - generic [ref=e51]: Test Set
+          - generic [ref=e52]: Days Left to Edit
+          - generic [ref=e53]: Status
+          - generic [ref=e54]: Actions
+          - button "N41987A23017, Keely Form A 30 days ● Submitted Edit Assignment Add tests to test set" [ref=e55] [cursor=pointer]:
+            - generic [ref=e57] [cursor=pointer]: N41987A23017, Keely
+            - generic [ref=e60] [cursor=pointer]: Form A
+            - generic [ref=e62] [cursor=pointer]: 30 days
+            - generic [ref=e63] [cursor=pointer]:
+              - generic [ref=e64] [cursor=pointer]: ●
+              - text: Submitted
+            - generic [ref=e65] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e66] [cursor=pointer]
+              - button "Add tests to test set" [ref=e67] [cursor=pointer]
+              - button [ref=e68] [cursor=pointer]
+          - button "N43616A43945, Kellie Form A — ● Not Started Edit Assignment Add tests to test set" [ref=e69] [cursor=pointer]:
+            - generic [ref=e71] [cursor=pointer]: N43616A43945, Kellie
+            - generic [ref=e74] [cursor=pointer]: Form A
+            - generic [ref=e76] [cursor=pointer]: —
+            - generic [ref=e77] [cursor=pointer]:
+              - generic [ref=e78] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e79] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e80] [cursor=pointer]
+              - button "Add tests to test set" [ref=e81] [cursor=pointer]
+              - button [ref=e82] [cursor=pointer]
+          - button "N10234A58607, Deshawn Form A — ● Not Started Edit Assignment Add tests to test set" [ref=e83] [cursor=pointer]:
+            - generic [ref=e85] [cursor=pointer]: N10234A58607, Deshawn
+            - generic [ref=e88] [cursor=pointer]: Form A
+            - generic [ref=e90] [cursor=pointer]: —
+            - generic [ref=e91] [cursor=pointer]:
+              - generic [ref=e92] [cursor=pointer]: ●
+              - text: Not Started
+            - generic [ref=e93] [cursor=pointer]:
+              - button "Edit Assignment" [ref=e94] [cursor=pointer]
+              - button "Add tests to test set" [ref=e95] [cursor=pointer]
+              - button [ref=e96] [cursor=pointer]
+          - button "N88504A79591, Delilah Form A 0 days ● Expired Generate Report" [ref=e97] [cursor=pointer]:
+            - generic [ref=e99] [cursor=pointer]: N88504A79591, Delilah
+            - generic [ref=e102] [cursor=pointer]: Form A
+            - generic [ref=e104] [cursor=pointer]: 0 days
+            - generic [ref=e105] [cursor=pointer]:
+              - generic [ref=e106] [cursor=pointer]: ●
+              - text: Expired
+            - generic [ref=e107] [cursor=pointer]:
+              - button "Generate Report" [ref=e108] [cursor=pointer]
+              - button [ref=e109] [cursor=pointer]
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - generic [ref=e113]:
+            - img [ref=e114]
+            - heading "Notifications Center" [level=3] [ref=e118]
+          - generic [ref=e120]:
+            - generic [ref=e121]: 01/14/2026
+            - paragraph [ref=e122]:
+              - generic [ref=e123]: The RiversideScore platform will be down for maintenance on Thursday, January 22nd, from 8:00 PM
+              - generic [ref=e124]: to 12:00 AM CST.
+              - generic [ref=e125]: During this time, access will be unavailable. If you have any questions, please contact
+              - generic [ref=e126]: "Customer Support Monday- Friday 8AM- 4PM CST at:"
+            - paragraph [ref=e127]:
+              - generic [ref=e128]: "Tel:"
+              - link "800-323-9540" [ref=e129] [cursor=pointer]:
+                - /url: tel:8003239540
+              - generic [ref=e131]: "Email:"
+              - link "Inquiry@service.riversideinsights.com" [ref=e132] [cursor=pointer]:
+                - /url: mailto:Inquiry@service.riversideinsights.com
+            - paragraph [ref=e134]:
+              - generic [ref=e135]: We appreciate your patience as we work to improve the experience!
+        - generic [ref=e136]:
+          - generic [ref=e138]:
+            - img [ref=e139]
+            - heading "Resources" [level=3] [ref=e143]
+          - list [ref=e144]:
+            - listitem [ref=e145]:
+              - button "Riverside Learn" [ref=e146] [cursor=pointer]:
+                - heading "Riverside Learn" [level=6] [ref=e147] [cursor=pointer]
+                - img [ref=e149] [cursor=pointer]
+            - listitem [ref=e151]:
+              - button "Onboarding Tutorial Videos" [ref=e152] [cursor=pointer]:
+                - heading "Onboarding Tutorial Videos" [level=6] [ref=e153] [cursor=pointer]
+                - img [ref=e155] [cursor=pointer]
+            - listitem [ref=e157]:
+              - button "Quick Reference Guides" [ref=e158] [cursor=pointer]:
+                - heading "Quick Reference Guides" [level=6] [ref=e159] [cursor=pointer]
+                - img [ref=e161] [cursor=pointer]
+          - button "View All" [ref=e164] [cursor=pointer]
+```

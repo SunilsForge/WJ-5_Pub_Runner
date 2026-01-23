@@ -360,3 +360,5 @@ Large file detected: shard-3/playwright-report/data/3a2b8bfe81352f161eab8c52f39c
 Large file detected: shard-3/playwright-report/data/2fe4b543f8917254dff3a76ee2b725b96e9bcfd9.zip (174.75 MB)
 Large file detected: shard-10/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/trace.zip (105.64 MB)
 Large file detected: shard-10/playwright-report/data/75ce50604690dad7783c94bf03268603fad0d7ed.zip (105.64 MB)
+Large file detected: shard-1/test-results/content_validation-chrome--67738-tions-do-content-validation-chrome/trace.zip (130.36 MB)
+Large file detected: shard-1/playwright-report/data/4363557f4370e27340ad00fbcb9fdeeed8bbd3b6.zip (130.36 MB)
