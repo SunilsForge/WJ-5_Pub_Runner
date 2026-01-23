@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "174",
+    "timestamp": "20260123_000000",
+    "runReason": "running @InProgressTestAssignments|@SubmittedTestAssignments since it failed in regression as part of prod release",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@InProgressTestAssignments|@SubmittedTestAssignments"
+  },
+  {
     "runNumber": "173",
     "timestamp": "20260123_000000",
     "runReason": "trial 4",
