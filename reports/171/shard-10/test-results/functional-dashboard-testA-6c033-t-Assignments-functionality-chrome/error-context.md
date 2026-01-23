@@ -1,0 +1,148 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S11PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S11PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [active] [ref=e44]: Not Started
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [disabled] [ref=e47]
+                  - button "Closed" [disabled] [ref=e48]
+              - generic [ref=e49]:
+                - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+                - generic [ref=e51]: Test Set
+                - generic [ref=e52]: Days Left to Edit
+                - generic [ref=e53]: Status
+                - generic [ref=e54]: Actions
+                - button "N17140A73884, Emil Rapid Automatized Naming (RAN) — ● Not Started Edit Assignment Add tests to test set" [ref=e55] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N17140A73884, Emil
+                  - generic [ref=e60] [cursor=pointer]: Rapid Automatized Naming (RAN)
+                  - generic [ref=e62] [cursor=pointer]: —
+                  - generic [ref=e63] [cursor=pointer]:
+                    - generic [ref=e64] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e65] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e66] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e67] [cursor=pointer]
+                    - button [ref=e68] [cursor=pointer]
+                - button "N49808A97976, Jaylen Broad Achievement — ● Not Started Edit Assignment Add tests to test set" [ref=e69] [cursor=pointer]:
+                  - generic [ref=e71] [cursor=pointer]: N49808A97976, Jaylen
+                  - generic [ref=e74] [cursor=pointer]: Broad Achievement
+                  - generic [ref=e76] [cursor=pointer]: —
+                  - generic [ref=e77] [cursor=pointer]:
+                    - generic [ref=e78] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e79] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e80] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e81] [cursor=pointer]
+                    - button [ref=e82] [cursor=pointer]
+                - button "N49127A82984, Ellie General Intellectual Ability (GIA) — ● Not Started Edit Assignment Add tests to test set" [ref=e83] [cursor=pointer]:
+                  - generic [ref=e85] [cursor=pointer]: N49127A82984, Ellie
+                  - generic [ref=e88] [cursor=pointer]: General Intellectual Ability (GIA)
+                  - generic [ref=e90] [cursor=pointer]: —
+                  - generic [ref=e91] [cursor=pointer]:
+                    - generic [ref=e92] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e93] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e94] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e95] [cursor=pointer]
+                    - button [ref=e96] [cursor=pointer]
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - generic [ref=e100]:
+                  - img [ref=e101]
+                  - heading "Notifications Center" [level=3] [ref=e105]
+                - generic [ref=e107]:
+                  - generic [ref=e108]: 01/14/2026
+                  - paragraph [ref=e109]:
+                    - generic [ref=e110]: The RiversideScore platform will be down for maintenance on Thursday, January 22nd, from 8:00 PM
+                    - generic [ref=e111]: to 12:00 AM CST.
+                    - generic [ref=e112]: During this time, access will be unavailable. If you have any questions, please contact
+                    - generic [ref=e113]: "Customer Support Monday- Friday 8AM- 4PM CST at:"
+                  - paragraph [ref=e114]:
+                    - generic [ref=e115]: "Tel:"
+                    - link "800-323-9540" [ref=e116] [cursor=pointer]:
+                      - /url: tel:8003239540
+                    - generic [ref=e118]: "Email:"
+                    - link "Inquiry@service.riversideinsights.com" [ref=e119] [cursor=pointer]:
+                      - /url: mailto:Inquiry@service.riversideinsights.com
+                  - paragraph [ref=e121]:
+                    - generic [ref=e122]: We appreciate your patience as we work to improve the experience!
+              - generic [ref=e123]:
+                - generic [ref=e125]:
+                  - img [ref=e126]
+                  - heading "Resources" [level=3] [ref=e130]
+                - list [ref=e131]:
+                  - listitem [ref=e132]:
+                    - button "Riverside Learn" [ref=e133] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e134] [cursor=pointer]
+                      - img [ref=e136] [cursor=pointer]
+                  - listitem [ref=e138]:
+                    - button "Onboarding Tutorial Videos" [ref=e139] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e140] [cursor=pointer]
+                      - img [ref=e142] [cursor=pointer]
+                  - listitem [ref=e144]:
+                    - button "Quick Reference Guides" [ref=e145] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e146] [cursor=pointer]
+                      - img [ref=e148] [cursor=pointer]
+                - button "View All" [ref=e151] [cursor=pointer]
+      - contentinfo [ref=e152]:
+        - generic [ref=e153]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e154] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e155] [cursor=pointer]
+        - generic [ref=e156]:
+          - link "Riverside Insights Facebook" [ref=e157] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e158] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e159] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e160] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e161] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e162] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e163] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e164] [cursor=pointer]
+        - generic [ref=e165]:
+          - link "Terms of Use" [ref=e166] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e167]: "|"
+          - link "Privacy Policy" [ref=e168] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e169]: Footer region end
+```
