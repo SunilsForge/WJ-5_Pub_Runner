@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "172",
+    "timestamp": "20260123_000000",
+    "runReason": "Running smoke in prod Canada After Prod release V3",
+    "environment": "prodCanada",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments|@ChatBot|((?=.*@SPAREL)(?=.*@Content))"
+  },
+  {
     "runNumber": "171",
     "timestamp": "20260123_000000",
     "runReason": "prod Canada Smoke run after prod release JAN Trial 2",
