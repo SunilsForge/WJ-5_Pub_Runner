@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "175",
+    "timestamp": "20260129_000000",
+    "runReason": "Running smoke in stage as a part of patch",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments|@ChatBot|((?=.*@SPAREL)(?=.*@Content))"
+  },
+  {
     "runNumber": "174",
     "timestamp": "20260123_000000",
     "runReason": "running @InProgressTestAssignments|@SubmittedTestAssignments since it failed in regression as part of prod release",

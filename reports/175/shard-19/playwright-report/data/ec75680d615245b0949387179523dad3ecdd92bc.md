@@ -1,0 +1,126 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 09PwAut25Ex_01 ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "09PwAut25Ex_01 ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e37]:
+              - generic [ref=e38]: "Your subscription expires in 7 days:"
+              - generic [ref=e39]: Keep your reporting access by renewing today.
+              - button "Renew Now" [ref=e40]:
+                - link "Renew Now" [ref=e41] [cursor=pointer]:
+                  - /url: https://store.riversideinsights.com/p/woodcock-johnson-v-wj-v/
+              - button "✕" [ref=e42] [cursor=pointer]
+            - generic [ref=e43]:
+              - generic [ref=e44]:
+                - heading "My Test Assignments" [level=1] [ref=e45]
+                - button "Create New Test Assignment" [ref=e46] [cursor=pointer]
+              - generic [ref=e47]:
+                - generic [ref=e50]:
+                  - textbox [active] [ref=e51]: N96239A83012
+                  - button [ref=e52] [cursor=pointer]
+                - generic [ref=e53]:
+                  - button "Active" [disabled] [ref=e54]
+                  - button "Closed" [disabled] [ref=e55]
+              - generic [ref=e56]:
+                - generic "This is the student or individual being assessed." [ref=e57]: Examinee
+                - generic [ref=e58]: Test Set
+                - generic [ref=e59]: Days Left to Edit
+                - generic [ref=e60]: Status
+                - generic [ref=e61]: Actions
+                - generic [ref=e62] [cursor=pointer]:
+                  - button "N96239A83012, Florence" [ref=e63] [cursor=pointer]:
+                    - generic [ref=e64] [cursor=pointer]: N96239A83012, Florence
+                  - button "Form A (+2 more)" [ref=e65] [cursor=pointer]:
+                    - generic [ref=e67] [cursor=pointer]: Form A (+2 more)
+                  - button "90 days" [ref=e69] [cursor=pointer]
+                  - button "● In Progress" [ref=e70] [cursor=pointer]:
+                    - generic [ref=e71] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e72] [cursor=pointer]:
+                    - button "Edit Assignment" [ref=e73] [cursor=pointer]
+                    - button "Add tests to test set" [ref=e74] [cursor=pointer]
+                    - button [ref=e75] [cursor=pointer]
+            - generic [ref=e76]:
+              - generic [ref=e79]:
+                - img [ref=e80]
+                - heading "Notifications Center" [level=3] [ref=e84]
+              - generic [ref=e85]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - heading "Resources" [level=3] [ref=e92]
+                - list [ref=e93]:
+                  - listitem [ref=e94]:
+                    - button "Riverside Learn" [ref=e95] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e96] [cursor=pointer]
+                      - img [ref=e98] [cursor=pointer]
+                  - listitem [ref=e100]:
+                    - button "Onboarding Tutorial Videos" [ref=e101] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e102] [cursor=pointer]
+                      - img [ref=e104] [cursor=pointer]
+                  - listitem [ref=e106]:
+                    - button "Quick Reference Guides" [ref=e107] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e108] [cursor=pointer]
+                      - img [ref=e110] [cursor=pointer]
+                - button "View All" [ref=e113] [cursor=pointer]
+      - contentinfo [ref=e114]:
+        - generic [ref=e115]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e116] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e117] [cursor=pointer]
+        - generic [ref=e118]:
+          - link "Riverside Insights Facebook" [ref=e119] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e120] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e121] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e122] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e123] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e124] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e125] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e126] [cursor=pointer]
+        - generic [ref=e127]:
+          - button "Leave Feedback" [ref=e128] [cursor=pointer]
+          - generic [ref=e129]: "|"
+          - link "Terms of Use" [ref=e130] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e131]: "|"
+          - link "Privacy Policy" [ref=e132] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e133]: Footer region end
+  - region "Chat Widget" [ref=e134]:
+    - iframe [ref=e135]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e137]
+```
