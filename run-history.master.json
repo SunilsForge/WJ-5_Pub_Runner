@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "176",
+    "timestamp": "20260130_000000",
+    "runReason": "triggering smoke in STAGE as a part of STAGE patch V2",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "175",
     "timestamp": "20260129_000000",
     "runReason": "Running smoke in stage as a part of patch",
