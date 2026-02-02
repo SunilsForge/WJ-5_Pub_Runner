@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "177",
+    "timestamp": "20260202_000000",
+    "runReason": "running SMOEK in prod as a part of PROD pathing",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "176",
     "timestamp": "20260130_000000",
     "runReason": "triggering smoke in STAGE as a part of STAGE patch V2",
