@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "178",
+    "timestamp": "20260210_000000",
+    "runReason": "Running Smoke in stage as a part of 19 prod release",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "177",
     "timestamp": "20260202_000000",
     "runReason": "running SMOEK in prod as a part of PROD pathing",
