@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "181",
+    "timestamp": "20260212_000000",
+    "runReason": "running full regression in STAGE as part of 19 prod release",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments|@ChatBot|((?=.*@SPAREL)(?=.*@Content))"
+  },
+  {
     "runNumber": "180",
     "timestamp": "20260211_000000",
     "runReason": "Running SMOKE in stage as a part of prod release ^3",

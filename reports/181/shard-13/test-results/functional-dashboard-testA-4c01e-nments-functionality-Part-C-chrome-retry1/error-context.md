@@ -1,0 +1,101 @@
+# Page snapshot
+
+```yaml
+- dialog [ref=e2]:
+  - generic [ref=e3]:
+    - button "Main Navigation" [ref=e4] [cursor=pointer]
+    - button "Verbal Analogies" [ref=e5] [cursor=pointer]:
+      - generic [ref=e6] [cursor=pointer]: Verbal Analogies
+    - button "Examinee Information" [ref=e9] [cursor=pointer]:
+      - img [ref=e10] [cursor=pointer]
+      - generic [ref=e13] [cursor=pointer]:
+        - generic [ref=e14] [cursor=pointer]: N51200A46870, Addison
+        - generic [ref=e15] [cursor=pointer]: "Age: 5y Grade: Kindergarten"
+  - generic [ref=e17]:
+    - heading "Verbal Analogies" [level=2] [ref=e18]
+    - generic [ref=e19]:
+      - generic [ref=e20]: Read the instructions below or
+      - button "begin the test." [disabled] [ref=e21]
+  - generic [ref=e22]:
+    - heading "Things to Know:" [level=2] [ref=e24]
+    - generic [ref=e28]: This test uses voice capture.
+    - button "Check Audio Settings" [ref=e29] [cursor=pointer]
+  - generic [ref=e30]:
+    - paragraph [ref=e31]: Administration Overview
+    - generic [ref=e32]:
+      - generic [ref=e33]: ✦
+      - paragraph [ref=e35]:
+        - text: "Basal: 5 consecutive lowest-numbered items administered correct or Item 1"
+        - text: "Ceiling: 5 consecutive highest-numbered items administered incorrect"
+        - generic [ref=e36]: and
+        - text: no higher-numbered items administered are correct,
+        - generic [ref=e37]: or
+        - text: the last item on the test
+    - generic [ref=e38]:
+      - generic [ref=e39]: ✦
+      - paragraph [ref=e41]: Do not penalize the examinee for mispronunciations resulting from articulation errors, dialect variations, or regional speech patterns.
+    - generic [ref=e42]:
+      - generic [ref=e43]: ✦
+      - paragraph [ref=e45]: Know the exact pronunciation of each test item before administering this test.
+    - generic [ref=e46]:
+      - generic [ref=e47]: ✦
+      - paragraph [ref=e49]: The platform alerts you when 30 seconds have elapsed on any test item. Encourage the examinee to respond. If the examinee does not appear to be actively engaged in the item, select No Response.
+    - generic [ref=e50]:
+      - generic [ref=e51]: ✦
+      - paragraph [ref=e53]:
+        - text: Score a response
+        - generic [ref=e54]: correct
+        - text: if it differs from the correct response(s) provided only in verb tense or number (singular/plural), unless the scoring key indicates otherwise.
+    - generic [ref=e55]:
+      - generic [ref=e56]: ✦
+      - paragraph [ref=e58]:
+        - text: Score a response
+        - generic [ref=e59]: incorrect
+        - text: if the examinee substitutes a different part of speech, such as a noun for a verb, unless the scoring key indicates otherwise.
+    - generic [ref=e60]:
+      - generic [ref=e61]: ✦
+      - paragraph [ref=e63]:
+        - text: "Unless the scoring key indicates otherwise, accept only one-word responses as correct. If the examinee gives a two-word response, say:"
+        - strong [ref=e65]:
+          - generic [ref=e66]:
+            - text: Tell me
+            - generic [ref=e67]: just
+            - text: one word.
+        - text: "Very young examinees may sometimes respond to this query by saying a word that is unrelated to the item. If that happens, redirect the examinee by repeating the item and then saying:"
+        - strong [ref=e69]:
+          - generic [ref=e70]:
+            - text: Tell me
+            - generic [ref=e71]: just
+            - text: one word.
+    - generic [ref=e72]:
+      - generic [ref=e73]: ✦
+      - paragraph [ref=e75]: You may repeat any item on this test if the examinee requests it.
+    - generic [ref=e76]:
+      - generic [ref=e77]: ✦
+      - paragraph [ref=e79]: This test contains one or more Sample Items.
+    - generic [ref=e80]:
+      - generic [ref=e81]: ✦
+      - paragraph [ref=e83]: The platform selects an appropriate starting point based on the examinee’s age or grade/education level.
+    - generic [ref=e84]:
+      - generic [ref=e85]: ✦
+      - paragraph [ref=e87]: The test ends when the examinee has met the basal and ceiling requirements.
+    - paragraph [ref=e88]: Scoring
+    - generic [ref=e89]:
+      - generic [ref=e90]: ✦
+      - paragraph [ref=e92]: If the examinee provides a response that requires querying, click the response and follow the instructions to query for more information. Then select the response option from the scoring key that matches the examinee’s next response.
+    - generic [ref=e93]:
+      - generic [ref=e94]: ✦
+      - paragraph [ref=e96]: The platform assigns 1 point for correct responses and 0 points for incorrect responses.
+    - generic [ref=e97]:
+      - generic [ref=e98]: ✦
+      - paragraph [ref=e100]: The platform computes the total test score by summing the item scores for all administered items and adding 1 point for each unadministered item below the basal.
+    - generic [ref=e101]:
+      - generic [ref=e102]: ✦
+      - paragraph [ref=e104]: For each item administered, select the response option from the scoring key that matches the examinee’s response. If the examinee provides a response that is not listed in the scoring key, use the Other option to assign it a score of 1 (correct) or 0 (incorrect).
+  - generic [ref=e105]:
+    - button "Letʼs Begin" [ref=e106] [cursor=pointer]
+    - button "SCROLL FOR MORE ↓" [ref=e107] [cursor=pointer]:
+      - text: SCROLL
+      - text: FOR MORE
+      - text: ↓
+```
