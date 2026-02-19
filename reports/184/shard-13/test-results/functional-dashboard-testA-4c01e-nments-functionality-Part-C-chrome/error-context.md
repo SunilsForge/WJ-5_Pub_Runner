@@ -1,0 +1,188 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - button "Show Main Navigation" [ref=e7] [cursor=pointer]
+    - generic [ref=e8]:
+      - button "Academic Vocabulary 677" [ref=e9] [cursor=pointer]: Academic Vocabulary
+      - button "View Test Information" [ref=e10] [cursor=pointer]:
+        - img [ref=e11] [cursor=pointer]
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - button "Examinee Information" [ref=e16] [cursor=pointer]:
+          - img [ref=e17] [cursor=pointer]
+          - generic [ref=e20] [cursor=pointer]:
+            - generic [ref=e21] [cursor=pointer]: N17983A77828, Horace
+            - generic [ref=e22] [cursor=pointer]: "Age: 5y Grade: Kindergarten"
+        - button "Your browser is blocking voice capture" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]:
+        - button "Flag Item" [ref=e25] [cursor=pointer]:
+          - generic [ref=e26] [cursor=pointer]: Flag
+        - button "Open Notes" [ref=e27] [cursor=pointer]:
+          - generic [ref=e28] [cursor=pointer]: Note
+  - region "Examiner Assessment view" [ref=e29]:
+    - generic [ref=e30]:
+      - button "Expand/Collapse Navigation" [ref=e31]:
+        - img [ref=e33]
+      - button [ref=e37]:
+        - img [ref=e38]
+      - generic [ref=e41]:
+        - generic [ref=e44]: Starting Point
+        - radio "Item 1" [checked] [ref=e47]:
+          - generic [ref=e48]: Item 1
+          - img [ref=e49]
+        - radio "Item 2" [checked] [ref=e52]:
+          - generic [ref=e53]: Item 2
+          - img [ref=e54]
+        - radio "Item 3" [checked] [ref=e57]:
+          - generic [ref=e58]: Item 3
+          - img [ref=e59]
+        - radio "Item 4" [checked] [ref=e62]:
+          - generic [ref=e63]: Item 4
+          - img [ref=e64]
+        - radio "Item 5" [checked] [ref=e67]:
+          - generic [ref=e68]: Item 5
+          - img [ref=e69]
+        - radio "Item 6" [checked] [ref=e72]:
+          - generic [ref=e73]: Item 6
+          - img [ref=e74]
+        - radio "Item 7" [checked] [ref=e77]:
+          - generic [ref=e78]: Item 7
+          - img [ref=e79]
+        - radio "Item 8" [checked] [ref=e82]:
+          - generic [ref=e83]: Item 8
+          - img [ref=e84]
+        - radio "Item 9" [checked] [ref=e87]:
+          - generic [ref=e88]: Item 9
+          - img [ref=e89]
+        - radio "Item 10" [checked] [ref=e92]:
+          - generic [ref=e93]: Item 10
+          - img [ref=e94]
+        - radio "Item 11" [checked] [ref=e99]:
+          - generic [ref=e100]: Item 11
+          - img [ref=e101]
+        - radio "Item 12" [checked] [ref=e104]:
+          - generic [ref=e105]: Item 12
+          - img [ref=e106]
+        - radio "Item 13" [checked] [ref=e109]:
+          - generic [ref=e110]: Item 13
+          - img [ref=e111]
+        - radio "Item 14" [checked] [ref=e114]:
+          - generic [ref=e115]: Item 14
+          - img [ref=e116]
+        - radio "Item 15" [checked] [ref=e119]:
+          - generic [ref=e120]: Item 15
+          - img [ref=e121]
+        - radio "Item 16" [checked] [ref=e124]:
+          - generic [ref=e125]: Item 16
+          - img [ref=e126]
+        - radio "Item 17" [checked] [ref=e129]:
+          - generic [ref=e130]: Item 17
+          - img [ref=e131]
+        - radio "Item 18" [checked] [ref=e134]:
+          - generic [ref=e135]: Item 18
+          - img [ref=e136]
+        - radio "Item 19" [checked] [ref=e139]:
+          - generic [ref=e140]: Item 19
+          - img [ref=e141]
+        - radio "Item 20" [checked] [ref=e144]:
+          - generic [ref=e145]: Item 20
+          - img [ref=e146]
+        - radio "Item 21" [checked] [ref=e149]:
+          - generic [ref=e150]: Item 21
+          - img [ref=e151]
+        - radio "Item 22" [checked] [ref=e154]:
+          - generic [ref=e155]: Item 22
+          - img [ref=e156]
+        - radio "Item 23" [checked] [ref=e159]:
+          - generic [ref=e160]: Item 23
+          - img [ref=e161]
+        - radio "Item 24" [checked] [ref=e164]:
+          - generic [ref=e165]: Item 24
+          - img [ref=e166]
+        - radio "Item 25" [checked] [ref=e169]:
+          - generic [ref=e170]: Item 25
+          - img [ref=e171]
+        - radio "Item 26" [checked] [ref=e174]:
+          - generic [ref=e175]: Item 26
+          - img [ref=e176]
+        - radio "Item 27" [checked] [ref=e179]:
+          - generic [ref=e180]: Item 27
+          - img [ref=e181]
+        - radio "Item 28" [checked] [ref=e184]:
+          - generic [ref=e185]: Item 28
+          - img [ref=e186]
+        - radio "Item 29" [checked] [ref=e189]:
+          - generic [ref=e190]: Item 29
+          - img [ref=e191]
+        - radio "Item 30" [checked] [ref=e194]:
+          - generic [ref=e195]: Item 30
+          - img [ref=e196]
+        - radio "Item 31" [checked] [ref=e199]:
+          - generic [ref=e200]: Item 31
+          - img [ref=e201]
+        - radio "Item 32" [checked] [ref=e204]:
+          - generic [ref=e205]: Item 32
+          - img [ref=e206]
+        - radio "Item 33" [checked] [ref=e209]:
+          - generic [ref=e210]: Item 33
+          - img [ref=e211]
+        - radio "Item 34" [checked] [ref=e214]:
+          - generic [ref=e215]: Item 34
+          - img [ref=e216]
+        - radio "Item 35" [checked] [ref=e219]:
+          - generic [ref=e220]: Item 35
+          - img [ref=e221]
+        - radio "Item 36" [checked] [ref=e224]:
+          - generic [ref=e225]: Item 36
+          - img [ref=e226]
+        - generic [ref=e230]: End of Items
+      - button [ref=e232]:
+        - img [ref=e233]
+    - generic [ref=e236]:
+      - generic [ref=e237]:
+        - img [ref=e238]
+        - generic [ref=e243]:
+          - generic [ref=e244]: Item 10
+          - paragraph [ref=e245]:
+            - strong [ref=e247]:
+              - generic [ref=e248]: Listen to what I say. What is the word for summer, fall, winter, and spring?
+      - generic [ref=e249]:
+        - img [ref=e250]
+        - radio "seasons" [ref=e254] [cursor=pointer]
+      - generic [ref=e255]:
+        - img [ref=e256]
+        - radio "Incorrect" [ref=e260] [cursor=pointer]
+      - generic [ref=e261]:
+        - img [ref=e262]
+        - generic [ref=e267]:
+          - generic [ref=e268]: "Other:"
+          - generic [ref=e269]:
+            - radio "0" [ref=e270] [cursor=pointer]
+            - radio "1" [ref=e271] [cursor=pointer]
+          - 'textbox "Optional: Examinee''s Response" [disabled] [ref=e272]'
+      - generic [ref=e273]:
+        - radio "I Donʼt Know" [checked] [ref=e274] [cursor=pointer]
+        - radio "No Response" [ref=e275] [cursor=pointer]
+      - generic [ref=e276]:
+        - generic [ref=e277]:
+          - generic [ref=e278]: "0"
+          - 'generic "itemId: 16487" [ref=e279]': ITEM SCORE
+        - generic [ref=e280]:
+          - text: Basal
+          - img [ref=e283]
+        - generic [ref=e286]:
+          - text: Ceiling
+          - img [ref=e289]
+        - button "End Test" [ref=e293] [cursor=pointer]
+  - region "Examinee View" [ref=e294]:
+    - generic [ref=e296]:
+      - button "Hide examinee content - content is currently displayed" [ref=e297] [cursor=pointer]:
+        - generic [ref=e298] [cursor=pointer]: Hide
+      - button "Activate Tablet Control" [ref=e299] [cursor=pointer]:
+        - generic [ref=e300] [cursor=pointer]: Control
+      - button "Connection Status - Comms Up" [ref=e301] [cursor=pointer]
+      - button "Collapse examinee view" [ref=e302] [cursor=pointer]
+    - img [ref=e305]
+```
