@@ -1,0 +1,166 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: 10PwAut25AH ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| Subscription Details"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30] [cursor=pointer]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+      - main [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - heading [level=1] [ref=e38]: My Test Assignments
+              - button [ref=e39] [cursor=pointer]: Create New Test Assignment
+            - generic [ref=e40]:
+              - generic [ref=e43]:
+                - textbox [ref=e44]: N8921A80324, Geovanni
+                - button [ref=e45] [cursor=pointer]
+              - generic [ref=e46]:
+                - button [disabled] [ref=e47]: Active
+                - button [disabled] [ref=e48]: Closed
+            - generic [ref=e49]:
+              - generic [ref=e50]: Examinee
+              - generic [ref=e51]: Test Set
+              - generic [ref=e52]: Days Left to Edit
+              - generic [ref=e53]: Status
+              - generic [ref=e54]: Actions
+              - generic [ref=e55] [cursor=pointer]:
+                - button [ref=e56] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N8921A80324, Geovanni
+                - button [ref=e58] [cursor=pointer]:
+                  - generic [ref=e60] [cursor=pointer]: General Intellectual Ability (GIA)
+                - button [ref=e62] [cursor=pointer]: —
+                - button [ref=e63] [cursor=pointer]:
+                  - generic [ref=e64] [cursor=pointer]: ●
+                  - text: Not Started
+                - generic [ref=e65] [cursor=pointer]:
+                  - button [ref=e66] [cursor=pointer]
+                  - button [ref=e67] [cursor=pointer]
+                  - button [ref=e68] [cursor=pointer]
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - generic [ref=e72]:
+                - img [ref=e73]
+                - heading [level=3] [ref=e77]: Notifications Center
+              - generic [ref=e78]:
+                - generic [ref=e79]:
+                  - generic [ref=e80]: 02/11/2026
+                  - paragraph [ref=e81]:
+                    - generic [ref=e82]: The RiversideScore platform will be down for maintenance on Thursday, February 19th, from 8:00 PM
+                    - generic [ref=e83]: to 12:00 AM CST.
+                    - generic [ref=e84]: During this time, access will be unavailable. If you have any questions, please contact
+                    - generic [ref=e85]: "Customer Support Monday- Friday 8AM- 4PM CST at:"
+                  - paragraph [ref=e86]:
+                    - generic [ref=e87]: "Tel:"
+                    - link [ref=e88] [cursor=pointer]:
+                      - /url: tel:8003239540
+                      - text: 800-323-9540
+                    - generic [ref=e90]: "Email:"
+                    - link [ref=e91] [cursor=pointer]:
+                      - /url: mailto:Inquiry@service.riversideinsights.com
+                      - text: Inquiry@service.riversideinsights.com
+                  - paragraph [ref=e93]:
+                    - generic [ref=e94]: We appreciate your patience as we work to improve the experience!
+                - generic [ref=e95]:
+                  - generic [ref=e96]: 02/10/2026
+                  - paragraph [ref=e97]:
+                    - generic [ref=e99]: Do you use both the BDI-3 and WJ V? We'd love to learn from your experience. Sign up for a quick conversation to share how you use these tools - and you'll be entered to win a $25 gift card.
+                  - paragraph [ref=e100]:
+                    - link [ref=e101] [cursor=pointer]:
+                      - /url: https://calendly.com/lila-chase-riversideinsights/bdi3-and-wj-v?month=2026-02
+                      - generic [ref=e102] [cursor=pointer]: Schedule a Time
+            - generic [ref=e103]:
+              - generic [ref=e105]:
+                - img [ref=e106]
+                - heading [level=3] [ref=e110]: Resources
+              - list [ref=e111]:
+                - listitem [ref=e112]:
+                  - button [ref=e113] [cursor=pointer]:
+                    - heading [level=6] [ref=e114] [cursor=pointer]: Riverside Learn
+                    - img [ref=e116] [cursor=pointer]
+                - listitem [ref=e118]:
+                  - button [ref=e119] [cursor=pointer]:
+                    - heading [level=6] [ref=e120] [cursor=pointer]: Onboarding Tutorial Videos
+                    - img [ref=e122] [cursor=pointer]
+                - listitem [ref=e124]:
+                  - button [ref=e125] [cursor=pointer]:
+                    - heading [level=6] [ref=e126] [cursor=pointer]: Quick Reference Guides
+                    - img [ref=e128] [cursor=pointer]
+              - button [ref=e131] [cursor=pointer]: View All
+    - contentinfo [ref=e132]:
+      - generic [ref=e133]: Footer region,
+      - link [ref=e134] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img [ref=e135] [cursor=pointer]
+      - generic [ref=e136]:
+        - link [ref=e137] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e138] [cursor=pointer]
+        - link [ref=e139] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e140] [cursor=pointer]
+        - link [ref=e141] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e142] [cursor=pointer]
+        - link [ref=e143] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e144] [cursor=pointer]
+      - generic [ref=e145]:
+        - button [ref=e146] [cursor=pointer]: Leave Feedback
+        - generic [ref=e147]: "|"
+        - link [ref=e148] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e149]: "|"
+        - link [ref=e150] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e151]: Footer region end
+  - dialog [ref=e153]:
+    - generic [ref=e154]:
+      - heading "Edit Test Assignment" [level=1] [ref=e155]
+      - generic [ref=e163]:
+        - generic [ref=e164]:
+          - generic [ref=e165]: Examinee
+          - generic [ref=e166]: Complete
+        - generic [ref=e167]:
+          - generic [ref=e168]: Test Sets
+          - generic [ref=e169]: In Progress
+        - generic [ref=e170]:
+          - generic [ref=e171]: Settings
+          - generic [ref=e172]: Complete
+    - generic [ref=e173]:
+      - heading "Select a Test Set" [level=3] [ref=e174]
+      - generic [ref=e178]:
+        - generic "Select Test Set" [ref=e179]: Test Set Name
+        - tree "Select Test Set" [ref=e180] [cursor=pointer]:
+          - generic [ref=e181] [cursor=pointer]: Select Test Set
+    - generic [ref=e183]:
+      - button "Cancel" [ref=e184] [cursor=pointer]
+      - generic [ref=e185]:
+        - button "Back" [ref=e186] [cursor=pointer]
+        - button "Update" [disabled] [ref=e187]
+```

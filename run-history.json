@@ -8,6 +8,14 @@
     "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
   },
   {
+    "runNumber": "185",
+    "timestamp": "20260220_000000",
+    "runReason": "Running Regression in prod as part of 19 release ",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "184",
     "timestamp": "20260219_000000",
     "runReason": "Again ringing 3rd time regression in STAGE as a part of 19 release",
