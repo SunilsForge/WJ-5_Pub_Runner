@@ -542,3 +542,4 @@ Large file detected: shard-3/playwright-report/data/b4c74d6b97800b39dbd89ddae598
 Large file detected: shard-3/test-results/derived_scores(compounds &-7ae5e-FGC-cluster-generate-report-chrome/trace.zip (178.08 MB)
 Large file detected: shard-2/playwright-report/data/aa27af647db0f1aa154c5b6aaf910e858678486d.zip (118.40 MB)
 Large file detected: shard-2/test-results/derived_scores(compounds &-5b53b-BIA-cluster-generate-report-chrome/trace.zip (118.40 MB)
+Large file detected: shard-8/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/trace.zip (109.33 MB)

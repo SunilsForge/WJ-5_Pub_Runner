@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "186",
+    "timestamp": "20260220_000000",
+    "runReason": "running SMOKE in Prodcanda after 19 prod release",
+    "environment": "prodCanada",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "184",
     "timestamp": "20260219_000000",
     "runReason": "Again ringing 3rd time regression in STAGE as a part of 19 release",
