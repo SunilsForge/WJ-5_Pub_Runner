@@ -621,3 +621,7 @@ Large file detected: shard-3/test-results/derived_scores(compounds &-7ae5e-FGC-c
 Large file detected: shard-3/playwright-report/data/ad048e12961cc8ec6bcaf36b5ea3d0190b9d74ed.zip (238.24 MB)
 Large file detected: shard-5/test-results/derived_scores(compounds &-c570f--GV-cluster-generate-report-chrome/trace.zip (153.00 MB)
 Large file detected: shard-5/playwright-report/data/dd331d47009095c72f975b74f4dbb160c8d46b04.zip (153.00 MB)
+Large file detected: shard-3/test-results/ReroutingandLeftNav-SNDSUB-39869-k-Scenario-for-SSP1-Test-UI-chrome/trace.zip (109.24 MB)
+Large file detected: shard-3/test-results/ReroutingandLeftNav-SNDSUB-35380-st-scenariofor-SSP1-Test-UI-chrome/trace.zip (143.65 MB)
+Large file detected: shard-3/playwright-report/data/f7c2eb8045b69ba396ab4f868af6c5ecd0dd1455.zip (143.65 MB)
+Large file detected: shard-3/playwright-report/data/f6415bb6862faa162c24e7b223f09a1603dc28ef.zip (109.24 MB)
