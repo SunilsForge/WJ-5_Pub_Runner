@@ -1,0 +1,160 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: S11PwAut25AH ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| Subscription Details"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30] [cursor=pointer]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+      - main [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - heading [level=1] [ref=e38]: My Test Assignments
+              - button [ref=e39] [cursor=pointer]: Create New Test Assignment
+            - generic [ref=e40]:
+              - generic [ref=e43]:
+                - textbox [ref=e44]: N24143A81827, Lonzo
+                - button [ref=e45] [cursor=pointer]
+              - generic [ref=e46]:
+                - button [disabled] [ref=e47]: Active
+                - button [disabled] [ref=e48]: Closed
+            - generic [ref=e49]:
+              - generic [ref=e50]: Examinee
+              - generic [ref=e51]: Test Set
+              - generic [ref=e52]: Days Left to Edit
+              - generic [ref=e53]: Status
+              - generic [ref=e54]: Actions
+              - generic [ref=e55] [cursor=pointer]:
+                - button [ref=e56] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N24143A81827, Lonzo
+                - button [ref=e58] [cursor=pointer]:
+                  - generic [ref=e60] [cursor=pointer]: General Intellectual Ability (GIA)
+                - button [ref=e62] [cursor=pointer]: —
+                - button [ref=e63] [cursor=pointer]:
+                  - generic [ref=e64] [cursor=pointer]: ●
+                  - text: Not Started
+                - generic [ref=e65] [cursor=pointer]:
+                  - button [ref=e66] [cursor=pointer]
+                  - button [ref=e67] [cursor=pointer]
+                  - button [ref=e68] [cursor=pointer]
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - generic [ref=e72]:
+                - img [ref=e73]
+                - heading [level=3] [ref=e77]: Notifications Center
+              - generic [ref=e78]:
+                - generic [ref=e79]:
+                  - generic [ref=e80]: 02/20/2026
+                  - generic [ref=e81]:
+                    - paragraph [ref=e82]:
+                      - strong [ref=e83]:
+                        - generic [ref=e84]: Big updates. More flexibility. Even more control.
+                    - paragraph [ref=e85]:
+                      - link [ref=e86] [cursor=pointer]:
+                        - /url: https://info.riversideinsights.com/hubfs/Clinical%20-%20Sales%20and%20Services%20Collateral/WJ%20V/WJ%20V%20Release%20Notes%2002_19_2026.docx
+                        - text: Check out the full release notes here.
+                    - paragraph [ref=e87]: We’ve extended testing windows from 30 days to 90 days to better meet testing and reporting needs. You’ll also find a new Leave Feedback button, subscription alerts, and more enhancements designed to make managing your experience easier.
+                    - paragraph [ref=e88]: And we’re not slowing down — exciting spring updates are coming, including offline administration.
+                - generic [ref=e89]:
+                  - generic [ref=e90]: 02/10/2026
+                  - paragraph [ref=e91]:
+                    - generic [ref=e93]: Do you use both the BDI-3 and WJ V? We'd love to learn from your experience. Sign up for a quick conversation to share how you use these tools - and you'll be entered to win a $25 gift card.
+                  - paragraph [ref=e94]:
+                    - link [ref=e95] [cursor=pointer]:
+                      - /url: https://calendly.com/lila-chase-riversideinsights/bdi3-and-wj-v?month=2026-02
+                      - generic [ref=e96] [cursor=pointer]: Schedule a Time
+            - generic [ref=e97]:
+              - generic [ref=e99]:
+                - img [ref=e100]
+                - heading [level=3] [ref=e104]: Resources
+              - list [ref=e105]:
+                - listitem [ref=e106]:
+                  - button [ref=e107] [cursor=pointer]:
+                    - heading [level=6] [ref=e108] [cursor=pointer]: Riverside Learn
+                    - img [ref=e110] [cursor=pointer]
+                - listitem [ref=e112]:
+                  - button [ref=e113] [cursor=pointer]:
+                    - heading [level=6] [ref=e114] [cursor=pointer]: Onboarding Tutorial Videos
+                    - img [ref=e116] [cursor=pointer]
+                - listitem [ref=e118]:
+                  - button [ref=e119] [cursor=pointer]:
+                    - heading [level=6] [ref=e120] [cursor=pointer]: Quick Reference Guides
+                    - img [ref=e122] [cursor=pointer]
+              - button [ref=e125] [cursor=pointer]: View All
+    - contentinfo [ref=e126]:
+      - generic [ref=e127]: Footer region,
+      - link [ref=e128] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img [ref=e129] [cursor=pointer]
+      - generic [ref=e130]:
+        - link [ref=e131] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e132] [cursor=pointer]
+        - link [ref=e133] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e134] [cursor=pointer]
+        - link [ref=e135] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e136] [cursor=pointer]
+        - link [ref=e137] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e138] [cursor=pointer]
+      - generic [ref=e139]:
+        - button [ref=e140] [cursor=pointer]: Leave Feedback
+        - generic [ref=e141]: "|"
+        - link [ref=e142] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e143]: "|"
+        - link [ref=e144] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e145]: Footer region end
+  - dialog [ref=e147]:
+    - generic [ref=e148]:
+      - heading "Edit Test Assignment" [level=1] [ref=e149]
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - generic [ref=e159]: Examinee
+          - generic [ref=e160]: Complete
+        - generic [ref=e161]:
+          - generic [ref=e162]: Test Sets
+          - generic [ref=e163]: In Progress
+        - generic [ref=e164]:
+          - generic [ref=e165]: Settings
+          - generic [ref=e166]: Complete
+    - generic [ref=e167]:
+      - heading "Select a Test Set" [level=3] [ref=e168]
+      - generic [ref=e172]:
+        - generic "Select Test Set" [ref=e173]: Test Set Name
+        - tree "Select Test Set" [ref=e174] [cursor=pointer]:
+          - generic [ref=e175] [cursor=pointer]: Select Test Set
+    - generic [ref=e177]:
+      - button "Cancel" [ref=e178] [cursor=pointer]
+      - generic [ref=e179]:
+        - button "Back" [ref=e180] [cursor=pointer]
+        - button "Update" [disabled] [ref=e181]
+```

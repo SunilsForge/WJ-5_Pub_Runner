@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "190",
+    "timestamp": "20260302_000000",
+    "runReason": "Running SMOKE in prod as a part of patch i guess.",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "189",
     "timestamp": "20260227_000000",
     "runReason": "Running SMOEK in stage as a part of timer test issues and adding _1 to the username ",
