@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "192",
+    "timestamp": "20260306_000000",
+    "runReason": "Running SMOKE in PROD as part of HOT fix",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "191",
     "timestamp": "20260305_000000",
     "runReason": "Running SMOKE in stage a sa part of HOT fix release",
