@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "193",
+    "timestamp": "20260316_000000",
+    "runReason": "running (?=.*@Aut_Eng_01)(?=.*@smoke) in qa for personal test",
+    "environment": "qa",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Aut_Eng_01)(?=.*@smoke)"
+  },
+  {
     "runNumber": "192",
     "timestamp": "20260306_000000",
     "runReason": "Running SMOKE in PROD as part of HOT fix",
