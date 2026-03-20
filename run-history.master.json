@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "194",
+    "timestamp": "20260320_000000",
+    "runReason": "running full regression in PROD to check the derived scores changes",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "193",
     "timestamp": "20260318_000000",
     "runReason": "running (?=.*@Aut_Eng_01)(?=.*@smoke) in qa for personal test",
