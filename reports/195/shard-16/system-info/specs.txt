@@ -46,7 +46,7 @@ Vulnerability Vmscape:                   Not affected
 -e 
 Memory Information:
                total        used        free      shared  buff/cache   available
-Mem:            15Gi       1.1Gi       8.3Gi        45Mi       6.6Gi        14Gi
+Mem:            15Gi       1.2Gi       8.2Gi        45Mi       6.6Gi        14Gi
 Swap:          3.0Gi          0B       3.0Gi
 -e 
 Disk Information:
@@ -61,7 +61,7 @@ tmpfs           7.9G     0  7.9G   0% /proc/scsi
 tmpfs           7.9G     0  7.9G   0% /sys/firmware
 -e 
 System Load:
- 15:10:37 up 1 min,  0 user,  load average: 1.07, 0.39, 0.14
+ 16:57:14 up 1 min,  0 user,  load average: 1.29, 0.46, 0.17
 -e 
 Container Information:
 PRETTY_NAME="Ubuntu 24.04.2 LTS"

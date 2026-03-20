@@ -1,0 +1,86 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - main "Clinical Login" [ref=e4]:
+      - generic [ref=e5]:
+        - img "Riverside Insights Logo" [ref=e6]
+        - heading "Looking for the Canadian login page? Click Here" [level=4] [ref=e8]:
+          - text: Looking for the Canadian login page?
+          - link "Click Here" [ref=e9] [cursor=pointer]:
+            - /url: https://ca.riversidescore.com
+        - heading "Riverside Updates" [level=1] [ref=e10]
+      - generic [ref=e11]:
+        - img "Riverside Score Logo" [ref=e12]
+        - form "Sign in details" [ref=e13]:
+          - generic [ref=e14]:
+            - generic [ref=e15]: USERNAME
+            - textbox "USERNAME" [active] [ref=e17]
+            - generic [ref=e19]: PASSWORD
+            - textbox "PASSWORD" [ref=e21]
+            - alert [ref=e22]: Username and/or Password is incorrect
+            - button "Sign In" [ref=e23] [cursor=pointer]
+            - generic [ref=e24]:
+              - checkbox "Remember Me" [ref=e25] [cursor=pointer]:
+                - generic [ref=e26] [cursor=pointer]: Remember Me
+              - link "Forgot my password" [ref=e29] [cursor=pointer]:
+                - /url: /forgot
+          - generic [ref=e30]:
+            - heading "Are you looking to purchase our products?" [level=4] [ref=e31]
+            - link "Click Here!" [ref=e32] [cursor=pointer]:
+              - /url: https://riversideinsights.com/explore
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - text: For help accessing
+          - generic [ref=e35]: Riverside Score™
+          - text: ", see the"
+          - link "online help" [ref=e36] [cursor=pointer]:
+            - /url: https://onlinehelp.riversideinsights.com/Help/Riverside_Score/index.htm#t=Overview.htm
+          - text: for signing in.
+        - link "Check Platform Status" [ref=e38] [cursor=pointer]:
+          - /url: https://riversideinsights.com/platform-status
+    - contentinfo [ref=e39]:
+      - generic [ref=e40]: Footer region,
+      - link "w w w dot riverside insights dot com" [ref=e41] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img "Riverside Insights Website" [ref=e42] [cursor=pointer]
+      - generic [ref=e43]:
+        - link "Riverside Insights Facebook" [ref=e44] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img "Riverside Insights Facebook" [ref=e45] [cursor=pointer]
+        - link "Riverside Insights Twitter" [ref=e46] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img "Riverside Insights Twitter" [ref=e47] [cursor=pointer]
+        - link "Riverside Insights LinkedIn" [ref=e48] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img "Riverside Insights LinkedIn" [ref=e49] [cursor=pointer]
+        - link "Riverside Insights Instagram" [ref=e50] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img "Riverside Insights Instagram" [ref=e51] [cursor=pointer]
+      - generic [ref=e52]:
+        - img "WJ IV Mobile Data Solution" [ref=e53]
+        - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e54] [cursor=pointer]
+        - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e55] [cursor=pointer]
+      - generic [ref=e56]:
+        - img "Bdi 3 Mobile Data Solution" [ref=e57]
+        - generic [ref=e58]:
+          - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e59] [cursor=pointer]
+          - button "Download BDI-3 Mobile App from Google Play" [ref=e60] [cursor=pointer]
+          - button "Download BDI-3 Mobile App from App Store" [ref=e61] [cursor=pointer]
+      - generic [ref=e62]:
+        - button "Leave Feedback" [ref=e63] [cursor=pointer]
+        - generic [ref=e64]: "|"
+        - link "Terms of Use" [ref=e65] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+        - generic [ref=e66]: "|"
+        - link "Privacy Policy" [ref=e67] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+      - generic [ref=e68]: Footer region end
+  - region "Chat Widget" [ref=e69]:
+    - iframe [ref=e70]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e72]
+```
