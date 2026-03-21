@@ -1,0 +1,166 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: 10PwAut25AH ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| Subscription Details"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30] [cursor=pointer]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+      - main [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - heading [level=1] [ref=e38]: My Test Assignments
+              - button [ref=e39] [cursor=pointer]: Create New Test Assignment
+            - generic [ref=e40]:
+              - generic [ref=e43]:
+                - textbox [ref=e44]: N64351A88032, Lawson
+                - button [ref=e45] [cursor=pointer]
+              - generic [ref=e46]:
+                - button [disabled] [ref=e47]: Active
+                - button [disabled] [ref=e48]: Closed
+            - generic [ref=e49]:
+              - generic [ref=e50]: Examinee
+              - generic [ref=e51]: Test Set
+              - generic [ref=e52]: Days Left to Edit
+              - generic [ref=e53]: Status
+              - generic [ref=e54]: Actions
+              - generic [ref=e55] [cursor=pointer]:
+                - button [ref=e56] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N64351A88032, Lawson
+                - button [ref=e58] [cursor=pointer]:
+                  - generic [ref=e60] [cursor=pointer]: General Intellectual Ability (GIA) (+1 more)
+                - button [ref=e62] [cursor=pointer]: —
+                - button [ref=e63] [cursor=pointer]:
+                  - generic [ref=e64] [cursor=pointer]: ●
+                  - text: Not Started
+                - generic [ref=e65] [cursor=pointer]:
+                  - button [ref=e66] [cursor=pointer]
+                  - button [ref=e67] [cursor=pointer]
+                  - button [ref=e68] [cursor=pointer]
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - generic [ref=e72]:
+                - img [ref=e73]
+                - heading [level=3] [ref=e77]: Notifications Center
+              - generic [ref=e78]:
+                - generic [ref=e79]:
+                  - generic [ref=e80]: 03/06/2026
+                  - generic [ref=e81]:
+                    - generic [ref=e82]: WJ V Patch Notes – Video & Audio Updates
+                    - text: "We’ve made a few improvements to give you a smoother, more reliable experience:"
+                  - list [ref=e83]:
+                    - listitem [ref=e84]:
+                      - generic [ref=e85]: "Better video reliability:"
+                      - text: Videos are now available in two versions so they play more consistently across different situations.
+                    - listitem [ref=e86]:
+                      - generic [ref=e87]: "Fewer playback issues:"
+                      - text: If a video or audio file doesn’t load correctly, the system will now automatically refresh it so you don’t get stuck with error messages or broken media.
+                  - generic [ref=e88]:
+                    - text: These updates should make watching videos in WJ V clearer and more dependable. Please check out the
+                    - link [ref=e89] [cursor=pointer]:
+                      - /url: https://info.riversideinsights.com/hubfs/WJ%20V/WJ%20V%20Release%20Notes%2003_05_26.pdf
+                      - text: Full Release Notes
+                    - text: for more details.
+                - generic [ref=e90]:
+                  - generic [ref=e91]: 02/10/2026
+                  - paragraph [ref=e92]:
+                    - generic [ref=e94]: Do you use both the BDI-3 and WJ V? We'd love to learn from your experience. Sign up for a quick conversation to share how you use these tools - and you'll be entered to win a $25 gift card.
+                  - paragraph [ref=e95]:
+                    - link [ref=e96] [cursor=pointer]:
+                      - /url: https://calendly.com/lila-chase-riversideinsights/bdi3-and-wj-v?month=2026-02
+                      - generic [ref=e97] [cursor=pointer]: Schedule a Time
+            - generic [ref=e98]:
+              - generic [ref=e100]:
+                - img [ref=e101]
+                - heading [level=3] [ref=e105]: Resources
+              - list [ref=e106]:
+                - listitem [ref=e107]:
+                  - button [ref=e108] [cursor=pointer]:
+                    - heading [level=6] [ref=e109] [cursor=pointer]: Riverside Learn
+                    - img [ref=e111] [cursor=pointer]
+                - listitem [ref=e113]:
+                  - button [ref=e114] [cursor=pointer]:
+                    - heading [level=6] [ref=e115] [cursor=pointer]: Onboarding Tutorial Videos
+                    - img [ref=e117] [cursor=pointer]
+                - listitem [ref=e119]:
+                  - button [ref=e120] [cursor=pointer]:
+                    - heading [level=6] [ref=e121] [cursor=pointer]: Quick Reference Guides
+                    - img [ref=e123] [cursor=pointer]
+              - button [ref=e126] [cursor=pointer]: View All
+    - contentinfo [ref=e127]:
+      - generic [ref=e128]: Footer region,
+      - link [ref=e129] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img [ref=e130] [cursor=pointer]
+      - generic [ref=e131]:
+        - link [ref=e132] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e133] [cursor=pointer]
+        - link [ref=e134] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e135] [cursor=pointer]
+        - link [ref=e136] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e137] [cursor=pointer]
+        - link [ref=e138] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e139] [cursor=pointer]
+      - generic [ref=e140]:
+        - button [ref=e141] [cursor=pointer]: Leave Feedback
+        - generic [ref=e142]: "|"
+        - link [ref=e143] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e144]: "|"
+        - link [ref=e145] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e146]: Footer region end
+  - dialog [ref=e148]:
+    - generic [ref=e149]:
+      - heading "Edit Test Assignment" [level=1] [ref=e150]
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - generic [ref=e160]: Examinee
+          - generic [ref=e161]: Complete
+        - generic [ref=e162]:
+          - generic [ref=e163]: Test Sets
+          - generic [ref=e164]: In Progress
+        - generic [ref=e165]:
+          - generic [ref=e166]: Settings
+          - generic [ref=e167]: Complete
+    - generic [ref=e168]:
+      - heading "Select a Test Set" [level=3] [ref=e169]
+      - generic [ref=e173]:
+        - generic "Select Test Set" [ref=e174]: Test Set Name
+        - tree "Select Test Set" [ref=e175] [cursor=pointer]:
+          - generic [ref=e176] [cursor=pointer]: Select Test Set
+    - generic [ref=e178]:
+      - button "Cancel" [ref=e179] [cursor=pointer]
+      - generic [ref=e180]:
+        - button "Back" [ref=e181] [cursor=pointer]
+        - button "Update" [disabled] [ref=e182]
+```

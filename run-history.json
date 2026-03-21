@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "196",
+    "timestamp": "20260321_000000",
+    "runReason": "Running regression in PROD as part of the derived scores update V3",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "195",
     "timestamp": "20260320_000000",
     "runReason": "Running full regreesion with derived score changes V2",

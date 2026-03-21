@@ -1,0 +1,148 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 03PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "03PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [ref=e44]: N14625A56202
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [disabled] [ref=e47]
+                  - button "Closed" [disabled] [ref=e48]
+              - generic [ref=e49]:
+                - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+                - generic [ref=e51]: Test Set
+                - generic [ref=e52]: Days Left to Edit
+                - generic [ref=e53]: Status
+                - generic [ref=e54]: Actions
+                - generic [ref=e55] [cursor=pointer]:
+                  - button "N14625A56202, Marianna" [ref=e56] [cursor=pointer]:
+                    - generic [ref=e57] [cursor=pointer]: N14625A56202, Marianna
+                  - button "Essie Johnson_1774065439712" [ref=e58] [cursor=pointer]:
+                    - generic [ref=e60] [cursor=pointer]: Essie Johnson_1774065439712
+                  - button "89 days" [ref=e62] [cursor=pointer]
+                  - button "● In Progress" [ref=e63] [cursor=pointer]:
+                    - generic [ref=e64] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e65] [cursor=pointer]:
+                    - button [disabled] [ref=e66]
+                    - button [disabled] [ref=e67]
+                    - button "Share Examinee" [ref=e68] [cursor=pointer]:
+                      - button "Share Examinee" [ref=e70] [cursor=pointer]
+            - generic [ref=e71]:
+              - generic [ref=e72]:
+                - generic [ref=e74]:
+                  - img [ref=e75]
+                  - heading "Notifications Center" [level=3] [ref=e79]
+                - generic [ref=e80]:
+                  - generic [ref=e81]:
+                    - generic [ref=e82]: 03/06/2026
+                    - paragraph:
+                      - strong
+                    - generic [ref=e83]:
+                      - generic [ref=e84]: WJ V Patch Notes – Video & Audio Updates
+                      - text: "We’ve made a few improvements to give you a smoother, more reliable experience:"
+                    - list [ref=e85]:
+                      - listitem [ref=e86]:
+                        - generic [ref=e87]: "Better video reliability:"
+                        - text: Videos are now available in two versions so they play more consistently across different situations.
+                      - listitem [ref=e88]:
+                        - generic [ref=e89]: "Fewer playback issues:"
+                        - text: If a video or audio file doesn’t load correctly, the system will now automatically refresh it so you don’t get stuck with error messages or broken media.
+                    - generic [ref=e90]:
+                      - text: These updates should make watching videos in WJ V clearer and more dependable. Please check out the
+                      - link "Full Release Notes" [ref=e91] [cursor=pointer]:
+                        - /url: https://info.riversideinsights.com/hubfs/WJ%20V/WJ%20V%20Release%20Notes%2003_05_26.pdf
+                      - text: for more details.
+                    - paragraph:
+                      - link:
+                        - /url: https://info.riversideinsights.com/hubfs/WJ%20V/WJ%20V%20Release%20Notes%2003_05_26.pdf
+                  - generic [ref=e92]:
+                    - generic [ref=e93]: 02/10/2026
+                    - paragraph [ref=e94]:
+                      - generic [ref=e96]: Do you use both the BDI-3 and WJ V? We'd love to learn from your experience. Sign up for a quick conversation to share how you use these tools - and you'll be entered to win a $25 gift card.
+                    - paragraph [ref=e97]:
+                      - link "Schedule a Time" [ref=e98] [cursor=pointer]:
+                        - /url: https://calendly.com/lila-chase-riversideinsights/bdi3-and-wj-v?month=2026-02
+                        - generic [ref=e99] [cursor=pointer]: Schedule a Time
+                    - paragraph
+                    - paragraph
+              - generic [ref=e100]:
+                - generic [ref=e102]:
+                  - img [ref=e103]
+                  - heading "Resources" [level=3] [ref=e107]
+                - list [ref=e108]:
+                  - listitem [ref=e109]:
+                    - button "Riverside Learn" [ref=e110] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e111] [cursor=pointer]
+                      - img [ref=e113] [cursor=pointer]
+                  - listitem [ref=e115]:
+                    - button "Onboarding Tutorial Videos" [ref=e116] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e117] [cursor=pointer]
+                      - img [ref=e119] [cursor=pointer]
+                  - listitem [ref=e121]:
+                    - button "Quick Reference Guides" [ref=e122] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e123] [cursor=pointer]
+                      - img [ref=e125] [cursor=pointer]
+                - button "View All" [ref=e128] [cursor=pointer]
+      - contentinfo [ref=e129]:
+        - generic [ref=e130]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e131] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e132] [cursor=pointer]
+        - generic [ref=e133]:
+          - link "Riverside Insights Facebook" [ref=e134] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e135] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e136] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e137] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e138] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e139] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e140] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e141] [cursor=pointer]
+        - generic [ref=e142]:
+          - button "Leave Feedback" [ref=e143] [cursor=pointer]
+          - generic [ref=e144]: "|"
+          - link "Terms of Use" [ref=e145] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e146]: "|"
+          - link "Privacy Policy" [ref=e147] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e148]: Footer region end
+```
