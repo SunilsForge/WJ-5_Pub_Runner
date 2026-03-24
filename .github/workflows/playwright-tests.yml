@@ -166,7 +166,7 @@ jobs:
 
       - name: Upload pre-run notes
         if: inputs.run_reason != ''
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: run-metadata
           path: run-metadata/
@@ -240,7 +240,7 @@ jobs:
             --retries=${{ env.NUM_RETRIES }}
       - name: Upload test results
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: playwright-report-shard-${{ matrix.shard }}
           path: |
@@ -262,7 +262,7 @@ jobs:
           echo "Trace Mode: ${{ github.event.inputs.trace_mode }}" >> test-status/status.txt
       - name: Upload status
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: test-status-shard-${{ matrix.shard }}
           path: test-status/
@@ -639,7 +639,7 @@ jobs:
           </html>
           EOF
       - name: Upload merged report artifact
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: merged-playwright-report
           path: merged-report/
@@ -660,7 +660,7 @@ jobs:
           ls -l all-index
 
       - name: Upload All-Index artifact
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: All-Index
           path: all-index/
