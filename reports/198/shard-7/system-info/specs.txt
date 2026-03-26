@@ -33,7 +33,6 @@ Vulnerability L1tf:                      Not affected
 Vulnerability Mds:                       Not affected
 Vulnerability Meltdown:                  Not affected
 Vulnerability Mmio stale data:           Not affected
-Vulnerability Old microcode:             Not affected
 Vulnerability Reg file data sampling:    Not affected
 Vulnerability Retbleed:                  Not affected
 Vulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode
@@ -41,28 +40,28 @@ Vulnerability Spec store bypass:         Vulnerable
 Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
 Vulnerability Spectre v2:                Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
 Vulnerability Srbds:                     Not affected
-Vulnerability Tsa:                       Vulnerable: No microcode
+Vulnerability Tsa:                       Vulnerable: Clear CPU buffers attempted, no microcode
 Vulnerability Tsx async abort:           Not affected
 Vulnerability Vmscape:                   Not affected
 -e 
 Memory Information:
                total        used        free      shared  buff/cache   available
-Mem:            15Gi       1.3Gi       8.6Gi        45Mi       6.1Gi        14Gi
+Mem:            15Gi       1.1Gi       8.0Gi        46Mi       6.9Gi        14Gi
 Swap:          3.0Gi          0B       3.0Gi
 -e 
 Disk Information:
 Filesystem      Size  Used Avail Use% Mounted on
-overlay         145G   59G   87G  41% /
+overlay         145G   59G   86G  41% /
 tmpfs            64M     0   64M   0% /dev
 shm              64M     0   64M   0% /dev/shm
-/dev/root       145G   59G   87G  41% /__t
-tmpfs           3.2G  1.1M  3.2G   1% /run/docker.sock
+/dev/root       145G   59G   86G  41% /__e
+tmpfs           3.2G  1.2M  3.2G   1% /run/docker.sock
 tmpfs           7.9G     0  7.9G   0% /proc/acpi
 tmpfs           7.9G     0  7.9G   0% /proc/scsi
 tmpfs           7.9G     0  7.9G   0% /sys/firmware
 -e 
 System Load:
- 08:27:00 up 4 min,  0 user,  load average: 0.69, 0.25, 0.09
+ 10:49:04 up 1 min,  0 user,  load average: 0.94, 0.33, 0.12
 -e 
 Container Information:
 PRETTY_NAME="Ubuntu 24.04.2 LTS"
