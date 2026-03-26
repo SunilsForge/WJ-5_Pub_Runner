@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "198",
+    "timestamp": "20260326_000000",
+    "runReason": "Running SMOKE in stage as a part of PATCH release",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "196",
     "timestamp": "20260321_000000",
     "runReason": "Running regression in PROD as part of the derived scores update V3",
