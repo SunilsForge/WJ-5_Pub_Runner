@@ -139,7 +139,7 @@
       <!-- Run items will be dynamically inserted here -->
     </div>
   </div>
-  
+
   <div class="main-content">
     <div class="header">
       <h1>Playwright Test Reports History</h1>
@@ -156,12 +156,12 @@
       <!-- Report entries will be dynamically inserted here -->
     </div>
   </div>
-  
+
   <script>
     // Load the run history from the JSON file
     fetch('./run-history.json')
       .then(response => {
-        if (!response.ok) throw new Error();
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         return response.json();
       })
       .then(runHistory => {
@@ -171,7 +171,7 @@
         // Normalize and sort by runNumber descending
         const normalizedHistory = runHistory.map(run => ({
           ...run,
-          runNumber: String(run.runNumber) // Ensure consistency
+          runNumber: String(run.runNumber)
         })).sort((a, b) => parseInt(b.runNumber) - parseInt(a.runNumber));
 
         populateRunsList(normalizedHistory);
@@ -183,41 +183,41 @@
         document.getElementById('runsList').innerHTML = '<p style="color: #f85149;">Failed to load run history. Check console.</p>';
         document.getElementById('reportsContainer').innerHTML = '<p style="color: #f85149;">No reports available.</p>';
       });
-    
-      function populateRunsList(runHistory) {
-        const runsList = document.getElementById('runsList');
-        runsList.innerHTML = '';
 
-        // Sort by run number descending by default
-        runHistory.sort((a, b) => parseInt(b.runNumber) - parseInt(a.runNumber));
-
-        runHistory.forEach(run => {
-          const runItem = document.createElement('div');
-          runItem.className = 'run-item';
-          runItem.dataset.runNumber = run.runNumber;
-
-        // Format the timestamp
-        let formattedDate = 'Unknown date';
-        if (run.timestamp) {
-          try {
-            const parts = run.timestamp.split('_');
-            if (parts.length === 2) {
-              const datePart = parts[0];
-              const timePart = parts[1];
-              const year = datePart.substring(0, 4);
-              const month = datePart.substring(4, 6);
-              const day = datePart.substring(6, 8);
-              const hour = timePart.substring(0, 2);
-              const minute = timePart.substring(2, 4);
-              const second = timePart.substring(4, 6);
-              const date = new Date(Date.UTC(year, month-1, day, hour, minute, second));
-              formattedDate = date.toLocaleString();
-            }
-          } catch (e) {
-            console.warn('Error formatting date:', e);
-          }
+    function formatTimestamp(timestamp) {
+      if (!timestamp) return 'Unknown date';
+      try {
+        const parts = timestamp.split('_');
+        if (parts.length === 2) {
+          const datePart = parts[0];
+          const timePart = parts[1];
+          const year = datePart.substring(0, 4);
+          const month = datePart.substring(4, 6);
+          const day = datePart.substring(6, 8);
+          const hour = timePart.substring(0, 2);
+          const minute = timePart.substring(2, 4);
+          const second = timePart.substring(4, 6);
+          const date = new Date(Date.UTC(year, month-1, day, hour, minute, second));
+          return date.toLocaleString();
         }
-          
+      } catch (e) {
+        console.warn('Error formatting date:', e);
+      }
+      return 'Unknown date';
+    }
+
+    function populateRunsList(runHistory) {
+      const runsList = document.getElementById('runsList');
+      runsList.innerHTML = '';
+
+      runHistory.sort((a, b) => parseInt(b.runNumber) - parseInt(a.runNumber));
+
+      runHistory.forEach(run => {
+        const runItem = document.createElement('div');
+        runItem.className = 'run-item';
+        runItem.dataset.runNumber = run.runNumber;
+
+        const formattedDate = formatTimestamp(run.timestamp);
 
         runItem.innerHTML = `
           <h3>Run #${run.runNumber}</h3>
@@ -230,14 +230,12 @@
         `;
 
         runItem.addEventListener('click', () => {
-          // Navigate to the report when clicked
           window.location.href = `./reports/${run.runNumber}/index.html`;
         });
 
         runsList.appendChild(runItem);
       });
-       // Log the number of runs displayed
-      console.log();
+      console.log(`Displayed ${runHistory.length} runs in the sidebar`);
     }
 
     function populateReportsContainer(runHistory) {
@@ -248,26 +246,7 @@
         const card = document.createElement('div');
         card.className = 'report-card';
 
-        let formattedDate = 'Unknown date';
-        if (run.timestamp) {
-          try {
-            const parts = run.timestamp.split('_');
-            if (parts.length === 2) {
-              const datePart = parts[0];
-              const timePart = parts[1];
-              const year = datePart.substring(0, 4);
-              const month = datePart.substring(4, 6);
-              const day = datePart.substring(6, 8);
-              const hour = timePart.substring(0, 2);
-              const minute = timePart.substring(2, 4);
-              const second = timePart.substring(4, 6);
-              const date = new Date(Date.UTC(year, month-1, day, hour, minute, second));
-              formattedDate = date.toLocaleString();
-            }
-          } catch (e) {
-            console.warn('Error formatting date:', e);
-          }
-        }
+        const formattedDate = formatTimestamp(run.timestamp);
 
         card.innerHTML = `
           <a href="./reports/${run.runNumber}/index.html" class="report-link">
@@ -286,22 +265,18 @@
     }
 
     function setupEventListeners(originalRunHistory) {
-      // Main search
       document.getElementById('searchInput').addEventListener('input', (e) => {
         filterReports(e.target.value.toLowerCase());
       });
 
-      // Main sort
       document.getElementById('sortSelect').addEventListener('change', (e) => {
         sortReports(e.target.value);
       });
 
-      // Sidebar search
       document.getElementById('sidebarSearch').addEventListener('input', (e) => {
         filterSidebar(e.target.value.toLowerCase());
       });
 
-      // Sidebar sort
       document.getElementById('sidebarSort').addEventListener('change', (e) => {
         sortSidebar(e.target.value);
       });
