@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "201",
+    "timestamp": "20260330_000000",
+    "runReason": "running SMOKE in PROD as a part of PATCH env is slow",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "200",
     "timestamp": "20260330_000000",
     "runReason": "running SMOKE in prod as a part of prod PATCHING",

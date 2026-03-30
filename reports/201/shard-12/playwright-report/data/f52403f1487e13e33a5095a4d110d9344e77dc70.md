@@ -1,0 +1,120 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 02PwAut25Ex_01 ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "02PwAut25Ex_01 ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [active] [ref=e44]: In Progress
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [disabled] [ref=e47]
+                  - button "Closed" [disabled] [ref=e48]
+              - generic [ref=e49]:
+                - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+                - generic [ref=e51]: Test Set
+                - generic [ref=e52]: Days Left to Edit
+                - generic [ref=e53]: Status
+                - generic [ref=e54]: Actions
+                - generic [ref=e55]:
+                  - generic [ref=e56]: No results found.
+                  - button "Reset Search" [ref=e57] [cursor=pointer]
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - generic [ref=e61]:
+                  - img [ref=e62]
+                  - heading "Notifications Center" [level=3] [ref=e66]
+                - generic [ref=e68]:
+                  - generic [ref=e69]: 02/10/2026
+                  - paragraph [ref=e70]:
+                    - generic [ref=e72]: Do you use both the BDI-3 and WJ V? We'd love to learn from your experience. Sign up for a quick conversation to share how you use these tools - and you'll be entered to win a $25 gift card.
+                  - paragraph [ref=e73]:
+                    - link "Schedule a Time" [ref=e74] [cursor=pointer]:
+                      - /url: https://calendly.com/lila-chase-riversideinsights/bdi3-and-wj-v?month=2026-02
+                      - generic [ref=e75] [cursor=pointer]: Schedule a Time
+                  - paragraph
+                  - paragraph
+              - generic [ref=e76]:
+                - generic [ref=e78]:
+                  - img [ref=e79]
+                  - heading "Resources" [level=3] [ref=e83]
+                - list [ref=e84]:
+                  - listitem [ref=e85]:
+                    - button "Riverside Learn" [ref=e86] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e87] [cursor=pointer]
+                      - img [ref=e89] [cursor=pointer]
+                  - listitem [ref=e91]:
+                    - button "Onboarding Tutorial Videos" [ref=e92] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e93] [cursor=pointer]
+                      - img [ref=e95] [cursor=pointer]
+                  - listitem [ref=e97]:
+                    - button "Quick Reference Guides" [ref=e98] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e99] [cursor=pointer]
+                      - img [ref=e101] [cursor=pointer]
+                - button "View All" [ref=e104] [cursor=pointer]
+      - contentinfo [ref=e105]:
+        - generic [ref=e106]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e107] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e108] [cursor=pointer]
+        - generic [ref=e109]:
+          - link "Riverside Insights Facebook" [ref=e110] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e111] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e112] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e113] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e114] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e115] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e116] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e117] [cursor=pointer]
+        - generic [ref=e118]:
+          - button "Leave Feedback" [ref=e119] [cursor=pointer]
+          - generic [ref=e120]: "|"
+          - link "Terms of Use" [ref=e121] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e122]: "|"
+          - link "Privacy Policy" [ref=e123] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e124]: Footer region end
+  - region "Chat Widget" [ref=e125]:
+    - iframe [ref=e126]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e128]
+```
