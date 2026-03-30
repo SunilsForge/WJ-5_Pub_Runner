@@ -275,7 +275,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download all artifacts
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v7
         with:
           path: all-artifacts
       - name: Set up Node.js
@@ -444,7 +444,7 @@ jobs:
           fi
 
       - name: Download merged report
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v7
         with:
           name: merged-playwright-report
           path: new-report
@@ -714,7 +714,7 @@ jobs:
           fi
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Select deploy path
         id: select-deploy
@@ -733,6 +733,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
