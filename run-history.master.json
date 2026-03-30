@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "200",
+    "timestamp": "20260330_000000",
+    "runReason": "running SMOKE in prod as a part of prod PATCHING",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "199",
     "timestamp": "20260327_000000",
     "runReason": "running full smoke in PROD",

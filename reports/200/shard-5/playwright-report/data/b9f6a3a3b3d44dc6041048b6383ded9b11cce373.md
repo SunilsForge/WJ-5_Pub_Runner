@@ -1,0 +1,78 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main "Clinical Login" [ref=e4]:
+    - generic [ref=e5]:
+      - img "Riverside Insights Logo" [ref=e6]
+      - heading "Looking for the Canadian login page? Click Here" [level=4] [ref=e8]:
+        - text: Looking for the Canadian login page?
+        - link "Click Here" [ref=e9] [cursor=pointer]:
+          - /url: https://ca.riversidescore.com
+      - heading "Riverside Updates" [level=1] [ref=e10]
+    - generic [ref=e11]:
+      - img "Riverside Score Logo" [ref=e12]
+      - form "Sign in details" [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e15]: USERNAME
+          - textbox "USERNAME" [ref=e17]: S06PwAut25AH
+          - generic [ref=e19]: PASSWORD
+          - textbox "PASSWORD" [ref=e21]: STest@100
+          - button "Sign In" [disabled] [ref=e22] [cursor=pointer]
+          - generic [ref=e23]:
+            - checkbox "Remember Me" [ref=e24] [cursor=pointer]:
+              - generic [ref=e25] [cursor=pointer]: Remember Me
+            - link "Forgot my password" [ref=e28] [cursor=pointer]:
+              - /url: /forgot
+        - generic [ref=e29]:
+          - heading "Are you looking to purchase our products?" [level=4] [ref=e30]
+          - link "Click Here!" [ref=e31] [cursor=pointer]:
+            - /url: https://riversideinsights.com/explore
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - text: For help accessing
+        - generic [ref=e34]: Riverside Score™
+        - text: ", see the"
+        - link "online help" [ref=e35] [cursor=pointer]:
+          - /url: https://onlinehelp.riversideinsights.com/Help/Riverside_Score/index.htm#t=Overview.htm
+        - text: for signing in.
+      - link "Check Platform Status" [ref=e37] [cursor=pointer]:
+        - /url: https://riversideinsights.com/platform-status
+  - contentinfo [ref=e38]:
+    - generic [ref=e39]: Footer region,
+    - link "w w w dot riverside insights dot com" [ref=e40] [cursor=pointer]:
+      - /url: https://www.riversideinsights.com/
+      - img "Riverside Insights Website" [ref=e41] [cursor=pointer]
+    - generic [ref=e42]:
+      - link "Riverside Insights Facebook" [ref=e43] [cursor=pointer]:
+        - /url: https://www.facebook.com/RiversideInsights/
+        - img "Riverside Insights Facebook" [ref=e44] [cursor=pointer]
+      - link "Riverside Insights Twitter" [ref=e45] [cursor=pointer]:
+        - /url: https://twitter.com/1BillionLives
+        - img "Riverside Insights Twitter" [ref=e46] [cursor=pointer]
+      - link "Riverside Insights LinkedIn" [ref=e47] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/riverside-insights/
+        - img "Riverside Insights LinkedIn" [ref=e48] [cursor=pointer]
+      - link "Riverside Insights Instagram" [ref=e49] [cursor=pointer]:
+        - /url: https://www.instagram.com/riversideinsightsassessments/
+        - img "Riverside Insights Instagram" [ref=e50] [cursor=pointer]
+    - generic [ref=e51]:
+      - img "WJ IV Mobile Data Solution" [ref=e52]
+      - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e53] [cursor=pointer]
+      - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e54] [cursor=pointer]
+    - generic [ref=e55]:
+      - img "Bdi 3 Mobile Data Solution" [ref=e56]
+      - generic [ref=e57]:
+        - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e58] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from Google Play" [ref=e59] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from App Store" [ref=e60] [cursor=pointer]
+    - generic [ref=e61]:
+      - button "Leave Feedback" [ref=e62] [cursor=pointer]
+      - generic [ref=e63]: "|"
+      - link "Terms of Use" [ref=e64] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - generic [ref=e65]: "|"
+      - link "Privacy Policy" [ref=e66] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+    - generic [ref=e67]: Footer region end
+```
