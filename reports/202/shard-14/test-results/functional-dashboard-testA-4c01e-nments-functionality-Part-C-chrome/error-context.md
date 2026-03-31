@@ -1,0 +1,316 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: 04PwAut25Ex_01 ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| Subscription Details"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30] [cursor=pointer]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+      - main [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - heading [level=1] [ref=e38]: My Test Assignments
+              - button [ref=e39] [cursor=pointer]: Create New Test Assignment
+            - generic [ref=e40]:
+              - generic [ref=e43]:
+                - textbox [ref=e44]: N91842A70944, Jermey
+                - button [ref=e45] [cursor=pointer]
+              - generic [ref=e46]:
+                - button [disabled] [ref=e47]: Active
+                - button [disabled] [ref=e48]: Closed
+            - generic [ref=e49]:
+              - generic [ref=e50]: Examinee
+              - generic [ref=e51]: Test Set
+              - generic [ref=e52]: Days Left to Edit
+              - generic [ref=e53]: Status
+              - generic [ref=e54]: Actions
+              - generic [ref=e55] [cursor=pointer]:
+                - button [ref=e56] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N91842A70944, Jermey
+                - button [ref=e58] [cursor=pointer]:
+                  - generic [ref=e60] [cursor=pointer]: Form A
+                - button [ref=e62] [cursor=pointer]: 51 days
+                - button [ref=e63] [cursor=pointer]:
+                  - generic [ref=e64] [cursor=pointer]: ●
+                  - text: Submitted
+                - generic [ref=e65] [cursor=pointer]:
+                  - button [ref=e66] [cursor=pointer]
+                  - button [ref=e67] [cursor=pointer]
+                  - button [ref=e68] [cursor=pointer]
+          - generic [ref=e69]:
+            - generic [ref=e72]:
+              - img [ref=e73]
+              - heading [level=3] [ref=e77]: Notifications Center
+            - generic [ref=e78]:
+              - generic [ref=e80]:
+                - img [ref=e81]
+                - heading [level=3] [ref=e85]: Resources
+              - list [ref=e86]:
+                - listitem [ref=e87]:
+                  - button [ref=e88] [cursor=pointer]:
+                    - heading [level=6] [ref=e89] [cursor=pointer]: Riverside Learn
+                    - img [ref=e91] [cursor=pointer]
+                - listitem [ref=e93]:
+                  - button [ref=e94] [cursor=pointer]:
+                    - heading [level=6] [ref=e95] [cursor=pointer]: Onboarding Tutorial Videos
+                    - img [ref=e97] [cursor=pointer]
+                - listitem [ref=e99]:
+                  - button [ref=e100] [cursor=pointer]:
+                    - heading [level=6] [ref=e101] [cursor=pointer]: Quick Reference Guides
+                    - img [ref=e103] [cursor=pointer]
+              - button [ref=e106] [cursor=pointer]: View All
+    - contentinfo [ref=e107]:
+      - generic [ref=e108]: Footer region,
+      - link [ref=e109] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img [ref=e110] [cursor=pointer]
+      - generic [ref=e111]:
+        - link [ref=e112] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e113] [cursor=pointer]
+        - link [ref=e114] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e115] [cursor=pointer]
+        - link [ref=e116] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e117] [cursor=pointer]
+        - link [ref=e118] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e119] [cursor=pointer]
+      - generic [ref=e120]:
+        - button [ref=e121] [cursor=pointer]: Leave Feedback
+        - generic [ref=e122]: "|"
+        - link [ref=e123] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e124]: "|"
+        - link [ref=e125] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e126]: Footer region end
+  - region "Chat Widget" [ref=e127]:
+    - iframe [ref=e128]:
+      - button "Open live chat" [ref=f1e5]:
+        - img [ref=f1e8]
+        - img [ref=f1e15]
+    - img [ref=e130]
+  - dialog [active] [ref=e133]:
+    - generic [ref=e134]: Add Supplemental Tests
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - heading "Form A" [level=2] [ref=e137]
+        - generic [ref=e138]:
+          - img [ref=e139]
+          - text: "Time Estimate:"
+          - generic [ref=e146]: 4 hr 14 min
+        - generic [ref=e147]: Analysis-Synthesis
+        - generic [ref=e148]: Applied Problems
+        - generic [ref=e149]: Block Rotation
+        - generic [ref=e150]: Letter-Pattern Matching
+        - generic [ref=e151]: Calculation
+        - generic [ref=e152]: Letter-Word Identification
+        - generic [ref=e153]: Math Facts Fluency
+        - generic [ref=e154]: Math Problem Identification
+        - generic [ref=e155]: Matrices
+        - generic [ref=e156]: Number-Pattern Matching
+        - generic [ref=e157]: Numbers Reversed
+        - generic [ref=e158]: Oral Comprehension
+        - generic [ref=e159]: Oral Language Samples
+        - generic [ref=e160]: Oral Vocabulary–Synonyms
+        - generic [ref=e161]: Oral Vocabulary–Antonyms
+        - generic [ref=e162]: Paragraph Reading Comprehension
+        - generic [ref=e163]: Passage Comprehension
+        - generic [ref=e164]: Phonemic Word Retrieval
+        - generic [ref=e165]: Picture Vocabulary
+        - generic [ref=e166]: Semantic Word Retrieval
+        - generic [ref=e167]: Sentence Reading Fluency
+        - generic [ref=e168]: Sentence Writing Accuracy
+        - generic [ref=e169]: Sentence Writing Fluency
+        - generic [ref=e170]: Spatial Relations
+        - generic [ref=e171]: Spelling
+        - generic [ref=e172]: Story Comprehension
+        - generic [ref=e173]: Story Recall
+        - generic [ref=e174]: Verbal Analogies
+        - generic [ref=e175]: Verbal Attention
+        - generic [ref=e176]: Word Attack
+        - generic [ref=e177]: Written Language Samples
+        - generic [ref=e178]: Word Reading Fluency
+        - generic [ref=e179]: Academic Vocabulary
+        - generic [ref=e180]: General Information–Where
+        - generic [ref=e181]: General Information–What
+        - generic [ref=e182]: Number Series
+        - generic [ref=e183]: Memory for Words
+        - generic [ref=e184]: Nonsense Word Repetition
+        - generic [ref=e185]: Oral Reading
+        - generic [ref=e186]: Rapid Letter Naming
+        - generic [ref=e187]: Rapid Phoneme Naming
+        - generic [ref=e188]: Rapid Picture Naming
+        - generic [ref=e189]: Segmentation
+        - generic [ref=e190]: Sentence Repetition
+        - generic [ref=e191]: Sound Blending
+        - generic [ref=e192]: Sound Deletion
+        - generic [ref=e193]: Sound Reversal
+        - generic [ref=e194]: Sound Substitution
+        - generic [ref=e195]: Spelling of Sounds
+      - generic [ref=e196]:
+        - navigation [ref=e197]:
+          - tablist [ref=e198]:
+            - tab "All Tests" [selected] [ref=e199] [cursor=pointer]
+            - tab "Clusters" [ref=e200] [cursor=pointer]
+        - generic [ref=e202]:
+          - generic [ref=e203]: All Tests
+          - generic [ref=e206]:
+            - textbox [ref=e207]
+            - button [ref=e208] [cursor=pointer]
+          - generic [ref=e209]:
+            - button "Academic Facts" [ref=e211] [cursor=pointer]:
+              - generic [ref=e212] [cursor=pointer]: Academic Facts
+            - button "Academic Vocabulary" [disabled] [ref=e215] [cursor=pointer]:
+              - generic [ref=e216] [cursor=pointer]: Academic Vocabulary
+            - button "Analysis-Synthesis" [disabled] [ref=e219] [cursor=pointer]:
+              - generic [ref=e220] [cursor=pointer]: Analysis-Synthesis
+            - button "Animal-Number Sequencing" [ref=e223] [cursor=pointer]:
+              - generic [ref=e224] [cursor=pointer]: Animal-Number Sequencing
+            - button "Applied Problems" [disabled] [ref=e227] [cursor=pointer]:
+              - generic [ref=e228] [cursor=pointer]: Applied Problems
+            - button "Block Rotation" [disabled] [ref=e231] [cursor=pointer]:
+              - generic [ref=e232] [cursor=pointer]: Block Rotation
+            - button "Calculation" [disabled] [ref=e235] [cursor=pointer]:
+              - generic [ref=e236] [cursor=pointer]: Calculation
+            - button "Concept Formation" [ref=e239] [cursor=pointer]:
+              - generic [ref=e240] [cursor=pointer]: Concept Formation
+            - button "General Information–Where" [disabled] [ref=e243] [cursor=pointer]:
+              - generic [ref=e244] [cursor=pointer]: General Information–Where
+            - button "General Information–What" [disabled] [ref=e247] [cursor=pointer]:
+              - generic [ref=e248] [cursor=pointer]: General Information–What
+            - button "Letter Writing Fluency" [ref=e251] [cursor=pointer]:
+              - generic [ref=e252] [cursor=pointer]: Letter Writing Fluency
+            - button "Letter-Pattern Matching" [disabled] [ref=e255] [cursor=pointer]:
+              - generic [ref=e256] [cursor=pointer]: Letter-Pattern Matching
+            - button "Letter-Word Identification" [disabled] [ref=e259] [cursor=pointer]:
+              - generic [ref=e260] [cursor=pointer]: Letter-Word Identification
+            - button "Magnitude Comparison" [ref=e263] [cursor=pointer]:
+              - generic [ref=e264] [cursor=pointer]: Magnitude Comparison
+            - button "Math Facts Fluency" [disabled] [ref=e267] [cursor=pointer]:
+              - generic [ref=e268] [cursor=pointer]: Math Facts Fluency
+            - button "Math Problem Identification" [disabled] [ref=e271] [cursor=pointer]:
+              - generic [ref=e272] [cursor=pointer]: Math Problem Identification
+            - button "Matrices" [disabled] [ref=e275] [cursor=pointer]:
+              - generic [ref=e276] [cursor=pointer]: Matrices
+            - button "Memory for Words" [disabled] [ref=e279] [cursor=pointer]:
+              - generic [ref=e280] [cursor=pointer]: Memory for Words
+            - button "Nonsense Word Repetition" [disabled] [ref=e283] [cursor=pointer]:
+              - generic [ref=e284] [cursor=pointer]: Nonsense Word Repetition
+            - button "Number Sense" [ref=e287] [cursor=pointer]:
+              - generic [ref=e288] [cursor=pointer]: Number Sense
+            - button "Number Series" [disabled] [ref=e291] [cursor=pointer]:
+              - generic [ref=e292] [cursor=pointer]: Number Series
+            - button "Number-Pattern Matching" [disabled] [ref=e295] [cursor=pointer]:
+              - generic [ref=e296] [cursor=pointer]: Number-Pattern Matching
+            - button "Numbers Reversed" [disabled] [ref=e299] [cursor=pointer]:
+              - generic [ref=e300] [cursor=pointer]: Numbers Reversed
+            - button "Oral Comprehension" [disabled] [ref=e303] [cursor=pointer]:
+              - generic [ref=e304] [cursor=pointer]: Oral Comprehension
+            - button "Oral Language Samples" [disabled] [ref=e307] [cursor=pointer]:
+              - generic [ref=e308] [cursor=pointer]: Oral Language Samples
+            - button "Oral Reading" [disabled] [ref=e311] [cursor=pointer]:
+              - generic [ref=e312] [cursor=pointer]: Oral Reading
+            - button "Oral Vocabulary–Synonyms" [disabled] [ref=e315] [cursor=pointer]:
+              - generic [ref=e316] [cursor=pointer]: Oral Vocabulary–Synonyms
+            - button "Oral Vocabulary–Antonyms" [disabled] [ref=e319] [cursor=pointer]:
+              - generic [ref=e320] [cursor=pointer]: Oral Vocabulary–Antonyms
+            - button "Paragraph Reading Comprehension" [disabled] [ref=e323] [cursor=pointer]:
+              - generic [ref=e324] [cursor=pointer]: Paragraph Reading Comprehension
+            - button "Passage Comprehension" [disabled] [ref=e327] [cursor=pointer]:
+              - generic [ref=e328] [cursor=pointer]: Passage Comprehension
+            - button "Phonemic Word Retrieval" [disabled] [ref=e331] [cursor=pointer]:
+              - generic [ref=e332] [cursor=pointer]: Phonemic Word Retrieval
+            - button "Picture Vocabulary" [disabled] [ref=e335] [cursor=pointer]:
+              - generic [ref=e336] [cursor=pointer]: Picture Vocabulary
+            - button "Rapid Letter Naming" [disabled] [ref=e339] [cursor=pointer]:
+              - generic [ref=e340] [cursor=pointer]: Rapid Letter Naming
+            - button "Rapid Number Naming" [ref=e343] [cursor=pointer]:
+              - generic [ref=e344] [cursor=pointer]: Rapid Number Naming
+            - button "Rapid Phoneme Naming" [disabled] [ref=e347] [cursor=pointer]:
+              - generic [ref=e348] [cursor=pointer]: Rapid Phoneme Naming
+            - button "Rapid Picture Naming" [disabled] [ref=e351] [cursor=pointer]:
+              - generic [ref=e352] [cursor=pointer]: Rapid Picture Naming
+            - button "Rapid Quantity Naming" [ref=e355] [cursor=pointer]:
+              - generic [ref=e356] [cursor=pointer]: Rapid Quantity Naming
+            - button "Reading Recall" [ref=e359] [cursor=pointer]:
+              - generic [ref=e360] [cursor=pointer]: Reading Recall
+            - button "Segmentation" [disabled] [ref=e363] [cursor=pointer]:
+              - generic [ref=e364] [cursor=pointer]: Segmentation
+            - button "Semantic Word Retrieval" [disabled] [ref=e367] [cursor=pointer]:
+              - generic [ref=e368] [cursor=pointer]: Semantic Word Retrieval
+            - button "Sentence Reading Fluency" [disabled] [ref=e371] [cursor=pointer]:
+              - generic [ref=e372] [cursor=pointer]: Sentence Reading Fluency
+            - button "Sentence Repetition" [disabled] [ref=e375] [cursor=pointer]:
+              - generic [ref=e376] [cursor=pointer]: Sentence Repetition
+            - button "Sentence Writing Accuracy" [disabled] [ref=e379] [cursor=pointer]:
+              - generic [ref=e380] [cursor=pointer]: Sentence Writing Accuracy
+            - button "Sentence Writing Fluency" [disabled] [ref=e383] [cursor=pointer]:
+              - generic [ref=e384] [cursor=pointer]: Sentence Writing Fluency
+            - button "Sound Blending" [disabled] [ref=e387] [cursor=pointer]:
+              - generic [ref=e388] [cursor=pointer]: Sound Blending
+            - button "Sound Deletion" [disabled] [ref=e391] [cursor=pointer]:
+              - generic [ref=e392] [cursor=pointer]: Sound Deletion
+            - button "Sound Reversal" [disabled] [ref=e395] [cursor=pointer]:
+              - generic [ref=e396] [cursor=pointer]: Sound Reversal
+            - button "Sound Substitution" [disabled] [ref=e399] [cursor=pointer]:
+              - generic [ref=e400] [cursor=pointer]: Sound Substitution
+            - button "Spatial Relations" [disabled] [ref=e403] [cursor=pointer]:
+              - generic [ref=e404] [cursor=pointer]: Spatial Relations
+            - button "Spelling" [disabled] [ref=e407] [cursor=pointer]:
+              - generic [ref=e408] [cursor=pointer]: Spelling
+            - button "Spelling of Sounds" [disabled] [ref=e411] [cursor=pointer]:
+              - generic [ref=e412] [cursor=pointer]: Spelling of Sounds
+            - button "Story Comprehension" [disabled] [ref=e415] [cursor=pointer]:
+              - generic [ref=e416] [cursor=pointer]: Story Comprehension
+            - button "Story Recall" [disabled] [ref=e419] [cursor=pointer]:
+              - generic [ref=e420] [cursor=pointer]: Story Recall
+            - button "Understanding Directions" [ref=e423] [cursor=pointer]:
+              - generic [ref=e424] [cursor=pointer]: Understanding Directions
+            - button "Verbal Analogies" [disabled] [ref=e427] [cursor=pointer]:
+              - generic [ref=e428] [cursor=pointer]: Verbal Analogies
+            - button "Verbal Attention" [disabled] [ref=e431] [cursor=pointer]:
+              - generic [ref=e432] [cursor=pointer]: Verbal Attention
+            - button "Visual Working Memory" [ref=e435] [cursor=pointer]:
+              - generic [ref=e436] [cursor=pointer]: Visual Working Memory
+            - button "Visual-Auditory Learning" [ref=e439] [cursor=pointer]:
+              - generic [ref=e440] [cursor=pointer]: Visual-Auditory Learning
+            - button "Word Attack" [disabled] [ref=e443] [cursor=pointer]:
+              - generic [ref=e444] [cursor=pointer]: Word Attack
+            - button "Word Reading Fluency" [disabled] [ref=e447] [cursor=pointer]:
+              - generic [ref=e448] [cursor=pointer]: Word Reading Fluency
+            - button "Written Language Samples" [disabled] [ref=e451] [cursor=pointer]:
+              - generic [ref=e452] [cursor=pointer]: Written Language Samples
+    - generic [ref=e454]:
+      - button "Cancel" [ref=e455] [cursor=pointer]
+      - generic [ref=e456]:
+        - generic [ref=e457]: (0 Tests Selected)
+        - button "Add Tests" [disabled] [ref=e458]
+```

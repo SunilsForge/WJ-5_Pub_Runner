@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "202",
+    "timestamp": "20260331_000000",
+    "runReason": "Running Regression in QA to check the locator issues",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments|@ChatBot"
+  },
+  {
     "runNumber": "201",
     "timestamp": "20260330_000000",
     "runReason": "running SMOKE in PROD as a part of PATCH env is slow",

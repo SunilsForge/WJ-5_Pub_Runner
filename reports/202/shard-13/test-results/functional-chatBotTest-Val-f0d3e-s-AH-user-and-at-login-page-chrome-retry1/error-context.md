@@ -1,0 +1,128 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - main "Clinical Login" [ref=e4]:
+      - generic [ref=e5]:
+        - img "Riverside Insights Logo" [ref=e6]
+        - heading "Riverside Updates" [level=1] [ref=e7]
+      - generic [ref=e8]:
+        - img "Riverside Score Logo" [ref=e9]
+        - form "Sign in details" [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]: USERNAME
+            - textbox "USERNAME" [ref=e14]
+            - generic [ref=e16]:
+              - text: PASSWORD
+              - textbox "PASSWORD" [ref=e18]
+            - button "Sign In" [ref=e19] [cursor=pointer]
+            - generic [ref=e20]:
+              - button "Remember Me" [ref=e21] [cursor=pointer]:
+                - generic [ref=e22] [cursor=pointer]: Remember Me
+              - link "Forgot my password" [ref=e25] [cursor=pointer]:
+                - /url: /forgot
+          - generic [ref=e26]:
+            - heading "Are you looking to purchase our products?" [level=4] [ref=e27]
+            - link "Click Here!" [ref=e28] [cursor=pointer]:
+              - /url: https://riversideinsights.com/explore
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - text: For help accessing
+          - generic [ref=e31]: Riverside Score™
+          - text: ", see the"
+          - link "online help" [ref=e32] [cursor=pointer]:
+            - /url: https://onlinehelp.riversideinsights.com/Help/Riverside_Score/index.htm#t=Overview.htm
+          - text: for signing in.
+        - link "Check Platform Status" [ref=e34] [cursor=pointer]:
+          - /url: https://riversideinsights.com/platform-status
+    - contentinfo [ref=e35]:
+      - generic [ref=e36]: Footer region,
+      - link "w w w dot riverside insights dot com" [ref=e37] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img "Riverside Insights Website" [ref=e38] [cursor=pointer]
+      - generic [ref=e39]:
+        - link "Riverside Insights Facebook" [ref=e40] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img "Riverside Insights Facebook" [ref=e41] [cursor=pointer]
+        - link "Riverside Insights Twitter" [ref=e42] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img "Riverside Insights Twitter" [ref=e43] [cursor=pointer]
+        - link "Riverside Insights LinkedIn" [ref=e44] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img "Riverside Insights LinkedIn" [ref=e45] [cursor=pointer]
+        - link "Riverside Insights Instagram" [ref=e46] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img "Riverside Insights Instagram" [ref=e47] [cursor=pointer]
+      - generic [ref=e48]:
+        - img "WJ IV Mobile Data Solution" [ref=e49]
+        - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e50] [cursor=pointer]
+        - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e51] [cursor=pointer]
+      - generic [ref=e52]:
+        - img "Bdi 3 Mobile Data Solution" [ref=e53]
+        - generic [ref=e54]:
+          - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e55] [cursor=pointer]
+          - button "Download BDI-3 Mobile App from Google Play" [ref=e56] [cursor=pointer]
+          - button "Download BDI-3 Mobile App from App Store" [ref=e57] [cursor=pointer]
+      - generic [ref=e58]:
+        - button "Leave Feedback" [ref=e59] [cursor=pointer]
+        - generic [ref=e60]: "|"
+        - link "Terms of Use" [ref=e61] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+        - generic [ref=e62]: "|"
+        - link "Privacy Policy" [ref=e63] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+      - generic [ref=e64]: Footer region end
+  - region "Chat Widget" [ref=e65]:
+    - iframe [active] [ref=e67]:
+      - generic [ref=f1e1]:
+        - dialog "Riverside Score" [ref=f1e2]:
+          - generic [ref=f1e5]:
+            - banner "Riverside Score" [ref=f1e6]:
+              - navigation [ref=f1e7]:
+                - generic [ref=f1e8]:
+                  - button "View thread list, 0 unread threads" [ref=f1e10]:
+                    - img [ref=f1e12]
+                  - generic [ref=f1e14]:
+                    - img "Avatar of Riverside Score; agent is available for chat" [ref=f1e21]
+                    - heading "Riverside Score" [level=5] [ref=f1e23]:
+                      - generic [ref=f1e25]: Riverside Score
+                  - button "Close live chat" [ref=f1e27]:
+                    - img [ref=f1e29]
+            - generic [ref=f1e36]:
+              - region "Message History" [ref=f1e41]:
+                - generic [ref=f1e42]:
+                  - generic [ref=f1e45]:
+                    - img "Avatar of Riverside Score" [ref=f1e50]
+                    - 'generic "Agent says: Thanks for chatting with us. Our live support hours are : Monday–Friday, 8:00 AM–4:00 PM CT" [ref=f1e56]': "Thanks for chatting with us. Our live support hours are : Monday–Friday, 8:00 AM–4:00 PM CT"
+                  - generic [ref=f1e59]:
+                    - generic [ref=f1e63]:
+                      - paragraph [ref=f1e67]: Which assessment can we help with today?
+                      - combobox [disabled] [ref=f1e70] [cursor=pointer]:
+                        - option "Select one" [disabled] [selected]
+                        - option "Woodcock-Johnson V (WJ V )"
+                        - option "Battelle Developmental Inventory, Third Edition (BDI-3)"
+                        - option "Batería IV"
+                        - option "WIIIP"
+                        - option "Woodcock-Muñoz Language Survey (WMLS III)"
+                        - option "Early Cognitive and Academic Development (ECAD)"
+                        - option "Woodcock Johnson IV (WJ IV)"
+                        - option "Arabiya"
+                        - option "Other"
+                    - button "Done" [disabled] [ref=f1e72]:
+                      - generic [ref=f1e74]: Done
+              - generic [ref=f1e75]:
+                - paragraph [ref=f1e78]:
+                  - text: This chat service uses a cookie to interact with you and maintain your chat history. Our service provider will monitor and record this chat for quality assurance (see their
+                  - link "Privacy Policy" [ref=f1e79] [cursor=pointer]:
+                    - /url: https://legal.hubspot.com/privacy-policy
+                  - text: ).
+                - button "I agree" [ref=f1e81] [cursor=pointer]:
+                  - generic [ref=f1e82] [cursor=pointer]:
+                    - generic [ref=f1e84] [cursor=pointer]: I agree
+                    - status
+        - button "Close live chat" [ref=f1e90]:
+          - img [ref=f1e92]
+          - img [ref=f1e100]
+    - img [ref=e69]
+```
