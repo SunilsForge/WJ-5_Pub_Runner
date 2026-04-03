@@ -1,0 +1,172 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: 04PwAut25AH ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| Subscription Details"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30] [cursor=pointer]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+      - main [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - heading [level=1] [ref=e38]: My Test Assignments
+              - button [ref=e39] [cursor=pointer]: Create New Test Assignment
+            - generic [ref=e40]:
+              - generic [ref=e43]:
+                - textbox [ref=e44]: N8704A57988, Fletcher
+                - button [ref=e45] [cursor=pointer]
+              - generic [ref=e46]:
+                - button [disabled] [ref=e47]: Active
+                - button [disabled] [ref=e48]: Closed
+            - generic [ref=e49]:
+              - generic [ref=e50]: Examinee
+              - generic [ref=e51]: Test Set
+              - generic [ref=e52]: Days Left to Edit
+              - generic [ref=e53]: Status
+              - generic [ref=e54]: Actions
+              - generic [ref=e55] [cursor=pointer]:
+                - button [ref=e56] [cursor=pointer]:
+                  - generic [ref=e57] [cursor=pointer]: N8704A57988, Fletcher
+                - button [ref=e58] [cursor=pointer]:
+                  - generic [ref=e60] [cursor=pointer]: Broad Achievement (copy)
+                - button [ref=e62] [cursor=pointer]: —
+                - button [ref=e63] [cursor=pointer]:
+                  - generic [ref=e64] [cursor=pointer]: ●
+                  - text: Not Started
+                - generic [ref=e65] [cursor=pointer]:
+                  - button [ref=e66] [cursor=pointer]
+                  - button [ref=e67] [cursor=pointer]
+                  - button [ref=e68] [cursor=pointer]
+          - generic [ref=e69]:
+            - generic [ref=e72]:
+              - img [ref=e73]
+              - heading [level=3] [ref=e77]: Notifications Center
+            - generic [ref=e78]:
+              - generic [ref=e80]:
+                - img [ref=e81]
+                - heading [level=3] [ref=e85]: Resources
+              - list [ref=e86]:
+                - listitem [ref=e87]:
+                  - button [ref=e88] [cursor=pointer]:
+                    - heading [level=6] [ref=e89] [cursor=pointer]: Riverside Learn
+                    - img [ref=e91] [cursor=pointer]
+                - listitem [ref=e93]:
+                  - button [ref=e94] [cursor=pointer]:
+                    - heading [level=6] [ref=e95] [cursor=pointer]: Onboarding Tutorial Videos
+                    - img [ref=e97] [cursor=pointer]
+                - listitem [ref=e99]:
+                  - button [ref=e100] [cursor=pointer]:
+                    - heading [level=6] [ref=e101] [cursor=pointer]: Quick Reference Guides
+                    - img [ref=e103] [cursor=pointer]
+              - button [ref=e106] [cursor=pointer]: View All
+    - contentinfo [ref=e107]:
+      - generic [ref=e108]: Footer region,
+      - link [ref=e109] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img [ref=e110] [cursor=pointer]
+      - generic [ref=e111]:
+        - link [ref=e112] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e113] [cursor=pointer]
+        - link [ref=e114] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e115] [cursor=pointer]
+        - link [ref=e116] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e117] [cursor=pointer]
+        - link [ref=e118] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e119] [cursor=pointer]
+      - generic [ref=e120]:
+        - button [ref=e121] [cursor=pointer]: Leave Feedback
+        - generic [ref=e122]: "|"
+        - link [ref=e123] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e124]: "|"
+        - link [ref=e125] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e126]: Footer region end
+  - dialog [ref=e128]:
+    - generic [ref=e129]:
+      - heading "Edit Test Assignment" [level=1] [ref=e130]
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]: Examinee
+          - generic [ref=e141]: Complete
+        - generic [ref=e142]:
+          - generic [ref=e143]: Test Sets
+          - generic [ref=e144]: In Progress
+        - generic [ref=e145]:
+          - generic [ref=e146]: Settings
+          - generic [ref=e147]: Complete
+    - generic [ref=e148]:
+      - heading "Select a Test Set" [level=3] [ref=e149]
+      - generic [ref=e150]:
+        - generic [ref=e153]:
+          - generic "Select Test Set" [ref=e154]: Test Set Name
+          - tree "Select Test Set" [ref=e155] [cursor=pointer]:
+            - generic [ref=e156] [cursor=pointer]: Select Test Set
+            - generic [ref=e157]:
+              - generic [ref=e160]:
+                - textbox [active] [ref=e161]: General Intellectual Ability (GIA)
+                - button "Search" [ref=e162] [cursor=pointer]
+              - list [ref=e163]:
+                - generic [ref=e167]:
+                  - treeitem "General Intellectual Ability (GIA) (40 min)" [ref=e168]:
+                    - treeitem "General Intellectual Ability (GIA) (40 min)" [ref=e170] [cursor=pointer]:
+                      - generic [ref=e171] [cursor=pointer]:
+                        - text: General Intellectual Ability (GIA)
+                        - generic [ref=e172] [cursor=pointer]: (40 min)
+                  - treeitem "General Intellectual Ability (GIA) (copy) (40 min)" [ref=e173]:
+                    - treeitem "General Intellectual Ability (GIA) (copy) (40 min)" [ref=e175] [cursor=pointer]:
+                      - generic [ref=e176] [cursor=pointer]:
+                        - text: General Intellectual Ability (GIA) (copy)
+                        - generic [ref=e177] [cursor=pointer]: (40 min)
+        - generic [ref=e179]:
+          - generic [ref=e180]:
+            - heading "Broad Achievement (copy)" [level=3] [ref=e181]
+            - generic [ref=e182]:
+              - img [ref=e183]
+              - text: "Time Estimate:"
+              - generic [ref=e190]: 51 min
+          - generic [ref=e191]:
+            - generic [ref=e192]: Letter-Word Identification
+            - generic [ref=e193]: Calculation
+            - generic [ref=e194]: Spelling
+            - generic [ref=e195]: Math Facts Fluency
+            - generic [ref=e196]: Passage Comprehension
+            - generic [ref=e197]: Applied Problems
+            - generic [ref=e198]: Sentence Reading Fluency
+            - generic [ref=e199]: Written Language Samples
+            - generic [ref=e200]: Sentence Writing Fluency
+    - generic [ref=e201]:
+      - button "Cancel" [ref=e202] [cursor=pointer]
+      - generic [ref=e203]:
+        - button "Back" [ref=e204] [cursor=pointer]
+        - button "Update" [ref=e205] [cursor=pointer]
+```

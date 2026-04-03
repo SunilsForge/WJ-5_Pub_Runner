@@ -1,0 +1,263 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S02PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S02PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - heading "REPORT CENTER" [level=1] [ref=e36]
+            - navigation [ref=e37]:
+              - tablist [ref=e38]:
+                - tab "Report Library" [selected] [ref=e39] [cursor=pointer]
+                - button "Zoom In" [ref=e40] [cursor=pointer]:
+                  - img "Zoom Page In Icon" [ref=e41] [cursor=pointer]
+            - grid [ref=e51]:
+              - generic [ref=e52]:
+                - generic [ref=e55]: Report Name
+                - generic [ref=e58]: Status
+                - generic [ref=e61]: Date Created
+                - generic [ref=e64]: Actions
+              - rowgroup [ref=e65]:
+                - row "Report Name Derived_Score_AutoFilter_Template_N96477A71124 Status Completed Date Created 04/03/2026 01:13 AM Download/Print Delete View Data Export Format" [ref=e66]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N96477A71124" [ref=e68]: Derived_Score_AutoFilter_Template_N96477A71124
+                  - gridcell "Status Completed" [ref=e70]: Completed
+                  - gridcell "Date Created 04/03/2026 01:13 AM" [ref=e72]: 04/03/2026 01:13 AM
+                  - generic [ref=e73]:
+                    - gridcell "Download/Print" [ref=e75] [cursor=pointer]
+                    - gridcell "Delete" [ref=e77] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e78] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N65002A88424 Status Completed Date Created 04/03/2026 01:07 AM Download/Print Delete View Data Export Format" [ref=e80]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N65002A88424" [ref=e82]: Derived_Score_AutoFilter_Template_N65002A88424
+                  - gridcell "Status Completed" [ref=e84]: Completed
+                  - gridcell "Date Created 04/03/2026 01:07 AM" [ref=e86]: 04/03/2026 01:07 AM
+                  - generic [ref=e87]:
+                    - gridcell "Download/Print" [ref=e89] [cursor=pointer]
+                    - gridcell "Delete" [ref=e91] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e92] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N70253A65785 Status Completed Date Created 04/03/2026 01:01 AM Download/Print Delete View Data Export Format" [ref=e94]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N70253A65785" [ref=e96]: Derived_Score_AutoFilter_Template_N70253A65785
+                  - gridcell "Status Completed" [ref=e98]: Completed
+                  - gridcell "Date Created 04/03/2026 01:01 AM" [ref=e100]: 04/03/2026 01:01 AM
+                  - generic [ref=e101]:
+                    - gridcell "Download/Print" [ref=e103] [cursor=pointer]
+                    - gridcell "Delete" [ref=e105] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e106] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N62806A55070 Status Completed Date Created 04/03/2026 12:55 AM Download/Print Delete View Data Export Format" [ref=e108]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N62806A55070" [ref=e110]: Derived_Score_AutoFilter_Template_N62806A55070
+                  - gridcell "Status Completed" [ref=e112]: Completed
+                  - gridcell "Date Created 04/03/2026 12:55 AM" [ref=e114]: 04/03/2026 12:55 AM
+                  - generic [ref=e115]:
+                    - gridcell "Download/Print" [ref=e117] [cursor=pointer]
+                    - gridcell "Delete" [ref=e119] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e120] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N3077A98238 Status Completed Date Created 03/31/2026 01:52 PM Download/Print Delete View Data Export Format" [ref=e122]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N3077A98238" [ref=e124]: Derived_Score_AutoFilter_Template_N3077A98238
+                  - gridcell "Status Completed" [ref=e126]: Completed
+                  - gridcell "Date Created 03/31/2026 01:52 PM" [ref=e128]: 03/31/2026 01:52 PM
+                  - generic [ref=e129]:
+                    - gridcell "Download/Print" [ref=e131] [cursor=pointer]
+                    - gridcell "Delete" [ref=e133] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e134] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N16568A78330 Status Completed Date Created 03/31/2026 01:45 PM Download/Print Delete View Data Export Format" [ref=e136]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N16568A78330" [ref=e138]: Derived_Score_AutoFilter_Template_N16568A78330
+                  - gridcell "Status Completed" [ref=e140]: Completed
+                  - gridcell "Date Created 03/31/2026 01:45 PM" [ref=e142]: 03/31/2026 01:45 PM
+                  - generic [ref=e143]:
+                    - gridcell "Download/Print" [ref=e145] [cursor=pointer]
+                    - gridcell "Delete" [ref=e147] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e148] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N33487A24787 Status Completed Date Created 03/31/2026 01:38 PM Download/Print Delete View Data Export Format" [ref=e150]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N33487A24787" [ref=e152]: Derived_Score_AutoFilter_Template_N33487A24787
+                  - gridcell "Status Completed" [ref=e154]: Completed
+                  - gridcell "Date Created 03/31/2026 01:38 PM" [ref=e156]: 03/31/2026 01:38 PM
+                  - generic [ref=e157]:
+                    - gridcell "Download/Print" [ref=e159] [cursor=pointer]
+                    - gridcell "Delete" [ref=e161] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e162] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N38303A49227 Status Completed Date Created 03/31/2026 01:34 PM Download/Print Delete View Data Export Format" [ref=e164]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N38303A49227" [ref=e166]: Derived_Score_AutoFilter_Template_N38303A49227
+                  - gridcell "Status Completed" [ref=e168]: Completed
+                  - gridcell "Date Created 03/31/2026 01:34 PM" [ref=e170]: 03/31/2026 01:34 PM
+                  - generic [ref=e171]:
+                    - gridcell "Download/Print" [ref=e173] [cursor=pointer]
+                    - gridcell "Delete" [ref=e175] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e176] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N68285A95760 Status Completed Date Created 03/31/2026 01:19 PM Download/Print Delete View Data Export Format" [ref=e178]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N68285A95760" [ref=e180]: Derived_Score_AutoFilter_Template_N68285A95760
+                  - gridcell "Status Completed" [ref=e182]: Completed
+                  - gridcell "Date Created 03/31/2026 01:19 PM" [ref=e184]: 03/31/2026 01:19 PM
+                  - generic [ref=e185]:
+                    - gridcell "Download/Print" [ref=e187] [cursor=pointer]
+                    - gridcell "Delete" [ref=e189] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e190] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N3782A56399 Status Completed Date Created 03/31/2026 01:13 PM Download/Print Delete View Data Export Format" [ref=e192]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N3782A56399" [ref=e194]: Derived_Score_AutoFilter_Template_N3782A56399
+                  - gridcell "Status Completed" [ref=e196]: Completed
+                  - gridcell "Date Created 03/31/2026 01:13 PM" [ref=e198]: 03/31/2026 01:13 PM
+                  - generic [ref=e199]:
+                    - gridcell "Download/Print" [ref=e201] [cursor=pointer]
+                    - gridcell "Delete" [ref=e203] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e204] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N47866A29986 Status Completed Date Created 03/26/2026 06:11 AM Download/Print Delete View Data Export Format" [ref=e206]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N47866A29986" [ref=e208]: Derived_Score_AutoFilter_Template_N47866A29986
+                  - gridcell "Status Completed" [ref=e210]: Completed
+                  - gridcell "Date Created 03/26/2026 06:11 AM" [ref=e212]: 03/26/2026 06:11 AM
+                  - generic [ref=e213]:
+                    - gridcell "Download/Print" [ref=e215] [cursor=pointer]
+                    - gridcell "Delete" [ref=e217] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e218] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N78791A49021 Status Completed Date Created 03/26/2026 06:06 AM Download/Print Delete View Data Export Format" [ref=e220]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N78791A49021" [ref=e222]: Derived_Score_AutoFilter_Template_N78791A49021
+                  - gridcell "Status Completed" [ref=e224]: Completed
+                  - gridcell "Date Created 03/26/2026 06:06 AM" [ref=e226]: 03/26/2026 06:06 AM
+                  - generic [ref=e227]:
+                    - gridcell "Download/Print" [ref=e229] [cursor=pointer]
+                    - gridcell "Delete" [ref=e231] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e232] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N25247A99791 Status Completed Date Created 03/26/2026 06:00 AM Download/Print Delete View Data Export Format" [ref=e234]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N25247A99791" [ref=e236]: Derived_Score_AutoFilter_Template_N25247A99791
+                  - gridcell "Status Completed" [ref=e238]: Completed
+                  - gridcell "Date Created 03/26/2026 06:00 AM" [ref=e240]: 03/26/2026 06:00 AM
+                  - generic [ref=e241]:
+                    - gridcell "Download/Print" [ref=e243] [cursor=pointer]
+                    - gridcell "Delete" [ref=e245] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e246] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N77252A48294 Status Completed Date Created 03/26/2026 05:54 AM Download/Print Delete View Data Export Format" [ref=e248]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N77252A48294" [ref=e250]: Derived_Score_AutoFilter_Template_N77252A48294
+                  - gridcell "Status Completed" [ref=e252]: Completed
+                  - gridcell "Date Created 03/26/2026 05:54 AM" [ref=e254]: 03/26/2026 05:54 AM
+                  - generic [ref=e255]:
+                    - gridcell "Download/Print" [ref=e257] [cursor=pointer]
+                    - gridcell "Delete" [ref=e259] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e260] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N35990A5571 Status Completed Date Created 03/04/2026 11:23 PM Download/Print Delete View Data Export Format" [ref=e262]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N35990A5571" [ref=e264]: Derived_Score_AutoFilter_Template_N35990A5571
+                  - gridcell "Status Completed" [ref=e266]: Completed
+                  - gridcell "Date Created 03/04/2026 11:23 PM" [ref=e268]: 03/04/2026 11:23 PM
+                  - generic [ref=e269]:
+                    - gridcell "Download/Print" [ref=e271] [cursor=pointer]
+                    - gridcell "Delete" [ref=e273] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e274] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N89039A24621 Status Completed Date Created 03/04/2026 11:18 PM Download/Print Delete View Data Export Format" [ref=e276]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N89039A24621" [ref=e278]: Derived_Score_AutoFilter_Template_N89039A24621
+                  - gridcell "Status Completed" [ref=e280]: Completed
+                  - gridcell "Date Created 03/04/2026 11:18 PM" [ref=e282]: 03/04/2026 11:18 PM
+                  - generic [ref=e283]:
+                    - gridcell "Download/Print" [ref=e285] [cursor=pointer]
+                    - gridcell "Delete" [ref=e287] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e288] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N56870A74017 Status Completed Date Created 03/04/2026 11:13 PM Download/Print Delete View Data Export Format" [ref=e290]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N56870A74017" [ref=e292]: Derived_Score_AutoFilter_Template_N56870A74017
+                  - gridcell "Status Completed" [ref=e294]: Completed
+                  - gridcell "Date Created 03/04/2026 11:13 PM" [ref=e296]: 03/04/2026 11:13 PM
+                  - generic [ref=e297]:
+                    - gridcell "Download/Print" [ref=e299] [cursor=pointer]
+                    - gridcell "Delete" [ref=e301] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e302] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N40549A92557 Status Completed Date Created 03/04/2026 11:07 PM Download/Print Delete View Data Export Format" [ref=e304]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N40549A92557" [ref=e306]: Derived_Score_AutoFilter_Template_N40549A92557
+                  - gridcell "Status Completed" [ref=e308]: Completed
+                  - gridcell "Date Created 03/04/2026 11:07 PM" [ref=e310]: 03/04/2026 11:07 PM
+                  - generic [ref=e311]:
+                    - gridcell "Download/Print" [ref=e313] [cursor=pointer]
+                    - gridcell "Delete" [ref=e315] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e316] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N61562A24093 Status Completed Date Created 03/04/2026 11:02 PM Download/Print Delete View Data Export Format" [ref=e318]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N61562A24093" [ref=e320]: Derived_Score_AutoFilter_Template_N61562A24093
+                  - gridcell "Status Completed" [ref=e322]: Completed
+                  - gridcell "Date Created 03/04/2026 11:02 PM" [ref=e324]: 03/04/2026 11:02 PM
+                  - generic [ref=e325]:
+                    - gridcell "Download/Print" [ref=e327] [cursor=pointer]
+                    - gridcell "Delete" [ref=e329] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e330] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N61562A24093 Status Completed Date Created 03/04/2026 11:02 PM Download/Print Delete View Data Export Format" [ref=e332]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N61562A24093" [ref=e334]: Derived_Score_AutoFilter_Template_N61562A24093
+                  - gridcell "Status Completed" [ref=e336]: Completed
+                  - gridcell "Date Created 03/04/2026 11:02 PM" [ref=e338]: 03/04/2026 11:02 PM
+                  - generic [ref=e339]:
+                    - gridcell "Download/Print" [ref=e341] [cursor=pointer]
+                    - gridcell "Delete" [ref=e343] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e344] [cursor=pointer]
+                - row "Report Name Derived_Score_AutoFilter_Template_N61562A24093 Status Completed Date Created 03/04/2026 11:02 PM Download/Print Delete View Data Export Format" [ref=e346]:
+                  - gridcell "Report Name Derived_Score_AutoFilter_Template_N61562A24093" [ref=e348]: Derived_Score_AutoFilter_Template_N61562A24093
+                  - gridcell "Status Completed" [ref=e350]: Completed
+                  - gridcell "Date Created 03/04/2026 11:02 PM" [ref=e352]: 03/04/2026 11:02 PM
+                  - generic [ref=e353]:
+                    - gridcell "Download/Print" [ref=e355] [cursor=pointer]
+                    - gridcell "Delete" [ref=e357] [cursor=pointer]
+                    - button "View Data Export Format":
+                      - img [ref=e358] [cursor=pointer]
+      - contentinfo [ref=e360]:
+        - generic [ref=e361]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e362] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e363] [cursor=pointer]
+        - generic [ref=e364]:
+          - link "Riverside Insights Facebook" [ref=e365] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e366] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e367] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e368] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e369] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e370] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e371] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e372] [cursor=pointer]
+        - generic [ref=e373]:
+          - button "Leave Feedback" [ref=e374] [cursor=pointer]
+          - generic [ref=e375]: "|"
+          - link "Terms of Use" [ref=e376] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e377]: "|"
+          - link "Privacy Policy" [ref=e378] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e379]: Footer region end
+```

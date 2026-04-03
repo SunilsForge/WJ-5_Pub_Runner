@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "205",
+    "timestamp": "20260403_000000",
+    "runReason": "running Smoke in STAGE as a part of HotFix",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "202",
     "timestamp": "20260331_000000",
     "runReason": "Running Regression in QA to check the locator issues",
