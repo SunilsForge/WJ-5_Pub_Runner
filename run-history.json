@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "206",
+    "timestamp": "20260404_000000",
+    "runReason": "Running SMOKE in PROD as a part of HOTFIX",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "205",
     "timestamp": "20260403_000000",
     "runReason": "running Smoke in STAGE as a part of HotFix",
