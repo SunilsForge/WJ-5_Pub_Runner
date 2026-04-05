@@ -1,0 +1,2756 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+        "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006653177"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "shard": {
+      "current": 1,
+      "total": 2
+    },
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+      "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " WRTSMP Left Nav and Rerouting",
+          "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Ages 8 to 11 - Flag Item with Notes and Review scenario for Score Later for SSP2 Test UI",
+              "ok": false,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 284897,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 60,
+                          "line": 6502
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6502\n\n\u001b[0m \u001b[90m 6500 |\u001b[39m    \u001b[36mif\u001b[39m (typeOfTest \u001b[33m&&\u001b[39m typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i\u001b[39m) \u001b[33m&&\u001b[39m testStemForm \u001b[33m!==\u001b[39m \u001b[32m\"SWRTFL.W5PA\"\u001b[39m){\n \u001b[90m 6501 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6502 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6503 |\u001b[39m    }\u001b[36melse\u001b[39m{\n \u001b[90m 6504 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6505 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 60,
+                            "line": 6502
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6502\n\n  6500 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== \"SWRTFL.W5PA\"){\n  6501 |     await this.nextButton.click();\n> 6502 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6503 |    }else{\n  6504 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6505 |   }\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N23274A24983\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N23274A24983/dataFiles/Score_DataExport_AutoFilter_Template_N23274A24983.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N23274A24983 FirstName=Rocio LastName =N23274A24983 Age = 04/05/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N23274A24983\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Ages 8 to 11|56414,56415\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Current Item: Item 6\n"
+                        },
+                        {
+                          "text": "Parsed item number: 6\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 6: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 7\n"
+                        },
+                        {
+                          "text": "Parsed item number: 7\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 7: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 8\n"
+                        },
+                        {
+                          "text": "Parsed item number: 8\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 8: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 9\n"
+                        },
+                        {
+                          "text": "Parsed item number: 9\n"
+                        },
+                        {
+                          "text": "Current Item: Item 10\n"
+                        },
+                        {
+                          "text": "Parsed item number: 10\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11\n"
+                        },
+                        {
+                          "text": "Parsed item number: 11\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12\n"
+                        },
+                        {
+                          "text": "Parsed item number: 12\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13\n"
+                        },
+                        {
+                          "text": "Parsed item number: 13\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14\n"
+                        },
+                        {
+                          "text": "Parsed item number: 14\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15\n"
+                        },
+                        {
+                          "text": "Parsed item number: 15\n"
+                        },
+                        {
+                          "text": "Last item (15) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 10
+                        }
+                      ],
+                      "startTime": "2026-04-05T17:28:52.211Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-5759d-core-Later-for-SSP2-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-5759d-core-Later-for-SSP2-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-5759d-core-Later-for-SSP2-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-5759d-core-Later-for-SSP2-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-5759d-core-Later-for-SSP2-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 60,
+                        "line": 6502
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 272577,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 60,
+                          "line": 6502
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6502\n\n\u001b[0m \u001b[90m 6500 |\u001b[39m    \u001b[36mif\u001b[39m (typeOfTest \u001b[33m&&\u001b[39m typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i\u001b[39m) \u001b[33m&&\u001b[39m testStemForm \u001b[33m!==\u001b[39m \u001b[32m\"SWRTFL.W5PA\"\u001b[39m){\n \u001b[90m 6501 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6502 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6503 |\u001b[39m    }\u001b[36melse\u001b[39m{\n \u001b[90m 6504 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6505 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 60,
+                            "line": 6502
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6502\n\n  6500 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== \"SWRTFL.W5PA\"){\n  6501 |     await this.nextButton.click();\n> 6502 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6503 |    }else{\n  6504 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6505 |   }\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W1] Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S1:W1] Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N76988A5786\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N76988A5786/dataFiles/Score_DataExport_AutoFilter_Template_N76988A5786.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N76988A5786 FirstName=Zula LastName =N76988A5786 Age = 04/05/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N76988A5786\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Ages 8 to 11|56414,56415\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Current Item: Item 6\n"
+                        },
+                        {
+                          "text": "Parsed item number: 6\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 6: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 7\n"
+                        },
+                        {
+                          "text": "Parsed item number: 7\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 7: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 8\n"
+                        },
+                        {
+                          "text": "Parsed item number: 8\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 8: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 9\n"
+                        },
+                        {
+                          "text": "Parsed item number: 9\n"
+                        },
+                        {
+                          "text": "Current Item: Item 10\n"
+                        },
+                        {
+                          "text": "Parsed item number: 10\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11\n"
+                        },
+                        {
+                          "text": "Parsed item number: 11\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12\n"
+                        },
+                        {
+                          "text": "Parsed item number: 12\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13\n"
+                        },
+                        {
+                          "text": "Parsed item number: 13\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14\n"
+                        },
+                        {
+                          "text": "Parsed item number: 14\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15\n"
+                        },
+                        {
+                          "text": "Parsed item number: 15\n"
+                        },
+                        {
+                          "text": "Last item (15) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 4
+                        }
+                      ],
+                      "startTime": "2026-04-05T17:33:45.854Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-5759d-core-Later-for-SSP2-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-5759d-core-Later-for-SSP2-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-5759d-core-Later-for-SSP2-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-5759d-core-Later-for-SSP2-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 60,
+                        "line": 6502
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-235f821e3024ff47b5ca",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Above Average Adult - Flag Item with Notes and Review scenario for Score Later for SSP4 Test UI",
+              "ok": false,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 285251,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 60,
+                          "line": 6502
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6502\n\n\u001b[0m \u001b[90m 6500 |\u001b[39m    \u001b[36mif\u001b[39m (typeOfTest \u001b[33m&&\u001b[39m typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i\u001b[39m) \u001b[33m&&\u001b[39m testStemForm \u001b[33m!==\u001b[39m \u001b[32m\"SWRTFL.W5PA\"\u001b[39m){\n \u001b[90m 6501 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6502 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6503 |\u001b[39m    }\u001b[36melse\u001b[39m{\n \u001b[90m 6504 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6505 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 60,
+                            "line": 6502
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6502\n\n  6500 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== \"SWRTFL.W5PA\"){\n  6501 |     await this.nextButton.click();\n> 6502 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6503 |    }else{\n  6504 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6505 |   }\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W2] Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S1:W2] Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N46467A19686\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N46467A19686/dataFiles/Score_DataExport_AutoFilter_Template_N46467A19686.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N46467A19686 FirstName=Robyn LastName =N46467A19686 Age = 04/05/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N46467A19686\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Above Average Adult|56414,56429\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16\n"
+                        },
+                        {
+                          "text": "Parsed item number: 16\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 16: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17\n"
+                        },
+                        {
+                          "text": "Parsed item number: 17\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 17: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18\n"
+                        },
+                        {
+                          "text": "Parsed item number: 18\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 18: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19\n"
+                        },
+                        {
+                          "text": "Parsed item number: 19\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20\n"
+                        },
+                        {
+                          "text": "Parsed item number: 20\n"
+                        },
+                        {
+                          "text": "Current Item: Item 21\n"
+                        },
+                        {
+                          "text": "Parsed item number: 21\n"
+                        },
+                        {
+                          "text": "Current Item: Item 22\n"
+                        },
+                        {
+                          "text": "Parsed item number: 22\n"
+                        },
+                        {
+                          "text": "Current Item: Item 23\n"
+                        },
+                        {
+                          "text": "Parsed item number: 23\n"
+                        },
+                        {
+                          "text": "Current Item: Item 24\n"
+                        },
+                        {
+                          "text": "Parsed item number: 24\n"
+                        },
+                        {
+                          "text": "Current Item: Item 25\n"
+                        },
+                        {
+                          "text": "Parsed item number: 25\n"
+                        },
+                        {
+                          "text": "Last item (25) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 9
+                        }
+                      ],
+                      "startTime": "2026-04-05T17:38:20.287Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-e5320-core-Later-for-SSP4-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-e5320-core-Later-for-SSP4-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-e5320-core-Later-for-SSP4-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-e5320-core-Later-for-SSP4-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-e5320-core-Later-for-SSP4-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 60,
+                        "line": 6502
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 274831,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 60,
+                          "line": 6502
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6502\n\n\u001b[0m \u001b[90m 6500 |\u001b[39m    \u001b[36mif\u001b[39m (typeOfTest \u001b[33m&&\u001b[39m typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i\u001b[39m) \u001b[33m&&\u001b[39m testStemForm \u001b[33m!==\u001b[39m \u001b[32m\"SWRTFL.W5PA\"\u001b[39m){\n \u001b[90m 6501 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6502 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6503 |\u001b[39m    }\u001b[36melse\u001b[39m{\n \u001b[90m 6504 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6505 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 60,
+                            "line": 6502
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6502\n\n  6500 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== \"SWRTFL.W5PA\"){\n  6501 |     await this.nextButton.click();\n> 6502 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6503 |    }else{\n  6504 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6505 |   }\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W3] Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S1:W3] Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N67997A14900\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N67997A14900/dataFiles/Score_DataExport_AutoFilter_Template_N67997A14900.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N67997A14900 FirstName=Holly LastName =N67997A14900 Age = 04/05/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N67997A14900\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Above Average Adult|56414,56429\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16\n"
+                        },
+                        {
+                          "text": "Parsed item number: 16\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 16: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17\n"
+                        },
+                        {
+                          "text": "Parsed item number: 17\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 17: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18\n"
+                        },
+                        {
+                          "text": "Parsed item number: 18\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 18: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19\n"
+                        },
+                        {
+                          "text": "Parsed item number: 19\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20\n"
+                        },
+                        {
+                          "text": "Parsed item number: 20\n"
+                        },
+                        {
+                          "text": "Current Item: Item 21\n"
+                        },
+                        {
+                          "text": "Parsed item number: 21\n"
+                        },
+                        {
+                          "text": "Current Item: Item 22\n"
+                        },
+                        {
+                          "text": "Parsed item number: 22\n"
+                        },
+                        {
+                          "text": "Current Item: Item 23\n"
+                        },
+                        {
+                          "text": "Parsed item number: 23\n"
+                        },
+                        {
+                          "text": "Current Item: Item 24\n"
+                        },
+                        {
+                          "text": "Parsed item number: 24\n"
+                        },
+                        {
+                          "text": "Current Item: Item 25\n"
+                        },
+                        {
+                          "text": "Parsed item number: 25\n"
+                        },
+                        {
+                          "text": "Last item (25) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 4
+                        }
+                      ],
+                      "startTime": "2026-04-05T17:43:14.310Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-e5320-core-Later-for-SSP4-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-e5320-core-Later-for-SSP4-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-e5320-core-Later-for-SSP4-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-e5320-core-Later-for-SSP4-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 60,
+                        "line": 6502
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-9e9198e8d4b963c8b2df",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Grade 7 to Average Adult - Flag Item with Notes and Review scenario for Score Later for SSP3 Test UI",
+              "ok": false,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 286928,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 60,
+                          "line": 6502
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6502\n\n\u001b[0m \u001b[90m 6500 |\u001b[39m    \u001b[36mif\u001b[39m (typeOfTest \u001b[33m&&\u001b[39m typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i\u001b[39m) \u001b[33m&&\u001b[39m testStemForm \u001b[33m!==\u001b[39m \u001b[32m\"SWRTFL.W5PA\"\u001b[39m){\n \u001b[90m 6501 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6502 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6503 |\u001b[39m    }\u001b[36melse\u001b[39m{\n \u001b[90m 6504 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6505 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 60,
+                            "line": 6502
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6502\n\n  6500 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== \"SWRTFL.W5PA\"){\n  6501 |     await this.nextButton.click();\n> 6502 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6503 |    }else{\n  6504 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6505 |   }\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W4] Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S1:W4] Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N43984A30173\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N43984A30173/dataFiles/Score_DataExport_AutoFilter_Template_N43984A30173.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N43984A30173 FirstName=Casandra LastName =N43984A30173 Age = 04/05/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N43984A30173\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Grade 7 to Average Adult|56414,56422\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11\n"
+                        },
+                        {
+                          "text": "Parsed item number: 11\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 11: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12\n"
+                        },
+                        {
+                          "text": "Parsed item number: 12\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 12: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13\n"
+                        },
+                        {
+                          "text": "Parsed item number: 13\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 13: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14\n"
+                        },
+                        {
+                          "text": "Parsed item number: 14\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15\n"
+                        },
+                        {
+                          "text": "Parsed item number: 15\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16\n"
+                        },
+                        {
+                          "text": "Parsed item number: 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17\n"
+                        },
+                        {
+                          "text": "Parsed item number: 17\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18\n"
+                        },
+                        {
+                          "text": "Parsed item number: 18\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19\n"
+                        },
+                        {
+                          "text": "Parsed item number: 19\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20\n"
+                        },
+                        {
+                          "text": "Parsed item number: 20\n"
+                        },
+                        {
+                          "text": "Last item (20) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 8
+                        }
+                      ],
+                      "startTime": "2026-04-05T17:47:50.985Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-a0cee-core-Later-for-SSP3-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-a0cee-core-Later-for-SSP3-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-a0cee-core-Later-for-SSP3-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-a0cee-core-Later-for-SSP3-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-a0cee-core-Later-for-SSP3-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 60,
+                        "line": 6502
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 276564,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 60,
+                          "line": 6502
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6502\n\n\u001b[0m \u001b[90m 6500 |\u001b[39m    \u001b[36mif\u001b[39m (typeOfTest \u001b[33m&&\u001b[39m typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i\u001b[39m) \u001b[33m&&\u001b[39m testStemForm \u001b[33m!==\u001b[39m \u001b[32m\"SWRTFL.W5PA\"\u001b[39m){\n \u001b[90m 6501 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6502 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6503 |\u001b[39m    }\u001b[36melse\u001b[39m{\n \u001b[90m 6504 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6505 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 60,
+                            "line": 6502
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6502\n\n  6500 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== \"SWRTFL.W5PA\"){\n  6501 |     await this.nextButton.click();\n> 6502 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6503 |    }else{\n  6504 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6505 |   }\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W5] Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S1:W5] Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N81179A63914\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N81179A63914/dataFiles/Score_DataExport_AutoFilter_Template_N81179A63914.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N81179A63914 FirstName=Dax LastName =N81179A63914 Age = 04/05/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N81179A63914\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Grade 7 to Average Adult|56414,56422\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11\n"
+                        },
+                        {
+                          "text": "Parsed item number: 11\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 11: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12\n"
+                        },
+                        {
+                          "text": "Parsed item number: 12\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 12: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13\n"
+                        },
+                        {
+                          "text": "Parsed item number: 13\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 13: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14\n"
+                        },
+                        {
+                          "text": "Parsed item number: 14\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15\n"
+                        },
+                        {
+                          "text": "Parsed item number: 15\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16\n"
+                        },
+                        {
+                          "text": "Parsed item number: 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17\n"
+                        },
+                        {
+                          "text": "Parsed item number: 17\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18\n"
+                        },
+                        {
+                          "text": "Parsed item number: 18\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19\n"
+                        },
+                        {
+                          "text": "Parsed item number: 19\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20\n"
+                        },
+                        {
+                          "text": "Parsed item number: 20\n"
+                        },
+                        {
+                          "text": "Last item (20) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 4
+                        }
+                      ],
+                      "startTime": "2026-04-05T17:52:46.523Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-a0cee-core-Later-for-SSP3-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-a0cee-core-Later-for-SSP3-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-a0cee-core-Later-for-SSP3-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-a0cee-core-Later-for-SSP3-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 60,
+                        "line": 6502
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-2a558a7cb24c5ac7b59a",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 8 to 11 - Score Later Error Scenario for SSP2 Test UI",
+              "ok": false,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 284418,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 60,
+                          "line": 6502
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6502\n\n\u001b[0m \u001b[90m 6500 |\u001b[39m    \u001b[36mif\u001b[39m (typeOfTest \u001b[33m&&\u001b[39m typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i\u001b[39m) \u001b[33m&&\u001b[39m testStemForm \u001b[33m!==\u001b[39m \u001b[32m\"SWRTFL.W5PA\"\u001b[39m){\n \u001b[90m 6501 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6502 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6503 |\u001b[39m    }\u001b[36melse\u001b[39m{\n \u001b[90m 6504 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6505 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 60,
+                            "line": 6502
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6502\n\n  6500 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== \"SWRTFL.W5PA\"){\n  6501 |     await this.nextButton.click();\n> 6502 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6503 |    }else{\n  6504 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6505 |   }\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W6] Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S1:W6] Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N48784A56440\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N48784A56440/dataFiles/Score_DataExport_AutoFilter_Template_N48784A56440.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N48784A56440 FirstName=Ladarius LastName =N48784A56440 Age = 04/05/2021\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N48784A56440\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Ages 8 to 11|56414,56415\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Current Item: Item 6 (parsed number: 6)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 7 (parsed number: 7)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 8 (parsed number: 8)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 9 (parsed number: 9)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 10 (parsed number: 10)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11 (parsed number: 11)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12 (parsed number: 12)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13 (parsed number: 13)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14 (parsed number: 14)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15 (parsed number: 15)\n"
+                        },
+                        {
+                          "text": "Last item (15) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 8
+                        }
+                      ],
+                      "startTime": "2026-04-05T17:57:24.918Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-8bf18-r-Scenario-for-SSP2-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-8bf18-r-Scenario-for-SSP2-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-8bf18-r-Scenario-for-SSP2-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-8bf18-r-Scenario-for-SSP2-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-8bf18-r-Scenario-for-SSP2-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 60,
+                        "line": 6502
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 270394,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 60,
+                          "line": 6502
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6502\n\n\u001b[0m \u001b[90m 6500 |\u001b[39m    \u001b[36mif\u001b[39m (typeOfTest \u001b[33m&&\u001b[39m typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i\u001b[39m) \u001b[33m&&\u001b[39m testStemForm \u001b[33m!==\u001b[39m \u001b[32m\"SWRTFL.W5PA\"\u001b[39m){\n \u001b[90m 6501 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6502 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6503 |\u001b[39m    }\u001b[36melse\u001b[39m{\n \u001b[90m 6504 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6505 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 60,
+                            "line": 6502
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6502\n\n  6500 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== \"SWRTFL.W5PA\"){\n  6501 |     await this.nextButton.click();\n> 6502 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6503 |    }else{\n  6504 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6505 |   }\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W7] Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S1:W7] Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N22917A86819\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N22917A86819/dataFiles/Score_DataExport_AutoFilter_Template_N22917A86819.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N22917A86819 FirstName=Kali LastName =N22917A86819 Age = 04/05/2021\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N22917A86819\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Ages 8 to 11|56414,56415\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Current Item: Item 6 (parsed number: 6)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 7 (parsed number: 7)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 8 (parsed number: 8)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 9 (parsed number: 9)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 10 (parsed number: 10)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11 (parsed number: 11)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12 (parsed number: 12)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13 (parsed number: 13)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14 (parsed number: 14)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15 (parsed number: 15)\n"
+                        },
+                        {
+                          "text": "Last item (15) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 4
+                        }
+                      ],
+                      "startTime": "2026-04-05T18:02:17.929Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-8bf18-r-Scenario-for-SSP2-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-8bf18-r-Scenario-for-SSP2-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-8bf18-r-Scenario-for-SSP2-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-8bf18-r-Scenario-for-SSP2-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 60,
+                        "line": 6502
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-8faae2fc033aade236b7",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Grade 7 to Average Adult - Score Later Error Scenario for SSP3 Test UI",
+              "ok": false,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 283933,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 60,
+                          "line": 6502
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6502\n\n\u001b[0m \u001b[90m 6500 |\u001b[39m    \u001b[36mif\u001b[39m (typeOfTest \u001b[33m&&\u001b[39m typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i\u001b[39m) \u001b[33m&&\u001b[39m testStemForm \u001b[33m!==\u001b[39m \u001b[32m\"SWRTFL.W5PA\"\u001b[39m){\n \u001b[90m 6501 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6502 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6503 |\u001b[39m    }\u001b[36melse\u001b[39m{\n \u001b[90m 6504 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6505 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 60,
+                            "line": 6502
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6502\n\n  6500 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== \"SWRTFL.W5PA\"){\n  6501 |     await this.nextButton.click();\n> 6502 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6503 |    }else{\n  6504 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6505 |   }\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W8] Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S1:W8] Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N37174A15721\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37174A15721/dataFiles/Score_DataExport_AutoFilter_Template_N37174A15721.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N37174A15721 FirstName=Corine LastName =N37174A15721 Age = 04/05/2021\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N37174A15721\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Grade 7 to Average Adult|56414,56422\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11 (parsed number: 11)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12 (parsed number: 12)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13 (parsed number: 13)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14 (parsed number: 14)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15 (parsed number: 15)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16 (parsed number: 16)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17 (parsed number: 17)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18 (parsed number: 18)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19 (parsed number: 19)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20 (parsed number: 20)\n"
+                        },
+                        {
+                          "text": "Last item (20) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 10
+                        }
+                      ],
+                      "startTime": "2026-04-05T18:06:50.156Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-4102f-r-Scenario-for-SSP3-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-4102f-r-Scenario-for-SSP3-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-4102f-r-Scenario-for-SSP3-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-4102f-r-Scenario-for-SSP3-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-4102f-r-Scenario-for-SSP3-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 60,
+                        "line": 6502
+                      }
+                    },
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 274801,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 60,
+                          "line": 6502
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6502\n\n\u001b[0m \u001b[90m 6500 |\u001b[39m    \u001b[36mif\u001b[39m (typeOfTest \u001b[33m&&\u001b[39m typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i\u001b[39m) \u001b[33m&&\u001b[39m testStemForm \u001b[33m!==\u001b[39m \u001b[32m\"SWRTFL.W5PA\"\u001b[39m){\n \u001b[90m 6501 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6502 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6503 |\u001b[39m    }\u001b[36melse\u001b[39m{\n \u001b[90m 6504 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6505 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 60,
+                            "line": 6502
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6502\n\n  6500 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== \"SWRTFL.W5PA\"){\n  6501 |     await this.nextButton.click();\n> 6502 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6503 |    }else{\n  6504 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6505 |   }\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W9] Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S1:W9] Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N39846A11401\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N39846A11401/dataFiles/Score_DataExport_AutoFilter_Template_N39846A11401.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N39846A11401 FirstName=Brady LastName =N39846A11401 Age = 04/05/2021\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N39846A11401\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Grade 7 to Average Adult|56414,56422\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11 (parsed number: 11)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12 (parsed number: 12)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13 (parsed number: 13)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14 (parsed number: 14)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15 (parsed number: 15)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16 (parsed number: 16)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17 (parsed number: 17)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18 (parsed number: 18)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19 (parsed number: 19)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20 (parsed number: 20)\n"
+                        },
+                        {
+                          "text": "Last item (20) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 3
+                        }
+                      ],
+                      "startTime": "2026-04-05T18:11:42.599Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-4102f-r-Scenario-for-SSP3-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-4102f-r-Scenario-for-SSP3-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-4102f-r-Scenario-for-SSP3-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-4102f-r-Scenario-for-SSP3-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 60,
+                        "line": 6502
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-0226c07e246c648330b9",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Above Average Adult- Score Later Error Scenario for SSP4 Test UI",
+              "ok": false,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 284307,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 60,
+                          "line": 6502
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6502\n\n\u001b[0m \u001b[90m 6500 |\u001b[39m    \u001b[36mif\u001b[39m (typeOfTest \u001b[33m&&\u001b[39m typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i\u001b[39m) \u001b[33m&&\u001b[39m testStemForm \u001b[33m!==\u001b[39m \u001b[32m\"SWRTFL.W5PA\"\u001b[39m){\n \u001b[90m 6501 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6502 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6503 |\u001b[39m    }\u001b[36melse\u001b[39m{\n \u001b[90m 6504 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6505 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 60,
+                            "line": 6502
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6502\n\n  6500 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== \"SWRTFL.W5PA\"){\n  6501 |     await this.nextButton.click();\n> 6502 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6503 |    }else{\n  6504 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6505 |   }\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W10] Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S1:W10] Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N10836A63940\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N10836A63940/dataFiles/Score_DataExport_AutoFilter_Template_N10836A63940.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N10836A63940 FirstName=Zora LastName =N10836A63940 Age = 04/05/2021\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N10836A63940\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Above Average Adult|56414,56429\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16 (parsed number: 16)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17 (parsed number: 17)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18 (parsed number: 18)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19 (parsed number: 19)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20 (parsed number: 20)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 21 (parsed number: 21)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 22 (parsed number: 22)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 23 (parsed number: 23)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 24 (parsed number: 24)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 25 (parsed number: 25)\n"
+                        },
+                        {
+                          "text": "Last item (25) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 10
+                        }
+                      ],
+                      "startTime": "2026-04-05T18:16:19.244Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-510e2-r-Scenario-for-SSP4-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-510e2-r-Scenario-for-SSP4-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-510e2-r-Scenario-for-SSP4-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-510e2-r-Scenario-for-SSP4-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-510e2-r-Scenario-for-SSP4-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 60,
+                        "line": 6502
+                      }
+                    },
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 272418,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 60,
+                          "line": 6502
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6502\n\n\u001b[0m \u001b[90m 6500 |\u001b[39m    \u001b[36mif\u001b[39m (typeOfTest \u001b[33m&&\u001b[39m typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i\u001b[39m) \u001b[33m&&\u001b[39m testStemForm \u001b[33m!==\u001b[39m \u001b[32m\"SWRTFL.W5PA\"\u001b[39m){\n \u001b[90m 6501 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6502 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6503 |\u001b[39m    }\u001b[36melse\u001b[39m{\n \u001b[90m 6504 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6505 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 60,
+                            "line": 6502
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6502\n\n  6500 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== \"SWRTFL.W5PA\"){\n  6501 |     await this.nextButton.click();\n> 6502 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6503 |    }else{\n  6504 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6505 |   }\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6502:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:36:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W11] Login successful for 52PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S1:W11] Login successful for 52PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N91794A48254\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N91794A48254/dataFiles/Score_DataExport_AutoFilter_Template_N91794A48254.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N91794A48254 FirstName=Dovie LastName =N91794A48254 Age = 04/05/2021\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N91794A48254\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Above Average Adult|56414,56429\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16 (parsed number: 16)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17 (parsed number: 17)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18 (parsed number: 18)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19 (parsed number: 19)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20 (parsed number: 20)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 21 (parsed number: 21)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 22 (parsed number: 22)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 23 (parsed number: 23)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 24 (parsed number: 24)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 25 (parsed number: 25)\n"
+                        },
+                        {
+                          "text": "Last item (25) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 4
+                        }
+                      ],
+                      "startTime": "2026-04-05T18:21:12.023Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-510e2-r-Scenario-for-SSP4-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-510e2-r-Scenario-for-SSP4-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-510e2-r-Scenario-for-SSP4-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-510e2-r-Scenario-for-SSP4-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 60,
+                        "line": 6502
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-d699e8c836b0b695de88",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-05T17:28:36.391Z",
+    "duration": 3428724.655,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}
