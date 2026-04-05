@@ -1,0 +1,1521 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+        "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "shard": {
+      "current": 19,
+      "total": 20
+    },
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "test_dataExport/VRBATN_Pub.spec.ts",
+      "file": "test_dataExport/VRBATN_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "VRBATN.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/VRBATN_Pub.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For Ages 4 to 8 - All correct scenario Conduct test and validate report",
+              "ok": true,
+              "tags": [
+                "VRBATN",
+                "TestDe",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 1080000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1092417,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 09PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S19:W0] Login successful for 09PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 09PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S19:W0] Login successful for 09PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N34210A42558\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N34210A42558/dataFiles/Test_DataExport_AutoFilter_Template_N34210A42558.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N34210A42558 FirstName=Merritt LastName =N34210A42558 Age = 04/05/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N34210A42558\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Verbal Attention\n"
+                        },
+                        {
+                          "text": "selected ssp is = 12973|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Item Number 36 \n\n"
+                        },
+                        {
+                          "text": "Type Of test Ages 4 to 8 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Sample Item C, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "{\n  \u001b[32m'Introduction 1'\u001b[39m: { RT: \u001b[33m0.009\u001b[39m, Delivered_Order: \u001b[33m0\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m: { RT: \u001b[33m0.087\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m'cat'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Introduction 2'\u001b[39m: { RT: \u001b[33m0.01\u001b[39m, Delivered_Order: \u001b[33m2\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m: { RT: \u001b[33m10.652\u001b[39m, Delivered_Order: \u001b[33m3\u001b[39m, Response: \u001b[32m'4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 1'\u001b[39m: { RT: \u001b[33m12.181\u001b[39m, Delivered_Order: \u001b[33m4\u001b[39m, Response: \u001b[32m'5'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 2'\u001b[39m: { RT: \u001b[33m12.166\u001b[39m, Delivered_Order: \u001b[33m5\u001b[39m, Response: \u001b[32m'cow'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 3'\u001b[39m: { RT: \u001b[33m13.657\u001b[39m, Delivered_Order: \u001b[33m6\u001b[39m, Response: \u001b[32m'whale'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 4'\u001b[39m: { RT: \u001b[33m12.147\u001b[39m, Delivered_Order: \u001b[33m7\u001b[39m, Response: \u001b[32m'1'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 5'\u001b[39m: { RT: \u001b[33m12.147\u001b[39m, Delivered_Order: \u001b[33m8\u001b[39m, Response: \u001b[32m'9'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 6'\u001b[39m: { RT: \u001b[33m12.131\u001b[39m, Delivered_Order: \u001b[33m9\u001b[39m, Response: \u001b[32m'duck'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Sample Item C, Trial 1'\u001b[39m: { RT: \u001b[33m15.147\u001b[39m, Delivered_Order: \u001b[33m10\u001b[39m, Response: \u001b[32m'cat then 9'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 7'\u001b[39m: {\n    RT: \u001b[33m15.141\u001b[39m,\n    Delivered_Order: \u001b[33m11\u001b[39m,\n    Response: \u001b[32m'bear and frog'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 8'\u001b[39m: { RT: \u001b[33m16.632\u001b[39m, Delivered_Order: \u001b[33m12\u001b[39m, Response: \u001b[32m'10 then 5'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 9'\u001b[39m: { RT: \u001b[33m16.658\u001b[39m, Delivered_Order: \u001b[33m13\u001b[39m, Response: \u001b[32m'2'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 10'\u001b[39m: {\n    RT: \u001b[33m15.152\u001b[39m,\n    Delivered_Order: \u001b[33m14\u001b[39m,\n    Response: \u001b[32m'tiger then 2'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 11'\u001b[39m: {\n    RT: \u001b[33m15.128\u001b[39m,\n    Delivered_Order: \u001b[33m15\u001b[39m,\n    Response: \u001b[32m'6 then pony'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 12'\u001b[39m: { RT: \u001b[33m15.128\u001b[39m, Delivered_Order: \u001b[33m16\u001b[39m, Response: \u001b[32m'7 and 5'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 13'\u001b[39m: {\n    RT: \u001b[33m18.131\u001b[39m,\n    Delivered_Order: \u001b[33m17\u001b[39m,\n    Response: \u001b[32m'frog then 2'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 14'\u001b[39m: { RT: \u001b[33m16.629\u001b[39m, Delivered_Order: \u001b[33m18\u001b[39m, Response: \u001b[32m'6'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 15'\u001b[39m: { RT: \u001b[33m19.628\u001b[39m, Delivered_Order: \u001b[33m19\u001b[39m, Response: \u001b[32m'4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 16'\u001b[39m: { RT: \u001b[33m19.625\u001b[39m, Delivered_Order: \u001b[33m20\u001b[39m, Response: \u001b[32m'1'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 17'\u001b[39m: { RT: \u001b[33m22.645\u001b[39m, Delivered_Order: \u001b[33m21\u001b[39m, Response: \u001b[32m'5 and 10'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 18'\u001b[39m: {\n    RT: \u001b[33m24.161\u001b[39m,\n    Delivered_Order: \u001b[33m22\u001b[39m,\n    Response: \u001b[32m'cow then monkey'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 19'\u001b[39m: { RT: \u001b[33m21.129\u001b[39m, Delivered_Order: \u001b[33m23\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 20'\u001b[39m: { RT: \u001b[33m19.637\u001b[39m, Delivered_Order: \u001b[33m24\u001b[39m, Response: \u001b[32m'6'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 21'\u001b[39m: { RT: \u001b[33m21.137\u001b[39m, Delivered_Order: \u001b[33m25\u001b[39m, Response: \u001b[32m'5 and 4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 22'\u001b[39m: { RT: \u001b[33m24.131\u001b[39m, Delivered_Order: \u001b[33m26\u001b[39m, Response: \u001b[32m'2 and 9'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 23'\u001b[39m: {\n    RT: \u001b[33m21.132\u001b[39m,\n    Delivered_Order: \u001b[33m27\u001b[39m,\n    Response: \u001b[32m'chicken and kitten'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 24'\u001b[39m: { RT: \u001b[33m24.166\u001b[39m, Delivered_Order: \u001b[33m28\u001b[39m, Response: \u001b[32m'mouse'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 25'\u001b[39m: { RT: \u001b[33m28.627\u001b[39m, Delivered_Order: \u001b[33m29\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 26'\u001b[39m: { RT: \u001b[33m28.646\u001b[39m, Delivered_Order: \u001b[33m30\u001b[39m, Response: \u001b[32m'bear'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 27'\u001b[39m: { RT: \u001b[33m30.147\u001b[39m, Delivered_Order: \u001b[33m31\u001b[39m, Response: \u001b[32m'4 and 9'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 28'\u001b[39m: { RT: \u001b[33m30.126\u001b[39m, Delivered_Order: \u001b[33m32\u001b[39m, Response: \u001b[32m'2'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 29'\u001b[39m: {\n    RT: \u001b[33m30.131\u001b[39m,\n    Delivered_Order: \u001b[33m33\u001b[39m,\n    Response: \u001b[32m'cat then mouse'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 30'\u001b[39m: {\n    RT: \u001b[33m28.665\u001b[39m,\n    Delivered_Order: \u001b[33m34\u001b[39m,\n    Response: \u001b[32m'lizard and zebra'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 31'\u001b[39m: {\n    RT: \u001b[33m25.633\u001b[39m,\n    Delivered_Order: \u001b[33m35\u001b[39m,\n    Response: \u001b[32m'sheep then fox then rooster then moose'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 32'\u001b[39m: {\n    RT: \u001b[33m27.14\u001b[39m,\n    Delivered_Order: \u001b[33m36\u001b[39m,\n    Response: \u001b[32m'5 then 7 then 2 then 4 then 1'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 33'\u001b[39m: {\n    RT: \u001b[33m33.13\u001b[39m,\n    Delivered_Order: \u001b[33m37\u001b[39m,\n    Response: \u001b[32m'lizard then 4'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 34'\u001b[39m: {\n    RT: \u001b[33m31.631\u001b[39m,\n    Delivered_Order: \u001b[33m38\u001b[39m,\n    Response: \u001b[32m'whale and 9'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 35'\u001b[39m: { RT: \u001b[33m31.667\u001b[39m, Delivered_Order: \u001b[33m39\u001b[39m, Response: \u001b[32m'6 then 3'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 36'\u001b[39m: {\n    RT: \u001b[33m31.628\u001b[39m,\n    Delivered_Order: \u001b[33m40\u001b[39m,\n    Response: \u001b[32m'6 then shark then buffalo then gorilla then frog'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N34210A42558/dataFiles/Test_DataExport_AutoFilter_Template_N34210A42558.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N34210A42558\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N34210A42558/downloads/testData_N34210A42558_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N34210A42558/downloads/testData_N34210A42558_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N34210A42558/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "Looking for files matching VRBATN.W5PA\n"
+                        },
+                        {
+                          "text": "Available files: VRBATN.W5PA_2026_04_05.txt, manifest.txt\n"
+                        },
+                        {
+                          "text": "Found exact match: VRBATN.W5PA_2026_04_05.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N34210A42558/downloads/extracted/VRBATN.W5PA_2026_04_05.txt\n"
+                        },
+                        {
+                          "text": "Reading test data from: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N34210A42558/downloads/extracted/VRBATN.W5PA_2026_04_05.txt\n"
+                        },
+                        {
+                          "text": "Reading TXT content from: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N34210A42558/downloads/extracted/VRBATN.W5PA_2026_04_05.txt\n"
+                        },
+                        {
+                          "text": "returnValues =  {\n  \u001b[32m'Introduction 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'552970358'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Introduction 1'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_IN1'\u001b[39m,\n    RT: \u001b[32m'0.000'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:10.097'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:11.317'\u001b[39m,\n    Delivered_Order: \u001b[32m'0'\u001b[39m,\n    Response: \u001b[32m''\u001b[39m,\n    Score: \u001b[32m'0'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'552974076'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Sample Item A, Trial 1'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_SA1'\u001b[39m,\n    RT: \u001b[32m'0.000'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:11.347'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:14.500'\u001b[39m,\n    Delivered_Order: \u001b[32m'1'\u001b[39m,\n    Response: \u001b[32m'cat'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Introduction 2'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'552975390'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Introduction 2'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_IN2'\u001b[39m,\n    RT: \u001b[32m'0.000'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:14.527'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:17.580'\u001b[39m,\n    Delivered_Order: \u001b[32m'2'\u001b[39m,\n    Response: \u001b[32m''\u001b[39m,\n    Score: \u001b[32m'0'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'552977908'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Sample Item B, Trial 1'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_SB1'\u001b[39m,\n    RT: \u001b[32m'3.336'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:17.610'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:31.367'\u001b[39m,\n    Delivered_Order: \u001b[32m'3'\u001b[39m,\n    Response: \u001b[32m'4'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'552978924'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 1'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_010'\u001b[39m,\n    RT: \u001b[32m'3.728'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:31.393'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:46.667'\u001b[39m,\n    Delivered_Order: \u001b[32m'4'\u001b[39m,\n    Response: \u001b[32m'5'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 2'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'552980680'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 2'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_006'\u001b[39m,\n    RT: \u001b[32m'3.822'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:46.693'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:39:01.930'\u001b[39m,\n    Delivered_Order: \u001b[32m'5'\u001b[39m,\n    Response: \u001b[32m'cow'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 3'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'552982829'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 3'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_011'\u001b[39m,\n    RT: \u001b[32m'3.967'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:39:01.957'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:39:18.687'\u001b[39m,\n    Delivered_Order: \u001b[32m'6'\u001b[39m,\n    Response: \u001b[32m'whale'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 4'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'552982940'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 4'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_013'\u001b[39m,\n    RT: \u001b[32m'3.209'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:39:18.710'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:39:33.930'\u001b[39m,\n    Delivered_Order: \u001b[32m'7'\u001b[39m,\n    Response: \u001b[32m'1'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 5'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'552983782'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 5'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_012'\u001b[39m,\n    RT: \u001b[32m'3.310'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:39:33.957'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:39:49.180'\u001b[39m,\n    Delivered_Order: \u001b[32m'8'\u001b[39m,\n    Response: \u001b[32m'9'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 6'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'552985312'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 6'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_005'\u001b[39m,\n    RT: \u001b[32m'3.308'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:39:49.207'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:40:04.413'\u001b[39m,\n    Delivered_Order: \u001b[32m'9'\u001b[39m,\n    Response: \u001b[32m'duck'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Sample Item C, Trial 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'552997381'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Sample Item C, Trial 1'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_SC1'\u001b[39m,\n    RT: \u001b[32m'4.809'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:40:04.440'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:40:22.663'\u001b[39m,\n    Delivered_Order: \u001b[32m'10'\u001b[39m,\n    Response: \u001b[32m'<p>cat <span style=\"font-style:italic\">then </span>9</p>'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 7'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553005086'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 7'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_015'\u001b[39m,\n    RT: \u001b[32m'4.638'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:40:22.690'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:40:40.947'\u001b[39m,\n    Delivered_Order: \u001b[32m'11'\u001b[39m,\n    Response: \u001b[32m'<p>bear <span style=\"font-style:italic\">and </span>frog'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 8'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553011022'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 8'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_014'\u001b[39m,\n    RT: \u001b[32m'4.992'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:40:40.970'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:00.680'\u001b[39m,\n    Delivered_Order: \u001b[32m'12'\u001b[39m,\n    Response: \u001b[32m'<p>10 <span style=\"font-style:italic\">then </span>5</p>'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 9'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553013627'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 9'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_018'\u001b[39m,\n    RT: \u001b[32m'5.220'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:41:00.707'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:20.440'\u001b[39m,\n    Delivered_Order: \u001b[32m'13'\u001b[39m,\n    Response: \u001b[32m'2'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 10'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553016017'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 10'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_022'\u001b[39m,\n    RT: \u001b[32m'4.845'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:41:20.470'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:38.690'\u001b[39m,\n    Delivered_Order: \u001b[32m'14'\u001b[39m,\n    Response: \u001b[32m'<p>tiger <span style=\"font-style:italic\">then </span>2</p>'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 11'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553019647'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 11'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_017'\u001b[39m,\n    RT: \u001b[32m'4.912'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:41:38.720'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:56.947'\u001b[39m,\n    Delivered_Order: \u001b[32m'15'\u001b[39m,\n    Response: \u001b[32m'<p>6 <span style=\"font-style:italic\">then </span>pony</p>'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 12'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553020819'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 12'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_023'\u001b[39m,\n    RT: \u001b[32m'4.689'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:41:56.970'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:42:15.177'\u001b[39m,\n    Delivered_Order: \u001b[32m'16'\u001b[39m,\n    Response: \u001b[32m'<p>7 <span style=\"font-style:italic\">and </span>5'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 13'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553021278'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 13'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_026'\u001b[39m,\n    RT: \u001b[32m'5.510'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:42:15.200'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:42:36.407'\u001b[39m,\n    Delivered_Order: \u001b[32m'17'\u001b[39m,\n    Response: \u001b[32m'<p>frog <span style=\"font-style:italic\">then </span>2</p>'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 14'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553021519'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 14'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_021'\u001b[39m,\n    RT: \u001b[32m'4.810'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:42:36.433'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:42:56.143'\u001b[39m,\n    Delivered_Order: \u001b[32m'18'\u001b[39m,\n    Response: \u001b[32m'6'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 15'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553022048'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 15'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_028'\u001b[39m,\n    RT: \u001b[32m'6.086'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:42:56.170'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:43:18.887'\u001b[39m,\n    Delivered_Order: \u001b[32m'19'\u001b[39m,\n    Response: \u001b[32m'4'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 16'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553023804'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 16'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_030'\u001b[39m,\n    RT: \u001b[32m'6.149'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:43:18.913'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:43:41.643'\u001b[39m,\n    Delivered_Order: \u001b[32m'20'\u001b[39m,\n    Response: \u001b[32m'1'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 17'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553028838'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 17'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_032'\u001b[39m,\n    RT: \u001b[32m'7.211'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:43:41.667'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:44:07.393'\u001b[39m,\n    Delivered_Order: \u001b[32m'21'\u001b[39m,\n    Response: \u001b[32m'<p>5 <span style=\"font-style:italic\">and </span>10'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 18'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553031804'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 18'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_033'\u001b[39m,\n    RT: \u001b[32m'7.594'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:44:07.420'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:44:34.660'\u001b[39m,\n    Delivered_Order: \u001b[32m'22'\u001b[39m,\n    Response: \u001b[32m'<p>cow <span style=\"font-style:italic\">then </span>monkey</p>'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 19'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553033309'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 19'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_031'\u001b[39m,\n    RT: \u001b[32m'6.795'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:44:34.687'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:44:58.890'\u001b[39m,\n    Delivered_Order: \u001b[32m'23'\u001b[39m,\n    Response: \u001b[32m'8'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 20'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553039111'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 20'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_036'\u001b[39m,\n    RT: \u001b[32m'5.813'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:44:58.913'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:45:21.637'\u001b[39m,\n    Delivered_Order: \u001b[32m'24'\u001b[39m,\n    Response: \u001b[32m'6'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 21'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553046009'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 21'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_034'\u001b[39m,\n    RT: \u001b[32m'6.141'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:45:21.673'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:45:45.917'\u001b[39m,\n    Delivered_Order: \u001b[32m'25'\u001b[39m,\n    Response: \u001b[32m'<p>5 <span style=\"font-style:italic\">and </span>4'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 22'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553046790'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 22'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_038'\u001b[39m,\n    RT: \u001b[32m'7.129'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:45:45.947'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:46:13.147'\u001b[39m,\n    Delivered_Order: \u001b[32m'26'\u001b[39m,\n    Response: \u001b[32m'<p>2 <span style=\"font-style:italic\">and </span>9'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 23'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553047500'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 23'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_035'\u001b[39m,\n    RT: \u001b[32m'6.490'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:46:13.180'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:46:37.380'\u001b[39m,\n    Delivered_Order: \u001b[32m'27'\u001b[39m,\n    Response: \u001b[32m'<p>chicken <span style=\"font-style:italic\">and </span>kitten'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 24'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553054472'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 24'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_041'\u001b[39m,\n    RT: \u001b[32m'7.128'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:46:37.410'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:47:04.647'\u001b[39m,\n    Delivered_Order: \u001b[32m'28'\u001b[39m,\n    Response: \u001b[32m'mouse'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 25'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553059851'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 25'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_046'\u001b[39m,\n    RT: \u001b[32m'9.510'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:47:04.673'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:47:36.397'\u001b[39m,\n    Delivered_Order: \u001b[32m'29'\u001b[39m,\n    Response: \u001b[32m'8'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 26'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553061750'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 26'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_045'\u001b[39m,\n    RT: \u001b[32m'9.505'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:47:36.420'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:48:08.143'\u001b[39m,\n    Delivered_Order: \u001b[32m'30'\u001b[39m,\n    Response: \u001b[32m'bear'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 27'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553063038'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 27'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_057'\u001b[39m,\n    RT: \u001b[32m'9.811'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:48:08.170'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:48:41.397'\u001b[39m,\n    Delivered_Order: \u001b[32m'31'\u001b[39m,\n    Response: \u001b[32m'<p>4 <span style=\"font-style:italic\">and </span>9'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 28'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553063145'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 28'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_051'\u001b[39m,\n    RT: \u001b[32m'9.743'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:48:41.427'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:49:14.690'\u001b[39m,\n    Delivered_Order: \u001b[32m'32'\u001b[39m,\n    Response: \u001b[32m'2'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 29'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553066201'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 29'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_048'\u001b[39m,\n    RT: \u001b[32m'9.602'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:49:14.717'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:49:47.923'\u001b[39m,\n    Delivered_Order: \u001b[32m'33'\u001b[39m,\n    Response: \u001b[32m'<p>cat <span style=\"font-style:italic\">then </span>mouse</p>'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 30'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553067536'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 30'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_052'\u001b[39m,\n    RT: \u001b[32m'8.747'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:49:47.947'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:50:19.687'\u001b[39m,\n    Delivered_Order: \u001b[32m'34'\u001b[39m,\n    Response: \u001b[32m'<p>lizard <span style=\"font-style:italic\">and </span>zebra'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 31'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553074551'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 31'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_053'\u001b[39m,\n    RT: \u001b[32m'8.110'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:50:19.713'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:50:48.420'\u001b[39m,\n    Delivered_Order: \u001b[32m'35'\u001b[39m,\n    Response: \u001b[32m'<p>sheep <span style=\"font-style:italic\">then </span>fox <span style=\"font-style:italic\">then </span>rooster <span style=\"font-style:italic\">then </span>moose</p>'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 32'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553074734'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 32'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_055'\u001b[39m,\n    RT: \u001b[32m'9.040'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:50:48.447'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:51:18.700'\u001b[39m,\n    Delivered_Order: \u001b[32m'36'\u001b[39m,\n    Response: \u001b[32m'<p>5 <span style=\"font-style:italic\">then </span>7 <span style=\"font-style:italic\">then </span>2 <span style=\"font-style:italic\">then </span>4 <span style=\"font-style:italic\">then </span>1</p>'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 33'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553075947'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 33'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_054'\u001b[39m,\n    RT: \u001b[32m'10.409'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:51:18.727'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:51:54.937'\u001b[39m,\n    Delivered_Order: \u001b[32m'37'\u001b[39m,\n    Response: \u001b[32m'<p>lizard <span style=\"font-style:italic\">then </span>4</p>'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 34'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553080798'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 34'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_058'\u001b[39m,\n    RT: \u001b[32m'10.389'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:51:54.960'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:52:29.667'\u001b[39m,\n    Delivered_Order: \u001b[32m'38'\u001b[39m,\n    Response: \u001b[32m'<p>whale <span style=\"font-style:italic\">and</span> 9'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 35'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553086331'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 35'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_050'\u001b[39m,\n    RT: \u001b[32m'9.608'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:52:29.693'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:53:04.433'\u001b[39m,\n    Delivered_Order: \u001b[32m'39'\u001b[39m,\n    Response: \u001b[32m'<p>6 <span style=\"font-style:italic\">then </span>3</p>'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 36'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553090763'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 36'\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_056'\u001b[39m,\n    RT: \u001b[32m'10.508'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:53:04.457'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:53:39.167'\u001b[39m,\n    Delivered_Order: \u001b[32m'40'\u001b[39m,\n    Response: \u001b[32m'<p>6 <span style=\"font-style:italic\">then </span>shark <span style=\"font-style:italic\">then </span>buffalo <span style=\"font-style:italic\">then </span>gorilla <span style=\"font-style:italic\">then </span>frog</p>'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m''\u001b[39m: {\n    Examinee_ID: \u001b[32m'N34210A42558'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'VRBATN.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'553093807'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m''\u001b[39m,\n    Master_ID: \u001b[32m'VRBATN_QOP'\u001b[39m,\n    RT: \u001b[32m'0.101'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:53:41.453'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:53:41.553'\u001b[39m,\n    Delivered_Order: \u001b[32m'41'\u001b[39m,\n    Response: \u001b[32m'[None of the above]'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'588-395681'\u001b[39m,\n    Session_ID: \u001b[32m'5smGJZjLZ_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N34210A42558 <> N34210A42558\n"
+                        },
+                        {
+                          "text": "2 Examinee_CAMOS ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "3 TestStemForm ->  value from the RunTime VS downloaded file is =  VRBATN.W5PA <> VRBATN.W5PA\n"
+                        },
+                        {
+                          "text": "itemsData = {}\n"
+                        },
+                        {
+                          "text": "---------------------Item_CMSID_Examiner-------------------\n"
+                        },
+                        {
+                          "text": "----------------Item_CMSID_Examinee-----------------\n"
+                        },
+                        {
+                          "text": "------------------Master_ID----------------------\n"
+                        },
+                        {
+                          "text": "--------------RT------------------\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m0\u001b[39m - \u001b[33m0.009\u001b[39m =  \u001b[33m0.009\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m0\u001b[39m - \u001b[33m0.087\u001b[39m =  \u001b[33m0.087\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m0\u001b[39m - \u001b[33m0.01\u001b[39m =  \u001b[33m0.01\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.336\u001b[39m - \u001b[33m10.652\u001b[39m =  \u001b[33m7.315999999999999\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.728\u001b[39m - \u001b[33m12.181\u001b[39m =  \u001b[33m8.453\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.822\u001b[39m - \u001b[33m12.166\u001b[39m =  \u001b[33m8.344000000000001\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.967\u001b[39m - \u001b[33m13.657\u001b[39m =  \u001b[33m9.69\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.209\u001b[39m - \u001b[33m12.147\u001b[39m =  \u001b[33m8.938\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.31\u001b[39m - \u001b[33m12.147\u001b[39m =  \u001b[33m8.837\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.308\u001b[39m - \u001b[33m12.131\u001b[39m =  \u001b[33m8.823\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m4.809\u001b[39m - \u001b[33m15.147\u001b[39m =  \u001b[33m10.338000000000001\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m4.638\u001b[39m - \u001b[33m15.141\u001b[39m =  \u001b[33m10.503\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m4.992\u001b[39m - \u001b[33m16.632\u001b[39m =  \u001b[33m11.64\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m5.22\u001b[39m - \u001b[33m16.658\u001b[39m =  \u001b[33m11.438000000000002\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m4.845\u001b[39m - \u001b[33m15.152\u001b[39m =  \u001b[33m10.306999999999999\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m4.912\u001b[39m - \u001b[33m15.128\u001b[39m =  \u001b[33m10.216000000000001\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m4.689\u001b[39m - \u001b[33m15.128\u001b[39m =  \u001b[33m10.439\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m5.51\u001b[39m - \u001b[33m18.131\u001b[39m =  \u001b[33m12.621\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m4.81\u001b[39m - \u001b[33m16.629\u001b[39m =  \u001b[33m11.819000000000003\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m6.086\u001b[39m - \u001b[33m19.628\u001b[39m =  \u001b[33m13.542\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m6.149\u001b[39m - \u001b[33m19.625\u001b[39m =  \u001b[33m13.475999999999999\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m7.211\u001b[39m - \u001b[33m22.645\u001b[39m =  \u001b[33m15.434\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m7.594\u001b[39m - \u001b[33m24.161\u001b[39m =  \u001b[33m16.567\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m6.795\u001b[39m - \u001b[33m21.129\u001b[39m =  \u001b[33m14.334000000000001\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m5.813\u001b[39m - \u001b[33m19.637\u001b[39m =  \u001b[33m13.824000000000002\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m6.141\u001b[39m - \u001b[33m21.137\u001b[39m =  \u001b[33m14.996\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m7.129\u001b[39m - \u001b[33m24.131\u001b[39m =  \u001b[33m17.002000000000002\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m6.49\u001b[39m - \u001b[33m21.132\u001b[39m =  \u001b[33m14.642000000000001\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m7.128\u001b[39m - \u001b[33m24.166\u001b[39m =  \u001b[33m17.038\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m9.51\u001b[39m - \u001b[33m28.627\u001b[39m =  \u001b[33m19.116999999999997\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m9.505\u001b[39m - \u001b[33m28.646\u001b[39m =  \u001b[33m19.141\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m9.811\u001b[39m - \u001b[33m30.147\u001b[39m =  \u001b[33m20.336\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m9.743\u001b[39m - \u001b[33m30.126\u001b[39m =  \u001b[33m20.383000000000003\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m9.602\u001b[39m - \u001b[33m30.131\u001b[39m =  \u001b[33m20.529\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m8.747\u001b[39m - \u001b[33m28.665\u001b[39m =  \u001b[33m19.918\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m8.11\u001b[39m - \u001b[33m25.633\u001b[39m =  \u001b[33m17.523\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m9.04\u001b[39m - \u001b[33m27.14\u001b[39m =  \u001b[33m18.1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.409\u001b[39m - \u001b[33m33.13\u001b[39m =  \u001b[33m22.721000000000004\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.389\u001b[39m - \u001b[33m31.631\u001b[39m =  \u001b[33m21.242\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m9.608\u001b[39m - \u001b[33m31.667\u001b[39m =  \u001b[33m22.059\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.508\u001b[39m - \u001b[33m31.628\u001b[39m =  \u001b[33m21.12\u001b[39m\n"
+                        },
+                        {
+                          "text": "--------------DeliveryOrder------------------\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m0\u001b[39m === \u001b[33m0\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m2\u001b[39m === \u001b[33m2\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3\u001b[39m === \u001b[33m3\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m4\u001b[39m === \u001b[33m4\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m5\u001b[39m === \u001b[33m5\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m6\u001b[39m === \u001b[33m6\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m7\u001b[39m === \u001b[33m7\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m8\u001b[39m === \u001b[33m8\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m9\u001b[39m === \u001b[33m9\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10\u001b[39m === \u001b[33m10\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m11\u001b[39m === \u001b[33m11\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12\u001b[39m === \u001b[33m12\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m13\u001b[39m === \u001b[33m13\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m14\u001b[39m === \u001b[33m14\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m15\u001b[39m === \u001b[33m15\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m16\u001b[39m === \u001b[33m16\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m17\u001b[39m === \u001b[33m17\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m18\u001b[39m === \u001b[33m18\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m19\u001b[39m === \u001b[33m19\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m20\u001b[39m === \u001b[33m20\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m21\u001b[39m === \u001b[33m21\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m22\u001b[39m === \u001b[33m22\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m23\u001b[39m === \u001b[33m23\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m24\u001b[39m === \u001b[33m24\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m25\u001b[39m === \u001b[33m25\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m26\u001b[39m === \u001b[33m26\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m27\u001b[39m === \u001b[33m27\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m28\u001b[39m === \u001b[33m28\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m29\u001b[39m === \u001b[33m29\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m30\u001b[39m === \u001b[33m30\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m31\u001b[39m === \u001b[33m31\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m32\u001b[39m === \u001b[33m32\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m33\u001b[39m === \u001b[33m33\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m34\u001b[39m === \u001b[33m34\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m35\u001b[39m === \u001b[33m35\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m36\u001b[39m === \u001b[33m36\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m37\u001b[39m === \u001b[33m37\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m38\u001b[39m === \u001b[33m38\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m39\u001b[39m === \u001b[33m39\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m40\u001b[39m === \u001b[33m40\u001b[39m\n"
+                        },
+                        {
+                          "text": "--------------Response------------------\n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n cat === cat\n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n 4 === 4\n"
+                        },
+                        {
+                          "text": "\n 5 === 5\n"
+                        },
+                        {
+                          "text": "\n cow === cow\n"
+                        },
+                        {
+                          "text": "\n whale === whale\n"
+                        },
+                        {
+                          "text": "\n 1 === 1\n"
+                        },
+                        {
+                          "text": "\n 9 === 9\n"
+                        },
+                        {
+                          "text": "\n duck === duck\n"
+                        },
+                        {
+                          "text": "\n cat === cat\n"
+                        },
+                        {
+                          "text": "\n bear === bear\n"
+                        },
+                        {
+                          "text": "\n 10 then 5 === 10 then 5\n"
+                        },
+                        {
+                          "text": "\n 2 === 2\n"
+                        },
+                        {
+                          "text": "\n tiger === tiger\n"
+                        },
+                        {
+                          "text": "\n 6 then pony === 6 then pony\n"
+                        },
+                        {
+                          "text": "\n 7 and 5 === 7 and 5\n"
+                        },
+                        {
+                          "text": "\n frog === frog\n"
+                        },
+                        {
+                          "text": "\n 6 === 6\n"
+                        },
+                        {
+                          "text": "\n 4 === 4\n"
+                        },
+                        {
+                          "text": "\n 1 === 1\n"
+                        },
+                        {
+                          "text": "\n 5 and 10 === 5 and 10\n"
+                        },
+                        {
+                          "text": "\n cow === cow\n"
+                        },
+                        {
+                          "text": "\n 8 === 8\n"
+                        },
+                        {
+                          "text": "\n 6 === 6\n"
+                        },
+                        {
+                          "text": "\n 5 and 4 === 5 and 4\n"
+                        },
+                        {
+                          "text": "\n 2 and 9 === 2 and 9\n"
+                        },
+                        {
+                          "text": "\n chicken === chicken\n"
+                        },
+                        {
+                          "text": "\n mouse === mouse\n"
+                        },
+                        {
+                          "text": "\n 8 === 8\n"
+                        },
+                        {
+                          "text": "\n bear === bear\n"
+                        },
+                        {
+                          "text": "\n 4 and 9 === 4 and 9\n"
+                        },
+                        {
+                          "text": "\n 2 === 2\n"
+                        },
+                        {
+                          "text": "\n cat === cat\n"
+                        },
+                        {
+                          "text": "\n lizard === lizard\n"
+                        },
+                        {
+                          "text": "\n sheep === sheep\n"
+                        },
+                        {
+                          "text": "\n 5 then 7 then 2 then 4 then 1 === 5 then 7 then 2 then 4 then 1\n"
+                        },
+                        {
+                          "text": "\n lizard === lizard\n"
+                        },
+                        {
+                          "text": "\n whale === whale\n"
+                        },
+                        {
+                          "text": "\n 6 then 3 === 6 then 3\n"
+                        },
+                        {
+                          "text": "\n 6 then shark then buffalo then gorilla then frog === 6 then shark then buffalo then gorilla then frog\n"
+                        },
+                        {
+                          "text": "--------------Score------------------\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m0\u001b[39m === \u001b[33m0\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m0\u001b[39m === \u001b[33m0\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "CMSID_Examiner 'Introduction 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Sample Item A, Trial 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Introduction 2' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Sample Item B, Trial 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 2' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 3' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 4' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 5' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 6' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Sample Item C, Trial 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 7' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 8' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 9' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 10' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 11' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 12' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 13' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 14' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 15' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 16' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 17' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 18' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 19' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 20' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 21' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 22' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 23' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 24' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 25' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 26' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 27' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 28' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 29' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 30' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 31' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 32' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 33' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 34' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 35' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner 'Item 36' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examiner '' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Introduction 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Sample Item A, Trial 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Introduction 2' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Sample Item B, Trial 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 2' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 3' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 4' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 5' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 6' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Sample Item C, Trial 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 7' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 8' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 9' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 10' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 11' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 12' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 13' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 14' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 15' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 16' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 17' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 18' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 19' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 20' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 21' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 22' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 23' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 24' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 25' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 26' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 27' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 28' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 29' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 30' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 31' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 32' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 33' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 34' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 35' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee 'Item 36' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee '' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Introduction 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Sample Item A, Trial 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Introduction 2' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Sample Item B, Trial 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 2' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 3' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 4' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 5' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 6' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Sample Item C, Trial 1' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 7' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 8' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 9' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 10' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 11' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 12' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 13' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 14' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 15' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 16' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 17' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 18' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 19' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 20' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 21' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 22' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 23' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 24' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 25' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 26' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 27' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 28' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 29' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 30' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 31' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 32' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 33' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 34' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 35' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id 'Item 36' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id '' not found in the second object\n"
+                        },
+                        {
+                          "text": "RT '' not found in the second object\n"
+                        },
+                        {
+                          "text": "Delivered_Order '' not found in the second object\n"
+                        },
+                        {
+                          "text": "Response '' not found in the second object\n"
+                        },
+                        {
+                          "text": "Score '' not found in the second object\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-04-05T17:36:10.794Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-VRBATN_Pub-9c937-ct-test-and-validate-report-chrome/attachments/Downloaded-Zip-file-04c97e61b65ff346b16515b793e5ccd0d0b69013.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f9419cce63299aefd0b5-3356e2d84ffa2ebd34b3",
+              "file": "test_dataExport/VRBATN_Pub.spec.ts",
+              "line": 20,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-05T17:35:55.642Z",
+    "duration": 1108385.4239999999,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

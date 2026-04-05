@@ -1,0 +1,1287 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+        "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "shard": {
+      "current": 17,
+      "total": 20
+    },
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "test_dataExport/SPLSND_Pub.spec.ts",
+      "file": "test_dataExport/SPLSND_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "SPLSND.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/SPLSND_Pub.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For Ages 4 to 6 - All correct scenario Conduct test and validate report",
+              "ok": true,
+              "tags": [
+                "SPLSND",
+                "TestDe",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 457491,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S17:W0] Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S17:W0] Login successful for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N11877A42712\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11877A42712/dataFiles/Test_DataExport_AutoFilter_Template_N11877A42712.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N11877A42712 FirstName=Fred LastName =N11877A42712 Age = 04/05/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N11877A42712\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Spelling of Sounds\n"
+                        },
+                        {
+                          "text": "selected ssp is = 15312|Ages 4 to 6|15313\n"
+                        },
+                        {
+                          "text": "Item Number 24 \n\n"
+                        },
+                        {
+                          "text": "Type Of test Ages 4 to 6 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Sample Item C, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item D, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "{\n  \u001b[32m'Introduction 1'\u001b[39m: { RT: \u001b[33m0.007\u001b[39m, Delivered_Order: \u001b[33m0\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Introduction 2'\u001b[39m: { RT: \u001b[33m0.007\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m: { RT: \u001b[33m0.065\u001b[39m, Delivered_Order: \u001b[33m2\u001b[39m, Response: \u001b[32m's'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m: { RT: \u001b[33m0.057\u001b[39m, Delivered_Order: \u001b[33m3\u001b[39m, Response: \u001b[32m'n'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 1'\u001b[39m: { RT: \u001b[33m0.114\u001b[39m, Delivered_Order: \u001b[33m4\u001b[39m, Response: \u001b[32m'm'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 2'\u001b[39m: { RT: \u001b[33m0.081\u001b[39m, Delivered_Order: \u001b[33m5\u001b[39m, Response: \u001b[32m't'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 3'\u001b[39m: { RT: \u001b[33m0.051\u001b[39m, Delivered_Order: \u001b[33m6\u001b[39m, Response: \u001b[32m'p'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 4'\u001b[39m: { RT: \u001b[33m0.051\u001b[39m, Delivered_Order: \u001b[33m7\u001b[39m, Response: \u001b[32m'z'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 5'\u001b[39m: { RT: \u001b[33m0.082\u001b[39m, Delivered_Order: \u001b[33m8\u001b[39m, Response: \u001b[32m'r'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Introduction 3'\u001b[39m: { RT: \u001b[33m0.008\u001b[39m, Delivered_Order: \u001b[33m9\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item C, Trial 1'\u001b[39m: { RT: \u001b[33m0.044\u001b[39m, Delivered_Order: \u001b[33m10\u001b[39m, Response: \u001b[32m'ut'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Sample Item D, Trial 1'\u001b[39m: { RT: \u001b[33m0.055\u001b[39m, Delivered_Order: \u001b[33m11\u001b[39m, Response: \u001b[32m'ip'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Introduction 4'\u001b[39m: { RT: \u001b[33m0.008\u001b[39m, Delivered_Order: \u001b[33m12\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 6'\u001b[39m: { RT: \u001b[33m7.658\u001b[39m, Delivered_Order: \u001b[33m13\u001b[39m, Response: \u001b[32m'ift'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 7'\u001b[39m: { RT: \u001b[33m7.608\u001b[39m, Delivered_Order: \u001b[33m14\u001b[39m, Response: \u001b[32m'hig'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 8'\u001b[39m: { RT: \u001b[33m7.615\u001b[39m, Delivered_Order: \u001b[33m15\u001b[39m, Response: \u001b[32m'pash'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 9'\u001b[39m: { RT: \u001b[33m7.62\u001b[39m, Delivered_Order: \u001b[33m16\u001b[39m, Response: \u001b[32m'masp'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 10'\u001b[39m: { RT: \u001b[33m9.096\u001b[39m, Delivered_Order: \u001b[33m17\u001b[39m, Response: \u001b[32m'jang'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 11'\u001b[39m: { RT: \u001b[33m7.592\u001b[39m, Delivered_Order: \u001b[33m18\u001b[39m, Response: \u001b[32m'keb'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 12'\u001b[39m: { RT: \u001b[33m9.098\u001b[39m, Delivered_Order: \u001b[33m19\u001b[39m, Response: \u001b[32m'glating'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 13'\u001b[39m: { RT: \u001b[33m9.115\u001b[39m, Delivered_Order: \u001b[33m20\u001b[39m, Response: \u001b[32m'grunches'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 14'\u001b[39m: { RT: \u001b[33m7.627\u001b[39m, Delivered_Order: \u001b[33m21\u001b[39m, Response: \u001b[32m'voy'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 15'\u001b[39m: { RT: \u001b[33m9.113\u001b[39m, Delivered_Order: \u001b[33m22\u001b[39m, Response: \u001b[32m'ushes'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 16'\u001b[39m: { RT: \u001b[33m9.11\u001b[39m, Delivered_Order: \u001b[33m23\u001b[39m, Response: \u001b[32m'quib'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 17'\u001b[39m: { RT: \u001b[33m7.611\u001b[39m, Delivered_Order: \u001b[33m24\u001b[39m, Response: \u001b[32m'hoke'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 18'\u001b[39m: { RT: \u001b[33m9.127\u001b[39m, Delivered_Order: \u001b[33m25\u001b[39m, Response: \u001b[32m'toping'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 19'\u001b[39m: { RT: \u001b[33m9.11\u001b[39m, Delivered_Order: \u001b[33m26\u001b[39m, Response: \u001b[32m'stenerous'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 20'\u001b[39m: { RT: \u001b[33m7.606\u001b[39m, Delivered_Order: \u001b[33m27\u001b[39m, Response: \u001b[32m'blanning'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 21'\u001b[39m: { RT: \u001b[33m9.119\u001b[39m, Delivered_Order: \u001b[33m28\u001b[39m, Response: \u001b[32m'spritch'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 22'\u001b[39m: { RT: \u001b[33m7.596\u001b[39m, Delivered_Order: \u001b[33m29\u001b[39m, Response: \u001b[32m'cridge'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 23'\u001b[39m: { RT: \u001b[33m9.124\u001b[39m, Delivered_Order: \u001b[33m30\u001b[39m, Response: \u001b[32m'stoffering'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 24'\u001b[39m: { RT: \u001b[33m7.604\u001b[39m, Delivered_Order: \u001b[33m31\u001b[39m, Response: \u001b[32m'briff'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 25'\u001b[39m: { RT: \u001b[33m7.601\u001b[39m, Delivered_Order: \u001b[33m32\u001b[39m, Response: \u001b[32m'automerous'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 26'\u001b[39m: { RT: \u001b[33m7.596\u001b[39m, Delivered_Order: \u001b[33m33\u001b[39m, Response: \u001b[32m'thawn'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 27'\u001b[39m: {\n    RT: \u001b[33m10.59\u001b[39m,\n    Delivered_Order: \u001b[33m34\u001b[39m,\n    Response: \u001b[32m'autopotricious'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 28'\u001b[39m: { RT: \u001b[33m9.098\u001b[39m, Delivered_Order: \u001b[33m35\u001b[39m, Response: \u001b[32m'strotted'\u001b[39m, Score: \u001b[33m1\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11877A42712/dataFiles/Test_DataExport_AutoFilter_Template_N11877A42712.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N11877A42712\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N11877A42712/downloads/testData_N11877A42712_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11877A42712/downloads/testData_N11877A42712_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11877A42712/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "Looking for files matching SPLSND.W5PA\n"
+                        },
+                        {
+                          "text": "Available files: SPLSND.W5PA_2026_04_05.txt, manifest.txt\n"
+                        },
+                        {
+                          "text": "Found exact match: SPLSND.W5PA_2026_04_05.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11877A42712/downloads/extracted/SPLSND.W5PA_2026_04_05.txt\n"
+                        },
+                        {
+                          "text": "Reading test data from: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11877A42712/downloads/extracted/SPLSND.W5PA_2026_04_05.txt\n"
+                        },
+                        {
+                          "text": "Reading TXT content from: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11877A42712/downloads/extracted/SPLSND.W5PA_2026_04_05.txt\n"
+                        },
+                        {
+                          "text": "returnValues =  {\n  \u001b[32m'Introduction 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571092469'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Introduction 1'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_IN1'\u001b[39m,\n    RT: \u001b[32m'1.098'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:37:55.217'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:37:56.313'\u001b[39m,\n    Delivered_Order: \u001b[32m'0'\u001b[39m,\n    Response: \u001b[32m''\u001b[39m,\n    Score: \u001b[32m'0'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Introduction 2'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571113024'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Introduction 2'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_IN2'\u001b[39m,\n    RT: \u001b[32m'3.035'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:37:56.347'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:37:59.380'\u001b[39m,\n    Delivered_Order: \u001b[32m'1'\u001b[39m,\n    Response: \u001b[32m''\u001b[39m,\n    Score: \u001b[32m'0'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571094018'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Sample Item A, Trial 1'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_SA1'\u001b[39m,\n    RT: \u001b[32m'3.106'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:37:59.413'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:02.517'\u001b[39m,\n    Delivered_Order: \u001b[32m'2'\u001b[39m,\n    Response: \u001b[32m's'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571098486'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Sample Item B, Trial 1'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_SB1'\u001b[39m,\n    RT: \u001b[32m'3.142'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:02.547'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:05.690'\u001b[39m,\n    Delivered_Order: \u001b[32m'3'\u001b[39m,\n    Response: \u001b[32m'n'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571101327'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 1'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_004'\u001b[39m,\n    RT: \u001b[32m'3.188'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:05.713'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:08.900'\u001b[39m,\n    Delivered_Order: \u001b[32m'4'\u001b[39m,\n    Response: \u001b[32m'm'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'0'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 2'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571103522'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 2'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_003'\u001b[39m,\n    RT: \u001b[32m'3.135'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:08.930'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:12.067'\u001b[39m,\n    Delivered_Order: \u001b[32m'5'\u001b[39m,\n    Response: \u001b[32m't'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'0'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 3'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571105828'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 3'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_001'\u001b[39m,\n    RT: \u001b[32m'3.102'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:12.097'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:15.197'\u001b[39m,\n    Delivered_Order: \u001b[32m'6'\u001b[39m,\n    Response: \u001b[32m'p'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'0'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 4'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571108052'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 4'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_005'\u001b[39m,\n    RT: \u001b[32m'3.121'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:15.227'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:18.350'\u001b[39m,\n    Delivered_Order: \u001b[32m'7'\u001b[39m,\n    Response: \u001b[32m'z'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'0'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 5'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571109535'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 5'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_002'\u001b[39m,\n    RT: \u001b[32m'3.136'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:18.380'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:21.517'\u001b[39m,\n    Delivered_Order: \u001b[32m'8'\u001b[39m,\n    Response: \u001b[32m'r'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'0'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Introduction 3'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571123445'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Introduction 3'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_IN3'\u001b[39m,\n    RT: \u001b[32m'3.033'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:21.547'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:24.580'\u001b[39m,\n    Delivered_Order: \u001b[32m'9'\u001b[39m,\n    Response: \u001b[32m''\u001b[39m,\n    Score: \u001b[32m'0'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Sample Item C, Trial 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571125678'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Sample Item C, Trial 1'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_SC1'\u001b[39m,\n    RT: \u001b[32m'3.086'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:24.610'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:27.697'\u001b[39m,\n    Delivered_Order: \u001b[32m'10'\u001b[39m,\n    Response: \u001b[32m'ut'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Sample Item D, Trial 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571127844'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Sample Item D, Trial 1'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_SD1'\u001b[39m,\n    RT: \u001b[32m'3.104'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:27.727'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:30.833'\u001b[39m,\n    Delivered_Order: \u001b[32m'11'\u001b[39m,\n    Response: \u001b[32m'ip'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Introduction 4'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571138495'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Introduction 4'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_IN4'\u001b[39m,\n    RT: \u001b[32m'3.033'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:30.863'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:33.897'\u001b[39m,\n    Delivered_Order: \u001b[32m'12'\u001b[39m,\n    Response: \u001b[32m''\u001b[39m,\n    Score: \u001b[32m'0'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 6'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571138635'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 6'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_007'\u001b[39m,\n    RT: \u001b[32m'10.758'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:33.927'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:44.687'\u001b[39m,\n    Delivered_Order: \u001b[32m'13'\u001b[39m,\n    Response: \u001b[32m'ift'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 7'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571139593'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 7'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_009'\u001b[39m,\n    RT: \u001b[32m'10.674'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:44.710'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:55.387'\u001b[39m,\n    Delivered_Order: \u001b[32m'14'\u001b[39m,\n    Response: \u001b[32m'hig'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 8'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571141671'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 8'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_014'\u001b[39m,\n    RT: \u001b[32m'10.673'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:55.410'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:39:06.083'\u001b[39m,\n    Delivered_Order: \u001b[32m'15'\u001b[39m,\n    Response: \u001b[32m'pash'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 9'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571147104'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 9'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_012'\u001b[39m,\n    RT: \u001b[32m'10.688'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:39:06.110'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:39:16.800'\u001b[39m,\n    Delivered_Order: \u001b[32m'16'\u001b[39m,\n    Response: \u001b[32m'masp'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 10'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571149943'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 10'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_024'\u001b[39m,\n    RT: \u001b[32m'12.154'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:39:16.827'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:39:28.980'\u001b[39m,\n    Delivered_Order: \u001b[32m'17'\u001b[39m,\n    Response: \u001b[32m'jang'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 11'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571150219'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 11'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_062'\u001b[39m,\n    RT: \u001b[32m'10.654'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:39:29.010'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:39:39.663'\u001b[39m,\n    Delivered_Order: \u001b[32m'18'\u001b[39m,\n    Response: \u001b[32m'keb'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 12'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571161672'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 12'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_017'\u001b[39m,\n    RT: \u001b[32m'12.153'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:39:39.693'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:39:51.847'\u001b[39m,\n    Delivered_Order: \u001b[32m'19'\u001b[39m,\n    Response: \u001b[32m'glating'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 13'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571161762'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 13'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_026'\u001b[39m,\n    RT: \u001b[32m'12.187'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:39:51.877'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:40:04.063'\u001b[39m,\n    Delivered_Order: \u001b[32m'20'\u001b[39m,\n    Response: \u001b[32m'grunches'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 14'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571171051'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 14'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_061'\u001b[39m,\n    RT: \u001b[32m'10.688'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:40:04.090'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:40:14.780'\u001b[39m,\n    Delivered_Order: \u001b[32m'21'\u001b[39m,\n    Response: \u001b[32m'voy'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 15'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571183772'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 15'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_037'\u001b[39m,\n    RT: \u001b[32m'12.169'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:40:14.810'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:40:26.977'\u001b[39m,\n    Delivered_Order: \u001b[32m'22'\u001b[39m,\n    Response: \u001b[32m'ushes'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 16'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571184659'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 16'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_045'\u001b[39m,\n    RT: \u001b[32m'12.189'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:40:27.007'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:40:39.197'\u001b[39m,\n    Delivered_Order: \u001b[32m'23'\u001b[39m,\n    Response: \u001b[32m'quib'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 17'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571185263'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 17'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_021'\u001b[39m,\n    RT: \u001b[32m'10.687'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:40:39.223'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:40:49.910'\u001b[39m,\n    Delivered_Order: \u001b[32m'24'\u001b[39m,\n    Response: \u001b[32m'hoke'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 18'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571188279'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 18'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_031'\u001b[39m,\n    RT: \u001b[32m'12.188'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:40:49.940'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:02.127'\u001b[39m,\n    Delivered_Order: \u001b[32m'25'\u001b[39m,\n    Response: \u001b[32m'toping'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 19'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571195889'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 19'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_047'\u001b[39m,\n    RT: \u001b[32m'12.172'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:41:02.157'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:14.327'\u001b[39m,\n    Delivered_Order: \u001b[32m'26'\u001b[39m,\n    Response: \u001b[32m'stenerous'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 20'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571189475'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 20'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_064'\u001b[39m,\n    RT: \u001b[32m'10.670'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:41:14.357'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:25.027'\u001b[39m,\n    Delivered_Order: \u001b[32m'27'\u001b[39m,\n    Response: \u001b[32m'blanning'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 21'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571190775'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 21'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_063'\u001b[39m,\n    RT: \u001b[32m'12.170'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:41:25.057'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:37.227'\u001b[39m,\n    Delivered_Order: \u001b[32m'28'\u001b[39m,\n    Response: \u001b[32m'spritch'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 22'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571191700'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 22'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_030'\u001b[39m,\n    RT: \u001b[32m'10.688'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:41:37.257'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:47.943'\u001b[39m,\n    Delivered_Order: \u001b[32m'29'\u001b[39m,\n    Response: \u001b[32m'cridge'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 23'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571196012'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 23'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_043'\u001b[39m,\n    RT: \u001b[32m'12.213'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:41:47.970'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:42:00.183'\u001b[39m,\n    Delivered_Order: \u001b[32m'30'\u001b[39m,\n    Response: \u001b[32m'stoffering'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 24'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571197387'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 24'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_041'\u001b[39m,\n    RT: \u001b[32m'10.666'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:42:00.207'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:42:10.873'\u001b[39m,\n    Delivered_Order: \u001b[32m'31'\u001b[39m,\n    Response: \u001b[32m'briff'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 25'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571199412'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 25'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_048'\u001b[39m,\n    RT: \u001b[32m'10.654'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:42:10.903'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:42:21.557'\u001b[39m,\n    Delivered_Order: \u001b[32m'32'\u001b[39m,\n    Response: \u001b[32m'automerous'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 26'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571201161'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 26'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_065'\u001b[39m,\n    RT: \u001b[32m'10.670'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:42:21.587'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:42:32.257'\u001b[39m,\n    Delivered_Order: \u001b[32m'33'\u001b[39m,\n    Response: \u001b[32m'thawn'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 27'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571202680'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 27'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_055'\u001b[39m,\n    RT: \u001b[32m'13.653'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:42:32.287'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:42:45.937'\u001b[39m,\n    Delivered_Order: \u001b[32m'34'\u001b[39m,\n    Response: \u001b[32m'autopotricious'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 28'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571209344'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 28'\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_034'\u001b[39m,\n    RT: \u001b[32m'12.154'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:42:45.967'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:42:58.123'\u001b[39m,\n    Delivered_Order: \u001b[32m'35'\u001b[39m,\n    Response: \u001b[32m'strotted'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m''\u001b[39m: {\n    Examinee_ID: \u001b[32m'N11877A42712'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'SPLSND.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571211464'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m''\u001b[39m,\n    Master_ID: \u001b[32m'SPLSND_QOP'\u001b[39m,\n    RT: \u001b[32m'0.085'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:43:00.327'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:43:00.410'\u001b[39m,\n    Delivered_Order: \u001b[32m'36'\u001b[39m,\n    Response: \u001b[32m'[None of the above]'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'640-395671'\u001b[39m,\n    Session_ID: \u001b[32m'5smgnTgS3_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N11877A42712 <> N11877A42712\n"
+                        },
+                        {
+                          "text": "2 Examinee_CAMOS ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "3 TestStemForm ->  value from the RunTime VS downloaded file is =  SPLSND.W5PA <> SPLSND.W5PA\n"
+                        },
+                        {
+                          "text": "itemsData = {\n  \u001b[32m'Introduction 1'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_IN1'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571092469\u001b[39m },\n  \u001b[32m'Introduction 2'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_IN2'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571113024\u001b[39m },\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_SA1'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571094018\u001b[39m },\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_SA2'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571095371\u001b[39m },\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_SB1'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571098486\u001b[39m },\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_SB2'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571100102\u001b[39m },\n  \u001b[32m'Item 1'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_004'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571101327\u001b[39m },\n  \u001b[32m'Item 2'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_003'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571103522\u001b[39m },\n  \u001b[32m'Item 3'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_001'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571105828\u001b[39m },\n  \u001b[32m'Item 4'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_005'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571108052\u001b[39m },\n  \u001b[32m'Item 5'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_002'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571109535\u001b[39m },\n  \u001b[32m'Introduction 3'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_IN3'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571123445\u001b[39m },\n  \u001b[32m'Sample Item C, Trial 1'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_SC1'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571125678\u001b[39m },\n  \u001b[32m'Sample Item C, Trial 2'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_SC2'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571126668\u001b[39m },\n  \u001b[32m'Sample Item D, Trial 1'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_SD1'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571127844\u001b[39m },\n  \u001b[32m'Sample Item D, Trial 2'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_SD2'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571134230\u001b[39m },\n  \u001b[32m'Introduction 4'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_IN4'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571138495\u001b[39m },\n  \u001b[32m'Item 6'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_007'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571138635\u001b[39m },\n  \u001b[32m'Item 7'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_009'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571139593\u001b[39m },\n  \u001b[32m'Item 8'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_014'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571141671\u001b[39m },\n  \u001b[32m'Item 9'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_012'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571147104\u001b[39m },\n  \u001b[32m'Item 10'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_024'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571149943\u001b[39m },\n  \u001b[32m'Item 11'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_062'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571150219\u001b[39m },\n  \u001b[32m'Item 12'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_017'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571161672\u001b[39m },\n  \u001b[32m'Item 13'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_026'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571161762\u001b[39m },\n  \u001b[32m'Item 14'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_061'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571171051\u001b[39m },\n  \u001b[32m'Item 15'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_037'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571183772\u001b[39m },\n  \u001b[32m'Item 16'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_045'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571184659\u001b[39m },\n  \u001b[32m'Item 17'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_021'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571185263\u001b[39m },\n  \u001b[32m'Item 18'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_031'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571188279\u001b[39m },\n  \u001b[32m'Item 19'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_047'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571195889\u001b[39m },\n  \u001b[32m'Item 20'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_064'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571189475\u001b[39m },\n  \u001b[32m'Item 21'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_063'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571190775\u001b[39m },\n  \u001b[32m'Item 22'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_030'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571191700\u001b[39m },\n  \u001b[32m'Item 23'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_043'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571196012\u001b[39m },\n  \u001b[32m'Item 24'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_041'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571197387\u001b[39m },\n  \u001b[32m'Item 25'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_048'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571199412\u001b[39m },\n  \u001b[32m'Item 26'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_065'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571201161\u001b[39m },\n  \u001b[32m'Item 27'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_055'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571202680\u001b[39m },\n  \u001b[32m'Item 28'\u001b[39m: { Master_ID: \u001b[32m'SPLSND_034'\u001b[39m, ItemCode_Examiner_PUB: \u001b[33m571209344\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "---------------------Item_CMSID_Examiner-------------------\n"
+                        },
+                        {
+                          "text": "\n 571092469 === 571092469\n"
+                        },
+                        {
+                          "text": "\n 571113024 === 571113024\n"
+                        },
+                        {
+                          "text": "\n 571094018 === 571094018\n"
+                        },
+                        {
+                          "text": "\n 571098486 === 571098486\n"
+                        },
+                        {
+                          "text": "\n 571101327 === 571101327\n"
+                        },
+                        {
+                          "text": "\n 571103522 === 571103522\n"
+                        },
+                        {
+                          "text": "\n 571105828 === 571105828\n"
+                        },
+                        {
+                          "text": "\n 571108052 === 571108052\n"
+                        },
+                        {
+                          "text": "\n 571109535 === 571109535\n"
+                        },
+                        {
+                          "text": "\n 571123445 === 571123445\n"
+                        },
+                        {
+                          "text": "\n 571125678 === 571125678\n"
+                        },
+                        {
+                          "text": "\n 571127844 === 571127844\n"
+                        },
+                        {
+                          "text": "\n 571138495 === 571138495\n"
+                        },
+                        {
+                          "text": "\n 571138635 === 571138635\n"
+                        },
+                        {
+                          "text": "\n 571139593 === 571139593\n"
+                        },
+                        {
+                          "text": "\n 571141671 === 571141671\n"
+                        },
+                        {
+                          "text": "\n 571147104 === 571147104\n"
+                        },
+                        {
+                          "text": "\n 571149943 === 571149943\n"
+                        },
+                        {
+                          "text": "\n 571150219 === 571150219\n"
+                        },
+                        {
+                          "text": "\n 571161672 === 571161672\n"
+                        },
+                        {
+                          "text": "\n 571161762 === 571161762\n"
+                        },
+                        {
+                          "text": "\n 571171051 === 571171051\n"
+                        },
+                        {
+                          "text": "\n 571183772 === 571183772\n"
+                        },
+                        {
+                          "text": "\n 571184659 === 571184659\n"
+                        },
+                        {
+                          "text": "\n 571185263 === 571185263\n"
+                        },
+                        {
+                          "text": "\n 571188279 === 571188279\n"
+                        },
+                        {
+                          "text": "\n 571195889 === 571195889\n"
+                        },
+                        {
+                          "text": "\n 571189475 === 571189475\n"
+                        },
+                        {
+                          "text": "\n 571190775 === 571190775\n"
+                        },
+                        {
+                          "text": "\n 571191700 === 571191700\n"
+                        },
+                        {
+                          "text": "\n 571196012 === 571196012\n"
+                        },
+                        {
+                          "text": "\n 571197387 === 571197387\n"
+                        },
+                        {
+                          "text": "\n 571199412 === 571199412\n"
+                        },
+                        {
+                          "text": "\n 571201161 === 571201161\n"
+                        },
+                        {
+                          "text": "\n 571202680 === 571202680\n"
+                        },
+                        {
+                          "text": "\n 571209344 === 571209344\n"
+                        },
+                        {
+                          "text": "------------------Master_ID----------------------\n"
+                        },
+                        {
+                          "text": "\n SPLSND_IN1 === SPLSND_IN1\n"
+                        },
+                        {
+                          "text": "\n SPLSND_IN2 === SPLSND_IN2\n"
+                        },
+                        {
+                          "text": "\n SPLSND_SA1 === SPLSND_SA1\n"
+                        },
+                        {
+                          "text": "\n SPLSND_SB1 === SPLSND_SB1\n"
+                        },
+                        {
+                          "text": "\n SPLSND_004 === SPLSND_004\n"
+                        },
+                        {
+                          "text": "\n SPLSND_003 === SPLSND_003\n"
+                        },
+                        {
+                          "text": "\n SPLSND_001 === SPLSND_001\n"
+                        },
+                        {
+                          "text": "\n SPLSND_005 === SPLSND_005\n"
+                        },
+                        {
+                          "text": "\n SPLSND_002 === SPLSND_002\n"
+                        },
+                        {
+                          "text": "\n SPLSND_IN3 === SPLSND_IN3\n"
+                        },
+                        {
+                          "text": "\n SPLSND_SC1 === SPLSND_SC1\n"
+                        },
+                        {
+                          "text": "\n SPLSND_SD1 === SPLSND_SD1\n"
+                        },
+                        {
+                          "text": "\n SPLSND_IN4 === SPLSND_IN4\n"
+                        },
+                        {
+                          "text": "\n SPLSND_007 === SPLSND_007\n"
+                        },
+                        {
+                          "text": "\n SPLSND_009 === SPLSND_009\n"
+                        },
+                        {
+                          "text": "\n SPLSND_014 === SPLSND_014\n"
+                        },
+                        {
+                          "text": "\n SPLSND_012 === SPLSND_012\n"
+                        },
+                        {
+                          "text": "\n SPLSND_024 === SPLSND_024\n"
+                        },
+                        {
+                          "text": "\n SPLSND_062 === SPLSND_062\n"
+                        },
+                        {
+                          "text": "\n SPLSND_017 === SPLSND_017\n"
+                        },
+                        {
+                          "text": "\n SPLSND_026 === SPLSND_026\n"
+                        },
+                        {
+                          "text": "\n SPLSND_061 === SPLSND_061\n"
+                        },
+                        {
+                          "text": "\n SPLSND_037 === SPLSND_037\n"
+                        },
+                        {
+                          "text": "\n SPLSND_045 === SPLSND_045\n"
+                        },
+                        {
+                          "text": "\n SPLSND_021 === SPLSND_021\n"
+                        },
+                        {
+                          "text": "\n SPLSND_031 === SPLSND_031\n"
+                        },
+                        {
+                          "text": "\n SPLSND_047 === SPLSND_047\n"
+                        },
+                        {
+                          "text": "\n SPLSND_064 === SPLSND_064\n"
+                        },
+                        {
+                          "text": "\n SPLSND_063 === SPLSND_063\n"
+                        },
+                        {
+                          "text": "\n SPLSND_030 === SPLSND_030\n"
+                        },
+                        {
+                          "text": "\n SPLSND_043 === SPLSND_043\n"
+                        },
+                        {
+                          "text": "\n SPLSND_041 === SPLSND_041\n"
+                        },
+                        {
+                          "text": "\n SPLSND_048 === SPLSND_048\n"
+                        },
+                        {
+                          "text": "\n SPLSND_065 === SPLSND_065\n"
+                        },
+                        {
+                          "text": "\n SPLSND_055 === SPLSND_055\n"
+                        },
+                        {
+                          "text": "\n SPLSND_034 === SPLSND_034\n"
+                        },
+                        {
+                          "text": "--------------RT------------------\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1.098\u001b[39m - \u001b[33m0.007\u001b[39m =  \u001b[33m1.0910000000000002\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.035\u001b[39m - \u001b[33m0.007\u001b[39m =  \u001b[33m3.028\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.106\u001b[39m - \u001b[33m0.065\u001b[39m =  \u001b[33m3.041\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.142\u001b[39m - \u001b[33m0.057\u001b[39m =  \u001b[33m3.085\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.188\u001b[39m - \u001b[33m0.114\u001b[39m =  \u001b[33m3.0740000000000003\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.135\u001b[39m - \u001b[33m0.081\u001b[39m =  \u001b[33m3.054\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.102\u001b[39m - \u001b[33m0.051\u001b[39m =  \u001b[33m3.0509999999999997\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.121\u001b[39m - \u001b[33m0.051\u001b[39m =  \u001b[33m3.07\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.136\u001b[39m - \u001b[33m0.082\u001b[39m =  \u001b[33m3.0540000000000003\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.033\u001b[39m - \u001b[33m0.008\u001b[39m =  \u001b[33m3.025\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.086\u001b[39m - \u001b[33m0.044\u001b[39m =  \u001b[33m3.042\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.104\u001b[39m - \u001b[33m0.055\u001b[39m =  \u001b[33m3.049\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.033\u001b[39m - \u001b[33m0.008\u001b[39m =  \u001b[33m3.025\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.758\u001b[39m - \u001b[33m7.658\u001b[39m =  \u001b[33m3.0999999999999988\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.674\u001b[39m - \u001b[33m7.608\u001b[39m =  \u001b[33m3.066\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.673\u001b[39m - \u001b[33m7.615\u001b[39m =  \u001b[33m3.058\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.688\u001b[39m - \u001b[33m7.62\u001b[39m =  \u001b[33m3.0680000000000005\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12.154\u001b[39m - \u001b[33m9.096\u001b[39m =  \u001b[33m3.058\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.654\u001b[39m - \u001b[33m7.592\u001b[39m =  \u001b[33m3.0620000000000003\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12.153\u001b[39m - \u001b[33m9.098\u001b[39m =  \u001b[33m3.0549999999999997\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12.187\u001b[39m - \u001b[33m9.115\u001b[39m =  \u001b[33m3.071999999999999\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.688\u001b[39m - \u001b[33m7.627\u001b[39m =  \u001b[33m3.061000000000001\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12.169\u001b[39m - \u001b[33m9.113\u001b[39m =  \u001b[33m3.056000000000001\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12.189\u001b[39m - \u001b[33m9.11\u001b[39m =  \u001b[33m3.0790000000000006\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.687\u001b[39m - \u001b[33m7.611\u001b[39m =  \u001b[33m3.0759999999999996\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12.188\u001b[39m - \u001b[33m9.127\u001b[39m =  \u001b[33m3.061\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12.172\u001b[39m - \u001b[33m9.11\u001b[39m =  \u001b[33m3.062000000000001\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.67\u001b[39m - \u001b[33m7.606\u001b[39m =  \u001b[33m3.064\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12.17\u001b[39m - \u001b[33m9.119\u001b[39m =  \u001b[33m3.051\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.688\u001b[39m - \u001b[33m7.596\u001b[39m =  \u001b[33m3.0920000000000005\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12.213\u001b[39m - \u001b[33m9.124\u001b[39m =  \u001b[33m3.0889999999999986\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.666\u001b[39m - \u001b[33m7.604\u001b[39m =  \u001b[33m3.0620000000000003\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.654\u001b[39m - \u001b[33m7.601\u001b[39m =  \u001b[33m3.053\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10.67\u001b[39m - \u001b[33m7.596\u001b[39m =  \u001b[33m3.074\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m13.653\u001b[39m - \u001b[33m10.59\u001b[39m =  \u001b[33m3.0630000000000006\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12.154\u001b[39m - \u001b[33m9.098\u001b[39m =  \u001b[33m3.055999999999999\u001b[39m\n"
+                        },
+                        {
+                          "text": "--------------DeliveryOrder------------------\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m0\u001b[39m === \u001b[33m0\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m2\u001b[39m === \u001b[33m2\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3\u001b[39m === \u001b[33m3\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m4\u001b[39m === \u001b[33m4\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m5\u001b[39m === \u001b[33m5\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m6\u001b[39m === \u001b[33m6\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m7\u001b[39m === \u001b[33m7\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m8\u001b[39m === \u001b[33m8\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m9\u001b[39m === \u001b[33m9\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10\u001b[39m === \u001b[33m10\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m11\u001b[39m === \u001b[33m11\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12\u001b[39m === \u001b[33m12\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m13\u001b[39m === \u001b[33m13\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m14\u001b[39m === \u001b[33m14\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m15\u001b[39m === \u001b[33m15\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m16\u001b[39m === \u001b[33m16\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m17\u001b[39m === \u001b[33m17\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m18\u001b[39m === \u001b[33m18\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m19\u001b[39m === \u001b[33m19\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m20\u001b[39m === \u001b[33m20\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m21\u001b[39m === \u001b[33m21\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m22\u001b[39m === \u001b[33m22\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m23\u001b[39m === \u001b[33m23\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m24\u001b[39m === \u001b[33m24\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m25\u001b[39m === \u001b[33m25\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m26\u001b[39m === \u001b[33m26\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m27\u001b[39m === \u001b[33m27\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m28\u001b[39m === \u001b[33m28\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m29\u001b[39m === \u001b[33m29\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m30\u001b[39m === \u001b[33m30\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m31\u001b[39m === \u001b[33m31\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m32\u001b[39m === \u001b[33m32\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m33\u001b[39m === \u001b[33m33\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m34\u001b[39m === \u001b[33m34\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m35\u001b[39m === \u001b[33m35\u001b[39m\n"
+                        },
+                        {
+                          "text": "--------------Response------------------\n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n s === s\n"
+                        },
+                        {
+                          "text": "\n n === n\n"
+                        },
+                        {
+                          "text": "\n m === m\n"
+                        },
+                        {
+                          "text": "\n t === t\n"
+                        },
+                        {
+                          "text": "\n p === p\n"
+                        },
+                        {
+                          "text": "\n z === z\n"
+                        },
+                        {
+                          "text": "\n r === r\n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n ut === ut\n"
+                        },
+                        {
+                          "text": "\n ip === ip\n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n ift === ift\n"
+                        },
+                        {
+                          "text": "\n hig === hig\n"
+                        },
+                        {
+                          "text": "\n pash === pash\n"
+                        },
+                        {
+                          "text": "\n masp === masp\n"
+                        },
+                        {
+                          "text": "\n jang === jang\n"
+                        },
+                        {
+                          "text": "\n keb === keb\n"
+                        },
+                        {
+                          "text": "\n glating === glating\n"
+                        },
+                        {
+                          "text": "\n grunches === grunches\n"
+                        },
+                        {
+                          "text": "\n voy === voy\n"
+                        },
+                        {
+                          "text": "\n ushes === ushes\n"
+                        },
+                        {
+                          "text": "\n quib === quib\n"
+                        },
+                        {
+                          "text": "\n hoke === hoke\n"
+                        },
+                        {
+                          "text": "\n toping === toping\n"
+                        },
+                        {
+                          "text": "\n stenerous === stenerous\n"
+                        },
+                        {
+                          "text": "\n blanning === blanning\n"
+                        },
+                        {
+                          "text": "\n spritch === spritch\n"
+                        },
+                        {
+                          "text": "\n cridge === cridge\n"
+                        },
+                        {
+                          "text": "\n stoffering === stoffering\n"
+                        },
+                        {
+                          "text": "\n briff === briff\n"
+                        },
+                        {
+                          "text": "\n automerous === automerous\n"
+                        },
+                        {
+                          "text": "\n thawn === thawn\n"
+                        },
+                        {
+                          "text": "\n autopotricious === autopotricious\n"
+                        },
+                        {
+                          "text": "\n strotted === strotted\n"
+                        },
+                        {
+                          "text": "--------------Score------------------\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m0\u001b[39m === \u001b[33m0\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m0\u001b[39m === \u001b[33m0\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m0\u001b[39m === \u001b[33m0\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m0\u001b[39m === \u001b[33m0\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "CMSID_Examiner '' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id '' not found in the second object\n"
+                        },
+                        {
+                          "text": "RT '' not found in the second object\n"
+                        },
+                        {
+                          "text": "Delivered_Order '' not found in the second object\n"
+                        },
+                        {
+                          "text": "Response '' not found in the second object\n"
+                        },
+                        {
+                          "text": "Score '' not found in the second object\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-04-05T17:36:00.026Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SPLSND_Pub-457e0-ct-test-and-validate-report-chrome/attachments/Downloaded-Zip-file-55dcbf3c47893543f5e0291b9cb69e4f6905bf53.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "682a72cbe05faa653715-2f31cfca2e4c5b0eabd5",
+              "file": "test_dataExport/SPLSND_Pub.spec.ts",
+              "line": 20,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-05T17:35:45.415Z",
+    "duration": 472860.77999999997,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

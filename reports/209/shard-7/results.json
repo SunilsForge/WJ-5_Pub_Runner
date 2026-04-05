@@ -1,0 +1,688 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+        "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/52c02995838d6e83f00d6040d01c55b339aed133",
+            "commitHash": "52c02995838d6e83f00d6040d01c55b339aed133",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24006779780"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "shard": {
+      "current": 7,
+      "total": 20
+    },
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "test_dataExport/MTHFLU_Pub.spec.ts",
+      "file": "test_dataExport/MTHFLU_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "MTHFLU.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/MTHFLU_Pub.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For Ages 4 to 6 - Test Items Score Entry With All Maximum Score Conduct test and validate report",
+              "ok": false,
+              "tags": [
+                "MTHFLU",
+                "TestDe",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 352921,
+                      "error": {
+                        "message": "TypeError: Cannot read properties of undefined (reading 'toString')",
+                        "stack": "TypeError: Cannot read properties of undefined (reading 'toString')\n    at Utils.validateAndAssert_CMSID_Examinee (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/utils.ts:211:39)\n    at wj5TestDataExportPage.validateTheDownloadedReportWithRunTimeData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts:1113:24)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/MTHFLU_Pub.spec.ts:132:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/utils.ts",
+                          "column": 39,
+                          "line": 211
+                        },
+                        "snippet": "   at ../utils/utils.ts:211\n\n\u001b[0m \u001b[90m 209 |\u001b[39m         expect\n \u001b[90m 210 |\u001b[39m           \u001b[33m.\u001b[39msoft(itemCodeExamineePub1)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 211 |\u001b[39m           \u001b[33m.\u001b[39mtoEqual(itemCMSIDExaminee2\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 212 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"\\n\"\u001b[39m\u001b[33m,\u001b[39m itemCodeExamineePub1\u001b[33m,\u001b[39m \u001b[32m\"===\"\u001b[39m\u001b[33m,\u001b[39m itemCMSIDExaminee2)\u001b[33m;\u001b[39m\n \u001b[90m 213 |\u001b[39m         \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m`  [CMSID_Examinee]: \"${key}\":  \"${itemCodeExamineePub1}\", = \"${itemCMSIDExaminee2}\"`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 214 |\u001b[39m       } \u001b[36melse\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/utils.ts",
+                            "column": 39,
+                            "line": 211
+                          },
+                          "message": "TypeError: Cannot read properties of undefined (reading 'toString')\n\n   at ../utils/utils.ts:211\n\n  209 |         expect\n  210 |           .soft(itemCodeExamineePub1)\n> 211 |           .toEqual(itemCMSIDExaminee2.toString());\n      |                                       ^\n  212 |         console.log(\"\\n\", itemCodeExamineePub1, \"===\", itemCMSIDExaminee2);\n  213 |         RawValueLogger.log(`  [CMSID_Examinee]: \"${key}\":  \"${itemCodeExamineePub1}\", = \"${itemCMSIDExaminee2}\"`);\n  214 |       } else {\n    at Utils.validateAndAssert_CMSID_Examinee (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/utils.ts:211:39)\n    at wj5TestDataExportPage.validateTheDownloadedReportWithRunTimeData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts:1113:24)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/MTHFLU_Pub.spec.ts:132:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S08PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S7:W0] Login successful for S08PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S7:W0] Login successful for S08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N19283A29522\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N19283A29522/dataFiles/Test_DataExport_AutoFilter_Template_N19283A29522.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N19283A29522 FirstName=Hank LastName =N19283A29522 Age = 04/05/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N19283A29522\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Math Facts Fluency\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14497|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "Test Introduction\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Time is up.\n"
+                        },
+                        {
+                          "text": "{\n  \u001b[32m'Practice Exercise 1'\u001b[39m: { RT: \u001b[33m20.518\u001b[39m, Delivered_Order: \u001b[33m0\u001b[39m, Response: \u001b[32m'5'\u001b[39m, Score: \u001b[33m5\u001b[39m },\n  \u001b[32m'Test Introduction'\u001b[39m: { RT: \u001b[33m0.056\u001b[39m, Delivered_Order: \u001b[33m2\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Test Items'\u001b[39m: { RT: \u001b[33m0.016\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Page 4'\u001b[39m: { RT: \u001b[33m0.066\u001b[39m, Delivered_Order: \u001b[33m2\u001b[39m, Response: \u001b[32m'80'\u001b[39m, Score: \u001b[33m80\u001b[39m },\n  \u001b[32m'Page 5'\u001b[39m: { RT: \u001b[33m0.095\u001b[39m, Delivered_Order: \u001b[33m3\u001b[39m, Response: \u001b[32m'80'\u001b[39m, Score: \u001b[33m80\u001b[39m },\n  Total: { RT: \u001b[33m0.107\u001b[39m, Delivered_Order: \u001b[33m4\u001b[39m, Response: \u001b[32m'160'\u001b[39m, Score: \u001b[33m160\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N19283A29522/dataFiles/Test_DataExport_AutoFilter_Template_N19283A29522.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N19283A29522\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N19283A29522/downloads/testData_N19283A29522_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N19283A29522/downloads/testData_N19283A29522_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N19283A29522/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "Looking for files matching MTHFLU.W5PA\n"
+                        },
+                        {
+                          "text": "Available files: MTHFLU.W5PA_2026_04_05.txt, manifest.txt\n"
+                        },
+                        {
+                          "text": "Found exact match: MTHFLU.W5PA_2026_04_05.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N19283A29522/downloads/extracted/MTHFLU.W5PA_2026_04_05.txt\n"
+                        },
+                        {
+                          "text": "Reading test data from: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N19283A29522/downloads/extracted/MTHFLU.W5PA_2026_04_05.txt\n"
+                        },
+                        {
+                          "text": "Reading TXT content from: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N19283A29522/downloads/extracted/MTHFLU.W5PA_2026_04_05.txt\n"
+                        },
+                        {
+                          "text": "returnValues =  {\n  \u001b[32m'Practice Exercise'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N19283A29522'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'MTHFLU.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'568129354'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Practice Exercise'\u001b[39m,\n    Master_ID: \u001b[32m'MTHFLU_FI1'\u001b[39m,\n    RT: \u001b[32m'20.630'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:37:49.997'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:10.627'\u001b[39m,\n    Delivered_Order: \u001b[32m'0'\u001b[39m,\n    Response: \u001b[32m''\u001b[39m,\n    Score: \u001b[32m'0'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'627-395666'\u001b[39m,\n    Session_ID: \u001b[32m'5smgJrS44_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Practice Exercise 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N19283A29522'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'MTHFLU.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'568131378'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Practice Exercise'\u001b[39m,\n    Master_ID: \u001b[32m'MTHFLU_PR2'\u001b[39m,\n    RT: \u001b[32m'20.000'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:37:50.000'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:10.627'\u001b[39m,\n    Delivered_Order: \u001b[32m'1'\u001b[39m,\n    Response: \u001b[32m'5'\u001b[39m,\n    Score: \u001b[32m'5'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'627-395666'\u001b[39m,\n    Session_ID: \u001b[32m'5smgJrS44_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Test Introduction'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N19283A29522'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'MTHFLU.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'568133139'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Test Introduction'\u001b[39m,\n    Master_ID: \u001b[32m'MTHFLU_FI2'\u001b[39m,\n    RT: \u001b[32m'0.088'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:10.653'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:38:10.740'\u001b[39m,\n    Delivered_Order: \u001b[32m'2'\u001b[39m,\n    Response: \u001b[32m''\u001b[39m,\n    Score: \u001b[32m'0'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'627-395666'\u001b[39m,\n    Session_ID: \u001b[32m'5smgJrS44_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Test Items'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N19283A29522'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'MTHFLU.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'568138365'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Test Items'\u001b[39m,\n    Master_ID: \u001b[32m'MTHFLU_IN1'\u001b[39m,\n    RT: \u001b[32m'180.422'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:38:10.763'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:11.183'\u001b[39m,\n    Delivered_Order: \u001b[32m'3'\u001b[39m,\n    Response: \u001b[32m''\u001b[39m,\n    Score: \u001b[32m'0'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'627-395666'\u001b[39m,\n    Session_ID: \u001b[32m'5smgJrS44_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Page 4'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N19283A29522'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'MTHFLU.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'568139783'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Page 4'\u001b[39m,\n    Master_ID: \u001b[32m'MTHFLU_T01'\u001b[39m,\n    RT: \u001b[32m''\u001b[39m,\n    ItemTimeStamp: \u001b[32m''\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:11.530'\u001b[39m,\n    Delivered_Order: \u001b[32m'4'\u001b[39m,\n    Response: \u001b[32m'80'\u001b[39m,\n    Score: \u001b[32m'80'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'627-395666'\u001b[39m,\n    Session_ID: \u001b[32m'5smgJrS44_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Page 5'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N19283A29522'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'MTHFLU.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'568140835'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Page 5'\u001b[39m,\n    Master_ID: \u001b[32m'MTHFLU_T02'\u001b[39m,\n    RT: \u001b[32m''\u001b[39m,\n    ItemTimeStamp: \u001b[32m''\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:11.530'\u001b[39m,\n    Delivered_Order: \u001b[32m'5'\u001b[39m,\n    Response: \u001b[32m'80'\u001b[39m,\n    Score: \u001b[32m'80'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'627-395666'\u001b[39m,\n    Session_ID: \u001b[32m'5smgJrS44_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  Total: {\n    Examinee_ID: \u001b[32m'N19283A29522'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'MTHFLU.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'571489220'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Total'\u001b[39m,\n    Master_ID: \u001b[32m'MTHFLU_T03'\u001b[39m,\n    RT: \u001b[32m''\u001b[39m,\n    ItemTimeStamp: \u001b[32m''\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:11.530'\u001b[39m,\n    Delivered_Order: \u001b[32m'6'\u001b[39m,\n    Response: \u001b[32m'160'\u001b[39m,\n    Score: \u001b[32m'160'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'627-395666'\u001b[39m,\n    Session_ID: \u001b[32m'5smgJrS44_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m''\u001b[39m: {\n    Examinee_ID: \u001b[32m'N19283A29522'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'MTHFLU.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'568142403'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m''\u001b[39m,\n    Master_ID: \u001b[32m'MTHFLU_QOP'\u001b[39m,\n    RT: \u001b[32m'0.075'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-04-05 13:41:11.683'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-04-05 13:41:11.757'\u001b[39m,\n    Delivered_Order: \u001b[32m'7'\u001b[39m,\n    Response: \u001b[32m'[None of the above]'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'627-395666'\u001b[39m,\n    Session_ID: \u001b[32m'5smgJrS44_26.04.05'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N19283A29522 <> N19283A29522\n"
+                        },
+                        {
+                          "text": "2 Examinee_CAMOS ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "3 TestStemForm ->  value from the RunTime VS downloaded file is =  MTHFLU.W5PA <> MTHFLU.W5PA\n"
+                        },
+                        {
+                          "text": "itemsData = {\n  \u001b[32m'Practice Exercise'\u001b[39m: {\n    Master_ID: \u001b[32m'MTHFLU_FI1'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m568129354\u001b[39m\n  },\n  \u001b[32m'Practice Exercise 1'\u001b[39m: {\n    Master_ID: \u001b[32m'MTHFLU_PR2'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m568131378\u001b[39m\n  },\n  \u001b[32m'Test Introduction'\u001b[39m: {\n    Master_ID: \u001b[32m'MTHFLU_FI2'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m568133139\u001b[39m\n  },\n  \u001b[32m'Test Introduction 1'\u001b[39m: {\n    Master_ID: \u001b[32m'MTHFLU_FI3'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m568137882\u001b[39m\n  },\n  \u001b[32m'Test Items'\u001b[39m: {\n    Master_ID: \u001b[32m'MTHFLU_IN1'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m568138365\u001b[39m\n  },\n  \u001b[32m'Page 4'\u001b[39m: {\n    Master_ID: \u001b[32m'MTHFLU_T01'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m568139783\u001b[39m\n  },\n  \u001b[32m'Page 5'\u001b[39m: {\n    Master_ID: \u001b[32m'MTHFLU_T02'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m568140835\u001b[39m\n  },\n  Total: {\n    Master_ID: \u001b[32m'MTHFLU_T03'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m571489220\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": "---------------------Item_CMSID_Examiner-------------------\n"
+                        },
+                        {
+                          "text": "\n 568129354 === 568129354\n"
+                        },
+                        {
+                          "text": "\n 568131378 === 568131378\n"
+                        },
+                        {
+                          "text": "\n 568133139 === 568133139\n"
+                        },
+                        {
+                          "text": "\n 568138365 === 568138365\n"
+                        },
+                        {
+                          "text": "\n 568139783 === 568139783\n"
+                        },
+                        {
+                          "text": "\n 568140835 === 568140835\n"
+                        },
+                        {
+                          "text": "\n 571489220 === 571489220\n"
+                        },
+                        {
+                          "text": "----------------Item_CMSID_Examinee-----------------\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "CMSID_Examiner '' not found in the second object\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-04-05T17:35:55.147Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-MTHFLU_Pub-ad9e3-ct-test-and-validate-report-chrome/attachments/Downloaded-Zip-file-edecfffc5ceaea2b0a4dd24d66125ce0e1525caa.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-MTHFLU_Pub-ad9e3-ct-test-and-validate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-MTHFLU_Pub-ad9e3-ct-test-and-validate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-MTHFLU_Pub-ad9e3-ct-test-and-validate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-MTHFLU_Pub-ad9e3-ct-test-and-validate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/utils.ts",
+                        "column": 39,
+                        "line": 211
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 192793,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled id=\"next-item-button\" class=\"plain-button next-item-button\" aria-label=\"Go on to Test Introduction\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m    - locator resolved to <button disabled id=\"next-item-button\" aria-label=\"Go on to \" class=\"plain-button next-item-button\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled id=\"next-item-button\" class=\"plain-button next-item-button\" aria-label=\"Go on to Test Introduction\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m    - locator resolved to <button disabled id=\"next-item-button\" aria-label=\"Go on to \" class=\"plain-button next-item-button\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at wj5TestDataExportPage.completeTheTakenTestForTestDataExportForMTHFLUTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts:1028:45)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/MTHFLU_Pub.spec.ts:83:11",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts",
+                          "column": 45,
+                          "line": 1028
+                        },
+                        "snippet": "   at ../pages/wj5_test.TestDataExport.page.ts:1028\n\n\u001b[0m \u001b[90m 1026 |\u001b[39m    \n \u001b[90m 1027 |\u001b[39m     \u001b[36mif\u001b[39m (itemDetails\u001b[33m.\u001b[39mstartsWith(\u001b[32m\"Practice Exercise\"\u001b[39m)) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1028 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mplainNextButtonOrEndButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1029 |\u001b[39m     }\n \u001b[90m 1030 |\u001b[39m\n \u001b[90m 1031 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"networkidle\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts",
+                            "column": 45,
+                            "line": 1028
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled id=\"next-item-button\" class=\"plain-button next-item-button\" aria-label=\"Go on to Test Introduction\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m    - locator resolved to <button disabled id=\"next-item-button\" aria-label=\"Go on to \" class=\"plain-button next-item-button\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../pages/wj5_test.TestDataExport.page.ts:1028\n\n  1026 |    \n  1027 |     if (itemDetails.startsWith(\"Practice Exercise\")) {\n> 1028 |       await this.plainNextButtonOrEndButton.click();\n       |                                             ^\n  1029 |     }\n  1030 |\n  1031 |     await this.page.waitForLoadState(\"networkidle\");\n    at wj5TestDataExportPage.completeTheTakenTestForTestDataExportForMTHFLUTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts:1028:45)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/MTHFLU_Pub.spec.ts:83:11"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S08PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S7:W1] Login successful for S08PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S7:W1] Login successful for S08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N27128A83942\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N27128A83942/dataFiles/Test_DataExport_AutoFilter_Template_N27128A83942.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N27128A83942 FirstName=Irma LastName =N27128A83942 Age = 04/05/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N27128A83942\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Math Facts Fluency\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14497|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-04-05T17:41:56.844Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-MTHFLU_Pub-ad9e3-ct-test-and-validate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-MTHFLU_Pub-ad9e3-ct-test-and-validate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-MTHFLU_Pub-ad9e3-ct-test-and-validate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-MTHFLU_Pub-ad9e3-ct-test-and-validate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts",
+                        "column": 45,
+                        "line": 1028
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "058a6aa98ccd925b6895-f15e94f0fea5e4e1334d",
+              "file": "test_dataExport/MTHFLU_Pub.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-05T17:35:40.088Z",
+    "duration": 570135.854,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
