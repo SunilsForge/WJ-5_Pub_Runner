@@ -1,0 +1,112 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S06PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S06PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [ref=e44]
+                  - button [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [ref=e47] [cursor=pointer]
+                  - button "Closed" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic "This is the student or individual being assessed." [ref=e50]: Examinee
+                - generic [ref=e51]: Test Set
+                - generic [ref=e52]: Days Left to Edit
+                - generic [ref=e53]: Status
+                - generic [ref=e54]: Actions
+                - generic [ref=e56]: No Test Assignments have been created.
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e60]:
+                  - img [ref=e61]
+                  - heading "Notifications Center" [level=3] [ref=e65]
+                - generic [ref=e67]:
+                  - generic [ref=e68]: 02/10/2026
+                  - paragraph [ref=e69]:
+                    - generic [ref=e71]: Do you use both the BDI-3 and WJ V? We'd love to learn from your experience. Sign up for a quick conversation to share how you use these tools - and you'll be entered to win a $25 gift card.
+                  - paragraph [ref=e72]:
+                    - link "Schedule a Time" [ref=e73] [cursor=pointer]:
+                      - /url: https://calendly.com/lila-chase-riversideinsights/bdi3-and-wj-v?month=2026-02
+                      - generic [ref=e74] [cursor=pointer]: Schedule a Time
+                  - paragraph
+                  - paragraph
+              - generic [ref=e75]:
+                - generic [ref=e77]:
+                  - img [ref=e78]
+                  - heading "Resources" [level=3] [ref=e82]
+                - list [ref=e83]:
+                  - listitem [ref=e84]:
+                    - button "Riverside Learn" [ref=e85] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e86] [cursor=pointer]
+                      - img [ref=e88] [cursor=pointer]
+                  - listitem [ref=e90]:
+                    - button "Onboarding Tutorial Videos" [ref=e91] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e92] [cursor=pointer]
+                      - img [ref=e94] [cursor=pointer]
+                  - listitem [ref=e96]:
+                    - button "Quick Reference Guides" [ref=e97] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e98] [cursor=pointer]
+                      - img [ref=e100] [cursor=pointer]
+                - button "View All" [ref=e103] [cursor=pointer]
+      - contentinfo [ref=e104]:
+        - generic [ref=e105]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e106] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e107] [cursor=pointer]
+        - generic [ref=e108]:
+          - link "Riverside Insights Facebook" [ref=e109] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e110] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e111] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e112] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e113] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e114] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e115] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e116] [cursor=pointer]
+        - generic [ref=e117]:
+          - button "Leave Feedback" [ref=e118] [cursor=pointer]
+          - generic [ref=e119]: "|"
+          - link "Terms of Use" [ref=e120] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e121]: "|"
+          - link "Privacy Policy" [ref=e122] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e123]: Footer region end
+```
