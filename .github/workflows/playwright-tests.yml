@@ -230,6 +230,7 @@ jobs:
           VIDEO_MODE: ${{ github.event.inputs.video_mode }}
           TRACE_MODE: ${{ github.event.inputs.trace_mode }}
           CI: "true"
+          PLAYWRIGHT_JSON_OUTPUT_NAME: results.json
         run: |
           echo "Running shard ${{ matrix.shard }} of ${{ github.event.inputs.shard_count }}"
           npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
@@ -237,7 +238,8 @@ jobs:
             --project=${{ github.event.inputs.browser }} \
             --shard=${{ matrix.shard }}/${{ github.event.inputs.shard_count }} \
             --workers=1 \
-            --retries=${{ env.NUM_RETRIES }}
+            --retries=${{ env.NUM_RETRIES }} \
+            --reporter=html,json
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v6
@@ -247,6 +249,7 @@ jobs:
             playwright-report/
             test-results/
             system-info/
+            results.json
           retention-days: 90
       - name: Create status file
         if: always()
@@ -736,3 +739,261 @@ jobs:
         uses: actions/deploy-pages@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
+  notify:
+    name: Slack Notification
+    if: always()
+    needs: [test, deploy-report]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download shard report artifacts
+        uses: actions/download-artifact@v7
+        with:
+          path: all-artifacts
+          pattern: playwright-report-shard-*
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Parse results and notify Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          TEST_ENV: ${{ github.event.inputs.environment }}
+          BROWSER: ${{ github.event.inputs.browser }}
+          TEST_PATTERN: ${{ github.event.inputs.test_pattern }}
+          SHARD_COUNT: ${{ github.event.inputs.shard_count }}
+          RUN_REASON: ${{ github.event.inputs.run_reason }}
+          TEST_NEEDS_RESULT: ${{ needs.test.result }}
+        run: |
+          node << 'SCRIPT'
+          const fs = require('fs');
+          const path = require('path');
+          const https = require('https');
+          const { URL } = require('url');
+
+          // ── Parse all shard results.json files ──
+          const artifactsDir = 'all-artifacts';
+          let shardDirs = [];
+          try {
+            shardDirs = fs.readdirSync(artifactsDir)
+              .filter(d => d.startsWith('playwright-report-shard-'))
+              .sort((a, b) => {
+                const numA = parseInt(a.split('-').pop());
+                const numB = parseInt(b.split('-').pop());
+                return numA - numB;
+              });
+          } catch (e) {
+            console.error('Could not read artifacts directory:', e.message);
+          }
+
+          let totalPassed = 0;
+          let totalFailed = 0;
+          let totalSkipped = 0;
+          let totalFlaky = 0;
+          let totalTests = 0;
+          let shardsWithJson = 0;
+          const shardsMissingJson = [];
+          const failures = [];
+
+          // Recursively walk Playwright JSON report suites to extract test results
+          function walkSuites(suites) {
+            for (const suite of (suites || [])) {
+              if (suite.suites) walkSuites(suite.suites);
+              for (const spec of (suite.specs || [])) {
+                for (const test of (spec.tests || [])) {
+                  totalTests++;
+                  // Playwright statuses: expected=passed, unexpected=failed, flaky, skipped
+                  if (test.status === 'expected') {
+                    totalPassed++;
+                  } else if (test.status === 'unexpected') {
+                    totalFailed++;
+                    const lastResult = test.results?.[test.results.length - 1];
+                    const errorMsg = lastResult?.error?.message || 'No error message available';
+                    failures.push({
+                      title: spec.title,
+                      file: spec.file || '',
+                      error: errorMsg.split('\n')[0].substring(0, 200)
+                    });
+                  } else if (test.status === 'flaky') {
+                    totalFlaky++;
+                  } else if (test.status === 'skipped') {
+                    totalSkipped++;
+                  }
+                }
+              }
+            }
+          }
+
+          for (const dir of shardDirs) {
+            const jsonPath = path.join(artifactsDir, dir, 'results.json');
+            if (!fs.existsSync(jsonPath)) {
+              shardsMissingJson.push(dir.split('-').pop());
+              console.warn(`Warning: ${jsonPath} not found`);
+              continue;
+            }
+            try {
+              const report = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+              shardsWithJson++;
+              walkSuites(report.suites || []);
+            } catch (e) {
+              console.error(`Error parsing ${jsonPath}:`, e.message);
+              shardsMissingJson.push(dir.split('-').pop());
+            }
+          }
+
+          // ── Determine overall status ──
+          const overallFailed = totalFailed > 0 || process.env.TEST_NEEDS_RESULT === 'failure';
+          const statusText = overallFailed ? 'FAILED' : 'PASSED';
+
+          // ── Build URLs ──
+          const repo = process.env.GITHUB_REPOSITORY;
+          const runId = process.env.GITHUB_RUN_ID;
+          const runNumber = process.env.GITHUB_RUN_NUMBER;
+          const owner = process.env.GITHUB_REPOSITORY_OWNER;
+          const repoName = repo.split('/')[1];
+          const actionsUrl = `https://github.com/${repo}/actions/runs/${runId}`;
+          const pagesUrl = `https://${owner}.github.io/${repoName}/`;
+
+          // ── Write GitHub Step Summary (markdown table in Actions UI) ──
+          let summary = `## ${overallFailed ? '\u{1F534}' : '\u{1F7E2}'} Playwright Test Results — Run #${runNumber}\n\n`;
+          summary += `**Environment:** ${process.env.TEST_ENV} | **Browser:** ${process.env.BROWSER} | **Shards:** ${process.env.SHARD_COUNT}\n\n`;
+          summary += `| Metric | Count |\n|---|---|\n`;
+          summary += `| Total | ${totalTests} |\n`;
+          summary += `| Passed | ${totalPassed} |\n`;
+          summary += `| Failed | ${totalFailed} |\n`;
+          summary += `| Skipped | ${totalSkipped} |\n`;
+          summary += `| Flaky | ${totalFlaky} |\n\n`;
+          if (failures.length > 0) {
+            summary += `### Failed Tests\n\n`;
+            for (const f of failures) {
+              summary += `- **${f.title}** (${f.file})\n  > \`${f.error}\`\n`;
+            }
+            summary += '\n';
+          }
+          summary += `[Full Report](${pagesUrl}) | [Actions Run](${actionsUrl})\n`;
+
+          const summaryPath = process.env.GITHUB_STEP_SUMMARY;
+          if (summaryPath) {
+            fs.appendFileSync(summaryPath, summary);
+            console.log('Wrote GitHub Step Summary');
+          }
+
+          // ── Build Slack Block Kit message ──
+          const blocks = [
+            {
+              type: 'header',
+              text: {
+                type: 'plain_text',
+                text: `${overallFailed ? '\u{1F534}' : '\u{1F7E2}'} Playwright Run #${runNumber} — ${statusText}`,
+                emoji: true
+              }
+            },
+            {
+              type: 'section',
+              fields: [
+                { type: 'mrkdwn', text: `*Environment:*\n${process.env.TEST_ENV}` },
+                { type: 'mrkdwn', text: `*Browser:*\n${process.env.BROWSER}` },
+                { type: 'mrkdwn', text: `*Shards:*\n${process.env.SHARD_COUNT}` },
+                { type: 'mrkdwn', text: `*Reason:*\n${process.env.RUN_REASON || 'N/A'}` }
+              ]
+            },
+            {
+              type: 'section',
+              fields: [
+                { type: 'mrkdwn', text: `*Total:* ${totalTests}` },
+                { type: 'mrkdwn', text: `*Passed:* ${totalPassed} :white_check_mark:` },
+                { type: 'mrkdwn', text: `*Failed:* ${totalFailed} :x:` },
+                { type: 'mrkdwn', text: `*Skipped:* ${totalSkipped} :fast_forward:  *Flaky:* ${totalFlaky} :warning:` }
+              ]
+            }
+          ];
+
+          // Warn if some shards had no JSON results
+          if (shardsMissingJson.length > 0) {
+            blocks.push({
+              type: 'context',
+              elements: [{
+                type: 'mrkdwn',
+                text: `:warning: JSON results missing for shard(s): ${shardsMissingJson.join(', ')}. Counts may be incomplete.`
+              }]
+            });
+          }
+
+          // Add failure details (capped at 10 to stay within Slack message limits)
+          if (failures.length > 0) {
+            blocks.push({ type: 'divider' });
+            let failText = failures.slice(0, 10)
+              .map(f => `• *${f.title}*\n   \`${f.error}\``)
+              .join('\n');
+            if (failures.length > 10) {
+              failText += `\n_...and ${failures.length - 10} more failures_`;
+            }
+            blocks.push({
+              type: 'section',
+              text: { type: 'mrkdwn', text: `*Failed Tests:*\n${failText}` }
+            });
+          }
+
+          // Action buttons linking to full report and Actions run
+          blocks.push({ type: 'divider' });
+          blocks.push({
+            type: 'actions',
+            elements: [
+              {
+                type: 'button',
+                text: { type: 'plain_text', text: 'Full Report', emoji: true },
+                url: pagesUrl,
+                style: 'primary'
+              },
+              {
+                type: 'button',
+                text: { type: 'plain_text', text: 'GitHub Actions Run', emoji: true },
+                url: actionsUrl
+              }
+            ]
+          });
+
+          // ── Send Slack webhook ──
+          const webhookUrl = process.env.SLACK_WEBHOOK_URL;
+          if (!webhookUrl) {
+            console.log('SLACK_WEBHOOK_URL not set — skipping Slack notification.');
+            console.log('Message payload (for dry-run verification):');
+            console.log(JSON.stringify({ blocks }, null, 2));
+            process.exit(0);
+          }
+
+          const payload = JSON.stringify({ blocks });
+          const parsed = new URL(webhookUrl);
+
+          const req = https.request({
+            hostname: parsed.hostname,
+            port: 443,
+            path: parsed.pathname,
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Content-Length': Buffer.byteLength(payload)
+            }
+          }, (res) => {
+            let body = '';
+            res.on('data', chunk => body += chunk);
+            res.on('end', () => {
+              if (res.statusCode === 200) {
+                console.log('Slack notification sent successfully');
+              } else {
+                console.error(`Slack webhook returned ${res.statusCode}: ${body}`);
+                process.exit(1);
+              }
+            });
+          });
+
+          req.on('error', (e) => {
+            console.error('Failed to send Slack notification:', e.message);
+            process.exit(1);
+          });
+
+          req.write(payload);
+          req.end();
+          SCRIPT
