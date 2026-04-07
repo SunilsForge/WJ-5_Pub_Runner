@@ -1,0 +1,864 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S02PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S02PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]: Dashboard
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]: Test Sets
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]: Examinees
+            - menuitem "Staff" [ref=e27] [cursor=pointer]: Staff
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30] [cursor=pointer]
+            - menuitem "Resources" [ref=e33] [cursor=pointer]: Resources
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e43]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e44] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "✕" [ref=e45] [cursor=pointer]
+            - generic [ref=e46]:
+              - generic [ref=e47]:
+                - heading "My Test Assignments" [level=1] [ref=e48]
+                - button "Create New Test Assignment" [ref=e49] [cursor=pointer]
+              - generic [ref=e50]:
+                - generic [ref=e53]:
+                  - textbox [ref=e54]
+                  - button [ref=e55] [cursor=pointer]
+                - generic [ref=e56]:
+                  - button "Active" [ref=e57] [cursor=pointer]
+                  - button "Closed" [ref=e58] [cursor=pointer]
+              - generic [ref=e59]:
+                - generic "This is the student or individual being assessed." [ref=e60]: Examinee
+                - generic [ref=e61]: Test Set
+                - generic [ref=e62]: Days Left to Edit
+                - generic [ref=e63]: Status
+                - generic [ref=e64]: Actions
+                - generic [ref=e65] [cursor=pointer]:
+                  - button "N45846A40745, Glen" [ref=e66] [cursor=pointer]:
+                    - generic [ref=e67] [cursor=pointer]: N45846A40745, Glen
+                  - button "Rene Schulist_1775556503767" [ref=e68] [cursor=pointer]:
+                    - generic [ref=e70] [cursor=pointer]: Rene Schulist_1775556503767
+                  - button "90 days" [ref=e72] [cursor=pointer]
+                  - button "● In Progress" [ref=e73] [cursor=pointer]:
+                    - generic [ref=e74] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e75] [cursor=pointer]:
+                    - button [disabled] [ref=e76]
+                    - button [disabled] [ref=e77]
+                    - button [ref=e78] [cursor=pointer]
+                - generic [ref=e79] [cursor=pointer]:
+                  - button "N33315A96006, Manuela" [ref=e80] [cursor=pointer]:
+                    - generic [ref=e81] [cursor=pointer]: N33315A96006, Manuela
+                  - button "Ms. Theresa Stark_1775555762203" [ref=e82] [cursor=pointer]:
+                    - generic [ref=e84] [cursor=pointer]: Ms. Theresa Stark_1775555762203
+                  - button "90 days" [ref=e86] [cursor=pointer]
+                  - button "● In Progress" [ref=e87] [cursor=pointer]:
+                    - generic [ref=e88] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e89] [cursor=pointer]:
+                    - button [disabled] [ref=e90]
+                    - button [disabled] [ref=e91]
+                    - button [ref=e92] [cursor=pointer]
+                - generic [ref=e93] [cursor=pointer]:
+                  - button "N20638A42011, Amira" [ref=e94] [cursor=pointer]:
+                    - generic [ref=e95] [cursor=pointer]: N20638A42011, Amira
+                  - button "Shannon Watsica PhD_1775555021772" [ref=e96] [cursor=pointer]:
+                    - generic [ref=e98] [cursor=pointer]: Shannon Watsica PhD_1775555021772
+                  - button "90 days" [ref=e100] [cursor=pointer]
+                  - button "● In Progress" [ref=e101] [cursor=pointer]:
+                    - generic [ref=e102] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e103] [cursor=pointer]:
+                    - button [disabled] [ref=e104]
+                    - button [disabled] [ref=e105]
+                    - button [ref=e106] [cursor=pointer]
+                - generic [ref=e107] [cursor=pointer]:
+                  - button "N98506A28956, Amos" [ref=e108] [cursor=pointer]:
+                    - generic [ref=e109] [cursor=pointer]: N98506A28956, Amos
+                  - button "Loren Rosenbaum I_1775554284305" [ref=e110] [cursor=pointer]:
+                    - generic [ref=e112] [cursor=pointer]: Loren Rosenbaum I_1775554284305
+                  - button "90 days" [ref=e114] [cursor=pointer]
+                  - button "● In Progress" [ref=e115] [cursor=pointer]:
+                    - generic [ref=e116] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e117] [cursor=pointer]:
+                    - button [disabled] [ref=e118]
+                    - button [disabled] [ref=e119]
+                    - button [ref=e120] [cursor=pointer]
+                - generic [ref=e121] [cursor=pointer]:
+                  - button "N97934A25441, Owen" [ref=e122] [cursor=pointer]:
+                    - generic [ref=e123] [cursor=pointer]: N97934A25441, Owen
+                  - button "Gladys Herman_1775540971817" [ref=e124] [cursor=pointer]:
+                    - generic [ref=e126] [cursor=pointer]: Gladys Herman_1775540971817
+                  - button "90 days" [ref=e128] [cursor=pointer]
+                  - button "● Submitted" [ref=e129] [cursor=pointer]:
+                    - generic [ref=e130] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e131] [cursor=pointer]:
+                    - button [disabled] [ref=e132]
+                    - button [disabled] [ref=e133]
+                    - button [ref=e134] [cursor=pointer]
+                - generic [ref=e135] [cursor=pointer]:
+                  - button "N3258A94716, Jakayla" [ref=e136] [cursor=pointer]:
+                    - generic [ref=e137] [cursor=pointer]: N3258A94716, Jakayla
+                  - button "Jamie Hand_1775540343641" [ref=e138] [cursor=pointer]:
+                    - generic [ref=e140] [cursor=pointer]: Jamie Hand_1775540343641
+                  - button "90 days" [ref=e142] [cursor=pointer]
+                  - button "● Submitted" [ref=e143] [cursor=pointer]:
+                    - generic [ref=e144] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e145] [cursor=pointer]:
+                    - button [disabled] [ref=e146]
+                    - button [disabled] [ref=e147]
+                    - button [ref=e148] [cursor=pointer]
+                - generic [ref=e149] [cursor=pointer]:
+                  - button "N98157A38872, Vanessa" [ref=e150] [cursor=pointer]:
+                    - generic [ref=e151] [cursor=pointer]: N98157A38872, Vanessa
+                  - button "Chris Gulgowski_1775539745958" [ref=e152] [cursor=pointer]:
+                    - generic [ref=e154] [cursor=pointer]: Chris Gulgowski_1775539745958
+                  - button "90 days" [ref=e156] [cursor=pointer]
+                  - button "● Submitted" [ref=e157] [cursor=pointer]:
+                    - generic [ref=e158] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e159] [cursor=pointer]:
+                    - button [disabled] [ref=e160]
+                    - button [disabled] [ref=e161]
+                    - button [ref=e162] [cursor=pointer]
+                - generic [ref=e163] [cursor=pointer]:
+                  - button "N50196A212, Keyon" [ref=e164] [cursor=pointer]:
+                    - generic [ref=e165] [cursor=pointer]: N50196A212, Keyon
+                  - button "Dr. Austin Hoppe_1775539089531" [ref=e166] [cursor=pointer]:
+                    - generic [ref=e168] [cursor=pointer]: Dr. Austin Hoppe_1775539089531
+                  - button "90 days" [ref=e170] [cursor=pointer]
+                  - button "● Submitted" [ref=e171] [cursor=pointer]:
+                    - generic [ref=e172] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e173] [cursor=pointer]:
+                    - button [disabled] [ref=e174]
+                    - button [disabled] [ref=e175]
+                    - button [ref=e176] [cursor=pointer]
+                - generic [ref=e177] [cursor=pointer]:
+                  - button "N81563A37306, Monty" [ref=e178] [cursor=pointer]:
+                    - generic [ref=e179] [cursor=pointer]: N81563A37306, Monty
+                  - button "Miss Alice Mertz_1775538497635" [ref=e180] [cursor=pointer]:
+                    - generic [ref=e182] [cursor=pointer]: Miss Alice Mertz_1775538497635
+                  - button "90 days" [ref=e184] [cursor=pointer]
+                  - button "● Submitted" [ref=e185] [cursor=pointer]:
+                    - generic [ref=e186] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e187] [cursor=pointer]:
+                    - button [disabled] [ref=e188]
+                    - button [disabled] [ref=e189]
+                    - button [ref=e190] [cursor=pointer]
+                - generic [ref=e191] [cursor=pointer]:
+                  - button "N95665A71325, Lurline" [ref=e192] [cursor=pointer]:
+                    - generic [ref=e193] [cursor=pointer]: N95665A71325, Lurline
+                  - button "Heidi VonRueden_1775537846282" [ref=e194] [cursor=pointer]:
+                    - generic [ref=e196] [cursor=pointer]: Heidi VonRueden_1775537846282
+                  - button "90 days" [ref=e198] [cursor=pointer]
+                  - button "● Submitted" [ref=e199] [cursor=pointer]:
+                    - generic [ref=e200] [cursor=pointer]: ●
+                    - text: Submitted
+                  - generic [ref=e201] [cursor=pointer]:
+                    - button [disabled] [ref=e202]
+                    - button [disabled] [ref=e203]
+                    - button [ref=e204] [cursor=pointer]
+                - generic [ref=e205] [cursor=pointer]:
+                  - button "N73726A14461, Nola" [ref=e206] [cursor=pointer]:
+                    - generic [ref=e207] [cursor=pointer]: N73726A14461, Nola
+                  - button "Form A" [ref=e208] [cursor=pointer]:
+                    - generic [ref=e210] [cursor=pointer]: Form A
+                  - button "76 days" [ref=e212] [cursor=pointer]
+                  - button "● In Progress" [ref=e213] [cursor=pointer]:
+                    - generic [ref=e214] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e215] [cursor=pointer]:
+                    - button [disabled] [ref=e216]
+                    - button [disabled] [ref=e217]
+                    - button [ref=e218] [cursor=pointer]
+                - generic [ref=e219] [cursor=pointer]:
+                  - button "N26342A25022, Jaren" [ref=e220] [cursor=pointer]:
+                    - generic [ref=e221] [cursor=pointer]: N26342A25022, Jaren
+                  - button "Form A" [ref=e222] [cursor=pointer]:
+                    - generic [ref=e224] [cursor=pointer]: Form A
+                  - button "76 days" [ref=e226] [cursor=pointer]
+                  - button "● In Progress" [ref=e227] [cursor=pointer]:
+                    - generic [ref=e228] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e229] [cursor=pointer]:
+                    - button [disabled] [ref=e230]
+                    - button [disabled] [ref=e231]
+                    - button [ref=e232] [cursor=pointer]
+                - generic [ref=e233] [cursor=pointer]:
+                  - button "N5831A18395, Susana" [ref=e234] [cursor=pointer]:
+                    - generic [ref=e235] [cursor=pointer]: N5831A18395, Susana
+                  - button "Form A" [ref=e236] [cursor=pointer]:
+                    - generic [ref=e238] [cursor=pointer]: Form A
+                  - button "76 days" [ref=e240] [cursor=pointer]
+                  - button "● In Progress" [ref=e241] [cursor=pointer]:
+                    - generic [ref=e242] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e243] [cursor=pointer]:
+                    - button [disabled] [ref=e244]
+                    - button [disabled] [ref=e245]
+                    - button [ref=e246] [cursor=pointer]
+                - generic [ref=e247] [cursor=pointer]:
+                  - button "N88600A3838, Eldon" [ref=e248] [cursor=pointer]:
+                    - generic [ref=e249] [cursor=pointer]: N88600A3838, Eldon
+                  - button "Form A" [ref=e250] [cursor=pointer]:
+                    - generic [ref=e252] [cursor=pointer]: Form A
+                  - button "76 days" [ref=e254] [cursor=pointer]
+                  - button "● In Progress" [ref=e255] [cursor=pointer]:
+                    - generic [ref=e256] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e257] [cursor=pointer]:
+                    - button [disabled] [ref=e258]
+                    - button [disabled] [ref=e259]
+                    - button [ref=e260] [cursor=pointer]
+                - generic [ref=e261] [cursor=pointer]:
+                  - button "N94451A65390, Antwan" [ref=e262] [cursor=pointer]:
+                    - generic [ref=e263] [cursor=pointer]: N94451A65390, Antwan
+                  - button "Form A" [ref=e264] [cursor=pointer]:
+                    - generic [ref=e266] [cursor=pointer]: Form A
+                  - button "76 days" [ref=e268] [cursor=pointer]
+                  - button "● In Progress" [ref=e269] [cursor=pointer]:
+                    - generic [ref=e270] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e271] [cursor=pointer]:
+                    - button [disabled] [ref=e272]
+                    - button [disabled] [ref=e273]
+                    - button [ref=e274] [cursor=pointer]
+                - generic [ref=e275] [cursor=pointer]:
+                  - button "N71789A30298, Hattie" [ref=e276] [cursor=pointer]:
+                    - generic [ref=e277] [cursor=pointer]: N71789A30298, Hattie
+                  - button "Form A" [ref=e278] [cursor=pointer]:
+                    - generic [ref=e280] [cursor=pointer]: Form A
+                  - button "76 days" [ref=e282] [cursor=pointer]
+                  - button "● In Progress" [ref=e283] [cursor=pointer]:
+                    - generic [ref=e284] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e285] [cursor=pointer]:
+                    - button [disabled] [ref=e286]
+                    - button [disabled] [ref=e287]
+                    - button [ref=e288] [cursor=pointer]
+                - generic [ref=e289] [cursor=pointer]:
+                  - button "N84936A54471, Halle" [ref=e290] [cursor=pointer]:
+                    - generic [ref=e291] [cursor=pointer]: N84936A54471, Halle
+                  - button "Form A" [ref=e292] [cursor=pointer]:
+                    - generic [ref=e294] [cursor=pointer]: Form A
+                  - button "76 days" [ref=e296] [cursor=pointer]
+                  - button "● In Progress" [ref=e297] [cursor=pointer]:
+                    - generic [ref=e298] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e299] [cursor=pointer]:
+                    - button [disabled] [ref=e300]
+                    - button [disabled] [ref=e301]
+                    - button [ref=e302] [cursor=pointer]
+                - generic [ref=e303] [cursor=pointer]:
+                  - button "N54359A4784, Zechariah" [ref=e304] [cursor=pointer]:
+                    - generic [ref=e305] [cursor=pointer]: N54359A4784, Zechariah
+                  - button "Form A" [ref=e306] [cursor=pointer]:
+                    - generic [ref=e308] [cursor=pointer]: Form A
+                  - button "76 days" [ref=e310] [cursor=pointer]
+                  - button "● In Progress" [ref=e311] [cursor=pointer]:
+                    - generic [ref=e312] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e313] [cursor=pointer]:
+                    - button [disabled] [ref=e314]
+                    - button [disabled] [ref=e315]
+                    - button [ref=e316] [cursor=pointer]
+                - generic [ref=e317] [cursor=pointer]:
+                  - button "N52588A71099, Simeon" [ref=e318] [cursor=pointer]:
+                    - generic [ref=e319] [cursor=pointer]: N52588A71099, Simeon
+                  - button "Form A" [ref=e320] [cursor=pointer]:
+                    - generic [ref=e322] [cursor=pointer]: Form A
+                  - button "76 days" [ref=e324] [cursor=pointer]
+                  - button "● In Progress" [ref=e325] [cursor=pointer]:
+                    - generic [ref=e326] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e327] [cursor=pointer]:
+                    - button [disabled] [ref=e328]
+                    - button [disabled] [ref=e329]
+                    - button [ref=e330] [cursor=pointer]
+                - generic [ref=e331] [cursor=pointer]:
+                  - button "N14078A29715, Pete" [ref=e332] [cursor=pointer]:
+                    - generic [ref=e333] [cursor=pointer]: N14078A29715, Pete
+                  - button "Form A" [ref=e334] [cursor=pointer]:
+                    - generic [ref=e336] [cursor=pointer]: Form A
+                  - button "76 days" [ref=e338] [cursor=pointer]
+                  - button "● In Progress" [ref=e339] [cursor=pointer]:
+                    - generic [ref=e340] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e341] [cursor=pointer]:
+                    - button [disabled] [ref=e342]
+                    - button [disabled] [ref=e343]
+                    - button [ref=e344] [cursor=pointer]
+                - generic [ref=e345] [cursor=pointer]:
+                  - button "N24372A74656, Rosalia" [ref=e346] [cursor=pointer]:
+                    - generic [ref=e347] [cursor=pointer]: N24372A74656, Rosalia
+                  - button "Form A" [ref=e348] [cursor=pointer]:
+                    - generic [ref=e350] [cursor=pointer]: Form A
+                  - button "76 days" [ref=e352] [cursor=pointer]
+                  - button "● In Progress" [ref=e353] [cursor=pointer]:
+                    - generic [ref=e354] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e355] [cursor=pointer]:
+                    - button [disabled] [ref=e356]
+                    - button [disabled] [ref=e357]
+                    - button [ref=e358] [cursor=pointer]
+                - generic [ref=e359] [cursor=pointer]:
+                  - button "N75241A83362, Haven" [ref=e360] [cursor=pointer]:
+                    - generic [ref=e361] [cursor=pointer]: N75241A83362, Haven
+                  - button "Form A" [ref=e362] [cursor=pointer]:
+                    - generic [ref=e364] [cursor=pointer]: Form A
+                  - button "76 days" [ref=e366] [cursor=pointer]
+                  - button "● In Progress" [ref=e367] [cursor=pointer]:
+                    - generic [ref=e368] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e369] [cursor=pointer]:
+                    - button [disabled] [ref=e370]
+                    - button [disabled] [ref=e371]
+                    - button [ref=e372] [cursor=pointer]
+                - generic [ref=e373] [cursor=pointer]:
+                  - button "N35147A11948, Constance" [ref=e374] [cursor=pointer]:
+                    - generic [ref=e375] [cursor=pointer]: N35147A11948, Constance
+                  - button "Form A" [ref=e376] [cursor=pointer]:
+                    - generic [ref=e378] [cursor=pointer]: Form A
+                  - button "68 days" [ref=e380] [cursor=pointer]
+                  - button "● In Progress" [ref=e381] [cursor=pointer]:
+                    - generic [ref=e382] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e383] [cursor=pointer]:
+                    - button [disabled] [ref=e384]
+                    - button [disabled] [ref=e385]
+                    - button [ref=e386] [cursor=pointer]
+                - generic [ref=e387] [cursor=pointer]:
+                  - button "N66182A66277, Tyrell" [ref=e388] [cursor=pointer]:
+                    - generic [ref=e389] [cursor=pointer]: N66182A66277, Tyrell
+                  - button "Form A" [ref=e390] [cursor=pointer]:
+                    - generic [ref=e392] [cursor=pointer]: Form A
+                  - button "68 days" [ref=e394] [cursor=pointer]
+                  - button "● In Progress" [ref=e395] [cursor=pointer]:
+                    - generic [ref=e396] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e397] [cursor=pointer]:
+                    - button [disabled] [ref=e398]
+                    - button [disabled] [ref=e399]
+                    - button [ref=e400] [cursor=pointer]
+                - generic [ref=e401] [cursor=pointer]:
+                  - button "N25437A85840, Drake" [ref=e402] [cursor=pointer]:
+                    - generic [ref=e403] [cursor=pointer]: N25437A85840, Drake
+                  - button "Form A" [ref=e404] [cursor=pointer]:
+                    - generic [ref=e406] [cursor=pointer]: Form A
+                  - button "68 days" [ref=e408] [cursor=pointer]
+                  - button "● In Progress" [ref=e409] [cursor=pointer]:
+                    - generic [ref=e410] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e411] [cursor=pointer]:
+                    - button [disabled] [ref=e412]
+                    - button [disabled] [ref=e413]
+                    - button [ref=e414] [cursor=pointer]
+                - generic [ref=e415] [cursor=pointer]:
+                  - button "N90250A6734, Gerry" [ref=e416] [cursor=pointer]:
+                    - generic [ref=e417] [cursor=pointer]: N90250A6734, Gerry
+                  - button "Form A" [ref=e418] [cursor=pointer]:
+                    - generic [ref=e420] [cursor=pointer]: Form A
+                  - button "68 days" [ref=e422] [cursor=pointer]
+                  - button "● In Progress" [ref=e423] [cursor=pointer]:
+                    - generic [ref=e424] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e425] [cursor=pointer]:
+                    - button [disabled] [ref=e426]
+                    - button [disabled] [ref=e427]
+                    - button [ref=e428] [cursor=pointer]
+                - generic [ref=e429] [cursor=pointer]:
+                  - button "N27755A80890, Delphine" [ref=e430] [cursor=pointer]:
+                    - generic [ref=e431] [cursor=pointer]: N27755A80890, Delphine
+                  - button "Form A" [ref=e432] [cursor=pointer]:
+                    - generic [ref=e434] [cursor=pointer]: Form A
+                  - button "68 days" [ref=e436] [cursor=pointer]
+                  - button "● In Progress" [ref=e437] [cursor=pointer]:
+                    - generic [ref=e438] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e439] [cursor=pointer]:
+                    - button [disabled] [ref=e440]
+                    - button [disabled] [ref=e441]
+                    - button [ref=e442] [cursor=pointer]
+                - generic [ref=e443] [cursor=pointer]:
+                  - button "N14592A36669, Ted" [ref=e444] [cursor=pointer]:
+                    - generic [ref=e445] [cursor=pointer]: N14592A36669, Ted
+                  - button "Form A" [ref=e446] [cursor=pointer]:
+                    - generic [ref=e448] [cursor=pointer]: Form A
+                  - button "68 days" [ref=e450] [cursor=pointer]
+                  - button "● In Progress" [ref=e451] [cursor=pointer]:
+                    - generic [ref=e452] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e453] [cursor=pointer]:
+                    - button [disabled] [ref=e454]
+                    - button [disabled] [ref=e455]
+                    - button [ref=e456] [cursor=pointer]
+                - generic [ref=e457] [cursor=pointer]:
+                  - button "N92741A11931, Bernadette" [ref=e458] [cursor=pointer]:
+                    - generic [ref=e459] [cursor=pointer]: N92741A11931, Bernadette
+                  - button "Form A" [ref=e460] [cursor=pointer]:
+                    - generic [ref=e462] [cursor=pointer]: Form A
+                  - button "68 days" [ref=e464] [cursor=pointer]
+                  - button "● In Progress" [ref=e465] [cursor=pointer]:
+                    - generic [ref=e466] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e467] [cursor=pointer]:
+                    - button [disabled] [ref=e468]
+                    - button [disabled] [ref=e469]
+                    - button [ref=e470] [cursor=pointer]
+                - generic [ref=e471] [cursor=pointer]:
+                  - button "N50688A74356, Max" [ref=e472] [cursor=pointer]:
+                    - generic [ref=e473] [cursor=pointer]: N50688A74356, Max
+                  - button "Form A" [ref=e474] [cursor=pointer]:
+                    - generic [ref=e476] [cursor=pointer]: Form A
+                  - button "68 days" [ref=e478] [cursor=pointer]
+                  - button "● In Progress" [ref=e479] [cursor=pointer]:
+                    - generic [ref=e480] [cursor=pointer]: ●
+                    - text: In Progress
+                  - generic [ref=e481] [cursor=pointer]:
+                    - button [disabled] [ref=e482]
+                    - button [disabled] [ref=e483]
+                    - button [ref=e484] [cursor=pointer]
+                - generic [ref=e485] [cursor=pointer]:
+                  - button "N13065A9388, Monserrate" [ref=e486] [cursor=pointer]:
+                    - generic [ref=e487] [cursor=pointer]: N13065A9388, Monserrate
+                  - button "Form A" [ref=e488] [cursor=pointer]:
+                    - generic [ref=e490] [cursor=pointer]: Form A
+                  - button "—" [ref=e492] [cursor=pointer]
+                  - button "● Not Started" [ref=e493] [cursor=pointer]:
+                    - generic [ref=e494] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e495] [cursor=pointer]:
+                    - button [disabled] [ref=e496]
+                    - button [disabled] [ref=e497]
+                    - button [ref=e498] [cursor=pointer]
+                - generic [ref=e499] [cursor=pointer]:
+                  - button "N7495A61526, Louie" [ref=e500] [cursor=pointer]:
+                    - generic [ref=e501] [cursor=pointer]: N7495A61526, Louie
+                  - button "Form A" [ref=e502] [cursor=pointer]:
+                    - generic [ref=e504] [cursor=pointer]: Form A
+                  - button "—" [ref=e506] [cursor=pointer]
+                  - button "● Not Started" [ref=e507] [cursor=pointer]:
+                    - generic [ref=e508] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e509] [cursor=pointer]:
+                    - button [disabled] [ref=e510]
+                    - button [disabled] [ref=e511]
+                    - button [ref=e512] [cursor=pointer]
+                - generic [ref=e513] [cursor=pointer]:
+                  - button "N86747A44708, Annamae" [ref=e514] [cursor=pointer]:
+                    - generic [ref=e515] [cursor=pointer]: N86747A44708, Annamae
+                  - button "Form A" [ref=e516] [cursor=pointer]:
+                    - generic [ref=e518] [cursor=pointer]: Form A
+                  - button "—" [ref=e520] [cursor=pointer]
+                  - button "● Not Started" [ref=e521] [cursor=pointer]:
+                    - generic [ref=e522] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e523] [cursor=pointer]:
+                    - button [disabled] [ref=e524]
+                    - button [disabled] [ref=e525]
+                    - button [ref=e526] [cursor=pointer]
+                - generic [ref=e527] [cursor=pointer]:
+                  - button "N77188A5520, Greta" [ref=e528] [cursor=pointer]:
+                    - generic [ref=e529] [cursor=pointer]: N77188A5520, Greta
+                  - button "Form A" [ref=e530] [cursor=pointer]:
+                    - generic [ref=e532] [cursor=pointer]: Form A
+                  - button "—" [ref=e534] [cursor=pointer]
+                  - button "● Not Started" [ref=e535] [cursor=pointer]:
+                    - generic [ref=e536] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e537] [cursor=pointer]:
+                    - button [disabled] [ref=e538]
+                    - button [disabled] [ref=e539]
+                    - button [ref=e540] [cursor=pointer]
+                - generic [ref=e541] [cursor=pointer]:
+                  - button "N37703A20567, Junius" [ref=e542] [cursor=pointer]:
+                    - generic [ref=e543] [cursor=pointer]: N37703A20567, Junius
+                  - button "Form A" [ref=e544] [cursor=pointer]:
+                    - generic [ref=e546] [cursor=pointer]: Form A
+                  - button "—" [ref=e548] [cursor=pointer]
+                  - button "● Not Started" [ref=e549] [cursor=pointer]:
+                    - generic [ref=e550] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e551] [cursor=pointer]:
+                    - button [disabled] [ref=e552]
+                    - button [disabled] [ref=e553]
+                    - button [ref=e554] [cursor=pointer]
+                - generic [ref=e555] [cursor=pointer]:
+                  - button "N94048A48764, Moshe" [ref=e556] [cursor=pointer]:
+                    - generic [ref=e557] [cursor=pointer]: N94048A48764, Moshe
+                  - button "Form A" [ref=e558] [cursor=pointer]:
+                    - generic [ref=e560] [cursor=pointer]: Form A
+                  - button "—" [ref=e562] [cursor=pointer]
+                  - button "● Not Started" [ref=e563] [cursor=pointer]:
+                    - generic [ref=e564] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e565] [cursor=pointer]:
+                    - button [disabled] [ref=e566]
+                    - button [disabled] [ref=e567]
+                    - button [ref=e568] [cursor=pointer]
+                - generic [ref=e569] [cursor=pointer]:
+                  - button "N25611A59403, Brianne" [ref=e570] [cursor=pointer]:
+                    - generic [ref=e571] [cursor=pointer]: N25611A59403, Brianne
+                  - button "Form A" [ref=e572] [cursor=pointer]:
+                    - generic [ref=e574] [cursor=pointer]: Form A
+                  - button "—" [ref=e576] [cursor=pointer]
+                  - button "● Not Started" [ref=e577] [cursor=pointer]:
+                    - generic [ref=e578] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e579] [cursor=pointer]:
+                    - button [disabled] [ref=e580]
+                    - button [disabled] [ref=e581]
+                    - button [ref=e582] [cursor=pointer]
+                - generic [ref=e583] [cursor=pointer]:
+                  - button "N85529A98814, Camila" [ref=e584] [cursor=pointer]:
+                    - generic [ref=e585] [cursor=pointer]: N85529A98814, Camila
+                  - button "Form A" [ref=e586] [cursor=pointer]:
+                    - generic [ref=e588] [cursor=pointer]: Form A
+                  - button "—" [ref=e590] [cursor=pointer]
+                  - button "● Not Started" [ref=e591] [cursor=pointer]:
+                    - generic [ref=e592] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e593] [cursor=pointer]:
+                    - button [disabled] [ref=e594]
+                    - button [disabled] [ref=e595]
+                    - button [ref=e596] [cursor=pointer]
+                - generic [ref=e597] [cursor=pointer]:
+                  - button "N78866A28103, Shanny" [ref=e598] [cursor=pointer]:
+                    - generic [ref=e599] [cursor=pointer]: N78866A28103, Shanny
+                  - button "Form A" [ref=e600] [cursor=pointer]:
+                    - generic [ref=e602] [cursor=pointer]: Form A
+                  - button "—" [ref=e604] [cursor=pointer]
+                  - button "● Not Started" [ref=e605] [cursor=pointer]:
+                    - generic [ref=e606] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e607] [cursor=pointer]:
+                    - button [disabled] [ref=e608]
+                    - button [disabled] [ref=e609]
+                    - button [ref=e610] [cursor=pointer]
+                - generic [ref=e611] [cursor=pointer]:
+                  - button "N33963A65414, Viviane" [ref=e612] [cursor=pointer]:
+                    - generic [ref=e613] [cursor=pointer]: N33963A65414, Viviane
+                  - button "Form A" [ref=e614] [cursor=pointer]:
+                    - generic [ref=e616] [cursor=pointer]: Form A
+                  - button "—" [ref=e618] [cursor=pointer]
+                  - button "● Not Started" [ref=e619] [cursor=pointer]:
+                    - generic [ref=e620] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e621] [cursor=pointer]:
+                    - button [disabled] [ref=e622]
+                    - button [disabled] [ref=e623]
+                    - button [ref=e624] [cursor=pointer]
+                - generic [ref=e625] [cursor=pointer]:
+                  - button "N52764A29029, Eloy" [ref=e626] [cursor=pointer]:
+                    - generic [ref=e627] [cursor=pointer]: N52764A29029, Eloy
+                  - button "Form A" [ref=e628] [cursor=pointer]:
+                    - generic [ref=e630] [cursor=pointer]: Form A
+                  - button "—" [ref=e632] [cursor=pointer]
+                  - button "● Not Started" [ref=e633] [cursor=pointer]:
+                    - generic [ref=e634] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e635] [cursor=pointer]:
+                    - button [disabled] [ref=e636]
+                    - button [disabled] [ref=e637]
+                    - button [ref=e638] [cursor=pointer]
+                - generic [ref=e639] [cursor=pointer]:
+                  - button "N82717A4251, Julie" [ref=e640] [cursor=pointer]:
+                    - generic [ref=e641] [cursor=pointer]: N82717A4251, Julie
+                  - button "Form A" [ref=e642] [cursor=pointer]:
+                    - generic [ref=e644] [cursor=pointer]: Form A
+                  - button "—" [ref=e646] [cursor=pointer]
+                  - button "● Not Started" [ref=e647] [cursor=pointer]:
+                    - generic [ref=e648] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e649] [cursor=pointer]:
+                    - button [disabled] [ref=e650]
+                    - button [disabled] [ref=e651]
+                    - button [ref=e652] [cursor=pointer]
+                - generic [ref=e653] [cursor=pointer]:
+                  - button "N81419A93667, Marilou" [ref=e654] [cursor=pointer]:
+                    - generic [ref=e655] [cursor=pointer]: N81419A93667, Marilou
+                  - button "Form A" [ref=e656] [cursor=pointer]:
+                    - generic [ref=e658] [cursor=pointer]: Form A
+                  - button "—" [ref=e660] [cursor=pointer]
+                  - button "● Not Started" [ref=e661] [cursor=pointer]:
+                    - generic [ref=e662] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e663] [cursor=pointer]:
+                    - button [disabled] [ref=e664]
+                    - button [disabled] [ref=e665]
+                    - button [ref=e666] [cursor=pointer]
+                - generic [ref=e667] [cursor=pointer]:
+                  - button "N36860A56312, Pinkie" [ref=e668] [cursor=pointer]:
+                    - generic [ref=e669] [cursor=pointer]: N36860A56312, Pinkie
+                  - button "Form A" [ref=e670] [cursor=pointer]:
+                    - generic [ref=e672] [cursor=pointer]: Form A
+                  - button "—" [ref=e674] [cursor=pointer]
+                  - button "● Not Started" [ref=e675] [cursor=pointer]:
+                    - generic [ref=e676] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e677] [cursor=pointer]:
+                    - button [disabled] [ref=e678]
+                    - button [disabled] [ref=e679]
+                    - button [ref=e680] [cursor=pointer]
+                - generic [ref=e681] [cursor=pointer]:
+                  - button "N59375A22605, Evalyn" [ref=e682] [cursor=pointer]:
+                    - generic [ref=e683] [cursor=pointer]: N59375A22605, Evalyn
+                  - button "Form A" [ref=e684] [cursor=pointer]:
+                    - generic [ref=e686] [cursor=pointer]: Form A
+                  - button "—" [ref=e688] [cursor=pointer]
+                  - button "● Not Started" [ref=e689] [cursor=pointer]:
+                    - generic [ref=e690] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e691] [cursor=pointer]:
+                    - button [disabled] [ref=e692]
+                    - button [disabled] [ref=e693]
+                    - button [ref=e694] [cursor=pointer]
+                - generic [ref=e695] [cursor=pointer]:
+                  - button "N3154A1419, Mckayla" [ref=e696] [cursor=pointer]:
+                    - generic [ref=e697] [cursor=pointer]: N3154A1419, Mckayla
+                  - button "Form A" [ref=e698] [cursor=pointer]:
+                    - generic [ref=e700] [cursor=pointer]: Form A
+                  - button "—" [ref=e702] [cursor=pointer]
+                  - button "● Not Started" [ref=e703] [cursor=pointer]:
+                    - generic [ref=e704] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e705] [cursor=pointer]:
+                    - button [disabled] [ref=e706]
+                    - button [disabled] [ref=e707]
+                    - button [ref=e708] [cursor=pointer]
+                - generic [ref=e709] [cursor=pointer]:
+                  - button "N56807A92416, Althea" [ref=e710] [cursor=pointer]:
+                    - generic [ref=e711] [cursor=pointer]: N56807A92416, Althea
+                  - button "Form A" [ref=e712] [cursor=pointer]:
+                    - generic [ref=e714] [cursor=pointer]: Form A
+                  - button "—" [ref=e716] [cursor=pointer]
+                  - button "● Not Started" [ref=e717] [cursor=pointer]:
+                    - generic [ref=e718] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e719] [cursor=pointer]:
+                    - button [disabled] [ref=e720]
+                    - button [disabled] [ref=e721]
+                    - button [ref=e722] [cursor=pointer]
+                - generic [ref=e723] [cursor=pointer]:
+                  - button "N50121A91228, Chelsie" [ref=e724] [cursor=pointer]:
+                    - generic [ref=e725] [cursor=pointer]: N50121A91228, Chelsie
+                  - button "Form A" [ref=e726] [cursor=pointer]:
+                    - generic [ref=e728] [cursor=pointer]: Form A
+                  - button "—" [ref=e730] [cursor=pointer]
+                  - button "● Not Started" [ref=e731] [cursor=pointer]:
+                    - generic [ref=e732] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e733] [cursor=pointer]:
+                    - button [disabled] [ref=e734]
+                    - button [disabled] [ref=e735]
+                    - button [ref=e736] [cursor=pointer]
+                - generic [ref=e737] [cursor=pointer]:
+                  - button "N95432A23583, Sarai" [ref=e738] [cursor=pointer]:
+                    - generic [ref=e739] [cursor=pointer]: N95432A23583, Sarai
+                  - button "Form A" [ref=e740] [cursor=pointer]:
+                    - generic [ref=e742] [cursor=pointer]: Form A
+                  - button "—" [ref=e744] [cursor=pointer]
+                  - button "● Not Started" [ref=e745] [cursor=pointer]:
+                    - generic [ref=e746] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e747] [cursor=pointer]:
+                    - button [disabled] [ref=e748]
+                    - button [disabled] [ref=e749]
+                    - button [ref=e750] [cursor=pointer]
+                - generic [ref=e751] [cursor=pointer]:
+                  - button "N35637A37742, Rogelio" [ref=e752] [cursor=pointer]:
+                    - generic [ref=e753] [cursor=pointer]: N35637A37742, Rogelio
+                  - button "Form A" [ref=e754] [cursor=pointer]:
+                    - generic [ref=e756] [cursor=pointer]: Form A
+                  - button "—" [ref=e758] [cursor=pointer]
+                  - button "● Not Started" [ref=e759] [cursor=pointer]:
+                    - generic [ref=e760] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e761] [cursor=pointer]:
+                    - button [disabled] [ref=e762]
+                    - button [disabled] [ref=e763]
+                    - button [ref=e764] [cursor=pointer]
+                - generic [ref=e765] [cursor=pointer]:
+                  - button "N22518A42543, Lea" [ref=e766] [cursor=pointer]:
+                    - generic [ref=e767] [cursor=pointer]: N22518A42543, Lea
+                  - button "Form A" [ref=e768] [cursor=pointer]:
+                    - generic [ref=e770] [cursor=pointer]: Form A
+                  - button "—" [ref=e772] [cursor=pointer]
+                  - button "● Not Started" [ref=e773] [cursor=pointer]:
+                    - generic [ref=e774] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e775] [cursor=pointer]:
+                    - button [disabled] [ref=e776]
+                    - button [disabled] [ref=e777]
+                    - button [ref=e778] [cursor=pointer]
+                - generic [ref=e779] [cursor=pointer]:
+                  - button "N22279A87347, Caitlyn" [ref=e780] [cursor=pointer]:
+                    - generic [ref=e781] [cursor=pointer]: N22279A87347, Caitlyn
+                  - button "Form A" [ref=e782] [cursor=pointer]:
+                    - generic [ref=e784] [cursor=pointer]: Form A
+                  - button "—" [ref=e786] [cursor=pointer]
+                  - button "● Not Started" [ref=e787] [cursor=pointer]:
+                    - generic [ref=e788] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e789] [cursor=pointer]:
+                    - button [disabled] [ref=e790]
+                    - button [disabled] [ref=e791]
+                    - button [ref=e792] [cursor=pointer]
+                - generic [ref=e793] [cursor=pointer]:
+                  - button "N25281A3311, Nicola" [ref=e794] [cursor=pointer]:
+                    - generic [ref=e795] [cursor=pointer]: N25281A3311, Nicola
+                  - button "Form A" [ref=e796] [cursor=pointer]:
+                    - generic [ref=e798] [cursor=pointer]: Form A
+                  - button "—" [ref=e800] [cursor=pointer]
+                  - button "● Not Started" [ref=e801] [cursor=pointer]:
+                    - generic [ref=e802] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e803] [cursor=pointer]:
+                    - button [disabled] [ref=e804]
+                    - button [disabled] [ref=e805]
+                    - button [ref=e806] [cursor=pointer]
+                - generic [ref=e807] [cursor=pointer]:
+                  - button "N52296A58947, Baby" [ref=e808] [cursor=pointer]:
+                    - generic [ref=e809] [cursor=pointer]: N52296A58947, Baby
+                  - button "Form A" [ref=e810] [cursor=pointer]:
+                    - generic [ref=e812] [cursor=pointer]: Form A
+                  - button "—" [ref=e814] [cursor=pointer]
+                  - button "● Not Started" [ref=e815] [cursor=pointer]:
+                    - generic [ref=e816] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e817] [cursor=pointer]:
+                    - button [disabled] [ref=e818]
+                    - button [disabled] [ref=e819]
+                    - button [ref=e820] [cursor=pointer]
+                - generic [ref=e821] [cursor=pointer]:
+                  - button "N85734A84266, Violet" [ref=e822] [cursor=pointer]:
+                    - generic [ref=e823] [cursor=pointer]: N85734A84266, Violet
+                  - button "Form A" [ref=e824] [cursor=pointer]:
+                    - generic [ref=e826] [cursor=pointer]: Form A
+                  - button "—" [ref=e828] [cursor=pointer]
+                  - button "● Not Started" [ref=e829] [cursor=pointer]:
+                    - generic [ref=e830] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e831] [cursor=pointer]:
+                    - button [disabled] [ref=e832]
+                    - button [disabled] [ref=e833]
+                    - button [ref=e834] [cursor=pointer]
+                - generic [ref=e835] [cursor=pointer]:
+                  - button "N47625A60506, Eric" [ref=e836] [cursor=pointer]:
+                    - generic [ref=e837] [cursor=pointer]: N47625A60506, Eric
+                  - button "Form A" [ref=e838] [cursor=pointer]:
+                    - generic [ref=e840] [cursor=pointer]: Form A
+                  - button "—" [ref=e842] [cursor=pointer]
+                  - button "● Not Started" [ref=e843] [cursor=pointer]:
+                    - generic [ref=e844] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e845] [cursor=pointer]:
+                    - button [disabled] [ref=e846]
+                    - button [disabled] [ref=e847]
+                    - button [ref=e848] [cursor=pointer]
+                - generic [ref=e849] [cursor=pointer]:
+                  - button "N95170A6375, Bryon" [ref=e850] [cursor=pointer]:
+                    - generic [ref=e851] [cursor=pointer]: N95170A6375, Bryon
+                  - button "Form A" [ref=e852] [cursor=pointer]:
+                    - generic [ref=e854] [cursor=pointer]: Form A
+                  - button "—" [ref=e856] [cursor=pointer]
+                  - button "● Not Started" [ref=e857] [cursor=pointer]:
+                    - generic [ref=e858] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e859] [cursor=pointer]:
+                    - button [disabled] [ref=e860]
+                    - button [disabled] [ref=e861]
+                    - button [ref=e862] [cursor=pointer]
+                - generic [ref=e863] [cursor=pointer]:
+                  - button "N8002A50438, Myrtis" [ref=e864] [cursor=pointer]:
+                    - generic [ref=e865] [cursor=pointer]: N8002A50438, Myrtis
+                  - button "Form A" [ref=e866] [cursor=pointer]:
+                    - generic [ref=e868] [cursor=pointer]: Form A
+                  - button "—" [ref=e870] [cursor=pointer]
+                  - button "● Not Started" [ref=e871] [cursor=pointer]:
+                    - generic [ref=e872] [cursor=pointer]: ●
+                    - text: Not Started
+                  - generic [ref=e873] [cursor=pointer]:
+                    - button [disabled] [ref=e874]
+                    - button [disabled] [ref=e875]
+                    - button [ref=e876] [cursor=pointer]
+            - generic [ref=e877]:
+              - generic [ref=e880]:
+                - img [ref=e881]
+                - heading "Notifications Center" [level=3] [ref=e885]
+              - generic [ref=e886]:
+                - generic [ref=e888]:
+                  - img [ref=e889]
+                  - heading "Resources" [level=3] [ref=e893]
+                - list [ref=e894]:
+                  - listitem [ref=e895]:
+                    - button "Riverside Learn" [ref=e896] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=6] [ref=e897] [cursor=pointer]
+                      - img [ref=e899] [cursor=pointer]
+                  - listitem [ref=e901]:
+                    - button "Onboarding Tutorial Videos" [ref=e902] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=6] [ref=e903] [cursor=pointer]
+                      - img [ref=e905] [cursor=pointer]
+                  - listitem [ref=e907]:
+                    - button "Quick Reference Guides" [ref=e908] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=6] [ref=e909] [cursor=pointer]
+                      - img [ref=e911] [cursor=pointer]
+                - button "View All" [ref=e914] [cursor=pointer]
+      - contentinfo [ref=e915]:
+        - generic [ref=e916]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e917] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e918] [cursor=pointer]
+        - generic [ref=e919]:
+          - link "Riverside Insights Facebook" [ref=e920] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e921] [cursor=pointer]
+          - link "Riverside Insights Twitter" [ref=e922] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e923] [cursor=pointer]
+          - link "Riverside Insights LinkedIn" [ref=e924] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e925] [cursor=pointer]
+          - link "Riverside Insights Instagram" [ref=e926] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e927] [cursor=pointer]
+        - generic [ref=e928]:
+          - img "build status widget" [ref=e929]
+          - button "Leave Feedback" [ref=e930] [cursor=pointer]
+          - generic [ref=e931]: "|"
+          - link "Terms of Use" [ref=e932] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e933]: "|"
+          - link "Privacy Policy" [ref=e934] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e935]: Footer region end
+```
