@@ -15,7 +15,8 @@
         "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
         "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
         "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-      }
+      },
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -41,7 +42,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "setup",
         "name": "setup",
@@ -61,7 +63,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "firefox",
         "name": "firefox",
@@ -82,7 +85,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -103,7 +107,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "chrome",
         "name": "chrome",
@@ -124,7 +129,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "adminPortal_chrome",
         "name": "adminPortal_chrome",
@@ -145,7 +151,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "webKit",
         "name": "webKit",
@@ -166,7 +173,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-chromium-setup",
         "name": "ci-chromium-setup",
@@ -186,7 +194,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-chromium",
         "name": "ci-chromium",
@@ -206,7 +215,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-firefox-setup",
         "name": "ci-firefox-setup",
@@ -226,7 +236,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-firefox",
         "name": "ci-firefox",
@@ -246,7 +257,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-webkit-setup",
         "name": "ci-webkit-setup",
@@ -266,7 +278,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-webkit",
         "name": "ci-webkit",
@@ -288,53 +301,1497 @@
     "workers": 1,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" SWRTAC Left Nav and Rerouting\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@SWRTAC\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@Rerouting\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m  \n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" WRTSMP Left Nav and Rerouting\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@WRTSMP\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@Rerouting\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m  \n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" SWRTAC UI And Reports\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@SWRTAC123\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Single123\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@ScoreLater\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at UIAndReports/WRTSMP_Single_Scorelater.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" WRTSMP UI And Reports\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@WRTSMP123\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Single123\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@ScoreLater\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
+      "title": "ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
+      "file": "ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " SWRTAC Left Nav and Rerouting",
+          "file": "ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Ages 4 to 7 - Flag Item with Notes and Review scenario for Score Later for SSP1 Test UI",
+              "ok": true,
+              "tags": [
+                "SWRTAC",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 653918,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N95665A71325\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N95665A71325/dataFiles/Score_DataExport_AutoFilter_Template_N95665A71325.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N95665A71325 FirstName=Lurline LastName =N95665A71325 Age = 04/06/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N95665A71325\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 4 to 7|56272,56273\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Current Item: Item 1\n"
+                        },
+                        {
+                          "text": "Parsed item number: 1\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 1: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 2\n"
+                        },
+                        {
+                          "text": "Parsed item number: 2\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 2: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 3\n"
+                        },
+                        {
+                          "text": "Parsed item number: 3\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 3: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 4\n"
+                        },
+                        {
+                          "text": "Parsed item number: 4\n"
+                        },
+                        {
+                          "text": "Current Item: Item 5\n"
+                        },
+                        {
+                          "text": "Parsed item number: 5\n"
+                        },
+                        {
+                          "text": "Last item (5) reached. Ending session...\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N95665A71325/dataFiles/Score_DataExport_AutoFilter_Template_N95665A71325.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N95665A71325\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N95665A71325/downloads/wLookUp_N95665A71325_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N95665A71325/downloads/wLookUp_N95665A71325_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N95665A71325/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N95665A71325', Available files: [Score_DataExport_AutoFilter_Template_N95665A71325_Decile.txt, Score_DataExport_AutoFilter_Template_N95665A71325_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N95665A71325_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N95665A71325_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N95665A71325/downloads/extracted/Score_DataExport_AutoFilter_Template_N95665A71325_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N95665A71325\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Sentence Writing Accuracy\"],[\"testStemForm\",\"SWRTAC.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"0\"],[\"wScore\",\"429.01\"],[\"SEMW\",\"14.70\"],[\"WlkpAdminItems\",\"A\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^00,xx,xx\"]]\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N95665A71325 <> N95665A71325\n"
+                        },
+                        {
+                          "text": "2 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "3 Test Name ->  value from the RunTime VS downloaded file is =  Sentence Writing Accuracy <> Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "4 TEst stem form ->  value from the RunTime VS downloaded file is =  SWRTAC.W5PA <> SWRTAC.W5PA\n"
+                        },
+                        {
+                          "text": "5 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "6 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "7 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "8 wLookUp ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "9 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  A <> A\n"
+                        },
+                        {
+                          "text": "10 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "11 wScore ->  value from the RunTime VS downloaded file is =  429.01 <> 429.01\n"
+                        },
+                        {
+                          "text": "12 semW ->  value from the RunTime VS downloaded file is =  14.7 <> 14.7\n"
+                        },
+                        {
+                          "text": "13 Score String ->  value from the RunTime VS downloaded file is =  ^00,xx,xx <> ^00,xx,xx\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 9
+                        }
+                      ],
+                      "startTime": "2026-04-07T04:54:16.872Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-SWRTAC-9c721-core-Later-for-SSP1-Test-UI-chrome/attachments/Downloaded-Zip-file-19919dd1650cea8099427be568e9df9a6c6a3b99.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "353488a754c52df92084-3aea46ba3e9c620913e4",
+              "file": "ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 4 to 7 - Score Later Error Scenario for SSP1 Test UI",
+              "ok": true,
+              "tags": [
+                "SWRTAC",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 592047,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N81563A37306\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N81563A37306/dataFiles/Score_DataExport_AutoFilter_Template_N81563A37306.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N81563A37306 FirstName=Monty LastName =N81563A37306 Age = 04/07/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N81563A37306\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 4 to 7|56272,56273\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Current Item: Item 1 (parsed number: 1)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 2 (parsed number: 2)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 3 (parsed number: 3)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 4 (parsed number: 4)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 5 (parsed number: 5)\n"
+                        },
+                        {
+                          "text": "Last item (5) reached. Ending session...\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N81563A37306/dataFiles/Score_DataExport_AutoFilter_Template_N81563A37306.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N81563A37306\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N81563A37306/downloads/wLookUp_N81563A37306_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N81563A37306/downloads/wLookUp_N81563A37306_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N81563A37306/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N81563A37306', Available files: [Score_DataExport_AutoFilter_Template_N81563A37306_Decile.txt, Score_DataExport_AutoFilter_Template_N81563A37306_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N81563A37306_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N81563A37306_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N81563A37306/downloads/extracted/Score_DataExport_AutoFilter_Template_N81563A37306_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N81563A37306\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Sentence Writing Accuracy\"],[\"testStemForm\",\"SWRTAC.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"0\"],[\"wScore\",\"429.01\"],[\"SEMW\",\"14.70\"],[\"WlkpAdminItems\",\"A\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^00,xx,xx\"]]\n"
+                        },
+                        {
+                          "text": "14 Examinee ID ->  value from the RunTime VS downloaded file is =  N81563A37306 <> N81563A37306\n"
+                        },
+                        {
+                          "text": "15 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "16 Test Name ->  value from the RunTime VS downloaded file is =  Sentence Writing Accuracy <> Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "17 TEst stem form ->  value from the RunTime VS downloaded file is =  SWRTAC.W5PA <> SWRTAC.W5PA\n"
+                        },
+                        {
+                          "text": "18 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "19 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "20 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "21 wLookUp ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "22 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  A <> A\n"
+                        },
+                        {
+                          "text": "23 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "24 wScore ->  value from the RunTime VS downloaded file is =  429.01 <> 429.01\n"
+                        },
+                        {
+                          "text": "25 semW ->  value from the RunTime VS downloaded file is =  14.7 <> 14.7\n"
+                        },
+                        {
+                          "text": "26 Score String ->  value from the RunTime VS downloaded file is =  ^00,xx,xx <> ^00,xx,xx\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 9
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:05:11.356Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-SWRTAC-dc22b-r-Scenario-for-SSP1-Test-UI-chrome/attachments/Downloaded-Zip-file-64abda761f9a57980b3863c224ea15bfb3dfb6bb.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "353488a754c52df92084-3194de1d3e467b1ee9ee",
+              "file": "ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 8 to 13 - Flag Item with Notes and Review scenario for Score Later SSP2 Test UI",
+              "ok": true,
+              "tags": [
+                "SWRTAC",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 656246,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N50196A212\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N50196A212/dataFiles/Score_DataExport_AutoFilter_Template_N50196A212.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N50196A212 FirstName=Keyon LastName =N50196A212 Age = 04/07/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N50196A212\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 8 to 13|56295,56296,56297\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Current Item: Item 6\n"
+                        },
+                        {
+                          "text": "Parsed item number: 6\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 6: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 7\n"
+                        },
+                        {
+                          "text": "Parsed item number: 7\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 7: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 8\n"
+                        },
+                        {
+                          "text": "Parsed item number: 8\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 8: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 9\n"
+                        },
+                        {
+                          "text": "Parsed item number: 9\n"
+                        },
+                        {
+                          "text": "Current Item: Item 10\n"
+                        },
+                        {
+                          "text": "Parsed item number: 10\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11\n"
+                        },
+                        {
+                          "text": "Parsed item number: 11\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12\n"
+                        },
+                        {
+                          "text": "Parsed item number: 12\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13\n"
+                        },
+                        {
+                          "text": "Parsed item number: 13\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14\n"
+                        },
+                        {
+                          "text": "Parsed item number: 14\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15\n"
+                        },
+                        {
+                          "text": "Parsed item number: 15\n"
+                        },
+                        {
+                          "text": "Last item (15) reached. Ending session...\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N50196A212/dataFiles/Score_DataExport_AutoFilter_Template_N50196A212.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N50196A212\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N50196A212/downloads/wLookUp_N50196A212_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N50196A212/downloads/wLookUp_N50196A212_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N50196A212/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N50196A212', Available files: [Score_DataExport_AutoFilter_Template_N50196A212_Decile.txt, Score_DataExport_AutoFilter_Template_N50196A212_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N50196A212_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N50196A212_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N50196A212/downloads/extracted/Score_DataExport_AutoFilter_Template_N50196A212_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N50196A212\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Sentence Writing Accuracy\"],[\"testStemForm\",\"SWRTAC.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"20\"],[\"wScore\",\"494.77\"],[\"SEMW\",\"3.30\"],[\"WlkpAdminItems\",\"B\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,20,xx\"]]\n"
+                        },
+                        {
+                          "text": "27 Examinee ID ->  value from the RunTime VS downloaded file is =  N50196A212 <> N50196A212\n"
+                        },
+                        {
+                          "text": "28 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "29 Test Name ->  value from the RunTime VS downloaded file is =  Sentence Writing Accuracy <> Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "30 TEst stem form ->  value from the RunTime VS downloaded file is =  SWRTAC.W5PA <> SWRTAC.W5PA\n"
+                        },
+                        {
+                          "text": "31 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "32 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "33 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "34 wLookUp ->  value from the RunTime VS downloaded file is =  20 <> 20\n"
+                        },
+                        {
+                          "text": "35 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  B <> B\n"
+                        },
+                        {
+                          "text": "36 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "37 wScore ->  value from the RunTime VS downloaded file is =  494.77 <> 494.77\n"
+                        },
+                        {
+                          "text": "38 semW ->  value from the RunTime VS downloaded file is =  3.3 <> 3.3\n"
+                        },
+                        {
+                          "text": "39 Score String ->  value from the RunTime VS downloaded file is =  ^xx,20,xx <> ^xx,20,xx\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 8
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:15:03.470Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-SWRTAC-f9d63-or-Score-Later-SSP2-Test-UI-chrome/attachments/Downloaded-Zip-file-d3cb5ee9dd09134977fc68cbf89780dbe68c8218.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "353488a754c52df92084-0fff44198ea849204c7e",
+              "file": "ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 8 to 13 - Score Later Error Scenario for SSP2 Test UI",
+              "ok": true,
+              "tags": [
+                "SWRTAC",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 597601,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N98157A38872\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N98157A38872/dataFiles/Score_DataExport_AutoFilter_Template_N98157A38872.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N98157A38872 FirstName=Vanessa LastName =N98157A38872 Age = 04/07/2021\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N98157A38872\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 8 to 13|56295,56296,56297\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Current Item: Item 6 (parsed number: 6)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 7 (parsed number: 7)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 8 (parsed number: 8)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 9 (parsed number: 9)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 10 (parsed number: 10)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11 (parsed number: 11)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12 (parsed number: 12)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13 (parsed number: 13)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14 (parsed number: 14)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15 (parsed number: 15)\n"
+                        },
+                        {
+                          "text": "Last item (15) reached. Ending session...\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N98157A38872/dataFiles/Score_DataExport_AutoFilter_Template_N98157A38872.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N98157A38872\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N98157A38872/downloads/wLookUp_N98157A38872_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N98157A38872/downloads/wLookUp_N98157A38872_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N98157A38872/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N98157A38872', Available files: [Score_DataExport_AutoFilter_Template_N98157A38872_Decile.txt, Score_DataExport_AutoFilter_Template_N98157A38872_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N98157A38872_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N98157A38872_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N98157A38872/downloads/extracted/Score_DataExport_AutoFilter_Template_N98157A38872_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N98157A38872\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Sentence Writing Accuracy\"],[\"testStemForm\",\"SWRTAC.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"20\"],[\"wScore\",\"494.77\"],[\"SEMW\",\"3.30\"],[\"WlkpAdminItems\",\"B\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,20,xx\"]]\n"
+                        },
+                        {
+                          "text": "40 Examinee ID ->  value from the RunTime VS downloaded file is =  N98157A38872 <> N98157A38872\n"
+                        },
+                        {
+                          "text": "41 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "42 Test Name ->  value from the RunTime VS downloaded file is =  Sentence Writing Accuracy <> Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "43 TEst stem form ->  value from the RunTime VS downloaded file is =  SWRTAC.W5PA <> SWRTAC.W5PA\n"
+                        },
+                        {
+                          "text": "44 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "45 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "46 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "47 wLookUp ->  value from the RunTime VS downloaded file is =  20 <> 20\n"
+                        },
+                        {
+                          "text": "48 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  B <> B\n"
+                        },
+                        {
+                          "text": "49 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "50 wScore ->  value from the RunTime VS downloaded file is =  494.77 <> 494.77\n"
+                        },
+                        {
+                          "text": "51 semW ->  value from the RunTime VS downloaded file is =  3.3 <> 3.3\n"
+                        },
+                        {
+                          "text": "52 Score String ->  value from the RunTime VS downloaded file is =  ^xx,20,xx <> ^xx,20,xx\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 9
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:25:59.783Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-SWRTAC-9de9d-r-Scenario-for-SSP2-Test-UI-chrome/attachments/Downloaded-Zip-file-3d5cb206665ed87649ad2927436000f9d10d3e8a.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "353488a754c52df92084-df3fdbd763cef63db9b9",
+              "file": "ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 14 to Above Average Adult - Flag Item with Notes and Review scenario for Score Later SSP3 Test UI",
+              "ok": true,
+              "tags": [
+                "SWRTAC",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 628029,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N3258A94716\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3258A94716/dataFiles/Score_DataExport_AutoFilter_Template_N3258A94716.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N3258A94716 FirstName=Jakayla LastName =N3258A94716 Age = 04/07/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N3258A94716\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 14 to Above Average Adult|56295,56296,56313\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16\n"
+                        },
+                        {
+                          "text": "Parsed item number: 16\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 16: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17\n"
+                        },
+                        {
+                          "text": "Parsed item number: 17\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 17: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18\n"
+                        },
+                        {
+                          "text": "Parsed item number: 18\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 18: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19\n"
+                        },
+                        {
+                          "text": "Parsed item number: 19\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20\n"
+                        },
+                        {
+                          "text": "Parsed item number: 20\n"
+                        },
+                        {
+                          "text": "Last item (20) reached. Ending session...\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3258A94716/dataFiles/Score_DataExport_AutoFilter_Template_N3258A94716.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N3258A94716\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N3258A94716/downloads/wLookUp_N3258A94716_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3258A94716/downloads/wLookUp_N3258A94716_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3258A94716/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N3258A94716', Available files: [Score_DataExport_AutoFilter_Template_N3258A94716_Decile.txt, Score_DataExport_AutoFilter_Template_N3258A94716_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N3258A94716_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N3258A94716_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3258A94716/downloads/extracted/Score_DataExport_AutoFilter_Template_N3258A94716_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N3258A94716\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Sentence Writing Accuracy\"],[\"testStemForm\",\"SWRTAC.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"20\"],[\"wScore\",\"557.88\"],[\"SEMW\",\"15.13\"],[\"WlkpAdminItems\",\"C\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,xx,20\"]]\n"
+                        },
+                        {
+                          "text": "53 Examinee ID ->  value from the RunTime VS downloaded file is =  N3258A94716 <> N3258A94716\n"
+                        },
+                        {
+                          "text": "54 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "55 Test Name ->  value from the RunTime VS downloaded file is =  Sentence Writing Accuracy <> Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "56 TEst stem form ->  value from the RunTime VS downloaded file is =  SWRTAC.W5PA <> SWRTAC.W5PA\n"
+                        },
+                        {
+                          "text": "57 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "58 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "59 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "60 wLookUp ->  value from the RunTime VS downloaded file is =  20 <> 20\n"
+                        },
+                        {
+                          "text": "61 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  C <> C\n"
+                        },
+                        {
+                          "text": "62 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "63 wScore ->  value from the RunTime VS downloaded file is =  557.88 <> 557.88\n"
+                        },
+                        {
+                          "text": "64 semW ->  value from the RunTime VS downloaded file is =  15.13 <> 15.13\n"
+                        },
+                        {
+                          "text": "65 Score String ->  value from the RunTime VS downloaded file is =  ^xx,xx,20 <> ^xx,xx,20\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 9
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:35:57.467Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-SWRTAC-e0990-or-Score-Later-SSP3-Test-UI-chrome/attachments/Downloaded-Zip-file-87466903f2712fdb716ac64cf1bb7b0c0df0cd35.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "353488a754c52df92084-e3cedad7653d71599ae4",
+              "file": "ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 14 to Above Average Adult - Score Later Error Scenario for SSP3 Test UI",
+              "ok": true,
+              "tags": [
+                "SWRTAC",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 566826,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N97934A25441\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N97934A25441/dataFiles/Score_DataExport_AutoFilter_Template_N97934A25441.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N97934A25441 FirstName=Owen LastName =N97934A25441 Age = 04/07/2020\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N97934A25441\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 14 to Above Average Adult|56295,56296,56313\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16 (parsed number: 16)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17 (parsed number: 17)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18 (parsed number: 18)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19 (parsed number: 19)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20 (parsed number: 20)\n"
+                        },
+                        {
+                          "text": "Last item (20) reached. Ending session...\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N97934A25441/dataFiles/Score_DataExport_AutoFilter_Template_N97934A25441.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N97934A25441\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N97934A25441/downloads/wLookUp_N97934A25441_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N97934A25441/downloads/wLookUp_N97934A25441_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N97934A25441/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N97934A25441', Available files: [Score_DataExport_AutoFilter_Template_N97934A25441_Decile.txt, Score_DataExport_AutoFilter_Template_N97934A25441_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N97934A25441_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N97934A25441_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N97934A25441/downloads/extracted/Score_DataExport_AutoFilter_Template_N97934A25441_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N97934A25441\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Sentence Writing Accuracy\"],[\"testStemForm\",\"SWRTAC.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"20\"],[\"wScore\",\"557.88\"],[\"SEMW\",\"15.13\"],[\"WlkpAdminItems\",\"C\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,xx,20\"]]\n"
+                        },
+                        {
+                          "text": "66 Examinee ID ->  value from the RunTime VS downloaded file is =  N97934A25441 <> N97934A25441\n"
+                        },
+                        {
+                          "text": "67 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "68 Test Name ->  value from the RunTime VS downloaded file is =  Sentence Writing Accuracy <> Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "69 TEst stem form ->  value from the RunTime VS downloaded file is =  SWRTAC.W5PA <> SWRTAC.W5PA\n"
+                        },
+                        {
+                          "text": "70 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "71 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "72 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "73 wLookUp ->  value from the RunTime VS downloaded file is =  20 <> 20\n"
+                        },
+                        {
+                          "text": "74 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  C <> C\n"
+                        },
+                        {
+                          "text": "75 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "76 wScore ->  value from the RunTime VS downloaded file is =  557.88 <> 557.88\n"
+                        },
+                        {
+                          "text": "77 semW ->  value from the RunTime VS downloaded file is =  15.13 <> 15.13\n"
+                        },
+                        {
+                          "text": "78 Score String ->  value from the RunTime VS downloaded file is =  ^xx,xx,20 <> ^xx,xx,20\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 8
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:46:25.569Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-SWRTAC-42efc-r-Scenario-for-SSP3-Test-UI-chrome/attachments/Downloaded-Zip-file-343e7fb0f682f41e111c5c0539c8f2728c25c7a3.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "353488a754c52df92084-0e8fc21739680f52cf7c",
+              "file": "ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            }
+          ]
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-04-07T03:45:58.367Z",
-    "duration": 14402.776,
-    "expected": 0,
+    "startTime": "2026-04-07T04:54:01.164Z",
+    "duration": 3711627.634,
+    "expected": 6,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

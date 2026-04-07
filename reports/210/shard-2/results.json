@@ -15,7 +15,8 @@
         "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
         "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
         "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-      }
+      },
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -41,7 +42,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "setup",
         "name": "setup",
@@ -61,7 +63,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "firefox",
         "name": "firefox",
@@ -82,7 +85,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -103,7 +107,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "chrome",
         "name": "chrome",
@@ -124,7 +129,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "adminPortal_chrome",
         "name": "adminPortal_chrome",
@@ -145,7 +151,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "webKit",
         "name": "webKit",
@@ -166,7 +173,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-chromium-setup",
         "name": "ci-chromium-setup",
@@ -186,7 +194,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-chromium",
         "name": "ci-chromium",
@@ -206,7 +215,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-firefox-setup",
         "name": "ci-firefox-setup",
@@ -226,7 +236,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-firefox",
         "name": "ci-firefox",
@@ -246,7 +257,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-webkit-setup",
         "name": "ci-webkit-setup",
@@ -266,7 +278,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-webkit",
         "name": "ci-webkit",
@@ -288,53 +301,1527 @@
     "workers": 1,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" SWRTAC Left Nav and Rerouting\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@SWRTAC\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@Rerouting\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m  \n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" WRTSMP Left Nav and Rerouting\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@WRTSMP\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@Rerouting\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m  \n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" SWRTAC UI And Reports\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@SWRTAC123\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Single123\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@ScoreLater\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at UIAndReports/WRTSMP_Single_Scorelater.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" WRTSMP UI And Reports\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@WRTSMP123\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Single123\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@ScoreLater\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
+      "title": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+      "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " WRTSMP Left Nav and Rerouting",
+          "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Ages 8 to 11 - Flag Item with Notes and Review scenario for Score Later for SSP2 Test UI",
+              "ok": true,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 628163,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N32857A88411\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N32857A88411/dataFiles/Score_DataExport_AutoFilter_Template_N32857A88411.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N32857A88411 FirstName=Marlon LastName =N32857A88411 Age = 04/06/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N32857A88411\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Ages 8 to 11|56414,56415\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Current Item: Item 6\n"
+                        },
+                        {
+                          "text": "Parsed item number: 6\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 6: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 7\n"
+                        },
+                        {
+                          "text": "Parsed item number: 7\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 7: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 8\n"
+                        },
+                        {
+                          "text": "Parsed item number: 8\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 8: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 9\n"
+                        },
+                        {
+                          "text": "Parsed item number: 9\n"
+                        },
+                        {
+                          "text": "Current Item: Item 10\n"
+                        },
+                        {
+                          "text": "Parsed item number: 10\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11\n"
+                        },
+                        {
+                          "text": "Parsed item number: 11\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12\n"
+                        },
+                        {
+                          "text": "Parsed item number: 12\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13\n"
+                        },
+                        {
+                          "text": "Parsed item number: 13\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14\n"
+                        },
+                        {
+                          "text": "Parsed item number: 14\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15\n"
+                        },
+                        {
+                          "text": "Parsed item number: 15\n"
+                        },
+                        {
+                          "text": "Last item (15) reached. Ending session...\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N32857A88411/dataFiles/Score_DataExport_AutoFilter_Template_N32857A88411.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N32857A88411\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N32857A88411/downloads/wLookUp_N32857A88411_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N32857A88411/downloads/wLookUp_N32857A88411_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N32857A88411/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N32857A88411', Available files: [Score_DataExport_AutoFilter_Template_N32857A88411_Decile.txt, Score_DataExport_AutoFilter_Template_N32857A88411_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N32857A88411_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N32857A88411_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N32857A88411/downloads/extracted/Score_DataExport_AutoFilter_Template_N32857A88411_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N32857A88411\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Written Language Samples\"],[\"testStemForm\",\"WRTSMP.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"10\"],[\"wScore\",\"492.80\"],[\"SEMW\",\"5.10\"],[\"WlkpAdminItems\",\"BC\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,05,05,xx,xx\"]]\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N32857A88411 <> N32857A88411\n"
+                        },
+                        {
+                          "text": "2 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "3 Test Name ->  value from the RunTime VS downloaded file is =  Written Language Samples <> Written Language Samples\n"
+                        },
+                        {
+                          "text": "4 TEst stem form ->  value from the RunTime VS downloaded file is =  WRTSMP.W5PA <> WRTSMP.W5PA\n"
+                        },
+                        {
+                          "text": "5 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "6 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "7 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "8 wLookUp ->  value from the RunTime VS downloaded file is =  10 <> 10\n"
+                        },
+                        {
+                          "text": "9 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  BC <> BC\n"
+                        },
+                        {
+                          "text": "10 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "11 wScore ->  value from the RunTime VS downloaded file is =  492.8 <> 492.8\n"
+                        },
+                        {
+                          "text": "12 semW ->  value from the RunTime VS downloaded file is =  5.1 <> 5.1\n"
+                        },
+                        {
+                          "text": "13 Score String ->  value from the RunTime VS downloaded file is =  ^xx,05,05,xx,xx <> ^xx,05,05,xx,xx\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 10
+                        }
+                      ],
+                      "startTime": "2026-04-07T04:54:23.561Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-5759d-core-Later-for-SSP2-Test-UI-chrome/attachments/Downloaded-Zip-file-ba2d0f5f9da831f07cc90b6475ffb292bd2968cb.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-235f821e3024ff47b5ca",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Above Average Adult - Flag Item with Notes and Review scenario for Score Later for SSP4 Test UI",
+              "ok": true,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 625101,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N68734A37989\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N68734A37989/dataFiles/Score_DataExport_AutoFilter_Template_N68734A37989.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N68734A37989 FirstName=Uriah LastName =N68734A37989 Age = 04/07/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N68734A37989\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Above Average Adult|56414,56429\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16\n"
+                        },
+                        {
+                          "text": "Parsed item number: 16\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 16: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17\n"
+                        },
+                        {
+                          "text": "Parsed item number: 17\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 17: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18\n"
+                        },
+                        {
+                          "text": "Parsed item number: 18\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 18: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19\n"
+                        },
+                        {
+                          "text": "Parsed item number: 19\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20\n"
+                        },
+                        {
+                          "text": "Parsed item number: 20\n"
+                        },
+                        {
+                          "text": "Current Item: Item 21\n"
+                        },
+                        {
+                          "text": "Parsed item number: 21\n"
+                        },
+                        {
+                          "text": "Current Item: Item 22\n"
+                        },
+                        {
+                          "text": "Parsed item number: 22\n"
+                        },
+                        {
+                          "text": "Current Item: Item 23\n"
+                        },
+                        {
+                          "text": "Parsed item number: 23\n"
+                        },
+                        {
+                          "text": "Current Item: Item 24\n"
+                        },
+                        {
+                          "text": "Parsed item number: 24\n"
+                        },
+                        {
+                          "text": "Current Item: Item 25\n"
+                        },
+                        {
+                          "text": "Parsed item number: 25\n"
+                        },
+                        {
+                          "text": "Last item (25) reached. Ending session...\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N68734A37989/dataFiles/Score_DataExport_AutoFilter_Template_N68734A37989.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N68734A37989\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N68734A37989/downloads/wLookUp_N68734A37989_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N68734A37989/downloads/wLookUp_N68734A37989_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N68734A37989/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N68734A37989', Available files: [Score_DataExport_AutoFilter_Template_N68734A37989_Decile.txt, Score_DataExport_AutoFilter_Template_N68734A37989_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N68734A37989_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N68734A37989_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N68734A37989/downloads/extracted/Score_DataExport_AutoFilter_Template_N68734A37989_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N68734A37989\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Written Language Samples\"],[\"testStemForm\",\"WRTSMP.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"10\"],[\"wScore\",\"519.85\"],[\"SEMW\",\"4.58\"],[\"WlkpAdminItems\",\"DE\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,xx,xx,05,05\"]]\n"
+                        },
+                        {
+                          "text": "14 Examinee ID ->  value from the RunTime VS downloaded file is =  N68734A37989 <> N68734A37989\n"
+                        },
+                        {
+                          "text": "15 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "16 Test Name ->  value from the RunTime VS downloaded file is =  Written Language Samples <> Written Language Samples\n"
+                        },
+                        {
+                          "text": "17 TEst stem form ->  value from the RunTime VS downloaded file is =  WRTSMP.W5PA <> WRTSMP.W5PA\n"
+                        },
+                        {
+                          "text": "18 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "19 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "20 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "21 wLookUp ->  value from the RunTime VS downloaded file is =  10 <> 10\n"
+                        },
+                        {
+                          "text": "22 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  DE <> DE\n"
+                        },
+                        {
+                          "text": "23 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "24 wScore ->  value from the RunTime VS downloaded file is =  519.85 <> 519.85\n"
+                        },
+                        {
+                          "text": "25 semW ->  value from the RunTime VS downloaded file is =  4.58 <> 4.58\n"
+                        },
+                        {
+                          "text": "26 Score String ->  value from the RunTime VS downloaded file is =  ^xx,xx,xx,05,05 <> ^xx,xx,xx,05,05\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 9
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:04:52.253Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-e5320-core-Later-for-SSP4-Test-UI-chrome/attachments/Downloaded-Zip-file-155d0e859c7e291e0c621767bbd55d39c0411a56.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-9e9198e8d4b963c8b2df",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Grade 7 to Average Adult - Flag Item with Notes and Review scenario for Score Later for SSP3 Test UI",
+              "ok": true,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 627255,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N64542A72164\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N64542A72164/dataFiles/Score_DataExport_AutoFilter_Template_N64542A72164.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N64542A72164 FirstName=Eliseo LastName =N64542A72164 Age = 04/07/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N64542A72164\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Grade 7 to Average Adult|56414,56422\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11\n"
+                        },
+                        {
+                          "text": "Parsed item number: 11\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 11: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12\n"
+                        },
+                        {
+                          "text": "Parsed item number: 12\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 12: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13\n"
+                        },
+                        {
+                          "text": "Parsed item number: 13\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 13: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14\n"
+                        },
+                        {
+                          "text": "Parsed item number: 14\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15\n"
+                        },
+                        {
+                          "text": "Parsed item number: 15\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16\n"
+                        },
+                        {
+                          "text": "Parsed item number: 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17\n"
+                        },
+                        {
+                          "text": "Parsed item number: 17\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18\n"
+                        },
+                        {
+                          "text": "Parsed item number: 18\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19\n"
+                        },
+                        {
+                          "text": "Parsed item number: 19\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20\n"
+                        },
+                        {
+                          "text": "Parsed item number: 20\n"
+                        },
+                        {
+                          "text": "Last item (20) reached. Ending session...\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N64542A72164/dataFiles/Score_DataExport_AutoFilter_Template_N64542A72164.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N64542A72164\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N64542A72164/downloads/wLookUp_N64542A72164_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N64542A72164/downloads/wLookUp_N64542A72164_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N64542A72164/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N64542A72164', Available files: [Score_DataExport_AutoFilter_Template_N64542A72164_Decile.txt, Score_DataExport_AutoFilter_Template_N64542A72164_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N64542A72164_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N64542A72164_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N64542A72164/downloads/extracted/Score_DataExport_AutoFilter_Template_N64542A72164_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N64542A72164\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Written Language Samples\"],[\"testStemForm\",\"WRTSMP.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"10\"],[\"wScore\",\"507.39\"],[\"SEMW\",\"5.12\"],[\"WlkpAdminItems\",\"CD\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,xx,05,05,xx\"]]\n"
+                        },
+                        {
+                          "text": "27 Examinee ID ->  value from the RunTime VS downloaded file is =  N64542A72164 <> N64542A72164\n"
+                        },
+                        {
+                          "text": "28 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "29 Test Name ->  value from the RunTime VS downloaded file is =  Written Language Samples <> Written Language Samples\n"
+                        },
+                        {
+                          "text": "30 TEst stem form ->  value from the RunTime VS downloaded file is =  WRTSMP.W5PA <> WRTSMP.W5PA\n"
+                        },
+                        {
+                          "text": "31 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "32 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "33 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "34 wLookUp ->  value from the RunTime VS downloaded file is =  10 <> 10\n"
+                        },
+                        {
+                          "text": "35 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  CD <> CD\n"
+                        },
+                        {
+                          "text": "36 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "37 wScore ->  value from the RunTime VS downloaded file is =  507.39 <> 507.39\n"
+                        },
+                        {
+                          "text": "38 semW ->  value from the RunTime VS downloaded file is =  5.12 <> 5.12\n"
+                        },
+                        {
+                          "text": "39 Score String ->  value from the RunTime VS downloaded file is =  ^xx,xx,05,05,xx <> ^xx,xx,05,05,xx\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 9
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:15:17.408Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-a0cee-core-Later-for-SSP3-Test-UI-chrome/attachments/Downloaded-Zip-file-f1b17b2fa80baa0c8d78def87fd0099045ec4a7e.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-2a558a7cb24c5ac7b59a",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 8 to 11 - Score Later Error Scenario for SSP2 Test UI",
+              "ok": true,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 561807,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N24348A72850\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N24348A72850/dataFiles/Score_DataExport_AutoFilter_Template_N24348A72850.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N24348A72850 FirstName=Clarabelle LastName =N24348A72850 Age = 04/07/2021\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N24348A72850\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Ages 8 to 11|56414,56415\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Current Item: Item 6 (parsed number: 6)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 7 (parsed number: 7)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 8 (parsed number: 8)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 9 (parsed number: 9)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 10 (parsed number: 10)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11 (parsed number: 11)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12 (parsed number: 12)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13 (parsed number: 13)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14 (parsed number: 14)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15 (parsed number: 15)\n"
+                        },
+                        {
+                          "text": "Last item (15) reached. Ending session...\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N24348A72850/dataFiles/Score_DataExport_AutoFilter_Template_N24348A72850.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N24348A72850\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N24348A72850/downloads/wLookUp_N24348A72850_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N24348A72850/downloads/wLookUp_N24348A72850_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N24348A72850/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N24348A72850', Available files: [Score_DataExport_AutoFilter_Template_N24348A72850_Decile.txt, Score_DataExport_AutoFilter_Template_N24348A72850_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N24348A72850_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N24348A72850_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N24348A72850/downloads/extracted/Score_DataExport_AutoFilter_Template_N24348A72850_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N24348A72850\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Written Language Samples\"],[\"testStemForm\",\"WRTSMP.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"10\"],[\"wScore\",\"492.80\"],[\"SEMW\",\"5.10\"],[\"WlkpAdminItems\",\"BC\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,05,05,xx,xx\"]]\n"
+                        },
+                        {
+                          "text": "40 Examinee ID ->  value from the RunTime VS downloaded file is =  N24348A72850 <> N24348A72850\n"
+                        },
+                        {
+                          "text": "41 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "42 Test Name ->  value from the RunTime VS downloaded file is =  Written Language Samples <> Written Language Samples\n"
+                        },
+                        {
+                          "text": "43 TEst stem form ->  value from the RunTime VS downloaded file is =  WRTSMP.W5PA <> WRTSMP.W5PA\n"
+                        },
+                        {
+                          "text": "44 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "45 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "46 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "47 wLookUp ->  value from the RunTime VS downloaded file is =  10 <> 10\n"
+                        },
+                        {
+                          "text": "48 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  BC <> BC\n"
+                        },
+                        {
+                          "text": "49 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "50 wScore ->  value from the RunTime VS downloaded file is =  492.8 <> 492.8\n"
+                        },
+                        {
+                          "text": "51 semW ->  value from the RunTime VS downloaded file is =  5.1 <> 5.1\n"
+                        },
+                        {
+                          "text": "52 Score String ->  value from the RunTime VS downloaded file is =  ^xx,05,05,xx,xx <> ^xx,05,05,xx,xx\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 9
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:25:44.715Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-8bf18-r-Scenario-for-SSP2-Test-UI-chrome/attachments/Downloaded-Zip-file-19782a720897f01f1bd3b9b07d1aa6b965a7cb7e.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-8faae2fc033aade236b7",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Grade 7 to Average Adult - Score Later Error Scenario for SSP3 Test UI",
+              "ok": true,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 561601,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N194A63901\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N194A63901/dataFiles/Score_DataExport_AutoFilter_Template_N194A63901.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N194A63901 FirstName=Ike LastName =N194A63901 Age = 04/07/2021\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N194A63901\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Grade 7 to Average Adult|56414,56422\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11 (parsed number: 11)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12 (parsed number: 12)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13 (parsed number: 13)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14 (parsed number: 14)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15 (parsed number: 15)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16 (parsed number: 16)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17 (parsed number: 17)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18 (parsed number: 18)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19 (parsed number: 19)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20 (parsed number: 20)\n"
+                        },
+                        {
+                          "text": "Last item (20) reached. Ending session...\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N194A63901/dataFiles/Score_DataExport_AutoFilter_Template_N194A63901.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N194A63901\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N194A63901/downloads/wLookUp_N194A63901_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N194A63901/downloads/wLookUp_N194A63901_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N194A63901/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N194A63901', Available files: [Score_DataExport_AutoFilter_Template_N194A63901_Decile.txt, Score_DataExport_AutoFilter_Template_N194A63901_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N194A63901_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N194A63901_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N194A63901/downloads/extracted/Score_DataExport_AutoFilter_Template_N194A63901_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N194A63901\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Written Language Samples\"],[\"testStemForm\",\"WRTSMP.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"10\"],[\"wScore\",\"507.39\"],[\"SEMW\",\"5.12\"],[\"WlkpAdminItems\",\"CD\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,xx,05,05,xx\"]]\n"
+                        },
+                        {
+                          "text": "53 Examinee ID ->  value from the RunTime VS downloaded file is =  N194A63901 <> N194A63901\n"
+                        },
+                        {
+                          "text": "54 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "55 Test Name ->  value from the RunTime VS downloaded file is =  Written Language Samples <> Written Language Samples\n"
+                        },
+                        {
+                          "text": "56 TEst stem form ->  value from the RunTime VS downloaded file is =  WRTSMP.W5PA <> WRTSMP.W5PA\n"
+                        },
+                        {
+                          "text": "57 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "58 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "59 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "60 wLookUp ->  value from the RunTime VS downloaded file is =  10 <> 10\n"
+                        },
+                        {
+                          "text": "61 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  CD <> CD\n"
+                        },
+                        {
+                          "text": "62 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "63 wScore ->  value from the RunTime VS downloaded file is =  507.39 <> 507.39\n"
+                        },
+                        {
+                          "text": "64 semW ->  value from the RunTime VS downloaded file is =  5.12 <> 5.12\n"
+                        },
+                        {
+                          "text": "65 Score String ->  value from the RunTime VS downloaded file is =  ^xx,xx,05,05,xx <> ^xx,xx,05,05,xx\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 9
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:35:06.588Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-4102f-r-Scenario-for-SSP3-Test-UI-chrome/attachments/Downloaded-Zip-file-1c6b593498b9e68533f2163d7fc24bafaf98c474.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-0226c07e246c648330b9",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Above Average Adult- Score Later Error Scenario for SSP4 Test UI",
+              "ok": true,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 562085,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N81549A69104\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N81549A69104/dataFiles/Score_DataExport_AutoFilter_Template_N81549A69104.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N81549A69104 FirstName=Maribel LastName =N81549A69104 Age = 04/07/2021\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N81549A69104\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56407|Above Average Adult|56414,56429\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16 (parsed number: 16)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17 (parsed number: 17)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18 (parsed number: 18)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19 (parsed number: 19)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20 (parsed number: 20)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 21 (parsed number: 21)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 22 (parsed number: 22)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 23 (parsed number: 23)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 24 (parsed number: 24)\n"
+                        },
+                        {
+                          "text": "Current Item: Item 25 (parsed number: 25)\n"
+                        },
+                        {
+                          "text": "Last item (25) reached. Ending session...\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N81549A69104/dataFiles/Score_DataExport_AutoFilter_Template_N81549A69104.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N81549A69104\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N81549A69104/downloads/wLookUp_N81549A69104_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N81549A69104/downloads/wLookUp_N81549A69104_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N81549A69104/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N81549A69104', Available files: [Score_DataExport_AutoFilter_Template_N81549A69104_Decile.txt, Score_DataExport_AutoFilter_Template_N81549A69104_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N81549A69104_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N81549A69104_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N81549A69104/downloads/extracted/Score_DataExport_AutoFilter_Template_N81549A69104_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N81549A69104\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Written Language Samples\"],[\"testStemForm\",\"WRTSMP.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"10\"],[\"wScore\",\"519.85\"],[\"SEMW\",\"4.58\"],[\"WlkpAdminItems\",\"DE\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,xx,xx,05,05\"]]\n"
+                        },
+                        {
+                          "text": "66 Examinee ID ->  value from the RunTime VS downloaded file is =  N81549A69104 <> N81549A69104\n"
+                        },
+                        {
+                          "text": "67 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "68 Test Name ->  value from the RunTime VS downloaded file is =  Written Language Samples <> Written Language Samples\n"
+                        },
+                        {
+                          "text": "69 TEst stem form ->  value from the RunTime VS downloaded file is =  WRTSMP.W5PA <> WRTSMP.W5PA\n"
+                        },
+                        {
+                          "text": "70 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "71 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "72 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "73 wLookUp ->  value from the RunTime VS downloaded file is =  10 <> 10\n"
+                        },
+                        {
+                          "text": "74 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  DE <> DE\n"
+                        },
+                        {
+                          "text": "75 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "76 wScore ->  value from the RunTime VS downloaded file is =  519.85 <> 519.85\n"
+                        },
+                        {
+                          "text": "77 semW ->  value from the RunTime VS downloaded file is =  4.58 <> 4.58\n"
+                        },
+                        {
+                          "text": "78 Score String ->  value from the RunTime VS downloaded file is =  ^xx,xx,xx,05,05 <> ^xx,xx,xx,05,05\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 10
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:44:28.243Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-510e2-r-Scenario-for-SSP4-Test-UI-chrome/attachments/Downloaded-Zip-file-07eb139f04d82d25b3c2faea99595d80a904af6f.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-d699e8c836b0b695de88",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            }
+          ]
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-04-07T03:45:57.940Z",
-    "duration": 15508.239,
-    "expected": 0,
+    "startTime": "2026-04-07T04:54:08.222Z",
+    "duration": 3582404.85,
+    "expected": 6,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

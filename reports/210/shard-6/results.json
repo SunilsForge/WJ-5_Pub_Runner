@@ -15,7 +15,8 @@
         "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
         "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
         "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-      }
+      },
+      "actualWorkers": 0
     },
     "preserveOutput": "always",
     "reporter": [
@@ -41,7 +42,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 0
         },
         "id": "setup",
         "name": "setup",
@@ -61,7 +63,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 0
         },
         "id": "firefox",
         "name": "firefox",
@@ -82,7 +85,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 0
         },
         "id": "chromium",
         "name": "chromium",
@@ -103,7 +107,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 0
         },
         "id": "chrome",
         "name": "chrome",
@@ -124,7 +129,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 0
         },
         "id": "adminPortal_chrome",
         "name": "adminPortal_chrome",
@@ -145,7 +151,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 0
         },
         "id": "webKit",
         "name": "webKit",
@@ -166,7 +173,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 0
         },
         "id": "ci-chromium-setup",
         "name": "ci-chromium-setup",
@@ -186,7 +194,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 0
         },
         "id": "ci-chromium",
         "name": "ci-chromium",
@@ -206,7 +215,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 0
         },
         "id": "ci-firefox-setup",
         "name": "ci-firefox-setup",
@@ -226,7 +236,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 0
         },
         "id": "ci-firefox",
         "name": "ci-firefox",
@@ -246,7 +257,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 0
         },
         "id": "ci-webkit-setup",
         "name": "ci-webkit-setup",
@@ -266,7 +278,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 0
         },
         "id": "ci-webkit",
         "name": "ci-webkit",
@@ -289,51 +302,10 @@
     "webServer": null
   },
   "suites": [],
-  "errors": [
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" SWRTAC Left Nav and Rerouting\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@SWRTAC\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@Rerouting\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m  \n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" WRTSMP Left Nav and Rerouting\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@WRTSMP\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@Rerouting\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m  \n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" SWRTAC UI And Reports\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@SWRTAC123\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Single123\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@ScoreLater\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at UIAndReports/WRTSMP_Single_Scorelater.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" WRTSMP UI And Reports\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@WRTSMP123\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Single123\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@ScoreLater\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    }
-  ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-04-07T03:45:52.101Z",
-    "duration": 14125.734,
+    "startTime": "2026-04-07T04:54:01.521Z",
+    "duration": 14760.669,
     "expected": 0,
     "skipped": 0,
     "unexpected": 0,

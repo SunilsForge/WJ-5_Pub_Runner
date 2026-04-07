@@ -14,10 +14,10 @@ Thread(s) per core:                      2
 Core(s) per socket:                      2
 Socket(s):                               1
 Stepping:                                6
-CPU(s) scaling MHz:                      125%
+CPU(s) scaling MHz:                      118%
 CPU max MHz:                             2800.0000
 CPU min MHz:                             800.0000
-BogoMIPS:                                5586.87
+BogoMIPS:                                5587.03
 Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves vnmi avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq la57 rdpid fsrm arch_capabilities
 Virtualization:                          VT-x
 Hypervisor vendor:                       Microsoft
@@ -50,7 +50,7 @@ Vulnerability Vmscape:                   Not affected
 -e 
 Memory Information:
                total        used        free      shared  buff/cache   available
-Mem:            15Gi       1.1Gi       8.1Gi        45Mi       6.7Gi        14Gi
+Mem:            15Gi       1.1Gi       8.2Gi        45Mi       6.7Gi        14Gi
 Swap:          3.0Gi          0B       3.0Gi
 -e 
 Disk Information:
@@ -58,14 +58,14 @@ Filesystem      Size  Used Avail Use% Mounted on
 overlay         145G   60G   85G  42% /
 tmpfs            64M     0   64M   0% /dev
 shm              64M     0   64M   0% /dev/shm
-/dev/root       145G   60G   85G  42% /__e
+/dev/root       145G   60G   85G  42% /__t
 tmpfs           3.2G  1.1M  3.2G   1% /run/docker.sock
 tmpfs           7.9G     0  7.9G   0% /proc/acpi
 tmpfs           7.9G     0  7.9G   0% /proc/scsi
 tmpfs           7.9G     0  7.9G   0% /sys/firmware
 -e 
 System Load:
- 03:45:08 up 1 min,  0 user,  load average: 1.17, 0.41, 0.14
+ 04:53:20 up 3 min,  0 user,  load average: 0.86, 0.28, 0.09
 -e 
 Container Information:
 PRETTY_NAME="Ubuntu 24.04.2 LTS"

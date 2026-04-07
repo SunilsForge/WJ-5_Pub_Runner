@@ -15,7 +15,8 @@
         "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
         "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
         "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-      }
+      },
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -41,7 +42,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "setup",
         "name": "setup",
@@ -61,7 +63,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "firefox",
         "name": "firefox",
@@ -82,7 +85,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -103,7 +107,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "chrome",
         "name": "chrome",
@@ -124,7 +129,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "adminPortal_chrome",
         "name": "adminPortal_chrome",
@@ -145,7 +151,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "webKit",
         "name": "webKit",
@@ -166,7 +173,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-chromium-setup",
         "name": "ci-chromium-setup",
@@ -186,7 +194,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-chromium",
         "name": "ci-chromium",
@@ -206,7 +215,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-firefox-setup",
         "name": "ci-firefox-setup",
@@ -226,7 +236,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-firefox",
         "name": "ci-firefox",
@@ -246,7 +257,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-webkit-setup",
         "name": "ci-webkit-setup",
@@ -266,7 +278,8 @@
             "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "commitHash": "43b366bb81f46b157b2d7bd23dcf9cfb32123cd2",
             "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24063184027"
-          }
+          },
+          "actualWorkers": 1
         },
         "id": "ci-webkit",
         "name": "ci-webkit",
@@ -288,55 +301,2417 @@
     "workers": 1,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" SWRTAC Left Nav and Rerouting\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@SWRTAC\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@Rerouting\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m  \n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" WRTSMP Left Nav and Rerouting\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@WRTSMP\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@Rerouting\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m  \n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" SWRTAC UI And Reports\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@SWRTAC123\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Single123\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@ScoreLater\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.",
-      "stack": "Error: Tag must start with \"@\" symbol, got \"CLINICAL-30917\" instead.\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts:10:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts:9:14\n    at Object.<anonymous> (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts:8:6)",
-      "location": {
-        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/WRTSMP_Single_Scorelater.spec.ts",
-        "column": 13,
-        "line": 10
-      },
-      "snippet": "   at UIAndReports/WRTSMP_Single_Scorelater.spec.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\" WRTSMP UI And Reports\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     testData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         test(\u001b[32m`${data.testDetails.typeOfTest} Test UI`\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m\"@WRTSMP123\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Single123\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"@ScoreLater\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@AUT_ENG_02\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"@Smoke\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"CLINICAL-30917\"\u001b[39m] }\u001b[33m,\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m             \u001b[36masync\u001b[39m ({wj5ah\u001b[33m,\u001b[39mwj5examiner\u001b[33m,\u001b[39mwj5AhDashPage\u001b[33m,\u001b[39mwj5ExaminerDashPage\u001b[33m,\u001b[39mwj5examinerTestPage\u001b[33m,\u001b[39mwj5examinerTestSetsPage\u001b[33m,\u001b[39mbrowser}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m                 \u001b[36mawait\u001b[39m setFilePathes(commonDetails\u001b[33m.\u001b[39mlookUpModel)\u001b[33m;\u001b[39m\u001b[0m"
+      "title": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+      "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " SWRTAC UI And Reports",
+          "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Ages 4 to 7 - Sample Items End Test Scenario Test UI",
+              "ok": true,
+              "tags": [
+                "SWRTAC123",
+                "Single123",
+                "ScoreLater",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 453919,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W0] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W0] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N13691A15609\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N13691A15609/dataFiles/Score_DataExport_AutoFilter_Template_N13691A15609.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N13691A15609 FirstName=Magali LastName =N13691A15609 Age = 04/06/2007\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N13691A15609\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 4 to 7|56272,56273\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 2\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Spelled words easily and accurately'\u001b[39m,\n  \u001b[32m'Did not use correct capitalization and punctuation'\u001b[39m,\n  \u001b[32m'Had difficulty spelling words'\u001b[39m,\n  \u001b[32m'Wrote dictated sentences accurately'\u001b[39m,\n  \u001b[32m'Spelled words phonetically'\u001b[39m,\n  \u001b[32m'Did not write dictated sentences accurately'\u001b[39m,\n  \u001b[32m'Used correct capitalization and punctuation'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N13691A15609/dataFiles/Score_DataExport_AutoFilter_Template_N13691A15609.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N13691A15609\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N13691A15609/downloads/wLookUp_N13691A15609_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N13691A15609/downloads/wLookUp_N13691A15609_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N13691A15609/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N13691A15609', Available files: [Score_DataExport_AutoFilter_Template_N13691A15609_Decile.txt, Score_DataExport_AutoFilter_Template_N13691A15609_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N13691A15609_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N13691A15609_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N13691A15609/downloads/extracted/Score_DataExport_AutoFilter_Template_N13691A15609_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N13691A15609\"],[\"dateOfTest\",\"2026-04-07\"],[\"testName\",\"Sentence Writing Accuracy\"],[\"testStemForm\",\"SWRTAC.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"0\"],[\"wScore\",\"429.01\"],[\"SEMW\",\"14.70\"],[\"WlkpAdminItems\",\"A\"],[\"scoreFlag\",\"[!A]\"],[\"scoreString\",\"\"]]\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N13691A15609 <> N13691A15609\n"
+                        },
+                        {
+                          "text": "2 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-04-07 <> 2026-04-07\n"
+                        },
+                        {
+                          "text": "3 Test Name ->  value from the RunTime VS downloaded file is =  Sentence Writing Accuracy <> Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "4 TEst stem form ->  value from the RunTime VS downloaded file is =  SWRTAC.W5PA <> SWRTAC.W5PA\n"
+                        },
+                        {
+                          "text": "5 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "6 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "7 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "8 wLookUp ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "9 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  A <> A\n"
+                        },
+                        {
+                          "text": "10 Score Flag ->  value from the RunTime VS downloaded file is =  [!A] <> [!A]\n"
+                        },
+                        {
+                          "text": "11 wScore ->  value from the RunTime VS downloaded file is =  429.01 <> 429.01\n"
+                        },
+                        {
+                          "text": "12 semW ->  value from the RunTime VS downloaded file is =  14.7 <> 14.7\n"
+                        },
+                        {
+                          "text": "13 Score String ->  value from the RunTime VS downloaded file is =   <> \n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 11
+                        }
+                      ],
+                      "startTime": "2026-04-07T04:54:23.877Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-9e37c-s-End-Test-Scenario-Test-UI-chrome/attachments/Downloaded-Zip-file-776fe375d5a800e38c118523c606a3568bb93064.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "28ec93b372d028e75e16-7b50c0327b8654d99e56",
+              "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Preschool to Grade 2 - Block A End Test Scenario Test UI",
+              "ok": false,
+              "tags": [
+                "SWRTAC123",
+                "Single123",
+                "ScoreLater",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 609490,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"6y1m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"6y1m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 6301
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6301\n\n\u001b[0m \u001b[90m 6299 |\u001b[39m       \u001b[32m\"RPDPHO.W5PX\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 6300 |\u001b[39m     ]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6301 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mAE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6302 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mGE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6303 |\u001b[39m     expect\n \u001b[90m 6304 |\u001b[39m       \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6301
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"6y1m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6301\n\n  6299 |       \"RPDPHO.W5PX\",\n  6300 |     ];\n> 6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n       |                                     ^\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6302
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Grade Equivalent \\']/b')\nExpected string: \u001b[32m\"GK.7\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Grade Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6302\n\n  6300 |     ];\n  6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n> 6302 |     await expect.soft(this.geValue).toHaveText(GE);\n       |                                     ^\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n  6305 |       .toContain(ScoreCheckText);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6302:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 52,
+                            "line": 6304
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'mid-grid\\']//child::*').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6304\n\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n> 6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n       |                                                    ^\n  6305 |       .toContain(ScoreCheckText);\n  6306 |     if (\n  6307 |       testNames.includes(testStemForm) &&\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6304:52)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W0] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W0] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N66256A37625\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66256A37625/dataFiles/Score_DataExport_AutoFilter_Template_N66256A37625.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N66256A37625 FirstName=Ebony LastName =N66256A37625 Age = 10/06/2006\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N66256A37625\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Preschool to Grade 2|56272,56273\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 12
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:01:58.408Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2360e-A-End-Test-Scenario-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2360e-A-End-Test-Scenario-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2360e-A-End-Test-Scenario-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2360e-A-End-Test-Scenario-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2360e-A-End-Test-Scenario-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 6301
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 596387,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"6y1m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"6y1m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 6301
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6301\n\n\u001b[0m \u001b[90m 6299 |\u001b[39m       \u001b[32m\"RPDPHO.W5PX\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 6300 |\u001b[39m     ]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6301 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mAE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6302 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mGE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6303 |\u001b[39m     expect\n \u001b[90m 6304 |\u001b[39m       \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6301
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"6y1m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6301\n\n  6299 |       \"RPDPHO.W5PX\",\n  6300 |     ];\n> 6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n       |                                     ^\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6302
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Grade Equivalent \\']/b')\nExpected string: \u001b[32m\"GK.7\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Grade Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6302\n\n  6300 |     ];\n  6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n> 6302 |     await expect.soft(this.geValue).toHaveText(GE);\n       |                                     ^\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n  6305 |       .toContain(ScoreCheckText);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6302:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 52,
+                            "line": 6304
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'mid-grid\\']//child::*').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6304\n\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n> 6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n       |                                                    ^\n  6305 |       .toContain(ScoreCheckText);\n  6306 |     if (\n  6307 |       testNames.includes(testStemForm) &&\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6304:52)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W1] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W1] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N8415A26132\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N8415A26132/dataFiles/Score_DataExport_AutoFilter_Template_N8415A26132.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N8415A26132 FirstName=Bryana LastName =N8415A26132 Age = 10/06/2006\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N8415A26132\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Preschool to Grade 2|56272,56273\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 8
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:12:16.730Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2360e-A-End-Test-Scenario-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2360e-A-End-Test-Scenario-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2360e-A-End-Test-Scenario-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2360e-A-End-Test-Scenario-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 6301
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "28ec93b372d028e75e16-533a0023e581897a0336",
+              "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 4 to 7 - End Test Scenario For Block A And B Test UI",
+              "ok": false,
+              "tags": [
+                "SWRTAC123",
+                "Single123",
+                "ScoreLater",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 608511,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"9y8m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"9y8m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 6301
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6301\n\n\u001b[0m \u001b[90m 6299 |\u001b[39m       \u001b[32m\"RPDPHO.W5PX\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 6300 |\u001b[39m     ]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6301 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mAE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6302 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mGE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6303 |\u001b[39m     expect\n \u001b[90m 6304 |\u001b[39m       \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6301
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"9y8m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6301\n\n  6299 |       \"RPDPHO.W5PX\",\n  6300 |     ];\n> 6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n       |                                     ^\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6302
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Grade Equivalent \\']/b')\nExpected string: \u001b[32m\"G4.2\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Grade Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6302\n\n  6300 |     ];\n  6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n> 6302 |     await expect.soft(this.geValue).toHaveText(GE);\n       |                                     ^\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n  6305 |       .toContain(ScoreCheckText);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6302:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 52,
+                            "line": 6304
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'mid-grid\\']//child::*').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6304\n\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n> 6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n       |                                                    ^\n  6305 |       .toContain(ScoreCheckText);\n  6306 |     if (\n  6307 |       testNames.includes(testStemForm) &&\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6304:52)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W2] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W2] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N75725A51737\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N75725A51737/dataFiles/Score_DataExport_AutoFilter_Template_N75725A51737.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N75725A51737 FirstName=Gilda LastName =N75725A51737 Age = 04/07/2006\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N75725A51737\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 4 to 7|56272,56273\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 11
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:22:15.394Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-c6cab-o-For-Block-A-And-B-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-c6cab-o-For-Block-A-And-B-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-c6cab-o-For-Block-A-And-B-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-c6cab-o-For-Block-A-And-B-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-c6cab-o-For-Block-A-And-B-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 6301
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 596369,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"9y8m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"9y8m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 6301
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6301\n\n\u001b[0m \u001b[90m 6299 |\u001b[39m       \u001b[32m\"RPDPHO.W5PX\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 6300 |\u001b[39m     ]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6301 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mAE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6302 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mGE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6303 |\u001b[39m     expect\n \u001b[90m 6304 |\u001b[39m       \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6301
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"9y8m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6301\n\n  6299 |       \"RPDPHO.W5PX\",\n  6300 |     ];\n> 6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n       |                                     ^\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6302
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Grade Equivalent \\']/b')\nExpected string: \u001b[32m\"G4.2\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Grade Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6302\n\n  6300 |     ];\n  6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n> 6302 |     await expect.soft(this.geValue).toHaveText(GE);\n       |                                     ^\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n  6305 |       .toContain(ScoreCheckText);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6302:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 52,
+                            "line": 6304
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'mid-grid\\']//child::*').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6304\n\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n> 6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n       |                                                    ^\n  6305 |       .toContain(ScoreCheckText);\n  6306 |     if (\n  6307 |       testNames.includes(testStemForm) &&\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6304:52)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W3] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W3] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N4074A32618\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N4074A32618/dataFiles/Score_DataExport_AutoFilter_Template_N4074A32618.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N4074A32618 FirstName=Berenice LastName =N4074A32618 Age = 04/07/2006\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N4074A32618\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 4 to 7|56272,56273\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 8
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:32:33.378Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-c6cab-o-For-Block-A-And-B-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-c6cab-o-For-Block-A-And-B-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-c6cab-o-For-Block-A-And-B-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-c6cab-o-For-Block-A-And-B-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 6301
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "28ec93b372d028e75e16-7f109c06dc2b229f8d01",
+              "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Grades 3 to 8 - End Test Scenario For Block B Test UI",
+              "ok": false,
+              "tags": [
+                "SWRTAC123",
+                "Single123",
+                "ScoreLater",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 634055,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"8y9m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"8y9m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 6301
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6301\n\n\u001b[0m \u001b[90m 6299 |\u001b[39m       \u001b[32m\"RPDPHO.W5PX\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 6300 |\u001b[39m     ]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6301 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mAE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6302 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mGE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6303 |\u001b[39m     expect\n \u001b[90m 6304 |\u001b[39m       \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6301
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"8y9m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6301\n\n  6299 |       \"RPDPHO.W5PX\",\n  6300 |     ];\n> 6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n       |                                     ^\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6302
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Grade Equivalent \\']/b')\nExpected string: \u001b[32m\"G3.3\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Grade Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6302\n\n  6300 |     ];\n  6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n> 6302 |     await expect.soft(this.geValue).toHaveText(GE);\n       |                                     ^\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n  6305 |       .toContain(ScoreCheckText);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6302:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 52,
+                            "line": 6304
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'mid-grid\\']//child::*').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6304\n\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n> 6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n       |                                                    ^\n  6305 |       .toContain(ScoreCheckText);\n  6306 |     if (\n  6307 |       testNames.includes(testStemForm) &&\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6304:52)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W4] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W4] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N57790A13895\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N57790A13895/dataFiles/Score_DataExport_AutoFilter_Template_N57790A13895.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N57790A13895 FirstName=Norene LastName =N57790A13895 Age = 10/06/2005\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N57790A13895\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Grades 3 to 8|56295,56296,56297\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 12
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:42:31.940Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-36e5e-cenario-For-Block-B-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-36e5e-cenario-For-Block-B-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-36e5e-cenario-For-Block-B-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-36e5e-cenario-For-Block-B-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-36e5e-cenario-For-Block-B-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 6301
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 619171,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"8y9m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"8y9m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 6301
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6301\n\n\u001b[0m \u001b[90m 6299 |\u001b[39m       \u001b[32m\"RPDPHO.W5PX\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 6300 |\u001b[39m     ]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6301 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mAE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6302 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mGE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6303 |\u001b[39m     expect\n \u001b[90m 6304 |\u001b[39m       \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6301
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"8y9m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6301\n\n  6299 |       \"RPDPHO.W5PX\",\n  6300 |     ];\n> 6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n       |                                     ^\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6302
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Grade Equivalent \\']/b')\nExpected string: \u001b[32m\"G3.3\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Grade Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6302\n\n  6300 |     ];\n  6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n> 6302 |     await expect.soft(this.geValue).toHaveText(GE);\n       |                                     ^\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n  6305 |       .toContain(ScoreCheckText);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6302:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 52,
+                            "line": 6304
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'mid-grid\\']//child::*').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6304\n\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n> 6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n       |                                                    ^\n  6305 |       .toContain(ScoreCheckText);\n  6306 |     if (\n  6307 |       testNames.includes(testStemForm) &&\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6304:52)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W5] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W5] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N96340A81924\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N96340A81924/dataFiles/Score_DataExport_AutoFilter_Template_N96340A81924.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N96340A81924 FirstName=Britney LastName =N96340A81924 Age = 10/06/2005\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N96340A81924\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Grades 3 to 8|56295,56296,56297\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 6
+                        }
+                      ],
+                      "startTime": "2026-04-07T05:53:15.704Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-36e5e-cenario-For-Block-B-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-36e5e-cenario-For-Block-B-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-36e5e-cenario-For-Block-B-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-36e5e-cenario-For-Block-B-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 6301
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "28ec93b372d028e75e16-2e4ac628cd4b59943096",
+              "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 8 to 13 - End Test Scenario Block B And A Test UI",
+              "ok": false,
+              "tags": [
+                "SWRTAC123",
+                "Single123",
+                "ScoreLater",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 635046,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"7y6m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"7y6m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 6301
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6301\n\n\u001b[0m \u001b[90m 6299 |\u001b[39m       \u001b[32m\"RPDPHO.W5PX\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 6300 |\u001b[39m     ]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6301 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mAE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6302 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mGE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6303 |\u001b[39m     expect\n \u001b[90m 6304 |\u001b[39m       \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6301
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"7y6m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6301\n\n  6299 |       \"RPDPHO.W5PX\",\n  6300 |     ];\n> 6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n       |                                     ^\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6302
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Grade Equivalent \\']/b')\nExpected string: \u001b[32m\"G2.1\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Grade Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6302\n\n  6300 |     ];\n  6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n> 6302 |     await expect.soft(this.geValue).toHaveText(GE);\n       |                                     ^\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n  6305 |       .toContain(ScoreCheckText);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6302:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 52,
+                            "line": 6304
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'mid-grid\\']//child::*').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6304\n\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n> 6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n       |                                                    ^\n  6305 |       .toContain(ScoreCheckText);\n  6306 |     if (\n  6307 |       testNames.includes(testStemForm) &&\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6304:52)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W6] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W6] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N52287A3273\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N52287A3273/dataFiles/Score_DataExport_AutoFilter_Template_N52287A3273.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N52287A3273 FirstName=Amely LastName =N52287A3273 Age = 04/07/2001\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N52287A3273\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 8 to 13|56295,56296,56297\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 10
+                        }
+                      ],
+                      "startTime": "2026-04-07T06:03:37.003Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 6301
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 619539,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"7y6m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"7y6m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 6301
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6301\n\n\u001b[0m \u001b[90m 6299 |\u001b[39m       \u001b[32m\"RPDPHO.W5PX\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 6300 |\u001b[39m     ]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6301 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mAE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6302 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mGE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6303 |\u001b[39m     expect\n \u001b[90m 6304 |\u001b[39m       \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6301
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"7y6m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6301\n\n  6299 |       \"RPDPHO.W5PX\",\n  6300 |     ];\n> 6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n       |                                     ^\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6302
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Grade Equivalent \\']/b')\nExpected string: \u001b[32m\"G2.1\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Grade Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6302\n\n  6300 |     ];\n  6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n> 6302 |     await expect.soft(this.geValue).toHaveText(GE);\n       |                                     ^\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n  6305 |       .toContain(ScoreCheckText);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6302:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 52,
+                            "line": 6304
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'mid-grid\\']//child::*').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6304\n\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n> 6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n       |                                                    ^\n  6305 |       .toContain(ScoreCheckText);\n  6306 |     if (\n  6307 |       testNames.includes(testStemForm) &&\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6304:52)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W7] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W7] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N18599A9674\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N18599A9674/dataFiles/Score_DataExport_AutoFilter_Template_N18599A9674.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N18599A9674 FirstName=Javier LastName =N18599A9674 Age = 04/07/2001\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N18599A9674\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 8 to 13|56295,56296,56297\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 7
+                        }
+                      ],
+                      "startTime": "2026-04-07T06:14:21.589Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 6301
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "28ec93b372d028e75e16-cde09f78cb5778cee845",
+              "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Grade 9 to Above Average Adult - End Test Scenario For Block C Test UI",
+              "ok": false,
+              "tags": [
+                "SWRTAC123",
+                "Single123",
+                "ScoreLater",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 593593,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\">26y\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\">26y\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 6301
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6301\n\n\u001b[0m \u001b[90m 6299 |\u001b[39m       \u001b[32m\"RPDPHO.W5PX\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 6300 |\u001b[39m     ]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6301 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mAE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6302 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mGE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6303 |\u001b[39m     expect\n \u001b[90m 6304 |\u001b[39m       \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6301
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\">26y\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6301\n\n  6299 |       \"RPDPHO.W5PX\",\n  6300 |     ];\n> 6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n       |                                     ^\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6302
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Grade Equivalent \\']/b')\nExpected string: \u001b[32m\">G12.9\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Grade Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6302\n\n  6300 |     ];\n  6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n> 6302 |     await expect.soft(this.geValue).toHaveText(GE);\n       |                                     ^\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n  6305 |       .toContain(ScoreCheckText);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6302:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 52,
+                            "line": 6304
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'mid-grid\\']//child::*').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6304\n\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n> 6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n       |                                                    ^\n  6305 |       .toContain(ScoreCheckText);\n  6306 |     if (\n  6307 |       testNames.includes(testStemForm) &&\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6304:52)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W8] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W8] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N64295A34727\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N64295A34727/dataFiles/Score_DataExport_AutoFilter_Template_N64295A34727.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N64295A34727 FirstName=Jaydon LastName =N64295A34727 Age = 10/06/2000\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N64295A34727\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Grade 9 to Above Average Adult|56295,56296,56313\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 11
+                        }
+                      ],
+                      "startTime": "2026-04-07T06:24:43.406Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 6301
+                      }
+                    },
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 580911,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\">26y\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\">26y\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 6301
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6301\n\n\u001b[0m \u001b[90m 6299 |\u001b[39m       \u001b[32m\"RPDPHO.W5PX\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 6300 |\u001b[39m     ]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6301 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mAE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6302 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mGE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6303 |\u001b[39m     expect\n \u001b[90m 6304 |\u001b[39m       \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6301
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\">26y\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6301\n\n  6299 |       \"RPDPHO.W5PX\",\n  6300 |     ];\n> 6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n       |                                     ^\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6302
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Grade Equivalent \\']/b')\nExpected string: \u001b[32m\">G12.9\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Grade Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6302\n\n  6300 |     ];\n  6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n> 6302 |     await expect.soft(this.geValue).toHaveText(GE);\n       |                                     ^\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n  6305 |       .toContain(ScoreCheckText);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6302:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 52,
+                            "line": 6304
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'mid-grid\\']//child::*').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6304\n\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n> 6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n       |                                                    ^\n  6305 |       .toContain(ScoreCheckText);\n  6306 |     if (\n  6307 |       testNames.includes(testStemForm) &&\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6304:52)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W9] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W9] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N75775A27740\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N75775A27740/dataFiles/Score_DataExport_AutoFilter_Template_N75775A27740.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N75775A27740 FirstName=Lila LastName =N75775A27740 Age = 10/06/2000\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N75775A27740\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Grade 9 to Above Average Adult|56295,56296,56313\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 6
+                        }
+                      ],
+                      "startTime": "2026-04-07T06:34:46.084Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 6301
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "28ec93b372d028e75e16-e607a20157a55a0c7434",
+              "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 14 to Above Average Adult - Block C And B End Test Scenario Test UI",
+              "ok": false,
+              "tags": [
+                "SWRTAC123",
+                "Single123",
+                "ScoreLater",
+                "AUT_ENG_02",
+                "Smoke",
+                "CLINICAL-30917"
+              ],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 600067,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"8y8m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"8y8m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 6301
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6301\n\n\u001b[0m \u001b[90m 6299 |\u001b[39m       \u001b[32m\"RPDPHO.W5PX\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 6300 |\u001b[39m     ]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6301 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mAE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6302 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mGE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6303 |\u001b[39m     expect\n \u001b[90m 6304 |\u001b[39m       \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6301
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"8y8m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6301\n\n  6299 |       \"RPDPHO.W5PX\",\n  6300 |     ];\n> 6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n       |                                     ^\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6302
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Grade Equivalent \\']/b')\nExpected string: \u001b[32m\"G3.2\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Grade Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6302\n\n  6300 |     ];\n  6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n> 6302 |     await expect.soft(this.geValue).toHaveText(GE);\n       |                                     ^\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n  6305 |       .toContain(ScoreCheckText);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6302:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 52,
+                            "line": 6304
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'mid-grid\\']//child::*').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6304\n\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n> 6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n       |                                                    ^\n  6305 |       .toContain(ScoreCheckText);\n  6306 |     if (\n  6307 |       testNames.includes(testStemForm) &&\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6304:52)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W10] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W10] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N66594A82656\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66594A82656/dataFiles/Score_DataExport_AutoFilter_Template_N66594A82656.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N66594A82656 FirstName=Nicolas LastName =N66594A82656 Age = 04/07/1996\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N66594A82656\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 14 to Above Average Adult|56295,56296,56313\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 11
+                        }
+                      ],
+                      "startTime": "2026-04-07T06:44:29.216Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-019c8-B-End-Test-Scenario-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-019c8-B-End-Test-Scenario-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-019c8-B-End-Test-Scenario-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-019c8-B-End-Test-Scenario-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-019c8-B-End-Test-Scenario-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 6301
+                      }
+                    },
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 580782,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"8y8m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"8y8m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 6301
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6301\n\n\u001b[0m \u001b[90m 6299 |\u001b[39m       \u001b[32m\"RPDPHO.W5PX\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 6300 |\u001b[39m     ]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6301 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mAE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6302 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgeValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mGE\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6303 |\u001b[39m     expect\n \u001b[90m 6304 |\u001b[39m       \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6301
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Age Equivalent \\']/b')\nExpected string: \u001b[32m\"8y8m\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Age Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6301\n\n  6299 |       \"RPDPHO.W5PX\",\n  6300 |     ];\n> 6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n       |                                     ^\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6301:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:43"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 6302
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//span[text()=\\'Grade Equivalent \\']/b')\nExpected string: \u001b[32m\"G3.2\"\u001b[39m\nReceived: <element(s) not found>\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//span[text()=\\'Grade Equivalent \\']/b')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6302\n\n  6300 |     ];\n  6301 |     await expect.soft(this.aeValue).toHaveText(AE);\n> 6302 |     await expect.soft(this.geValue).toHaveText(GE);\n       |                                     ^\n  6303 |     expect\n  6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n  6305 |       .toContain(ScoreCheckText);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6302:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 52,
+                            "line": 6304
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'mid-grid\\']//child::*').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6304\n\n  6302 |     await expect.soft(this.geValue).toHaveText(GE);\n  6303 |     expect\n> 6304 |       .soft(await this.endTestPopUpElements.nth(1).textContent())\n       |                                                    ^\n  6305 |       .toContain(ScoreCheckText);\n  6306 |     if (\n  6307 |       testNames.includes(testStemForm) &&\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6304:52)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:26:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S3:W11] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S3:W11] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://clinical-wjv-qa.rsiapps.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N84007A49387\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N84007A49387/dataFiles/Score_DataExport_AutoFilter_Template_N84007A49387.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N84007A49387 FirstName=Alf LastName =N84007A49387 Age = 04/07/1996\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N84007A49387\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 56271|Ages 14 to Above Average Adult|56295,56296,56313\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Waiting for checkbox count to be greater than 0",
+                          "duration": 6
+                        }
+                      ],
+                      "startTime": "2026-04-07T06:54:38.417Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-019c8-B-End-Test-Scenario-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-019c8-B-End-Test-Scenario-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-019c8-B-End-Test-Scenario-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-019c8-B-End-Test-Scenario-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 6301
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "28ec93b372d028e75e16-12b1adb09c938cfe04e5",
+              "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+              "line": 10,
+              "column": 13
+            }
+          ]
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-04-07T03:45:52.267Z",
-    "duration": 14435.55,
-    "expected": 0,
+    "startTime": "2026-04-07T04:54:06.190Z",
+    "duration": 7813948.311000001,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 6,
     "flaky": 0
   }
 }
