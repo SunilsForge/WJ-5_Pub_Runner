@@ -797,6 +797,11 @@ jobs:
           const shardsMissingJson = [];
           const failures = [];
 
+          // Strip ANSI escape codes (terminal colors) so errors render cleanly in Slack/GitHub
+          function stripAnsi(str) {
+            return str.replace(/\u001b\[[0-9;]*m/g, '').replace(/\x1b\[[0-9;]*m/g, '');
+          }
+
           // Recursively walk Playwright JSON report suites to extract test results
           function walkSuites(suites) {
             for (const suite of (suites || [])) {
@@ -810,11 +815,12 @@ jobs:
                   } else if (test.status === 'unexpected') {
                     totalFailed++;
                     const lastResult = test.results?.[test.results.length - 1];
-                    const errorMsg = lastResult?.error?.message || 'No error message available';
+                    const rawError = lastResult?.error?.message || 'No error message available';
+                    const cleanError = stripAnsi(rawError);
                     failures.push({
                       title: spec.title,
                       file: spec.file || '',
-                      error: errorMsg.split('\n')[0].substring(0, 200)
+                      error: cleanError.split('\n')[0].substring(0, 200)
                     });
                   } else if (test.status === 'flaky') {
                     totalFlaky++;
