@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "211",
+    "timestamp": "20260407_000000",
+    "runReason": " running the CLINICAL_30917 in qa trial 6",
+    "environment": "qa",
+    "browser": "chrome",
+    "testPattern": "(?=.*@SWRTAC)(?=.*@Rerouting)|(?=.*@WRTSMP)(?=.*@Rerouting)|(?=.*@WRTSMP123)(?=.*@ScoreLater)|(?=.*@SWRTAC123)(?=.*@ScoreLater)"
+  },
+  {
     "runNumber": "210",
     "timestamp": "20260407_000000",
     "runReason": "running the CLINICAL_30917 in qa in slow mo",
