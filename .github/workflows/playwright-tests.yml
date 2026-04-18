@@ -150,7 +150,7 @@ jobs:
     name: "Shard ${{ matrix.shard }}"
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.55.0-noble
+      image: mcr.microsoft.com/playwright:v1.59.1-noble
     strategy:
       fail-fast: false
       matrix: ${{fromJson(needs.prepare.outputs.matrix)}}
@@ -212,7 +212,7 @@ jobs:
             --shard=${{ matrix.shard }}/${{ github.event.inputs.shard_count }} \
             --workers=1 \
             --retries=${{ env.NUM_RETRIES }} \
-            --reporter=html,json
+            --reporter=html,json,blob
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v6
@@ -223,6 +223,7 @@ jobs:
             test-results/
             system-info/
             results.json
+            blob-report/
           retention-days: 90
       - name: Create status file
         if: always()
@@ -349,6 +350,31 @@ jobs:
           sed -i '/<!-- SHARD_ENTRIES -->/r shard_entries.html' merged-report/index.html
           sed -i '/<!-- SHARD_ENTRIES -->/d' merged-report/index.html
           rm -f shard_entries.html
+      - name: Generate native Playwright merged report (Timeline)
+        run: |
+          # Collect blob reports from all shards into a single directory
+          mkdir -p all-blob-reports
+          for dir in all-artifacts/playwright-report-shard-*/blob-report; do
+            if [ -d "$dir" ]; then
+              cp "$dir"/* all-blob-reports/ 2>/dev/null || true
+            fi
+          done
+
+          BLOB_COUNT=$(ls all-blob-reports/ 2>/dev/null | wc -l)
+          if [ "$BLOB_COUNT" -gt 0 ]; then
+            echo "Found $BLOB_COUNT blob file(s) — generating native merged report..."
+            npx playwright merge-reports --reporter=html all-blob-reports || true
+            # Playwright outputs to playwright-report/ by default
+            if [ -d "playwright-report" ]; then
+              mv playwright-report merged-report/playwright-merged
+              echo "Native merged report generated at merged-report/playwright-merged/"
+            else
+              echo "Warning: merge-reports ran but produced no output"
+            fi
+          else
+            echo "No blob reports found — skipping native merge (Timeline will not be available)"
+          fi
+
       - name: Upload merged report artifact
         uses: actions/upload-artifact@v6
         with:
