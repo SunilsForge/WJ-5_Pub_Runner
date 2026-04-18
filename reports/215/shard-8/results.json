@@ -342,7 +342,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 113438,
+                  "duration": 114063,
                   "error": {
                     "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n",
                     "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n\n    at DashBoardPage.getTheTestAssignmentsRowDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:833:20)\n    at DashBoardPage.getExamineesDetailsFromTestAssignmentTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1953:26)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:37:31\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:34:5",
@@ -379,7 +379,7 @@
                   "steps": [
                     {
                       "title": "Examiner:- Verify subtests successfully applied for submitted test assignment",
-                      "duration": 72548,
+                      "duration": 72606,
                       "error": {
                         "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n",
                         "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n\n    at DashBoardPage.getTheTestAssignmentsRowDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:833:20)\n    at DashBoardPage.getExamineesDetailsFromTestAssignmentTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1953:26)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:37:31\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:34:5",
@@ -392,7 +392,7 @@
                       }
                     }
                   ],
-                  "startTime": "2026-04-18T04:45:14.295Z",
+                  "startTime": "2026-04-18T09:42:32.121Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -431,7 +431,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 105781,
+                  "duration": 106902,
                   "error": {
                     "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n",
                     "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n\n    at DashBoardPage.getTheTestAssignmentsRowDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:833:20)\n    at DashBoardPage.getExamineesDetailsFromTestAssignmentTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1953:26)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:37:31\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:34:5",
@@ -468,7 +468,7 @@
                   "steps": [
                     {
                       "title": "Examiner:- Verify subtests successfully applied for submitted test assignment",
-                      "duration": 72134,
+                      "duration": 72132,
                       "error": {
                         "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n",
                         "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n\n    at DashBoardPage.getTheTestAssignmentsRowDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:833:20)\n    at DashBoardPage.getExamineesDetailsFromTestAssignmentTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1953:26)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:37:31\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:34:5",
@@ -481,7 +481,7 @@
                       }
                     }
                   ],
-                  "startTime": "2026-04-18T04:47:15.173Z",
+                  "startTime": "2026-04-18T09:44:33.952Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -525,8 +525,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-18T04:44:58.858Z",
-    "duration": 242713.85299999997,
+    "startTime": "2026-04-18T09:42:14.931Z",
+    "duration": 246543.513,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,

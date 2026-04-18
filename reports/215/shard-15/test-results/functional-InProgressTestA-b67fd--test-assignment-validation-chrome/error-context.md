@@ -12,215 +12,147 @@
 # Error details
 
 ```
-TimeoutError: locator.click: Timeout 60000ms exceeded.
-Call log:
-  - waiting for getByText('Academic Vocabulary', { exact: true })
+Error: Waiting for sloth icon after accepting examinee
 
+expect(received).toBeTruthy()
+
+Received: false
+
+Call Log:
+- Timeout 60000ms exceeded while waiting on the predicate
 ```
 
 # Test source
 
 ```ts
-  991  |     await this.testAssignmentSubmittedPopUp.waitFor({
-  992  |       state: "hidden",
-  993  |       timeout: 2 * 60 * 1000,
-  994  |     });
-  995  |   }
-  996  | 
-  997  |   async addNewTestToBlock() {
-  998  |     await this.addTestButton.click();
-  999  |     await this.waitForLoadingSpinnerToDisappear();
-  1000 |     await this.getCheckboxLocator('unchecked')
-  1001 |       .first()
-  1002 |       .click();
-  1003 |     await this.addTestsButton.click();
-  1004 |   }
-  1005 | 
-  1006 |   async skipFollowingTestFromTestsList(testName: string) {
-  1007 |     await this.page
-  1008 |       .locator(
-  1009 |         `//div[contains(@class, 'testName')][text()='${testName}']//parent::button//following-sibling::button[contains(@class,'skipTest')]`,
-  1010 |       )
-  1011 |       .click();
-  1012 |     await this.page.waitForLoadState("domcontentloaded");
-  1013 |   }
-  1014 | 
-  1015 |   async addTestNotedAndFlag(item: string, notes: string, flad?: boolean) {
-  1016 |     await this.clickFollowingItem(item);
-  1017 |     await this.addNotes("test", notes);
-  1018 |     await this.verifySavedNotes("test", notes);
-  1019 |     await this.page.waitForTimeout(1000);
-  1020 |     await this.flagIcon.click();
-  1021 |     await this.page.waitForTimeout(1000);
-  1022 |     await this.verifyFlagged();
-  1023 |   }
-  1024 | 
-  1025 |   async addNotes(level: string, notes: string) {
-  1026 |     await this.openNotesIcon.click();
-  1027 |     await this.selectNotesDropdown(level);
-  1028 |     await this.notesText.fill(notes);
-  1029 |     await this.notesSaveButton.click();
-  1030 |   }
-  1031 | 
-  1032 |   async verifySavedNotes(level: string, notes: string) {
-  1033 |     await this.openNotesIcon.click();
-  1034 |     await this.selectNotesDropdown(level);
-  1035 |     await this.notesText.waitFor({ state: "visible" });
-  1036 |     const text = await this.notesText.textContent();
-  1037 |     expect.soft(text, "Notes not saved").toBe(notes);
-  1038 |   }
-  1039 | 
-  1040 |   async selectNotesDropdown(option: string) {
-  1041 |     await this.notesDropdown.waitFor({ state: "visible" });
-  1042 |     await this.notesDropdown.selectOption({ value: option });
-  1043 |     const selectedValue = await this.notesDropdown.inputValue();
-  1044 |     expect.soft(selectedValue, "Dropdown selection mismatch").toBe(option);
-  1045 |   }
-  1046 | 
-  1047 |   async verifyFlagged() {
-  1048 |     await expect
-  1049 |       .soft(this.flaggedForLaterText, "Flagged for later text not visible")
-  1050 |       .toBeVisible();
-  1051 |   }
-  1052 | 
-  1053 |   private async clickFollowingItem(item: string) {
-  1054 |     await this.page
-  1055 |       .locator(`//span[@class='item-text'][text()='${item}']`)
-  1056 |       .click();
-  1057 |   }
-  1058 |   
-  1059 | 
-  1060 |   async pickTheTestNeeded(
-  1061 |     testName: string,
-  1062 |     examinee: StudentPage,
-  1063 |   ) {
-  1064 |     await this.page.bringToFront();
-  1065 |     await this.page.waitForTimeout(Number(2000));
-  1066 |     if (
-  1067 |       (await this.administrationOverviewPageTestName.isVisible()) &&
-  1068 |       (await this.administrationOverviewPageTestName.textContent()).includes(
-  1069 |         testName,
-  1070 |       )
-  1071 |     )
-  1072 |       return;
-  1073 |     let popUpCheck: boolean = await this.syncDevicePopUp.isVisible();
-  1074 |     const popUp: boolean = await this.page
-  1075 |       .locator(".popup-mid-title")
-  1076 |       .isVisible();
-  1077 | 
-  1078 |     if (popUpCheck) {
-  1079 |       examinee.clickExamineeAcceptButton();
-  1080 |     }
-  1081 |     const topLine: Locator = await this.page.locator(".top-line");
-  1082 |     console.log(`await topLine.isVisible() : ${await topLine.isVisible()}`);
-  1083 |     await this.page.waitForTimeout(2000);
-  1084 |     const introText: Locator = await this.page.locator(".intro-text");
-  1085 |     console.log(`await introText.isVisible() = ${await introText.isVisible()}`);
-  1086 |     if (await introText.isVisible()) {
-  1087 |       await this.page.locator(".plain-button.menu-button").click();
-  1088 |       await this.page.locator(".main .plain-button:nth-child(3)").click();
-  1089 |       await this.page
-  1090 |         .getByText(testName, { exact: true })
-> 1091 |         .click();
-       |          ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
-  1092 |     } else {
-  1093 |       return;
-  1094 |     }
-  1095 |   }
-  1096 | 
-  1097 |   async waitForDashboardPageToLoad() {
-  1098 |     await this.waitForMyTestAssignmentsToBeVisible();
-  1099 |     await this.waitForLoadingSpinnerToDisappear();
-  1100 |   }
-  1101 | 
-  1102 |   async getScoreLaterTests(): Promise<string[]> {
-  1103 |     try {
-  1104 |       const scoreLaterTests = this.getReviewModeTestsWithNameByStatus('score-later');
-  1105 |       await scoreLaterTests.first().waitFor({ state: 'visible', timeout: 60000 });
-  1106 |       await this.page.waitForTimeout(5000);
-  1107 |       const testNames: string[] = await scoreLaterTests.allTextContents();
-  1108 |       return testNames;
-  1109 |     } catch (error) {
-  1110 |       console.error('Error getting score later tests:', error);
-  1111 |       throw error;
-  1112 |     }
-  1113 |   }
-  1114 | 
-  1115 |   async getNeedAttentionTests(): Promise<string[]> {
-  1116 |     try {
-  1117 |       const needAttentionTests = this.getReviewModeTestsWithNameByStatus('score-error');
-  1118 |       await needAttentionTests.first().waitFor({ state: 'visible', timeout: 60000 });
-  1119 |       const testNames = await needAttentionTests.allTextContents();
-  1120 |       return testNames.map(name => name.trim());
-  1121 |     } catch (error) {
-  1122 |       console.error('Error getting need attention tests:', error);
-  1123 |       throw error;
-  1124 |     }
-  1125 |   }
-  1126 | 
-  1127 |   async getInvalidatedTests(): Promise<string[]> {
-  1128 |     try {
-  1129 |       const invalidatedTests = this.getReviewModeTestsByStatus('invalidated');
-  1130 |       await invalidatedTests.first().waitFor({ state: 'visible', timeout: 60000 });
-  1131 |       const testNames = await invalidatedTests.allTextContents();
-  1132 |       return testNames.map(name => name.trim());
-  1133 |     } catch (error) {
-  1134 |       console.error('Error getting invalidated tests:', error);
-  1135 |       throw error;
-  1136 |     }
-  1137 |   }
-  1138 | 
-  1139 |   async getFlaggedTestsWithItemData(): Promise<Record<string, Record<string, { response: string }>>> {
-  1140 |     try {
-  1141 |       const flaggedData: Record<string, Record<string, { response: string }>> = {};
-  1142 | 
-  1143 |       const testSections = this.page.locator('div.test-group h5');
-  1144 |       const testNames = await testSections.allTextContents();
-  1145 | 
-  1146 |       for (const testName of testNames) {
-  1147 |         flaggedData[testName] = {};
-  1148 | 
-  1149 |         const itemsSelector = "//h5[text()='" + testName + "']/following-sibling::button[not(preceding-sibling::h5[1][text()!='" + testName + "'])]";
-  1150 |         const flaggedItems = await this.page.locator(itemsSelector).all();
-  1151 | 
-  1152 |         for (const item of flaggedItems) {
-  1153 |           const itemName = await item.locator('.test-name').textContent() || '';
-  1154 |           const score = await item.locator('.test-score').textContent() || '';
-  1155 |           const scoreValue = score.replace('Score: ', '');
-  1156 | 
-  1157 |           let response: string;
-  1158 | 
-  1159 |           if (testName === 'Story Recall') {
-  1160 |             response = `correct | ${scoreValue}`;
-  1161 |           } else if (testName === 'Math Facts Fluency') {
-  1162 |             response = scoreValue;
-  1163 |           } else {
-  1164 |             response = scoreValue === '1' ? 'correct' :
-  1165 |               scoreValue === '0' ? 'incorrect' :
-  1166 |                 scoreValue === '-' ? 'No Response' : scoreValue;
-  1167 |           }
-  1168 | 
-  1169 |           flaggedData[testName][itemName] = { response };
-  1170 |         }
-  1171 | 
-  1172 |         if (Object.keys(flaggedData[testName]).length === 0) {
-  1173 |           delete flaggedData[testName];
-  1174 |         }
-  1175 |       }
-  1176 | 
-  1177 |       return flaggedData;
-  1178 |     } catch (error) {
-  1179 |       console.error('Error getting flagged items:', error);
-  1180 |       throw error;
-  1181 |     }
-  1182 |   }
-  1183 | 
-  1184 |   async verifyFlaggedTestsWithItemData(expected: Record<string, Record<string, { response: string }>>,
-  1185 |     actual: Record<string, Record<string, { response: string }>>) {
-  1186 |     const mismatches: string[] = [];
-  1187 | 
-  1188 |     for (const testName of Object.keys(expected)) {
-  1189 |       if (!actual[testName]) {
-  1190 |         mismatches.push(`Test "${testName}" is missing from actual results`);
-  1191 |         continue;
+  20  |             console.log("Filling the session ID input box...");
+  21  |              await this.page.waitForLoadState("networkidle", {timeout: 90000});
+  22  |             //await this.page.waitForLoadState("domcontentloaded", {timeout: 60000});
+  23  |             await this.sessionIdInputBox.fill(this.$sessionID, {timeout: 60000});
+  24  |         } catch {
+  25  |             console.log("Session ID input failed, reloading the page...");
+  26  |             await this.page.reload({waitUntil: "load"});
+  27  |             await this.sessionIdInputBox.fill(this.$sessionID, {timeout: 60000});
+  28  |         }
+  29  |         for (let attempt = 0; attempt < 5; attempt++) {
+  30  |             console.log(`Attempt ${attempt + 1} to join the session.`);
+  31  | 
+  32  |             try {
+  33  |                 await expect(this.joinSessionButton).toBeEnabled({timeout: 5000});
+  34  |                 await this.joinSessionButton.click({timeout: 5000});
+  35  |                 console.log("Clicked Join Session button.");
+  36  |                 return;
+  37  |             } catch (e) {
+  38  |                 console.log(`Retry ${attempt + 1} failed: ${e}`);
+  39  |             }
+  40  |         }
+  41  |     }
+  42  | 
+  43  |     async clickOnAcceptButton() {
+  44  |         // First check if accept button is visible
+  45  |         await this.page.waitForTimeout(50000);
+  46  |         const isAcceptButtonVisible = await this.acceptButton.isVisible({ timeout: 50000 });
+  47  | 
+  48  |         if (!isAcceptButtonVisible) {
+  49  |             // If accept button isn't visible, check for sloth icon
+  50  |             if (await this.slothIcon.isVisible({ timeout: 50000 })) {
+  51  |                 console.log("Accept button not found, but sloth icon is visible. Proceeding.");
+  52  |                 return;
+  53  |             }
+  54  |             throw new Error("Neither accept button nor sloth icon appeared within timeout.");
+  55  |         }
+  56  | 
+  57  |         let attempt = 0;
+  58  |         while (attempt < 15) {
+  59  |             try {
+  60  |                 console.log(`Attempt ${attempt + 1}: Checking accept button readiness.`);
+  61  |                 const isEnabled = await this.acceptButton.isEnabled();
+  62  |                 if (!isEnabled) {
+  63  |                     console.warn("Accept button is not enabled. Waiting...");
+  64  |                     await this.page.waitForTimeout(30000);
+  65  |                     attempt++;
+  66  |                     continue;
+  67  |                 }
+  68  |                 console.log("Accept button is enabled. Clicking now.");
+  69  |                 await this.acceptButton.click();
+  70  | 
+  71  |                 if (await this.slothIcon.isVisible({ timeout: 50000 })) {
+  72  |                     console.log("Sloth icon detected. Accept process completed.");
+  73  |                     return;
+  74  |                 } else if (!(await this.acceptButton.isVisible({ timeout: 50000 }))) {
+  75  |                     console.log("Accept button is no longer visible. Exiting.");
+  76  |                     return;
+  77  |                 }
+  78  |             } catch (error) {
+  79  |                 console.warn(`Attempt ${attempt + 1} failed: ${error.message}`);
+  80  |             }
+  81  |             attempt++;
+  82  |         }
+  83  | 
+  84  |         // Final check after all attempts
+  85  |         if (await this.slothIcon.isVisible({ timeout: 50000 })) {
+  86  |             console.log("Sloth icon appeared after attempts. Proceeding.");
+  87  |             return;
+  88  |         }
+  89  |         if (await this.acceptButton.isVisible()) {
+  90  |             throw new Error("Accept button did not disappear after all retry attempts.");
+  91  |         }
+  92  |     }
+  93  | 
+  94  |     async switchToTheChildScreenAndWaitUntilToSeeTheJoinSessionButton() {
+  95  | 
+  96  |         await this.page.bringToFront();
+  97  |         try {
+  98  |             await this.joinSessionButton.waitFor({
+  99  |                 state: "attached",
+  100 |                 timeout: 2 * 15 * 1000,
+  101 |             });
+  102 |         } catch (error) {
+  103 |             console.info(
+  104 |                 `Not able to see the Join Session button on Examinee Screen After Test complete , but still proceeding further and submitting the test ... ${error} `,
+  105 |             );
+  106 |         }
+  107 |     }
+  108 |     async switchToTheChildScreenAndClickCorrectOption() {  // this can be used in test DE page itself (Pending)
+  109 | 
+  110 |         await this.page.bringToFront();
+  111 |         await this.item1CorrectAnswerLWIDNTTest.click();
+  112 |         const correctOption: string = await this.item1CorrectAnswerLWIDNTTest.textContent();
+  113 |         return correctOption;
+  114 |     }
+  115 | 
+  116 | 
+  117 | async clickExamineeAcceptButton(): Promise<void> {
+  118 |   await this.waitForLoadingIconToDisappear();
+  119 | 
+> 120 |   await expect
+      |   ^ Error: Waiting for sloth icon after accepting examinee
+  121 |     .poll(
+  122 |       async () => {
+  123 |         if (await this.acceptButton.isVisible()) {
+  124 |           RawValueLogger.log('Accept button visible. Clicking.');
+  125 |           await this.acceptButton.click();
+  126 |         }
+  127 | 
+  128 |         return await this.slothIcon.isVisible();
+  129 |       },
+  130 |       {
+  131 |         message: 'Waiting for sloth icon after accepting examinee',
+  132 |         timeout: 60_000,
+  133 |         intervals: [500, 1000]
+  134 |       }
+  135 |     )
+  136 |     .toBeTruthy();
+  137 | 
+  138 |   RawValueLogger.log('Sloth icon detected. Accept process completed.');
+  139 | }
+  140 | 
+  141 | 
+  142 |     async waitForLoadingIconToDisappear() {
+  143 |         await this.loadingIcon.last().waitFor({
+  144 |             state: "hidden",
+  145 |             timeout: 3 * 60 * 1000,
+  146 |         });
+  147 |     }
+  148 | }
 ```

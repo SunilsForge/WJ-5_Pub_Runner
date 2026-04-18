@@ -340,25 +340,25 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 184501,
+                      "duration": 174701,
                       "error": {
-                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Academic Vocabulary', { exact: true })\u001b[22m\n",
-                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Academic Vocabulary', { exact: true })\u001b[22m\n\n    at DashBoardPage.pickTheTestNeeded (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1091:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:102:9",
+                        "message": "Error: Waiting for sloth icon after accepting examinee\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 60000ms exceeded while waiting on the predicate",
+                        "stack": "Error: Waiting for sloth icon after accepting examinee\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 60000ms exceeded while waiting on the predicate\n    at StudentPage.clickExamineeAcceptButton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts:120:3)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:98:7",
                         "location": {
-                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                          "column": 10,
-                          "line": 1091
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts",
+                          "column": 3,
+                          "line": 120
                         },
-                        "snippet": "   at ../page/dashboardPage.ts:1091\n\n\u001b[0m \u001b[90m 1089 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\n \u001b[90m 1090 |\u001b[39m         \u001b[33m.\u001b[39mgetByText(testName\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1091 |\u001b[39m         \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1092 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 1093 |\u001b[39m       \u001b[36mreturn\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 1094 |\u001b[39m     }\u001b[0m"
+                        "snippet": "   at ../page/studentPage.ts:120\n\n\u001b[0m \u001b[90m 118 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForLoadingIconToDisappear()\u001b[33m;\u001b[39m\n \u001b[90m 119 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 120 |\u001b[39m   \u001b[36mawait\u001b[39m expect\n \u001b[90m     |\u001b[39m   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 121 |\u001b[39m     \u001b[33m.\u001b[39mpoll(\n \u001b[90m 122 |\u001b[39m       \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 123 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39macceptButton\u001b[33m.\u001b[39misVisible()) {\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                            "column": 10,
-                            "line": 1091
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts",
+                            "column": 3,
+                            "line": 120
                           },
-                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Academic Vocabulary', { exact: true })\u001b[22m\n\n\n   at ../page/dashboardPage.ts:1091\n\n  1089 |       await this.page\n  1090 |         .getByText(testName, { exact: true })\n> 1091 |         .click();\n       |          ^\n  1092 |     } else {\n  1093 |       return;\n  1094 |     }\n    at DashBoardPage.pickTheTestNeeded (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1091:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:102:9"
+                          "message": "Error: Waiting for sloth icon after accepting examinee\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 60000ms exceeded while waiting on the predicate\n\n   at ../page/studentPage.ts:120\n\n  118 |   await this.waitForLoadingIconToDisappear();\n  119 |\n> 120 |   await expect\n      |   ^\n  121 |     .poll(\n  122 |       async () => {\n  123 |         if (await this.acceptButton.isVisible()) {\n    at StudentPage.clickExamineeAcceptButton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts:120:3)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:98:7"
                         }
                       ],
                       "stdout": [
@@ -375,13 +375,13 @@
                           "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                         },
                         {
-                          "text": "Examinee ID N54773A21193\n"
+                          "text": "Examinee ID N26732A48418\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N54773A21193 FirstName=Eudora LastName =N54773A21193 Age = 04/17/2021\n"
+                          "text": "Successfully added an Examinee  ID =N26732A48418 FirstName=Wallace LastName =N26732A48418 Age = 04/18/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N54773A21193\n"
+                          "text": "Successfully selected examinee: N26732A48418\n"
                         },
                         {
                           "text": "Filling the session ID input box...\n"
@@ -391,17 +391,11 @@
                         },
                         {
                           "text": "Clicked Join Session button.\n"
-                        },
-                        {
-                          "text": "await topLine.isVisible() : false\n"
-                        },
-                        {
-                          "text": "await introText.isVisible() = true\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-18T04:45:18.573Z",
+                      "startTime": "2026-04-18T09:42:32.026Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -431,34 +425,34 @@
                         }
                       ],
                       "errorLocation": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                        "column": 10,
-                        "line": 1091
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts",
+                        "column": 3,
+                        "line": 120
                       }
                     },
                     {
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 256545,
+                      "duration": 166366,
                       "error": {
-                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Academic Vocabulary', { exact: true })\u001b[22m\n",
-                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Academic Vocabulary', { exact: true })\u001b[22m\n\n    at DashBoardPage.pickTheTestNeeded (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1091:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:102:9",
+                        "message": "Error: Waiting for sloth icon after accepting examinee\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 60000ms exceeded while waiting on the predicate",
+                        "stack": "Error: Waiting for sloth icon after accepting examinee\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 60000ms exceeded while waiting on the predicate\n    at StudentPage.clickExamineeAcceptButton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts:120:3)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:98:7",
                         "location": {
-                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                          "column": 10,
-                          "line": 1091
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts",
+                          "column": 3,
+                          "line": 120
                         },
-                        "snippet": "   at ../page/dashboardPage.ts:1091\n\n\u001b[0m \u001b[90m 1089 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\n \u001b[90m 1090 |\u001b[39m         \u001b[33m.\u001b[39mgetByText(testName\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1091 |\u001b[39m         \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1092 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 1093 |\u001b[39m       \u001b[36mreturn\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 1094 |\u001b[39m     }\u001b[0m"
+                        "snippet": "   at ../page/studentPage.ts:120\n\n\u001b[0m \u001b[90m 118 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForLoadingIconToDisappear()\u001b[33m;\u001b[39m\n \u001b[90m 119 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 120 |\u001b[39m   \u001b[36mawait\u001b[39m expect\n \u001b[90m     |\u001b[39m   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 121 |\u001b[39m     \u001b[33m.\u001b[39mpoll(\n \u001b[90m 122 |\u001b[39m       \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 123 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39macceptButton\u001b[33m.\u001b[39misVisible()) {\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                            "column": 10,
-                            "line": 1091
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts",
+                            "column": 3,
+                            "line": 120
                           },
-                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Academic Vocabulary', { exact: true })\u001b[22m\n\n\n   at ../page/dashboardPage.ts:1091\n\n  1089 |       await this.page\n  1090 |         .getByText(testName, { exact: true })\n> 1091 |         .click();\n       |          ^\n  1092 |     } else {\n  1093 |       return;\n  1094 |     }\n    at DashBoardPage.pickTheTestNeeded (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1091:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:102:9"
+                          "message": "Error: Waiting for sloth icon after accepting examinee\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 60000ms exceeded while waiting on the predicate\n\n   at ../page/studentPage.ts:120\n\n  118 |   await this.waitForLoadingIconToDisappear();\n  119 |\n> 120 |   await expect\n      |   ^\n  121 |     .poll(\n  122 |       async () => {\n  123 |         if (await this.acceptButton.isVisible()) {\n    at StudentPage.clickExamineeAcceptButton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts:120:3)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:98:7"
                         }
                       ],
                       "stdout": [
@@ -475,13 +469,13 @@
                           "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                         },
                         {
-                          "text": "Examinee ID N17563A18685\n"
+                          "text": "Examinee ID N28686A31942\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N17563A18685 FirstName=Efren LastName =N17563A18685 Age = 04/17/2021\n"
+                          "text": "Successfully added an Examinee  ID =N28686A31942 FirstName=Ona LastName =N28686A31942 Age = 04/18/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N17563A18685\n"
+                          "text": "Successfully selected examinee: N28686A31942\n"
                         },
                         {
                           "text": "Filling the session ID input box...\n"
@@ -491,35 +485,22 @@
                         },
                         {
                           "text": "Clicked Join Session button.\n"
-                        },
-                        {
-                          "text": "await topLine.isVisible() : false\n"
-                        },
-                        {
-                          "text": "await introText.isVisible() = true\n"
                         }
                       ],
-                      "stderr": [
-                        {
-                          "text": "Login failed for 05PwAut25Ex_01: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:80:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:48:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m80\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@48'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@48'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1776487791282\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:80:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:48:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
-                        },
-                        {
-                          "text": "[S15:W1] Login attempt 1 failed for 05PwAut25Ex_01\n"
-                        }
-                      ],
+                      "stderr": [],
                       "retry": 1,
-                      "startTime": "2026-04-18T04:48:30.815Z",
+                      "startTime": "2026-04-18T09:45:34.657Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome-retry1/test-failed-2.png"
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome-retry1/test-failed-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome-retry1/test-failed-1.png"
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome-retry1/test-failed-2.png"
                         },
                         {
                           "name": "error-context",
@@ -533,9 +514,9 @@
                         }
                       ],
                       "errorLocation": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                        "column": 10,
-                        "line": 1091
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts",
+                        "column": 3,
+                        "line": 120
                       }
                     }
                   ],
@@ -583,7 +564,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-18T04:48:29.565Z",
+                      "startTime": "2026-04-18T09:45:33.359Z",
                       "annotations": [],
                       "attachments": []
                     },
@@ -596,7 +577,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2026-04-18T04:52:47.916Z",
+                      "startTime": "2026-04-18T09:48:21.661Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -616,8 +597,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-18T04:45:02.418Z",
-    "duration": 465524.58900000004,
+    "startTime": "2026-04-18T09:42:15.473Z",
+    "duration": 366216.80700000003,
     "expected": 0,
     "skipped": 1,
     "unexpected": 1,

@@ -53,7 +53,7 @@ Call log:
         - main [ref=e34]:
           - generic [ref=e35]:
             - generic [ref=e37]:
-              - generic [ref=e38]: "Your Subscription Expires in 28 days:"
+              - generic [ref=e38]: "Your Subscription Expires in 27 days:"
               - generic [ref=e39]: Keep your reporting access by renewing today.
               - link "Renew Now" [ref=e40] [cursor=pointer]:
                 - /url: https://store.riversideinsights.com/p/woodcock-johnson-v-wj-v/

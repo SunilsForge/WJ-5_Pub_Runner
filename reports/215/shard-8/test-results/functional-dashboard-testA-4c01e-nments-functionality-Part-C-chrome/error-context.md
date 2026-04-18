@@ -53,7 +53,7 @@ Call log:
         - main [ref=e34]:
           - generic [ref=e35]:
             - generic [ref=e37]:
-              - generic [ref=e38]: "Your Subscription Expires in 28 days:"
+              - generic [ref=e38]: "Your Subscription Expires in 27 days:"
               - generic [ref=e39]: Keep your reporting access by renewing today.
               - link "Renew Now" [ref=e40] [cursor=pointer]:
                 - /url: https://store.riversideinsights.com/p/woodcock-johnson-v-wj-v/
@@ -884,7 +884,7 @@ Call log:
       - contentinfo [ref=e847]:
         - generic [ref=e848]: Footer region,
         - link "w w w dot riverside insights dot com" [ref=e849] [cursor=pointer]:
-          - /url: https://www.riversideinsights.com/?__hstc=20581799.2bd90edc3327a08bf40852e75ed775bb.1776487517055.1776487517055.1776487517055.1&__hssc=20581799.2.1776487517055&__hsfp=ae83aed9a53ec42218e111e5400f5a03
+          - /url: https://www.riversideinsights.com/
           - img "Riverside Insights Website" [ref=e850]
         - generic [ref=e851]:
           - link "Riverside Insights Facebook" [ref=e852] [cursor=pointer]:
@@ -903,10 +903,10 @@ Call log:
           - button "Leave Feedback" [ref=e861] [cursor=pointer]
           - generic [ref=e862]: "|"
           - link "Terms of Use" [ref=e863] [cursor=pointer]:
-            - /url: https://info.riversideinsights.com/terms-of-use?__hstc=20581799.2bd90edc3327a08bf40852e75ed775bb.1776487517055.1776487517055.1776487517055.1&__hssc=20581799.2.1776487517055&__hsfp=ae83aed9a53ec42218e111e5400f5a03
+            - /url: https://info.riversideinsights.com/terms-of-use
           - generic [ref=e864]: "|"
           - link "Privacy Policy" [ref=e865] [cursor=pointer]:
-            - /url: https://info.riversideinsights.com/privacy-assessment_policy?__hstc=20581799.2bd90edc3327a08bf40852e75ed775bb.1776487517055.1776487517055.1776487517055.1&__hssc=20581799.2.1776487517055&__hsfp=ae83aed9a53ec42218e111e5400f5a03
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
         - generic [ref=e866]: Footer region end
 ```
 

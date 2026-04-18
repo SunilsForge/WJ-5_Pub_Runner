@@ -340,7 +340,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 289097,
+                      "duration": 293198,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n    at Wj5DashboardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:233:34)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/LWIDNT_Pub.spec.ts:40:15)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -402,18 +402,18 @@
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-04-18T04:45:12.162Z",
+                      "startTime": "2026-04-18T09:42:25.633Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-LWIDNT_Pub-7a183-ct-test-and-validate-report-chrome/test-failed-1.png"
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-LWIDNT_Pub-7a183-ct-test-and-validate-report-chrome/test-failed-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-LWIDNT_Pub-7a183-ct-test-and-validate-report-chrome/test-failed-2.png"
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-LWIDNT_Pub-7a183-ct-test-and-validate-report-chrome/test-failed-1.png"
                         },
                         {
                           "name": "error-context",
@@ -436,7 +436,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 274231,
+                      "duration": 274333,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n    at Wj5DashboardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:233:34)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/LWIDNT_Pub.spec.ts:40:15)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -498,7 +498,7 @@
                         }
                       ],
                       "retry": 1,
-                      "startTime": "2026-04-18T04:50:09.451Z",
+                      "startTime": "2026-04-18T09:47:27.730Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -570,7 +570,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 298469,
+                      "duration": 296969,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n    at Wj5DashboardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:233:34)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/MATRCZ_Pub.spec.ts:40:15)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -632,7 +632,7 @@
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-04-18T04:54:45.497Z",
+                      "startTime": "2026-04-18T09:52:03.882Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -666,7 +666,7 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 285196,
+                      "duration": 281467,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n    at Wj5DashboardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:233:34)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/MATRCZ_Pub.spec.ts:40:15)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -728,7 +728,7 @@
                         }
                       ],
                       "retry": 1,
-                      "startTime": "2026-04-18T04:59:52.301Z",
+                      "startTime": "2026-04-18T09:57:09.134Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -769,8 +769,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-18T04:44:57.038Z",
-    "duration": 1181162.5960000001,
+    "startTime": "2026-04-18T09:42:10.655Z",
+    "duration": 1180626.8360000001,
     "expected": 0,
     "skipped": 0,
     "unexpected": 2,

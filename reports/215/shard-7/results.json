@@ -332,7 +332,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 133612,
+                  "duration": 130855,
                   "error": {
                     "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Academic Vocabulary', { exact: true })\u001b[22m\n",
                     "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Academic Vocabulary', { exact: true })\u001b[22m\n\n    at DashBoardPage.pickTheTestNeeded (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1091:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:49:7",
@@ -367,13 +367,13 @@
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N542A52894\n"
+                      "text": "Examinee ID N66483A2517\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N542A52894/dataFiles/Score_DataExport_AutoFilter_Template_N542A52894.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66483A2517/dataFiles/Score_DataExport_AutoFilter_Template_N66483A2517.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N542A52894 FirstName=Delta LastName =N542A52894 Age = 04/17/2024\n"
+                      "text": "Successfully added an Examinee  ID =N66483A2517 FirstName=Everett LastName =N66483A2517 Age = 04/18/2024\n"
                     },
                     {
                       "text": "Found 61 checkboxes\n"
@@ -382,7 +382,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N542A52894\n"
+                      "text": "Successfully selected examinee: N66483A2517\n"
                     },
                     {
                       "text": "await topLine.isVisible() : false\n"
@@ -393,7 +393,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-18T04:45:11.881Z",
+                  "startTime": "2026-04-18T09:42:31.206Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -427,7 +427,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 124469,
+                  "duration": 124237,
                   "error": {
                     "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Academic Vocabulary', { exact: true })\u001b[22m\n",
                     "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Academic Vocabulary', { exact: true })\u001b[22m\n\n    at DashBoardPage.pickTheTestNeeded (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1091:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:49:7",
@@ -462,13 +462,13 @@
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N36035A27272\n"
+                      "text": "Examinee ID N26184A18350\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N36035A27272/dataFiles/Score_DataExport_AutoFilter_Template_N36035A27272.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N26184A18350/dataFiles/Score_DataExport_AutoFilter_Template_N26184A18350.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N36035A27272 FirstName=Harry LastName =N36035A27272 Age = 04/17/2024\n"
+                      "text": "Successfully added an Examinee  ID =N26184A18350 FirstName=Cicero LastName =N26184A18350 Age = 04/18/2024\n"
                     },
                     {
                       "text": "Found 61 checkboxes\n"
@@ -477,7 +477,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N36035A27272\n"
+                      "text": "Successfully selected examinee: N26184A18350\n"
                     },
                     {
                       "text": "await topLine.isVisible() : false\n"
@@ -488,7 +488,7 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-04-18T04:47:33.436Z",
+                  "startTime": "2026-04-18T09:44:49.841Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -547,7 +547,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-18T04:47:32.122Z",
+                  "startTime": "2026-04-18T09:44:48.601Z",
                   "annotations": [],
                   "attachments": []
                 },
@@ -560,7 +560,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-04-18T04:49:38.502Z",
+                  "startTime": "2026-04-18T09:46:54.642Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -598,7 +598,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-18T04:47:32.122Z",
+                  "startTime": "2026-04-18T09:44:48.601Z",
                   "annotations": [],
                   "attachments": []
                 },
@@ -611,7 +611,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-04-18T04:49:38.502Z",
+                  "startTime": "2026-04-18T09:46:54.642Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -649,7 +649,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-18T04:47:32.122Z",
+                  "startTime": "2026-04-18T09:44:48.602Z",
                   "annotations": [],
                   "attachments": []
                 },
@@ -662,7 +662,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-04-18T04:49:38.502Z",
+                  "startTime": "2026-04-18T09:46:54.642Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -710,7 +710,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-18T04:47:32.123Z",
+                  "startTime": "2026-04-18T09:44:48.602Z",
                   "annotations": [],
                   "attachments": []
                 },
@@ -723,7 +723,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-04-18T04:49:38.502Z",
+                  "startTime": "2026-04-18T09:46:54.642Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -741,8 +741,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-18T04:44:54.931Z",
-    "duration": 283600.157,
+    "startTime": "2026-04-18T09:42:15.170Z",
+    "duration": 279498.975,
     "expected": 0,
     "skipped": 4,
     "unexpected": 1,

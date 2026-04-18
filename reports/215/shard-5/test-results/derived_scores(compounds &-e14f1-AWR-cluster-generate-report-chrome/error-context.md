@@ -53,7 +53,7 @@ Call log:
         - main [ref=e34]:
           - generic [ref=e35]:
             - generic [ref=e37]:
-              - generic [ref=e38]: "Your Subscription Expires in 28 days:"
+              - generic [ref=e38]: "Your Subscription Expires in 27 days:"
               - generic [ref=e39]: Keep your reporting access by renewing today.
               - link "Renew Now" [ref=e40] [cursor=pointer]:
                 - /url: https://store.riversideinsights.com/p/woodcock-johnson-v-wj-v/
@@ -2439,62 +2439,55 @@ Call log:
                     - cell "Generate Report Assignment actions" [ref=e2303]:
                       - button "Generate Report" [ref=e2304]
                       - button "Assignment actions" [ref=e2305]
-              - generic [ref=e2306]:
-                - button "<<" [disabled] [ref=e2307]
-                - button "<" [disabled] [ref=e2308]
-                - button "1" [ref=e2309] [cursor=pointer]
-                - button "2" [ref=e2310] [cursor=pointer]
-                - button ">" [ref=e2311] [cursor=pointer]
-                - button ">>" [ref=e2312] [cursor=pointer]
-            - generic [ref=e2313]:
-              - generic [ref=e2316]:
-                - img [ref=e2317]
-                - heading "Notifications Center" [level=2] [ref=e2321]
-              - generic [ref=e2322]:
-                - generic [ref=e2324]:
-                  - img [ref=e2325]
-                  - heading "Resources" [level=3] [ref=e2329]
-                - list [ref=e2330]:
-                  - listitem [ref=e2331]:
-                    - button "Riverside Learn" [ref=e2332] [cursor=pointer]:
-                      - heading "Riverside Learn" [level=4] [ref=e2333]
-                      - img [ref=e2335]
-                  - listitem [ref=e2337]:
-                    - button "Onboarding Tutorial Videos" [ref=e2338] [cursor=pointer]:
-                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e2339]
-                      - img [ref=e2341]
-                  - listitem [ref=e2343]:
-                    - button "Quick Reference Guides" [ref=e2344] [cursor=pointer]:
-                      - heading "Quick Reference Guides" [level=4] [ref=e2345]
-                      - img [ref=e2347]
-                - button "View All" [ref=e2350] [cursor=pointer]
-      - contentinfo [ref=e2351]:
-        - generic [ref=e2352]: Footer region,
-        - link "w w w dot riverside insights dot com" [ref=e2353] [cursor=pointer]:
+            - generic [ref=e2306]:
+              - generic [ref=e2309]:
+                - img [ref=e2310]
+                - heading "Notifications Center" [level=2] [ref=e2314]
+              - generic [ref=e2315]:
+                - generic [ref=e2317]:
+                  - img [ref=e2318]
+                  - heading "Resources" [level=3] [ref=e2322]
+                - list [ref=e2323]:
+                  - listitem [ref=e2324]:
+                    - button "Riverside Learn" [ref=e2325] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e2326]
+                      - img [ref=e2328]
+                  - listitem [ref=e2330]:
+                    - button "Onboarding Tutorial Videos" [ref=e2331] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e2332]
+                      - img [ref=e2334]
+                  - listitem [ref=e2336]:
+                    - button "Quick Reference Guides" [ref=e2337] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e2338]
+                      - img [ref=e2340]
+                - button "View All" [ref=e2343] [cursor=pointer]
+      - contentinfo [ref=e2344]:
+        - generic [ref=e2345]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e2346] [cursor=pointer]:
           - /url: https://www.riversideinsights.com/
-          - img "Riverside Insights Website" [ref=e2354]
-        - generic [ref=e2355]:
-          - link "Riverside Insights Facebook" [ref=e2356] [cursor=pointer]:
+          - img "Riverside Insights Website" [ref=e2347]
+        - generic [ref=e2348]:
+          - link "Riverside Insights Facebook" [ref=e2349] [cursor=pointer]:
             - /url: https://www.facebook.com/RiversideInsights/
-            - img "Riverside Insights Facebook" [ref=e2357]
-          - link "Riverside Insights Twitter" [ref=e2358] [cursor=pointer]:
+            - img "Riverside Insights Facebook" [ref=e2350]
+          - link "Riverside Insights Twitter" [ref=e2351] [cursor=pointer]:
             - /url: https://twitter.com/1BillionLives
-            - img "Riverside Insights Twitter" [ref=e2359]
-          - link "Riverside Insights LinkedIn" [ref=e2360] [cursor=pointer]:
+            - img "Riverside Insights Twitter" [ref=e2352]
+          - link "Riverside Insights LinkedIn" [ref=e2353] [cursor=pointer]:
             - /url: https://www.linkedin.com/company/riverside-insights/
-            - img "Riverside Insights LinkedIn" [ref=e2361]
-          - link "Riverside Insights Instagram" [ref=e2362] [cursor=pointer]:
+            - img "Riverside Insights LinkedIn" [ref=e2354]
+          - link "Riverside Insights Instagram" [ref=e2355] [cursor=pointer]:
             - /url: https://www.instagram.com/riversideinsightsassessments/
-            - img "Riverside Insights Instagram" [ref=e2363]
-        - generic [ref=e2364]:
-          - button "Leave Feedback" [ref=e2365] [cursor=pointer]
-          - generic [ref=e2366]: "|"
-          - link "Terms of Use" [ref=e2367] [cursor=pointer]:
+            - img "Riverside Insights Instagram" [ref=e2356]
+        - generic [ref=e2357]:
+          - button "Leave Feedback" [ref=e2358] [cursor=pointer]
+          - generic [ref=e2359]: "|"
+          - link "Terms of Use" [ref=e2360] [cursor=pointer]:
             - /url: https://info.riversideinsights.com/terms-of-use
-          - generic [ref=e2368]: "|"
-          - link "Privacy Policy" [ref=e2369] [cursor=pointer]:
+          - generic [ref=e2361]: "|"
+          - link "Privacy Policy" [ref=e2362] [cursor=pointer]:
             - /url: https://info.riversideinsights.com/privacy-assessment_policy
-        - generic [ref=e2370]: Footer region end
+        - generic [ref=e2363]: Footer region end
 ```
 
 # Test source

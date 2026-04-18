@@ -342,7 +342,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 378076,
+                  "duration": 381802,
                   "error": {
                     "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\\'Dashboard\\']')\u001b[22m\n",
                     "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\\'Dashboard\\']')\u001b[22m\n\n    at TestSetsPage.createTestAssignmentFromDashboard (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/testSetsPage.ts:125:29)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:52:37)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -386,28 +386,28 @@
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N13823A17257\n"
+                      "text": "Examinee ID N85333A42700\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N13823A17257 FirstName=Jevon LastName =N13823A17257 Age = 04/17/2021\n"
-                    },
-                    {
-                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
-                    },
-                    {
-                      "text": "Examinee ID N6227A94589\n"
-                    },
-                    {
-                      "text": "Successfully added an Examinee  ID =N6227A94589 FirstName=Ada LastName =N6227A94589 Age = 04/17/2021\n"
+                      "text": "Successfully added an Examinee  ID =N85333A42700 FirstName=Howell LastName =N85333A42700 Age = 04/18/2021\n"
                     },
                     {
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N5780A5275\n"
+                      "text": "Examinee ID N86709A15785\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N5780A5275 FirstName=Sydnie LastName =N5780A5275 Age = 04/17/2021\n"
+                      "text": "Successfully added an Examinee  ID =N86709A15785 FirstName=Lavonne LastName =N86709A15785 Age = 04/18/2021\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N14636A74348\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N14636A74348 FirstName=Richmond LastName =N14636A74348 Age = 04/18/2021\n"
                     }
                   ],
                   "stderr": [
@@ -425,7 +425,7 @@
                   "steps": [
                     {
                       "title": "Verify newly added test assignment is displayed at the top of the table and also Verify \"Create New Test Assignment\" from Dashboard",
-                      "duration": 257487,
+                      "duration": 258337,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\\'Dashboard\\']')\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\\'Dashboard\\']')\u001b[22m\n\n    at TestSetsPage.createTestAssignmentFromDashboard (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/testSetsPage.ts:125:29)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:52:37)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -438,7 +438,7 @@
                       }
                     }
                   ],
-                  "startTime": "2026-04-18T04:45:14.952Z",
+                  "startTime": "2026-04-18T09:42:25.952Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -454,12 +454,12 @@
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/test-failed-2.png"
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/test-failed-1.png"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/test-failed-1.png"
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/test-failed-2.png"
                     },
                     {
                       "name": "error-context",
@@ -482,7 +482,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 361879,
+                  "duration": 361486,
                   "error": {
                     "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\\'Dashboard\\']')\u001b[22m\n",
                     "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\\'Dashboard\\']')\u001b[22m\n\n    at TestSetsPage.createTestAssignmentFromDashboard (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/testSetsPage.ts:125:29)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:52:37)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -526,28 +526,28 @@
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N59567A14000\n"
+                      "text": "Examinee ID N19412A58102\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N59567A14000 FirstName=Cleo LastName =N59567A14000 Age = 04/17/2021\n"
-                    },
-                    {
-                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
-                    },
-                    {
-                      "text": "Examinee ID N96639A2234\n"
-                    },
-                    {
-                      "text": "Successfully added an Examinee  ID =N96639A2234 FirstName=Frederik LastName =N96639A2234 Age = 04/17/2021\n"
+                      "text": "Successfully added an Examinee  ID =N19412A58102 FirstName=Shayna LastName =N19412A58102 Age = 04/18/2021\n"
                     },
                     {
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N90754A34961\n"
+                      "text": "Examinee ID N63501A94730\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N90754A34961 FirstName=Lucy LastName =N90754A34961 Age = 04/17/2021\n"
+                      "text": "Successfully added an Examinee  ID =N63501A94730 FirstName=Jaden LastName =N63501A94730 Age = 04/18/2021\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N23877A32491\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N23877A32491 FirstName=Erling LastName =N23877A32491 Age = 04/18/2021\n"
                     }
                   ],
                   "stderr": [
@@ -565,7 +565,7 @@
                   "steps": [
                     {
                       "title": "Verify newly added test assignment is displayed at the top of the table and also Verify \"Create New Test Assignment\" from Dashboard",
-                      "duration": 253813,
+                      "duration": 253903,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\\'Dashboard\\']')\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\\'Dashboard\\']')\u001b[22m\n\n    at TestSetsPage.createTestAssignmentFromDashboard (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/testSetsPage.ts:125:29)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:52:37)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -578,7 +578,7 @@
                       }
                     }
                   ],
-                  "startTime": "2026-04-18T04:51:41.261Z",
+                  "startTime": "2026-04-18T09:48:56.446Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -658,7 +658,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 297287,
+                      "duration": 298800,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n    at Wj5DashboardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:233:34)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/SNDREV_Pub.spec.ts:41:15)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -720,7 +720,7 @@
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-04-18T04:57:44.931Z",
+                      "startTime": "2026-04-18T09:54:59.701Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -754,7 +754,7 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 282105,
+                      "duration": 283236,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n    at Wj5DashboardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:233:34)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/SNDREV_Pub.spec.ts:41:15)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -816,7 +816,7 @@
                         }
                       ],
                       "retry": 1,
-                      "startTime": "2026-04-18T05:02:50.286Z",
+                      "startTime": "2026-04-18T10:00:06.752Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -857,8 +857,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-18T04:44:59.554Z",
-    "duration": 1353509.712,
+    "startTime": "2026-04-18T09:42:10.784Z",
+    "duration": 1359874.1500000001,
     "expected": 0,
     "skipped": 0,
     "unexpected": 2,
