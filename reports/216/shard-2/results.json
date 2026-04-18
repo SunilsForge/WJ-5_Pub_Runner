@@ -1,0 +1,742 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+        "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "commitHash": "236ff00aafc54ad6a8df13d373b5770e700cb110",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24603954038"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 2,
+      "total": 10
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "test_dataExport/APPROB_Pub.spec.ts",
+      "file": "test_dataExport/APPROB_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " APPROB.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/APPROB_Pub.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "@Test_De For Age 4 - All correct scenario login as AH Conduct test as Examiner and generate reports",
+              "ok": false,
+              "tags": [
+                "Test_De",
+                "APPROB",
+                "TestDe",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 480000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 367945,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n    at Wj5DashboardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:233:34)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/APPROB_Pub.spec.ts:40:15)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
+                          "column": 34,
+                          "line": 233
+                        },
+                        "snippet": "   at ../pages/wj5_dashBoard.page.ts:233\n\n\u001b[0m \u001b[90m 231 |\u001b[39m\n \u001b[90m 232 |\u001b[39m     \u001b[36mconst\u001b[39m firstName\u001b[33m:\u001b[39m string \u001b[33m=\u001b[39m faker\u001b[33m.\u001b[39mperson\u001b[33m.\u001b[39mfirstName()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 233 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mexamineeFirstName\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 234 |\u001b[39m     \u001b[36mconst\u001b[39m dateOfBirth \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mutils\u001b[33m.\u001b[39mgetTheDOBYearsBack(age))\u001b[33m.\u001b[39mtoString()\u001b[33m;\u001b[39m\n \u001b[90m 235 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mexamineeDateOfBirth\u001b[33m.\u001b[39mfill(dateOfBirth)\u001b[33m;\u001b[39m\n \u001b[90m 236 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mselectGender(\u001b[32m\"Male\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
+                            "column": 34,
+                            "line": 233
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n\n   at ../pages/wj5_dashBoard.page.ts:233\n\n  231 |\n  232 |     const firstName: string = faker.person.firstName();\n> 233 |     await this.examineeFirstName.fill(firstName);\n      |                                  ^\n  234 |     const dateOfBirth = (await this.utils.getTheDOBYearsBack(age)).toString();\n  235 |     await this.examineeDateOfBirth.fill(dateOfBirth);\n  236 |     await this.selectGender(\"Male\");\n    at Wj5DashboardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:233:34)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/APPROB_Pub.spec.ts:40:15)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Login failed for S03PwAut25AH: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:80:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5ah \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixtures.ts:156:20\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m80\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@47'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@47'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1776512875555\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:80:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5ah (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixtures.ts:156:20)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        },
+                        {
+                          "text": "[S2:W0] Login attempt 1 failed for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Attempt 1 for adding and assigning test to an examinee has failed. 2 retries left. locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Attempt 2 for adding and assigning test to an examinee has failed. 1 retries left. locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Attempt 3 for adding and assigning test to an examinee has failed. 0 retries left. locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-04-18T11:46:41.966Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
+                        "column": 34,
+                        "line": 233
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "05b0a1eb7c902dae2d78-da0a550cf9232684182a",
+              "file": "test_dataExport/APPROB_Pub.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "test_dataExport/BLKROT_Pub.spec.ts",
+      "file": "test_dataExport/BLKROT_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "BLKROT.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/BLKROT_Pub.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For Ages 4 to 7 - All correct scenario Conduct test and validate report",
+              "ok": false,
+              "tags": [
+                "BLKROT",
+                "TestDe",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 294700,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n    at Wj5DashboardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:233:34)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/BLKROT_Pub.spec.ts:40:15)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
+                          "column": 34,
+                          "line": 233
+                        },
+                        "snippet": "   at ../pages/wj5_dashBoard.page.ts:233\n\n\u001b[0m \u001b[90m 231 |\u001b[39m\n \u001b[90m 232 |\u001b[39m     \u001b[36mconst\u001b[39m firstName\u001b[33m:\u001b[39m string \u001b[33m=\u001b[39m faker\u001b[33m.\u001b[39mperson\u001b[33m.\u001b[39mfirstName()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 233 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mexamineeFirstName\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 234 |\u001b[39m     \u001b[36mconst\u001b[39m dateOfBirth \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mutils\u001b[33m.\u001b[39mgetTheDOBYearsBack(age))\u001b[33m.\u001b[39mtoString()\u001b[33m;\u001b[39m\n \u001b[90m 235 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mexamineeDateOfBirth\u001b[33m.\u001b[39mfill(dateOfBirth)\u001b[33m;\u001b[39m\n \u001b[90m 236 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mselectGender(\u001b[32m\"Male\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
+                            "column": 34,
+                            "line": 233
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n\n   at ../pages/wj5_dashBoard.page.ts:233\n\n  231 |\n  232 |     const firstName: string = faker.person.firstName();\n> 233 |     await this.examineeFirstName.fill(firstName);\n      |                                  ^\n  234 |     const dateOfBirth = (await this.utils.getTheDOBYearsBack(age)).toString();\n  235 |     await this.examineeDateOfBirth.fill(dateOfBirth);\n  236 |     await this.selectGender(\"Male\");\n    at Wj5DashboardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:233:34)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/BLKROT_Pub.spec.ts:40:15)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S2:W1] Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S2:W1] Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Attempt 1 for adding and assigning test to an examinee has failed. 2 retries left. locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Attempt 2 for adding and assigning test to an examinee has failed. 1 retries left. locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Attempt 3 for adding and assigning test to an examinee has failed. 0 retries left. locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-04-18T11:52:58.274Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-BLKROT_Pub-006d7-ct-test-and-validate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-BLKROT_Pub-006d7-ct-test-and-validate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-BLKROT_Pub-006d7-ct-test-and-validate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-BLKROT_Pub-006d7-ct-test-and-validate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
+                        "column": 34,
+                        "line": 233
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6d3a1fa46e053b32765a-37d7f1d7640c7663ea20",
+              "file": "test_dataExport/BLKROT_Pub.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "test_dataExport/CALC_Pub.spec.ts",
+      "file": "test_dataExport/CALC_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "CALC.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/CALC_Pub.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For Ages 4 to 6 - All correct scenario Conduct test and validate report",
+              "ok": false,
+              "tags": [
+                "CALC",
+                "TestDe",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 294704,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n    at Wj5DashboardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:233:34)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/CALC_Pub.spec.ts:44:15)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
+                          "column": 34,
+                          "line": 233
+                        },
+                        "snippet": "   at ../pages/wj5_dashBoard.page.ts:233\n\n\u001b[0m \u001b[90m 231 |\u001b[39m\n \u001b[90m 232 |\u001b[39m     \u001b[36mconst\u001b[39m firstName\u001b[33m:\u001b[39m string \u001b[33m=\u001b[39m faker\u001b[33m.\u001b[39mperson\u001b[33m.\u001b[39mfirstName()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 233 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mexamineeFirstName\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 234 |\u001b[39m     \u001b[36mconst\u001b[39m dateOfBirth \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mutils\u001b[33m.\u001b[39mgetTheDOBYearsBack(age))\u001b[33m.\u001b[39mtoString()\u001b[33m;\u001b[39m\n \u001b[90m 235 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mexamineeDateOfBirth\u001b[33m.\u001b[39mfill(dateOfBirth)\u001b[33m;\u001b[39m\n \u001b[90m 236 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mselectGender(\u001b[32m\"Male\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
+                            "column": 34,
+                            "line": 233
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n\n   at ../pages/wj5_dashBoard.page.ts:233\n\n  231 |\n  232 |     const firstName: string = faker.person.firstName();\n> 233 |     await this.examineeFirstName.fill(firstName);\n      |                                  ^\n  234 |     const dateOfBirth = (await this.utils.getTheDOBYearsBack(age)).toString();\n  235 |     await this.examineeDateOfBirth.fill(dateOfBirth);\n  236 |     await this.selectGender(\"Male\");\n    at Wj5DashboardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:233:34)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/CALC_Pub.spec.ts:44:15)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S2:W2] Login successful for S03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S2:W2] Login successful for S03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Attempt 1 for adding and assigning test to an examinee has failed. 2 retries left. locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Attempt 2 for adding and assigning test to an examinee has failed. 1 retries left. locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Attempt 3 for adding and assigning test to an examinee has failed. 0 retries left. locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('First Name*,Required , Type in text')\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-04-18T11:58:01.182Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-CALC_Pub-C-654d4-ct-test-and-validate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-CALC_Pub-C-654d4-ct-test-and-validate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-CALC_Pub-C-654d4-ct-test-and-validate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-CALC_Pub-C-654d4-ct-test-and-validate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
+                        "column": 34,
+                        "line": 233
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "122d10bb8e8e3380a4ce-0ccf54cf1d9561405b52",
+              "file": "test_dataExport/CALC_Pub.spec.ts",
+              "line": 20,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-18T11:46:25.403Z",
+    "duration": 997235.6070000001,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
