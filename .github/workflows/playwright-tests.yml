@@ -710,6 +710,22 @@ jobs:
             echo "path=gh-pages" >> $GITHUB_OUTPUT
           fi
 
+      - name: Delete stale Pages artifact (prevents duplicate on re-run)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # On re-runs, a previous github-pages artifact may already exist.
+          # deploy-pages@v5 fails if it finds >1 artifact with the same name.
+          # This only deletes the Pages deployment bundle — NOT the shard report artifacts.
+          ARTIFACT_ID=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" \
+            --jq '.artifacts[] | select(.name == "github-pages") | .id' 2>/dev/null | head -n1)
+          if [ -n "$ARTIFACT_ID" ]; then
+            echo "Deleting stale github-pages artifact (ID: $ARTIFACT_ID)"
+            gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$ARTIFACT_ID" || true
+          else
+            echo "No stale github-pages artifact found — first run"
+          fi
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
