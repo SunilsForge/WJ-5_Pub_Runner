@@ -1,0 +1,2655 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/SubmittedTestAssignments.spec.ts >> I want the ability to launch into review mode for my submitted test assignments >> Validate different scenarios in submitted test assignment in review mode
+- Location: src/tests/functional/SubmittedTestAssignments.spec.ts:165:9
+
+# Error details
+
+```
+TypeError: Cannot read properties of undefined (reading 'examinee_ID')
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S10PwAut25Ex_01 ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S10PwAut25Ex_01 ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [disabled] [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e37]:
+              - generic [ref=e38]: "Your Subscription Expires in 28 days:"
+              - generic [ref=e39]: Keep your reporting access by renewing today.
+              - link "Renew Now" [ref=e40] [cursor=pointer]:
+                - /url: https://store.riversideinsights.com/p/woodcock-johnson-v-wj-v/
+              - button "✕" [ref=e41] [cursor=pointer]
+            - generic [ref=e42]:
+              - generic [ref=e43]:
+                - heading "My Test Assignments" [level=1] [ref=e44]
+                - button "Create New Test Assignment" [ref=e45] [cursor=pointer]
+              - generic [ref=e46]:
+                - generic [ref=e49]:
+                  - textbox [ref=e50]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e51] [cursor=pointer]
+                - generic [ref=e52]:
+                  - button "Active" [ref=e53] [cursor=pointer]
+                  - button "Closed" [ref=e54] [cursor=pointer]
+              - table "Available Assignments" [ref=e56]:
+                - rowgroup [ref=e63]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e64]:
+                    - columnheader "This is the student or individual being assessed." [ref=e65]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e66]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e67]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e68]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e69]: Actions
+                - rowgroup [ref=e70]:
+                  - row "Begin assignment Form A for N82682A71812, Horace Form A More info 75 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e71] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N82682A71812, Horace" [ref=e72]:
+                      - button "Begin assignment Form A for N82682A71812, Horace" [ref=e73]:
+                        - generic [ref=e74]: N82682A71812, Horace
+                    - cell "Form A More info" [ref=e75]:
+                      - generic [ref=e76]:
+                        - button "Form A" [ref=e77]:
+                          - generic [ref=e78]: Form A
+                        - button "More info" [ref=e79]
+                    - cell "75 days" [ref=e80]:
+                      - button "75 days" [ref=e81]
+                    - cell "● Submitted" [ref=e82]:
+                      - button "● Submitted" [ref=e83]:
+                        - generic [ref=e84]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e85]:
+                      - button "Edit Assignment" [ref=e86]
+                      - button "Add Tests" [ref=e87]
+                      - button "Assignment actions" [ref=e88]
+                  - row "Begin assignment Form A (+1 more) for N42917A30208, Jett Form A (+1 more) More info 75 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e89] [cursor=pointer]:
+                    - cell "Begin assignment Form A (+1 more) for N42917A30208, Jett" [ref=e90]:
+                      - button "Begin assignment Form A (+1 more) for N42917A30208, Jett" [ref=e91]:
+                        - generic [ref=e92]: N42917A30208, Jett
+                    - cell "Form A (+1 more) More info" [ref=e93]:
+                      - generic [ref=e94]:
+                        - button "Form A (+1 more)" [ref=e95]:
+                          - generic [ref=e96]: Form A (+1 more)
+                        - button "More info" [ref=e97]
+                    - cell "75 days" [ref=e98]:
+                      - button "75 days" [ref=e99]
+                    - cell "● In Progress" [ref=e100]:
+                      - button "● In Progress" [ref=e101]:
+                        - generic [ref=e102]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e103]:
+                      - button "Edit Assignment" [ref=e104]
+                      - button "Add Tests" [ref=e105]
+                      - button "Assignment actions" [ref=e106]
+                  - row "Begin assignment Form A for N46810A40680, Tess Form A More info 72 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e107] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N46810A40680, Tess" [ref=e108]:
+                      - button "Begin assignment Form A for N46810A40680, Tess" [ref=e109]:
+                        - generic [ref=e110]: N46810A40680, Tess
+                    - cell "Form A More info" [ref=e111]:
+                      - generic [ref=e112]:
+                        - button "Form A" [ref=e113]:
+                          - generic [ref=e114]: Form A
+                        - button "More info" [ref=e115]
+                    - cell "72 days" [ref=e116]:
+                      - button "72 days" [ref=e117]
+                    - cell "● Submitted" [ref=e118]:
+                      - button "● Submitted" [ref=e119]:
+                        - generic [ref=e120]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e121]:
+                      - button "Edit Assignment" [ref=e122]
+                      - button "Add Tests" [ref=e123]
+                      - button "Assignment actions" [ref=e124]
+                  - row "Begin assignment Form A for N16780A38180, Rahul Form A More info 72 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e125] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N16780A38180, Rahul" [ref=e126]:
+                      - button "Begin assignment Form A for N16780A38180, Rahul" [ref=e127]:
+                        - generic [ref=e128]: N16780A38180, Rahul
+                    - cell "Form A More info" [ref=e129]:
+                      - generic [ref=e130]:
+                        - button "Form A" [ref=e131]:
+                          - generic [ref=e132]: Form A
+                        - button "More info" [ref=e133]
+                    - cell "72 days" [ref=e134]:
+                      - button "72 days" [ref=e135]
+                    - cell "● Submitted" [ref=e136]:
+                      - button "● Submitted" [ref=e137]:
+                        - generic [ref=e138]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e139]:
+                      - button "Edit Assignment" [ref=e140]
+                      - button "Add Tests" [ref=e141]
+                      - button "Assignment actions" [ref=e142]
+                  - row "Begin assignment Form A for N59379A36537, Cristobal Form A More info 72 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e143] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N59379A36537, Cristobal" [ref=e144]:
+                      - button "Begin assignment Form A for N59379A36537, Cristobal" [ref=e145]:
+                        - generic [ref=e146]: N59379A36537, Cristobal
+                    - cell "Form A More info" [ref=e147]:
+                      - generic [ref=e148]:
+                        - button "Form A" [ref=e149]:
+                          - generic [ref=e150]: Form A
+                        - button "More info" [ref=e151]
+                    - cell "72 days" [ref=e152]:
+                      - button "72 days" [ref=e153]
+                    - cell "● Submitted" [ref=e154]:
+                      - button "● Submitted" [ref=e155]:
+                        - generic [ref=e156]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e157]:
+                      - button "Edit Assignment" [ref=e158]
+                      - button "Add Tests" [ref=e159]
+                      - button "Assignment actions" [ref=e160]
+                  - row "Begin assignment Form A for N44237A17365, Ahmad Form A More info 72 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e161] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N44237A17365, Ahmad" [ref=e162]:
+                      - button "Begin assignment Form A for N44237A17365, Ahmad" [ref=e163]:
+                        - generic [ref=e164]: N44237A17365, Ahmad
+                    - cell "Form A More info" [ref=e165]:
+                      - generic [ref=e166]:
+                        - button "Form A" [ref=e167]:
+                          - generic [ref=e168]: Form A
+                        - button "More info" [ref=e169]
+                    - cell "72 days" [ref=e170]:
+                      - button "72 days" [ref=e171]
+                    - cell "● Submitted" [ref=e172]:
+                      - button "● Submitted" [ref=e173]:
+                        - generic [ref=e174]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e175]:
+                      - button "Edit Assignment" [ref=e176]
+                      - button "Add Tests" [ref=e177]
+                      - button "Assignment actions" [ref=e178]
+                  - row "Begin assignment Form A for N18093A7959, Penelope Form A More info 72 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e179] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N18093A7959, Penelope" [ref=e180]:
+                      - button "Begin assignment Form A for N18093A7959, Penelope" [ref=e181]:
+                        - generic [ref=e182]: N18093A7959, Penelope
+                    - cell "Form A More info" [ref=e183]:
+                      - generic [ref=e184]:
+                        - button "Form A" [ref=e185]:
+                          - generic [ref=e186]: Form A
+                        - button "More info" [ref=e187]
+                    - cell "72 days" [ref=e188]:
+                      - button "72 days" [ref=e189]
+                    - cell "● Submitted" [ref=e190]:
+                      - button "● Submitted" [ref=e191]:
+                        - generic [ref=e192]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e193]:
+                      - button "Edit Assignment" [ref=e194]
+                      - button "Add Tests" [ref=e195]
+                      - button "Assignment actions" [ref=e196]
+                  - row "Begin assignment Form A for N93047A9787, Ray Form A More info 72 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e197] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N93047A9787, Ray" [ref=e198]:
+                      - button "Begin assignment Form A for N93047A9787, Ray" [ref=e199]:
+                        - generic [ref=e200]: N93047A9787, Ray
+                    - cell "Form A More info" [ref=e201]:
+                      - generic [ref=e202]:
+                        - button "Form A" [ref=e203]:
+                          - generic [ref=e204]: Form A
+                        - button "More info" [ref=e205]
+                    - cell "72 days" [ref=e206]:
+                      - button "72 days" [ref=e207]
+                    - cell "● Submitted" [ref=e208]:
+                      - button "● Submitted" [ref=e209]:
+                        - generic [ref=e210]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e211]:
+                      - button "Edit Assignment" [ref=e212]
+                      - button "Add Tests" [ref=e213]
+                      - button "Assignment actions" [ref=e214]
+                  - row "Begin assignment Form A for N34067A10281, Bradford Form A More info 67 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e215] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N34067A10281, Bradford" [ref=e216]:
+                      - button "Begin assignment Form A for N34067A10281, Bradford" [ref=e217]:
+                        - generic [ref=e218]: N34067A10281, Bradford
+                    - cell "Form A More info" [ref=e219]:
+                      - generic [ref=e220]:
+                        - button "Form A" [ref=e221]:
+                          - generic [ref=e222]: Form A
+                        - button "More info" [ref=e223]
+                    - cell "67 days" [ref=e224]:
+                      - button "67 days" [ref=e225]
+                    - cell "● Submitted" [ref=e226]:
+                      - button "● Submitted" [ref=e227]:
+                        - generic [ref=e228]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e229]:
+                      - button "Edit Assignment" [ref=e230]
+                      - button "Add Tests" [ref=e231]
+                      - button "Assignment actions" [ref=e232]
+                  - row "Begin assignment Form A for N98630A86459, Noble Form A More info 67 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e233] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N98630A86459, Noble" [ref=e234]:
+                      - button "Begin assignment Form A for N98630A86459, Noble" [ref=e235]:
+                        - generic [ref=e236]: N98630A86459, Noble
+                    - cell "Form A More info" [ref=e237]:
+                      - generic [ref=e238]:
+                        - button "Form A" [ref=e239]:
+                          - generic [ref=e240]: Form A
+                        - button "More info" [ref=e241]
+                    - cell "67 days" [ref=e242]:
+                      - button "67 days" [ref=e243]
+                    - cell "● In Progress" [ref=e244]:
+                      - button "● In Progress" [ref=e245]:
+                        - generic [ref=e246]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e247]:
+                      - button "Edit Assignment" [ref=e248]
+                      - button "Add Tests" [ref=e249]
+                      - button "Assignment actions" [ref=e250]
+                  - row "Begin assignment Form A for N5726A80362, Katlynn Form A More info 67 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e251] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N5726A80362, Katlynn" [ref=e252]:
+                      - button "Begin assignment Form A for N5726A80362, Katlynn" [ref=e253]:
+                        - generic [ref=e254]: N5726A80362, Katlynn
+                    - cell "Form A More info" [ref=e255]:
+                      - generic [ref=e256]:
+                        - button "Form A" [ref=e257]:
+                          - generic [ref=e258]: Form A
+                        - button "More info" [ref=e259]
+                    - cell "67 days" [ref=e260]:
+                      - button "67 days" [ref=e261]
+                    - cell "● In Progress" [ref=e262]:
+                      - button "● In Progress" [ref=e263]:
+                        - generic [ref=e264]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e265]:
+                      - button "Edit Assignment" [ref=e266]
+                      - button "Add Tests" [ref=e267]
+                      - button "Assignment actions" [ref=e268]
+                  - row "Begin assignment Form A for N2667A59926, Violette Form A More info 45 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e269] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N2667A59926, Violette" [ref=e270]:
+                      - button "Begin assignment Form A for N2667A59926, Violette" [ref=e271]:
+                        - generic [ref=e272]: N2667A59926, Violette
+                    - cell "Form A More info" [ref=e273]:
+                      - generic [ref=e274]:
+                        - button "Form A" [ref=e275]:
+                          - generic [ref=e276]: Form A
+                        - button "More info" [ref=e277]
+                    - cell "45 days" [ref=e278]:
+                      - button "45 days" [ref=e279]
+                    - cell "● Submitted" [ref=e280]:
+                      - button "● Submitted" [ref=e281]:
+                        - generic [ref=e282]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e283]:
+                      - button "Edit Assignment" [ref=e284]
+                      - button "Add Tests" [ref=e285]
+                      - button "Assignment actions" [ref=e286]
+                  - row "Begin assignment Form A for N93077A6667, Aida Form A More info 45 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e287] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N93077A6667, Aida" [ref=e288]:
+                      - button "Begin assignment Form A for N93077A6667, Aida" [ref=e289]:
+                        - generic [ref=e290]: N93077A6667, Aida
+                    - cell "Form A More info" [ref=e291]:
+                      - generic [ref=e292]:
+                        - button "Form A" [ref=e293]:
+                          - generic [ref=e294]: Form A
+                        - button "More info" [ref=e295]
+                    - cell "45 days" [ref=e296]:
+                      - button "45 days" [ref=e297]
+                    - cell "● Submitted" [ref=e298]:
+                      - button "● Submitted" [ref=e299]:
+                        - generic [ref=e300]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e301]:
+                      - button "Edit Assignment" [ref=e302]
+                      - button "Add Tests" [ref=e303]
+                      - button "Assignment actions" [ref=e304]
+                  - row "Begin assignment Form A for N31112A5795, Keon Form A More info 45 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e305] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N31112A5795, Keon" [ref=e306]:
+                      - button "Begin assignment Form A for N31112A5795, Keon" [ref=e307]:
+                        - generic [ref=e308]: N31112A5795, Keon
+                    - cell "Form A More info" [ref=e309]:
+                      - generic [ref=e310]:
+                        - button "Form A" [ref=e311]:
+                          - generic [ref=e312]: Form A
+                        - button "More info" [ref=e313]
+                    - cell "45 days" [ref=e314]:
+                      - button "45 days" [ref=e315]
+                    - cell "● Submitted" [ref=e316]:
+                      - button "● Submitted" [ref=e317]:
+                        - generic [ref=e318]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e319]:
+                      - button "Edit Assignment" [ref=e320]
+                      - button "Add Tests" [ref=e321]
+                      - button "Assignment actions" [ref=e322]
+                  - row "Begin assignment Form A for N98127A68410, Jasmin Form A More info 33 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e323] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N98127A68410, Jasmin" [ref=e324]:
+                      - button "Begin assignment Form A for N98127A68410, Jasmin" [ref=e325]:
+                        - generic [ref=e326]: N98127A68410, Jasmin
+                    - cell "Form A More info" [ref=e327]:
+                      - generic [ref=e328]:
+                        - button "Form A" [ref=e329]:
+                          - generic [ref=e330]: Form A
+                        - button "More info" [ref=e331]
+                    - cell "33 days" [ref=e332]:
+                      - button "33 days" [ref=e333]
+                    - cell "● Submitted" [ref=e334]:
+                      - button "● Submitted" [ref=e335]:
+                        - generic [ref=e336]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e337]:
+                      - button "Edit Assignment" [ref=e338]
+                      - button "Add Tests" [ref=e339]
+                      - button "Assignment actions" [ref=e340]
+                  - row "Begin assignment Form A for N74303A46481, Maegan Form A More info 33 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e341] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N74303A46481, Maegan" [ref=e342]:
+                      - button "Begin assignment Form A for N74303A46481, Maegan" [ref=e343]:
+                        - generic [ref=e344]: N74303A46481, Maegan
+                    - cell "Form A More info" [ref=e345]:
+                      - generic [ref=e346]:
+                        - button "Form A" [ref=e347]:
+                          - generic [ref=e348]: Form A
+                        - button "More info" [ref=e349]
+                    - cell "33 days" [ref=e350]:
+                      - button "33 days" [ref=e351]
+                    - cell "● Submitted" [ref=e352]:
+                      - button "● Submitted" [ref=e353]:
+                        - generic [ref=e354]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e355]:
+                      - button "Edit Assignment" [ref=e356]
+                      - button "Add Tests" [ref=e357]
+                      - button "Assignment actions" [ref=e358]
+                  - row "Begin assignment Form A for N16895A96308, Foster Form A More info 33 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e359] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N16895A96308, Foster" [ref=e360]:
+                      - button "Begin assignment Form A for N16895A96308, Foster" [ref=e361]:
+                        - generic [ref=e362]: N16895A96308, Foster
+                    - cell "Form A More info" [ref=e363]:
+                      - generic [ref=e364]:
+                        - button "Form A" [ref=e365]:
+                          - generic [ref=e366]: Form A
+                        - button "More info" [ref=e367]
+                    - cell "33 days" [ref=e368]:
+                      - button "33 days" [ref=e369]
+                    - cell "● Submitted" [ref=e370]:
+                      - button "● Submitted" [ref=e371]:
+                        - generic [ref=e372]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e373]:
+                      - button "Edit Assignment" [ref=e374]
+                      - button "Add Tests" [ref=e375]
+                      - button "Assignment actions" [ref=e376]
+                  - row "Begin assignment Form A for N52468A14051, Elinore Form A More info 33 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e377] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N52468A14051, Elinore" [ref=e378]:
+                      - button "Begin assignment Form A for N52468A14051, Elinore" [ref=e379]:
+                        - generic [ref=e380]: N52468A14051, Elinore
+                    - cell "Form A More info" [ref=e381]:
+                      - generic [ref=e382]:
+                        - button "Form A" [ref=e383]:
+                          - generic [ref=e384]: Form A
+                        - button "More info" [ref=e385]
+                    - cell "33 days" [ref=e386]:
+                      - button "33 days" [ref=e387]
+                    - cell "● Submitted" [ref=e388]:
+                      - button "● Submitted" [ref=e389]:
+                        - generic [ref=e390]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e391]:
+                      - button "Edit Assignment" [ref=e392]
+                      - button "Add Tests" [ref=e393]
+                      - button "Assignment actions" [ref=e394]
+                  - row "Begin assignment Form A for N82568A26739, Rudolph Form A More info 33 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e395] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N82568A26739, Rudolph" [ref=e396]:
+                      - button "Begin assignment Form A for N82568A26739, Rudolph" [ref=e397]:
+                        - generic [ref=e398]: N82568A26739, Rudolph
+                    - cell "Form A More info" [ref=e399]:
+                      - generic [ref=e400]:
+                        - button "Form A" [ref=e401]:
+                          - generic [ref=e402]: Form A
+                        - button "More info" [ref=e403]
+                    - cell "33 days" [ref=e404]:
+                      - button "33 days" [ref=e405]
+                    - cell "● Submitted" [ref=e406]:
+                      - button "● Submitted" [ref=e407]:
+                        - generic [ref=e408]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e409]:
+                      - button "Edit Assignment" [ref=e410]
+                      - button "Add Tests" [ref=e411]
+                      - button "Assignment actions" [ref=e412]
+                  - row "Begin assignment Form A for N54217A25348, Milford Form A More info 33 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e413] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N54217A25348, Milford" [ref=e414]:
+                      - button "Begin assignment Form A for N54217A25348, Milford" [ref=e415]:
+                        - generic [ref=e416]: N54217A25348, Milford
+                    - cell "Form A More info" [ref=e417]:
+                      - generic [ref=e418]:
+                        - button "Form A" [ref=e419]:
+                          - generic [ref=e420]: Form A
+                        - button "More info" [ref=e421]
+                    - cell "33 days" [ref=e422]:
+                      - button "33 days" [ref=e423]
+                    - cell "● Submitted" [ref=e424]:
+                      - button "● Submitted" [ref=e425]:
+                        - generic [ref=e426]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e427]:
+                      - button "Edit Assignment" [ref=e428]
+                      - button "Add Tests" [ref=e429]
+                      - button "Assignment actions" [ref=e430]
+                  - row "Begin assignment Form A for N5667A14659, Ambrose Form A More info 33 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e431] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N5667A14659, Ambrose" [ref=e432]:
+                      - button "Begin assignment Form A for N5667A14659, Ambrose" [ref=e433]:
+                        - generic [ref=e434]: N5667A14659, Ambrose
+                    - cell "Form A More info" [ref=e435]:
+                      - generic [ref=e436]:
+                        - button "Form A" [ref=e437]:
+                          - generic [ref=e438]: Form A
+                        - button "More info" [ref=e439]
+                    - cell "33 days" [ref=e440]:
+                      - button "33 days" [ref=e441]
+                    - cell "● Submitted" [ref=e442]:
+                      - button "● Submitted" [ref=e443]:
+                        - generic [ref=e444]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e445]:
+                      - button "Edit Assignment" [ref=e446]
+                      - button "Add Tests" [ref=e447]
+                      - button "Assignment actions" [ref=e448]
+                  - row "Begin assignment Form A for N99879A87783, Mitchell Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e449] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N99879A87783, Mitchell" [ref=e450]:
+                      - button "Begin assignment Form A for N99879A87783, Mitchell" [ref=e451]:
+                        - generic [ref=e452]: N99879A87783, Mitchell
+                    - cell "Form A More info" [ref=e453]:
+                      - generic [ref=e454]:
+                        - button "Form A" [ref=e455]:
+                          - generic [ref=e456]: Form A
+                        - button "More info" [ref=e457]
+                    - cell "32 days" [ref=e458]:
+                      - button "32 days" [ref=e459]
+                    - cell "● Submitted" [ref=e460]:
+                      - button "● Submitted" [ref=e461]:
+                        - generic [ref=e462]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e463]:
+                      - button "Edit Assignment" [ref=e464]
+                      - button "Add Tests" [ref=e465]
+                      - button "Assignment actions" [ref=e466]
+                  - row "Begin assignment Form A for N44981A61442, Larue Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e467] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N44981A61442, Larue" [ref=e468]:
+                      - button "Begin assignment Form A for N44981A61442, Larue" [ref=e469]:
+                        - generic [ref=e470]: N44981A61442, Larue
+                    - cell "Form A More info" [ref=e471]:
+                      - generic [ref=e472]:
+                        - button "Form A" [ref=e473]:
+                          - generic [ref=e474]: Form A
+                        - button "More info" [ref=e475]
+                    - cell "32 days" [ref=e476]:
+                      - button "32 days" [ref=e477]
+                    - cell "● Submitted" [ref=e478]:
+                      - button "● Submitted" [ref=e479]:
+                        - generic [ref=e480]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e481]:
+                      - button "Edit Assignment" [ref=e482]
+                      - button "Add Tests" [ref=e483]
+                      - button "Assignment actions" [ref=e484]
+                  - row "Begin assignment Form A for N24324A86580, Vaughn Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e485] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N24324A86580, Vaughn" [ref=e486]:
+                      - button "Begin assignment Form A for N24324A86580, Vaughn" [ref=e487]:
+                        - generic [ref=e488]: N24324A86580, Vaughn
+                    - cell "Form A More info" [ref=e489]:
+                      - generic [ref=e490]:
+                        - button "Form A" [ref=e491]:
+                          - generic [ref=e492]: Form A
+                        - button "More info" [ref=e493]
+                    - cell "32 days" [ref=e494]:
+                      - button "32 days" [ref=e495]
+                    - cell "● Submitted" [ref=e496]:
+                      - button "● Submitted" [ref=e497]:
+                        - generic [ref=e498]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e499]:
+                      - button "Edit Assignment" [ref=e500]
+                      - button "Add Tests" [ref=e501]
+                      - button "Assignment actions" [ref=e502]
+                  - row "Begin assignment Form A for N35810A61399, Ola Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e503] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N35810A61399, Ola" [ref=e504]:
+                      - button "Begin assignment Form A for N35810A61399, Ola" [ref=e505]:
+                        - generic [ref=e506]: N35810A61399, Ola
+                    - cell "Form A More info" [ref=e507]:
+                      - generic [ref=e508]:
+                        - button "Form A" [ref=e509]:
+                          - generic [ref=e510]: Form A
+                        - button "More info" [ref=e511]
+                    - cell "32 days" [ref=e512]:
+                      - button "32 days" [ref=e513]
+                    - cell "● Submitted" [ref=e514]:
+                      - button "● Submitted" [ref=e515]:
+                        - generic [ref=e516]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e517]:
+                      - button "Edit Assignment" [ref=e518]
+                      - button "Add Tests" [ref=e519]
+                      - button "Assignment actions" [ref=e520]
+                  - row "Begin assignment Form A for N83589A49922, Emery Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e521] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N83589A49922, Emery" [ref=e522]:
+                      - button "Begin assignment Form A for N83589A49922, Emery" [ref=e523]:
+                        - generic [ref=e524]: N83589A49922, Emery
+                    - cell "Form A More info" [ref=e525]:
+                      - generic [ref=e526]:
+                        - button "Form A" [ref=e527]:
+                          - generic [ref=e528]: Form A
+                        - button "More info" [ref=e529]
+                    - cell "32 days" [ref=e530]:
+                      - button "32 days" [ref=e531]
+                    - cell "● Submitted" [ref=e532]:
+                      - button "● Submitted" [ref=e533]:
+                        - generic [ref=e534]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e535]:
+                      - button "Edit Assignment" [ref=e536]
+                      - button "Add Tests" [ref=e537]
+                      - button "Assignment actions" [ref=e538]
+                  - row "Begin assignment Form A for N70655A23931, Modesto Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e539] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N70655A23931, Modesto" [ref=e540]:
+                      - button "Begin assignment Form A for N70655A23931, Modesto" [ref=e541]:
+                        - generic [ref=e542]: N70655A23931, Modesto
+                    - cell "Form A More info" [ref=e543]:
+                      - generic [ref=e544]:
+                        - button "Form A" [ref=e545]:
+                          - generic [ref=e546]: Form A
+                        - button "More info" [ref=e547]
+                    - cell "32 days" [ref=e548]:
+                      - button "32 days" [ref=e549]
+                    - cell "● Submitted" [ref=e550]:
+                      - button "● Submitted" [ref=e551]:
+                        - generic [ref=e552]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e553]:
+                      - button "Edit Assignment" [ref=e554]
+                      - button "Add Tests" [ref=e555]
+                      - button "Assignment actions" [ref=e556]
+                  - row "Begin assignment Form A for N8213A20970, Carmella Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e557] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N8213A20970, Carmella" [ref=e558]:
+                      - button "Begin assignment Form A for N8213A20970, Carmella" [ref=e559]:
+                        - generic [ref=e560]: N8213A20970, Carmella
+                    - cell "Form A More info" [ref=e561]:
+                      - generic [ref=e562]:
+                        - button "Form A" [ref=e563]:
+                          - generic [ref=e564]: Form A
+                        - button "More info" [ref=e565]
+                    - cell "32 days" [ref=e566]:
+                      - button "32 days" [ref=e567]
+                    - cell "● Submitted" [ref=e568]:
+                      - button "● Submitted" [ref=e569]:
+                        - generic [ref=e570]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e571]:
+                      - button "Edit Assignment" [ref=e572]
+                      - button "Add Tests" [ref=e573]
+                      - button "Assignment actions" [ref=e574]
+                  - row "Begin assignment Form A for N75953A33179, Vada Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e575] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N75953A33179, Vada" [ref=e576]:
+                      - button "Begin assignment Form A for N75953A33179, Vada" [ref=e577]:
+                        - generic [ref=e578]: N75953A33179, Vada
+                    - cell "Form A More info" [ref=e579]:
+                      - generic [ref=e580]:
+                        - button "Form A" [ref=e581]:
+                          - generic [ref=e582]: Form A
+                        - button "More info" [ref=e583]
+                    - cell "32 days" [ref=e584]:
+                      - button "32 days" [ref=e585]
+                    - cell "● Submitted" [ref=e586]:
+                      - button "● Submitted" [ref=e587]:
+                        - generic [ref=e588]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e589]:
+                      - button "Edit Assignment" [ref=e590]
+                      - button "Add Tests" [ref=e591]
+                      - button "Assignment actions" [ref=e592]
+                  - row "Begin assignment Form A for N28462A46547, Josiane Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e593] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N28462A46547, Josiane" [ref=e594]:
+                      - button "Begin assignment Form A for N28462A46547, Josiane" [ref=e595]:
+                        - generic [ref=e596]: N28462A46547, Josiane
+                    - cell "Form A More info" [ref=e597]:
+                      - generic [ref=e598]:
+                        - button "Form A" [ref=e599]:
+                          - generic [ref=e600]: Form A
+                        - button "More info" [ref=e601]
+                    - cell "32 days" [ref=e602]:
+                      - button "32 days" [ref=e603]
+                    - cell "● Submitted" [ref=e604]:
+                      - button "● Submitted" [ref=e605]:
+                        - generic [ref=e606]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e607]:
+                      - button "Edit Assignment" [ref=e608]
+                      - button "Add Tests" [ref=e609]
+                      - button "Assignment actions" [ref=e610]
+                  - row "Begin assignment Form A for N74494A5777, Modesta Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e611] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N74494A5777, Modesta" [ref=e612]:
+                      - button "Begin assignment Form A for N74494A5777, Modesta" [ref=e613]:
+                        - generic [ref=e614]: N74494A5777, Modesta
+                    - cell "Form A More info" [ref=e615]:
+                      - generic [ref=e616]:
+                        - button "Form A" [ref=e617]:
+                          - generic [ref=e618]: Form A
+                        - button "More info" [ref=e619]
+                    - cell "32 days" [ref=e620]:
+                      - button "32 days" [ref=e621]
+                    - cell "● Submitted" [ref=e622]:
+                      - button "● Submitted" [ref=e623]:
+                        - generic [ref=e624]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e625]:
+                      - button "Edit Assignment" [ref=e626]
+                      - button "Add Tests" [ref=e627]
+                      - button "Assignment actions" [ref=e628]
+                  - row "Begin assignment Form A for N94350A19303, Vidal Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e629] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N94350A19303, Vidal" [ref=e630]:
+                      - button "Begin assignment Form A for N94350A19303, Vidal" [ref=e631]:
+                        - generic [ref=e632]: N94350A19303, Vidal
+                    - cell "Form A More info" [ref=e633]:
+                      - generic [ref=e634]:
+                        - button "Form A" [ref=e635]:
+                          - generic [ref=e636]: Form A
+                        - button "More info" [ref=e637]
+                    - cell "32 days" [ref=e638]:
+                      - button "32 days" [ref=e639]
+                    - cell "● Submitted" [ref=e640]:
+                      - button "● Submitted" [ref=e641]:
+                        - generic [ref=e642]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e643]:
+                      - button "Edit Assignment" [ref=e644]
+                      - button "Add Tests" [ref=e645]
+                      - button "Assignment actions" [ref=e646]
+                  - row "Begin assignment Form A for N18024A13074, Alba Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e647] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N18024A13074, Alba" [ref=e648]:
+                      - button "Begin assignment Form A for N18024A13074, Alba" [ref=e649]:
+                        - generic [ref=e650]: N18024A13074, Alba
+                    - cell "Form A More info" [ref=e651]:
+                      - generic [ref=e652]:
+                        - button "Form A" [ref=e653]:
+                          - generic [ref=e654]: Form A
+                        - button "More info" [ref=e655]
+                    - cell "32 days" [ref=e656]:
+                      - button "32 days" [ref=e657]
+                    - cell "● Submitted" [ref=e658]:
+                      - button "● Submitted" [ref=e659]:
+                        - generic [ref=e660]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e661]:
+                      - button "Edit Assignment" [ref=e662]
+                      - button "Add Tests" [ref=e663]
+                      - button "Assignment actions" [ref=e664]
+                  - row "Begin assignment Form A for N72083A9799, Eliane Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e665] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N72083A9799, Eliane" [ref=e666]:
+                      - button "Begin assignment Form A for N72083A9799, Eliane" [ref=e667]:
+                        - generic [ref=e668]: N72083A9799, Eliane
+                    - cell "Form A More info" [ref=e669]:
+                      - generic [ref=e670]:
+                        - button "Form A" [ref=e671]:
+                          - generic [ref=e672]: Form A
+                        - button "More info" [ref=e673]
+                    - cell "32 days" [ref=e674]:
+                      - button "32 days" [ref=e675]
+                    - cell "● Submitted" [ref=e676]:
+                      - button "● Submitted" [ref=e677]:
+                        - generic [ref=e678]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e679]:
+                      - button "Edit Assignment" [ref=e680]
+                      - button "Add Tests" [ref=e681]
+                      - button "Assignment actions" [ref=e682]
+                  - row "Begin assignment Form A for N33394A53524, Iva Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e683] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N33394A53524, Iva" [ref=e684]:
+                      - button "Begin assignment Form A for N33394A53524, Iva" [ref=e685]:
+                        - generic [ref=e686]: N33394A53524, Iva
+                    - cell "Form A More info" [ref=e687]:
+                      - generic [ref=e688]:
+                        - button "Form A" [ref=e689]:
+                          - generic [ref=e690]: Form A
+                        - button "More info" [ref=e691]
+                    - cell "32 days" [ref=e692]:
+                      - button "32 days" [ref=e693]
+                    - cell "● Submitted" [ref=e694]:
+                      - button "● Submitted" [ref=e695]:
+                        - generic [ref=e696]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e697]:
+                      - button "Edit Assignment" [ref=e698]
+                      - button "Add Tests" [ref=e699]
+                      - button "Assignment actions" [ref=e700]
+                  - row "Begin assignment Form A for N32082A71834, Cierra Form A More info 32 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e701] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N32082A71834, Cierra" [ref=e702]:
+                      - button "Begin assignment Form A for N32082A71834, Cierra" [ref=e703]:
+                        - generic [ref=e704]: N32082A71834, Cierra
+                    - cell "Form A More info" [ref=e705]:
+                      - generic [ref=e706]:
+                        - button "Form A" [ref=e707]:
+                          - generic [ref=e708]: Form A
+                        - button "More info" [ref=e709]
+                    - cell "32 days" [ref=e710]:
+                      - button "32 days" [ref=e711]
+                    - cell "● Submitted" [ref=e712]:
+                      - button "● Submitted" [ref=e713]:
+                        - generic [ref=e714]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e715]:
+                      - button "Edit Assignment" [ref=e716]
+                      - button "Add Tests" [ref=e717]
+                      - button "Assignment actions" [ref=e718]
+                  - row "Begin assignment Form A for N90790A18108, Delaney Form A More info 29 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e719] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N90790A18108, Delaney" [ref=e720]:
+                      - button "Begin assignment Form A for N90790A18108, Delaney" [ref=e721]:
+                        - generic [ref=e722]: N90790A18108, Delaney
+                    - cell "Form A More info" [ref=e723]:
+                      - generic [ref=e724]:
+                        - button "Form A" [ref=e725]:
+                          - generic [ref=e726]: Form A
+                        - button "More info" [ref=e727]
+                    - cell "29 days" [ref=e728]:
+                      - button "29 days" [ref=e729]
+                    - cell "● Submitted" [ref=e730]:
+                      - button "● Submitted" [ref=e731]:
+                        - generic [ref=e732]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e733]:
+                      - button "Edit Assignment" [ref=e734]
+                      - button "Add Tests" [ref=e735]
+                      - button "Assignment actions" [ref=e736]
+                  - row "Begin assignment Form A for N61145A63993, Tyrique Form A More info 29 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e737] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N61145A63993, Tyrique" [ref=e738]:
+                      - button "Begin assignment Form A for N61145A63993, Tyrique" [ref=e739]:
+                        - generic [ref=e740]: N61145A63993, Tyrique
+                    - cell "Form A More info" [ref=e741]:
+                      - generic [ref=e742]:
+                        - button "Form A" [ref=e743]:
+                          - generic [ref=e744]: Form A
+                        - button "More info" [ref=e745]
+                    - cell "29 days" [ref=e746]:
+                      - button "29 days" [ref=e747]
+                    - cell "● Submitted" [ref=e748]:
+                      - button "● Submitted" [ref=e749]:
+                        - generic [ref=e750]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e751]:
+                      - button "Edit Assignment" [ref=e752]
+                      - button "Add Tests" [ref=e753]
+                      - button "Assignment actions" [ref=e754]
+                  - row "Begin assignment Form A for N89849A9723, Terrell Form A More info 29 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e755] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N89849A9723, Terrell" [ref=e756]:
+                      - button "Begin assignment Form A for N89849A9723, Terrell" [ref=e757]:
+                        - generic [ref=e758]: N89849A9723, Terrell
+                    - cell "Form A More info" [ref=e759]:
+                      - generic [ref=e760]:
+                        - button "Form A" [ref=e761]:
+                          - generic [ref=e762]: Form A
+                        - button "More info" [ref=e763]
+                    - cell "29 days" [ref=e764]:
+                      - button "29 days" [ref=e765]
+                    - cell "● Submitted" [ref=e766]:
+                      - button "● Submitted" [ref=e767]:
+                        - generic [ref=e768]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e769]:
+                      - button "Edit Assignment" [ref=e770]
+                      - button "Add Tests" [ref=e771]
+                      - button "Assignment actions" [ref=e772]
+                  - row "Begin assignment Form A for N36762A79241, Harry Form A More info 29 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e773] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N36762A79241, Harry" [ref=e774]:
+                      - button "Begin assignment Form A for N36762A79241, Harry" [ref=e775]:
+                        - generic [ref=e776]: N36762A79241, Harry
+                    - cell "Form A More info" [ref=e777]:
+                      - generic [ref=e778]:
+                        - button "Form A" [ref=e779]:
+                          - generic [ref=e780]: Form A
+                        - button "More info" [ref=e781]
+                    - cell "29 days" [ref=e782]:
+                      - button "29 days" [ref=e783]
+                    - cell "● Submitted" [ref=e784]:
+                      - button "● Submitted" [ref=e785]:
+                        - generic [ref=e786]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e787]:
+                      - button "Edit Assignment" [ref=e788]
+                      - button "Add Tests" [ref=e789]
+                      - button "Assignment actions" [ref=e790]
+                  - row "Begin assignment Form A for N33572A55746, Marianna Form A More info 29 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e791] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N33572A55746, Marianna" [ref=e792]:
+                      - button "Begin assignment Form A for N33572A55746, Marianna" [ref=e793]:
+                        - generic [ref=e794]: N33572A55746, Marianna
+                    - cell "Form A More info" [ref=e795]:
+                      - generic [ref=e796]:
+                        - button "Form A" [ref=e797]:
+                          - generic [ref=e798]: Form A
+                        - button "More info" [ref=e799]
+                    - cell "29 days" [ref=e800]:
+                      - button "29 days" [ref=e801]
+                    - cell "● Submitted" [ref=e802]:
+                      - button "● Submitted" [ref=e803]:
+                        - generic [ref=e804]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e805]:
+                      - button "Edit Assignment" [ref=e806]
+                      - button "Add Tests" [ref=e807]
+                      - button "Assignment actions" [ref=e808]
+                  - row "Begin assignment Form A for N15314A70786, Nora Form A More info 29 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e809] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N15314A70786, Nora" [ref=e810]:
+                      - button "Begin assignment Form A for N15314A70786, Nora" [ref=e811]:
+                        - generic [ref=e812]: N15314A70786, Nora
+                    - cell "Form A More info" [ref=e813]:
+                      - generic [ref=e814]:
+                        - button "Form A" [ref=e815]:
+                          - generic [ref=e816]: Form A
+                        - button "More info" [ref=e817]
+                    - cell "29 days" [ref=e818]:
+                      - button "29 days" [ref=e819]
+                    - cell "● Submitted" [ref=e820]:
+                      - button "● Submitted" [ref=e821]:
+                        - generic [ref=e822]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e823]:
+                      - button "Edit Assignment" [ref=e824]
+                      - button "Add Tests" [ref=e825]
+                      - button "Assignment actions" [ref=e826]
+                  - row "Begin assignment Form A for N57142A99451, Laurianne Form A More info 29 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e827] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N57142A99451, Laurianne" [ref=e828]:
+                      - button "Begin assignment Form A for N57142A99451, Laurianne" [ref=e829]:
+                        - generic [ref=e830]: N57142A99451, Laurianne
+                    - cell "Form A More info" [ref=e831]:
+                      - generic [ref=e832]:
+                        - button "Form A" [ref=e833]:
+                          - generic [ref=e834]: Form A
+                        - button "More info" [ref=e835]
+                    - cell "29 days" [ref=e836]:
+                      - button "29 days" [ref=e837]
+                    - cell "● Submitted" [ref=e838]:
+                      - button "● Submitted" [ref=e839]:
+                        - generic [ref=e840]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e841]:
+                      - button "Edit Assignment" [ref=e842]
+                      - button "Add Tests" [ref=e843]
+                      - button "Assignment actions" [ref=e844]
+                  - row "Begin assignment Form A for N58788A8093, Lucile Form A More info 25 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e845] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N58788A8093, Lucile" [ref=e846]:
+                      - button "Begin assignment Form A for N58788A8093, Lucile" [ref=e847]:
+                        - generic [ref=e848]: N58788A8093, Lucile
+                    - cell "Form A More info" [ref=e849]:
+                      - generic [ref=e850]:
+                        - button "Form A" [ref=e851]:
+                          - generic [ref=e852]: Form A
+                        - button "More info" [ref=e853]
+                    - cell "25 days" [ref=e854]:
+                      - button "25 days" [ref=e855]
+                    - cell "● Submitted" [ref=e856]:
+                      - button "● Submitted" [ref=e857]:
+                        - generic [ref=e858]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e859]:
+                      - button "Edit Assignment" [ref=e860]
+                      - button "Add Tests" [ref=e861]
+                      - button "Assignment actions" [ref=e862]
+                  - row "Begin assignment Form A for N47822A5894, Kamille Form A More info 25 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e863] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N47822A5894, Kamille" [ref=e864]:
+                      - button "Begin assignment Form A for N47822A5894, Kamille" [ref=e865]:
+                        - generic [ref=e866]: N47822A5894, Kamille
+                    - cell "Form A More info" [ref=e867]:
+                      - generic [ref=e868]:
+                        - button "Form A" [ref=e869]:
+                          - generic [ref=e870]: Form A
+                        - button "More info" [ref=e871]
+                    - cell "25 days" [ref=e872]:
+                      - button "25 days" [ref=e873]
+                    - cell "● Submitted" [ref=e874]:
+                      - button "● Submitted" [ref=e875]:
+                        - generic [ref=e876]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e877]:
+                      - button "Edit Assignment" [ref=e878]
+                      - button "Add Tests" [ref=e879]
+                      - button "Assignment actions" [ref=e880]
+                  - row "Begin assignment Form A (+1 more) for N33411A17483, Nichole Form A (+1 more) More info 24 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e881] [cursor=pointer]:
+                    - cell "Begin assignment Form A (+1 more) for N33411A17483, Nichole" [ref=e882]:
+                      - button "Begin assignment Form A (+1 more) for N33411A17483, Nichole" [ref=e883]:
+                        - generic [ref=e884]: N33411A17483, Nichole
+                    - cell "Form A (+1 more) More info" [ref=e885]:
+                      - generic [ref=e886]:
+                        - button "Form A (+1 more)" [ref=e887]:
+                          - generic [ref=e888]: Form A (+1 more)
+                        - button "More info" [ref=e889]
+                    - cell "24 days" [ref=e890]:
+                      - button "24 days" [ref=e891]
+                    - cell "● In Progress" [ref=e892]:
+                      - button "● In Progress" [ref=e893]:
+                        - generic [ref=e894]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e895]:
+                      - button "Edit Assignment" [ref=e896]
+                      - button "Add Tests" [ref=e897]
+                      - button "Assignment actions" [ref=e898]
+                  - row "Begin assignment Form A (+1 more) for N79934A87734, Arturo Form A (+1 more) More info 23 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e899] [cursor=pointer]:
+                    - cell "Begin assignment Form A (+1 more) for N79934A87734, Arturo" [ref=e900]:
+                      - button "Begin assignment Form A (+1 more) for N79934A87734, Arturo" [ref=e901]:
+                        - generic [ref=e902]: N79934A87734, Arturo
+                    - cell "Form A (+1 more) More info" [ref=e903]:
+                      - generic [ref=e904]:
+                        - button "Form A (+1 more)" [ref=e905]:
+                          - generic [ref=e906]: Form A (+1 more)
+                        - button "More info" [ref=e907]
+                    - cell "23 days" [ref=e908]:
+                      - button "23 days" [ref=e909]
+                    - cell "● Submitted" [ref=e910]:
+                      - button "● Submitted" [ref=e911]:
+                        - generic [ref=e912]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e913]:
+                      - button "Edit Assignment" [ref=e914]
+                      - button "Add Tests" [ref=e915]
+                      - button "Assignment actions" [ref=e916]
+                  - row "Begin assignment Form A for N20401A85003, Lura Form A More info 23 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e917] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N20401A85003, Lura" [ref=e918]:
+                      - button "Begin assignment Form A for N20401A85003, Lura" [ref=e919]:
+                        - generic [ref=e920]: N20401A85003, Lura
+                    - cell "Form A More info" [ref=e921]:
+                      - generic [ref=e922]:
+                        - button "Form A" [ref=e923]:
+                          - generic [ref=e924]: Form A
+                        - button "More info" [ref=e925]
+                    - cell "23 days" [ref=e926]:
+                      - button "23 days" [ref=e927]
+                    - cell "● Submitted" [ref=e928]:
+                      - button "● Submitted" [ref=e929]:
+                        - generic [ref=e930]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e931]:
+                      - button "Edit Assignment" [ref=e932]
+                      - button "Add Tests" [ref=e933]
+                      - button "Assignment actions" [ref=e934]
+                  - row "Begin assignment Form A for N25363A5484, Nya Form A More info 23 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e935] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N25363A5484, Nya" [ref=e936]:
+                      - button "Begin assignment Form A for N25363A5484, Nya" [ref=e937]:
+                        - generic [ref=e938]: N25363A5484, Nya
+                    - cell "Form A More info" [ref=e939]:
+                      - generic [ref=e940]:
+                        - button "Form A" [ref=e941]:
+                          - generic [ref=e942]: Form A
+                        - button "More info" [ref=e943]
+                    - cell "23 days" [ref=e944]:
+                      - button "23 days" [ref=e945]
+                    - cell "● Submitted" [ref=e946]:
+                      - button "● Submitted" [ref=e947]:
+                        - generic [ref=e948]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e949]:
+                      - button "Edit Assignment" [ref=e950]
+                      - button "Add Tests" [ref=e951]
+                      - button "Assignment actions" [ref=e952]
+                  - row "Begin assignment Form A for N70650A43129, Rosalind Form A More info 23 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e953] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N70650A43129, Rosalind" [ref=e954]:
+                      - button "Begin assignment Form A for N70650A43129, Rosalind" [ref=e955]:
+                        - generic [ref=e956]: N70650A43129, Rosalind
+                    - cell "Form A More info" [ref=e957]:
+                      - generic [ref=e958]:
+                        - button "Form A" [ref=e959]:
+                          - generic [ref=e960]: Form A
+                        - button "More info" [ref=e961]
+                    - cell "23 days" [ref=e962]:
+                      - button "23 days" [ref=e963]
+                    - cell "● In Progress" [ref=e964]:
+                      - button "● In Progress" [ref=e965]:
+                        - generic [ref=e966]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e967]:
+                      - button "Edit Assignment" [ref=e968]
+                      - button "Add Tests" [ref=e969]
+                      - button "Assignment actions" [ref=e970]
+                  - row "Begin assignment Form A for N83310A51274, Boris Form A More info 23 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e971] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N83310A51274, Boris" [ref=e972]:
+                      - button "Begin assignment Form A for N83310A51274, Boris" [ref=e973]:
+                        - generic [ref=e974]: N83310A51274, Boris
+                    - cell "Form A More info" [ref=e975]:
+                      - generic [ref=e976]:
+                        - button "Form A" [ref=e977]:
+                          - generic [ref=e978]: Form A
+                        - button "More info" [ref=e979]
+                    - cell "23 days" [ref=e980]:
+                      - button "23 days" [ref=e981]
+                    - cell "● In Progress" [ref=e982]:
+                      - button "● In Progress" [ref=e983]:
+                        - generic [ref=e984]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e985]:
+                      - button "Edit Assignment" [ref=e986]
+                      - button "Add Tests" [ref=e987]
+                      - button "Assignment actions" [ref=e988]
+                  - row "Begin assignment Form A for N31623A9836, Ryan Form A More info 23 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e989] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N31623A9836, Ryan" [ref=e990]:
+                      - button "Begin assignment Form A for N31623A9836, Ryan" [ref=e991]:
+                        - generic [ref=e992]: N31623A9836, Ryan
+                    - cell "Form A More info" [ref=e993]:
+                      - generic [ref=e994]:
+                        - button "Form A" [ref=e995]:
+                          - generic [ref=e996]: Form A
+                        - button "More info" [ref=e997]
+                    - cell "23 days" [ref=e998]:
+                      - button "23 days" [ref=e999]
+                    - cell "● In Progress" [ref=e1000]:
+                      - button "● In Progress" [ref=e1001]:
+                        - generic [ref=e1002]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1003]:
+                      - button "Edit Assignment" [ref=e1004]
+                      - button "Add Tests" [ref=e1005]
+                      - button "Assignment actions" [ref=e1006]
+                  - row "Begin assignment Form A for N85436A88001, Domingo Form A More info 23 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e1007] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N85436A88001, Domingo" [ref=e1008]:
+                      - button "Begin assignment Form A for N85436A88001, Domingo" [ref=e1009]:
+                        - generic [ref=e1010]: N85436A88001, Domingo
+                    - cell "Form A More info" [ref=e1011]:
+                      - generic [ref=e1012]:
+                        - button "Form A" [ref=e1013]:
+                          - generic [ref=e1014]: Form A
+                        - button "More info" [ref=e1015]
+                    - cell "23 days" [ref=e1016]:
+                      - button "23 days" [ref=e1017]
+                    - cell "● In Progress" [ref=e1018]:
+                      - button "● In Progress" [ref=e1019]:
+                        - generic [ref=e1020]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1021]:
+                      - button "Edit Assignment" [ref=e1022]
+                      - button "Add Tests" [ref=e1023]
+                      - button "Assignment actions" [ref=e1024]
+                  - row "Begin assignment Form A for N75315A96743, Catharine Form A More info 23 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e1025] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N75315A96743, Catharine" [ref=e1026]:
+                      - button "Begin assignment Form A for N75315A96743, Catharine" [ref=e1027]:
+                        - generic [ref=e1028]: N75315A96743, Catharine
+                    - cell "Form A More info" [ref=e1029]:
+                      - generic [ref=e1030]:
+                        - button "Form A" [ref=e1031]:
+                          - generic [ref=e1032]: Form A
+                        - button "More info" [ref=e1033]
+                    - cell "23 days" [ref=e1034]:
+                      - button "23 days" [ref=e1035]
+                    - cell "● In Progress" [ref=e1036]:
+                      - button "● In Progress" [ref=e1037]:
+                        - generic [ref=e1038]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1039]:
+                      - button "Edit Assignment" [ref=e1040]
+                      - button "Add Tests" [ref=e1041]
+                      - button "Assignment actions" [ref=e1042]
+                  - row "Begin assignment Form A for N48481A9808, Edmond Form A More info 23 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e1043] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N48481A9808, Edmond" [ref=e1044]:
+                      - button "Begin assignment Form A for N48481A9808, Edmond" [ref=e1045]:
+                        - generic [ref=e1046]: N48481A9808, Edmond
+                    - cell "Form A More info" [ref=e1047]:
+                      - generic [ref=e1048]:
+                        - button "Form A" [ref=e1049]:
+                          - generic [ref=e1050]: Form A
+                        - button "More info" [ref=e1051]
+                    - cell "23 days" [ref=e1052]:
+                      - button "23 days" [ref=e1053]
+                    - cell "● In Progress" [ref=e1054]:
+                      - button "● In Progress" [ref=e1055]:
+                        - generic [ref=e1056]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1057]:
+                      - button "Edit Assignment" [ref=e1058]
+                      - button "Add Tests" [ref=e1059]
+                      - button "Assignment actions" [ref=e1060]
+                  - row "Begin assignment Form A for N89953A70727, Ulises Form A More info 23 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e1061] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N89953A70727, Ulises" [ref=e1062]:
+                      - button "Begin assignment Form A for N89953A70727, Ulises" [ref=e1063]:
+                        - generic [ref=e1064]: N89953A70727, Ulises
+                    - cell "Form A More info" [ref=e1065]:
+                      - generic [ref=e1066]:
+                        - button "Form A" [ref=e1067]:
+                          - generic [ref=e1068]: Form A
+                        - button "More info" [ref=e1069]
+                    - cell "23 days" [ref=e1070]:
+                      - button "23 days" [ref=e1071]
+                    - cell "● In Progress" [ref=e1072]:
+                      - button "● In Progress" [ref=e1073]:
+                        - generic [ref=e1074]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1075]:
+                      - button "Edit Assignment" [ref=e1076]
+                      - button "Add Tests" [ref=e1077]
+                      - button "Assignment actions" [ref=e1078]
+                  - row "Begin assignment Form A for N94329A85043, Dee Form A More info 23 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e1079] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N94329A85043, Dee" [ref=e1080]:
+                      - button "Begin assignment Form A for N94329A85043, Dee" [ref=e1081]:
+                        - generic [ref=e1082]: N94329A85043, Dee
+                    - cell "Form A More info" [ref=e1083]:
+                      - generic [ref=e1084]:
+                        - button "Form A" [ref=e1085]:
+                          - generic [ref=e1086]: Form A
+                        - button "More info" [ref=e1087]
+                    - cell "23 days" [ref=e1088]:
+                      - button "23 days" [ref=e1089]
+                    - cell "● In Progress" [ref=e1090]:
+                      - button "● In Progress" [ref=e1091]:
+                        - generic [ref=e1092]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1093]:
+                      - button "Edit Assignment" [ref=e1094]
+                      - button "Add Tests" [ref=e1095]
+                      - button "Assignment actions" [ref=e1096]
+                  - row "Begin assignment Form A for N31787A89803, Brooks Form A More info 11 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e1097] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N31787A89803, Brooks" [ref=e1098]:
+                      - button "Begin assignment Form A for N31787A89803, Brooks" [ref=e1099]:
+                        - generic [ref=e1100]: N31787A89803, Brooks
+                    - cell "Form A More info" [ref=e1101]:
+                      - generic [ref=e1102]:
+                        - button "Form A" [ref=e1103]:
+                          - generic [ref=e1104]: Form A
+                        - button "More info" [ref=e1105]
+                    - cell "11 days" [ref=e1106]:
+                      - button "11 days" [ref=e1107]
+                    - cell "● Submitted" [ref=e1108]:
+                      - button "● Submitted" [ref=e1109]:
+                        - generic [ref=e1110]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1111]:
+                      - button "Edit Assignment" [ref=e1112]
+                      - button "Add Tests" [ref=e1113]
+                      - button "Assignment actions" [ref=e1114]
+                  - row "Begin assignment Form A for N73307A68171, Chase Form A More info 11 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e1115] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N73307A68171, Chase" [ref=e1116]:
+                      - button "Begin assignment Form A for N73307A68171, Chase" [ref=e1117]:
+                        - generic [ref=e1118]: N73307A68171, Chase
+                    - cell "Form A More info" [ref=e1119]:
+                      - generic [ref=e1120]:
+                        - button "Form A" [ref=e1121]:
+                          - generic [ref=e1122]: Form A
+                        - button "More info" [ref=e1123]
+                    - cell "11 days" [ref=e1124]:
+                      - button "11 days" [ref=e1125]
+                    - cell "● Submitted" [ref=e1126]:
+                      - button "● Submitted" [ref=e1127]:
+                        - generic [ref=e1128]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1129]:
+                      - button "Edit Assignment" [ref=e1130]
+                      - button "Add Tests" [ref=e1131]
+                      - button "Assignment actions" [ref=e1132]
+                  - row "Begin assignment Form A for N15035A54934, Kendra Form A More info 3 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e1133] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N15035A54934, Kendra" [ref=e1134]:
+                      - button "Begin assignment Form A for N15035A54934, Kendra" [ref=e1135]:
+                        - generic [ref=e1136]: N15035A54934, Kendra
+                    - cell "Form A More info" [ref=e1137]:
+                      - generic [ref=e1138]:
+                        - button "Form A" [ref=e1139]:
+                          - generic [ref=e1140]: Form A
+                        - button "More info" [ref=e1141]
+                    - cell "3 days" [ref=e1142]:
+                      - button "3 days" [ref=e1143]
+                    - cell "● Submitted" [ref=e1144]:
+                      - button "● Submitted" [ref=e1145]:
+                        - generic [ref=e1146]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1147]:
+                      - button "Edit Assignment" [ref=e1148]
+                      - button "Add Tests" [ref=e1149]
+                      - button "Assignment actions" [ref=e1150]
+                  - row "Begin assignment Form A for N21827A37267, Emmie Form A More info 3 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e1151] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N21827A37267, Emmie" [ref=e1152]:
+                      - button "Begin assignment Form A for N21827A37267, Emmie" [ref=e1153]:
+                        - generic [ref=e1154]: N21827A37267, Emmie
+                    - cell "Form A More info" [ref=e1155]:
+                      - generic [ref=e1156]:
+                        - button "Form A" [ref=e1157]:
+                          - generic [ref=e1158]: Form A
+                        - button "More info" [ref=e1159]
+                    - cell "3 days" [ref=e1160]:
+                      - button "3 days" [ref=e1161]
+                    - cell "● Submitted" [ref=e1162]:
+                      - button "● Submitted" [ref=e1163]:
+                        - generic [ref=e1164]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1165]:
+                      - button "Edit Assignment" [ref=e1166]
+                      - button "Add Tests" [ref=e1167]
+                      - button "Assignment actions" [ref=e1168]
+                  - row "Begin assignment Form A for N94739A16136, Henderson Form A More info 3 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e1169] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N94739A16136, Henderson" [ref=e1170]:
+                      - button "Begin assignment Form A for N94739A16136, Henderson" [ref=e1171]:
+                        - generic [ref=e1172]: N94739A16136, Henderson
+                    - cell "Form A More info" [ref=e1173]:
+                      - generic [ref=e1174]:
+                        - button "Form A" [ref=e1175]:
+                          - generic [ref=e1176]: Form A
+                        - button "More info" [ref=e1177]
+                    - cell "3 days" [ref=e1178]:
+                      - button "3 days" [ref=e1179]
+                    - cell "● Submitted" [ref=e1180]:
+                      - button "● Submitted" [ref=e1181]:
+                        - generic [ref=e1182]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1183]:
+                      - button "Edit Assignment" [ref=e1184]
+                      - button "Add Tests" [ref=e1185]
+                      - button "Assignment actions" [ref=e1186]
+                  - row "Begin assignment Form A for N84158A59604, Lester Form A More info 3 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e1187] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N84158A59604, Lester" [ref=e1188]:
+                      - button "Begin assignment Form A for N84158A59604, Lester" [ref=e1189]:
+                        - generic [ref=e1190]: N84158A59604, Lester
+                    - cell "Form A More info" [ref=e1191]:
+                      - generic [ref=e1192]:
+                        - button "Form A" [ref=e1193]:
+                          - generic [ref=e1194]: Form A
+                        - button "More info" [ref=e1195]
+                    - cell "3 days" [ref=e1196]:
+                      - button "3 days" [ref=e1197]
+                    - cell "● Submitted" [ref=e1198]:
+                      - button "● Submitted" [ref=e1199]:
+                        - generic [ref=e1200]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1201]:
+                      - button "Edit Assignment" [ref=e1202]
+                      - button "Add Tests" [ref=e1203]
+                      - button "Assignment actions" [ref=e1204]
+                  - row "Begin assignment Form A for N62213A9007, Rylan Form A More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e1205] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N62213A9007, Rylan" [ref=e1206]:
+                      - button "Begin assignment Form A for N62213A9007, Rylan" [ref=e1207]:
+                        - generic [ref=e1208]: N62213A9007, Rylan
+                    - cell "Form A More info" [ref=e1209]:
+                      - generic [ref=e1210]:
+                        - button "Form A" [ref=e1211]:
+                          - generic [ref=e1212]: Form A
+                        - button "More info" [ref=e1213]
+                    - cell "—" [ref=e1214]:
+                      - button "—" [ref=e1215]
+                    - cell "● Not Started" [ref=e1216]:
+                      - button "● Not Started" [ref=e1217]:
+                        - generic [ref=e1218]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1219]:
+                      - button "Edit Assignment" [ref=e1220]
+                      - button "Add Tests" [ref=e1221]
+                      - button "Assignment actions" [ref=e1222]
+                  - row "Begin assignment Form A for N21324A79904, Carey Form A More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e1223] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N21324A79904, Carey" [ref=e1224]:
+                      - button "Begin assignment Form A for N21324A79904, Carey" [ref=e1225]:
+                        - generic [ref=e1226]: N21324A79904, Carey
+                    - cell "Form A More info" [ref=e1227]:
+                      - generic [ref=e1228]:
+                        - button "Form A" [ref=e1229]:
+                          - generic [ref=e1230]: Form A
+                        - button "More info" [ref=e1231]
+                    - cell "—" [ref=e1232]:
+                      - button "—" [ref=e1233]
+                    - cell "● Not Started" [ref=e1234]:
+                      - button "● Not Started" [ref=e1235]:
+                        - generic [ref=e1236]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1237]:
+                      - button "Edit Assignment" [ref=e1238]
+                      - button "Add Tests" [ref=e1239]
+                      - button "Assignment actions" [ref=e1240]
+                  - row "Begin assignment Form A for N61015A86824, Ulices Form A More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e1241] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N61015A86824, Ulices" [ref=e1242]:
+                      - button "Begin assignment Form A for N61015A86824, Ulices" [ref=e1243]:
+                        - generic [ref=e1244]: N61015A86824, Ulices
+                    - cell "Form A More info" [ref=e1245]:
+                      - generic [ref=e1246]:
+                        - button "Form A" [ref=e1247]:
+                          - generic [ref=e1248]: Form A
+                        - button "More info" [ref=e1249]
+                    - cell "—" [ref=e1250]:
+                      - button "—" [ref=e1251]
+                    - cell "● Not Started" [ref=e1252]:
+                      - button "● Not Started" [ref=e1253]:
+                        - generic [ref=e1254]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1255]:
+                      - button "Edit Assignment" [ref=e1256]
+                      - button "Add Tests" [ref=e1257]
+                      - button "Assignment actions" [ref=e1258]
+                  - row "Begin assignment Form A for N76602A57678, Wyatt Form A More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e1259] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N76602A57678, Wyatt" [ref=e1260]:
+                      - button "Begin assignment Form A for N76602A57678, Wyatt" [ref=e1261]:
+                        - generic [ref=e1262]: N76602A57678, Wyatt
+                    - cell "Form A More info" [ref=e1263]:
+                      - generic [ref=e1264]:
+                        - button "Form A" [ref=e1265]:
+                          - generic [ref=e1266]: Form A
+                        - button "More info" [ref=e1267]
+                    - cell "—" [ref=e1268]:
+                      - button "—" [ref=e1269]
+                    - cell "● Not Started" [ref=e1270]:
+                      - button "● Not Started" [ref=e1271]:
+                        - generic [ref=e1272]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1273]:
+                      - button "Edit Assignment" [ref=e1274]
+                      - button "Add Tests" [ref=e1275]
+                      - button "Assignment actions" [ref=e1276]
+                  - row "Begin assignment Form A for N76602A57678, Wyatt Form A More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e1277] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N76602A57678, Wyatt" [ref=e1278]:
+                      - button "Begin assignment Form A for N76602A57678, Wyatt" [ref=e1279]:
+                        - generic [ref=e1280]: N76602A57678, Wyatt
+                    - cell "Form A More info" [ref=e1281]:
+                      - generic [ref=e1282]:
+                        - button "Form A" [ref=e1283]:
+                          - generic [ref=e1284]: Form A
+                        - button "More info" [ref=e1285]
+                    - cell "—" [ref=e1286]:
+                      - button "—" [ref=e1287]
+                    - cell "● Not Started" [ref=e1288]:
+                      - button "● Not Started" [ref=e1289]:
+                        - generic [ref=e1290]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1291]:
+                      - button "Edit Assignment" [ref=e1292]
+                      - button "Add Tests" [ref=e1293]
+                      - button "Assignment actions" [ref=e1294]
+                  - row "Begin assignment Form A for N63227A44478, Jess Form A More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e1295] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N63227A44478, Jess" [ref=e1296]:
+                      - button "Begin assignment Form A for N63227A44478, Jess" [ref=e1297]:
+                        - generic [ref=e1298]: N63227A44478, Jess
+                    - cell "Form A More info" [ref=e1299]:
+                      - generic [ref=e1300]:
+                        - button "Form A" [ref=e1301]:
+                          - generic [ref=e1302]: Form A
+                        - button "More info" [ref=e1303]
+                    - cell "—" [ref=e1304]:
+                      - button "—" [ref=e1305]
+                    - cell "● Not Started" [ref=e1306]:
+                      - button "● Not Started" [ref=e1307]:
+                        - generic [ref=e1308]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1309]:
+                      - button "Edit Assignment" [ref=e1310]
+                      - button "Add Tests" [ref=e1311]
+                      - button "Assignment actions" [ref=e1312]
+                  - row "Begin assignment Form A for N73672A74580, Laurianne Form A More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e1313] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N73672A74580, Laurianne" [ref=e1314]:
+                      - button "Begin assignment Form A for N73672A74580, Laurianne" [ref=e1315]:
+                        - generic [ref=e1316]: N73672A74580, Laurianne
+                    - cell "Form A More info" [ref=e1317]:
+                      - generic [ref=e1318]:
+                        - button "Form A" [ref=e1319]:
+                          - generic [ref=e1320]: Form A
+                        - button "More info" [ref=e1321]
+                    - cell "—" [ref=e1322]:
+                      - button "—" [ref=e1323]
+                    - cell "● Not Started" [ref=e1324]:
+                      - button "● Not Started" [ref=e1325]:
+                        - generic [ref=e1326]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1327]:
+                      - button "Edit Assignment" [ref=e1328]
+                      - button "Add Tests" [ref=e1329]
+                      - button "Assignment actions" [ref=e1330]
+                  - row "Begin assignment Form A (+1 more) for N70962A37262, Ottilie Form A (+1 more) More info 0 days ● Expired Generate Report Assignment actions" [ref=e1331] [cursor=pointer]:
+                    - cell "Begin assignment Form A (+1 more) for N70962A37262, Ottilie" [ref=e1332]:
+                      - button "Begin assignment Form A (+1 more) for N70962A37262, Ottilie" [ref=e1333]:
+                        - generic [ref=e1334]: N70962A37262, Ottilie
+                    - cell "Form A (+1 more) More info" [ref=e1335]:
+                      - generic [ref=e1336]:
+                        - button "Form A (+1 more)" [ref=e1337]:
+                          - generic [ref=e1338]: Form A (+1 more)
+                        - button "More info" [ref=e1339]
+                    - cell "0 days" [ref=e1340]:
+                      - button "0 days" [ref=e1341]
+                    - cell "● Expired" [ref=e1342]:
+                      - button "● Expired" [ref=e1343]:
+                        - generic [ref=e1344]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1345]:
+                      - button "Generate Report" [ref=e1346]
+                      - button "Assignment actions" [ref=e1347]
+                  - row "Begin assignment Form A for N43476A6503, Tiffany Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1348] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N43476A6503, Tiffany" [ref=e1349]:
+                      - button "Begin assignment Form A for N43476A6503, Tiffany" [ref=e1350]:
+                        - generic [ref=e1351]: N43476A6503, Tiffany
+                    - cell "Form A More info" [ref=e1352]:
+                      - generic [ref=e1353]:
+                        - button "Form A" [ref=e1354]:
+                          - generic [ref=e1355]: Form A
+                        - button "More info" [ref=e1356]
+                    - cell "0 days" [ref=e1357]:
+                      - button "0 days" [ref=e1358]
+                    - cell "● Expired" [ref=e1359]:
+                      - button "● Expired" [ref=e1360]:
+                        - generic [ref=e1361]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1362]:
+                      - button "Generate Report" [ref=e1363]
+                      - button "Assignment actions" [ref=e1364]
+                  - row "Begin assignment Form A for N60770A28741, Roy Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1365] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N60770A28741, Roy" [ref=e1366]:
+                      - button "Begin assignment Form A for N60770A28741, Roy" [ref=e1367]:
+                        - generic [ref=e1368]: N60770A28741, Roy
+                    - cell "Form A More info" [ref=e1369]:
+                      - generic [ref=e1370]:
+                        - button "Form A" [ref=e1371]:
+                          - generic [ref=e1372]: Form A
+                        - button "More info" [ref=e1373]
+                    - cell "0 days" [ref=e1374]:
+                      - button "0 days" [ref=e1375]
+                    - cell "● Expired" [ref=e1376]:
+                      - button "● Expired" [ref=e1377]:
+                        - generic [ref=e1378]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1379]:
+                      - button "Generate Report" [ref=e1380]
+                      - button "Assignment actions" [ref=e1381]
+                  - row "Begin assignment Form A for N6398A13759, Marisa Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1382] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N6398A13759, Marisa" [ref=e1383]:
+                      - button "Begin assignment Form A for N6398A13759, Marisa" [ref=e1384]:
+                        - generic [ref=e1385]: N6398A13759, Marisa
+                    - cell "Form A More info" [ref=e1386]:
+                      - generic [ref=e1387]:
+                        - button "Form A" [ref=e1388]:
+                          - generic [ref=e1389]: Form A
+                        - button "More info" [ref=e1390]
+                    - cell "0 days" [ref=e1391]:
+                      - button "0 days" [ref=e1392]
+                    - cell "● Expired" [ref=e1393]:
+                      - button "● Expired" [ref=e1394]:
+                        - generic [ref=e1395]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1396]:
+                      - button "Generate Report" [ref=e1397]
+                      - button "Assignment actions" [ref=e1398]
+                  - row "Begin assignment Form A for N17578A87963, Alphonso Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1399] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N17578A87963, Alphonso" [ref=e1400]:
+                      - button "Begin assignment Form A for N17578A87963, Alphonso" [ref=e1401]:
+                        - generic [ref=e1402]: N17578A87963, Alphonso
+                    - cell "Form A More info" [ref=e1403]:
+                      - generic [ref=e1404]:
+                        - button "Form A" [ref=e1405]:
+                          - generic [ref=e1406]: Form A
+                        - button "More info" [ref=e1407]
+                    - cell "0 days" [ref=e1408]:
+                      - button "0 days" [ref=e1409]
+                    - cell "● Expired" [ref=e1410]:
+                      - button "● Expired" [ref=e1411]:
+                        - generic [ref=e1412]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1413]:
+                      - button "Generate Report" [ref=e1414]
+                      - button "Assignment actions" [ref=e1415]
+                  - row "Begin assignment Form A for N3075A90487, Duane Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1416] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N3075A90487, Duane" [ref=e1417]:
+                      - button "Begin assignment Form A for N3075A90487, Duane" [ref=e1418]:
+                        - generic [ref=e1419]: N3075A90487, Duane
+                    - cell "Form A More info" [ref=e1420]:
+                      - generic [ref=e1421]:
+                        - button "Form A" [ref=e1422]:
+                          - generic [ref=e1423]: Form A
+                        - button "More info" [ref=e1424]
+                    - cell "0 days" [ref=e1425]:
+                      - button "0 days" [ref=e1426]
+                    - cell "● Expired" [ref=e1427]:
+                      - button "● Expired" [ref=e1428]:
+                        - generic [ref=e1429]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1430]:
+                      - button "Generate Report" [ref=e1431]
+                      - button "Assignment actions" [ref=e1432]
+                  - row "Begin assignment Form A for N6991A2584, Nicklaus Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1433] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N6991A2584, Nicklaus" [ref=e1434]:
+                      - button "Begin assignment Form A for N6991A2584, Nicklaus" [ref=e1435]:
+                        - generic [ref=e1436]: N6991A2584, Nicklaus
+                    - cell "Form A More info" [ref=e1437]:
+                      - generic [ref=e1438]:
+                        - button "Form A" [ref=e1439]:
+                          - generic [ref=e1440]: Form A
+                        - button "More info" [ref=e1441]
+                    - cell "0 days" [ref=e1442]:
+                      - button "0 days" [ref=e1443]
+                    - cell "● Expired" [ref=e1444]:
+                      - button "● Expired" [ref=e1445]:
+                        - generic [ref=e1446]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1447]:
+                      - button "Generate Report" [ref=e1448]
+                      - button "Assignment actions" [ref=e1449]
+                  - row "Begin assignment Form A for N41276A51172, Clinton Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1450] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N41276A51172, Clinton" [ref=e1451]:
+                      - button "Begin assignment Form A for N41276A51172, Clinton" [ref=e1452]:
+                        - generic [ref=e1453]: N41276A51172, Clinton
+                    - cell "Form A More info" [ref=e1454]:
+                      - generic [ref=e1455]:
+                        - button "Form A" [ref=e1456]:
+                          - generic [ref=e1457]: Form A
+                        - button "More info" [ref=e1458]
+                    - cell "0 days" [ref=e1459]:
+                      - button "0 days" [ref=e1460]
+                    - cell "● Expired" [ref=e1461]:
+                      - button "● Expired" [ref=e1462]:
+                        - generic [ref=e1463]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1464]:
+                      - button "Generate Report" [ref=e1465]
+                      - button "Assignment actions" [ref=e1466]
+                  - row "Begin assignment Form A for N72811A34443, Armani Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1467] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N72811A34443, Armani" [ref=e1468]:
+                      - button "Begin assignment Form A for N72811A34443, Armani" [ref=e1469]:
+                        - generic [ref=e1470]: N72811A34443, Armani
+                    - cell "Form A More info" [ref=e1471]:
+                      - generic [ref=e1472]:
+                        - button "Form A" [ref=e1473]:
+                          - generic [ref=e1474]: Form A
+                        - button "More info" [ref=e1475]
+                    - cell "0 days" [ref=e1476]:
+                      - button "0 days" [ref=e1477]
+                    - cell "● Expired" [ref=e1478]:
+                      - button "● Expired" [ref=e1479]:
+                        - generic [ref=e1480]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1481]:
+                      - button "Generate Report" [ref=e1482]
+                      - button "Assignment actions" [ref=e1483]
+                  - row "Begin assignment Form A for N47830A8101, Wilson Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1484] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N47830A8101, Wilson" [ref=e1485]:
+                      - button "Begin assignment Form A for N47830A8101, Wilson" [ref=e1486]:
+                        - generic [ref=e1487]: N47830A8101, Wilson
+                    - cell "Form A More info" [ref=e1488]:
+                      - generic [ref=e1489]:
+                        - button "Form A" [ref=e1490]:
+                          - generic [ref=e1491]: Form A
+                        - button "More info" [ref=e1492]
+                    - cell "0 days" [ref=e1493]:
+                      - button "0 days" [ref=e1494]
+                    - cell "● Expired" [ref=e1495]:
+                      - button "● Expired" [ref=e1496]:
+                        - generic [ref=e1497]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1498]:
+                      - button "Generate Report" [ref=e1499]
+                      - button "Assignment actions" [ref=e1500]
+                  - row "Begin assignment Form A for N17705A26682, Roderick Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1501] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N17705A26682, Roderick" [ref=e1502]:
+                      - button "Begin assignment Form A for N17705A26682, Roderick" [ref=e1503]:
+                        - generic [ref=e1504]: N17705A26682, Roderick
+                    - cell "Form A More info" [ref=e1505]:
+                      - generic [ref=e1506]:
+                        - button "Form A" [ref=e1507]:
+                          - generic [ref=e1508]: Form A
+                        - button "More info" [ref=e1509]
+                    - cell "0 days" [ref=e1510]:
+                      - button "0 days" [ref=e1511]
+                    - cell "● Expired" [ref=e1512]:
+                      - button "● Expired" [ref=e1513]:
+                        - generic [ref=e1514]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1515]:
+                      - button "Generate Report" [ref=e1516]
+                      - button "Assignment actions" [ref=e1517]
+                  - row "Begin assignment Form A for N76092A93945, Lucy Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1518] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N76092A93945, Lucy" [ref=e1519]:
+                      - button "Begin assignment Form A for N76092A93945, Lucy" [ref=e1520]:
+                        - generic [ref=e1521]: N76092A93945, Lucy
+                    - cell "Form A More info" [ref=e1522]:
+                      - generic [ref=e1523]:
+                        - button "Form A" [ref=e1524]:
+                          - generic [ref=e1525]: Form A
+                        - button "More info" [ref=e1526]
+                    - cell "0 days" [ref=e1527]:
+                      - button "0 days" [ref=e1528]
+                    - cell "● Expired" [ref=e1529]:
+                      - button "● Expired" [ref=e1530]:
+                        - generic [ref=e1531]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1532]:
+                      - button "Generate Report" [ref=e1533]
+                      - button "Assignment actions" [ref=e1534]
+                  - row "Begin assignment Form A for N31869A96810, Reyes Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1535] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N31869A96810, Reyes" [ref=e1536]:
+                      - button "Begin assignment Form A for N31869A96810, Reyes" [ref=e1537]:
+                        - generic [ref=e1538]: N31869A96810, Reyes
+                    - cell "Form A More info" [ref=e1539]:
+                      - generic [ref=e1540]:
+                        - button "Form A" [ref=e1541]:
+                          - generic [ref=e1542]: Form A
+                        - button "More info" [ref=e1543]
+                    - cell "0 days" [ref=e1544]:
+                      - button "0 days" [ref=e1545]
+                    - cell "● Expired" [ref=e1546]:
+                      - button "● Expired" [ref=e1547]:
+                        - generic [ref=e1548]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1549]:
+                      - button "Generate Report" [ref=e1550]
+                      - button "Assignment actions" [ref=e1551]
+                  - row "Begin assignment Form A for N35144A46467, Haven Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1552] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N35144A46467, Haven" [ref=e1553]:
+                      - button "Begin assignment Form A for N35144A46467, Haven" [ref=e1554]:
+                        - generic [ref=e1555]: N35144A46467, Haven
+                    - cell "Form A More info" [ref=e1556]:
+                      - generic [ref=e1557]:
+                        - button "Form A" [ref=e1558]:
+                          - generic [ref=e1559]: Form A
+                        - button "More info" [ref=e1560]
+                    - cell "0 days" [ref=e1561]:
+                      - button "0 days" [ref=e1562]
+                    - cell "● Expired" [ref=e1563]:
+                      - button "● Expired" [ref=e1564]:
+                        - generic [ref=e1565]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1566]:
+                      - button "Generate Report" [ref=e1567]
+                      - button "Assignment actions" [ref=e1568]
+                  - row "Begin assignment Form A for N49628A97479, Kelley Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1569] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N49628A97479, Kelley" [ref=e1570]:
+                      - button "Begin assignment Form A for N49628A97479, Kelley" [ref=e1571]:
+                        - generic [ref=e1572]: N49628A97479, Kelley
+                    - cell "Form A More info" [ref=e1573]:
+                      - generic [ref=e1574]:
+                        - button "Form A" [ref=e1575]:
+                          - generic [ref=e1576]: Form A
+                        - button "More info" [ref=e1577]
+                    - cell "0 days" [ref=e1578]:
+                      - button "0 days" [ref=e1579]
+                    - cell "● Expired" [ref=e1580]:
+                      - button "● Expired" [ref=e1581]:
+                        - generic [ref=e1582]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1583]:
+                      - button "Generate Report" [ref=e1584]
+                      - button "Assignment actions" [ref=e1585]
+                  - row "Begin assignment Form A for N20704A87338, Gracie Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1586] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N20704A87338, Gracie" [ref=e1587]:
+                      - button "Begin assignment Form A for N20704A87338, Gracie" [ref=e1588]:
+                        - generic [ref=e1589]: N20704A87338, Gracie
+                    - cell "Form A More info" [ref=e1590]:
+                      - generic [ref=e1591]:
+                        - button "Form A" [ref=e1592]:
+                          - generic [ref=e1593]: Form A
+                        - button "More info" [ref=e1594]
+                    - cell "0 days" [ref=e1595]:
+                      - button "0 days" [ref=e1596]
+                    - cell "● Expired" [ref=e1597]:
+                      - button "● Expired" [ref=e1598]:
+                        - generic [ref=e1599]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1600]:
+                      - button "Generate Report" [ref=e1601]
+                      - button "Assignment actions" [ref=e1602]
+                  - row "Begin assignment Form A for N78896A92280, Conor Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1603] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N78896A92280, Conor" [ref=e1604]:
+                      - button "Begin assignment Form A for N78896A92280, Conor" [ref=e1605]:
+                        - generic [ref=e1606]: N78896A92280, Conor
+                    - cell "Form A More info" [ref=e1607]:
+                      - generic [ref=e1608]:
+                        - button "Form A" [ref=e1609]:
+                          - generic [ref=e1610]: Form A
+                        - button "More info" [ref=e1611]
+                    - cell "0 days" [ref=e1612]:
+                      - button "0 days" [ref=e1613]
+                    - cell "● Expired" [ref=e1614]:
+                      - button "● Expired" [ref=e1615]:
+                        - generic [ref=e1616]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1617]:
+                      - button "Generate Report" [ref=e1618]
+                      - button "Assignment actions" [ref=e1619]
+                  - row "Begin assignment Form A for N5487A62149, Rhoda Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1620] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N5487A62149, Rhoda" [ref=e1621]:
+                      - button "Begin assignment Form A for N5487A62149, Rhoda" [ref=e1622]:
+                        - generic [ref=e1623]: N5487A62149, Rhoda
+                    - cell "Form A More info" [ref=e1624]:
+                      - generic [ref=e1625]:
+                        - button "Form A" [ref=e1626]:
+                          - generic [ref=e1627]: Form A
+                        - button "More info" [ref=e1628]
+                    - cell "0 days" [ref=e1629]:
+                      - button "0 days" [ref=e1630]
+                    - cell "● Expired" [ref=e1631]:
+                      - button "● Expired" [ref=e1632]:
+                        - generic [ref=e1633]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1634]:
+                      - button "Generate Report" [ref=e1635]
+                      - button "Assignment actions" [ref=e1636]
+                  - row "Begin assignment Form A for N9799A48592, Florine Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1637] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N9799A48592, Florine" [ref=e1638]:
+                      - button "Begin assignment Form A for N9799A48592, Florine" [ref=e1639]:
+                        - generic [ref=e1640]: N9799A48592, Florine
+                    - cell "Form A More info" [ref=e1641]:
+                      - generic [ref=e1642]:
+                        - button "Form A" [ref=e1643]:
+                          - generic [ref=e1644]: Form A
+                        - button "More info" [ref=e1645]
+                    - cell "0 days" [ref=e1646]:
+                      - button "0 days" [ref=e1647]
+                    - cell "● Expired" [ref=e1648]:
+                      - button "● Expired" [ref=e1649]:
+                        - generic [ref=e1650]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1651]:
+                      - button "Generate Report" [ref=e1652]
+                      - button "Assignment actions" [ref=e1653]
+                  - row "Begin assignment Form A for N93485A88099, Cielo Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1654] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N93485A88099, Cielo" [ref=e1655]:
+                      - button "Begin assignment Form A for N93485A88099, Cielo" [ref=e1656]:
+                        - generic [ref=e1657]: N93485A88099, Cielo
+                    - cell "Form A More info" [ref=e1658]:
+                      - generic [ref=e1659]:
+                        - button "Form A" [ref=e1660]:
+                          - generic [ref=e1661]: Form A
+                        - button "More info" [ref=e1662]
+                    - cell "0 days" [ref=e1663]:
+                      - button "0 days" [ref=e1664]
+                    - cell "● Expired" [ref=e1665]:
+                      - button "● Expired" [ref=e1666]:
+                        - generic [ref=e1667]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1668]:
+                      - button "Generate Report" [ref=e1669]
+                      - button "Assignment actions" [ref=e1670]
+                  - row "Begin assignment Form A for N65740A9381, Lia Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1671] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N65740A9381, Lia" [ref=e1672]:
+                      - button "Begin assignment Form A for N65740A9381, Lia" [ref=e1673]:
+                        - generic [ref=e1674]: N65740A9381, Lia
+                    - cell "Form A More info" [ref=e1675]:
+                      - generic [ref=e1676]:
+                        - button "Form A" [ref=e1677]:
+                          - generic [ref=e1678]: Form A
+                        - button "More info" [ref=e1679]
+                    - cell "0 days" [ref=e1680]:
+                      - button "0 days" [ref=e1681]
+                    - cell "● Expired" [ref=e1682]:
+                      - button "● Expired" [ref=e1683]:
+                        - generic [ref=e1684]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1685]:
+                      - button "Generate Report" [ref=e1686]
+                      - button "Assignment actions" [ref=e1687]
+                  - row "Begin assignment Form A for N11240A37473, Maegan Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1688] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N11240A37473, Maegan" [ref=e1689]:
+                      - button "Begin assignment Form A for N11240A37473, Maegan" [ref=e1690]:
+                        - generic [ref=e1691]: N11240A37473, Maegan
+                    - cell "Form A More info" [ref=e1692]:
+                      - generic [ref=e1693]:
+                        - button "Form A" [ref=e1694]:
+                          - generic [ref=e1695]: Form A
+                        - button "More info" [ref=e1696]
+                    - cell "0 days" [ref=e1697]:
+                      - button "0 days" [ref=e1698]
+                    - cell "● Expired" [ref=e1699]:
+                      - button "● Expired" [ref=e1700]:
+                        - generic [ref=e1701]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1702]:
+                      - button "Generate Report" [ref=e1703]
+                      - button "Assignment actions" [ref=e1704]
+                  - row "Begin assignment Form A for N26619A52577, Zola Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1705] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N26619A52577, Zola" [ref=e1706]:
+                      - button "Begin assignment Form A for N26619A52577, Zola" [ref=e1707]:
+                        - generic [ref=e1708]: N26619A52577, Zola
+                    - cell "Form A More info" [ref=e1709]:
+                      - generic [ref=e1710]:
+                        - button "Form A" [ref=e1711]:
+                          - generic [ref=e1712]: Form A
+                        - button "More info" [ref=e1713]
+                    - cell "0 days" [ref=e1714]:
+                      - button "0 days" [ref=e1715]
+                    - cell "● Expired" [ref=e1716]:
+                      - button "● Expired" [ref=e1717]:
+                        - generic [ref=e1718]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1719]:
+                      - button "Generate Report" [ref=e1720]
+                      - button "Assignment actions" [ref=e1721]
+                  - row "Begin assignment Form A for N22640A97163, Enoch Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1722] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N22640A97163, Enoch" [ref=e1723]:
+                      - button "Begin assignment Form A for N22640A97163, Enoch" [ref=e1724]:
+                        - generic [ref=e1725]: N22640A97163, Enoch
+                    - cell "Form A More info" [ref=e1726]:
+                      - generic [ref=e1727]:
+                        - button "Form A" [ref=e1728]:
+                          - generic [ref=e1729]: Form A
+                        - button "More info" [ref=e1730]
+                    - cell "0 days" [ref=e1731]:
+                      - button "0 days" [ref=e1732]
+                    - cell "● Expired" [ref=e1733]:
+                      - button "● Expired" [ref=e1734]:
+                        - generic [ref=e1735]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1736]:
+                      - button "Generate Report" [ref=e1737]
+                      - button "Assignment actions" [ref=e1738]
+                  - row "Begin assignment Form A for N78006A58328, Alisa Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1739] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N78006A58328, Alisa" [ref=e1740]:
+                      - button "Begin assignment Form A for N78006A58328, Alisa" [ref=e1741]:
+                        - generic [ref=e1742]: N78006A58328, Alisa
+                    - cell "Form A More info" [ref=e1743]:
+                      - generic [ref=e1744]:
+                        - button "Form A" [ref=e1745]:
+                          - generic [ref=e1746]: Form A
+                        - button "More info" [ref=e1747]
+                    - cell "0 days" [ref=e1748]:
+                      - button "0 days" [ref=e1749]
+                    - cell "● Expired" [ref=e1750]:
+                      - button "● Expired" [ref=e1751]:
+                        - generic [ref=e1752]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1753]:
+                      - button "Generate Report" [ref=e1754]
+                      - button "Assignment actions" [ref=e1755]
+                  - row "Begin assignment Form A for N88145A58949, Dock Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1756] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N88145A58949, Dock" [ref=e1757]:
+                      - button "Begin assignment Form A for N88145A58949, Dock" [ref=e1758]:
+                        - generic [ref=e1759]: N88145A58949, Dock
+                    - cell "Form A More info" [ref=e1760]:
+                      - generic [ref=e1761]:
+                        - button "Form A" [ref=e1762]:
+                          - generic [ref=e1763]: Form A
+                        - button "More info" [ref=e1764]
+                    - cell "0 days" [ref=e1765]:
+                      - button "0 days" [ref=e1766]
+                    - cell "● Expired" [ref=e1767]:
+                      - button "● Expired" [ref=e1768]:
+                        - generic [ref=e1769]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1770]:
+                      - button "Generate Report" [ref=e1771]
+                      - button "Assignment actions" [ref=e1772]
+                  - row "Begin assignment Form A for N54633A14414, Flo Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1773] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N54633A14414, Flo" [ref=e1774]:
+                      - button "Begin assignment Form A for N54633A14414, Flo" [ref=e1775]:
+                        - generic [ref=e1776]: N54633A14414, Flo
+                    - cell "Form A More info" [ref=e1777]:
+                      - generic [ref=e1778]:
+                        - button "Form A" [ref=e1779]:
+                          - generic [ref=e1780]: Form A
+                        - button "More info" [ref=e1781]
+                    - cell "0 days" [ref=e1782]:
+                      - button "0 days" [ref=e1783]
+                    - cell "● Expired" [ref=e1784]:
+                      - button "● Expired" [ref=e1785]:
+                        - generic [ref=e1786]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1787]:
+                      - button "Generate Report" [ref=e1788]
+                      - button "Assignment actions" [ref=e1789]
+                  - row "Begin assignment Form A for N58385A86543, Arvid Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1790] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N58385A86543, Arvid" [ref=e1791]:
+                      - button "Begin assignment Form A for N58385A86543, Arvid" [ref=e1792]:
+                        - generic [ref=e1793]: N58385A86543, Arvid
+                    - cell "Form A More info" [ref=e1794]:
+                      - generic [ref=e1795]:
+                        - button "Form A" [ref=e1796]:
+                          - generic [ref=e1797]: Form A
+                        - button "More info" [ref=e1798]
+                    - cell "0 days" [ref=e1799]:
+                      - button "0 days" [ref=e1800]
+                    - cell "● Expired" [ref=e1801]:
+                      - button "● Expired" [ref=e1802]:
+                        - generic [ref=e1803]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1804]:
+                      - button "Generate Report" [ref=e1805]
+                      - button "Assignment actions" [ref=e1806]
+                  - row "Begin assignment Form A for N50480A21307, Rebeka Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1807] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N50480A21307, Rebeka" [ref=e1808]:
+                      - button "Begin assignment Form A for N50480A21307, Rebeka" [ref=e1809]:
+                        - generic [ref=e1810]: N50480A21307, Rebeka
+                    - cell "Form A More info" [ref=e1811]:
+                      - generic [ref=e1812]:
+                        - button "Form A" [ref=e1813]:
+                          - generic [ref=e1814]: Form A
+                        - button "More info" [ref=e1815]
+                    - cell "0 days" [ref=e1816]:
+                      - button "0 days" [ref=e1817]
+                    - cell "● Expired" [ref=e1818]:
+                      - button "● Expired" [ref=e1819]:
+                        - generic [ref=e1820]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1821]:
+                      - button "Generate Report" [ref=e1822]
+                      - button "Assignment actions" [ref=e1823]
+                  - row "Begin assignment Form A for N13979A79303, Naomi Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1824] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N13979A79303, Naomi" [ref=e1825]:
+                      - button "Begin assignment Form A for N13979A79303, Naomi" [ref=e1826]:
+                        - generic [ref=e1827]: N13979A79303, Naomi
+                    - cell "Form A More info" [ref=e1828]:
+                      - generic [ref=e1829]:
+                        - button "Form A" [ref=e1830]:
+                          - generic [ref=e1831]: Form A
+                        - button "More info" [ref=e1832]
+                    - cell "0 days" [ref=e1833]:
+                      - button "0 days" [ref=e1834]
+                    - cell "● Expired" [ref=e1835]:
+                      - button "● Expired" [ref=e1836]:
+                        - generic [ref=e1837]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1838]:
+                      - button "Generate Report" [ref=e1839]
+                      - button "Assignment actions" [ref=e1840]
+                  - row "Begin assignment Form A for N91906A38577, Emiliano Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1841] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N91906A38577, Emiliano" [ref=e1842]:
+                      - button "Begin assignment Form A for N91906A38577, Emiliano" [ref=e1843]:
+                        - generic [ref=e1844]: N91906A38577, Emiliano
+                    - cell "Form A More info" [ref=e1845]:
+                      - generic [ref=e1846]:
+                        - button "Form A" [ref=e1847]:
+                          - generic [ref=e1848]: Form A
+                        - button "More info" [ref=e1849]
+                    - cell "0 days" [ref=e1850]:
+                      - button "0 days" [ref=e1851]
+                    - cell "● Expired" [ref=e1852]:
+                      - button "● Expired" [ref=e1853]:
+                        - generic [ref=e1854]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1855]:
+                      - button "Generate Report" [ref=e1856]
+                      - button "Assignment actions" [ref=e1857]
+                  - row "Begin assignment Form A for N41061A86658, Lexie Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1858] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N41061A86658, Lexie" [ref=e1859]:
+                      - button "Begin assignment Form A for N41061A86658, Lexie" [ref=e1860]:
+                        - generic [ref=e1861]: N41061A86658, Lexie
+                    - cell "Form A More info" [ref=e1862]:
+                      - generic [ref=e1863]:
+                        - button "Form A" [ref=e1864]:
+                          - generic [ref=e1865]: Form A
+                        - button "More info" [ref=e1866]
+                    - cell "0 days" [ref=e1867]:
+                      - button "0 days" [ref=e1868]
+                    - cell "● Expired" [ref=e1869]:
+                      - button "● Expired" [ref=e1870]:
+                        - generic [ref=e1871]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1872]:
+                      - button "Generate Report" [ref=e1873]
+                      - button "Assignment actions" [ref=e1874]
+                  - row "Begin assignment Form A for N59191A22073, Adrienne Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1875] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N59191A22073, Adrienne" [ref=e1876]:
+                      - button "Begin assignment Form A for N59191A22073, Adrienne" [ref=e1877]:
+                        - generic [ref=e1878]: N59191A22073, Adrienne
+                    - cell "Form A More info" [ref=e1879]:
+                      - generic [ref=e1880]:
+                        - button "Form A" [ref=e1881]:
+                          - generic [ref=e1882]: Form A
+                        - button "More info" [ref=e1883]
+                    - cell "0 days" [ref=e1884]:
+                      - button "0 days" [ref=e1885]
+                    - cell "● Expired" [ref=e1886]:
+                      - button "● Expired" [ref=e1887]:
+                        - generic [ref=e1888]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1889]:
+                      - button "Generate Report" [ref=e1890]
+                      - button "Assignment actions" [ref=e1891]
+                  - row "Begin assignment Form A for N81774A3307, Devante Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1892] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N81774A3307, Devante" [ref=e1893]:
+                      - button "Begin assignment Form A for N81774A3307, Devante" [ref=e1894]:
+                        - generic [ref=e1895]: N81774A3307, Devante
+                    - cell "Form A More info" [ref=e1896]:
+                      - generic [ref=e1897]:
+                        - button "Form A" [ref=e1898]:
+                          - generic [ref=e1899]: Form A
+                        - button "More info" [ref=e1900]
+                    - cell "0 days" [ref=e1901]:
+                      - button "0 days" [ref=e1902]
+                    - cell "● Expired" [ref=e1903]:
+                      - button "● Expired" [ref=e1904]:
+                        - generic [ref=e1905]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1906]:
+                      - button "Generate Report" [ref=e1907]
+                      - button "Assignment actions" [ref=e1908]
+                  - row "Begin assignment Form A for N32902A34617, Aurelio Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1909] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N32902A34617, Aurelio" [ref=e1910]:
+                      - button "Begin assignment Form A for N32902A34617, Aurelio" [ref=e1911]:
+                        - generic [ref=e1912]: N32902A34617, Aurelio
+                    - cell "Form A More info" [ref=e1913]:
+                      - generic [ref=e1914]:
+                        - button "Form A" [ref=e1915]:
+                          - generic [ref=e1916]: Form A
+                        - button "More info" [ref=e1917]
+                    - cell "0 days" [ref=e1918]:
+                      - button "0 days" [ref=e1919]
+                    - cell "● Expired" [ref=e1920]:
+                      - button "● Expired" [ref=e1921]:
+                        - generic [ref=e1922]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1923]:
+                      - button "Generate Report" [ref=e1924]
+                      - button "Assignment actions" [ref=e1925]
+                  - row "Begin assignment Form A for N59297A14535, Emelie Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1926] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N59297A14535, Emelie" [ref=e1927]:
+                      - button "Begin assignment Form A for N59297A14535, Emelie" [ref=e1928]:
+                        - generic [ref=e1929]: N59297A14535, Emelie
+                    - cell "Form A More info" [ref=e1930]:
+                      - generic [ref=e1931]:
+                        - button "Form A" [ref=e1932]:
+                          - generic [ref=e1933]: Form A
+                        - button "More info" [ref=e1934]
+                    - cell "0 days" [ref=e1935]:
+                      - button "0 days" [ref=e1936]
+                    - cell "● Expired" [ref=e1937]:
+                      - button "● Expired" [ref=e1938]:
+                        - generic [ref=e1939]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1940]:
+                      - button "Generate Report" [ref=e1941]
+                      - button "Assignment actions" [ref=e1942]
+                  - row "Begin assignment Form A for N36286A15677, Agnes Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1943] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N36286A15677, Agnes" [ref=e1944]:
+                      - button "Begin assignment Form A for N36286A15677, Agnes" [ref=e1945]:
+                        - generic [ref=e1946]: N36286A15677, Agnes
+                    - cell "Form A More info" [ref=e1947]:
+                      - generic [ref=e1948]:
+                        - button "Form A" [ref=e1949]:
+                          - generic [ref=e1950]: Form A
+                        - button "More info" [ref=e1951]
+                    - cell "0 days" [ref=e1952]:
+                      - button "0 days" [ref=e1953]
+                    - cell "● Expired" [ref=e1954]:
+                      - button "● Expired" [ref=e1955]:
+                        - generic [ref=e1956]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1957]:
+                      - button "Generate Report" [ref=e1958]
+                      - button "Assignment actions" [ref=e1959]
+                  - row "Begin assignment Form A for N12327A62469, Reilly Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1960] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N12327A62469, Reilly" [ref=e1961]:
+                      - button "Begin assignment Form A for N12327A62469, Reilly" [ref=e1962]:
+                        - generic [ref=e1963]: N12327A62469, Reilly
+                    - cell "Form A More info" [ref=e1964]:
+                      - generic [ref=e1965]:
+                        - button "Form A" [ref=e1966]:
+                          - generic [ref=e1967]: Form A
+                        - button "More info" [ref=e1968]
+                    - cell "0 days" [ref=e1969]:
+                      - button "0 days" [ref=e1970]
+                    - cell "● Expired" [ref=e1971]:
+                      - button "● Expired" [ref=e1972]:
+                        - generic [ref=e1973]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1974]:
+                      - button "Generate Report" [ref=e1975]
+                      - button "Assignment actions" [ref=e1976]
+                  - row "Begin assignment Form A for N81617A18238, Jackeline Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1977] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N81617A18238, Jackeline" [ref=e1978]:
+                      - button "Begin assignment Form A for N81617A18238, Jackeline" [ref=e1979]:
+                        - generic [ref=e1980]: N81617A18238, Jackeline
+                    - cell "Form A More info" [ref=e1981]:
+                      - generic [ref=e1982]:
+                        - button "Form A" [ref=e1983]:
+                          - generic [ref=e1984]: Form A
+                        - button "More info" [ref=e1985]
+                    - cell "0 days" [ref=e1986]:
+                      - button "0 days" [ref=e1987]
+                    - cell "● Expired" [ref=e1988]:
+                      - button "● Expired" [ref=e1989]:
+                        - generic [ref=e1990]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1991]:
+                      - button "Generate Report" [ref=e1992]
+                      - button "Assignment actions" [ref=e1993]
+                  - row "Begin assignment Form A for N7334A37629, Clarabelle Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e1994] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N7334A37629, Clarabelle" [ref=e1995]:
+                      - button "Begin assignment Form A for N7334A37629, Clarabelle" [ref=e1996]:
+                        - generic [ref=e1997]: N7334A37629, Clarabelle
+                    - cell "Form A More info" [ref=e1998]:
+                      - generic [ref=e1999]:
+                        - button "Form A" [ref=e2000]:
+                          - generic [ref=e2001]: Form A
+                        - button "More info" [ref=e2002]
+                    - cell "0 days" [ref=e2003]:
+                      - button "0 days" [ref=e2004]
+                    - cell "● Expired" [ref=e2005]:
+                      - button "● Expired" [ref=e2006]:
+                        - generic [ref=e2007]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2008]:
+                      - button "Generate Report" [ref=e2009]
+                      - button "Assignment actions" [ref=e2010]
+                  - row "Begin assignment Form A for N75675A71453, Beaulah Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2011] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N75675A71453, Beaulah" [ref=e2012]:
+                      - button "Begin assignment Form A for N75675A71453, Beaulah" [ref=e2013]:
+                        - generic [ref=e2014]: N75675A71453, Beaulah
+                    - cell "Form A More info" [ref=e2015]:
+                      - generic [ref=e2016]:
+                        - button "Form A" [ref=e2017]:
+                          - generic [ref=e2018]: Form A
+                        - button "More info" [ref=e2019]
+                    - cell "0 days" [ref=e2020]:
+                      - button "0 days" [ref=e2021]
+                    - cell "● Expired" [ref=e2022]:
+                      - button "● Expired" [ref=e2023]:
+                        - generic [ref=e2024]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2025]:
+                      - button "Generate Report" [ref=e2026]
+                      - button "Assignment actions" [ref=e2027]
+                  - row "Begin assignment Form A for N39514A16150, Odell Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2028] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N39514A16150, Odell" [ref=e2029]:
+                      - button "Begin assignment Form A for N39514A16150, Odell" [ref=e2030]:
+                        - generic [ref=e2031]: N39514A16150, Odell
+                    - cell "Form A More info" [ref=e2032]:
+                      - generic [ref=e2033]:
+                        - button "Form A" [ref=e2034]:
+                          - generic [ref=e2035]: Form A
+                        - button "More info" [ref=e2036]
+                    - cell "0 days" [ref=e2037]:
+                      - button "0 days" [ref=e2038]
+                    - cell "● Expired" [ref=e2039]:
+                      - button "● Expired" [ref=e2040]:
+                        - generic [ref=e2041]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2042]:
+                      - button "Generate Report" [ref=e2043]
+                      - button "Assignment actions" [ref=e2044]
+                  - row "Begin assignment Form A for N28982A56029, Aniyah Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2045] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N28982A56029, Aniyah" [ref=e2046]:
+                      - button "Begin assignment Form A for N28982A56029, Aniyah" [ref=e2047]:
+                        - generic [ref=e2048]: N28982A56029, Aniyah
+                    - cell "Form A More info" [ref=e2049]:
+                      - generic [ref=e2050]:
+                        - button "Form A" [ref=e2051]:
+                          - generic [ref=e2052]: Form A
+                        - button "More info" [ref=e2053]
+                    - cell "0 days" [ref=e2054]:
+                      - button "0 days" [ref=e2055]
+                    - cell "● Expired" [ref=e2056]:
+                      - button "● Expired" [ref=e2057]:
+                        - generic [ref=e2058]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2059]:
+                      - button "Generate Report" [ref=e2060]
+                      - button "Assignment actions" [ref=e2061]
+                  - row "Begin assignment Form A for N19702A82133, Corene Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2062] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N19702A82133, Corene" [ref=e2063]:
+                      - button "Begin assignment Form A for N19702A82133, Corene" [ref=e2064]:
+                        - generic [ref=e2065]: N19702A82133, Corene
+                    - cell "Form A More info" [ref=e2066]:
+                      - generic [ref=e2067]:
+                        - button "Form A" [ref=e2068]:
+                          - generic [ref=e2069]: Form A
+                        - button "More info" [ref=e2070]
+                    - cell "0 days" [ref=e2071]:
+                      - button "0 days" [ref=e2072]
+                    - cell "● Expired" [ref=e2073]:
+                      - button "● Expired" [ref=e2074]:
+                        - generic [ref=e2075]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2076]:
+                      - button "Generate Report" [ref=e2077]
+                      - button "Assignment actions" [ref=e2078]
+                  - row "Begin assignment Form A for N93777A70984, Harold Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2079] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N93777A70984, Harold" [ref=e2080]:
+                      - button "Begin assignment Form A for N93777A70984, Harold" [ref=e2081]:
+                        - generic [ref=e2082]: N93777A70984, Harold
+                    - cell "Form A More info" [ref=e2083]:
+                      - generic [ref=e2084]:
+                        - button "Form A" [ref=e2085]:
+                          - generic [ref=e2086]: Form A
+                        - button "More info" [ref=e2087]
+                    - cell "0 days" [ref=e2088]:
+                      - button "0 days" [ref=e2089]
+                    - cell "● Expired" [ref=e2090]:
+                      - button "● Expired" [ref=e2091]:
+                        - generic [ref=e2092]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2093]:
+                      - button "Generate Report" [ref=e2094]
+                      - button "Assignment actions" [ref=e2095]
+                  - row "Begin assignment Form A for N82072A98172, Franz Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2096] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N82072A98172, Franz" [ref=e2097]:
+                      - button "Begin assignment Form A for N82072A98172, Franz" [ref=e2098]:
+                        - generic [ref=e2099]: N82072A98172, Franz
+                    - cell "Form A More info" [ref=e2100]:
+                      - generic [ref=e2101]:
+                        - button "Form A" [ref=e2102]:
+                          - generic [ref=e2103]: Form A
+                        - button "More info" [ref=e2104]
+                    - cell "0 days" [ref=e2105]:
+                      - button "0 days" [ref=e2106]
+                    - cell "● Expired" [ref=e2107]:
+                      - button "● Expired" [ref=e2108]:
+                        - generic [ref=e2109]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2110]:
+                      - button "Generate Report" [ref=e2111]
+                      - button "Assignment actions" [ref=e2112]
+                  - row "Begin assignment Form A for N44236A36153, Therese Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2113] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N44236A36153, Therese" [ref=e2114]:
+                      - button "Begin assignment Form A for N44236A36153, Therese" [ref=e2115]:
+                        - generic [ref=e2116]: N44236A36153, Therese
+                    - cell "Form A More info" [ref=e2117]:
+                      - generic [ref=e2118]:
+                        - button "Form A" [ref=e2119]:
+                          - generic [ref=e2120]: Form A
+                        - button "More info" [ref=e2121]
+                    - cell "0 days" [ref=e2122]:
+                      - button "0 days" [ref=e2123]
+                    - cell "● Expired" [ref=e2124]:
+                      - button "● Expired" [ref=e2125]:
+                        - generic [ref=e2126]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2127]:
+                      - button "Generate Report" [ref=e2128]
+                      - button "Assignment actions" [ref=e2129]
+                  - row "Begin assignment Form A for N79139A6615, Abbie Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2130] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N79139A6615, Abbie" [ref=e2131]:
+                      - button "Begin assignment Form A for N79139A6615, Abbie" [ref=e2132]:
+                        - generic [ref=e2133]: N79139A6615, Abbie
+                    - cell "Form A More info" [ref=e2134]:
+                      - generic [ref=e2135]:
+                        - button "Form A" [ref=e2136]:
+                          - generic [ref=e2137]: Form A
+                        - button "More info" [ref=e2138]
+                    - cell "0 days" [ref=e2139]:
+                      - button "0 days" [ref=e2140]
+                    - cell "● Expired" [ref=e2141]:
+                      - button "● Expired" [ref=e2142]:
+                        - generic [ref=e2143]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2144]:
+                      - button "Generate Report" [ref=e2145]
+                      - button "Assignment actions" [ref=e2146]
+                  - row "Begin assignment Form A for N23470A44031, Elsa Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2147] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N23470A44031, Elsa" [ref=e2148]:
+                      - button "Begin assignment Form A for N23470A44031, Elsa" [ref=e2149]:
+                        - generic [ref=e2150]: N23470A44031, Elsa
+                    - cell "Form A More info" [ref=e2151]:
+                      - generic [ref=e2152]:
+                        - button "Form A" [ref=e2153]:
+                          - generic [ref=e2154]: Form A
+                        - button "More info" [ref=e2155]
+                    - cell "0 days" [ref=e2156]:
+                      - button "0 days" [ref=e2157]
+                    - cell "● Expired" [ref=e2158]:
+                      - button "● Expired" [ref=e2159]:
+                        - generic [ref=e2160]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2161]:
+                      - button "Generate Report" [ref=e2162]
+                      - button "Assignment actions" [ref=e2163]
+                  - row "Begin assignment Form A for N39552A53385, Greta Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2164] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N39552A53385, Greta" [ref=e2165]:
+                      - button "Begin assignment Form A for N39552A53385, Greta" [ref=e2166]:
+                        - generic [ref=e2167]: N39552A53385, Greta
+                    - cell "Form A More info" [ref=e2168]:
+                      - generic [ref=e2169]:
+                        - button "Form A" [ref=e2170]:
+                          - generic [ref=e2171]: Form A
+                        - button "More info" [ref=e2172]
+                    - cell "0 days" [ref=e2173]:
+                      - button "0 days" [ref=e2174]
+                    - cell "● Expired" [ref=e2175]:
+                      - button "● Expired" [ref=e2176]:
+                        - generic [ref=e2177]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2178]:
+                      - button "Generate Report" [ref=e2179]
+                      - button "Assignment actions" [ref=e2180]
+                  - row "Begin assignment Form A for N92355A66086, Magali Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2181] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N92355A66086, Magali" [ref=e2182]:
+                      - button "Begin assignment Form A for N92355A66086, Magali" [ref=e2183]:
+                        - generic [ref=e2184]: N92355A66086, Magali
+                    - cell "Form A More info" [ref=e2185]:
+                      - generic [ref=e2186]:
+                        - button "Form A" [ref=e2187]:
+                          - generic [ref=e2188]: Form A
+                        - button "More info" [ref=e2189]
+                    - cell "0 days" [ref=e2190]:
+                      - button "0 days" [ref=e2191]
+                    - cell "● Expired" [ref=e2192]:
+                      - button "● Expired" [ref=e2193]:
+                        - generic [ref=e2194]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2195]:
+                      - button "Generate Report" [ref=e2196]
+                      - button "Assignment actions" [ref=e2197]
+                  - row "Begin assignment Form A for N66987A42505, Thurman Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2198] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N66987A42505, Thurman" [ref=e2199]:
+                      - button "Begin assignment Form A for N66987A42505, Thurman" [ref=e2200]:
+                        - generic [ref=e2201]: N66987A42505, Thurman
+                    - cell "Form A More info" [ref=e2202]:
+                      - generic [ref=e2203]:
+                        - button "Form A" [ref=e2204]:
+                          - generic [ref=e2205]: Form A
+                        - button "More info" [ref=e2206]
+                    - cell "0 days" [ref=e2207]:
+                      - button "0 days" [ref=e2208]
+                    - cell "● Expired" [ref=e2209]:
+                      - button "● Expired" [ref=e2210]:
+                        - generic [ref=e2211]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2212]:
+                      - button "Generate Report" [ref=e2213]
+                      - button "Assignment actions" [ref=e2214]
+                  - row "Begin assignment Form A for N11974A98804, Emelie Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2215] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N11974A98804, Emelie" [ref=e2216]:
+                      - button "Begin assignment Form A for N11974A98804, Emelie" [ref=e2217]:
+                        - generic [ref=e2218]: N11974A98804, Emelie
+                    - cell "Form A More info" [ref=e2219]:
+                      - generic [ref=e2220]:
+                        - button "Form A" [ref=e2221]:
+                          - generic [ref=e2222]: Form A
+                        - button "More info" [ref=e2223]
+                    - cell "0 days" [ref=e2224]:
+                      - button "0 days" [ref=e2225]
+                    - cell "● Expired" [ref=e2226]:
+                      - button "● Expired" [ref=e2227]:
+                        - generic [ref=e2228]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2229]:
+                      - button "Generate Report" [ref=e2230]
+                      - button "Assignment actions" [ref=e2231]
+                  - row "Begin assignment Form A for N41747A70752, Wilmer Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2232] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N41747A70752, Wilmer" [ref=e2233]:
+                      - button "Begin assignment Form A for N41747A70752, Wilmer" [ref=e2234]:
+                        - generic [ref=e2235]: N41747A70752, Wilmer
+                    - cell "Form A More info" [ref=e2236]:
+                      - generic [ref=e2237]:
+                        - button "Form A" [ref=e2238]:
+                          - generic [ref=e2239]: Form A
+                        - button "More info" [ref=e2240]
+                    - cell "0 days" [ref=e2241]:
+                      - button "0 days" [ref=e2242]
+                    - cell "● Expired" [ref=e2243]:
+                      - button "● Expired" [ref=e2244]:
+                        - generic [ref=e2245]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2246]:
+                      - button "Generate Report" [ref=e2247]
+                      - button "Assignment actions" [ref=e2248]
+                  - row "Begin assignment Form A for N9677A46175, Karelle Form A More info 0 days ● Expired Generate Report Assignment actions" [ref=e2249] [cursor=pointer]:
+                    - cell "Begin assignment Form A for N9677A46175, Karelle" [ref=e2250]:
+                      - button "Begin assignment Form A for N9677A46175, Karelle" [ref=e2251]:
+                        - generic [ref=e2252]: N9677A46175, Karelle
+                    - cell "Form A More info" [ref=e2253]:
+                      - generic [ref=e2254]:
+                        - button "Form A" [ref=e2255]:
+                          - generic [ref=e2256]: Form A
+                        - button "More info" [ref=e2257]
+                    - cell "0 days" [ref=e2258]:
+                      - button "0 days" [ref=e2259]
+                    - cell "● Expired" [ref=e2260]:
+                      - button "● Expired" [ref=e2261]:
+                        - generic [ref=e2262]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e2263]:
+                      - button "Generate Report" [ref=e2264]
+                      - button "Assignment actions" [ref=e2265]
+            - generic [ref=e2266]:
+              - generic [ref=e2269]:
+                - img [ref=e2270]
+                - heading "Notifications Center" [level=2] [ref=e2274]
+              - generic [ref=e2275]:
+                - generic [ref=e2277]:
+                  - img [ref=e2278]
+                  - heading "Resources" [level=3] [ref=e2282]
+                - list [ref=e2283]:
+                  - listitem [ref=e2284]:
+                    - button "Riverside Learn" [ref=e2285] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e2286]
+                      - img [ref=e2288]
+                  - listitem [ref=e2290]:
+                    - button "Onboarding Tutorial Videos" [ref=e2291] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e2292]
+                      - img [ref=e2294]
+                  - listitem [ref=e2296]:
+                    - button "Quick Reference Guides" [ref=e2297] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e2298]
+                      - img [ref=e2300]
+                - button "View All" [ref=e2303] [cursor=pointer]
+      - contentinfo [ref=e2304]:
+        - generic [ref=e2305]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e2306] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e2307]
+        - generic [ref=e2308]:
+          - link "Riverside Insights Facebook" [ref=e2309] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e2310]
+          - link "Riverside Insights Twitter" [ref=e2311] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e2312]
+          - link "Riverside Insights LinkedIn" [ref=e2313] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e2314]
+          - link "Riverside Insights Instagram" [ref=e2315] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e2316]
+        - generic [ref=e2317]:
+          - button "Leave Feedback" [ref=e2318] [cursor=pointer]
+          - generic [ref=e2319]: "|"
+          - link "Terms of Use" [ref=e2320] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e2321]: "|"
+          - link "Privacy Policy" [ref=e2322] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e2323]: Footer region end
+```
+
+# Test source
+
+```ts
+  80  |               );
+  81  |             },
+  82  |             minTimeout: 5000,
+  83  |             maxTimeout: REPORT_DOWNLOAD_TIMEOUT_IN_MS,
+  84  |           },
+  85  |         );
+  86  | 
+  87  |         const { examinee_ID, dateOfBirth } = examineeData;
+  88  |         RawValueLogger.log("The examinee ID is = ", examinee_ID);
+  89  | 
+  90  |         const ipad7 = devices["iPad (gen 7) landscape"];
+  91  |         const sessionid = await wj5ExaminerDashPage.getSessionID();
+  92  |         const examineeContext = await browser.newContext({ ...ipad7 });
+  93  |         const $examineePage = await examineeContext.newPage();
+  94  |         const wj5examineepage = new wj5ExamineePage($examineePage, sessionid);
+  95  |         await $examineePage.goto(getExamineeURL() + sessionid);
+  96  |         // await wj5examineepage.joinSessionusingSessionID();
+  97  |         await wj5examineepage.clickOnAcceptBUtton(wj5ExaminerDashPage);
+  98  | 
+  99  |         for (let i = 0; i < data.testName.length; i++) {
+  100 |           await wj5examnrTest_derivedScoresPage.pickTheTestNeeded(
+  101 |             data.testName[i],
+  102 |             data.SSP[i],
+  103 |             wj5examineepage,
+  104 |           );
+  105 |           await wj5examnrTest_derivedScoresPage.clickOnLetsBeginButtonAndStartTest(
+  106 |             data.testName[i],
+  107 |             data.SSP[i],
+  108 |             i,
+  109 |           );
+  110 | 
+  111 |           score =
+  112 |             await wj5examnrTest_derivedScoresPage.completeTheTakenTestForDerivedScores(
+  113 |               data.typeOfTest[i],
+  114 |               data.testStemForm[i],
+  115 |               data.BbyC![i],
+  116 |               data.scoreFlag,
+  117 |             );
+  118 | 
+  119 |           [wScores, Wabil, Semw] =
+  120 |             await wj5ExaminerDashPage.getWscoresWabilSemw(
+  121 |               score,
+  122 |               data.scoreFlag,
+  123 |               data.typeOfTest[i],
+  124 |               data.totalItems,
+  125 |               data.negation,
+  126 |               data.testStemForm[i],
+  127 |             );
+  128 | 
+  129 |           scores[data.testStemForm[i]] = {
+  130 |             wScores: wScores,
+  131 |             Wabil: Wabil,
+  132 |             Semw: Semw,
+  133 |             AE: score.get("AE")!,
+  134 |             GE: score.get("GE")!,
+  135 |           };
+  136 | 
+  137 |           console.log(`scores =`, scores);
+  138 | 
+  139 |           if (i != data.testName.length - 1) {
+  140 |             await wj5examnrTest_derivedScoresPage.jumpToNextTest(
+  141 |               data.testName[i + 1],
+  142 |             );
+  143 |           } else {
+  144 |             if (
+  145 |               data.typeOfTest[i].match(
+  146 |                 /SampleItems (correct|incorrect)|Answer (correct|incorrect) But No Basel|Attain Basel but not ceiling/i,
+  147 |               )
+  148 |             ) {
+  149 |               await wj5examnrTest_derivedScoresPage.breakTheLogicOut();
+  150 |               await $examineePage.close();
+  151 |             } else {
+  152 |               await wj5examinerTestPage.endSessionRSB();
+  153 |               await wj5examinerTestPage.completeTSObservationsandClickNext();
+  154 |               await wj5examineepage.swithToTheChildScreenAndWaitUntilToSeeTheJoinSessionButton();
+  155 |               await $examineePage.close();
+  156 |             }
+  157 |             await wj5ah.gotoUrl(url);
+  158 |             await wj5AhDashPage.welcomeTextToBeVisable();
+  159 |           }
+  160 |         }
+  161 |       },
+  162 |     );
+  163 |   });
+  164 | 
+  165 |   test_1(
+  166 |     `Validate different scenarios in submitted test assignment in review mode`,
+  167 |     {
+  168 |       annotation: {
+  169 |         type: "Original user story, Automation user story",
+  170 |         description: "27995, 29065",
+  171 |       },
+  172 |       tag: ["@ReviewMode", "@SubmittedTestAssignments", "@Smoke", "@Aut_Eng_01"],
+  173 |     },
+  174 |     async ({
+  175 |       wj5examiner,
+  176 |       wj5ExaminerDashPage,
+  177 |       wj5examinerTestPage,
+  178 |       browser,
+  179 |     }) => {
+> 180 |       let examinee_ID = examineeData.examinee_ID;
+      |                                      ^ TypeError: Cannot read properties of undefined (reading 'examinee_ID')
+  181 | 
+  182 |       await wj5examiner.goToUrl(url);
+  183 |       await wj5ExaminerDashPage.waitForMyTestAssignmentsToBeVisible();
+  184 |       await wj5ExaminerDashPage.waitForLoadingSpinnerToDisappear();
+  185 |       RawValueLogger.log("Examinee Id is = ", examinee_ID);
+  186 | 
+  187 |       await wj5ExaminerDashPage.verifyTestSetStatusAtMyTestAssignmentsDashboard(
+  188 |         examinee_ID,
+  189 |         "Submitted",
+  190 |         "Scenario_0",
+  191 |       );
+  192 | 
+  193 |       await test_1.step(
+  194 |         "Just Relauch the test assignment should not make the status move to 'In Progress'",
+  195 |         async () => {
+  196 |           RawValueLogger.log(
+  197 |             "Scenario_1",
+  198 |             "Just Relauch the test assignment should not make the status move to 'In Progress'",
+  199 |           );
+  200 |           await wj5ExaminerDashPage.clickOnFirstRow();
+  201 |           await wj5ExaminerDashPage.waitForLoadingSpinnerToDisappear();
+  202 |           await wj5ExaminerDashPage.closeLaunchTestSessionPopUp();
+  203 |           await wj5ExaminerDashPage.verifyTestSetStatusAtMyTestAssignmentsDashboard(
+  204 |             examinee_ID,
+  205 |             "Submitted",
+  206 |             "Scenario_1a",
+  207 |           );
+  208 |         },
+  209 |       );
+  210 | 
+  211 |       await test_1.step(
+  212 |         "Opening up review mode for a submitted test assignment or just opening a test will not automatically change that test assignment to return back to in progress status",
+  213 |         async () => {
+  214 |           RawValueLogger.log(
+  215 |             "Scenario_2",
+  216 |             "Opening up review mode for a submitted test assignment or just opening a test will not automatically change that test assignment to return back to in progress status",
+  217 |           );
+  218 |           await wj5ExaminerDashPage.clickOnFirstRow();
+  219 |           await wj5ExaminerDashPage.waitForLoadingSpinnerToDisappear();
+  220 |           await wj5ExaminerDashPage.clickOnReviewMode();
+  221 |           await wj5ExaminerDashPage.verifyReviewModeDashboardIsVisible();
+  222 |           status =
+  223 |             await wj5ExaminerDashPage.getStatusOfSubmitTestAssignmentButton();
+  224 |           expect_1
+  225 |             .soft(
+  226 |               status,
+  227 |               "Submit test assignment button supposed to be disabled - Scenario_2a",
+  228 |             )
+  229 |             .toBe(true);
+  230 |           await wj5ExaminerDashPage.exitReviewMode();
+  231 |           await wj5ExaminerDashPage.verifyTestSetStatusAtMyTestAssignmentsDashboard(
+  232 |             examinee_ID,
+  233 |             "Submitted",
+  234 |             "Scenario_2b",
+  235 |           );
+  236 | 
+  237 |           await wj5ExaminerDashPage.clickOnFirstRow();
+  238 |           await wj5ExaminerDashPage.waitForLoadingSpinnerToDisappear();
+  239 |           await wj5ExaminerDashPage.clickOnReviewMode();
+  240 |           await wj5ExaminerDashPage.verifyReviewModeDashboardIsVisible();
+  241 |           status =
+  242 |             await wj5ExaminerDashPage.getStatusOfSubmitTestAssignmentButton();
+  243 |           expect_1
+  244 |             .soft(
+  245 |               status,
+  246 |               "Submit test assignment button supposed to be disabled - Scenario_2b",
+  247 |             )
+  248 |             .toBe(true);
+  249 | 
+  250 |           await wj5ExaminerDashPage.selectFollowingTestFromTestsList(
+  251 |             "General Information–What",
+  252 |           );
+  253 | 
+  254 |           await wj5ExaminerDashPage.clickBackToReviewButton();
+  255 | 
+  256 |           await wj5ExaminerDashPage.exitReviewMode();
+  257 |           await wj5ExaminerDashPage.verifyTestSetStatusAtMyTestAssignmentsDashboard(
+  258 |             examinee_ID,
+  259 |             "Submitted",
+  260 |             "Scenario_2c",
+  261 |           );
+  262 |         },
+  263 |       );
+  264 | 
+  265 |       await test_1.step(
+  266 |         " For a test assignment to change back to ‘In progress’ from ‘Submitted’ in review mode, the user needs to change an answer.",
+  267 |         async () => {
+  268 |           RawValueLogger.log(
+  269 |             "Scenario_3",
+  270 |             "For a test assignment to change back to ‘In progress’ from ‘Submitted’ in review mode, the user needs to change an answer.",
+  271 |           );
+  272 |           await wj5ExaminerDashPage.clickOnFirstRow();
+  273 |           await wj5ExaminerDashPage.waitForLoadingSpinnerToDisappear();
+  274 |           await wj5ExaminerDashPage.clickOnReviewMode();
+  275 |           await wj5ExaminerDashPage.verifyReviewModeDashboardIsVisible();
+  276 |           status =
+  277 |             await wj5ExaminerDashPage.getStatusOfSubmitTestAssignmentButton();
+  278 |           expect_1
+  279 |             .soft(
+  280 |               status,
+```
