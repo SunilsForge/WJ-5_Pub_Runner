@@ -850,21 +850,26 @@ jobs:
                   } else if (test.status === 'unexpected') {
                     totalFailed++;
                     const lastResult = test.results?.[test.results.length - 1];
-                    const rawError = lastResult?.error?.message || 'No error message available';
-                    const cleanError = stripAnsi(rawError);
-                    const errorLines = cleanError.split('\n').map(l => l.trim()).filter(Boolean);
+                    const rawMsg = lastResult?.error?.message || 'No error message available';
+                    const rawStack = lastResult?.error?.stack || '';
+                    const cleanMsg = stripAnsi(rawMsg);
+                    const cleanStack = stripAnsi(rawStack);
+                    const msgLines = cleanMsg.split('\n').map(l => l.trim()).filter(Boolean);
+                    const stackLines = cleanStack.split('\n').map(l => l.trim()).filter(Boolean);
 
                     // Line 1: error type (e.g., "TimeoutError: locator.fill: Timeout 60000ms exceeded.")
-                    const errorType = errorLines[0] || 'Unknown error';
+                    const errorType = msgLines[0] || 'Unknown error';
                     // Call log line: "- waiting for getByLabel('First Name*,...')"
-                    const callLogLine = errorLines.find(l => l.startsWith('- waiting for') || l.startsWith('- locator'));
-                    // File + line: "at ../pages/wj5_dashBoard.page.ts:233"
-                    const fileLine = errorLines.find(l => /^\s*at\s+\.\.\//.test(l) || /^\s*at\s+[^(]*\.(page|spec)\.(ts|js)/.test(l));
+                    const callLogLine = msgLines.find(l => l.startsWith('- waiting for') || l.startsWith('- locator'));
+                    // File + line from stack trace: "at ../pages/wj5_dashBoard.page.ts:233"
+                    // Check both message and stack — Playwright puts the location in the stack
+                    const allLines = [...msgLines, ...stackLines];
+                    const fileLine = allLines.find(l => /^at\s+/.test(l) && /\.(page|spec|ts|js)[:\d]*/.test(l));
 
                     // Build detailed error: type + what it was doing + where
                     let detailedError = errorType.substring(0, 200);
                     if (callLogLine) detailedError += '\n' + callLogLine.substring(0, 200);
-                    if (fileLine) detailedError += '\n' + fileLine.trim().substring(0, 200);
+                    if (fileLine) detailedError += '\n' + fileLine.substring(0, 200);
 
                     failures.push({
                       title: spec.title,
@@ -943,9 +948,10 @@ jobs:
             summary += `| Sl.No | Test Cases | Count | Error Reason |\n|---|---|---|---|\n`;
             groupedEntries.forEach(([errorType, tests], idx) => {
               const tcList = tests.map(t => `${mdCell(t.title)} (${mdCell(t.file)})`).join(', ');
-              // Show the detailed error from the first test in the group (representative example)
-              const detailedError = mdCell(tests[0].error);
-              summary += `| ${idx + 1} | ${tcList} | ${tests.length} | \`${detailedError}\` |\n`;
+              // Show detailed error — use <br> outside backticks so HTML renders properly
+              const errorParts = tests[0].error.split('\n').map(l => l.replace(/\|/g, '\\|'));
+              const detailedError = errorParts.map(p => `\`${p}\``).join('<br>');
+              summary += `| ${idx + 1} | ${tcList} | ${tests.length} | ${detailedError} |\n`;
             });
             summary += '\n';
 
@@ -953,7 +959,9 @@ jobs:
             summary += `### Detailed Failures\n\n`;
             summary += `| # | Test Case | File | Error |\n|---|---|---|---|\n`;
             failures.forEach((f, idx) => {
-              summary += `| ${idx + 1} | ${mdCell(f.title)} | ${mdCell(f.file)} | \`${mdCell(f.error)}\` |\n`;
+              const errorParts = f.error.split('\n').map(l => l.replace(/\|/g, '\\|'));
+              const detailedError = errorParts.map(p => `\`${p}\``).join('<br>');
+              summary += `| ${idx + 1} | ${mdCell(f.title)} | ${mdCell(f.file)} | ${detailedError} |\n`;
             });
             summary += '\n';
           }
