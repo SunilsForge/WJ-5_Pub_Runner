@@ -852,12 +852,25 @@ jobs:
                     const lastResult = test.results?.[test.results.length - 1];
                     const rawError = lastResult?.error?.message || 'No error message available';
                     const cleanError = stripAnsi(rawError);
-                    const errorLine = cleanError.split('\n')[0].substring(0, 200);
+                    const errorLines = cleanError.split('\n').map(l => l.trim()).filter(Boolean);
+
+                    // Line 1: error type (e.g., "TimeoutError: locator.fill: Timeout 60000ms exceeded.")
+                    const errorType = errorLines[0] || 'Unknown error';
+                    // Call log line: "- waiting for getByLabel('First Name*,...')"
+                    const callLogLine = errorLines.find(l => l.startsWith('- waiting for') || l.startsWith('- locator'));
+                    // File + line: "at ../pages/wj5_dashBoard.page.ts:233"
+                    const fileLine = errorLines.find(l => /^\s*at\s+\.\.\//.test(l) || /^\s*at\s+[^(]*\.(page|spec)\.(ts|js)/.test(l));
+
+                    // Build detailed error: type + what it was doing + where
+                    let detailedError = errorType.substring(0, 200);
+                    if (callLogLine) detailedError += '\n' + callLogLine.substring(0, 200);
+                    if (fileLine) detailedError += '\n' + fileLine.trim().substring(0, 200);
+
                     failures.push({
                       title: spec.title,
                       file: spec.file || '',
-                      error: errorLine,
-                      errorType: normalizeError(errorLine)
+                      error: detailedError,
+                      errorType: normalizeError(errorType)
                     });
                   } else if (test.status === 'flaky') {
                     totalFlaky++;
@@ -920,12 +933,19 @@ jobs:
           summary += `| Skipped | ${totalSkipped} |\n`;
           summary += `| Flaky | ${totalFlaky} |\n\n`;
           if (groupedEntries.length > 0) {
+            // Helper: escape pipe chars and replace newlines with <br> for markdown table cells
+            function mdCell(str) {
+              return str.replace(/\|/g, '\\|').replace(/\n/g, '<br>');
+            }
+
             // Section A: Grouped by error type
             summary += `### Failure Analysis\n\n`;
             summary += `| Sl.No | Test Cases | Count | Error Reason |\n|---|---|---|---|\n`;
             groupedEntries.forEach(([errorType, tests], idx) => {
-              const tcList = tests.map(t => `\`${t.title}\` (${t.file})`).join(', ');
-              summary += `| ${idx + 1} | ${tcList} | ${tests.length} | \`${errorType}\` |\n`;
+              const tcList = tests.map(t => `${mdCell(t.title)} (${mdCell(t.file)})`).join(', ');
+              // Show the detailed error from the first test in the group (representative example)
+              const detailedError = mdCell(tests[0].error);
+              summary += `| ${idx + 1} | ${tcList} | ${tests.length} | \`${detailedError}\` |\n`;
             });
             summary += '\n';
 
@@ -933,7 +953,7 @@ jobs:
             summary += `### Detailed Failures\n\n`;
             summary += `| # | Test Case | File | Error |\n|---|---|---|---|\n`;
             failures.forEach((f, idx) => {
-              summary += `| ${idx + 1} | ${f.title} | ${f.file} | \`${f.error}\` |\n`;
+              summary += `| ${idx + 1} | ${mdCell(f.title)} | ${mdCell(f.file)} | \`${mdCell(f.error)}\` |\n`;
             });
             summary += '\n';
           }
@@ -992,10 +1012,16 @@ jobs:
             let failText = '*Failure Analysis (grouped by error):*\n\n';
             groupedEntries.slice(0, 10).forEach(([errorType, tests], idx) => {
               const tcList = tests.map(t => `${t.title} (${t.file})`).join(', ');
-              failText += `*${idx + 1}. ${errorType}* — ${tests.length} test(s)\n   ${tcList}\n\n`;
+              // Show detailed error from first test in group (includes call log + file:line)
+              const detail = tests[0].error.replace(/\n/g, '\n   ');
+              failText += `*${idx + 1}.* _${tests.length} test(s)_\n   \`${detail}\`\n   ${tcList}\n\n`;
             });
             if (groupedEntries.length > 10) {
               failText += `_...and ${groupedEntries.length - 10} more error groups_`;
+            }
+            // Slack text blocks have a 3000 char limit; truncate if needed
+            if (failText.length > 2900) {
+              failText = failText.substring(0, 2900) + '\n_...truncated, see full report_';
             }
             blocks.push({
               type: 'section',
