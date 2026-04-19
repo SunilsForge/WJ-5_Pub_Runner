@@ -1014,40 +1014,21 @@ jobs:
             });
           }
 
-          // Add grouped failure details (capped at 10 groups for Slack limits)
+          // Add simple grouped failure summary for Slack (detailed tables are in GitHub Step Summary)
           if (groupedEntries.length > 0) {
             blocks.push({ type: 'divider' });
-            let failText = '*Failure Analysis (grouped by error):*\n\n';
-            groupedEntries.slice(0, 10).forEach(([errorType, tests], idx) => {
-              const tcList = tests.map(t => `${t.title} (${t.file})`).join(', ');
-              // Show detailed error from first test in group (includes call log + file:line)
-              const detail = tests[0].error.replace(/\n/g, '\n   ');
-              failText += `*${idx + 1}.* _${tests.length} test(s)_\n   \`${detail}\`\n   ${tcList}\n\n`;
-            });
+            let failText = groupedEntries.slice(0, 10)
+              .map(([ , tests], idx) => {
+                const errorFirstLine = tests[0].error.split('\n')[0];
+                return `${idx + 1}. \`${errorFirstLine}\` — *${tests.length} test(s)*`;
+              })
+              .join('\n');
             if (groupedEntries.length > 10) {
-              failText += `_...and ${groupedEntries.length - 10} more error groups_`;
-            }
-            // Slack text blocks have a 3000 char limit; truncate if needed
-            if (failText.length > 2900) {
-              failText = failText.substring(0, 2900) + '\n_...truncated, see full report_';
+              failText += `\n_...and ${groupedEntries.length - 10} more error groups_`;
             }
             blocks.push({
               type: 'section',
-              text: { type: 'mrkdwn', text: failText }
-            });
-
-            // Detailed per-TC list with specific errors (capped at 15)
-            blocks.push({ type: 'divider' });
-            let detailText = '*Detailed Failures:*\n\n';
-            failures.slice(0, 15).forEach((f, idx) => {
-              detailText += `${idx + 1}. *${f.title}* (${f.file})\n   \`${f.error}\`\n`;
-            });
-            if (failures.length > 15) {
-              detailText += `_...and ${failures.length - 15} more — see full report_`;
-            }
-            blocks.push({
-              type: 'section',
-              text: { type: 'mrkdwn', text: detailText }
+              text: { type: 'mrkdwn', text: `*Failed Tests (grouped by error):*\n${failText}` }
             });
           }
 
