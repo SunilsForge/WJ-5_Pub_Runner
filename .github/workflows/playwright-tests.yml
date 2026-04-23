@@ -150,7 +150,7 @@ jobs:
     name: "Shard ${{ matrix.shard }}"
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.55.0-noble
+      image: mcr.microsoft.com/playwright:v1.59.1-noble
     strategy:
       fail-fast: false
       matrix: ${{fromJson(needs.prepare.outputs.matrix)}}
@@ -212,7 +212,7 @@ jobs:
             --shard=${{ matrix.shard }}/${{ github.event.inputs.shard_count }} \
             --workers=1 \
             --retries=${{ env.NUM_RETRIES }} \
-            --reporter=html,json
+            --reporter=html,json,blob
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v6
@@ -223,6 +223,7 @@ jobs:
             test-results/
             system-info/
             results.json
+            blob-report/
           retention-days: 90
       - name: Create status file
         if: always()
@@ -349,6 +350,31 @@ jobs:
           sed -i '/<!-- SHARD_ENTRIES -->/r shard_entries.html' merged-report/index.html
           sed -i '/<!-- SHARD_ENTRIES -->/d' merged-report/index.html
           rm -f shard_entries.html
+      - name: Generate native Playwright merged report (Timeline)
+        run: |
+          # Collect blob reports from all shards into a single directory
+          mkdir -p all-blob-reports
+          for dir in all-artifacts/playwright-report-shard-*/blob-report; do
+            if [ -d "$dir" ]; then
+              cp "$dir"/* all-blob-reports/ 2>/dev/null || true
+            fi
+          done
+
+          BLOB_COUNT=$(ls all-blob-reports/ 2>/dev/null | wc -l)
+          if [ "$BLOB_COUNT" -gt 0 ]; then
+            echo "Found $BLOB_COUNT blob file(s) — generating native merged report..."
+            npx playwright merge-reports --reporter=html all-blob-reports || true
+            # Playwright outputs to playwright-report/ by default
+            if [ -d "playwright-report" ]; then
+              mv playwright-report merged-report/playwright-merged
+              echo "Native merged report generated at merged-report/playwright-merged/"
+            else
+              echo "Warning: merge-reports ran but produced no output"
+            fi
+          else
+            echo "No blob reports found — skipping native merge (Timeline will not be available)"
+          fi
+
       - name: Upload merged report artifact
         uses: actions/upload-artifact@v6
         with:
@@ -710,6 +736,22 @@ jobs:
             echo "path=gh-pages" >> $GITHUB_OUTPUT
           fi
 
+      - name: Delete stale Pages artifact (prevents duplicate on re-run)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # On re-runs, a previous github-pages artifact may already exist.
+          # deploy-pages@v5 fails if it finds >1 artifact with the same name.
+          # This only deletes the Pages deployment bundle — NOT the shard report artifacts.
+          ARTIFACT_ID=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" \
+            --jq '.artifacts[] | select(.name == "github-pages") | .id' 2>/dev/null | head -n1)
+          if [ -n "$ARTIFACT_ID" ]; then
+            echo "Deleting stale github-pages artifact (ID: $ARTIFACT_ID)"
+            gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$ARTIFACT_ID" || true
+          else
+            echo "No stale github-pages artifact found — first run"
+          fi
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -784,6 +826,17 @@ jobs:
             return str.replace(/\u001b\[[0-9;]*m/g, '').replace(/\x1b\[[0-9;]*m/g, '');
           }
 
+          // Normalize error message for grouping: strip specific values, keep the pattern
+          function normalizeError(msg) {
+            return msg
+              .replace(/'[^']*'/g, "'...'")
+              .replace(/"[^"]*"/g, '"..."')
+              .replace(/\d+ms/g, 'Nms')
+              .replace(/locator\('[^']*'\)/g, "locator('...')")
+              .replace(/\d+/g, 'N')
+              .substring(0, 150);
+          }
+
           // Recursively walk Playwright JSON report suites to extract test results
           function walkSuites(suites) {
             for (const suite of (suites || [])) {
@@ -797,12 +850,32 @@ jobs:
                   } else if (test.status === 'unexpected') {
                     totalFailed++;
                     const lastResult = test.results?.[test.results.length - 1];
-                    const rawError = lastResult?.error?.message || 'No error message available';
-                    const cleanError = stripAnsi(rawError);
+                    const rawMsg = lastResult?.error?.message || 'No error message available';
+                    const rawStack = lastResult?.error?.stack || '';
+                    const cleanMsg = stripAnsi(rawMsg);
+                    const cleanStack = stripAnsi(rawStack);
+                    const msgLines = cleanMsg.split('\n').map(l => l.trim()).filter(Boolean);
+                    const stackLines = cleanStack.split('\n').map(l => l.trim()).filter(Boolean);
+
+                    // Line 1: error type (e.g., "TimeoutError: locator.fill: Timeout 60000ms exceeded.")
+                    const errorType = msgLines[0] || 'Unknown error';
+                    // Call log line: "- waiting for getByLabel('First Name*,...')"
+                    const callLogLine = msgLines.find(l => l.startsWith('- waiting for') || l.startsWith('- locator'));
+                    // File + line from stack trace: "at ../pages/wj5_dashBoard.page.ts:233"
+                    // Check both message and stack — Playwright puts the location in the stack
+                    const allLines = [...msgLines, ...stackLines];
+                    const fileLine = allLines.find(l => /^at\s+/.test(l) && /\.(page|spec|ts|js)[:\d]*/.test(l));
+
+                    // Build detailed error: type + what it was doing + where
+                    let detailedError = errorType.substring(0, 200);
+                    if (callLogLine) detailedError += '\n' + callLogLine.substring(0, 200);
+                    if (fileLine) detailedError += '\n' + fileLine.substring(0, 200);
+
                     failures.push({
                       title: spec.title,
                       file: spec.file || '',
-                      error: cleanError.split('\n')[0].substring(0, 200)
+                      error: detailedError,
+                      errorType: normalizeError(errorType)
                     });
                   } else if (test.status === 'flaky') {
                     totalFlaky++;
@@ -835,6 +908,16 @@ jobs:
           const overallFailed = totalFailed > 0 || process.env.TEST_NEEDS_RESULT === 'failure';
           const statusText = overallFailed ? 'FAILED' : 'PASSED';
 
+          // ── Group failures by normalized error type (most frequent first) ──
+          const grouped = {};
+          for (const f of failures) {
+            const key = f.errorType;
+            if (!grouped[key]) grouped[key] = [];
+            grouped[key].push(f);
+          }
+          const groupedEntries = Object.entries(grouped)
+            .sort((a, b) => b[1].length - a[1].length);
+
           // ── Build URLs ──
           const repo = process.env.GITHUB_REPOSITORY;
           const runId = process.env.GITHUB_RUN_ID;
@@ -854,11 +937,32 @@ jobs:
           summary += `| Failed | ${totalFailed} |\n`;
           summary += `| Skipped | ${totalSkipped} |\n`;
           summary += `| Flaky | ${totalFlaky} |\n\n`;
-          if (failures.length > 0) {
-            summary += `### Failed Tests\n\n`;
-            for (const f of failures) {
-              summary += `- **${f.title}** (${f.file})\n  > \`${f.error}\`\n`;
+          if (groupedEntries.length > 0) {
+            // Helper: escape pipe chars and replace newlines with <br> for markdown table cells
+            function mdCell(str) {
+              return str.replace(/\|/g, '\\|').replace(/\n/g, '<br>');
             }
+
+            // Section A: Grouped by error type
+            summary += `### Failure Analysis\n\n`;
+            summary += `| Sl.No | Test Cases | Count | Error Reason |\n|---|---|---|---|\n`;
+            groupedEntries.forEach(([errorType, tests], idx) => {
+              const tcList = tests.map(t => `${mdCell(t.title)} (${mdCell(t.file)})`).join(', ');
+              // Show detailed error — use <br> outside backticks so HTML renders properly
+              const errorParts = tests[0].error.split('\n').map(l => l.replace(/\|/g, '\\|'));
+              const detailedError = errorParts.map(p => `\`${p}\``).join('<br>');
+              summary += `| ${idx + 1} | ${tcList} | ${tests.length} | ${detailedError} |\n`;
+            });
+            summary += '\n';
+
+            // Section B: Detailed per-TC failures
+            summary += `### Detailed Failures\n\n`;
+            summary += `| # | Test Case | File | Error |\n|---|---|---|---|\n`;
+            failures.forEach((f, idx) => {
+              const errorParts = f.error.split('\n').map(l => l.replace(/\|/g, '\\|'));
+              const detailedError = errorParts.map(p => `\`${p}\``).join('<br>');
+              summary += `| ${idx + 1} | ${mdCell(f.title)} | ${mdCell(f.file)} | ${detailedError} |\n`;
+            });
             summary += '\n';
           }
           summary += `[Full Report](${pagesUrl}) | [Actions Run](${actionsUrl})\n`;
@@ -910,18 +1014,21 @@ jobs:
             });
           }
 
-          // Add failure details (capped at 10 to stay within Slack message limits)
-          if (failures.length > 0) {
+          // Add simple grouped failure summary for Slack (detailed tables are in GitHub Step Summary)
+          if (groupedEntries.length > 0) {
             blocks.push({ type: 'divider' });
-            let failText = failures.slice(0, 10)
-              .map(f => `• *${f.title}*\n   \`${f.error}\``)
+            let failText = groupedEntries.slice(0, 10)
+              .map(([ , tests], idx) => {
+                const errorFirstLine = tests[0].error.split('\n')[0];
+                return `${idx + 1}. \`${errorFirstLine}\` — *${tests.length} test(s)*`;
+              })
               .join('\n');
-            if (failures.length > 10) {
-              failText += `\n_...and ${failures.length - 10} more failures_`;
+            if (groupedEntries.length > 10) {
+              failText += `\n_...and ${groupedEntries.length - 10} more error groups_`;
             }
             blocks.push({
               type: 'section',
-              text: { type: 'mrkdwn', text: `*Failed Tests:*\n${failText}` }
+              text: { type: 'mrkdwn', text: `*Failed Tests (grouped by error):*\n${failText}` }
             });
           }
 
