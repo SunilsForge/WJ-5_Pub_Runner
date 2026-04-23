@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "221",
+    "timestamp": "20260423_000000",
+    "runReason": "Running the SCRIPTS in STAEG after locator fix for testDe and derived scores ",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments|@ChatBot"
+  },
+  {
     "runNumber": "220",
     "timestamp": "20260422_000000",
     "runReason": "Running SMOKE in stage as a part of prod release",
