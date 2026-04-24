@@ -1,0 +1,1070 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+        "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24888435495"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 13,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/dashboard/testAssignments_C.spec.ts",
+      "file": "functional/dashboard/testAssignments_C.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Validate Dashboard Test Assignments functionality Part_C",
+          "ok": false,
+          "tags": [
+            "DashboardTestAssignments_C",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "27345_27549, 30275_30670",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts",
+                    "line": 13,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 189764,
+                  "error": {
+                    "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n\n    at DashBoardPage.getTheTestAssignmentsRowDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:833:20)\n    at DashBoardPage.getExamineesDetailsFromTestAssignmentTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1968:26)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:37:31\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:34:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 20,
+                      "line": 833
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:833\n\n\u001b[0m \u001b[90m 831 |\u001b[39m\n \u001b[90m 832 |\u001b[39m     \u001b[36mconst\u001b[39m [examinee\u001b[33m,\u001b[39m testSet\u001b[33m,\u001b[39m daysLeftEdit\u001b[33m,\u001b[39m status] \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 833 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\n \u001b[90m     |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 834 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\n \u001b[90m 835 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\n \u001b[90m 836 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m3\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 20,
+                        "line": 833
+                      },
+                      "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n\n\n   at ../page/dashboardPage.ts:833\n\n  831 |\n  832 |     const [examinee, testSet, daysLeftEdit, status] = await Promise.all([\n> 833 |       cells.nth(0).textContent(),\n      |                    ^\n  834 |       cells.nth(1).textContent(),\n  835 |       cells.nth(2).textContent(),\n  836 |       cells.nth(3).textContent(),\n    at DashBoardPage.getTheTestAssignmentsRowDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:833:20)\n    at DashBoardPage.getExamineesDetailsFromTestAssignmentTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1968:26)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:37:31\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:34:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 03PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S13:W0] Login successful for 03PwAut25Ex_01\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "Login failed for 03PwAut25Ex_01: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:80:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:48:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m80\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@48'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@48'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1777032301288\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:80:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:48:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                    },
+                    {
+                      "text": "[S13:W0] Login attempt 1 failed for 03PwAut25Ex_01\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Examiner:- Verify subtests successfully applied for submitted test assignment",
+                      "duration": 72876,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n\n    at DashBoardPage.getTheTestAssignmentsRowDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:833:20)\n    at DashBoardPage.getExamineesDetailsFromTestAssignmentTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1968:26)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:37:31\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:34:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 20,
+                          "line": 833
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:833\n\n\u001b[0m \u001b[90m 831 |\u001b[39m\n \u001b[90m 832 |\u001b[39m     \u001b[36mconst\u001b[39m [examinee\u001b[33m,\u001b[39m testSet\u001b[33m,\u001b[39m daysLeftEdit\u001b[33m,\u001b[39m status] \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 833 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\n \u001b[90m     |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 834 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\n \u001b[90m 835 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\n \u001b[90m 836 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m3\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-04-24T12:03:44.192Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "27345_27549, 30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts",
+                        "line": 13,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 20,
+                    "line": 833
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 105660,
+                  "error": {
+                    "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n\n    at DashBoardPage.getTheTestAssignmentsRowDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:833:20)\n    at DashBoardPage.getExamineesDetailsFromTestAssignmentTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1968:26)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:37:31\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:34:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 20,
+                      "line": 833
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:833\n\n\u001b[0m \u001b[90m 831 |\u001b[39m\n \u001b[90m 832 |\u001b[39m     \u001b[36mconst\u001b[39m [examinee\u001b[33m,\u001b[39m testSet\u001b[33m,\u001b[39m daysLeftEdit\u001b[33m,\u001b[39m status] \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 833 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\n \u001b[90m     |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 834 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\n \u001b[90m 835 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\n \u001b[90m 836 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m3\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 20,
+                        "line": 833
+                      },
+                      "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n\n\n   at ../page/dashboardPage.ts:833\n\n  831 |\n  832 |     const [examinee, testSet, daysLeftEdit, status] = await Promise.all([\n> 833 |       cells.nth(0).textContent(),\n      |                    ^\n  834 |       cells.nth(1).textContent(),\n  835 |       cells.nth(2).textContent(),\n  836 |       cells.nth(3).textContent(),\n    at DashBoardPage.getTheTestAssignmentsRowDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:833:20)\n    at DashBoardPage.getExamineesDetailsFromTestAssignmentTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1968:26)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:37:31\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:34:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 03PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S13:W1] Login successful for 03PwAut25Ex_01\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Examiner:- Verify subtests successfully applied for submitted test assignment",
+                      "duration": 72148,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] div[class$=\\'rowButton\\']').first().locator('button[class*=\\'cell\\']').first()\u001b[22m\n\n    at DashBoardPage.getTheTestAssignmentsRowDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:833:20)\n    at DashBoardPage.getExamineesDetailsFromTestAssignmentTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1968:26)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:37:31\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:34:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 20,
+                          "line": 833
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:833\n\n\u001b[0m \u001b[90m 831 |\u001b[39m\n \u001b[90m 832 |\u001b[39m     \u001b[36mconst\u001b[39m [examinee\u001b[33m,\u001b[39m testSet\u001b[33m,\u001b[39m daysLeftEdit\u001b[33m,\u001b[39m status] \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 833 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\n \u001b[90m     |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 834 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\n \u001b[90m 835 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\n \u001b[90m 836 |\u001b[39m       cells\u001b[33m.\u001b[39mnth(\u001b[35m3\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m,\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-04-24T12:07:01.950Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "27345_27549, 30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts",
+                        "line": 13,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 20,
+                    "line": 833
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d312348875e4a5b34876-2b1cdf25fad60f867cc3",
+          "file": "functional/dashboard/testAssignments_C.spec.ts",
+          "line": 13,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/SubmittedTestAssignments.spec.ts",
+      "file": "functional/SubmittedTestAssignments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "I want the ability to launch into review mode for my submitted test assignments",
+          "file": "functional/SubmittedTestAssignments.spec.ts",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Complete testing for tests selected in the block and submit",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "ReviewMode",
+                "SubmittedTestAssignments",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 348804,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S13:W2] Login successful for 03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S13:W2] Login successful for 03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N51615A90704\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N51615A90704/dataFiles/Derived_Score_AutoFilter_Template_N51615A90704.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N51615A90704 FirstName=Arno LastName =N51615A90704 Age = 04/24/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N51615A90704\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Oral Vocabulary–Synonyms\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 11\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22179|Ages 4 to 11|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 25\n"
+                        },
+                        {
+                          "text": "Type Of test OVSYN - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(29) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'N/A'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'N/A'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxx@N/AN/A\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Oral Vocabulary–Antonyms\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 8\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22211|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 30\n"
+                        },
+                        {
+                          "text": "Type Of test OVANT - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(34) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m },\n  \u001b[32m'OVANT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m422.07\u001b[39m, Semw: \u001b[33m15.06\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Matrices\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 11\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17218|Ages 4 to 11|17219\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MATRCZ - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Block A, Item 1\n"
+                        },
+                        {
+                          "text": "Block A, Item 2\n"
+                        },
+                        {
+                          "text": "Block A, Item 3\n"
+                        },
+                        {
+                          "text": "Block A, Item 4\n"
+                        },
+                        {
+                          "text": "Block A, Item 5\n"
+                        },
+                        {
+                          "text": "Block A, Item 6\n"
+                        },
+                        {
+                          "text": "Block A, Item 7\n"
+                        },
+                        {
+                          "text": "Block A, Item 8\n"
+                        },
+                        {
+                          "text": "Map(43) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Introduction 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block A, Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 6'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 7'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 8'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block B, Item 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 5'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Introduction 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Introduction 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 5'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 5'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^x00000000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m },\n  \u001b[32m'OVANT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m422.07\u001b[39m, Semw: \u001b[33m15.06\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'MATRCZ.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m441.8\u001b[39m, Semw: \u001b[33m15.55\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Verbal Attention\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 8\n"
+                        },
+                        {
+                          "text": "selected ssp is = 12924|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 36\n"
+                        },
+                        {
+                          "text": "Type Of test VRBATN - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(40) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m },\n  \u001b[32m'OVANT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m422.07\u001b[39m, Semw: \u001b[33m15.06\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'MATRCZ.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m441.8\u001b[39m, Semw: \u001b[33m15.55\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'VRBATN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m421.34\u001b[39m, Semw: \u001b[33m14.92\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T12:08:49.443Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5000e6af19a29c325986-b72d5a42dd7365263961",
+              "file": "functional/SubmittedTestAssignments.spec.ts",
+              "line": 33,
+              "column": 9
+            },
+            {
+              "title": "Validate different scenarios in submitted test assignment in review mode",
+              "ok": false,
+              "tags": [
+                "ReviewMode",
+                "SubmittedTestAssignments",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [
+                    {
+                      "type": "Original user story, Automation user story",
+                      "description": "27995, 29065",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/SubmittedTestAssignments.spec.ts",
+                        "line": 165,
+                        "column": 9
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 111593,
+                      "error": {
+                        "message": "Error: Examinee is either not founf or too many results\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div[class=\\'Grid_mcs_rowButton\\']')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Examinee is either not founf or too many results with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[class=\\'Grid_mcs_rowButton\\']')\u001b[22m\n\u001b[2m    64 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                        "stack": "Error: Examinee is either not founf or too many results\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div[class=\\'Grid_mcs_rowButton\\']')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Examinee is either not founf or too many results with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[class=\\'Grid_mcs_rowButton\\']')\u001b[22m\n\u001b[2m    64 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at DashBoardPage.searchForExamineeAtSearchMyTestAssignments (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:852:7)\n    at DashBoardPage.verifyTestSetStatusAtMyTestAssignmentsDashboard (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:816:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/SubmittedTestAssignments.spec.ts:187:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 7,
+                          "line": 852
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:852\n\n\u001b[0m \u001b[90m 850 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mrowButton\u001b[33m,\u001b[39m\n \u001b[90m 851 |\u001b[39m       \u001b[32m\"Examinee is either not founf or too many results\"\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 852 |\u001b[39m     )\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 853 |\u001b[39m   }\n \u001b[90m 854 |\u001b[39m   \u001b[36masync\u001b[39m clickOnFirstRow() {\n \u001b[90m 855 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mrowButton\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 7,
+                            "line": 852
+                          },
+                          "message": "Error: Examinee is either not founf or too many results\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div[class=\\'Grid_mcs_rowButton\\']')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Examinee is either not founf or too many results with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[class=\\'Grid_mcs_rowButton\\']')\u001b[22m\n\u001b[2m    64 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n   at ../page/dashboardPage.ts:852\n\n  850 |       this.rowButton,\n  851 |       \"Examinee is either not founf or too many results\",\n> 852 |     ).toHaveCount(1);\n      |       ^\n  853 |   }\n  854 |   async clickOnFirstRow() {\n  855 |     await this.rowButton\n    at DashBoardPage.searchForExamineeAtSearchMyTestAssignments (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:852:7)\n    at DashBoardPage.verifyTestSetStatusAtMyTestAssignmentsDashboard (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:816:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/SubmittedTestAssignments.spec.ts:187:7"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S13:W2] Login successful for 03PwAut25Ex_01\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T12:14:38.801Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "27995, 29065",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/SubmittedTestAssignments.spec.ts",
+                            "line": 165,
+                            "column": 9
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-SubmittedTestAs-52ed3-t-assignment-in-review-mode-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-SubmittedTestAs-52ed3-t-assignment-in-review-mode-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-SubmittedTestAs-52ed3-t-assignment-in-review-mode-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 7,
+                        "line": 852
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 33778,
+                      "error": {
+                        "message": "TypeError: Cannot read properties of undefined (reading 'examinee_ID')",
+                        "stack": "TypeError: Cannot read properties of undefined (reading 'examinee_ID')\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/SubmittedTestAssignments.spec.ts:180:38",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/SubmittedTestAssignments.spec.ts",
+                          "column": 38,
+                          "line": 180
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 178 |\u001b[39m       browser\u001b[33m,\u001b[39m\n \u001b[90m 179 |\u001b[39m     }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 180 |\u001b[39m       \u001b[36mlet\u001b[39m examinee_ID \u001b[33m=\u001b[39m examineeData\u001b[33m.\u001b[39mexaminee_ID\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 181 |\u001b[39m\n \u001b[90m 182 |\u001b[39m       \u001b[36mawait\u001b[39m wj5examiner\u001b[33m.\u001b[39mgoToUrl(url)\u001b[33m;\u001b[39m\n \u001b[90m 183 |\u001b[39m       \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mwaitForMyTestAssignmentsToBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/SubmittedTestAssignments.spec.ts",
+                            "column": 38,
+                            "line": 180
+                          },
+                          "message": "TypeError: Cannot read properties of undefined (reading 'examinee_ID')\n\n  178 |       browser,\n  179 |     }) => {\n> 180 |       let examinee_ID = examineeData.examinee_ID;\n      |                                      ^\n  181 |\n  182 |       await wj5examiner.goToUrl(url);\n  183 |       await wj5ExaminerDashPage.waitForMyTestAssignmentsToBeVisible();\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/SubmittedTestAssignments.spec.ts:180:38"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S13:W3] Login successful for 03PwAut25Ex_01\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-04-24T12:16:37.570Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "27995, 29065",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/SubmittedTestAssignments.spec.ts",
+                            "line": 165,
+                            "column": 9
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-SubmittedTestAs-52ed3-t-assignment-in-review-mode-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-SubmittedTestAs-52ed3-t-assignment-in-review-mode-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/SubmittedTestAssignments.spec.ts",
+                        "column": 38,
+                        "line": 180
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5000e6af19a29c325986-6b0a64eff4159d826ac1",
+              "file": "functional/SubmittedTestAssignments.spec.ts",
+              "line": 165,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-24T12:03:28.302Z",
+    "duration": 823701.147,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
