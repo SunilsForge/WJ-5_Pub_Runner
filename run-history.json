@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "223",
+    "timestamp": "20260427_000000",
+    "runReason": "Rinnning SMOEK in TSAGE as a part of PROD patching",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "222",
     "timestamp": "20260424_000000",
     "runReason": "Running SMOKE in STAGE after fixing the locators V2",

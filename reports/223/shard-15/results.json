@@ -1,0 +1,685 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+        "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/24993089826"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 15,
+      "total": 15
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/InProgressTestAssignments.spec.ts",
+      "file": "functional/InProgressTestAssignments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verify review mode for my 'In Progress' test assignments",
+          "file": "functional/InProgressTestAssignments.spec.ts",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Administer a selective test and leave the test in diff statuses as a part of 'in progress' test assignment validation",
+              "ok": false,
+              "tags": [
+                "Smoke",
+                "ReviewMode",
+                "InProgressTestAssignments",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 2400000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 941279,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button/b[text()=\\'Score Later\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button/b[text()=\\'Score Later\\']')\u001b[22m\n\n    at CommonTestPage.completeTestInAdministrationMode (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:9249:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:104:30",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 9249
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:9249\n\n\u001b[0m \u001b[90m 9247 |\u001b[39m\n \u001b[90m 9248 |\u001b[39m       \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mstartsWith(\u001b[32m'Score Later'\u001b[39m)) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 9249 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mscoreLaterButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 9250 |\u001b[39m         \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 9251 |\u001b[39m       } \u001b[36melse\u001b[39m \u001b[36mif\u001b[39m (tapFluency) {\n \u001b[90m 9252 |\u001b[39m         \u001b[36mconst\u001b[39m isDoneButtonVisible\u001b[33m:\u001b[39m boolean \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdoneButton\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 9249
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button/b[text()=\\'Score Later\\']')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:9249\n\n  9247 |\n  9248 |       if (await response.startsWith('Score Later')) {\n> 9249 |         await this.scoreLaterButton.click();\n       |                                     ^\n  9250 |         return response;\n  9251 |       } else if (tapFluency) {\n  9252 |         const isDoneButtonVisible: boolean = await this.doneButton.isVisible();\n    at CommonTestPage.completeTestInAdministrationMode (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:9249:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:104:30"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S15:W0] Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N66747A34001\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N66747A34001 FirstName=Sarah LastName =N66747A34001 Age = 04/27/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N66747A34001\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "await topLine.isVisible() : false\n"
+                        },
+                        {
+                          "text": "await introText.isVisible() = true\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 15542|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Analysis-Synthesis\n"
+                        },
+                        {
+                          "text": "Block Rotation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18158|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17958|Ages 4 to 6|17959\n"
+                        },
+                        {
+                          "text": "Letter-Word Identification\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17634|Age 6|17635\n"
+                        },
+                        {
+                          "text": "Math Facts Fluency\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14497|Ages 4 to 6|\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-27T11:47:33.001Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome/error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 9249
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 917950,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button/b[text()=\\'Score Later\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button/b[text()=\\'Score Later\\']')\u001b[22m\n\n    at CommonTestPage.completeTestInAdministrationMode (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:9249:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:104:30",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 37,
+                          "line": 9249
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:9249\n\n\u001b[0m \u001b[90m 9247 |\u001b[39m\n \u001b[90m 9248 |\u001b[39m       \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mstartsWith(\u001b[32m'Score Later'\u001b[39m)) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 9249 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mscoreLaterButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 9250 |\u001b[39m         \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 9251 |\u001b[39m       } \u001b[36melse\u001b[39m \u001b[36mif\u001b[39m (tapFluency) {\n \u001b[90m 9252 |\u001b[39m         \u001b[36mconst\u001b[39m isDoneButtonVisible\u001b[33m:\u001b[39m boolean \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdoneButton\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 37,
+                            "line": 9249
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button/b[text()=\\'Score Later\\']')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:9249\n\n  9247 |\n  9248 |       if (await response.startsWith('Score Later')) {\n> 9249 |         await this.scoreLaterButton.click();\n       |                                     ^\n  9250 |         return response;\n  9251 |       } else if (tapFluency) {\n  9252 |         const isDoneButtonVisible: boolean = await this.doneButton.isVisible();\n    at CommonTestPage.completeTestInAdministrationMode (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:9249:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:104:30"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S15:W1] Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N54306A59765\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N54306A59765 FirstName=Jordon LastName =N54306A59765 Age = 04/27/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N54306A59765\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "await topLine.isVisible() : false\n"
+                        },
+                        {
+                          "text": "await introText.isVisible() = true\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 15542|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Analysis-Synthesis\n"
+                        },
+                        {
+                          "text": "Block Rotation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18158|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17958|Ages 4 to 6|17959\n"
+                        },
+                        {
+                          "text": "Letter-Word Identification\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17634|Age 6|17635\n"
+                        },
+                        {
+                          "text": "Math Facts Fluency\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14497|Ages 4 to 6|\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-04-27T12:03:33.998Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome-retry1/error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-b67fd--test-assignment-validation-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 37,
+                        "line": 9249
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "49eef29cefdee46ec9fe-04de2063787606b26157",
+              "file": "functional/InProgressTestAssignments.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "Validate different scenarios for 'In Progress' test assignment in review mode",
+              "ok": true,
+              "tags": [
+                "ReviewMode",
+                "InProgressTestAssignments",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [
+                    {
+                      "type": "Original user story, Automation user story",
+                      "description": "27994, (29273, 29290)",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts",
+                        "line": 180,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-27T12:03:32.572Z",
+                      "annotations": [],
+                      "attachments": []
+                    },
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-04-27T12:18:52.603Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "49eef29cefdee46ec9fe-10ea8c8bf44423f8a889",
+              "file": "functional/InProgressTestAssignments.spec.ts",
+              "line": 180,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-27T11:47:17.693Z",
+    "duration": 1894974.532,
+    "expected": 0,
+    "skipped": 1,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
