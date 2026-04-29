@@ -1,0 +1,1455 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+        "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 10,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/dashboard/testAssignments_B.spec.ts",
+      "file": "functional/dashboard/testAssignments_B.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Run the test Preschool to Grade 2 - 5 lowest incorrect items SSP1 to create test data for InProgress sets",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 121691,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S10:W0] Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N18577A13244\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N18577A13244/dataFiles/Score_DataExport_AutoFilter_Template_N18577A13244.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N18577A13244 FirstName=Landen LastName =N18577A13244 Age = 04/29/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N18577A13244\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : false\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = true\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-29T11:54:08.506Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 121150,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S10:W1] Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N51014A67892\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N51014A67892/dataFiles/Score_DataExport_AutoFilter_Template_N51014A67892.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N51014A67892 FirstName=Celine LastName =N51014A67892 Age = 04/29/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N51014A67892\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : false\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = true\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-04-29T12:06:08.948Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-a91349b67f51d4577e3b",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 17,
+          "column": 7
+        },
+        {
+          "title": "Run the test Ages 4 to 7 - 5 correct and 5 incorrect SSP1 to create test data for InProgress sets",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 149554,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S10:W0] Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N11630A35596\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11630A35596/dataFiles/Score_DataExport_AutoFilter_Template_N11630A35596.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N11630A35596 FirstName=Rene LastName =N11630A35596 Age = 04/29/2022\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N11630A35596\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : false\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = true\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-29T11:56:10.784Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 139159,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S10:W1] Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N75987A69389\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N75987A69389/dataFiles/Score_DataExport_AutoFilter_Template_N75987A69389.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N75987A69389 FirstName=Stefan LastName =N75987A69389 Age = 04/29/2022\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N75987A69389\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : false\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = true\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-04-29T12:08:10.499Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-916a453762de36db6ee2",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 17,
+          "column": 7
+        },
+        {
+          "title": "Run the test Preschool to Grade 2 - 1 correct 1 incorrect SSP1 to create test data for InProgress sets",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 187129,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S10:W0] Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N26229A14551\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N26229A14551/dataFiles/Score_DataExport_AutoFilter_Template_N26229A14551.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N26229A14551 FirstName=Jody LastName =N26229A14551 Age = 10/28/2021\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N26229A14551\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : false\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = true\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    },
+                    {
+                      "text": "Item 11\n"
+                    },
+                    {
+                      "text": "Item 12\n"
+                    },
+                    {
+                      "text": "Item 13\n"
+                    },
+                    {
+                      "text": "Item 14\n"
+                    },
+                    {
+                      "text": "Item 15\n"
+                    },
+                    {
+                      "text": "Item 16\n"
+                    },
+                    {
+                      "text": "Item 17\n"
+                    },
+                    {
+                      "text": "Item 18\n"
+                    },
+                    {
+                      "text": "Item 19\n"
+                    },
+                    {
+                      "text": "Item 20\n"
+                    },
+                    {
+                      "text": "Item 21\n"
+                    },
+                    {
+                      "text": "Item 22\n"
+                    },
+                    {
+                      "text": "Item 23\n"
+                    },
+                    {
+                      "text": "Item 24\n"
+                    },
+                    {
+                      "text": "Item 25\n"
+                    },
+                    {
+                      "text": "Item 26\n"
+                    },
+                    {
+                      "text": "Item 27\n"
+                    },
+                    {
+                      "text": "Item 28\n"
+                    },
+                    {
+                      "text": "Item 29\n"
+                    },
+                    {
+                      "text": "Item 30\n"
+                    },
+                    {
+                      "text": "Item 31\n"
+                    },
+                    {
+                      "text": "Item 32\n"
+                    },
+                    {
+                      "text": "Item 33\n"
+                    },
+                    {
+                      "text": "Item 34\n"
+                    },
+                    {
+                      "text": "Item 35\n"
+                    },
+                    {
+                      "text": "Item 36\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-29T11:58:40.382Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 172699,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S10:W1] Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N45012A29228\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N45012A29228/dataFiles/Score_DataExport_AutoFilter_Template_N45012A29228.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N45012A29228 FirstName=Laurianne LastName =N45012A29228 Age = 10/28/2021\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N45012A29228\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : false\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = true\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    },
+                    {
+                      "text": "Item 11\n"
+                    },
+                    {
+                      "text": "Item 12\n"
+                    },
+                    {
+                      "text": "Item 13\n"
+                    },
+                    {
+                      "text": "Item 14\n"
+                    },
+                    {
+                      "text": "Item 15\n"
+                    },
+                    {
+                      "text": "Item 16\n"
+                    },
+                    {
+                      "text": "Item 17\n"
+                    },
+                    {
+                      "text": "Item 18\n"
+                    },
+                    {
+                      "text": "Item 19\n"
+                    },
+                    {
+                      "text": "Item 20\n"
+                    },
+                    {
+                      "text": "Item 21\n"
+                    },
+                    {
+                      "text": "Item 22\n"
+                    },
+                    {
+                      "text": "Item 23\n"
+                    },
+                    {
+                      "text": "Item 24\n"
+                    },
+                    {
+                      "text": "Item 25\n"
+                    },
+                    {
+                      "text": "Item 26\n"
+                    },
+                    {
+                      "text": "Item 27\n"
+                    },
+                    {
+                      "text": "Item 28\n"
+                    },
+                    {
+                      "text": "Item 29\n"
+                    },
+                    {
+                      "text": "Item 30\n"
+                    },
+                    {
+                      "text": "Item 31\n"
+                    },
+                    {
+                      "text": "Item 32\n"
+                    },
+                    {
+                      "text": "Item 33\n"
+                    },
+                    {
+                      "text": "Item 34\n"
+                    },
+                    {
+                      "text": "Item 35\n"
+                    },
+                    {
+                      "text": "Item 36\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-04-29T12:10:29.671Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-b7a74be7d72e70cf862a",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 17,
+          "column": 7
+        },
+        {
+          "title": "Run the test Preschool to Grade 2 - 5 lowest incorrect items SSP1 to create test data for Submitted sets",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 123174,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S10:W0] Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N50513A16819\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N50513A16819/dataFiles/Score_DataExport_AutoFilter_Template_N50513A16819.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N50513A16819 FirstName=Okey LastName =N50513A16819 Age = 04/29/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N50513A16819\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : false\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = true\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-29T12:01:47.558Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 114942,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S10:W1] Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N87166A68406\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N87166A68406/dataFiles/Score_DataExport_AutoFilter_Template_N87166A68406.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N87166A68406 FirstName=Karelle LastName =N87166A68406 Age = 04/29/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N87166A68406\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : false\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = true\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-04-29T12:13:22.388Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-36caeb061099a043f544",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 17,
+          "column": 7
+        },
+        {
+          "title": "Validate Dashboard Test Assignments functionality Part_B",
+          "ok": false,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24006_24067_24927_26988_27345_29976_28792, 28823_29687_30275_30670",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                    "line": 76,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 131862,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']') resolved to 2 elements:\n    1) <button class=\"close-btn\"></button> aka locator('.close-btn')\n    2) <button class=\"blue-button-no-margin\">Close</button> aka getByRole('button', { name: 'Close' })\n\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']') resolved to 2 elements:\n    1) <button class=\"close-btn\"></button> aka locator('.close-btn')\n    2) <button class=\"blue-button-no-margin\">Close</button> aka getByRole('button', { name: 'Close' })\n\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']')\u001b[22m\n\n    at DashBoardPage.clickOnCloseButton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1400:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:122:33\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:109:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 28,
+                      "line": 1400
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:1400\n\n\u001b[0m \u001b[90m 1398 |\u001b[39m\n \u001b[90m 1399 |\u001b[39m   \u001b[36masync\u001b[39m clickOnCloseButton() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1400 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcloseButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1401 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"domcontentloaded\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 1402 |\u001b[39m   }\n \u001b[90m 1403 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 28,
+                        "line": 1400
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']') resolved to 2 elements:\n    1) <button class=\"close-btn\"></button> aka locator('.close-btn')\n    2) <button class=\"blue-button-no-margin\">Close</button> aka getByRole('button', { name: 'Close' })\n\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']')\u001b[22m\n\n\n   at ../page/dashboardPage.ts:1400\n\n  1398 |\n  1399 |   async clickOnCloseButton() {\n> 1400 |     await this.closeButton.click();\n       |                            ^\n  1401 |     await this.page.waitForLoadState(\"domcontentloaded\");\n  1402 |   }\n  1403 |\n    at DashBoardPage.clickOnCloseButton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1400:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:122:33\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:109:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S10:W0] Login successful for S11PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S10:W0] Login successful for S11PwAut25Ex_01\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Verify submitted test set has 90 Days left to edit and verify hover text on dashboard and examinee screen",
+                      "duration": 27427
+                    },
+                    {
+                      "title": "Examiner:- Verify we can not edit the examinee name or test set when the status is \"In Progress\"",
+                      "duration": 25886,
+                      "error": {
+                        "message": "Error: locator.click: Error: strict mode violation: locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']') resolved to 2 elements:\n    1) <button class=\"close-btn\"></button> aka locator('.close-btn')\n    2) <button class=\"blue-button-no-margin\">Close</button> aka getByRole('button', { name: 'Close' })\n\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']')\u001b[22m\n",
+                        "stack": "Error: locator.click: Error: strict mode violation: locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']') resolved to 2 elements:\n    1) <button class=\"close-btn\"></button> aka locator('.close-btn')\n    2) <button class=\"blue-button-no-margin\">Close</button> aka getByRole('button', { name: 'Close' })\n\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']')\u001b[22m\n\n    at DashBoardPage.clickOnCloseButton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1400:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:122:33\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:109:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 28,
+                          "line": 1400
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1400\n\n\u001b[0m \u001b[90m 1398 |\u001b[39m\n \u001b[90m 1399 |\u001b[39m   \u001b[36masync\u001b[39m clickOnCloseButton() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1400 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcloseButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1401 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"domcontentloaded\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 1402 |\u001b[39m   }\n \u001b[90m 1403 |\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-04-29T12:03:50.763Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927_26988_27345_29976_28792, 28823_29687_30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "line": 76,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 28,
+                    "line": 1400
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 119128,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']') resolved to 2 elements:\n    1) <button class=\"close-btn\"></button> aka locator('.close-btn')\n    2) <button class=\"blue-button-no-margin\">Close</button> aka getByRole('button', { name: 'Close' })\n\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']') resolved to 2 elements:\n    1) <button class=\"close-btn\"></button> aka locator('.close-btn')\n    2) <button class=\"blue-button-no-margin\">Close</button> aka getByRole('button', { name: 'Close' })\n\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']')\u001b[22m\n\n    at DashBoardPage.clickOnCloseButton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1400:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:122:33\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:109:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 28,
+                      "line": 1400
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:1400\n\n\u001b[0m \u001b[90m 1398 |\u001b[39m\n \u001b[90m 1399 |\u001b[39m   \u001b[36masync\u001b[39m clickOnCloseButton() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1400 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcloseButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1401 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"domcontentloaded\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 1402 |\u001b[39m   }\n \u001b[90m 1403 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 28,
+                        "line": 1400
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']') resolved to 2 elements:\n    1) <button class=\"close-btn\"></button> aka locator('.close-btn')\n    2) <button class=\"blue-button-no-margin\">Close</button> aka getByRole('button', { name: 'Close' })\n\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']')\u001b[22m\n\n\n   at ../page/dashboardPage.ts:1400\n\n  1398 |\n  1399 |   async clickOnCloseButton() {\n> 1400 |     await this.closeButton.click();\n       |                            ^\n  1401 |     await this.page.waitForLoadState(\"domcontentloaded\");\n  1402 |   }\n  1403 |\n    at DashBoardPage.clickOnCloseButton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1400:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:122:33\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:109:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S10:W1] Login successful for S11PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S10:W1] Login successful for S11PwAut25Ex_01\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Verify submitted test set has 90 Days left to edit and verify hover text on dashboard and examinee screen",
+                      "duration": 24919
+                    },
+                    {
+                      "title": "Examiner:- Verify we can not edit the examinee name or test set when the status is \"In Progress\"",
+                      "duration": 25333,
+                      "error": {
+                        "message": "Error: locator.click: Error: strict mode violation: locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']') resolved to 2 elements:\n    1) <button class=\"close-btn\"></button> aka locator('.close-btn')\n    2) <button class=\"blue-button-no-margin\">Close</button> aka getByRole('button', { name: 'Close' })\n\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']')\u001b[22m\n",
+                        "stack": "Error: locator.click: Error: strict mode violation: locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']') resolved to 2 elements:\n    1) <button class=\"close-btn\"></button> aka locator('.close-btn')\n    2) <button class=\"blue-button-no-margin\">Close</button> aka getByRole('button', { name: 'Close' })\n\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'close-btn\\'] | //button[text()=\\'Close\\']')\u001b[22m\n\n    at DashBoardPage.clickOnCloseButton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1400:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:122:33\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:109:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 28,
+                          "line": 1400
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1400\n\n\u001b[0m \u001b[90m 1398 |\u001b[39m\n \u001b[90m 1399 |\u001b[39m   \u001b[36masync\u001b[39m clickOnCloseButton() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1400 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcloseButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1401 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"domcontentloaded\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 1402 |\u001b[39m   }\n \u001b[90m 1403 |\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-04-29T12:15:17.346Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927_26988_27345_29976_28792, 28823_29687_30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "line": 76,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome-retry1/test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 28,
+                    "line": 1400
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-856fcf7f0a9195f6efdf",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 76,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-29T11:53:56.015Z",
+    "duration": 1400662.02,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

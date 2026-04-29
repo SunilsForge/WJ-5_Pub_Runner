@@ -1,0 +1,1000 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+        "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "commitHash": "e46f47d6f743192beec8eb7f29a4a78db9801505",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25107196801"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 13,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "test_dataExport/ANLSYN_Pub.spec.ts",
+      "file": "test_dataExport/ANLSYN_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "ANLSYN.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/ANLSYN_Pub.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For All Examinees - All correct scenario Conduct test and validate report",
+              "ok": false,
+              "tags": [
+                "ANLSYN",
+                "TestDe",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 225804,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[@class=\\'blue-button\\' and text()=\\'Accept\\']')\nExpected: visible\nTimeout: 120000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 120000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@class=\\'blue-button\\' and text()=\\'Accept\\']')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[@class=\\'blue-button\\' and text()=\\'Accept\\']')\nExpected: visible\nTimeout: 120000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 120000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@class=\\'blue-button\\' and text()=\\'Accept\\']')\u001b[22m\n\n    at wj5ExamineePage.clickOnAcceptBUtton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_examinee.page.ts:87:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/ANLSYN_Pub.spec.ts:75:31",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_examinee.page.ts",
+                          "column": 37,
+                          "line": 87
+                        },
+                        "snippet": "   at ../pages/wj5_examinee.page.ts:87\n\n\u001b[0m \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m   \u001b[36masync\u001b[39m clickOnAcceptBUtton(wj5ExaminerDashPage\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[33mWj5DashboardPage\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 87 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39macceptButton)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m120000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 88 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m0.7\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// Adding it to deal with double accept button\u001b[39m\n \u001b[90m 89 |\u001b[39m\n \u001b[90m 90 |\u001b[39m     \u001b[36mfor\u001b[39m (\u001b[36mlet\u001b[39m attempt \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m attempt \u001b[33m<\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmaxRetries\u001b[33m;\u001b[39m attempt\u001b[33m++\u001b[39m) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_examinee.page.ts",
+                            "column": 37,
+                            "line": 87
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[@class=\\'blue-button\\' and text()=\\'Accept\\']')\nExpected: visible\nTimeout: 120000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 120000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@class=\\'blue-button\\' and text()=\\'Accept\\']')\u001b[22m\n\n\n   at ../pages/wj5_examinee.page.ts:87\n\n  85 |\n  86 |   async clickOnAcceptBUtton(wj5ExaminerDashPage?: Wj5DashboardPage) {\n> 87 |     await expect(this.acceptButton).toBeVisible({ timeout: 120000 });\n     |                                     ^\n  88 |     await this.page.waitForTimeout(0.7 * 60 * 1000); // Adding it to deal with double accept button\n  89 |\n  90 |     for (let attempt = 0; attempt < this.maxRetries; attempt++) {\n    at wj5ExamineePage.clickOnAcceptBUtton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_examinee.page.ts:87:37)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/ANLSYN_Pub.spec.ts:75:31"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S13:W0] Login successful for 03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S13:W0] Login successful for 03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N12422A89732\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N12422A89732/dataFiles/Test_DataExport_AutoFilter_Template_N12422A89732.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N12422A89732 FirstName=Zola LastName =N12422A89732 Age = 04/29/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N12422A89732\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-29T11:53:49.707Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-ANLSYN_Pub-f00eb-ct-test-and-validate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-ANLSYN_Pub-f00eb-ct-test-and-validate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-ANLSYN_Pub-f00eb-ct-test-and-validate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-ANLSYN_Pub-f00eb-ct-test-and-validate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-ANLSYN_Pub-f00eb-ct-test-and-validate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_examinee.page.ts",
+                        "column": 37,
+                        "line": 87
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 262478,
+                      "error": {
+                        "message": "Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\\'select-group correct\\']//button') resolved to 2 elements:\n    1) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">…</button> aka getByRole('radio', { name: 'black and yellow' })\n    2) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">…</button> aka getByRole('radio', { name: 'red and blue' })\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'select-group correct\\']//button')\u001b[22m\n",
+                        "stack": "Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\\'select-group correct\\']//button') resolved to 2 elements:\n    1) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">…</button> aka getByRole('radio', { name: 'black and yellow' })\n    2) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">…</button> aka getByRole('radio', { name: 'red and blue' })\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'select-group correct\\']//button')\u001b[22m\n\n    at wj5TestDataExportPage.completeTheTakenTestForTestDataExportForANLSYNTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts:653:70)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/ANLSYN_Pub.spec.ts:83:11",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts",
+                          "column": 70,
+                          "line": 653
+                        },
+                        "snippet": "   at ../pages/wj5_test.TestDataExport.page.ts:653\n\n\u001b[0m \u001b[90m 651 |\u001b[39m         response \u001b[33m=\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 652 |\u001b[39m       } \u001b[36melse\u001b[39m \u001b[36mif\u001b[39m (itemDetails\u001b[33m.\u001b[39mmatch(\u001b[35m/Item /\u001b[39m)) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 653 |\u001b[39m         \u001b[36mconst\u001b[39m correctOption\u001b[33m:\u001b[39m string \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcorrectOptionButton\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 654 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mclickCorrectOption(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcorrectLocator()\u001b[33m,\u001b[39m itemDetails)\u001b[33m;\u001b[39m\n \u001b[90m 655 |\u001b[39m         score \u001b[33m=\u001b[39m \u001b[35m1\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 656 |\u001b[39m         response \u001b[33m=\u001b[39m correctOption\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts",
+                            "column": 70,
+                            "line": 653
+                          },
+                          "message": "Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\\'select-group correct\\']//button') resolved to 2 elements:\n    1) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">…</button> aka getByRole('radio', { name: 'black and yellow' })\n    2) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">…</button> aka getByRole('radio', { name: 'red and blue' })\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'select-group correct\\']//button')\u001b[22m\n\n\n   at ../pages/wj5_test.TestDataExport.page.ts:653\n\n  651 |         response = '';\n  652 |       } else if (itemDetails.match(/Item /)) {\n> 653 |         const correctOption: string = await this.correctOptionButton.textContent();\n      |                                                                      ^\n  654 |         await this.clickCorrectOption(await this.correctLocator(), itemDetails);\n  655 |         score = 1;\n  656 |         response = correctOption;\n    at wj5TestDataExportPage.completeTheTakenTestForTestDataExportForANLSYNTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts:653:70)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/ANLSYN_Pub.spec.ts:83:11"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S13:W1] Login successful for 03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S13:W1] Login successful for 03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N56209A49744\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N56209A49744/dataFiles/Test_DataExport_AutoFilter_Template_N56209A49744.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N56209A49744 FirstName=Seamus LastName =N56209A49744 Age = 04/29/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N56209A49744\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Analysis-Synthesis\n"
+                        },
+                        {
+                          "text": "Item Number 35 \n\n"
+                        },
+                        {
+                          "text": "Type Of test All Examinees - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Color Pretest: Yellow, Trial 1\n"
+                        },
+                        {
+                          "text": "Color Pretest: Black, Trial 1\n"
+                        },
+                        {
+                          "text": "Color Pretest: Blue, Trial 1\n"
+                        },
+                        {
+                          "text": "Color Pretest: Red, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-04-29T11:57:42.121Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-ANLSYN_Pub-f00eb-ct-test-and-validate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-ANLSYN_Pub-f00eb-ct-test-and-validate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-ANLSYN_Pub-f00eb-ct-test-and-validate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-ANLSYN_Pub-f00eb-ct-test-and-validate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts",
+                        "column": 70,
+                        "line": 653
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "072d2aa8ccd136eb308b-df631add39b64aff934c",
+              "file": "test_dataExport/ANLSYN_Pub.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "test_dataExport/APPROB_Pub.spec.ts",
+      "file": "test_dataExport/APPROB_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " APPROB.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/APPROB_Pub.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "@Test_De For Age 4 - All correct scenario login as AH Conduct test as Examiner and generate reports",
+              "ok": false,
+              "tags": [
+                "Test_De",
+                "APPROB",
+                "TestDe",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 480000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 199815,
+                      "error": {
+                        "message": "Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\\'select-group correct\\']//button') resolved to 2 elements:\n    1) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">7:50 (seven fifty)</button> aka getByRole('radio', { name: ':50 (seven fifty)' })\n    2) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">10 minutes before 8 (ten minutes before eight)</button> aka getByRole('radio', { name: '10 minutes before 8 (ten' })\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'select-group correct\\']//button')\u001b[22m\n",
+                        "stack": "Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\\'select-group correct\\']//button') resolved to 2 elements:\n    1) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">7:50 (seven fifty)</button> aka getByRole('radio', { name: ':50 (seven fifty)' })\n    2) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">10 minutes before 8 (ten minutes before eight)</button> aka getByRole('radio', { name: '10 minutes before 8 (ten' })\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'select-group correct\\']//button')\u001b[22m\n\n    at wj5TestDataExportPage.completeTheTakenTestForTestDataExportforAPPROBPubTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts:410:70)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/APPROB_Pub.spec.ts:83:11",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts",
+                          "column": 70,
+                          "line": 410
+                        },
+                        "snippet": "   at ../pages/wj5_test.TestDataExport.page.ts:410\n\n\u001b[0m \u001b[90m 408 |\u001b[39m         response \u001b[33m=\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 409 |\u001b[39m       } \u001b[36melse\u001b[39m \u001b[36mif\u001b[39m (typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/All correct scenario/i\u001b[39m)) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 410 |\u001b[39m         \u001b[36mconst\u001b[39m correctOption\u001b[33m:\u001b[39m string \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcorrectOptionButton\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 411 |\u001b[39m\n \u001b[90m 412 |\u001b[39m         \u001b[36mif\u001b[39m (itemDetails\u001b[33m.\u001b[39mmatch(\u001b[35m/^(Item|Sample)\\s/\u001b[39m)) {\n \u001b[90m 413 |\u001b[39m           \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maudioPlayerElement\u001b[33m.\u001b[39misVisible()) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts",
+                            "column": 70,
+                            "line": 410
+                          },
+                          "message": "Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\\'select-group correct\\']//button') resolved to 2 elements:\n    1) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">7:50 (seven fifty)</button> aka getByRole('radio', { name: ':50 (seven fifty)' })\n    2) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">10 minutes before 8 (ten minutes before eight)</button> aka getByRole('radio', { name: '10 minutes before 8 (ten' })\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'select-group correct\\']//button')\u001b[22m\n\n\n   at ../pages/wj5_test.TestDataExport.page.ts:410\n\n  408 |         response = '';\n  409 |       } else if (typeOfTest.match(/All correct scenario/i)) {\n> 410 |         const correctOption: string = await this.correctOptionButton.textContent();\n      |                                                                      ^\n  411 |\n  412 |         if (itemDetails.match(/^(Item|Sample)\\s/)) {\n  413 |           if (await this.audioPlayerElement.isVisible()) {\n    at wj5TestDataExportPage.completeTheTakenTestForTestDataExportforAPPROBPubTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts:410:70)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/APPROB_Pub.spec.ts:83:11"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S13:W2] Login successful for 03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S13:W2] Login successful for 03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N28463A62086\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N28463A62086/dataFiles/Test_DataExport_AutoFilter_Template_N28463A62086.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N28463A62086 FirstName=Gloria LastName =N28463A62086 Age = 04/29/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N28463A62086\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Applied Problems\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22350|Age 4|\n"
+                        },
+                        {
+                          "text": "Item Number 48 \n\n"
+                        },
+                        {
+                          "text": "Type Of test Age 4 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-29T12:02:06.121Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts",
+                        "column": 70,
+                        "line": 410
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 183499,
+                      "error": {
+                        "message": "Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\\'select-group correct\\']//button') resolved to 2 elements:\n    1) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">7:50 (seven fifty)</button> aka getByRole('radio', { name: ':50 (seven fifty)' })\n    2) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">10 minutes before 8 (ten minutes before eight)</button> aka getByRole('radio', { name: '10 minutes before 8 (ten' })\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'select-group correct\\']//button')\u001b[22m\n",
+                        "stack": "Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\\'select-group correct\\']//button') resolved to 2 elements:\n    1) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">7:50 (seven fifty)</button> aka getByRole('radio', { name: ':50 (seven fifty)' })\n    2) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">10 minutes before 8 (ten minutes before eight)</button> aka getByRole('radio', { name: '10 minutes before 8 (ten' })\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'select-group correct\\']//button')\u001b[22m\n\n    at wj5TestDataExportPage.completeTheTakenTestForTestDataExportforAPPROBPubTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts:410:70)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/APPROB_Pub.spec.ts:83:11",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts",
+                          "column": 70,
+                          "line": 410
+                        },
+                        "snippet": "   at ../pages/wj5_test.TestDataExport.page.ts:410\n\n\u001b[0m \u001b[90m 408 |\u001b[39m         response \u001b[33m=\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 409 |\u001b[39m       } \u001b[36melse\u001b[39m \u001b[36mif\u001b[39m (typeOfTest\u001b[33m.\u001b[39mmatch(\u001b[35m/All correct scenario/i\u001b[39m)) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 410 |\u001b[39m         \u001b[36mconst\u001b[39m correctOption\u001b[33m:\u001b[39m string \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcorrectOptionButton\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 411 |\u001b[39m\n \u001b[90m 412 |\u001b[39m         \u001b[36mif\u001b[39m (itemDetails\u001b[33m.\u001b[39mmatch(\u001b[35m/^(Item|Sample)\\s/\u001b[39m)) {\n \u001b[90m 413 |\u001b[39m           \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maudioPlayerElement\u001b[33m.\u001b[39misVisible()) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts",
+                            "column": 70,
+                            "line": 410
+                          },
+                          "message": "Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\\'select-group correct\\']//button') resolved to 2 elements:\n    1) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">7:50 (seven fifty)</button> aka getByRole('radio', { name: ':50 (seven fifty)' })\n    2) <button role=\"radio\" aria-live=\"polite\" aria-checked=\"false\" class=\"select-option\">10 minutes before 8 (ten minutes before eight)</button> aka getByRole('radio', { name: '10 minutes before 8 (ten' })\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'select-group correct\\']//button')\u001b[22m\n\n\n   at ../pages/wj5_test.TestDataExport.page.ts:410\n\n  408 |         response = '';\n  409 |       } else if (typeOfTest.match(/All correct scenario/i)) {\n> 410 |         const correctOption: string = await this.correctOptionButton.textContent();\n      |                                                                      ^\n  411 |\n  412 |         if (itemDetails.match(/^(Item|Sample)\\s/)) {\n  413 |           if (await this.audioPlayerElement.isVisible()) {\n    at wj5TestDataExportPage.completeTheTakenTestForTestDataExportforAPPROBPubTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts:410:70)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/APPROB_Pub.spec.ts:83:11"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 03PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S13:W3] Login successful for 03PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S13:W3] Login successful for 03PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N90222A26550\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N90222A26550/dataFiles/Test_DataExport_AutoFilter_Template_N90222A26550.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N90222A26550 FirstName=Henry LastName =N90222A26550 Age = 04/29/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N90222A26550\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Applied Problems\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22350|Age 4|\n"
+                        },
+                        {
+                          "text": "Item Number 48 \n\n"
+                        },
+                        {
+                          "text": "Type Of test Age 4 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-04-29T12:05:33.579Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.TestDataExport.page.ts",
+                        "column": 70,
+                        "line": 410
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "05b0a1eb7c902dae2d78-da0a550cf9232684182a",
+              "file": "test_dataExport/APPROB_Pub.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-29T11:53:37.192Z",
+    "duration": 901252.693,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
