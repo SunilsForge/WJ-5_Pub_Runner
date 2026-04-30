@@ -332,7 +332,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 148503,
+                  "duration": 145371,
                   "errors": [],
                   "stdout": [
                     {
@@ -348,13 +348,13 @@
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N79184A14963\n"
+                      "text": "Examinee ID N48069A15017\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N79184A14963/dataFiles/Score_DataExport_AutoFilter_Template_N79184A14963.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N48069A15017/dataFiles/Score_DataExport_AutoFilter_Template_N48069A15017.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N79184A14963 FirstName=Mattie LastName =N79184A14963 Age = 04/29/2024\n"
+                      "text": "Successfully added an Examinee  ID =N48069A15017 FirstName=Allie LastName =N48069A15017 Age = 04/29/2024\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -363,7 +363,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N79184A14963\n"
+                      "text": "Successfully selected examinee: N48069A15017\n"
                     },
                     {
                       "text": "await administrationOverviewPageTestName.isVisible() : false\n"
@@ -395,7 +395,78 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-29T17:45:30.549Z",
+                  "startTime": "2026-04-30T02:15:07.063Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 141819,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 03PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S13:W1] Login successful for 03PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N45742A59546\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N45742A59546/dataFiles/Score_DataExport_AutoFilter_Template_N45742A59546.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N45742A59546 FirstName=Brando LastName =N45742A59546 Age = 04/29/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N45742A59546\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : false\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = true\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-04-30T02:30:39.606Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -428,7 +499,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 175609,
+                  "duration": 171401,
                   "errors": [],
                   "stdout": [
                     {
@@ -444,13 +515,13 @@
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N41723A36519\n"
+                      "text": "Examinee ID N80049A58352\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N41723A36519/dataFiles/Score_DataExport_AutoFilter_Template_N41723A36519.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N80049A58352/dataFiles/Score_DataExport_AutoFilter_Template_N80049A58352.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N41723A36519 FirstName=Kattie LastName =N41723A36519 Age = 04/29/2022\n"
+                      "text": "Successfully added an Examinee  ID =N80049A58352 FirstName=Alessandro LastName =N80049A58352 Age = 04/29/2022\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -459,7 +530,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N41723A36519\n"
+                      "text": "Successfully selected examinee: N80049A58352\n"
                     },
                     {
                       "text": "await administrationOverviewPageTestName.isVisible() : false\n"
@@ -506,7 +577,93 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-29T17:47:59.567Z",
+                  "startTime": "2026-04-30T02:17:32.968Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 172766,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 03PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S13:W1] Login successful for 03PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N56855A99350\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N56855A99350/dataFiles/Score_DataExport_AutoFilter_Template_N56855A99350.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N56855A99350 FirstName=Vernie LastName =N56855A99350 Age = 04/29/2022\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N56855A99350\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : false\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = true\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-04-30T02:33:01.899Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -539,7 +696,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 208682,
+                  "duration": 206722,
                   "errors": [],
                   "stdout": [
                     {
@@ -555,13 +712,13 @@
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N97992A73304\n"
+                      "text": "Examinee ID N9227A2022\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N97992A73304/dataFiles/Score_DataExport_AutoFilter_Template_N97992A73304.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N9227A2022/dataFiles/Score_DataExport_AutoFilter_Template_N9227A2022.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N97992A73304 FirstName=Sandrine LastName =N97992A73304 Age = 10/29/2021\n"
+                      "text": "Successfully added an Examinee  ID =N9227A2022 FirstName=Antwan LastName =N9227A2022 Age = 10/29/2021\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -570,7 +727,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N97992A73304\n"
+                      "text": "Successfully selected examinee: N9227A2022\n"
                     },
                     {
                       "text": "await administrationOverviewPageTestName.isVisible() : false\n"
@@ -695,7 +852,171 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-29T17:50:55.213Z",
+                  "startTime": "2026-04-30T02:20:24.395Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 206774,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 03PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S13:W1] Login successful for 03PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N63853A7078\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N63853A7078/dataFiles/Score_DataExport_AutoFilter_Template_N63853A7078.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N63853A7078 FirstName=Brendan LastName =N63853A7078 Age = 10/29/2021\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N63853A7078\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : false\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = true\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    },
+                    {
+                      "text": "Item 11\n"
+                    },
+                    {
+                      "text": "Item 12\n"
+                    },
+                    {
+                      "text": "Item 13\n"
+                    },
+                    {
+                      "text": "Item 14\n"
+                    },
+                    {
+                      "text": "Item 15\n"
+                    },
+                    {
+                      "text": "Item 16\n"
+                    },
+                    {
+                      "text": "Item 17\n"
+                    },
+                    {
+                      "text": "Item 18\n"
+                    },
+                    {
+                      "text": "Item 19\n"
+                    },
+                    {
+                      "text": "Item 20\n"
+                    },
+                    {
+                      "text": "Item 21\n"
+                    },
+                    {
+                      "text": "Item 22\n"
+                    },
+                    {
+                      "text": "Item 23\n"
+                    },
+                    {
+                      "text": "Item 24\n"
+                    },
+                    {
+                      "text": "Item 25\n"
+                    },
+                    {
+                      "text": "Item 26\n"
+                    },
+                    {
+                      "text": "Item 27\n"
+                    },
+                    {
+                      "text": "Item 28\n"
+                    },
+                    {
+                      "text": "Item 29\n"
+                    },
+                    {
+                      "text": "Item 30\n"
+                    },
+                    {
+                      "text": "Item 31\n"
+                    },
+                    {
+                      "text": "Item 32\n"
+                    },
+                    {
+                      "text": "Item 33\n"
+                    },
+                    {
+                      "text": "Item 34\n"
+                    },
+                    {
+                      "text": "Item 35\n"
+                    },
+                    {
+                      "text": "Item 36\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-04-30T02:35:54.702Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -728,7 +1049,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 150970,
+                  "duration": 146510,
                   "errors": [],
                   "stdout": [
                     {
@@ -744,13 +1065,13 @@
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N53426A81979\n"
+                      "text": "Examinee ID N38741A33302\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N53426A81979/dataFiles/Score_DataExport_AutoFilter_Template_N53426A81979.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N38741A33302/dataFiles/Score_DataExport_AutoFilter_Template_N38741A33302.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N53426A81979 FirstName=Brooklyn LastName =N53426A81979 Age = 04/29/2024\n"
+                      "text": "Successfully added an Examinee  ID =N38741A33302 FirstName=Alvis LastName =N38741A33302 Age = 04/29/2024\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -759,7 +1080,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N53426A81979\n"
+                      "text": "Successfully selected examinee: N38741A33302\n"
                     },
                     {
                       "text": "await administrationOverviewPageTestName.isVisible() : false\n"
@@ -791,7 +1112,78 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-29T17:54:23.916Z",
+                  "startTime": "2026-04-30T02:23:51.140Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 146904,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 03PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S13:W1] Login successful for 03PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N54259A58094\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N54259A58094/dataFiles/Score_DataExport_AutoFilter_Template_N54259A58094.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N54259A58094 FirstName=Concepcion LastName =N54259A58094 Age = 04/29/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N54259A58094\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : false\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = true\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-04-30T02:39:21.499Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -806,7 +1198,7 @@
         },
         {
           "title": "Validate Dashboard Test Assignments functionality Part_B",
-          "ok": true,
+          "ok": false,
           "tags": [
             "DashboardTestAssignments_B",
             "Smoke",
@@ -833,9 +1225,28 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 271135,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 260517,
+                  "error": {
+                    "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m",
+                    "stack": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1622:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:97:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:94:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 77,
+                      "line": 1622
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:1622\n\n\u001b[0m \u001b[90m 1620 |\u001b[39m     \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m\"Expected Days Left\"\u001b[39m\u001b[33m,\u001b[39m daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m 1621 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"days\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1622 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1623 |\u001b[39m   }\n \u001b[90m 1624 |\u001b[39m\n \u001b[90m 1625 |\u001b[39m   \u001b[36masync\u001b[39m verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 77,
+                        "line": 1622
+                      },
+                      "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n\n   at ../page/dashboardPage.ts:1622\n\n  1620 |     RawValueLogger.log(\"Expected Days Left\", daysLeft);\n  1621 |     expect.soft(actualDaysLeftText, \"Days left text should contain 'days'\").toContain(\"days\");\n> 1622 |     expect.soft(actualDaysLeftText, \"Days left text should contain 'days'\").toContain(daysLeft);\n       |                                                                             ^\n  1623 |   }\n  1624 |\n  1625 |   async verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1622:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:97:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:94:5"
+                    }
+                  ],
                   "stdout": [
                     {
                       "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
@@ -864,58 +1275,68 @@
                   "steps": [
                     {
                       "title": "Verify submitted test set has 90 Days left to edit and verify hover text on dashboard and examinee screen",
-                      "duration": 28449
+                      "duration": 27969,
+                      "error": {
+                        "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m",
+                        "stack": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1622:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:97:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:94:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 77,
+                          "line": 1622
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1622\n\n\u001b[0m \u001b[90m 1620 |\u001b[39m     \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m\"Expected Days Left\"\u001b[39m\u001b[33m,\u001b[39m daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m 1621 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"days\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1622 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1623 |\u001b[39m   }\n \u001b[90m 1624 |\u001b[39m\n \u001b[90m 1625 |\u001b[39m   \u001b[36masync\u001b[39m verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\u001b[0m"
+                      }
                     },
                     {
                       "title": "Examiner:- Verify we can not edit the examinee name or test set when the status is \"In Progress\"",
-                      "duration": 33294
+                      "duration": 32842
                     },
                     {
                       "title": "Examiner:- Expire In Progress test to achieve - assignment line has gone to its greyed out inactive state after the 90-day editing window has passed and these assignments cannot be launched for status \"In Progress\"",
-                      "duration": 17827
+                      "duration": 17753
                     },
                     {
                       "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible",
-                      "duration": 12207
+                      "duration": 12214
                     },
                     {
                       "title": "Examiner:- Verify test assignment Expired popup and click \"NO\" button",
-                      "duration": 101
+                      "duration": 85
                     },
                     {
                       "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up",
-                      "duration": 7107
+                      "duration": 6041
                     },
                     {
                       "title": "Examiner:- Verify \"Expired\" status turns to \"Closed\" and subscription subtest count is increased, Also verify Hovertext on \"Earlier Date of testing\"",
-                      "duration": 12269
+                      "duration": 12310
                     },
                     {
                       "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible at Examinee management page",
-                      "duration": 12320
+                      "duration": 8815
                     },
                     {
                       "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up at Examinee General Info popup and consumes a subtest",
-                      "duration": 15378
+                      "duration": 12682
                     },
                     {
                       "title": "Examiner:- Verify Delete Test Assignment functionality \"Inprogress\" When clicked \"No\"",
-                      "duration": 19341
+                      "duration": 19323
                     },
                     {
                       "title": "Examiner:- Verify Delete Test Assignment functionality \"Inprogress\" When clicked \"Proceed\"",
-                      "duration": 19315
+                      "duration": 19281
                     },
                     {
                       "title": "Examiner:- Verify Delete Test Assignment functionality is not visible for \"Submitted\"",
-                      "duration": 5091
+                      "duration": 5087
                     },
                     {
                       "title": "AH:- Verify ah cant delete examiner \"Inprogress\" test assignment",
-                      "duration": 15154
+                      "duration": 15137
                     }
                   ],
-                  "startTime": "2026-04-29T17:56:54.920Z",
+                  "startTime": "2026-04-30T02:26:17.683Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -927,10 +1348,180 @@
                       }
                     }
                   ],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/test-failed-2.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 77,
+                    "line": 1622
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 256332,
+                  "error": {
+                    "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m",
+                    "stack": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1622:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:97:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:94:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 77,
+                      "line": 1622
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:1622\n\n\u001b[0m \u001b[90m 1620 |\u001b[39m     \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m\"Expected Days Left\"\u001b[39m\u001b[33m,\u001b[39m daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m 1621 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"days\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1622 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1623 |\u001b[39m   }\n \u001b[90m 1624 |\u001b[39m\n \u001b[90m 1625 |\u001b[39m   \u001b[36masync\u001b[39m verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 77,
+                        "line": 1622
+                      },
+                      "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n\n   at ../page/dashboardPage.ts:1622\n\n  1620 |     RawValueLogger.log(\"Expected Days Left\", daysLeft);\n  1621 |     expect.soft(actualDaysLeftText, \"Days left text should contain 'days'\").toContain(\"days\");\n> 1622 |     expect.soft(actualDaysLeftText, \"Days left text should contain 'days'\").toContain(daysLeft);\n       |                                                                             ^\n  1623 |   }\n  1624 |\n  1625 |   async verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1622:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:97:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:94:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 03PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S13:W1] Login successful for 03PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 03PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S13:W1] Login successful for 03PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Verify submitted test set has 90 Days left to edit and verify hover text on dashboard and examinee screen",
+                      "duration": 26343,
+                      "error": {
+                        "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m",
+                        "stack": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1622:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:97:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:94:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 77,
+                          "line": 1622
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1622\n\n\u001b[0m \u001b[90m 1620 |\u001b[39m     \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m\"Expected Days Left\"\u001b[39m\u001b[33m,\u001b[39m daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m 1621 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"days\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1622 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1623 |\u001b[39m   }\n \u001b[90m 1624 |\u001b[39m\n \u001b[90m 1625 |\u001b[39m   \u001b[36masync\u001b[39m verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "Examiner:- Verify we can not edit the examinee name or test set when the status is \"In Progress\"",
+                      "duration": 32804
+                    },
+                    {
+                      "title": "Examiner:- Expire In Progress test to achieve - assignment line has gone to its greyed out inactive state after the 90-day editing window has passed and these assignments cannot be launched for status \"In Progress\"",
+                      "duration": 17668
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible",
+                      "duration": 12262
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"NO\" button",
+                      "duration": 90
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up",
+                      "duration": 5457
+                    },
+                    {
+                      "title": "Examiner:- Verify \"Expired\" status turns to \"Closed\" and subscription subtest count is increased, Also verify Hovertext on \"Earlier Date of testing\"",
+                      "duration": 12231
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible at Examinee management page",
+                      "duration": 7189
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up at Examinee General Info popup and consumes a subtest",
+                      "duration": 12684
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality \"Inprogress\" When clicked \"No\"",
+                      "duration": 19327
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality \"Inprogress\" When clicked \"Proceed\"",
+                      "duration": 19338
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality is not visible for \"Submitted\"",
+                      "duration": 5100
+                    },
+                    {
+                      "title": "AH:- Verify ah cant delete examiner \"Inprogress\" test assignment",
+                      "duration": 15150
+                    }
+                  ],
+                  "startTime": "2026-04-30T02:41:48.439Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927_26988_27345_29976_28792, 28823_29687_30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "line": 76,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome-retry1/test-failed-2.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 77,
+                    "line": 1622
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "ed18dc26dc5c1351a836-856fcf7f0a9195f6efdf",
@@ -943,11 +1534,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-29T17:45:15.713Z",
-    "duration": 970579.234,
-    "expected": 5,
+    "startTime": "2026-04-30T02:14:52.086Z",
+    "duration": 1872933.606,
+    "expected": 4,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

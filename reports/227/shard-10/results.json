@@ -339,7 +339,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 604148,
+                      "duration": 606501,
                       "error": {
                         "message": "Error: The Examinee ID assertion failed, probable cause the Report could be empty.",
                         "stack": "Error: The Examinee ID assertion failed, probable cause the Report could be empty.\n    at wj5TestDerivedScoresPage.validateTheDownloadedDerivedScoresReportWithRunTimeData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:3584:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBAS_cluster_pub.spec.ts:189:11",
@@ -383,16 +383,16 @@
                           "text": "Trying to add an Examinee \n\n"
                         },
                         {
-                          "text": "Examinee ID N48324A1690\n"
+                          "text": "Examinee ID N43257A1987\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N48324A1690/dataFiles/Derived_Score_AutoFilter_Template_N48324A1690.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N43257A1987/dataFiles/Derived_Score_AutoFilter_Template_N43257A1987.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N48324A1690 FirstName=Foster LastName =N48324A1690 Age = 04/29/2021\n"
+                          "text": "Successfully added an Examinee  ID =N43257A1987 FirstName=Jewell LastName =N43257A1987 Age = 04/29/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N48324A1690\n"
+                          "text": "Successfully selected examinee: N43257A1987\n"
                         },
                         {
                           "text": "Attempt 1: Checking accept button readiness.\n"
@@ -953,31 +953,31 @@
                           "text": "My Test Assignments is visible\n"
                         },
                         {
-                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N48324A1690/dataFiles/Derived_Score_AutoFilter_Template_N48324A1690.csv\n"
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N43257A1987/dataFiles/Derived_Score_AutoFilter_Template_N43257A1987.csv\n"
                         },
                         {
                           "text": "Already on Report Library page, skipping navigation.\n"
                         },
                         {
-                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N48324A1690\n"
+                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N43257A1987\n"
                         },
                         {
                           "text": "Waiting for download button to become enabled...\n"
                         },
                         {
-                          "text": "Saving downloaded file to: generated/N48324A1690/downloads/derived_N48324A1690_Exports.zip\n"
+                          "text": "Saving downloaded file to: generated/N43257A1987/downloads/derived_N43257A1987_Exports.zip\n"
                         },
                         {
-                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N48324A1690/downloads/derived_N48324A1690_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N48324A1690/downloads/extracted\n"
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N43257A1987/downloads/derived_N43257A1987_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N43257A1987/downloads/extracted\n"
                         },
                         {
                           "text": "File successfully extracted.\n"
                         },
                         {
-                          "text": "ISABSOLUTE? : Reading derived score TXT content from: generated/N48324A1690/downloads/extracted/Derived_Score_AutoFilter_Template_N48324A1690_Derived.txt\n"
+                          "text": "ISABSOLUTE? : Reading derived score TXT content from: generated/N43257A1987/downloads/extracted/Derived_Score_AutoFilter_Template_N43257A1987_Derived.txt\n"
                         },
                         {
-                          "text": "Reading TXT content from: generated/N48324A1690/downloads/extracted/Derived_Score_AutoFilter_Template_N48324A1690_Derived.txt\n"
+                          "text": "Reading TXT content from: generated/N43257A1987/downloads/extracted/Derived_Score_AutoFilter_Template_N43257A1987_Derived.txt\n"
                         },
                         {
                           "text": "returnValues =  {}\n"
@@ -991,27 +991,27 @@
                       ],
                       "stderr": [
                         {
-                          "text": "Error reading undefined: Error: ENOENT: no such file or directory, scandir '/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/downloads/extracted/N48324A1690'\n"
+                          "text": "Error reading undefined: Error: ENOENT: no such file or directory, scandir '/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/downloads/extracted/N43257A1987'\n"
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-04-29T17:45:26.195Z",
+                      "startTime": "2026-04-30T02:15:07.362Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "Downloaded Zip file",
                           "contentType": "application/zip",
-                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-5e48d-BAS-cluster-generate-report-chrome/attachments/Downloaded-Zip-file-add5dfb4fe186543e312d90595d6ca3b7cbb0699.zip"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-5e48d-BAS-cluster-generate-report-chrome/test-failed-1.png"
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-5e48d-BAS-cluster-generate-report-chrome/attachments/Downloaded-Zip-file-665a246ca39056fad4d92f1740c452a86eed0112.zip"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
                           "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-5e48d-BAS-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-5e48d-BAS-cluster-generate-report-chrome/test-failed-1.png"
                         },
                         {
                           "name": "error-context",
@@ -1029,33 +1029,25 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 698610,
+                      "duration": 606442,
                       "error": {
-                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N39397A67352\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
-                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N39397A67352\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:749:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBAS_cluster_pub.spec.ts:168:9",
+                        "message": "Error: The Examinee ID assertion failed, probable cause the Report could be empty.",
+                        "stack": "Error: The Examinee ID assertion failed, probable cause the Report could be empty.\n    at wj5TestDerivedScoresPage.validateTheDownloadedDerivedScoresReportWithRunTimeData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:3584:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBAS_cluster_pub.spec.ts:189:11",
                         "location": {
-                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
-                          "column": 33,
-                          "line": 749
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 13,
+                          "line": 3584
                         },
-                        "snippet": "   at ../pages/wj5_dashBoard.page.ts:749\n\n\u001b[0m \u001b[90m 747 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 748 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 749 |\u001b[39m     \u001b[36mawait\u001b[39m downloadButtonLocator\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 750 |\u001b[39m\n \u001b[90m 751 |\u001b[39m     \u001b[36mlet\u001b[39m download\u001b[33m;\u001b[39m\n \u001b[90m 752 |\u001b[39m     \u001b[36mtry\u001b[39m {\u001b[0m"
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:3584\n\n\u001b[0m \u001b[90m 3582 |\u001b[39m       txtData\u001b[33m.\u001b[39m\u001b[33mExaminee_ID\u001b[39m\u001b[33m.\u001b[39mincludes(\u001b[32m\"No examinees meet the criteria specified.\"\u001b[39m)\n \u001b[90m 3583 |\u001b[39m     ) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 3584 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m      |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 3585 |\u001b[39m         \u001b[32m\"The Examinee ID assertion failed, probable cause the Report could be empty.\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 3586 |\u001b[39m       )\u001b[33m;\u001b[39m\n \u001b[90m 3587 |\u001b[39m     }\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
-                            "column": 33,
-                            "line": 749
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 13,
+                            "line": 3584
                           },
-                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N39397A67352\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../pages/wj5_dashBoard.page.ts:749\n\n  747 |     });\n  748 |\n> 749 |     await downloadButtonLocator.click();\n      |                                 ^\n  750 |\n  751 |     let download;\n  752 |     try {\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:749:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBAS_cluster_pub.spec.ts:168:9"
-                        },
-                        {
-                          "location": {
-                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
-                            "column": 39,
-                            "line": 745
-                          },
-                          "message": "Error: page.waitForEvent: Target page, context or browser has been closed\n=========================== logs ===========================\nwaiting for event \"download\"\n============================================================\n\n   at ../pages/wj5_dashBoard.page.ts:745\n\n  743 |     }\n  744 |\n> 745 |     const downloadPromise = this.page.waitForEvent(\"download\", {\n      |                                       ^\n  746 |       timeout: 2 * 60 * 1000,\n  747 |     });\n  748 |\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:745:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBAS_cluster_pub.spec.ts:168:9"
+                          "message": "Error: The Examinee ID assertion failed, probable cause the Report could be empty.\n\n   at ../pages/wj5_test.derivedScores.page.ts:3584\n\n  3582 |       txtData.Examinee_ID.includes(\"No examinees meet the criteria specified.\")\n  3583 |     ) {\n> 3584 |       throw new Error(\n       |             ^\n  3585 |         \"The Examinee ID assertion failed, probable cause the Report could be empty.\",\n  3586 |       );\n  3587 |     }\n    at wj5TestDerivedScoresPage.validateTheDownloadedDerivedScoresReportWithRunTimeData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:3584:13)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBAS_cluster_pub.spec.ts:189:11"
                         }
                       ],
                       "stdout": [
@@ -1081,16 +1073,16 @@
                           "text": "Trying to add an Examinee \n\n"
                         },
                         {
-                          "text": "Examinee ID N39397A67352\n"
+                          "text": "Examinee ID N66138A43228\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N39397A67352/dataFiles/Derived_Score_AutoFilter_Template_N39397A67352.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66138A43228/dataFiles/Derived_Score_AutoFilter_Template_N66138A43228.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N39397A67352 FirstName=Nya LastName =N39397A67352 Age = 04/29/2021\n"
+                          "text": "Successfully added an Examinee  ID =N66138A43228 FirstName=Jordi LastName =N66138A43228 Age = 04/29/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N39397A67352\n"
+                          "text": "Successfully selected examinee: N66138A43228\n"
                         },
                         {
                           "text": "Attempt 1: Checking accept button readiness.\n"
@@ -1651,23 +1643,56 @@
                           "text": "My Test Assignments is visible\n"
                         },
                         {
-                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N39397A67352/dataFiles/Derived_Score_AutoFilter_Template_N39397A67352.csv\n"
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66138A43228/dataFiles/Derived_Score_AutoFilter_Template_N66138A43228.csv\n"
                         },
                         {
-                          "text": "Not on Report Library page, navigating there...\n"
+                          "text": "Already on Report Library page, skipping navigation.\n"
                         },
                         {
-                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N39397A67352\n"
+                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N66138A43228\n"
                         },
                         {
                           "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N66138A43228/downloads/derived_N66138A43228_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66138A43228/downloads/derived_N66138A43228_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66138A43228/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "ISABSOLUTE? : Reading derived score TXT content from: generated/N66138A43228/downloads/extracted/Derived_Score_AutoFilter_Template_N66138A43228_Derived.txt\n"
+                        },
+                        {
+                          "text": "Reading TXT content from: generated/N66138A43228/downloads/extracted/Derived_Score_AutoFilter_Template_N66138A43228_Derived.txt\n"
+                        },
+                        {
+                          "text": "returnValues =  {}\n"
+                        },
+                        {
+                          "text": " \n Reading WJV NormTable data ... \n\n"
+                        },
+                        {
+                          "text": "\n ==== Assertion LWIDNT.W5PA for NormBasis as Age ==== \n\n"
                         }
                       ],
-                      "stderr": [],
+                      "stderr": [
+                        {
+                          "text": "Error reading undefined: Error: ENOENT: no such file or directory, scandir '/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/downloads/extracted/N66138A43228'\n"
+                        }
+                      ],
                       "retry": 1,
-                      "startTime": "2026-04-29T17:55:32.289Z",
+                      "startTime": "2026-04-30T02:25:15.804Z",
                       "annotations": [],
                       "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-5e48d-BAS-cluster-generate-report-chrome-retry1/attachments/Downloaded-Zip-file-1bae7ec0c05d39ff5ec6b3b28e9e981ee84bba0b.zip"
+                        },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
@@ -1685,9 +1710,9 @@
                         }
                       ],
                       "errorLocation": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts",
-                        "column": 33,
-                        "line": 749
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 13,
+                        "line": 3584
                       }
                     }
                   ],
@@ -1719,7 +1744,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 216732,
+                      "duration": 220735,
                       "errors": [],
                       "stdout": [
                         {
@@ -1744,16 +1769,16 @@
                           "text": "Trying to add an Examinee \n\n"
                         },
                         {
-                          "text": "Examinee ID N14083A75065\n"
+                          "text": "Examinee ID N80084A54188\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N14083A75065/dataFiles/Derived_Score_AutoFilter_Template_N14083A75065.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N80084A54188/dataFiles/Derived_Score_AutoFilter_Template_N80084A54188.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N14083A75065 FirstName=Madge LastName =N14083A75065 Age = 04/29/2022\n"
+                          "text": "Successfully added an Examinee  ID =N80084A54188 FirstName=Jaydon LastName =N80084A54188 Age = 04/29/2022\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N14083A75065\n"
+                          "text": "Successfully selected examinee: N80084A54188\n"
                         },
                         {
                           "text": "Attempt 1: Checking accept button readiness.\n"
@@ -1864,34 +1889,34 @@
                           "text": "My Test Assignments is visible\n"
                         },
                         {
-                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N14083A75065/dataFiles/Derived_Score_AutoFilter_Template_N14083A75065.csv\n"
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N80084A54188/dataFiles/Derived_Score_AutoFilter_Template_N80084A54188.csv\n"
                         },
                         {
                           "text": "Already on Report Library page, skipping navigation.\n"
                         },
                         {
-                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N14083A75065\n"
+                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N80084A54188\n"
                         },
                         {
                           "text": "Waiting for download button to become enabled...\n"
                         },
                         {
-                          "text": "Saving downloaded file to: generated/N14083A75065/downloads/derived_N14083A75065_Exports.zip\n"
+                          "text": "Saving downloaded file to: generated/N80084A54188/downloads/derived_N80084A54188_Exports.zip\n"
                         },
                         {
-                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N14083A75065/downloads/derived_N14083A75065_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N14083A75065/downloads/extracted\n"
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N80084A54188/downloads/derived_N80084A54188_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N80084A54188/downloads/extracted\n"
                         },
                         {
                           "text": "File successfully extracted.\n"
                         },
                         {
-                          "text": "ISABSOLUTE? : Reading derived score TXT content from: generated/N14083A75065/downloads/extracted/Derived_Score_AutoFilter_Template_N14083A75065_Derived.txt\n"
+                          "text": "ISABSOLUTE? : Reading derived score TXT content from: generated/N80084A54188/downloads/extracted/Derived_Score_AutoFilter_Template_N80084A54188_Derived.txt\n"
                         },
                         {
-                          "text": "Reading TXT content from: generated/N14083A75065/downloads/extracted/Derived_Score_AutoFilter_Template_N14083A75065_Derived.txt\n"
+                          "text": "Reading TXT content from: generated/N80084A54188/downloads/extracted/Derived_Score_AutoFilter_Template_N80084A54188_Derived.txt\n"
                         },
                         {
-                          "text": "returnValues =  {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N14083A75065'\u001b[39m,\n    DemogCode: \u001b[32m'M  :04'\u001b[39m,\n    TaskStem: \u001b[32m'LWIDNT'\u001b[39m,\n    TaskStemForm: \u001b[32m'LWIDNT.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2022-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'48'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'303.79'\u001b[39m,\n    SEMW: \u001b[32m'15.66'\u001b[39m,\n    W68_Low: \u001b[32m'288'\u001b[39m,\n    W68_High: \u001b[32m'319'\u001b[39m,\n    W90_Low: \u001b[32m'278'\u001b[39m,\n    W90_High: \u001b[32m'330'\u001b[39m,\n    W95_Low: \u001b[32m'273'\u001b[39m,\n    W95_High: \u001b[32m'334'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'444.56'\u001b[39m,\n    SDLo: \u001b[32m'35.27'\u001b[39m,\n    SDUp: \u001b[32m'31.66'\u001b[39m,\n    AE_Equiv: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-140.77'\u001b[39m,\n    RPI_Num: \u001b[32m'0'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Extremely Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Severely Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Severely Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Extremely Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 1'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'virtually impossible'\u001b[39m,\n    SDUsed: \u001b[32m'35.27'\u001b[39m,\n    Z_Score: \u001b[32m'-3.99'\u001b[39m,\n    StdScore_Computed: \u001b[32m'40.13'\u001b[39m,\n    StdScore_Display: \u001b[32m'40'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Low'\u001b[39m,\n    SEMSS: \u001b[32m'6.66'\u001b[39m,\n    SS68_Low: \u001b[32m'<40'\u001b[39m,\n    SS68_High: \u001b[32m'47'\u001b[39m,\n    SS90_Low: \u001b[32m'<40'\u001b[39m,\n    SS90_High: \u001b[32m'51'\u001b[39m,\n    SS95_Low: \u001b[32m'<40'\u001b[39m,\n    SS95_High: \u001b[32m'53'\u001b[39m,\n    PR: \u001b[32m'<1'\u001b[39m,\n    PR68_Low: \u001b[32m'<1'\u001b[39m,\n    PR68_High: \u001b[32m'<1'\u001b[39m,\n    PR90_Low: \u001b[32m'<1'\u001b[39m,\n    PR90_High: \u001b[32m'<1'\u001b[39m,\n    PR95_Low: \u001b[32m'<1'\u001b[39m,\n    PR95_High: \u001b[32m'<1'\u001b[39m,\n    T_Score_Computed: \u001b[32m'10.09'\u001b[39m,\n    T_Score_Display: \u001b[32m'10'\u001b[39m,\n    SEMT: \u001b[32m'4.44'\u001b[39m,\n    T_Score68_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score68_High: \u001b[32m'15'\u001b[39m,\n    T_Score90_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score90_High: \u001b[32m'17'\u001b[39m,\n    T_Score95_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score95_High: \u001b[32m'19'\u001b[39m,\n    AssignmentID: \u001b[32m'312103'\u001b[39m,\n    ExceptionCode: \u001b[32m'[!F2]'\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  \u001b[32m'WRDATK.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N14083A75065'\u001b[39m,\n    DemogCode: \u001b[32m'M  :04'\u001b[39m,\n    TaskStem: \u001b[32m'WRDATK'\u001b[39m,\n    TaskStemForm: \u001b[32m'WRDATK.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2022-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'48'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'397.37'\u001b[39m,\n    SEMW: \u001b[32m'17.42'\u001b[39m,\n    W68_Low: \u001b[32m'380'\u001b[39m,\n    W68_High: \u001b[32m'415'\u001b[39m,\n    W90_Low: \u001b[32m'369'\u001b[39m,\n    W90_High: \u001b[32m'426'\u001b[39m,\n    W95_Low: \u001b[32m'363'\u001b[39m,\n    W95_High: \u001b[32m'432'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'472.21'\u001b[39m,\n    SDLo: \u001b[32m'20.95'\u001b[39m,\n    SDUp: \u001b[32m'17.50'\u001b[39m,\n    AE_Equiv: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-74.84'\u001b[39m,\n    RPI_Num: \u001b[32m'0'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Extremely Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Severely Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Severely Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Extremely Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 1'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'virtually impossible'\u001b[39m,\n    SDUsed: \u001b[32m'20.95'\u001b[39m,\n    Z_Score: \u001b[32m'-3.57'\u001b[39m,\n    StdScore_Computed: \u001b[32m'46.42'\u001b[39m,\n    StdScore_Display: \u001b[32m'46'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Low'\u001b[39m,\n    SEMSS: \u001b[32m'12.47'\u001b[39m,\n    SS68_Low: \u001b[32m'<40'\u001b[39m,\n    SS68_High: \u001b[32m'59'\u001b[39m,\n    SS90_Low: \u001b[32m'<40'\u001b[39m,\n    SS90_High: \u001b[32m'67'\u001b[39m,\n    SS95_Low: \u001b[32m'<40'\u001b[39m,\n    SS95_High: \u001b[32m'71'\u001b[39m,\n    PR: \u001b[32m'<1'\u001b[39m,\n    PR68_Low: \u001b[32m'<1'\u001b[39m,\n    PR68_High: \u001b[32m'<1'\u001b[39m,\n    PR90_Low: \u001b[32m'<1'\u001b[39m,\n    PR90_High: \u001b[32m'1'\u001b[39m,\n    PR95_Low: \u001b[32m'<1'\u001b[39m,\n    PR95_High: \u001b[32m'3'\u001b[39m,\n    T_Score_Computed: \u001b[32m'14.28'\u001b[39m,\n    T_Score_Display: \u001b[32m'14'\u001b[39m,\n    SEMT: \u001b[32m'8.32'\u001b[39m,\n    T_Score68_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score68_High: \u001b[32m'23'\u001b[39m,\n    T_Score90_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score90_High: \u001b[32m'28'\u001b[39m,\n    T_Score95_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score95_High: \u001b[32m'31'\u001b[39m,\n    AssignmentID: \u001b[32m'312103'\u001b[39m,\n    ExceptionCode: \u001b[32m'[!F2]'\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  RDGBAS: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N14083A75065'\u001b[39m,\n    DemogCode: \u001b[32m'M  :04'\u001b[39m,\n    TaskStem: \u001b[32m'RDGBAS'\u001b[39m,\n    TaskStemForm: \u001b[32m'RDGBAS'\u001b[39m,\n    ContribTaskStems: \u001b[32m'LWIDNT.W5PA;WRDATK.W5PA'\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2022-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'48'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'350.58'\u001b[39m,\n    SEMW: \u001b[32m'11.71'\u001b[39m,\n    W68_Low: \u001b[32m'339'\u001b[39m,\n    W68_High: \u001b[32m'362'\u001b[39m,\n    W90_Low: \u001b[32m'331'\u001b[39m,\n    W90_High: \u001b[32m'370'\u001b[39m,\n    W95_Low: \u001b[32m'328'\u001b[39m,\n    W95_High: \u001b[32m'374'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'458.38'\u001b[39m,\n    SDLo: \u001b[32m'27.48'\u001b[39m,\n    SDUp: \u001b[32m'23.81'\u001b[39m,\n    AE_Equiv: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-107.80'\u001b[39m,\n    RPI_Num: \u001b[32m'0'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Extremely Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Severely Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Severely Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Extremely Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 1'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'virtually impossible'\u001b[39m,\n    SDUsed: \u001b[32m'27.48'\u001b[39m,\n    Z_Score: \u001b[32m'-3.92'\u001b[39m,\n    StdScore_Computed: \u001b[32m'41.16'\u001b[39m,\n    StdScore_Display: \u001b[32m'41'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Low'\u001b[39m,\n    SEMSS: \u001b[32m'6.39'\u001b[39m,\n    SS68_Low: \u001b[32m'<40'\u001b[39m,\n    SS68_High: \u001b[32m'48'\u001b[39m,\n    SS90_Low: \u001b[32m'<40'\u001b[39m,\n    SS90_High: \u001b[32m'52'\u001b[39m,\n    SS95_Low: \u001b[32m'<40'\u001b[39m,\n    SS95_High: \u001b[32m'54'\u001b[39m,\n    PR: \u001b[32m'<1'\u001b[39m,\n    PR68_Low: \u001b[32m'<1'\u001b[39m,\n    PR68_High: \u001b[32m'<1'\u001b[39m,\n    PR90_Low: \u001b[32m'<1'\u001b[39m,\n    PR90_High: \u001b[32m'<1'\u001b[39m,\n    PR95_Low: \u001b[32m'<1'\u001b[39m,\n    PR95_High: \u001b[32m'<1'\u001b[39m,\n    T_Score_Computed: \u001b[32m'10.77'\u001b[39m,\n    T_Score_Display: \u001b[32m'11'\u001b[39m,\n    SEMT: \u001b[32m'4.26'\u001b[39m,\n    T_Score68_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score68_High: \u001b[32m'15'\u001b[39m,\n    T_Score90_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score90_High: \u001b[32m'18'\u001b[39m,\n    T_Score95_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score95_High: \u001b[32m'19'\u001b[39m,\n    AssignmentID: \u001b[32m'312103'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  }\n}\n"
+                          "text": "returnValues =  {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N80084A54188'\u001b[39m,\n    DemogCode: \u001b[32m'M  :04'\u001b[39m,\n    TaskStem: \u001b[32m'LWIDNT'\u001b[39m,\n    TaskStemForm: \u001b[32m'LWIDNT.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2022-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'48'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'303.79'\u001b[39m,\n    SEMW: \u001b[32m'15.66'\u001b[39m,\n    W68_Low: \u001b[32m'288'\u001b[39m,\n    W68_High: \u001b[32m'319'\u001b[39m,\n    W90_Low: \u001b[32m'278'\u001b[39m,\n    W90_High: \u001b[32m'330'\u001b[39m,\n    W95_Low: \u001b[32m'273'\u001b[39m,\n    W95_High: \u001b[32m'334'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'444.56'\u001b[39m,\n    SDLo: \u001b[32m'35.27'\u001b[39m,\n    SDUp: \u001b[32m'31.66'\u001b[39m,\n    AE_Equiv: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-140.77'\u001b[39m,\n    RPI_Num: \u001b[32m'0'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Extremely Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Severely Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Severely Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Extremely Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 1'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'virtually impossible'\u001b[39m,\n    SDUsed: \u001b[32m'35.27'\u001b[39m,\n    Z_Score: \u001b[32m'-3.99'\u001b[39m,\n    StdScore_Computed: \u001b[32m'40.13'\u001b[39m,\n    StdScore_Display: \u001b[32m'40'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Low'\u001b[39m,\n    SEMSS: \u001b[32m'6.66'\u001b[39m,\n    SS68_Low: \u001b[32m'<40'\u001b[39m,\n    SS68_High: \u001b[32m'47'\u001b[39m,\n    SS90_Low: \u001b[32m'<40'\u001b[39m,\n    SS90_High: \u001b[32m'51'\u001b[39m,\n    SS95_Low: \u001b[32m'<40'\u001b[39m,\n    SS95_High: \u001b[32m'53'\u001b[39m,\n    PR: \u001b[32m'<1'\u001b[39m,\n    PR68_Low: \u001b[32m'<1'\u001b[39m,\n    PR68_High: \u001b[32m'<1'\u001b[39m,\n    PR90_Low: \u001b[32m'<1'\u001b[39m,\n    PR90_High: \u001b[32m'<1'\u001b[39m,\n    PR95_Low: \u001b[32m'<1'\u001b[39m,\n    PR95_High: \u001b[32m'<1'\u001b[39m,\n    T_Score_Computed: \u001b[32m'10.09'\u001b[39m,\n    T_Score_Display: \u001b[32m'10'\u001b[39m,\n    SEMT: \u001b[32m'4.44'\u001b[39m,\n    T_Score68_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score68_High: \u001b[32m'15'\u001b[39m,\n    T_Score90_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score90_High: \u001b[32m'17'\u001b[39m,\n    T_Score95_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score95_High: \u001b[32m'19'\u001b[39m,\n    AssignmentID: \u001b[32m'312260'\u001b[39m,\n    ExceptionCode: \u001b[32m'[!F2]'\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  \u001b[32m'WRDATK.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N80084A54188'\u001b[39m,\n    DemogCode: \u001b[32m'M  :04'\u001b[39m,\n    TaskStem: \u001b[32m'WRDATK'\u001b[39m,\n    TaskStemForm: \u001b[32m'WRDATK.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2022-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'48'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'397.37'\u001b[39m,\n    SEMW: \u001b[32m'17.42'\u001b[39m,\n    W68_Low: \u001b[32m'380'\u001b[39m,\n    W68_High: \u001b[32m'415'\u001b[39m,\n    W90_Low: \u001b[32m'369'\u001b[39m,\n    W90_High: \u001b[32m'426'\u001b[39m,\n    W95_Low: \u001b[32m'363'\u001b[39m,\n    W95_High: \u001b[32m'432'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'472.21'\u001b[39m,\n    SDLo: \u001b[32m'20.95'\u001b[39m,\n    SDUp: \u001b[32m'17.50'\u001b[39m,\n    AE_Equiv: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-74.84'\u001b[39m,\n    RPI_Num: \u001b[32m'0'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Extremely Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Severely Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Severely Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Extremely Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 1'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'virtually impossible'\u001b[39m,\n    SDUsed: \u001b[32m'20.95'\u001b[39m,\n    Z_Score: \u001b[32m'-3.57'\u001b[39m,\n    StdScore_Computed: \u001b[32m'46.42'\u001b[39m,\n    StdScore_Display: \u001b[32m'46'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Low'\u001b[39m,\n    SEMSS: \u001b[32m'12.47'\u001b[39m,\n    SS68_Low: \u001b[32m'<40'\u001b[39m,\n    SS68_High: \u001b[32m'59'\u001b[39m,\n    SS90_Low: \u001b[32m'<40'\u001b[39m,\n    SS90_High: \u001b[32m'67'\u001b[39m,\n    SS95_Low: \u001b[32m'<40'\u001b[39m,\n    SS95_High: \u001b[32m'71'\u001b[39m,\n    PR: \u001b[32m'<1'\u001b[39m,\n    PR68_Low: \u001b[32m'<1'\u001b[39m,\n    PR68_High: \u001b[32m'<1'\u001b[39m,\n    PR90_Low: \u001b[32m'<1'\u001b[39m,\n    PR90_High: \u001b[32m'1'\u001b[39m,\n    PR95_Low: \u001b[32m'<1'\u001b[39m,\n    PR95_High: \u001b[32m'3'\u001b[39m,\n    T_Score_Computed: \u001b[32m'14.28'\u001b[39m,\n    T_Score_Display: \u001b[32m'14'\u001b[39m,\n    SEMT: \u001b[32m'8.32'\u001b[39m,\n    T_Score68_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score68_High: \u001b[32m'23'\u001b[39m,\n    T_Score90_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score90_High: \u001b[32m'28'\u001b[39m,\n    T_Score95_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score95_High: \u001b[32m'31'\u001b[39m,\n    AssignmentID: \u001b[32m'312260'\u001b[39m,\n    ExceptionCode: \u001b[32m'[!F2]'\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  RDGBAS: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N80084A54188'\u001b[39m,\n    DemogCode: \u001b[32m'M  :04'\u001b[39m,\n    TaskStem: \u001b[32m'RDGBAS'\u001b[39m,\n    TaskStemForm: \u001b[32m'RDGBAS'\u001b[39m,\n    ContribTaskStems: \u001b[32m'LWIDNT.W5PA;WRDATK.W5PA'\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2022-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'48'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'350.58'\u001b[39m,\n    SEMW: \u001b[32m'11.71'\u001b[39m,\n    W68_Low: \u001b[32m'339'\u001b[39m,\n    W68_High: \u001b[32m'362'\u001b[39m,\n    W90_Low: \u001b[32m'331'\u001b[39m,\n    W90_High: \u001b[32m'370'\u001b[39m,\n    W95_Low: \u001b[32m'328'\u001b[39m,\n    W95_High: \u001b[32m'374'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'458.38'\u001b[39m,\n    SDLo: \u001b[32m'27.48'\u001b[39m,\n    SDUp: \u001b[32m'23.81'\u001b[39m,\n    AE_Equiv: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-107.80'\u001b[39m,\n    RPI_Num: \u001b[32m'0'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Extremely Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Severely Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Severely Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Extremely Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 1'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'virtually impossible'\u001b[39m,\n    SDUsed: \u001b[32m'27.48'\u001b[39m,\n    Z_Score: \u001b[32m'-3.92'\u001b[39m,\n    StdScore_Computed: \u001b[32m'41.16'\u001b[39m,\n    StdScore_Display: \u001b[32m'41'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Low'\u001b[39m,\n    SEMSS: \u001b[32m'6.39'\u001b[39m,\n    SS68_Low: \u001b[32m'<40'\u001b[39m,\n    SS68_High: \u001b[32m'48'\u001b[39m,\n    SS90_Low: \u001b[32m'<40'\u001b[39m,\n    SS90_High: \u001b[32m'52'\u001b[39m,\n    SS95_Low: \u001b[32m'<40'\u001b[39m,\n    SS95_High: \u001b[32m'54'\u001b[39m,\n    PR: \u001b[32m'<1'\u001b[39m,\n    PR68_Low: \u001b[32m'<1'\u001b[39m,\n    PR68_High: \u001b[32m'<1'\u001b[39m,\n    PR90_Low: \u001b[32m'<1'\u001b[39m,\n    PR90_High: \u001b[32m'<1'\u001b[39m,\n    PR95_Low: \u001b[32m'<1'\u001b[39m,\n    PR95_High: \u001b[32m'<1'\u001b[39m,\n    T_Score_Computed: \u001b[32m'10.77'\u001b[39m,\n    T_Score_Display: \u001b[32m'11'\u001b[39m,\n    SEMT: \u001b[32m'4.26'\u001b[39m,\n    T_Score68_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score68_High: \u001b[32m'15'\u001b[39m,\n    T_Score90_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score90_High: \u001b[32m'18'\u001b[39m,\n    T_Score95_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score95_High: \u001b[32m'19'\u001b[39m,\n    AssignmentID: \u001b[32m'312260'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  }\n}\n"
                         },
                         {
                           "text": " \n Reading WJV NormTable data ... \n\n"
@@ -1900,7 +1925,7 @@
                           "text": "\n ==== Assertion LWIDNT.W5PA for NormBasis as K12 ==== \n\n"
                         },
                         {
-                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N14083A75065 <> N14083A75065\n"
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N80084A54188 <> N80084A54188\n"
                         },
                         {
                           "text": "2 Task Stem ->  value from the RunTime VS downloaded file is =  LWIDNT <> LWIDNT\n"
@@ -2101,7 +2126,7 @@
                           "text": "\n ==== Assertion WRDATK.W5PA for NormBasis as K12 ==== \n\n"
                         },
                         {
-                          "text": "67 Examinee ID ->  value from the RunTime VS downloaded file is =  N14083A75065 <> N14083A75065\n"
+                          "text": "67 Examinee ID ->  value from the RunTime VS downloaded file is =  N80084A54188 <> N80084A54188\n"
                         },
                         {
                           "text": "68 Task Stem ->  value from the RunTime VS downloaded file is =  WRDATK <> WRDATK\n"
@@ -2302,7 +2327,7 @@
                           "text": "\n ==== Assertion RDGBAS for NormBasis as K12 ==== \n\n"
                         },
                         {
-                          "text": "133 Examinee ID ->  value from the RunTime VS downloaded file is =  N14083A75065 <> N14083A75065\n"
+                          "text": "133 Examinee ID ->  value from the RunTime VS downloaded file is =  N80084A54188 <> N80084A54188\n"
                         },
                         {
                           "text": "134 Task Stem ->  value from the RunTime VS downloaded file is =  RDGBAS <> RDGBAS\n"
@@ -2499,17 +2524,17 @@
                       ],
                       "stderr": [
                         {
-                          "text": "Error reading undefined: Error: ENOENT: no such file or directory, scandir '/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/downloads/extracted/N14083A75065'\n"
+                          "text": "Error reading undefined: Error: ENOENT: no such file or directory, scandir '/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/downloads/extracted/N80084A54188'\n"
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-04-29T18:07:12.909Z",
+                      "startTime": "2026-04-30T02:35:23.976Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "Downloaded Zip file",
                           "contentType": "application/zip",
-                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-13b86-BAS-cluster-generate-report-chrome/attachments/Downloaded-Zip-file-51320700e07acc3bb82d4439138ef608ab38d547.zip"
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-13b86-BAS-cluster-generate-report-chrome/attachments/Downloaded-Zip-file-0f6bf8405684487eb5a3cce6db7cfb55517613d6.zip"
                         }
                       ]
                     }
@@ -2560,7 +2585,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 448839,
+                      "duration": 453484,
                       "errors": [],
                       "stdout": [
                         {
@@ -2585,16 +2610,16 @@
                           "text": "Trying to add an Examinee \n\n"
                         },
                         {
-                          "text": "Examinee ID N8437A68682\n"
+                          "text": "Examinee ID N10794A4148\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N8437A68682/dataFiles/Derived_Score_AutoFilter_Template_N8437A68682.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N10794A4148/dataFiles/Derived_Score_AutoFilter_Template_N10794A4148.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N8437A68682 FirstName=Chesley LastName =N8437A68682 Age = 04/29/2021\n"
+                          "text": "Successfully added an Examinee  ID =N10794A4148 FirstName=Peggie LastName =N10794A4148 Age = 04/29/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N8437A68682\n"
+                          "text": "Successfully selected examinee: N10794A4148\n"
                         },
                         {
                           "text": "Attempt 1: Checking accept button readiness.\n"
@@ -2975,34 +3000,34 @@
                           "text": "My Test Assignments is visible\n"
                         },
                         {
-                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N8437A68682/dataFiles/Derived_Score_AutoFilter_Template_N8437A68682.csv\n"
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N10794A4148/dataFiles/Derived_Score_AutoFilter_Template_N10794A4148.csv\n"
                         },
                         {
                           "text": "Already on Report Library page, skipping navigation.\n"
                         },
                         {
-                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N8437A68682\n"
+                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N10794A4148\n"
                         },
                         {
                           "text": "Waiting for download button to become enabled...\n"
                         },
                         {
-                          "text": "Saving downloaded file to: generated/N8437A68682/downloads/derived_N8437A68682_Exports.zip\n"
+                          "text": "Saving downloaded file to: generated/N10794A4148/downloads/derived_N10794A4148_Exports.zip\n"
                         },
                         {
-                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N8437A68682/downloads/derived_N8437A68682_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N8437A68682/downloads/extracted\n"
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N10794A4148/downloads/derived_N10794A4148_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N10794A4148/downloads/extracted\n"
                         },
                         {
                           "text": "File successfully extracted.\n"
                         },
                         {
-                          "text": "ISABSOLUTE? : Reading derived score TXT content from: generated/N8437A68682/downloads/extracted/Derived_Score_AutoFilter_Template_N8437A68682_Derived.txt\n"
+                          "text": "ISABSOLUTE? : Reading derived score TXT content from: generated/N10794A4148/downloads/extracted/Derived_Score_AutoFilter_Template_N10794A4148_Derived.txt\n"
                         },
                         {
-                          "text": "Reading TXT content from: generated/N8437A68682/downloads/extracted/Derived_Score_AutoFilter_Template_N8437A68682_Derived.txt\n"
+                          "text": "Reading TXT content from: generated/N10794A4148/downloads/extracted/Derived_Score_AutoFilter_Template_N10794A4148_Derived.txt\n"
                         },
                         {
-                          "text": "returnValues =  {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N8437A68682'\u001b[39m,\n    DemogCode: \u001b[32m'M  :05'\u001b[39m,\n    TaskStem: \u001b[32m'LWIDNT'\u001b[39m,\n    TaskStemForm: \u001b[32m'LWIDNT.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2021-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'60'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'585.2'\u001b[39m,\n    SEMW: \u001b[32m'15.64'\u001b[39m,\n    W68_Low: \u001b[32m'570'\u001b[39m,\n    W68_High: \u001b[32m'601'\u001b[39m,\n    W90_Low: \u001b[32m'559'\u001b[39m,\n    W90_High: \u001b[32m'611'\u001b[39m,\n    W95_Low: \u001b[32m'555'\u001b[39m,\n    W95_High: \u001b[32m'616'\u001b[39m,\n    NormBasis: \u001b[32m'Age'\u001b[39m,\n    CHRON: \u001b[32m'60'\u001b[39m,\n    AgeYM: \u001b[32m'Age 5 years, 0 months'\u001b[39m,\n    GradeYM: \u001b[32m''\u001b[39m,\n    REFW: \u001b[32m'372.99'\u001b[39m,\n    SDLo: \u001b[32m'30.56'\u001b[39m,\n    SDUp: \u001b[32m'33.30'\u001b[39m,\n    AE_Equiv: \u001b[32m'>29y'\u001b[39m,\n    GE_Equiv: \u001b[32m'>G12.9'\u001b[39m,\n    AE_Low: \u001b[32m'>29y'\u001b[39m,\n    AE_High: \u001b[32m'>29y'\u001b[39m,\n    GE_Low: \u001b[32m'>G12.9'\u001b[39m,\n    GE_High: \u001b[32m'>G12.9'\u001b[39m,\n    WDIFF: \u001b[32m'212.21'\u001b[39m,\n    RPI_Num: \u001b[32m'100'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Very Advanced'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 6'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'extremely easy'\u001b[39m,\n    SDUsed: \u001b[32m'33.30'\u001b[39m,\n    Z_Score: \u001b[32m'6.37'\u001b[39m,\n    StdScore_Computed: \u001b[32m'195.59'\u001b[39m,\n    StdScore_Display: \u001b[32m'>160'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Superior'\u001b[39m,\n    SEMSS: \u001b[32m'7.05'\u001b[39m,\n    SS68_Low: \u001b[32m'>160'\u001b[39m,\n    SS68_High: \u001b[32m'>160'\u001b[39m,\n    SS90_Low: \u001b[32m'>160'\u001b[39m,\n    SS90_High: \u001b[32m'>160'\u001b[39m,\n    SS95_Low: \u001b[32m'>160'\u001b[39m,\n    SS95_High: \u001b[32m'>160'\u001b[39m,\n    PR: \u001b[32m'>99'\u001b[39m,\n    PR68_Low: \u001b[32m'>99'\u001b[39m,\n    PR68_High: \u001b[32m'>99'\u001b[39m,\n    PR90_Low: \u001b[32m'>99'\u001b[39m,\n    PR90_High: \u001b[32m'>99'\u001b[39m,\n    PR95_Low: \u001b[32m'>99'\u001b[39m,\n    PR95_High: \u001b[32m'>99'\u001b[39m,\n    T_Score_Computed: \u001b[32m'113.73'\u001b[39m,\n    T_Score_Display: \u001b[32m'>90'\u001b[39m,\n    SEMT: \u001b[32m'4.70'\u001b[39m,\n    T_Score68_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score68_High: \u001b[32m'>90'\u001b[39m,\n    T_Score90_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score90_High: \u001b[32m'>90'\u001b[39m,\n    T_Score95_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score95_High: \u001b[32m'>90'\u001b[39m,\n    AssignmentID: \u001b[32m'312112'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N8437A68682'\u001b[39m,\n    DemogCode: \u001b[32m'M  :05'\u001b[39m,\n    TaskStem: \u001b[32m'PSGCMP'\u001b[39m,\n    TaskStemForm: \u001b[32m'PSGCMP.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2021-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'60'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'403.31'\u001b[39m,\n    SEMW: \u001b[32m'15.38'\u001b[39m,\n    W68_Low: \u001b[32m'388'\u001b[39m,\n    W68_High: \u001b[32m'419'\u001b[39m,\n    W90_Low: \u001b[32m'378'\u001b[39m,\n    W90_High: \u001b[32m'429'\u001b[39m,\n    W95_Low: \u001b[32m'373'\u001b[39m,\n    W95_High: \u001b[32m'433'\u001b[39m,\n    NormBasis: \u001b[32m'Age'\u001b[39m,\n    CHRON: \u001b[32m'60'\u001b[39m,\n    AgeYM: \u001b[32m'Age 5 years, 0 months'\u001b[39m,\n    GradeYM: \u001b[32m''\u001b[39m,\n    REFW: \u001b[32m'435.31'\u001b[39m,\n    SDLo: \u001b[32m'26.78'\u001b[39m,\n    SDUp: \u001b[32m'16.99'\u001b[39m,\n    AE_Equiv: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-32.00'\u001b[39m,\n    RPI_Num: \u001b[32m'21'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Very Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Moderately Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Moderately Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Very Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 2'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'extremely difficult'\u001b[39m,\n    SDUsed: \u001b[32m'26.78'\u001b[39m,\n    Z_Score: \u001b[32m'-1.19'\u001b[39m,\n    StdScore_Computed: \u001b[32m'82.08'\u001b[39m,\n    StdScore_Display: \u001b[32m'82'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Low Average'\u001b[39m,\n    SEMSS: \u001b[32m'8.61'\u001b[39m,\n    SS68_Low: \u001b[32m'73'\u001b[39m,\n    SS68_High: \u001b[32m'91'\u001b[39m,\n    SS90_Low: \u001b[32m'68'\u001b[39m,\n    SS90_High: \u001b[32m'96'\u001b[39m,\n    SS95_Low: \u001b[32m'65'\u001b[39m,\n    SS95_High: \u001b[32m'99'\u001b[39m,\n    PR: \u001b[32m'12'\u001b[39m,\n    PR68_Low: \u001b[32m'4'\u001b[39m,\n    PR68_High: \u001b[32m'27'\u001b[39m,\n    PR90_Low: \u001b[32m'2'\u001b[39m,\n    PR90_High: \u001b[32m'40'\u001b[39m,\n    PR95_Low: \u001b[32m'1'\u001b[39m,\n    PR95_High: \u001b[32m'47'\u001b[39m,\n    T_Score_Computed: \u001b[32m'38.05'\u001b[39m,\n    T_Score_Display: \u001b[32m'38'\u001b[39m,\n    SEMT: \u001b[32m'5.74'\u001b[39m,\n    T_Score68_Low: \u001b[32m'32'\u001b[39m,\n    T_Score68_High: \u001b[32m'44'\u001b[39m,\n    T_Score90_Low: \u001b[32m'29'\u001b[39m,\n    T_Score90_High: \u001b[32m'47'\u001b[39m,\n    T_Score95_Low: \u001b[32m'27'\u001b[39m,\n    T_Score95_High: \u001b[32m'49'\u001b[39m,\n    AssignmentID: \u001b[32m'312112'\u001b[39m,\n    ExceptionCode: \u001b[32m'[!F2]'\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  RDGBRF: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N8437A68682'\u001b[39m,\n    DemogCode: \u001b[32m'M  :05'\u001b[39m,\n    TaskStem: \u001b[32m'RDGBRF'\u001b[39m,\n    TaskStemForm: \u001b[32m'RDGBRF'\u001b[39m,\n    ContribTaskStems: \u001b[32m'LWIDNT.W5PA;PSGCMP.W5PA'\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2021-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'60'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'494.26'\u001b[39m,\n    SEMW: \u001b[32m'10.97'\u001b[39m,\n    W68_Low: \u001b[32m'483'\u001b[39m,\n    W68_High: \u001b[32m'505'\u001b[39m,\n    W90_Low: \u001b[32m'476'\u001b[39m,\n    W90_High: \u001b[32m'512'\u001b[39m,\n    W95_Low: \u001b[32m'473'\u001b[39m,\n    W95_High: \u001b[32m'516'\u001b[39m,\n    NormBasis: \u001b[32m'Age'\u001b[39m,\n    CHRON: \u001b[32m'60'\u001b[39m,\n    AgeYM: \u001b[32m'Age 5 years, 0 months'\u001b[39m,\n    GradeYM: \u001b[32m''\u001b[39m,\n    REFW: \u001b[32m'404.15'\u001b[39m,\n    SDLo: \u001b[32m'26.96'\u001b[39m,\n    SDUp: \u001b[32m'23.31'\u001b[39m,\n    AE_Equiv: \u001b[32m'9y7m'\u001b[39m,\n    GE_Equiv: \u001b[32m'G4.2'\u001b[39m,\n    AE_Low: \u001b[32m'8y10m'\u001b[39m,\n    AE_High: \u001b[32m'10y10m'\u001b[39m,\n    GE_Low: \u001b[32m'G3.4'\u001b[39m,\n    GE_High: \u001b[32m'G5.4'\u001b[39m,\n    WDIFF: \u001b[32m'90.11'\u001b[39m,\n    RPI_Num: \u001b[32m'100'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Very Advanced'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 6'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'extremely easy'\u001b[39m,\n    SDUsed: \u001b[32m'23.31'\u001b[39m,\n    Z_Score: \u001b[32m'3.87'\u001b[39m,\n    StdScore_Computed: \u001b[32m'157.99'\u001b[39m,\n    StdScore_Display: \u001b[32m'158'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Superior'\u001b[39m,\n    SEMSS: \u001b[32m'7.06'\u001b[39m,\n    SS68_Low: \u001b[32m'151'\u001b[39m,\n    SS68_High: \u001b[32m'>160'\u001b[39m,\n    SS90_Low: \u001b[32m'146'\u001b[39m,\n    SS90_High: \u001b[32m'>160'\u001b[39m,\n    SS95_Low: \u001b[32m'144'\u001b[39m,\n    SS95_High: \u001b[32m'>160'\u001b[39m,\n    PR: \u001b[32m'>99'\u001b[39m,\n    PR68_Low: \u001b[32m'>99'\u001b[39m,\n    PR68_High: \u001b[32m'>99'\u001b[39m,\n    PR90_Low: \u001b[32m'>99'\u001b[39m,\n    PR90_High: \u001b[32m'>99'\u001b[39m,\n    PR95_Low: \u001b[32m'>99'\u001b[39m,\n    PR95_High: \u001b[32m'>99'\u001b[39m,\n    T_Score_Computed: \u001b[32m'88.66'\u001b[39m,\n    T_Score_Display: \u001b[32m'89'\u001b[39m,\n    SEMT: \u001b[32m'4.71'\u001b[39m,\n    T_Score68_Low: \u001b[32m'84'\u001b[39m,\n    T_Score68_High: \u001b[32m'>90'\u001b[39m,\n    T_Score90_Low: \u001b[32m'81'\u001b[39m,\n    T_Score90_High: \u001b[32m'>90'\u001b[39m,\n    T_Score95_Low: \u001b[32m'79'\u001b[39m,\n    T_Score95_High: \u001b[32m'>90'\u001b[39m,\n    AssignmentID: \u001b[32m'312112'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  }\n}\n"
+                          "text": "returnValues =  {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N10794A4148'\u001b[39m,\n    DemogCode: \u001b[32m'M  :05'\u001b[39m,\n    TaskStem: \u001b[32m'LWIDNT'\u001b[39m,\n    TaskStemForm: \u001b[32m'LWIDNT.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2021-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'60'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'585.2'\u001b[39m,\n    SEMW: \u001b[32m'15.64'\u001b[39m,\n    W68_Low: \u001b[32m'570'\u001b[39m,\n    W68_High: \u001b[32m'601'\u001b[39m,\n    W90_Low: \u001b[32m'559'\u001b[39m,\n    W90_High: \u001b[32m'611'\u001b[39m,\n    W95_Low: \u001b[32m'555'\u001b[39m,\n    W95_High: \u001b[32m'616'\u001b[39m,\n    NormBasis: \u001b[32m'Age'\u001b[39m,\n    CHRON: \u001b[32m'60'\u001b[39m,\n    AgeYM: \u001b[32m'Age 5 years, 0 months'\u001b[39m,\n    GradeYM: \u001b[32m''\u001b[39m,\n    REFW: \u001b[32m'372.99'\u001b[39m,\n    SDLo: \u001b[32m'30.56'\u001b[39m,\n    SDUp: \u001b[32m'33.30'\u001b[39m,\n    AE_Equiv: \u001b[32m'>29y'\u001b[39m,\n    GE_Equiv: \u001b[32m'>G12.9'\u001b[39m,\n    AE_Low: \u001b[32m'>29y'\u001b[39m,\n    AE_High: \u001b[32m'>29y'\u001b[39m,\n    GE_Low: \u001b[32m'>G12.9'\u001b[39m,\n    GE_High: \u001b[32m'>G12.9'\u001b[39m,\n    WDIFF: \u001b[32m'212.21'\u001b[39m,\n    RPI_Num: \u001b[32m'100'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Very Advanced'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 6'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'extremely easy'\u001b[39m,\n    SDUsed: \u001b[32m'33.30'\u001b[39m,\n    Z_Score: \u001b[32m'6.37'\u001b[39m,\n    StdScore_Computed: \u001b[32m'195.59'\u001b[39m,\n    StdScore_Display: \u001b[32m'>160'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Superior'\u001b[39m,\n    SEMSS: \u001b[32m'7.05'\u001b[39m,\n    SS68_Low: \u001b[32m'>160'\u001b[39m,\n    SS68_High: \u001b[32m'>160'\u001b[39m,\n    SS90_Low: \u001b[32m'>160'\u001b[39m,\n    SS90_High: \u001b[32m'>160'\u001b[39m,\n    SS95_Low: \u001b[32m'>160'\u001b[39m,\n    SS95_High: \u001b[32m'>160'\u001b[39m,\n    PR: \u001b[32m'>99'\u001b[39m,\n    PR68_Low: \u001b[32m'>99'\u001b[39m,\n    PR68_High: \u001b[32m'>99'\u001b[39m,\n    PR90_Low: \u001b[32m'>99'\u001b[39m,\n    PR90_High: \u001b[32m'>99'\u001b[39m,\n    PR95_Low: \u001b[32m'>99'\u001b[39m,\n    PR95_High: \u001b[32m'>99'\u001b[39m,\n    T_Score_Computed: \u001b[32m'113.73'\u001b[39m,\n    T_Score_Display: \u001b[32m'>90'\u001b[39m,\n    SEMT: \u001b[32m'4.70'\u001b[39m,\n    T_Score68_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score68_High: \u001b[32m'>90'\u001b[39m,\n    T_Score90_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score90_High: \u001b[32m'>90'\u001b[39m,\n    T_Score95_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score95_High: \u001b[32m'>90'\u001b[39m,\n    AssignmentID: \u001b[32m'312272'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N10794A4148'\u001b[39m,\n    DemogCode: \u001b[32m'M  :05'\u001b[39m,\n    TaskStem: \u001b[32m'PSGCMP'\u001b[39m,\n    TaskStemForm: \u001b[32m'PSGCMP.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2021-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'60'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'403.31'\u001b[39m,\n    SEMW: \u001b[32m'15.38'\u001b[39m,\n    W68_Low: \u001b[32m'388'\u001b[39m,\n    W68_High: \u001b[32m'419'\u001b[39m,\n    W90_Low: \u001b[32m'378'\u001b[39m,\n    W90_High: \u001b[32m'429'\u001b[39m,\n    W95_Low: \u001b[32m'373'\u001b[39m,\n    W95_High: \u001b[32m'433'\u001b[39m,\n    NormBasis: \u001b[32m'Age'\u001b[39m,\n    CHRON: \u001b[32m'60'\u001b[39m,\n    AgeYM: \u001b[32m'Age 5 years, 0 months'\u001b[39m,\n    GradeYM: \u001b[32m''\u001b[39m,\n    REFW: \u001b[32m'435.31'\u001b[39m,\n    SDLo: \u001b[32m'26.78'\u001b[39m,\n    SDUp: \u001b[32m'16.99'\u001b[39m,\n    AE_Equiv: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-32.00'\u001b[39m,\n    RPI_Num: \u001b[32m'21'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Very Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Moderately Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Moderately Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Very Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 2'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'extremely difficult'\u001b[39m,\n    SDUsed: \u001b[32m'26.78'\u001b[39m,\n    Z_Score: \u001b[32m'-1.19'\u001b[39m,\n    StdScore_Computed: \u001b[32m'82.08'\u001b[39m,\n    StdScore_Display: \u001b[32m'82'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Low Average'\u001b[39m,\n    SEMSS: \u001b[32m'8.61'\u001b[39m,\n    SS68_Low: \u001b[32m'73'\u001b[39m,\n    SS68_High: \u001b[32m'91'\u001b[39m,\n    SS90_Low: \u001b[32m'68'\u001b[39m,\n    SS90_High: \u001b[32m'96'\u001b[39m,\n    SS95_Low: \u001b[32m'65'\u001b[39m,\n    SS95_High: \u001b[32m'99'\u001b[39m,\n    PR: \u001b[32m'12'\u001b[39m,\n    PR68_Low: \u001b[32m'4'\u001b[39m,\n    PR68_High: \u001b[32m'27'\u001b[39m,\n    PR90_Low: \u001b[32m'2'\u001b[39m,\n    PR90_High: \u001b[32m'40'\u001b[39m,\n    PR95_Low: \u001b[32m'1'\u001b[39m,\n    PR95_High: \u001b[32m'47'\u001b[39m,\n    T_Score_Computed: \u001b[32m'38.05'\u001b[39m,\n    T_Score_Display: \u001b[32m'38'\u001b[39m,\n    SEMT: \u001b[32m'5.74'\u001b[39m,\n    T_Score68_Low: \u001b[32m'32'\u001b[39m,\n    T_Score68_High: \u001b[32m'44'\u001b[39m,\n    T_Score90_Low: \u001b[32m'29'\u001b[39m,\n    T_Score90_High: \u001b[32m'47'\u001b[39m,\n    T_Score95_Low: \u001b[32m'27'\u001b[39m,\n    T_Score95_High: \u001b[32m'49'\u001b[39m,\n    AssignmentID: \u001b[32m'312272'\u001b[39m,\n    ExceptionCode: \u001b[32m'[!F2]'\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  RDGBRF: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N10794A4148'\u001b[39m,\n    DemogCode: \u001b[32m'M  :05'\u001b[39m,\n    TaskStem: \u001b[32m'RDGBRF'\u001b[39m,\n    TaskStemForm: \u001b[32m'RDGBRF'\u001b[39m,\n    ContribTaskStems: \u001b[32m'LWIDNT.W5PA;PSGCMP.W5PA'\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2021-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'60'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'494.26'\u001b[39m,\n    SEMW: \u001b[32m'10.97'\u001b[39m,\n    W68_Low: \u001b[32m'483'\u001b[39m,\n    W68_High: \u001b[32m'505'\u001b[39m,\n    W90_Low: \u001b[32m'476'\u001b[39m,\n    W90_High: \u001b[32m'512'\u001b[39m,\n    W95_Low: \u001b[32m'473'\u001b[39m,\n    W95_High: \u001b[32m'516'\u001b[39m,\n    NormBasis: \u001b[32m'Age'\u001b[39m,\n    CHRON: \u001b[32m'60'\u001b[39m,\n    AgeYM: \u001b[32m'Age 5 years, 0 months'\u001b[39m,\n    GradeYM: \u001b[32m''\u001b[39m,\n    REFW: \u001b[32m'404.15'\u001b[39m,\n    SDLo: \u001b[32m'26.96'\u001b[39m,\n    SDUp: \u001b[32m'23.31'\u001b[39m,\n    AE_Equiv: \u001b[32m'9y7m'\u001b[39m,\n    GE_Equiv: \u001b[32m'G4.2'\u001b[39m,\n    AE_Low: \u001b[32m'8y10m'\u001b[39m,\n    AE_High: \u001b[32m'10y10m'\u001b[39m,\n    GE_Low: \u001b[32m'G3.4'\u001b[39m,\n    GE_High: \u001b[32m'G5.4'\u001b[39m,\n    WDIFF: \u001b[32m'90.11'\u001b[39m,\n    RPI_Num: \u001b[32m'100'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Very Advanced'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 6'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'extremely easy'\u001b[39m,\n    SDUsed: \u001b[32m'23.31'\u001b[39m,\n    Z_Score: \u001b[32m'3.87'\u001b[39m,\n    StdScore_Computed: \u001b[32m'157.99'\u001b[39m,\n    StdScore_Display: \u001b[32m'158'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Superior'\u001b[39m,\n    SEMSS: \u001b[32m'7.06'\u001b[39m,\n    SS68_Low: \u001b[32m'151'\u001b[39m,\n    SS68_High: \u001b[32m'>160'\u001b[39m,\n    SS90_Low: \u001b[32m'146'\u001b[39m,\n    SS90_High: \u001b[32m'>160'\u001b[39m,\n    SS95_Low: \u001b[32m'144'\u001b[39m,\n    SS95_High: \u001b[32m'>160'\u001b[39m,\n    PR: \u001b[32m'>99'\u001b[39m,\n    PR68_Low: \u001b[32m'>99'\u001b[39m,\n    PR68_High: \u001b[32m'>99'\u001b[39m,\n    PR90_Low: \u001b[32m'>99'\u001b[39m,\n    PR90_High: \u001b[32m'>99'\u001b[39m,\n    PR95_Low: \u001b[32m'>99'\u001b[39m,\n    PR95_High: \u001b[32m'>99'\u001b[39m,\n    T_Score_Computed: \u001b[32m'88.66'\u001b[39m,\n    T_Score_Display: \u001b[32m'89'\u001b[39m,\n    SEMT: \u001b[32m'4.71'\u001b[39m,\n    T_Score68_Low: \u001b[32m'84'\u001b[39m,\n    T_Score68_High: \u001b[32m'>90'\u001b[39m,\n    T_Score90_Low: \u001b[32m'81'\u001b[39m,\n    T_Score90_High: \u001b[32m'>90'\u001b[39m,\n    T_Score95_Low: \u001b[32m'79'\u001b[39m,\n    T_Score95_High: \u001b[32m'>90'\u001b[39m,\n    AssignmentID: \u001b[32m'312272'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  }\n}\n"
                         },
                         {
                           "text": " \n Reading WJV NormTable data ... \n\n"
@@ -3011,7 +3036,7 @@
                           "text": "\n ==== Assertion LWIDNT.W5PA for NormBasis as Age ==== \n\n"
                         },
                         {
-                          "text": "198 Examinee ID ->  value from the RunTime VS downloaded file is =  N8437A68682 <> N8437A68682\n"
+                          "text": "198 Examinee ID ->  value from the RunTime VS downloaded file is =  N10794A4148 <> N10794A4148\n"
                         },
                         {
                           "text": "199 Task Stem ->  value from the RunTime VS downloaded file is =  LWIDNT <> LWIDNT\n"
@@ -3212,7 +3237,7 @@
                           "text": "\n ==== Assertion PSGCMP.W5PA for NormBasis as Age ==== \n\n"
                         },
                         {
-                          "text": "264 Examinee ID ->  value from the RunTime VS downloaded file is =  N8437A68682 <> N8437A68682\n"
+                          "text": "264 Examinee ID ->  value from the RunTime VS downloaded file is =  N10794A4148 <> N10794A4148\n"
                         },
                         {
                           "text": "265 Task Stem ->  value from the RunTime VS downloaded file is =  PSGCMP <> PSGCMP\n"
@@ -3413,7 +3438,7 @@
                           "text": "\n ==== Assertion RDGBRF for NormBasis as Age ==== \n\n"
                         },
                         {
-                          "text": "330 Examinee ID ->  value from the RunTime VS downloaded file is =  N8437A68682 <> N8437A68682\n"
+                          "text": "330 Examinee ID ->  value from the RunTime VS downloaded file is =  N10794A4148 <> N10794A4148\n"
                         },
                         {
                           "text": "331 Task Stem ->  value from the RunTime VS downloaded file is =  RDGBRF <> RDGBRF\n"
@@ -3610,17 +3635,17 @@
                       ],
                       "stderr": [
                         {
-                          "text": "Error reading undefined: Error: ENOENT: no such file or directory, scandir '/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/downloads/extracted/N8437A68682'\n"
+                          "text": "Error reading undefined: Error: ENOENT: no such file or directory, scandir '/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/downloads/extracted/N10794A4148'\n"
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-04-29T18:10:50.140Z",
+                      "startTime": "2026-04-30T02:39:05.185Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "Downloaded Zip file",
                           "contentType": "application/zip",
-                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome/attachments/Downloaded-Zip-file-bf8291ab67ff5b904184a220a496a8fff2cb55df.zip"
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome/attachments/Downloaded-Zip-file-e82093d3c365bf8f3d5d93d34cc04c387df725fc.zip"
                         }
                       ]
                     }
@@ -3654,7 +3679,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 309562,
+                      "duration": 311376,
                       "errors": [],
                       "stdout": [
                         {
@@ -3679,16 +3704,16 @@
                           "text": "Trying to add an Examinee \n\n"
                         },
                         {
-                          "text": "Examinee ID N33055A36756\n"
+                          "text": "Examinee ID N86432A32710\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N33055A36756/dataFiles/Derived_Score_AutoFilter_Template_N33055A36756.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N86432A32710/dataFiles/Derived_Score_AutoFilter_Template_N86432A32710.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N33055A36756 FirstName=Axel LastName =N33055A36756 Age = 04/29/2022\n"
+                          "text": "Successfully added an Examinee  ID =N86432A32710 FirstName=Maxwell LastName =N86432A32710 Age = 04/29/2022\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N33055A36756\n"
+                          "text": "Successfully selected examinee: N86432A32710\n"
                         },
                         {
                           "text": "Attempt 1: Checking accept button readiness.\n"
@@ -3904,34 +3929,34 @@
                           "text": "My Test Assignments is visible\n"
                         },
                         {
-                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N33055A36756/dataFiles/Derived_Score_AutoFilter_Template_N33055A36756.csv\n"
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N86432A32710/dataFiles/Derived_Score_AutoFilter_Template_N86432A32710.csv\n"
                         },
                         {
                           "text": "Already on Report Library page, skipping navigation.\n"
                         },
                         {
-                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N33055A36756\n"
+                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N86432A32710\n"
                         },
                         {
                           "text": "Waiting for download button to become enabled...\n"
                         },
                         {
-                          "text": "Saving downloaded file to: generated/N33055A36756/downloads/derived_N33055A36756_Exports.zip\n"
+                          "text": "Saving downloaded file to: generated/N86432A32710/downloads/derived_N86432A32710_Exports.zip\n"
                         },
                         {
-                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N33055A36756/downloads/derived_N33055A36756_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N33055A36756/downloads/extracted\n"
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N86432A32710/downloads/derived_N86432A32710_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N86432A32710/downloads/extracted\n"
                         },
                         {
                           "text": "File successfully extracted.\n"
                         },
                         {
-                          "text": "ISABSOLUTE? : Reading derived score TXT content from: generated/N33055A36756/downloads/extracted/Derived_Score_AutoFilter_Template_N33055A36756_Derived.txt\n"
+                          "text": "ISABSOLUTE? : Reading derived score TXT content from: generated/N86432A32710/downloads/extracted/Derived_Score_AutoFilter_Template_N86432A32710_Derived.txt\n"
                         },
                         {
-                          "text": "Reading TXT content from: generated/N33055A36756/downloads/extracted/Derived_Score_AutoFilter_Template_N33055A36756_Derived.txt\n"
+                          "text": "Reading TXT content from: generated/N86432A32710/downloads/extracted/Derived_Score_AutoFilter_Template_N86432A32710_Derived.txt\n"
                         },
                         {
-                          "text": "returnValues =  {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N33055A36756'\u001b[39m,\n    DemogCode: \u001b[32m'M  :04'\u001b[39m,\n    TaskStem: \u001b[32m'LWIDNT'\u001b[39m,\n    TaskStemForm: \u001b[32m'LWIDNT.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2022-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'48'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'303.79'\u001b[39m,\n    SEMW: \u001b[32m'15.66'\u001b[39m,\n    W68_Low: \u001b[32m'288'\u001b[39m,\n    W68_High: \u001b[32m'319'\u001b[39m,\n    W90_Low: \u001b[32m'278'\u001b[39m,\n    W90_High: \u001b[32m'330'\u001b[39m,\n    W95_Low: \u001b[32m'273'\u001b[39m,\n    W95_High: \u001b[32m'334'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'444.56'\u001b[39m,\n    SDLo: \u001b[32m'35.27'\u001b[39m,\n    SDUp: \u001b[32m'31.66'\u001b[39m,\n    AE_Equiv: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-140.77'\u001b[39m,\n    RPI_Num: \u001b[32m'0'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Extremely Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Severely Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Severely Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Extremely Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 1'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'virtually impossible'\u001b[39m,\n    SDUsed: \u001b[32m'35.27'\u001b[39m,\n    Z_Score: \u001b[32m'-3.99'\u001b[39m,\n    StdScore_Computed: \u001b[32m'40.13'\u001b[39m,\n    StdScore_Display: \u001b[32m'40'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Low'\u001b[39m,\n    SEMSS: \u001b[32m'6.66'\u001b[39m,\n    SS68_Low: \u001b[32m'<40'\u001b[39m,\n    SS68_High: \u001b[32m'47'\u001b[39m,\n    SS90_Low: \u001b[32m'<40'\u001b[39m,\n    SS90_High: \u001b[32m'51'\u001b[39m,\n    SS95_Low: \u001b[32m'<40'\u001b[39m,\n    SS95_High: \u001b[32m'53'\u001b[39m,\n    PR: \u001b[32m'<1'\u001b[39m,\n    PR68_Low: \u001b[32m'<1'\u001b[39m,\n    PR68_High: \u001b[32m'<1'\u001b[39m,\n    PR90_Low: \u001b[32m'<1'\u001b[39m,\n    PR90_High: \u001b[32m'<1'\u001b[39m,\n    PR95_Low: \u001b[32m'<1'\u001b[39m,\n    PR95_High: \u001b[32m'<1'\u001b[39m,\n    T_Score_Computed: \u001b[32m'10.09'\u001b[39m,\n    T_Score_Display: \u001b[32m'10'\u001b[39m,\n    SEMT: \u001b[32m'4.44'\u001b[39m,\n    T_Score68_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score68_High: \u001b[32m'15'\u001b[39m,\n    T_Score90_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score90_High: \u001b[32m'17'\u001b[39m,\n    T_Score95_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score95_High: \u001b[32m'19'\u001b[39m,\n    AssignmentID: \u001b[32m'312127'\u001b[39m,\n    ExceptionCode: \u001b[32m'[!F2]'\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N33055A36756'\u001b[39m,\n    DemogCode: \u001b[32m'M  :04'\u001b[39m,\n    TaskStem: \u001b[32m'PSGCMP'\u001b[39m,\n    TaskStemForm: \u001b[32m'PSGCMP.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2022-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'48'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'557.89'\u001b[39m,\n    SEMW: \u001b[32m'14.85'\u001b[39m,\n    W68_Low: \u001b[32m'543'\u001b[39m,\n    W68_High: \u001b[32m'573'\u001b[39m,\n    W90_Low: \u001b[32m'533'\u001b[39m,\n    W90_High: \u001b[32m'582'\u001b[39m,\n    W95_Low: \u001b[32m'529'\u001b[39m,\n    W95_High: \u001b[32m'587'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'470.45'\u001b[39m,\n    SDLo: \u001b[32m'19.46'\u001b[39m,\n    SDUp: \u001b[32m'14.24'\u001b[39m,\n    AE_Equiv: \u001b[32m'>29y'\u001b[39m,\n    GE_Equiv: \u001b[32m'>G12.9'\u001b[39m,\n    AE_Low: \u001b[32m'>29y'\u001b[39m,\n    AE_High: \u001b[32m'>29y'\u001b[39m,\n    GE_Low: \u001b[32m'>G12.9'\u001b[39m,\n    GE_High: \u001b[32m'>G12.9'\u001b[39m,\n    WDIFF: \u001b[32m'87.44'\u001b[39m,\n    RPI_Num: \u001b[32m'100'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Very Advanced'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 6'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'extremely easy'\u001b[39m,\n    SDUsed: \u001b[32m'14.24'\u001b[39m,\n    Z_Score: \u001b[32m'6.14'\u001b[39m,\n    StdScore_Computed: \u001b[32m'192.11'\u001b[39m,\n    StdScore_Display: \u001b[32m'>160'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Superior'\u001b[39m,\n    SEMSS: \u001b[32m'15.64'\u001b[39m,\n    SS68_Low: \u001b[32m'>160'\u001b[39m,\n    SS68_High: \u001b[32m'>160'\u001b[39m,\n    SS90_Low: \u001b[32m'>160'\u001b[39m,\n    SS90_High: \u001b[32m'>160'\u001b[39m,\n    SS95_Low: \u001b[32m'>160'\u001b[39m,\n    SS95_High: \u001b[32m'>160'\u001b[39m,\n    PR: \u001b[32m'>99'\u001b[39m,\n    PR68_Low: \u001b[32m'>99'\u001b[39m,\n    PR68_High: \u001b[32m'>99'\u001b[39m,\n    PR90_Low: \u001b[32m'>99'\u001b[39m,\n    PR90_High: \u001b[32m'>99'\u001b[39m,\n    PR95_Low: \u001b[32m'>99'\u001b[39m,\n    PR95_High: \u001b[32m'>99'\u001b[39m,\n    T_Score_Computed: \u001b[32m'111.40'\u001b[39m,\n    T_Score_Display: \u001b[32m'>90'\u001b[39m,\n    SEMT: \u001b[32m'10.43'\u001b[39m,\n    T_Score68_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score68_High: \u001b[32m'>90'\u001b[39m,\n    T_Score90_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score90_High: \u001b[32m'>90'\u001b[39m,\n    T_Score95_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score95_High: \u001b[32m'>90'\u001b[39m,\n    AssignmentID: \u001b[32m'312127'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  RDGBRF: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N33055A36756'\u001b[39m,\n    DemogCode: \u001b[32m'M  :04'\u001b[39m,\n    TaskStem: \u001b[32m'RDGBRF'\u001b[39m,\n    TaskStemForm: \u001b[32m'RDGBRF'\u001b[39m,\n    ContribTaskStems: \u001b[32m'LWIDNT.W5PA;PSGCMP.W5PA'\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2022-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'48'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'430.84'\u001b[39m,\n    SEMW: \u001b[32m'10.79'\u001b[39m,\n    W68_Low: \u001b[32m'420'\u001b[39m,\n    W68_High: \u001b[32m'442'\u001b[39m,\n    W90_Low: \u001b[32m'413'\u001b[39m,\n    W90_High: \u001b[32m'449'\u001b[39m,\n    W95_Low: \u001b[32m'410'\u001b[39m,\n    W95_High: \u001b[32m'452'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'457.50'\u001b[39m,\n    SDLo: \u001b[32m'26.07'\u001b[39m,\n    SDUp: \u001b[32m'22.64'\u001b[39m,\n    AE_Equiv: \u001b[32m'6y2m'\u001b[39m,\n    GE_Equiv: \u001b[32m'GK.7'\u001b[39m,\n    AE_Low: \u001b[32m'5y9m'\u001b[39m,\n    AE_High: \u001b[32m'6y7m'\u001b[39m,\n    GE_Low: \u001b[32m'GK.3'\u001b[39m,\n    GE_High: \u001b[32m'G1.1'\u001b[39m,\n    WDIFF: \u001b[32m'-26.66'\u001b[39m,\n    RPI_Num: \u001b[32m'32'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Mildly Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Mildly Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 3'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'very difficult'\u001b[39m,\n    SDUsed: \u001b[32m'26.07'\u001b[39m,\n    Z_Score: \u001b[32m'-1.02'\u001b[39m,\n    StdScore_Computed: \u001b[32m'84.66'\u001b[39m,\n    StdScore_Display: \u001b[32m'85'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Low Average'\u001b[39m,\n    SEMSS: \u001b[32m'6.21'\u001b[39m,\n    SS68_Low: \u001b[32m'78'\u001b[39m,\n    SS68_High: \u001b[32m'91'\u001b[39m,\n    SS90_Low: \u001b[32m'74'\u001b[39m,\n    SS90_High: \u001b[32m'95'\u001b[39m,\n    SS95_Low: \u001b[32m'72'\u001b[39m,\n    SS95_High: \u001b[32m'97'\u001b[39m,\n    PR: \u001b[32m'15'\u001b[39m,\n    PR68_Low: \u001b[32m'8'\u001b[39m,\n    PR68_High: \u001b[32m'27'\u001b[39m,\n    PR90_Low: \u001b[32m'4'\u001b[39m,\n    PR90_High: \u001b[32m'37'\u001b[39m,\n    PR95_Low: \u001b[32m'3'\u001b[39m,\n    PR95_High: \u001b[32m'41'\u001b[39m,\n    T_Score_Computed: \u001b[32m'39.77'\u001b[39m,\n    T_Score_Display: \u001b[32m'40'\u001b[39m,\n    SEMT: \u001b[32m'4.14'\u001b[39m,\n    T_Score68_Low: \u001b[32m'36'\u001b[39m,\n    T_Score68_High: \u001b[32m'44'\u001b[39m,\n    T_Score90_Low: \u001b[32m'33'\u001b[39m,\n    T_Score90_High: \u001b[32m'47'\u001b[39m,\n    T_Score95_Low: \u001b[32m'32'\u001b[39m,\n    T_Score95_High: \u001b[32m'48'\u001b[39m,\n    AssignmentID: \u001b[32m'312127'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  }\n}\n"
+                          "text": "returnValues =  {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N86432A32710'\u001b[39m,\n    DemogCode: \u001b[32m'M  :04'\u001b[39m,\n    TaskStem: \u001b[32m'LWIDNT'\u001b[39m,\n    TaskStemForm: \u001b[32m'LWIDNT.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2022-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'48'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'303.79'\u001b[39m,\n    SEMW: \u001b[32m'15.66'\u001b[39m,\n    W68_Low: \u001b[32m'288'\u001b[39m,\n    W68_High: \u001b[32m'319'\u001b[39m,\n    W90_Low: \u001b[32m'278'\u001b[39m,\n    W90_High: \u001b[32m'330'\u001b[39m,\n    W95_Low: \u001b[32m'273'\u001b[39m,\n    W95_High: \u001b[32m'334'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'444.56'\u001b[39m,\n    SDLo: \u001b[32m'35.27'\u001b[39m,\n    SDUp: \u001b[32m'31.66'\u001b[39m,\n    AE_Equiv: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-140.77'\u001b[39m,\n    RPI_Num: \u001b[32m'0'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Extremely Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Severely Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Severely Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Extremely Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 1'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'virtually impossible'\u001b[39m,\n    SDUsed: \u001b[32m'35.27'\u001b[39m,\n    Z_Score: \u001b[32m'-3.99'\u001b[39m,\n    StdScore_Computed: \u001b[32m'40.13'\u001b[39m,\n    StdScore_Display: \u001b[32m'40'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Low'\u001b[39m,\n    SEMSS: \u001b[32m'6.66'\u001b[39m,\n    SS68_Low: \u001b[32m'<40'\u001b[39m,\n    SS68_High: \u001b[32m'47'\u001b[39m,\n    SS90_Low: \u001b[32m'<40'\u001b[39m,\n    SS90_High: \u001b[32m'51'\u001b[39m,\n    SS95_Low: \u001b[32m'<40'\u001b[39m,\n    SS95_High: \u001b[32m'53'\u001b[39m,\n    PR: \u001b[32m'<1'\u001b[39m,\n    PR68_Low: \u001b[32m'<1'\u001b[39m,\n    PR68_High: \u001b[32m'<1'\u001b[39m,\n    PR90_Low: \u001b[32m'<1'\u001b[39m,\n    PR90_High: \u001b[32m'<1'\u001b[39m,\n    PR95_Low: \u001b[32m'<1'\u001b[39m,\n    PR95_High: \u001b[32m'<1'\u001b[39m,\n    T_Score_Computed: \u001b[32m'10.09'\u001b[39m,\n    T_Score_Display: \u001b[32m'10'\u001b[39m,\n    SEMT: \u001b[32m'4.44'\u001b[39m,\n    T_Score68_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score68_High: \u001b[32m'15'\u001b[39m,\n    T_Score90_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score90_High: \u001b[32m'17'\u001b[39m,\n    T_Score95_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score95_High: \u001b[32m'19'\u001b[39m,\n    AssignmentID: \u001b[32m'312295'\u001b[39m,\n    ExceptionCode: \u001b[32m'[!F2]'\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N86432A32710'\u001b[39m,\n    DemogCode: \u001b[32m'M  :04'\u001b[39m,\n    TaskStem: \u001b[32m'PSGCMP'\u001b[39m,\n    TaskStemForm: \u001b[32m'PSGCMP.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2022-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'48'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'557.89'\u001b[39m,\n    SEMW: \u001b[32m'14.85'\u001b[39m,\n    W68_Low: \u001b[32m'543'\u001b[39m,\n    W68_High: \u001b[32m'573'\u001b[39m,\n    W90_Low: \u001b[32m'533'\u001b[39m,\n    W90_High: \u001b[32m'582'\u001b[39m,\n    W95_Low: \u001b[32m'529'\u001b[39m,\n    W95_High: \u001b[32m'587'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'470.45'\u001b[39m,\n    SDLo: \u001b[32m'19.46'\u001b[39m,\n    SDUp: \u001b[32m'14.24'\u001b[39m,\n    AE_Equiv: \u001b[32m'>29y'\u001b[39m,\n    GE_Equiv: \u001b[32m'>G12.9'\u001b[39m,\n    AE_Low: \u001b[32m'>29y'\u001b[39m,\n    AE_High: \u001b[32m'>29y'\u001b[39m,\n    GE_Low: \u001b[32m'>G12.9'\u001b[39m,\n    GE_High: \u001b[32m'>G12.9'\u001b[39m,\n    WDIFF: \u001b[32m'87.44'\u001b[39m,\n    RPI_Num: \u001b[32m'100'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Very Advanced'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 6'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'extremely easy'\u001b[39m,\n    SDUsed: \u001b[32m'14.24'\u001b[39m,\n    Z_Score: \u001b[32m'6.14'\u001b[39m,\n    StdScore_Computed: \u001b[32m'192.11'\u001b[39m,\n    StdScore_Display: \u001b[32m'>160'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Superior'\u001b[39m,\n    SEMSS: \u001b[32m'15.64'\u001b[39m,\n    SS68_Low: \u001b[32m'>160'\u001b[39m,\n    SS68_High: \u001b[32m'>160'\u001b[39m,\n    SS90_Low: \u001b[32m'>160'\u001b[39m,\n    SS90_High: \u001b[32m'>160'\u001b[39m,\n    SS95_Low: \u001b[32m'>160'\u001b[39m,\n    SS95_High: \u001b[32m'>160'\u001b[39m,\n    PR: \u001b[32m'>99'\u001b[39m,\n    PR68_Low: \u001b[32m'>99'\u001b[39m,\n    PR68_High: \u001b[32m'>99'\u001b[39m,\n    PR90_Low: \u001b[32m'>99'\u001b[39m,\n    PR90_High: \u001b[32m'>99'\u001b[39m,\n    PR95_Low: \u001b[32m'>99'\u001b[39m,\n    PR95_High: \u001b[32m'>99'\u001b[39m,\n    T_Score_Computed: \u001b[32m'111.40'\u001b[39m,\n    T_Score_Display: \u001b[32m'>90'\u001b[39m,\n    SEMT: \u001b[32m'10.43'\u001b[39m,\n    T_Score68_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score68_High: \u001b[32m'>90'\u001b[39m,\n    T_Score90_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score90_High: \u001b[32m'>90'\u001b[39m,\n    T_Score95_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score95_High: \u001b[32m'>90'\u001b[39m,\n    AssignmentID: \u001b[32m'312295'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  RDGBRF: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N86432A32710'\u001b[39m,\n    DemogCode: \u001b[32m'M  :04'\u001b[39m,\n    TaskStem: \u001b[32m'RDGBRF'\u001b[39m,\n    TaskStemForm: \u001b[32m'RDGBRF'\u001b[39m,\n    ContribTaskStems: \u001b[32m'LWIDNT.W5PA;PSGCMP.W5PA'\u001b[39m,\n    EDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-04-29'\u001b[39m,\n    DOB: \u001b[32m'2022-04-29'\u001b[39m,\n    CAMOS: \u001b[32m'48'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'430.84'\u001b[39m,\n    SEMW: \u001b[32m'10.79'\u001b[39m,\n    W68_Low: \u001b[32m'420'\u001b[39m,\n    W68_High: \u001b[32m'442'\u001b[39m,\n    W90_Low: \u001b[32m'413'\u001b[39m,\n    W90_High: \u001b[32m'449'\u001b[39m,\n    W95_Low: \u001b[32m'410'\u001b[39m,\n    W95_High: \u001b[32m'452'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'457.50'\u001b[39m,\n    SDLo: \u001b[32m'26.07'\u001b[39m,\n    SDUp: \u001b[32m'22.64'\u001b[39m,\n    AE_Equiv: \u001b[32m'6y2m'\u001b[39m,\n    GE_Equiv: \u001b[32m'GK.7'\u001b[39m,\n    AE_Low: \u001b[32m'5y9m'\u001b[39m,\n    AE_High: \u001b[32m'6y7m'\u001b[39m,\n    GE_Low: \u001b[32m'GK.3'\u001b[39m,\n    GE_High: \u001b[32m'G1.1'\u001b[39m,\n    WDIFF: \u001b[32m'-26.66'\u001b[39m,\n    RPI_Num: \u001b[32m'32'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Mildly Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Mildly Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 3'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'very difficult'\u001b[39m,\n    SDUsed: \u001b[32m'26.07'\u001b[39m,\n    Z_Score: \u001b[32m'-1.02'\u001b[39m,\n    StdScore_Computed: \u001b[32m'84.66'\u001b[39m,\n    StdScore_Display: \u001b[32m'85'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Low Average'\u001b[39m,\n    SEMSS: \u001b[32m'6.21'\u001b[39m,\n    SS68_Low: \u001b[32m'78'\u001b[39m,\n    SS68_High: \u001b[32m'91'\u001b[39m,\n    SS90_Low: \u001b[32m'74'\u001b[39m,\n    SS90_High: \u001b[32m'95'\u001b[39m,\n    SS95_Low: \u001b[32m'72'\u001b[39m,\n    SS95_High: \u001b[32m'97'\u001b[39m,\n    PR: \u001b[32m'15'\u001b[39m,\n    PR68_Low: \u001b[32m'8'\u001b[39m,\n    PR68_High: \u001b[32m'27'\u001b[39m,\n    PR90_Low: \u001b[32m'4'\u001b[39m,\n    PR90_High: \u001b[32m'37'\u001b[39m,\n    PR95_Low: \u001b[32m'3'\u001b[39m,\n    PR95_High: \u001b[32m'41'\u001b[39m,\n    T_Score_Computed: \u001b[32m'39.77'\u001b[39m,\n    T_Score_Display: \u001b[32m'40'\u001b[39m,\n    SEMT: \u001b[32m'4.14'\u001b[39m,\n    T_Score68_Low: \u001b[32m'36'\u001b[39m,\n    T_Score68_High: \u001b[32m'44'\u001b[39m,\n    T_Score90_Low: \u001b[32m'33'\u001b[39m,\n    T_Score90_High: \u001b[32m'47'\u001b[39m,\n    T_Score95_Low: \u001b[32m'32'\u001b[39m,\n    T_Score95_High: \u001b[32m'48'\u001b[39m,\n    AssignmentID: \u001b[32m'312295'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  }\n}\n"
                         },
                         {
                           "text": " \n Reading WJV NormTable data ... \n\n"
@@ -3940,7 +3965,7 @@
                           "text": "\n ==== Assertion LWIDNT.W5PA for NormBasis as K12 ==== \n\n"
                         },
                         {
-                          "text": "395 Examinee ID ->  value from the RunTime VS downloaded file is =  N33055A36756 <> N33055A36756\n"
+                          "text": "395 Examinee ID ->  value from the RunTime VS downloaded file is =  N86432A32710 <> N86432A32710\n"
                         },
                         {
                           "text": "396 Task Stem ->  value from the RunTime VS downloaded file is =  LWIDNT <> LWIDNT\n"
@@ -4141,7 +4166,7 @@
                           "text": "\n ==== Assertion PSGCMP.W5PA for NormBasis as K12 ==== \n\n"
                         },
                         {
-                          "text": "461 Examinee ID ->  value from the RunTime VS downloaded file is =  N33055A36756 <> N33055A36756\n"
+                          "text": "461 Examinee ID ->  value from the RunTime VS downloaded file is =  N86432A32710 <> N86432A32710\n"
                         },
                         {
                           "text": "462 Task Stem ->  value from the RunTime VS downloaded file is =  PSGCMP <> PSGCMP\n"
@@ -4342,7 +4367,7 @@
                           "text": "\n ==== Assertion RDGBRF for NormBasis as K12 ==== \n\n"
                         },
                         {
-                          "text": "527 Examinee ID ->  value from the RunTime VS downloaded file is =  N33055A36756 <> N33055A36756\n"
+                          "text": "527 Examinee ID ->  value from the RunTime VS downloaded file is =  N86432A32710 <> N86432A32710\n"
                         },
                         {
                           "text": "528 Task Stem ->  value from the RunTime VS downloaded file is =  RDGBRF <> RDGBRF\n"
@@ -4539,17 +4564,17 @@
                       ],
                       "stderr": [
                         {
-                          "text": "Error reading undefined: Error: ENOENT: no such file or directory, scandir '/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/downloads/extracted/N33055A36756'\n"
+                          "text": "Error reading undefined: Error: ENOENT: no such file or directory, scandir '/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/downloads/extracted/N86432A32710'\n"
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-04-29T18:18:18.999Z",
+                      "startTime": "2026-04-30T02:46:38.693Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "Downloaded Zip file",
                           "contentType": "application/zip",
-                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome/attachments/Downloaded-Zip-file-e822e1941abc6e17a241e8243f78832b7a05d23d.zip"
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome/attachments/Downloaded-Zip-file-65ca3af7f84d89a1f59f9897977f65cee203ddaa.zip"
                         }
                       ]
                     }
@@ -4569,8 +4594,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-29T17:45:09.928Z",
-    "duration": 2299448.279,
+    "startTime": "2026-04-30T02:14:52.118Z",
+    "duration": 2218733.944,
     "expected": 3,
     "skipped": 0,
     "unexpected": 1,
