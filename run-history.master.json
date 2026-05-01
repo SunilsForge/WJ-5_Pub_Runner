@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "228",
+    "timestamp": "20260501_000000",
+    "runReason": "running full regression in STAGE after makng 90% locator fixes",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments|@ChatBot|((?=.*@SPAREL)(?=.*@Content))"
+  },
+  {
     "runNumber": "227",
     "timestamp": "20260430_000000",
     "runReason": "running regression in STAGE after 85 % locator fixes , and with out trace",

@@ -1,0 +1,184 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: test_dataExport/SNDREV_Pub.spec.ts >> SNDREV.W5PA Test Data Export Automation  >> For Ages 4 to 13 - All correct scenario Conduct test and validate report
+- Location: src/tests/test_dataExport/SNDREV_Pub.spec.ts:16:9
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByPlaceholder('Username') to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Bad gateway Error code 502" [level=1] [ref=e5]:
+      - generic [ref=e6]: Bad gateway
+      - text: Error code 502
+    - generic [ref=e7]:
+      - text: Visit
+      - link "cloudflare.com" [ref=e8] [cursor=pointer]:
+        - /url: https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=stage.riversidescore.com
+      - text: for more information.
+    - generic [ref=e9]: 2026-05-01 15:07:19 UTC
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - text: You
+      - heading "Browser" [level=3] [ref=e17]
+      - text: Working
+    - generic [ref=e18]:
+      - link [ref=e20] [cursor=pointer]:
+        - /url: https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=stage.riversidescore.com
+      - text: Ashburn
+      - heading "Cloudflare" [level=3] [ref=e23]:
+        - link "Cloudflare" [ref=e24] [cursor=pointer]:
+          - /url: https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=stage.riversidescore.com
+      - text: Working
+    - generic [ref=e25]:
+      - text: stage.riversidescore.com
+      - heading "Host" [level=3] [ref=e29]
+      - text: Error
+  - generic [ref=e31]:
+    - generic [ref=e32]:
+      - heading "What happened?" [level=2] [ref=e33]
+      - paragraph [ref=e34]: The web server reported a bad gateway error.
+    - generic [ref=e35]:
+      - heading "What can I do?" [level=2] [ref=e36]
+      - paragraph [ref=e37]: Please try again in a few minutes.
+  - paragraph [ref=e39]:
+    - generic [ref=e40]:
+      - text: "Cloudflare Ray ID:"
+      - strong [ref=e41]: 9f4fb1f9e8d30813
+    - text: •
+    - generic [ref=e42]:
+      - text: "Your IP:"
+      - button "Click to reveal" [ref=e43] [cursor=pointer]
+      - text: •
+    - generic [ref=e44]:
+      - text: Performance & security by
+      - link "Cloudflare" [ref=e45] [cursor=pointer]:
+        - /url: https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=stage.riversidescore.com
+```
+
+# Test source
+
+```ts
+  1   | import { Locator, Page } from "@playwright/test";
+  2   | import { getSiteUrl } from "../utils/testData";
+  3   | import Locators from "../utils/locators";
+  4   | 
+  5   | export default class Wj5LoginPage extends Locators {
+  6   | 
+  7   |   constructor(page: Page) {
+  8   |     super(page);
+  9   |   }
+  10  | 
+  11  |   private async waitForLoadingToDisappear(timeout = 30000) {
+  12  |     await this.loadingIcon.waitFor({ state: "hidden", timeout });
+  13  |     await this.page.waitForTimeout(15000); // Additional wait to agree terms popup,appears after login tile little late which sometimes can be seen after clicking on the WJ5 tile
+  14  |   }
+  15  | 
+  16  |   private async safeClickWj5Tyle(
+  17  |     locator: Locator,
+  18  |     options = { timeout: 10000, delay: 200 },
+  19  |   ) {
+  20  |     try {
+  21  |       await locator.waitFor({ state: "visible", timeout: options.timeout });
+  22  |       await locator.click({ timeout: options.timeout, delay: options.delay });
+  23  |       await this.page.waitForSelector('//div[@class="loading-inner"]', {
+  24  |         timeout: options.timeout,
+  25  |       });
+  26  |     } catch {
+  27  |       if (await this.pendoPopup.isVisible()) {
+  28  |         await this.pendoOkayButton.click();
+  29  |         await locator.click({ timeout: options.timeout, delay: options.delay });
+  30  |       }
+  31  |     }
+  32  |   }
+  33  | 
+  34  |   async gotoUrl(url: string) {
+  35  |     try {
+  36  |       await this.page.bringToFront();
+  37  |       await this.page.goto(await url, { waitUntil: "load" });
+  38  |     } catch (error) {
+  39  |       console.warn("Error while navigating to URL: ", error);
+  40  |     }
+  41  |   }
+  42  | 
+  43  |   async loginToRiversideScore(username: string, password: string) {
+  44  |     try {
+  45  |       await this.gotoUrl(getSiteUrl());
+  46  |       await this.page.waitForLoadState("networkidle");
+  47  |       await this.page.waitForTimeout(1000);
+  48  | 
+> 49  |       await this.userName.waitFor({ state: "visible", timeout: 10000 });
+      |                           ^ TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+  50  |       await this.userName.clear();
+  51  |       await this.passWord.clear();
+  52  |       await this.userName.fill(username);
+  53  |       await this.passWord.fill(password);
+  54  |       await this.signInButton.click();
+  55  | 
+  56  |       await this.waitForLoadingToDisappear();
+  57  | 
+  58  |       await this.acceptUserTermsIfPresent();
+  59  | 
+  60  |       await this.safeClickWj5Tyle(this.wj5Tyle);
+  61  |       await this.waitForLoadingToDisappear();
+  62  |       await this.createTestAssignment.waitFor({
+  63  |         state: "visible",
+  64  |         timeout: 30000,
+  65  |       });
+  66  | 
+  67  |       console.log(`Login successful for ${username}`);
+  68  |     } catch (error) {
+  69  |       console.error(`Login failed for ${username}:`, error);
+  70  |       throw error;
+  71  |     }
+  72  |   }
+  73  | 
+  74  |   async acceptUserTermsIfPresent() {
+  75  |     try {
+  76  |       const updateTermsPopup = await this.page.getByRole('dialog').first().isVisible();
+  77  |       if (updateTermsPopup) {
+  78  |         await this.page.getByRole('button', { name: 'I Accept' }).click();
+  79  |       }
+  80  |     } catch (error) {
+  81  |       console.warn("Error while accepting user terms: ", error);
+  82  |     }
+  83  |   }
+  84  | 
+  85  |   async reloginIfneeded(username: string, password: string) {
+  86  |     try {
+  87  |       await this.page.waitForLoadState();
+  88  | 
+  89  |       const isDashboardVisible = await this.myTestAssignmentsText.isVisible();
+  90  |       const isExamineeVisible = await this.page
+  91  |         .locator("class='examinee'")
+  92  |         .isVisible();
+  93  | 
+  94  |       if (!isDashboardVisible && !isExamineeVisible) {
+  95  |         console.log("Relogging to Riverside Score ...");
+  96  |         await this.loginToRiversideScore(username, password);
+  97  |       }
+  98  |     } catch (error) {
+  99  |       console.warn(
+  100 |         `Login page possibly blank or not in dashboard. Error: ${error}`,
+  101 |       );
+  102 |       await this.loginToRiversideScore(username, password);
+  103 |     }
+  104 |   }
+  105 | }
+  106 | 
+```
