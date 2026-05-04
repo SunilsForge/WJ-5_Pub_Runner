@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "232",
+    "timestamp": "20260504_000000",
+    "runReason": "running regression in STAGE to get the reports + change in the pipeline flow ",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments|@ChatBot"
+  },
+  {
     "runNumber": "231",
     "timestamp": "20260504_000000",
     "runReason": "running full regression in STAGE after 99% locator fixes",

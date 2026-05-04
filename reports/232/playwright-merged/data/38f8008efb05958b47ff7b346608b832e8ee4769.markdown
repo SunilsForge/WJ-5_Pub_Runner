@@ -1,0 +1,356 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/dashboard/testAssignments_A.spec.ts >> Validate Dashboard Test Assignments functionality
+- Location: src/tests/functional/dashboard/testAssignments_A.spec.ts:21:5
+
+# Error details
+
+```
+TimeoutError: locator.textContent: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('div[class*=\'TestAssignmentModule\'] tbody > tr').first().locator('td:nth-child(2)')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 05PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "05PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+        - main [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "My Test Assignments" [level=1] [ref=e38]
+                - button "Create New Test Assignment" [ref=e39] [cursor=pointer]
+              - generic [ref=e40]:
+                - generic [ref=e43]:
+                  - textbox [active] [ref=e44]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e45] [cursor=pointer]
+                - generic [ref=e46]:
+                  - button "Active" [ref=e47] [cursor=pointer]
+                  - button "Closed" [ref=e48] [cursor=pointer]
+              - table "Available Assignments" [ref=e50]:
+                - rowgroup [ref=e57]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e58]:
+                    - columnheader "This is the student or individual being assessed." [ref=e59]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e60]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e61]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e62]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e63]: Actions
+                - rowgroup [ref=e64]:
+                  - row "No Test Assignments have been created." [ref=e65] [cursor=pointer]:
+                    - cell "No Test Assignments have been created." [ref=e66]
+              - generic [ref=e67]:
+                - button "<<" [disabled] [ref=e68]
+                - button "<" [disabled] [ref=e69]
+                - button "1" [ref=e70] [cursor=pointer]
+                - button "2" [ref=e71] [cursor=pointer]
+                - button "3" [ref=e72] [cursor=pointer]
+                - button "4" [ref=e73] [cursor=pointer]
+                - button "5" [ref=e74] [cursor=pointer]
+                - button "6" [ref=e75] [cursor=pointer]
+                - button "7" [ref=e76] [cursor=pointer]
+                - button "8" [ref=e77] [cursor=pointer]
+                - button "9" [ref=e78] [cursor=pointer]
+                - button "10" [ref=e79] [cursor=pointer]
+                - button ">" [ref=e80] [cursor=pointer]
+                - button ">>" [ref=e81] [cursor=pointer]
+            - generic [ref=e82]:
+              - generic [ref=e85]:
+                - img [ref=e86]
+                - heading "Notifications Center" [level=2] [ref=e90]
+              - generic [ref=e91]:
+                - generic [ref=e93]:
+                  - img [ref=e94]
+                  - heading "Resources" [level=3] [ref=e98]
+                - list [ref=e99]:
+                  - listitem [ref=e100]:
+                    - button "Riverside Learn" [ref=e101] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e102]
+                      - img [ref=e104]
+                  - listitem [ref=e106]:
+                    - button "Onboarding Tutorial Videos" [ref=e107] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e108]
+                      - img [ref=e110]
+                  - listitem [ref=e112]:
+                    - button "Quick Reference Guides" [ref=e113] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e114]
+                      - img [ref=e116]
+                - button "View All" [ref=e119] [cursor=pointer]
+      - contentinfo [ref=e120]:
+        - generic [ref=e121]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e122] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e123]
+        - generic [ref=e124]:
+          - link "Riverside Insights Facebook" [ref=e125] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e126]
+          - link "Riverside Insights Twitter" [ref=e127] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e128]
+          - link "Riverside Insights LinkedIn" [ref=e129] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e130]
+          - link "Riverside Insights Instagram" [ref=e131] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e132]
+        - generic [ref=e133]:
+          - button "Leave Feedback" [ref=e134] [cursor=pointer]
+          - generic [ref=e135]: "|"
+          - link "Terms of Use" [ref=e136] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e137]: "|"
+          - link "Privacy Policy" [ref=e138] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e139]: Footer region end
+  - region "Chat Widget" [ref=e140]:
+    - iframe [ref=e141]:
+      - button "Open live chat" [ref=f6e5]:
+        - img [ref=f6e8]
+        - img [ref=f6e15]
+    - generic "Drag" [ref=e142]:
+      - img [ref=e143]
+```
+
+# Test source
+
+```ts
+  736 |       const expType = exportType ?? getCurrentExportType();
+  737 |       const result = await findExportDataFile({
+  738 |         exportType: expType,
+  739 |         examineeID,
+  740 |         testStemForm,
+  741 |       });
+  742 |       this.txtFileContent = result.content;
+  743 |       this.requiredFile = result.filePath;
+  744 | 
+  745 |       return result.filePath;
+  746 |     } catch (error) {
+  747 |       console.error(`Error in printAllThedatafromTheFileRequired: ${error}`);
+  748 |       throw error;
+  749 |     }
+  750 |   }
+  751 |   async uploadExamineeExportTemplate(type: string, examineeID: string) {
+  752 |     await this.goToTheMainMenuChildPage("Reports", "Data Export");
+  753 |     const fileChooserPromise = this.page.waitForEvent("filechooser");
+  754 |     await this.browseButton.click();
+  755 |     const fileChooser = await fileChooserPromise;
+  756 |     let templatePathToUpload: string | undefined;
+  757 | 
+  758 |     try {
+  759 |       const exportType = mapStringToExportType(type);
+  760 |       templatePathToUpload = getGeneratedTemplatePath(examineeID, exportType);
+  761 |       console.log(`Uploading template: ${templatePathToUpload}`);
+  762 | 
+  763 |       await fileChooser.setFiles(templatePathToUpload);
+  764 |     } catch (error) {
+  765 |       console.error(`Error preparing file for upload: ${error}`);
+  766 |       throw error;
+  767 |     }
+  768 | 
+  769 |     await expect(this.uploadButton).toBeEnabled();
+  770 |     await this.uploadButton.click();
+  771 |   }
+  772 | 
+  773 |   async selectExaminer(examinerID: string) {
+  774 |     await this.page
+  775 |       .getByPlaceholder("Search by Examiner Name or ID")
+  776 |       .fill(examinerID);
+  777 |     await this.page.locator(".item-text").getByText(examinerID).first().click();
+  778 |   }
+  779 | 
+  780 |   async waitForLoadingSpinnerToDisappear() {
+  781 |     try {
+  782 |       await this.dashboardLoadingSpinnerIcon.last().waitFor({
+  783 |         state: "hidden",
+  784 |         timeout: 2 * 60 * 1000,
+  785 |       });
+  786 |       await this.page.waitForTimeout(2000);
+  787 |     } catch (error) {
+  788 |       this.page.reload();
+  789 |       await this.dashboardLoadingSpinnerIcon.last().waitFor({
+  790 |         state: "hidden",
+  791 |         timeout: 2 * 60 * 1000,
+  792 |       });
+  793 | 
+  794 |       console.error("Error waiting for loading spinner to disappear:", error);
+  795 |     }
+  796 |   }
+  797 | 
+  798 |   async waitForLoadingIconToDisappear() {
+  799 |     await this.loadingIcon.last().waitFor({
+  800 |       state: "hidden",
+  801 |       timeout: 3 * 60 * 1000,
+  802 |     });
+  803 |   }
+  804 | 
+  805 |   async waitForMyTestAssignmentsToBeVisible() {
+  806 |     await this.myTestAssignmentsText.waitFor({
+  807 |       state: "visible",
+  808 |       timeout: 2 * 60 * 1000,
+  809 |     });
+  810 |     expect(await this.myTestAssignmentsText.isVisible(), "myTestAssignmentsText is not visible").toBeTruthy();
+  811 |   }
+  812 | 
+  813 |   async verifyTestSetStatusAtMyTestAssignmentsDashboard(
+  814 |     examineeId: string,
+  815 |     status: string,
+  816 |     scenario: string = "Not Specified",
+  817 |   ) {
+  818 |     await this.page.waitForTimeout(3000);
+  819 |     await this.searchForExamineeAtSearchMyTestAssignments(examineeId);
+  820 |     const firstRowDetails = await this.getTheTestAssignmentsRowDetails(1);
+  821 |     await this.page.waitForTimeout(3000);
+  822 |     expect
+  823 |       .soft(firstRowDetails.status, "Status not matching =" + scenario)
+  824 |       .toContain(status);
+  825 |   }
+  826 | 
+  827 |   async getTheTestAssignmentsRowDetails(rowIndex: number) {
+  828 |     await this.page.waitForLoadState("domcontentloaded");
+  829 |     await this.waitForLoadingSpinnerToDisappear();
+  830 |     await this.page.waitForTimeout(1000);
+  831 | 
+  832 |     const row = this.myTestAssignmentsRow.nth(rowIndex - 1);
+  833 | 
+  834 |     const [examinee, testSet, daysLeftEdit, status] = await Promise.all([
+  835 |       row.locator('td:nth-child(1)').textContent(),
+> 836 |       row.locator('td:nth-child(2)').textContent(),
+      |                                      ^ TimeoutError: locator.textContent: Timeout 60000ms exceeded.
+  837 |       row.locator('td:nth-child(3)').textContent(),
+  838 |       row.locator('td:nth-child(4)').textContent(),
+  839 |     ]);
+  840 | 
+  841 |     return {
+  842 |       examinee: examinee?.trim(),
+  843 |       testSet: testSet?.trim(),
+  844 |       daysLeftEdit: daysLeftEdit?.trim(),
+  845 |       status: status?.trim(),
+  846 |     };
+  847 |   }
+  848 | 
+  849 |   async searchForExamineeAtSearchMyTestAssignments(examineeName: string) {
+  850 |     await this.searchTestAssignments(examineeName);
+  851 |     await expect(
+  852 |       this.rowButton,
+  853 |       "Examinee is either not founf or too many results",
+  854 |     ).toHaveCount(1);
+  855 |   }
+  856 |   async clickOnFirstRow() {
+  857 |     await this.rowButton
+  858 |       .first()
+  859 |       .locator("td:nth-child(1) button")
+  860 |       .click({ force: true });
+  861 |     await this.page.waitForTimeout(2000);
+  862 |     await this.waitForLoadingSpinnerToDisappear();
+  863 |   }
+  864 | 
+  865 |   async clickOnRowByTestSetName(testSetName: string) {
+  866 |     const rowCount = await this.myTestAssignmentsRow.count();
+  867 |     for (let i = 0; i < rowCount; i++) {
+  868 |       const row = this.myTestAssignmentsRow.nth(i);
+  869 |       const testSet = await row.locator('td:nth-child(2)').textContent();
+  870 |       if (testSet?.trim() === testSetName) {
+  871 |         await row.click();
+  872 |         await this.page.waitForTimeout(2000);
+  873 |         return;
+  874 |       }
+  875 |     }
+  876 |     throw new Error(`No row found with test set name: "${testSetName}"`);
+  877 |   }
+  878 | 
+  879 |   async generateReport(examineeId: string): Promise<[Page, Page]> {
+  880 |     await this.searchForExamineeAtSearchMyTestAssignments(examineeId);
+  881 |     await this.waitForLoadingSpinnerToDisappear();
+  882 | 
+  883 |     // await this.generateReportIcon.first().click();
+  884 |     await this.getLinkButton('ellipsis').click();
+  885 |     await this.page.locator("//button[text()='Generate Report']").click();
+  886 | 
+  887 |     await this.waitForLoadingIconToDisappear();
+  888 |     await this.nextButton.click();
+  889 |     await this.nextButton.click();
+  890 | 
+  891 |     const [newPage] = await Promise.all([
+  892 |       this.page.context().waitForEvent("page"),
+  893 |       this.generateReportButton.last().click(),
+  894 |     ]);
+  895 | 
+  896 |     return [this.page, newPage] as [Page, Page];
+  897 |   }
+  898 | 
+  899 |   async goToDashboardFromMainNavigation() {
+  900 |     await this.page.bringToFront();
+  901 |     await this.mainNavigation.click();
+  902 |     await this.mainNavigationHome.click();
+  903 |     await this.areYouSureYesButton.click();
+  904 |     await this.waitForLoadingSpinnerToDisappear();
+  905 |   }
+  906 | 
+  907 |   async closeLaunchTestSessionPopUp() {
+  908 |     await this.closeSessionIntroCrossIcon.click();
+  909 |     await this.waitForLoadingSpinnerToDisappear();
+  910 |   }
+  911 | 
+  912 |   async clickOnReviewMode() {
+  913 |     await this.reviewModeButton.click();
+  914 |   }
+  915 | 
+  916 |   async getStatusOfSubmitTestAssignmentButton() {
+  917 |     await this.submitTestSetAndFinishAdministration.waitFor({
+  918 |       state: "visible",
+  919 |       timeout: 2 * 60 * 1000,
+  920 |     });
+  921 |     await this.page.waitForTimeout(3000);
+  922 |     return await this.submitTestSetAndFinishAdministration.isDisabled();
+  923 |   }
+  924 | 
+  925 |   async verifyReviewModeDashboardIsVisible() {
+  926 |     await this.reviewModeDashboardHeader.waitFor({
+  927 |       state: "visible",
+  928 |       timeout: 2 * 60 * 1000,
+  929 |     });
+  930 |     await expect(this.reviewModeDashboardHeader).toBeVisible();
+  931 |     await this.page.waitForTimeout(2000);
+  932 |   }
+  933 | 
+  934 |   async verifyAdministrationSummaryIsVisible() {
+  935 |    await this.waitForLoadingInnerToDisappear();
+  936 |     await this.administrationSummaryHeader.waitFor({
+```
