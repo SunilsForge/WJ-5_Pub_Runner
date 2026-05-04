@@ -1,5 +1,13 @@
 [
   {
+    "runNumber": "230",
+    "timestamp": "20260504_000000",
+    "runReason": "running regression in STAGE on MONDAY to check behaviour",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments"
+  },
+  {
     "runNumber": "229",
     "timestamp": "20260501_000000",
     "runReason": "Just checking if the page deployment works",
