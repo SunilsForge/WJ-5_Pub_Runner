@@ -1,0 +1,2106 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+        "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "commitHash": "930287c9906fc7b1a2b17c9c3a0f0d1a466eb7b1",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/25325414841"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 14,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/dashboard/testAssignments_C.spec.ts",
+      "file": "functional/dashboard/testAssignments_C.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Validate Dashboard Test Assignments functionality Part_C",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_C",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "27345_27549, 30275_30670",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts",
+                    "line": 13,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 156138,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Start Test\\']')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Start Test\\']')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Start Test\\']')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Start Test\\']')\u001b[22m\n\n    at CommonTestPage.setTheSuggestedStartingPointTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6231:40)\n    at CommonTestPage.clickOnLetsBeginButtonAndStartTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6224:18)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:75:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:47:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                      "column": 40,
+                      "line": 6231
+                    },
+                    "snippet": "   at ../page/commonTestPage.ts:6231\n\n\u001b[0m \u001b[90m 6229 |\u001b[39m\n \u001b[90m 6230 |\u001b[39m   \u001b[36masync\u001b[39m setTheSuggestedStartingPointTo(sspOption\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6231 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mstartTestButton)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6232 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6233 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloading\u001b[33m.\u001b[39misVisible())\n \u001b[90m 6234 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloading\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m\"hidden\"\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m3\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 40,
+                        "line": 6231
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Start Test\\']')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Start Test\\']')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6231\n\n  6229 |\n  6230 |   async setTheSuggestedStartingPointTo(sspOption: string) {\n> 6231 |     await expect(this.startTestButton).toBeVisible({ timeout: 10000 });\n       |                                        ^\n  6232 |     await this.page.waitForTimeout(5000);\n  6233 |     if (this.loading.isVisible())\n  6234 |       await this.loading.waitFor({ state: \"hidden\", timeout: 3 * 60 * 1000 });\n    at CommonTestPage.setTheSuggestedStartingPointTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6231:40)\n    at CommonTestPage.clickOnLetsBeginButtonAndStartTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6224:18)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:75:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:47:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 04PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S14:W0] Login successful for 04PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Examiner:- Verify subtests successfully applied for submitted test assignment",
+                      "duration": 24492
+                    },
+                    {
+                      "title": "Examiner:- Complete one test and verify subtests used count is increased by 1",
+                      "duration": 89434,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Start Test\\']')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Start Test\\']')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Start Test\\']')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Start Test\\']')\u001b[22m\n\n    at CommonTestPage.setTheSuggestedStartingPointTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6231:40)\n    at CommonTestPage.clickOnLetsBeginButtonAndStartTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6224:18)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:75:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:47:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 40,
+                          "line": 6231
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6231\n\n\u001b[0m \u001b[90m 6229 |\u001b[39m\n \u001b[90m 6230 |\u001b[39m   \u001b[36masync\u001b[39m setTheSuggestedStartingPointTo(sspOption\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6231 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mstartTestButton)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6232 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6233 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloading\u001b[33m.\u001b[39misVisible())\n \u001b[90m 6234 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloading\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m\"hidden\"\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m3\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-05-04T15:41:19.513Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "27345_27549, 30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts",
+                        "line": 13,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome/test-failed-2.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                    "column": 40,
+                    "line": 6231
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 305454,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 04PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S14:W1] Login successful for 04PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "await administrationOverviewPageTestName.isVisible() : true\n"
+                    },
+                    {
+                      "text": "await introText.isVisible() = false\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Examiner:- Verify subtests successfully applied for submitted test assignment",
+                      "duration": 23589
+                    },
+                    {
+                      "title": "Examiner:- Complete one test and verify subtests used count is increased by 1",
+                      "duration": 149956
+                    },
+                    {
+                      "title": "Examiner:- Verify ellipse menu options for \"Not Started\" status",
+                      "duration": 10134
+                    },
+                    {
+                      "title": "Examiner:- Verify ellipse menu options for \"In Progress\" status",
+                      "duration": 8178
+                    },
+                    {
+                      "title": "Examiner:- Verify ellipse menu options for \"Submitted\" status",
+                      "duration": 8159
+                    },
+                    {
+                      "title": "Examiner:- Verify ellipse menu options for \"Expired\" status",
+                      "duration": 8141
+                    },
+                    {
+                      "title": "Examiner:- Verify ellipse menu options for \"Closed\" status",
+                      "duration": 5200
+                    },
+                    {
+                      "title": "Examiner:- Verify ellipse menu options for \"Not Started\" status from Examinees tab",
+                      "duration": 13616
+                    },
+                    {
+                      "title": "Examiner:- Verify ellipse menu options for \"In Progress\" status from Examinees tab",
+                      "duration": 10968
+                    },
+                    {
+                      "title": "Examiner:- Verify ellipse menu options for \"Submitted\" status from Examinees tab",
+                      "duration": 11474
+                    },
+                    {
+                      "title": "Examiner:- Verify ellipse menu options for \"Expired\" status from Examinees tab",
+                      "duration": 11444
+                    },
+                    {
+                      "title": "Examiner:- Verify ellipse menu options for \"Closed\" status from Examinees tab",
+                      "duration": 10971
+                    }
+                  ],
+                  "startTime": "2026-05-04T15:44:03.346Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "27345_27549, 30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts",
+                        "line": 13,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "flaky"
+            }
+          ],
+          "id": "d312348875e4a5b34876-2b1cdf25fad60f867cc3",
+          "file": "functional/dashboard/testAssignments_C.spec.ts",
+          "line": 13,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/ReviewModeNotStartedTests.spec.ts",
+      "file": "functional/ReviewModeNotStartedTests.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Review Not Started Tests",
+          "file": "functional/ReviewModeNotStartedTests.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Preschool to Kindergarten - All correct SSP1 Test UI",
+              "ok": false,
+              "tags": [
+                "ReviewMode",
+                "NotStarted",
+                "Smoke",
+                "AE_05"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 155912,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Review Mode\\']')\nExpected: visible\nTimeout: 60000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Review Mode\\']')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Review Mode\\']')\nExpected: visible\nTimeout: 60000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Review Mode\\']')\u001b[22m\n\n    at CommonTestPage.reviewDashboardValidationForNotStartedTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:7977:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/ReviewModeNotStartedTests.spec.ts:24:17",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 39,
+                          "line": 7977
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:7977\n\n\u001b[0m \u001b[90m 7975 |\u001b[39m \u001b[36masync\u001b[39m reviewDashboardValidationForNotStartedTests(){\n \u001b[90m 7976 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 7977 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeHeader)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7978 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeDashboardHeader)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 7979 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeTag)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 7980 |\u001b[39m   \u001b[90m// await this.examineeIcon.hover();      // enhancement and need to update the script here\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 39,
+                            "line": 7977
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Review Mode\\']')\nExpected: visible\nTimeout: 60000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Review Mode\\']')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:7977\n\n  7975 | async reviewDashboardValidationForNotStartedTests(){\n  7976 |   await this.reviewModeButton.click();\n> 7977 |   await expect(this.reviewModeHeader).toBeVisible();\n       |                                       ^\n  7978 |   await expect(this.reviewModeDashboardHeader).toBeVisible();\n  7979 |   await expect(this.reviewModeTag).toBeVisible();\n  7980 |   // await this.examineeIcon.hover();      // enhancement and need to update the script here\n    at CommonTestPage.reviewDashboardValidationForNotStartedTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:7977:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/ReviewModeNotStartedTests.spec.ts:24:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S14:W1] Login successful for 04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S14:W1] Login successful for 04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N9420A3680\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N9420A3680/dataFiles/Score_DataExport_AutoFilter_Template_N9420A3680.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N9420A3680 FirstName=Rodger LastName =N9420A3680 Age = 05/04/2026\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: General Information–What\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N9420A3680\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-04T15:49:09.260Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-ReviewModeNotSt-0d08b----All-correct-SSP1-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-ReviewModeNotSt-0d08b----All-correct-SSP1-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-ReviewModeNotSt-0d08b----All-correct-SSP1-Test-UI-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-ReviewModeNotSt-0d08b----All-correct-SSP1-Test-UI-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 39,
+                        "line": 7977
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 147675,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Review Mode\\']')\nExpected: visible\nTimeout: 60000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Review Mode\\']')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Review Mode\\']')\nExpected: visible\nTimeout: 60000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Review Mode\\']')\u001b[22m\n\n    at CommonTestPage.reviewDashboardValidationForNotStartedTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:7977:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/ReviewModeNotStartedTests.spec.ts:24:17",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 39,
+                          "line": 7977
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:7977\n\n\u001b[0m \u001b[90m 7975 |\u001b[39m \u001b[36masync\u001b[39m reviewDashboardValidationForNotStartedTests(){\n \u001b[90m 7976 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 7977 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeHeader)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7978 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeDashboardHeader)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 7979 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeTag)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 7980 |\u001b[39m   \u001b[90m// await this.examineeIcon.hover();      // enhancement and need to update the script here\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 39,
+                            "line": 7977
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Review Mode\\']')\nExpected: visible\nTimeout: 60000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Review Mode\\']')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:7977\n\n  7975 | async reviewDashboardValidationForNotStartedTests(){\n  7976 |   await this.reviewModeButton.click();\n> 7977 |   await expect(this.reviewModeHeader).toBeVisible();\n       |                                       ^\n  7978 |   await expect(this.reviewModeDashboardHeader).toBeVisible();\n  7979 |   await expect(this.reviewModeTag).toBeVisible();\n  7980 |   // await this.examineeIcon.hover();      // enhancement and need to update the script here\n    at CommonTestPage.reviewDashboardValidationForNotStartedTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:7977:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/ReviewModeNotStartedTests.spec.ts:24:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S14:W2] Login successful for 04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S14:W2] Login successful for 04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N53047A90714\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N53047A90714/dataFiles/Score_DataExport_AutoFilter_Template_N53047A90714.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N53047A90714 FirstName=Ellen LastName =N53047A90714 Age = 05/04/2026\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: General Information–What\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N53047A90714\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-05-04T15:51:59.750Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-ReviewModeNotSt-0d08b----All-correct-SSP1-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-ReviewModeNotSt-0d08b----All-correct-SSP1-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-ReviewModeNotSt-0d08b----All-correct-SSP1-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 39,
+                        "line": 7977
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "33041910425e09f0d6ba-1e1b7c6ac33cb6ff674e",
+              "file": "functional/ReviewModeNotStartedTests.spec.ts",
+              "line": 10,
+              "column": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "test_dataExport/ACDFCT_Pub.spec.ts",
+      "file": "test_dataExport/ACDFCT_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "ACDFCT.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/ACDFCT_Pub.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For Ages 4 to 5 - All correct scenario Conduct test and validate report",
+              "ok": true,
+              "tags": [
+                "ACDFCT",
+                "TestDe",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 348413,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S14:W3] Login successful for 04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S14:W3] Login successful for 04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N37513A85756\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37513A85756/dataFiles/Test_DataExport_AutoFilter_Template_N37513A85756.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N37513A85756 FirstName=Maximus LastName =N37513A85756 Age = 05/04/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N37513A85756\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Academic Facts\n"
+                        },
+                        {
+                          "text": "selected ssp is = 23074|Ages 4 to 5|\n"
+                        },
+                        {
+                          "text": "Item Number 44 \n\n"
+                        },
+                        {
+                          "text": "Type Of test Ages 4 to 5 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Item 39\n"
+                        },
+                        {
+                          "text": "Item 40\n"
+                        },
+                        {
+                          "text": "Item 41\n"
+                        },
+                        {
+                          "text": "Item 42\n"
+                        },
+                        {
+                          "text": "Item 43\n"
+                        },
+                        {
+                          "text": "Item 44\n"
+                        },
+                        {
+                          "text": "{\n  \u001b[32m'Item 1'\u001b[39m: {\n    RT: \u001b[33m0.066\u001b[39m,\n    Delivered_Order: \u001b[33m0\u001b[39m,\n    Response: \u001b[32m'any color, including white and black'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 2'\u001b[39m: { RT: \u001b[33m0.069\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m'bird'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 3'\u001b[39m: { RT: \u001b[33m0.06\u001b[39m, Delivered_Order: \u001b[33m2\u001b[39m, Response: \u001b[32m'dog'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 4'\u001b[39m: { RT: \u001b[33m0.085\u001b[39m, Delivered_Order: \u001b[33m3\u001b[39m, Response: \u001b[32m'any letter'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 5'\u001b[39m: { RT: \u001b[33m0.063\u001b[39m, Delivered_Order: \u001b[33m4\u001b[39m, Response: \u001b[32m'any number'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 6'\u001b[39m: { RT: \u001b[33m0.067\u001b[39m, Delivered_Order: \u001b[33m5\u001b[39m, Response: \u001b[32m'bee'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 7'\u001b[39m: { RT: \u001b[33m0.067\u001b[39m, Delivered_Order: \u001b[33m6\u001b[39m, Response: \u001b[32m'baseball'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 8'\u001b[39m: { RT: \u001b[33m0.074\u001b[39m, Delivered_Order: \u001b[33m7\u001b[39m, Response: \u001b[32m'A'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 9'\u001b[39m: { RT: \u001b[33m0.092\u001b[39m, Delivered_Order: \u001b[33m8\u001b[39m, Response: \u001b[32m'ball'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 10'\u001b[39m: { RT: \u001b[33m0.073\u001b[39m, Delivered_Order: \u001b[33m9\u001b[39m, Response: \u001b[32m'Tuesday'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 11'\u001b[39m: { RT: \u001b[33m0.105\u001b[39m, Delivered_Order: \u001b[33m10\u001b[39m, Response: \u001b[32m'50'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 12'\u001b[39m: { RT: \u001b[33m0.062\u001b[39m, Delivered_Order: \u001b[33m11\u001b[39m, Response: \u001b[32m'air'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 13'\u001b[39m: { RT: \u001b[33m0.078\u001b[39m, Delivered_Order: \u001b[33m12\u001b[39m, Response: \u001b[32m'101'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 14'\u001b[39m: { RT: \u001b[33m0.074\u001b[39m, Delivered_Order: \u001b[33m13\u001b[39m, Response: \u001b[32m'square'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 15'\u001b[39m: {\n    RT: \u001b[33m0.072\u001b[39m,\n    Delivered_Order: \u001b[33m14\u001b[39m,\n    Response: \u001b[32m'60 (minutes)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 16'\u001b[39m: { RT: \u001b[33m0.062\u001b[39m, Delivered_Order: \u001b[33m15\u001b[39m, Response: \u001b[32m'period'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 17'\u001b[39m: { RT: \u001b[33m0.085\u001b[39m, Delivered_Order: \u001b[33m16\u001b[39m, Response: \u001b[32m'October'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 18'\u001b[39m: { RT: \u001b[33m0.061\u001b[39m, Delivered_Order: \u001b[33m17\u001b[39m, Response: \u001b[32m'heart'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 19'\u001b[39m: { RT: \u001b[33m0.067\u001b[39m, Delivered_Order: \u001b[33m18\u001b[39m, Response: \u001b[32m'roots'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 20'\u001b[39m: { RT: \u001b[33m0.069\u001b[39m, Delivered_Order: \u001b[33m19\u001b[39m, Response: \u001b[32m'nuts'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 21'\u001b[39m: { RT: \u001b[33m0.082\u001b[39m, Delivered_Order: \u001b[33m20\u001b[39m, Response: \u001b[32m'8 (sides)'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 22'\u001b[39m: {\n    RT: \u001b[33m0.071\u001b[39m,\n    Delivered_Order: \u001b[33m21\u001b[39m,\n    Response: \u001b[32m'90 (degrees)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 23'\u001b[39m: {\n    RT: \u001b[33m0.065\u001b[39m,\n    Delivered_Order: \u001b[33m22\u001b[39m,\n    Response: \u001b[32m'parallel (lines)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 24'\u001b[39m: { RT: \u001b[33m0.071\u001b[39m, Delivered_Order: \u001b[33m23\u001b[39m, Response: \u001b[32m'eye'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 25'\u001b[39m: {\n    RT: \u001b[33m0.06\u001b[39m,\n    Delivered_Order: \u001b[33m24\u001b[39m,\n    Response: \u001b[32m'360 (degrees)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 26'\u001b[39m: {\n    RT: \u001b[33m0.07\u001b[39m,\n    Delivered_Order: \u001b[33m25\u001b[39m,\n    Response: \u001b[32m'South America'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 27'\u001b[39m: { RT: \u001b[33m0.06\u001b[39m, Delivered_Order: \u001b[33m26\u001b[39m, Response: \u001b[32m'because'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 28'\u001b[39m: { RT: \u001b[33m0.07\u001b[39m, Delivered_Order: \u001b[33m27\u001b[39m, Response: \u001b[32m'carbon'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 29'\u001b[39m: { RT: \u001b[33m0.079\u001b[39m, Delivered_Order: \u001b[33m28\u001b[39m, Response: \u001b[32m'9'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 30'\u001b[39m: { RT: \u001b[33m0.062\u001b[39m, Delivered_Order: \u001b[33m29\u001b[39m, Response: \u001b[32m'prefix'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 31'\u001b[39m: { RT: \u001b[33m0.099\u001b[39m, Delivered_Order: \u001b[33m30\u001b[39m, Response: \u001b[32m'the Nile'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 32'\u001b[39m: { RT: \u001b[33m0.061\u001b[39m, Delivered_Order: \u001b[33m31\u001b[39m, Response: \u001b[32m'a hybrid'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 33'\u001b[39m: { RT: \u001b[33m0.082\u001b[39m, Delivered_Order: \u001b[33m32\u001b[39m, Response: \u001b[32m'pronouns'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 34'\u001b[39m: { RT: \u001b[33m0.079\u001b[39m, Delivered_Order: \u001b[33m33\u001b[39m, Response: \u001b[32m'the Alps'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 35'\u001b[39m: {\n    RT: \u001b[33m0.097\u001b[39m,\n    Delivered_Order: \u001b[33m34\u001b[39m,\n    Response: \u001b[32m'topic (sentence)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 36'\u001b[39m: { RT: \u001b[33m0.063\u001b[39m, Delivered_Order: \u001b[33m35\u001b[39m, Response: \u001b[32m'Athens'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 37'\u001b[39m: { RT: \u001b[33m0.078\u001b[39m, Delivered_Order: \u001b[33m36\u001b[39m, Response: \u001b[32m'friction'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 38'\u001b[39m: { RT: \u001b[33m0.087\u001b[39m, Delivered_Order: \u001b[33m37\u001b[39m, Response: \u001b[32m'sedimentary'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 39'\u001b[39m: { RT: \u001b[33m0.071\u001b[39m, Delivered_Order: \u001b[33m38\u001b[39m, Response: \u001b[32m'ion'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 40'\u001b[39m: { RT: \u001b[33m0.076\u001b[39m, Delivered_Order: \u001b[33m39\u001b[39m, Response: \u001b[32m'Antarctica'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 41'\u001b[39m: { RT: \u001b[33m0.079\u001b[39m, Delivered_Order: \u001b[33m40\u001b[39m, Response: \u001b[32m'Jupiter'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 42'\u001b[39m: {\n    RT: \u001b[33m0.11\u001b[39m,\n    Delivered_Order: \u001b[33m41\u001b[39m,\n    Response: \u001b[32m'to the theater'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 43'\u001b[39m: {\n    RT: \u001b[33m0.064\u001b[39m,\n    Delivered_Order: \u001b[33m42\u001b[39m,\n    Response: \u001b[32m'anthropomorphism'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 44'\u001b[39m: { RT: \u001b[33m0.066\u001b[39m, Delivered_Order: \u001b[33m43\u001b[39m, Response: \u001b[32m'petroglyphs'\u001b[39m, Score: \u001b[33m1\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37513A85756/dataFiles/Test_DataExport_AutoFilter_Template_N37513A85756.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N37513A85756\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N37513A85756/downloads/testData_N37513A85756_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37513A85756/downloads/testData_N37513A85756_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37513A85756/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "Looking for files matching ACDFCT.W5PA\n"
+                        },
+                        {
+                          "text": "Available files: ACDFCT.W5PA_2026_05_04.txt, manifest.txt\n"
+                        },
+                        {
+                          "text": "Found exact match: ACDFCT.W5PA_2026_05_04.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37513A85756/downloads/extracted/ACDFCT.W5PA_2026_05_04.txt\n"
+                        },
+                        {
+                          "text": "Reading test data from: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37513A85756/downloads/extracted/ACDFCT.W5PA_2026_05_04.txt\n"
+                        },
+                        {
+                          "text": "Reading TXT content from: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37513A85756/downloads/extracted/ACDFCT.W5PA_2026_05_04.txt\n"
+                        },
+                        {
+                          "text": "returnValues =  {\n  \u001b[32m'Item 1'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574607781'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 1'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_003'\u001b[39m,\n    RT: \u001b[32m'1.251'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:17.147'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:18.397'\u001b[39m,\n    Delivered_Order: \u001b[32m'0'\u001b[39m,\n    Response: \u001b[32m'any color, including white and black'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 2'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574608664'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 2'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_009'\u001b[39m,\n    RT: \u001b[32m'3.154'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:18.423'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:21.577'\u001b[39m,\n    Delivered_Order: \u001b[32m'1'\u001b[39m,\n    Response: \u001b[32m'bird'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 3'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574612516'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 3'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_008'\u001b[39m,\n    RT: \u001b[32m'3.142'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:21.600'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:24.743'\u001b[39m,\n    Delivered_Order: \u001b[32m'2'\u001b[39m,\n    Response: \u001b[32m'dog'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 4'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574613870'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 4'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_002'\u001b[39m,\n    RT: \u001b[32m'3.162'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:24.763'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:27.927'\u001b[39m,\n    Delivered_Order: \u001b[32m'3'\u001b[39m,\n    Response: \u001b[32m'any letter'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 5'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574621715'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 5'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_004'\u001b[39m,\n    RT: \u001b[32m'3.145'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:27.950'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:31.097'\u001b[39m,\n    Delivered_Order: \u001b[32m'4'\u001b[39m,\n    Response: \u001b[32m'any number'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 6'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574623580'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 6'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_026'\u001b[39m,\n    RT: \u001b[32m'3.161'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:31.117'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:34.277'\u001b[39m,\n    Delivered_Order: \u001b[32m'5'\u001b[39m,\n    Response: \u001b[32m'bee'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 7'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574626951'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 7'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_010'\u001b[39m,\n    RT: \u001b[32m'3.168'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:34.300'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:37.467'\u001b[39m,\n    Delivered_Order: \u001b[32m'6'\u001b[39m,\n    Response: \u001b[32m'baseball'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 8'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574631259'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 8'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_007'\u001b[39m,\n    RT: \u001b[32m'3.151'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:37.490'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:40.643'\u001b[39m,\n    Delivered_Order: \u001b[32m'7'\u001b[39m,\n    Response: \u001b[32m'A'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 9'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574631286'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 9'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_017'\u001b[39m,\n    RT: \u001b[32m'3.160'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:40.667'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:43.827'\u001b[39m,\n    Delivered_Order: \u001b[32m'8'\u001b[39m,\n    Response: \u001b[32m'ball'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 10'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574631612'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 10'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_020'\u001b[39m,\n    RT: \u001b[32m'3.145'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:43.847'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:46.993'\u001b[39m,\n    Delivered_Order: \u001b[32m'9'\u001b[39m,\n    Response: \u001b[32m'Tuesday'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 11'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574640263'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 11'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_013'\u001b[39m,\n    RT: \u001b[32m'3.209'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:47.017'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:50.227'\u001b[39m,\n    Delivered_Order: \u001b[32m'10'\u001b[39m,\n    Response: \u001b[32m'50'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 12'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574642631'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 12'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_041'\u001b[39m,\n    RT: \u001b[32m'3.169'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:50.250'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:53.417'\u001b[39m,\n    Delivered_Order: \u001b[32m'11'\u001b[39m,\n    Response: \u001b[32m'air'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 13'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574644677'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 13'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_025'\u001b[39m,\n    RT: \u001b[32m'3.153'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:53.440'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:56.593'\u001b[39m,\n    Delivered_Order: \u001b[32m'12'\u001b[39m,\n    Response: \u001b[32m'101'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 14'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574651712'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 14'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_028'\u001b[39m,\n    RT: \u001b[32m'3.161'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:56.617'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:57:59.777'\u001b[39m,\n    Delivered_Order: \u001b[32m'13'\u001b[39m,\n    Response: \u001b[32m'square'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'0'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 15'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574663920'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 15'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_030'\u001b[39m,\n    RT: \u001b[32m'3.158'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:57:59.800'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:02.957'\u001b[39m,\n    Delivered_Order: \u001b[32m'14'\u001b[39m,\n    Response: \u001b[32m'60 (minutes)'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 16'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574665482'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 16'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_027'\u001b[39m,\n    RT: \u001b[32m'3.144'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:02.980'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:06.127'\u001b[39m,\n    Delivered_Order: \u001b[32m'15'\u001b[39m,\n    Response: \u001b[32m'period'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 17'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574667311'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 17'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_038'\u001b[39m,\n    RT: \u001b[32m'3.196'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:06.147'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:09.343'\u001b[39m,\n    Delivered_Order: \u001b[32m'16'\u001b[39m,\n    Response: \u001b[32m'October'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 18'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574667679'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 18'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_034'\u001b[39m,\n    RT: \u001b[32m'3.145'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:09.367'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:12.510'\u001b[39m,\n    Delivered_Order: \u001b[32m'17'\u001b[39m,\n    Response: \u001b[32m'heart'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 19'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574670634'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 19'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_032'\u001b[39m,\n    RT: \u001b[32m'3.156'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:12.533'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:15.690'\u001b[39m,\n    Delivered_Order: \u001b[32m'18'\u001b[39m,\n    Response: \u001b[32m'roots'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 20'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574674683'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 20'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_037'\u001b[39m,\n    RT: \u001b[32m'3.128'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:15.710'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:18.840'\u001b[39m,\n    Delivered_Order: \u001b[32m'19'\u001b[39m,\n    Response: \u001b[32m'nuts'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'0'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 21'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574677657'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 21'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_060'\u001b[39m,\n    RT: \u001b[32m'3.171'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:18.860'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:22.033'\u001b[39m,\n    Delivered_Order: \u001b[32m'20'\u001b[39m,\n    Response: \u001b[32m'8 (sides)'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 22'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574687939'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 22'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_052'\u001b[39m,\n    RT: \u001b[32m'3.152'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:22.053'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:25.207'\u001b[39m,\n    Delivered_Order: \u001b[32m'21'\u001b[39m,\n    Response: \u001b[32m'90 (degrees)'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 23'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574688233'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 23'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_058'\u001b[39m,\n    RT: \u001b[32m'3.169'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:25.230'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:28.400'\u001b[39m,\n    Delivered_Order: \u001b[32m'22'\u001b[39m,\n    Response: \u001b[32m'parallel (lines)'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 24'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574694548'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 24'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_059'\u001b[39m,\n    RT: \u001b[32m'3.152'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:28.423'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:31.573'\u001b[39m,\n    Delivered_Order: \u001b[32m'23'\u001b[39m,\n    Response: \u001b[32m'eye'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 25'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574696229'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 25'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_064'\u001b[39m,\n    RT: \u001b[32m'3.159'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:31.597'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:34.757'\u001b[39m,\n    Delivered_Order: \u001b[32m'24'\u001b[39m,\n    Response: \u001b[32m'360 (degrees)'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 26'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574699236'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 26'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_050'\u001b[39m,\n    RT: \u001b[32m'3.146'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:34.780'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:37.927'\u001b[39m,\n    Delivered_Order: \u001b[32m'25'\u001b[39m,\n    Response: \u001b[32m'South America'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 27'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574705299'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 27'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_039'\u001b[39m,\n    RT: \u001b[32m'3.172'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:37.947'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:41.120'\u001b[39m,\n    Delivered_Order: \u001b[32m'26'\u001b[39m,\n    Response: \u001b[32m'because'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 28'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574705387'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 28'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_078'\u001b[39m,\n    RT: \u001b[32m'3.148'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:41.143'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:44.290'\u001b[39m,\n    Delivered_Order: \u001b[32m'27'\u001b[39m,\n    Response: \u001b[32m'carbon'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 29'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574705975'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 29'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_040'\u001b[39m,\n    RT: \u001b[32m'3.180'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:44.313'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:47.493'\u001b[39m,\n    Delivered_Order: \u001b[32m'28'\u001b[39m,\n    Response: \u001b[32m'9'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 30'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574706141'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 30'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_045'\u001b[39m,\n    RT: \u001b[32m'3.140'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:47.517'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:50.657'\u001b[39m,\n    Delivered_Order: \u001b[32m'29'\u001b[39m,\n    Response: \u001b[32m'prefix'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'0'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 31'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574709359'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 31'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_071'\u001b[39m,\n    RT: \u001b[32m'3.176'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:50.680'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:53.857'\u001b[39m,\n    Delivered_Order: \u001b[32m'30'\u001b[39m,\n    Response: \u001b[32m'the Nile'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 32'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574712744'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 32'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_066'\u001b[39m,\n    RT: \u001b[32m'3.143'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:53.880'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:58:57.023'\u001b[39m,\n    Delivered_Order: \u001b[32m'31'\u001b[39m,\n    Response: \u001b[32m'a hybrid'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 33'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574715543'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 33'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_048'\u001b[39m,\n    RT: \u001b[32m'3.162'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:58:57.047'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:00.207'\u001b[39m,\n    Delivered_Order: \u001b[32m'32'\u001b[39m,\n    Response: \u001b[32m'pronouns'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 34'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574716605'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 34'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_074'\u001b[39m,\n    RT: \u001b[32m'3.163'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:59:00.230'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:03.393'\u001b[39m,\n    Delivered_Order: \u001b[32m'33'\u001b[39m,\n    Response: \u001b[32m'the Alps'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 35'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574718437'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 35'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_057'\u001b[39m,\n    RT: \u001b[32m'3.178'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:59:03.417'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:06.593'\u001b[39m,\n    Delivered_Order: \u001b[32m'34'\u001b[39m,\n    Response: \u001b[32m'topic (sentence)'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 36'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574723237'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 36'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_081'\u001b[39m,\n    RT: \u001b[32m'3.141'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:59:06.617'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:09.757'\u001b[39m,\n    Delivered_Order: \u001b[32m'35'\u001b[39m,\n    Response: \u001b[32m'Athens'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'0'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 37'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574723546'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 37'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_076'\u001b[39m,\n    RT: \u001b[32m'3.184'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:59:09.790'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:12.977'\u001b[39m,\n    Delivered_Order: \u001b[32m'36'\u001b[39m,\n    Response: \u001b[32m'friction'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 38'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574725274'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 38'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_075'\u001b[39m,\n    RT: \u001b[32m'3.163'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:59:12.997'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:16.160'\u001b[39m,\n    Delivered_Order: \u001b[32m'37'\u001b[39m,\n    Response: \u001b[32m'sedimentary'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 39'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574725776'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 39'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_080'\u001b[39m,\n    RT: \u001b[32m'3.147'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:59:16.183'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:19.330'\u001b[39m,\n    Delivered_Order: \u001b[32m'38'\u001b[39m,\n    Response: \u001b[32m'ion'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 40'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574729459'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 40'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_084'\u001b[39m,\n    RT: \u001b[32m'3.157'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:59:19.350'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:22.507'\u001b[39m,\n    Delivered_Order: \u001b[32m'39'\u001b[39m,\n    Response: \u001b[32m'Antarctica'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 41'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574733423'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 41'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_070'\u001b[39m,\n    RT: \u001b[32m'3.178'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:59:22.530'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:25.707'\u001b[39m,\n    Delivered_Order: \u001b[32m'40'\u001b[39m,\n    Response: \u001b[32m'Jupiter'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 42'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574737036'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 42'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_065'\u001b[39m,\n    RT: \u001b[32m'3.209'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:59:25.730'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:28.940'\u001b[39m,\n    Delivered_Order: \u001b[32m'41'\u001b[39m,\n    Response: \u001b[32m'to the theater'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 43'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574740695'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 43'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_073'\u001b[39m,\n    RT: \u001b[32m'3.142'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:59:28.963'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:32.103'\u001b[39m,\n    Delivered_Order: \u001b[32m'42'\u001b[39m,\n    Response: \u001b[32m'anthropomorphism'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m'Item 44'\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574742651'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m'Item 44'\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_085'\u001b[39m,\n    RT: \u001b[32m'3.147'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:59:32.127'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:35.273'\u001b[39m,\n    Delivered_Order: \u001b[32m'43'\u001b[39m,\n    Response: \u001b[32m'petroglyphs'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'3'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  },\n  \u001b[32m''\u001b[39m: {\n    Examinee_ID: \u001b[32m'N37513A85756'\u001b[39m,\n    Examinee_CAMOS: \u001b[32m'60'\u001b[39m,\n    Examinee_DemogFlags: \u001b[32m'M  5'\u001b[39m,\n    Examiner_ID: \u001b[32m''\u001b[39m,\n    TestStemForm: \u001b[32m'ACDFCT.W5PA'\u001b[39m,\n    Item_CMSID_Examiner: \u001b[32m'574747082'\u001b[39m,\n    Item_CMSID_Examinee: \u001b[32m''\u001b[39m,\n    Item_Heading: \u001b[32m''\u001b[39m,\n    Master_ID: \u001b[32m'ACDFCT_QOP'\u001b[39m,\n    RT: \u001b[32m'0.157'\u001b[39m,\n    ItemTimeStamp: \u001b[32m'2026-05-04 11:59:37.520'\u001b[39m,\n    ItemEndTimeStamp: \u001b[32m'2026-05-04 11:59:37.677'\u001b[39m,\n    Delivered_Order: \u001b[32m'44'\u001b[39m,\n    Response: \u001b[32m'[None of the above]'\u001b[39m,\n    Score: \u001b[32m'1'\u001b[39m,\n    UPRFlag: \u001b[32m'0'\u001b[39m,\n    QFlag: \u001b[32m'-1'\u001b[39m,\n    Assignment_ID: \u001b[32m'715-317325'\u001b[39m,\n    Session_ID: \u001b[32m'6vC8zVkvF_26.05.04'\u001b[39m,\n    Active: \u001b[32m'1'\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N37513A85756 <> N37513A85756\n"
+                        },
+                        {
+                          "text": "2 Examinee_CAMOS ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "3 TestStemForm ->  value from the RunTime VS downloaded file is =  ACDFCT.W5PA <> ACDFCT.W5PA\n"
+                        },
+                        {
+                          "text": "itemsData = {\n  \u001b[32m'Item 1'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_003'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574607781\u001b[39m\n  },\n  \u001b[32m'Item 2'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_009'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574608664\u001b[39m\n  },\n  \u001b[32m'Item 3'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_008'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574612516\u001b[39m\n  },\n  \u001b[32m'Item 4'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_002'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574613870\u001b[39m\n  },\n  \u001b[32m'Item 5'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_004'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574621715\u001b[39m\n  },\n  \u001b[32m'Item 6'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_026'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574623580\u001b[39m\n  },\n  \u001b[32m'Item 7'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_010'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574626951\u001b[39m\n  },\n  \u001b[32m'Item 8'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_007'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574631259\u001b[39m\n  },\n  \u001b[32m'Item 9'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_017'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574631286\u001b[39m\n  },\n  \u001b[32m'Item 10'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_020'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574631612\u001b[39m\n  },\n  \u001b[32m'Item 11'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_013'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574640263\u001b[39m\n  },\n  \u001b[32m'Item 12'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_041'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574642631\u001b[39m\n  },\n  \u001b[32m'Item 13'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_025'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574644677\u001b[39m\n  },\n  \u001b[32m'Item 14'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_028'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574651712\u001b[39m\n  },\n  \u001b[32m'Item 15'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_030'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574663920\u001b[39m\n  },\n  \u001b[32m'Item 16'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_027'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574665482\u001b[39m\n  },\n  \u001b[32m'Item 17'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_038'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574667311\u001b[39m\n  },\n  \u001b[32m'Item 18'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_034'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574667679\u001b[39m\n  },\n  \u001b[32m'Item 19'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_032'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574670634\u001b[39m\n  },\n  \u001b[32m'Item 20'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_037'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574674683\u001b[39m\n  },\n  \u001b[32m'Item 21'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_060'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574677657\u001b[39m\n  },\n  \u001b[32m'Item 22'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_052'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574687939\u001b[39m\n  },\n  \u001b[32m'Item 23'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_058'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574688233\u001b[39m\n  },\n  \u001b[32m'Item 24'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_059'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574694548\u001b[39m\n  },\n  \u001b[32m'Item 25'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_064'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574696229\u001b[39m\n  },\n  \u001b[32m'Item 26'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_050'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574699236\u001b[39m\n  },\n  \u001b[32m'Item 27'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_039'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574705299\u001b[39m\n  },\n  \u001b[32m'Item 28'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_078'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574705387\u001b[39m\n  },\n  \u001b[32m'Item 29'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_040'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574705975\u001b[39m\n  },\n  \u001b[32m'Item 30'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_045'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574706141\u001b[39m\n  },\n  \u001b[32m'Item 31'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_071'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574709359\u001b[39m\n  },\n  \u001b[32m'Item 32'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_066'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574712744\u001b[39m\n  },\n  \u001b[32m'Item 33'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_048'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574715543\u001b[39m\n  },\n  \u001b[32m'Item 34'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_074'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574716605\u001b[39m\n  },\n  \u001b[32m'Item 35'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_057'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574718437\u001b[39m\n  },\n  \u001b[32m'Item 36'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_081'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574723237\u001b[39m\n  },\n  \u001b[32m'Item 37'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_076'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574723546\u001b[39m\n  },\n  \u001b[32m'Item 38'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_075'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574725274\u001b[39m\n  },\n  \u001b[32m'Item 39'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_080'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574725776\u001b[39m\n  },\n  \u001b[32m'Item 40'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_084'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574729459\u001b[39m\n  },\n  \u001b[32m'Item 41'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_070'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574733423\u001b[39m\n  },\n  \u001b[32m'Item 42'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_065'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574737036\u001b[39m\n  },\n  \u001b[32m'Item 43'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_073'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574740695\u001b[39m\n  },\n  \u001b[32m'Item 44'\u001b[39m: {\n    Master_ID: \u001b[32m'ACDFCT_085'\u001b[39m,\n    ItemCode_Examinee_PUB: \u001b[90mundefined\u001b[39m,\n    ItemCode_Examiner_PUB: \u001b[33m574742651\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": "---------------------Item_CMSID_Examiner-------------------\n"
+                        },
+                        {
+                          "text": "\n 574607781 === 574607781\n"
+                        },
+                        {
+                          "text": "\n 574608664 === 574608664\n"
+                        },
+                        {
+                          "text": "\n 574612516 === 574612516\n"
+                        },
+                        {
+                          "text": "\n 574613870 === 574613870\n"
+                        },
+                        {
+                          "text": "\n 574621715 === 574621715\n"
+                        },
+                        {
+                          "text": "\n 574623580 === 574623580\n"
+                        },
+                        {
+                          "text": "\n 574626951 === 574626951\n"
+                        },
+                        {
+                          "text": "\n 574631259 === 574631259\n"
+                        },
+                        {
+                          "text": "\n 574631286 === 574631286\n"
+                        },
+                        {
+                          "text": "\n 574631612 === 574631612\n"
+                        },
+                        {
+                          "text": "\n 574640263 === 574640263\n"
+                        },
+                        {
+                          "text": "\n 574642631 === 574642631\n"
+                        },
+                        {
+                          "text": "\n 574644677 === 574644677\n"
+                        },
+                        {
+                          "text": "\n 574651712 === 574651712\n"
+                        },
+                        {
+                          "text": "\n 574663920 === 574663920\n"
+                        },
+                        {
+                          "text": "\n 574665482 === 574665482\n"
+                        },
+                        {
+                          "text": "\n 574667311 === 574667311\n"
+                        },
+                        {
+                          "text": "\n 574667679 === 574667679\n"
+                        },
+                        {
+                          "text": "\n 574670634 === 574670634\n"
+                        },
+                        {
+                          "text": "\n 574674683 === 574674683\n"
+                        },
+                        {
+                          "text": "\n 574677657 === 574677657\n"
+                        },
+                        {
+                          "text": "\n 574687939 === 574687939\n"
+                        },
+                        {
+                          "text": "\n 574688233 === 574688233\n"
+                        },
+                        {
+                          "text": "\n 574694548 === 574694548\n"
+                        },
+                        {
+                          "text": "\n 574696229 === 574696229\n"
+                        },
+                        {
+                          "text": "\n 574699236 === 574699236\n"
+                        },
+                        {
+                          "text": "\n 574705299 === 574705299\n"
+                        },
+                        {
+                          "text": "\n 574705387 === 574705387\n"
+                        },
+                        {
+                          "text": "\n 574705975 === 574705975\n"
+                        },
+                        {
+                          "text": "\n 574706141 === 574706141\n"
+                        },
+                        {
+                          "text": "\n 574709359 === 574709359\n"
+                        },
+                        {
+                          "text": "\n 574712744 === 574712744\n"
+                        },
+                        {
+                          "text": "\n 574715543 === 574715543\n"
+                        },
+                        {
+                          "text": "\n 574716605 === 574716605\n"
+                        },
+                        {
+                          "text": "\n 574718437 === 574718437\n"
+                        },
+                        {
+                          "text": "\n 574723237 === 574723237\n"
+                        },
+                        {
+                          "text": "\n 574723546 === 574723546\n"
+                        },
+                        {
+                          "text": "\n 574725274 === 574725274\n"
+                        },
+                        {
+                          "text": "\n 574725776 === 574725776\n"
+                        },
+                        {
+                          "text": "\n 574729459 === 574729459\n"
+                        },
+                        {
+                          "text": "\n 574733423 === 574733423\n"
+                        },
+                        {
+                          "text": "\n 574737036 === 574737036\n"
+                        },
+                        {
+                          "text": "\n 574740695 === 574740695\n"
+                        },
+                        {
+                          "text": "\n 574742651 === 574742651\n"
+                        },
+                        {
+                          "text": "----------------Item_CMSID_Examinee-----------------\n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "\n  === \n"
+                        },
+                        {
+                          "text": "------------------Master_ID----------------------\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_003 === ACDFCT_003\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_009 === ACDFCT_009\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_008 === ACDFCT_008\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_002 === ACDFCT_002\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_004 === ACDFCT_004\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_026 === ACDFCT_026\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_010 === ACDFCT_010\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_007 === ACDFCT_007\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_017 === ACDFCT_017\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_020 === ACDFCT_020\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_013 === ACDFCT_013\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_041 === ACDFCT_041\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_025 === ACDFCT_025\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_028 === ACDFCT_028\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_030 === ACDFCT_030\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_027 === ACDFCT_027\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_038 === ACDFCT_038\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_034 === ACDFCT_034\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_032 === ACDFCT_032\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_037 === ACDFCT_037\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_060 === ACDFCT_060\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_052 === ACDFCT_052\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_058 === ACDFCT_058\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_059 === ACDFCT_059\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_064 === ACDFCT_064\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_050 === ACDFCT_050\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_039 === ACDFCT_039\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_078 === ACDFCT_078\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_040 === ACDFCT_040\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_045 === ACDFCT_045\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_071 === ACDFCT_071\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_066 === ACDFCT_066\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_048 === ACDFCT_048\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_074 === ACDFCT_074\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_057 === ACDFCT_057\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_081 === ACDFCT_081\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_076 === ACDFCT_076\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_075 === ACDFCT_075\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_080 === ACDFCT_080\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_084 === ACDFCT_084\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_070 === ACDFCT_070\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_065 === ACDFCT_065\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_073 === ACDFCT_073\n"
+                        },
+                        {
+                          "text": "\n ACDFCT_085 === ACDFCT_085\n"
+                        },
+                        {
+                          "text": "--------------RT------------------\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1.251\u001b[39m - \u001b[33m0.066\u001b[39m =  \u001b[33m1.1849999999999998\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.154\u001b[39m - \u001b[33m0.069\u001b[39m =  \u001b[33m3.085\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.142\u001b[39m - \u001b[33m0.06\u001b[39m =  \u001b[33m3.082\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.162\u001b[39m - \u001b[33m0.085\u001b[39m =  \u001b[33m3.077\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.145\u001b[39m - \u001b[33m0.063\u001b[39m =  \u001b[33m3.082\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.161\u001b[39m - \u001b[33m0.067\u001b[39m =  \u001b[33m3.094\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.168\u001b[39m - \u001b[33m0.067\u001b[39m =  \u001b[33m3.101\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.151\u001b[39m - \u001b[33m0.074\u001b[39m =  \u001b[33m3.077\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.16\u001b[39m - \u001b[33m0.092\u001b[39m =  \u001b[33m3.068\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.145\u001b[39m - \u001b[33m0.073\u001b[39m =  \u001b[33m3.072\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.209\u001b[39m - \u001b[33m0.105\u001b[39m =  \u001b[33m3.104\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.169\u001b[39m - \u001b[33m0.062\u001b[39m =  \u001b[33m3.107\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.153\u001b[39m - \u001b[33m0.078\u001b[39m =  \u001b[33m3.075\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.161\u001b[39m - \u001b[33m0.074\u001b[39m =  \u001b[33m3.087\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.158\u001b[39m - \u001b[33m0.072\u001b[39m =  \u001b[33m3.086\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.144\u001b[39m - \u001b[33m0.062\u001b[39m =  \u001b[33m3.0820000000000003\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.196\u001b[39m - \u001b[33m0.085\u001b[39m =  \u001b[33m3.111\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.145\u001b[39m - \u001b[33m0.061\u001b[39m =  \u001b[33m3.084\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.156\u001b[39m - \u001b[33m0.067\u001b[39m =  \u001b[33m3.089\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.128\u001b[39m - \u001b[33m0.069\u001b[39m =  \u001b[33m3.059\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.171\u001b[39m - \u001b[33m0.082\u001b[39m =  \u001b[33m3.089\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.152\u001b[39m - \u001b[33m0.071\u001b[39m =  \u001b[33m3.081\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.169\u001b[39m - \u001b[33m0.065\u001b[39m =  \u001b[33m3.104\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.152\u001b[39m - \u001b[33m0.071\u001b[39m =  \u001b[33m3.081\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.159\u001b[39m - \u001b[33m0.06\u001b[39m =  \u001b[33m3.0989999999999998\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.146\u001b[39m - \u001b[33m0.07\u001b[39m =  \u001b[33m3.076\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.172\u001b[39m - \u001b[33m0.06\u001b[39m =  \u001b[33m3.112\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.148\u001b[39m - \u001b[33m0.07\u001b[39m =  \u001b[33m3.0780000000000003\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.18\u001b[39m - \u001b[33m0.079\u001b[39m =  \u001b[33m3.101\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.14\u001b[39m - \u001b[33m0.062\u001b[39m =  \u001b[33m3.0780000000000003\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.176\u001b[39m - \u001b[33m0.099\u001b[39m =  \u001b[33m3.077\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.143\u001b[39m - \u001b[33m0.061\u001b[39m =  \u001b[33m3.082\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.162\u001b[39m - \u001b[33m0.082\u001b[39m =  \u001b[33m3.08\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.163\u001b[39m - \u001b[33m0.079\u001b[39m =  \u001b[33m3.0839999999999996\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.178\u001b[39m - \u001b[33m0.097\u001b[39m =  \u001b[33m3.081\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.141\u001b[39m - \u001b[33m0.063\u001b[39m =  \u001b[33m3.078\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.184\u001b[39m - \u001b[33m0.078\u001b[39m =  \u001b[33m3.1060000000000003\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.163\u001b[39m - \u001b[33m0.087\u001b[39m =  \u001b[33m3.0759999999999996\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.147\u001b[39m - \u001b[33m0.071\u001b[39m =  \u001b[33m3.0759999999999996\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.157\u001b[39m - \u001b[33m0.076\u001b[39m =  \u001b[33m3.081\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.178\u001b[39m - \u001b[33m0.079\u001b[39m =  \u001b[33m3.0989999999999998\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.209\u001b[39m - \u001b[33m0.11\u001b[39m =  \u001b[33m3.099\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.142\u001b[39m - \u001b[33m0.064\u001b[39m =  \u001b[33m3.078\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3.147\u001b[39m - \u001b[33m0.066\u001b[39m =  \u001b[33m3.081\u001b[39m\n"
+                        },
+                        {
+                          "text": "--------------DeliveryOrder------------------\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m0\u001b[39m === \u001b[33m0\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m2\u001b[39m === \u001b[33m2\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m3\u001b[39m === \u001b[33m3\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m4\u001b[39m === \u001b[33m4\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m5\u001b[39m === \u001b[33m5\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m6\u001b[39m === \u001b[33m6\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m7\u001b[39m === \u001b[33m7\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m8\u001b[39m === \u001b[33m8\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m9\u001b[39m === \u001b[33m9\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m10\u001b[39m === \u001b[33m10\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m11\u001b[39m === \u001b[33m11\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m12\u001b[39m === \u001b[33m12\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m13\u001b[39m === \u001b[33m13\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m14\u001b[39m === \u001b[33m14\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m15\u001b[39m === \u001b[33m15\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m16\u001b[39m === \u001b[33m16\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m17\u001b[39m === \u001b[33m17\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m18\u001b[39m === \u001b[33m18\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m19\u001b[39m === \u001b[33m19\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m20\u001b[39m === \u001b[33m20\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m21\u001b[39m === \u001b[33m21\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m22\u001b[39m === \u001b[33m22\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m23\u001b[39m === \u001b[33m23\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m24\u001b[39m === \u001b[33m24\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m25\u001b[39m === \u001b[33m25\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m26\u001b[39m === \u001b[33m26\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m27\u001b[39m === \u001b[33m27\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m28\u001b[39m === \u001b[33m28\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m29\u001b[39m === \u001b[33m29\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m30\u001b[39m === \u001b[33m30\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m31\u001b[39m === \u001b[33m31\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m32\u001b[39m === \u001b[33m32\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m33\u001b[39m === \u001b[33m33\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m34\u001b[39m === \u001b[33m34\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m35\u001b[39m === \u001b[33m35\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m36\u001b[39m === \u001b[33m36\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m37\u001b[39m === \u001b[33m37\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m38\u001b[39m === \u001b[33m38\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m39\u001b[39m === \u001b[33m39\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m40\u001b[39m === \u001b[33m40\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m41\u001b[39m === \u001b[33m41\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m42\u001b[39m === \u001b[33m42\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m43\u001b[39m === \u001b[33m43\u001b[39m\n"
+                        },
+                        {
+                          "text": "--------------Response------------------\n"
+                        },
+                        {
+                          "text": "\n any === any\n"
+                        },
+                        {
+                          "text": "\n bird === bird\n"
+                        },
+                        {
+                          "text": "\n dog === dog\n"
+                        },
+                        {
+                          "text": "\n any === any\n"
+                        },
+                        {
+                          "text": "\n any === any\n"
+                        },
+                        {
+                          "text": "\n bee === bee\n"
+                        },
+                        {
+                          "text": "\n baseball === baseball\n"
+                        },
+                        {
+                          "text": "\n a === a\n"
+                        },
+                        {
+                          "text": "\n ball === ball\n"
+                        },
+                        {
+                          "text": "\n tuesday === tuesday\n"
+                        },
+                        {
+                          "text": "\n 50 === 50\n"
+                        },
+                        {
+                          "text": "\n air === air\n"
+                        },
+                        {
+                          "text": "\n 101 === 101\n"
+                        },
+                        {
+                          "text": "\n square === square\n"
+                        },
+                        {
+                          "text": "\n 60 (minutes) === 60 (minutes)\n"
+                        },
+                        {
+                          "text": "\n period === period\n"
+                        },
+                        {
+                          "text": "\n october === october\n"
+                        },
+                        {
+                          "text": "\n heart === heart\n"
+                        },
+                        {
+                          "text": "\n roots === roots\n"
+                        },
+                        {
+                          "text": "\n nuts === nuts\n"
+                        },
+                        {
+                          "text": "\n 8 (sides) === 8 (sides)\n"
+                        },
+                        {
+                          "text": "\n 90 (degrees) === 90 (degrees)\n"
+                        },
+                        {
+                          "text": "\n parallel === parallel\n"
+                        },
+                        {
+                          "text": "\n eye === eye\n"
+                        },
+                        {
+                          "text": "\n 360 (degrees) === 360 (degrees)\n"
+                        },
+                        {
+                          "text": "\n south === south\n"
+                        },
+                        {
+                          "text": "\n because === because\n"
+                        },
+                        {
+                          "text": "\n carbon === carbon\n"
+                        },
+                        {
+                          "text": "\n 9 === 9\n"
+                        },
+                        {
+                          "text": "\n prefix === prefix\n"
+                        },
+                        {
+                          "text": "\n the === the\n"
+                        },
+                        {
+                          "text": "\n a === a\n"
+                        },
+                        {
+                          "text": "\n pronouns === pronouns\n"
+                        },
+                        {
+                          "text": "\n the === the\n"
+                        },
+                        {
+                          "text": "\n topic === topic\n"
+                        },
+                        {
+                          "text": "\n athens === athens\n"
+                        },
+                        {
+                          "text": "\n friction === friction\n"
+                        },
+                        {
+                          "text": "\n sedimentary === sedimentary\n"
+                        },
+                        {
+                          "text": "\n ion === ion\n"
+                        },
+                        {
+                          "text": "\n antarctica === antarctica\n"
+                        },
+                        {
+                          "text": "\n jupiter === jupiter\n"
+                        },
+                        {
+                          "text": "\n to === to\n"
+                        },
+                        {
+                          "text": "\n anthropomorphism === anthropomorphism\n"
+                        },
+                        {
+                          "text": "\n petroglyphs === petroglyphs\n"
+                        },
+                        {
+                          "text": "--------------Score------------------\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        },
+                        {
+                          "text": "\n \u001b[33m1\u001b[39m === \u001b[33m1\u001b[39m\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "CMSID_Examiner '' not found in the second object\n"
+                        },
+                        {
+                          "text": "CMSID_Examinee '' not found in the second object\n"
+                        },
+                        {
+                          "text": "Master id '' not found in the second object\n"
+                        },
+                        {
+                          "text": "RT '' not found in the second object\n"
+                        },
+                        {
+                          "text": "Delivered_Order '' not found in the second object\n"
+                        },
+                        {
+                          "text": "Response '' not found in the second object\n"
+                        },
+                        {
+                          "text": "Score '' not found in the second object\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-05-04T15:54:29.288Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-ACDFCT_Pub-fb6dc-ct-test-and-validate-report-chrome/attachments/Downloaded-Zip-file-1e7213b971b4f0b8089435b12d3372565bafdd1f.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e689cf9b73afec6c6352-a30843551158d1ab1abf",
+              "file": "test_dataExport/ACDFCT_Pub.spec.ts",
+              "line": 20,
+              "column": 13
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-04T15:41:03.997Z",
+    "duration": 1154394.7650000001,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 1
+  }
+}
