@@ -306,9 +306,11 @@ jobs:
             system_info_file="$report_source/system-info/specs.txt"
             if [ -d "$report_source" ]; then
               mkdir -p "merged-report/shard-$i"
-              # Exclude test-results (traces/videos/screenshots) and blob-report (consumed later for Timeline)
-              # These are already available in per-shard artifacts; keeping them here bloats the merged artifact
+              # Only copy lightweight report files; heavy data stays in per-shard artifacts
+              # Excludes: test-results (videos/screenshots), blob-report (consumed for Timeline),
+              #           playwright-report/data (embedded traces — viewable from shard artifacts)
               rsync -av --exclude="test-results" --exclude="blob-report" \
+                --exclude="playwright-report/data" \
                 "$report_source/" "merged-report/shard-$i/"
               status="N/A"
               status_class="status-neutral"
