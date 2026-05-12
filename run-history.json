@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "235",
+    "timestamp": "20260512_000000",
+    "runReason": "Running FULL regression with latest UI changes + New dashboard ",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments",
+    "totalTests": 98,
+    "totalPassed": 85,
+    "totalFailed": 4,
+    "totalSkipped": 0,
+    "totalFlaky": 9,
+    "durationMs": 45914251
+  },
+  {
     "runNumber": "234",
     "timestamp": "20260512_000000",
     "runReason": "Running FULL final regression in STAGE as a part of PROD release ",
