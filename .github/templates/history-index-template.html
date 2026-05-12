@@ -141,9 +141,19 @@
   </div>
 
   <div class="main-content">
-    <div class="header">
-      <h1>Playwright Test Reports History</h1>
-      <p>Historical test execution reports with retention</p>
+    <div class="header" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+      <div>
+        <h1 style="margin:0;">Playwright Test Reports History</h1>
+        <p style="margin:6px 0 0 0;">Historical test execution reports with retention</p>
+      </div>
+      <a href="./dashboard/index.html" style="
+        display:inline-flex; align-items:center; gap:8px;
+        padding:10px 18px; background:linear-gradient(135deg, #0366d6, #0056b3);
+        color:white; text-decoration:none; border-radius:6px; font-weight:600;
+        font-size:0.95rem; box-shadow:0 2px 4px rgba(0,0,0,0.12);
+        white-space:nowrap;">
+        &#128202; Analytics Dashboard
+      </a>
     </div>
     <div class="filter-bar" style="background: white;">
       <input type="text" class="search-input" placeholder="Search reports..." id="searchInput" style="background: white; color: black; border: 1px solid #ddd;">

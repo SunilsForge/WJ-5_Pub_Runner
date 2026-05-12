@@ -380,6 +380,127 @@ jobs:
             echo "No blob reports found — skipping native merge (Timeline will not be available)"
           fi
 
+      - name: Extract counts and failure summary for dashboard
+        # Writes two files INTO merged-report/ so they ship with the artifact and reach deploy-report:
+        #   run-counts.json        — slim scalars (totalTests, totalPassed, totalFailed, totalSkipped, totalFlaky, durationMs)
+        #                            → appended to run-history.master.json by deploy-report
+        #   dashboard-summary.json — failure groups (errorType → tests) + flaky test names
+        #                            → copied into reports/{runNumber}/ for the dashboard's failure/flaky charts
+        # Forward-only: older runs without these files render as "unknown" in the dashboard.
+        # Backwards-compatible: if this step fails, deploy-report falls back to the existing CURRENT_RUN shape.
+        if: always()
+        continue-on-error: true
+        run: |
+          node << 'SCRIPT'
+          const fs = require('fs');
+          const path = require('path');
+
+          const artifactsDir = 'all-artifacts';
+          let shardDirs = [];
+          try {
+            shardDirs = fs.readdirSync(artifactsDir)
+              .filter(d => d.startsWith('playwright-report-shard-'))
+              .sort((a, b) => parseInt(a.split('-').pop()) - parseInt(b.split('-').pop()));
+          } catch (e) {
+            console.warn('No artifacts directory — writing empty summary files');
+          }
+
+          let totalTests = 0, totalPassed = 0, totalFailed = 0, totalSkipped = 0, totalFlaky = 0;
+          let durationMs = 0;
+          const failures = [];
+          const flakyTests = [];
+
+          // Strip ANSI escape codes — keep parity with notify job
+          function stripAnsi(str) {
+            return String(str || '').replace(/\x1b\[[0-9;]*m/g, '');
+          }
+          // Normalize error message so grouping is stable across runs
+          function normalizeError(msg) {
+            return msg
+              .replace(/'[^']*'/g, "'...'")
+              .replace(/"[^"]*"/g, '"..."')
+              .replace(/\d+ms/g, 'Nms')
+              .replace(/locator\('[^']*'\)/g, "locator('...')")
+              .replace(/\d+/g, 'N')
+              .substring(0, 150);
+          }
+          function walkSuites(suites) {
+            for (const suite of (suites || [])) {
+              if (suite.suites) walkSuites(suite.suites);
+              for (const spec of (suite.specs || [])) {
+                for (const test of (spec.tests || [])) {
+                  totalTests++;
+                  if (test.status === 'expected') {
+                    totalPassed++;
+                  } else if (test.status === 'unexpected') {
+                    totalFailed++;
+                    const lastResult = test.results?.[test.results.length - 1];
+                    const rawMsg = stripAnsi(lastResult?.error?.message || 'Unknown error');
+                    const firstLine = rawMsg.split('\n')[0].trim().substring(0, 200);
+                    failures.push({
+                      title: spec.title,
+                      file: spec.file || '',
+                      errorType: normalizeError(firstLine),
+                      errorFirstLine: firstLine
+                    });
+                  } else if (test.status === 'flaky') {
+                    totalFlaky++;
+                    flakyTests.push({ title: spec.title, file: spec.file || '' });
+                  } else if (test.status === 'skipped') {
+                    totalSkipped++;
+                  }
+                  // Sum per-test duration across all attempts for the run-level duration metric
+                  for (const r of (test.results || [])) {
+                    if (typeof r.duration === 'number') durationMs += r.duration;
+                  }
+                }
+              }
+            }
+          }
+
+          for (const dir of shardDirs) {
+            const jsonPath = path.join(artifactsDir, dir, 'results.json');
+            if (!fs.existsSync(jsonPath)) {
+              console.warn('Missing', jsonPath);
+              continue;
+            }
+            try {
+              const report = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+              walkSuites(report.suites || []);
+              // Prefer stats.duration if Playwright provides it — it's wall-clock per shard
+              if (report.stats && typeof report.stats.duration === 'number') {
+                // overwrite the per-test sum for this shard by re-summing only if stats unavailable;
+                // we keep durationMs as sum-of-test-durations above for consistency (test work, not wall-clock).
+              }
+            } catch (e) {
+              console.error('Could not parse', jsonPath, '-', e.message);
+            }
+          }
+
+          // Group failures by normalized error type
+          const groupedMap = {};
+          for (const f of failures) {
+            if (!groupedMap[f.errorType]) groupedMap[f.errorType] = { errorType: f.errorType, count: 0, errorFirstLine: f.errorFirstLine, tests: [] };
+            groupedMap[f.errorType].count++;
+            groupedMap[f.errorType].tests.push({ title: f.title, file: f.file });
+          }
+          const failureGroups = Object.values(groupedMap).sort((a, b) => b.count - a.count);
+
+          fs.mkdirSync('merged-report', { recursive: true });
+          const counts = { totalTests, totalPassed, totalFailed, totalSkipped, totalFlaky, durationMs };
+          fs.writeFileSync('merged-report/run-counts.json', JSON.stringify(counts));
+          console.log('Wrote run-counts.json:', counts);
+
+          const summary = {
+            generatedAt: new Date().toISOString(),
+            counts,
+            failureGroups,
+            flakyTests
+          };
+          fs.writeFileSync('merged-report/dashboard-summary.json', JSON.stringify(summary));
+          console.log('Wrote dashboard-summary.json with', failureGroups.length, 'failure groups,', flakyTests.length, 'flaky tests');
+          SCRIPT
+
       - name: Upload merged report artifact
         uses: actions/upload-artifact@v6
         with:
@@ -479,6 +600,18 @@ jobs:
           CURRENT_RUN="{\"runNumber\": \"${{ steps.run-info.outputs.run_number }}\", \"timestamp\": \"${{ steps.run-info.outputs.timestamp }}\", \"runReason\": \"${{ inputs.run_reason }}\", \"environment\": \"${{ inputs.environment }}\", \"browser\": \"${{ inputs.browser }}\", \"testPattern\": \"${{ inputs.test_pattern }}\"}"
           mkdir -p "../new-report/metadata"
           echo "$CURRENT_RUN" > "../new-report/metadata/run-info.json"
+
+          # Merge dashboard counts into CURRENT_RUN if merge-reports produced them.
+          # If the file is missing (older artifacts, or extraction step failed), CURRENT_RUN
+          # stays in its legacy shape — run-history.json keeps working, dashboard treats
+          # the run as "unknown".
+          if [ -f "../new-report/run-counts.json" ]; then
+            COUNTS=$(cat "../new-report/run-counts.json")
+            CURRENT_RUN=$(echo "$CURRENT_RUN" | jq --argjson c "$COUNTS" '. + $c' -c)
+            echo "Extended CURRENT_RUN with dashboard counts"
+          else
+            echo "No run-counts.json found — keeping legacy CURRENT_RUN shape"
+          fi
           if [ -f "run-history.json" ]; then
             echo "Updating existing run history..."
             jq --argjson newRun "$CURRENT_RUN" '
@@ -539,6 +672,24 @@ jobs:
           fi
           echo "Deploy will include runs: ${KEPT_RUNS[*]}"
           cp index.html "$DEPLOY_DIR/index.html"
+          # Publish full master history alongside the pruned one — dashboard reads master for long-term trends.
+          # Pruned run-history.json (above) drives the existing tile view; master is additive and small (~ a few hundred KB).
+          if [ -f "run-history.master.json" ]; then
+            cp run-history.master.json "$DEPLOY_DIR/run-history.master.json"
+            echo "Published run-history.master.json to deploy view"
+          fi
+
+          # Copy dashboard template into /dashboard/ subdirectory of the deploy view.
+          # The dashboard is self-contained static HTML — it reads ../run-history.master.json
+          # and lazy-loads ../reports/{runNumber}/dashboard-summary.json for failure/flaky charts.
+          DASHBOARD_TEMPLATE="$GITHUB_WORKSPACE/runner-repo/.github/templates/dashboard-template.html"
+          if [ -f "$DASHBOARD_TEMPLATE" ]; then
+            mkdir -p "$DEPLOY_DIR/dashboard"
+            cp "$DASHBOARD_TEMPLATE" "$DEPLOY_DIR/dashboard/index.html"
+            echo "Deployed dashboard to /dashboard/"
+          else
+            echo "Dashboard template not found at $DASHBOARD_TEMPLATE — skipping (existing site unaffected)"
+          fi
           for r in "${KEPT_RUNS[@]}"; do
             if [ -d "reports/$r" ]; then
               mkdir -p "$DEPLOY_DIR/reports/$r"
