@@ -306,7 +306,12 @@ jobs:
             system_info_file="$report_source/system-info/specs.txt"
             if [ -d "$report_source" ]; then
               mkdir -p "merged-report/shard-$i"
-              cp -r "$report_source"/* "merged-report/shard-$i/"
+              # Only copy lightweight report files; heavy data stays in per-shard artifacts
+              # Excludes: test-results (videos/screenshots), blob-report (consumed for Timeline),
+              #           playwright-report/data (embedded traces — viewable from shard artifacts)
+              rsync -av --exclude="test-results" --exclude="blob-report" \
+                --exclude="playwright-report/data" \
+                "$report_source/" "merged-report/shard-$i/"
               status="N/A"
               status_class="status-neutral"
               if [ -f "$status_file" ]; then
@@ -736,20 +741,22 @@ jobs:
             echo "path=gh-pages" >> $GITHUB_OUTPUT
           fi
 
-      - name: Delete stale Pages artifact (prevents duplicate on re-run)
+      - name: Delete stale Pages artifacts (prevents duplicate on re-run)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # On re-runs, a previous github-pages artifact may already exist.
-          # deploy-pages@v5 fails if it finds >1 artifact with the same name.
-          # This only deletes the Pages deployment bundle — NOT the shard report artifacts.
-          ARTIFACT_ID=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" \
-            --jq '.artifacts[] | select(.name == "github-pages") | .id' 2>/dev/null | head -n1)
-          if [ -n "$ARTIFACT_ID" ]; then
-            echo "Deleting stale github-pages artifact (ID: $ARTIFACT_ID)"
-            gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$ARTIFACT_ID" || true
+          # On re-runs, previous github-pages artifacts may already exist.
+          # deploy-pages fails if it finds >1 artifact with the same name.
+          # Delete ALL matching artifacts — not just the first — to handle multiple re-runs.
+          ARTIFACT_IDS=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" \
+            --jq '[.artifacts[] | select(.name == "github-pages") | .id] | .[]' 2>/dev/null)
+          if [ -n "$ARTIFACT_IDS" ]; then
+            echo "$ARTIFACT_IDS" | while read -r AID; do
+              echo "Deleting stale github-pages artifact (ID: $AID)"
+              gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$AID" || true
+            done
           else
-            echo "No stale github-pages artifact found — first run"
+            echo "No stale github-pages artifacts found — first run"
           fi
 
       - name: Upload Pages artifact
