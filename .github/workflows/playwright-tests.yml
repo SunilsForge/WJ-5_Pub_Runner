@@ -306,11 +306,15 @@ jobs:
             system_info_file="$report_source/system-info/specs.txt"
             if [ -d "$report_source" ]; then
               mkdir -p "merged-report/shard-$i"
-              # Only copy lightweight report files; heavy data stays in per-shard artifacts
-              # Excludes: test-results (videos/screenshots), blob-report (consumed for Timeline),
-              #           playwright-report/data (embedded traces — viewable from shard artifacts)
+              # Keep lightweight viewable data (PNG screenshots in playwright-report/data/) so the
+              # per-shard report renders failure screenshots inline — matching the native merged report.
+              # Excludes: test-results (raw attachments — redundant; playwright-report/data has them),
+              #           blob-report (consumed for the native Timeline merge already),
+              #           *.zip / *.webm / *.trace (heavy traces & videos — viewable from per-shard artifacts).
+              # The deploy-report step applies an additional safety filter (*.mp4, *.gif, *.webp, files >100 MB)
+              # when copying onto gh-pages. Full per-test attachments remain in the per-shard GitHub Actions artifact.
               rsync -av --exclude="test-results" --exclude="blob-report" \
-                --exclude="playwright-report/data" \
+                --exclude="*.zip" --exclude="*.webm" --exclude="*.trace" \
                 "$report_source/" "merged-report/shard-$i/"
               status="N/A"
               status_class="status-neutral"
