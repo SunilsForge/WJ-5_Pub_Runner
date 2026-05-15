@@ -1,0 +1,412 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: content_validation/webkit/LETPAT_pub_webkit.spec.ts >>  Automating the content tests >> For basal and ceiling do content validation
+- Location: src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts:25:9
+
+# Error details
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-1-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-2-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-3-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-4-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-5-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-6-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-7-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-8-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-9-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-10-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-11-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-12-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-13-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-14-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-15-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-16-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-17-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-18-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-19-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-20-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-21-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-22-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-23-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/LETPAT_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-basal-and-ceiling-do-content-validation-24-chrome-linux.png, writing actual.
+```
+
+```
+Error: locator.isVisible: Error: strict mode violation: locator('xpath=(//button[@class=\'plain-button next-item-button\' or @class =\'plain-button nav-button\'])') resolved to 2 elements:
+    1) <button disabled aria-live="polite" id="next-item-button" aria-label="Go on to " class="plain-button next-item-button">…</button> aka getByRole('button', { name: 'Go on to' })
+    2) <button disabled aria-live="polite" aria-label="Done  enabled" class="plain-button nav-button">Done</button> aka getByRole('button', { name: 'Done enabled' })
+
+Call log:
+    - checking visibility of locator('xpath=(//button[@class=\'plain-button next-item-button\' or @class =\'plain-button nav-button\'])')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - banner [ref=e6]:
+    - button "Show Main Navigation" [ref=e7] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic [ref=e9] [cursor=pointer]: Letter-Pattern Matching
+      - button "View Test Information" [ref=e10] [cursor=pointer]:
+        - img [ref=e11]
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - 'button "N13624A37282, Genoveva Age: 5y Grade: Kindergarten" [ref=e16] [cursor=pointer]':
+          - img [ref=e17]
+          - generic [ref=e20]:
+            - generic [ref=e21]: N13624A37282, Genoveva
+            - generic [ref=e22]: "Age: 5y Grade: Kindergarten"
+        - button "Your browser is blocking voice capture" [ref=e23] [cursor=pointer]
+        - generic [ref=e26] [cursor=pointer]:
+          - img [ref=e27]
+          - img [ref=e31]
+      - button "Open Notes" [ref=e37] [cursor=pointer]:
+        - generic [ref=e38]: Note
+  - main "Examiner Assessment view" [ref=e39]:
+    - navigation "Item navigation" [ref=e40]:
+      - button "Item navigation" [expanded] [ref=e41]:
+        - img [ref=e43]
+      - radiogroup "Test items" [ref=e47]:
+        - generic [ref=e50]: Starting Point
+        - radio "Intro 1 Administered" [checked] [ref=e53]:
+          - generic [ref=e54]: Intro 1
+          - img "Administered" [ref=e55]
+        - radio "Sample A, Trial 1 Incorrect" [checked] [ref=e60]:
+          - generic [ref=e61]: Sample A, Trial 1
+          - img "Incorrect" [ref=e62]
+        - radio "Sample A, Trial 2 Correct" [checked] [ref=e65]:
+          - generic [ref=e66]: Sample A, Trial 2
+          - img "Correct" [ref=e67]
+        - radio "Sample B, Trial 1 Incorrect" [checked] [ref=e70]:
+          - generic [ref=e71]: Sample B, Trial 1
+          - img "Incorrect" [ref=e72]
+        - radio "Sample B, Trial 2 Correct" [checked] [ref=e75]:
+          - generic [ref=e76]: Sample B, Trial 2
+          - img "Correct" [ref=e77]
+        - radio "Practice Correct" [checked] [ref=e80]:
+          - generic [ref=e81]: Practice
+          - img "Correct" [ref=e82]
+        - radio "Test Items" [checked] [ref=e85]:
+          - generic [ref=e86]: Test Items
+          - img [ref=e87]
+        - generic [ref=e91]: End of Items
+    - generic [ref=e93]:
+      - 'heading "Test Items * Now you will see more rows of letters like these. Tap the two letters or sets of letters that are alike in each row. Start at the top of your screen and do each row. When you get to the bottom of your screen, tap Next. Keep working until I tell you to stop. Work as quickly as you can without making mistakes. If you do make a mistake, just tap the one you want to change and then tap your new answer. You will have three minutes. Are you ready? * Confirm that the examinee is ready to begin, and then say: * Go ahead. * Start the timer and display the test items" [level=1] [ref=e94]':
+        - img [ref=e95]
+        - generic [ref=e100]:
+          - generic [ref=e101]: Test Items
+          - paragraph [ref=e102]:
+            - strong [ref=e104]:
+              - generic "* Now you will see more rows of letters like these. Tap the two letters or sets of letters that are alike in each row. Start at the top of your screen and do each row. When you get to the bottom of your screen, tap Next. Keep working until I tell you to stop. Work as quickly as you can without making mistakes. If you do make a mistake, just tap the one you want to change and then tap your new answer. You will have three minutes. Are you ready? *"
+              - text: Now you will see more rows of letters like these. Tap the two letters or sets of letters that are alike in each row. Start at the top of your screen and do each row. When you get to the bottom of your screen, tap Next. Keep working until I tell you to stop. Work as quickly as you can without making mistakes. If you do make a mistake, just tap the one you want to change and then tap your new answer. You will have three minutes. Are you ready?
+            - text: "Confirm that the examinee is ready to begin, and then say:"
+            - strong [ref=e106]:
+              - generic "* Go ahead. *"
+              - text: Go ahead.
+          - paragraph [ref=e107]:
+            - button "Start the timer and display the test items" [ref=e110] [cursor=pointer]
+      - generic [ref=e111]:
+        - img [ref=e112]
+        - paragraph [ref=e118]: If necessary, remind the examinee to tap Next at the bottom of the screen.
+        - button "Close introduction text" [ref=e119] [cursor=pointer]: ✕
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - generic [ref=e122]: "0"
+          - 'generic "itemId: 14572" [ref=e123]': ITEM SCORE
+        - button "Go on to" [disabled] [ref=e125]:
+          - img [ref=e126]
+  - region "Examinee View" [ref=e129]:
+    - generic [ref=e131]:
+      - button "Hide examinee content - content is currently displayed" [ref=e132] [cursor=pointer]:
+        - generic [ref=e133]: Hide
+      - button "Activate Tablet Control" [ref=e134] [cursor=pointer]:
+        - generic [ref=e135]: Control
+      - button "Connection Status - Comms Up" [ref=e136] [cursor=pointer]
+      - button "Collapse examinee view" [ref=e137] [cursor=pointer]
+    - img [ref=e140]
+```
+
+# Test source
+
+```ts
+  517 |       const incorrectlocator: Locator = await this.inCorrectLocator();
+  518 |       const iDontKnow: Locator = this.iDontKnowButton;
+  519 |       const practiceAndTestItemsElements = await this.page.locator("//div[contains(@class,'options NUMPAT')]//button");
+  520 |       const practiceElementsIndexes: number[] = [2, 4, 5, 8, 11, 12, 16, 18, 23, 24, 25, 29];
+  521 |       const sets: number[][] = [
+  522 |         [1, 2, 9, 10, 12, 14, 19, 22, 24, 29, 31, 34, 36, 40, 45, 46, 48, 53, 56, 58],
+  523 |         [1, 4, 6, 11, 15, 16, 19, 21, 24, 28, 32, 35, 36, 37, 43, 45, 49, 52, 56, 59],
+  524 |         [0, 3, 9, 10, 13, 17, 18, 20, 26, 28, 31, 33, 36, 41, 44, 47, 51, 52, 54, 58],
+  525 |         [4, 5, 9, 11, 14, 17, 19, 22, 26, 27, 30, 33, 37, 41, 44, 46, 48, 50, 55, 58],
+  526 |         [2, 5, 9, 10, 12, 17, 19, 20, 28, 29, 30, 33, 37, 40, 42, 45, 50, 53, 55, 57],
+  527 |         [0, 3, 7, 11, 13, 15, 18, 22, 24, 26, 31, 33, 38, 41, 43, 45, 50, 52, 56, 59],
+  528 |         [0, 3, 8, 10, 12, 17, 19, 22, 24, 27, 31, 34, 38, 41, 44, 46, 48, 51, 55, 59],
+  529 |         [2, 4, 7, 10, 12, 15, 19, 23, 26, 28, 31, 33, 37, 41, 44, 46, 49, 51, 54, 57],
+  530 |         [1, 3, 6, 10, 12, 14, 20, 23, 26, 29, 30, 33, 36, 41, 42, 45, 49, 52, 56, 59],
+  531 |       ];
+  532 | 
+  533 |       if (itemDetails.startsWith('Introduction')) {
+  534 |         await this.assertWithScreenShots();
+  535 |       } else if (itemDetails.includes('Trial 1')) {
+  536 |         await this.clickOneInCorrect(await this.inCorrectLocator(), itemDetails);
+  537 |       } else if (itemDetails.includes('Trial 2')) {
+  538 |         await this.clickOneCorrect(await this.correctLocator(), itemDetails);
+  539 |       } else if (itemDetails.includes('Practice Exercise')) {
+  540 |         await this.assertWithScreenShots();
+  541 |         await this.startPracticeAndStartTimerButton.click();
+  542 |         await this.assertWithScreenShots();
+  543 |         const isActive = await this.examineeCursorButton.getAttribute('data-active');
+  544 |         if (isActive === 'false') {
+  545 |           await this.examineeCursorButton.click();
+  546 |         }
+  547 |         // this.activateTabletControlButton.click();
+  548 |         for (const index of practiceElementsIndexes) {
+  549 |           const element = practiceAndTestItemsElements.nth(index);
+  550 |           await element.click();
+  551 |         }
+  552 |         await this.assertWithScreenShots();
+  553 |       } else if (itemDetails.includes('Test Items')) {
+  554 |         await this.assertWithScreenShots();
+  555 |         await this.startTimerAndDisplayTestItems.click();
+  556 |         await this.assertWithScreenShots();
+  557 |         this.activateTabletControlButton.click();
+  558 |         for (let i = 0; i < sets.length; i++) {
+  559 |           const set = sets[i];
+  560 | 
+  561 |           for (const num of set) {
+  562 |             const element = practiceAndTestItemsElements.nth(num);
+  563 |             await element.click();
+  564 |           }
+  565 | 
+  566 |           await this.assertWithScreenShots();
+  567 |           await this.doneOrNextButton.click();
+  568 | 
+  569 |           if (i === sets.length - 1) {
+  570 |             await this.testFinishedText.waitFor({ state: 'visible', timeout: 30000 });
+  571 |           }
+  572 | 
+  573 |           await this.assertWithScreenShots();
+  574 |         }
+  575 | 
+  576 |       } else {
+  577 |         throw new Error(`The ${typeOfTest} didnt match with any of the conditions provided`);
+  578 |       }
+  579 | 
+  580 |       if (itemDetails === 'Practice Exercise') {
+  581 |         await this.doneOrNextButton.click();
+  582 |       } else {
+  583 |         await this.nextAndEndTestButton.click();
+  584 |       }
+  585 | 
+  586 |       if ((await this.nextAndEndTestButton.textContent()) === 'End Test') {
+  587 |         break;
+  588 |       }
+  589 |     }
+  590 | 
+  591 |     console.log(`The Scores Trail = `, this.scoreTrail);
+  592 | 
+  593 |     return this.scoreTrail;
+  594 |   }
+  595 | 
+  596 |   async completeTheContentValidationForLETPATTest(
+  597 |     typeOfTest: string,
+  598 |     stemForm: string,
+  599 |     BbyC: number,
+  600 |     flag: string,
+  601 |     examineePage
+  602 |   ): Promise<Map<string, string>> {
+  603 |     let correctCount: number = 0;
+  604 |     let inCorrectCount: number = 0;
+  605 |     this.examineepage = examineePage;
+  606 |     let flagValue: boolean = true;
+  607 |     const lastItemNumber = await this.page.locator('.item-text').last().textContent();
+  608 |     const itemNumber: number = Number(lastItemNumber.split(' ')[1]);
+  609 |     console.log(`the last item number is = ${itemNumber}`);
+  610 | 
+  611 |     this.scoreTrail.set(` `, '^');
+  612 |     for (let index = 1; index <= itemNumber; index++) {
+  613 |       this.scoreTrail.set(`Item ${index}`, 'x');
+  614 |     }
+  615 | 
+  616 |     console.log(`Type Of test ${typeOfTest} \n`);
+> 617 |     while (await this.nextAndEndTestButton.isVisible()) {
+      |                                            ^ Error: locator.isVisible: Error: strict mode violation: locator('xpath=(//button[@class=\'plain-button next-item-button\' or @class =\'plain-button nav-button\'])') resolved to 2 elements:
+  618 |       const testNames: string[] = ['LETPAT.W5PA'];
+  619 |       await this.page.waitForTimeout(1000);
+  620 |       const itemDetails: string = (await this.itemDetails.textContent())!;
+  621 |       console.log(itemDetails);
+  622 |       const correctlocator: Locator = await this.correctLocator();
+  623 |       const incorrectlocator: Locator = await this.inCorrectLocator();
+  624 |       const iDontKnow: Locator = this.iDontKnowButton;
+  625 |       const practiceAndTestItemsElements = await this.page.locator("//div[contains(@class,'options LETPAT')]//button");
+  626 |       const practiceElementsIndexes: number[] = [1, 2, 3, 4, 6, 8, 10, 11, 14, 16, 18, 21];
+  627 |       const sets: number[][] = [
+  628 |         [0, 2, 3, 4, 7, 8, 10, 11, 12, 14, 17, 18, 20, 23, 26, 28, 29, 31, 34, 38],
+  629 |         [0, 2, 7, 11, 13, 16, 21, 23, 24, 27, 32, 35, 38, 40, 43, 46, 48, 50, 55, 58],
+  630 |         [0, 5, 6, 10, 14, 16, 19, 22, 24, 26, 31, 34, 38, 39, 45, 47, 48, 51, 55, 59],
+  631 |         [2, 5, 6, 11, 15, 17, 20, 22, 26, 29, 31, 34, 37, 40, 42, 47, 48, 50, 55, 57],
+  632 |         [0, 4, 8, 10, 16, 17, 18, 23, 25, 28, 30, 33, 38, 41, 43, 46, 48, 53, 55, 58],
+  633 |         [0, 4, 7, 9, 14, 15, 20, 23, 25, 27, 32, 34, 40, 41, 42, 45, 50, 52, 56, 58],
+  634 |         [0, 5, 7, 11, 14, 16, 20, 23, 26, 27, 32, 35, 38, 41, 43, 46, 49, 51, 55, 59],
+  635 |         [2, 3, 6, 9, 12, 16, 21, 23, 25, 28, 31, 34, 38, 40, 45, 47, 48, 49, 55, 57],
+  636 |         [2, 5, 6, 9, 12, 17, 20, 23, 26, 28, 31, 34, 37, 40, 45, 47, 50, 53, 54, 57],
+  637 |         [1, 3, 6, 10, 13, 14, 19, 23, 24, 27, 31, 35, 36, 39, 45, 47, 49, 51, 54, 56],
+  638 |       ];
+  639 | 
+  640 |       if (itemDetails.startsWith('Introduction')) {
+  641 |         await this.assertWithScreenShots();
+  642 |       } else if (itemDetails.includes('Trial 1')) {
+  643 |         await this.clickOneInCorrect(await this.inCorrectLocator(), itemDetails);
+  644 |       } else if (itemDetails.includes('Trial 2')) {
+  645 |         await this.clickOneCorrect(await this.correctLocator(), itemDetails);
+  646 |       } else if (itemDetails.includes('Practice Exercise')) {
+  647 |         await this.assertWithScreenShots();
+  648 |         await this.startPracticeAndStartTimerButton.click();
+  649 |         await this.assertWithScreenShots();
+  650 |         for (const index of practiceElementsIndexes) {
+  651 |           const element = practiceAndTestItemsElements.nth(index);
+  652 |           await element.click();
+  653 |         }
+  654 |         await this.assertWithScreenShots();
+  655 |       } else if (itemDetails.includes('Test Items')) {
+  656 |         await this.assertWithScreenShots();
+  657 |         await this.startTimerAndDisplayTestItems.click();
+  658 |         await this.assertWithScreenShots();
+  659 |         this.activateTabletControlButton.click();
+  660 |         for (const set of sets) {
+  661 |           for (const num of set) {
+  662 |             const element = practiceAndTestItemsElements.nth(num);
+  663 |             await element.click();
+  664 |           }
+  665 |           await this.assertWithScreenShots();
+  666 |           await this.page.waitForTimeout(7000);
+  667 |           await this.doneOrNextButton.click();
+  668 |           await this.page.waitForTimeout(2000);
+  669 |           await this.assertWithScreenShots();
+  670 |         }
+  671 |       } else {
+  672 |         throw new Error(`The ${typeOfTest} didnt match with any of the conditions provided`);
+  673 |       }
+  674 | 
+  675 |       if (itemDetails === 'Practice Exercise') {
+  676 |         await this.doneOrNextButton.click();
+  677 |       } 
+  678 |       else {
+  679 |         await this.page.waitForTimeout(2000);
+  680 |         await this.nextAndEndTestButton.nth(0).click();
+  681 |       }
+  682 | 
+  683 |       if ((await this.nextAndEndTestButton.nth(0).textContent()) === "End Test") {
+  684 |         await this.page.waitForTimeout(7000); 
+  685 |         break;
+  686 |       }
+  687 |     }
+  688 | 
+  689 |     console.log(`The Scores Trail = `, this.scoreTrail);
+  690 | 
+  691 |     return this.scoreTrail;
+  692 |   }
+  693 | 
+  694 |   async completeTheContentValidationForBLKROTTest(
+  695 |     typeOfTest: string,
+  696 |     stemForm: string,
+  697 |     BbyC: number,
+  698 |     flag: string,
+  699 |     examineePage
+  700 |   ): Promise<Map<string, string>> {
+  701 |     let correctCount: number = 0;
+  702 |     let inCorrectCount: number = 0;
+  703 |     this.examineepage = examineePage;
+  704 | 
+  705 |     const lastItemNumber = await this.page.locator('.item-text').last().textContent();
+  706 |     const itemNumber: number = Number(lastItemNumber.split(' ')[1]);
+  707 |     console.log(`the last item number is = ${itemNumber}`);
+  708 | 
+  709 |     this.scoreTrail.set(` `, '^');
+  710 |     for (let index = 1; index <= itemNumber; index++) {
+  711 |       this.scoreTrail.set(`Item ${index}`, 'x');
+  712 |     }
+  713 | 
+  714 |     console.log(`Type Of test ${typeOfTest} \n`);
+  715 |     while (await this.plainNextButtonOrEndButton.isVisible()) {
+  716 |       const testNames: string[] = ['BLKROT.W5PA'];
+  717 |       await this.page.waitForTimeout(1000);
+```
