@@ -1,0 +1,343 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ReroutingandLeftNav/MATRCZ_Rerouting.spec.ts >>  MATRCZ UI And Reports >> Age 12 to Adult - First and Last item check Scenario for SSP2 Test UI
+- Location: src/tests/ReroutingandLeftNav/MATRCZ_Rerouting.spec.ts:10:9
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('div.defaultRow[role="row"]:has(div.detail-cell-container[aria-label="Report Name Score_DataExport_AutoFilter_Template_N27373A46889"])').first().locator('button[aria-label="Download/Print"]')
+    - locator resolved to <button disabled tabindex="0" role="gridcell" aria-label="Download/Print" class="link-button detail-cell-link"> Download/Print </button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    116 × waiting for element to be visible, enabled and stable
+        - element is not enabled
+      - retrying click action
+        - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - main "Clinical Login" [ref=e4]:
+      - generic [ref=e5]:
+        - img "Riverside Insights Logo" [ref=e6]
+        - heading "Looking for the Canadian login page? Click Here" [level=4] [ref=e8]:
+          - text: Looking for the Canadian login page?
+          - link "Click Here" [ref=e9] [cursor=pointer]:
+            - /url: https://ca.riversidescore.com
+        - heading "Riverside Updates" [level=1] [ref=e10]
+        - generic [ref=e13]:
+          - paragraph [ref=e14]:
+            - generic [ref=e15]: The RiversideScore platform will be down for maintenance on Thursday, May 14th, from 8:00 PM
+            - text: to 12:00 AM CST.
+            - generic [ref=e16]: During this time, access will be unavailable. If you have any questions, please contact
+            - text: "Customer Support Monday- Friday 8AM- 4PM CST at:"
+          - paragraph [ref=e17]:
+            - text: "Tel:"
+            - link "800-323-9540" [ref=e18] [cursor=pointer]:
+              - /url: tel:8003239540
+            - text: "Email:"
+            - link "Inquiry@service.riversideinsights.com" [ref=e20] [cursor=pointer]:
+              - /url: mailto:Inquiry@service.riversideinsights.com
+          - paragraph [ref=e21]: We appreciate your patience as we work to improve the experience!
+      - generic [ref=e22]:
+        - img "Riverside Score Logo" [ref=e23]
+        - form "Sign in details" [ref=e24]:
+          - generic [ref=e25]:
+            - text: USERNAME
+            - textbox "USERNAME" [active] [ref=e27]:
+              - /placeholder: Username
+            - generic [ref=e29]:
+              - text: PASSWORD
+              - textbox "PASSWORD" [ref=e31]:
+                - /placeholder: Password
+            - button "Sign In" [ref=e32] [cursor=pointer]
+            - generic [ref=e33]:
+              - button "Remember Me" [ref=e34] [cursor=pointer]:
+                - generic [ref=e35]: Remember Me
+              - link "Forgot my password" [ref=e38] [cursor=pointer]:
+                - /url: /forgot
+            - alert [ref=e39]: You have been logged out due to inactivity.
+          - generic [ref=e40]:
+            - heading "Are you looking to purchase our products?" [level=4] [ref=e41]
+            - link "Click Here!" [ref=e42] [cursor=pointer]:
+              - /url: https://riversideinsights.com/explore
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - text: For help accessing Riverside Score™, see the
+          - link "online help" [ref=e45] [cursor=pointer]:
+            - /url: https://onlinehelp.riversideinsights.com/Help/Riverside_Score/index.htm#t=Overview.htm
+          - text: for signing in.
+        - link "Check Platform Status" [ref=e47] [cursor=pointer]:
+          - /url: https://riversideinsights.com/platform-status
+    - contentinfo [ref=e48]:
+      - generic [ref=e49]: Footer region,
+      - link "w w w dot riverside insights dot com" [ref=e50] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img "Riverside Insights Website" [ref=e51]
+      - generic [ref=e52]:
+        - link "Riverside Insights Facebook" [ref=e53] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img "Riverside Insights Facebook" [ref=e54]
+        - link "Riverside Insights Twitter" [ref=e55] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img "Riverside Insights Twitter" [ref=e56]
+        - link "Riverside Insights LinkedIn" [ref=e57] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img "Riverside Insights LinkedIn" [ref=e58]
+        - link "Riverside Insights Instagram" [ref=e59] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img "Riverside Insights Instagram" [ref=e60]
+      - generic [ref=e61]:
+        - img "WJ IV Mobile Data Solution" [ref=e62]
+        - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e63] [cursor=pointer]
+        - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e64] [cursor=pointer]
+      - generic [ref=e65]:
+        - img "Bdi 3 Mobile Data Solution" [ref=e66]
+        - generic [ref=e67]:
+          - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e68] [cursor=pointer]
+          - button "Download BDI-3 Mobile App from Google Play" [ref=e69] [cursor=pointer]
+          - button "Download BDI-3 Mobile App from App Store" [ref=e70] [cursor=pointer]
+      - generic [ref=e71]:
+        - button "Leave Feedback" [ref=e72] [cursor=pointer]
+        - generic [ref=e73]: "|"
+        - link "Terms of Use" [ref=e74] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+        - generic [ref=e75]: "|"
+        - link "Privacy Policy" [ref=e76] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+      - generic [ref=e77]: Footer region end
+  - region "Chat Widget" [ref=e78]:
+    - iframe [ref=e79]:
+      - button "Open live chat" [ref=f7e5]:
+        - img [ref=f7e8]
+        - img [ref=f7e15]
+    - generic "Drag" [ref=e80]:
+      - img [ref=e81]
+```
+
+# Test source
+
+```ts
+  283 |     );
+  284 |     // await this.page.getByText(reqFile).first().click();
+  285 |     await this.page
+  286 |       .locator('button[aria-label="Download/Print"]')
+  287 |       .first()
+  288 |       .click();
+  289 |     const download = await downloadPromise;
+  290 |     await download.saveAs(await getZipFilePath());
+  291 |     await testinfo.attach("Downloaded Zip file", {
+  292 |       path: await getZipFilePath(),
+  293 |       contentType: "application/zip",
+  294 |     });
+  295 |   }
+  296 | 
+  297 |   async clickOnTheExamineeReportToDownload(
+  298 |     testinfo: TestInfo,
+  299 |     exportType: ExportType,
+  300 |     examineeID: string,
+  301 |   ) {
+  302 |     const loadingOverlay = this.page.locator(".loading-overlay");
+  303 |     if (await loadingOverlay.isVisible().catch(() => false)) {
+  304 |       console.log("Loading overlay detected, waiting for it to disappear...");
+  305 |       await loadingOverlay.waitFor({ state: "hidden", timeout: 60000 }).catch(e =>
+  306 |           console.log("Warning: Timed out waiting for loading overlay to disappear"));
+  307 |     }
+  308 | 
+  309 |     const isOnReportLibraryPage = this.page
+  310 |       .url()
+  311 |       .includes("/home/reports/reportcenter");
+  312 |     if (!isOnReportLibraryPage) {
+  313 |       console.log("Not on Report Library page, navigating there...");
+  314 |       try {
+  315 |         await this.goToTheMainMenuChildPage("Reports", "Report Library");
+  316 |         await this.page.waitForResponse(
+  317 |           (response) =>
+  318 |             response.url().includes("GetSavedResearchExportData") &&
+  319 |             response.status() === 200,
+  320 |           { timeout: 60000 },
+  321 |         );
+  322 | 
+  323 |         if (await loadingOverlay.isVisible().catch(() => false)) {
+  324 |           await loadingOverlay
+  325 |             .waitFor({ state: "hidden", timeout: 60000 })
+  326 |             .catch(() => {});
+  327 |         }
+  328 |       } catch (error) {
+  329 |         console.error("Navigation error:", error);
+  330 |         const isNowOnReportLibraryPage = this.page
+  331 |           .url()
+  332 |           .includes("/home/reports/reportcenter");
+  333 |         if (!isNowOnReportLibraryPage) {
+  334 |           throw new Error(`Failed to navigate to Report Library: ${error}`);
+  335 |         } else {
+  336 |           console.log(
+  337 |             "Navigation appeared to fail but we're on the Report Library page, continuing...",
+  338 |           );
+  339 |         }
+  340 |       }
+  341 |     } else {
+  342 |       console.log("Already on Report Library page, skipping navigation.");
+  343 |     }
+  344 | 
+  345 |     const expectedReportName = getBaseTemplateName(exportType, examineeID);
+  346 | 
+  347 |     const reportRowLocator = this.page.locator(
+  348 |       `div.defaultRow[role="row"]:has(div.detail-cell-container[aria-label="Report Name ${expectedReportName}"])`).first();
+  349 |     const downloadButtonLocator = reportRowLocator.locator(
+  350 |       'button[aria-label="Download/Print"]',
+  351 |     );
+  352 | 
+  353 |     try {
+  354 |       console.log(`Looking for report row with name: ${expectedReportName}`);
+  355 |       await reportRowLocator.waitFor({
+  356 |         state: "attached",
+  357 |         timeout: 5 * 60 * 1000,
+  358 |       });
+  359 |     } catch (error) {
+  360 |       throw new Error(
+  361 |         `Report row for ${expectedReportName} did not appear in the report library within 5 minutes.`,
+  362 |       );
+  363 |     }
+  364 | 
+  365 |     if (!(await downloadButtonLocator.isEnabled({ timeout: 15000 }))) {
+  366 |       try {
+  367 |         console.log(`Waiting for download button to become enabled...`);
+  368 |         await downloadButtonLocator.waitFor({
+  369 |           state: "visible",
+  370 |           timeout: 5 * 60 * 1000,
+  371 |         });
+  372 |       } catch (error) {
+  373 |         throw new Error(
+  374 |           `Download button for ${expectedReportName} did not become enabled within 5 minutes after the row appeared.`,
+  375 |         );
+  376 |       }
+  377 |     }
+  378 | 
+  379 |     const downloadPromise = this.page.waitForEvent("download", {
+  380 |       timeout: 2 * 60 * 1000,
+  381 |     });
+  382 | 
+> 383 |     await downloadButtonLocator.click();
+      |                                 ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  384 | 
+  385 |     let download;
+  386 |     try {
+  387 |       download = await downloadPromise;
+  388 |     } catch (error) {
+  389 |       throw new Error(
+  390 |         `Download for ${expectedReportName} did not start within 2 minutes after clicking the button.`,
+  391 |       );
+  392 |     }
+  393 | 
+  394 |     const zipPath = getExamineeZipFilePath(exportType, examineeID);
+  395 |     console.log(`Saving downloaded file to: ${zipPath}`);
+  396 |     await download.saveAs(zipPath);
+  397 |     await testinfo.attach("Downloaded Zip file", {
+  398 |       path: zipPath,
+  399 |       contentType: "application/zip",
+  400 |     });
+  401 |   }
+  402 | 
+  403 |   private requiredFile: any;
+  404 |   private requiredFilePath: any;
+  405 |   private txtFileContent: string;
+  406 | 
+  407 |   private examineeIdSet: Set<string> = new Set();
+  408 |   private examinerIdSet: Set<string> = new Set();
+  409 | 
+  410 |   async validateTheDownloadedReportWithRunTimeDataForSingleAndMulti(
+  411 |     $TestName: string,
+  412 |     $SumOfItemScores: number,
+  413 |     $BasalCredit: number,
+  414 |     $WlookUp: number,
+  415 |     $Wscore: number,
+  416 |     $semW: number,
+  417 |     $WlookUpAdminItems: string,
+  418 |     $ScoreString: string,
+  419 |     $StemForm: string,
+  420 |     $LookUpModel: string,
+  421 |     $totalItems: number,
+  422 |     $scoreFlag: string, // pending
+  423 |   ) {
+  424 |     const rows: string[] = this.txtFileContent.trim().split("\n");
+  425 |     const headers: string[] | undefined = rows.shift()?.split("\t");
+  426 | 
+  427 |     const examinerID: number | undefined = headers?.indexOf("ExerID");
+  428 |     const examineeID: number | undefined = headers?.indexOf("ExeeID");
+  429 |     const dateOfTest: number | undefined = headers?.indexOf("EDOT");
+  430 |     const testNumber: number | undefined = headers?.indexOf("TestNum");
+  431 |     const testName: number | undefined = headers?.indexOf("TestName");
+  432 |     const testStemForm: number | undefined = headers?.indexOf("TestStemForm");
+  433 |     const lookUpModel: number | undefined = headers?.indexOf("LookupModel");
+  434 |     const sumItemScores: number | undefined = headers?.indexOf("SumItemScores");
+  435 |     const baselCredit: number | undefined = headers?.indexOf("BasalCredit");
+  436 |     const wLookUp: number | undefined = headers?.indexOf("WLookup");
+  437 |     const WLkpAdminItems: number | undefined =
+  438 |       headers?.indexOf("WLkpAdminItems");
+  439 |     const wScore: number | undefined = headers?.indexOf("WScore");
+  440 |     const SEMW: number | undefined = headers?.indexOf("SEMW");
+  441 |     const scoreFlag: number | undefined = headers?.indexOf("ScoreFlags");
+  442 |     const scoreString: number | undefined = headers?.indexOf("ScoreString");
+  443 | 
+  444 |     const headersArray: (number | undefined)[] = [
+  445 |       examineeID,
+  446 |       // examinerID, // No more used (24 Sep 2024)
+  447 |       scoreString,
+  448 |       testNumber,
+  449 |       dateOfTest,
+  450 |     ];
+  451 |     for (const i of headersArray) {
+  452 |       if (i === undefined || i === -1) {
+  453 |         throw new Error(
+  454 |           `Heading "${i}" or ItemName  not found in the extracted file`,
+  455 |         );
+  456 |       }
+  457 |     }
+  458 | 
+  459 |     //let examinerid: string = "";
+  460 |     let examineeid: string = "";
+  461 |     let dateoftest: string = "";
+  462 |     let testnumber: string = "";
+  463 |     let testname: string = "";
+  464 |     let teststemform: string = "";
+  465 |     let lookupmodel: string = "";
+  466 |     let sumitemscores: string = "";
+  467 |     let baselcredit: string = "";
+  468 |     let wlookup: string = "";
+  469 |     let wscore: string = "";
+  470 |     let semw: string = "";
+  471 |     let wlkpadminitems: string = "";
+  472 |     let scoreflag: string = "";
+  473 |     let scorestring: string = "";
+  474 | 
+  475 |      const targetMatch = $StemForm; // ← Use your match value here
+  476 |      const targetColumnIndex = testStemForm!;
+  477 | 
+  478 |      const matchedRow = rows.find((line) => {
+  479 |        const columns = line.split("\t");
+  480 |        const cellValue = columns[targetColumnIndex]?.trim();
+  481 |        return cellValue && cellValue.includes(targetMatch);
+  482 |      });
+  483 | 
+```
