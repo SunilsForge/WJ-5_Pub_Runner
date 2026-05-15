@@ -1,0 +1,395 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/dashboard/testAssignments_B.spec.ts >> Validate Dashboard Test Assignments functionality Part_B
+- Location: src/tests/functional/dashboard/testAssignments_B.spec.ts:76:5
+
+# Error details
+
+```
+Error: Days left text should contain 'days'
+
+expect(received).toContain(expected) // indexOf
+
+Expected substring: "90"
+Received string:    "89 days "
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 03PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "03PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                    - text: N98667A95550
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [disabled] [ref=e56]
+                  - button "Closed" [disabled] [ref=e57]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "Begin assignment Leslie Jacobi_1778818479337 for N98667A95550, Wilmer Leslie Jacobi_1778818479337 More info 89 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e74] [cursor=pointer]:
+                    - cell "Begin assignment Leslie Jacobi_1778818479337 for N98667A95550, Wilmer" [ref=e75]:
+                      - button "Begin assignment Leslie Jacobi_1778818479337 for N98667A95550, Wilmer" [disabled] [ref=e76]:
+                        - generic [ref=e77]: N98667A95550, Wilmer
+                    - cell "Leslie Jacobi_1778818479337 More info" [ref=e78]:
+                      - generic [ref=e79]:
+                        - button "Leslie Jacobi_1778818479337" [disabled] [ref=e80]:
+                          - generic [ref=e81]: Leslie Jacobi_1778818479337
+                        - button "More info" [ref=e82]
+                    - cell "89 days" [ref=e83]:
+                      - button "89 days" [disabled] [ref=e84]
+                    - cell "● In Progress" [ref=e85]:
+                      - button "● In Progress" [disabled] [ref=e86]:
+                        - generic [ref=e87]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e88]:
+                      - button "Edit Assignment" [disabled] [ref=e89]
+                      - button "Add Tests" [disabled] [ref=e90]
+                      - button "Assignment actions" [ref=e91]
+                      - navigation [ref=e92]:
+                        - button "Share Examinee" [active] [ref=e93]
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - generic [ref=e97]:
+                  - img [ref=e98]
+                  - heading "Notifications Center" [level=2] [ref=e102]
+                - generic [ref=e103]:
+                  - generic [ref=e104]:
+                    - generic [ref=e105]: 04/28/2026
+                    - paragraph [ref=e106]:
+                      - generic [ref=e107]: The RiversideScore platform will be down for maintenance on Thursday, May 14th, from 8:00 PM
+                      - text: to 12:00 AM CST.
+                      - generic [ref=e108]: During this time, access will be unavailable. If you have any questions, please contact
+                      - text: "Customer Support Monday- Friday 8AM- 4PM CST at:"
+                    - paragraph [ref=e109]:
+                      - text: "Tel:"
+                      - link "800-323-9540" [ref=e110] [cursor=pointer]:
+                        - /url: tel:8003239540
+                      - text: "Email:"
+                      - link "Inquiry@service.riversideinsights.com" [ref=e112] [cursor=pointer]:
+                        - /url: mailto:Inquiry@service.riversideinsights.com
+                    - paragraph [ref=e113]: We appreciate your patience as we work to improve the experience!
+                  - generic [ref=e114]:
+                    - generic [ref=e115]: 03/09/2026
+                    - generic [ref=e116]:
+                      - paragraph [ref=e117]:
+                        - strong
+                        - text: Have thoughts on a flexible developmental milestone tool? Take this survey to share those thoughts and be entered to win a $25 gift card. If you complete every question, your name will be entered twice!
+                      - paragraph [ref=e118]:
+                        - link "Begin Survey" [ref=e119] [cursor=pointer]:
+                          - /url: https://www.surveymonkey.com/r/NBKDQNZ
+                      - paragraph
+                      - paragraph
+                      - paragraph:
+                        - strong
+              - generic [ref=e120]:
+                - generic [ref=e122]:
+                  - img [ref=e123]
+                  - heading "Resources" [level=3] [ref=e127]
+                - list [ref=e128]:
+                  - listitem [ref=e129]:
+                    - button "Riverside Learn" [ref=e130] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e131]
+                      - img [ref=e133]
+                  - listitem [ref=e135]:
+                    - button "Onboarding Tutorial Videos" [ref=e136] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e137]
+                      - img [ref=e139]
+                  - listitem [ref=e141]:
+                    - button "Quick Reference Guides" [ref=e142] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e143]
+                      - img [ref=e145]
+                - button "View All" [ref=e148] [cursor=pointer]
+      - contentinfo [ref=e149]:
+        - generic [ref=e150]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e151] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e152]
+        - generic [ref=e153]:
+          - link "Riverside Insights Facebook" [ref=e154] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e155]
+          - link "Riverside Insights Twitter" [ref=e156] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e157]
+          - link "Riverside Insights LinkedIn" [ref=e158] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e159]
+          - link "Riverside Insights Instagram" [ref=e160] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e161]
+        - generic [ref=e162]:
+          - button "Leave Feedback" [ref=e163] [cursor=pointer]
+          - generic [ref=e164]: "|"
+          - link "Terms of Use" [ref=e165] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e166]: "|"
+          - link "Privacy Policy" [ref=e167] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e168]: Footer region end
+```
+
+# Test source
+
+```ts
+  1528 |     await this.getCheckboxLocator('unchecked')
+  1529 |       .first()
+  1530 |       .click();
+  1531 |     await this.addTestsButton.click();
+  1532 |     try {
+  1533 |       const responsePromise = this.page.waitForResponse(
+  1534 |         (response) =>
+  1535 |           response.url().includes(`/WJ5Grpc.TestBlock/GetAssignments`) &&
+  1536 |           response.status() === 200,
+  1537 |         { timeout: 1 * 60 * 1000 },
+  1538 |       );
+  1539 |       const response = await responsePromise;
+  1540 |       await response.finished();
+  1541 |     } catch (error) {
+  1542 |       console.log(`Dashbard Page: The apis response issue ${error}`);
+  1543 |     }
+  1544 |     await this.page.waitForTimeout(2000);
+  1545 |   }
+  1546 | 
+  1547 |   async verifyAllTheColumnsAreVisible(columnHeaders: string[]) {
+  1548 |     const actualTexts = await this.page
+  1549 |       .locator("div[class*='TestAssignmentModule'] thead th")
+  1550 |       .allTextContents();
+  1551 | 
+  1552 |     RawValueLogger.log("Computed Value", actualTexts);
+  1553 | 
+  1554 |     // Verify each column header starts with the expected text (ignoring tooltip content)
+  1555 |     expect.soft(actualTexts.length).toBe(columnHeaders.length);
+  1556 | 
+  1557 |     for (let i = 0; i < columnHeaders.length; i++) {
+  1558 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);
+  1559 |     }
+  1560 |   }
+  1561 | 
+  1562 |   async closeTestAssignmentPopUp() {
+  1563 |     await this.blueCloseButton.waitFor({ state: "visible" });
+  1564 |     await this.blueCloseButton.click();
+  1565 |   }
+  1566 | 
+  1567 |   async clickOnClosedTableViewButton() {
+  1568 |     await this.closedTableViewButton.first().click();
+  1569 |     await this.page.waitForLoadState("domcontentloaded");
+  1570 |     await this.waitForLoadingSpinnerToDisappear();
+  1571 |   }
+  1572 | 
+  1573 |   async clearSearchResults() {
+  1574 |     await this.searchTestAssignmentsInput.clear();
+  1575 |     await this.page.waitForLoadState("domcontentloaded");
+  1576 |   }
+  1577 | 
+  1578 |   async clickOnActiveTableViewButton() {
+  1579 |     await this.activeTableViewButton.click();
+  1580 |     await this.page.waitForLoadState("domcontentloaded");
+  1581 |     await this.waitForLoadingSpinnerToDisappear();
+  1582 |     await this.page.waitForTimeout(2000);
+  1583 |   }
+  1584 | 
+  1585 |   async verifyVisibleStatusesInTable(expectedStatuses: string[]) {
+  1586 |     // 1. Get all elements
+  1587 |     const statusElements = this.getTestAssignmentTableStatusColumn();
+  1588 | 
+  1589 |     // 2. Extract their data-status attribute values
+  1590 |     const actualStatuses = await statusElements.evaluateAll((elements) =>
+  1591 |       elements.map((el) => el.getAttribute("data-status"))
+  1592 |     );
+  1593 | 
+  1594 |     RawValueLogger.log("Actual Statuses:", actualStatuses);
+  1595 |     RawValueLogger.log("Expected Allowed Statuses:", expectedStatuses);
+  1596 | 
+  1597 |     // 3. Validate each actual status
+  1598 |     for (const status of actualStatuses) {
+  1599 |       expect.soft(
+  1600 |         expectedStatuses.includes(status || ""),
+  1601 |         `Unexpected status '${status}'. Expected one of: ${expectedStatuses.join(", ")}`
+  1602 |       ).toBeTruthy();
+  1603 |     }
+  1604 | 
+  1605 |     RawValueLogger.log("All visible statuses are within the expected list.");
+  1606 |   }
+  1607 | 
+  1608 |   async verifyDaysleftToEditIsGraterThan(daysLeft: string) {
+  1609 |     const daysLeftElement = this.getTestAssignmentTableColumn(3);
+  1610 |     const actualDaysLeftText = await daysLeftElement.textContent();
+  1611 |     RawValueLogger.log("Actual Days Left Text", actualDaysLeftText);
+  1612 |     RawValueLogger.log("Expected Days Left", daysLeft);
+  1613 |     expect.soft(actualDaysLeftText, "Days left text should contain 'days'").toContain("days");
+  1614 | 
+  1615 |     const actualDaysLeftNumber = parseInt(actualDaysLeftText?.match(/\d+/)?.[0] || "0", 10);
+  1616 |     const expectedDaysLeftNumber = parseInt(daysLeft, 10);
+  1617 |     RawValueLogger.log("Actual Days Left (number)", actualDaysLeftNumber);
+  1618 |     RawValueLogger.log("Expected Days Left (number)", expectedDaysLeftNumber);
+  1619 |     expect.soft(actualDaysLeftNumber, "Actual days left should be greater than expected").toBeGreaterThan(expectedDaysLeftNumber);
+  1620 |   }
+  1621 | 
+  1622 |   async verifyDaysleftToEditIsEqualTo(daysLeft: string) {
+  1623 |     const daysLeftElement = this.getTestAssignmentTableColumn(3);
+  1624 |     const actualDaysLeftText = await daysLeftElement.first().textContent();
+  1625 |     RawValueLogger.log("Actual Days Left Text", actualDaysLeftText);
+  1626 |     RawValueLogger.log("Expected Days Left", daysLeft);
+  1627 |     expect.soft(actualDaysLeftText, "Days left text should contain 'days'").toContain("days");
+> 1628 |     expect.soft(actualDaysLeftText, "Days left text should contain 'days'").toContain(daysLeft);
+       |                                                                             ^ Error: Days left text should contain 'days'
+  1629 |   }
+  1630 | 
+  1631 |   async verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {
+  1632 |     const examineeList: string[] =
+  1633 |       await this.getAllExamineeDetailsFromMyTestAssignments();
+  1634 | 
+  1635 |     const requiredExaminee = await this.utils.randomNumberGenerateBetween(0, 3);
+  1636 |     let secondRequiredExaminee;
+  1637 | 
+  1638 |     do {
+  1639 |       secondRequiredExaminee = await this.utils.randomNumberGenerateBetween(0, 3);
+  1640 |     } while (secondRequiredExaminee == requiredExaminee);
+  1641 | 
+  1642 |     RawValueLogger.log("Required Examinee", examineeList[requiredExaminee]);
+  1643 | 
+  1644 |     await this.searchForExamineeAtSearchMyTestAssignments(
+  1645 |       examineeList[requiredExaminee],
+  1646 |     );
+  1647 |     await this.editTestAssignmentButton.click();
+  1648 |     await this.waitForDialogToAppear();
+  1649 |     await this.editLastFirstName(examineeList[secondRequiredExaminee]);
+  1650 |     const testSet: string = "General Intellectual Ability (GIA)";
+  1651 |     await this.editTestSet(testSet);
+  1652 |     await this.blueCloseButton.click();
+  1653 | 
+  1654 |     await this.clearSearchResults();
+  1655 | 
+  1656 |     await this.page.waitForLoadState("domcontentloaded");
+  1657 |     await this.waitForLoadingSpinnerToDisappear();
+  1658 |     await this.page.waitForTimeout(3000);
+  1659 | 
+  1660 |     const firstRowDetails = await this.getTheTestAssignmentsRowDetails(1);
+  1661 | 
+  1662 |     expect
+  1663 |       .soft(
+  1664 |         firstRowDetails.examinee,
+  1665 |         "Examinee last name and first name not matching",
+  1666 |       )
+  1667 |       .toEqual(examineeList[secondRequiredExaminee]);
+  1668 | 
+  1669 |     expect
+  1670 |       .soft(firstRowDetails.testSet, "Test set not matching")
+  1671 |       .toContain(testSet);
+  1672 | 
+  1673 |   }
+  1674 | 
+  1675 |   async waitForDialogToAppear() {
+  1676 |     await this.dialogBox.waitFor({ state: "visible", timeout: 30000 });
+  1677 |     await this.waitForLoadingIconToDisappear();
+  1678 |   }
+  1679 | 
+  1680 |   async editLastFirstName(examineeName: string) {
+  1681 |     await this.changeExamineeNameInEditTestAssignmentPopUp(examineeName);
+  1682 |     await this.clickUpdateButtonInEditTestAssignmentPopUp();
+  1683 |   }
+  1684 | 
+  1685 |   async clickUpdateButtonInEditTestAssignmentPopUp() {
+  1686 |     await this.updateButton.click();
+  1687 |     await this.launchAssignmentButton.waitFor({
+  1688 |       state: "visible",
+  1689 |       timeout: 30 * 1000,
+  1690 |     });
+  1691 |   }
+  1692 | 
+  1693 |   async editTestSet(testSetName: string) {
+  1694 |     await this.changeTestSetInEditTestAssignmentPopUp(testSetName);
+  1695 |     await this.clickUpdateButtonInEditTestAssignmentPopUp();
+  1696 |   }
+  1697 | 
+  1698 |   async verifyDeleteTestAssignmentFunctionality() {
+  1699 |     const examineeListBeforeDelete: string[] =
+  1700 |       await this.getAllExamineeDetailsFromMyTestAssignments();
+  1701 |     await this.deleteFollowingTestAssignment(0);
+  1702 |     const examineeListAfterDelete: string[] =
+  1703 |       await this.getAllExamineeDetailsFromMyTestAssignments();
+  1704 | 
+  1705 |     // verify the first examinee is removed by taking the row details
+  1706 |     expect
+  1707 |       .soft(
+  1708 |         examineeListAfterDelete[0],
+  1709 |         "Examinee not deleted successfully",
+  1710 |       )
+  1711 |       .toEqual(examineeListBeforeDelete[1]);
+  1712 | 
+  1713 |   }
+  1714 | 
+  1715 |   async verifyDeleteTestAssignmentFunctionalityForInprogressStatus(bool: boolean) {
+  1716 |     const examineeListBeforeDelete: string[] = await this.getAllExamineeDetailsFromMyTestAssignments();
+  1717 |     await this.deleteFollowingInprogressTestAssignment(0, bool);
+  1718 |     const examineeListAfterDelete: string[] = await this.getAllExamineeDetailsFromMyTestAssignments();
+  1719 | 
+  1720 |     if (bool) {
+  1721 |       expect.soft(examineeListAfterDelete[0], 'Examinee not deleted successfully').toEqual(examineeListBeforeDelete[1]);
+  1722 |     } else {
+  1723 |       expect.soft(examineeListAfterDelete[0], 'Examinee should not be deleted').toEqual(examineeListBeforeDelete[0]);
+  1724 |     }
+  1725 |   }
+  1726 | 
+  1727 |   async verifyDeleteTestAssignmentFunctionalityForSubmittedStatus() {
+  1728 |     await this.clickFollowingRowElipsisButton(0);
+```

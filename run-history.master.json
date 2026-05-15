@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "240",
+    "timestamp": "20260515_000000",
+    "runReason": "running full REGRESSION in PROD as a part of PROD release",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments",
+    "totalTests": 98,
+    "totalPassed": 92,
+    "totalFailed": 5,
+    "totalSkipped": 0,
+    "totalFlaky": 1,
+    "durationMs": 42601234
+  },
+  {
     "runNumber": "239",
     "timestamp": "20260514_000000",
     "runReason": "Running (@GIA|@GL|@LSTCMP|@ORLANG|@RDGCMP) as a part of Dimitry changes and Debbie request",
