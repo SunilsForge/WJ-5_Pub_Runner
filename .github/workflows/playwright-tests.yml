@@ -326,6 +326,16 @@ jobs:
                   status_class="status-failure"
                 fi
               fi
+              # Distinguish "empty" shards (over-allocated — Playwright ran but had no tests to execute)
+              # from real passes. Only override a SUCCESS — a failure stays a failure, an N/A stays N/A.
+              # If jq can't read the file we leave status untouched (safer than mis-labelling).
+              if [ "$status_class" = "status-success" ] && [ -f "$report_source/results.json" ]; then
+                test_count=$(jq -r '((.stats.expected // 0) + (.stats.unexpected // 0) + (.stats.skipped // 0) + (.stats.flaky // 0))' "$report_source/results.json" 2>/dev/null)
+                if [ "$test_count" = "0" ]; then
+                  status="NO TESTS"
+                  status_class="status-empty"
+                fi
+              fi
               system_info="System information not available"
               if [ -f "$system_info_file" ]; then
                 system_info=$(cat "$system_info_file")
@@ -932,10 +942,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download shard report artifacts
+        # NOTE: do NOT use `pattern: playwright-report-shard-*` here.
+        # When only one artifact matches the pattern (shard_count: 1), download-artifact@v4+
+        # skips the per-artifact subdirectory and extracts files directly into `path`.
+        # The downstream `startsWith('playwright-report-shard-')` filter then finds nothing,
+        # leading to all-zero counts in Slack/Step Summary on single-shard runs.
+        # Downloading everything (like the merge-reports job does) guarantees per-artifact
+        # subdirectories regardless of shard_count. The extra small artifacts are filtered out.
         uses: actions/download-artifact@v7
         with:
           path: all-artifacts
-          pattern: playwright-report-shard-*
 
       - name: Set up Node.js
         uses: actions/setup-node@v5
