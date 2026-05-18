@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "246",
+    "timestamp": "20260518_000000",
+    "runReason": "running to check the new ci/cd changes",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@DashboardTestAssignments",
+    "totalTests": 7,
+    "totalPassed": 6,
+    "totalFailed": 1,
+    "totalSkipped": 0,
+    "totalFlaky": 0,
+    "durationMs": 1727242
+  },
+  {
     "runNumber": "245",
     "timestamp": "20260518_000000",
     "runReason": "Just retesting to check some stats ",

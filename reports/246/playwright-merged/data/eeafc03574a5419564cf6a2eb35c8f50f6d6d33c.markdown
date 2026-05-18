@@ -1,0 +1,386 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/dashboard/testAssignments_C.spec.ts >> Validate Dashboard Test Assignments functionality Part_C
+- Location: src/tests/functional/dashboard/testAssignments_C.spec.ts:13:5
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//div[@class=\'TestList_mcs_testName\']').getByText('Academic Vocabulary', { exact: true }) to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - dialog "Administration Overview for Oral Language Samples" [ref=e2]:
+    - banner [ref=e3]:
+      - button "Main Navigation" [ref=e4] [cursor=pointer]
+      - generic "Oral Language Samples" [ref=e5] [cursor=pointer]:
+        - generic [ref=e6]: Oral Language Samples
+      - 'button "N69780A13481, Cassie Age: 66y, 6m Grade: 12" [ref=e9] [cursor=pointer]':
+        - img [ref=e10]
+        - generic [ref=e13]:
+          - generic [ref=e14]: N69780A13481, Cassie
+          - generic [ref=e15]: "Age: 66y, 6m Grade: 12"
+    - generic [ref=e17]:
+      - heading "Oral Language Samples" [level=2] [ref=e18]
+      - generic [ref=e19]:
+        - text: Read the instructions below or
+        - button "begin the test." [disabled] [ref=e20]
+    - generic [ref=e21]:
+      - heading "Things to Know:" [level=2] [ref=e23]
+      - generic [ref=e27]: This test presents items via audio recording.
+      - generic [ref=e31]: This test uses voice capture.
+      - button "Check Audio Settings" [ref=e32] [cursor=pointer]
+    - generic [ref=e33]:
+      - paragraph [ref=e34]: Administration Overview
+      - generic [ref=e35]:
+        - generic [ref=e36]: ✦
+        - paragraph [ref=e38]: Do not penalize the examinee for mispronunciations resulting from articulation errors, dialect variations, or regional speech patterns.
+      - generic [ref=e39]:
+        - generic [ref=e40]: ✦
+        - paragraph [ref=e42]: Know the exact pronunciation of each test item before administering this test.
+      - generic [ref=e43]:
+        - generic [ref=e44]: ✦
+        - paragraph [ref=e46]: You may repeat any item on this test if the examinee requests it.
+      - generic [ref=e47]:
+        - generic [ref=e48]: ✦
+        - generic [ref=e49]:
+          - paragraph [ref=e50]: "Provide the reminders below only after the first time the examinee makes the error:"
+          - list [ref=e51]:
+            - listitem [ref=e52]:
+              - text: "If an item requires a complete sentence and the examinee responds with an incomplete sentence, score the item 0 and say:"
+              - strong [ref=e54]:
+                - generic "* Remember to give me a complete sentence. *"
+                - text: Remember to give me a complete sentence.
+          - list [ref=e55]:
+            - listitem [ref=e56]:
+              - text: "If an item requires a complete sentence and the examinee responds with two or more sentences, score the item 0 and say:"
+              - strong [ref=e58]:
+                - generic "* Remember to use the word(s) in one sentence. *"
+                - text: Remember to use the word(s) in one sentence.
+          - list [ref=e59]:
+            - listitem [ref=e60]:
+              - text: "If the examinee changes a required word in any way, score the item 0 and say:"
+              - strong [ref=e62]:
+                - generic "* Remember, do not change the word(s) in any way. *"
+                - text: Remember, do not change the word(s) in any way.
+          - list [ref=e63]:
+            - listitem [ref=e64]:
+              - text: "If the examinee does not use all the required words, score the item 0 and say:"
+              - strong [ref=e66]:
+                - generic "* Remember to use all the words. *"
+                - text: Remember to use all the words.
+      - generic [ref=e67]:
+        - generic [ref=e68]: ✦
+        - paragraph [ref=e70]: On Block C, do not penalize the examinee for grammar errors unless the errors interfere with the meaning of the sentence.
+      - generic [ref=e71]:
+        - generic [ref=e72]: ✦
+        - paragraph [ref=e74]: The test ends when the examinee fails to meet the continuation requirements.
+      - generic [ref=e75]:
+        - generic [ref=e76]: ✦
+        - paragraph [ref=e78]: This test contains one or more Sample Items.
+      - generic [ref=e79]:
+        - generic [ref=e80]: ✦
+        - paragraph [ref=e82]: The platform selects an appropriate starting point based on the examinee’s age or grade/education level.
+      - paragraph [ref=e83]: Scoring
+      - generic [ref=e84]:
+        - generic [ref=e85]: ✦
+        - paragraph [ref=e87]: If the examinee provides a response that requires querying, click the response and follow the instructions to query for more information. Then select the response option from the scoring key that matches the examinee’s next response.
+      - generic [ref=e88]:
+        - generic [ref=e89]: ✦
+        - paragraph [ref=e91]: The platform computes the total test score by summing the item scores for all administered test items.
+      - generic [ref=e92]:
+        - generic [ref=e93]: ✦
+        - paragraph [ref=e95]: On Block A and Block B, score the item correct if it matches or closely resembles the correct response(s) listed in the scoring key.
+      - generic [ref=e96]:
+        - generic [ref=e97]: ✦
+        - paragraph [ref=e99]: On Block C, select the score category (2, 1, or 0 points) with the description that most closely matches the examineeʼs response. Roll your cursor over the Examples icon to view sample responses for each score category.
+    - generic [ref=e100]:
+      - button "Letʼs Begin" [ref=e101] [cursor=pointer]
+      - button "SCROLL FOR MORE ↓" [ref=e102] [cursor=pointer]:
+        - text: SCROLL
+        - text: FOR MORE
+        - text: ↓
+  - dialog "Main navigation" [ref=e104]:
+    - navigation "Main navigation" [ref=e105]:
+      - heading "Main navigation" [level=2] [ref=e106]
+      - button "Close navigation" [ref=e107] [cursor=pointer]: ✕
+      - button "Home" [ref=e108] [cursor=pointer]:
+        - img [ref=e109]
+      - button "Tests" [expanded] [active] [ref=e112] [cursor=pointer]:
+        - img [ref=e113]
+        - generic [ref=e116]: Tests
+      - button "Test Assignment Defaults" [ref=e117] [cursor=pointer]:
+        - img [ref=e118]
+      - button "Log Out" [ref=e120] [cursor=pointer]:
+        - img [ref=e121]
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]: "Filter tests by:"
+        - generic [ref=e128]:
+          - button "Complete" [ref=e129] [cursor=pointer]:
+            - img "Complete" [ref=e130]
+          - button "In Progress" [ref=e134] [cursor=pointer]:
+            - img "In Progress" [ref=e135]
+          - button "Not Yet Administered" [ref=e143] [cursor=pointer]:
+            - img "Not Yet Administered" [ref=e144]
+          - button "Complete + Score Error" [ref=e148] [cursor=pointer]:
+            - img "Complete + Score Error" [ref=e149]
+          - button "Score Later" [ref=e153] [cursor=pointer]:
+            - img "Score Later" [ref=e154]
+      - generic [ref=e159]:
+        - generic [ref=e160]:
+          - img [ref=e161]
+          - generic [ref=e163]: Maggie Fahey_1778852585817 (+1 more)
+          - button "Hide Scores" [ref=e164] [cursor=pointer]
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - button "Complete Oral Language Samples" [disabled] [pressed] [ref=e168]:
+                - img "Complete" [ref=e169]
+                - generic [ref=e173]: Oral Language Samples
+              - button "Skip test" [ref=e174] [cursor=pointer]: ✕
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - generic [ref=e177]:
+                  - generic [ref=e178]: SS
+                  - generic [ref=e179]:
+                    - text: 95–108
+                    - img [ref=e181]
+                - generic [ref=e184]:
+                  - generic [ref=e185]: PR
+                  - generic [ref=e186]:
+                    - text: 38–69
+                    - img [ref=e188]
+              - generic [ref=e191]:
+                - generic [ref=e192]:
+                  - generic [ref=e193]: AE
+                  - generic [ref=e194]: 20y
+                - generic [ref=e195]:
+                  - generic [ref=e196]: GE
+                  - generic [ref=e197]: ">G12.9"
+          - generic [ref=e199]:
+            - button "Not Yet Administered Academic Facts" [ref=e200] [cursor=pointer]:
+              - img "Not Yet Administered" [ref=e201]
+              - generic [ref=e205]: Academic Facts
+            - button "Skip test" [ref=e206] [cursor=pointer]: ✕
+        - button "+ Add Test" [ref=e207] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  6109 |             await this.page.waitForTimeout(1000);
+  6110 |             await this.iDontKnowButton.click();
+  6111 |           }
+  6112 |         }
+  6113 | 
+  6114 |       } else {
+  6115 |         throw new Error(
+  6116 |           `The ${typeOfTest} didnt match with any of the conditions provided`
+  6117 |         );
+  6118 |       }
+  6119 |       await this.plainNextButtonOrEndButton.click();
+  6120 |       if (
+  6121 |         (await this.plainNextButtonOrEndButton.textContent()) === "End Test"
+  6122 |       ) {
+  6123 |         break;
+  6124 |       }
+  6125 |     }
+  6126 |   }
+  6127 |     async pickTheTestNeeded(testName: string, student:StudentPage) {
+  6128 |         await this.page.bringToFront();
+  6129 |         await this.page.waitForTimeout(2000);
+  6130 | 
+  6131 |         const testSessionIntro: Locator = await this.page.locator("//b[text()='Test Session Introduction']");
+  6132 |         if (await testSessionIntro.isVisible()) {
+  6133 |             for (let i = 1; i <= 3; i++) {
+  6134 |                 await this.page.waitForTimeout(2000);
+  6135 |                 if (await this.plainNextButtonOrEndButton.isEnabled()) {
+  6136 |                     if (i === 3) {
+  6137 |                         await this.beginAdminButton.click();
+  6138 |                     } else {
+  6139 |                         await this.page.waitForTimeout(2000);
+  6140 |                         await this.plainNextButtonOrEndButton.click();
+  6141 |                     }
+  6142 |                 } else {
+  6143 |                     await this.plainNextButtonOrEndButton.waitFor({state: 'visible', timeout: 50000});
+  6144 |                 }
+  6145 |             }
+  6146 |         }
+  6147 |         if ((await this.administrationOverviewPageTestName.isVisible()) && (await this.administrationOverviewPageTestName.textContent()).includes(testName)) {
+  6148 |             return;
+  6149 |         } else {
+  6150 |             for (let i = 0; i < 3; i++) {
+  6151 |                 if (await this.mainNavigation.isEnabled()) {
+  6152 |                     await this.page.waitForTimeout(1000);
+  6153 |                     await this.mainNavigation.click();
+  6154 |                     break;
+  6155 |                 }
+  6156 |                 await this.page.waitForTimeout(1000);
+  6157 |             }
+  6158 |             await this.mainNavigationTests.waitFor({
+  6159 |                 state: "visible",
+  6160 |                 timeout: 80000,
+  6161 |             });
+  6162 |             await this.page.waitForTimeout(1000);
+  6163 |             await this.mainNavigationTests.click();
+  6164 |             const testButton = this.page
+  6165 |                 .locator("//div[@class='TestList_mcs_testName']")
+  6166 |                 .getByText(testName, {exact: true});
+  6167 |             await testButton.waitFor({state: "visible", timeout: 10000});
+  6168 | 
+  6169 |             const isDisabled = await testButton.isDisabled();
+  6170 |             const buttonText = await testButton.textContent();
+  6171 |             if (isDisabled && buttonText === testName) {
+  6172 |                 console.log(
+  6173 |                     `Test "${testName}" is already selected and disabled; closing menu`
+  6174 |                 );
+  6175 |                 const closeButton = this.page.locator(
+  6176 |                     "//button[@class='plain-button close-btn']"
+  6177 |                 );
+  6178 |                 await closeButton.waitFor({state: "visible", timeout: 5000});
+  6179 |                 await closeButton.click();
+  6180 |                 return;
+  6181 |             }
+  6182 |             await testButton.click();
+  6183 |             console.log(`Selected test "${testName}"`);
+  6184 |         }
+  6185 |         if (await this.syncDevicePopUp.isVisible()) {
+  6186 |             await student.clickOnAcceptButton();
+  6187 |             return;
+  6188 |         }
+  6189 |     }
+  6190 | 
+  6191 |   async getActualTestName() {
+  6192 |     return await this.testNameAtAdminOverview.textContent();
+  6193 |   }
+  6194 | 
+  6195 |   async clickOnLetsBeginButtonAndStartTest(testName: string, ssp: string) {
+  6196 |     await this.letsBeginButton.waitFor({
+  6197 |       state: "visible",
+  6198 |       timeout: 5 * 60 * 1000,
+  6199 |     });
+  6200 | 
+  6201 |     let actualTestName = await this.getActualTestName();
+  6202 |     if (actualTestName != testName) {
+  6203 |       await this.page.waitForTimeout(1000);
+  6204 |       await this.mainNavigation.click();
+  6205 |       await this.mainNavigationTests.click();
+  6206 |         const testButton = this.page
+  6207 |             .locator("//div[@class='TestList_mcs_testName']")
+  6208 |             .getByText(testName, {exact: true});
+> 6209 |       await testButton.waitFor({ state: "visible", timeout: 10000 });
+       |                        ^ TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+  6210 |       await testButton.click();
+  6211 |       await this.page.waitForLoadState("domcontentloaded")
+  6212 |       await this.page.waitForTimeout(1000);
+  6213 |     }
+  6214 |     actualTestName = await this.getActualTestName();
+  6215 |     expect(actualTestName, {
+  6216 |       message: "The test name didnt match at Administration Overview page",
+  6217 |     }).toContain(testName);
+  6218 |     console.log(actualTestName);
+  6219 |     await this.letsBeginButton.click();
+  6220 |     await this.page.waitForTimeout(1000);
+  6221 |     if (ssp === "All Examinees") {
+  6222 |       await this.startTestButton.click();
+  6223 |     } else {
+  6224 |       await this.setTheSuggestedStartingPointTo(ssp);
+  6225 |       await this.page.waitForTimeout(1500);
+  6226 |       await this.startTestButton.click();
+  6227 |     }
+  6228 |   }
+  6229 | 
+  6230 |   async setTheSuggestedStartingPointTo(sspOption: string) {
+  6231 |     await expect(this.startTestButton).toBeVisible({ timeout: 10000 });
+  6232 |     await this.page.waitForTimeout(5000);
+  6233 |     if (this.loading.isVisible())
+  6234 |       await this.loading.waitFor({ state: "hidden", timeout: 3 * 60 * 1000 });
+  6235 |     await this.sspDropDown.selectOption({ label: sspOption }, { timeout: 60000 });
+  6236 |     await this.page.waitForTimeout(2000);
+  6237 | 
+  6238 |     try {
+  6239 |       const selectedSsp = await this.page.$eval(
+  6240 |         ".starting-point-dropdown",
+  6241 |         (ele) => (ele as HTMLSelectElement).value
+  6242 |       );
+  6243 |       console.log(`selected ssp is = ${selectedSsp}`);
+  6244 | 
+  6245 |       expect(selectedSsp).toContain(sspOption);
+  6246 |     } catch (error) {
+  6247 |       await this.sspDropDown.selectOption({ label: sspOption });
+  6248 |       console.error(
+  6249 |         `the ssp drop down didnt select the one we want at first attempt so trying one more time ... ${error}`
+  6250 |       );
+  6251 |     }
+  6252 |   }
+  6253 | 
+  6254 |   async selectTheCheckbox(radioButton: number, info?: string) {
+  6255 |     await this.multiRadioButtons.nth(radioButton).click();
+  6256 |   }
+  6257 | 
+  6258 |   async selectTheDropdownOption(
+  6259 |     dropDown: number,
+  6260 |     dropDownOpt: string,
+  6261 |     info?: string
+  6262 |   ) {
+  6263 |     await this.dropDowns.nth(dropDown).click();
+  6264 |     await this.page.waitForTimeout(650);
+  6265 |     // await this.dropDowns.locator(this.dropDownOption).nth(dropDownOption).click();
+  6266 |     await this.dropDowns
+  6267 |       .locator("//following-sibling::ul/li//*[text()='" + dropDownOpt + "']")
+  6268 |       .click();
+  6269 |   }
+  6270 | 
+  6271 |   async validateEndTestPopUpTextContent(
+  6272 |     AE: string,
+  6273 |     GE: string,
+  6274 |     ScoreCheckText: string,
+  6275 |     FlagsText: string,
+  6276 |     OutcomeMsg: string,
+  6277 |     rsb: string[],
+  6278 |     testStemForm: string,
+  6279 |     typeOfTest: string
+  6280 |   ) {
+  6281 |     const testNames: string[] = ["WRTSMP.W5PA", "SWRTAC.W5PA"];
+  6282 |     const testNames1: string[] = ["SWRTFL.W5PA", "MTHFLU.W5PA", "LWRTFL.W5PA",];
+  6283 |     const testNames2: string[] = [
+  6284 |       "RPDPHO.W5PA",
+  6285 |       "LETPAT.W5PA",
+  6286 |       "RPDLET.W5PA",
+  6287 |       "RPDPIC.W5PA",
+  6288 |       "NUMPAT.W5PA",
+  6289 |       "SRDGFL.W5PA",
+  6290 |       "NUMPAT.W5PX",
+  6291 |       "MAGCMP.W5PA",
+  6292 |       "WRDGFL.W5PA",
+  6293 |       "MAGCMP.W5PX",
+  6294 |       "RPDPHO.W5PX",
+  6295 |       "RPDQNT.W5PA",
+  6296 |       "RPDNUM.W5PA",
+  6297 |       "RPDNUM.W5PX",
+  6298 |       "RPDQNT.W5PX",
+  6299 |       "RPDPIC.W5PX",
+  6300 |       "RPDLET.W5PX",
+  6301 |       "LETPAT.W5PX",
+  6302 |       "RPDPHO.W5PX",
+  6303 |     ];
+  6304 |     await expect.soft(this.aeValue).toHaveText(AE);
+  6305 |     await expect.soft(this.geValue).toHaveText(GE);
+  6306 |     expect
+  6307 |       .soft(await this.endTestPopUpElements.nth(1).textContent())
+  6308 |       .toContain(ScoreCheckText);
+  6309 |     if (
+```
