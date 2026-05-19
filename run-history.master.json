@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "250",
+    "timestamp": "20260519_000000",
+    "runReason": "Just  a Regression Run before Hot Fix",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments|@ChatBot",
+    "totalTests": 100,
+    "totalPassed": 35,
+    "totalFailed": 64,
+    "totalSkipped": 0,
+    "totalFlaky": 1,
+    "durationMs": 76337627
+  },
+  {
     "runNumber": "249",
     "timestamp": "20260519_000000",
     "runReason": "running on main branch with out bigboss 19 changes to see the pass % in STAGE",
