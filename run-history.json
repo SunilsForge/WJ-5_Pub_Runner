@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "248",
+    "timestamp": "20260519_000000",
+    "runReason": "Run full regression in PROD since STAGE has lot more failures",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments|@ChatBot|@TestSetVerification",
+    "totalTests": 96,
+    "totalPassed": 83,
+    "totalFailed": 7,
+    "totalSkipped": 5,
+    "totalFlaky": 1,
+    "durationMs": 40336625
+  },
+  {
     "runNumber": "246",
     "timestamp": "20260518_000000",
     "runReason": "running to check the new ci/cd changes",

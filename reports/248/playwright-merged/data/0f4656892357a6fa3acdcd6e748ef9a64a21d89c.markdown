@@ -1,0 +1,139 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/TestSetVerification.spec.ts >> CLINICAL-31186: BIA Test Set Display Verification >> Verify BIA test set displays correct tests in left nav across repeated launches, examinee switching, review mode, and mid-administration
+- Location: src/tests/functional/TestSetVerification.spec.ts:55:7
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('.single-select-parent').last()
+
+```
+
+# Test source
+
+```ts
+  120 |     .poll(
+  121 |       async () => await this.checkboxes.count(),
+  122 |       {
+  123 |         message: 'Waiting for checkbox count to be greater than 0',
+  124 |         timeout: 10_000,
+  125 |       },
+  126 |     )
+  127 |     .toBeGreaterThan(0);
+  128 | 
+  129 |   // KNOWN SISTER PAIRS (DO NOT include both in testNames — clicking one selects both,
+  130 |   // clicking the second toggles both OFF):
+  131 |   //   - "Oral Vocabulary–Synonyms" / "Oral Vocabulary–Antonyms"
+  132 |   //   - "General Information–Where" / "General Information–What"
+  133 |   const normalizeDash = (s: string) => s.replace(/[–—]/g, '-');
+  134 |   const targetSet = new Set(testNames.map(normalizeDash));
+  135 | 
+  136 |   const checkboxCount = await this.checkboxes.count();
+  137 |   RawValueLogger.log(`selectTheRequiredTestsExact: Found ${checkboxCount} checkboxes`);
+  138 | 
+  139 |   for (let i = 0; i < checkboxCount; i++) {
+  140 |     const testLabel = await this.checkboxes.nth(i).getAttribute('aria-label');
+  141 |     if (testLabel && targetSet.has(normalizeDash(testLabel))) {
+  142 |       await this.checkboxes.nth(i).scrollIntoViewIfNeeded();
+  143 |       await this.checkboxes.nth(i).click();
+  144 |       RawValueLogger.log(`Selected (exact): ${testLabel}`);
+  145 |     }
+  146 |   }
+  147 | }
+  148 | 
+  149 | /**
+  150 |  * Same flow as createRandomTestSetWithAllTheTests but uses exact-match selection.
+  151 |  * Required when the test list contains names that are substrings of other tests
+  152 |  * (e.g. "Spelling" would otherwise also select "Spelling of Sounds").
+  153 |  * Names test sets as 'AutoTest_<6 random alphanumeric chars>'.
+  154 |  */
+  155 | async createRandomTestSetWithExactTests(testNames: string[]) {
+  156 |   await this.page.bringToFront();
+  157 |   await this.clickTestSetsOnMenu();
+  158 |   await this.clickOnCreateNewTestSetButton();
+  159 |   await this.clickOnAllTestsTab();
+  160 |   await this.selectTheRequiredTestsExact(testNames);
+  161 |   await this.clickOnSaveButton();
+  162 |   const randomSuffix = Math.random().toString(36).slice(2, 8);
+  163 |   TestSetsPage.tSetName = `AutoTest_${randomSuffix}`;
+  164 |   await this.testSetName.fill(TestSetsPage.tSetName);
+  165 |   await this.clickOnSaveTestSetNameButton.click();
+  166 |   await this.clickClose();
+  167 |   await this.examinees.click();
+  168 |   await this.page.waitForLoadState("domcontentloaded");
+  169 |   await this.dashboardLoadingSpinnerIcon.waitFor({ state: "hidden", timeout: 2 * 60 * 1000 });
+  170 |   return TestSetsPage.tSetName;
+  171 | }
+  172 | 
+  173 |   async createTestAssignmentFromExamineeManagement(examineeID: string, education: string, normBasis: string, testSet: string = TestSetsPage.tSetName, launchAssignment: boolean = true) {
+  174 |     await this.page.waitForLoadState("domcontentloaded");
+  175 |     await this.dashboardLoadingSpinnerIcon.waitFor({ state: "hidden", timeout: 2 * 60 * 1000 });
+  176 |     await this.createTestAssignmentFromExamineePage.click();
+  177 |     await this.dashboardPage.selectExaminee(examineeID);
+  178 |     await this.clickOnNextButton();
+  179 |     await this.selectTestSet(testSet);
+  180 |     await this.clickOnNextButton();
+  181 |     await this.selectEducation(education);
+  182 |     await this.dashboardPage.selectNormBasis(normBasis);
+  183 |     await this.clickOnSaveButton();
+  184 |     if (launchAssignment) {
+  185 |       await this.dashboardPage.clickOnLaunchAssignmentButton();
+  186 |     } else {
+  187 |       await this.dashboardPage.closeTestAssignmentPopUp();
+  188 |     }
+  189 |   }
+  190 | 
+  191 |   async createTestAssignmentFromDashboard(examineeID: string, education: string, normBasis: string, testSet: string = TestSetsPage.tSetName, launchAssignment: boolean = true) {
+  192 |     await this.dashboardTab.click();
+  193 |     await this.page.waitForLoadState("domcontentloaded");
+  194 |     await this.dashboardPage.waitForLoadingSpinnerToDisappear();
+  195 |     await this.dashboardPage.waitForMyTestAssignmentsToBeVisible();
+  196 |     await this.createTestAssignment.click();
+  197 |     await this.dashboardPage.selectExaminee(examineeID);
+  198 |     await this.clickOnNextButton();
+  199 |     await this.selectTestSet(testSet);
+  200 |     await this.clickOnNextButton();
+  201 |     await this.selectEducation(education);
+  202 |     await this.dashboardPage.selectNormBasis(normBasis);
+  203 |     await this.clickOnSaveButton();
+  204 |     if (launchAssignment) {
+  205 |       await this.dashboardPage.clickOnLaunchAssignmentButton();
+  206 |     } else {
+  207 |       await this.dashboardPage.closeTestAssignmentPopUp();
+  208 |     }
+  209 |   }
+  210 | 
+  211 | async selectEducation(education: string ) {
+  212 |   await this.selectEducationButton.click();
+  213 |   await this.searchExamineeTestSetNameAndEducation.last().fill(education);
+  214 |   await this.selectEducationFromDropdown.last().click();
+  215 |   }
+  216 | async selectTestSet(testSet: string) {
+  217 |   await this.page.waitForTimeout(1000);
+  218 |   await this.selectTestSetNameButton.click();
+  219 |   await this.searchExamineeTestSetNameAndEducation.last().fill(testSet);
+> 220 |   await this.selectTestSetNameFromDropdown.last().click();
+      |                                                   ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  221 | }
+  222 | 
+  223 | async clickOnNextButton() {
+  224 |   await this.nextButton.click();
+  225 | }
+  226 | 
+  227 | async clickOnSaveButton() {
+  228 |   await this.page.setViewportSize({ width: 1920,height: 1080 });
+  229 |   await this.testSetSaveButton.click();
+  230 |   await this.page.setViewportSize({ width: 1280,height: 720 });
+  231 | }
+  232 | 
+  233 | }
+```
