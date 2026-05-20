@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "253",
+    "timestamp": "20260520_000000",
+    "runReason": "Bharathi_AE04_Smoke",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "(?=.*@AE_04)(?=.*@Smoke)(?!.*@content)",
+    "totalTests": 98,
+    "totalPassed": 82,
+    "totalFailed": 11,
+    "totalSkipped": 0,
+    "totalFlaky": 5,
+    "durationMs": 33036464
+  },
+  {
     "runNumber": "252",
     "timestamp": "20260520_000000",
     "runReason": "running (?=.*@AUT_ENG_03)(?=.*@Smoke)(?!.*@content) in PROD as a part of hot fix ",

@@ -1,0 +1,313 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: content_validation/webkit/SEMRET_pub_webkit.spec.ts >>  Automating the content tests >> For All correct scenario for SEMRET do content validation
+- Location: src/tests/content_validation/webkit/SEMRET_pub_webkit.spec.ts:24:9
+
+# Error details
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/SEMRET_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-All-correct-scenario-for-SEMRET-do-content-validation-1-chrome-linux.png, writing actual.
+```
+
+```
+Error: A snapshot doesn't exist at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/content_validation/webkit/SEMRET_pub_webkit.spec.ts-snapshots/-Automating-the-content-tests-For-All-correct-scenario-for-SEMRET-do-content-validation-2-chrome-linux.png, writing actual.
+```
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('//button[contains(text(),\'Start Practice Exercise\')]')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - banner [ref=e6]:
+    - button "Show Main Navigation" [ref=e7] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic [ref=e9] [cursor=pointer]: Semantic Word Retrieval
+      - button "View Test Information" [ref=e10] [cursor=pointer]:
+        - img [ref=e11]
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - 'button "N81608A81611, Lupe Age: 4y Grade: Kindergarten" [ref=e16] [cursor=pointer]':
+          - img [ref=e17]
+          - generic [ref=e20]:
+            - generic [ref=e21]: N81608A81611, Lupe
+            - generic [ref=e22]: "Age: 4y Grade: Kindergarten"
+        - button "Your browser is blocking voice capture" [ref=e23] [cursor=pointer]
+        - generic [ref=e26] [cursor=pointer]:
+          - img [ref=e27]
+          - img [ref=e31]
+      - generic [ref=e36]:
+        - button "Flag Item" [ref=e37] [cursor=pointer]:
+          - generic [ref=e38]: Flag
+        - button "Open Notes" [ref=e39] [cursor=pointer]:
+          - generic [ref=e40]: Note
+  - main "Examiner Assessment view" [ref=e41]:
+    - navigation "Item navigation" [ref=e42]:
+      - button "Item navigation" [expanded] [ref=e43]:
+        - img [ref=e45]
+      - radiogroup "Test items" [ref=e49]:
+        - generic [ref=e52]: Starting Point
+        - radio "Item 1 In Progress" [checked] [ref=e55]:
+          - generic [ref=e56]: Item 1
+          - img "In Progress" [ref=e57]
+        - radio "Item 2" [checked] [ref=e62]:
+          - generic [ref=e63]: Item 2
+          - img [ref=e64]
+        - radio "Item 3" [checked] [ref=e67]:
+          - generic [ref=e68]: Item 3
+          - img [ref=e69]
+        - generic [ref=e73]: End of Items
+    - generic [ref=e75]:
+      - 'heading "Item 1 * I want you to tell me all the different things you can think of that you can eat or drink. You will have one minute to name as many as you can. When I say, “Begin,” say the words as quickly as you can. * START TIMER * *and say: * Begin. *" [level=1] [ref=e76]':
+        - img [ref=e77]
+        - generic [ref=e82]:
+          - generic [ref=e83]: Item 1
+          - paragraph [ref=e84]:
+            - strong [ref=e86]:
+              - generic "* I want you to tell me all the different things you can think of that you can eat or drink. You will have one minute to name as many as you can. When I say, “Begin,” say the words as quickly as you can. *"
+              - generic [ref=e87]: I want you to tell me all the different things you can think of that you can eat or drink. You will have one minute to name as many as you can. When I say, “Begin,” say the words as quickly as you can.
+            - button "START TIMER" [ref=e90] [cursor=pointer]
+            - strong [ref=e92]:
+              - generic "* *"
+            - text: "and say:"
+            - strong [ref=e94]:
+              - generic "* Begin. *"
+              - text: Begin.
+      - generic [ref=e95]:
+        - img [ref=e96]
+        - paragraph [ref=e102]: Count brand names of foods or drinks as correct. Count variations of foods or drinks, such as cheese, cheddar cheese, blue cheese, or Parmesan, as separate correct answers.
+        - button "Close introduction text" [ref=e103] [cursor=pointer]: ✕
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - generic [ref=e106]: "0"
+          - 'generic "itemId: 13898" [ref=e107]': ITEM SCORE
+        - button "Go on to" [disabled] [ref=e109]:
+          - img [ref=e110]
+  - region "Examinee View" [ref=e113]:
+    - generic [ref=e115]:
+      - button "Hide examinee content - content is currently displayed" [ref=e116] [cursor=pointer]:
+        - generic [ref=e117]: Hide
+      - button "Activate Tablet Control" [ref=e118] [cursor=pointer]:
+        - generic [ref=e119]: Control
+      - button "Connection Status - Comms Up" [ref=e120] [cursor=pointer]
+      - button "Collapse examinee view" [ref=e121] [cursor=pointer]
+    - img [ref=e123]
+```
+
+# Test source
+
+```ts
+  1474 |   }
+  1475 | 
+  1476 |   async completeTheContentValidationForSTYRECTest(
+  1477 |     typeOfTest: string,
+  1478 |     stemForm: string,
+  1479 |     BbyC: number,
+  1480 |     flag: string,
+  1481 |     examineePage
+  1482 |   ): Promise<Map<string, string>> {
+  1483 |     let correctCount: number = 0;
+  1484 |     let inCorrectCount: number = 0;
+  1485 |     this.examineepage = examineePage;
+  1486 |     const lastItemNumber = await this.page.locator('.item-text').last().textContent()
+  1487 |     const itemNumber: number = Number(lastItemNumber.split(' ')[1]);
+  1488 |     console.log(`the last item number is = ${itemNumber}`);
+  1489 |     this.scoreTrail.set(` `, '^');
+  1490 |     for (let index = 1; index <= itemNumber; index++) {
+  1491 |       this.scoreTrail.set(`Item ${index}`, 'x');
+  1492 |     }
+  1493 |     console.log(`Type Of test ${typeOfTest} \n`);
+  1494 |     while (await this.plainNextButtonOrEndButton.isVisible()) {
+  1495 |       const testNames: string[] = ['STYREC.W5PA'];
+  1496 |       await this.page.waitForTimeout(1000);
+  1497 |       const itemDetails: string = (await this.itemDetails.textContent())!;
+  1498 |       console.log(itemDetails);
+  1499 |       const correctlocator: Locator = this.correctOptionButton;
+  1500 |       const iDontKnow: Locator = this.iDontKnowButton;
+  1501 |       const locatorWrapper: Locator = this.page.locator("//button[@class='select-option']");
+  1502 |       const elements = await locatorWrapper.count();
+  1503 |       const elementCounts = {
+  1504 |         'Story 1': 4,
+  1505 |         'Story 2': 6,
+  1506 |         'Story 3': 7,
+  1507 |         'Story 4': 7,
+  1508 |         'Story 5': 8,
+  1509 |         'Story 6': 8,
+  1510 |         'Story 7': 14,
+  1511 |         'Story 8': 17,
+  1512 |         'Story 9': 18,
+  1513 |         'Story 10': 19,
+  1514 |       };
+  1515 |       const isIntroduction = itemDetails.startsWith('Introduction');
+  1516 |       const isExcludedScenarios = typeOfTest !== 'All correct scenario for STYREC SSP4';
+  1517 | 
+  1518 |       if (isIntroduction && isExcludedScenarios) {
+  1519 |         await this.assertWithScreenShots();
+  1520 |       } else if (
+  1521 |         typeOfTest === 'All correct scenario for STYREC SSP1' ||
+  1522 |         typeOfTest === 'All correct scenario for STYREC SSP4'
+  1523 |       ) {
+  1524 |         if (elementCounts.hasOwnProperty(itemDetails)) {
+  1525 |           await this.assertWithScreenShots();
+  1526 |           const elementsToClick = Math.min(elementCounts[itemDetails], elements);
+  1527 |           for (let i = 0; i < elementsToClick; i++) {
+  1528 |             await locatorWrapper.nth(i).click();
+  1529 |           }
+  1530 |           await this.assertWithScreenShots();
+  1531 |         }
+  1532 |       } else {
+  1533 |         throw new Error(`The ${typeOfTest} didnt match with any of the conditions provided`);
+  1534 |       }
+  1535 |       await this.plainNextButtonOrEndButton.click();
+  1536 |       if ((await this.plainNextButtonOrEndButton.textContent()) === 'End Test') {
+  1537 |         break;
+  1538 |       }
+  1539 |     }
+  1540 |     console.log(`The Scores Trail = `, this.scoreTrail);
+  1541 |     return this.scoreTrail;
+  1542 |   }
+  1543 | 
+  1544 |   async completeTheContentValidationForSEMRETTest(
+  1545 |     typeOfTest: string,
+  1546 |     stemForm: string,
+  1547 |     BbyC: number,
+  1548 |     flag: string,
+  1549 |     examineePage
+  1550 |   ): Promise<Map<string, string>> {
+  1551 |     let correctCount: number = 0;
+  1552 |     let inCorrectCount: number = 0;
+  1553 |     this.examineepage = examineePage;
+  1554 | 
+  1555 |     const lastItemNumber = await this.page.locator('.item-text').last().textContent();
+  1556 |     const itemNumber: number = Number(lastItemNumber.split(' ')[1]);
+  1557 |     console.log(`the last item number is = ${itemNumber}`);
+  1558 | 
+  1559 |     this.scoreTrail.set(` `, '^');
+  1560 |     for (let index = 1; index <= itemNumber; index++) {
+  1561 |       this.scoreTrail.set(`Item ${index}`, 'x');
+  1562 |     }
+  1563 | 
+  1564 |     console.log(`Type Of test ${typeOfTest} \n`);
+  1565 | 
+  1566 |     while (await this.plainNextButtonOrEndButton.isVisible()) {
+  1567 |       await this.page.waitForTimeout(1000);
+  1568 |       const itemDetails: string = (await this.itemDetails.textContent())!;
+  1569 |       console.log(itemDetails);
+  1570 | 
+  1571 |       if (typeOfTest.match(/All correct scenario for SEMRET/i)) {
+  1572 |         if (itemDetails.startsWith('Item')) {
+  1573 |           await this.assertWithScreenShots();
+> 1574 |           await this.startPracticeAndStartTimerButton.click();
+       |                                                       ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  1575 |           await this.page.waitForTimeout(100);
+  1576 |           for (let i = 0; i < 20; i++) {
+  1577 |             await this.addButton.click();
+  1578 |           }
+  1579 |           await this.timeIsUp.waitFor({ state: 'visible' });
+  1580 |           await this.timerCloseButton.click();
+  1581 |           await this.assertWithScreenShots();
+  1582 |         }
+  1583 |       } else {
+  1584 |         throw new Error(`The ${typeOfTest} didnt match with any of the conditions provided`);
+  1585 |       }
+  1586 |       await this.plainNextButtonOrEndButton.click();
+  1587 |       if ((await this.plainNextButtonOrEndButton.textContent()) === 'End Test') {
+  1588 |         break;
+  1589 |       }
+  1590 |     }
+  1591 |     console.log(`The Scores Trail = `, this.scoreTrail);
+  1592 |     return this.scoreTrail;
+  1593 |   }
+  1594 | 
+  1595 |   async completeTheContentValidationForPHNRETTest(
+  1596 |     typeOfTest: string,
+  1597 |     stemForm: string,
+  1598 |     BbyC: number,
+  1599 |     flag: string,
+  1600 |     examineePage
+  1601 |   ): Promise<Map<string, string>> {
+  1602 |     let correctCount: number = 0;
+  1603 |     let inCorrectCount: number = 0;
+  1604 |     this.examineepage = examineePage;
+  1605 | 
+  1606 |     const lastItemNumber = await this.page.locator('.item-text').last().textContent();
+  1607 |     const itemNumber: number = Number(lastItemNumber.split(' ')[1]);
+  1608 |     console.log(`the last item number is = ${itemNumber}`);
+  1609 | 
+  1610 |     this.scoreTrail.set(` `, '^');
+  1611 |     for (let index = 1; index <= itemNumber; index++) {
+  1612 |       this.scoreTrail.set(`Item ${index}`, 'x');
+  1613 |     }
+  1614 | 
+  1615 |     console.log(`Type Of test ${typeOfTest} \n`);
+  1616 | 
+  1617 |     while (await this.plainNextButtonOrEndButton.isVisible()) {
+  1618 |       await this.page.waitForTimeout(1000);
+  1619 |       const itemDetails: string = (await this.itemDetails.textContent())!;
+  1620 |       console.log(itemDetails);
+  1621 | 
+  1622 |       if (typeOfTest.match(/All correct scenario for PHNRET/i)) {
+  1623 |         if (itemDetails.startsWith('Item')) {
+  1624 |           await this.assertWithScreenShots();
+  1625 |           await this.startTimer.click();
+  1626 |           await this.page.waitForTimeout(100);
+  1627 |           for (let i = 0; i < 20; i++) {
+  1628 |             await this.addButton.click();
+  1629 |           }
+  1630 |           await this.timeIsUp.waitFor({ state: 'visible' });
+  1631 |           await this.timerCloseButton.click();
+  1632 |           await this.assertWithScreenShots();
+  1633 |         }
+  1634 |       } else {
+  1635 |         throw new Error(`The ${typeOfTest} didnt match with any of the conditions provided`);
+  1636 |       }
+  1637 |       await this.plainNextButtonOrEndButton.click();
+  1638 |       if ((await this.plainNextButtonOrEndButton.textContent()) === 'End Test') {
+  1639 |         break;
+  1640 |       }
+  1641 |     }
+  1642 |     console.log(`The Scores Trail = `, this.scoreTrail);
+  1643 |     return this.scoreTrail;
+  1644 |   }
+  1645 | 
+  1646 |   async completeTheContentValidationForMTHFLUTest(
+  1647 |     typeOfTest: string,
+  1648 |     stemForm: string,
+  1649 |     BbyC: number,
+  1650 |     flag: string,
+  1651 |     examineePage
+  1652 |   ): Promise<Map<string, string>> {
+  1653 |     let correctCount: number = 0;
+  1654 |     let inCorrectCount: number = 0;
+  1655 |     this.examineepage = examineePage;
+  1656 | 
+  1657 |     const lastItemNumber = await this.page.locator('.item-text').last().textContent();
+  1658 |     const itemNumber: number = Number(lastItemNumber.split(' ')[1]);
+  1659 |     console.log(`the last item number is = ${itemNumber}`);
+  1660 | 
+  1661 |     this.scoreTrail.set(` `, '^');
+  1662 |     for (let index = 1; index <= itemNumber; index++) {
+  1663 |       this.scoreTrail.set(`Item ${index}`, 'x');
+  1664 |     }
+  1665 | 
+  1666 |     console.log(`Type Of test ${typeOfTest} \n`);
+  1667 | 
+  1668 |     while (await this.plainNextButtonOrEndButton.isVisible()) {
+  1669 |       await this.page.waitForTimeout(1000);
+  1670 |       const itemDetails: string = (await this.itemDetails.textContent())!;
+  1671 |       console.log(itemDetails);
+  1672 | 
+  1673 |       if (typeOfTest.match(/All correct scenario for MTHFLU/i)) {
+  1674 |         if (itemDetails.includes('Practice Exercise')) {
+```
