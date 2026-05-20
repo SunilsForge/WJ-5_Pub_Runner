@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "251",
+    "timestamp": "20260520_000000",
+    "runReason": "Run full regression @TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments|@ChatBot as a part of HOT FIX",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments|@ChatBot",
+    "totalTests": 100,
+    "totalPassed": 92,
+    "totalFailed": 6,
+    "totalSkipped": 1,
+    "totalFlaky": 1,
+    "durationMs": 41982023
+  },
+  {
     "runNumber": "250",
     "timestamp": "20260519_000000",
     "runReason": "Just  a Regression Run before Hot Fix",
