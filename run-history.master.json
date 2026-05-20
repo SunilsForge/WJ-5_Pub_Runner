@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "252",
+    "timestamp": "20260520_000000",
+    "runReason": "running (?=.*@AUT_ENG_03)(?=.*@Smoke)(?!.*@content) in PROD as a part of hot fix ",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "(?=.*@AUT_ENG_03)(?=.*@Smoke)(?!.*@content)",
+    "totalTests": 254,
+    "totalPassed": 238,
+    "totalFailed": 14,
+    "totalSkipped": 0,
+    "totalFlaky": 2,
+    "durationMs": 83309212
+  },
+  {
     "runNumber": "251",
     "timestamp": "20260520_000000",
     "runReason": "Run full regression @TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments|@ChatBot as a part of HOT FIX",
