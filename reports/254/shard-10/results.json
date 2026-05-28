@@ -340,7 +340,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 516889,
+                      "duration": 510794,
                       "errors": [],
                       "stdout": [
                         {
@@ -365,16 +365,16 @@
                           "text": "Trying to add an Examinee \n\n"
                         },
                         {
-                          "text": "Examinee ID N93016A94561\n"
+                          "text": "Examinee ID N15097A97141\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N93016A94561/dataFiles/Derived_Score_AutoFilter_Template_N93016A94561.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N15097A97141/dataFiles/Derived_Score_AutoFilter_Template_N15097A97141.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N93016A94561 FirstName=Felton LastName =N93016A94561 Age = 05/27/2021\n"
+                          "text": "Successfully added an Examinee  ID =N15097A97141 FirstName=Jeanne LastName =N15097A97141 Age = 05/28/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N93016A94561\n"
+                          "text": "Successfully selected examinee: N15097A97141\n"
                         },
                         {
                           "text": "Attempt 1: Checking accept button readiness.\n"
@@ -640,7 +640,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-28T04:06:27.057Z",
+                      "startTime": "2026-05-28T08:16:49.576Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -684,7 +684,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 525248,
+                      "duration": 519130,
                       "errors": [],
                       "stdout": [
                         {
@@ -711,42 +711,42 @@
                       "steps": [
                         {
                           "title": "Just Relauch the test assignment should not make the status move to 'In Progress'",
-                          "duration": 25857
+                          "duration": 25865
                         },
                         {
                           "title": "Opening up review mode for a submitted test assignment or just opening a test will not automatically change that test assignment to return back to in progress status",
-                          "duration": 67615
+                          "duration": 67378
                         },
                         {
                           "title": " For a test assignment to change back to ‘In progress’ from ‘Submitted’ in review mode, the user needs to change an answer.",
-                          "duration": 52261
+                          "duration": 52017
                         },
                         {
                           "title": " Verify Submitted test assignment in review mode should change ‘In progress’ to ‘Submitted’.",
-                          "duration": 37203
+                          "duration": 37199
                         },
                         {
                           "title": " For a test assignment to change back to ‘In progress’ from ‘Submitted’ in review mode, the user add a test to their test assignment.",
-                          "duration": 80704
+                          "duration": 80538
                         },
                         {
                           "title": " If a user is in review mode for a Submitted test assignment and “skips” a test using the side test set panel",
-                          "duration": 38358
+                          "duration": 38873
                         },
                         {
                           "title": " If a user is in review mode for a Submitted test assignment and adds any notes, or flags/unflags an item the test assignment will not return to in progress status",
-                          "duration": 52326
+                          "duration": 52067
                         },
                         {
                           "title": " verify that saved notes test level is displays on the HTML report",
-                          "duration": 20915
+                          "duration": 20257
                         },
                         {
                           "title": "Launching the test in admin mode will make the status move to 'In Progress'",
-                          "duration": 82285
+                          "duration": 78982
                         }
                       ],
-                      "startTime": "2026-05-28T04:15:04.535Z",
+                      "startTime": "2026-05-28T08:25:21.000Z",
                       "annotations": [
                         {
                           "type": "Original user story, Automation user story",
@@ -776,8 +776,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-28T04:06:11.448Z",
-    "duration": 1058671.3299999998,
+    "startTime": "2026-05-28T08:16:33.321Z",
+    "duration": 1047140.644,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

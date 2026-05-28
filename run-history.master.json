@@ -7,11 +7,11 @@
     "browser": "chrome",
     "testPattern": "(?=.*@Aut_Eng_01)(?=.*@smoke)",
     "totalTests": 38,
-    "totalPassed": 9,
-    "totalFailed": 28,
+    "totalPassed": 34,
+    "totalFailed": 4,
     "totalSkipped": 0,
-    "totalFlaky": 1,
-    "durationMs": 34718001
+    "totalFlaky": 0,
+    "durationMs": 17456602
   },
   {
     "runNumber": "253",

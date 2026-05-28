@@ -308,8 +308,8 @@
   "suites": [],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-28T04:06:05.431Z",
-    "duration": 14299.338000000002,
+    "startTime": "2026-05-28T08:16:32.788Z",
+    "duration": 13630.294,
     "expected": 0,
     "skipped": 0,
     "unexpected": 0,
