@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "254",
+    "timestamp": "20260528_000000",
+    "runReason": "Running SMOKE in STAGE as a part of Patching",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Aut_Eng_01)(?=.*@smoke)",
+    "totalTests": 38,
+    "totalPassed": 9,
+    "totalFailed": 28,
+    "totalSkipped": 0,
+    "totalFlaky": 1,
+    "durationMs": 34718001
+  },
+  {
     "runNumber": "253",
     "timestamp": "20260520_000000",
     "runReason": "Bharathi_AE04_Smoke",

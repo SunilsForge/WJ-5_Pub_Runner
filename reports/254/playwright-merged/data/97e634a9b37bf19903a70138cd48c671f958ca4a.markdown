@@ -1,0 +1,258 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: derived_scores(compounds & clusters)/GFGC_cluster_pub.spec.ts >>  GFGC cluster Derived Export Automation  >> For OVSYN - K12 - All incorrect scenario,OVANT - K12 - Attain Quick Basal Ceiling scenario,MATRCZ - K12 - All incorrect scenario,VRBANL - K12 - Attain Quick Basal Ceiling scenario,ANLSYN - K12 - All correct scenario Complete The GFGC cluster & generate report
+- Location: src/tests/derived_scores(compounds & clusters)/GFGC_cluster_pub.spec.ts:29:9
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 120000ms exceeded.
+Call log:
+  - waiting for getByRole('heading', { name: 'My Test Assignments' }) to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - banner "Clinical Products Header" [ref=e5]:
+    - generic [ref=e6]:
+      - button "Skip to main Content" [ref=e7]
+      - generic [ref=e9]: Riverside Insights Logo
+      - generic [ref=e10]:
+        - heading "Hello undefined undefined" [level=2]
+        - navigation [ref=e13]:
+          - button "Contact Us" [ref=e14] [cursor=pointer]
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - switch "Offline Mode" [checked] [ref=e17] [cursor=pointer]: "ON"
+      - text: Offline Mode
+    - navigation [ref=e18]:
+      - img [ref=e19]
+      - separator [ref=e29]
+      - paragraph [ref=e30]: It looks like you're not connected to the internet, and we couldn't find any downloaded assignments on this device. To use the Riverside Score Application offline, please connect to the internet and download your assignments in advance.
+      - paragraph [ref=e31]: If you believe this is an error or you're unsure whether you have access to the WJ V product, please contact your administrator or our customer support team.
+      - heading "Customer Support" [level=3] [ref=e32]
+      - generic [ref=e33]:
+        - text: "Tel: 800-323-9540"
+        - text: "Customer Support Hours:"
+        - text: Monday - Friday
+        - text: 8 A.M. - 4 P.M. Central Time
+        - text: "All other inquires can be sent to:"
+        - link "inquiry@service.riversideinsights.com" [ref=e34] [cursor=pointer]:
+          - /url: mailto:inquiry@service.riversideinsights.com
+```
+
+# Test source
+
+```ts
+  420 | 
+  421 |   async selectEducation(education: string = "In Kindergarten") {
+  422 |     // education = await this.getEducation();
+  423 |     await this.page
+  424 |       .locator(".placeholder")
+  425 |       .getByText("Select Education")
+  426 |       .click();
+  427 |     await this.searchInputBox.last().fill(education);
+  428 |     await this.page.locator(".single-select-parent").last().click();
+  429 |   }
+  430 | 
+  431 |   async selectTestAssignmentDefaults(val: string = "Age") {
+  432 |     await this.page
+  433 |       .locator('[class*="checkbox"]')
+  434 |       .filter({ hasText: val })
+  435 |       .locator(".radio-item")
+  436 |       .click();
+  437 |   }
+  438 | 
+  439 |   async clickNextButton() {
+  440 |     await this.page.getByText("Next").click();
+  441 |   }
+  442 | 
+  443 |   async clickSaveButton() {
+  444 |     await this.page.getByText("Save").click();
+  445 |   }
+  446 | 
+  447 |   private async selectExaminee(examineeID: string) {
+  448 |     await this.page
+  449 |       .getByPlaceholder("Search by Examinee Name or ID")
+  450 |       .fill(examineeID);
+  451 |     await this.page
+  452 |       .locator(".item-text")
+  453 |       .getByText(new RegExp(`^${examineeID}.*`))
+  454 |       .first()
+  455 |       .click();
+  456 |   }
+  457 | 
+  458 |   private async selectExaminer(examinerID: string) {
+  459 |     await this.page
+  460 |       .getByPlaceholder("Search by Examiner Name or ID")
+  461 |       .fill(examinerID);
+  462 |     await this.page.locator(".item-text").getByText(examinerID).first().click();
+  463 |   }
+  464 | 
+  465 |   private async selectTestBlock(testBlock: string) {
+  466 |     await this.page.getByPlaceholder("Search by Test Block").fill(testBlock);
+  467 |     await this.page
+  468 |       .locator(".item-text")
+  469 |       .getByText(new RegExp(`^${testBlock}.*`))
+  470 |       .first()
+  471 |       .click();
+  472 |   }
+  473 | 
+  474 |   private async selectGender(value: string) {
+  475 |     await this.page.locator("div[role='dialog'] button[class='select-box']").click();
+  476 |     await this.page
+  477 |       .locator(".item-text")
+  478 |       .getByText(new RegExp(`^${value}.*`))
+  479 |       .first()
+  480 |       .click();
+  481 |   }
+  482 | 
+  483 |   private async selectLocation(value?: string) {
+  484 |     try {
+  485 |       await this.page
+  486 |         .getByText("Select examinee location")
+  487 |         .click({ timeout: 5000 });
+  488 |       await this.page.locator(".item-text").last().click();
+  489 |     } catch (error) {
+  490 |       console.error(
+  491 |         "Location is already selected by default, or there was an issue selecting the location.",
+  492 |       );
+  493 |     }
+  494 |   }
+  495 | 
+  496 |   private async goToTheMainMenuChildPage(mainMenuDd: string): Promise<boolean>;
+  497 |   private async goToTheMainMenuChildPage(
+  498 |     mainMenuDd: string,
+  499 |     childDd: string,
+  500 |   ): Promise<boolean>;
+  501 |   private async goToTheMainMenuChildPage(
+  502 |     mainMenuDd: string,
+  503 |     childDd?: string,
+  504 |   ): Promise<boolean> {
+  505 |     this.waitForLoaderToDisappear();
+  506 |     await this.page.locator(`button[role='menuitem']:text('${mainMenuDd}')`).click();
+  507 |     await this.page.waitForLoadState("load");
+  508 |     if (childDd) {
+  509 |       const val: Locator = this.page
+  510 |         .locator(`//button[text() = '${childDd}']`)
+  511 |         .first();
+  512 |       await val.waitFor({ state: "visible" });
+  513 |       await val.click();
+  514 |     }
+  515 |     return true;
+  516 |   }
+  517 |   async welcomeTextToBeVisable() {
+  518 |     await this.page.bringToFront();
+  519 | 
+> 520 |     await this.myTestAssignments.waitFor({
+      |                                  ^ TimeoutError: locator.waitFor: Timeout 120000ms exceeded.
+  521 |       state: "visible",
+  522 |       timeout: 2 * 60 * 1000,
+  523 |     });
+  524 | 
+  525 |     console.log("My Test Assignments is visible");
+  526 |   }
+  527 | 
+  528 |   async clickOnAddExaminerPlusButton() {
+  529 |     await this.addExamonerPlusButton.click();
+  530 |     await expect(this.page).toHaveScreenshot();
+  531 |   }
+  532 | 
+  533 |   async clickOnZoomPageInIcon() {
+  534 |     await this.zoomPageInIcon.hover();
+  535 |     await this.zoomPageInIcon.click();
+  536 |   }
+  537 | 
+  538 |   async searchIconISVisable() {
+  539 |     await expect(this.searchIcon).toBeVisible();
+  540 |   }
+  541 | 
+  542 |   async clickOnTheRecentExamineeOnceFullyLoaded(studentID: string) {
+  543 |     // const relogging = new Wj5LoginPage(this.page);
+  544 |     // await relogging.reloginIfneeded(
+  545 |     //   examiner.userName,
+  546 |     //   examiner.passWord,
+  547 |     // );
+  548 |     await this.page.waitForTimeout(5000);
+  549 | 
+  550 |     await this.ExaminerloadingIcon.waitFor({ state: "detached" });
+  551 | 
+  552 |     try {
+  553 |       await this.page.getByText(studentID).first().click({ trial: true });
+  554 |       await this.page.getByText(studentID).first().click({ timeout: 5000 });
+  555 |     } catch (error) {
+  556 |       console.error(
+  557 |         `Saw Examiner DashBoard Blank/Examinee Not available ... but still trying to relogin ... ${error}`,
+  558 |       );
+  559 |       await this.examinerRelogin(studentID);
+  560 |     }
+  561 |   }
+  562 | 
+  563 |   async examinerRelogin(studentID: string) {
+  564 |     await this.page.getByText("Sign Out").first().click();
+  565 |     await expect(this.page.locator(".login-riverside-logo")).toBeVisible();
+  566 |     await this.page.getByPlaceholder("Username").click();
+  567 |     await this.page.getByPlaceholder("Username").fill(examiner.userName);
+  568 |     await this.page.getByPlaceholder("Username").fill(examiner.userName);
+  569 |     await this.page.getByPlaceholder("Password").click();
+  570 |     await this.page.getByPlaceholder("Password").fill(examiner.passWord);
+  571 |     await this.page.getByPlaceholder("Password").fill(examiner.passWord);
+  572 |     await this.page.getByPlaceholder("Password").press("Enter");
+  573 |     await this.page.getByLabel("WJ 5 Researcher,").click();
+  574 |     await expect(
+  575 |       this.page.getByText("Welcome to the WJ V Research Portal!", {
+  576 |         exact: true,
+  577 |       }),
+  578 |       { message: "Not able to find wj5 welcome TExt on DashBoard" },
+  579 |     ).toBeVisible();
+  580 | 
+  581 |     await this.ExaminerloadingIcon.waitFor({ state: "hidden" });
+  582 |     await this.page.getByText(studentID).first().click();
+  583 |     await this.page.waitForTimeout(3000);
+  584 |   }
+  585 | 
+  586 |   async waitUntilCinfirmButtonisvisableAndClickOnIt() {
+  587 |     await this.confirmButton.click();
+  588 |     await this.page.waitForTimeout(6000);
+  589 |   }
+  590 | 
+  591 |   async ClickonlaunchTestIcon() {
+  592 |     await this.launchTestIcon.click();
+  593 |   }
+  594 |   async ClickonStartWithOutExamineeBtn() {
+  595 |     await this.startWithoutExaminee.click();
+  596 |   }
+  597 |   async clickOnTheStudentLink(wj5examinerUtils) {
+  598 |     const childPage: Page = await wj5examinerUtils.switchtoChildPage(
+  599 |       this.studentLink,
+  600 |     );
+  601 |     this.sessionID = await this.sessionCode.textContent();
+  602 |     this.wj5examineePage = new wj5ExamineePage(childPage, this.sessionID);
+  603 |     console.log(this.sessionID);
+  604 |   }
+  605 | 
+  606 |   async getSessionID() {
+  607 |     this.sessionID = await this.sessionCode.textContent();
+  608 |     return this.sessionID;
+  609 |   }
+  610 | 
+  611 |   async reloadPage() {
+  612 |     await this.page.reload({ waitUntil: "load" });
+  613 |   }
+  614 | 
+  615 |   async getExamoneepage(): Promise<wj5ExamineePage> {
+  616 |     return this.wj5examineePage;
+  617 |   }
+  618 | 
+  619 |   async clickOnTheResportToDownload(testinfo: TestInfo) {
+  620 |     await this.page.waitForTimeout(5000);
+```
