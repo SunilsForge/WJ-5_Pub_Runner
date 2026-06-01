@@ -1,0 +1,1302 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/26737023110"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 10,
+      "total": 10
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/InProgressTestAssignments.spec.ts",
+      "file": "functional/InProgressTestAssignments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verify review mode for my 'In Progress' test assignments",
+          "file": "functional/InProgressTestAssignments.spec.ts",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Administer a selective test and leave the test in diff statuses as a part of 'in progress' test assignment validation",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "ReviewMode",
+                "InProgressTestAssignments",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 2400000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1715716,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W0] Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N80451A46699\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N80451A46699 FirstName=Nedra LastName =N80451A46699 Age = 06/01/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N80451A46699\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 15542|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Analysis-Synthesis\n"
+                        },
+                        {
+                          "text": "Block Rotation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18158|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17958|Ages 4 to 6|17959\n"
+                        },
+                        {
+                          "text": "Letter-Word Identification\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17634|Age 6|17635\n"
+                        },
+                        {
+                          "text": "Math Facts Fluency\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14497|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Number-Pattern Matching\n"
+                        },
+                        {
+                          "text": "taskStem value: NUMPAT.W5PA\n"
+                        },
+                        {
+                          "text": "Number Series\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13064|Ages 4 to 5|\n"
+                        },
+                        {
+                          "text": "Rapid Letter Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 15353|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Number Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18767|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Phoneme Naming\n"
+                        },
+                        {
+                          "text": "Story Recall\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13902|Ages 4 to 6|13903\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18198|Ages 5 to 7|18199,18200\n"
+                        },
+                        {
+                          "text": "Semantic Word Retrieval\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error while clicking on Next button : locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"end-test-button\" class=\"plain-button nav-button\">End Test</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestInAdministrationMode \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:9337:60\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/functional/InProgressTestAssignments.spec.ts:104:30 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts'\u001b[39m,\n      line: \u001b[33m9337\u001b[39m,\n      column: \u001b[33m60\u001b[39m,\n      function: \u001b[32m'CommonTestPage.completeTestInAdministrationMode'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m'button.plain-button.next-item-button, button.plain-button.nav-button >> nth=-1'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@863'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@863'\u001b[39m,\n      _title: \u001b[32m\"Click locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1780293192865\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button id=\"end-test-button\" class=\"plain-button nav-button\">End Test</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button id=\"end-test-button\" class=\"plain-button nav-button\">End Test</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.completeTestInAdministrationMode (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:9337:60)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:104:30'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verify statuses of the tests from left nav > tests'",
+                          "duration": 7626
+                        }
+                      ],
+                      "startTime": "2026-06-01T05:32:52.942Z",
+                      "annotations": [],
+                      "attachments": []
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1597734,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W1] Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N64481A8898\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N64481A8898 FirstName=Elinor LastName =N64481A8898 Age = 06/01/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N64481A8898\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 15542|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Analysis-Synthesis\n"
+                        },
+                        {
+                          "text": "Block Rotation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18158|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17958|Ages 4 to 6|17959\n"
+                        },
+                        {
+                          "text": "Letter-Word Identification\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17634|Age 6|17635\n"
+                        },
+                        {
+                          "text": "Math Facts Fluency\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14497|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Number-Pattern Matching\n"
+                        },
+                        {
+                          "text": "taskStem value: NUMPAT.W5PA\n"
+                        },
+                        {
+                          "text": "Number Series\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13064|Ages 4 to 5|\n"
+                        },
+                        {
+                          "text": "Rapid Letter Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 15353|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Number Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18767|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Phoneme Naming\n"
+                        },
+                        {
+                          "text": "Story Recall\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13902|Ages 4 to 6|13903\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18198|Ages 5 to 7|18199,18200\n"
+                        },
+                        {
+                          "text": "Semantic Word Retrieval\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Verify statuses of the tests from left nav > tests'",
+                          "duration": 7114
+                        }
+                      ],
+                      "startTime": "2026-06-01T06:06:06.157Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "49eef29cefdee46ec9fe-04de2063787606b26157",
+              "file": "functional/InProgressTestAssignments.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "Validate different scenarios for 'In Progress' test assignment in review mode",
+              "ok": true,
+              "tags": [
+                "ReviewMode",
+                "InProgressTestAssignments",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [
+                    {
+                      "type": "Original user story, Automation user story",
+                      "description": "27994, (29273, 29290)",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts",
+                        "line": 180,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 266548,
+                      "error": {
+                        "message": "Error: Test failures:\nTime is up popup is not visible ...', 'Clicking on End Test button to get it",
+                        "stack": "Error: Test failures:\nTime is up popup is not visible ...', 'Clicking on End Test button to get it\n    at Function.checkErrors (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts:45:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:366:14",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts",
+                          "column": 19,
+                          "line": 45
+                        },
+                        "snippet": "   at ../utils/rawValueLogger.ts:45\n\n\u001b[0m \u001b[90m 43 |\u001b[39m     \u001b[36mstatic\u001b[39m checkErrors() {\n \u001b[90m 44 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrors\u001b[33m.\u001b[39mlength \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Test failures:\\n'\u001b[39m \u001b[33m+\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrors\u001b[33m.\u001b[39mjoin(\u001b[32m'\\n'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m         }\n \u001b[90m 47 |\u001b[39m     }\n \u001b[90m 48 |\u001b[39m }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts",
+                            "column": 19,
+                            "line": 45
+                          },
+                          "message": "Error: Test failures:\nTime is up popup is not visible ...', 'Clicking on End Test button to get it\n\n   at ../utils/rawValueLogger.ts:45\n\n  43 |     static checkErrors() {\n  44 |         if (this.errors.length > 0) {\n> 45 |             throw new Error('Test failures:\\n' + this.errors.join('\\n'));\n     |                   ^\n  46 |         }\n  47 |     }\n  48 | }\n    at Function.checkErrors (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts:45:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts:366:14"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W0] Login successful for S11PwAut25Ex_01\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verify statuses for test administered at left nav > tests",
+                          "duration": 15434
+                        },
+                        {
+                          "title": "Verify 'Score Later', 'Needs Attention', 'Invalidated' and 'Flagged' in review mode Administration Summary",
+                          "duration": 20363
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when clicked on blue hyperlink",
+                          "duration": 11386
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when selected test from Left Nav>Tests",
+                          "duration": 13794
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from Administration Summary",
+                          "duration": 22442
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from left nav > tests",
+                          "duration": 11223
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from Administration Summary",
+                          "duration": 10086
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from left nav > tests",
+                          "duration": 22356
+                        },
+                        {
+                          "title": "Validate 'Score error (Need Attention)' functionality from Administration Summary",
+                          "duration": 90032
+                        }
+                      ],
+                      "startTime": "2026-06-01T06:01:29.328Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "27994, (29273, 29290)",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts",
+                            "line": 180,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-d6f5e-t-assignment-in-review-mode-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-InProgressTestA-d6f5e-t-assignment-in-review-mode-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts",
+                        "column": 19,
+                        "line": 45
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 250683,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W1] Login successful for S11PwAut25Ex_01\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Verify statuses for test administered at left nav > tests",
+                          "duration": 15289
+                        },
+                        {
+                          "title": "Verify 'Score Later', 'Needs Attention', 'Invalidated' and 'Flagged' in review mode Administration Summary",
+                          "duration": 19784
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when clicked on blue hyperlink",
+                          "duration": 10865
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when selected test from Left Nav>Tests",
+                          "duration": 13289
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from Administration Summary",
+                          "duration": 21566
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from left nav > tests",
+                          "duration": 10776
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from Administration Summary",
+                          "duration": 9572
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from left nav > tests",
+                          "duration": 21407
+                        },
+                        {
+                          "title": "Validate 'Score error (Need Attention)' functionality from Administration Summary",
+                          "duration": 88144
+                        }
+                      ],
+                      "startTime": "2026-06-01T06:32:44.395Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "27994, (29273, 29290)",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/InProgressTestAssignments.spec.ts",
+                            "line": 180,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "49eef29cefdee46ec9fe-10ea8c8bf44423f8a889",
+              "file": "functional/InProgressTestAssignments.spec.ts",
+              "line": 180,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "functional/SubmittedTestAssignments.spec.ts",
+      "file": "functional/SubmittedTestAssignments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "I want the ability to launch into review mode for my submitted test assignments",
+          "file": "functional/SubmittedTestAssignments.spec.ts",
+          "line": 31,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Complete testing for tests selected in the block and submit",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "ReviewMode",
+                "SubmittedTestAssignments",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 511014,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S10:W2] Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W2] Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N85319A6467\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N85319A6467/dataFiles/Derived_Score_AutoFilter_Template_N85319A6467.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N85319A6467 FirstName=Francesco LastName =N85319A6467 Age = 06/01/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N85319A6467\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Oral Vocabulary–Synonyms\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 11\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17738|Ages 4 to 11|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 25\n"
+                        },
+                        {
+                          "text": "Type Of test OVSYN - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(29) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'N/A'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'N/A'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxx@N/AN/A\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Oral Vocabulary–Antonyms\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 8\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17770|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 30\n"
+                        },
+                        {
+                          "text": "Type Of test OVANT - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(34) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m },\n  \u001b[32m'OVANT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m422.07\u001b[39m, Semw: \u001b[33m15.06\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Matrices\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 11\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16746|Ages 4 to 11|16747\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MATRCZ - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Block A, Item 1\n"
+                        },
+                        {
+                          "text": "Block A, Item 2\n"
+                        },
+                        {
+                          "text": "Block A, Item 3\n"
+                        },
+                        {
+                          "text": "Block A, Item 4\n"
+                        },
+                        {
+                          "text": "Block A, Item 5\n"
+                        },
+                        {
+                          "text": "Block A, Item 6\n"
+                        },
+                        {
+                          "text": "Block A, Item 7\n"
+                        },
+                        {
+                          "text": "Block A, Item 8\n"
+                        },
+                        {
+                          "text": "Map(43) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Introduction 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block A, Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 6'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 7'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 8'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block B, Item 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 5'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Introduction 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Introduction 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 5'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 5'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^x00000000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m },\n  \u001b[32m'OVANT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m422.07\u001b[39m, Semw: \u001b[33m15.06\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'MATRCZ.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m441.8\u001b[39m, Semw: \u001b[33m15.55\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Verbal Attention\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 8\n"
+                        },
+                        {
+                          "text": "selected ssp is = 12973|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 36\n"
+                        },
+                        {
+                          "text": "Type Of test VRBATN - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(40) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m },\n  \u001b[32m'OVANT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m422.07\u001b[39m, Semw: \u001b[33m15.06\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'MATRCZ.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m441.8\u001b[39m, Semw: \u001b[33m15.55\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'VRBATN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m421.34\u001b[39m, Semw: \u001b[33m14.92\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-01T06:36:56.471Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5000e6af19a29c325986-b72d5a42dd7365263961",
+              "file": "functional/SubmittedTestAssignments.spec.ts",
+              "line": 35,
+              "column": 9
+            },
+            {
+              "title": "Validate different scenarios in submitted test assignment in review mode",
+              "ok": true,
+              "tags": [
+                "ReviewMode",
+                "SubmittedTestAssignments",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [
+                    {
+                      "type": "Original user story, Automation user story",
+                      "description": "27995, 29065",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/SubmittedTestAssignments.spec.ts",
+                        "line": 168,
+                        "column": 9
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 521893,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W2] Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Just Relauch the test assignment should not make the status move to 'In Progress'",
+                          "duration": 25918
+                        },
+                        {
+                          "title": "Opening up review mode for a submitted test assignment or just opening a test will not automatically change that test assignment to return back to in progress status",
+                          "duration": 67462
+                        },
+                        {
+                          "title": " For a test assignment to change back to ‘In progress’ from ‘Submitted’ in review mode, the user needs to change an answer.",
+                          "duration": 52159
+                        },
+                        {
+                          "title": " Verify Submitted test assignment in review mode should change ‘In progress’ to ‘Submitted’.",
+                          "duration": 37232
+                        },
+                        {
+                          "title": " For a test assignment to change back to ‘In progress’ from ‘Submitted’ in review mode, the user add a test to their test assignment.",
+                          "duration": 80652
+                        },
+                        {
+                          "title": " If a user is in review mode for a Submitted test assignment and “skips” a test using the side test set panel",
+                          "duration": 37997
+                        },
+                        {
+                          "title": " If a user is in review mode for a Submitted test assignment and adds any notes, or flags/unflags an item the test assignment will not return to in progress status",
+                          "duration": 52212
+                        },
+                        {
+                          "title": " verify that saved notes test level is displays on the HTML report",
+                          "duration": 20220
+                        },
+                        {
+                          "title": "Launching the test in admin mode will make the status move to 'In Progress'",
+                          "duration": 81885
+                        }
+                      ],
+                      "startTime": "2026-06-01T06:45:28.051Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "27995, 29065",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/SubmittedTestAssignments.spec.ts",
+                            "line": 168,
+                            "column": 9
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5000e6af19a29c325986-6b0a64eff4159d826ac1",
+              "file": "functional/SubmittedTestAssignments.spec.ts",
+              "line": 168,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-01T05:32:37.016Z",
+    "duration": 4893237.972,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 1
+  }
+}
