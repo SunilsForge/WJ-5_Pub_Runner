@@ -1,0 +1,597 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: test_dataExport/CALC_Pub.spec.ts >> CALC.W5PA Test Data Export Automation  >> For Ages 4 to 6 - All correct scenario Conduct test and validate report
+- Location: src/tests/test_dataExport/CALC_Pub.spec.ts:20:9
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "58"
+Received string:    ""
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "12"
+Received string:    ""
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "-9"
+Received string:    ""
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "8"
+Received string:    ""
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "-63"
+Received string:    ""
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "110"
+Received string:    ""
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "910"
+Received string:    ""
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "a"
+Received string:    ""
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "x"
+Received string:    "and"
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "4a2x2x+a"
+Received string:    ""
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "x"
+Received string:    "and"
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "ex"
+Received string:    ""
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "30x4"
+Received string:    ""
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "-5"
+Received string:    ""
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "πh34"
+Received string:    ""
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S07PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S07PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - heading "REPORT CENTER" [level=1] [ref=e39]
+            - navigation [ref=e40]:
+              - tablist [ref=e41]:
+                - tab "Report Library" [selected] [ref=e42] [cursor=pointer]
+                - button "Zoom In" [ref=e43] [cursor=pointer]:
+                  - img "Zoom Page In Icon" [ref=e44]
+            - generic "Report Library" [ref=e53]:
+              - grid [ref=e54]:
+                - generic [ref=e55]:
+                  - generic "Report Name" [ref=e56]:
+                    - generic [ref=e58]: Report Name
+                  - generic "Status" [ref=e59]:
+                    - generic [ref=e61]: Status
+                  - generic "Date Created" [ref=e62]:
+                    - generic [ref=e64]: Date Created
+                  - generic "Actions" [ref=e65]:
+                    - generic [ref=e67]: Actions
+                - rowgroup [ref=e68]:
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N1954A88634 Status Completed Date Created 06/01/2026 12:11 AM Download/Print Delete View Data Export Format" [ref=e69]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N1954A88634" [ref=e71]: Test_DataExport_AutoFilter_Template_N1954A88634
+                    - gridcell "Status Completed" [ref=e73]: Completed
+                    - gridcell "Date Created 06/01/2026 12:11 AM" [ref=e75]: 06/01/2026 12:11 AM
+                    - generic [ref=e76]:
+                      - gridcell "Download/Print" [active] [ref=e78] [cursor=pointer]
+                      - gridcell "Delete" [ref=e80] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e81] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N91201A47491 Status Completed Date Created 06/01/2026 12:04 AM Download/Print Delete View Data Export Format" [ref=e83]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N91201A47491" [ref=e85]: Test_DataExport_AutoFilter_Template_N91201A47491
+                    - gridcell "Status Completed" [ref=e87]: Completed
+                    - gridcell "Date Created 06/01/2026 12:04 AM" [ref=e89]: 06/01/2026 12:04 AM
+                    - generic [ref=e90]:
+                      - gridcell "Download/Print" [ref=e92] [cursor=pointer]
+                      - gridcell "Delete" [ref=e94] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e95] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N13120A35666 Status Completed Date Created 05/31/2026 11:59 PM Download/Print Delete View Data Export Format" [ref=e97]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N13120A35666" [ref=e99]: Test_DataExport_AutoFilter_Template_N13120A35666
+                    - gridcell "Status Completed" [ref=e101]: Completed
+                    - gridcell "Date Created 05/31/2026 11:59 PM" [ref=e103]: 05/31/2026 11:59 PM
+                    - generic [ref=e104]:
+                      - gridcell "Download/Print" [ref=e106] [cursor=pointer]
+                      - gridcell "Delete" [ref=e108] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e109] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N37381A3224 Status Completed Date Created 05/31/2026 11:54 PM Download/Print Delete View Data Export Format" [ref=e111]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N37381A3224" [ref=e113]: Test_DataExport_AutoFilter_Template_N37381A3224
+                    - gridcell "Status Completed" [ref=e115]: Completed
+                    - gridcell "Date Created 05/31/2026 11:54 PM" [ref=e117]: 05/31/2026 11:54 PM
+                    - generic [ref=e118]:
+                      - gridcell "Download/Print" [ref=e120] [cursor=pointer]
+                      - gridcell "Delete" [ref=e122] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e123] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N9109A1231 Status Completed Date Created 05/31/2026 11:50 PM Download/Print Delete View Data Export Format" [ref=e125]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N9109A1231" [ref=e127]: Test_DataExport_AutoFilter_Template_N9109A1231
+                    - gridcell "Status Completed" [ref=e129]: Completed
+                    - gridcell "Date Created 05/31/2026 11:50 PM" [ref=e131]: 05/31/2026 11:50 PM
+                    - generic [ref=e132]:
+                      - gridcell "Download/Print" [ref=e134] [cursor=pointer]
+                      - gridcell "Delete" [ref=e136] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e137] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N21333A38602 Status Completed Date Created 05/28/2026 04:16 AM Download/Print Delete View Data Export Format" [ref=e139]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N21333A38602" [ref=e141]: Derived_Score_AutoFilter_Template_N21333A38602
+                    - gridcell "Status Completed" [ref=e143]: Completed
+                    - gridcell "Date Created 05/28/2026 04:16 AM" [ref=e145]: 05/28/2026 04:16 AM
+                    - generic [ref=e146]:
+                      - gridcell "Download/Print" [ref=e148] [cursor=pointer]
+                      - gridcell "Delete" [ref=e150] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e151] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N25812A62070 Status Completed Date Created 05/28/2026 04:11 AM Download/Print Delete View Data Export Format" [ref=e153]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N25812A62070" [ref=e155]: Derived_Score_AutoFilter_Template_N25812A62070
+                    - gridcell "Status Completed" [ref=e157]: Completed
+                    - gridcell "Date Created 05/28/2026 04:11 AM" [ref=e159]: 05/28/2026 04:11 AM
+                    - generic [ref=e160]:
+                      - gridcell "Download/Print" [ref=e162] [cursor=pointer]
+                      - gridcell "Delete" [ref=e164] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e165] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N14945A67412 Status Completed Date Created 05/28/2026 04:05 AM Download/Print Delete View Data Export Format" [ref=e167]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N14945A67412" [ref=e169]: Derived_Score_AutoFilter_Template_N14945A67412
+                    - gridcell "Status Completed" [ref=e171]: Completed
+                    - gridcell "Date Created 05/28/2026 04:05 AM" [ref=e173]: 05/28/2026 04:05 AM
+                    - generic [ref=e174]:
+                      - gridcell "Download/Print" [ref=e176] [cursor=pointer]
+                      - gridcell "Delete" [ref=e178] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e179] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N57016A97442 Status Completed Date Created 05/28/2026 04:01 AM Download/Print Delete View Data Export Format" [ref=e181]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N57016A97442" [ref=e183]: Derived_Score_AutoFilter_Template_N57016A97442
+                    - gridcell "Status Completed" [ref=e185]: Completed
+                    - gridcell "Date Created 05/28/2026 04:01 AM" [ref=e187]: 05/28/2026 04:01 AM
+                    - generic [ref=e188]:
+                      - gridcell "Download/Print" [ref=e190] [cursor=pointer]
+                      - gridcell "Delete" [ref=e192] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e193] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N62600A11786 Status Completed Date Created 05/19/2026 09:27 PM Download/Print Delete View Data Export Format" [ref=e195]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N62600A11786" [ref=e197]: Derived_Score_AutoFilter_Template_N62600A11786
+                    - gridcell "Status Completed" [ref=e199]: Completed
+                    - gridcell "Date Created 05/19/2026 09:27 PM" [ref=e201]: 05/19/2026 09:27 PM
+                    - generic [ref=e202]:
+                      - gridcell "Download/Print" [ref=e204] [cursor=pointer]
+                      - gridcell "Delete" [ref=e206] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e207] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N68569A8050 Status Completed Date Created 05/19/2026 09:23 PM Download/Print Delete View Data Export Format" [ref=e209]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N68569A8050" [ref=e211]: Derived_Score_AutoFilter_Template_N68569A8050
+                    - gridcell "Status Completed" [ref=e213]: Completed
+                    - gridcell "Date Created 05/19/2026 09:23 PM" [ref=e215]: 05/19/2026 09:23 PM
+                    - generic [ref=e216]:
+                      - gridcell "Download/Print" [ref=e218] [cursor=pointer]
+                      - gridcell "Delete" [ref=e220] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e221] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N70654A81369 Status Completed Date Created 05/19/2026 09:18 PM Download/Print Delete View Data Export Format" [ref=e223]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N70654A81369" [ref=e225]: Derived_Score_AutoFilter_Template_N70654A81369
+                    - gridcell "Status Completed" [ref=e227]: Completed
+                    - gridcell "Date Created 05/19/2026 09:18 PM" [ref=e229]: 05/19/2026 09:18 PM
+                    - generic [ref=e230]:
+                      - gridcell "Download/Print" [ref=e232] [cursor=pointer]
+                      - gridcell "Delete" [ref=e234] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e235] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N725A18521 Status Completed Date Created 05/19/2026 09:11 PM Download/Print Delete View Data Export Format" [ref=e237]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N725A18521" [ref=e239]: Derived_Score_AutoFilter_Template_N725A18521
+                    - gridcell "Status Completed" [ref=e241]: Completed
+                    - gridcell "Date Created 05/19/2026 09:11 PM" [ref=e243]: 05/19/2026 09:11 PM
+                    - generic [ref=e244]:
+                      - gridcell "Download/Print" [ref=e246] [cursor=pointer]
+                      - gridcell "Delete" [ref=e248] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e249] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N92565A20069 Status Completed Date Created 05/19/2026 11:21 AM Download/Print Delete View Data Export Format" [ref=e251]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N92565A20069" [ref=e253]: Derived_Score_AutoFilter_Template_N92565A20069
+                    - gridcell "Status Completed" [ref=e255]: Completed
+                    - gridcell "Date Created 05/19/2026 11:21 AM" [ref=e257]: 05/19/2026 11:21 AM
+                    - generic [ref=e258]:
+                      - gridcell "Download/Print" [ref=e260] [cursor=pointer]
+                      - gridcell "Delete" [ref=e262] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e263] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N36183A76361 Status Completed Date Created 05/19/2026 11:17 AM Download/Print Delete View Data Export Format" [ref=e265]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N36183A76361" [ref=e267]: Derived_Score_AutoFilter_Template_N36183A76361
+                    - gridcell "Status Completed" [ref=e269]: Completed
+                    - gridcell "Date Created 05/19/2026 11:17 AM" [ref=e271]: 05/19/2026 11:17 AM
+                    - generic [ref=e272]:
+                      - gridcell "Download/Print" [ref=e274] [cursor=pointer]
+                      - gridcell "Delete" [ref=e276] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e277] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N12971A30436 Status Completed Date Created 05/19/2026 11:08 AM Download/Print Delete View Data Export Format" [ref=e279]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N12971A30436" [ref=e281]: Derived_Score_AutoFilter_Template_N12971A30436
+                    - gridcell "Status Completed" [ref=e283]: Completed
+                    - gridcell "Date Created 05/19/2026 11:08 AM" [ref=e285]: 05/19/2026 11:08 AM
+                    - generic [ref=e286]:
+                      - gridcell "Download/Print" [ref=e288] [cursor=pointer]
+                      - gridcell "Delete" [ref=e290] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e291] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N83542A17039 Status Completed Date Created 05/19/2026 11:04 AM Download/Print Delete View Data Export Format" [ref=e293]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N83542A17039" [ref=e295]: Derived_Score_AutoFilter_Template_N83542A17039
+                    - gridcell "Status Completed" [ref=e297]: Completed
+                    - gridcell "Date Created 05/19/2026 11:04 AM" [ref=e299]: 05/19/2026 11:04 AM
+                    - generic [ref=e300]:
+                      - gridcell "Download/Print" [ref=e302] [cursor=pointer]
+                      - gridcell "Delete" [ref=e304] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e305] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N70883A86504 Status Completed Date Created 05/14/2026 11:29 PM Download/Print Delete View Data Export Format" [ref=e307]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N70883A86504" [ref=e309]: Derived_Score_AutoFilter_Template_N70883A86504
+                    - gridcell "Status Completed" [ref=e311]: Completed
+                    - gridcell "Date Created 05/14/2026 11:29 PM" [ref=e313]: 05/14/2026 11:29 PM
+                    - generic [ref=e314]:
+                      - gridcell "Download/Print" [ref=e316] [cursor=pointer]
+                      - gridcell "Delete" [ref=e318] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e319] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N96743A60822 Status Completed Date Created 05/14/2026 11:26 PM Download/Print Delete View Data Export Format" [ref=e321]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N96743A60822" [ref=e323]: Derived_Score_AutoFilter_Template_N96743A60822
+                    - gridcell "Status Completed" [ref=e325]: Completed
+                    - gridcell "Date Created 05/14/2026 11:26 PM" [ref=e327]: 05/14/2026 11:26 PM
+                    - generic [ref=e328]:
+                      - gridcell "Download/Print" [ref=e330] [cursor=pointer]
+                      - gridcell "Delete" [ref=e332] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e333] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N58955A37311 Status Completed Date Created 05/14/2026 11:20 PM Download/Print Delete View Data Export Format" [ref=e335]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N58955A37311" [ref=e337]: Derived_Score_AutoFilter_Template_N58955A37311
+                    - gridcell "Status Completed" [ref=e339]: Completed
+                    - gridcell "Date Created 05/14/2026 11:20 PM" [ref=e341]: 05/14/2026 11:20 PM
+                    - generic [ref=e342]:
+                      - gridcell "Download/Print" [ref=e344] [cursor=pointer]
+                      - gridcell "Delete" [ref=e346] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e347] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N32973A53959 Status Completed Date Created 05/14/2026 11:14 PM Download/Print Delete View Data Export Format" [ref=e349]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N32973A53959" [ref=e351]: Derived_Score_AutoFilter_Template_N32973A53959
+                    - gridcell "Status Completed" [ref=e353]: Completed
+                    - gridcell "Date Created 05/14/2026 11:14 PM" [ref=e355]: 05/14/2026 11:14 PM
+                    - generic [ref=e356]:
+                      - gridcell "Download/Print" [ref=e358] [cursor=pointer]
+                      - gridcell "Delete" [ref=e360] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e361] [cursor=pointer]
+      - contentinfo [ref=e363]:
+        - generic [ref=e364]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e365] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e366]
+        - generic [ref=e367]:
+          - link "Riverside Insights Facebook" [ref=e368] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e369]
+          - link "Riverside Insights Twitter" [ref=e370] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e371]
+          - link "Riverside Insights LinkedIn" [ref=e372] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e373]
+          - link "Riverside Insights Instagram" [ref=e374] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e375]
+        - generic [ref=e376]:
+          - button "Leave Feedback" [ref=e377] [cursor=pointer]
+          - generic [ref=e378]: "|"
+          - link "Terms of Use" [ref=e379] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e380]: "|"
+          - link "Privacy Policy" [ref=e381] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e382]: Footer region end
+```
+
+# Test source
+
+```ts
+  259 |         const itemMasterId2: string = obj2[key].Master_ID;
+  260 | 
+  261 |         expect.soft(itemMastedIdP1).toEqual(itemMasterId2.toString());
+  262 |         console.log("\n", itemMastedIdP1, "===", itemMasterId2);
+  263 |         RawValueLogger.log(`  [Master_ID]: "${key}":  "${itemMastedIdP1}", = "${itemMasterId2}"`);
+  264 |       } else {
+  265 |         console.warn(`Master id '${key}' not found in the second object`);
+  266 |       }
+  267 |     }
+  268 |   }
+  269 | 
+  270 |   async validateAndAssert_RT(
+  271 |     obj1: Record<string, any>, //txt file data
+  272 |     obj2: Record<string, any>,
+  273 |   ) {
+  274 | 
+  275 |     console.log("--------------RT------------------");
+  276 | 
+  277 |     let missingKeysCount = 0;
+  278 | 
+  279 |     for (const key in obj1) {
+  280 |       if (key in obj2) {
+  281 |         const RT1: number = Number(obj1[key].RT);
+  282 |         const RT2: number = Number(obj2[key].RT);
+  283 | 
+  284 |         expect.soft(Math.abs(RT1 - RT2)).toBeGreaterThan(0); //CLINICAL-25333
+  285 |         console.log("\n", RT1, "-", RT2, "= ", Math.abs(RT1 - RT2));
+  286 |         RawValueLogger.log(`  [RT]: "${key}":  "${RT1}", = "${RT2}"`);
+  287 |         
+  288 |         if (RT1 < 0){
+  289 |           expect.soft(RT1, "The RT should be always positive").toBeGreaterThan(0);
+  290 |         }
+  291 |       } else {
+  292 |         missingKeysCount++;
+  293 |         console.warn(`RT '${key}' not found in the second object`);
+  294 |       }
+  295 |     }
+  296 | 
+  297 |     expect.soft(missingKeysCount <= 3).toBeTruthy();
+  298 | 
+  299 |     if (missingKeysCount > 3) {
+  300 |       console.error(`Too many missing keys in RT validation! Total: ${missingKeysCount}`);
+  301 |     }
+  302 |   }
+  303 | 
+  304 |   async validateAndAssert_DeliveryOrder(
+  305 |     obj1: Record<string, any>,
+  306 |     obj2: Record<string, any>,
+  307 |   ) {
+  308 | 
+  309 |     console.log("--------------DeliveryOrder------------------");
+  310 | 
+  311 |     let missingKeysCount = 0;
+  312 | 
+  313 |     for (const key in obj1) {
+  314 |       if (key in obj2) {
+  315 |         const Do1: number = Number(obj1[key].Delivered_Order);
+  316 |         const Do2: number = Number(obj2[key].Delivered_Order);
+  317 | 
+  318 |         expect.soft(Do1).toBeGreaterThanOrEqual(Do2);
+  319 | 
+  320 |         console.log("\n", Do1, "===", Do2);
+  321 |         RawValueLogger.log(`  [DeliveryOrder]: "${key}":  "${Do1}", = "${Do2}"`);
+  322 |       } else {
+  323 |         missingKeysCount++;
+  324 |         console.warn(`Delivered_Order '${key}' not found in the second object`);
+  325 |       }
+  326 |     }
+  327 | 
+  328 |     expect.soft(missingKeysCount <= 3).toBeTruthy();
+  329 | 
+  330 |     if (missingKeysCount > 3) {
+  331 |       console.error(`Too many missing keys in DeliveryOrder validation! Total: ${missingKeysCount}`);
+  332 |     }
+  333 |   }
+  334 | 
+  335 |   async validateAndAssert_Response(
+  336 |     obj1: Record<string, any>, // Txt-file data
+  337 |     obj2: Record<string, any>, // Run-time data
+  338 |     testStemForm?: string, 
+  339 |   ) {
+  340 |     console.log("--------------Response------------------");
+  341 |   
+  342 |     let missingKeysCount = 0;
+  343 |   
+  344 |     for (const key in obj1) {
+  345 |       if (key in obj2) {
+  346 |         let word1: string;
+  347 |         let word2: string;
+  348 |         
+  349 |         // WRTSMP.W5PA: Extract full acceptance criteria text
+  350 |         if (testStemForm === "WRTSMP.W5PA") {
+  351 |           word1 = await this.extractFullText(obj1[key].Response);
+  352 |           word2 = await this.extractFullText(obj2[key].Response);
+  353 |         } else {
+  354 |           // All other tests: Use original extraction logic (first word only)
+  355 |           word1 = await this.extractEnglishWord(obj1[key].Response);
+  356 |           word2 = await this.extractEnglishWord(obj2[key].Response);
+  357 |         }
+  358 |   
+> 359 |         expect.soft(word2).toContain(word1);  
+      |                            ^ Error: expect(received).toContain(expected) // indexOf
+  360 |         console.log("\n", word2, "===", word1);
+  361 |         RawValueLogger.log(`  [Response]: "${key}":  "${word1}", = "${word2}"`);
+  362 |       } else {
+  363 |         missingKeysCount++;
+  364 |         console.warn(`Response '${key}' not found in the second object`);
+  365 |       }
+  366 |     }
+  367 |   
+  368 |     expect.soft(missingKeysCount <= 3).toBeTruthy();
+  369 |   
+  370 |     if (missingKeysCount > 3) {
+  371 |       console.error(`Too many missing keys! Total: ${missingKeysCount}`);
+  372 |     }
+  373 |   }
+  374 |   
+  375 |   async extractEnglishWord(text: string): Promise<string> {
+  376 |     text = cheerio.load(text).text().trim();  
+  377 |     text = decode(text);  
+  378 |     const match = text.match(/^[a-zA-Z]+/);
+  379 |     return match ? match[0].toLowerCase() : text.toLowerCase();
+  380 |   }
+  381 | 
+  382 |   // Special extraction for WRTSMP.W5PA only - returns full acceptance criteria text
+  383 |   async extractFullText(text: string): Promise<string> {
+  384 |     text = cheerio.load(text).text().trim();  
+  385 |     text = decode(text);  
+  386 |     return text.replace(/\s+/g, ' ').trim().toLowerCase();
+  387 |   }
+  388 |   async validateAndAssert_Score(
+  389 |     obj1: Record<string, any>,
+  390 |     obj2: Record<string, any>,
+  391 |   ) {
+  392 | 
+  393 |     console.log("--------------Score------------------");
+  394 | 
+  395 |     let missingKeysCount = 0;
+  396 | 
+  397 |     for (const key in obj1) {
+  398 |       if (key in obj2) {
+  399 |         const Do1: number = Number(obj1[key].Score);
+  400 |         const Do2: number = Number(obj2[key].Score);
+  401 | 
+  402 |         expect.soft(Do1).toEqual(Do2);
+  403 | 
+  404 |         console.log("\n", Do1, "===", Do2);
+  405 |         RawValueLogger.log(`  [Score]: "${key}":  "${Do1}", = "${Do2}"`);
+  406 |       } else {
+  407 |         missingKeysCount++;
+  408 |         console.warn(`Score '${key}' not found in the second object`);
+  409 |       }
+  410 |     }
+  411 | 
+  412 |     expect.soft(missingKeysCount <= 3).toBeTruthy();
+  413 | 
+  414 |     if (missingKeysCount > 3) {
+  415 |       console.error(`Too many missing keys in Score validation! Total: ${missingKeysCount}`);
+  416 |     }
+  417 |   }
+  418 | 
+  419 |   async getExcelasJson(filePATH: string): Promise<Array<Record<string, any>>> {
+  420 |     const filePath = path.join(__dirname, filePATH);
+  421 |     const workbook = xlsx.readFile(filePath);
+  422 |     const sheetName = workbook.SheetNames[0];
+  423 |     const sheet = workbook.Sheets[sheetName];
+  424 |     this.selTestJsonData = xlsx.utils.sheet_to_json(sheet);
+  425 |     return this.selTestJsonData;
+  426 |   }
+  427 | 
+  428 |   async getColumnOrValueFromExcel(
+  429 |     columnName: string,
+  430 |     columnValue?: string,
+  431 |     returnColumnName?: string,
+  432 |   ): Promise<string[] | undefined> {
+  433 |     if (this.selTestJsonData === undefined) {
+  434 |       this.selTestJsonData = await this.getExcelasJson(
+  435 |         `../../dataFiles/derivedScores/WJV SelTestTable.xlsx`,
+  436 |       );
+  437 |     }
+  438 | 
+  439 |     if (columnValue === undefined && returnColumnName === undefined) {
+  440 |       const values = this.selTestJsonData.map((row: any) => row[columnName]);
+  441 |       return [...new Set(values)];
+  442 |     } else {
+  443 |       const row = this.selTestJsonData.find(
+  444 |         (row: any) => row[columnName] === columnValue,
+  445 |       );
+  446 |       if (row) {
+  447 |         return row[returnColumnName];
+  448 |       } else {
+  449 |         return undefined;
+  450 |       }
+  451 |     }
+  452 |   }
+  453 | 
+  454 |   async getRowDataOfSpecifiedColumnFromSchemaFiles(
+  455 |     fileName: string,
+  456 |     columnName: string,
+  457 |   ): Promise<Map<string, string>> {
+  458 |     const filePath = path.join(
+  459 |       __dirname,
+```
