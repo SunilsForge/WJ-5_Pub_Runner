@@ -1,0 +1,1277 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27129426166"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 15,
+      "total": 15
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/TestSetVerification.spec.ts",
+      "file": "functional/TestSetVerification.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "CLINICAL-31186: Test Set Verification — Broad Achievement & Custom",
+          "file": "functional/TestSetVerification.spec.ts",
+          "line": 93,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify test set integrity across default/custom sets, examinee switching, mid-administration, and review mode",
+              "ok": true,
+              "tags": [
+                "TestSetVerification",
+                "Functional",
+                "Aut_Eng_01",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [
+                    {
+                      "type": "Original user story, Automation user story",
+                      "description": "CLINICAL-31186",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/TestSetVerification.spec.ts",
+                        "line": 96,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2191288,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S15:W0] Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N1424A44331\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N1424A44331 FirstName=Emely LastName =N1424A44331 Age = 06/08/2019\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N1424A44331\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N29676A6794\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N29676A6794 FirstName=Tania LastName =N29676A6794 Age = 06/08/2017\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N29676A6794\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N62693A31738, Jayson\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N1424A44331\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N29676A6794\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N62693A31738, Jayson\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Setup: Get Old Examinee from dashboard",
+                          "duration": 26170
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 1 + assign Broad Achievement",
+                          "duration": 48840
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 2 + assign Broad Achievement",
+                          "duration": 43374
+                        },
+                        {
+                          "title": "Setup: Assign Broad Achievement to Old Examinee",
+                          "duration": 26246
+                        },
+                        {
+                          "title": "S1: Open New Examinee 1 → capture baseline + verify 9 tests",
+                          "duration": 92290
+                        },
+                        {
+                          "title": "S1: Open Old Examinee → verify test list matches",
+                          "duration": 89671
+                        },
+                        {
+                          "title": "S1: Re-open Old Examinee → verify still intact",
+                          "duration": 89516
+                        },
+                        {
+                          "title": "S1: Open New Examinee 2 → verify test list matches",
+                          "duration": 90807
+                        },
+                        {
+                          "title": "S1: Re-open New Examinee 2 → verify test set still intact",
+                          "duration": 98335
+                        },
+                        {
+                          "title": "S2 Setup: Create custom test set with 19 tests",
+                          "duration": 64941
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 1",
+                          "duration": 21765
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 2",
+                          "duration": 24473
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to Old Examinee",
+                          "duration": 24373
+                        },
+                        {
+                          "title": "S2: Open New Examinee 1 (custom) → capture baseline + verify 19 tests",
+                          "duration": 94875
+                        },
+                        {
+                          "title": "S2: Open Old Examinee (custom) → verify",
+                          "duration": 90868
+                        },
+                        {
+                          "title": "S2: Re-open Old Examinee (custom) → verify still intact",
+                          "duration": 90723
+                        },
+                        {
+                          "title": "S2: Open New Examinee 2 (custom) → verify",
+                          "duration": 90774
+                        },
+                        {
+                          "title": "S2: Re-open New Examinee 2 (custom) → verify test set still intact",
+                          "duration": 91666
+                        },
+                        {
+                          "title": "S3: Semi-administer Calculation for New Examinee 1 (default test set)",
+                          "duration": 137619
+                        },
+                        {
+                          "title": "S3: Open Old Examinee (default) → verify NO in-progress carryover",
+                          "duration": 89589
+                        },
+                        {
+                          "title": "S3: Open New Examinee 1 in Review Mode (from dashboard) → verify Calculation is In Progress",
+                          "duration": 22519
+                        },
+                        {
+                          "title": "S3: Reopen New Examinee 1 from dashboard → verify left nav + in-progress status",
+                          "duration": 84518
+                        },
+                        {
+                          "title": "S3: Complete the in-progress Calculation test (5 wrong → ceiling)",
+                          "duration": 21392
+                        },
+                        {
+                          "title": "S3: Enter Review Mode → verify Calculation now Complete + test list = 9",
+                          "duration": 7617
+                        },
+                        {
+                          "title": "S4: Open Old Examinee (custom) → verify 19 tests + semi-administer Calculation",
+                          "duration": 140324
+                        },
+                        {
+                          "title": "S4: Open New Examinee 2 (custom) → verify NO in-progress carryover",
+                          "duration": 91802
+                        },
+                        {
+                          "title": "S4: Open Old Examinee in Review Mode (from dashboard) → verify Calculation In Progress + 19 tests",
+                          "duration": 22718
+                        },
+                        {
+                          "title": "S4: Reopen Old Examinee → verify left nav + complete Calculation",
+                          "duration": 107035
+                        },
+                        {
+                          "title": "S4: Review Mode → verify Calculation Complete + test list = 19",
+                          "duration": 7775
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 default test set via direct launch",
+                          "duration": 89599
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 custom test set via direct launch",
+                          "duration": 91670
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 default test set via Review Mode (from dashboard)",
+                          "duration": 23219
+                        }
+                      ],
+                      "startTime": "2026-06-08T09:49:35.771Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "CLINICAL-31186",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/TestSetVerification.spec.ts",
+                            "line": 96,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ba0a2974bc2b199c2a4f-31df407b8b1405581056",
+              "file": "functional/TestSetVerification.spec.ts",
+              "line": 96,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "functional/TestSetVerificationV2.spec.ts",
+      "file": "functional/TestSetVerificationV2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "CLINICAL-31186: Test Set Verification V2 — Broad Achievement & Custom",
+          "file": "functional/TestSetVerificationV2.spec.ts",
+          "line": 114,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify test set integrity across default/custom sets, examinee switching, mid-administration, and review mode",
+              "ok": true,
+              "tags": [
+                "TestSetVerificationV2",
+                "Functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [
+                    {
+                      "type": "Original user story, Automation user story",
+                      "description": "CLINICAL-31186",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/TestSetVerificationV2.spec.ts",
+                        "line": 117,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2167438,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S15:W1] Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N26531A85287\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N26531A85287 FirstName=Jeffry LastName =N26531A85287 Age = 06/08/2019\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N26531A85287\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N22396A89319\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N22396A89319 FirstName=Ludwig LastName =N22396A89319 Age = 06/08/2017\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N22396A89319\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N62693A31738, Jayson\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N26531A85287\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N22396A89319\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N62693A31738, Jayson\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        },
+                        {
+                          "text": "Typing the session ID...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button. Waiting for post-join state...\n"
+                        },
+                        {
+                          "text": "Join confirmed.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Setup: Get Old Examinee from dashboard",
+                          "duration": 23277
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 1 + assign Broad Achievement",
+                          "duration": 46092
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 2 + assign Broad Achievement",
+                          "duration": 44465
+                        },
+                        {
+                          "title": "Setup: Assign Broad Achievement to Old Examinee",
+                          "duration": 24403
+                        },
+                        {
+                          "title": "S1: Open New Examinee 1 → capture baseline + verify 9 tests",
+                          "duration": 89848
+                        },
+                        {
+                          "title": "S1: Open Old Examinee → verify test list matches",
+                          "duration": 90899
+                        },
+                        {
+                          "title": "S1: Re-open Old Examinee → verify still intact",
+                          "duration": 89528
+                        },
+                        {
+                          "title": "S1: Open New Examinee 2 → verify test list matches",
+                          "duration": 89750
+                        },
+                        {
+                          "title": "S1: Re-open New Examinee 2 → verify test set still intact",
+                          "duration": 89908
+                        },
+                        {
+                          "title": "S2 Setup: Create custom test set with 19 tests",
+                          "duration": 65202
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 1",
+                          "duration": 21952
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 2",
+                          "duration": 25805
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to Old Examinee",
+                          "duration": 24176
+                        },
+                        {
+                          "title": "S2: Open New Examinee 1 (custom) → capture baseline + verify 19 tests",
+                          "duration": 90935
+                        },
+                        {
+                          "title": "S2: Open Old Examinee (custom) → verify",
+                          "duration": 91013
+                        },
+                        {
+                          "title": "S2: Re-open Old Examinee (custom) → verify still intact",
+                          "duration": 90897
+                        },
+                        {
+                          "title": "S2: Open New Examinee 2 (custom) → verify",
+                          "duration": 90944
+                        },
+                        {
+                          "title": "S2: Re-open New Examinee 2 (custom) → verify test set still intact",
+                          "duration": 90847
+                        },
+                        {
+                          "title": "S3: Semi-administer Calculation for New Examinee 1 (default test set)",
+                          "duration": 137139
+                        },
+                        {
+                          "title": "S3: Open Old Examinee (default) → verify NO in-progress carryover",
+                          "duration": 89732
+                        },
+                        {
+                          "title": "S3: Open New Examinee 1 in Review Mode (from dashboard) → verify Calculation is In Progress",
+                          "duration": 22558
+                        },
+                        {
+                          "title": "S3: Reopen New Examinee 1 from dashboard → verify left nav + in-progress status",
+                          "duration": 84594
+                        },
+                        {
+                          "title": "S3: Complete the in-progress Calculation test (5 wrong → ceiling)",
+                          "duration": 21214
+                        },
+                        {
+                          "title": "S3: Enter Review Mode → verify Calculation now Complete + test list = 9",
+                          "duration": 7629
+                        },
+                        {
+                          "title": "S4: Open Old Examinee (custom) → verify 19 tests + semi-administer Calculation",
+                          "duration": 140378
+                        },
+                        {
+                          "title": "S4: Open New Examinee 2 (custom) → verify NO in-progress carryover",
+                          "duration": 91104
+                        },
+                        {
+                          "title": "S4: Open Old Examinee in Review Mode (from dashboard) → verify Calculation In Progress + 19 tests",
+                          "duration": 22510
+                        },
+                        {
+                          "title": "S4: Reopen Old Examinee → verify left nav + complete Calculation",
+                          "duration": 107130
+                        },
+                        {
+                          "title": "S4: Review Mode → verify Calculation Complete + test list = 19",
+                          "duration": 7676
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 default test set via direct launch",
+                          "duration": 90353
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 custom test set via direct launch",
+                          "duration": 90917
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 default test set via Review Mode (from dashboard)",
+                          "duration": 22511
+                        }
+                      ],
+                      "startTime": "2026-06-08T10:26:09.228Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "CLINICAL-31186",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/TestSetVerificationV2.spec.ts",
+                            "line": 117,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "62fb5018e724a86e8c88-f2872963132ad4ab11e1",
+              "file": "functional/TestSetVerificationV2.spec.ts",
+              "line": 117,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-08T09:49:19.024Z",
+    "duration": 4378470.789,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

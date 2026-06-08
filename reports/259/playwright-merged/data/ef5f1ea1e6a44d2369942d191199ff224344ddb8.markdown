@@ -1,0 +1,391 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/dashboard/testAssignments_C.spec.ts >> Validate Dashboard Test Assignments functionality Part_C
+- Location: src/tests/functional/dashboard/testAssignments_C.spec.ts:13:5
+
+# Error details
+
+```
+Error: Subtest Count after completing the test assignment should be increased by 1
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 2
+Received: 3
+```
+
+```
+Error: Row with status 'Not Started' not found in Test Assignment History table
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: S10PwAut25Ex_01 ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| Subscription Details"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+        - generic [ref=e34]:
+          - switch [ref=e35] [cursor=pointer]: "OFF"
+          - generic [ref=e36]: Offline Mode
+      - main [ref=e37]:
+        - generic [ref=e38]:
+          - heading [level=1] [ref=e39]: EXAMINEE MANAGEMENT
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - generic [ref=e42]:
+                - generic [ref=e43]: Search Examinees
+                - generic [ref=e44]:
+                  - textbox [ref=e45]:
+                    - /placeholder: Search Examinees
+                    - text: N4007A12996
+                  - button [ref=e46] [cursor=pointer]
+              - generic [ref=e47]:
+                - generic [ref=e48]: Filter Examinees
+                - button [ref=e49] [cursor=pointer]: Reset
+              - generic [ref=e53]:
+                - generic [ref=e54]: DOB
+                - generic [ref=e55]:
+                  - textbox [ref=e56]:
+                    - /placeholder: mm/dd/yyyy
+                  - button [ref=e57] [cursor=pointer]
+            - generic [ref=e59]:
+              - generic [ref=e60]:
+                - button [ref=e61] [cursor=pointer]: Add Examinee
+                - button [ref=e62] [cursor=pointer]: Create Test Assignment
+              - generic [ref=e64]:
+                - text: N4007A12996
+                - button [ref=e65] [cursor=pointer]: ✕
+              - table [ref=e67]:
+                - rowgroup [ref=e74]:
+                  - row [ref=e75]:
+                    - columnheader [ref=e76]: First Name
+                    - columnheader [ref=e77]: Last Name
+                    - columnheader [ref=e78]: Examinee ID
+                    - columnheader [ref=e79]: DOB
+                    - columnheader [ref=e80]: Actions
+                - rowgroup [ref=e81]:
+                  - row [ref=e82] [cursor=pointer]:
+                    - cell [ref=e83]:
+                      - button [ref=e84]: Forest
+                    - cell [ref=e85]:
+                      - button [ref=e86]: N4007A12996
+                    - cell [ref=e87]: N4007A12996
+                    - cell [ref=e88]: 05/27/2022
+                    - cell [ref=e89]:
+                      - button [ref=e90]
+                      - button [ref=e91]:
+                        - img [ref=e92]
+                      - button [ref=e96]:
+                        - img [ref=e97]
+                      - button [ref=e107]:
+                        - img [ref=e108]
+    - contentinfo [ref=e110]:
+      - generic [ref=e111]: Footer region,
+      - link [ref=e112] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com
+        - img [ref=e113]
+      - generic [ref=e114]:
+        - link [ref=e115] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e116]
+        - link [ref=e117] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e118]
+        - link [ref=e119] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e120]
+        - link [ref=e121] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e122]
+      - generic [ref=e123]:
+        - button [ref=e124] [cursor=pointer]: Leave Feedback
+        - generic [ref=e125]: "|"
+        - link [ref=e126] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e127]: "|"
+        - link [ref=e128] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e129]: Footer region end
+  - dialog [active] [ref=e131]:
+    - generic [ref=e132]:
+      - generic [ref=e133]:
+        - generic [ref=e134]: Forest N4007A12996's
+        - generic [ref=e135]: General Info
+        - button "Edit Organization Icon" [ref=e137] [cursor=pointer]:
+          - img "Edit Organization Icon" [ref=e138]
+      - button "Show Additional Info" [ref=e139] [cursor=pointer]
+    - generic [ref=e140]:
+      - generic [ref=e141]:
+        - generic [ref=e142]:
+          - generic [ref=e143]: "First Name: Forest"
+          - generic [ref=e144]: "Last Name: N4007A12996"
+        - generic [ref=e145]:
+          - generic [ref=e146]: "Gender: Male"
+          - generic [ref=e147]: "Date of Birth: 05/27/2022"
+        - generic [ref=e149]: "Examinee ID: N4007A12996"
+      - generic [ref=e150]: Test Assignment History
+      - table "Available Assignments" [ref=e153]:
+        - rowgroup [ref=e159]:
+          - row "A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e160]:
+            - columnheader "A collection of tests grouped together for assessment." [ref=e161]: Test Set
+            - columnheader "Number of days remaining to edit this assignment." [ref=e162]: Days Left to Edit
+            - columnheader "Status of the test assignment." [ref=e163]: Status
+            - columnheader "Actions available are based on your role and test status." [ref=e164]: Actions
+        - rowgroup [ref=e165]:
+          - row "Form A More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e166] [cursor=pointer]:
+            - cell "Form A More info" [ref=e167]:
+              - generic [ref=e168]:
+                - button "Form A" [ref=e169]:
+                  - generic [ref=e170]: Form A
+                - button "More info" [ref=e171]
+            - cell "—" [ref=e172]:
+              - button "—" [ref=e173]
+            - cell "● Not Started" [ref=e174]:
+              - button "● Not Started" [ref=e175]:
+                - generic [ref=e176]: ●
+                - text: Not Started
+            - cell "Edit Assignment Add Tests Assignment actions" [ref=e177]:
+              - button "Edit Assignment" [ref=e178]
+              - button "Add Tests" [ref=e179]
+              - button "Assignment actions" [ref=e180]
+    - button "Close" [ref=e182] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  2049 |     const dialog = this.editTestAssignmentDialog;
+  2050 |     await expect.soft(dialog.locator("button#edit_assignment_settings"), 'Edit icon for education should be visible').toBeVisible();
+  2051 |   }
+  2052 | 
+  2053 |   async verifyGenerateReportsIcon() {
+  2054 |     return await this.generateReportIcon.isVisible();
+  2055 |   }
+  2056 | 
+  2057 |   async verifyEditTestAssignmentIcon() {
+  2058 |     return await this.editTestAssignmentButton.isVisible();
+  2059 |   }
+  2060 | 
+  2061 |   async clickOnGenerateReportIcon() {
+  2062 |     await this.generateReportIcon.click();
+  2063 |     await this.page.waitForLoadState("domcontentloaded");
+  2064 |   }
+  2065 | 
+  2066 |   async verifyTestAssignmentExpiredPopUp() {
+  2067 |     await this.page.waitForLoadState("domcontentloaded");
+  2068 |     await expect.soft(this.page.getByRole('heading', { name: 'Test Assignment Expired' }), 'Test Assignment Expired heading should be visible').toBeVisible();
+  2069 |     await expect.soft(this.page.locator(`//p[text()='This test assignment has expired as 90 days have passed since the earliest date of testing. No further changes can be made, however, you may still submit for reporting.']`), 'Test Assignment Expired body text should be visible').toBeVisible();
+  2070 |     await expect.soft(this.page.locator("//p[text()='Do you want to submit this test assignment for reporting?']"), 'Do you want to submit this test assignment for reporting? body text should be visible').toBeVisible();
+  2071 |   }
+  2072 | 
+  2073 |   async clickNoButtonInExpiredPopUp() {
+  2074 |     await this.noButton.click();
+  2075 |   }
+  2076 | 
+  2077 |   async clickYesButtonInPopUp() {
+  2078 |     await this.page.waitForTimeout(2000);
+  2079 |     await this.yesButton.click();
+  2080 |   }
+  2081 | 
+  2082 |   async verifyCreateReportPopUpIsVisible() {
+  2083 |     await this.waitForLoadingInnerToDisappear();
+  2084 |     await this.page.waitForLoadState("domcontentloaded");
+  2085 |     await expect.soft(this.createReportHeading, 'Create a Report heading should be visible').toBeVisible();
+  2086 |   }
+  2087 | 
+  2088 |   async clickOnSubscriptionDetails() {
+  2089 |     await this.subscriptionDetails.click();
+  2090 |     await this.page.waitForLoadState("domcontentloaded");
+  2091 |   }
+  2092 |   async verifyChatBotFunctionality() {
+  2093 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();
+  2094 |     await this.chatBotIcon.click();
+  2095 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();
+  2096 |     await this.chatBotCloseIcon.click();
+  2097 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();
+  2098 |   }
+  2099 | 
+  2100 |   async clickOnTestSetsTab() {
+  2101 |     await this.testSetButton.click();
+  2102 |     await this.page.waitForLoadState("domcontentloaded");
+  2103 |   }
+  2104 | 
+  2105 |   async clickOnExamineesTab() {
+  2106 |     await this.examinees.click();
+  2107 |     await this.page.waitForLoadState("domcontentloaded");
+  2108 |     await this.waitForLoadingSpinnerToDisappear();
+  2109 |   }
+  2110 | 
+  2111 |   async searchExaminee(examineeName: string) {
+  2112 |     await this.searchExaminees.fill(examineeName);
+  2113 |     await this.searchExaminees.press('Enter');
+  2114 |     await this.page.waitForLoadState("domcontentloaded");
+  2115 |     await this.waitForLoadingSpinnerToDisappear();
+  2116 |   }
+  2117 | 
+  2118 |   async clickOnSearchedExaminee(examineeId: string) {
+  2119 |     await this.page.locator(`//button[text()='${examineeId}']`).click();
+  2120 |     await this.page.waitForLoadState("domcontentloaded");
+  2121 |     await this.waitForLoadingSpinnerToDisappear();
+  2122 |   }
+  2123 | 
+  2124 |   async clickResetButton() {
+  2125 |     await this.resetButton.click();
+  2126 |     await this.page.waitForLoadState("domcontentloaded");
+  2127 |     await this.waitForLoadingSpinnerToDisappear();
+  2128 |   }
+  2129 | 
+  2130 |   async findRowIndexInPopupByStatus(expectedStatus: string): Promise<number> {
+  2131 |     await this.page.waitForLoadState("domcontentloaded");
+  2132 |     await this.waitForLoadingSpinnerToDisappear();
+  2133 |     await this.page.waitForTimeout(1000);
+  2134 | 
+  2135 |     const popup = this.page.locator("div[role='dialog']");
+  2136 |     const rows = popup.locator("tbody > tr");
+  2137 |     const rowCount = await rows.count();
+  2138 | 
+  2139 |     for (let i = 0; i < rowCount; i++) {
+  2140 |       const row = rows.nth(i);
+  2141 |       const statusMarker = row.locator("span[class*='TestAssignmentModule_mcs_marker']");
+  2142 |       const statusText = await statusMarker.getAttribute('data-status');
+  2143 | 
+  2144 |       if (statusText?.trim() === expectedStatus) {
+  2145 |         return i;
+  2146 |       }
+  2147 |     }
+  2148 | 
+> 2149 |     throw new Error(`Row with status '${expectedStatus}' not found in Test Assignment History table`);
+       |           ^ Error: Row with status 'Not Started' not found in Test Assignment History table
+  2150 |   }
+  2151 | 
+  2152 |   async clickOnStaffTab() {
+  2153 |     await this.staffTab.click();
+  2154 |     await this.page.waitForLoadState("domcontentloaded");
+  2155 |   }
+  2156 | 
+  2157 |   async verifyStatusAtExamineeGeneralInfoPopUp(expectedStatus: string) {
+  2158 |     const popup = this.page.locator("div[role='dialog']");
+  2159 |     const statusText = await popup.locator("span[class*='TestAssignmentModule_mcs_marker']").first().getAttribute('data-status');
+  2160 |     expect.soft(statusText.trim(), 'Examinee status should match').toBe(expectedStatus);
+  2161 |   }
+  2162 | 
+  2163 |   async verifySubtestsSuccessfullyAppliedPopupContent() {
+  2164 |     await expect.soft(this.page.locator("//h2[text()='Subtests Successfully Applied!']"), 'Subtests Applied heading should be visible').toBeVisible();
+  2165 |     await expect.soft(this.page.locator("//p[text()='Your additional subtest(s) have been successfully added to your assignment. Only ']"), 'Subtests Applied body text A should be visible').toBeVisible();
+  2166 |     await expect.soft(this.page.locator("//p[text()=' remain to administer this assignment before the 90 day norming window closes.']"), 'Subtests Applied body text B should be visible').toBeVisible();
+  2167 |   }
+  2168 | 
+  2169 |   async verifyDeleteOptionIsNotVisible() {
+  2170 |     await this.clickFollowingRowElipsisButton(0);
+  2171 |     await expect.soft(this.deleteButton, 'Delete button should not be visible').toBeHidden();
+  2172 |   }
+  2173 | 
+  2174 |   async verifyHoverTextForDaysLeftToEdit() {
+  2175 |     const table = this.page.locator("table[aria-label='Available Assignments']");
+  2176 |     const daysLeftElementHoverText = await table.locator("//th[text()='Days Left to Edit']/div").textContent();
+  2177 |     RawValueLogger.log("Days Left to Edit Hover Text", daysLeftElementHoverText);
+  2178 |     expect.soft(daysLeftElementHoverText, "Days left hover text should contain 'days'").toEqual("You can edit this assignment for up to 90 days after testing begins.");
+  2179 |   }
+  2180 | 
+  2181 |   async verifyHoverTextForEarliestDateOfTesting() {
+  2182 |     const table = this.page.locator("table[aria-label='Available Assignments']");
+  2183 |     const earliestDateOfTestingHoverText = await table.locator("//th[text()='Earliest Date of Testing']/div").textContent();
+  2184 |     RawValueLogger.log("Earliest Date of Testing Hover Text", earliestDateOfTestingHoverText);
+  2185 |     expect.soft(earliestDateOfTestingHoverText, "Earliest date of testing hover text should contain 'earliest date of testing'").toEqual("First day of testing, marking the beginning of the 90-day window to complete all tests.");
+  2186 |   }
+  2187 | 
+  2188 |   async verifyActiveViewColumnHeaderHoverTexts() {
+  2189 |     const table = this.page.locator("table[aria-label='Available Assignments']");
+  2190 | 
+  2191 |     const examineeHoverText = await table.locator("//th[text()='Examinee']/div").textContent();
+  2192 |     RawValueLogger.log("Examinee Column Header Hover Text", examineeHoverText);
+  2193 |     expect.soft(examineeHoverText, "Examinee hover text should match expected text").toEqual("This is the student or individual being assessed.");
+  2194 | 
+  2195 |     const testSetHoverText = await table.locator("//th[text()='Test Set']/div").textContent();
+  2196 |     RawValueLogger.log("Test Set Column Header Hover Text", testSetHoverText);
+  2197 |     expect.soft(testSetHoverText, "Test Set hover text should match expected text").toEqual("A collection of tests grouped together for assessment.");
+  2198 | 
+  2199 |     const statusHoverText = await table.locator("//th[text()='Status']/div").textContent();
+  2200 |     RawValueLogger.log("Status Column Header Hover Text", statusHoverText);
+  2201 |     expect.soft(statusHoverText, "Status hover text should match expected text").toEqual("Status shows where the test is in the process. Statuses include Not Started, In Progress, Complete, Closed, Expired, and Offline.");
+  2202 | 
+  2203 |     const actionsHoverText = await table.locator("//th[text()='Actions']/div").textContent();
+  2204 |     RawValueLogger.log("Actions Column Header Hover Text", actionsHoverText);
+  2205 |     expect.soft(actionsHoverText, "Actions hover text should match expected text").toEqual("Actions available are based on your role and test status.");
+  2206 |   }
+  2207 | 
+  2208 |   async validateReportIsEmpty($TestName: string,
+  2209 |                               $SumOfItemScores: string,
+  2210 |                               $BasalCredit: string,
+  2211 |                               $WlookUp: string,
+  2212 |                               $Wscore: string,
+  2213 |                               $semW: string,
+  2214 |                               $WlookUpAdminItems: string,
+  2215 |                               $ScoreString: string,
+  2216 |                               $StemForm: string,
+  2217 |                               $totalItems: string,
+  2218 |                               $scoreFlag: string,examinee_ID:string) {
+  2219 | 
+  2220 |     console.log("Examinee ID which is used to generate report:", examinee_ID);
+  2221 |     const rows = this.txtFileContent.trim().split("\n");
+  2222 | 
+  2223 |     if (rows.length === 0) {
+  2224 |       throw new Error("❌ Report file is completely empty");
+  2225 |     }
+  2226 |     const headers = rows[0].split("\t").map(h => h.trim());
+  2227 | 
+  2228 |     const requiredHeaders = [
+  2229 |        $TestName,
+  2230 |        $SumOfItemScores,
+  2231 |         $BasalCredit,
+  2232 |         $WlookUp,
+  2233 |         $Wscore,
+  2234 |         $semW,
+  2235 |         $WlookUpAdminItems,
+  2236 |         $ScoreString,
+  2237 |         $StemForm,
+  2238 |         $totalItems,
+  2239 |         $scoreFlag
+  2240 |     ];
+  2241 | 
+  2242 |     console.log("✅ Required headers are present:", requiredHeaders);
+  2243 |     console.log("✅ All headers are present:", headers);
+  2244 | 
+  2245 |     rows.shift();
+  2246 | 
+  2247 |     const hasData = rows.some(row => row.trim() !== "");
+  2248 | 
+  2249 |     if (hasData) {
+```
