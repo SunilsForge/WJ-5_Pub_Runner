@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "260",
+    "timestamp": "20260611_000000",
+    "runReason": "running REGRESSION ~ SMOKE in PROD as part of hotFix",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments|@TestSetVerification|@ChatBot",
+    "totalTests": 107,
+    "totalPassed": 95,
+    "totalFailed": 9,
+    "totalSkipped": 1,
+    "totalFlaky": 2,
+    "durationMs": 48475980
+  },
+  {
     "runNumber": "259",
     "timestamp": "20260608_000000",
     "runReason": "running SMOKE in STAGE as a part of CLINICAL-31289",

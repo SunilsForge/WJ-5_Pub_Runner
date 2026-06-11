@@ -1,0 +1,1386 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/27319141715"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 12,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/chatBotTest.spec.ts",
+      "file": "functional/chatBotTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Validate Chat Bot functionality when logged in as AH user and at login page",
+          "ok": false,
+          "tags": [
+            "ChatBot",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "automation user story",
+                  "description": "30273",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts",
+                    "line": 6,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 64753,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 76,
+                        "line": 2093
+                      },
+                      "message": "Error: Chat bot icon should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\nExpected: visible\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Chat bot icon should be visible with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2093\n\n  2091 |   }\n  2092 |   async verifyChatBotFunctionality() {\n> 2093 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n       |                                                                            ^\n  2094 |     await this.chatBotIcon.click();\n  2095 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2096 |     await this.chatBotCloseIcon.click();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2093:76)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:27\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 28,
+                        "line": 2094
+                      },
+                      "message": "Error: locator.click: Target page, context or browser has been closed\n\n   at ../page/dashboardPage.ts:2094\n\n  2092 |   async verifyChatBotFunctionality() {\n  2093 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n> 2094 |     await this.chatBotIcon.click();\n       |                            ^\n  2095 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2096 |     await this.chatBotCloseIcon.click();\n  2097 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2094:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S12:W0] Login successful for 02PwAut25AH\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to login page and verify chat bot functionality",
+                      "duration": 40821,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2094:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 28,
+                          "line": 2094
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:2094\n\n\u001b[0m \u001b[90m 2092 |\u001b[39m   \u001b[36masync\u001b[39m verifyChatBotFunctionality() {\n \u001b[90m 2093 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2094 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2095 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotPopup\u001b[33m,\u001b[39m \u001b[32m'Chat bot popup should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 2096 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotCloseIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 2097 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-06-11T02:12:37.506Z",
+                  "annotations": [
+                    {
+                      "type": "automation user story",
+                      "description": "30273",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts",
+                        "line": 6,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-chatBotTest-Val-f0d3e-s-AH-user-and-at-login-page-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-chatBotTest-Val-f0d3e-s-AH-user-and-at-login-page-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-chatBotTest-Val-f0d3e-s-AH-user-and-at-login-page-chrome/trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 60150,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 76,
+                        "line": 2093
+                      },
+                      "message": "Error: Chat bot icon should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\nExpected: visible\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Chat bot icon should be visible with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2093\n\n  2091 |   }\n  2092 |   async verifyChatBotFunctionality() {\n> 2093 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n       |                                                                            ^\n  2094 |     await this.chatBotIcon.click();\n  2095 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2096 |     await this.chatBotCloseIcon.click();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2093:76)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:27\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 28,
+                        "line": 2094
+                      },
+                      "message": "Error: locator.click: Target page, context or browser has been closed\n\n   at ../page/dashboardPage.ts:2094\n\n  2092 |   async verifyChatBotFunctionality() {\n  2093 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n> 2094 |     await this.chatBotIcon.click();\n       |                            ^\n  2095 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2096 |     await this.chatBotCloseIcon.click();\n  2097 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2094:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S12:W1] Login successful for 02PwAut25AH\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Navigate to login page and verify chat bot functionality",
+                      "duration": 36972,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2094:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 28,
+                          "line": 2094
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:2094\n\n\u001b[0m \u001b[90m 2092 |\u001b[39m   \u001b[36masync\u001b[39m verifyChatBotFunctionality() {\n \u001b[90m 2093 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2094 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2095 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotPopup\u001b[33m,\u001b[39m \u001b[32m'Chat bot popup should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 2096 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotCloseIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 2097 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-06-11T02:13:49.033Z",
+                  "annotations": [
+                    {
+                      "type": "automation user story",
+                      "description": "30273",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts",
+                        "line": 6,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-chatBotTest-Val-f0d3e-s-AH-user-and-at-login-page-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-chatBotTest-Val-f0d3e-s-AH-user-and-at-login-page-chrome-retry1/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "9c81ba0b665322d5790a-5f4b9de4d32455fc0d39",
+          "file": "functional/chatBotTest.spec.ts",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "Validate Chat Bot functionality when logged in as Examiner user",
+          "ok": true,
+          "tags": [
+            "ChatBot",
+            "Smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [
+                {
+                  "type": "automation user story",
+                  "description": "30273",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts",
+                    "line": 55,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-11T02:13:47.806Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-11T02:14:49.778Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "9c81ba0b665322d5790a-911b7197d7245a5559c4",
+          "file": "functional/chatBotTest.spec.ts",
+          "line": 55,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/dashboard/testAssignments_B.spec.ts",
+      "file": "functional/dashboard/testAssignments_B.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Run the test Preschool to Grade 2 - 5 lowest incorrect items SSP1 to create test data for InProgress sets",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 171285,
+                  "error": {
+                    "message": "Error: Waiting for sloth icon after accepting examinee\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 60000ms exceeded while waiting on the predicate",
+                    "stack": "Error: Waiting for sloth icon after accepting examinee\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 60000ms exceeded while waiting on the predicate\n    at StudentPage.clickExamineeAcceptButton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts:164:3)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:47:7",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts",
+                      "column": 3,
+                      "line": 164
+                    },
+                    "snippet": "   at ../page/studentPage.ts:164\n\n\u001b[0m \u001b[90m 162 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// Additional wait to ensure UI is fully ready\u001b[39m\n \u001b[90m 163 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 164 |\u001b[39m   \u001b[36mawait\u001b[39m expect\n \u001b[90m     |\u001b[39m   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 165 |\u001b[39m     \u001b[33m.\u001b[39mpoll(\n \u001b[90m 166 |\u001b[39m       \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 167 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39macceptButton\u001b[33m.\u001b[39misVisible()) {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts",
+                        "column": 3,
+                        "line": 164
+                      },
+                      "message": "Error: Waiting for sloth icon after accepting examinee\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 60000ms exceeded while waiting on the predicate\n\n   at ../page/studentPage.ts:164\n\n  162 |   await this.page.waitForTimeout(1 * 60 * 1000); // Additional wait to ensure UI is fully ready\n  163 |\n> 164 |   await expect\n      |   ^\n  165 |     .poll(\n  166 |       async () => {\n  167 |         if (await this.acceptButton.isVisible()) {\n    at StudentPage.clickExamineeAcceptButton (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts:164:3)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:47:7"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W2] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N60801A76644\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N60801A76644/dataFiles/Score_DataExport_AutoFilter_Template_N60801A76644.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N60801A76644 FirstName=Tremayne LastName =N60801A76644 Age = 06/10/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N60801A76644\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-11T02:14:51.008Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome/test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/studentPage.ts",
+                    "column": 3,
+                    "line": 164
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 128239,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W3] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N42098A39836\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N42098A39836/dataFiles/Score_DataExport_AutoFilter_Template_N42098A39836.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N42098A39836 FirstName=Taya LastName =N42098A39836 Age = 06/10/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N42098A39836\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 15542|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-11T02:17:50.029Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "flaky"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-a91349b67f51d4577e3b",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 17,
+          "column": 7
+        },
+        {
+          "title": "Run the test Ages 4 to 7 - 5 correct and 5 incorrect SSP1 to create test data for InProgress sets",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-11T02:17:48.782Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 158383,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W3] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N54510A6157\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N54510A6157/dataFiles/Score_DataExport_AutoFilter_Template_N54510A6157.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N54510A6157 FirstName=Estefania LastName =N54510A6157 Age = 06/10/2022\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N54510A6157\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 15542|Ages 4 to 7|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-11T02:19:58.763Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-916a453762de36db6ee2",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 17,
+          "column": 7
+        },
+        {
+          "title": "Run the test Preschool to Grade 2 - 1 correct 1 incorrect SSP1 to create test data for InProgress sets",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-11T02:17:48.782Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 192472,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W3] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N39156A40245\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N39156A40245/dataFiles/Score_DataExport_AutoFilter_Template_N39156A40245.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N39156A40245 FirstName=Libby LastName =N39156A40245 Age = 12/10/2021\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N39156A40245\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 15542|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    },
+                    {
+                      "text": "Item 11\n"
+                    },
+                    {
+                      "text": "Item 12\n"
+                    },
+                    {
+                      "text": "Item 13\n"
+                    },
+                    {
+                      "text": "Item 14\n"
+                    },
+                    {
+                      "text": "Item 15\n"
+                    },
+                    {
+                      "text": "Item 16\n"
+                    },
+                    {
+                      "text": "Item 17\n"
+                    },
+                    {
+                      "text": "Item 18\n"
+                    },
+                    {
+                      "text": "Item 19\n"
+                    },
+                    {
+                      "text": "Item 20\n"
+                    },
+                    {
+                      "text": "Item 21\n"
+                    },
+                    {
+                      "text": "Item 22\n"
+                    },
+                    {
+                      "text": "Item 23\n"
+                    },
+                    {
+                      "text": "Item 24\n"
+                    },
+                    {
+                      "text": "Item 25\n"
+                    },
+                    {
+                      "text": "Item 26\n"
+                    },
+                    {
+                      "text": "Item 27\n"
+                    },
+                    {
+                      "text": "Item 28\n"
+                    },
+                    {
+                      "text": "Item 29\n"
+                    },
+                    {
+                      "text": "Item 30\n"
+                    },
+                    {
+                      "text": "Item 31\n"
+                    },
+                    {
+                      "text": "Item 32\n"
+                    },
+                    {
+                      "text": "Item 33\n"
+                    },
+                    {
+                      "text": "Item 34\n"
+                    },
+                    {
+                      "text": "Item 35\n"
+                    },
+                    {
+                      "text": "Item 36\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-11T02:22:37.169Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-b7a74be7d72e70cf862a",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 17,
+          "column": 7
+        },
+        {
+          "title": "Run the test Preschool to Grade 2 - 5 lowest incorrect items SSP1 to create test data for Submitted sets",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-11T02:17:48.782Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 133155,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W3] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N16118A16986\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N16118A16986/dataFiles/Score_DataExport_AutoFilter_Template_N16118A16986.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N16118A16986 FirstName=Nathanial LastName =N16118A16986 Age = 06/10/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N16118A16986\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 15542|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-11T02:25:49.659Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-36caeb061099a043f544",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 17,
+          "column": 7
+        },
+        {
+          "title": "Validate Dashboard Test Assignments functionality Part_B",
+          "ok": false,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24006_24067_24927_26988_27345_29976_28792, 28823_29687_30275_30670",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                    "line": 76,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-11T02:17:48.783Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 198778,
+                  "error": {
+                    "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m",
+                    "stack": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1644:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:97:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:94:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 77,
+                      "line": 1644
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:1644\n\n\u001b[0m \u001b[90m 1642 |\u001b[39m     \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m\"Expected Days Left\"\u001b[39m\u001b[33m,\u001b[39m daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m 1643 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"days\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1644 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1645 |\u001b[39m   }\n \u001b[90m 1646 |\u001b[39m\n \u001b[90m 1647 |\u001b[39m   \u001b[36masync\u001b[39m verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 77,
+                        "line": 1644
+                      },
+                      "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n\n   at ../page/dashboardPage.ts:1644\n\n  1642 |     RawValueLogger.log(\"Expected Days Left\", daysLeft);\n  1643 |     expect.soft(actualDaysLeftText, \"Days left text should contain 'days'\").toContain(\"days\");\n> 1644 |     expect.soft(actualDaysLeftText, \"Days left text should contain 'days'\").toContain(daysLeft);\n       |                                                                             ^\n  1645 |   }\n  1646 |\n  1647 |   async verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1644:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:97:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:94:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 26,
+                        "line": 2079
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Yes' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"blue-button\">Yes</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2079\n\n  2077 |   async clickYesButtonInPopUp() {\n  2078 |     await this.page.waitForTimeout(2000);\n> 2079 |     await this.yesButton.click();\n       |                          ^\n  2080 |   }\n  2081 |\n  2082 |   async verifyCreateReportPopUpIsVisible() {\n    at DashBoardPage.clickYesButtonInPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2079:26)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:185:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:180:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S12:W3] Login successful for 02PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W3] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Verify submitted test set has 90 Days left to edit and verify hover text on dashboard and examinee screen",
+                      "duration": 25902,
+                      "error": {
+                        "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m",
+                        "stack": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1644:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:97:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:94:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 77,
+                          "line": 1644
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1644\n\n\u001b[0m \u001b[90m 1642 |\u001b[39m     \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m\"Expected Days Left\"\u001b[39m\u001b[33m,\u001b[39m daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m 1643 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"days\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1644 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1645 |\u001b[39m   }\n \u001b[90m 1646 |\u001b[39m\n \u001b[90m 1647 |\u001b[39m   \u001b[36masync\u001b[39m verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "Examiner:- Verify we can not edit the examinee name or test set when the status is \"In Progress\"",
+                      "duration": 32551
+                    },
+                    {
+                      "title": "Examiner:- Expire In Progress test to achieve - assignment line has gone to its greyed out inactive state after the 90-day editing window has passed and these assignments cannot be launched for status \"In Progress\"",
+                      "duration": 16945
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible",
+                      "duration": 12234
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"NO\" button",
+                      "duration": 81
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up",
+                      "duration": 62108,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Yes' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"blue-button\">Yes</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Yes' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"blue-button\">Yes</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.clickYesButtonInPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2079:26)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:185:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:180:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 26,
+                          "line": 2079
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:2079\n\n\u001b[0m \u001b[90m 2077 |\u001b[39m   \u001b[36masync\u001b[39m clickYesButtonInPopUp() {\n \u001b[90m 2078 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2079 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39myesButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2080 |\u001b[39m   }\n \u001b[90m 2081 |\u001b[39m\n \u001b[90m 2082 |\u001b[39m   \u001b[36masync\u001b[39m verifyCreateReportPopUpIsVisible() {\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-06-11T02:28:02.839Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927_26988_27345_29976_28792, 28823_29687_30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "line": 76,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome-retry1/test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 77,
+                    "line": 1644
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-856fcf7f0a9195f6efdf",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 76,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-11T02:12:20.956Z",
+    "duration": 1140920.321,
+    "expected": 3,
+    "skipped": 1,
+    "unexpected": 2,
+    "flaky": 1
+  }
+}
