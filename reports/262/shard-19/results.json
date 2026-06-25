@@ -1,0 +1,943 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 19,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/subscriptions/SubscriptionActivationDateEdge.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationDateEdge.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Date Edge Cases on Confirm Activation modal",
+          "ok": false,
+          "tags": [
+            "SubscriptionActivation",
+            "DateEdgeCases",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts",
+                    "line": 23,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6690,
+                  "error": {
+                    "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO193677 ",
+                    "stack": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO193677 \n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/SubscriptionActivation.page.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts:60:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts:59:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                      "column": 13,
+                      "line": 317
+                    },
+                    "snippet": "   at ../utils/subscriptionApi.ts:317\n\n\u001b[0m \u001b[90m 315 |\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mif\u001b[39m (status \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m     }\n \u001b[90m 319 |\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(bodyText) \u001b[36mas\u001b[39m \u001b[33mUpdateSalesOrderResponse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                        "column": 13,
+                        "line": 317
+                      },
+                      "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO193677 \n\n   at ../utils/subscriptionApi.ts:317\n\n  315 |\n  316 |     if (status !== 200) {\n> 317 |       throw new Error(`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`);\n      |             ^\n  318 |     }\n  319 |\n  320 |     return JSON.parse(bodyText) as UpdateSalesOrderResponse;\n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/SubscriptionActivation.page.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts:60:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts:59:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Fetch PurchaseDate from GetSubscriptionOrder API for SO193677",
+                      "duration": 2051
+                    },
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page (guarantees mutable START DATE)",
+                      "duration": 4418,
+                      "error": {
+                        "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO193677 ",
+                        "stack": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO193677 \n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/SubscriptionActivation.page.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts:60:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts:59:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                          "column": 13,
+                          "line": 317
+                        },
+                        "snippet": "   at ../utils/subscriptionApi.ts:317\n\n\u001b[0m \u001b[90m 315 |\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mif\u001b[39m (status \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m     }\n \u001b[90m 319 |\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(bodyText) \u001b[36mas\u001b[39m \u001b[33mUpdateSalesOrderResponse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-06-25T14:09:08.604Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts",
+                        "line": 23,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-38fd5-on-Confirm-Activation-modal-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-38fd5-on-Confirm-Activation-modal-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-38fd5-on-Confirm-Activation-modal-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                    "column": 13,
+                    "line": 317
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1029,
+                  "error": {
+                    "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO193677 ",
+                    "stack": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO193677 \n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/SubscriptionActivation.page.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts:60:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts:59:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                      "column": 13,
+                      "line": 317
+                    },
+                    "snippet": "   at ../utils/subscriptionApi.ts:317\n\n\u001b[0m \u001b[90m 315 |\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mif\u001b[39m (status \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m     }\n \u001b[90m 319 |\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(bodyText) \u001b[36mas\u001b[39m \u001b[33mUpdateSalesOrderResponse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                        "column": 13,
+                        "line": 317
+                      },
+                      "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO193677 \n\n   at ../utils/subscriptionApi.ts:317\n\n  315 |\n  316 |     if (status !== 200) {\n> 317 |       throw new Error(`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`);\n      |             ^\n  318 |     }\n  319 |\n  320 |     return JSON.parse(bodyText) as UpdateSalesOrderResponse;\n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/SubscriptionActivation.page.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts:60:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts:59:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Setup - Fetch PurchaseDate from GetSubscriptionOrder API for SO193677",
+                      "duration": 117
+                    },
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page (guarantees mutable START DATE)",
+                      "duration": 735,
+                      "error": {
+                        "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO193677 ",
+                        "stack": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO193677 \n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/SubscriptionActivation.page.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts:60:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts:59:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                          "column": 13,
+                          "line": 317
+                        },
+                        "snippet": "   at ../utils/subscriptionApi.ts:317\n\n\u001b[0m \u001b[90m 315 |\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mif\u001b[39m (status \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m     }\n \u001b[90m 319 |\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(bodyText) \u001b[36mas\u001b[39m \u001b[33mUpdateSalesOrderResponse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-06-25T14:09:17.077Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationDateEdge.spec.ts",
+                        "line": 23,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-38fd5-on-Confirm-Activation-modal-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-38fd5-on-Confirm-Activation-modal-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                    "column": 13,
+                    "line": 317
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8e3dc62f6e30221ce567-5c845a18f6e208990d00",
+          "file": "functional/subscriptions/SubscriptionActivationDateEdge.spec.ts",
+          "line": 23,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Existing user (Active subscription) redeems Unlimited Medium code - Confirm Renewal with read-only dates",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "ExistingUser",
+            "ActiveSubscription",
+            "Unlimited",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24544, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+                    "line": 33,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23258,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=8RWsRQaYjZb5VVQxwLBbHw%3d%3d SO=SO261698\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "[existing-user] 01SubAutEu220626 expected Active but is InActive.\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Verify user has Active subscription and resolve expected renewal START/END + AH name",
+                      "duration": 620
+                    },
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page",
+                      "duration": 4633
+                    },
+                    {
+                      "title": "S03 - Select \"Use my Existing Login\" and click Sign In (lands on Sign In to Activate)",
+                      "duration": 2949
+                    },
+                    {
+                      "title": "S07/S08 - Sign in with existing AH credentials",
+                      "duration": 3679
+                    },
+                    {
+                      "title": "S16/S17/S20 - Confirm Renewal popup: subscription, org, dates from API, START disabled",
+                      "duration": 48
+                    },
+                    {
+                      "title": "S24 - Accept terms, click Confirm, wait for renewal API success",
+                      "duration": 2486
+                    },
+                    {
+                      "title": "S26 - Dismiss 2FA + terms + Pendo, click WJ V tile, verify dashboard + AH name in header",
+                      "duration": 7287
+                    }
+                  ],
+                  "startTime": "2026-06-25T14:09:19.795Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24544, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+                        "line": 33,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4c6f953a637fac058223-a6a57b0bee8b275bd431",
+          "file": "functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+          "line": 33,
+          "column": 5
+        },
+        {
+          "title": "Existing user (Expired subscription) redeems Subtest High code - Confirm Renewal with editable dates",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "ExistingUser",
+            "ExpiredSubscription",
+            "Subtest",
+            "High",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24544, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+                    "line": 134,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23578,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=vFCRgH%2Fo%2FxaLy2klHyK5Bg%3D%3D SO=SO193835\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Ensure user has Expired subscription (expire via API if currently Active) + capture AH name",
+                      "duration": 336
+                    },
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page",
+                      "duration": 4743
+                    },
+                    {
+                      "title": "S03 - Select \"Use my Existing Login\" and click Sign In (lands on Sign In to Activate)",
+                      "duration": 2488
+                    },
+                    {
+                      "title": "S07/S08 - Sign in with existing AH credentials",
+                      "duration": 3675
+                    },
+                    {
+                      "title": "S16/S17/S20 - Confirm Activation popup: subscription, org, dates default to today (editable)",
+                      "duration": 68
+                    },
+                    {
+                      "title": "S24 - Accept terms, click Confirm, wait for renewal API success",
+                      "duration": 2472
+                    },
+                    {
+                      "title": "S26 - Dismiss 2FA + terms + Pendo, click WJ V tile, verify dashboard + AH name in header",
+                      "duration": 9141
+                    }
+                  ],
+                  "startTime": "2026-06-25T14:09:43.508Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24544, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+                        "line": 134,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4c6f953a637fac058223-fe57e37ec9932fd7584b",
+          "file": "functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+          "line": 134,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "S05 - Malformed activation code shows \"Invalid activation code\" error (existing-user landing context)",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "ExistingUser",
+            "Negative",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24544, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+                    "line": 21,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3009,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to malformed activation URL and verify \"Invalid activation code\" message",
+                      "duration": 2232
+                    }
+                  ],
+                  "startTime": "2026-06-25T14:10:08.379Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24544, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+                        "line": 21,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a9fab08109f1de8989ce-b19de24e081ae870910a",
+          "file": "functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+          "line": 21,
+          "column": 5
+        },
+        {
+          "title": "S09 - Invalid credentials on Sign In to Activate page show error and stay on login",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "ExistingUser",
+            "Negative",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24544, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+                    "line": 46,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9042,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page",
+                      "duration": 2398
+                    },
+                    {
+                      "title": "Select \"Use my Existing Login\" → click Sign In → lands on Sign In to Activate",
+                      "duration": 2515
+                    },
+                    {
+                      "title": "Submit invalid credentials and verify we remain on the Sign In to Activate page",
+                      "duration": 3703
+                    }
+                  ],
+                  "startTime": "2026-06-25T14:10:11.853Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24544, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+                        "line": 46,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a9fab08109f1de8989ce-9a65f76418deda508e83",
+          "file": "functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+          "line": 46,
+          "column": 5
+        },
+        {
+          "title": "S15 - GetOrgSubscriptionDetails API returns a graceful (non-500) error for a bad username",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "ExistingUser",
+            "Negative",
+            "API",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24544, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+                    "line": 76,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 768,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Call GetOrgSubscriptionDetails with bogus username and assert it does not 5xx",
+                      "duration": 628
+                    }
+                  ],
+                  "startTime": "2026-06-25T14:10:20.924Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24544, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+                        "line": 76,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a9fab08109f1de8989ce-1c31a53811f8e97fa731",
+          "file": "functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+          "line": 76,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-25T14:08:52.685Z",
+    "duration": 89125.674,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

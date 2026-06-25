@@ -1,0 +1,1114 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 20,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/subscriptions/SubscriptionActivationFutureDate.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationFutureDate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Future-dated activation - admin tasks allowed + Submit blocked + banner (S49, S50, S51)",
+          "ok": false,
+          "tags": [
+            "SubscriptionActivation",
+            "FutureDate",
+            "Subtest",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts",
+                    "line": 50,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4672,
+                  "error": {
+                    "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 ",
+                    "stack": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 \n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/SubscriptionActivation.page.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts:94:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                      "column": 13,
+                      "line": 317
+                    },
+                    "snippet": "   at ../utils/subscriptionApi.ts:317\n\n\u001b[0m \u001b[90m 315 |\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mif\u001b[39m (status \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m     }\n \u001b[90m 319 |\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(bodyText) \u001b[36mas\u001b[39m \u001b[33mUpdateSalesOrderResponse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                        "column": 13,
+                        "line": 317
+                      },
+                      "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 \n\n   at ../utils/subscriptionApi.ts:317\n\n  315 |\n  316 |     if (status !== 200) {\n> 317 |       throw new Error(`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`);\n      |             ^\n  318 |     }\n  319 |\n  320 |     return JSON.parse(bodyText) as UpdateSalesOrderResponse;\n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/SubscriptionActivation.page.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts:94:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page (guarantees mutable START DATE)",
+                      "duration": 4136,
+                      "error": {
+                        "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 ",
+                        "stack": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 \n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/SubscriptionActivation.page.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts:94:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                          "column": 13,
+                          "line": 317
+                        },
+                        "snippet": "   at ../utils/subscriptionApi.ts:317\n\n\u001b[0m \u001b[90m 315 |\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mif\u001b[39m (status \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m     }\n \u001b[90m 319 |\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(bodyText) \u001b[36mas\u001b[39m \u001b[33mUpdateSalesOrderResponse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-06-25T14:09:10.626Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts",
+                        "line": 50,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-aec1a-blocked-banner-S49-S50-S51--chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-aec1a-blocked-banner-S49-S50-S51--chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-aec1a-blocked-banner-S49-S50-S51--chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                    "column": 13,
+                    "line": 317
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1075,
+                  "error": {
+                    "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 ",
+                    "stack": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 \n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/SubscriptionActivation.page.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts:94:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                      "column": 13,
+                      "line": 317
+                    },
+                    "snippet": "   at ../utils/subscriptionApi.ts:317\n\n\u001b[0m \u001b[90m 315 |\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mif\u001b[39m (status \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m     }\n \u001b[90m 319 |\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(bodyText) \u001b[36mas\u001b[39m \u001b[33mUpdateSalesOrderResponse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                        "column": 13,
+                        "line": 317
+                      },
+                      "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 \n\n   at ../utils/subscriptionApi.ts:317\n\n  315 |\n  316 |     if (status !== 200) {\n> 317 |       throw new Error(`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`);\n      |             ^\n  318 |     }\n  319 |\n  320 |     return JSON.parse(bodyText) as UpdateSalesOrderResponse;\n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/SubscriptionActivation.page.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts:94:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page (guarantees mutable START DATE)",
+                      "duration": 741,
+                      "error": {
+                        "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 ",
+                        "stack": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 \n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/SubscriptionActivation.page.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts:94:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                          "column": 13,
+                          "line": 317
+                        },
+                        "snippet": "   at ../utils/subscriptionApi.ts:317\n\n\u001b[0m \u001b[90m 315 |\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mif\u001b[39m (status \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m     }\n \u001b[90m 319 |\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(bodyText) \u001b[36mas\u001b[39m \u001b[33mUpdateSalesOrderResponse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-06-25T14:09:17.576Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationFutureDate.spec.ts",
+                        "line": 50,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-aec1a-blocked-banner-S49-S50-S51--chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-aec1a-blocked-banner-S49-S50-S51--chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                    "column": 13,
+                    "line": 317
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c221dfbbe1ac4be13bff-94bfa8831514cb056ec2",
+          "file": "functional/subscriptions/SubscriptionActivationFutureDate.spec.ts",
+          "line": 50,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivationNegative.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationNegative.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "S05 - Malformed activation code shows \"Invalid activation code\" error",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "Negative",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNegative.spec.ts",
+                    "line": 20,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2646,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to malformed activation URL and verify \"Invalid activation code\" message",
+                      "duration": 2215
+                    }
+                  ],
+                  "startTime": "2026-06-25T14:09:20.383Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNegative.spec.ts",
+                        "line": 20,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9ba355e0f68d5f4e4e97-24b5e98ae22c6139beec",
+          "file": "functional/subscriptions/SubscriptionActivationNegative.spec.ts",
+          "line": 20,
+          "column": 5
+        },
+        {
+          "title": "S10/S11/S17/S18 - Contact + credentials inline validations and Back navigation",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "Negative",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNegative.spec.ts",
+                    "line": 45,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 59298,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Land on activation page (self-recover if code/SO already used)",
+                      "duration": 2228
+                    },
+                    {
+                      "title": "Setup - Select Create-a-Login and click Create an Account",
+                      "duration": 2895
+                    },
+                    {
+                      "title": "S11 - Invalid email and phone show inline errors on Contact Information",
+                      "duration": 9127
+                    },
+                    {
+                      "title": "Recover - Fix email/phone with valid values and proceed to Username & Password",
+                      "duration": 16935
+                    },
+                    {
+                      "title": "S18 - Short password (< 8 chars) shows length error",
+                      "duration": 6321
+                    },
+                    {
+                      "title": "S18 - Long password (> 10 chars) shows length error",
+                      "duration": 6809
+                    },
+                    {
+                      "title": "S17 - Mismatched password and confirm shows \"Passwords do not match\" error",
+                      "duration": 11820
+                    },
+                    {
+                      "title": "S10 - Click Back on Username & Password → lands on Contact Information page",
+                      "duration": 1261
+                    },
+                    {
+                      "title": "S10 - Click Back on Contact Information → lands on activation landing page",
+                      "duration": 1268
+                    }
+                  ],
+                  "startTime": "2026-06-25T14:09:23.506Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNegative.spec.ts",
+                        "line": 45,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9ba355e0f68d5f4e4e97-694fd0c36397bedaee57",
+          "file": "functional/subscriptions/SubscriptionActivationNegative.spec.ts",
+          "line": 45,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/testSets/TestSetVerification.spec.ts",
+      "file": "functional/testSets/TestSetVerification.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Test Set Verification",
+          "file": "functional/testSets/TestSetVerification.spec.ts",
+          "line": 93,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify test set integrity across default/custom sets, examinee switching, mid-administration, and review mode",
+              "ok": true,
+              "tags": [
+                "TestSetVerification",
+                "Functional",
+                "Aut_Eng_01",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [
+                    {
+                      "type": "Original customer issue, Automation user story",
+                      "description": "CLINICAL-30804, CLINICAL-31186 & CLINICAL-31587",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                        "line": 96,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2625290,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 10PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S20:W3] Login successful for 10PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N94168A84544\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N94168A84544 FirstName=Annabelle LastName =N94168A84544 Age = 06/25/2019\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N94168A84544\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N81309A75458\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N81309A75458 FirstName=Mikayla LastName =N81309A75458 Age = 06/25/2017\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N81309A75458\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N83334A61160, Rosalia\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N94168A84544\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N81309A75458\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N83334A61160, Rosalia\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Setup: Get Old Examinee from dashboard",
+                          "duration": 23281
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 1 + assign Broad Achievement",
+                          "duration": 43371
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 2 + assign Broad Achievement",
+                          "duration": 45321
+                        },
+                        {
+                          "title": "Setup: Assign Broad Achievement to Old Examinee",
+                          "duration": 24301
+                        },
+                        {
+                          "title": "S1: Open New Examinee 1 → capture baseline + verify 9 tests",
+                          "duration": 114887
+                        },
+                        {
+                          "title": "S1: Open Old Examinee → verify test list matches",
+                          "duration": 116324
+                        },
+                        {
+                          "title": "S1: Re-open Old Examinee → verify still intact",
+                          "duration": 115328
+                        },
+                        {
+                          "title": "S1: Open New Examinee 2 → verify test list matches",
+                          "duration": 114533
+                        },
+                        {
+                          "title": "S1: Re-open New Examinee 2 → verify test set still intact",
+                          "duration": 114589
+                        },
+                        {
+                          "title": "S2 Setup: Create custom test set with 19 tests",
+                          "duration": 64473
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 1",
+                          "duration": 21662
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 2",
+                          "duration": 24246
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to Old Examinee",
+                          "duration": 24170
+                        },
+                        {
+                          "title": "S2: Open New Examinee 1 (custom) → capture baseline + verify 19 tests",
+                          "duration": 115689
+                        },
+                        {
+                          "title": "S2: Open Old Examinee (custom) → verify",
+                          "duration": 115895
+                        },
+                        {
+                          "title": "S2: Re-open Old Examinee (custom) → verify still intact",
+                          "duration": 117319
+                        },
+                        {
+                          "title": "S2: Open New Examinee 2 (custom) → verify",
+                          "duration": 117291
+                        },
+                        {
+                          "title": "S2: Re-open New Examinee 2 (custom) → verify test set still intact",
+                          "duration": 117518
+                        },
+                        {
+                          "title": "S3: Semi-administer Calculation for New Examinee 1 (default test set)",
+                          "duration": 162587
+                        },
+                        {
+                          "title": "S3: Open Old Examinee (default) → verify NO in-progress carryover",
+                          "duration": 114843
+                        },
+                        {
+                          "title": "S3: Open New Examinee 1 in Review Mode (from dashboard) → verify Calculation is In Progress",
+                          "duration": 22388
+                        },
+                        {
+                          "title": "S3: Reopen New Examinee 1 from dashboard → verify left nav + in-progress status",
+                          "duration": 106800
+                        },
+                        {
+                          "title": "S3: Complete the in-progress Calculation test (5 wrong → ceiling)",
+                          "duration": 25135
+                        },
+                        {
+                          "title": "S3: Enter Review Mode → verify Calculation now Complete + test list = 9",
+                          "duration": 8530
+                        },
+                        {
+                          "title": "S4: Open Old Examinee (custom) → verify 19 tests + semi-administer Calculation",
+                          "duration": 165899
+                        },
+                        {
+                          "title": "S4: Open New Examinee 2 (custom) → verify NO in-progress carryover",
+                          "duration": 115485
+                        },
+                        {
+                          "title": "S4: Open Old Examinee in Review Mode (from dashboard) → verify Calculation In Progress + 19 tests",
+                          "duration": 22580
+                        },
+                        {
+                          "title": "S4: Reopen Old Examinee → verify left nav + complete Calculation",
+                          "duration": 136258
+                        },
+                        {
+                          "title": "S4: Review Mode → verify Calculation Complete + test list = 19",
+                          "duration": 8417
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 default test set via direct launch",
+                          "duration": 115445
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 custom test set via direct launch",
+                          "duration": 116805
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 default test set via Review Mode (from dashboard)",
+                          "duration": 22467
+                        }
+                      ],
+                      "startTime": "2026-06-25T14:10:24.106Z",
+                      "annotations": [
+                        {
+                          "type": "Original customer issue, Automation user story",
+                          "description": "CLINICAL-30804, CLINICAL-31186 & CLINICAL-31587",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                            "line": 96,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cf0eb0cce83021816cd8-796a3d69c79e5f725e21",
+              "file": "functional/testSets/TestSetVerification.spec.ts",
+              "line": 96,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-25T14:08:54.901Z",
+    "duration": 2715564.3049999997,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

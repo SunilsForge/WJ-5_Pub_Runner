@@ -1,0 +1,1770 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28176061457"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 18,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+      "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verify review mode for my 'In Progress' test assignments",
+          "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Administer a selective test and leave the test in diff statuses as a part of 'in progress' test assignment validation",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "ReviewMode",
+                "InProgressTestAssignments",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 2400000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1765659,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W0] Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N18935A91146\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N18935A91146 FirstName=Gregorio LastName =N18935A91146 Age = 06/25/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N18935A91146\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Analysis-Synthesis\n"
+                        },
+                        {
+                          "text": "Block Rotation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22599|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "Letter-Word Identification\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22088|Age 6|22089\n"
+                        },
+                        {
+                          "text": "Math Facts Fluency\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14914|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Number-Pattern Matching\n"
+                        },
+                        {
+                          "text": "taskStem value: NUMPAT.W5PA\n"
+                        },
+                        {
+                          "text": "Number Series\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13015|Ages 4 to 5|\n"
+                        },
+                        {
+                          "text": "Rapid Letter Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16289|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Number Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 23232|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Phoneme Naming\n"
+                        },
+                        {
+                          "text": "Story Recall\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13853|Ages 4 to 6|13854\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22639|Ages 5 to 7|22640,22641\n"
+                        },
+                        {
+                          "text": "Semantic Word Retrieval\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error while clicking on Next button : locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"end-test-button\" class=\"plain-button nav-button\">End Test</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestInAdministrationMode \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:9370:60\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:104:30 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts'\u001b[39m,\n      line: \u001b[33m9370\u001b[39m,\n      column: \u001b[33m60\u001b[39m,\n      function: \u001b[32m'CommonTestPage.completeTestInAdministrationMode'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m'button.plain-button.next-item-button, button.plain-button.nav-button >> nth=-1'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@861'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@861'\u001b[39m,\n      _title: \u001b[32m\"Click locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1782397813710\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button id=\"end-test-button\" class=\"plain-button nav-button\">End Test</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button id=\"end-test-button\" class=\"plain-button nav-button\">End Test</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.completeTestInAdministrationMode (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:9370:60)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:104:30'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verify statuses of the tests from left nav > tests'",
+                          "duration": 11211
+                        }
+                      ],
+                      "startTime": "2026-06-25T14:09:12.254Z",
+                      "annotations": [],
+                      "attachments": []
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1701150,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W1] Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N9110A25949\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N9110A25949 FirstName=Mae LastName =N9110A25949 Age = 06/25/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N9110A25949\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Analysis-Synthesis\n"
+                        },
+                        {
+                          "text": "Block Rotation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22599|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "Letter-Word Identification\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22088|Age 6|22089\n"
+                        },
+                        {
+                          "text": "Math Facts Fluency\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14914|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Number-Pattern Matching\n"
+                        },
+                        {
+                          "text": "taskStem value: NUMPAT.W5PA\n"
+                        },
+                        {
+                          "text": "Number Series\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13015|Ages 4 to 5|\n"
+                        },
+                        {
+                          "text": "Rapid Letter Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16289|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Number Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 23232|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Phoneme Naming\n"
+                        },
+                        {
+                          "text": "Story Recall\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13853|Ages 4 to 6|13854\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22639|Ages 5 to 7|22640,22641\n"
+                        },
+                        {
+                          "text": "Semantic Word Retrieval\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error while clicking on Next button : locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"end-test-button\" class=\"plain-button nav-button\">End Test</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestInAdministrationMode \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:9370:60\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:104:30 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts'\u001b[39m,\n      line: \u001b[33m9370\u001b[39m,\n      column: \u001b[33m60\u001b[39m,\n      function: \u001b[32m'CommonTestPage.completeTestInAdministrationMode'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m'button.plain-button.next-item-button, button.plain-button.nav-button >> nth=-1'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@861'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@861'\u001b[39m,\n      _title: \u001b[32m\"Click locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1782399834088\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button id=\"end-test-button\" class=\"plain-button nav-button\">End Test</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button id=\"end-test-button\" class=\"plain-button nav-button\">End Test</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.completeTestInAdministrationMode (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:9370:60)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:104:30'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Verify statuses of the tests from left nav > tests'",
+                          "duration": 7416
+                        }
+                      ],
+                      "startTime": "2026-06-25T14:43:18.327Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c839c71415aac1f8fd0-98bf6782be6d7d46548e",
+              "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "Validate different scenarios for 'In Progress' test assignment in review mode",
+              "ok": false,
+              "tags": [
+                "ReviewMode",
+                "InProgressTestAssignments",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [
+                    {
+                      "type": "Original user story, Automation user story",
+                      "description": "27994, (29273, 29290)",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                        "line": 180,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 269280,
+                      "error": {
+                        "message": "Error: Test failures:\nTime is up popup is not visible ...', 'Clicking on End Test button to get it",
+                        "stack": "Error: Test failures:\nTime is up popup is not visible ...', 'Clicking on End Test button to get it\n    at Function.checkErrors (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts:45:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:366:14",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts",
+                          "column": 19,
+                          "line": 45
+                        },
+                        "snippet": "   at ../utils/rawValueLogger.ts:45\n\n\u001b[0m \u001b[90m 43 |\u001b[39m     \u001b[36mstatic\u001b[39m checkErrors() {\n \u001b[90m 44 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrors\u001b[33m.\u001b[39mlength \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Test failures:\\n'\u001b[39m \u001b[33m+\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrors\u001b[33m.\u001b[39mjoin(\u001b[32m'\\n'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m         }\n \u001b[90m 47 |\u001b[39m     }\n \u001b[90m 48 |\u001b[39m }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts",
+                            "column": 19,
+                            "line": 45
+                          },
+                          "message": "Error: Test failures:\nTime is up popup is not visible ...', 'Clicking on End Test button to get it\n\n   at ../utils/rawValueLogger.ts:45\n\n  43 |     static checkErrors() {\n  44 |         if (this.errors.length > 0) {\n> 45 |             throw new Error('Test failures:\\n' + this.errors.join('\\n'));\n     |                   ^\n  46 |         }\n  47 |     }\n  48 | }\n    at Function.checkErrors (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts:45:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:366:14"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W0] Login successful for 08PwAut25Ex_01\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verify statuses for test administered at left nav > tests",
+                          "duration": 15622
+                        },
+                        {
+                          "title": "Verify 'Score Later', 'Needs Attention', 'Invalidated' and 'Flagged' in review mode Administration Summary",
+                          "duration": 20507
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when clicked on blue hyperlink",
+                          "duration": 11528
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when selected test from Left Nav>Tests",
+                          "duration": 13833
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from Administration Summary",
+                          "duration": 22489
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from left nav > tests",
+                          "duration": 11222
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from Administration Summary",
+                          "duration": 10014
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from left nav > tests",
+                          "duration": 22456
+                        },
+                        {
+                          "title": "Validate 'Score error (Need Attention)' functionality from Administration Summary",
+                          "duration": 90315
+                        }
+                      ],
+                      "startTime": "2026-06-25T14:38:38.591Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "27994, (29273, 29290)",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "line": 180,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-092d1-t-assignment-in-review-mode-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-092d1-t-assignment-in-review-mode-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts",
+                        "column": 19,
+                        "line": 45
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 312448,
+                      "error": {
+                        "message": "Error: Test failures:\nTime is up popup is not visible ...', 'Clicking on End Test button to get it",
+                        "stack": "Error: Test failures:\nTime is up popup is not visible ...', 'Clicking on End Test button to get it\n    at Function.checkErrors (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts:45:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:366:14",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts",
+                          "column": 19,
+                          "line": 45
+                        },
+                        "snippet": "   at ../utils/rawValueLogger.ts:45\n\n\u001b[0m \u001b[90m 43 |\u001b[39m     \u001b[36mstatic\u001b[39m checkErrors() {\n \u001b[90m 44 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrors\u001b[33m.\u001b[39mlength \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Test failures:\\n'\u001b[39m \u001b[33m+\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrors\u001b[33m.\u001b[39mjoin(\u001b[32m'\\n'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m         }\n \u001b[90m 47 |\u001b[39m     }\n \u001b[90m 48 |\u001b[39m }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts",
+                            "column": 19,
+                            "line": 45
+                          },
+                          "message": "Error: Test failures:\nTime is up popup is not visible ...', 'Clicking on End Test button to get it\n\n   at ../utils/rawValueLogger.ts:45\n\n  43 |     static checkErrors() {\n  44 |         if (this.errors.length > 0) {\n> 45 |             throw new Error('Test failures:\\n' + this.errors.join('\\n'));\n     |                   ^\n  46 |         }\n  47 |     }\n  48 | }\n    at Function.checkErrors (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts:45:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:366:14"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W1] Login successful for 08PwAut25Ex_01\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Verify statuses for test administered at left nav > tests",
+                          "duration": 15281
+                        },
+                        {
+                          "title": "Verify 'Score Later', 'Needs Attention', 'Invalidated' and 'Flagged' in review mode Administration Summary",
+                          "duration": 19716
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when clicked on blue hyperlink",
+                          "duration": 10819
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when selected test from Left Nav>Tests",
+                          "duration": 13275
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from Administration Summary",
+                          "duration": 82023
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from left nav > tests",
+                          "duration": 10808
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from Administration Summary",
+                          "duration": 9576
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from left nav > tests",
+                          "duration": 21432
+                        },
+                        {
+                          "title": "Validate 'Score error (Need Attention)' functionality from Administration Summary",
+                          "duration": 88152
+                        }
+                      ],
+                      "startTime": "2026-06-25T15:11:39.985Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "27994, (29273, 29290)",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "line": 180,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-092d1-t-assignment-in-review-mode-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts",
+                        "column": 19,
+                        "line": 45
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2c839c71415aac1f8fd0-836fc9345793af6c3fb1",
+              "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+              "line": 180,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "functional/reviewMode/SubmittedTestAssignments.spec.ts",
+      "file": "functional/reviewMode/SubmittedTestAssignments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "I want the ability to launch into review mode for my submitted test assignments",
+          "file": "functional/reviewMode/SubmittedTestAssignments.spec.ts",
+          "line": 31,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Complete testing for tests selected in the block and submit",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "ReviewMode",
+                "SubmittedTestAssignments",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 535477,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S18:W2] Login successful for 08PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W2] Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N72617A47283\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N72617A47283/dataFiles/Derived_Score_AutoFilter_Template_N72617A47283.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N72617A47283 FirstName=Westley LastName =N72617A47283 Age = 06/25/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N72617A47283\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Oral Vocabulary–Synonyms\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 11\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22179|Ages 4 to 11|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 25\n"
+                        },
+                        {
+                          "text": "Type Of test OVSYN - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(29) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'N/A'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'N/A'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxx@N/AN/A\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Oral Vocabulary–Antonyms\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 8\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22211|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 30\n"
+                        },
+                        {
+                          "text": "Type Of test OVANT - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(34) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m },\n  \u001b[32m'OVANT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m422.07\u001b[39m, Semw: \u001b[33m15.06\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Matrices\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 11\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17218|Ages 4 to 11|17219\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MATRCZ - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Block A, Item 1\n"
+                        },
+                        {
+                          "text": "Block A, Item 2\n"
+                        },
+                        {
+                          "text": "Block A, Item 3\n"
+                        },
+                        {
+                          "text": "Block A, Item 4\n"
+                        },
+                        {
+                          "text": "Block A, Item 5\n"
+                        },
+                        {
+                          "text": "Block A, Item 6\n"
+                        },
+                        {
+                          "text": "Block A, Item 7\n"
+                        },
+                        {
+                          "text": "Block A, Item 8\n"
+                        },
+                        {
+                          "text": "Map(43) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Introduction 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block A, Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 6'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 7'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 8'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block B, Item 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 5'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Introduction 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Introduction 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 5'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 5'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^x00000000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m },\n  \u001b[32m'OVANT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m422.07\u001b[39m, Semw: \u001b[33m15.06\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'MATRCZ.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m441.8\u001b[39m, Semw: \u001b[33m15.55\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Verbal Attention\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 8\n"
+                        },
+                        {
+                          "text": "selected ssp is = 12924|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 36\n"
+                        },
+                        {
+                          "text": "Type Of test VRBATN - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(40) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m },\n  \u001b[32m'OVANT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m422.07\u001b[39m, Semw: \u001b[33m15.06\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'MATRCZ.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m441.8\u001b[39m, Semw: \u001b[33m15.55\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'VRBATN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m421.34\u001b[39m, Semw: \u001b[33m14.92\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-25T15:16:53.821Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "079c699c8af826fa3a9c-67a70209b7b805734106",
+              "file": "functional/reviewMode/SubmittedTestAssignments.spec.ts",
+              "line": 35,
+              "column": 9
+            },
+            {
+              "title": "Validate different scenarios in submitted test assignment in review mode",
+              "ok": true,
+              "tags": [
+                "ReviewMode",
+                "SubmittedTestAssignments",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [
+                    {
+                      "type": "Original user story, Automation user story",
+                      "description": "27995, 29065",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/SubmittedTestAssignments.spec.ts",
+                        "line": 168,
+                        "column": 9
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 532337,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W2] Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Just Relauch the test assignment should not make the status move to 'In Progress'",
+                          "duration": 25891
+                        },
+                        {
+                          "title": "Opening up review mode for a submitted test assignment or just opening a test will not automatically change that test assignment to return back to in progress status",
+                          "duration": 69618
+                        },
+                        {
+                          "title": " For a test assignment to change back to ‘In progress’ from ‘Submitted’ in review mode, the user needs to change an answer.",
+                          "duration": 52286
+                        },
+                        {
+                          "title": " Verify Submitted test assignment in review mode should change ‘In progress’ to ‘Submitted’.",
+                          "duration": 37436
+                        },
+                        {
+                          "title": " For a test assignment to change back to ‘In progress’ from ‘Submitted’ in review mode, the user add a test to their test assignment.",
+                          "duration": 80774
+                        },
+                        {
+                          "title": " If a user is in review mode for a Submitted test assignment and “skips” a test using the side test set panel",
+                          "duration": 38019
+                        },
+                        {
+                          "title": " If a user is in review mode for a Submitted test assignment and adds any notes, or flags/unflags an item the test assignment will not return to in progress status",
+                          "duration": 52052
+                        },
+                        {
+                          "title": " verify that saved notes test level is displays on the HTML report",
+                          "duration": 22729
+                        },
+                        {
+                          "title": "Launching the test in admin mode will make the status move to 'In Progress'",
+                          "duration": 84758
+                        }
+                      ],
+                      "startTime": "2026-06-25T15:25:49.879Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "27995, 29065",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/SubmittedTestAssignments.spec.ts",
+                            "line": 168,
+                            "column": 9
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "079c699c8af826fa3a9c-f1af2fe1ba7aa86d74fb",
+              "file": "functional/reviewMode/SubmittedTestAssignments.spec.ts",
+              "line": 168,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivation.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Unlimited High - new user activation flow",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "HappyPath",
+            "NewUser",
+            "Unlimited",
+            "High",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivation.spec.ts",
+                    "line": 13,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 77285,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Unlimited High - Land on activation page (recover if code/SO already used)",
+                      "duration": 3243
+                    },
+                    {
+                      "title": "Unlimited High - Select Create-a-Login and click Create an Account",
+                      "duration": 2501
+                    },
+                    {
+                      "title": "Unlimited High - Fill contact info and proceed",
+                      "duration": 10760
+                    },
+                    {
+                      "title": "Unlimited High - Set username and password",
+                      "duration": 6965
+                    },
+                    {
+                      "title": "Unlimited High - Fill location and submit",
+                      "duration": 11781
+                    },
+                    {
+                      "title": "Unlimited High - Verify subscription details and confirm activation",
+                      "duration": 7259
+                    },
+                    {
+                      "title": "Unlimited High - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
+                      "duration": 8634
+                    },
+                    {
+                      "title": "Unlimited High - Verify GIA test set access matches qualification level",
+                      "duration": 4313
+                    },
+                    {
+                      "title": "Unlimited High - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
+                      "duration": 749
+                    },
+                    {
+                      "title": "Unlimited High - Open Subscription Details page and verify entered data is reflected",
+                      "duration": 8478
+                    },
+                    {
+                      "title": "Unlimited High - S45 sign out, re-login as AH, verify WJ V tile and name retained",
+                      "duration": 5086
+                    },
+                    {
+                      "title": "Unlimited High - S05 verify re-navigating to a just-used activation code shows \"already activated\" error",
+                      "duration": 2519
+                    }
+                  ],
+                  "startTime": "2026-06-25T15:34:43.747Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivation.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3aa3d4ddc00d173ffb12-27a5f9811fd7ea572248",
+          "file": "functional/subscriptions/SubscriptionActivation.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Unlimited Medium - new user activation flow",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "HappyPath",
+            "NewUser",
+            "Unlimited",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivation.spec.ts",
+                    "line": 13,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 66758,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=8RWsRQaYjZb5VVQxwLBbHw%3d%3d SO=SO261698\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Unlimited Medium - Land on activation page (recover if code/SO already used)",
+                      "duration": 5435
+                    },
+                    {
+                      "title": "Unlimited Medium - Select Create-a-Login and click Create an Account",
+                      "duration": 2534
+                    },
+                    {
+                      "title": "Unlimited Medium - Fill contact info and proceed",
+                      "duration": 10628
+                    },
+                    {
+                      "title": "Unlimited Medium - Set username and password",
+                      "duration": 6940
+                    },
+                    {
+                      "title": "Unlimited Medium - Fill location and submit",
+                      "duration": 11621
+                    },
+                    {
+                      "title": "Unlimited Medium - Verify subscription details and confirm activation",
+                      "duration": 2544
+                    },
+                    {
+                      "title": "Unlimited Medium - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
+                      "duration": 8611
+                    },
+                    {
+                      "title": "Unlimited Medium - Verify GIA test set access matches qualification level",
+                      "duration": 4315
+                    },
+                    {
+                      "title": "Unlimited Medium - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
+                      "duration": 324
+                    },
+                    {
+                      "title": "Unlimited Medium - Open Subscription Details page and verify entered data is reflected",
+                      "duration": 8589
+                    }
+                  ],
+                  "startTime": "2026-06-25T15:36:01.534Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivation.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3aa3d4ddc00d173ffb12-44cc92228ba4e6566141",
+          "file": "functional/subscriptions/SubscriptionActivation.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Subtest High - new user activation flow",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "HappyPath",
+            "NewUser",
+            "Subtest",
+            "High",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivation.spec.ts",
+                    "line": 13,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 67649,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=vFCRgH%2Fo%2FxaLy2klHyK5Bg%3D%3D SO=SO193835\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Subtest High - Land on activation page (recover if code/SO already used)",
+                      "duration": 5248
+                    },
+                    {
+                      "title": "Subtest High - Select Create-a-Login and click Create an Account",
+                      "duration": 2468
+                    },
+                    {
+                      "title": "Subtest High - Fill contact info and proceed",
+                      "duration": 10696
+                    },
+                    {
+                      "title": "Subtest High - Set username and password",
+                      "duration": 6923
+                    },
+                    {
+                      "title": "Subtest High - Fill location and submit",
+                      "duration": 12056
+                    },
+                    {
+                      "title": "Subtest High - Verify subscription details and confirm activation",
+                      "duration": 2913
+                    },
+                    {
+                      "title": "Subtest High - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
+                      "duration": 8532
+                    },
+                    {
+                      "title": "Subtest High - Verify GIA test set access matches qualification level",
+                      "duration": 4438
+                    },
+                    {
+                      "title": "Subtest High - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
+                      "duration": 553
+                    },
+                    {
+                      "title": "Subtest High - Open Subscription Details page and verify entered data is reflected",
+                      "duration": 8591
+                    }
+                  ],
+                  "startTime": "2026-06-25T15:37:08.343Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivation.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3aa3d4ddc00d173ffb12-87add3529a3888d21061",
+          "file": "functional/subscriptions/SubscriptionActivation.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Subtest Medium - new user activation flow",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "HappyPath",
+            "NewUser",
+            "Subtest",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivation.spec.ts",
+                    "line": 13,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 65087,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Subtest Medium - Land on activation page (recover if code/SO already used)",
+                      "duration": 2257
+                    },
+                    {
+                      "title": "Subtest Medium - Select Create-a-Login and click Create an Account",
+                      "duration": 2510
+                    },
+                    {
+                      "title": "Subtest Medium - Fill contact info and proceed",
+                      "duration": 10920
+                    },
+                    {
+                      "title": "Subtest Medium - Set username and password",
+                      "duration": 6927
+                    },
+                    {
+                      "title": "Subtest Medium - Fill location and submit",
+                      "duration": 12703
+                    },
+                    {
+                      "title": "Subtest Medium - Verify subscription details and confirm activation",
+                      "duration": 2588
+                    },
+                    {
+                      "title": "Subtest Medium - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
+                      "duration": 8924
+                    },
+                    {
+                      "title": "Subtest Medium - Verify GIA test set access matches qualification level",
+                      "duration": 4303
+                    },
+                    {
+                      "title": "Subtest Medium - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
+                      "duration": 358
+                    },
+                    {
+                      "title": "Subtest Medium - Open Subscription Details page and verify entered data is reflected",
+                      "duration": 8570
+                    }
+                  ],
+                  "startTime": "2026-06-25T15:38:16.039Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivation.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3aa3d4ddc00d173ffb12-5fd60ea24370eba0da71",
+          "file": "functional/subscriptions/SubscriptionActivation.spec.ts",
+          "line": 13,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-25T14:08:55.397Z",
+    "duration": 5426029.567000001,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
