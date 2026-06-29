@@ -1,0 +1,2159 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/28353191721"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 4,
+      "total": 15
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts",
+      "file": "derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " MTHCAL cluster Derived Export Automation ",
+          "file": "derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts",
+          "line": 25,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For MTHFLU - Age - All correct scenario,CALC - Age - All correct scenario Complete The MTHCAL cluster & generate report",
+              "ok": true,
+              "tags": [
+                "MTHCAL",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1500000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 538753,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S4:W0] Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S4:W0] Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N4391A25013\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N4391A25013/dataFiles/Derived_Score_AutoFilter_Template_N4391A25013.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N4391A25013 FirstName=Taurean LastName =N4391A25013 Age = 06/29/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N4391A25013\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Math Facts Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14497|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MTHFLU - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "Test Introduction\n"
+                        },
+                        {
+                          "text": "Map(6) {\n  \u001b[32m'Practice Exercise'\u001b[39m => \u001b[32m''\u001b[39m,\n  \u001b[32m'Page 4'\u001b[39m => \u001b[32m'80'\u001b[39m,\n  \u001b[32m'Page 5'\u001b[39m => \u001b[32m'80'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString 8080@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'MTHFLU.W5PA'\u001b[39m: {\n    wScores: \u001b[33m160\u001b[39m,\n    Wabil: \u001b[33m549.73\u001b[39m,\n    Semw: \u001b[33m13.39\u001b[39m,\n    AE: \u001b[32m'>29y'\u001b[39m,\n    GE: \u001b[32m'>G12.9'\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Calculation\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17958|Ages 4 to 6|17959\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 55\n"
+                        },
+                        {
+                          "text": "Type Of test CALC - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A\n"
+                        },
+                        {
+                          "text": "Sample Item B\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Item 39\n"
+                        },
+                        {
+                          "text": "Item 40\n"
+                        },
+                        {
+                          "text": "Item 41\n"
+                        },
+                        {
+                          "text": "Item 42\n"
+                        },
+                        {
+                          "text": "Item 43\n"
+                        },
+                        {
+                          "text": "Item 44\n"
+                        },
+                        {
+                          "text": "Item 45\n"
+                        },
+                        {
+                          "text": "Item 46\n"
+                        },
+                        {
+                          "text": "Item 47\n"
+                        },
+                        {
+                          "text": "Item 48\n"
+                        },
+                        {
+                          "text": "Item 49\n"
+                        },
+                        {
+                          "text": "Item 50\n"
+                        },
+                        {
+                          "text": "Item 51\n"
+                        },
+                        {
+                          "text": "Item 52\n"
+                        },
+                        {
+                          "text": "Item 53\n"
+                        },
+                        {
+                          "text": "Item 54\n"
+                        },
+                        {
+                          "text": "Item 55\n"
+                        },
+                        {
+                          "text": "Map(59) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>24y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^1111111111111111111111111111111111111111111111111111111@>24y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'MTHFLU.W5PA'\u001b[39m: {\n    wScores: \u001b[33m160\u001b[39m,\n    Wabil: \u001b[33m549.73\u001b[39m,\n    Semw: \u001b[33m13.39\u001b[39m,\n    AE: \u001b[32m'>29y'\u001b[39m,\n    GE: \u001b[32m'>G12.9'\u001b[39m\n  },\n  \u001b[32m'CALC.W5PA'\u001b[39m: { wScores: \u001b[33m55\u001b[39m, Wabil: \u001b[33m611.35\u001b[39m, Semw: \u001b[33m15.52\u001b[39m, AE: \u001b[32m'>24y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N4391A25013/dataFiles/Derived_Score_AutoFilter_Template_N4391A25013.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N4391A25013\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N4391A25013/downloads/derived_N4391A25013_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N4391A25013/downloads/derived_N4391A25013_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N4391A25013/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'derived', examineeID: 'N4391A25013', Available files: [Derived_Score_AutoFilter_Template_N4391A25013_Derived.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('derived'): Expecting exact filename: Derived_Score_AutoFilter_Template_N4391A25013_Derived.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Derived_Score_AutoFilter_Template_N4391A25013_Derived.txt\n"
+                        },
+                        {
+                          "text": "ISABSOLUTE? : Reading derived score TXT content from: generated/N4391A25013/downloads/extracted/Derived_Score_AutoFilter_Template_N4391A25013_Derived.txt\n"
+                        },
+                        {
+                          "text": "Reading TXT content from: generated/N4391A25013/downloads/extracted/Derived_Score_AutoFilter_Template_N4391A25013_Derived.txt\n"
+                        },
+                        {
+                          "text": "returnValues =  {\n  \u001b[32m'CALC.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N4391A25013'\u001b[39m,\n    DemogCode: \u001b[32m'M  :05'\u001b[39m,\n    TaskStem: \u001b[32m'CALC'\u001b[39m,\n    TaskStemForm: \u001b[32m'CALC.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-06-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-06-29'\u001b[39m,\n    DOB: \u001b[32m'2021-06-29'\u001b[39m,\n    CAMOS: \u001b[32m'60'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'611.35'\u001b[39m,\n    SEMW: \u001b[32m'15.52'\u001b[39m,\n    W68_Low: \u001b[32m'596'\u001b[39m,\n    W68_High: \u001b[32m'627'\u001b[39m,\n    W90_Low: \u001b[32m'586'\u001b[39m,\n    W90_High: \u001b[32m'637'\u001b[39m,\n    W95_Low: \u001b[32m'581'\u001b[39m,\n    W95_High: \u001b[32m'642'\u001b[39m,\n    NormBasis: \u001b[32m'Age'\u001b[39m,\n    CHRON: \u001b[32m'60'\u001b[39m,\n    AgeYM: \u001b[32m'Age 5 years, 0 months'\u001b[39m,\n    GradeYM: \u001b[32m''\u001b[39m,\n    REFW: \u001b[32m'425.57'\u001b[39m,\n    SDLo: \u001b[32m'18.62'\u001b[39m,\n    SDUp: \u001b[32m'18.77'\u001b[39m,\n    AE_Equiv: \u001b[32m'>24y'\u001b[39m,\n    GE_Equiv: \u001b[32m'>G12.9'\u001b[39m,\n    AE_Low: \u001b[32m'>24y'\u001b[39m,\n    AE_High: \u001b[32m'>24y'\u001b[39m,\n    GE_Low: \u001b[32m'>G12.9'\u001b[39m,\n    GE_High: \u001b[32m'>G12.9'\u001b[39m,\n    WDIFF: \u001b[32m'185.78'\u001b[39m,\n    RPI_Num: \u001b[32m'100'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Very Advanced'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 6'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'extremely easy'\u001b[39m,\n    SDUsed: \u001b[32m'18.77'\u001b[39m,\n    Z_Score: \u001b[32m'9.90'\u001b[39m,\n    StdScore_Computed: \u001b[32m'248.47'\u001b[39m,\n    StdScore_Display: \u001b[32m'>160'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Superior'\u001b[39m,\n    SEMSS: \u001b[32m'12.40'\u001b[39m,\n    SS68_Low: \u001b[32m'>160'\u001b[39m,\n    SS68_High: \u001b[32m'>160'\u001b[39m,\n    SS90_Low: \u001b[32m'>160'\u001b[39m,\n    SS90_High: \u001b[32m'>160'\u001b[39m,\n    SS95_Low: \u001b[32m'>160'\u001b[39m,\n    SS95_High: \u001b[32m'>160'\u001b[39m,\n    PR: \u001b[32m'>99'\u001b[39m,\n    PR68_Low: \u001b[32m'>99'\u001b[39m,\n    PR68_High: \u001b[32m'>99'\u001b[39m,\n    PR90_Low: \u001b[32m'>99'\u001b[39m,\n    PR90_High: \u001b[32m'>99'\u001b[39m,\n    PR95_Low: \u001b[32m'>99'\u001b[39m,\n    PR95_High: \u001b[32m'>99'\u001b[39m,\n    T_Score_Computed: \u001b[32m'148.98'\u001b[39m,\n    T_Score_Display: \u001b[32m'>90'\u001b[39m,\n    SEMT: \u001b[32m'8.27'\u001b[39m,\n    T_Score68_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score68_High: \u001b[32m'>90'\u001b[39m,\n    T_Score90_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score90_High: \u001b[32m'>90'\u001b[39m,\n    T_Score95_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score95_High: \u001b[32m'>90'\u001b[39m,\n    AssignmentID: \u001b[32m'515853'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  \u001b[32m'MTHFLU.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N4391A25013'\u001b[39m,\n    DemogCode: \u001b[32m'M  :05'\u001b[39m,\n    TaskStem: \u001b[32m'MTHFLU'\u001b[39m,\n    TaskStemForm: \u001b[32m'MTHFLU.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-06-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-06-29'\u001b[39m,\n    DOB: \u001b[32m'2021-06-29'\u001b[39m,\n    CAMOS: \u001b[32m'60'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'549.73'\u001b[39m,\n    SEMW: \u001b[32m'13.39'\u001b[39m,\n    W68_Low: \u001b[32m'536'\u001b[39m,\n    W68_High: \u001b[32m'563'\u001b[39m,\n    W90_Low: \u001b[32m'528'\u001b[39m,\n    W90_High: \u001b[32m'572'\u001b[39m,\n    W95_Low: \u001b[32m'523'\u001b[39m,\n    W95_High: \u001b[32m'576'\u001b[39m,\n    NormBasis: \u001b[32m'Age'\u001b[39m,\n    CHRON: \u001b[32m'60'\u001b[39m,\n    AgeYM: \u001b[32m'Age 5 years, 0 months'\u001b[39m,\n    GradeYM: \u001b[32m''\u001b[39m,\n    REFW: \u001b[32m'462.79'\u001b[39m,\n    SDLo: \u001b[32m'11.47'\u001b[39m,\n    SDUp: \u001b[32m'8.02'\u001b[39m,\n    AE_Equiv: \u001b[32m'>29y'\u001b[39m,\n    GE_Equiv: \u001b[32m'>G12.9'\u001b[39m,\n    AE_Low: \u001b[32m'>29y'\u001b[39m,\n    AE_High: \u001b[32m'>29y'\u001b[39m,\n    GE_Low: \u001b[32m'>G12.9'\u001b[39m,\n    GE_High: \u001b[32m'>G12.9'\u001b[39m,\n    WDIFF: \u001b[32m'86.94'\u001b[39m,\n    RPI_Num: \u001b[32m'100'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Very Advanced'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 6'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'extremely easy'\u001b[39m,\n    SDUsed: \u001b[32m'8.02'\u001b[39m,\n    Z_Score: \u001b[32m'10.84'\u001b[39m,\n    StdScore_Computed: \u001b[32m'262.61'\u001b[39m,\n    StdScore_Display: \u001b[32m'>160'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Superior'\u001b[39m,\n    SEMSS: \u001b[32m'25.04'\u001b[39m,\n    SS68_Low: \u001b[32m'>160'\u001b[39m,\n    SS68_High: \u001b[32m'>160'\u001b[39m,\n    SS90_Low: \u001b[32m'>160'\u001b[39m,\n    SS90_High: \u001b[32m'>160'\u001b[39m,\n    SS95_Low: \u001b[32m'>160'\u001b[39m,\n    SS95_High: \u001b[32m'>160'\u001b[39m,\n    PR: \u001b[32m'>99'\u001b[39m,\n    PR68_Low: \u001b[32m'>99'\u001b[39m,\n    PR68_High: \u001b[32m'>99'\u001b[39m,\n    PR90_Low: \u001b[32m'>99'\u001b[39m,\n    PR90_High: \u001b[32m'>99'\u001b[39m,\n    PR95_Low: \u001b[32m'>99'\u001b[39m,\n    PR95_High: \u001b[32m'>99'\u001b[39m,\n    T_Score_Computed: \u001b[32m'158.40'\u001b[39m,\n    T_Score_Display: \u001b[32m'>90'\u001b[39m,\n    SEMT: \u001b[32m'16.70'\u001b[39m,\n    T_Score68_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score68_High: \u001b[32m'>90'\u001b[39m,\n    T_Score90_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score90_High: \u001b[32m'>90'\u001b[39m,\n    T_Score95_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score95_High: \u001b[32m'>90'\u001b[39m,\n    AssignmentID: \u001b[32m'515853'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  MTHCAL: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N4391A25013'\u001b[39m,\n    DemogCode: \u001b[32m'M  :05'\u001b[39m,\n    TaskStem: \u001b[32m'MTHCAL'\u001b[39m,\n    TaskStemForm: \u001b[32m'MTHCAL'\u001b[39m,\n    ContribTaskStems: \u001b[32m'CALC.W5PA;MTHFLU.W5PA'\u001b[39m,\n    EDOT: \u001b[32m'2026-06-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-06-29'\u001b[39m,\n    DOB: \u001b[32m'2021-06-29'\u001b[39m,\n    CAMOS: \u001b[32m'60'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'580.54'\u001b[39m,\n    SEMW: \u001b[32m'10.25'\u001b[39m,\n    W68_Low: \u001b[32m'570'\u001b[39m,\n    W68_High: \u001b[32m'591'\u001b[39m,\n    W90_Low: \u001b[32m'564'\u001b[39m,\n    W90_High: \u001b[32m'597'\u001b[39m,\n    W95_Low: \u001b[32m'560'\u001b[39m,\n    W95_High: \u001b[32m'601'\u001b[39m,\n    NormBasis: \u001b[32m'Age'\u001b[39m,\n    CHRON: \u001b[32m'60'\u001b[39m,\n    AgeYM: \u001b[32m'Age 5 years, 0 months'\u001b[39m,\n    GradeYM: \u001b[32m''\u001b[39m,\n    REFW: \u001b[32m'444.18'\u001b[39m,\n    SDLo: \u001b[32m'14.11'\u001b[39m,\n    SDUp: \u001b[32m'12.35'\u001b[39m,\n    AE_Equiv: \u001b[32m'>27y'\u001b[39m,\n    GE_Equiv: \u001b[32m'>G12.9'\u001b[39m,\n    AE_Low: \u001b[32m'>27y'\u001b[39m,\n    AE_High: \u001b[32m'>27y'\u001b[39m,\n    GE_Low: \u001b[32m'>G12.9'\u001b[39m,\n    GE_High: \u001b[32m'>G12.9'\u001b[39m,\n    WDIFF: \u001b[32m'136.36'\u001b[39m,\n    RPI_Num: \u001b[32m'100'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Very Advanced'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Very Advanced'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 6'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'extremely easy'\u001b[39m,\n    SDUsed: \u001b[32m'12.35'\u001b[39m,\n    Z_Score: \u001b[32m'11.04'\u001b[39m,\n    StdScore_Computed: \u001b[32m'265.62'\u001b[39m,\n    StdScore_Display: \u001b[32m'>160'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Superior'\u001b[39m,\n    SEMSS: \u001b[32m'12.45'\u001b[39m,\n    SS68_Low: \u001b[32m'>160'\u001b[39m,\n    SS68_High: \u001b[32m'>160'\u001b[39m,\n    SS90_Low: \u001b[32m'>160'\u001b[39m,\n    SS90_High: \u001b[32m'>160'\u001b[39m,\n    SS95_Low: \u001b[32m'>160'\u001b[39m,\n    SS95_High: \u001b[32m'>160'\u001b[39m,\n    PR: \u001b[32m'>99'\u001b[39m,\n    PR68_Low: \u001b[32m'>99'\u001b[39m,\n    PR68_High: \u001b[32m'>99'\u001b[39m,\n    PR90_Low: \u001b[32m'>99'\u001b[39m,\n    PR90_High: \u001b[32m'>99'\u001b[39m,\n    PR95_Low: \u001b[32m'>99'\u001b[39m,\n    PR95_High: \u001b[32m'>99'\u001b[39m,\n    T_Score_Computed: \u001b[32m'160.41'\u001b[39m,\n    T_Score_Display: \u001b[32m'>90'\u001b[39m,\n    SEMT: \u001b[32m'8.30'\u001b[39m,\n    T_Score68_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score68_High: \u001b[32m'>90'\u001b[39m,\n    T_Score90_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score90_High: \u001b[32m'>90'\u001b[39m,\n    T_Score95_Low: \u001b[32m'>90'\u001b[39m,\n    T_Score95_High: \u001b[32m'>90'\u001b[39m,\n    AssignmentID: \u001b[32m'515853'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": " \n Reading WJV NormTable data ... \n\n"
+                        },
+                        {
+                          "text": "\n ==== Assertion MTHFLU.W5PA for NormBasis as Age ==== \n\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N4391A25013 <> N4391A25013\n"
+                        },
+                        {
+                          "text": "2 Task Stem ->  value from the RunTime VS downloaded file is =  MTHFLU <> MTHFLU\n"
+                        },
+                        {
+                          "text": "3 TaskStemForm ->  value from the RunTime VS downloaded file is =  MTHFLU.W5PA <> MTHFLU.W5PA\n"
+                        },
+                        {
+                          "text": "4 EDOT ->  value from the RunTime VS downloaded file is =  2026-06-29 <> 2026-06-29\n"
+                        },
+                        {
+                          "text": "5 LDOT ->  value from the RunTime VS downloaded file is =  2026-06-29 <> 2026-06-29\n"
+                        },
+                        {
+                          "text": "6 DOB ->  value from the RunTime VS downloaded file is =  2021-06-29 <> 2021-06-29\n"
+                        },
+                        {
+                          "text": "7 CAMOS ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "8 GradePlacement ->  value from the RunTime VS downloaded file is =  1.9 <> 1.9\n"
+                        },
+                        {
+                          "text": "9 W_Abil ->  value from the RunTime VS downloaded file is =  549.73 <> 549.73\n"
+                        },
+                        {
+                          "text": "10 SEMW ->  value from the RunTime VS downloaded file is =  13.39 <> 13.39\n"
+                        },
+                        {
+                          "text": "11 W68_Low ->  value from the RunTime VS downloaded file is =  536 <> 536\n"
+                        },
+                        {
+                          "text": "12 W68_High ->  value from the RunTime VS downloaded file is =  563 <> 563\n"
+                        },
+                        {
+                          "text": "13 W90_Low ->  value from the RunTime VS downloaded file is =  528 <> 528\n"
+                        },
+                        {
+                          "text": "14 W90_High ->  value from the RunTime VS downloaded file is =  572 <> 572\n"
+                        },
+                        {
+                          "text": "15 W95_Low ->  value from the RunTime VS downloaded file is =  523 <> 523\n"
+                        },
+                        {
+                          "text": "16 W95_High ->  value from the RunTime VS downloaded file is =  576 <> 576\n"
+                        },
+                        {
+                          "text": "17 NormBasis ->  value from the RunTime VS downloaded file is =  Age <> Age\n"
+                        },
+                        {
+                          "text": "18 CHRON ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "19 AgeYM ->  value from the RunTime VS downloaded file is =  Age 5 years, 0 months <> Age 5 years, 0 months\n"
+                        },
+                        {
+                          "text": "20 REFW ->  value from the RunTime VS downloaded file is =  462.79 <> 462.79\n"
+                        },
+                        {
+                          "text": "21 SDLo ->  value from the RunTime VS downloaded file is =  11.47 <> 11.47\n"
+                        },
+                        {
+                          "text": "22 SDUp ->  value from the RunTime VS downloaded file is =  8.02 <> 8.02\n"
+                        },
+                        {
+                          "text": "23 AE_Equiv ->  value from the RunTime VS downloaded file is =  >29y <> >29y\n"
+                        },
+                        {
+                          "text": "24 GE_Equiv ->  value from the RunTime VS downloaded file is =  >G12.9 <> >G12.9\n"
+                        },
+                        {
+                          "text": "25 AE_EndTest_Popup ->  value from the RunTime VS downloaded file is =  >29y <> >29y\n"
+                        },
+                        {
+                          "text": "26 GE_EndTest_Popup ->  value from the RunTime VS downloaded file is =  >G12.9 <> >G12.9\n"
+                        },
+                        {
+                          "text": "27 AE_Low ->  value from the RunTime VS downloaded file is =  >29y <> >29y\n"
+                        },
+                        {
+                          "text": "28 AE_High ->  value from the RunTime VS downloaded file is =  >29y <> >29y\n"
+                        },
+                        {
+                          "text": "29 GE_Low ->  value from the RunTime VS downloaded file is =  >G12.9 <> >G12.9\n"
+                        },
+                        {
+                          "text": "30 GE_High ->  value from the RunTime VS downloaded file is =  >G12.9 <> >G12.9\n"
+                        },
+                        {
+                          "text": "31 WDIFF ->  value from the RunTime VS downloaded file is =  86.94 <> 86.94\n"
+                        },
+                        {
+                          "text": "32 RPI_Num ->  value from the RunTime VS downloaded file is =  100 <> 100\n"
+                        },
+                        {
+                          "text": "33 WDIFF_Proficiency ->  value from the RunTime VS downloaded file is =  Very Advanced <> Very Advanced\n"
+                        },
+                        {
+                          "text": "34 WDIFF_Functionality ->  value from the RunTime VS downloaded file is =  Very Advanced <> Very Advanced\n"
+                        },
+                        {
+                          "text": "35 WDIFF_Development ->  value from the RunTime VS downloaded file is =  Very Advanced <> Very Advanced\n"
+                        },
+                        {
+                          "text": "36 WDIFF_Fluency ->  value from the RunTime VS downloaded file is =  Very Advanced <> Very Advanced\n"
+                        },
+                        {
+                          "text": "37 WDIFF_Implication ->  value from the RunTime VS downloaded file is =  extremely easy <> extremely easy\n"
+                        },
+                        {
+                          "text": "38 CALP_Level ->  value from the RunTime VS downloaded file is =  Level 6 <> Level 6\n"
+                        },
+                        {
+                          "text": "39 SDUsed ->  value from the RunTime VS downloaded file is =  8.02 <> 8.02\n"
+                        },
+                        {
+                          "text": "40 Z_Score ->  value from the RunTime VS downloaded file is =  10.84 <> 10.84\n"
+                        },
+                        {
+                          "text": "41 StdScore_Computed ->  value from the RunTime VS downloaded file is =  262.61 <> 262.61\n"
+                        },
+                        {
+                          "text": "42 StdScore_Display ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "43 SS_PR_Classification ->  value from the RunTime VS downloaded file is =  Very Superior <> Very Superior\n"
+                        },
+                        {
+                          "text": "44 SEMSS ->  value from the RunTime VS downloaded file is =  25.04 <> 25.04\n"
+                        },
+                        {
+                          "text": "45 SS68_Low ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "46 SS68_High ->  value from the RunTime VS downloaded file is =  >160 <~> >160\n"
+                        },
+                        {
+                          "text": "47 SS90_Low ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "48 SS90_High ->  value from the RunTime VS downloaded file is =  >160 <~> >160\n"
+                        },
+                        {
+                          "text": "49 SS95_Low ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "50 SS95_High ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "51 PR ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "52 PR68_Low ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "53 PR68_High ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "54 PR90_Low ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "55 PR90_High ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "56 PR95_Low ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "57 PR95_High ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "58 T_Score_Computed ->  value from the RunTime VS downloaded file is =  158.40 <> 158.40\n"
+                        },
+                        {
+                          "text": "59 T_Score_Display ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "60 SEMT ->  value from the RunTime VS downloaded file is =  16.70 <> 16.70\n"
+                        },
+                        {
+                          "text": "61 T_Score68_Low ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "62 T_Score68_High ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "63 T_Score90_Low ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "64 T_Score90_High ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "65 T_Score95_Low ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "66 T_Score95_High ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "\n ==== Assertion CALC.W5PA for NormBasis as Age ==== \n\n"
+                        },
+                        {
+                          "text": "67 Examinee ID ->  value from the RunTime VS downloaded file is =  N4391A25013 <> N4391A25013\n"
+                        },
+                        {
+                          "text": "68 Task Stem ->  value from the RunTime VS downloaded file is =  CALC <> CALC\n"
+                        },
+                        {
+                          "text": "69 TaskStemForm ->  value from the RunTime VS downloaded file is =  CALC.W5PA <> CALC.W5PA\n"
+                        },
+                        {
+                          "text": "70 EDOT ->  value from the RunTime VS downloaded file is =  2026-06-29 <> 2026-06-29\n"
+                        },
+                        {
+                          "text": "71 LDOT ->  value from the RunTime VS downloaded file is =  2026-06-29 <> 2026-06-29\n"
+                        },
+                        {
+                          "text": "72 DOB ->  value from the RunTime VS downloaded file is =  2021-06-29 <> 2021-06-29\n"
+                        },
+                        {
+                          "text": "73 CAMOS ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "74 GradePlacement ->  value from the RunTime VS downloaded file is =  1.9 <> 1.9\n"
+                        },
+                        {
+                          "text": "75 W_Abil ->  value from the RunTime VS downloaded file is =  611.35 <> 611.35\n"
+                        },
+                        {
+                          "text": "76 SEMW ->  value from the RunTime VS downloaded file is =  15.52 <> 15.52\n"
+                        },
+                        {
+                          "text": "77 W68_Low ->  value from the RunTime VS downloaded file is =  596 <> 596\n"
+                        },
+                        {
+                          "text": "78 W68_High ->  value from the RunTime VS downloaded file is =  627 <> 627\n"
+                        },
+                        {
+                          "text": "79 W90_Low ->  value from the RunTime VS downloaded file is =  586 <> 586\n"
+                        },
+                        {
+                          "text": "80 W90_High ->  value from the RunTime VS downloaded file is =  637 <> 637\n"
+                        },
+                        {
+                          "text": "81 W95_Low ->  value from the RunTime VS downloaded file is =  581 <> 581\n"
+                        },
+                        {
+                          "text": "82 W95_High ->  value from the RunTime VS downloaded file is =  642 <> 642\n"
+                        },
+                        {
+                          "text": "83 NormBasis ->  value from the RunTime VS downloaded file is =  Age <> Age\n"
+                        },
+                        {
+                          "text": "84 CHRON ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "85 AgeYM ->  value from the RunTime VS downloaded file is =  Age 5 years, 0 months <> Age 5 years, 0 months\n"
+                        },
+                        {
+                          "text": "86 REFW ->  value from the RunTime VS downloaded file is =  425.57 <> 425.57\n"
+                        },
+                        {
+                          "text": "87 SDLo ->  value from the RunTime VS downloaded file is =  18.62 <> 18.62\n"
+                        },
+                        {
+                          "text": "88 SDUp ->  value from the RunTime VS downloaded file is =  18.77 <> 18.77\n"
+                        },
+                        {
+                          "text": "89 AE_Equiv ->  value from the RunTime VS downloaded file is =  >24y <> >24y\n"
+                        },
+                        {
+                          "text": "90 GE_Equiv ->  value from the RunTime VS downloaded file is =  >G12.9 <> >G12.9\n"
+                        },
+                        {
+                          "text": "91 AE_EndTest_Popup ->  value from the RunTime VS downloaded file is =  >24y <> >24y\n"
+                        },
+                        {
+                          "text": "92 GE_EndTest_Popup ->  value from the RunTime VS downloaded file is =  >G12.9 <> >G12.9\n"
+                        },
+                        {
+                          "text": "93 AE_Low ->  value from the RunTime VS downloaded file is =  >24y <> >24y\n"
+                        },
+                        {
+                          "text": "94 AE_High ->  value from the RunTime VS downloaded file is =  >24y <> >24y\n"
+                        },
+                        {
+                          "text": "95 GE_Low ->  value from the RunTime VS downloaded file is =  >G12.9 <> >G12.9\n"
+                        },
+                        {
+                          "text": "96 GE_High ->  value from the RunTime VS downloaded file is =  >G12.9 <> >G12.9\n"
+                        },
+                        {
+                          "text": "97 WDIFF ->  value from the RunTime VS downloaded file is =  185.78 <> 185.78\n"
+                        },
+                        {
+                          "text": "98 RPI_Num ->  value from the RunTime VS downloaded file is =  100 <> 100\n"
+                        },
+                        {
+                          "text": "99 WDIFF_Proficiency ->  value from the RunTime VS downloaded file is =  Very Advanced <> Very Advanced\n"
+                        },
+                        {
+                          "text": "100 WDIFF_Functionality ->  value from the RunTime VS downloaded file is =  Very Advanced <> Very Advanced\n"
+                        },
+                        {
+                          "text": "101 WDIFF_Development ->  value from the RunTime VS downloaded file is =  Very Advanced <> Very Advanced\n"
+                        },
+                        {
+                          "text": "102 WDIFF_Fluency ->  value from the RunTime VS downloaded file is =  Very Advanced <> Very Advanced\n"
+                        },
+                        {
+                          "text": "103 WDIFF_Implication ->  value from the RunTime VS downloaded file is =  extremely easy <> extremely easy\n"
+                        },
+                        {
+                          "text": "104 CALP_Level ->  value from the RunTime VS downloaded file is =  Level 6 <> Level 6\n"
+                        },
+                        {
+                          "text": "105 SDUsed ->  value from the RunTime VS downloaded file is =  18.77 <> 18.77\n"
+                        },
+                        {
+                          "text": "106 Z_Score ->  value from the RunTime VS downloaded file is =  9.9 <> 9.9\n"
+                        },
+                        {
+                          "text": "107 StdScore_Computed ->  value from the RunTime VS downloaded file is =  248.47 <> 248.47\n"
+                        },
+                        {
+                          "text": "108 StdScore_Display ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "109 SS_PR_Classification ->  value from the RunTime VS downloaded file is =  Very Superior <> Very Superior\n"
+                        },
+                        {
+                          "text": "110 SEMSS ->  value from the RunTime VS downloaded file is =  12.4 <> 12.4\n"
+                        },
+                        {
+                          "text": "111 SS68_Low ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "112 SS68_High ->  value from the RunTime VS downloaded file is =  >160 <~> >160\n"
+                        },
+                        {
+                          "text": "113 SS90_Low ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "114 SS90_High ->  value from the RunTime VS downloaded file is =  >160 <~> >160\n"
+                        },
+                        {
+                          "text": "115 SS95_Low ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "116 SS95_High ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "117 PR ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "118 PR68_Low ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "119 PR68_High ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "120 PR90_Low ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "121 PR90_High ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "122 PR95_Low ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "123 PR95_High ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "124 T_Score_Computed ->  value from the RunTime VS downloaded file is =  148.98 <> 148.98\n"
+                        },
+                        {
+                          "text": "125 T_Score_Display ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "126 SEMT ->  value from the RunTime VS downloaded file is =  8.27 <> 8.27\n"
+                        },
+                        {
+                          "text": "127 T_Score68_Low ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "128 T_Score68_High ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "129 T_Score90_Low ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "130 T_Score90_High ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "131 T_Score95_Low ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "132 T_Score95_High ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "\n ==== Assertion MTHCAL for NormBasis as Age ==== \n\n"
+                        },
+                        {
+                          "text": "133 Examinee ID ->  value from the RunTime VS downloaded file is =  N4391A25013 <> N4391A25013\n"
+                        },
+                        {
+                          "text": "134 Task Stem ->  value from the RunTime VS downloaded file is =  MTHCAL <> MTHCAL\n"
+                        },
+                        {
+                          "text": "135 TaskStemForm ->  value from the RunTime VS downloaded file is =  MTHCAL <> MTHCAL\n"
+                        },
+                        {
+                          "text": "136 contribTaskStems ->  value from the RunTime VS downloaded file is =  [\"CALC\",\"MTHFLU\"] <> [\"CALC\",\"MTHFLU\"]\n"
+                        },
+                        {
+                          "text": "137 EDOT ->  value from the RunTime VS downloaded file is =  2026-06-29 <> 2026-06-29\n"
+                        },
+                        {
+                          "text": "138 LDOT ->  value from the RunTime VS downloaded file is =  2026-06-29 <> 2026-06-29\n"
+                        },
+                        {
+                          "text": "139 DOB ->  value from the RunTime VS downloaded file is =  2021-06-29 <> 2021-06-29\n"
+                        },
+                        {
+                          "text": "140 CAMOS ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "141 GradePlacement ->  value from the RunTime VS downloaded file is =  1.9 <> 1.9\n"
+                        },
+                        {
+                          "text": "142 Composite W_Abil ->  value from the RunTime VS downloaded file is =  580.54 <> 580.54\n"
+                        },
+                        {
+                          "text": "143 Composite SEMW ->  value from the RunTime VS downloaded file is =  10.25 <> 10.25\n"
+                        },
+                        {
+                          "text": "144 W68_Low ->  value from the RunTime VS downloaded file is =  570 <> 570\n"
+                        },
+                        {
+                          "text": "145 W68_High ->  value from the RunTime VS downloaded file is =  591 <> 591\n"
+                        },
+                        {
+                          "text": "146 W90_Low ->  value from the RunTime VS downloaded file is =  564 <> 564\n"
+                        },
+                        {
+                          "text": "147 W90_High ->  value from the RunTime VS downloaded file is =  597 <> 597\n"
+                        },
+                        {
+                          "text": "148 W95_Low ->  value from the RunTime VS downloaded file is =  560 <> 560\n"
+                        },
+                        {
+                          "text": "149 W95_High ->  value from the RunTime VS downloaded file is =  601 <> 601\n"
+                        },
+                        {
+                          "text": "150 NormBasis ->  value from the RunTime VS downloaded file is =  Age <> Age\n"
+                        },
+                        {
+                          "text": "151 CHRON ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "152 AgeYM ->  value from the RunTime VS downloaded file is =  Age 5 years, 0 months <> Age 5 years, 0 months\n"
+                        },
+                        {
+                          "text": "153 REFW ->  value from the RunTime VS downloaded file is =  444.18 <> 444.18\n"
+                        },
+                        {
+                          "text": "154 SDLo ->  value from the RunTime VS downloaded file is =  14.11 <> 14.11\n"
+                        },
+                        {
+                          "text": "155 SDUp ->  value from the RunTime VS downloaded file is =  12.35 <> 12.35\n"
+                        },
+                        {
+                          "text": "156 AE_Equiv ->  value from the RunTime VS downloaded file is =  >27y <> >27y\n"
+                        },
+                        {
+                          "text": "157 GE_Equiv ->  value from the RunTime VS downloaded file is =  >G12.9 <> >G12.9\n"
+                        },
+                        {
+                          "text": "158 AE_Low ->  value from the RunTime VS downloaded file is =  >27y <> >27y\n"
+                        },
+                        {
+                          "text": "159 AE_High ->  value from the RunTime VS downloaded file is =  >27y <> >27y\n"
+                        },
+                        {
+                          "text": "160 GE_Low ->  value from the RunTime VS downloaded file is =  >G12.9 <> >G12.9\n"
+                        },
+                        {
+                          "text": "161 GE_High ->  value from the RunTime VS downloaded file is =  >G12.9 <> >G12.9\n"
+                        },
+                        {
+                          "text": "162 WDIFF ->  value from the RunTime VS downloaded file is =  136.36 <> 136.36\n"
+                        },
+                        {
+                          "text": "163 RPI_Num ->  value from the RunTime VS downloaded file is =  100 <> 100\n"
+                        },
+                        {
+                          "text": "164 WDIFF_Proficiency ->  value from the RunTime VS downloaded file is =  Very Advanced <> Very Advanced\n"
+                        },
+                        {
+                          "text": "165 WDIFF_Functionality ->  value from the RunTime VS downloaded file is =  Very Advanced <> Very Advanced\n"
+                        },
+                        {
+                          "text": "166 WDIFF_Development ->  value from the RunTime VS downloaded file is =  Very Advanced <> Very Advanced\n"
+                        },
+                        {
+                          "text": "167 WDIFF_Fluency ->  value from the RunTime VS downloaded file is =  Very Advanced <> Very Advanced\n"
+                        },
+                        {
+                          "text": "168 WDIFF_Implication ->  value from the RunTime VS downloaded file is =  extremely easy <> extremely easy\n"
+                        },
+                        {
+                          "text": "169 CALP_Level ->  value from the RunTime VS downloaded file is =  Level 6 <> Level 6\n"
+                        },
+                        {
+                          "text": "170 SDUsed ->  value from the RunTime VS downloaded file is =  12.35 <> 12.35\n"
+                        },
+                        {
+                          "text": "171 Z_Score ->  value from the RunTime VS downloaded file is =  11.04 <> 11.04\n"
+                        },
+                        {
+                          "text": "172 StdScore_Computed ->  value from the RunTime VS downloaded file is =  265.62 <> 265.62\n"
+                        },
+                        {
+                          "text": "173 StdScore_Display ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "174 SS_PR_Classification ->  value from the RunTime VS downloaded file is =  Very Superior <> Very Superior\n"
+                        },
+                        {
+                          "text": "175 SEMSS ->  value from the RunTime VS downloaded file is =  12.45 <> 12.45\n"
+                        },
+                        {
+                          "text": "176 SS68_Low ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "177 SS68_High ->  value from the RunTime VS downloaded file is =  >160 <~> >160\n"
+                        },
+                        {
+                          "text": "178 SS90_Low ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "179 SS90_High ->  value from the RunTime VS downloaded file is =  >160 <~> >160\n"
+                        },
+                        {
+                          "text": "180 SS95_Low ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "181 SS95_High ->  value from the RunTime VS downloaded file is =  >160 <> >160\n"
+                        },
+                        {
+                          "text": "182 PR ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "183 PR68_Low ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "184 PR68_High ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "185 PR90_Low ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "186 PR90_High ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "187 PR95_Low ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "188 PR95_High ->  value from the RunTime VS downloaded file is =  >99 <> >99\n"
+                        },
+                        {
+                          "text": "189 T_Score_Computed ->  value from the RunTime VS downloaded file is =  160.41 <> 160.41\n"
+                        },
+                        {
+                          "text": "190 T_Score_Display ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "191 SEMT ->  value from the RunTime VS downloaded file is =  8.30 <> 8.30\n"
+                        },
+                        {
+                          "text": "192 T_Score68_Low ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "193 T_Score68_High ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "194 T_Score90_Low ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "195 T_Score90_High ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "196 T_Score95_Low ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        },
+                        {
+                          "text": "197 T_Score95_High ->  value from the RunTime VS downloaded file is =  >90 <> >90\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-29T08:14:40.719Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome/attachments/Downloaded-Zip-file-0fbfa5211b53cfb15f896b13426442bf558a1fec.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0487f251ae722f0287d0-191824655b739940baf1",
+              "file": "derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "For MTHFLU - K12 - All incorrect scenario,CALC - K12 - All incorrect scenario Complete The MTHCAL cluster & generate report",
+              "ok": true,
+              "tags": [
+                "MTHCAL",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1500000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 235077,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S4:W0] Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S4:W0] Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N88834A44820\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N88834A44820/dataFiles/Derived_Score_AutoFilter_Template_N88834A44820.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N88834A44820 FirstName=Dangelo LastName =N88834A44820 Age = 06/29/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N88834A44820\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Math Facts Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14497|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MTHFLU - K12 - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "Map(6) {\n  \u001b[32m'Practice Exercise'\u001b[39m => \u001b[32m''\u001b[39m,\n  \u001b[32m'Page 4'\u001b[39m => \u001b[32m''\u001b[39m,\n  \u001b[32m'Page 5'\u001b[39m => \u001b[32m''\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'4y5m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString @4y5m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'MTHFLU.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m456.68\u001b[39m, Semw: \u001b[33m12\u001b[39m, AE: \u001b[32m'4y5m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'CALC.W5PA'\u001b[39m: { wScores: \u001b[33m55\u001b[39m, Wabil: \u001b[33m611.35\u001b[39m, Semw: \u001b[33m15.52\u001b[39m, AE: \u001b[32m'>24y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m },\n  \u001b[32m'MTHCAL.W5PA'\u001b[39m: { wScores: \u001b[32m''\u001b[39m, Wabil: \u001b[33m580.54\u001b[39m, Semw: \u001b[33m10.25\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Calculation\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17958|Ages 4 to 6|17959\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 55\n"
+                        },
+                        {
+                          "text": "Type Of test CALC - K12 - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A\n"
+                        },
+                        {
+                          "text": "Sample Item B\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(59) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'MTHFLU.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m456.68\u001b[39m, Semw: \u001b[33m12\u001b[39m, AE: \u001b[32m'4y5m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'CALC.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m397.05\u001b[39m, Semw: \u001b[33m15.16\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'MTHCAL.W5PA'\u001b[39m: { wScores: \u001b[32m''\u001b[39m, Wabil: \u001b[33m580.54\u001b[39m, Semw: \u001b[33m10.25\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N88834A44820/dataFiles/Derived_Score_AutoFilter_Template_N88834A44820.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N88834A44820\n"
+                        },
+                        {
+                          "text": "Waiting for download button to become enabled...\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N88834A44820/downloads/derived_N88834A44820_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N88834A44820/downloads/derived_N88834A44820_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N88834A44820/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'derived', examineeID: 'N88834A44820', Available files: [Derived_Score_AutoFilter_Template_N88834A44820_Derived.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('derived'): Expecting exact filename: Derived_Score_AutoFilter_Template_N88834A44820_Derived.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Derived_Score_AutoFilter_Template_N88834A44820_Derived.txt\n"
+                        },
+                        {
+                          "text": "ISABSOLUTE? : Reading derived score TXT content from: generated/N88834A44820/downloads/extracted/Derived_Score_AutoFilter_Template_N88834A44820_Derived.txt\n"
+                        },
+                        {
+                          "text": "Reading TXT content from: generated/N88834A44820/downloads/extracted/Derived_Score_AutoFilter_Template_N88834A44820_Derived.txt\n"
+                        },
+                        {
+                          "text": "returnValues =  {\n  \u001b[32m'CALC.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N88834A44820'\u001b[39m,\n    DemogCode: \u001b[32m'M  :05'\u001b[39m,\n    TaskStem: \u001b[32m'CALC'\u001b[39m,\n    TaskStemForm: \u001b[32m'CALC.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-06-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-06-29'\u001b[39m,\n    DOB: \u001b[32m'2021-06-29'\u001b[39m,\n    CAMOS: \u001b[32m'60'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'397.05'\u001b[39m,\n    SEMW: \u001b[32m'15.16'\u001b[39m,\n    W68_Low: \u001b[32m'382'\u001b[39m,\n    W68_High: \u001b[32m'412'\u001b[39m,\n    W90_Low: \u001b[32m'372'\u001b[39m,\n    W90_High: \u001b[32m'422'\u001b[39m,\n    W95_Low: \u001b[32m'367'\u001b[39m,\n    W95_High: \u001b[32m'427'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'464.24'\u001b[39m,\n    SDLo: \u001b[32m'18.35'\u001b[39m,\n    SDUp: \u001b[32m'18.98'\u001b[39m,\n    AE_Equiv: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'4y0m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-67.19'\u001b[39m,\n    RPI_Num: \u001b[32m'1'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Extremely Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Severely Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Severely Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Extremely Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 1'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'virtually impossible'\u001b[39m,\n    SDUsed: \u001b[32m'18.35'\u001b[39m,\n    Z_Score: \u001b[32m'-3.66'\u001b[39m,\n    StdScore_Computed: \u001b[32m'45.08'\u001b[39m,\n    StdScore_Display: \u001b[32m'45'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Low'\u001b[39m,\n    SEMSS: \u001b[32m'12.39'\u001b[39m,\n    SS68_Low: \u001b[32m'<40'\u001b[39m,\n    SS68_High: \u001b[32m'57'\u001b[39m,\n    SS90_Low: \u001b[32m'<40'\u001b[39m,\n    SS90_High: \u001b[32m'65'\u001b[39m,\n    SS95_Low: \u001b[32m'<40'\u001b[39m,\n    SS95_High: \u001b[32m'69'\u001b[39m,\n    PR: \u001b[32m'<1'\u001b[39m,\n    PR68_Low: \u001b[32m'<1'\u001b[39m,\n    PR68_High: \u001b[32m'<1'\u001b[39m,\n    PR90_Low: \u001b[32m'<1'\u001b[39m,\n    PR90_High: \u001b[32m'1'\u001b[39m,\n    PR95_Low: \u001b[32m'<1'\u001b[39m,\n    PR95_High: \u001b[32m'2'\u001b[39m,\n    T_Score_Computed: \u001b[32m'13.38'\u001b[39m,\n    T_Score_Display: \u001b[32m'13'\u001b[39m,\n    SEMT: \u001b[32m'8.26'\u001b[39m,\n    T_Score68_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score68_High: \u001b[32m'22'\u001b[39m,\n    T_Score90_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score90_High: \u001b[32m'27'\u001b[39m,\n    T_Score95_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score95_High: \u001b[32m'30'\u001b[39m,\n    AssignmentID: \u001b[32m'515903'\u001b[39m,\n    ExceptionCode: \u001b[32m'[!F2]'\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  \u001b[32m'MTHFLU.W5PA'\u001b[39m: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N88834A44820'\u001b[39m,\n    DemogCode: \u001b[32m'M  :05'\u001b[39m,\n    TaskStem: \u001b[32m'MTHFLU'\u001b[39m,\n    TaskStemForm: \u001b[32m'MTHFLU.W5PA'\u001b[39m,\n    ContribTaskStems: \u001b[32m''\u001b[39m,\n    EDOT: \u001b[32m'2026-06-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-06-29'\u001b[39m,\n    DOB: \u001b[32m'2021-06-29'\u001b[39m,\n    CAMOS: \u001b[32m'60'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'456.68'\u001b[39m,\n    SEMW: \u001b[32m'12'\u001b[39m,\n    W68_Low: \u001b[32m'445'\u001b[39m,\n    W68_High: \u001b[32m'469'\u001b[39m,\n    W90_Low: \u001b[32m'437'\u001b[39m,\n    W90_High: \u001b[32m'476'\u001b[39m,\n    W95_Low: \u001b[32m'433'\u001b[39m,\n    W95_High: \u001b[32m'480'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'484.38'\u001b[39m,\n    SDLo: \u001b[32m'10.84'\u001b[39m,\n    SDUp: \u001b[32m'8.92'\u001b[39m,\n    AE_Equiv: \u001b[32m'4y5m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'5y4m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-27.70'\u001b[39m,\n    RPI_Num: \u001b[32m'30'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Mildly Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Mildly Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 3'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'very difficult'\u001b[39m,\n    SDUsed: \u001b[32m'10.84'\u001b[39m,\n    Z_Score: \u001b[32m'-2.56'\u001b[39m,\n    StdScore_Computed: \u001b[32m'61.67'\u001b[39m,\n    StdScore_Display: \u001b[32m'62'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Low'\u001b[39m,\n    SEMSS: \u001b[32m'16.61'\u001b[39m,\n    SS68_Low: \u001b[32m'45'\u001b[39m,\n    SS68_High: \u001b[32m'78'\u001b[39m,\n    SS90_Low: \u001b[32m'<40'\u001b[39m,\n    SS90_High: \u001b[32m'89'\u001b[39m,\n    SS95_Low: \u001b[32m'<40'\u001b[39m,\n    SS95_High: \u001b[32m'94'\u001b[39m,\n    PR: \u001b[32m'<1'\u001b[39m,\n    PR68_Low: \u001b[32m'<1'\u001b[39m,\n    PR68_High: \u001b[32m'7'\u001b[39m,\n    PR90_Low: \u001b[32m'<1'\u001b[39m,\n    PR90_High: \u001b[32m'23'\u001b[39m,\n    PR95_Low: \u001b[32m'<1'\u001b[39m,\n    PR95_High: \u001b[32m'35'\u001b[39m,\n    T_Score_Computed: \u001b[32m'24.45'\u001b[39m,\n    T_Score_Display: \u001b[32m'24'\u001b[39m,\n    SEMT: \u001b[32m'11.07'\u001b[39m,\n    T_Score68_Low: \u001b[32m'13'\u001b[39m,\n    T_Score68_High: \u001b[32m'36'\u001b[39m,\n    T_Score90_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score90_High: \u001b[32m'43'\u001b[39m,\n    T_Score95_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score95_High: \u001b[32m'46'\u001b[39m,\n    AssignmentID: \u001b[32m'515903'\u001b[39m,\n    ExceptionCode: \u001b[32m'[!F2]'\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  },\n  MTHCAL: {\n    DecileTable_Version: \u001b[32m''\u001b[39m,\n    ScoringTable_Version: \u001b[32m'V240913A'\u001b[39m,\n    SelTestTable_Version: \u001b[32m'V250401A'\u001b[39m,\n    NormTable_Version: \u001b[32m'V240826A'\u001b[39m,\n    Examinee_ID: \u001b[32m'N88834A44820'\u001b[39m,\n    DemogCode: \u001b[32m'M  :05'\u001b[39m,\n    TaskStem: \u001b[32m'MTHCAL'\u001b[39m,\n    TaskStemForm: \u001b[32m'MTHCAL'\u001b[39m,\n    ContribTaskStems: \u001b[32m'CALC.W5PA;MTHFLU.W5PA'\u001b[39m,\n    EDOT: \u001b[32m'2026-06-29'\u001b[39m,\n    LDOT: \u001b[32m'2026-06-29'\u001b[39m,\n    DOB: \u001b[32m'2021-06-29'\u001b[39m,\n    CAMOS: \u001b[32m'60'\u001b[39m,\n    GradePlacement: \u001b[32m'1.9'\u001b[39m,\n    W_Abil: \u001b[32m'426.86'\u001b[39m,\n    SEMW: \u001b[32m'9.67'\u001b[39m,\n    W68_Low: \u001b[32m'417'\u001b[39m,\n    W68_High: \u001b[32m'437'\u001b[39m,\n    W90_Low: \u001b[32m'411'\u001b[39m,\n    W90_High: \u001b[32m'443'\u001b[39m,\n    W95_Low: \u001b[32m'408'\u001b[39m,\n    W95_High: \u001b[32m'446'\u001b[39m,\n    NormBasis: \u001b[32m'K12'\u001b[39m,\n    CHRON: \u001b[32m'1.9'\u001b[39m,\n    AgeYM: \u001b[32m''\u001b[39m,\n    GradeYM: \u001b[32m'Grade 1.9'\u001b[39m,\n    REFW: \u001b[32m'474.31'\u001b[39m,\n    SDLo: \u001b[32m'13.27'\u001b[39m,\n    SDUp: \u001b[32m'11.80'\u001b[39m,\n    AE_Equiv: \u001b[32m'<4y0m'\u001b[39m,\n    GE_Equiv: \u001b[32m'<GK.0'\u001b[39m,\n    AE_Low: \u001b[32m'<4y0m'\u001b[39m,\n    AE_High: \u001b[32m'4y6m'\u001b[39m,\n    GE_Low: \u001b[32m'<GK.0'\u001b[39m,\n    GE_High: \u001b[32m'<GK.0'\u001b[39m,\n    WDIFF: \u001b[32m'-47.45'\u001b[39m,\n    RPI_Num: \u001b[32m'5'\u001b[39m,\n    WDIFF_Proficiency: \u001b[32m'Very Limited'\u001b[39m,\n    WDIFF_Functionality: \u001b[32m'Moderately Impaired'\u001b[39m,\n    WDIFF_Development: \u001b[32m'Moderately Delayed'\u001b[39m,\n    WDIFF_Fluency: \u001b[32m'Very Limited'\u001b[39m,\n    CALP_Level: \u001b[32m'Level 2'\u001b[39m,\n    WDIFF_Implication: \u001b[32m'extremely difficult'\u001b[39m,\n    SDUsed: \u001b[32m'13.27'\u001b[39m,\n    Z_Score: \u001b[32m'-3.58'\u001b[39m,\n    StdScore_Computed: \u001b[32m'46.36'\u001b[39m,\n    StdScore_Display: \u001b[32m'46'\u001b[39m,\n    SS_PR_Classification: \u001b[32m'Very Low'\u001b[39m,\n    SEMSS: \u001b[32m'10.93'\u001b[39m,\n    SS68_Low: \u001b[32m'<40'\u001b[39m,\n    SS68_High: \u001b[32m'57'\u001b[39m,\n    SS90_Low: \u001b[32m'<40'\u001b[39m,\n    SS90_High: \u001b[32m'64'\u001b[39m,\n    SS95_Low: \u001b[32m'<40'\u001b[39m,\n    SS95_High: \u001b[32m'68'\u001b[39m,\n    PR: \u001b[32m'<1'\u001b[39m,\n    PR68_Low: \u001b[32m'<1'\u001b[39m,\n    PR68_High: \u001b[32m'<1'\u001b[39m,\n    PR90_Low: \u001b[32m'<1'\u001b[39m,\n    PR90_High: \u001b[32m'1'\u001b[39m,\n    PR95_Low: \u001b[32m'<1'\u001b[39m,\n    PR95_High: \u001b[32m'2'\u001b[39m,\n    T_Score_Computed: \u001b[32m'14.24'\u001b[39m,\n    T_Score_Display: \u001b[32m'14'\u001b[39m,\n    SEMT: \u001b[32m'7.29'\u001b[39m,\n    T_Score68_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score68_High: \u001b[32m'22'\u001b[39m,\n    T_Score90_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score90_High: \u001b[32m'26'\u001b[39m,\n    T_Score95_Low: \u001b[32m'<10'\u001b[39m,\n    T_Score95_High: \u001b[32m'29'\u001b[39m,\n    AssignmentID: \u001b[32m'515903'\u001b[39m,\n    ExceptionCode: \u001b[32m''\u001b[39m,\n    TestNotesDate: \u001b[32m''\u001b[39m,\n    \u001b[32m''\u001b[39m: \u001b[32m''\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": " \n Reading WJV NormTable data ... \n\n"
+                        },
+                        {
+                          "text": "\n ==== Assertion MTHFLU.W5PA for NormBasis as K12 ==== \n\n"
+                        },
+                        {
+                          "text": "198 Examinee ID ->  value from the RunTime VS downloaded file is =  N88834A44820 <> N88834A44820\n"
+                        },
+                        {
+                          "text": "199 Task Stem ->  value from the RunTime VS downloaded file is =  MTHFLU <> MTHFLU\n"
+                        },
+                        {
+                          "text": "200 TaskStemForm ->  value from the RunTime VS downloaded file is =  MTHFLU.W5PA <> MTHFLU.W5PA\n"
+                        },
+                        {
+                          "text": "201 EDOT ->  value from the RunTime VS downloaded file is =  2026-06-29 <> 2026-06-29\n"
+                        },
+                        {
+                          "text": "202 LDOT ->  value from the RunTime VS downloaded file is =  2026-06-29 <> 2026-06-29\n"
+                        },
+                        {
+                          "text": "203 DOB ->  value from the RunTime VS downloaded file is =  2021-06-29 <> 2021-06-29\n"
+                        },
+                        {
+                          "text": "204 CAMOS ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "205 GradePlacement ->  value from the RunTime VS downloaded file is =  1.9 <> 1.9\n"
+                        },
+                        {
+                          "text": "206 W_Abil ->  value from the RunTime VS downloaded file is =  456.68 <> 456.68\n"
+                        },
+                        {
+                          "text": "207 SEMW ->  value from the RunTime VS downloaded file is =  12 <> 12\n"
+                        },
+                        {
+                          "text": "208 W68_Low ->  value from the RunTime VS downloaded file is =  445 <> 445\n"
+                        },
+                        {
+                          "text": "209 W68_High ->  value from the RunTime VS downloaded file is =  469 <> 469\n"
+                        },
+                        {
+                          "text": "210 W90_Low ->  value from the RunTime VS downloaded file is =  437 <> 437\n"
+                        },
+                        {
+                          "text": "211 W90_High ->  value from the RunTime VS downloaded file is =  476 <> 476\n"
+                        },
+                        {
+                          "text": "212 W95_Low ->  value from the RunTime VS downloaded file is =  433 <> 433\n"
+                        },
+                        {
+                          "text": "213 W95_High ->  value from the RunTime VS downloaded file is =  480 <> 480\n"
+                        },
+                        {
+                          "text": "214 NormBasis ->  value from the RunTime VS downloaded file is =  K12 <> K12\n"
+                        },
+                        {
+                          "text": "215 CHRON ->  value from the RunTime VS downloaded file is =  1.9 <> 1.9\n"
+                        },
+                        {
+                          "text": "216 GradeYM ->  value from the RunTime VS downloaded file is =  Grade 1.9 <> Grade 1.9\n"
+                        },
+                        {
+                          "text": "217 REFW ->  value from the RunTime VS downloaded file is =  484.38 <> 484.38\n"
+                        },
+                        {
+                          "text": "218 SDLo ->  value from the RunTime VS downloaded file is =  10.84 <> 10.84\n"
+                        },
+                        {
+                          "text": "219 SDUp ->  value from the RunTime VS downloaded file is =  8.92 <> 8.92\n"
+                        },
+                        {
+                          "text": "220 AE_Equiv ->  value from the RunTime VS downloaded file is =  4y5m <> 4y5m\n"
+                        },
+                        {
+                          "text": "221 GE_Equiv ->  value from the RunTime VS downloaded file is =  <GK.0 <> <GK.0\n"
+                        },
+                        {
+                          "text": "222 AE_EndTest_Popup ->  value from the RunTime VS downloaded file is =  4y5m <> 4y5m\n"
+                        },
+                        {
+                          "text": "223 GE_EndTest_Popup ->  value from the RunTime VS downloaded file is =  <GK.0 <> <GK.0\n"
+                        },
+                        {
+                          "text": "224 AE_Low ->  value from the RunTime VS downloaded file is =  <4y0m <> <4y0m\n"
+                        },
+                        {
+                          "text": "225 AE_High ->  value from the RunTime VS downloaded file is =  5y4m <> 5y4m\n"
+                        },
+                        {
+                          "text": "226 GE_Low ->  value from the RunTime VS downloaded file is =  <GK.0 <> <GK.0\n"
+                        },
+                        {
+                          "text": "227 GE_High ->  value from the RunTime VS downloaded file is =  <GK.0 <> <GK.0\n"
+                        },
+                        {
+                          "text": "228 WDIFF ->  value from the RunTime VS downloaded file is =  -27.7 <> -27.7\n"
+                        },
+                        {
+                          "text": "229 RPI_Num ->  value from the RunTime VS downloaded file is =  30 <> 30\n"
+                        },
+                        {
+                          "text": "230 WDIFF_Proficiency ->  value from the RunTime VS downloaded file is =  Limited <> Limited\n"
+                        },
+                        {
+                          "text": "231 WDIFF_Functionality ->  value from the RunTime VS downloaded file is =  Mildly Impaired <> Mildly Impaired\n"
+                        },
+                        {
+                          "text": "232 WDIFF_Development ->  value from the RunTime VS downloaded file is =  Mildly Delayed <> Mildly Delayed\n"
+                        },
+                        {
+                          "text": "233 WDIFF_Fluency ->  value from the RunTime VS downloaded file is =  Limited <> Limited\n"
+                        },
+                        {
+                          "text": "234 WDIFF_Implication ->  value from the RunTime VS downloaded file is =  very difficult <> very difficult\n"
+                        },
+                        {
+                          "text": "235 CALP_Level ->  value from the RunTime VS downloaded file is =  Level 3 <> Level 3\n"
+                        },
+                        {
+                          "text": "236 SDUsed ->  value from the RunTime VS downloaded file is =  10.84 <> 10.84\n"
+                        },
+                        {
+                          "text": "237 Z_Score ->  value from the RunTime VS downloaded file is =  -2.56 <> -2.56\n"
+                        },
+                        {
+                          "text": "238 StdScore_Computed ->  value from the RunTime VS downloaded file is =  61.67 <> 61.67\n"
+                        },
+                        {
+                          "text": "239 StdScore_Display ->  value from the RunTime VS downloaded file is =  62 <> 62\n"
+                        },
+                        {
+                          "text": "240 SS_PR_Classification ->  value from the RunTime VS downloaded file is =  Very Low <> Very Low\n"
+                        },
+                        {
+                          "text": "241 SEMSS ->  value from the RunTime VS downloaded file is =  16.61 <> 16.61\n"
+                        },
+                        {
+                          "text": "242 SS68_Low ->  value from the RunTime VS downloaded file is =  45 <> 45\n"
+                        },
+                        {
+                          "text": "243 SS68_High ->  value from the RunTime VS downloaded file is =  78 <~> 78\n"
+                        },
+                        {
+                          "text": "244 SS90_Low ->  value from the RunTime VS downloaded file is =  <40 <> <40\n"
+                        },
+                        {
+                          "text": "245 SS90_High ->  value from the RunTime VS downloaded file is =  89 <~> 89\n"
+                        },
+                        {
+                          "text": "246 SS95_Low ->  value from the RunTime VS downloaded file is =  <40 <> <40\n"
+                        },
+                        {
+                          "text": "247 SS95_High ->  value from the RunTime VS downloaded file is =  94 <> 94\n"
+                        },
+                        {
+                          "text": "248 PR ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "249 PR68_Low ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "250 PR68_High ->  value from the RunTime VS downloaded file is =  7 <> 7\n"
+                        },
+                        {
+                          "text": "251 PR90_Low ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "252 PR90_High ->  value from the RunTime VS downloaded file is =  23 <> 23\n"
+                        },
+                        {
+                          "text": "253 PR95_Low ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "254 PR95_High ->  value from the RunTime VS downloaded file is =  35 <> 35\n"
+                        },
+                        {
+                          "text": "255 T_Score_Computed ->  value from the RunTime VS downloaded file is =  24.45 <> 24.45\n"
+                        },
+                        {
+                          "text": "256 T_Score_Display ->  value from the RunTime VS downloaded file is =  24 <> 24\n"
+                        },
+                        {
+                          "text": "257 SEMT ->  value from the RunTime VS downloaded file is =  11.07 <> 11.07\n"
+                        },
+                        {
+                          "text": "258 T_Score68_Low ->  value from the RunTime VS downloaded file is =  13 <> 13\n"
+                        },
+                        {
+                          "text": "259 T_Score68_High ->  value from the RunTime VS downloaded file is =  36 <> 36\n"
+                        },
+                        {
+                          "text": "260 T_Score90_Low ->  value from the RunTime VS downloaded file is =  <10 <> <10\n"
+                        },
+                        {
+                          "text": "261 T_Score90_High ->  value from the RunTime VS downloaded file is =  43 <> 43\n"
+                        },
+                        {
+                          "text": "262 T_Score95_Low ->  value from the RunTime VS downloaded file is =  <10 <> <10\n"
+                        },
+                        {
+                          "text": "263 T_Score95_High ->  value from the RunTime VS downloaded file is =  46 <> 46\n"
+                        },
+                        {
+                          "text": "\n ==== Assertion CALC.W5PA for NormBasis as K12 ==== \n\n"
+                        },
+                        {
+                          "text": "264 Examinee ID ->  value from the RunTime VS downloaded file is =  N88834A44820 <> N88834A44820\n"
+                        },
+                        {
+                          "text": "265 Task Stem ->  value from the RunTime VS downloaded file is =  CALC <> CALC\n"
+                        },
+                        {
+                          "text": "266 TaskStemForm ->  value from the RunTime VS downloaded file is =  CALC.W5PA <> CALC.W5PA\n"
+                        },
+                        {
+                          "text": "267 EDOT ->  value from the RunTime VS downloaded file is =  2026-06-29 <> 2026-06-29\n"
+                        },
+                        {
+                          "text": "268 LDOT ->  value from the RunTime VS downloaded file is =  2026-06-29 <> 2026-06-29\n"
+                        },
+                        {
+                          "text": "269 DOB ->  value from the RunTime VS downloaded file is =  2021-06-29 <> 2021-06-29\n"
+                        },
+                        {
+                          "text": "270 CAMOS ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "271 GradePlacement ->  value from the RunTime VS downloaded file is =  1.9 <> 1.9\n"
+                        },
+                        {
+                          "text": "272 W_Abil ->  value from the RunTime VS downloaded file is =  397.05 <> 397.05\n"
+                        },
+                        {
+                          "text": "273 SEMW ->  value from the RunTime VS downloaded file is =  15.16 <> 15.16\n"
+                        },
+                        {
+                          "text": "274 W68_Low ->  value from the RunTime VS downloaded file is =  382 <> 382\n"
+                        },
+                        {
+                          "text": "275 W68_High ->  value from the RunTime VS downloaded file is =  412 <> 412\n"
+                        },
+                        {
+                          "text": "276 W90_Low ->  value from the RunTime VS downloaded file is =  372 <> 372\n"
+                        },
+                        {
+                          "text": "277 W90_High ->  value from the RunTime VS downloaded file is =  422 <> 422\n"
+                        },
+                        {
+                          "text": "278 W95_Low ->  value from the RunTime VS downloaded file is =  367 <> 367\n"
+                        },
+                        {
+                          "text": "279 W95_High ->  value from the RunTime VS downloaded file is =  427 <> 427\n"
+                        },
+                        {
+                          "text": "280 NormBasis ->  value from the RunTime VS downloaded file is =  K12 <> K12\n"
+                        },
+                        {
+                          "text": "281 CHRON ->  value from the RunTime VS downloaded file is =  1.9 <> 1.9\n"
+                        },
+                        {
+                          "text": "282 GradeYM ->  value from the RunTime VS downloaded file is =  Grade 1.9 <> Grade 1.9\n"
+                        },
+                        {
+                          "text": "283 REFW ->  value from the RunTime VS downloaded file is =  464.24 <> 464.24\n"
+                        },
+                        {
+                          "text": "284 SDLo ->  value from the RunTime VS downloaded file is =  18.35 <> 18.35\n"
+                        },
+                        {
+                          "text": "285 SDUp ->  value from the RunTime VS downloaded file is =  18.98 <> 18.98\n"
+                        },
+                        {
+                          "text": "286 AE_Equiv ->  value from the RunTime VS downloaded file is =  <4y0m <> <4y0m\n"
+                        },
+                        {
+                          "text": "287 GE_Equiv ->  value from the RunTime VS downloaded file is =  <GK.0 <> <GK.0\n"
+                        },
+                        {
+                          "text": "288 AE_EndTest_Popup ->  value from the RunTime VS downloaded file is =  <4y0m <> <4y0m\n"
+                        },
+                        {
+                          "text": "289 GE_EndTest_Popup ->  value from the RunTime VS downloaded file is =  <GK.0 <> <GK.0\n"
+                        },
+                        {
+                          "text": "290 AE_Low ->  value from the RunTime VS downloaded file is =  <4y0m <> <4y0m\n"
+                        },
+                        {
+                          "text": "291 AE_High ->  value from the RunTime VS downloaded file is =  4y0m <> 4y0m\n"
+                        },
+                        {
+                          "text": "292 GE_Low ->  value from the RunTime VS downloaded file is =  <GK.0 <> <GK.0\n"
+                        },
+                        {
+                          "text": "293 GE_High ->  value from the RunTime VS downloaded file is =  <GK.0 <> <GK.0\n"
+                        },
+                        {
+                          "text": "294 WDIFF ->  value from the RunTime VS downloaded file is =  -67.19 <> -67.19\n"
+                        },
+                        {
+                          "text": "295 RPI_Num ->  value from the RunTime VS downloaded file is =  1 <> 1\n"
+                        },
+                        {
+                          "text": "296 WDIFF_Proficiency ->  value from the RunTime VS downloaded file is =  Extremely Limited <> Extremely Limited\n"
+                        },
+                        {
+                          "text": "297 WDIFF_Functionality ->  value from the RunTime VS downloaded file is =  Severely Impaired <> Severely Impaired\n"
+                        },
+                        {
+                          "text": "298 WDIFF_Development ->  value from the RunTime VS downloaded file is =  Severely Delayed <> Severely Delayed\n"
+                        },
+                        {
+                          "text": "299 WDIFF_Fluency ->  value from the RunTime VS downloaded file is =  Extremely Limited <> Extremely Limited\n"
+                        },
+                        {
+                          "text": "300 WDIFF_Implication ->  value from the RunTime VS downloaded file is =  virtually impossible <> virtually impossible\n"
+                        },
+                        {
+                          "text": "301 CALP_Level ->  value from the RunTime VS downloaded file is =  Level 1 <> Level 1\n"
+                        },
+                        {
+                          "text": "302 SDUsed ->  value from the RunTime VS downloaded file is =  18.35 <> 18.35\n"
+                        },
+                        {
+                          "text": "303 Z_Score ->  value from the RunTime VS downloaded file is =  -3.66 <> -3.66\n"
+                        },
+                        {
+                          "text": "304 StdScore_Computed ->  value from the RunTime VS downloaded file is =  45.08 <> 45.08\n"
+                        },
+                        {
+                          "text": "305 StdScore_Display ->  value from the RunTime VS downloaded file is =  45 <> 45\n"
+                        },
+                        {
+                          "text": "306 SS_PR_Classification ->  value from the RunTime VS downloaded file is =  Very Low <> Very Low\n"
+                        },
+                        {
+                          "text": "307 SEMSS ->  value from the RunTime VS downloaded file is =  12.39 <> 12.39\n"
+                        },
+                        {
+                          "text": "308 SS68_Low ->  value from the RunTime VS downloaded file is =  <40 <> <40\n"
+                        },
+                        {
+                          "text": "309 SS68_High ->  value from the RunTime VS downloaded file is =  57 <~> 57\n"
+                        },
+                        {
+                          "text": "310 SS90_Low ->  value from the RunTime VS downloaded file is =  <40 <> <40\n"
+                        },
+                        {
+                          "text": "311 SS90_High ->  value from the RunTime VS downloaded file is =  65 <~> 65\n"
+                        },
+                        {
+                          "text": "312 SS95_Low ->  value from the RunTime VS downloaded file is =  <40 <> <40\n"
+                        },
+                        {
+                          "text": "313 SS95_High ->  value from the RunTime VS downloaded file is =  69 <> 69\n"
+                        },
+                        {
+                          "text": "314 PR ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "315 PR68_Low ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "316 PR68_High ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "317 PR90_Low ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "318 PR90_High ->  value from the RunTime VS downloaded file is =  1 <> 1\n"
+                        },
+                        {
+                          "text": "319 PR95_Low ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "320 PR95_High ->  value from the RunTime VS downloaded file is =  2 <> 2\n"
+                        },
+                        {
+                          "text": "321 T_Score_Computed ->  value from the RunTime VS downloaded file is =  13.38 <> 13.38\n"
+                        },
+                        {
+                          "text": "322 T_Score_Display ->  value from the RunTime VS downloaded file is =  13 <> 13\n"
+                        },
+                        {
+                          "text": "323 SEMT ->  value from the RunTime VS downloaded file is =  8.26 <> 8.26\n"
+                        },
+                        {
+                          "text": "324 T_Score68_Low ->  value from the RunTime VS downloaded file is =  <10 <> <10\n"
+                        },
+                        {
+                          "text": "325 T_Score68_High ->  value from the RunTime VS downloaded file is =  22 <> 22\n"
+                        },
+                        {
+                          "text": "326 T_Score90_Low ->  value from the RunTime VS downloaded file is =  <10 <> <10\n"
+                        },
+                        {
+                          "text": "327 T_Score90_High ->  value from the RunTime VS downloaded file is =  27 <> 27\n"
+                        },
+                        {
+                          "text": "328 T_Score95_Low ->  value from the RunTime VS downloaded file is =  <10 <> <10\n"
+                        },
+                        {
+                          "text": "329 T_Score95_High ->  value from the RunTime VS downloaded file is =  30 <> 30\n"
+                        },
+                        {
+                          "text": "\n ==== Assertion MTHCAL for NormBasis as K12 ==== \n\n"
+                        },
+                        {
+                          "text": "330 Examinee ID ->  value from the RunTime VS downloaded file is =  N88834A44820 <> N88834A44820\n"
+                        },
+                        {
+                          "text": "331 Task Stem ->  value from the RunTime VS downloaded file is =  MTHCAL <> MTHCAL\n"
+                        },
+                        {
+                          "text": "332 TaskStemForm ->  value from the RunTime VS downloaded file is =  MTHCAL <> MTHCAL\n"
+                        },
+                        {
+                          "text": "333 contribTaskStems ->  value from the RunTime VS downloaded file is =  [\"CALC\",\"MTHFLU\"] <> [\"CALC\",\"MTHFLU\"]\n"
+                        },
+                        {
+                          "text": "334 EDOT ->  value from the RunTime VS downloaded file is =  2026-06-29 <> 2026-06-29\n"
+                        },
+                        {
+                          "text": "335 LDOT ->  value from the RunTime VS downloaded file is =  2026-06-29 <> 2026-06-29\n"
+                        },
+                        {
+                          "text": "336 DOB ->  value from the RunTime VS downloaded file is =  2021-06-29 <> 2021-06-29\n"
+                        },
+                        {
+                          "text": "337 CAMOS ->  value from the RunTime VS downloaded file is =  60 <> 60\n"
+                        },
+                        {
+                          "text": "338 GradePlacement ->  value from the RunTime VS downloaded file is =  1.9 <> 1.9\n"
+                        },
+                        {
+                          "text": "339 Composite W_Abil ->  value from the RunTime VS downloaded file is =  426.86 <> 426.86\n"
+                        },
+                        {
+                          "text": "340 Composite SEMW ->  value from the RunTime VS downloaded file is =  9.67 <> 9.67\n"
+                        },
+                        {
+                          "text": "341 W68_Low ->  value from the RunTime VS downloaded file is =  417 <> 417\n"
+                        },
+                        {
+                          "text": "342 W68_High ->  value from the RunTime VS downloaded file is =  437 <> 437\n"
+                        },
+                        {
+                          "text": "343 W90_Low ->  value from the RunTime VS downloaded file is =  411 <> 411\n"
+                        },
+                        {
+                          "text": "344 W90_High ->  value from the RunTime VS downloaded file is =  443 <> 443\n"
+                        },
+                        {
+                          "text": "345 W95_Low ->  value from the RunTime VS downloaded file is =  408 <> 408\n"
+                        },
+                        {
+                          "text": "346 W95_High ->  value from the RunTime VS downloaded file is =  446 <> 446\n"
+                        },
+                        {
+                          "text": "347 NormBasis ->  value from the RunTime VS downloaded file is =  K12 <> K12\n"
+                        },
+                        {
+                          "text": "348 CHRON ->  value from the RunTime VS downloaded file is =  1.9 <> 1.9\n"
+                        },
+                        {
+                          "text": "349 GradeYM ->  value from the RunTime VS downloaded file is =  Grade 1.9 <> Grade 1.9\n"
+                        },
+                        {
+                          "text": "350 REFW ->  value from the RunTime VS downloaded file is =  474.31 <> 474.31\n"
+                        },
+                        {
+                          "text": "351 SDLo ->  value from the RunTime VS downloaded file is =  13.27 <> 13.27\n"
+                        },
+                        {
+                          "text": "352 SDUp ->  value from the RunTime VS downloaded file is =  11.8 <> 11.8\n"
+                        },
+                        {
+                          "text": "353 AE_Equiv ->  value from the RunTime VS downloaded file is =  <4y0m <> <4y0m\n"
+                        },
+                        {
+                          "text": "354 GE_Equiv ->  value from the RunTime VS downloaded file is =  <GK.0 <> <GK.0\n"
+                        },
+                        {
+                          "text": "355 AE_Low ->  value from the RunTime VS downloaded file is =  <4y0m <> <4y0m\n"
+                        },
+                        {
+                          "text": "356 AE_High ->  value from the RunTime VS downloaded file is =  4y6m <> 4y6m\n"
+                        },
+                        {
+                          "text": "357 GE_Low ->  value from the RunTime VS downloaded file is =  <GK.0 <> <GK.0\n"
+                        },
+                        {
+                          "text": "358 GE_High ->  value from the RunTime VS downloaded file is =  <GK.0 <> <GK.0\n"
+                        },
+                        {
+                          "text": "359 WDIFF ->  value from the RunTime VS downloaded file is =  -47.45 <> -47.45\n"
+                        },
+                        {
+                          "text": "360 RPI_Num ->  value from the RunTime VS downloaded file is =  5 <> 5\n"
+                        },
+                        {
+                          "text": "361 WDIFF_Proficiency ->  value from the RunTime VS downloaded file is =  Very Limited <> Very Limited\n"
+                        },
+                        {
+                          "text": "362 WDIFF_Functionality ->  value from the RunTime VS downloaded file is =  Moderately Impaired <> Moderately Impaired\n"
+                        },
+                        {
+                          "text": "363 WDIFF_Development ->  value from the RunTime VS downloaded file is =  Moderately Delayed <> Moderately Delayed\n"
+                        },
+                        {
+                          "text": "364 WDIFF_Fluency ->  value from the RunTime VS downloaded file is =  Very Limited <> Very Limited\n"
+                        },
+                        {
+                          "text": "365 WDIFF_Implication ->  value from the RunTime VS downloaded file is =  extremely difficult <> extremely difficult\n"
+                        },
+                        {
+                          "text": "366 CALP_Level ->  value from the RunTime VS downloaded file is =  Level 2 <> Level 2\n"
+                        },
+                        {
+                          "text": "367 SDUsed ->  value from the RunTime VS downloaded file is =  13.27 <> 13.27\n"
+                        },
+                        {
+                          "text": "368 Z_Score ->  value from the RunTime VS downloaded file is =  -3.58 <> -3.58\n"
+                        },
+                        {
+                          "text": "369 StdScore_Computed ->  value from the RunTime VS downloaded file is =  46.36 <> 46.36\n"
+                        },
+                        {
+                          "text": "370 StdScore_Display ->  value from the RunTime VS downloaded file is =  46 <> 46\n"
+                        },
+                        {
+                          "text": "371 SS_PR_Classification ->  value from the RunTime VS downloaded file is =  Very Low <> Very Low\n"
+                        },
+                        {
+                          "text": "372 SEMSS ->  value from the RunTime VS downloaded file is =  10.93 <> 10.93\n"
+                        },
+                        {
+                          "text": "373 SS68_Low ->  value from the RunTime VS downloaded file is =  <40 <> <40\n"
+                        },
+                        {
+                          "text": "374 SS68_High ->  value from the RunTime VS downloaded file is =  57 <~> 57\n"
+                        },
+                        {
+                          "text": "375 SS90_Low ->  value from the RunTime VS downloaded file is =  <40 <> <40\n"
+                        },
+                        {
+                          "text": "376 SS90_High ->  value from the RunTime VS downloaded file is =  64 <~> 64\n"
+                        },
+                        {
+                          "text": "377 SS95_Low ->  value from the RunTime VS downloaded file is =  <40 <> <40\n"
+                        },
+                        {
+                          "text": "378 SS95_High ->  value from the RunTime VS downloaded file is =  68 <> 68\n"
+                        },
+                        {
+                          "text": "379 PR ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "380 PR68_Low ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "381 PR68_High ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "382 PR90_Low ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "383 PR90_High ->  value from the RunTime VS downloaded file is =  1 <> 1\n"
+                        },
+                        {
+                          "text": "384 PR95_Low ->  value from the RunTime VS downloaded file is =  <1 <> <1\n"
+                        },
+                        {
+                          "text": "385 PR95_High ->  value from the RunTime VS downloaded file is =  2 <> 2\n"
+                        },
+                        {
+                          "text": "386 T_Score_Computed ->  value from the RunTime VS downloaded file is =  14.24 <> 14.24\n"
+                        },
+                        {
+                          "text": "387 T_Score_Display ->  value from the RunTime VS downloaded file is =  14 <> 14\n"
+                        },
+                        {
+                          "text": "388 SEMT ->  value from the RunTime VS downloaded file is =  7.29 <> 7.29\n"
+                        },
+                        {
+                          "text": "389 T_Score68_Low ->  value from the RunTime VS downloaded file is =  <10 <> <10\n"
+                        },
+                        {
+                          "text": "390 T_Score68_High ->  value from the RunTime VS downloaded file is =  22 <> 22\n"
+                        },
+                        {
+                          "text": "391 T_Score90_Low ->  value from the RunTime VS downloaded file is =  <10 <> <10\n"
+                        },
+                        {
+                          "text": "392 T_Score90_High ->  value from the RunTime VS downloaded file is =  26 <> 26\n"
+                        },
+                        {
+                          "text": "393 T_Score95_Low ->  value from the RunTime VS downloaded file is =  <10 <> <10\n"
+                        },
+                        {
+                          "text": "394 T_Score95_High ->  value from the RunTime VS downloaded file is =  29 <> 29\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-29T08:23:40.104Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome/attachments/Downloaded-Zip-file-d237fd498229881425e715b614cb7810074793ed.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0487f251ae722f0287d0-16ed96c14cbb5364aaa8",
+              "file": "derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts",
+              "line": 27,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-29T08:14:25.108Z",
+    "duration": 790413.663,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
