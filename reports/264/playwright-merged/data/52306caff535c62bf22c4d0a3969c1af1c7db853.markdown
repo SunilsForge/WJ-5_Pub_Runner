@@ -1,0 +1,125 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts >> S05 - Malformed activation code shows "Invalid activation code" error (existing-user landing context)
+- Location: src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts:21:5
+
+# Error details
+
+```
+Error: Unlimited High scenario not configured — cannot derive a malformed code.
+```
+
+# Test source
+
+```ts
+  1   | import { test, expect } from '../../../base/basePageFixture';
+  2   | import { getSubscriptionActivationScenarios } from '../../../scenarios/subscriptions/subscriptionActivation.scenarios';
+  3   | import { EXISTING_USERS_FOR_RENEWAL } from '../../../utils/activationCodesData';
+  4   | import { subscriptionApi } from '../../../utils/subscriptionApi';
+  5   | import { RawValueLogger } from '../../../utils/rawValueLogger';
+  6   | 
+  7   | test.use({
+  8   |   launchOptions: {
+  9   |     slowMo: 1200,
+  10  |   },
+  11  | });
+  12  | 
+  13  | const unlimitedHighScenario = getSubscriptionActivationScenarios().find(
+  14  |   s => s.subscriptionType === 'Unlimited' && s.qualificationLevel === 'High'
+  15  | );
+  16  | 
+  17  | function malformedCodeFrom(activationCode: string): string {
+  18  |   return activationCode.slice(0, -2);
+  19  | }
+  20  | 
+  21  | test(
+  22  |   'S05 - Malformed activation code shows "Invalid activation code" error (existing-user landing context)',
+  23  |   {
+  24  |     annotation: { type: 'original user story, automation user story', description: '24544, ' },
+  25  |     tag: ['@SubscriptionActivation', '@ExistingUser', '@Negative', '@Regression', '@Aut_Eng_01'],
+  26  |   },
+  27  |   async ({ subscriptionActivationPage }) => {
+  28  |     test.setTimeout(2 * 60 * 1000);
+  29  | 
+  30  |     if (!unlimitedHighScenario) {
+> 31  |       throw new Error('Unlimited High scenario not configured — cannot derive a malformed code.');
+      |             ^ Error: Unlimited High scenario not configured — cannot derive a malformed code.
+  32  |     }
+  33  | 
+  34  |     const badCode = malformedCodeFrom(unlimitedHighScenario.activationCode);
+  35  |     RawValueLogger.log('S05 invalid code (existing-user)', {
+  36  |       original: unlimitedHighScenario.activationCode,
+  37  |       malformed: badCode,
+  38  |     });
+  39  | 
+  40  |     await test.step('Navigate to malformed activation URL and verify "Invalid activation code" message', async () => {
+  41  |       await subscriptionActivationPage.verifyInvalidActivationCodeError(badCode);
+  42  |     });
+  43  |   }
+  44  | );
+  45  | 
+  46  | test(
+  47  |   'S09 - Invalid credentials on Sign In to Activate page show error and stay on login',
+  48  |   {
+  49  |     annotation: { type: 'original user story, automation user story', description: '24544, ' },
+  50  |     tag: ['@SubscriptionActivation', '@ExistingUser', '@Negative', '@Regression', '@Aut_Eng_01'],
+  51  |   },
+  52  |   async ({ subscriptionActivationPage }) => {
+  53  |     test.setTimeout(3 * 60 * 1000);
+  54  | 
+  55  |     if (!unlimitedHighScenario) {
+  56  |       throw new Error('Unlimited High scenario not configured — cannot run S09.');
+  57  |     }
+  58  | 
+  59  |     await test.step('Setup - Force-reset activation state and land on activation page', async () => {
+  60  |       await subscriptionActivationPage.landOnActivationPage(unlimitedHighScenario);
+  61  |     });
+  62  | 
+  63  |     await test.step('Select "Use my Existing Login" → click Sign In → lands on Sign In to Activate', async () => {
+  64  |       await subscriptionActivationPage.selectExistingLoginAndProceed();
+  65  |     });
+  66  | 
+  67  |     await test.step('Submit invalid credentials and verify we remain on the Sign In to Activate page', async () => {
+  68  |       const user = EXISTING_USERS_FOR_RENEWAL.activeSub;
+  69  |       await subscriptionActivationPage.signInAs(user.username, 'WrongPassword@999');
+  70  |       await expect.soft(subscriptionActivationPage.signInToActivateHeading).toBeVisible();
+  71  |       await expect.soft(subscriptionActivationPage.confirmRenewalHeading).not.toBeVisible();
+  72  |     });
+  73  |   }
+  74  | );
+  75  | 
+  76  | test(
+  77  |   'S15 - GetOrgSubscriptionDetails API returns a graceful (non-500) error for a bad username',
+  78  |   {
+  79  |     annotation: { type: 'original user story, automation user story', description: '24544, ' },
+  80  |     tag: ['@SubscriptionActivation', '@ExistingUser', '@Negative', '@API', '@Regression', '@Aut_Eng_01'],
+  81  |   },
+  82  |   async ({ page }) => {
+  83  |     test.setTimeout(2 * 60 * 1000);
+  84  | 
+  85  |     const subApi = new subscriptionApi(page);
+  86  |     const bogusUsername = '__nonexistent_user_for_s15__';
+  87  | 
+  88  |     await test.step('Call GetOrgSubscriptionDetails with bogus username and assert it does not 5xx', async () => {
+  89  |       let caught: Error | null = null;
+  90  |       try {
+  91  |         await subApi.getOrgSubscriptionDetails(bogusUsername);
+  92  |       } catch (e) {
+  93  |         caught = e as Error;
+  94  |       }
+  95  |       if (caught) {
+  96  |         const msg = caught.message;
+  97  |         const has5xx = /status\s+5\d{2}/i.test(msg);
+  98  |         expect.soft(has5xx, `Expected non-5xx for bogus username, got: ${msg}`).toBe(false);
+  99  |       }
+  100 |     });
+  101 |   }
+  102 | );
+  103 | 
+```
