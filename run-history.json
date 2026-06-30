@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "265",
+    "timestamp": "20260630_000000",
+    "runReason": "Running SMOKE in STAGE as a pat of HOT FIX",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "(?=.*@Aut_Eng_01)(?=.*@smoke)",
+    "totalTests": 40,
+    "totalPassed": 35,
+    "totalFailed": 4,
+    "totalSkipped": 0,
+    "totalFlaky": 1,
+    "durationMs": 19306544
+  },
+  {
     "runNumber": "264",
     "timestamp": "20260629_000000",
     "runReason": "Running Running REGRESSION in PROD",
