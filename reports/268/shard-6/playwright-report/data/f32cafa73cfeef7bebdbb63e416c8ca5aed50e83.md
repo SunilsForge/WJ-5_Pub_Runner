@@ -1,0 +1,321 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/dashboard/testAssignments_B.spec.ts >> Run the test Preschool to Grade 2 - 5 lowest incorrect items SSP1 to create test data for Submitted sets
+- Location: src/tests/functional/dashboard/testAssignments_B.spec.ts:17:7
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()
+    - locator resolved to <button disabled tabindex="0" class="blue-button-no-margin" id="SessionObservationsSubmitAssignment">Submit Test Assignment</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    116 × waiting for element to be visible, enabled and stable
+        - element is not enabled
+      - retrying click action
+        - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - dialog [ref=e2]:
+    - banner [ref=e3]:
+      - button "Main Navigation" [ref=e4] [cursor=pointer]
+      - generic [ref=e5]: Review Mode
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - 'button "N86264A38385, Elwyn Age: 2y Grade: 2" [ref=e8] [cursor=pointer]':
+            - img [ref=e9]
+            - generic [ref=e12]:
+              - generic [ref=e13]: N86264A38385, Elwyn
+              - generic [ref=e14]: "Age: 2y Grade: 2"
+          - button "Open Notes" [disabled] [ref=e15]:
+            - generic [ref=e16]: Note
+        - generic [ref=e18]: Examinee Not Connected
+    - generic [ref=e19]:
+      - heading "Review Mode Dashboard" [level=2] [ref=e20]
+      - generic [ref=e21]: Navigate to any test to review content, edit scores, resolve flags, listen to audio recordings, and more.
+    - generic [ref=e22]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - img [ref=e26]
+          - generic [ref=e28]: Camille Champlin III_1782994746751
+          - button "Hide Scores" [ref=e29] [cursor=pointer]
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - button "Complete Academic Vocabulary" [ref=e33] [cursor=pointer]:
+              - img "Complete" [ref=e34]
+              - generic [ref=e38]: Academic Vocabulary
+            - button "Skip test" [ref=e39] [cursor=pointer]: ✕
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - generic [ref=e42]:
+                - generic [ref=e43]: SS
+                - generic [ref=e44]: –
+              - generic [ref=e45]:
+                - generic [ref=e46]: PR
+                - generic [ref=e47]: –
+            - generic [ref=e48]:
+              - generic [ref=e49]:
+                - generic [ref=e50]: AE
+                - generic [ref=e51]: –
+              - generic [ref=e52]:
+                - generic [ref=e53]: GE
+                - generic [ref=e54]: –
+        - button "+ Add Test" [ref=e55] [cursor=pointer]
+      - generic [ref=e57]:
+        - heading "Administration Summary" [level=2] [ref=e59]
+        - generic [ref=e60]:
+          - generic [ref=e61]:
+            - heading "Score Later *" [level=4] [ref=e62]
+            - generic [ref=e63]: No items
+            - heading "Needs Attention *" [level=4] [ref=e64]
+            - generic [ref=e65]: No items
+            - heading "Invalidated Tests Not available for reporting" [level=4] [ref=e66]
+            - generic [ref=e67]: No items
+          - generic [ref=e68]:
+            - heading "Flagged Items" [level=4] [ref=e69]
+            - generic [ref=e70]: No items
+        - generic [ref=e71]: "*Resolve all Score Later and Needs Attention items before submitting. When sharing, coordinate with your collaborator."
+    - generic [ref=e72]:
+      - generic [ref=e73]: "Warning: Changing scores may result in the need to administer additional items to examinee to retrieve valid test scores."
+      - button "Exit Review Mode" [ref=e74] [cursor=pointer]
+      - button "Submit Test Assignment" [disabled] [ref=e75]
+  - dialog [ref=e77]:
+    - generic [ref=e78]:
+      - button "Close Review" [ref=e80] [cursor=pointer]: ✕
+      - generic [ref=e82]:
+        - heading "Test Session Notes" [level=4] [ref=e83]
+        - textbox "Write Something..." [ref=e84]
+      - generic [ref=e86]: You can no longer submit assignments or run new reports. Renew your subscription to regain reporting access.
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - 'tab "Review: Observations" [ref=e89] [cursor=pointer]': "1"
+          - 'tab "Review: Notes" [selected] [ref=e90] [cursor=pointer]': "2"
+        - button "Submit Test Assignment" [disabled] [ref=e92]
+```
+
+# Test source
+
+```ts
+  6466 |     }
+  6467 |     const rsbelements = await this.page.locator(
+  6468 |       "//button[@class='rsi-checkbox']"
+  6469 |     );
+  6470 |     const count = await rsbelements.count();
+  6471 |     // Array to store text contents
+  6472 |     const responseStyleBehaviours: string[] = [];
+  6473 |     // Iterate over each element and fetch text content
+  6474 |     for (let i = 0; i < count; i++) {
+  6475 |       const element = rsbelements.nth(i);
+  6476 |       const textContent = await element.textContent();
+  6477 |       responseStyleBehaviours.push(textContent?.trim() || "");
+  6478 |     }
+  6479 |     console.log(responseStyleBehaviours);
+  6480 |     rsb.forEach((rsbehaviourText, index) => {
+  6481 |       expect(responseStyleBehaviours[index]).toContain(rsbehaviourText);
+  6482 |     });
+  6483 |     if (testNames.includes(testStemForm)) {
+  6484 |       await this.endTestPopUpElements.nth(17).click();
+  6485 |     } else if (testNames2.includes(testStemForm)) {
+  6486 |       await this.endTestPopUpElements.nth(18).click();
+  6487 |     } else if (testNames1.includes(testStemForm)) {
+  6488 |       await this.endTestPopUpElements.nth(19).click();
+  6489 |     } else if (
+  6490 |       (testStemForm === "STYCMP.W5PA" &&
+  6491 |         typeOfTest.match(/Sample Item EndTest Flow when RS is (0|1)/i)) ||
+  6492 |       (testStemForm === "WRDATK.W5PA" &&
+  6493 |         typeOfTest.match(/Block A End Test Flow with 2 correct Scenario for SSP1|Block A End Test Flow with Samples and Items administered wrong scenario for SSP1|Sample A correct !C scenario SSP1/i)) ||
+  6494 |       (testStemForm === "PSGCMP.W5PA" &&
+  6495 |         typeOfTest.match(/5 Lowest incorrect items (SSP2|SSP3|SSP4|SSP5|SSP6)|Reverse Logic (SSP2|SSP3|SSP4|SSP5|SSP6)|5 correct 5 incorrect-Block B All incorrect-Block A SSP2|Score Error Scenario for (SSP2|SSP3|SSP4|SPP5|SSP6)/i)) ||
+  6496 |       (testStemForm === "LWIDNT.W5PA" &&
+  6497 |         typeOfTest.match(/Lowest incorrect items SSP1|1 correct 1 incorrect SSP1/i)) ||
+  6498 |       (testStemForm === "SEMRET.W5PA" || testStemForm === "SEMRET.W5PX" || testStemForm === "PHNRET.W5PA" ) ||
+  6499 |       (testStemForm === "MPRBID.W5PA" &&
+  6500 |         typeOfTest.match(
+  6501 |           /Sample Items AB discontinue Scenario for SSP (1|2|3)/i
+  6502 |         ))
+  6503 |     ) {
+  6504 |       await this.endTestPopUpElements.nth(16).click();
+  6505 |     } else if 
+  6506 |       (testStemForm === "MAGCMP.W5PA" || testStemForm === "MAGCMP.W5PX"|| testStemForm === "VAL.W5PA"|| (testStemForm === "CALC.W5PA" && typeOfTest.match(/CALC Sample End Test scenario for SSP1/i))) {
+  6507 |       await this.endTestPopUpElements.nth(17).click();
+  6508 |     } else {
+  6509 |       await this.endTestPopUpElements.nth(15).click();
+  6510 |     }
+  6511 |     await this.page.waitForTimeout(2000);
+  6512 |   }
+  6513 | 
+  6514 |   async completeTestSessionObservationsAndClickNext(typeOfTest?: string, testStemForm?: string) {
+  6515 |     await this.page.bringToFront();
+  6516 |     if (await this.levelOfProficiency.isVisible()) {
+  6517 |     await this.page.waitForTimeout(1000);
+  6518 |     await this.selectTheCheckbox(0, "Examinee MAsk");
+  6519 |     await this.page.waitForTimeout(1000);
+  6520 |     await this.selectTheCheckbox(2, "examiner MAsk");
+  6521 |     await this.selectTheDropdownOption(
+  6522 |       0,
+  6523 |       "Advanced",
+  6524 |       "Level of Conversational Proficiency"
+  6525 |     );
+  6526 |     await this.selectTheDropdownOption(
+  6527 |       1,
+  6528 |       "Was uncooperative at times",
+  6529 |       "Level of Cooperation"
+  6530 |     );
+  6531 |     await this.selectTheDropdownOption(
+  6532 |       2,
+  6533 |       "Seemed lethargic",
+  6534 |       "Level of Activity"
+  6535 |     );
+  6536 |     await this.selectTheDropdownOption(
+  6537 |       3,
+  6538 |       "Appeared distracted some of the time",
+  6539 |       "Attention and Concentration"
+  6540 |     );
+  6541 |     await this.selectTheDropdownOption(
+  6542 |       4,
+  6543 |       "Appeared overly anxious",
+  6544 |       "Self-Confidence"
+  6545 |     );
+  6546 |     await this.selectTheDropdownOption(
+  6547 |       5,
+  6548 |       "Responded impulsively and carelessly",
+  6549 |       "Care in Responding"
+  6550 |     );
+  6551 |     await this.selectTheDropdownOption(
+  6552 |       6,
+  6553 |       "Made random guesses",
+  6554 |       "Response to Difficult Items and Corrective Feedback"
+  6555 |     );
+  6556 |     await this.selectTheDropdownOption(
+  6557 |       7,
+  6558 |       "Was resistant to tasks",
+  6559 |       "Motivation"
+  6560 |     );
+  6561 |     } 
+  6562 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== "SWRTFL.W5PA"){
+  6563 |     await this.nextButton.click();
+  6564 |     await this.submitTestSetAndFinishAdministration.last().click();
+  6565 |    }else{
+> 6566 |     await this.submitTestSetAndFinishAdministration.last().click();
+       |                                                            ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  6567 |   }
+  6568 | }
+  6569 | 
+  6570 |   async endSessionWithResponseStyleAndBehaviours() {
+  6571 |     await this.endSessionButton.click();
+  6572 |     await this.endSessionReviewButton.waitFor({
+  6573 |       state: "attached",
+  6574 |       timeout: 80000,
+  6575 |     });
+  6576 |     await this.endSessionReviewButton.click();
+  6577 |       await this.submitTestSetAndFinishAdministration.waitFor({
+  6578 |           state: "attached",
+  6579 |           timeout: 150000,
+  6580 |       });
+  6581 |       await this.submitTestSetAndFinishAdministration.click();
+  6582 |     await this.nextButton.waitFor({ state: 'visible', timeout: 60000 });
+  6583 |     for (let i = 0; i < 3; i++) {
+  6584 |       if (await this.nextButton.isEnabled()) {
+  6585 |         await this.nextButton.click();
+  6586 |         break;
+  6587 |       }
+  6588 |       await this.page.waitForTimeout(1000);
+  6589 |     }
+  6590 |   }
+  6591 |   async endTheSessionAndCloseExamineePage(childPage,typeOfTest: string, testStemForm?: string) {
+  6592 |     await this.endSessionWithResponseStyleAndBehaviours();
+  6593 |     await this.completeTestSessionObservationsAndClickNext(typeOfTest, testStemForm);
+  6594 |     await childPage.switchToTheChildScreenAndWaitUntilToSeeTheJoinSessionButton();
+  6595 |   }
+  6596 | 
+  6597 |   async validateWLookUpReport(
+  6598 |     testinfo: string | any,
+  6599 |     lookUpModel: string,
+  6600 |     testName: string,
+  6601 |     sumOfItemScores: number,
+  6602 |     basalCredit: number,
+  6603 |     wLookUp: number,
+  6604 |     wScore: number,
+  6605 |     semW: number,
+  6606 |     wLookUpAdminItems: string,
+  6607 |     scoreString: string,
+  6608 |     testStemForm: string,
+  6609 |     totalItems: number,
+  6610 |     scoreFlag: string,
+  6611 |     examinee_ID: string
+  6612 |   ) {
+  6613 |     await this.dashboardPage.welcomeTextToBeVisable();
+  6614 |     await this.dashboardPage.uploadExamineeExportTemplate(lookUpModel, examinee_ID);
+  6615 |     await this.dashboardPage.clickOnTheExamineeReportToDownload(testinfo, "wLookUp", examinee_ID);
+  6616 |     await this.dashboardPage.extractTheDownloadedExamineeZipFile(examinee_ID);
+  6617 |     const requiredFileName =
+  6618 |       await this.dashboardPage.printAllTheDataFromTheExamineeFileRequired(
+  6619 |         "Score_DataExport_AutoFilter_Template_WLookup"
+  6620 |           , examinee_ID);
+  6621 |     console.log(`requiredFileName`, requiredFileName);
+  6622 |         await this.dashboardPage.validateTheDownloadedReportWithRunTimeDataForSingleAndMulti(
+  6623 |             testName,
+  6624 |             sumOfItemScores,
+  6625 |             basalCredit,
+  6626 |             wLookUp,
+  6627 |             wScore,
+  6628 |             semW,
+  6629 |             wLookUpAdminItems,
+  6630 |             scoreString,
+  6631 |             testStemForm,
+  6632 |             lookUpModel,
+  6633 |             totalItems,
+  6634 |             scoreFlag
+  6635 |         );
+  6636 |   }
+  6637 |   async breakTheLogicFromSampleAndForceSubmitTest(
+  6638 |   ) {
+  6639 |       await this.mainNavigation.click();
+  6640 |       await this.mainNavigationReview.click();
+  6641 |       await this.page.waitForTimeout(2000);
+  6642 |       await this.nextButton.click();
+  6643 |   }
+  6644 |    
+  6645 |   async InvalidateActualTestToGetBackUpForm(addBackup: boolean, testStemForm?: string, testName1?: string, SSP?: string) {
+  6646 |     await this.page.waitForTimeout(1000);
+  6647 |     const itemDetails: string = (await this.itemDetails.textContent())!;
+  6648 |     console.log(itemDetails);
+  6649 | 
+  6650 |     if (testStemForm.match(/MAGCMP.W5PX/i) || testStemForm.match(/NUMPAT.W5PX/i) || testStemForm.match(/LETPAT.W5PX/i) || testStemForm.match(/SRDGFL.W5PB/i)) {
+  6651 |       await this.page.waitForTimeout(1000);
+  6652 |       await this.plainNextButtonOrEndButton.click();
+  6653 |       await this.page.waitForTimeout(1000);
+  6654 |       for (let i = 1; i <= 4; i++) {
+  6655 |         await this.incorrectOptionButton.nth(0).click();
+  6656 |         if (await this.plainNextButtonOrEndButton.isEnabled()) {
+  6657 |           await this.plainNextButtonOrEndButton.click();
+  6658 |         } else {
+  6659 |           await this.plainNextButtonOrEndButton.waitFor({ state: 'visible', timeout: 50000 });
+  6660 |         }
+  6661 |       }
+  6662 |     } else if (testStemForm.match(/RPDPHO.W5PX/i) || testStemForm.match(/RPDQNT.W5PX/i) || testStemForm.match(/RPDLET.W5PX/i) || testStemForm.match(/RPDNUM.W5PX/i) || testStemForm.match(/RPDPIC.W5PX/i)) {
+  6663 |       if (itemDetails.startsWith("Introduction")) {
+  6664 |         await this.page.waitForTimeout(1000);
+  6665 |         await this.plainNextButtonOrEndButton.click();
+  6666 |       }
+```

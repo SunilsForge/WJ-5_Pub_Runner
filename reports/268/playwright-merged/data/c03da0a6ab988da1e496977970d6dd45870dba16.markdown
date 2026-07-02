@@ -1,0 +1,599 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/reviewMode/SubmittedTestAssignments.spec.ts >> I want the ability to launch into review mode for my submitted test assignments >> Complete testing for tests selected in the block and submit
+- Location: src/tests/functional/reviewMode/SubmittedTestAssignments.spec.ts:35:9
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('.single-select-parent').last()
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S11PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S11PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [disabled] [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e39]:
+              - generic [ref=e40]:
+                - generic [ref=e41]: "Your Subscription has Lapsed:"
+                - generic [ref=e42]: You can no longer submit assignments or run new reports. Renew your subscription to regain reporting access.
+                - link "Renew Now" [ref=e43] [cursor=pointer]:
+                  - /url: https://store.riversideinsights.com/p/woodcock-johnson-v-wj-v/
+                - button "✕" [ref=e44] [cursor=pointer]
+              - generic [ref=e45]:
+                - generic [ref=e46]: NEW!
+                - generic [ref=e47]: Offline Mode is here, download your assignments and get started today!
+                - link "Read More" [ref=e48] [cursor=pointer]:
+                  - /url: /media/OfflineMode.pdf
+                - button "Close" [ref=e49] [cursor=pointer]: ✕
+            - generic [ref=e50]:
+              - generic [ref=e51]:
+                - heading "My Test Assignments" [level=1] [ref=e52]
+                - button "Create New Test Assignment" [ref=e53] [cursor=pointer]
+              - generic [ref=e54]:
+                - generic [ref=e57]:
+                  - textbox [ref=e58]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e59] [cursor=pointer]
+                - generic [ref=e60]:
+                  - button "Active" [ref=e61] [cursor=pointer]
+                  - button "Closed" [ref=e62] [cursor=pointer]
+              - table "Available Assignments" [ref=e64]:
+                - rowgroup [ref=e71]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e72]:
+                    - columnheader "This is the student or individual being assessed." [ref=e73]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e74]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e75]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e76]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e77]: Actions
+                - rowgroup [ref=e78]:
+                  - row "Begin assignment Rapid Automatized Naming (RAN) for N87850A61336, Tamia Rapid Automatized Naming (RAN) More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e79] [cursor=pointer]:
+                    - cell "Begin assignment Rapid Automatized Naming (RAN) for N87850A61336, Tamia" [ref=e80]:
+                      - button "Begin assignment Rapid Automatized Naming (RAN) for N87850A61336, Tamia" [ref=e81]:
+                        - generic [ref=e82]: N87850A61336, Tamia
+                    - cell "Rapid Automatized Naming (RAN) More info" [ref=e83]:
+                      - generic [ref=e84]:
+                        - button "Rapid Automatized Naming (RAN)" [ref=e85]:
+                          - generic [ref=e86]: Rapid Automatized Naming (RAN)
+                        - button "More info" [ref=e87]
+                    - cell "—" [ref=e88]:
+                      - button "—" [ref=e89]
+                    - cell "● Not Started" [ref=e90]:
+                      - button "● Not Started" [ref=e91]:
+                        - generic [ref=e92]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e93]:
+                      - button "Edit Assignment" [ref=e94]
+                      - button "Add Tests" [ref=e95]
+                      - button "Assignment actions" [ref=e96]
+                  - row "Begin assignment Broad Achievement for N99981A22030, Jed Broad Achievement More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e97] [cursor=pointer]:
+                    - cell "Begin assignment Broad Achievement for N99981A22030, Jed" [ref=e98]:
+                      - button "Begin assignment Broad Achievement for N99981A22030, Jed" [ref=e99]:
+                        - generic [ref=e100]: N99981A22030, Jed
+                    - cell "Broad Achievement More info" [ref=e101]:
+                      - generic [ref=e102]:
+                        - button "Broad Achievement" [ref=e103]:
+                          - generic [ref=e104]: Broad Achievement
+                        - button "More info" [ref=e105]
+                    - cell "—" [ref=e106]:
+                      - button "—" [ref=e107]
+                    - cell "● Not Started" [ref=e108]:
+                      - button "● Not Started" [ref=e109]:
+                        - generic [ref=e110]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e111]:
+                      - button "Edit Assignment" [ref=e112]
+                      - button "Add Tests" [ref=e113]
+                      - button "Assignment actions" [ref=e114]
+                  - row "Begin assignment General Intellectual Ability (GIA) for N55160A94596, Mollie General Intellectual Ability (GIA) More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e115] [cursor=pointer]:
+                    - cell "Begin assignment General Intellectual Ability (GIA) for N55160A94596, Mollie" [ref=e116]:
+                      - button "Begin assignment General Intellectual Ability (GIA) for N55160A94596, Mollie" [ref=e117]:
+                        - generic [ref=e118]: N55160A94596, Mollie
+                    - cell "General Intellectual Ability (GIA) More info" [ref=e119]:
+                      - generic [ref=e120]:
+                        - button "General Intellectual Ability (GIA)" [ref=e121]:
+                          - generic [ref=e122]: General Intellectual Ability (GIA)
+                        - button "More info" [ref=e123]
+                    - cell "—" [ref=e124]:
+                      - button "—" [ref=e125]
+                    - cell "● Not Started" [ref=e126]:
+                      - button "● Not Started" [ref=e127]:
+                        - generic [ref=e128]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e129]:
+                      - button "Edit Assignment" [ref=e130]
+                      - button "Add Tests" [ref=e131]
+                      - button "Assignment actions" [ref=e132]
+                  - row "Begin assignment General Intellectual Ability (GIA) for N62736A86073, Margot General Intellectual Ability (GIA) More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e133] [cursor=pointer]:
+                    - cell "Begin assignment General Intellectual Ability (GIA) for N62736A86073, Margot" [ref=e134]:
+                      - button "Begin assignment General Intellectual Ability (GIA) for N62736A86073, Margot" [ref=e135]:
+                        - generic [ref=e136]: N62736A86073, Margot
+                    - cell "General Intellectual Ability (GIA) More info" [ref=e137]:
+                      - generic [ref=e138]:
+                        - button "General Intellectual Ability (GIA)" [ref=e139]:
+                          - generic [ref=e140]: General Intellectual Ability (GIA)
+                        - button "More info" [ref=e141]
+                    - cell "—" [ref=e142]:
+                      - button "—" [ref=e143]
+                    - cell "● Not Started" [ref=e144]:
+                      - button "● Not Started" [ref=e145]:
+                        - generic [ref=e146]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e147]:
+                      - button "Edit Assignment" [ref=e148]
+                      - button "Add Tests" [ref=e149]
+                      - button "Assignment actions" [ref=e150]
+                  - row "Begin assignment Dyslexia Test Set for N85548A49602, Okey Dyslexia Test Set More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e151] [cursor=pointer]:
+                    - cell "Begin assignment Dyslexia Test Set for N85548A49602, Okey" [ref=e152]:
+                      - button "Begin assignment Dyslexia Test Set for N85548A49602, Okey" [ref=e153]:
+                        - generic [ref=e154]: N85548A49602, Okey
+                    - cell "Dyslexia Test Set More info" [ref=e155]:
+                      - generic [ref=e156]:
+                        - button "Dyslexia Test Set" [ref=e157]:
+                          - generic [ref=e158]: Dyslexia Test Set
+                        - button "More info" [ref=e159]
+                    - cell "—" [ref=e160]:
+                      - button "—" [ref=e161]
+                    - cell "● Not Started" [ref=e162]:
+                      - button "● Not Started" [ref=e163]:
+                        - generic [ref=e164]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e165]:
+                      - button "Edit Assignment" [ref=e166]
+                      - button "Add Tests" [ref=e167]
+                      - button "Assignment actions" [ref=e168]
+                  - row "Begin assignment General Intellectual Ability (GIA) (+1 more) for N59005A25618, Lionel General Intellectual Ability (GIA) (+1 more) More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e169] [cursor=pointer]:
+                    - cell "Begin assignment General Intellectual Ability (GIA) (+1 more) for N59005A25618, Lionel" [ref=e170]:
+                      - button "Begin assignment General Intellectual Ability (GIA) (+1 more) for N59005A25618, Lionel" [ref=e171]:
+                        - generic [ref=e172]: N59005A25618, Lionel
+                    - cell "General Intellectual Ability (GIA) (+1 more) More info" [ref=e173]:
+                      - generic [ref=e174]:
+                        - button "General Intellectual Ability (GIA) (+1 more)" [ref=e175]:
+                          - generic [ref=e176]: General Intellectual Ability (GIA) (+1 more)
+                        - button "More info" [ref=e177]
+                    - cell "—" [ref=e178]:
+                      - button "—" [ref=e179]
+                    - cell "● Not Started" [ref=e180]:
+                      - button "● Not Started" [ref=e181]:
+                        - generic [ref=e182]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e183]:
+                      - button "Edit Assignment" [ref=e184]
+                      - button "Add Tests" [ref=e185]
+                      - button "Assignment actions" [ref=e186]
+                  - row "Begin assignment Rapid Automatized Naming (RAN) for N7057A4915, Garry Rapid Automatized Naming (RAN) More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e187] [cursor=pointer]:
+                    - cell "Begin assignment Rapid Automatized Naming (RAN) for N7057A4915, Garry" [ref=e188]:
+                      - button "Begin assignment Rapid Automatized Naming (RAN) for N7057A4915, Garry" [ref=e189]:
+                        - generic [ref=e190]: N7057A4915, Garry
+                    - cell "Rapid Automatized Naming (RAN) More info" [ref=e191]:
+                      - generic [ref=e192]:
+                        - button "Rapid Automatized Naming (RAN)" [ref=e193]:
+                          - generic [ref=e194]: Rapid Automatized Naming (RAN)
+                        - button "More info" [ref=e195]
+                    - cell "—" [ref=e196]:
+                      - button "—" [ref=e197]
+                    - cell "● Not Started" [ref=e198]:
+                      - button "● Not Started" [ref=e199]:
+                        - generic [ref=e200]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e201]:
+                      - button "Edit Assignment" [ref=e202]
+                      - button "Add Tests" [ref=e203]
+                      - button "Assignment actions" [ref=e204]
+                  - row "Begin assignment Broad Achievement for N59005A25618, Lionel Broad Achievement More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e205] [cursor=pointer]:
+                    - cell "Begin assignment Broad Achievement for N59005A25618, Lionel" [ref=e206]:
+                      - button "Begin assignment Broad Achievement for N59005A25618, Lionel" [ref=e207]:
+                        - generic [ref=e208]: N59005A25618, Lionel
+                    - cell "Broad Achievement More info" [ref=e209]:
+                      - generic [ref=e210]:
+                        - button "Broad Achievement" [ref=e211]:
+                          - generic [ref=e212]: Broad Achievement
+                        - button "More info" [ref=e213]
+                    - cell "—" [ref=e214]:
+                      - button "—" [ref=e215]
+                    - cell "● Not Started" [ref=e216]:
+                      - button "● Not Started" [ref=e217]:
+                        - generic [ref=e218]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e219]:
+                      - button "Edit Assignment" [ref=e220]
+                      - button "Add Tests" [ref=e221]
+                      - button "Assignment actions" [ref=e222]
+                  - row "Begin assignment Dyslexia Test Set for N23241A72903, Howard Dyslexia Test Set More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e223] [cursor=pointer]:
+                    - cell "Begin assignment Dyslexia Test Set for N23241A72903, Howard" [ref=e224]:
+                      - button "Begin assignment Dyslexia Test Set for N23241A72903, Howard" [ref=e225]:
+                        - generic [ref=e226]: N23241A72903, Howard
+                    - cell "Dyslexia Test Set More info" [ref=e227]:
+                      - generic [ref=e228]:
+                        - button "Dyslexia Test Set" [ref=e229]:
+                          - generic [ref=e230]: Dyslexia Test Set
+                        - button "More info" [ref=e231]
+                    - cell "—" [ref=e232]:
+                      - button "—" [ref=e233]
+                    - cell "● Not Started" [ref=e234]:
+                      - button "● Not Started" [ref=e235]:
+                        - generic [ref=e236]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e237]:
+                      - button "Edit Assignment" [ref=e238]
+                      - button "Add Tests" [ref=e239]
+                      - button "Assignment actions" [ref=e240]
+                  - row "Begin assignment Rapid Automatized Naming (RAN) for N17140A73884, Emil Rapid Automatized Naming (RAN) More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e241] [cursor=pointer]:
+                    - cell "Begin assignment Rapid Automatized Naming (RAN) for N17140A73884, Emil" [ref=e242]:
+                      - button "Begin assignment Rapid Automatized Naming (RAN) for N17140A73884, Emil" [ref=e243]:
+                        - generic [ref=e244]: N17140A73884, Emil
+                    - cell "Rapid Automatized Naming (RAN) More info" [ref=e245]:
+                      - generic [ref=e246]:
+                        - button "Rapid Automatized Naming (RAN)" [ref=e247]:
+                          - generic [ref=e248]: Rapid Automatized Naming (RAN)
+                        - button "More info" [ref=e249]
+                    - cell "—" [ref=e250]:
+                      - button "—" [ref=e251]
+                    - cell "● Not Started" [ref=e252]:
+                      - button "● Not Started" [ref=e253]:
+                        - generic [ref=e254]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e255]:
+                      - button "Edit Assignment" [ref=e256]
+                      - button "Add Tests" [ref=e257]
+                      - button "Assignment actions" [ref=e258]
+                  - row "Begin assignment Broad Achievement for N49808A97976, Jaylen Broad Achievement More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e259] [cursor=pointer]:
+                    - cell "Begin assignment Broad Achievement for N49808A97976, Jaylen" [ref=e260]:
+                      - button "Begin assignment Broad Achievement for N49808A97976, Jaylen" [ref=e261]:
+                        - generic [ref=e262]: N49808A97976, Jaylen
+                    - cell "Broad Achievement More info" [ref=e263]:
+                      - generic [ref=e264]:
+                        - button "Broad Achievement" [ref=e265]:
+                          - generic [ref=e266]: Broad Achievement
+                        - button "More info" [ref=e267]
+                    - cell "—" [ref=e268]:
+                      - button "—" [ref=e269]
+                    - cell "● Not Started" [ref=e270]:
+                      - button "● Not Started" [ref=e271]:
+                        - generic [ref=e272]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e273]:
+                      - button "Edit Assignment" [ref=e274]
+                      - button "Add Tests" [ref=e275]
+                      - button "Assignment actions" [ref=e276]
+                  - row "Begin assignment General Intellectual Ability (GIA) for N49127A82984, Ellie General Intellectual Ability (GIA) More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e277] [cursor=pointer]:
+                    - cell "Begin assignment General Intellectual Ability (GIA) for N49127A82984, Ellie" [ref=e278]:
+                      - button "Begin assignment General Intellectual Ability (GIA) for N49127A82984, Ellie" [ref=e279]:
+                        - generic [ref=e280]: N49127A82984, Ellie
+                    - cell "General Intellectual Ability (GIA) More info" [ref=e281]:
+                      - generic [ref=e282]:
+                        - button "General Intellectual Ability (GIA)" [ref=e283]:
+                          - generic [ref=e284]: General Intellectual Ability (GIA)
+                        - button "More info" [ref=e285]
+                    - cell "—" [ref=e286]:
+                      - button "—" [ref=e287]
+                    - cell "● Not Started" [ref=e288]:
+                      - button "● Not Started" [ref=e289]:
+                        - generic [ref=e290]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e291]:
+                      - button "Edit Assignment" [ref=e292]
+                      - button "Add Tests" [ref=e293]
+                      - button "Assignment actions" [ref=e294]
+            - generic [ref=e295]:
+              - generic [ref=e296]:
+                - generic [ref=e298]:
+                  - img [ref=e299]
+                  - heading "Notifications Center" [level=2] [ref=e303]
+                - generic [ref=e305]:
+                  - generic [ref=e306]: 04/28/2026
+                  - paragraph [ref=e307]:
+                    - generic [ref=e308]: The RiversideScore platform will be down for maintenance on Wed, July 1st, from 8:00 PM
+                    - text: to 12:00 AM CST.
+                    - generic [ref=e309]: During this time, access will be unavailable. If you have any questions, please contact
+                    - text: "Customer Support Monday- Friday 8AM- 4PM CST at:"
+                  - paragraph [ref=e310]:
+                    - text: "Tel:"
+                    - link "800-323-9540" [ref=e311] [cursor=pointer]:
+                      - /url: tel:8003239540
+                    - text: "Email:"
+                    - link "Inquiry@service.riversideinsights.com" [ref=e313] [cursor=pointer]:
+                      - /url: mailto:Inquiry@service.riversideinsights.com
+                  - paragraph [ref=e314]: We appreciate your patience as we work to improve the experience!
+              - generic [ref=e315]:
+                - generic [ref=e317]:
+                  - img [ref=e318]
+                  - heading "Resources" [level=3] [ref=e322]
+                - list [ref=e323]:
+                  - listitem [ref=e324]:
+                    - button "Riverside Learn" [ref=e325] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e326]
+                      - img [ref=e328]
+                  - listitem [ref=e330]:
+                    - button "Onboarding Tutorial Videos" [ref=e331] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e332]
+                      - img [ref=e334]
+                  - listitem [ref=e336]:
+                    - button "Quick Reference Guides" [ref=e337] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e338]
+                      - img [ref=e340]
+                - button "View All" [ref=e343] [cursor=pointer]
+      - contentinfo [ref=e344]:
+        - generic [ref=e345]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e346] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e347]
+        - generic [ref=e348]:
+          - link "Riverside Insights Facebook" [ref=e349] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e350]
+          - link "Riverside Insights Twitter" [ref=e351] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e352]
+          - link "Riverside Insights LinkedIn" [ref=e353] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e354]
+          - link "Riverside Insights Instagram" [ref=e355] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e356]
+        - generic [ref=e357]:
+          - button "Leave Feedback" [ref=e358] [cursor=pointer]
+          - generic [ref=e359]: "|"
+          - link "Terms of Use" [ref=e360] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e361]: "|"
+          - link "Privacy Policy" [ref=e362] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e363]: Footer region end
+  - region "Chat Widget" [ref=e364]:
+    - iframe [ref=e365]:
+      - button "Open live chat" [ref=f3e5]:
+        - img [ref=f3e8]
+        - img [ref=f3e15]
+    - generic "Drag" [ref=e366]:
+      - img [ref=e367]
+```
+
+# Test source
+
+```ts
+  306 |       "Test Assignment",
+  307 |     );
+  308 |     await this.selectExaminee(studentID);
+  309 |     await this.selectExaminer(examiner.examinerID);
+  310 |     await this.selectTestBlock(blockName);
+  311 |     await this.testAssignmentSaveButton.isEnabled();
+  312 |     await this.testAssignmentSaveButton.click();
+  313 |     console.log(`Added the block ${blockName} ...`);
+  314 |   }
+  315 | 
+  316 |   async createTestAssignmentFromExamineeManagement(
+  317 |     blockName: string,
+  318 |     studentID: string,
+  319 |     examineeGrade?: string,
+  320 |     education?: string,
+  321 |     launchAssignment?: boolean,
+  322 |   ) {
+  323 |     await this.page.waitForTimeout(2000);
+  324 |     await this.waitForLoaderToDisappear();
+  325 |     await this.page
+  326 |       .locator('//button[text()="Create Test Assignment"]')
+  327 |       .click();
+  328 |     await this.select_Examinee(studentID);
+  329 |     await this.clickNextButton();
+  330 |     await this.selectTestSet(blockName);
+  331 |     await this.clickNextButton();
+  332 |     if (education) {
+  333 |       await this.selectEducation(education);
+  334 |     } else {
+  335 |       await this.selectEducation();
+  336 |     }
+  337 |     await this.selectTestAssignmentDefaults();
+  338 |     await this.clickSaveButton();
+  339 |     if (launchAssignment == false) {
+  340 |       await this.closeTestAssignmentPopUp();
+  341 |     } else {
+  342 |       await this.clickLaunchAssignmentButton();
+  343 |     }
+  344 |     // await this.inputExamineeGradeAtLaunchTestPopUp(examineeGrade); // Lets tUI changes removed this functionality
+  345 |   }
+  346 | 
+  347 |   async inputExamineeGradeAtLaunchTestPopUp(val: string) {
+  348 |     val = val.split(" ")[1];
+  349 |     await this.page.locator(".grade-input").first().fill(val);
+  350 |   }
+  351 | 
+  352 |   async clickLaunchAssignmentButton() {
+  353 |     await this.page
+  354 |       .locator('//h1[text()="Test Assignment Successful"]')
+  355 |       .waitFor({ state: "visible" });
+  356 |     await Promise.all([
+  357 |       this.page.waitForResponse(
+  358 |         (resp) =>
+  359 |           resp.url().includes("WJ5Grpc.TestSession/UpdateSession") &&
+  360 |           resp.status() === 200 &&
+  361 |           resp.request().method() === "POST",
+  362 |         { timeout: 2 * 60 * 1000 },
+  363 |       ),
+  364 |       await this.page
+  365 |         .locator('//button[text()="Launch Assignment"]')
+  366 |         .click({ timeout: 2 * 60 * 1000 }),
+  367 |     ]);
+  368 |   }
+  369 | 
+  370 |   async closeTestAssignmentPopUp() {
+  371 |     await this.closeButton.waitFor({ state: "visible" });
+  372 |     await this.closeButton.click();
+  373 |   }
+  374 | 
+  375 |   async select_Examinee(examineeId: string) {
+  376 |     try {
+  377 |       await this.page
+  378 |         .locator(".placeholder")
+  379 |         .getByText("Select Examinee")
+  380 |         .click();
+  381 |       await this.searchInputBox.last().fill(examineeId);
+  382 |       await this.page
+  383 |         .locator(".item-text.single-select")
+  384 |         .waitFor({ state: "attached" });
+  385 |       await this.page
+  386 |         .locator(".item-text.single-select")
+  387 |         .getByText(new RegExp(examineeId))
+  388 |         .click({ timeout: 30000 });
+  389 |       await this.page
+  390 |         .getByText("Selected Examinee Details")
+  391 |         .waitFor({ state: "visible" });
+  392 |       console.log(`Successfully selected examinee: ${examineeId}`);
+  393 |     } catch (error) {
+  394 |       console.error(`Failed to select examinee with ID: ${examineeId}`, error);
+  395 |       throw error;
+  396 |     }
+  397 |   }
+  398 | 
+  399 |   async selectTestSet(testSetName: string) {
+  400 |     await this.page.waitForTimeout(1000);
+  401 |     await this.page
+  402 |       .locator(".placeholder")
+  403 |       .getByText("Select Test Set")
+  404 |       .click();
+  405 |     await this.searchInputBox.last().fill(testSetName);
+> 406 |     await this.page.locator(".single-select-parent").last().click();
+      |                                                             ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  407 |     await this.page
+  408 |       .locator(`//h3[contains(text(),'${testSetName}')]`)
+  409 |       .waitFor({ state: "visible" });
+  410 |   }
+  411 | 
+  412 |   async getEducation() {
+  413 |     const pageUrl = this.page.url();
+  414 |     if (pageUrl.includes("stage")) {
+  415 |       return "Kindergarten";
+  416 |     } else {
+  417 |       return "In Kindergarten";
+  418 |     }
+  419 |   }
+  420 | 
+  421 |   async selectEducation(education: string = "In Kindergarten") {
+  422 |     // education = await this.getEducation();
+  423 |     await this.page
+  424 |       .locator(".placeholder")
+  425 |       .getByText("Select Education")
+  426 |       .click();
+  427 |     await this.searchInputBox.last().fill(education);
+  428 |     await this.page.locator(".single-select-parent").last().click();
+  429 |   }
+  430 | 
+  431 |   async selectTestAssignmentDefaults(val: string = "Age") {
+  432 |     await this.page
+  433 |       .locator('[class*="checkbox"]')
+  434 |       .filter({ hasText: val })
+  435 |       .locator(".radio-item")
+  436 |       .click();
+  437 |   }
+  438 | 
+  439 |   async clickNextButton() {
+  440 |     await this.page.getByText("Next").click();
+  441 |   }
+  442 | 
+  443 |   async clickSaveButton() {
+  444 |     await this.page.getByText("Save").click();
+  445 |   }
+  446 | 
+  447 |   private async selectExaminee(examineeID: string) {
+  448 |     await this.page
+  449 |       .getByPlaceholder("Search by Examinee Name or ID")
+  450 |       .fill(examineeID);
+  451 |     await this.page
+  452 |       .locator(".item-text")
+  453 |       .getByText(new RegExp(`^${examineeID}.*`))
+  454 |       .first()
+  455 |       .click();
+  456 |   }
+  457 | 
+  458 |   private async selectExaminer(examinerID: string) {
+  459 |     await this.page
+  460 |       .getByPlaceholder("Search by Examiner Name or ID")
+  461 |       .fill(examinerID);
+  462 |     await this.page.locator(".item-text").getByText(examinerID).first().click();
+  463 |   }
+  464 | 
+  465 |   private async selectTestBlock(testBlock: string) {
+  466 |     await this.page.getByPlaceholder("Search by Test Block").fill(testBlock);
+  467 |     await this.page
+  468 |       .locator(".item-text")
+  469 |       .getByText(new RegExp(`^${testBlock}.*`))
+  470 |       .first()
+  471 |       .click();
+  472 |   }
+  473 | 
+  474 |   private async selectGender(value: string) {
+  475 |     await this.page.locator("div[role='dialog'] button[class='select-box']").click();
+  476 |     await this.page
+  477 |       .locator(".item-text")
+  478 |       .getByText(new RegExp(`^${value}.*`))
+  479 |       .first()
+  480 |       .click();
+  481 |   }
+  482 | 
+  483 |   private async selectLocation(value?: string) {
+  484 |     try {
+  485 |       await this.page
+  486 |         .getByText("Select examinee location")
+  487 |         .click({ timeout: 5000 });
+  488 |       await this.page.locator(".item-text").last().click();
+  489 |     } catch (error) {
+  490 |       console.error(
+  491 |         "Location is already selected by default, or there was an issue selecting the location.",
+  492 |       );
+  493 |     }
+  494 |   }
+  495 | 
+  496 |   private async goToTheMainMenuChildPage(mainMenuDd: string): Promise<boolean>;
+  497 |   private async goToTheMainMenuChildPage(
+  498 |     mainMenuDd: string,
+  499 |     childDd: string,
+  500 |   ): Promise<boolean>;
+  501 |   private async goToTheMainMenuChildPage(
+  502 |     mainMenuDd: string,
+  503 |     childDd?: string,
+  504 |   ): Promise<boolean> {
+  505 |     this.waitForLoaderToDisappear();
+  506 |     await this.page.locator(`button[role='menuitem']:text('${mainMenuDd}')`).click();
+```
