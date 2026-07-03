@@ -1,17 +1,17 @@
 [
   {
     "runNumber": "268",
-    "timestamp": "20260702_000000",
+    "timestamp": "20260703_000000",
     "runReason": "running SMOKE in prodCanada as part of HOTFIX",
     "environment": "prodCanada",
     "browser": "chrome",
     "testPattern": "(?=.*@Aut_Eng_01)(?=.*@smoke)",
     "totalTests": 40,
-    "totalPassed": 3,
-    "totalFailed": 35,
-    "totalSkipped": 2,
-    "totalFlaky": 0,
-    "durationMs": 30330758
+    "totalPassed": 28,
+    "totalFailed": 9,
+    "totalSkipped": 1,
+    "totalFlaky": 2,
+    "durationMs": 18553037
   },
   {
     "runNumber": "266",

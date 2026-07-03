@@ -340,7 +340,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 336850,
+                      "duration": 336086,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.single-select-parent').last()\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.single-select-parent').last()\u001b[22m\n\n    at TestSetsPage.selectTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/testSetsPage.ts:205:51)\n    at TestSetsPage.createTestAssignmentFromExamineeManagement (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/testSetsPage.ts:164:5)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:61:11)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -375,37 +375,37 @@
                           "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
                         },
                         {
-                          "text": "Examinee ID N77622A57734\n"
+                          "text": "Examinee ID N57521A83074\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N77622A57734 FirstName=Montana LastName =N77622A57734 Age = 07/02/2021\n"
+                          "text": "Successfully added an Examinee  ID =N57521A83074 FirstName=Charley LastName =N57521A83074 Age = 07/03/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N77622A57734\n"
-                        },
-                        {
-                          "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
-                        },
-                        {
-                          "text": "Examinee ID N36832A70206\n"
-                        },
-                        {
-                          "text": "Successfully added an Examinee  ID =N36832A70206 FirstName=Aletha LastName =N36832A70206 Age = 07/02/2021\n"
-                        },
-                        {
-                          "text": "Successfully selected examinee: N36832A70206\n"
+                          "text": "Successfully selected examinee: N57521A83074\n"
                         },
                         {
                           "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
                         },
                         {
-                          "text": "Examinee ID N42661A60630\n"
+                          "text": "Examinee ID N98600A52715\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N42661A60630 FirstName=Jayden LastName =N42661A60630 Age = 07/02/2021\n"
+                          "text": "Successfully added an Examinee  ID =N98600A52715 FirstName=Howard LastName =N98600A52715 Age = 07/03/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N42661A60630\n"
+                          "text": "Successfully selected examinee: N98600A52715\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N12825A345\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N12825A345 FirstName=Solon LastName =N12825A345 Age = 07/03/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N12825A345\n"
                         }
                       ],
                       "stderr": [
@@ -420,7 +420,7 @@
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-07-02T12:07:36.676Z",
+                      "startTime": "2026-07-03T12:17:06.502Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -454,7 +454,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 324374,
+                      "duration": 323902,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.single-select-parent').last()\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.single-select-parent').last()\u001b[22m\n\n    at TestSetsPage.selectTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/testSetsPage.ts:205:51)\n    at TestSetsPage.createTestAssignmentFromExamineeManagement (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/testSetsPage.ts:164:5)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:61:11)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -489,37 +489,37 @@
                           "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
                         },
                         {
-                          "text": "Examinee ID N47637A84666\n"
+                          "text": "Examinee ID N8271A80518\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N47637A84666 FirstName=Salma LastName =N47637A84666 Age = 07/02/2021\n"
+                          "text": "Successfully added an Examinee  ID =N8271A80518 FirstName=Celine LastName =N8271A80518 Age = 07/03/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N47637A84666\n"
-                        },
-                        {
-                          "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
-                        },
-                        {
-                          "text": "Examinee ID N24146A72834\n"
-                        },
-                        {
-                          "text": "Successfully added an Examinee  ID =N24146A72834 FirstName=Henry LastName =N24146A72834 Age = 07/02/2021\n"
-                        },
-                        {
-                          "text": "Successfully selected examinee: N24146A72834\n"
+                          "text": "Successfully selected examinee: N8271A80518\n"
                         },
                         {
                           "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
                         },
                         {
-                          "text": "Examinee ID N60A72744\n"
+                          "text": "Examinee ID N45402A399\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N60A72744 FirstName=Vicente LastName =N60A72744 Age = 07/02/2021\n"
+                          "text": "Successfully added an Examinee  ID =N45402A399 FirstName=Joey LastName =N45402A399 Age = 07/03/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N60A72744\n"
+                          "text": "Successfully selected examinee: N45402A399\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N29868A28207\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N29868A28207 FirstName=Vickie LastName =N29868A28207 Age = 07/03/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N29868A28207\n"
                         }
                       ],
                       "stderr": [
@@ -534,7 +534,7 @@
                         }
                       ],
                       "retry": 1,
-                      "startTime": "2026-07-02T12:13:22.136Z",
+                      "startTime": "2026-07-03T12:22:50.781Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -604,7 +604,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-07-02T12:13:20.787Z",
+                      "startTime": "2026-07-03T12:22:49.507Z",
                       "annotations": [],
                       "attachments": []
                     },
@@ -617,7 +617,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2026-07-02T12:18:47.197Z",
+                      "startTime": "2026-07-03T12:28:15.325Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -668,7 +668,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 385231,
+                      "duration": 384156,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.single-select-parent').last()\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.single-select-parent').last()\u001b[22m\n\n    at Wj5DashboardPage.selectTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:406:61)\n    at Wj5DashboardPage.createTestAssignmentFromExamineeManagement (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:330:5)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/SubmittedTestAssignments.spec.ts:68:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -712,46 +712,46 @@
                           "text": "Trying to add an Examinee \n\n"
                         },
                         {
-                          "text": "Examinee ID N12389A71476\n"
+                          "text": "Examinee ID N90162A97630\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N12389A71476/dataFiles/Derived_Score_AutoFilter_Template_N12389A71476.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N90162A97630/dataFiles/Derived_Score_AutoFilter_Template_N90162A97630.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N12389A71476 FirstName=Laila LastName =N12389A71476 Age = 07/02/2021\n"
+                          "text": "Successfully added an Examinee  ID =N90162A97630 FirstName=Gianni LastName =N90162A97630 Age = 07/03/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N12389A71476\n"
-                        },
-                        {
-                          "text": "Trying to add an Examinee \n\n"
-                        },
-                        {
-                          "text": "Examinee ID N3619A60611\n"
-                        },
-                        {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3619A60611/dataFiles/Derived_Score_AutoFilter_Template_N3619A60611.csv successfully.\n"
-                        },
-                        {
-                          "text": "Successfully added an Examinee  ID =N3619A60611 FirstName=Kari LastName =N3619A60611 Age = 07/02/2021\n"
-                        },
-                        {
-                          "text": "Successfully selected examinee: N3619A60611\n"
+                          "text": "Successfully selected examinee: N90162A97630\n"
                         },
                         {
                           "text": "Trying to add an Examinee \n\n"
                         },
                         {
-                          "text": "Examinee ID N31598A38965\n"
+                          "text": "Examinee ID N70593A61363\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N31598A38965/dataFiles/Derived_Score_AutoFilter_Template_N31598A38965.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N70593A61363/dataFiles/Derived_Score_AutoFilter_Template_N70593A61363.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N31598A38965 FirstName=Heather LastName =N31598A38965 Age = 07/02/2021\n"
+                          "text": "Successfully added an Examinee  ID =N70593A61363 FirstName=Rory LastName =N70593A61363 Age = 07/03/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N31598A38965\n"
+                          "text": "Successfully selected examinee: N70593A61363\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N14119A71859\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N14119A71859/dataFiles/Derived_Score_AutoFilter_Template_N14119A71859.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N14119A71859 FirstName=Jennyfer LastName =N14119A71859 Age = 07/03/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N14119A71859\n"
                         }
                       ],
                       "stderr": [
@@ -766,7 +766,7 @@
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-07-02T12:18:48.400Z",
+                      "startTime": "2026-07-03T12:28:16.538Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -800,7 +800,7 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 366643,
+                      "duration": 366175,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.single-select-parent').last()\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.single-select-parent').last()\u001b[22m\n\n    at Wj5DashboardPage.selectTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:406:61)\n    at Wj5DashboardPage.createTestAssignmentFromExamineeManagement (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:330:5)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/SubmittedTestAssignments.spec.ts:68:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
@@ -844,46 +844,46 @@
                           "text": "Trying to add an Examinee \n\n"
                         },
                         {
-                          "text": "Examinee ID N72238A29247\n"
+                          "text": "Examinee ID N40618A6331\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N72238A29247/dataFiles/Derived_Score_AutoFilter_Template_N72238A29247.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N40618A6331/dataFiles/Derived_Score_AutoFilter_Template_N40618A6331.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N72238A29247 FirstName=Kamron LastName =N72238A29247 Age = 07/02/2021\n"
+                          "text": "Successfully added an Examinee  ID =N40618A6331 FirstName=Rosella LastName =N40618A6331 Age = 07/03/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N72238A29247\n"
-                        },
-                        {
-                          "text": "Trying to add an Examinee \n\n"
-                        },
-                        {
-                          "text": "Examinee ID N15310A7649\n"
-                        },
-                        {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N15310A7649/dataFiles/Derived_Score_AutoFilter_Template_N15310A7649.csv successfully.\n"
-                        },
-                        {
-                          "text": "Successfully added an Examinee  ID =N15310A7649 FirstName=Enoch LastName =N15310A7649 Age = 07/02/2021\n"
-                        },
-                        {
-                          "text": "Successfully selected examinee: N15310A7649\n"
+                          "text": "Successfully selected examinee: N40618A6331\n"
                         },
                         {
                           "text": "Trying to add an Examinee \n\n"
                         },
                         {
-                          "text": "Examinee ID N37950A10394\n"
+                          "text": "Examinee ID N63922A44521\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37950A10394/dataFiles/Derived_Score_AutoFilter_Template_N37950A10394.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N63922A44521/dataFiles/Derived_Score_AutoFilter_Template_N63922A44521.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N37950A10394 FirstName=Jeffry LastName =N37950A10394 Age = 07/02/2021\n"
+                          "text": "Successfully added an Examinee  ID =N63922A44521 FirstName=Russ LastName =N63922A44521 Age = 07/03/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N37950A10394\n"
+                          "text": "Successfully selected examinee: N63922A44521\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N52210A35762\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N52210A35762/dataFiles/Derived_Score_AutoFilter_Template_N52210A35762.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N52210A35762 FirstName=Deion LastName =N52210A35762 Age = 07/03/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N52210A35762\n"
                         }
                       ],
                       "stderr": [
@@ -898,7 +898,7 @@
                         }
                       ],
                       "retry": 1,
-                      "startTime": "2026-07-02T12:25:22.414Z",
+                      "startTime": "2026-07-03T12:34:49.233Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -963,7 +963,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 42406,
+                      "duration": 41683,
                       "error": {
                         "message": "Error: Prerequisite test must pass before running review mode test\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
                         "stack": "Error: Prerequisite test must pass before running review mode test\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/SubmittedTestAssignments.spec.ts:183:91",
@@ -997,7 +997,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-07-02T12:31:31.013Z",
+                      "startTime": "2026-07-03T12:40:57.406Z",
                       "annotations": [
                         {
                           "type": "Original user story, Automation user story",
@@ -1036,7 +1036,7 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 36928,
+                      "duration": 36848,
                       "error": {
                         "message": "Error: Prerequisite test must pass before running review mode test\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
                         "stack": "Error: Prerequisite test must pass before running review mode test\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/SubmittedTestAssignments.spec.ts:183:91",
@@ -1070,7 +1070,7 @@
                       ],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2026-07-02T12:32:21.141Z",
+                      "startTime": "2026-07-03T12:41:46.166Z",
                       "annotations": [
                         {
                           "type": "Original user story, Automation user story",
@@ -1116,8 +1116,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-07-02T12:07:19.397Z",
-    "duration": 1539380.884,
+    "startTime": "2026-07-03T12:16:49.182Z",
+    "duration": 1534542.675,
     "expected": 0,
     "skipped": 1,
     "unexpected": 3,

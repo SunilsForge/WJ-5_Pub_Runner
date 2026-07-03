@@ -342,7 +342,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "timedOut",
-                  "duration": 65353,
+                  "duration": 61654,
                   "error": {
                     "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
                     "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
@@ -354,10 +354,18 @@
                     {
                       "location": {
                         "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                        "column": 67,
-                        "line": 239
+                        "column": 76,
+                        "line": 2095
                       },
-                      "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Reports\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" type=\"button\" role=\"menuitem\" aria-haspopup=\"menu\" data-selected=\"false\" aria-expanded=\"false\" aria-owns=\"menuPart_mi_5\" class=\"menu-item menu-magenta\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    54 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../page/dashboardPage.ts:239\n\n  237 |     childDd?: string,\n  238 |   ): Promise<boolean> {\n> 239 |     await this.page.locator(`//button[text() = '${mainMenuDd}']`).click();\n      |                                                                   ^\n  240 |     await this.page.waitForLoadState(\"load\");\n  241 |     if (childDd) {\n  242 |       const val: Locator = this.page\n    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:239:67)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:49:27\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:48:5"
+                      "message": "Error: Chat bot icon should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\nExpected: visible\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Chat bot icon should be visible with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2095\n\n  2093 |   }\n  2094 |   async verifyChatBotFunctionality() {\n> 2095 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n       |                                                                            ^\n  2096 |     await this.chatBotIcon.click();\n  2097 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2098 |     await this.chatBotCloseIcon.click();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2095:76)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:27\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 28,
+                        "line": 2096
+                      },
+                      "message": "Error: locator.click: Target page, context or browser has been closed\n\n   at ../page/dashboardPage.ts:2096\n\n  2094 |   async verifyChatBotFunctionality() {\n  2095 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n> 2096 |     await this.chatBotIcon.click();\n       |                            ^\n  2097 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2098 |     await this.chatBotCloseIcon.click();\n  2099 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2096:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
                     }
                   ],
                   "stdout": [
@@ -376,40 +384,20 @@
                   "steps": [
                     {
                       "title": "Navigate to login page and verify chat bot functionality",
-                      "duration": 3799
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Dashboard page",
-                      "duration": 3821
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Testset page",
-                      "duration": 1586
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Examinees page",
-                      "duration": 3563
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Staff page",
-                      "duration": 382
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Reports>Library  page",
-                      "duration": 28196,
+                      "duration": 34611,
                       "error": {
-                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Reports\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" type=\"button\" role=\"menuitem\" aria-haspopup=\"menu\" data-selected=\"false\" aria-expanded=\"false\" aria-owns=\"menuPart_mi_5\" class=\"menu-item menu-magenta\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    54 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
-                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Reports\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" type=\"button\" role=\"menuitem\" aria-haspopup=\"menu\" data-selected=\"false\" aria-expanded=\"false\" aria-owns=\"menuPart_mi_5\" class=\"menu-item menu-magenta\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    54 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:239:67)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:49:27\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:48:5",
+                        "message": "Error: locator.click: Target page, context or browser has been closed",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2096:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5",
                         "location": {
                           "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                          "column": 67,
-                          "line": 239
+                          "column": 28,
+                          "line": 2096
                         },
-                        "snippet": "   at ../page/dashboardPage.ts:239\n\n\u001b[0m \u001b[90m 237 |\u001b[39m     childDd\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m\n \u001b[90m 238 |\u001b[39m   )\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mboolean\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 239 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m`//button[text() = '${mainMenuDd}']`\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 240 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"load\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 241 |\u001b[39m     \u001b[36mif\u001b[39m (childDd) {\n \u001b[90m 242 |\u001b[39m       \u001b[36mconst\u001b[39m val\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m"
+                        "snippet": "   at ../page/dashboardPage.ts:2096\n\n\u001b[0m \u001b[90m 2094 |\u001b[39m   \u001b[36masync\u001b[39m verifyChatBotFunctionality() {\n \u001b[90m 2095 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2096 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2097 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotPopup\u001b[33m,\u001b[39m \u001b[32m'Chat bot popup should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 2098 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotCloseIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 2099 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
                       }
                     }
                   ],
-                  "startTime": "2026-07-02T12:07:33.537Z",
+                  "startTime": "2026-07-03T12:17:08.600Z",
                   "annotations": [
                     {
                       "type": "automation user story",
@@ -443,7 +431,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "timedOut",
-                  "duration": 60153,
+                  "duration": 60130,
                   "error": {
                     "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
                     "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
@@ -455,10 +443,18 @@
                     {
                       "location": {
                         "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                        "column": 67,
-                        "line": 239
+                        "column": 76,
+                        "line": 2095
                       },
-                      "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Reports\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" type=\"button\" role=\"menuitem\" aria-haspopup=\"menu\" data-selected=\"false\" aria-expanded=\"false\" aria-owns=\"menuPart_mi_5\" class=\"menu-item menu-magenta\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    52 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../page/dashboardPage.ts:239\n\n  237 |     childDd?: string,\n  238 |   ): Promise<boolean> {\n> 239 |     await this.page.locator(`//button[text() = '${mainMenuDd}']`).click();\n      |                                                                   ^\n  240 |     await this.page.waitForLoadState(\"load\");\n  241 |     if (childDd) {\n  242 |       const val: Locator = this.page\n    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:239:67)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:49:27\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:48:5"
+                      "message": "Error: Chat bot icon should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\nExpected: visible\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Chat bot icon should be visible with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2095\n\n  2093 |   }\n  2094 |   async verifyChatBotFunctionality() {\n> 2095 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n       |                                                                            ^\n  2096 |     await this.chatBotIcon.click();\n  2097 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2098 |     await this.chatBotCloseIcon.click();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2095:76)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:27\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 28,
+                        "line": 2096
+                      },
+                      "message": "Error: locator.click: Target page, context or browser has been closed\n\n   at ../page/dashboardPage.ts:2096\n\n  2094 |   async verifyChatBotFunctionality() {\n  2095 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n> 2096 |     await this.chatBotIcon.click();\n       |                            ^\n  2097 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2098 |     await this.chatBotCloseIcon.click();\n  2099 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2096:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
                     }
                   ],
                   "stdout": [
@@ -477,40 +473,20 @@
                   "steps": [
                     {
                       "title": "Navigate to login page and verify chat bot functionality",
-                      "duration": 3599
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Dashboard page",
-                      "duration": 2885
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Testset page",
-                      "duration": 213
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Examinees page",
-                      "duration": 3098
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Staff page",
-                      "duration": 213
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Reports>Library  page",
-                      "duration": 26805,
+                      "duration": 36611,
                       "error": {
-                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Reports\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" type=\"button\" role=\"menuitem\" aria-haspopup=\"menu\" data-selected=\"false\" aria-expanded=\"false\" aria-owns=\"menuPart_mi_5\" class=\"menu-item menu-magenta\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    52 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
-                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Reports\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" type=\"button\" role=\"menuitem\" aria-haspopup=\"menu\" data-selected=\"false\" aria-expanded=\"false\" aria-owns=\"menuPart_mi_5\" class=\"menu-item menu-magenta\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    52 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:239:67)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:49:27\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:48:5",
+                        "message": "Error: locator.click: Target page, context or browser has been closed",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2096:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5",
                         "location": {
                           "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                          "column": 67,
-                          "line": 239
+                          "column": 28,
+                          "line": 2096
                         },
-                        "snippet": "   at ../page/dashboardPage.ts:239\n\n\u001b[0m \u001b[90m 237 |\u001b[39m     childDd\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m\n \u001b[90m 238 |\u001b[39m   )\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mboolean\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 239 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m`//button[text() = '${mainMenuDd}']`\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 240 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"load\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 241 |\u001b[39m     \u001b[36mif\u001b[39m (childDd) {\n \u001b[90m 242 |\u001b[39m       \u001b[36mconst\u001b[39m val\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m"
+                        "snippet": "   at ../page/dashboardPage.ts:2096\n\n\u001b[0m \u001b[90m 2094 |\u001b[39m   \u001b[36masync\u001b[39m verifyChatBotFunctionality() {\n \u001b[90m 2095 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2096 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2097 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotPopup\u001b[33m,\u001b[39m \u001b[32m'Chat bot popup should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 2098 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotCloseIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 2099 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
                       }
                     }
                   ],
-                  "startTime": "2026-07-02T12:08:46.893Z",
+                  "startTime": "2026-07-03T12:18:13.897Z",
                   "annotations": [
                     {
                       "type": "automation user story",
@@ -572,7 +548,7 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 140181,
+                  "duration": 140391,
                   "errors": [],
                   "stdout": [
                     {
@@ -588,13 +564,13 @@
                       "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N42723A71902\n"
+                      "text": "Examinee ID N37693A37173\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N42723A71902/dataFiles/Score_DataExport_AutoFilter_Template_N42723A71902.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37693A37173/dataFiles/Score_DataExport_AutoFilter_Template_N37693A37173.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N42723A71902 FirstName=Carmella LastName =N42723A71902 Age = 07/02/2024\n"
+                      "text": "Successfully added an Examinee  ID =N37693A37173 FirstName=Ryleigh LastName =N37693A37173 Age = 07/03/2024\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -603,7 +579,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N42723A71902\n"
+                      "text": "Successfully selected examinee: N37693A37173\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -629,7 +605,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-07-02T12:09:48.769Z",
+                  "startTime": "2026-07-03T12:19:15.826Z",
                   "annotations": [],
                   "attachments": []
                 },
@@ -637,7 +613,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 128509,
+                  "duration": 129247,
                   "errors": [],
                   "stdout": [
                     {
@@ -653,13 +629,13 @@
                       "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N16680A41882\n"
+                      "text": "Examinee ID N45099A97666\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N16680A41882/dataFiles/Score_DataExport_AutoFilter_Template_N16680A41882.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N45099A97666/dataFiles/Score_DataExport_AutoFilter_Template_N45099A97666.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N16680A41882 FirstName=Ryleigh LastName =N16680A41882 Age = 07/02/2024\n"
+                      "text": "Successfully added an Examinee  ID =N45099A97666 FirstName=Brendon LastName =N45099A97666 Age = 07/03/2024\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -668,7 +644,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N16680A41882\n"
+                      "text": "Successfully selected examinee: N45099A97666\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -694,7 +670,7 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-07-02T12:21:54.557Z",
+                  "startTime": "2026-07-03T12:34:07.532Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -727,7 +703,7 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 171007,
+                  "duration": 171527,
                   "errors": [],
                   "stdout": [
                     {
@@ -743,13 +719,13 @@
                       "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N4049A39755\n"
+                      "text": "Examinee ID N32621A3971\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N4049A39755/dataFiles/Score_DataExport_AutoFilter_Template_N4049A39755.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N32621A3971/dataFiles/Score_DataExport_AutoFilter_Template_N32621A3971.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N4049A39755 FirstName=Jasmin LastName =N4049A39755 Age = 07/02/2022\n"
+                      "text": "Successfully added an Examinee  ID =N32621A3971 FirstName=Herbert LastName =N32621A3971 Age = 07/03/2022\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -758,7 +734,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N4049A39755\n"
+                      "text": "Successfully selected examinee: N32621A3971\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -799,7 +775,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-07-02T12:12:09.442Z",
+                  "startTime": "2026-07-03T12:21:36.746Z",
                   "annotations": [],
                   "attachments": []
                 },
@@ -807,7 +783,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 157781,
+                  "duration": 159261,
                   "errors": [],
                   "stdout": [
                     {
@@ -823,13 +799,13 @@
                       "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N15600A60317\n"
+                      "text": "Examinee ID N38912A98950\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N15600A60317/dataFiles/Score_DataExport_AutoFilter_Template_N15600A60317.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N38912A98950/dataFiles/Score_DataExport_AutoFilter_Template_N38912A98950.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N15600A60317 FirstName=Deonte LastName =N15600A60317 Age = 07/02/2022\n"
+                      "text": "Successfully added an Examinee  ID =N38912A98950 FirstName=Eldred LastName =N38912A98950 Age = 07/03/2022\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -838,7 +814,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N15600A60317\n"
+                      "text": "Successfully selected examinee: N38912A98950\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -879,7 +855,7 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-07-02T12:24:03.552Z",
+                  "startTime": "2026-07-03T12:36:17.285Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -912,7 +888,7 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 209293,
+                  "duration": 209772,
                   "errors": [],
                   "stdout": [
                     {
@@ -928,13 +904,13 @@
                       "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N94275A73400\n"
+                      "text": "Examinee ID N98964A33958\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N94275A73400/dataFiles/Score_DataExport_AutoFilter_Template_N94275A73400.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N98964A33958/dataFiles/Score_DataExport_AutoFilter_Template_N98964A33958.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N94275A73400 FirstName=Carmen LastName =N94275A73400 Age = 12/31/2021\n"
+                      "text": "Successfully added an Examinee  ID =N98964A33958 FirstName=Kristian LastName =N98964A33958 Age = 01/01/2022\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -943,7 +919,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N94275A73400\n"
+                      "text": "Successfully selected examinee: N98964A33958\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -1062,7 +1038,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-07-02T12:15:00.500Z",
+                  "startTime": "2026-07-03T12:24:28.320Z",
                   "annotations": [],
                   "attachments": []
                 },
@@ -1070,7 +1046,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 192196,
+                  "duration": 193723,
                   "errors": [],
                   "stdout": [
                     {
@@ -1086,13 +1062,13 @@
                       "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N38566A14660\n"
+                      "text": "Examinee ID N85243A19015\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N38566A14660/dataFiles/Score_DataExport_AutoFilter_Template_N38566A14660.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N85243A19015/dataFiles/Score_DataExport_AutoFilter_Template_N85243A19015.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N38566A14660 FirstName=Eula LastName =N38566A14660 Age = 12/31/2021\n"
+                      "text": "Successfully added an Examinee  ID =N85243A19015 FirstName=Peyton LastName =N85243A19015 Age = 01/01/2022\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -1101,7 +1077,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N38566A14660\n"
+                      "text": "Successfully selected examinee: N85243A19015\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -1220,7 +1196,7 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-07-02T12:26:41.363Z",
+                  "startTime": "2026-07-03T12:38:56.573Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1235,7 +1211,7 @@
         },
         {
           "title": "Run the test Preschool to Grade 2 - 5 lowest incorrect items SSP1 to create test data for Submitted sets",
-          "ok": false,
+          "ok": true,
           "tags": [
             "DashboardTestAssignments_B",
             "Smoke",
@@ -1252,28 +1228,9 @@
                 {
                   "workerIndex": 2,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 196685,
-                  "error": {
-                    "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
-                    "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6566:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:61:9",
-                    "location": {
-                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
-                      "column": 60,
-                      "line": 6566
-                    },
-                    "snippet": "   at ../page/commonTestPage.ts:6566\n\n\u001b[0m \u001b[90m 6564 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6565 |\u001b[39m    }\u001b[36melse\u001b[39m{\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6566 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6567 |\u001b[39m   }\n \u001b[90m 6568 |\u001b[39m }\n \u001b[90m 6569 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
-                        "column": 60,
-                        "line": 6566
-                      },
-                      "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6566\n\n  6564 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6565 |    }else{\n> 6566 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6567 |   }\n  6568 | }\n  6569 |\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6566:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:61:9"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 147783,
+                  "errors": [],
                   "stdout": [
                     {
                       "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
@@ -1288,13 +1245,13 @@
                       "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N86264A38385\n"
+                      "text": "Examinee ID N65594A11871\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N86264A38385/dataFiles/Score_DataExport_AutoFilter_Template_N86264A38385.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N65594A11871/dataFiles/Score_DataExport_AutoFilter_Template_N65594A11871.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N86264A38385 FirstName=Elwyn LastName =N86264A38385 Age = 07/02/2024\n"
+                      "text": "Successfully added an Examinee  ID =N65594A11871 FirstName=Ivah LastName =N65594A11871 Age = 07/03/2024\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -1303,7 +1260,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N86264A38385\n"
+                      "text": "Successfully selected examinee: N65594A11871\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -1329,61 +1286,16 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-07-02T12:18:29.853Z",
+                  "startTime": "2026-07-03T12:27:58.154Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome/test-failed-1.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome/test-failed-2.png"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome/error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
-                    "column": 60,
-                    "line": 6566
-                  }
+                  "attachments": []
                 },
                 {
                   "workerIndex": 3,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 185440,
-                  "error": {
-                    "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
-                    "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6566:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:61:9",
-                    "location": {
-                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
-                      "column": 60,
-                      "line": 6566
-                    },
-                    "snippet": "   at ../page/commonTestPage.ts:6566\n\n\u001b[0m \u001b[90m 6564 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 6565 |\u001b[39m    }\u001b[36melse\u001b[39m{\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6566 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitTestSetAndFinishAdministration\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6567 |\u001b[39m   }\n \u001b[90m 6568 |\u001b[39m }\n \u001b[90m 6569 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
-                        "column": 60,
-                        "line": 6566
-                      },
-                      "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Submit Test Assignment' }).last().last()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled tabindex=\"0\" class=\"blue-button-no-margin\" id=\"SessionObservationsSubmitAssignment\">Submit Test Assignment</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6566\n\n  6564 |     await this.submitTestSetAndFinishAdministration.last().click();\n  6565 |    }else{\n> 6566 |     await this.submitTestSetAndFinishAdministration.last().click();\n       |                                                            ^\n  6567 |   }\n  6568 | }\n  6569 |\n    at CommonTestPage.completeTestSessionObservationsAndClickNext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6566:60)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:61:9"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 133759,
+                  "errors": [],
                   "stdout": [
                     {
                       "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
@@ -1398,13 +1310,13 @@
                       "text": "Trying to add an examinee at URL: https://ca.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N38678A42605\n"
+                      "text": "Examinee ID N60975A25734\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N38678A42605/dataFiles/Score_DataExport_AutoFilter_Template_N38678A42605.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N60975A25734/dataFiles/Score_DataExport_AutoFilter_Template_N60975A25734.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N38678A42605 FirstName=Margarita LastName =N38678A42605 Age = 07/02/2024\n"
+                      "text": "Successfully added an Examinee  ID =N60975A25734 FirstName=Ladarius LastName =N60975A25734 Age = 07/03/2024\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -1413,7 +1325,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N38678A42605\n"
+                      "text": "Successfully selected examinee: N60975A25734\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -1439,33 +1351,12 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-07-02T12:29:53.585Z",
+                  "startTime": "2026-07-03T12:42:10.319Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome-retry1/test-failed-1.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome-retry1/test-failed-2.png"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome-retry1/error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
-                    "column": 60,
-                    "line": 6566
-                  }
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "ed18dc26dc5c1351a836-36caeb061099a043f544",
@@ -1475,7 +1366,7 @@
         },
         {
           "title": "Validate Dashboard Test Assignments functionality Part_B",
-          "ok": true,
+          "ok": false,
           "tags": [
             "DashboardTestAssignments_B",
             "Smoke",
@@ -1483,7 +1374,7 @@
           ],
           "tests": [
             {
-              "timeout": 600000,
+              "timeout": 480000,
               "annotations": [
                 {
                   "type": "original user story, automation user story",
@@ -1500,33 +1391,430 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 213100,
+                  "error": {
+                    "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m",
+                    "stack": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:149:69\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                      "column": 69,
+                      "line": 149
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 147 |\u001b[39m       \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m api\u001b[33m.\u001b[39mchangeDaysLeftToEdit(requiredExamineeId\u001b[33m,\u001b[39m examinierUserName\u001b[33m,\u001b[39m \u001b[35m91\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 148 |\u001b[39m       \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Change Days Left to Edit Result'\u001b[39m\u001b[33m,\u001b[39m { result })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(result\u001b[33m.\u001b[39mstatus\u001b[33m,\u001b[39m \u001b[32m'Change Days Left to Edit Result'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 150 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(result\u001b[33m.\u001b[39misSuccessful\u001b[33m,\u001b[39m \u001b[32m'Change Days Left to Edit Result'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 151 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(result\u001b[33m.\u001b[39mexamineeIdFromResponse\u001b[33m,\u001b[39m \u001b[32m'Change Days Left to Edit Result'\u001b[39m)\u001b[33m.\u001b[39mtoBe(requiredExamineeId)\u001b[33m;\u001b[39m\n \u001b[90m 152 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 69,
+                        "line": 149
+                      },
+                      "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n\n  147 |       const result = await api.changeDaysLeftToEdit(requiredExamineeId, examinierUserName, 91);\n  148 |       RawValueLogger.log('Change Days Left to Edit Result', { result });\n> 149 |       expect.soft(result.status, 'Change Days Left to Edit Result').toBe(200);\n      |                                                                     ^\n  150 |       expect.soft(result.isSuccessful, 'Change Days Left to Edit Result').toBe(true);\n  151 |       expect.soft(result.examineeIdFromResponse, 'Change Days Left to Edit Result').toBe(requiredExamineeId);\n  152 |\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:149:69\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 75,
+                        "line": 150
+                      },
+                      "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  148 |       RawValueLogger.log('Change Days Left to Edit Result', { result });\n  149 |       expect.soft(result.status, 'Change Days Left to Edit Result').toBe(200);\n> 150 |       expect.soft(result.isSuccessful, 'Change Days Left to Edit Result').toBe(true);\n      |                                                                           ^\n  151 |       expect.soft(result.examineeIdFromResponse, 'Change Days Left to Edit Result').toBe(requiredExamineeId);\n  152 |\n  153 |       const result2 = await api.changeDaysLeftToEdit(requiredExamineeId2, examinierUserName, 91);\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:150:75\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 85,
+                        "line": 151
+                      },
+                      "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"N98964A33958\"\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n\n  149 |       expect.soft(result.status, 'Change Days Left to Edit Result').toBe(200);\n  150 |       expect.soft(result.isSuccessful, 'Change Days Left to Edit Result').toBe(true);\n> 151 |       expect.soft(result.examineeIdFromResponse, 'Change Days Left to Edit Result').toBe(requiredExamineeId);\n      |                                                                                     ^\n  152 |\n  153 |       const result2 = await api.changeDaysLeftToEdit(requiredExamineeId2, examinierUserName, 91);\n  154 |       RawValueLogger.log('Change Days Left to Edit Result', { result2 });\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:151:85\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 70,
+                        "line": 155
+                      },
+                      "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n\n  153 |       const result2 = await api.changeDaysLeftToEdit(requiredExamineeId2, examinierUserName, 91);\n  154 |       RawValueLogger.log('Change Days Left to Edit Result', { result2 });\n> 155 |       expect.soft(result2.status, 'Change Days Left to Edit Result').toBe(200);\n      |                                                                      ^\n  156 |       expect.soft(result2.isSuccessful, 'Change Days Left to Edit Result').toBe(true);\n  157 |       expect.soft(result2.examineeIdFromResponse, 'Change Days Left to Edit Result').toBe(requiredExamineeId2);\n  158 |       await wj5examiner.reloadPage();\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:155:70\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 76,
+                        "line": 156
+                      },
+                      "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  154 |       RawValueLogger.log('Change Days Left to Edit Result', { result2 });\n  155 |       expect.soft(result2.status, 'Change Days Left to Edit Result').toBe(200);\n> 156 |       expect.soft(result2.isSuccessful, 'Change Days Left to Edit Result').toBe(true);\n      |                                                                            ^\n  157 |       expect.soft(result2.examineeIdFromResponse, 'Change Days Left to Edit Result').toBe(requiredExamineeId2);\n  158 |       await wj5examiner.reloadPage();\n  159 |     });\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:156:76\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 86,
+                        "line": 157
+                      },
+                      "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"N32621A3971\"\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n\n  155 |       expect.soft(result2.status, 'Change Days Left to Edit Result').toBe(200);\n  156 |       expect.soft(result2.isSuccessful, 'Change Days Left to Edit Result').toBe(true);\n> 157 |       expect.soft(result2.examineeIdFromResponse, 'Change Days Left to Edit Result').toBe(requiredExamineeId2);\n      |                                                                                      ^\n  158 |       await wj5examiner.reloadPage();\n  159 |     });\n  160 |\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:157:86\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 65,
+                        "line": 165
+                      },
+                      "message": "Error: Examinee Status\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Expired\"\u001b[39m\nReceived string:    \u001b[31m\"●In Progress\"\u001b[39m\n\n  163 |       await wj5ExaminerDashPage.searchTestAssignments(requiredExamineeId);\n  164 |       const examineeDetails = await wj5ExaminerDashPage.getExamineesDetailsFromTestAssignmentTable(1);\n> 165 |       expect.soft(examineeDetails[0].status, 'Examinee Status').toContain('Expired');\n      |                                                                 ^\n  166 |       const isGenerateReportsIconVisible = await wj5ExaminerDashPage.verifyGenerateReportsIcon();\n  167 |       expect.soft(isGenerateReportsIconVisible, 'Generate Reports Icon Visibility').toBeTruthy();\n  168 |       const isEditTestAssignmentIconVisible = await wj5ExaminerDashPage.verifyEditTestAssignmentIcon();\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:165:65\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:161:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 85,
+                        "line": 167
+                      },
+                      "message": "Error: Generate Reports Icon Visibility\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  165 |       expect.soft(examineeDetails[0].status, 'Examinee Status').toContain('Expired');\n  166 |       const isGenerateReportsIconVisible = await wj5ExaminerDashPage.verifyGenerateReportsIcon();\n> 167 |       expect.soft(isGenerateReportsIconVisible, 'Generate Reports Icon Visibility').toBeTruthy();\n      |                                                                                     ^\n  168 |       const isEditTestAssignmentIconVisible = await wj5ExaminerDashPage.verifyEditTestAssignmentIcon();\n  169 |       expect.soft(isEditTestAssignmentIconVisible, 'Edit Test Assignment Icon Visibility').toBeFalsy();\n  170 |     });\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:167:85\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:161:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 92,
+                        "line": 169
+                      },
+                      "message": "Error: Edit Test Assignment Icon Visibility\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n\n  167 |       expect.soft(isGenerateReportsIconVisible, 'Generate Reports Icon Visibility').toBeTruthy();\n  168 |       const isEditTestAssignmentIconVisible = await wj5ExaminerDashPage.verifyEditTestAssignmentIcon();\n> 169 |       expect.soft(isEditTestAssignmentIconVisible, 'Edit Test Assignment Icon Visibility').toBeFalsy();\n      |                                                                                            ^\n  170 |     });\n  171 |\n  172 |     await test.step('Examiner:- Verify test assignment Expired popup and click \"NO\" button', async () => {\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:169:92\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:161:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 35,
+                        "line": 2064
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[title=\\'Generate Report\\']')\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2064\n\n  2062 |\n  2063 |   async clickOnGenerateReportIcon() {\n> 2064 |     await this.generateReportIcon.click();\n       |                                   ^\n  2065 |     await this.page.waitForLoadState(\"domcontentloaded\");\n  2066 |   }\n  2067 |\n    at DashBoardPage.clickOnGenerateReportIcon (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2064:35)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:173:33\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:172:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S07PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S6:W2] Login successful for S07PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S07PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S6:W2] Login successful for S07PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-07-02T12:21:53.262Z",
-                  "annotations": [],
-                  "attachments": []
+                  "steps": [
+                    {
+                      "title": "Verify submitted test set has 90 Days left to edit and verify hover text on dashboard and examinee screen",
+                      "duration": 26463
+                    },
+                    {
+                      "title": "Examiner:- Verify we can not edit the examinee name or test set when the status is \"In Progress\"",
+                      "duration": 33174
+                    },
+                    {
+                      "title": "Examiner:- Expire In Progress test to achieve - assignment line has gone to its greyed out inactive state after the 90-day editing window has passed and these assignments cannot be launched for status \"In Progress\"",
+                      "duration": 18346,
+                      "error": {
+                        "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m",
+                        "stack": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:149:69\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                          "column": 69,
+                          "line": 149
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 147 |\u001b[39m       \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m api\u001b[33m.\u001b[39mchangeDaysLeftToEdit(requiredExamineeId\u001b[33m,\u001b[39m examinierUserName\u001b[33m,\u001b[39m \u001b[35m91\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 148 |\u001b[39m       \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Change Days Left to Edit Result'\u001b[39m\u001b[33m,\u001b[39m { result })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(result\u001b[33m.\u001b[39mstatus\u001b[33m,\u001b[39m \u001b[32m'Change Days Left to Edit Result'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 150 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(result\u001b[33m.\u001b[39misSuccessful\u001b[33m,\u001b[39m \u001b[32m'Change Days Left to Edit Result'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 151 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(result\u001b[33m.\u001b[39mexamineeIdFromResponse\u001b[33m,\u001b[39m \u001b[32m'Change Days Left to Edit Result'\u001b[39m)\u001b[33m.\u001b[39mtoBe(requiredExamineeId)\u001b[33m;\u001b[39m\n \u001b[90m 152 |\u001b[39m\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible",
+                      "duration": 12433,
+                      "error": {
+                        "message": "Error: Examinee Status\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Expired\"\u001b[39m\nReceived string:    \u001b[31m\"●In Progress\"\u001b[39m",
+                        "stack": "Error: Examinee Status\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Expired\"\u001b[39m\nReceived string:    \u001b[31m\"●In Progress\"\u001b[39m\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:165:65\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:161:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                          "column": 65,
+                          "line": 165
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 163 |\u001b[39m       \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39msearchTestAssignments(requiredExamineeId)\u001b[33m;\u001b[39m\n \u001b[90m 164 |\u001b[39m       \u001b[36mconst\u001b[39m examineeDetails \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetExamineesDetailsFromTestAssignmentTable(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 165 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(examineeDetails[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mstatus\u001b[33m,\u001b[39m \u001b[32m'Examinee Status'\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Expired'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 166 |\u001b[39m       \u001b[36mconst\u001b[39m isGenerateReportsIconVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mverifyGenerateReportsIcon()\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(isGenerateReportsIconVisible\u001b[33m,\u001b[39m \u001b[32m'Generate Reports Icon Visibility'\u001b[39m)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 168 |\u001b[39m       \u001b[36mconst\u001b[39m isEditTestAssignmentIconVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mverifyEditTestAssignmentIcon()\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"NO\" button",
+                      "duration": 60008,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[title=\\'Generate Report\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[title=\\'Generate Report\\']')\u001b[22m\n\n    at DashBoardPage.clickOnGenerateReportIcon (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2064:35)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:173:33\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:172:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 35,
+                          "line": 2064
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:2064\n\n\u001b[0m \u001b[90m 2062 |\u001b[39m\n \u001b[90m 2063 |\u001b[39m   \u001b[36masync\u001b[39m clickOnGenerateReportIcon() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2064 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgenerateReportIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2065 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"domcontentloaded\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 2066 |\u001b[39m   }\n \u001b[90m 2067 |\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-07-03T12:30:25.988Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927_26988_27345_29976_28792, 28823_29687_30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "line": 76,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                    "column": 69,
+                    "line": 149
+                  }
                 },
                 {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 197607,
+                  "error": {
+                    "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m",
+                    "stack": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:149:69\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                      "column": 69,
+                      "line": 149
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 147 |\u001b[39m       \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m api\u001b[33m.\u001b[39mchangeDaysLeftToEdit(requiredExamineeId\u001b[33m,\u001b[39m examinierUserName\u001b[33m,\u001b[39m \u001b[35m91\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 148 |\u001b[39m       \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Change Days Left to Edit Result'\u001b[39m\u001b[33m,\u001b[39m { result })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(result\u001b[33m.\u001b[39mstatus\u001b[33m,\u001b[39m \u001b[32m'Change Days Left to Edit Result'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 150 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(result\u001b[33m.\u001b[39misSuccessful\u001b[33m,\u001b[39m \u001b[32m'Change Days Left to Edit Result'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 151 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(result\u001b[33m.\u001b[39mexamineeIdFromResponse\u001b[33m,\u001b[39m \u001b[32m'Change Days Left to Edit Result'\u001b[39m)\u001b[33m.\u001b[39mtoBe(requiredExamineeId)\u001b[33m;\u001b[39m\n \u001b[90m 152 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 69,
+                        "line": 149
+                      },
+                      "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n\n  147 |       const result = await api.changeDaysLeftToEdit(requiredExamineeId, examinierUserName, 91);\n  148 |       RawValueLogger.log('Change Days Left to Edit Result', { result });\n> 149 |       expect.soft(result.status, 'Change Days Left to Edit Result').toBe(200);\n      |                                                                     ^\n  150 |       expect.soft(result.isSuccessful, 'Change Days Left to Edit Result').toBe(true);\n  151 |       expect.soft(result.examineeIdFromResponse, 'Change Days Left to Edit Result').toBe(requiredExamineeId);\n  152 |\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:149:69\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 75,
+                        "line": 150
+                      },
+                      "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  148 |       RawValueLogger.log('Change Days Left to Edit Result', { result });\n  149 |       expect.soft(result.status, 'Change Days Left to Edit Result').toBe(200);\n> 150 |       expect.soft(result.isSuccessful, 'Change Days Left to Edit Result').toBe(true);\n      |                                                                           ^\n  151 |       expect.soft(result.examineeIdFromResponse, 'Change Days Left to Edit Result').toBe(requiredExamineeId);\n  152 |\n  153 |       const result2 = await api.changeDaysLeftToEdit(requiredExamineeId2, examinierUserName, 91);\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:150:75\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 85,
+                        "line": 151
+                      },
+                      "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"N85243A19015\"\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n\n  149 |       expect.soft(result.status, 'Change Days Left to Edit Result').toBe(200);\n  150 |       expect.soft(result.isSuccessful, 'Change Days Left to Edit Result').toBe(true);\n> 151 |       expect.soft(result.examineeIdFromResponse, 'Change Days Left to Edit Result').toBe(requiredExamineeId);\n      |                                                                                     ^\n  152 |\n  153 |       const result2 = await api.changeDaysLeftToEdit(requiredExamineeId2, examinierUserName, 91);\n  154 |       RawValueLogger.log('Change Days Left to Edit Result', { result2 });\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:151:85\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 70,
+                        "line": 155
+                      },
+                      "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n\n  153 |       const result2 = await api.changeDaysLeftToEdit(requiredExamineeId2, examinierUserName, 91);\n  154 |       RawValueLogger.log('Change Days Left to Edit Result', { result2 });\n> 155 |       expect.soft(result2.status, 'Change Days Left to Edit Result').toBe(200);\n      |                                                                      ^\n  156 |       expect.soft(result2.isSuccessful, 'Change Days Left to Edit Result').toBe(true);\n  157 |       expect.soft(result2.examineeIdFromResponse, 'Change Days Left to Edit Result').toBe(requiredExamineeId2);\n  158 |       await wj5examiner.reloadPage();\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:155:70\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 76,
+                        "line": 156
+                      },
+                      "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  154 |       RawValueLogger.log('Change Days Left to Edit Result', { result2 });\n  155 |       expect.soft(result2.status, 'Change Days Left to Edit Result').toBe(200);\n> 156 |       expect.soft(result2.isSuccessful, 'Change Days Left to Edit Result').toBe(true);\n      |                                                                            ^\n  157 |       expect.soft(result2.examineeIdFromResponse, 'Change Days Left to Edit Result').toBe(requiredExamineeId2);\n  158 |       await wj5examiner.reloadPage();\n  159 |     });\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:156:76\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 86,
+                        "line": 157
+                      },
+                      "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"N38912A98950\"\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n\n  155 |       expect.soft(result2.status, 'Change Days Left to Edit Result').toBe(200);\n  156 |       expect.soft(result2.isSuccessful, 'Change Days Left to Edit Result').toBe(true);\n> 157 |       expect.soft(result2.examineeIdFromResponse, 'Change Days Left to Edit Result').toBe(requiredExamineeId2);\n      |                                                                                      ^\n  158 |       await wj5examiner.reloadPage();\n  159 |     });\n  160 |\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:157:86\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 65,
+                        "line": 165
+                      },
+                      "message": "Error: Examinee Status\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Expired\"\u001b[39m\nReceived string:    \u001b[31m\"●In Progress\"\u001b[39m\n\n  163 |       await wj5ExaminerDashPage.searchTestAssignments(requiredExamineeId);\n  164 |       const examineeDetails = await wj5ExaminerDashPage.getExamineesDetailsFromTestAssignmentTable(1);\n> 165 |       expect.soft(examineeDetails[0].status, 'Examinee Status').toContain('Expired');\n      |                                                                 ^\n  166 |       const isGenerateReportsIconVisible = await wj5ExaminerDashPage.verifyGenerateReportsIcon();\n  167 |       expect.soft(isGenerateReportsIconVisible, 'Generate Reports Icon Visibility').toBeTruthy();\n  168 |       const isEditTestAssignmentIconVisible = await wj5ExaminerDashPage.verifyEditTestAssignmentIcon();\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:165:65\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:161:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 85,
+                        "line": 167
+                      },
+                      "message": "Error: Generate Reports Icon Visibility\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  165 |       expect.soft(examineeDetails[0].status, 'Examinee Status').toContain('Expired');\n  166 |       const isGenerateReportsIconVisible = await wj5ExaminerDashPage.verifyGenerateReportsIcon();\n> 167 |       expect.soft(isGenerateReportsIconVisible, 'Generate Reports Icon Visibility').toBeTruthy();\n      |                                                                                     ^\n  168 |       const isEditTestAssignmentIconVisible = await wj5ExaminerDashPage.verifyEditTestAssignmentIcon();\n  169 |       expect.soft(isEditTestAssignmentIconVisible, 'Edit Test Assignment Icon Visibility').toBeFalsy();\n  170 |     });\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:167:85\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:161:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "column": 92,
+                        "line": 169
+                      },
+                      "message": "Error: Edit Test Assignment Icon Visibility\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n\n  167 |       expect.soft(isGenerateReportsIconVisible, 'Generate Reports Icon Visibility').toBeTruthy();\n  168 |       const isEditTestAssignmentIconVisible = await wj5ExaminerDashPage.verifyEditTestAssignmentIcon();\n> 169 |       expect.soft(isEditTestAssignmentIconVisible, 'Edit Test Assignment Icon Visibility').toBeFalsy();\n      |                                                                                            ^\n  170 |     });\n  171 |\n  172 |     await test.step('Examiner:- Verify test assignment Expired popup and click \"NO\" button', async () => {\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:169:92\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:161:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 35,
+                        "line": 2064
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[title=\\'Generate Report\\']')\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2064\n\n  2062 |\n  2063 |   async clickOnGenerateReportIcon() {\n> 2064 |     await this.generateReportIcon.click();\n       |                                   ^\n  2065 |     await this.page.waitForLoadState(\"domcontentloaded\");\n  2066 |   }\n  2067 |\n    at DashBoardPage.clickOnGenerateReportIcon (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2064:35)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:173:33\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:172:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S07PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S6:W3] Login successful for S07PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S07PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S6:W3] Login successful for S07PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-07-02T12:32:59.241Z",
-                  "annotations": [],
-                  "attachments": []
+                  "steps": [
+                    {
+                      "title": "Verify submitted test set has 90 Days left to edit and verify hover text on dashboard and examinee screen",
+                      "duration": 25957
+                    },
+                    {
+                      "title": "Examiner:- Verify we can not edit the examinee name or test set when the status is \"In Progress\"",
+                      "duration": 32537
+                    },
+                    {
+                      "title": "Examiner:- Expire In Progress test to achieve - assignment line has gone to its greyed out inactive state after the 90-day editing window has passed and these assignments cannot be launched for status \"In Progress\"",
+                      "duration": 17119,
+                      "error": {
+                        "message": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m",
+                        "stack": "Error: Change Days Left to Edit Result\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:149:69\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:132:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                          "column": 69,
+                          "line": 149
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 147 |\u001b[39m       \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m api\u001b[33m.\u001b[39mchangeDaysLeftToEdit(requiredExamineeId\u001b[33m,\u001b[39m examinierUserName\u001b[33m,\u001b[39m \u001b[35m91\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 148 |\u001b[39m       \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Change Days Left to Edit Result'\u001b[39m\u001b[33m,\u001b[39m { result })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(result\u001b[33m.\u001b[39mstatus\u001b[33m,\u001b[39m \u001b[32m'Change Days Left to Edit Result'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 150 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(result\u001b[33m.\u001b[39misSuccessful\u001b[33m,\u001b[39m \u001b[32m'Change Days Left to Edit Result'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 151 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(result\u001b[33m.\u001b[39mexamineeIdFromResponse\u001b[33m,\u001b[39m \u001b[32m'Change Days Left to Edit Result'\u001b[39m)\u001b[33m.\u001b[39mtoBe(requiredExamineeId)\u001b[33m;\u001b[39m\n \u001b[90m 152 |\u001b[39m\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible",
+                      "duration": 12231,
+                      "error": {
+                        "message": "Error: Examinee Status\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Expired\"\u001b[39m\nReceived string:    \u001b[31m\"●In Progress\"\u001b[39m",
+                        "stack": "Error: Examinee Status\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Expired\"\u001b[39m\nReceived string:    \u001b[31m\"●In Progress\"\u001b[39m\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:165:65\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:161:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                          "column": 65,
+                          "line": 165
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 163 |\u001b[39m       \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39msearchTestAssignments(requiredExamineeId)\u001b[33m;\u001b[39m\n \u001b[90m 164 |\u001b[39m       \u001b[36mconst\u001b[39m examineeDetails \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetExamineesDetailsFromTestAssignmentTable(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 165 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(examineeDetails[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mstatus\u001b[33m,\u001b[39m \u001b[32m'Examinee Status'\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Expired'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 166 |\u001b[39m       \u001b[36mconst\u001b[39m isGenerateReportsIconVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mverifyGenerateReportsIcon()\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(isGenerateReportsIconVisible\u001b[33m,\u001b[39m \u001b[32m'Generate Reports Icon Visibility'\u001b[39m)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 168 |\u001b[39m       \u001b[36mconst\u001b[39m isEditTestAssignmentIconVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mverifyEditTestAssignmentIcon()\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"NO\" button",
+                      "duration": 60008,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[title=\\'Generate Report\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[title=\\'Generate Report\\']')\u001b[22m\n\n    at DashBoardPage.clickOnGenerateReportIcon (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2064:35)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:173:33\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:172:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 35,
+                          "line": 2064
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:2064\n\n\u001b[0m \u001b[90m 2062 |\u001b[39m\n \u001b[90m 2063 |\u001b[39m   \u001b[36masync\u001b[39m clickOnGenerateReportIcon() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2064 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgenerateReportIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2065 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"domcontentloaded\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 2066 |\u001b[39m   }\n \u001b[90m 2067 |\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-07-03T12:44:24.106Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927_26988_27345_29976_28792, 28823_29687_30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "line": 76,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome-retry1/test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                    "column": 69,
+                    "line": 149
+                  }
                 }
               ],
-              "status": "skipped"
+              "status": "unexpected"
             }
           ],
           "id": "ed18dc26dc5c1351a836-856fcf7f0a9195f6efdf",
@@ -1539,10 +1827,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-07-02T12:07:17.974Z",
-    "duration": 1541340.007,
-    "expected": 3,
-    "skipped": 1,
+    "startTime": "2026-07-03T12:16:52.755Z",
+    "duration": 1849202.244,
+    "expected": 4,
+    "skipped": 0,
     "unexpected": 2,
     "flaky": 0
   }
