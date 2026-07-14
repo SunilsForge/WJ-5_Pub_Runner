@@ -1,0 +1,3221 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29334751766"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 10,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts",
+      "file": "derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " RDGBRF cluster Derived Export Automation ",
+          "file": "derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts",
+          "line": 24,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For LWIDNT - Age - All correct scenario,PSGCMP - Age - All incorrect scenario Complete The RDGBRF cluster & generate report",
+              "ok": false,
+              "tags": [
+                "RDGBRF",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 524990,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:145:15",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                          "column": 39,
+                          "line": 4021
+                        },
+                        "snippet": "   at ../pages/wj5_test.page.ts:4021\n\n\u001b[0m \u001b[90m 4019 |\u001b[39m   \u001b[36masync\u001b[39m endSessionRSB() {\n \u001b[90m 4020 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddTestObservationsNew\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4021 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcheckBoxNoneOfTheAbove\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4022 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendSessionButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4023 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4024 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                            "column": 39,
+                            "line": 4021
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n\n   at ../pages/wj5_test.page.ts:4021\n\n  4019 |   async endSessionRSB() {\n  4020 |     await this.addTestObservationsNew.click();\n> 4021 |     await this.checkBoxNoneOfTheAbove.click();\n       |                                       ^\n  4022 |     await this.endSessionButton.click();\n  4023 |     await this.reviewModeButton.click();\n  4024 |     await this.page.waitForTimeout(3000);\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:145:15"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S10:W0] Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W0] Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N74704A32316\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N74704A32316/dataFiles/Derived_Score_AutoFilter_Template_N74704A32316.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N74704A32316 FirstName=Darby LastName =N74704A32316 Age = 07/14/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N74704A32316\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Letter-Word Identification\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 5\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22070|Ages 4 to 5|22071\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test LWIDNT - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Item 39\n"
+                        },
+                        {
+                          "text": "Item 40\n"
+                        },
+                        {
+                          "text": "Item 41\n"
+                        },
+                        {
+                          "text": "Item 42\n"
+                        },
+                        {
+                          "text": "Item 43\n"
+                        },
+                        {
+                          "text": "Item 44\n"
+                        },
+                        {
+                          "text": "Item 45\n"
+                        },
+                        {
+                          "text": "Item 46\n"
+                        },
+                        {
+                          "text": "Item 47\n"
+                        },
+                        {
+                          "text": "Item 48\n"
+                        },
+                        {
+                          "text": "Item 49\n"
+                        },
+                        {
+                          "text": "Item 50\n"
+                        },
+                        {
+                          "text": "Item 51\n"
+                        },
+                        {
+                          "text": "Item 52\n"
+                        },
+                        {
+                          "text": "Item 53\n"
+                        },
+                        {
+                          "text": "Item 54\n"
+                        },
+                        {
+                          "text": "Item 55\n"
+                        },
+                        {
+                          "text": "Item 56\n"
+                        },
+                        {
+                          "text": "Item 57\n"
+                        },
+                        {
+                          "text": "Item 58\n"
+                        },
+                        {
+                          "text": "Item 59\n"
+                        },
+                        {
+                          "text": "Item 60\n"
+                        },
+                        {
+                          "text": "Item 61\n"
+                        },
+                        {
+                          "text": "Item 62\n"
+                        },
+                        {
+                          "text": "Item 63\n"
+                        },
+                        {
+                          "text": "Item 64\n"
+                        },
+                        {
+                          "text": "Item 65\n"
+                        },
+                        {
+                          "text": "Item 66\n"
+                        },
+                        {
+                          "text": "Item 67\n"
+                        },
+                        {
+                          "text": "Item 68\n"
+                        },
+                        {
+                          "text": "Item 69\n"
+                        },
+                        {
+                          "text": "Item 70\n"
+                        },
+                        {
+                          "text": "Item 71\n"
+                        },
+                        {
+                          "text": "Item 72\n"
+                        },
+                        {
+                          "text": "Item 73\n"
+                        },
+                        {
+                          "text": "Item 74\n"
+                        },
+                        {
+                          "text": "Item 75\n"
+                        },
+                        {
+                          "text": "Item 76\n"
+                        },
+                        {
+                          "text": "Item 77\n"
+                        },
+                        {
+                          "text": "Item 78\n"
+                        },
+                        {
+                          "text": "Item 79\n"
+                        },
+                        {
+                          "text": "Item 80\n"
+                        },
+                        {
+                          "text": "Item 81\n"
+                        },
+                        {
+                          "text": "Item 82\n"
+                        },
+                        {
+                          "text": "Item 83\n"
+                        },
+                        {
+                          "text": "Item 84\n"
+                        },
+                        {
+                          "text": "Item 85\n"
+                        },
+                        {
+                          "text": "Item 86\n"
+                        },
+                        {
+                          "text": "Item 87\n"
+                        },
+                        {
+                          "text": "Item 88\n"
+                        },
+                        {
+                          "text": "Item 89\n"
+                        },
+                        {
+                          "text": "Map(93) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 56'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 57'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 58'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 59'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 60'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 61'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 62'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 63'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 64'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 65'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 66'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 67'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 68'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 69'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 70'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 71'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 72'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 73'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 74'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 75'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 76'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 77'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 78'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 79'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 80'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 81'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 82'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 83'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 84'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 85'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 86'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 87'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 88'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 89'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m89\u001b[39m, Wabil: \u001b[33m585.2\u001b[39m, Semw: \u001b[33m15.64\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22557|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Map(11) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^0000000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m89\u001b[39m, Wabil: \u001b[33m585.2\u001b[39m, Semw: \u001b[33m15.64\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m },\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m403.31\u001b[39m, Semw: \u001b[33m15.38\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-14T13:03:10.628Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                        "column": 39,
+                        "line": 4021
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 460428,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:145:15",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                          "column": 39,
+                          "line": 4021
+                        },
+                        "snippet": "   at ../pages/wj5_test.page.ts:4021\n\n\u001b[0m \u001b[90m 4019 |\u001b[39m   \u001b[36masync\u001b[39m endSessionRSB() {\n \u001b[90m 4020 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddTestObservationsNew\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4021 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcheckBoxNoneOfTheAbove\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4022 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendSessionButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4023 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4024 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                            "column": 39,
+                            "line": 4021
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n\n   at ../pages/wj5_test.page.ts:4021\n\n  4019 |   async endSessionRSB() {\n  4020 |     await this.addTestObservationsNew.click();\n> 4021 |     await this.checkBoxNoneOfTheAbove.click();\n       |                                       ^\n  4022 |     await this.endSessionButton.click();\n  4023 |     await this.reviewModeButton.click();\n  4024 |     await this.page.waitForTimeout(3000);\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:145:15"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S10:W1] Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W1] Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N31604A29051\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N31604A29051/dataFiles/Derived_Score_AutoFilter_Template_N31604A29051.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N31604A29051 FirstName=Granville LastName =N31604A29051 Age = 07/14/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N31604A29051\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Letter-Word Identification\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 5\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22070|Ages 4 to 5|22071\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test LWIDNT - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Item 39\n"
+                        },
+                        {
+                          "text": "Item 40\n"
+                        },
+                        {
+                          "text": "Item 41\n"
+                        },
+                        {
+                          "text": "Item 42\n"
+                        },
+                        {
+                          "text": "Item 43\n"
+                        },
+                        {
+                          "text": "Item 44\n"
+                        },
+                        {
+                          "text": "Item 45\n"
+                        },
+                        {
+                          "text": "Item 46\n"
+                        },
+                        {
+                          "text": "Item 47\n"
+                        },
+                        {
+                          "text": "Item 48\n"
+                        },
+                        {
+                          "text": "Item 49\n"
+                        },
+                        {
+                          "text": "Item 50\n"
+                        },
+                        {
+                          "text": "Item 51\n"
+                        },
+                        {
+                          "text": "Item 52\n"
+                        },
+                        {
+                          "text": "Item 53\n"
+                        },
+                        {
+                          "text": "Item 54\n"
+                        },
+                        {
+                          "text": "Item 55\n"
+                        },
+                        {
+                          "text": "Item 56\n"
+                        },
+                        {
+                          "text": "Item 57\n"
+                        },
+                        {
+                          "text": "Item 58\n"
+                        },
+                        {
+                          "text": "Item 59\n"
+                        },
+                        {
+                          "text": "Item 60\n"
+                        },
+                        {
+                          "text": "Item 61\n"
+                        },
+                        {
+                          "text": "Item 62\n"
+                        },
+                        {
+                          "text": "Item 63\n"
+                        },
+                        {
+                          "text": "Item 64\n"
+                        },
+                        {
+                          "text": "Item 65\n"
+                        },
+                        {
+                          "text": "Item 66\n"
+                        },
+                        {
+                          "text": "Item 67\n"
+                        },
+                        {
+                          "text": "Item 68\n"
+                        },
+                        {
+                          "text": "Item 69\n"
+                        },
+                        {
+                          "text": "Item 70\n"
+                        },
+                        {
+                          "text": "Item 71\n"
+                        },
+                        {
+                          "text": "Item 72\n"
+                        },
+                        {
+                          "text": "Item 73\n"
+                        },
+                        {
+                          "text": "Item 74\n"
+                        },
+                        {
+                          "text": "Item 75\n"
+                        },
+                        {
+                          "text": "Item 76\n"
+                        },
+                        {
+                          "text": "Item 77\n"
+                        },
+                        {
+                          "text": "Item 78\n"
+                        },
+                        {
+                          "text": "Item 79\n"
+                        },
+                        {
+                          "text": "Item 80\n"
+                        },
+                        {
+                          "text": "Item 81\n"
+                        },
+                        {
+                          "text": "Item 82\n"
+                        },
+                        {
+                          "text": "Item 83\n"
+                        },
+                        {
+                          "text": "Item 84\n"
+                        },
+                        {
+                          "text": "Item 85\n"
+                        },
+                        {
+                          "text": "Item 86\n"
+                        },
+                        {
+                          "text": "Item 87\n"
+                        },
+                        {
+                          "text": "Item 88\n"
+                        },
+                        {
+                          "text": "Item 89\n"
+                        },
+                        {
+                          "text": "Map(93) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 56'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 57'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 58'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 59'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 60'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 61'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 62'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 63'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 64'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 65'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 66'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 67'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 68'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 69'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 70'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 71'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 72'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 73'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 74'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 75'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 76'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 77'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 78'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 79'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 80'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 81'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 82'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 83'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 84'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 85'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 86'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 87'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 88'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 89'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m89\u001b[39m, Wabil: \u001b[33m585.2\u001b[39m, Semw: \u001b[33m15.64\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22557|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Map(11) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^0000000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m89\u001b[39m, Wabil: \u001b[33m585.2\u001b[39m, Semw: \u001b[33m15.64\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m },\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m403.31\u001b[39m, Semw: \u001b[33m15.38\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-07-14T13:12:13.743Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                        "column": 39,
+                        "line": 4021
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "fdc7ec709e0691e9c4d0-672b7e28d3fc6def3647",
+              "file": "derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts",
+              "line": 26,
+              "column": 9
+            },
+            {
+              "title": "For LWIDNT - K12 - All incorrect scenario,PSGCMP - K12 - All correct scenario Complete The RDGBRF cluster & generate report",
+              "ok": false,
+              "tags": [
+                "RDGBRF",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 346655,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:145:15",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                          "column": 39,
+                          "line": 4021
+                        },
+                        "snippet": "   at ../pages/wj5_test.page.ts:4021\n\n\u001b[0m \u001b[90m 4019 |\u001b[39m   \u001b[36masync\u001b[39m endSessionRSB() {\n \u001b[90m 4020 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddTestObservationsNew\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4021 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcheckBoxNoneOfTheAbove\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4022 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendSessionButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4023 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4024 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                            "column": 39,
+                            "line": 4021
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n\n   at ../pages/wj5_test.page.ts:4021\n\n  4019 |   async endSessionRSB() {\n  4020 |     await this.addTestObservationsNew.click();\n> 4021 |     await this.checkBoxNoneOfTheAbove.click();\n       |                                       ^\n  4022 |     await this.endSessionButton.click();\n  4023 |     await this.reviewModeButton.click();\n  4024 |     await this.page.waitForTimeout(3000);\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:145:15"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S10:W2] Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W2] Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N84391A7935\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N84391A7935/dataFiles/Derived_Score_AutoFilter_Template_N84391A7935.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N84391A7935 FirstName=Andrew LastName =N84391A7935 Age = 07/14/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N84391A7935\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Letter-Word Identification\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 5\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22070|Ages 4 to 5|22071\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test LWIDNT - K12 - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Map(8) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^0000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m303.79\u001b[39m, Semw: \u001b[33m15.66\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22557|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - K12 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Map(42) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^11111111111111111111111111111111111111@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m303.79\u001b[39m, Semw: \u001b[33m15.66\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m38\u001b[39m, Wabil: \u001b[33m557.89\u001b[39m, Semw: \u001b[33m14.85\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-14T13:19:56.041Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                        "column": 39,
+                        "line": 4021
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 318607,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:145:15",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                          "column": 39,
+                          "line": 4021
+                        },
+                        "snippet": "   at ../pages/wj5_test.page.ts:4021\n\n\u001b[0m \u001b[90m 4019 |\u001b[39m   \u001b[36masync\u001b[39m endSessionRSB() {\n \u001b[90m 4020 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddTestObservationsNew\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4021 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcheckBoxNoneOfTheAbove\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4022 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendSessionButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4023 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4024 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                            "column": 39,
+                            "line": 4021
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n\n   at ../pages/wj5_test.page.ts:4021\n\n  4019 |   async endSessionRSB() {\n  4020 |     await this.addTestObservationsNew.click();\n> 4021 |     await this.checkBoxNoneOfTheAbove.click();\n       |                                       ^\n  4022 |     await this.endSessionButton.click();\n  4023 |     await this.reviewModeButton.click();\n  4024 |     await this.page.waitForTimeout(3000);\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:145:15"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S10:W3] Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W3] Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N60003A69224\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N60003A69224/dataFiles/Derived_Score_AutoFilter_Template_N60003A69224.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N60003A69224 FirstName=Rosendo LastName =N60003A69224 Age = 07/14/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N60003A69224\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Letter-Word Identification\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 5\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22070|Ages 4 to 5|22071\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test LWIDNT - K12 - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Map(8) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^0000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m303.79\u001b[39m, Semw: \u001b[33m15.66\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22557|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - K12 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Map(42) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^11111111111111111111111111111111111111@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m303.79\u001b[39m, Semw: \u001b[33m15.66\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m38\u001b[39m, Wabil: \u001b[33m557.89\u001b[39m, Semw: \u001b[33m14.85\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-07-14T13:25:57.467Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                        "column": 39,
+                        "line": 4021
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "fdc7ec709e0691e9c4d0-0f851ffd950296e8875b",
+              "file": "derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts",
+              "line": 26,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts",
+      "file": "derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " RDGCMP cluster Derived Export Automation ",
+          "file": "derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts",
+          "line": 24,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For PSGCMP - Age - All incorrect scenario,PARCMP - Age - All correct scenario Complete The RDGCMP cluster & generate report",
+              "ok": false,
+              "tags": [
+                "RDGCMP",
+                "Regression",
+                "DerivedScores"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 362325,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts:145:15",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                          "column": 39,
+                          "line": 4021
+                        },
+                        "snippet": "   at ../pages/wj5_test.page.ts:4021\n\n\u001b[0m \u001b[90m 4019 |\u001b[39m   \u001b[36masync\u001b[39m endSessionRSB() {\n \u001b[90m 4020 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddTestObservationsNew\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4021 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcheckBoxNoneOfTheAbove\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4022 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendSessionButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4023 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4024 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                            "column": 39,
+                            "line": 4021
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n\n   at ../pages/wj5_test.page.ts:4021\n\n  4019 |   async endSessionRSB() {\n  4020 |     await this.addTestObservationsNew.click();\n> 4021 |     await this.checkBoxNoneOfTheAbove.click();\n       |                                       ^\n  4022 |     await this.endSessionButton.click();\n  4023 |     await this.reviewModeButton.click();\n  4024 |     await this.page.waitForTimeout(3000);\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts:145:15"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S10:W4] Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W4] Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N17227A40390\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N17227A40390/dataFiles/Derived_Score_AutoFilter_Template_N17227A40390.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N17227A40390 FirstName=Summer LastName =N17227A40390 Age = 07/14/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N17227A40390\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22557|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Map(11) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^0000000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m403.31\u001b[39m, Semw: \u001b[33m15.38\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Paragraph Reading Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 26153|Ages 4 to 6|26154\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PARCMP - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Story 1, Presentation\n"
+                        },
+                        {
+                          "text": "Story 1, Item 1\n"
+                        },
+                        {
+                          "text": "Story 1, Item 2\n"
+                        },
+                        {
+                          "text": "Story 1, Item 3\n"
+                        },
+                        {
+                          "text": "Story 2, Presentation\n"
+                        },
+                        {
+                          "text": "Story 2, Item 1\n"
+                        },
+                        {
+                          "text": "Story 2, Item 2\n"
+                        },
+                        {
+                          "text": "Story 2, Item 3\n"
+                        },
+                        {
+                          "text": "Story 3, Presentation\n"
+                        },
+                        {
+                          "text": "Story 3, Item 1\n"
+                        },
+                        {
+                          "text": "Story 3, Item 2\n"
+                        },
+                        {
+                          "text": "Story 3, Item 3\n"
+                        },
+                        {
+                          "text": "Story 3, Item 4\n"
+                        },
+                        {
+                          "text": "Story 3, Item 5\n"
+                        },
+                        {
+                          "text": "Story 4, Presentation\n"
+                        },
+                        {
+                          "text": "Story 4, Item 1\n"
+                        },
+                        {
+                          "text": "Story 4, Item 2\n"
+                        },
+                        {
+                          "text": "Story 4, Item 3\n"
+                        },
+                        {
+                          "text": "Story 4, Item 4\n"
+                        },
+                        {
+                          "text": "Story 4, Item 5\n"
+                        },
+                        {
+                          "text": "Story 4, Item 6\n"
+                        },
+                        {
+                          "text": "Story 5, Presentation\n"
+                        },
+                        {
+                          "text": "Story 5, Item 1\n"
+                        },
+                        {
+                          "text": "Story 5, Item 2\n"
+                        },
+                        {
+                          "text": "Story 5, Item 3\n"
+                        },
+                        {
+                          "text": "Story 5, Item 4\n"
+                        },
+                        {
+                          "text": "Story 5, Item 5\n"
+                        },
+                        {
+                          "text": "Story 6, Presentation\n"
+                        },
+                        {
+                          "text": "Story 6, Item 1\n"
+                        },
+                        {
+                          "text": "Story 6, Item 2\n"
+                        },
+                        {
+                          "text": "Story 6, Item 3\n"
+                        },
+                        {
+                          "text": "Story 6, Item 4\n"
+                        },
+                        {
+                          "text": "Story 6, Item 5\n"
+                        },
+                        {
+                          "text": "Map(31) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Story 1, Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 1, Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 1, Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 2, Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 2, Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 2, Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 3, Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 3, Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 3, Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 3, Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 3, Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 4, Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 4, Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 4, Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 4, Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 4, Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 4, Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 5, Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 5, Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 5, Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 5, Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 5, Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 6, Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 6, Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 6, Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 6, Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 6, Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'14y2m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'G8.8'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^111111111111111111111111111@14y2mG8.8\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m403.31\u001b[39m, Semw: \u001b[33m15.38\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'PARCMP.W5PA'\u001b[39m: { wScores: \u001b[33m27\u001b[39m, Wabil: \u001b[33m516.49\u001b[39m, Semw: \u001b[33m14.75\u001b[39m, AE: \u001b[32m'14y2m'\u001b[39m, GE: \u001b[32m'G8.8'\u001b[39m }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-14T13:31:17.950Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-a0b5f-CMP-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-a0b5f-CMP-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-a0b5f-CMP-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-a0b5f-CMP-cluster-generate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-a0b5f-CMP-cluster-generate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                        "column": 39,
+                        "line": 4021
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 334508,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts:145:15",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                          "column": 39,
+                          "line": 4021
+                        },
+                        "snippet": "   at ../pages/wj5_test.page.ts:4021\n\n\u001b[0m \u001b[90m 4019 |\u001b[39m   \u001b[36masync\u001b[39m endSessionRSB() {\n \u001b[90m 4020 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddTestObservationsNew\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4021 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcheckBoxNoneOfTheAbove\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4022 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendSessionButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4023 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4024 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                            "column": 39,
+                            "line": 4021
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n\n   at ../pages/wj5_test.page.ts:4021\n\n  4019 |   async endSessionRSB() {\n  4020 |     await this.addTestObservationsNew.click();\n> 4021 |     await this.checkBoxNoneOfTheAbove.click();\n       |                                       ^\n  4022 |     await this.endSessionButton.click();\n  4023 |     await this.reviewModeButton.click();\n  4024 |     await this.page.waitForTimeout(3000);\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts:145:15"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S10:W5] Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W5] Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N18049A9617\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N18049A9617/dataFiles/Derived_Score_AutoFilter_Template_N18049A9617.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N18049A9617 FirstName=Francesca LastName =N18049A9617 Age = 07/14/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N18049A9617\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22557|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Map(11) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^0000000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m403.31\u001b[39m, Semw: \u001b[33m15.38\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Paragraph Reading Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 26153|Ages 4 to 6|26154\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PARCMP - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Story 1, Presentation\n"
+                        },
+                        {
+                          "text": "Story 1, Item 1\n"
+                        },
+                        {
+                          "text": "Story 1, Item 2\n"
+                        },
+                        {
+                          "text": "Story 1, Item 3\n"
+                        },
+                        {
+                          "text": "Story 2, Presentation\n"
+                        },
+                        {
+                          "text": "Story 2, Item 1\n"
+                        },
+                        {
+                          "text": "Story 2, Item 2\n"
+                        },
+                        {
+                          "text": "Story 2, Item 3\n"
+                        },
+                        {
+                          "text": "Story 3, Presentation\n"
+                        },
+                        {
+                          "text": "Story 3, Item 1\n"
+                        },
+                        {
+                          "text": "Story 3, Item 2\n"
+                        },
+                        {
+                          "text": "Story 3, Item 3\n"
+                        },
+                        {
+                          "text": "Story 3, Item 4\n"
+                        },
+                        {
+                          "text": "Story 3, Item 5\n"
+                        },
+                        {
+                          "text": "Story 4, Presentation\n"
+                        },
+                        {
+                          "text": "Story 4, Item 1\n"
+                        },
+                        {
+                          "text": "Story 4, Item 2\n"
+                        },
+                        {
+                          "text": "Story 4, Item 3\n"
+                        },
+                        {
+                          "text": "Story 4, Item 4\n"
+                        },
+                        {
+                          "text": "Story 4, Item 5\n"
+                        },
+                        {
+                          "text": "Story 4, Item 6\n"
+                        },
+                        {
+                          "text": "Story 5, Presentation\n"
+                        },
+                        {
+                          "text": "Story 5, Item 1\n"
+                        },
+                        {
+                          "text": "Story 5, Item 2\n"
+                        },
+                        {
+                          "text": "Story 5, Item 3\n"
+                        },
+                        {
+                          "text": "Story 5, Item 4\n"
+                        },
+                        {
+                          "text": "Story 5, Item 5\n"
+                        },
+                        {
+                          "text": "Story 6, Presentation\n"
+                        },
+                        {
+                          "text": "Story 6, Item 1\n"
+                        },
+                        {
+                          "text": "Story 6, Item 2\n"
+                        },
+                        {
+                          "text": "Story 6, Item 3\n"
+                        },
+                        {
+                          "text": "Story 6, Item 4\n"
+                        },
+                        {
+                          "text": "Story 6, Item 5\n"
+                        },
+                        {
+                          "text": "Map(31) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Story 1, Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 1, Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 1, Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 2, Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 2, Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 2, Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 3, Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 3, Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 3, Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 3, Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 3, Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 4, Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 4, Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 4, Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 4, Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 4, Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 4, Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 5, Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 5, Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 5, Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 5, Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 5, Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 6, Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 6, Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 6, Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 6, Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Story 6, Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'14y2m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'G8.8'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^111111111111111111111111111@14y2mG8.8\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m403.31\u001b[39m, Semw: \u001b[33m15.38\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'PARCMP.W5PA'\u001b[39m: { wScores: \u001b[33m27\u001b[39m, Wabil: \u001b[33m516.49\u001b[39m, Semw: \u001b[33m14.75\u001b[39m, AE: \u001b[32m'14y2m'\u001b[39m, GE: \u001b[32m'G8.8'\u001b[39m }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-07-14T13:37:36.156Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-a0b5f-CMP-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-a0b5f-CMP-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-a0b5f-CMP-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-a0b5f-CMP-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                        "column": 39,
+                        "line": 4021
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "26e0c855b95df639299c-c7080d6c59d5f0cc238e",
+              "file": "derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts",
+              "line": 26,
+              "column": 9
+            },
+            {
+              "title": "For PSGCMP - K12 - All correct scenario,PARCMP - K12 - All incorrect scenario Complete The RDGCMP cluster & generate report",
+              "ok": false,
+              "tags": [
+                "RDGCMP",
+                "Regression",
+                "DerivedScores"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 388442,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts:145:15",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                          "column": 39,
+                          "line": 4021
+                        },
+                        "snippet": "   at ../pages/wj5_test.page.ts:4021\n\n\u001b[0m \u001b[90m 4019 |\u001b[39m   \u001b[36masync\u001b[39m endSessionRSB() {\n \u001b[90m 4020 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddTestObservationsNew\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4021 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcheckBoxNoneOfTheAbove\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4022 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendSessionButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4023 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4024 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                            "column": 39,
+                            "line": 4021
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n\n   at ../pages/wj5_test.page.ts:4021\n\n  4019 |   async endSessionRSB() {\n  4020 |     await this.addTestObservationsNew.click();\n> 4021 |     await this.checkBoxNoneOfTheAbove.click();\n       |                                       ^\n  4022 |     await this.endSessionButton.click();\n  4023 |     await this.reviewModeButton.click();\n  4024 |     await this.page.waitForTimeout(3000);\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts:145:15"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S10:W6] Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W6] Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N16072A33183\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N16072A33183/dataFiles/Derived_Score_AutoFilter_Template_N16072A33183.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N16072A33183 FirstName=Lavonne LastName =N16072A33183 Age = 07/14/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N16072A33183\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22557|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - K12 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Map(42) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^11111111111111111111111111111111111111@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m38\u001b[39m, Wabil: \u001b[33m557.89\u001b[39m, Semw: \u001b[33m14.85\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Paragraph Reading Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 26153|Ages 4 to 6|26154\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PARCMP - K12 - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Story 1, Presentation\n"
+                        },
+                        {
+                          "text": "Story 1, Item 1\n"
+                        },
+                        {
+                          "text": "Story 1, Item 2\n"
+                        },
+                        {
+                          "text": "Story 1, Item 3\n"
+                        },
+                        {
+                          "text": "Story 2, Presentation\n"
+                        },
+                        {
+                          "text": "Story 2, Item 1\n"
+                        },
+                        {
+                          "text": "Story 2, Item 2\n"
+                        },
+                        {
+                          "text": "Story 2, Item 3\n"
+                        },
+                        {
+                          "text": "Map(10) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Story 1, Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Story 1, Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Story 1, Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Story 2, Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Story 2, Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Story 2, Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^000000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m38\u001b[39m, Wabil: \u001b[33m557.89\u001b[39m, Semw: \u001b[33m14.85\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m },\n  \u001b[32m'PARCMP.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m411.47\u001b[39m, Semw: \u001b[33m15.89\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-14T13:43:12.483Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-13da7-CMP-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-13da7-CMP-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-13da7-CMP-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-13da7-CMP-cluster-generate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-13da7-CMP-cluster-generate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                        "column": 39,
+                        "line": 4021
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 358745,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts:145:15",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                          "column": 39,
+                          "line": 4021
+                        },
+                        "snippet": "   at ../pages/wj5_test.page.ts:4021\n\n\u001b[0m \u001b[90m 4019 |\u001b[39m   \u001b[36masync\u001b[39m endSessionRSB() {\n \u001b[90m 4020 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddTestObservationsNew\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4021 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcheckBoxNoneOfTheAbove\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4022 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendSessionButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4023 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4024 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                            "column": 39,
+                            "line": 4021
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[text()=\\'None of the above\\']')\u001b[22m\n\n\n   at ../pages/wj5_test.page.ts:4021\n\n  4019 |   async endSessionRSB() {\n  4020 |     await this.addTestObservationsNew.click();\n> 4021 |     await this.checkBoxNoneOfTheAbove.click();\n       |                                       ^\n  4022 |     await this.endSessionButton.click();\n  4023 |     await this.reviewModeButton.click();\n  4024 |     await this.page.waitForTimeout(3000);\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts:145:15"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S10:W7] Login successful for S11PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S10:W7] Login successful for S11PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N75018A44999\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N75018A44999/dataFiles/Derived_Score_AutoFilter_Template_N75018A44999.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N75018A44999 FirstName=Terry LastName =N75018A44999 Age = 07/14/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N75018A44999\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22557|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - K12 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Map(42) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^11111111111111111111111111111111111111@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m38\u001b[39m, Wabil: \u001b[33m557.89\u001b[39m, Semw: \u001b[33m14.85\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Paragraph Reading Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 26153|Ages 4 to 6|26154\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PARCMP - K12 - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Story 1, Presentation\n"
+                        },
+                        {
+                          "text": "Story 1, Item 1\n"
+                        },
+                        {
+                          "text": "Story 1, Item 2\n"
+                        },
+                        {
+                          "text": "Story 1, Item 3\n"
+                        },
+                        {
+                          "text": "Story 2, Presentation\n"
+                        },
+                        {
+                          "text": "Story 2, Item 1\n"
+                        },
+                        {
+                          "text": "Story 2, Item 2\n"
+                        },
+                        {
+                          "text": "Story 2, Item 3\n"
+                        },
+                        {
+                          "text": "Map(10) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Story 1, Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Story 1, Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Story 1, Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Story 2, Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Story 2, Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Story 2, Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^000000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m38\u001b[39m, Wabil: \u001b[33m557.89\u001b[39m, Semw: \u001b[33m14.85\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m },\n  \u001b[32m'PARCMP.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m411.47\u001b[39m, Semw: \u001b[33m15.89\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-07-14T13:49:56.468Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-13da7-CMP-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-13da7-CMP-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-13da7-CMP-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-13da7-CMP-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                        "column": 39,
+                        "line": 4021
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "26e0c855b95df639299c-f9221d08c95424295feb",
+              "file": "derived_scores(compounds & clusters)/RDGCMP_cluster_pub.spec.ts",
+              "line": 26,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-07-14T13:02:54.231Z",
+    "duration": 3181641.4,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}
