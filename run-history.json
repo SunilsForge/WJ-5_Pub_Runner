@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "271",
+    "timestamp": "20260715_000000",
+    "runReason": "running again  REGRESSION in SATEG as part og 30 July release",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments|@TestSetVerification",
+    "totalTests": 0,
+    "totalPassed": 0,
+    "totalFailed": 0,
+    "totalSkipped": 0,
+    "totalFlaky": 0,
+    "durationMs": 0
+  },
+  {
     "runNumber": "270",
     "timestamp": "20260714_000000",
     "runReason": "Running SMOKE in STAGE as part of Prod release  30July",
