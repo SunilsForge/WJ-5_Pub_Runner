@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "272",
+    "timestamp": "20260715_000000",
+    "runReason": "Running REGRESSION in STAGE as part of 30 PROD release",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments|@TestSetVerification",
+    "totalTests": 104,
+    "totalPassed": 37,
+    "totalFailed": 66,
+    "totalSkipped": 0,
+    "totalFlaky": 1,
+    "durationMs": 73100436
+  },
+  {
     "runNumber": "271",
     "timestamp": "20260715_000000",
     "runReason": "running again  REGRESSION in SATEG as part og 30 July release",
