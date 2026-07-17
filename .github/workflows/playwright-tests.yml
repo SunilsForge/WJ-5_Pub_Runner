@@ -151,6 +151,11 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright:v1.59.1-noble
+      # Docker defaults /dev/shm to 64 MB regardless of host RAM. Chromium writes
+      # its shared-memory buffers there; media/canvas-heavy pages overflow 64 MB,
+      # the renderer crashes hard and takes the runner agent down ("lost
+      # communication"). 2gb is Playwright's recommended size.
+      options: --shm-size=2gb
     strategy:
       fail-fast: false
       matrix: ${{fromJson(needs.prepare.outputs.matrix)}}
