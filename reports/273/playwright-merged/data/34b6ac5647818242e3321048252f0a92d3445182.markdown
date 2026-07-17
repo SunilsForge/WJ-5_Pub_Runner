@@ -1,0 +1,344 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: UIAndReports/WRDGFL_Single_Timer.spec.ts >>  WRDGFL UI And Reports >> All Examinees - Test Items When Timer Ran Out for Last Item set Test UI
+- Location: src/tests/UIAndReports/WRDGFL_Single_Timer.spec.ts:10:9
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 120000ms exceeded.
+Call log:
+  - waiting for locator('div[style*=\'visible\']>span[class=\'loading-icon\']') to be hidden
+    243 × locator resolved to visible <span class="loading-icon"></span>
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S11PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S11PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "No Test Assignments have been created." [ref=e74] [cursor=pointer]:
+                    - cell "No Test Assignments have been created." [ref=e75]
+            - generic [ref=e76]:
+              - generic [ref=e79]:
+                - img [ref=e80]
+                - heading "Notifications Center" [level=2] [ref=e84]
+              - generic [ref=e85]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - heading "Resources" [level=3] [ref=e92]
+                - list [ref=e93]:
+                  - listitem [ref=e94]:
+                    - button "Riverside Learn" [ref=e95] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e96]
+                      - img [ref=e98]
+                  - listitem [ref=e100]:
+                    - button "Onboarding Tutorial Videos" [ref=e101] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e102]
+                      - img [ref=e104]
+                  - listitem [ref=e106]:
+                    - button "Quick Reference Guides" [ref=e107] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e108]
+                      - img [ref=e110]
+                - button "View All" [ref=e113] [cursor=pointer]
+      - contentinfo [ref=e114]:
+        - generic [ref=e115]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e116] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e117]
+        - generic [ref=e118]:
+          - link "Riverside Insights Facebook" [ref=e119] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e120]
+          - link "Riverside Insights Twitter" [ref=e121] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e122]
+          - link "Riverside Insights LinkedIn" [ref=e123] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e124]
+          - link "Riverside Insights Instagram" [ref=e125] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e126]
+        - generic [ref=e127]:
+          - button "Leave Feedback" [ref=e128] [cursor=pointer]
+          - generic [ref=e129]: "|"
+          - link "Terms of Use" [ref=e130] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e131]: "|"
+          - link "Privacy Policy" [ref=e132] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e133]: Footer region end
+```
+
+# Test source
+
+```ts
+  6   | 
+  7   | export default class TestSetsPage extends Locators{
+  8   | 
+  9   |   private dashboardPage: DashBoardPage;
+  10  |      constructor(public page: Page) {
+  11  |       super(page);
+  12  |       this.dashboardPage = new DashBoardPage(this.page);
+  13  |   }
+  14  | 
+  15  | static tSetName: string;
+  16  | 
+  17  |      async clickTestSetsOnMenu() {
+  18  |       await this.testSetButton.click();
+  19  |    }
+  20  |   async clickOnCreateNewTestSetButton() {
+  21  |     await this.createNewTestSetButton.click();
+  22  |   }
+  23  |   async clickOnAllTestsTab() {
+  24  |     await this.allTestsButton.click({delay: 2000});
+  25  |   }
+  26  |   async clickClose() {
+  27  |     await this.page.waitForTimeout(2000);
+  28  |     await this.timerCloseButton.click();
+  29  |   }
+  30  | 
+  31  |   async selectAllTests(): Promise<void> {
+  32  |     await this.page.waitForLoadState('domcontentloaded');
+  33  |     await this.page.waitForTimeout(1000);
+  34  | 
+  35  |     await expect
+  36  |       .poll(
+  37  |         async () => await this.checkboxes.count(),
+  38  |         {
+  39  |           message: 'Waiting for checkbox count to be greater than 0',
+  40  |           timeout: 10_000
+  41  |         }
+  42  |       )
+  43  |       .toBeGreaterThan(0);
+  44  | 
+  45  |     const checkboxCount = await this.checkboxes.count();
+  46  |     RawValueLogger.log(`Found ${checkboxCount} checkboxes`);
+  47  | 
+  48  |     for (let i = 0; i < checkboxCount; i++) {
+  49  |       if (i === 7 || i === 24) continue;
+  50  | 
+  51  |       const checkbox = this.checkboxes.nth(i);
+  52  |       await checkbox.scrollIntoViewIfNeeded();
+  53  |       await checkbox.click();
+  54  |     }
+  55  |   }
+  56  | 
+  57  | 
+  58  |   async selectTheRequiredTests(testname: string | string[]) {
+  59  | 
+  60  |     await this.page.waitForLoadState('domcontentloaded');
+  61  |     await this.page.waitForTimeout(1000);
+  62  | 
+  63  |     await expect
+  64  |       .poll(
+  65  |         async () => await this.checkboxes.count(),
+  66  |         {
+  67  |           message: 'Waiting for checkbox count to be greater than 0',
+  68  |           timeout: 10_000
+  69  |         }
+  70  |       )
+  71  |       .toBeGreaterThan(0);
+  72  | 
+  73  |     const checkboxCount = await this.checkboxes.count();
+  74  |     console.log(`Found ${checkboxCount} checkboxes`);
+  75  |     const testNames = Array.isArray(testname) ? testname : [testname];
+  76  |     const defaultExcludedTests = ["Oral Vocabulary–Antonyms", "General Information–What"];
+  77  |     for (let i = 0; i < checkboxCount; i++) {
+  78  |       const testLabel = await this.checkboxes.nth(i).getAttribute("aria-label");
+  79  | 
+  80  |       const isRequiredTest = testNames.some(name => testLabel.includes(name));
+  81  | 
+  82  |       if (isRequiredTest || defaultExcludedTests.includes(testLabel) && testNames.includes(testLabel)) {
+  83  |         await this.checkboxes.nth(i).click();
+  84  |         console.log(`Selected test: ${testLabel}`);
+  85  |       }
+  86  |     }
+  87  |   }
+  88  | 
+  89  | async createRandomTestSetWithAllTheTests(testname?:string) {
+  90  |   await this.page.bringToFront();
+  91  |   await this.clickTestSetsOnMenu();
+  92  |   await this.clickOnCreateNewTestSetButton();
+  93  |   await this.clickOnAllTestsTab();
+  94  |   if(testname) {
+  95  |     await this.selectTheRequiredTests(testname);
+  96  |   } else {
+  97  |     await this.selectAllTests();
+  98  |   }
+  99  |   await this.clickOnSaveButton();
+  100 |   TestSetsPage.tSetName = `${faker.person.fullName()}_${Date.now()}`;
+  101 |   await this.testSetName.fill(TestSetsPage.tSetName);
+  102 |   await this.clickOnSaveTestSetNameButton.click();
+  103 |   await this.clickClose();
+  104 |   await this.examinees.click();
+  105 |   await this.page.waitForLoadState("domcontentloaded");
+> 106 |   await this.dashboardLoadingSpinnerIcon.waitFor({ state: "hidden", timeout: 2 * 60 * 1000 });
+      |                                          ^ TimeoutError: locator.waitFor: Timeout 120000ms exceeded.
+  107 |   return TestSetsPage.tSetName;
+  108 | }
+  109 | 
+  110 | async selectTheRequiredTestsExact(testNames: string[]) {
+  111 |   await this.page.waitForLoadState('domcontentloaded');
+  112 |   await this.page.waitForTimeout(1000);
+  113 | 
+  114 |   await expect
+  115 |     .poll(
+  116 |       async () => await this.checkboxes.count(),
+  117 |       {
+  118 |         message: 'Waiting for checkbox count to be greater than 0',
+  119 |         timeout: 10_000,
+  120 |       },
+  121 |     )
+  122 |     .toBeGreaterThan(0);
+  123 | 
+  124 |   const normalizeDash = (s: string) => s.replace(/[–—]/g, '-');
+  125 |   const targetSet = new Set(testNames.map(normalizeDash));
+  126 | 
+  127 |   const checkboxCount = await this.checkboxes.count();
+  128 |   RawValueLogger.log(`selectTheRequiredTestsExact: Found ${checkboxCount} checkboxes`);
+  129 | 
+  130 |   for (let i = 0; i < checkboxCount; i++) {
+  131 |     const testLabel = await this.checkboxes.nth(i).getAttribute('aria-label');
+  132 |     if (testLabel && targetSet.has(normalizeDash(testLabel))) {
+  133 |       await this.checkboxes.nth(i).scrollIntoViewIfNeeded();
+  134 |       await this.checkboxes.nth(i).click();
+  135 |       RawValueLogger.log(`Selected (exact): ${testLabel}`);
+  136 |     }
+  137 |   }
+  138 | }
+  139 | 
+  140 | async createRandomTestSetWithExactTests(testNames: string[]) {
+  141 |   await this.page.bringToFront();
+  142 |   await this.clickTestSetsOnMenu();
+  143 |   await this.clickOnCreateNewTestSetButton();
+  144 |   await this.clickOnAllTestsTab();
+  145 |   await this.selectTheRequiredTestsExact(testNames);
+  146 |   await this.clickOnSaveButton();
+  147 |   const randomSuffix = Math.random().toString(36).slice(2, 8);
+  148 |   TestSetsPage.tSetName = `AutoTest_${randomSuffix}`;
+  149 |   await this.testSetName.fill(TestSetsPage.tSetName);
+  150 |   await this.clickOnSaveTestSetNameButton.click();
+  151 |   await this.clickClose();
+  152 |   await this.examinees.click();
+  153 |   await this.page.waitForLoadState("domcontentloaded");
+  154 |   await this.dashboardLoadingSpinnerIcon.waitFor({ state: "hidden", timeout: 2 * 60 * 1000 });
+  155 |   return TestSetsPage.tSetName;
+  156 | }
+  157 | 
+  158 |   async createTestAssignmentFromExamineeManagement(examineeID: string, education: string, normBasis: string, testSet: string = TestSetsPage.tSetName, launchAssignment: boolean = true) {
+  159 |     await this.page.waitForLoadState("domcontentloaded");
+  160 |     await this.dashboardLoadingSpinnerIcon.waitFor({ state: "hidden", timeout: 2 * 60 * 1000 });
+  161 |     await this.createTestAssignmentFromExamineePage.click();
+  162 |     await this.dashboardPage.selectExaminee(examineeID);
+  163 |     await this.clickOnNextButton();
+  164 |     await this.selectTestSet(testSet);
+  165 |     await this.clickOnNextButton();
+  166 |     await this.selectEducation(education);
+  167 |     await this.dashboardPage.selectNormBasis(normBasis);
+  168 |     await this.clickOnSaveButton();
+  169 |     if (launchAssignment) {
+  170 |       await this.dashboardPage.clickOnLaunchAssignmentButton();
+  171 |     } else {
+  172 |       await this.dashboardPage.closeTestAssignmentPopUp();
+  173 |     }
+  174 |   }
+  175 | 
+  176 |   async createTestAssignmentFromDashboard(examineeID: string, education: string, normBasis: string, testSet: string = TestSetsPage.tSetName, launchAssignment: boolean = true) {
+  177 |     await this.dashboardTab.click();
+  178 |     await this.page.waitForLoadState("domcontentloaded");
+  179 |     await this.dashboardPage.waitForLoadingSpinnerToDisappear();
+  180 |     await this.dashboardPage.waitForMyTestAssignmentsToBeVisible();
+  181 |     await this.createTestAssignment.click();
+  182 |     await this.dashboardPage.selectExaminee(examineeID);
+  183 |     await this.clickOnNextButton();
+  184 |     await this.selectTestSet(testSet);
+  185 |     await this.clickOnNextButton();
+  186 |     await this.selectEducation(education);
+  187 |     await this.dashboardPage.selectNormBasis(normBasis);
+  188 |     await this.clickOnSaveButton();
+  189 |     if (launchAssignment) {
+  190 |       await this.dashboardPage.clickOnLaunchAssignmentButton();
+  191 |     } else {
+  192 |       await this.dashboardPage.closeTestAssignmentPopUp();
+  193 |     }
+  194 |   }
+  195 | 
+  196 | async selectEducation(education: string ) {
+  197 |   await this.selectEducationButton.click();
+  198 |   await this.searchExamineeTestSetNameAndEducation.last().fill(education);
+  199 |   await this.selectEducationFromDropdown.last().click();
+  200 |   }
+  201 | async selectTestSet(testSet: string) {
+  202 |   await this.page.waitForTimeout(1000);
+  203 |   await this.selectTestSetNameButton.click();
+  204 |   await this.searchExamineeTestSetNameAndEducation.last().fill(testSet);
+  205 |   await this.selectTestSetNameFromDropdown.last().click();
+  206 | }
+```
