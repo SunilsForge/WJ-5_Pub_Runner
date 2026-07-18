@@ -184,6 +184,9 @@ jobs:
         # Every shard runs this identically, so Playwright's deterministic sharding
         # stays consistent across shards.
         if: ${{ inputs.distribute_by_test }}
+        # The Playwright container's default shell is sh (dash); pin bash so
+        # `set -o pipefail` and `mapfile` are available.
+        shell: bash
         run: |
           set -euo pipefail
           echo "distribute_by_test = ON — rewriting describe mode 'default' -> 'parallel' in target folders."
