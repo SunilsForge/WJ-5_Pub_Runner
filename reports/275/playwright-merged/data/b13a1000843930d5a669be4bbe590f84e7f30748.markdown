@@ -1,0 +1,179 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts >> AC2 Happy path - Subtest user (add-on window, >4 months remaining) redeems Subtest Medium code - subtests added to existing pool
+- Location: src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:22:5
+
+# Error details
+
+```
+TypeError: subscriptionActivationPage.createFreshOrg is not a function
+```
+
+# Test source
+
+```ts
+  1   | import { test, expect } from '../../../base/basePageFixture';
+  2   | import { getActivationCodes } from '../../../utils/activationCodesData';
+  3   | import {
+  4   |   generateSubscriptionActivationFormData,
+  5   |   isoToMMDDYYYY,
+  6   |   addDaysToServerTodayMMDDYYYY,
+  7   | } from '../../../page/subscriptionActivationPage';
+  8   | import { subscriptionApi } from '../../../utils/subscriptionApi';
+  9   | import { RawValueLogger } from '../../../utils/rawValueLogger';
+  10  | 
+  11  | test.describe.configure({ mode: 'serial' });
+  12  | 
+  13  | test.use({
+  14  |   launchOptions: {
+  15  |     slowMo: 1200,
+  16  |   },
+  17  | });
+  18  | 
+  19  | const codes = getActivationCodes();
+  20  | const scenario = codes['subtestMedium'];
+  21  | 
+  22  | test(
+  23  |   'AC2 Happy path - Subtest user (add-on window, >4 months remaining) redeems Subtest Medium code - subtests added to existing pool',
+  24  |   {
+  25  |     annotation: {
+  26  |       type: 'original user story, automation user story',
+  27  |       description: '25467, ',
+  28  |     },
+  29  |     tag: [
+  30  |       '@SubscriptionActivation',
+  31  |       '@SubsequentPurchase',
+  32  |       '@ExistingUser',
+  33  |       '@Subtest',
+  34  |       '@AddOn',
+  35  |       '@AC2',
+  36  |       '@Regression',
+  37  |       '@Aut_Eng_01',
+  38  |     ],
+  39  |   },
+  40  |   async ({ subscriptionActivationPage }) => {
+  41  |     test.setTimeout(8 * 60 * 1000);
+  42  | 
+  43  |     if (scenario.subtestCount === undefined) {
+  44  |       throw new Error('subtestMedium scenario missing subtestCount — check activationCodesData.ts');
+  45  |     }
+  46  | 
+  47  |     const formData = generateSubscriptionActivationFormData();
+  48  | 
+  49  |     let orgName = '';
+  50  |     let accountHolderName = '';
+  51  |     let priorSubtestCount = 0;
+  52  |     let currentStart = '';
+  53  |     let currentEnd = '';
+  54  | 
+  55  |     await test.step('Phase 1 - Create fresh org via Subtest High code', async () => {
+  56  |       RawValueLogger.log('Phase 1 form data', { username: formData.username, email: formData.email });
+> 57  |       await subscriptionActivationPage.createFreshOrg(codes['subtestHigh'], formData);
+      |                                        ^ TypeError: subscriptionActivationPage.createFreshOrg is not a function
+  58  |     });
+  59  | 
+  60  |     await test.step('Setup - Set subscription to add-on window (+150 days) and capture state', async () => {
+  61  |       const subApi = new subscriptionApi(subscriptionActivationPage.page);
+  62  |       await subApi.updateSubscriptionDetails(formData.username, addDaysToServerTodayMMDDYYYY(150), false);
+  63  |       const [summary, extras] = await subApi.getOrgSubscriptionDetails(formData.username);
+  64  |       orgName = summary.OrganizationName;
+  65  |       accountHolderName = extras.accountHolderName;
+  66  |       priorSubtestCount = extras.remainingSubtests;
+  67  |       currentStart = isoToMMDDYYYY(summary.SubscriptionFrom);
+  68  |       currentEnd = isoToMMDDYYYY(summary.SubscriptionTo);
+  69  |       RawValueLogger.log('AC2 API snapshot', {
+  70  |         username: formData.username,
+  71  |         orgName,
+  72  |         accountHolderName,
+  73  |         priorSubtestCount,
+  74  |         currentStart,
+  75  |         currentEnd,
+  76  |       });
+  77  |     });
+  78  | 
+  79  |     await test.step('Setup - Land on activation page', async () => {
+  80  |       await subscriptionActivationPage.landOnActivationPage(scenario);
+  81  |     });
+  82  | 
+  83  |     await test.step('S03 - Select "Use my Existing Login" and click Sign In', async () => {
+  84  |       await subscriptionActivationPage.selectExistingLoginAndProceed();
+  85  |     });
+  86  | 
+  87  |     await test.step('S07/S08 - Sign in with existing AH credentials', async () => {
+  88  |       await subscriptionActivationPage.signInAs(formData.username, formData.password);
+  89  |     });
+  90  | 
+  91  |     await test.step('SP-005/006/007/008/009/010/011 - Confirm Activation popup: subscription, org, subtest count, current sub dates', async () => {
+  92  |       await subscriptionActivationPage.waitForConfirmActivationPopup();
+  93  |       await subscriptionActivationPage.verifyAddOnConfirmDetails(orgName, currentStart, currentEnd, scenario.subtestCount);
+  94  |     });
+  95  | 
+  96  |     await test.step('SP-033 - Confirm button is disabled before terms checkbox is ticked', async () => {
+  97  |       await expect.soft(subscriptionActivationPage.confirmActivationButton).toBeDisabled();
+  98  |     });
+  99  | 
+  100 |     await test.step('SP-012 - Accept terms and confirm activation', async () => {
+  101 |       await subscriptionActivationPage.confirmRenewal();
+  102 |     });
+  103 | 
+  104 |     await test.step('SP-026 - Dismiss 2FA + accept terms, click WJ V tile, verify dashboard', async () => {
+  105 |       await subscriptionActivationPage.dismiss2FAPopupIfPresent();
+  106 |       await subscriptionActivationPage.acceptTermsDialogIfPresent();
+  107 |       await subscriptionActivationPage.clickWJVTileAndVerifyDashboard(accountHolderName);
+  108 |     });
+  109 | 
+  110 |     await test.step('SP-012 API - Verify subtest pool reflects added subtests', async () => {
+  111 |       await subscriptionActivationPage.verifySubtestPoolApiState(
+  112 |         formData.username,
+  113 |         priorSubtestCount + scenario.subtestCount
+  114 |       );
+  115 |     });
+  116 | 
+  117 |     await test.step('SP-012 UI - Verify Subscription Details page shows correct expiration date and remaining subtests', async () => {
+  118 |       await subscriptionActivationPage.verifySubscriptionDetailsAfterRenewal(
+  119 |         currentEnd,
+  120 |         priorSubtestCount + scenario.subtestCount
+  121 |       );
+  122 |     });
+  123 |   }
+  124 | );
+  125 | 
+  126 | test(
+  127 |   'AC2 Abandon - Subtest user (add-on window) abandons Confirm Activation popup - code remains available',
+  128 |   {
+  129 |     annotation: {
+  130 |       type: 'original user story, automation user story',
+  131 |       description: '25467, ',
+  132 |     },
+  133 |     tag: [
+  134 |       '@SubscriptionActivation',
+  135 |       '@SubsequentPurchase',
+  136 |       '@ExistingUser',
+  137 |       '@Subtest',
+  138 |       '@AddOn',
+  139 |       '@AC2',
+  140 |       '@Abandon',
+  141 |       '@Regression',
+  142 |       '@Aut_Eng_01',
+  143 |     ],
+  144 |   },
+  145 |   async ({ subscriptionActivationPage }) => {
+  146 |     test.setTimeout(5 * 60 * 1000);
+  147 | 
+  148 |     const formData = generateSubscriptionActivationFormData();
+  149 | 
+  150 |     await test.step('Phase 1 - Create fresh org via Subtest High code', async () => {
+  151 |       RawValueLogger.log('Phase 1 form data', { username: formData.username, email: formData.email });
+  152 |       await subscriptionActivationPage.createFreshOrg(codes['subtestHigh'], formData);
+  153 |     });
+  154 | 
+  155 |     await test.step('Setup - Set subscription to add-on window (+150 days)', async () => {
+  156 |       const subApi = new subscriptionApi(subscriptionActivationPage.page);
+  157 |       await subApi.updateSubscriptionDetails(formData.username, addDaysToServerTodayMMDDYYYY(150), false);
+```

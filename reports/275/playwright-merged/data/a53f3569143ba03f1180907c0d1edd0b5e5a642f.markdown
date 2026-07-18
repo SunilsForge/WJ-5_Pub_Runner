@@ -1,0 +1,301 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC4.spec.ts >> AC4 Happy path - Unlimited user (active subscription) redeems Unlimited High code - Confirm Renewal with read-only dates
+- Location: src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC4.spec.ts:23:5
+
+# Error details
+
+```
+Error: expect(locator).toContainText(expected) failed
+
+Locator: locator('//div[contains(@class,\'subscription-details-container\')]//div[@class=\'sd-label\'][normalize-space()=\'START DATE\']/following-sibling::div[contains(@class,\'sd-value\')][1]')
+Expected substring: "06/22/2027"
+Received string:    "06/22/2026"
+Timeout: 60000ms
+
+Call log:
+  - Expect "soft toContainText" with timeout 60000ms
+  - waiting for locator('//div[contains(@class,\'subscription-details-container\')]//div[@class=\'sd-label\'][normalize-space()=\'START DATE\']/following-sibling::div[contains(@class,\'sd-value\')][1]')
+    63 × locator resolved to <div class="sd-value">06/22/2026</div>
+       - unexpected value "06/22/2026"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 01SubAutEu220626 ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "01SubAutEu220626 ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [active] [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - generic "WJ V Settings Navigation" [ref=e41]:
+                - img [ref=e43]
+                - text: WJ V Settings
+              - menu [ref=e45]:
+                - menuitem "Subscription Management" [ref=e46] [cursor=pointer]
+                - menuitem "Report Settings" [ref=e47] [cursor=pointer]
+            - generic [ref=e49]:
+              - heading "Subscription Management" [level=1] [ref=e50]
+              - generic [ref=e51]:
+                - generic [ref=e52]:
+                  - generic [ref=e53]: START DATE
+                  - generic [ref=e54]: 06/22/2026
+                - generic [ref=e55]:
+                  - generic [ref=e56]: EXPIRATION DATE
+                  - generic [ref=e57]: 06/21/2028
+              - generic [ref=e59]:
+                - generic [ref=e60]: ACCOUNT HOLDER
+                - generic [ref=e61]: 01SubAutEu220626 ln
+                - generic [ref=e62]: sunil.adeptpros+01SubAutEu220626@gmail.com
+              - generic [ref=e64]:
+                - generic [ref=e65]: ACTIVATION CONTACT
+                - generic [ref=e66]: —
+                - generic [ref=e67]: —
+                - button "More info" [ref=e68]
+              - link "Terms and Conditions" [ref=e71] [cursor=pointer]:
+                - /url: https://info.riversideinsights.com/terms-of-use
+              - heading "Unlimited Subscription Usage" [level=1] [ref=e72]
+              - generic [ref=e74]:
+                - generic [ref=e75]: SUBTESTS USED
+                - generic [ref=e76]: "0"
+              - generic [ref=e78]:
+                - generic [ref=e79]: TOTAL ACTIVE STAFF
+                - generic [ref=e80]: "1"
+              - generic [ref=e82]:
+                - generic [ref=e83]: AUTO RENEWAL STATUS
+                - generic [ref=e84]: "ON"
+                - button "More info" [ref=e85]
+      - contentinfo [ref=e86]:
+        - generic [ref=e87]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e88] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e89]
+        - generic [ref=e90]:
+          - link "Riverside Insights Facebook" [ref=e91] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e92]
+          - link "Riverside Insights Twitter" [ref=e93] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e94]
+          - link "Riverside Insights LinkedIn" [ref=e95] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e96]
+          - link "Riverside Insights Instagram" [ref=e97] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e98]
+        - generic [ref=e99]:
+          - button "Leave Feedback" [ref=e100] [cursor=pointer]
+          - generic [ref=e101]: "|"
+          - link "Terms of Use" [ref=e102] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e103]: "|"
+          - link "Privacy Policy" [ref=e104] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e105]: Footer region end
+```
+
+# Test source
+
+```ts
+  19  | const codes = getActivationCodes();
+  20  | const scenario = codes['unlimitedHigh'];
+  21  | const user = EXISTING_USERS_FOR_RENEWAL.activeSub;
+  22  | 
+  23  | test(
+  24  |   'AC4 Happy path - Unlimited user (active subscription) redeems Unlimited High code - Confirm Renewal with read-only dates',
+  25  |   {
+  26  |     annotation: {
+  27  |       type: 'original user story, automation user story',
+  28  |       description: '25467, ',
+  29  |     },
+  30  |     tag: [
+  31  |       '@SubscriptionActivation',
+  32  |       '@SubsequentPurchase',
+  33  |       '@ExistingUser',
+  34  |       '@Unlimited',
+  35  |       '@AC4',
+  36  |       '@Regression',
+  37  |       '@Aut_Eng_01',
+  38  |     ],
+  39  |   },
+  40  |   async ({ subscriptionActivationPage }) => {
+  41  |     test.setTimeout(5 * 60 * 1000);
+  42  | 
+  43  |     let renewalStartMMDDYYYY = '';
+  44  |     let renewalEndMMDDYYYY = '';
+  45  |     let orgName = '';
+  46  |     let accountHolderName = '';
+  47  |     let priorContactName = '';
+  48  |     let priorContactEmail = '';
+  49  | 
+  50  |     await test.step('Setup - Verify user has Active subscription and resolve expected renewal START/END + AH name', async () => {
+  51  |       const { summary, extras } = await subscriptionActivationPage.ensureExistingUserState(user);
+  52  |       orgName = summary.OrganizationName;
+  53  |       accountHolderName = extras.accountHolderName;
+  54  |       priorContactName = extras.activationContactName;
+  55  |       priorContactEmail = extras.activationContactEmail;
+  56  | 
+  57  |       if (summary.RenewalStartDate && summary.RenewalEndDate) {
+  58  |         renewalStartMMDDYYYY = isoToMMDDYYYY(summary.RenewalStartDate);
+  59  |         renewalEndMMDDYYYY = isoToMMDDYYYY(summary.RenewalEndDate);
+  60  |       } else {
+  61  |         const currentEndMMDDYYYY = isoToMMDDYYYY(summary.SubscriptionTo);
+  62  |         renewalStartMMDDYYYY = addDaysToDateMMDDYYYY(currentEndMMDDYYYY, 1);
+  63  |         renewalEndMMDDYYYY = expectedEndForStart(renewalStartMMDDYYYY);
+  64  |       }
+  65  | 
+  66  |       RawValueLogger.log('AC4 API snapshot', {
+  67  |         user: user.username,
+  68  |         orgName,
+  69  |         accountHolderName,
+  70  |         priorContactName,
+  71  |         priorContactEmail,
+  72  |         status: summary.CurrentSubscriptionStatus,
+  73  |         hasRenewal: summary.HasRenewal,
+  74  |         renewalStart: renewalStartMMDDYYYY,
+  75  |         renewalEnd: renewalEndMMDDYYYY,
+  76  |       });
+  77  |     });
+  78  | 
+  79  |     await test.step('Setup - Land on activation page', async () => {
+  80  |       await subscriptionActivationPage.landOnActivationPage(scenario);
+  81  |     });
+  82  | 
+  83  |     await test.step('S03 - Select "Use my Existing Login" and click Sign In', async () => {
+  84  |       await subscriptionActivationPage.selectExistingLoginAndProceed();
+  85  |     });
+  86  | 
+  87  |     await test.step('S07/S08 - Sign in with existing AH credentials', async () => {
+  88  |       await subscriptionActivationPage.signInAs(user.username, user.password);
+  89  |     });
+  90  | 
+  91  |     await test.step('S16/S17/S20 - Confirm Renewal popup: subscription, org, dates from API, START disabled', async () => {
+  92  |       await subscriptionActivationPage.waitForConfirmRenewalPopup();
+  93  |       await subscriptionActivationPage.verifyConfirmRenewalDetails(
+  94  |         scenario.subscriptionType,
+  95  |         orgName,
+  96  |         renewalStartMMDDYYYY,
+  97  |         renewalEndMMDDYYYY,
+  98  |         true
+  99  |       );
+  100 |     });
+  101 | 
+  102 |     await test.step('SP-033 - Confirm button is disabled before terms checkbox is ticked', async () => {
+  103 |       await expect.soft(subscriptionActivationPage.confirmActivationButton).toBeDisabled();
+  104 |     });
+  105 | 
+  106 |     await test.step('S24 - Accept terms, click Confirm, wait for renewal API success', async () => {
+  107 |       await subscriptionActivationPage.confirmRenewal();
+  108 |     });
+  109 | 
+  110 |     await test.step('SP-026 - Dismiss 2FA + accept terms, click WJ V tile, verify dashboard + AH name in header', async () => {
+  111 |       await subscriptionActivationPage.dismiss2FAPopupIfPresent();
+  112 |       await subscriptionActivationPage.acceptTermsDialogIfPresent();
+  113 |       await subscriptionActivationPage.clickWJVTileAndVerifyDashboard(accountHolderName);
+  114 |     });
+  115 | 
+  116 |     await test.step('S32/SP-029 - Verify renewal reflected in API state and Subscription Details page (start + expiration dates)', async () => {
+  117 |       await subscriptionActivationPage.verifyRenewalApiState(user.username, renewalEndMMDDYYYY);
+  118 |       await subscriptionActivationPage.verifySubscriptionDetailsAfterRenewal(renewalEndMMDDYYYY);
+> 119 |       await expect.soft(subscriptionActivationPage.subscriptionDetailsStartDateValue).toContainText(renewalStartMMDDYYYY);
+      |                                                                                       ^ Error: expect(locator).toContainText(expected) failed
+  120 |     });
+  121 | 
+  122 |     await test.step('SP-034 - Verify activation contact info unchanged after renewal', async () => {
+  123 |       const subApi = new subscriptionApi(subscriptionActivationPage.page);
+  124 |       const [, extras] = await subApi.getOrgSubscriptionDetails(user.username);
+  125 |       expect.soft(extras.activationContactName, 'activationContactName').toBe(priorContactName);
+  126 |       expect.soft(extras.activationContactEmail, 'activationContactEmail').toBe(priorContactEmail);
+  127 |     });
+  128 |   }
+  129 | );
+  130 | 
+  131 | test(
+  132 |   'AC4 Abandon - Unlimited user (active subscription) abandons Confirm Renewal popup - code remains available',
+  133 |   {
+  134 |     annotation: {
+  135 |       type: 'original user story, automation user story',
+  136 |       description: '25467, ',
+  137 |     },
+  138 |     tag: [
+  139 |       '@SubscriptionActivation',
+  140 |       '@SubsequentPurchase',
+  141 |       '@ExistingUser',
+  142 |       '@Unlimited',
+  143 |       '@AC4',
+  144 |       '@Abandon',
+  145 |       '@Regression',
+  146 |       '@Aut_Eng_01',
+  147 |     ],
+  148 |   },
+  149 |   async ({ subscriptionActivationPage }) => {
+  150 |     test.setTimeout(3 * 60 * 1000);
+  151 | 
+  152 |     await test.step('Setup - Verify user has Active subscription', async () => {
+  153 |       const { summary, extras } = await subscriptionActivationPage.ensureExistingUserState(user);
+  154 |       RawValueLogger.log('AC4 Abandon API snapshot', {
+  155 |         user: user.username,
+  156 |         orgName: summary.OrganizationName,
+  157 |         accountHolderName: extras.accountHolderName,
+  158 |         status: summary.CurrentSubscriptionStatus,
+  159 |       });
+  160 |     });
+  161 | 
+  162 |     await test.step('Setup - Land on activation page', async () => {
+  163 |       await subscriptionActivationPage.landOnActivationPage(scenario);
+  164 |     });
+  165 | 
+  166 |     await test.step('S03 - Select "Use my Existing Login" and click Sign In', async () => {
+  167 |       await subscriptionActivationPage.selectExistingLoginAndProceed();
+  168 |     });
+  169 | 
+  170 |     await test.step('S07/S08 - Sign in with existing AH credentials', async () => {
+  171 |       await subscriptionActivationPage.signInAs(user.username, user.password);
+  172 |     });
+  173 | 
+  174 |     await test.step('Abandon - Wait for Confirm Renewal popup, abandon, verify code still available', async () => {
+  175 |       await subscriptionActivationPage.waitForConfirmRenewalPopup();
+  176 |       await subscriptionActivationPage.clickAbandonActivation();
+  177 |       await subscriptionActivationPage.verifyOnLoginPageAfterAbandon();
+  178 |       await subscriptionActivationPage.verifyAbandonedCodeIsAvailable(scenario);
+  179 |     });
+  180 |   }
+  181 | );
+```

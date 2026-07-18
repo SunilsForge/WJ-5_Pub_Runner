@@ -1,0 +1,1296 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 19,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Future-dated activation - admin tasks allowed + Submit blocked + banner (S49, S50, S51)",
+          "ok": false,
+          "tags": [
+            "SubscriptionActivation",
+            "FutureDate",
+            "Subtest",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts",
+                    "line": 50,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5137,
+                  "error": {
+                    "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 ",
+                    "stack": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 \n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:94:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                      "column": 13,
+                      "line": 317
+                    },
+                    "snippet": "   at ../utils/subscriptionApi.ts:317\n\n\u001b[0m \u001b[90m 315 |\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mif\u001b[39m (status \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m     }\n \u001b[90m 319 |\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(bodyText) \u001b[36mas\u001b[39m \u001b[33mUpdateSalesOrderResponse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                        "column": 13,
+                        "line": 317
+                      },
+                      "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 \n\n   at ../utils/subscriptionApi.ts:317\n\n  315 |\n  316 |     if (status !== 200) {\n> 317 |       throw new Error(`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`);\n      |             ^\n  318 |     }\n  319 |\n  320 |     return JSON.parse(bodyText) as UpdateSalesOrderResponse;\n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:94:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page (guarantees mutable START DATE)",
+                      "duration": 3064,
+                      "error": {
+                        "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 ",
+                        "stack": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 \n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:94:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                          "column": 13,
+                          "line": 317
+                        },
+                        "snippet": "   at ../utils/subscriptionApi.ts:317\n\n\u001b[0m \u001b[90m 315 |\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mif\u001b[39m (status \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m     }\n \u001b[90m 319 |\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(bodyText) \u001b[36mas\u001b[39m \u001b[33mUpdateSalesOrderResponse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:20:20.275Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts",
+                        "line": 50,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-2275a-blocked-banner-S49-S50-S51--chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-2275a-blocked-banner-S49-S50-S51--chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-2275a-blocked-banner-S49-S50-S51--chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                    "column": 13,
+                    "line": 317
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3901,
+                  "error": {
+                    "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 ",
+                    "stack": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 \n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:94:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                      "column": 13,
+                      "line": 317
+                    },
+                    "snippet": "   at ../utils/subscriptionApi.ts:317\n\n\u001b[0m \u001b[90m 315 |\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mif\u001b[39m (status \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m     }\n \u001b[90m 319 |\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(bodyText) \u001b[36mas\u001b[39m \u001b[33mUpdateSalesOrderResponse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                        "column": 13,
+                        "line": 317
+                      },
+                      "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 \n\n   at ../utils/subscriptionApi.ts:317\n\n  315 |\n  316 |     if (status !== 200) {\n> 317 |       throw new Error(`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`);\n      |             ^\n  318 |     }\n  319 |\n  320 |     return JSON.parse(bodyText) as UpdateSalesOrderResponse;\n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:94:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page (guarantees mutable START DATE)",
+                      "duration": 3311,
+                      "error": {
+                        "message": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 ",
+                        "stack": "Error: UpdateSalesOrder failed with status 404. Response: No sales order found for :SO256962 \n    at subscriptionApi.updateSalesOrder (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts:317:13)\n    at SubscriptionActivationPage.resetActivationStateAndLand (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:299:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:94:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                          "column": 13,
+                          "line": 317
+                        },
+                        "snippet": "   at ../utils/subscriptionApi.ts:317\n\n\u001b[0m \u001b[90m 315 |\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mif\u001b[39m (status \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`UpdateSalesOrder failed with status ${status}. Response: ${bodyText}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m     }\n \u001b[90m 319 |\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(bodyText) \u001b[36mas\u001b[39m \u001b[33mUpdateSalesOrderResponse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:20:27.074Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts",
+                        "line": 50,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-2275a-blocked-banner-S49-S50-S51--chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-2275a-blocked-banner-S49-S50-S51--chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/subscriptionApi.ts",
+                    "column": 13,
+                    "line": 317
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e825697c4ceb1037ddd7-ef758149d787c8a72717",
+          "file": "functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts",
+          "line": 50,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "S05 - Malformed activation code shows \"Invalid activation code\" error",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "Negative",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+                    "line": 20,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2221,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to malformed activation URL and verify \"Invalid activation code\" message",
+                      "duration": 1911
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:20:32.549Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+                        "line": 20,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "81eaacdef0019ec1a6ae-20c7a2688e9b29982076",
+          "file": "functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+          "line": 20,
+          "column": 5
+        },
+        {
+          "title": "S10/S11/S17/S18 - Contact + credentials inline validations and Back navigation",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "Negative",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+                    "line": 45,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 57871,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Land on activation page (self-recover if code/SO already used)",
+                      "duration": 1774
+                    },
+                    {
+                      "title": "Setup - Select Create-a-Login and click Create an Account",
+                      "duration": 2541
+                    },
+                    {
+                      "title": "S11 - Invalid email and phone show inline errors on Contact Information",
+                      "duration": 9064
+                    },
+                    {
+                      "title": "Recover - Fix email/phone with valid values and proceed to Username & Password",
+                      "duration": 16445
+                    },
+                    {
+                      "title": "S18 - Short password (< 8 chars) shows length error",
+                      "duration": 6320
+                    },
+                    {
+                      "title": "S18 - Long password (> 10 chars) shows length error",
+                      "duration": 6795
+                    },
+                    {
+                      "title": "S17 - Mismatched password and confirm shows \"Passwords do not match\" error",
+                      "duration": 11841
+                    },
+                    {
+                      "title": "S10 - Click Back on Username & Password → lands on Contact Information page",
+                      "duration": 1258
+                    },
+                    {
+                      "title": "S10 - Click Back on Contact Information → lands on activation landing page",
+                      "duration": 1273
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:20:35.262Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+                        "line": 45,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "81eaacdef0019ec1a6ae-13eeb0d7183cac395bf2",
+          "file": "functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+          "line": 45,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "AC2 Happy path - Subtest user (add-on window, >4 months remaining) redeems Subtest Medium code - subtests added to existing pool",
+          "ok": false,
+          "tags": [
+            "SubscriptionActivation",
+            "SubsequentPurchase",
+            "ExistingUser",
+            "Subtest",
+            "AddOn",
+            "AC2",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "25467, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                    "line": 22,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 257,
+                  "error": {
+                    "message": "TypeError: subscriptionActivationPage.createFreshOrg is not a function",
+                    "stack": "TypeError: subscriptionActivationPage.createFreshOrg is not a function\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:57:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:55:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                      "column": 40,
+                      "line": 57
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 55 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Phase 1 - Create fresh org via Subtest High code'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 56 |\u001b[39m       \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Phase 1 form data'\u001b[39m\u001b[33m,\u001b[39m { username\u001b[33m:\u001b[39m formData\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m email\u001b[33m:\u001b[39m formData\u001b[33m.\u001b[39memail })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 57 |\u001b[39m       \u001b[36mawait\u001b[39m subscriptionActivationPage\u001b[33m.\u001b[39mcreateFreshOrg(codes[\u001b[32m'subtestHigh'\u001b[39m]\u001b[33m,\u001b[39m formData)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 58 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m\n \u001b[90m 60 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Setup - Set subscription to add-on window (+150 days) and capture state'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                        "column": 40,
+                        "line": 57
+                      },
+                      "message": "TypeError: subscriptionActivationPage.createFreshOrg is not a function\n\n  55 |     await test.step('Phase 1 - Create fresh org via Subtest High code', async () => {\n  56 |       RawValueLogger.log('Phase 1 form data', { username: formData.username, email: formData.email });\n> 57 |       await subscriptionActivationPage.createFreshOrg(codes['subtestHigh'], formData);\n     |                                        ^\n  58 |     });\n  59 |\n  60 |     await test.step('Setup - Set subscription to add-on window (+150 days) and capture state', async () => {\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:57:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:55:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Phase 1 - Create fresh org via Subtest High code",
+                      "duration": 1,
+                      "error": {
+                        "message": "TypeError: subscriptionActivationPage.createFreshOrg is not a function",
+                        "stack": "TypeError: subscriptionActivationPage.createFreshOrg is not a function\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:57:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:55:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                          "column": 40,
+                          "line": 57
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 55 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Phase 1 - Create fresh org via Subtest High code'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 56 |\u001b[39m       \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Phase 1 form data'\u001b[39m\u001b[33m,\u001b[39m { username\u001b[33m:\u001b[39m formData\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m email\u001b[33m:\u001b[39m formData\u001b[33m.\u001b[39memail })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 57 |\u001b[39m       \u001b[36mawait\u001b[39m subscriptionActivationPage\u001b[33m.\u001b[39mcreateFreshOrg(codes[\u001b[32m'subtestHigh'\u001b[39m]\u001b[33m,\u001b[39m formData)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 58 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m\n \u001b[90m 60 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Setup - Set subscription to add-on window (+150 days) and capture state'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:21:34.278Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "25467, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                        "line": 22,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-01955-ests-added-to-existing-pool-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-01955-ests-added-to-existing-pool-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-01955-ests-added-to-existing-pool-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                    "column": 40,
+                    "line": 57
+                  }
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 187,
+                  "error": {
+                    "message": "TypeError: subscriptionActivationPage.createFreshOrg is not a function",
+                    "stack": "TypeError: subscriptionActivationPage.createFreshOrg is not a function\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:57:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:55:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                      "column": 40,
+                      "line": 57
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 55 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Phase 1 - Create fresh org via Subtest High code'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 56 |\u001b[39m       \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Phase 1 form data'\u001b[39m\u001b[33m,\u001b[39m { username\u001b[33m:\u001b[39m formData\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m email\u001b[33m:\u001b[39m formData\u001b[33m.\u001b[39memail })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 57 |\u001b[39m       \u001b[36mawait\u001b[39m subscriptionActivationPage\u001b[33m.\u001b[39mcreateFreshOrg(codes[\u001b[32m'subtestHigh'\u001b[39m]\u001b[33m,\u001b[39m formData)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 58 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m\n \u001b[90m 60 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Setup - Set subscription to add-on window (+150 days) and capture state'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                        "column": 40,
+                        "line": 57
+                      },
+                      "message": "TypeError: subscriptionActivationPage.createFreshOrg is not a function\n\n  55 |     await test.step('Phase 1 - Create fresh org via Subtest High code', async () => {\n  56 |       RawValueLogger.log('Phase 1 form data', { username: formData.username, email: formData.email });\n> 57 |       await subscriptionActivationPage.createFreshOrg(codes['subtestHigh'], formData);\n     |                                        ^\n  58 |     });\n  59 |\n  60 |     await test.step('Setup - Set subscription to add-on window (+150 days) and capture state', async () => {\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:57:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:55:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Phase 1 - Create fresh org via Subtest High code",
+                      "duration": 1,
+                      "error": {
+                        "message": "TypeError: subscriptionActivationPage.createFreshOrg is not a function",
+                        "stack": "TypeError: subscriptionActivationPage.createFreshOrg is not a function\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:57:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:55:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                          "column": 40,
+                          "line": 57
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 55 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Phase 1 - Create fresh org via Subtest High code'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 56 |\u001b[39m       \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Phase 1 form data'\u001b[39m\u001b[33m,\u001b[39m { username\u001b[33m:\u001b[39m formData\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m email\u001b[33m:\u001b[39m formData\u001b[33m.\u001b[39memail })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 57 |\u001b[39m       \u001b[36mawait\u001b[39m subscriptionActivationPage\u001b[33m.\u001b[39mcreateFreshOrg(codes[\u001b[32m'subtestHigh'\u001b[39m]\u001b[33m,\u001b[39m formData)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 58 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m\n \u001b[90m 60 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Setup - Set subscription to add-on window (+150 days) and capture state'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:21:36.158Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "25467, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                        "line": 22,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-01955-ests-added-to-existing-pool-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-01955-ests-added-to-existing-pool-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                    "column": 40,
+                    "line": 57
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e684c5b20939aad6b21e-e502a69fb387b88dffd1",
+          "file": "functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+          "line": 22,
+          "column": 5
+        },
+        {
+          "title": "AC2 Abandon - Subtest user (add-on window) abandons Confirm Activation popup - code remains available",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "SubsequentPurchase",
+            "ExistingUser",
+            "Subtest",
+            "AddOn",
+            "AC2",
+            "Abandon",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "25467, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                    "line": 126,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-18T06:21:35.098Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-07-18T06:21:36.907Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "e684c5b20939aad6b21e-536126901d45343f8323",
+          "file": "functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+          "line": 126,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "AC3 Happy path - Subtest user (rollover window, ≤4 months remaining) redeems Subtest Medium code - subtests go to rollover pool",
+          "ok": false,
+          "tags": [
+            "SubscriptionActivation",
+            "SubsequentPurchase",
+            "ExistingUser",
+            "Subtest",
+            "Rollover",
+            "AC3",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "25467, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts",
+                    "line": 22,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 97960,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\nExpected substring: \u001b[32m\"09/\u001b[7m16\u001b[27m/2026\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mCURRENT SUBTEST ROLLOVER (EXPIRES \u001b[27m09/\u001b[7m05\u001b[27m/2026\u001b[7m)\u001b[27m\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-label\">CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)</div>\u001b[22m\n\u001b[2m       - unexpected value \"CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\nExpected substring: \u001b[32m\"09/\u001b[7m16\u001b[27m/2026\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mCURRENT SUBTEST ROLLOVER (EXPIRES \u001b[27m09/\u001b[7m05\u001b[27m/2026\u001b[7m)\u001b[27m\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-label\">CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)</div>\u001b[22m\n\u001b[2m       - unexpected value \"CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)\"\u001b[22m\n\n    at SubscriptionActivationPage.verifyRolloverSubscriptionDetailsPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:733:62)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts:125:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts:124:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                      "column": 62,
+                      "line": 733
+                    },
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:733\n\n\u001b[0m \u001b[90m 731 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRemainingSubtestsValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mString\u001b[39m(expectedRemainingSubtests))\u001b[33m;\u001b[39m\n \u001b[90m 732 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRolloverCountValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mString\u001b[39m(rolloverCount))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 733 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRolloverLabel)\u001b[33m.\u001b[39mtoContainText(rolloverExpiryMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 734 |\u001b[39m   }\n \u001b[90m 735 |\u001b[39m\n \u001b[90m 736 |\u001b[39m   \u001b[36masync\u001b[39m verifyTypeMismatchError() {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 62,
+                        "line": 733
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\nExpected substring: \u001b[32m\"09/\u001b[7m16\u001b[27m/2026\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mCURRENT SUBTEST ROLLOVER (EXPIRES \u001b[27m09/\u001b[7m05\u001b[27m/2026\u001b[7m)\u001b[27m\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-label\">CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)</div>\u001b[22m\n\u001b[2m       - unexpected value \"CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:733\n\n  731 |     await expect.soft(this.subscriptionDetailsRemainingSubtestsValue).toHaveText(String(expectedRemainingSubtests));\n  732 |     await expect.soft(this.subscriptionDetailsRolloverCountValue).toHaveText(String(rolloverCount));\n> 733 |     await expect.soft(this.subscriptionDetailsRolloverLabel).toContainText(rolloverExpiryMMDDYYYY);\n      |                                                              ^\n  734 |   }\n  735 |\n  736 |   async verifyTypeMismatchError() {\n    at SubscriptionActivationPage.verifyRolloverSubscriptionDetailsPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:733:62)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts:125:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts:124:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Set subscription to rollover window (+60 days) and capture state",
+                      "duration": 1741
+                    },
+                    {
+                      "title": "Setup - Land on activation page",
+                      "duration": 1844
+                    },
+                    {
+                      "title": "S03 - Select \"Use my Existing Login\" and click Sign In",
+                      "duration": 2499
+                    },
+                    {
+                      "title": "S07/S08 - Sign in with existing AH credentials",
+                      "duration": 3670
+                    },
+                    {
+                      "title": "SP-015/016/017/018 - Confirm Renewal popup: subscription, org, rollover start/end dates (both read-only), rollover note visible",
+                      "duration": 86
+                    },
+                    {
+                      "title": "SP-033 - Confirm button is disabled before terms checkbox is ticked",
+                      "duration": 6
+                    },
+                    {
+                      "title": "SP-021/024 - Accept terms and confirm renewal",
+                      "duration": 7499
+                    },
+                    {
+                      "title": "SP-026 - Dismiss 2FA + accept terms, click WJ V tile, verify dashboard",
+                      "duration": 7322
+                    },
+                    {
+                      "title": "SP-019/021/024 API - Verify remaining subtests increased and rollover pool logged",
+                      "duration": 334
+                    },
+                    {
+                      "title": "SP-019/021/024 UI - Verify Subscription Details page shows correct expiration, remaining subtests, and rollover pool",
+                      "duration": 66439,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\nExpected substring: \u001b[32m\"09/\u001b[7m16\u001b[27m/2026\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mCURRENT SUBTEST ROLLOVER (EXPIRES \u001b[27m09/\u001b[7m05\u001b[27m/2026\u001b[7m)\u001b[27m\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-label\">CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)</div>\u001b[22m\n\u001b[2m       - unexpected value \"CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\nExpected substring: \u001b[32m\"09/\u001b[7m16\u001b[27m/2026\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mCURRENT SUBTEST ROLLOVER (EXPIRES \u001b[27m09/\u001b[7m05\u001b[27m/2026\u001b[7m)\u001b[27m\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-label\">CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)</div>\u001b[22m\n\u001b[2m       - unexpected value \"CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)\"\u001b[22m\n\n    at SubscriptionActivationPage.verifyRolloverSubscriptionDetailsPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:733:62)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts:125:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts:124:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 62,
+                          "line": 733
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:733\n\n\u001b[0m \u001b[90m 731 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRemainingSubtestsValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mString\u001b[39m(expectedRemainingSubtests))\u001b[33m;\u001b[39m\n \u001b[90m 732 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRolloverCountValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mString\u001b[39m(rolloverCount))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 733 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRolloverLabel)\u001b[33m.\u001b[39mtoContainText(rolloverExpiryMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 734 |\u001b[39m   }\n \u001b[90m 735 |\u001b[39m\n \u001b[90m 736 |\u001b[39m   \u001b[36masync\u001b[39m verifyTypeMismatchError() {\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:21:37.976Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "25467, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts",
+                        "line": 22,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-3ba42-ubtests-go-to-rollover-pool-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-3ba42-ubtests-go-to-rollover-pool-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-3ba42-ubtests-go-to-rollover-pool-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                    "column": 62,
+                    "line": 733
+                  }
+                },
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 86060,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\nExpected substring: \u001b[32m\"09/\u001b[7m16\u001b[27m/2026\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mCURRENT SUBTEST ROLLOVER (EXPIRES \u001b[27m09/\u001b[7m05\u001b[27m/2026\u001b[7m)\u001b[27m\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-label\">CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)</div>\u001b[22m\n\u001b[2m       - unexpected value \"CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\nExpected substring: \u001b[32m\"09/\u001b[7m16\u001b[27m/2026\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mCURRENT SUBTEST ROLLOVER (EXPIRES \u001b[27m09/\u001b[7m05\u001b[27m/2026\u001b[7m)\u001b[27m\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-label\">CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)</div>\u001b[22m\n\u001b[2m       - unexpected value \"CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)\"\u001b[22m\n\n    at SubscriptionActivationPage.verifyRolloverSubscriptionDetailsPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:733:62)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts:125:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts:124:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                      "column": 62,
+                      "line": 733
+                    },
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:733\n\n\u001b[0m \u001b[90m 731 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRemainingSubtestsValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mString\u001b[39m(expectedRemainingSubtests))\u001b[33m;\u001b[39m\n \u001b[90m 732 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRolloverCountValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mString\u001b[39m(rolloverCount))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 733 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRolloverLabel)\u001b[33m.\u001b[39mtoContainText(rolloverExpiryMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 734 |\u001b[39m   }\n \u001b[90m 735 |\u001b[39m\n \u001b[90m 736 |\u001b[39m   \u001b[36masync\u001b[39m verifyTypeMismatchError() {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 62,
+                        "line": 733
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\nExpected substring: \u001b[32m\"09/\u001b[7m16\u001b[27m/2026\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mCURRENT SUBTEST ROLLOVER (EXPIRES \u001b[27m09/\u001b[7m05\u001b[27m/2026\u001b[7m)\u001b[27m\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-label\">CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)</div>\u001b[22m\n\u001b[2m       - unexpected value \"CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:733\n\n  731 |     await expect.soft(this.subscriptionDetailsRemainingSubtestsValue).toHaveText(String(expectedRemainingSubtests));\n  732 |     await expect.soft(this.subscriptionDetailsRolloverCountValue).toHaveText(String(rolloverCount));\n> 733 |     await expect.soft(this.subscriptionDetailsRolloverLabel).toContainText(rolloverExpiryMMDDYYYY);\n      |                                                              ^\n  734 |   }\n  735 |\n  736 |   async verifyTypeMismatchError() {\n    at SubscriptionActivationPage.verifyRolloverSubscriptionDetailsPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:733:62)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts:125:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts:124:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Setup - Set subscription to rollover window (+60 days) and capture state",
+                      "duration": 857
+                    },
+                    {
+                      "title": "Setup - Land on activation page",
+                      "duration": 1677
+                    },
+                    {
+                      "title": "S03 - Select \"Use my Existing Login\" and click Sign In",
+                      "duration": 2576
+                    },
+                    {
+                      "title": "S07/S08 - Sign in with existing AH credentials",
+                      "duration": 3654
+                    },
+                    {
+                      "title": "SP-015/016/017/018 - Confirm Renewal popup: subscription, org, rollover start/end dates (both read-only), rollover note visible",
+                      "duration": 50
+                    },
+                    {
+                      "title": "SP-033 - Confirm button is disabled before terms checkbox is ticked",
+                      "duration": 3
+                    },
+                    {
+                      "title": "SP-021/024 - Accept terms and confirm renewal",
+                      "duration": 3072
+                    },
+                    {
+                      "title": "SP-026 - Dismiss 2FA + accept terms, click WJ V tile, verify dashboard",
+                      "duration": 7274
+                    },
+                    {
+                      "title": "SP-019/021/024 API - Verify remaining subtests increased and rollover pool logged",
+                      "duration": 376
+                    },
+                    {
+                      "title": "SP-019/021/024 UI - Verify Subscription Details page shows correct expiration, remaining subtests, and rollover pool",
+                      "duration": 66304,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\nExpected substring: \u001b[32m\"09/\u001b[7m16\u001b[27m/2026\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mCURRENT SUBTEST ROLLOVER (EXPIRES \u001b[27m09/\u001b[7m05\u001b[27m/2026\u001b[7m)\u001b[27m\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-label\">CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)</div>\u001b[22m\n\u001b[2m       - unexpected value \"CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\nExpected substring: \u001b[32m\"09/\u001b[7m16\u001b[27m/2026\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mCURRENT SUBTEST ROLLOVER (EXPIRES \u001b[27m09/\u001b[7m05\u001b[27m/2026\u001b[7m)\u001b[27m\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][contains(normalize-space(),\\'CURRENT SUBTEST ROLLOVER\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-label\">CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)</div>\u001b[22m\n\u001b[2m       - unexpected value \"CURRENT SUBTEST ROLLOVER (EXPIRES 09/05/2026)\"\u001b[22m\n\n    at SubscriptionActivationPage.verifyRolloverSubscriptionDetailsPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:733:62)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts:125:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts:124:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 62,
+                          "line": 733
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:733\n\n\u001b[0m \u001b[90m 731 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRemainingSubtestsValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mString\u001b[39m(expectedRemainingSubtests))\u001b[33m;\u001b[39m\n \u001b[90m 732 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRolloverCountValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mString\u001b[39m(rolloverCount))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 733 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRolloverLabel)\u001b[33m.\u001b[39mtoContainText(rolloverExpiryMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 734 |\u001b[39m   }\n \u001b[90m 735 |\u001b[39m\n \u001b[90m 736 |\u001b[39m   \u001b[36masync\u001b[39m verifyTypeMismatchError() {\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:23:24.756Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "25467, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts",
+                        "line": 22,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-3ba42-ubtests-go-to-rollover-pool-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-3ba42-ubtests-go-to-rollover-pool-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                    "column": 62,
+                    "line": 733
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb4246493e552017066-e4a11cf2c5775c9c9e63",
+          "file": "functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts",
+          "line": 22,
+          "column": 5
+        },
+        {
+          "title": "AC3 Abandon - Subtest user (rollover window) abandons Confirm Renewal popup - code remains available",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "SubsequentPurchase",
+            "ExistingUser",
+            "Subtest",
+            "Rollover",
+            "AC3",
+            "Abandon",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "25467, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts",
+                    "line": 135,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-18T06:23:23.635Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-07-18T06:24:51.435Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "5bb4246493e552017066-5bef5b076b8d77699af9",
+          "file": "functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC3.spec.ts",
+          "line": 135,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-07-18T06:20:06.027Z",
+    "duration": 285426.685,
+    "expected": 2,
+    "skipped": 2,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

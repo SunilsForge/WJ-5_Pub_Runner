@@ -1,0 +1,1155 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "commitHash": "6c4f9b81834e4cb56b483468c9dc0105c158f626",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29633769586"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 18,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Unlimited High - new user activation flow",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "HappyPath",
+            "NewUser",
+            "Unlimited",
+            "High",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                    "line": 13,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 208842,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0\u001b[7m7/18\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m4/02\u001b[27m/2026\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0\u001b[7m7/18\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m4/02\u001b[27m/2026\"\u001b[39m\n    at SubscriptionActivationPage.verifyConfirmActivationStartAndEndDates (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:451:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:74:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:68:7",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                      "column": 33,
+                      "line": 451
+                    },
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:451\n\n\u001b[0m \u001b[90m 449 |\u001b[39m     \u001b[36mconst\u001b[39m expectedEnd \u001b[33m=\u001b[39m formatMMDDYYYY(endDateFromActualStart)\u001b[33m;\u001b[39m\n \u001b[90m 450 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(startDateValue)\u001b[33m.\u001b[39mtoBe(expectedStart)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(endDateValue)\u001b[33m.\u001b[39mtoBe(expectedEnd)\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmEndDateInput)\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 33,
+                        "line": 451
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0\u001b[7m7/18\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m4/02\u001b[27m/2026\"\u001b[39m\n\n   at ../page/subscriptionActivationPage.ts:451\n\n  449 |     const expectedEnd = formatMMDDYYYY(endDateFromActualStart);\n  450 |\n> 451 |     expect.soft(startDateValue).toBe(expectedStart);\n      |                                 ^\n  452 |     expect.soft(endDateValue).toBe(expectedEnd);\n  453 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();\n  454 |\n    at SubscriptionActivationPage.verifyConfirmActivationStartAndEndDates (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:451:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:74:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:68:7"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 47,
+                        "line": 582
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Joannie SubAut18Jul26062031\"\u001b[39m\nReceived: \u001b[31m\"—\"\u001b[39m\n\n   at ../page/subscriptionActivationPage.ts:582\n\n  580 |     expect.soft(extras.accountHolderName).toBe(expectedFullName);\n  581 |     expect.soft(extras.accountHolderEmail).toBe(formData.email);\n> 582 |     expect.soft(extras.activationContactName).toBe(expectedFullName);\n      |                                               ^\n  583 |     expect.soft(extras.activationContactEmail).toBe(formData.email);\n  584 |     expect.soft(extras.currentStartDate).toContain(mmddyyyyToIsoPrefix(expectedStart));\n  585 |     expect.soft(extras.currentEndDate).toContain(mmddyyyyToIsoPrefix(expectedEnd));\n    at SubscriptionActivationPage.verifyEntitlementApiAfterActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:582:47)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:91:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:90:7"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 48,
+                        "line": 583
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"sunil.adeptpros+SubAut18Jul26062031@gmail.com\"\u001b[39m\nReceived: \u001b[31m\"—\"\u001b[39m\n\n   at ../page/subscriptionActivationPage.ts:583\n\n  581 |     expect.soft(extras.accountHolderEmail).toBe(formData.email);\n  582 |     expect.soft(extras.activationContactName).toBe(expectedFullName);\n> 583 |     expect.soft(extras.activationContactEmail).toBe(formData.email);\n      |                                                ^\n  584 |     expect.soft(extras.currentStartDate).toContain(mmddyyyyToIsoPrefix(expectedStart));\n  585 |     expect.soft(extras.currentEndDate).toContain(mmddyyyyToIsoPrefix(expectedEnd));\n  586 |\n    at SubscriptionActivationPage.verifyEntitlementApiAfterActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:583:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:91:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:90:7"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 75,
+                        "line": 647
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[contains(@class,\\'sd-row-cell\\')][.//div[normalize-space()=\\'ACTIVATION CONTACT\\']]//div[contains(@class,\\'sd-value\\')][not(contains(@class,\\'sd-value2\\'))]')\nExpected substring: \u001b[32m\"Joannie SubAut18Jul26062031\"\u001b[39m\nReceived string:    \u001b[31m\"—\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[contains(@class,\\'sd-row-cell\\')][.//div[normalize-space()=\\'ACTIVATION CONTACT\\']]//div[contains(@class,\\'sd-value\\')][not(contains(@class,\\'sd-value2\\'))]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-value\">—</div>\u001b[22m\n\u001b[2m       - unexpected value \"—\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:647\n\n  645 |     await expect.soft(this.subscriptionDetailsAccountHolderNameValue).toContainText(expectedFullName);\n  646 |     await expect.soft(this.subscriptionDetailsAccountHolderEmailValue).toContainText(formData.email);\n> 647 |     await expect.soft(this.subscriptionDetailsActivationContactNameValue).toContainText(expectedFullName);\n      |                                                                           ^\n  648 |     await expect.soft(this.subscriptionDetailsActivationContactEmailValue).toContainText(formData.email);\n  649 |\n  650 |     await expect.soft(this.subscriptionDetailsSubscriptionUsageHeading).toContainText(scenario.subscriptionType);\n    at SubscriptionActivationPage.verifySubscriptionDetailsPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:647:75)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:101:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:99:7"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 76,
+                        "line": 648
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[contains(@class,\\'sd-row-cell\\')][.//div[normalize-space()=\\'ACTIVATION CONTACT\\']]//div[contains(@class,\\'sd-value2\\')]')\nExpected substring: \u001b[32m\"sunil.adeptpros+SubAut18Jul26062031@gmail.com\"\u001b[39m\nReceived string:    \u001b[31m\"—\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[contains(@class,\\'sd-row-cell\\')][.//div[normalize-space()=\\'ACTIVATION CONTACT\\']]//div[contains(@class,\\'sd-value2\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-value sd-value2\">—</div>\u001b[22m\n\u001b[2m       - unexpected value \"—\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:648\n\n  646 |     await expect.soft(this.subscriptionDetailsAccountHolderEmailValue).toContainText(formData.email);\n  647 |     await expect.soft(this.subscriptionDetailsActivationContactNameValue).toContainText(expectedFullName);\n> 648 |     await expect.soft(this.subscriptionDetailsActivationContactEmailValue).toContainText(formData.email);\n      |                                                                            ^\n  649 |\n  650 |     await expect.soft(this.subscriptionDetailsSubscriptionUsageHeading).toContainText(scenario.subscriptionType);\n  651 |     if (scenario.subtestCount !== undefined) {\n    at SubscriptionActivationPage.verifySubscriptionDetailsPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:648:76)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:101:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:99:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Unlimited High - Land on activation page (recover if code/SO already used)",
+                      "duration": 1900
+                    },
+                    {
+                      "title": "Unlimited High - Select Create-a-Login and click Create an Account",
+                      "duration": 2487
+                    },
+                    {
+                      "title": "Unlimited High - Fill contact info and proceed",
+                      "duration": 10510
+                    },
+                    {
+                      "title": "Unlimited High - S13 - Click auto-generate username and verify it contains first name",
+                      "duration": 2498
+                    },
+                    {
+                      "title": "Unlimited High - Set username and password",
+                      "duration": 6991
+                    },
+                    {
+                      "title": "Unlimited High - Fill location and submit",
+                      "duration": 21343
+                    },
+                    {
+                      "title": "Unlimited High - Verify subscription details and confirm activation",
+                      "duration": 7109,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0\u001b[7m7/18\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m4/02\u001b[27m/2026\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0\u001b[7m7/18\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m4/02\u001b[27m/2026\"\u001b[39m\n    at SubscriptionActivationPage.verifyConfirmActivationStartAndEndDates (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:451:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:74:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:68:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 33,
+                          "line": 451
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:451\n\n\u001b[0m \u001b[90m 449 |\u001b[39m     \u001b[36mconst\u001b[39m expectedEnd \u001b[33m=\u001b[39m formatMMDDYYYY(endDateFromActualStart)\u001b[33m;\u001b[39m\n \u001b[90m 450 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(startDateValue)\u001b[33m.\u001b[39mtoBe(expectedStart)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(endDateValue)\u001b[33m.\u001b[39mtoBe(expectedEnd)\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmEndDateInput)\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "Unlimited High - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
+                      "duration": 8645
+                    },
+                    {
+                      "title": "Unlimited High - Verify GIA test set access matches qualification level",
+                      "duration": 4579
+                    },
+                    {
+                      "title": "Unlimited High - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
+                      "duration": 726,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Joannie SubAut18Jul26062031\"\u001b[39m\nReceived: \u001b[31m\"—\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Joannie SubAut18Jul26062031\"\u001b[39m\nReceived: \u001b[31m\"—\"\u001b[39m\n    at SubscriptionActivationPage.verifyEntitlementApiAfterActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:582:47)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:91:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:90:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 47,
+                          "line": 582
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:582\n\n\u001b[0m \u001b[90m 580 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(extras\u001b[33m.\u001b[39maccountHolderName)\u001b[33m.\u001b[39mtoBe(expectedFullName)\u001b[33m;\u001b[39m\n \u001b[90m 581 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(extras\u001b[33m.\u001b[39maccountHolderEmail)\u001b[33m.\u001b[39mtoBe(formData\u001b[33m.\u001b[39memail)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 582 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(extras\u001b[33m.\u001b[39mactivationContactName)\u001b[33m.\u001b[39mtoBe(expectedFullName)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 583 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(extras\u001b[33m.\u001b[39mactivationContactEmail)\u001b[33m.\u001b[39mtoBe(formData\u001b[33m.\u001b[39memail)\u001b[33m;\u001b[39m\n \u001b[90m 584 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(extras\u001b[33m.\u001b[39mcurrentStartDate)\u001b[33m.\u001b[39mtoContain(mmddyyyyToIsoPrefix(expectedStart))\u001b[33m;\u001b[39m\n \u001b[90m 585 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(extras\u001b[33m.\u001b[39mcurrentEndDate)\u001b[33m.\u001b[39mtoContain(mmddyyyyToIsoPrefix(expectedEnd))\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "Unlimited High - Open Subscription Details page and verify entered data is reflected",
+                      "duration": 128452,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[contains(@class,\\'sd-row-cell\\')][.//div[normalize-space()=\\'ACTIVATION CONTACT\\']]//div[contains(@class,\\'sd-value\\')][not(contains(@class,\\'sd-value2\\'))]')\nExpected substring: \u001b[32m\"Joannie SubAut18Jul26062031\"\u001b[39m\nReceived string:    \u001b[31m\"—\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[contains(@class,\\'sd-row-cell\\')][.//div[normalize-space()=\\'ACTIVATION CONTACT\\']]//div[contains(@class,\\'sd-value\\')][not(contains(@class,\\'sd-value2\\'))]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-value\">—</div>\u001b[22m\n\u001b[2m       - unexpected value \"—\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[contains(@class,\\'sd-row-cell\\')][.//div[normalize-space()=\\'ACTIVATION CONTACT\\']]//div[contains(@class,\\'sd-value\\')][not(contains(@class,\\'sd-value2\\'))]')\nExpected substring: \u001b[32m\"Joannie SubAut18Jul26062031\"\u001b[39m\nReceived string:    \u001b[31m\"—\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[contains(@class,\\'sd-row-cell\\')][.//div[normalize-space()=\\'ACTIVATION CONTACT\\']]//div[contains(@class,\\'sd-value\\')][not(contains(@class,\\'sd-value2\\'))]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-value\">—</div>\u001b[22m\n\u001b[2m       - unexpected value \"—\"\u001b[22m\n\n    at SubscriptionActivationPage.verifySubscriptionDetailsPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:647:75)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:101:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:99:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 75,
+                          "line": 647
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:647\n\n\u001b[0m \u001b[90m 645 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsAccountHolderNameValue)\u001b[33m.\u001b[39mtoContainText(expectedFullName)\u001b[33m;\u001b[39m\n \u001b[90m 646 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsAccountHolderEmailValue)\u001b[33m.\u001b[39mtoContainText(formData\u001b[33m.\u001b[39memail)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 647 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsActivationContactNameValue)\u001b[33m.\u001b[39mtoContainText(expectedFullName)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 648 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsActivationContactEmailValue)\u001b[33m.\u001b[39mtoContainText(formData\u001b[33m.\u001b[39memail)\u001b[33m;\u001b[39m\n \u001b[90m 649 |\u001b[39m\n \u001b[90m 650 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsSubscriptionUsageHeading)\u001b[33m.\u001b[39mtoContainText(scenario\u001b[33m.\u001b[39msubscriptionType)\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "Unlimited High - S45 sign out, re-login as AH, verify WJ V tile and name retained",
+                      "duration": 4918
+                    },
+                    {
+                      "title": "Unlimited High - S05 verify re-navigating to a just-used activation code shows \"already activated\" error",
+                      "duration": 1634
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:20:30.813Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-c9458----new-user-activation-flow-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-c9458----new-user-activation-flow-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-c9458----new-user-activation-flow-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                    "column": 33,
+                    "line": 451
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 69009,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=Jcjvyxk5mOi08hrQq0V6Kg%3D%3D SO=SO193677\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Unlimited High - Land on activation page (recover if code/SO already used)",
+                      "duration": 3979
+                    },
+                    {
+                      "title": "Unlimited High - Select Create-a-Login and click Create an Account",
+                      "duration": 2509
+                    },
+                    {
+                      "title": "Unlimited High - Fill contact info and proceed",
+                      "duration": 10309
+                    },
+                    {
+                      "title": "Unlimited High - S13 - Click auto-generate username and verify it contains first name",
+                      "duration": 2470
+                    },
+                    {
+                      "title": "Unlimited High - Set username and password",
+                      "duration": 6944
+                    },
+                    {
+                      "title": "Unlimited High - Fill location and submit",
+                      "duration": 11781
+                    },
+                    {
+                      "title": "Unlimited High - Verify subscription details and confirm activation",
+                      "duration": 2907
+                    },
+                    {
+                      "title": "Unlimited High - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
+                      "duration": 8565
+                    },
+                    {
+                      "title": "Unlimited High - Verify GIA test set access matches qualification level",
+                      "duration": 4249
+                    },
+                    {
+                      "title": "Unlimited High - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
+                      "duration": 317
+                    },
+                    {
+                      "title": "Unlimited High - Open Subscription Details page and verify entered data is reflected",
+                      "duration": 8350
+                    },
+                    {
+                      "title": "Unlimited High - S45 sign out, re-login as AH, verify WJ V tile and name retained",
+                      "duration": 4983
+                    },
+                    {
+                      "title": "Unlimited High - S05 verify re-navigating to a just-used activation code shows \"already activated\" error",
+                      "duration": 1441
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:24:09.938Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "flaky"
+            }
+          ],
+          "id": "f20505f53e7fcdc1e661-f1b47a623df3ae1884f6",
+          "file": "functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Unlimited Medium - new user activation flow",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "HappyPath",
+            "NewUser",
+            "Unlimited",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                    "line": 13,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 69958,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=8RWsRQaYjZb5VVQxwLBbHw%3d%3d SO=SO261698\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Unlimited Medium - Land on activation page (recover if code/SO already used)",
+                      "duration": 3920
+                    },
+                    {
+                      "title": "Unlimited Medium - Select Create-a-Login and click Create an Account",
+                      "duration": 2497
+                    },
+                    {
+                      "title": "Unlimited Medium - Fill contact info and proceed",
+                      "duration": 11033
+                    },
+                    {
+                      "title": "Unlimited Medium - S13 - Click auto-generate username and verify it contains first name",
+                      "duration": 2488
+                    },
+                    {
+                      "title": "Unlimited Medium - Set username and password",
+                      "duration": 6967
+                    },
+                    {
+                      "title": "Unlimited Medium - Fill location and submit",
+                      "duration": 12104
+                    },
+                    {
+                      "title": "Unlimited Medium - Verify subscription details and confirm activation",
+                      "duration": 2513
+                    },
+                    {
+                      "title": "Unlimited Medium - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
+                      "duration": 8702
+                    },
+                    {
+                      "title": "Unlimited Medium - Verify GIA test set access matches qualification level",
+                      "duration": 4293
+                    },
+                    {
+                      "title": "Unlimited Medium - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
+                      "duration": 288
+                    },
+                    {
+                      "title": "Unlimited Medium - Open Subscription Details page and verify entered data is reflected",
+                      "duration": 8703
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:25:19.479Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f20505f53e7fcdc1e661-f9c8fcb24bce53088088",
+          "file": "functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Subtest High - new user activation flow",
+          "ok": false,
+          "tags": [
+            "SubscriptionActivation",
+            "HappyPath",
+            "NewUser",
+            "Subtest",
+            "High",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                    "line": 13,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2389,
+                  "error": {
+                    "message": "Error: Invalid activation code: 'vFCRgH%2Fo%2FxaLy2klHyK5Bg%3D%3D'. Not recoverable — check the code in the scenarios file.",
+                    "stack": "Error: Invalid activation code: 'vFCRgH%2Fo%2FxaLy2klHyK5Bg%3D%3D'. Not recoverable — check the code in the scenarios file.\n    at SubscriptionActivationPage.landOnActivationPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:143:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:42:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:41:7",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                      "column": 15,
+                      "line": 143
+                    },
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:143\n\n\u001b[0m \u001b[90m 141 |\u001b[39m\n \u001b[90m 142 |\u001b[39m       \u001b[36mif\u001b[39m (isInvalidCode) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 143 |\u001b[39m         \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 144 |\u001b[39m           \u001b[32m`Invalid activation code: '${scenario.activationCode}'. Not recoverable — check the code in the scenarios file.`\u001b[39m\n \u001b[90m 145 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 146 |\u001b[39m       }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 15,
+                        "line": 143
+                      },
+                      "message": "Error: Invalid activation code: 'vFCRgH%2Fo%2FxaLy2klHyK5Bg%3D%3D'. Not recoverable — check the code in the scenarios file.\n\n   at ../page/subscriptionActivationPage.ts:143\n\n  141 |\n  142 |       if (isInvalidCode) {\n> 143 |         throw new Error(\n      |               ^\n  144 |           `Invalid activation code: '${scenario.activationCode}'. Not recoverable — check the code in the scenarios file.`\n  145 |         );\n  146 |       }\n    at SubscriptionActivationPage.landOnActivationPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:143:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:42:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:41:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Subtest High - Land on activation page (recover if code/SO already used)",
+                      "duration": 2042,
+                      "error": {
+                        "message": "Error: Invalid activation code: 'vFCRgH%2Fo%2FxaLy2klHyK5Bg%3D%3D'. Not recoverable — check the code in the scenarios file.",
+                        "stack": "Error: Invalid activation code: 'vFCRgH%2Fo%2FxaLy2klHyK5Bg%3D%3D'. Not recoverable — check the code in the scenarios file.\n    at SubscriptionActivationPage.landOnActivationPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:143:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:42:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:41:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 15,
+                          "line": 143
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:143\n\n\u001b[0m \u001b[90m 141 |\u001b[39m\n \u001b[90m 142 |\u001b[39m       \u001b[36mif\u001b[39m (isInvalidCode) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 143 |\u001b[39m         \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 144 |\u001b[39m           \u001b[32m`Invalid activation code: '${scenario.activationCode}'. Not recoverable — check the code in the scenarios file.`\u001b[39m\n \u001b[90m 145 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 146 |\u001b[39m       }\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:26:29.503Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-9a5a5----new-user-activation-flow-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-9a5a5----new-user-activation-flow-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-9a5a5----new-user-activation-flow-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                    "column": 15,
+                    "line": 143
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2206,
+                  "error": {
+                    "message": "Error: Invalid activation code: 'vFCRgH%2Fo%2FxaLy2klHyK5Bg%3D%3D'. Not recoverable — check the code in the scenarios file.",
+                    "stack": "Error: Invalid activation code: 'vFCRgH%2Fo%2FxaLy2klHyK5Bg%3D%3D'. Not recoverable — check the code in the scenarios file.\n    at SubscriptionActivationPage.landOnActivationPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:143:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:42:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:41:7",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                      "column": 15,
+                      "line": 143
+                    },
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:143\n\n\u001b[0m \u001b[90m 141 |\u001b[39m\n \u001b[90m 142 |\u001b[39m       \u001b[36mif\u001b[39m (isInvalidCode) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 143 |\u001b[39m         \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 144 |\u001b[39m           \u001b[32m`Invalid activation code: '${scenario.activationCode}'. Not recoverable — check the code in the scenarios file.`\u001b[39m\n \u001b[90m 145 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 146 |\u001b[39m       }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 15,
+                        "line": 143
+                      },
+                      "message": "Error: Invalid activation code: 'vFCRgH%2Fo%2FxaLy2klHyK5Bg%3D%3D'. Not recoverable — check the code in the scenarios file.\n\n   at ../page/subscriptionActivationPage.ts:143\n\n  141 |\n  142 |       if (isInvalidCode) {\n> 143 |         throw new Error(\n      |               ^\n  144 |           `Invalid activation code: '${scenario.activationCode}'. Not recoverable — check the code in the scenarios file.`\n  145 |         );\n  146 |       }\n    at SubscriptionActivationPage.landOnActivationPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:143:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:42:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:41:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Subtest High - Land on activation page (recover if code/SO already used)",
+                      "duration": 1978,
+                      "error": {
+                        "message": "Error: Invalid activation code: 'vFCRgH%2Fo%2FxaLy2klHyK5Bg%3D%3D'. Not recoverable — check the code in the scenarios file.",
+                        "stack": "Error: Invalid activation code: 'vFCRgH%2Fo%2FxaLy2klHyK5Bg%3D%3D'. Not recoverable — check the code in the scenarios file.\n    at SubscriptionActivationPage.landOnActivationPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:143:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:42:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:41:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 15,
+                          "line": 143
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:143\n\n\u001b[0m \u001b[90m 141 |\u001b[39m\n \u001b[90m 142 |\u001b[39m       \u001b[36mif\u001b[39m (isInvalidCode) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 143 |\u001b[39m         \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 144 |\u001b[39m           \u001b[32m`Invalid activation code: '${scenario.activationCode}'. Not recoverable — check the code in the scenarios file.`\u001b[39m\n \u001b[90m 145 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 146 |\u001b[39m       }\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:26:33.439Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-9a5a5----new-user-activation-flow-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-9a5a5----new-user-activation-flow-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                    "column": 15,
+                    "line": 143
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f20505f53e7fcdc1e661-1d97b15dbd6ba6d84f32",
+          "file": "functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Subtest Medium - new user activation flow",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "HappyPath",
+            "NewUser",
+            "Subtest",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                    "line": 13,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 70169,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=CsVh%2FI7myXdeTT18Nxmnqg%3D%3D SO=SO256962\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Subtest Medium - Land on activation page (recover if code/SO already used)",
+                      "duration": 4619
+                    },
+                    {
+                      "title": "Subtest Medium - Select Create-a-Login and click Create an Account",
+                      "duration": 2506
+                    },
+                    {
+                      "title": "Subtest Medium - Fill contact info and proceed",
+                      "duration": 10686
+                    },
+                    {
+                      "title": "Subtest Medium - S13 - Click auto-generate username and verify it contains first name",
+                      "duration": 2525
+                    },
+                    {
+                      "title": "Subtest Medium - Set username and password",
+                      "duration": 7012
+                    },
+                    {
+                      "title": "Subtest Medium - Fill location and submit",
+                      "duration": 11938
+                    },
+                    {
+                      "title": "Subtest Medium - Verify subscription details and confirm activation",
+                      "duration": 2951
+                    },
+                    {
+                      "title": "Subtest Medium - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
+                      "duration": 8576
+                    },
+                    {
+                      "title": "Subtest Medium - Verify GIA test set access matches qualification level",
+                      "duration": 4377
+                    },
+                    {
+                      "title": "Subtest Medium - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
+                      "duration": 350
+                    },
+                    {
+                      "title": "Subtest Medium - Open Subscription Details page and verify entered data is reflected",
+                      "duration": 8581
+                    },
+                    {
+                      "title": "Subtest Medium - S27 - Re-navigating to just-activated Subtest code shows \"Subscription Error\" popup",
+                      "duration": 1738
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:26:37.439Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f20505f53e7fcdc1e661-13abec060b2dbeb7dd20",
+          "file": "functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+          "line": 13,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Date Edge Cases on Confirm Activation modal",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "DateEdgeCases",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts",
+                    "line": 23,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 76221,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Fetch PurchaseDate from GetSubscriptionOrder API for SO193677",
+                      "duration": 405
+                    },
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page (guarantees mutable START DATE)",
+                      "duration": 3147
+                    },
+                    {
+                      "title": "Setup - Create login → contact → credentials → location → reach Confirm modal",
+                      "duration": 32301
+                    },
+                    {
+                      "title": "S43 - Past date (today-2) rejected with \"Date entered cannot be before current date.\"",
+                      "duration": 6668
+                    },
+                    {
+                      "title": "S40 - Error clears after entering a valid (today) date",
+                      "duration": 6652
+                    },
+                    {
+                      "title": "S37 - Start date > 180 days from PurchaseDate (purchase+181) rejected with \"Date cannot exceed 180 days...\"",
+                      "duration": 6628
+                    },
+                    {
+                      "title": "S36 - Start date purchase+179 days is accepted (no error) + end = start + 1 yr - 1 day",
+                      "duration": 6645
+                    },
+                    {
+                      "title": "S39 - End date reflects 1-year-out when start date changes (today+4)",
+                      "duration": 6639
+                    },
+                    {
+                      "title": "S38 - Clearing start date clears the end date input value",
+                      "duration": 4899
+                    },
+                    {
+                      "title": "S42 - \"Abandon Activation and Log-out\" redirects to login page",
+                      "duration": 1255
+                    }
+                  ],
+                  "startTime": "2026-07-18T06:27:49.490Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts",
+                        "line": 23,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d1bc6cbc35874be7103e-f76eb1caf9f5f100ce35",
+          "file": "functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts",
+          "line": 23,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-07-18T06:20:15.103Z",
+    "duration": 531249.004,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 1
+  }
+}

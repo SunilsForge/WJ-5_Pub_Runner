@@ -1,0 +1,298 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: derived_scores(compounds & clusters)/GR_cluster_pub.spec.ts >>  GR cluster Derived Export Automation  >> For SEMRET - K12 - All correct scenario,PHNRET - K12 - All correct scenario Complete The GR cluster & generate report
+- Location: src/tests/derived_scores(compounds & clusters)/GR_cluster_pub.spec.ts:26:9
+
+# Error details
+
+```
+TimeoutError: locator.textContent: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('.introduction b.semibold, b').first()
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main "Clinical Login" [ref=e4]:
+    - generic [ref=e5]:
+      - img "Riverside Insights Logo" [ref=e6]
+      - heading "Riverside Updates" [level=1] [ref=e7]
+    - generic [ref=e8]:
+      - img "Riverside Score Logo" [ref=e9]
+      - form "Sign in details" [ref=e10]:
+        - generic [ref=e11]:
+          - text: USERNAME
+          - textbox "USERNAME" [active] [ref=e13]:
+            - /placeholder: Username
+          - generic [ref=e15]:
+            - text: PASSWORD
+            - textbox "PASSWORD" [ref=e17]:
+              - /placeholder: Password
+          - button "Sign In" [ref=e18] [cursor=pointer]
+          - generic [ref=e19]:
+            - button "Remember Me" [ref=e20] [cursor=pointer]: Remember Me
+            - link "Forgot my password" [ref=e23] [cursor=pointer]:
+              - /url: /forgot
+          - alert [ref=e24]: You have been logged out due to inactivity.
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - text: For help accessing Riverside Score™, see the
+        - link "online help" [ref=e27] [cursor=pointer]:
+          - /url: https://onlinehelp.riversideinsights.com/Help/Riverside_Score/index.htm#t=Overview.htm
+        - text: for signing in.
+      - link "Check Platform Status" [ref=e29] [cursor=pointer]:
+        - /url: https://riversideinsights.com/platform-status
+  - contentinfo [ref=e30]:
+    - generic [ref=e31]: Footer region,
+    - link "w w w dot riverside insights dot com" [ref=e32] [cursor=pointer]:
+      - /url: https://www.riversideinsights.com/
+      - img "Riverside Insights Website" [ref=e33]
+    - generic [ref=e34]:
+      - link "Riverside Insights Facebook" [ref=e35] [cursor=pointer]:
+        - /url: https://www.facebook.com/RiversideInsights/
+        - img "Riverside Insights Facebook" [ref=e36]
+      - link "Riverside Insights Twitter" [ref=e37] [cursor=pointer]:
+        - /url: https://twitter.com/1BillionLives
+        - img "Riverside Insights Twitter" [ref=e38]
+      - link "Riverside Insights LinkedIn" [ref=e39] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/riverside-insights/
+        - img "Riverside Insights LinkedIn" [ref=e40]
+      - link "Riverside Insights Instagram" [ref=e41] [cursor=pointer]:
+        - /url: https://www.instagram.com/riversideinsightsassessments/
+        - img "Riverside Insights Instagram" [ref=e42]
+    - generic [ref=e43]:
+      - img "WJ IV Mobile Data Solution" [ref=e44]
+      - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e45] [cursor=pointer]
+      - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e46] [cursor=pointer]
+    - generic [ref=e47]:
+      - img "Bdi 3 Mobile Data Solution" [ref=e48]
+      - generic [ref=e49]:
+        - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e50] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from Google Play" [ref=e51] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from App Store" [ref=e52] [cursor=pointer]
+    - generic [ref=e53]:
+      - button "Leave Feedback" [ref=e54] [cursor=pointer]
+      - generic [ref=e55]: "|"
+      - link "Terms of Use" [ref=e56] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - generic [ref=e57]: "|"
+      - link "Privacy Policy" [ref=e58] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+    - generic [ref=e59]: Footer region end
+```
+
+# Test source
+
+```ts
+  903  |       .getByText("Yes")
+  904  |       .click();
+  905  |     await this.page.waitForLoadState();
+  906  |   }
+  907  | 
+  908  |   async completeTheTakenTestForDerivedScores(
+  909  |     typeOfTest: string,
+  910  |     stemForm: string,
+  911  |     BbyC: number,
+  912  |     flag: string,
+  913  |   ): Promise<Map<string, string>> {
+  914  |     let correctCount: number = 1;
+  915  |     let inCorrectCount: number = 1;
+  916  |     let timerTest = false;
+  917  |     let patternTestCorrectResponses;
+  918  |     let tapFluency = false;
+  919  | 
+  920  |     if (stemForm.includes("MATRCZ.W5PA")) {
+  921  |       this.scoreMap.clear();
+  922  |       this.scoreMap =
+  923  |         await this.utils.getRowDataOfSpecifiedColumnFromSchemaFiles(
+  924  |           "MATRCZ.W5PA_TestSchema.xlsx",
+  925  |           "/Heading/",
+  926  |         );
+  927  |     } else if (stemForm.includes("SEGMNT.W5PA")) {
+  928  |       this.scoreMap.clear();
+  929  |       this.scoreMap =
+  930  |         await this.utils.getRowDataOfSpecifiedColumnFromSchemaFiles(
+  931  |           "SEGMNT.W5PA_TestSchema.xlsx",
+  932  |           "Heading",
+  933  |         );
+  934  |     } else if (/^(NUMPAT|LETPAT)\.W5PA$/.test(stemForm)) {
+  935  |       const matchedPattern = stemForm;
+  936  |       const patternConfig: Record<string, { schemaFile: string }> = {
+  937  |         "NUMPAT.W5PA": { schemaFile: "NUMPAT.W5PA_TestSchema.xlsx" },
+  938  |         "LETPAT.W5PA": { schemaFile: "LETPAT.W5PA_TestSchema.xlsx" },
+  939  |       };
+  940  | 
+  941  |       if (!matchedPattern || !patternConfig[matchedPattern]) {
+  942  |         throw new Error(`No configuration found for the stemForm: ${stemForm}`);
+  943  |       }
+  944  | 
+  945  |       const { schemaFile } = patternConfig[matchedPattern];
+  946  | 
+  947  |       this.scoreMap.clear();
+  948  | 
+  949  |       this.scoreMap =
+  950  |         await this.utils.getRowDataOfSpecifiedColumnFromSchemaFiles(
+  951  |           schemaFile,
+  952  |           "Heading",
+  953  |         );
+  954  | 
+  955  |       patternTestCorrectResponses =
+  956  |         await this.utils.readCorrectValuesFromPatternTest(
+  957  |           matchedPattern,
+  958  |           "Heading",
+  959  |           "TabStim Resps",
+  960  |         );
+  961  |     } else if (stemForm.includes("MAGCMP.W5PA")) {
+  962  |       this.scoreMap.clear();
+  963  |       this.scoreMap =
+  964  |         await this.utils.getRowDataOfSpecifiedColumnFromSchemaFiles(
+  965  |           "MAGCMP.W5PA_TestSchema.xlsx",
+  966  |           "Heading",
+  967  |         );
+  968  |       patternTestCorrectResponses =
+  969  |         await this.utils.readCorrectValuesFromPatternTest(
+  970  |           "MAGCMP.W5PA",
+  971  |           "Heading",
+  972  |           "CorrectResponse",
+  973  |         );
+  974  |     } else if (stemForm.includes("MTHFLU.W5PA")) {
+  975  |       // compared to other fluency tests, MTHFLU.W5PA is total diff, it has to be handled diff
+  976  | 
+  977  |       this.scoreMap.clear();
+  978  | 
+  979  |       this.scoreMap.set("Practice Exercise", "");
+  980  |       this.scoreMap.set("Page 4", "");
+  981  |       this.scoreMap.set("Page 5", "");
+  982  |     } else {
+  983  |       const lastItemNumber = await this.page
+  984  |         .locator(".items-container div span.item-text")
+  985  |         .last()
+  986  |         .textContent();
+  987  |       const itemNumber: number = parseInt(lastItemNumber.split(" ")[1], 10);
+  988  |       console.log(`the last item number is = ${itemNumber}`);
+  989  |       this.scoreMap.clear();
+  990  |       this.scoreMap.set(` `, "^");
+  991  |       for (let index = 1; index <= itemNumber; index++) {
+  992  |         if (stemForm.includes("STYREC.W5PA")) {
+  993  |           this.scoreMap.set(`Story ${index}`, "x");
+  994  |         } else {
+  995  |           this.scoreMap.set(`Item ${index}`, "x");
+  996  |         }
+  997  |       }
+  998  |     }
+  999  | 
+  1000 |     console.log(`Type Of test ${typeOfTest} \n`);
+  1001 |     while (await this.plainNextButtonOrEndButton.first().isVisible()) {
+  1002 |       await this.page.waitForTimeout(2000);
+> 1003 |       const itemDetails: string = (await this.itemDetails.textContent())!;
+       |                                                           ^ TimeoutError: locator.textContent: Timeout 60000ms exceeded.
+  1004 |       console.log(itemDetails);
+  1005 |       const correctlocator: Locator = this.corectOptionButton.first();
+  1006 |       const incorrectlocator: Locator = this.incorrectOptionButton.first();
+  1007 |       const correctlocatorsAll: Promise<Locator[]> =
+  1008 |         this.corectOptionButton.all();
+  1009 |       const incorrectlocatorAll: Promise<Locator[]> =
+  1010 |         this.incorrectOptionButton.all();
+  1011 | 
+  1012 |       const startTimerVisable: boolean = await this.startTimer.isVisible();
+  1013 | 
+  1014 |       if (itemDetails.startsWith("Introduction")) {
+  1015 |         if (await this.videoPlayButton.isVisible()) {
+  1016 |           await this.videoPlayButton.click();
+  1017 |           await expect(this.replayButton).toBeVisible({ timeout: 70000 });
+  1018 |         }
+  1019 |       } else if (
+  1020 |         typeOfTest.match(/All correct scenario/i) &&
+  1021 |         stemForm.match("MTHFLU.W5PA")
+  1022 |       ) {
+  1023 |         this.scoreMap.set("Practice Exercise", "5");
+  1024 |         this.scoreMap.set("Page 4", "80");
+  1025 |         this.scoreMap.set("Page 5", "80");
+  1026 | 
+  1027 |         await this.answerMTHFLUTest(itemDetails, typeOfTest);
+  1028 |       } else if (
+  1029 |         typeOfTest.match(/All incorrect scenario/i) &&
+  1030 |         stemForm.match("MTHFLU.W5PA")
+  1031 |       ) {
+  1032 |         this.scoreMap.set("Practice Exercise", "0");
+  1033 | 
+  1034 |         await this.answerMTHFLUTest(itemDetails, typeOfTest);
+  1035 |       } else if (
+  1036 |         typeOfTest.match(/All correct scenario/i) &&
+  1037 |         /^(Story)/.test(itemDetails)
+  1038 |       ) {
+  1039 |         await this.clickAllCorrectOption(correctlocatorsAll, itemDetails);
+  1040 |       } else if (
+  1041 |         typeOfTest.match(/All correct scenario/i) &&
+  1042 |         startTimerVisable
+  1043 |       ) {
+  1044 |         await this.clickPlusCorrectOption(itemDetails);
+  1045 |         timerTest = true;
+  1046 |       } else if (
+  1047 |         typeOfTest.match(/All correct scenario/i) &&
+  1048 |         /^(Practice Exercise|Test Items)/.test(itemDetails) &&
+  1049 |         stemForm.includes("MAGCMP.W5PA")
+  1050 |       ) {
+  1051 |         await this.answerCorrectForMAGCMPTest(itemDetails, patternTestCorrectResponses);
+  1052 |         if (itemDetails.startsWith("Test Items")) {
+  1053 |           // timerTest = false; // since we are clicking the 
+  1054 |         } else {
+  1055 |           tapFluency = true;
+  1056 |         }
+  1057 |       } else if (
+  1058 |         typeOfTest.match(/All correct scenario/i) &&
+  1059 |         /^(Practice Exercise|Test Items)/.test(itemDetails)
+  1060 |       ) {
+  1061 |         await this.answerCorrectForTimerTest(
+  1062 |           stemForm,
+  1063 |           itemDetails,
+  1064 |           patternTestCorrectResponses,
+  1065 |         );
+  1066 |         tapFluency = true;
+  1067 |       } else if (
+  1068 |         typeOfTest.match(/All correct scenario/i) &&
+  1069 |         stemForm.includes("MAGCMP.W5PA")
+  1070 |       ) {
+  1071 |         // Sample A/B trial items: click the left option (index 0) — any tap is acceptable for samples
+  1072 |         const magcmpRows = await this.page
+  1073 |           .locator("div[class='options MAGCMP']")
+  1074 |           .all();
+  1075 |         if (magcmpRows.length > 0) {
+  1076 |           await magcmpRows[0]
+  1077 |             .locator("button[class^='plain-button']")
+  1078 |             .nth(0)
+  1079 |             .click();
+  1080 |         }
+  1081 |       } else if (typeOfTest.match(/All correct scenario/i)) {
+  1082 |         await this.clickCorrectOption(correctlocator, itemDetails);
+  1083 |       } else if (typeOfTest.match(/Quick Basal Ceiling/i)) {
+  1084 |         if (BbyC && itemDetails.startsWith("Item ")) {
+  1085 |           if (correctCount <= BbyC) {
+  1086 |             await this.clickCorrectOption(correctlocator, itemDetails);
+  1087 |             correctCount++;
+  1088 |           } else if (inCorrectCount <= BbyC) {
+  1089 |             await this.clickInCorrectOption(incorrectlocator, itemDetails);
+  1090 |             inCorrectCount++;
+  1091 |           }
+  1092 |         } else {
+  1093 |           await this.clickCorrectOption(correctlocator, itemDetails);
+  1094 |         }
+  1095 |       } else if (typeOfTest.match(/Attain Basel but not ceiling/i)) {
+  1096 |         if (BbyC && itemDetails.startsWith("Item ")) {
+  1097 |           if (correctCount <= BbyC) {
+  1098 |             await this.clickCorrectOption(correctlocator, itemDetails);
+  1099 |             correctCount++;
+  1100 |           } else if (inCorrectCount <= BbyC) {
+  1101 |             await this.clickInCorrectOption(incorrectlocator, itemDetails);
+  1102 |             inCorrectCount++;
+  1103 |           }
+```

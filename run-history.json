@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "275",
+    "timestamp": "20260718_000000",
+    "runReason": "rinnin AE1 regression again in stage after the CALP level fixes",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@TestDe|@DerivedScores|@ReviewMode|@DashboardTestAssignments|@TestSetVerification|@SubscriptionActivation",
+    "totalTests": 126,
+    "totalPassed": 107,
+    "totalFailed": 12,
+    "totalSkipped": 3,
+    "totalFlaky": 4,
+    "durationMs": 49667843
+  },
+  {
     "runNumber": "273",
     "timestamp": "20260717_000000",
     "runReason": "Running AE03 in STAGE as part of 30 prod release",
