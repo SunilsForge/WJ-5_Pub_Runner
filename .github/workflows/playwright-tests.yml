@@ -36,7 +36,7 @@ on:
       shard_count:
         description: "Number of shards"
         required: true
-        default: "5"
+        default: "4"
         type: choice
         options:
           - "1"
@@ -48,6 +48,7 @@ on:
           - "15"
           - "20"
           - "25"
+          - "40"
       browser:
         description: "Browser to run tests on"
         required: true
