@@ -49,6 +49,11 @@ on:
           - "20"
           - "25"
           - "40"
+      distribute_by_test:
+        description: "Balance by test COUNT (scenarios), not spec file. Affects ONLY UIAndReports & ReroutingandLeftNav; all other folders keep their current file-level flow."
+        required: false
+        default: false
+        type: boolean
       browser:
         description: "Browser to run tests on"
         required: true
@@ -163,6 +168,47 @@ jobs:
           token: ${{ secrets.PRIVATE_REPO_PAT }}
           ref: ${{ github.event.inputs.branch }}
           fetch-depth: 1
+
+      - name: "Enable per-test distribution (UIAndReports & ReroutingandLeftNav only)"
+        # OPT-IN. When distribute_by_test is checked, flip the two target folders'
+        # describes from serial (`mode: "default"`, which pins a whole spec file to
+        # one shard) to `mode: "parallel"`, so Playwright's --shard distributes their
+        # individual scenarios by COUNT across shards instead of by whole file.
+        #
+        # Scope is deliberately limited to these two folders by path — no other folder
+        # is read or modified, and we do NOT touch the global `fullyParallel` config,
+        # so test_dataExport / functional / derived_scores / etc. keep their exact
+        # current file-level flow whether this toggle is on or off.
+        #
+        # This edits ONLY the ephemeral CI checkout — nothing is committed to WJ-5_Pub.
+        # Every shard runs this identically, so Playwright's deterministic sharding
+        # stays consistent across shards.
+        if: ${{ inputs.distribute_by_test }}
+        # The Playwright container's default shell is sh (dash); pin bash so
+        # `set -o pipefail` and `mapfile` are available.
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "distribute_by_test = ON — rewriting describe mode 'default' -> 'parallel' in target folders."
+          total=0
+          for dir in "src/tests/UIAndReports" "src/tests/ReroutingandLeftNav"; do
+            if [ ! -d "$dir" ]; then
+              echo "::warning::target folder not found: $dir (skipping)"
+              continue
+            fi
+            # Only files that actually contain the serial marker
+            mapfile -t files < <(grep -rl 'mode: *"default"' "$dir" || true)
+            for f in "${files[@]}"; do
+              sed -i 's/mode: *"default"/mode: "parallel"/g' "$f"
+              total=$((total + 1))
+            done
+            echo "  $dir: updated ${#files[@]} file(s)"
+          done
+          echo "Total spec files switched to parallel: $total"
+          if [ "$total" -eq 0 ]; then
+            echo "::error::distribute_by_test was ON but no files were changed — aborting so the run isn't silently mis-distributed."
+            exit 1
+          fi
 
       - name: Collect System Information
         run: |
