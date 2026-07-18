@@ -252,6 +252,22 @@ jobs:
           CI: "true"
           PLAYWRIGHT_JSON_OUTPUT_NAME: results.json
         run: |
+          # ── Live resource monitor (diagnostic) ───────────────────────────
+          # Streams memory / shm usage to the LIVE job log every 5s. If a runner
+          # is OOM-killed ("lost communication"), NO post-run step executes, so
+          # streaming to stdout is the only way to capture the trajectory up to
+          # the crash. In a crashed shard's log, read the last "res" block:
+          #   Mem used ~= Mem total -> whole-runner OOM (footprint / bigger runner)
+          #   /dev/shm ~= full      -> shared-memory cap (shm fix incomplete)
+          ( while true; do
+              echo "-- res $(date +%H:%M:%S) --"
+              free -m | awk '/Mem|Swap/{print "  "$0}'
+              printf "  /dev/shm: "; df -m /dev/shm | awk 'NR==2{print $3" / "$2" MB"}'
+              sleep 5
+            done ) &
+          MON=$!
+          trap 'kill "$MON" 2>/dev/null || true' EXIT
+
           echo "Running shard ${{ matrix.shard }} of ${{ github.event.inputs.shard_count }}"
           npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
             --grep '${{ github.event.inputs.test_pattern }}' \
