@@ -55,6 +55,11 @@ on:
         required: false
         default: false
         type: boolean
+      rerun_failed:
+        description: "After this run finishes (deploy + Slack), auto-trigger a second pipeline that re-runs ONLY the failed tests (own report + Slack). Inherits branch/env/creds/retries/trace; shards auto-sized."
+        required: false
+        default: false
+        type: boolean
       browser:
         description: "Browser to run tests on"
         required: true
@@ -119,6 +124,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  actions: write # allows the trigger-rerun job to dispatch the rerun-failures workflow
 
 # Keep the existing jobs (prepare, test, merge-reports) unchanged
 # Only modify the deploy-report job
@@ -151,6 +157,94 @@ jobs:
           name: run-metadata
           path: run-metadata/
           retention-days: 90
+
+  # Early preview of which tests land on which shard — deterministic, computed via
+  # `playwright test --list --shard=i/N` (no browser launch, no test execution).
+  # Runs in parallel with the heavy `test` job, so the HTML map is available within
+  # a couple of minutes of kickoff, long before the pipeline finishes. Mirrors the
+  # test job's checkout + distribution codemod so the map matches the real run.
+  distribution-map:
+    name: Shard Distribution Map
+    needs: prepare
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.59.1-noble
+    steps:
+      - name: Checkout private repository
+        uses: actions/checkout@v5
+        with:
+          repository: SunilsForge/WJ-5_Pub
+          token: ${{ secrets.PRIVATE_REPO_PAT }}
+          ref: ${{ github.event.inputs.branch }}
+          fetch-depth: 1
+
+      - name: "Enable per-test distribution (mirror test job)"
+        # Same codemod as the test job so the previewed distribution matches the
+        # actual run (test-level for the two folders when the toggle is on).
+        if: ${{ inputs.distribute_by_test }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          for dir in "src/tests/UIAndReports" "src/tests/ReroutingandLeftNav"; do
+            [ -d "$dir" ] || continue
+            grep -rl 'mode: *"default"' "$dir" | xargs -r sed -i 's/mode: *"default"/mode: "parallel"/g'
+          done
+
+      - name: Set up Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v5
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Compute per-shard test lists
+        shell: bash
+        env:
+          SHARD_COUNT: ${{ github.event.inputs.shard_count }}
+        run: |
+          set -uo pipefail
+          N="${SHARD_COUNT:-1}"
+          mkdir -p dist-map
+          list_shard() {
+            local i="$1"
+            PLAYWRIGHT_JSON_OUTPUT_NAME="dist-map/shard-${i}.json" \
+              npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
+                --list --reporter=json \
+                --grep '${{ github.event.inputs.test_pattern }}' \
+                --project=${{ github.event.inputs.browser }} \
+                --shard="${i}/${N}" >/dev/null 2>&1 \
+              || echo "::warning::--list failed for shard ${i}"
+          }
+          # Bounded parallelism (~4 at a time) to keep N-shard listing fast.
+          for i in $(seq 1 "$N"); do
+            list_shard "$i" &
+            while [ "$(jobs -r | wc -l)" -ge 4 ]; do wait -n; done
+          done
+          wait
+          echo "Listed $(ls dist-map/shard-*.json 2>/dev/null | wc -l) of $N shards"
+
+      - name: Checkout runner repo for template
+        uses: actions/checkout@v5
+        with:
+          path: runner-repo
+
+      - name: Build HTML distribution map
+        env:
+          SHARD_COUNT: ${{ github.event.inputs.shard_count }}
+          TEST_PATTERN: ${{ github.event.inputs.test_pattern }}
+          BROWSER: ${{ github.event.inputs.browser }}
+          TEST_ENV: ${{ env.TEST_ENV }}
+          DISTRIBUTE_BY_TEST: ${{ inputs.distribute_by_test }}
+        run: node runner-repo/.github/scripts/build-distribution-map.js
+
+      - name: Upload distribution map
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: shard-distribution-map
+          path: dist-map/index.html
+          retention-days: 30
 
   test:
     needs: prepare
@@ -253,22 +347,6 @@ jobs:
           CI: "true"
           PLAYWRIGHT_JSON_OUTPUT_NAME: results.json
         run: |
-          # ── Live resource monitor (diagnostic) ───────────────────────────
-          # Streams memory / shm usage to the LIVE job log every 5s. If a runner
-          # is OOM-killed ("lost communication"), NO post-run step executes, so
-          # streaming to stdout is the only way to capture the trajectory up to
-          # the crash. In a crashed shard's log, read the last "res" block:
-          #   Mem used ~= Mem total -> whole-runner OOM (footprint / bigger runner)
-          #   /dev/shm ~= full      -> shared-memory cap (shm fix incomplete)
-          ( while true; do
-              echo "-- res $(date +%H:%M:%S) --"
-              free -m | awk '/Mem|Swap/{print "  "$0}'
-              printf "  /dev/shm: "; df -m /dev/shm | awk 'NR==2{print $3" / "$2" MB"}'
-              sleep 5
-            done ) &
-          MON=$!
-          trap 'kill "$MON" 2>/dev/null || true' EXIT
-
           echo "Running shard ${{ matrix.shard }} of ${{ github.event.inputs.shard_count }}"
           npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
             --grep '${{ github.event.inputs.test_pattern }}' \
@@ -277,6 +355,12 @@ jobs:
             --workers=1 \
             --retries=${{ env.NUM_RETRIES }} \
             --reporter=html,json,blob
+      - name: Preserve last-failed marker
+        # Playwright writes test-results/.last-run.json (failed test IDs). It's a
+        # dotfile, which upload-artifact skips by default — copy to a non-dotted
+        # name so it ships in the artifact for the rerun pipeline to aggregate.
+        if: always()
+        run: cp test-results/.last-run.json test-results/last-run.json 2>/dev/null || true
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v6
@@ -1342,3 +1426,34 @@ jobs:
           req.write(payload);
           req.end();
           SCRIPT
+
+  # After the main run has fully finished (tests + Pages deploy + Slack), and ONLY
+  # if the rerun_failed checkbox was ticked, dispatch the separate rerun-failures
+  # pipeline. It fetches THIS run's failed-test IDs, re-runs just those, and posts
+  # its own deploy + Slack. A separate workflow (not an inline job) so the main
+  # run's report/Slack land first and the rerun stands as its own labelled run.
+  trigger-rerun:
+    name: Trigger Failure Rerun
+    if: ${{ always() && inputs.rerun_failed }}
+    needs: [test, deploy-report, notify]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch rerun-failures workflow
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run rerun-failures.yml \
+            --repo "${{ github.repository }}" \
+            --ref "${{ github.ref_name }}" \
+            -f source_run_id="${{ github.run_id }}" \
+            -f branch="${{ github.event.inputs.branch }}" \
+            -f environment="${{ github.event.inputs.environment }}" \
+            -f credential_set="${{ github.event.inputs.credential_set }}" \
+            -f browser="${{ github.event.inputs.browser }}" \
+            -f keep_last_runs="${{ github.event.inputs.keep_last_runs }}" \
+            -f distribute_by_test="${{ inputs.distribute_by_test }}" \
+            -f num_retries="${{ github.event.inputs.num_retries }}" \
+            -f video_mode="${{ github.event.inputs.video_mode }}" \
+            -f trace_mode="${{ github.event.inputs.trace_mode }}" \
+            -f run_reason="RETRY FAILURES: ${{ github.event.inputs.run_reason }}"
+          echo "Dispatched rerun-failures for source run ${{ github.run_id }}"
