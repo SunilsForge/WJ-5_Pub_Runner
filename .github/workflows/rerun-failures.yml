@@ -1,0 +1,392 @@
+name: Rerun Failures (WJ-5)
+
+# Auto-dispatched by the main pipeline's `trigger-rerun` job when the `rerun_failed`
+# checkbox was ticked. Re-runs ONLY the failed tests of a source run:
+#   collect (aggregate failed test IDs) -> rerun (--last-failed, auto-sized shards)
+#   -> publish (merged report + Pages deploy) -> notify (Slack: flaky vs still-failing)
+# All params are inherited from the source run (the dispatcher passes them in);
+# shard count is auto = ceil(failures / tests_per_shard).
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_run_id:
+        description: "Run ID of the main pipeline whose failures to re-run"
+        required: true
+        type: string
+      branch:
+        description: "Private-repo branch (inherited from source run)"
+        required: true
+        default: "main"
+        type: string
+      environment:
+        required: true
+        default: "stage"
+        type: string
+      credential_set:
+        required: true
+        default: "Aut_Eng_01"
+        type: string
+      browser:
+        required: true
+        default: "chrome"
+        type: string
+      keep_last_runs:
+        required: true
+        default: "50"
+        type: string
+      distribute_by_test:
+        required: false
+        default: false
+        type: boolean
+      num_retries:
+        required: true
+        default: "2"
+        type: string
+      video_mode:
+        required: true
+        default: "off"
+        type: string
+      trace_mode:
+        required: true
+        default: "retain-on-first-failure"
+        type: string
+      run_reason:
+        required: true
+        default: "RETRY FAILURES:"
+        type: string
+      tests_per_shard:
+        description: "Target tests per rerun shard (shard count = ceil(failures / this))"
+        required: false
+        default: "5"
+        type: string
+
+env:
+  TEST_ENV: ${{ inputs.environment }}
+  CREDENTIAL_SET: ${{ inputs.credential_set }}
+  NUM_RETRIES: ${{ inputs.num_retries }}
+  VIDEO_MODE: ${{ inputs.video_mode }}
+  TRACE_MODE: ${{ inputs.trace_mode }}
+  SLOW_MODE_DELAY_IN_MS: 0
+  CI: "true"
+  PLAYWRIGHT_WORKERS: 1
+  NODE_VERSION: "20"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  # ── Aggregate the source run's failed test IDs and size the rerun ──────────
+  collect:
+    name: Collect Failures
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      shard_count: ${{ steps.plan.outputs.shard_count }}
+      failed_count: ${{ steps.plan.outputs.failed_count }}
+      has_failures: ${{ steps.plan.outputs.has_failures }}
+    steps:
+      - name: Download source run shard artifacts
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p src-artifacts
+          # Only the per-shard artifacts carry test-results/last-run.json.
+          gh run download "${{ inputs.source_run_id }}" \
+            --repo "${{ github.repository }}" \
+            --pattern "playwright-report-shard-*" \
+            --dir src-artifacts || echo "::warning::no shard artifacts found"
+          echo "Downloaded:"; ls src-artifacts 2>/dev/null || true
+
+      - name: Aggregate failed test IDs & plan shards
+        id: plan
+        env:
+          TESTS_PER_SHARD: ${{ inputs.tests_per_shard }}
+        run: |
+          node <<'SCRIPT'
+          const fs = require('fs'), path = require('path');
+          const root = 'src-artifacts';
+          const per = Math.max(1, parseInt(process.env.TESTS_PER_SHARD || '5', 10));
+          const CAP = 20; // never explode into more than this many rerun shards
+          const failed = new Set();
+          let dirs = [];
+          try { dirs = fs.readdirSync(root).filter(d => d.startsWith('playwright-report-shard-')); }
+          catch (e) { console.warn('no src-artifacts dir'); }
+          for (const d of dirs) {
+            const f = path.join(root, d, 'test-results', 'last-run.json');
+            if (!fs.existsSync(f)) continue;
+            try {
+              const j = JSON.parse(fs.readFileSync(f, 'utf8'));
+              for (const id of (j.failedTests || [])) failed.add(id);
+            } catch (e) { console.error('parse fail', f, e.message); }
+          }
+          const ids = [...failed];
+          const count = ids.length;
+          const N = count === 0 ? 0 : Math.min(CAP, Math.ceil(count / per));
+          // Merged .last-run.json for --last-failed (Playwright expects this shape).
+          fs.mkdirSync('merged', { recursive: true });
+          fs.writeFileSync('merged/last-run.json', JSON.stringify({ status: 'failed', failedTests: ids }));
+          const matrix = JSON.stringify({ shard: Array.from({ length: N }, (_, i) => i + 1) });
+          const out = process.env.GITHUB_OUTPUT;
+          fs.appendFileSync(out, `failed_count=${count}\n`);
+          fs.appendFileSync(out, `shard_count=${N}\n`);
+          fs.appendFileSync(out, `has_failures=${count > 0}\n`);
+          fs.appendFileSync(out, `matrix=${matrix}\n`);
+          console.log(`Aggregated ${count} failed test(s) -> ${N} rerun shard(s) (${per}/shard)`);
+          SCRIPT
+
+      - name: Upload merged last-run
+        if: steps.plan.outputs.has_failures == 'true'
+        uses: actions/upload-artifact@v6
+        with:
+          name: merged-last-run
+          path: merged/last-run.json
+          retention-days: 7
+
+  # ── Re-run ONLY the failed tests, sharded, using --last-failed ─────────────
+  rerun:
+    name: "Rerun shard ${{ matrix.shard }}"
+    needs: collect
+    if: needs.collect.outputs.has_failures == 'true'
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.59.1-noble
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.collect.outputs.matrix) }}
+    steps:
+      - name: Checkout private repository
+        uses: actions/checkout@v5
+        with:
+          repository: SunilsForge/WJ-5_Pub
+          token: ${{ secrets.PRIVATE_REPO_PAT }}
+          ref: ${{ inputs.branch }}
+          fetch-depth: 1
+
+      - name: "Enable per-test distribution (mirror source run)"
+        if: ${{ inputs.distribute_by_test }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          for dir in "src/tests/UIAndReports" "src/tests/ReroutingandLeftNav"; do
+            [ -d "$dir" ] || continue
+            grep -rl 'mode: *"default"' "$dir" | xargs -r sed -i 's/mode: *"default"/mode: "parallel"/g'
+          done
+
+      - name: Set up Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v5
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+      - name: Install dependencies
+        run: |
+          npm ci
+          npx playwright install-deps
+      - name: Install Playwright browser
+        run: npx playwright install ${{ inputs.browser }}
+
+      - name: Restore merged last-run marker
+        uses: actions/download-artifact@v7
+        with:
+          name: merged-last-run
+          path: merged
+      - name: Place marker for --last-failed
+        run: |
+          mkdir -p test-results
+          cp merged/last-run.json test-results/.last-run.json
+
+      - name: Re-run failed tests (this shard)
+        id: run_tests
+        continue-on-error: true
+        env:
+          SHARD_NUMBER: ${{ matrix.shard }}
+          CREDENTIAL_SET: ${{ env.CREDENTIAL_SET }}
+          VIDEO_MODE: ${{ inputs.video_mode }}
+          TRACE_MODE: ${{ inputs.trace_mode }}
+          CI: "true"
+          PLAYWRIGHT_JSON_OUTPUT_NAME: results.json
+        run: |
+          echo "Rerun shard ${{ matrix.shard }} of ${{ needs.collect.outputs.shard_count }} (failed subset)"
+          npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
+            --last-failed \
+            --project=${{ inputs.browser }} \
+            --shard=${{ matrix.shard }}/${{ needs.collect.outputs.shard_count }} \
+            --workers=1 \
+            --retries=${{ env.NUM_RETRIES }} \
+            --reporter=html,json,blob
+
+      - name: Upload rerun results
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: rerun-report-shard-${{ matrix.shard }}
+          path: |
+            playwright-report/
+            test-results/
+            results.json
+            blob-report/
+          retention-days: 30
+
+  # ── Merge rerun results, classify flaky vs real, build report, deploy Pages ─
+  publish:
+    name: Publish Rerun Report
+    needs: [collect, rerun]
+    if: always() && needs.collect.outputs.has_failures == 'true'
+    runs-on: ubuntu-latest
+    outputs:
+      pages_url: ${{ steps.deployment.outputs.page_url }}
+      flaky: ${{ steps.classify.outputs.flaky }}
+      still_failing: ${{ steps.classify.outputs.still_failing }}
+      reran: ${{ steps.classify.outputs.reran }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download all rerun artifacts
+        uses: actions/download-artifact@v7
+        with:
+          path: all-artifacts
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Checkout runner repo for templates
+        uses: actions/checkout@v5
+        with:
+          path: runner-repo
+
+      - name: Classify results & build report
+        id: classify
+        env:
+          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+          RUN_REASON: ${{ inputs.run_reason }}
+          TEST_ENV: ${{ inputs.environment }}
+          BROWSER: ${{ inputs.browser }}
+        run: node runner-repo/.github/scripts/build-rerun-report.js
+
+      - name: Checkout gh-pages
+        uses: actions/checkout@v5
+        with:
+          ref: gh-pages
+          path: gh-pages
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Place report & update history
+        run: |
+          RUNKEY="${{ inputs.source_run_id }}-retry"
+          mkdir -p "gh-pages/reports/${RUNKEY}"
+          cp -r rerun-report/* "gh-pages/reports/${RUNKEY}/"
+          cd gh-pages
+          ENTRY=$(cat <<EOF
+          {"runNumber":"${RUNKEY}","runReason":"${{ inputs.run_reason }}","environment":"${{ inputs.environment }}","browser":"${{ inputs.browser }}","isRerun":true,"totalTests":${{ steps.classify.outputs.reran }},"totalPassed":${{ steps.classify.outputs.flaky }},"totalFailed":${{ steps.classify.outputs.still_failing }}}
+          EOF
+          )
+          for HIST in run-history.json run-history.master.json; do
+            if [ -f "$HIST" ]; then
+              jq --argjson e "$ENTRY" '[$e] + . ' "$HIST" > "$HIST.tmp" && mv "$HIST.tmp" "$HIST"
+            else
+              echo "[$ENTRY]" > "$HIST"
+            fi
+          done
+
+      - name: Commit gh-pages
+        run: |
+          cd gh-pages
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Rerun report for #${{ inputs.source_run_id }}" || echo "nothing to commit"
+          git push origin gh-pages || echo "push skipped"
+
+      - name: Build pruned deploy view
+        run: |
+          cd gh-pages
+          KEEP="${{ inputs.keep_last_runs }}"; KEEP="${KEEP:-50}"
+          mkdir -p ../site-deploy/reports
+          [ -f index.html ] && cp index.html ../site-deploy/index.html || true
+          [ -f run-history.master.json ] && cp run-history.master.json ../site-deploy/ || true
+          jq 'sort_by(.runNumber | tostring) | reverse' run-history.json > ../site-deploy/run-history.json 2>/dev/null || cp run-history.json ../site-deploy/run-history.json
+          DASH="$GITHUB_WORKSPACE/runner-repo/.github/templates/dashboard-template.html"
+          if [ -f "$DASH" ]; then mkdir -p ../site-deploy/dashboard; cp "$DASH" ../site-deploy/dashboard/index.html; fi
+          # keep the retry report + the most recent KEEP numeric runs
+          cp -r "reports/${{ inputs.source_run_id }}-retry" "../site-deploy/reports/" 2>/dev/null || true
+          for r in $(jq -r '.[].runNumber' run-history.json | grep -E '^[0-9]+$' | sort -rn | head -n "$KEEP"); do
+            [ -d "reports/$r" ] && cp -r "reports/$r" "../site-deploy/reports/" || true
+          done
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+      - name: Delete stale Pages artifacts
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          IDS=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" --jq '[.artifacts[] | select(.name == "github-pages") | .id] | .[]' 2>/dev/null) || true
+          for AID in $IDS; do gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$AID" || true; done
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site-deploy
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  # ── Slack: headline the flaky-vs-real split ────────────────────────────────
+  notify:
+    name: Slack Notification (Rerun)
+    needs: [collect, publish]
+    if: always() && needs.collect.outputs.has_failures == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+          RUN_REASON: ${{ inputs.run_reason }}
+          TEST_ENV: ${{ inputs.environment }}
+          BROWSER: ${{ inputs.browser }}
+          RERAN: ${{ needs.publish.outputs.reran }}
+          FLAKY: ${{ needs.publish.outputs.flaky }}
+          STILL: ${{ needs.publish.outputs.still_failing }}
+          PAGES_URL: ${{ needs.publish.outputs.pages_url }}
+        run: |
+          node <<'SCRIPT'
+          const https = require('https'); const { URL } = require('url');
+          const still = parseInt(process.env.STILL || '0', 10);
+          const owner = process.env.GITHUB_REPOSITORY_OWNER;
+          const repoName = (process.env.GITHUB_REPOSITORY || '/').split('/')[1];
+          const pages = process.env.PAGES_URL || `https://${owner}.github.io/${repoName}/`;
+          const report = `${pages.replace(/\/$/, '')}/reports/${process.env.SOURCE_RUN_ID}-retry/`;
+          const actions = `https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+          const emoji = still > 0 ? '\u{1F534}' : '\u{1F7E2}';
+          const blocks = [
+            { type: 'header', text: { type: 'plain_text', text: `${emoji} 🔁 Rerun of Run #${process.env.SOURCE_RUN_ID}`, emoji: true } },
+            { type: 'section', fields: [
+              { type: 'mrkdwn', text: `*Env:*\n${process.env.TEST_ENV}` },
+              { type: 'mrkdwn', text: `*Browser:*\n${process.env.BROWSER}` },
+              { type: 'mrkdwn', text: `*Reason:*\n${process.env.RUN_REASON || 'N/A'}` },
+              { type: 'mrkdwn', text: `*Re-ran:*\n${process.env.RERAN}` },
+            ]},
+            { type: 'section', fields: [
+              { type: 'mrkdwn', text: `*Now passing (flaky):* ${process.env.FLAKY} :white_check_mark:` },
+              { type: 'mrkdwn', text: `*Still failing (real):* ${process.env.STILL} :x:` },
+            ]},
+            { type: 'actions', elements: [
+              { type: 'button', text: { type: 'plain_text', text: 'Rerun Report', emoji: true }, url: report, style: 'primary' },
+              { type: 'button', text: { type: 'plain_text', text: 'Actions Run', emoji: true }, url: actions },
+            ]},
+          ];
+          const hook = process.env.SLACK_WEBHOOK_URL;
+          if (!hook) { console.log('SLACK_WEBHOOK_URL not set — skipping'); process.exit(0); }
+          const payload = JSON.stringify({ blocks }); const u = new URL(hook);
+          const req = https.request({ hostname: u.hostname, port: 443, path: u.pathname, method: 'POST', timeout: 15000, headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(payload) } }, res => {
+            let b = ''; res.on('data', c => b += c); res.on('end', () => { console.log('Slack', res.statusCode, b); if (res.statusCode !== 200) process.exit(1); });
+          });
+          req.on('timeout', () => { req.destroy(); process.exit(1); });
+          req.on('error', e => { console.error(e.message); process.exit(1); });
+          req.write(payload); req.end();
+          SCRIPT
