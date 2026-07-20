@@ -1,5 +1,15 @@
 [
   {
+    "runNumber": "29728685739-retry",
+    "runReason": "RETRY FAILURES: again REGRESSIOn run in STAGE as part of 30 release I1",
+    "environment": "stage",
+    "browser": "chrome",
+    "isRerun": true,
+    "totalTests": 102,
+    "totalPassed": 32,
+    "totalFailed": 70
+  },
+  {
     "runNumber": "284",
     "timestamp": "20260720_000000",
     "runReason": "again REGRESSIOn run in STAGE as part of 30 release I1",
