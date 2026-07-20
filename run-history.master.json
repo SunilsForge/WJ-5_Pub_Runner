@@ -1,5 +1,19 @@
 [
   {
+    "runNumber": "284",
+    "timestamp": "20260720_000000",
+    "runReason": "again REGRESSIOn run in STAGE as part of 30 release I1",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@AUT_ENG_03",
+    "totalTests": 684,
+    "totalPassed": 582,
+    "totalFailed": 102,
+    "totalSkipped": 0,
+    "totalFlaky": 0,
+    "durationMs": 219534710
+  },
+  {
     "runNumber": "283",
     "timestamp": "20260720_000000",
     "runReason": "Lets try again",
