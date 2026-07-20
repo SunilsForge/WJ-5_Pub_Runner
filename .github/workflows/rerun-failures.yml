@@ -60,6 +60,16 @@ on:
         required: false
         default: "5"
         type: string
+      rerun_passes:
+        description: "Total rerun passes requested (chaining). Pass N re-runs pass N-1's still-failing tests."
+        required: false
+        default: "1"
+        type: string
+      pass_number:
+        description: "Which pass this run is (1-based; incremented on each self-dispatch)"
+        required: false
+        default: "1"
+        type: string
 
 env:
   TEST_ENV: ${{ inputs.environment }}
@@ -76,6 +86,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  actions: write # allows the chain-next job to self-dispatch the next rerun pass
 
 jobs:
   # ── Aggregate the source run's failed test IDs and size the rerun ──────────
@@ -93,10 +104,12 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p src-artifacts
-          # Only the per-shard artifacts carry test-results/last-run.json.
+          # Per-shard artifacts carry test-results/last-run.json. The pattern matches
+          # BOTH the main run (playwright-report-shard-*) and a prior rerun pass
+          # (rerun-report-shard-*), so chaining (pass N reruns pass N-1) works.
           gh run download "${{ inputs.source_run_id }}" \
             --repo "${{ github.repository }}" \
-            --pattern "playwright-report-shard-*" \
+            --pattern "*report-shard-*" \
             --dir src-artifacts || echo "::warning::no shard artifacts found"
           echo "Downloaded:"; ls src-artifacts 2>/dev/null || true
 
@@ -112,7 +125,7 @@ jobs:
           const CAP = 20; // never explode into more than this many rerun shards
           const failed = new Set();
           let dirs = [];
-          try { dirs = fs.readdirSync(root).filter(d => d.startsWith('playwright-report-shard-')); }
+          try { dirs = fs.readdirSync(root).filter(d => /report-shard-\d+$/.test(d)); }
           catch (e) { console.warn('no src-artifacts dir'); }
           for (const d of dirs) {
             const f = path.join(root, d, 'test-results', 'last-run.json');
@@ -144,6 +157,79 @@ jobs:
           name: merged-last-run
           path: merged/last-run.json
           retention-days: 7
+
+  # ── Preview which failed tests land on which rerun shard ───────────────────
+  # Same value as the main pipeline's map, reusing the SAME shared scripts +
+  # template (list-shards.sh + build-distribution-map.js + distribution-map-template).
+  # Only difference: selection is --last-failed (not --grep). Runs in parallel
+  # with the rerun.
+  distribution-map:
+    name: Rerun Shard Distribution Map
+    needs: collect
+    if: needs.collect.outputs.has_failures == 'true'
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.59.1-noble
+    steps:
+      - name: Checkout private repository
+        uses: actions/checkout@v5
+        with:
+          repository: SunilsForge/WJ-5_Pub
+          token: ${{ secrets.PRIVATE_REPO_PAT }}
+          ref: ${{ inputs.branch }}
+          fetch-depth: 1
+      - name: "Enable per-test distribution (mirror rerun)"
+        if: ${{ inputs.distribute_by_test }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          for dir in "src/tests/UIAndReports" "src/tests/ReroutingandLeftNav"; do
+            [ -d "$dir" ] || continue
+            grep -rl 'mode: *"default"' "$dir" | xargs -r sed -i 's/mode: *"default"/mode: "parallel"/g'
+          done
+      - name: Set up Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v5
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+      - name: Install dependencies
+        run: npm ci
+      - name: Restore merged last-run marker
+        uses: actions/download-artifact@v7
+        with:
+          name: merged-last-run
+          path: merged
+      - name: Place marker for --last-failed
+        run: |
+          mkdir -p test-results
+          cp merged/last-run.json test-results/.last-run.json
+      - name: Checkout runner repo for shared scripts & template
+        uses: actions/checkout@v5
+        with:
+          path: runner-repo
+      - name: Compute per-shard test lists (failed subset)
+        shell: bash
+        env:
+          SHARD_COUNT: ${{ needs.collect.outputs.shard_count }}
+          TEST_ENV: ${{ inputs.environment }}
+          PROJECT: ${{ inputs.browser }}
+          LAST_FAILED: "true"
+        run: bash runner-repo/.github/scripts/list-shards.sh
+      - name: Build HTML distribution map
+        env:
+          SHARD_COUNT: ${{ needs.collect.outputs.shard_count }}
+          TEST_PATTERN: "--last-failed (source #${{ inputs.source_run_id }})"
+          BROWSER: ${{ inputs.browser }}
+          TEST_ENV: ${{ inputs.environment }}
+          DISTRIBUTE_BY_TEST: ${{ inputs.distribute_by_test }}
+        run: node runner-repo/.github/scripts/build-distribution-map.js
+      - name: Upload distribution map
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: rerun-shard-distribution-map
+          path: dist-map/index.html
+          retention-days: 30
 
   # ── Re-run ONLY the failed tests, sharded, using --last-failed ─────────────
   rerun:
@@ -217,6 +303,11 @@ jobs:
             --retries=${{ env.NUM_RETRIES }} \
             --reporter=html,json,blob
 
+      - name: Preserve last-failed marker
+        # Non-dotted copy so upload-artifact keeps it; the NEXT pass's collect
+        # aggregates these to re-run only this pass's still-failing tests.
+        if: always()
+        run: cp test-results/.last-run.json test-results/last-run.json 2>/dev/null || true
       - name: Upload rerun results
         if: always()
         uses: actions/upload-artifact@v6
@@ -240,6 +331,7 @@ jobs:
       flaky: ${{ steps.classify.outputs.flaky }}
       still_failing: ${{ steps.classify.outputs.still_failing }}
       reran: ${{ steps.classify.outputs.reran }}
+      should_chain: ${{ steps.chain.outputs.should_chain }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -257,6 +349,29 @@ jobs:
         with:
           path: runner-repo
 
+      - name: Generate native Playwright merged report
+        # Merge every rerun shard's blob report into one native Playwright HTML
+        # report (errors, steps, failure screenshots) — same as the main pipeline's
+        # merged report. `playwright` package ships the merge-reports CLI, so npx
+        # works without npm ci. Output lands in playwright-report/ by default.
+        run: |
+          mkdir -p all-blob-reports
+          for dir in all-artifacts/rerun-report-shard-*/blob-report; do
+            [ -d "$dir" ] && cp "$dir"/* all-blob-reports/ 2>/dev/null || true
+          done
+          if [ "$(ls all-blob-reports 2>/dev/null | wc -l)" -gt 0 ]; then
+            npx playwright@1.59.1 merge-reports --reporter=html all-blob-reports || true
+            if [ -d playwright-report ]; then
+              mkdir -p rerun-report
+              mv playwright-report rerun-report/playwright-merged
+              echo "Native Playwright report -> rerun-report/playwright-merged/"
+            else
+              echo "::warning::merge-reports produced no output"
+            fi
+          else
+            echo "No blob reports found — skipping native merge"
+          fi
+
       - name: Classify results & build report
         id: classify
         env:
@@ -264,7 +379,24 @@ jobs:
           RUN_REASON: ${{ inputs.run_reason }}
           TEST_ENV: ${{ inputs.environment }}
           BROWSER: ${{ inputs.browser }}
+          PASS_NUMBER: ${{ inputs.pass_number }}
+          RERUN_PASSES: ${{ inputs.rerun_passes }}
         run: node runner-repo/.github/scripts/build-rerun-report.js
+
+      - name: Decide whether to chain another pass
+        id: chain
+        env:
+          STILL: ${{ steps.classify.outputs.still_failing }}
+          PASS: ${{ inputs.pass_number }}
+          MAX: ${{ inputs.rerun_passes }}
+        run: |
+          still="${STILL:-0}"; pass="${PASS:-1}"; max="${MAX:-1}"
+          if [ "${still:-0}" -gt 0 ] && [ "${pass:-1}" -lt "${max:-1}" ]; then
+            echo "should_chain=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_chain=false" >> "$GITHUB_OUTPUT"
+          fi
+          echo "pass=$pass max=$max still_failing=$still -> chain further: $([ "${still:-0}" -gt 0 ] && [ "${pass:-1}" -lt "${max:-1}" ] && echo yes || echo no)"
 
       - name: Checkout gh-pages
         uses: actions/checkout@v5
@@ -336,6 +468,39 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
   # ── Slack: headline the flaky-vs-real split ────────────────────────────────
+  # ── Chain the next rerun pass (ReReRun…) if requested and still not clean ──
+  # Self-dispatches THIS same workflow with source_run_id = this run, pass_number+1.
+  # Guarded by publish's should_chain (still_failing > 0 AND pass_number < rerun_passes),
+  # so it stops automatically once the suite is clean or the pass cap is reached.
+  chain-next:
+    name: Trigger Next Rerun Pass
+    needs: [collect, publish]
+    if: always() && needs.collect.outputs.has_failures == 'true' && needs.publish.outputs.should_chain == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch next rerun pass
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          NEXT=$(( ${{ inputs.pass_number }} + 1 ))
+          gh workflow run rerun-failures.yml \
+            --repo "${{ github.repository }}" \
+            --ref "${{ github.ref_name }}" \
+            -f source_run_id="${{ github.run_id }}" \
+            -f branch="${{ inputs.branch }}" \
+            -f environment="${{ inputs.environment }}" \
+            -f credential_set="${{ inputs.credential_set }}" \
+            -f browser="${{ inputs.browser }}" \
+            -f keep_last_runs="${{ inputs.keep_last_runs }}" \
+            -f distribute_by_test="${{ inputs.distribute_by_test }}" \
+            -f num_retries="${{ inputs.num_retries }}" \
+            -f video_mode="${{ inputs.video_mode }}" \
+            -f trace_mode="${{ inputs.trace_mode }}" \
+            -f run_reason="${{ inputs.run_reason }}" \
+            -f rerun_passes="${{ inputs.rerun_passes }}" \
+            -f pass_number="$NEXT"
+          echo "Dispatched rerun pass $NEXT of ${{ inputs.rerun_passes }} (source = this run ${{ github.run_id }})"
+
   notify:
     name: Slack Notification (Rerun)
     needs: [collect, publish]
@@ -349,6 +514,8 @@ jobs:
           RUN_REASON: ${{ inputs.run_reason }}
           TEST_ENV: ${{ inputs.environment }}
           BROWSER: ${{ inputs.browser }}
+          PASS_NUMBER: ${{ inputs.pass_number }}
+          RERUN_PASSES: ${{ inputs.rerun_passes }}
           RERAN: ${{ needs.publish.outputs.reran }}
           FLAKY: ${{ needs.publish.outputs.flaky }}
           STILL: ${{ needs.publish.outputs.still_failing }}
@@ -363,8 +530,10 @@ jobs:
           const report = `${pages.replace(/\/$/, '')}/reports/${process.env.SOURCE_RUN_ID}-retry/`;
           const actions = `https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
           const emoji = still > 0 ? '\u{1F534}' : '\u{1F7E2}';
+          const passMax = process.env.RERUN_PASSES || '';
+          const passSuffix = (passMax && passMax !== '1') ? ` (pass ${process.env.PASS_NUMBER}/${passMax})` : '';
           const blocks = [
-            { type: 'header', text: { type: 'plain_text', text: `${emoji} 🔁 Rerun of Run #${process.env.SOURCE_RUN_ID}`, emoji: true } },
+            { type: 'header', text: { type: 'plain_text', text: `${emoji} 🔁 Rerun of Run #${process.env.SOURCE_RUN_ID}${passSuffix}`, emoji: true } },
             { type: 'section', fields: [
               { type: 'mrkdwn', text: `*Env:*\n${process.env.TEST_ENV}` },
               { type: 'mrkdwn', text: `*Browser:*\n${process.env.BROWSER}` },

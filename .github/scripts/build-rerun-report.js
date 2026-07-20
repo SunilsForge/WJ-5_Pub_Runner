@@ -60,8 +60,21 @@ const rows = (arr) =>
   arr.map((t, i) => `<tr><td>${i + 1}</td><td>${esc(t.title)}</td><td class="mono">${esc(t.file)}</td></tr>`).join("") ||
   '<tr><td colspan="3" class="empty">none</td></tr>';
 
+// Link to the native Playwright merged report only if the merge step produced it.
+const hasMerged = fs.existsSync(path.join("rerun-report", "playwright-merged", "index.html"));
+const mergedLink = hasMerged
+  ? '<a class="btn" href="./playwright-merged/index.html">Open full Playwright report &rarr;</a>'
+  : "";
+
+// "Pass N of M · " prefix when this is part of a multi-pass chain (else blank).
+const passN = process.env.PASS_NUMBER || "";
+const passMax = process.env.RERUN_PASSES || "";
+const passStr = passMax && passMax !== "1" ? `Pass ${esc(passN)} of ${esc(passMax)} &middot; ` : "";
+
 const tpl = fs.readFileSync(path.join(__dirname, "..", "templates", "rerun-report-template.html"), "utf8");
 const html = tpl
+  .split("__PASS__").join(passStr)
+  .split("__MERGED_LINK__").join(mergedLink)
   .split("__SOURCE_RUN__").join(esc(process.env.SOURCE_RUN_ID || ""))
   .split("__RUN_REASON__").join(esc(process.env.RUN_REASON || ""))
   .split("__ENV__").join(esc(process.env.TEST_ENV || ""))
