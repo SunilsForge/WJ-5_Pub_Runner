@@ -1,0 +1,318 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+        "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+      },
+      "actualWorkers": 0
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+          },
+          "actualWorkers": 0
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+          },
+          "actualWorkers": 0
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+          },
+          "actualWorkers": 0
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+          },
+          "actualWorkers": 0
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+          },
+          "actualWorkers": 0
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+          },
+          "actualWorkers": 0
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+          },
+          "actualWorkers": 0
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+          },
+          "actualWorkers": 0
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+          },
+          "actualWorkers": 0
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+          },
+          "actualWorkers": 0
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+          },
+          "actualWorkers": 0
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "commitHash": "59f614081ec8c8052ce94dd321c9018f6cfc2bf3",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/29715685818"
+          },
+          "actualWorkers": 0
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 29,
+      "total": 100
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-07-20T04:00:07.445Z",
+    "duration": 15209.49,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
