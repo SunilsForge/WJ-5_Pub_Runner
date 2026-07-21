@@ -1,5 +1,17 @@
 [
   {
+    "runNumber": "288-retry-p2",
+    "parentRunNumber": "288",
+    "pass": 2,
+    "runReason": "RETRY FAILURES: running after latest changes with ReRerun",
+    "environment": "stage",
+    "browser": "chrome",
+    "isRerun": true,
+    "totalTests": 52,
+    "totalPassed": 4,
+    "totalFailed": 48
+  },
+  {
     "runNumber": "288-retry-p1",
     "parentRunNumber": "288",
     "pass": 1,
