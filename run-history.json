@@ -1,29 +1,5 @@
 [
   {
-    "runNumber": "288-retry-p2",
-    "parentRunNumber": "288",
-    "pass": 2,
-    "runReason": "RETRY FAILURES: running after latest changes with ReRerun",
-    "environment": "stage",
-    "browser": "chrome",
-    "isRerun": true,
-    "totalTests": 52,
-    "totalPassed": 4,
-    "totalFailed": 48
-  },
-  {
-    "runNumber": "288-retry-p1",
-    "parentRunNumber": "288",
-    "pass": 1,
-    "runReason": "RETRY FAILURES: running after latest changes with ReRerun",
-    "environment": "stage",
-    "browser": "chrome",
-    "isRerun": true,
-    "totalTests": 89,
-    "totalPassed": 37,
-    "totalFailed": 52
-  },
-  {
     "runNumber": "29782170972-retry",
     "runReason": "RETRY FAILURES: Reretry",
     "environment": "stage",
@@ -54,6 +30,20 @@
     "totalFailed": 70
   },
   {
+    "runNumber": "289",
+    "timestamp": "20260721_000000",
+    "runReason": "Lets see the equal split for rerun this time",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@AUT_ENG_03",
+    "totalTests": 677,
+    "totalPassed": 543,
+    "totalFailed": 134,
+    "totalSkipped": 0,
+    "totalFlaky": 0,
+    "durationMs": 216826491
+  },
+  {
     "runNumber": "288",
     "timestamp": "20260721_000000",
     "runReason": "running after latest changes with ReRerun",
@@ -66,6 +56,30 @@
     "totalSkipped": 0,
     "totalFlaky": 0,
     "durationMs": 221320253
+  },
+  {
+    "runNumber": "288-retry-p1",
+    "parentRunNumber": "288",
+    "pass": 1,
+    "runReason": "RETRY FAILURES: running after latest changes with ReRerun",
+    "environment": "stage",
+    "browser": "chrome",
+    "isRerun": true,
+    "totalTests": 89,
+    "totalPassed": 37,
+    "totalFailed": 52
+  },
+  {
+    "runNumber": "288-retry-p2",
+    "parentRunNumber": "288",
+    "pass": 2,
+    "runReason": "RETRY FAILURES: running after latest changes with ReRerun",
+    "environment": "stage",
+    "browser": "chrome",
+    "isRerun": true,
+    "totalTests": 52,
+    "totalPassed": 4,
+    "totalFailed": 48
   },
   {
     "runNumber": "284",

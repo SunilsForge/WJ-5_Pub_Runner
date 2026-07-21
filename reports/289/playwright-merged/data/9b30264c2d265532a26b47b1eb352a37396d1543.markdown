@@ -1,0 +1,256 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: UIAndReports/LWIDNT_Multi_BC6.spec.ts >>  LWIDNT UI And Reports >> Grade 1 - 6 lowest incorrect items SSP2 Test UI
+- Location: src/tests/UIAndReports/LWIDNT_Multi_BC6.spec.ts:10:13
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByPlaceholder('Username') to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S03PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S03PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - generic [ref=e58]: Loading...
+              - table "Available Assignments" [ref=e61]:
+                - rowgroup [ref=e68]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e69]:
+                    - columnheader "This is the student or individual being assessed." [ref=e70]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e71]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e72]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e73]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e74]: Actions
+                - rowgroup [ref=e75]:
+                  - row "No Test Assignments have been created." [ref=e76] [cursor=pointer]:
+                    - cell "No Test Assignments have been created." [ref=e77]
+            - generic [ref=e78]:
+              - generic [ref=e81]:
+                - img [ref=e82]
+                - heading "Notifications Center" [level=2] [ref=e86]
+              - generic [ref=e87]:
+                - generic [ref=e89]:
+                  - img [ref=e90]
+                  - heading "Resources" [level=3] [ref=e94]
+                - list [ref=e95]:
+                  - listitem [ref=e96]:
+                    - button "Riverside Learn" [ref=e97] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e98]
+                      - img [ref=e100]
+                  - listitem [ref=e102]:
+                    - button "Onboarding Tutorial Videos" [ref=e103] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e104]
+                      - img [ref=e106]
+                  - listitem [ref=e108]:
+                    - button "Quick Reference Guides" [ref=e109] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e110]
+                      - img [ref=e112]
+                - button "View All" [ref=e115] [cursor=pointer]
+      - contentinfo [ref=e116]:
+        - generic [ref=e117]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e118] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e119]
+        - generic [ref=e120]:
+          - link "Riverside Insights Facebook" [ref=e121] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e122]
+          - link "Riverside Insights Twitter" [ref=e123] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e124]
+          - link "Riverside Insights LinkedIn" [ref=e125] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e126]
+          - link "Riverside Insights Instagram" [ref=e127] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e128]
+        - generic [ref=e129]:
+          - button "Leave Feedback" [ref=e130] [cursor=pointer]
+          - generic [ref=e131]: "|"
+          - link "Terms of Use" [ref=e132] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e133]: "|"
+          - link "Privacy Policy" [ref=e134] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e135]: Footer region end
+  - region "Chat Widget" [ref=e136]:
+    - iframe [ref=e137]:
+      - button "Open live chat" [ref=f3e5]:
+        - img [ref=f3e8]
+        - img [ref=f3e15]
+    - generic "Drag" [ref=e138]:
+      - img [ref=e139]
+```
+
+# Test source
+
+```ts
+  1   | import { Locator, Page } from "@playwright/test";
+  2   | import { getSiteUrl } from "../utils/testData";
+  3   | import Locators from "../utils/locators";
+  4   | 
+  5   | export default class Wj5LoginPage extends Locators {
+  6   | 
+  7   |   constructor(page: Page) {
+  8   |     super(page);
+  9   |   }
+  10  | 
+  11  |   private async waitForLoadingToDisappear(timeout = 30000) {
+  12  |     await this.loadingIcon.waitFor({ state: "hidden", timeout });
+  13  |     await this.page.waitForTimeout(10000); // Additional wait to agree terms popup,appears after login tile little late which sometimes can be seen after clicking on the WJ5 tile
+  14  |   }
+  15  | 
+  16  |   private async safeClickWj5Tyle(
+  17  |     locator: Locator,
+  18  |     options = { timeout: 5000, delay: 200 },
+  19  |   ) {
+  20  |     try {
+  21  |       await locator.waitFor({ state: "visible", timeout: options.timeout });
+  22  |       await locator.click({ timeout: options.timeout, delay: options.delay });
+  23  |       await this.page.waitForSelector('//div[@class="loading-inner"]', {
+  24  |         timeout: options.timeout,
+  25  |       });
+  26  |     } catch {
+  27  |       if (await this.pendoPopup.isVisible()) {
+  28  |         await this.pendoOkayButton.click();
+  29  |         await locator.click({ timeout: options.timeout, delay: options.delay });
+  30  |       }
+  31  |     }
+  32  |   }
+  33  | 
+  34  |   async gotoUrl(url: string) {
+  35  |     try {
+  36  |       await this.page.bringToFront();
+  37  |       await this.page.goto(await url, { waitUntil: "load" });
+  38  |     } catch (error) {
+  39  |       console.warn("Error while navigating to URL: ", error);
+  40  |     }
+  41  |   }
+  42  | 
+  43  |   async loginToRiversideScore(username: string, password: string) {
+  44  |     try {
+  45  |       await this.gotoUrl(getSiteUrl());
+  46  |       await this.page.waitForLoadState("networkidle");
+  47  |       await this.page.waitForTimeout(1000);
+  48  | 
+> 49  |       await this.userName.waitFor({ state: "visible", timeout: 10000 });
+      |                           ^ TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+  50  |       await this.userName.clear();
+  51  |       await this.passWord.clear();
+  52  |       await this.userName.fill(username);
+  53  |       await this.passWord.fill(password);
+  54  |       await this.signInButton.click();
+  55  | 
+  56  |       await this.waitForLoadingToDisappear();
+  57  | 
+  58  |       await this.acceptUserTermsIfPresent();
+  59  | 
+  60  |       await this.safeClickWj5Tyle(this.wj5Tyle);
+  61  |       await this.waitForLoadingToDisappear();
+  62  |       await this.createTestAssignment.waitFor({
+  63  |         state: "visible",
+  64  |         timeout: 30000,
+  65  |       });
+  66  | 
+  67  |       console.log(`Login successful for ${username}`);
+  68  |     } catch (error) {
+  69  |       console.error(`Login failed for ${username}:`, error);
+  70  |       throw error;
+  71  |     }
+  72  |   }
+  73  | 
+  74  |   async acceptUserTermsIfPresent() {
+  75  |     try {
+  76  |       const updateTermsPopup = await this.page.getByRole('dialog').first().isVisible();
+  77  |       if (updateTermsPopup) {
+  78  |         await this.page.getByRole('button', { name: 'I Accept' }).click();
+  79  |       }
+  80  |     } catch (error) {
+  81  |       console.warn("Error while accepting user terms: ", error);
+  82  |     }
+  83  |   }
+  84  | 
+  85  |   async reloginIfneeded(username: string, password: string) {
+  86  |     try {
+  87  |       await this.page.waitForLoadState();
+  88  | 
+  89  |       const isDashboardVisible = await this.myTestAssignmentsText.isVisible();
+  90  |       const isExamineeVisible = await this.page
+  91  |         .locator("class='examinee'")
+  92  |         .isVisible();
+  93  | 
+  94  |       if (!isDashboardVisible && !isExamineeVisible) {
+  95  |         console.log("Relogging to Riverside Score ...");
+  96  |         await this.loginToRiversideScore(username, password);
+  97  |       }
+  98  |     } catch (error) {
+  99  |       console.warn(
+  100 |         `Login page possibly blank or not in dashboard. Error: ${error}`,
+  101 |       );
+  102 |       await this.loginToRiversideScore(username, password);
+  103 |     }
+  104 |   }
+  105 | }
+  106 | 
+```
