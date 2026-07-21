@@ -25,16 +25,25 @@ list_shard() {
   [ "${LAST_FAILED:-}" = "true" ] && args+=(--last-failed)
   PLAYWRIGHT_JSON_OUTPUT_NAME="dist-map/shard-${i}.json" \
     npx cross-env test="${TEST_ENV}" npx playwright test "${args[@]}" >/dev/null 2>&1 || true
-  # Warn only if no usable output was produced. A non-zero exit alone is not a
-  # failure here — playwright can exit non-zero on benign stderr while still
-  # writing the JSON list, which caused false "failed" warnings.
-  [ -s "dist-map/shard-${i}.json" ] || echo "::warning::no list output for shard ${i}"
 }
 
-# Bounded parallelism to keep N-shard listing fast.
+# Pass 1 — bounded parallelism to keep N-shard listing fast.
 for i in $(seq 1 "$N"); do
   list_shard "$i" &
   while [ "$(jobs -r | wc -l)" -ge "$CC" ]; do wait -n; done
 done
 wait
-echo "Listed $(ls dist-map/shard-*.json 2>/dev/null | wc -l) of $N shards"
+
+# Pass 2 — reconcile. Under load, a few of the parallel `--list` compiles can
+# transiently fail to write their JSON (npx/compile hiccup, non-zero exit is
+# swallowed above). That silently undercounts the map (e.g. 677 vs 684). Re-run
+# any shard with missing/empty output SERIALLY (no contention) so the map total
+# matches the real suite. Warn only if still missing after the retry.
+missing=0
+for i in $(seq 1 "$N"); do
+  [ -s "dist-map/shard-${i}.json" ] && continue
+  echo "::notice::shard ${i} had no list output on pass 1 — retrying serially"
+  list_shard "$i"
+  [ -s "dist-map/shard-${i}.json" ] || { echo "::warning::no list output for shard ${i} after retry"; missing=$((missing + 1)); }
+done
+echo "Listed $(ls dist-map/shard-*.json 2>/dev/null | wc -l) of $N shards (${missing} still missing after retry)"

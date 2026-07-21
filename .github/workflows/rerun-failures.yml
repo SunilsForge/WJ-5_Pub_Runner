@@ -143,24 +143,31 @@ jobs:
           const ids = [...failed];
           const count = ids.length;
           const N = count === 0 ? 0 : Math.min(CAP, Math.ceil(count / per));
-          // Merged .last-run.json for --last-failed (Playwright expects this shape).
-          fs.mkdirSync('merged', { recursive: true });
-          fs.writeFileSync('merged/last-run.json', JSON.stringify({ status: 'failed', failedTests: ids }));
+          // Split the failed IDs ROUND-ROBIN into N balanced per-shard slices, one
+          // .last-run.json each. Each rerun shard runs --last-failed against its OWN
+          // slice (no --shard) -> even ~per/shard load (no OOM), independent of
+          // Playwright's --shard/--last-failed ordering.
+          fs.mkdirSync('slices', { recursive: true });
+          const slices = Array.from({ length: N }, () => []);
+          ids.forEach((id, j) => slices[j % N].push(id));
+          for (let i = 0; i < N; i++) {
+            fs.writeFileSync(`slices/shard-${i + 1}.json`, JSON.stringify({ status: 'failed', failedTests: slices[i] }));
+          }
           const matrix = JSON.stringify({ shard: Array.from({ length: N }, (_, i) => i + 1) });
           const out = process.env.GITHUB_OUTPUT;
           fs.appendFileSync(out, `failed_count=${count}\n`);
           fs.appendFileSync(out, `shard_count=${N}\n`);
           fs.appendFileSync(out, `has_failures=${count > 0}\n`);
           fs.appendFileSync(out, `matrix=${matrix}\n`);
-          console.log(`Aggregated ${count} failed test(s) -> ${N} rerun shard(s) (${per}/shard)`);
+          console.log(`Aggregated ${count} failed test(s) -> ${N} rerun shard(s) (~${per}/shard, round-robin slices)`);
           SCRIPT
 
-      - name: Upload merged last-run
+      - name: Upload per-shard slices
         if: steps.plan.outputs.has_failures == 'true'
         uses: actions/upload-artifact@v6
         with:
-          name: merged-last-run
-          path: merged/last-run.json
+          name: rerun-slices
+          path: slices/
           retention-days: 7
 
   # ── Preview which failed tests land on which rerun shard ───────────────────
@@ -183,15 +190,6 @@ jobs:
           token: ${{ secrets.PRIVATE_REPO_PAT }}
           ref: ${{ inputs.branch }}
           fetch-depth: 1
-      - name: "Enable per-test distribution (mirror rerun)"
-        if: ${{ inputs.distribute_by_test }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          for dir in "src/tests/UIAndReports" "src/tests/ReroutingandLeftNav"; do
-            [ -d "$dir" ] || continue
-            grep -rl 'mode: *"default"' "$dir" | xargs -r sed -i 's/mode: *"default"/mode: "parallel"/g'
-          done
       - name: Set up Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v5
         with:
@@ -199,31 +197,38 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm ci
-      - name: Restore merged last-run marker
+      - name: Restore per-shard slices
         uses: actions/download-artifact@v7
         with:
-          name: merged-last-run
-          path: merged
-      - name: Place marker for --last-failed
-        run: |
-          mkdir -p test-results
-          cp merged/last-run.json test-results/.last-run.json
-      - name: Checkout runner repo for shared scripts & template
+          name: rerun-slices
+          path: slices
+      - name: Checkout runner repo for template
         uses: actions/checkout@v5
         with:
           path: runner-repo
-      - name: Compute per-shard test lists (failed subset)
+      - name: List each shard's slice
         shell: bash
         env:
-          SHARD_COUNT: ${{ needs.collect.outputs.shard_count }}
           TEST_ENV: ${{ inputs.environment }}
           PROJECT: ${{ inputs.browser }}
-          LAST_FAILED: "true"
-        run: bash runner-repo/.github/scripts/list-shards.sh
+          N: ${{ needs.collect.outputs.shard_count }}
+        run: |
+          mkdir -p dist-map test-results
+          # Each shard's tests = its pre-computed slice. --last-failed reads the
+          # single test-results/.last-run.json, so place each slice then list, one
+          # at a time (serial, no shared-file clobber). Mirrors the real rerun.
+          for i in $(seq 1 "$N"); do
+            cp "slices/shard-${i}.json" test-results/.last-run.json
+            PLAYWRIGHT_JSON_OUTPUT_NAME="dist-map/shard-${i}.json" \
+              npx cross-env test="${TEST_ENV}" npx playwright test \
+                --list --reporter=json --last-failed --project="${PROJECT}" >/dev/null 2>&1 || true
+            [ -s "dist-map/shard-${i}.json" ] || echo "::warning::no list output for slice ${i}"
+          done
+          echo "Listed $(ls dist-map/shard-*.json 2>/dev/null | wc -l) of $N slices"
       - name: Build HTML distribution map
         env:
           SHARD_COUNT: ${{ needs.collect.outputs.shard_count }}
-          TEST_PATTERN: "--last-failed (source #${{ inputs.source_run_id }})"
+          TEST_PATTERN: "--last-failed slices (rerun of main #${{ inputs.origin_run_number != '' && inputs.origin_run_number || inputs.source_run_id }})"
           BROWSER: ${{ inputs.browser }}
           TEST_ENV: ${{ inputs.environment }}
           DISTRIBUTE_BY_TEST: ${{ inputs.distribute_by_test }}
@@ -256,15 +261,10 @@ jobs:
           ref: ${{ inputs.branch }}
           fetch-depth: 1
 
-      - name: "Enable per-test distribution (mirror source run)"
-        if: ${{ inputs.distribute_by_test }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          for dir in "src/tests/UIAndReports" "src/tests/ReroutingandLeftNav"; do
-            [ -d "$dir" ] || continue
-            grep -rl 'mode: *"default"' "$dir" | xargs -r sed -i 's/mode: *"default"/mode: "parallel"/g'
-          done
+      # NOTE: no distribution codemod here — each shard runs an EXPLICIT slice of
+      # failed tests (below), so even distribution no longer depends on Playwright
+      # sharding or mode:"parallel". That also keeps each shard's load bounded
+      # (~tests_per_shard), which avoids the rerun OOM.
 
       - name: Set up Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v5
@@ -278,17 +278,17 @@ jobs:
       - name: Install Playwright browser
         run: npx playwright install ${{ inputs.browser }}
 
-      - name: Restore merged last-run marker
+      - name: Restore per-shard slices
         uses: actions/download-artifact@v7
         with:
-          name: merged-last-run
-          path: merged
-      - name: Place marker for --last-failed
+          name: rerun-slices
+          path: slices
+      - name: Place this shard's slice as the --last-failed marker
         run: |
           mkdir -p test-results
-          cp merged/last-run.json test-results/.last-run.json
+          cp "slices/shard-${{ matrix.shard }}.json" test-results/.last-run.json
 
-      - name: Re-run failed tests (this shard)
+      - name: Re-run failed tests (this shard's slice)
         id: run_tests
         continue-on-error: true
         env:
@@ -299,11 +299,11 @@ jobs:
           CI: "true"
           PLAYWRIGHT_JSON_OUTPUT_NAME: results.json
         run: |
-          echo "Rerun shard ${{ matrix.shard }} of ${{ needs.collect.outputs.shard_count }} (failed subset)"
+          echo "Rerun shard ${{ matrix.shard }} of ${{ needs.collect.outputs.shard_count }} (this shard's failed slice)"
+          # No --shard: this shard's .last-run.json already contains ONLY its slice.
           npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
             --last-failed \
             --project=${{ inputs.browser }} \
-            --shard=${{ matrix.shard }}/${{ needs.collect.outputs.shard_count }} \
             --workers=1 \
             --retries=${{ env.NUM_RETRIES }} \
             --reporter=html,json,blob
