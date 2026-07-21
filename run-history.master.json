@@ -1,5 +1,17 @@
 [
   {
+    "runNumber": "289-retry-p2",
+    "parentRunNumber": "289",
+    "pass": 2,
+    "runReason": "RETRY FAILURES: Lets see the equal split for rerun this time",
+    "environment": "stage",
+    "browser": "chrome",
+    "isRerun": true,
+    "totalTests": 65,
+    "totalPassed": 17,
+    "totalFailed": 48
+  },
+  {
     "runNumber": "289-retry-p1",
     "parentRunNumber": "289",
     "pass": 1,
