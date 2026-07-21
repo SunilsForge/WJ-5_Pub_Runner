@@ -30,6 +30,20 @@
     "totalFailed": 70
   },
   {
+    "runNumber": "288",
+    "timestamp": "20260721_000000",
+    "runReason": "running after latest changes with ReRerun",
+    "environment": "stage",
+    "browser": "chrome",
+    "testPattern": "@AUT_ENG_03",
+    "totalTests": 684,
+    "totalPassed": 579,
+    "totalFailed": 105,
+    "totalSkipped": 0,
+    "totalFlaky": 0,
+    "durationMs": 221320253
+  },
+  {
     "runNumber": "284",
     "timestamp": "20260720_000000",
     "runReason": "again REGRESSIOn run in STAGE as part of 30 release I1",
