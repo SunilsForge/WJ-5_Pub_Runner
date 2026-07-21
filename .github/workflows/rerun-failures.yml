@@ -11,8 +11,13 @@ on:
   workflow_dispatch:
     inputs:
       source_run_id:
-        description: "Run ID of the main pipeline whose failures to re-run"
+        description: "Run ID whose failures to re-run (the main run on pass 1; the previous rerun on later passes)"
         required: true
+        type: string
+      origin_run_number:
+        description: "The ORIGINAL main run NUMBER (e.g. 284) — constant across the chain; drives report keys/labels and ties reruns to their parent main run. Falls back to source_run_id if empty."
+        required: false
+        default: ""
         type: string
       branch:
         description: "Private-repo branch (inherited from source run)"
@@ -375,7 +380,9 @@ jobs:
       - name: Classify results & build report
         id: classify
         env:
-          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+          # Show the ORIGINAL main run in the report (falls back to source on a
+          # manual dispatch without origin).
+          SOURCE_RUN_ID: ${{ inputs.origin_run_number != '' && inputs.origin_run_number || inputs.source_run_id }}
           RUN_REASON: ${{ inputs.run_reason }}
           TEST_ENV: ${{ inputs.environment }}
           BROWSER: ${{ inputs.browser }}
@@ -408,12 +415,15 @@ jobs:
 
       - name: Place report & update history
         run: |
-          RUNKEY="${{ inputs.source_run_id }}-retry"
+          # Key = {original main run}-retry-p{pass} so every pass is traceable to
+          # its main run AND sorts next to it (prefix is the main run number).
+          ORIGIN="${{ inputs.origin_run_number }}"; ORIGIN="${ORIGIN:-${{ inputs.source_run_id }}}"
+          RUNKEY="${ORIGIN}-retry-p${{ inputs.pass_number }}"
           mkdir -p "gh-pages/reports/${RUNKEY}"
           cp -r rerun-report/* "gh-pages/reports/${RUNKEY}/"
           cd gh-pages
           ENTRY=$(cat <<EOF
-          {"runNumber":"${RUNKEY}","runReason":"${{ inputs.run_reason }}","environment":"${{ inputs.environment }}","browser":"${{ inputs.browser }}","isRerun":true,"totalTests":${{ steps.classify.outputs.reran }},"totalPassed":${{ steps.classify.outputs.flaky }},"totalFailed":${{ steps.classify.outputs.still_failing }}}
+          {"runNumber":"${RUNKEY}","parentRunNumber":"${ORIGIN}","pass":${{ inputs.pass_number }},"runReason":"${{ inputs.run_reason }}","environment":"${{ inputs.environment }}","browser":"${{ inputs.browser }}","isRerun":true,"totalTests":${{ steps.classify.outputs.reran }},"totalPassed":${{ steps.classify.outputs.flaky }},"totalFailed":${{ steps.classify.outputs.still_failing }}}
           EOF
           )
           for HIST in run-history.json run-history.master.json; do
@@ -437,16 +447,23 @@ jobs:
         run: |
           cd gh-pages
           KEEP="${{ inputs.keep_last_runs }}"; KEEP="${KEEP:-50}"
-          mkdir -p ../site-deploy/reports
-          [ -f index.html ] && cp index.html ../site-deploy/index.html || true
-          [ -f run-history.master.json ] && cp run-history.master.json ../site-deploy/ || true
-          jq 'sort_by(.runNumber | tostring) | reverse' run-history.json > ../site-deploy/run-history.json 2>/dev/null || cp run-history.json ../site-deploy/run-history.json
+          DEPLOY_DIR="../site-deploy"
+          mkdir -p "$DEPLOY_DIR/reports"
+          [ -f index.html ] && cp index.html "$DEPLOY_DIR/index.html" || true
+          [ -f run-history.master.json ] && cp run-history.master.json "$DEPLOY_DIR/" || true
           DASH="$GITHUB_WORKSPACE/runner-repo/.github/templates/dashboard-template.html"
-          if [ -f "$DASH" ]; then mkdir -p ../site-deploy/dashboard; cp "$DASH" ../site-deploy/dashboard/index.html; fi
-          # keep the retry report + the most recent KEEP numeric runs
-          cp -r "reports/${{ inputs.source_run_id }}-retry" "../site-deploy/reports/" 2>/dev/null || true
-          for r in $(jq -r '.[].runNumber' run-history.json | grep -E '^[0-9]+$' | sort -rn | head -n "$KEEP"); do
-            [ -d "reports/$r" ] && cp -r "reports/$r" "../site-deploy/reports/" || true
+          if [ -f "$DASH" ]; then mkdir -p "$DEPLOY_DIR/dashboard"; cp "$DASH" "$DEPLOY_DIR/dashboard/index.html"; fi
+          # SAME parent-tied pruning as the main pipeline: keep the last N MAIN runs;
+          # reruns ride with their parent (not counted against N). Keeps this rerun's
+          # report AND prior reruns of the same main run visible together.
+          jq --argjson n "$KEEP" '
+            ([ .[].runNumber | tostring | select(test("^[0-9]+$")) | tonumber ] | unique | sort | reverse | .[:$n]) as $keptMain
+            | map(select((.runNumber | tostring | split("-")[0] | tonumber?) as $mk | $mk != null and ($keptMain | index($mk) != null)))
+            | sort_by(.runNumber | tostring | split("-")[0] | tonumber? // 0) | reverse
+          ' run-history.json > "$DEPLOY_DIR/run-history.json" 2>/dev/null || cp run-history.json "$DEPLOY_DIR/run-history.json"
+          # Copy report folders for every kept entry (main runs AND their reruns).
+          for r in $(jq -r '.[].runNumber' "$DEPLOY_DIR/run-history.json"); do
+            [ -d "reports/$r" ] && { mkdir -p "$DEPLOY_DIR/reports/$r"; cp -r "reports/$r/." "$DEPLOY_DIR/reports/$r/"; } || true
           done
 
       - name: Setup Pages
@@ -483,10 +500,14 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           NEXT=$(( ${{ inputs.pass_number }} + 1 ))
+          # Carry the ORIGINAL main run id unchanged down the chain (fallback to
+          # source_run_id if this pass was dispatched without one).
+          ORIGIN="${{ inputs.origin_run_number }}"; ORIGIN="${ORIGIN:-${{ inputs.source_run_id }}}"
           gh workflow run rerun-failures.yml \
             --repo "${{ github.repository }}" \
             --ref "${{ github.ref_name }}" \
             -f source_run_id="${{ github.run_id }}" \
+            -f origin_run_number="$ORIGIN" \
             -f branch="${{ inputs.branch }}" \
             -f environment="${{ inputs.environment }}" \
             -f credential_set="${{ inputs.credential_set }}" \
@@ -510,7 +531,7 @@ jobs:
       - name: Send Slack
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+          SOURCE_RUN_ID: ${{ inputs.origin_run_number != '' && inputs.origin_run_number || inputs.source_run_id }}
           RUN_REASON: ${{ inputs.run_reason }}
           TEST_ENV: ${{ inputs.environment }}
           BROWSER: ${{ inputs.browser }}
@@ -527,7 +548,7 @@ jobs:
           const owner = process.env.GITHUB_REPOSITORY_OWNER;
           const repoName = (process.env.GITHUB_REPOSITORY || '/').split('/')[1];
           const pages = process.env.PAGES_URL || `https://${owner}.github.io/${repoName}/`;
-          const report = `${pages.replace(/\/$/, '')}/reports/${process.env.SOURCE_RUN_ID}-retry/`;
+          const report = `${pages.replace(/\/$/, '')}/reports/${process.env.SOURCE_RUN_ID}-retry-p${process.env.PASS_NUMBER || '1'}/`;
           const actions = `https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
           const emoji = still > 0 ? '\u{1F534}' : '\u{1F7E2}';
           const passMax = process.env.RERUN_PASSES || '';

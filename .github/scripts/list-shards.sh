@@ -24,8 +24,11 @@ list_shard() {
   [ -n "${GREP:-}" ] && args+=(--grep "${GREP}")
   [ "${LAST_FAILED:-}" = "true" ] && args+=(--last-failed)
   PLAYWRIGHT_JSON_OUTPUT_NAME="dist-map/shard-${i}.json" \
-    npx cross-env test="${TEST_ENV}" npx playwright test "${args[@]}" >/dev/null 2>&1 \
-    || echo "::warning::--list failed for shard ${i}"
+    npx cross-env test="${TEST_ENV}" npx playwright test "${args[@]}" >/dev/null 2>&1 || true
+  # Warn only if no usable output was produced. A non-zero exit alone is not a
+  # failure here — playwright can exit non-zero on benign stderr while still
+  # writing the JSON list, which caused false "failed" warnings.
+  [ -s "dist-map/shard-${i}.json" ] || echo "::warning::no list output for shard ${i}"
 }
 
 # Bounded parallelism to keep N-shard listing fast.

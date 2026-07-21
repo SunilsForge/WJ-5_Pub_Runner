@@ -775,7 +775,7 @@ jobs:
                 map(if .runNumber == $newRun.runNumber then $newRun else . end)
               else
                 . + [$newRun]
-              end | sort_by(.runNumber | tonumber) | reverse
+              end | sort_by(.runNumber | tostring | split("-")[0] | tonumber? // 0) | reverse
             ' run-history.json > run-history.tmp
             mv run-history.tmp run-history.json
           else
@@ -793,7 +793,7 @@ jobs:
                 map(if .runNumber == $newRun.runNumber then $newRun else . end)
               else
                 . + [$newRun]
-              end | sort_by(.runNumber | tonumber) | reverse
+              end | sort_by(.runNumber | tostring | split("-")[0] | tonumber? // 0) | reverse
             ' run-history.master.json > run-history.master.tmp && mv run-history.master.tmp run-history.master.json
           else
             echo "Creating master run history..."
@@ -818,12 +818,24 @@ jobs:
           DEPLOY_DIR="../site-deploy"
           mkdir -p "$DEPLOY_DIR/reports"
           if [ -n "$MIN_RUN" ]; then
-            echo "Deploy view: keeping runs with runNumber >= $MIN_RUN"
-            jq --argjson min "$MIN_RUN" '[.[] | select((.runNumber|tonumber) >= $min)] | sort_by(.runNumber | tonumber) | reverse' run-history.json > "$DEPLOY_DIR/run-history.json"
+            echo "Deploy view: keeping runs with main runNumber >= $MIN_RUN (reruns ride with their parent)"
+            # Keep main runs >= min AND reruns whose parent (numeric prefix) is >= min.
+            jq --argjson min "$MIN_RUN" '
+              ([ .[].runNumber | tostring | select(test("^[0-9]+$")) | tonumber | select(. >= $min) ]) as $keptMain
+              | map(select((.runNumber | tostring | split("-")[0] | tonumber?) as $mk | $mk != null and ($keptMain | index($mk) != null)))
+              | sort_by(.runNumber | tostring | split("-")[0] | tonumber? // 0) | reverse
+            ' run-history.json > "$DEPLOY_DIR/run-history.json"
             mapfile -t KEPT_RUNS < <(jq -r '.[].runNumber' "$DEPLOY_DIR/run-history.json")
           else
-            echo "Deploy view: keeping last $KEEP_LAST runs"
-            jq --argjson n "$KEEP_LAST" 'sort_by(.runNumber | tonumber) | reverse | .[:$n]' run-history.json > "$DEPLOY_DIR/run-history.json"
+            echo "Deploy view: keeping last $KEEP_LAST MAIN runs (their reruns ride along, not counted)"
+            # Keep the last N distinct MAIN run numbers, then keep every entry whose
+            # main key (numeric prefix) is in that set — so reruns ride with their
+            # parent and don't consume the N budget.
+            jq --argjson n "$KEEP_LAST" '
+              ([ .[].runNumber | tostring | select(test("^[0-9]+$")) | tonumber ] | unique | sort | reverse | .[:$n]) as $keptMain
+              | map(select((.runNumber | tostring | split("-")[0] | tonumber?) as $mk | $mk != null and ($keptMain | index($mk) != null)))
+              | sort_by(.runNumber | tostring | split("-")[0] | tonumber? // 0) | reverse
+            ' run-history.json > "$DEPLOY_DIR/run-history.json"
             mapfile -t KEPT_RUNS < <(jq -r '.[].runNumber' "$DEPLOY_DIR/run-history.json")
           fi
           echo "Deploy will include runs: ${KEPT_RUNS[*]}"
@@ -1440,6 +1452,7 @@ jobs:
             --repo "${{ github.repository }}" \
             --ref "${{ github.ref_name }}" \
             -f source_run_id="${{ github.run_id }}" \
+            -f origin_run_number="${{ github.run_number }}" \
             -f branch="${{ github.event.inputs.branch }}" \
             -f environment="${{ github.event.inputs.environment }}" \
             -f credential_set="${{ github.event.inputs.credential_set }}" \
