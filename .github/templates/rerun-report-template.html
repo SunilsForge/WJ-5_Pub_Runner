@@ -17,16 +17,18 @@
     th{background:#f0f3f6}
     .mono{font-family:ui-monospace,monospace;color:#57606a}
     .empty{color:#8c959f;font-style:italic}
+    .btn{display:inline-block;background:#0969da;color:#fff;padding:8px 14px;border-radius:6px;text-decoration:none;font-size:13px;margin:0 0 16px}
   </style>
 </head>
 <body>
   <h1>&#128257; Rerun of Run #__SOURCE_RUN__</h1>
-  <div class="meta">__RUN_REASON__ &middot; Env <code>__ENV__</code> &middot; Browser <code>__BROWSER__</code></div>
+  <div class="meta">__PASS____RUN_REASON__ &middot; Env <code>__ENV__</code> &middot; Browser <code>__BROWSER__</code></div>
   <div class="cards">
     <div class="card"><b>__RERAN__</b>re-run</div>
     <div class="card ok"><b>__FLAKY__</b>now passing (flaky)</div>
     <div class="card bad"><b>__STILL__</b>still failing (real)</div>
   </div>
+  __MERGED_LINK__
   <h2>Still failing (real)</h2>
   <table><thead><tr><th>#</th><th>Test</th><th>File</th></tr></thead><tbody><!-- STILL_ROWS --></tbody></table>
   <h2>Now passing on rerun (flaky)</h2>

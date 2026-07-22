@@ -49,7 +49,7 @@ on:
           - "20"
           - "25"
           - "40"
-          - "100"
+          - "95"
       distribute_by_test:
         description: "Balance by test COUNT (scenarios), not spec file. Affects ONLY UIAndReports & ReroutingandLeftNav; all other folders keep their current file-level flow."
         required: false
@@ -60,6 +60,17 @@ on:
         required: false
         default: false
         type: boolean
+      rerun_passes:
+        description: "How many rerun passes when rerun_failed is on. 1 = main+rerun, 2 = +re-rerun, … Each pass re-runs the previous pass's still-failing tests; stops early once a pass is clean."
+        required: false
+        default: "1"
+        type: choice
+        options:
+          - "1"
+          - "2"
+          - "3"
+          - "4"
+          - "5"
       browser:
         description: "Browser to run tests on"
         required: true
@@ -198,36 +209,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Checkout runner repo for shared scripts & template
+        uses: actions/checkout@v5
+        with:
+          path: runner-repo
+
       - name: Compute per-shard test lists
         shell: bash
         env:
           SHARD_COUNT: ${{ github.event.inputs.shard_count }}
-        run: |
-          set -uo pipefail
-          N="${SHARD_COUNT:-1}"
-          mkdir -p dist-map
-          list_shard() {
-            local i="$1"
-            PLAYWRIGHT_JSON_OUTPUT_NAME="dist-map/shard-${i}.json" \
-              npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
-                --list --reporter=json \
-                --grep '${{ github.event.inputs.test_pattern }}' \
-                --project=${{ github.event.inputs.browser }} \
-                --shard="${i}/${N}" >/dev/null 2>&1 \
-              || echo "::warning::--list failed for shard ${i}"
-          }
-          # Bounded parallelism (~4 at a time) to keep N-shard listing fast.
-          for i in $(seq 1 "$N"); do
-            list_shard "$i" &
-            while [ "$(jobs -r | wc -l)" -ge 4 ]; do wait -n; done
-          done
-          wait
-          echo "Listed $(ls dist-map/shard-*.json 2>/dev/null | wc -l) of $N shards"
-
-      - name: Checkout runner repo for template
-        uses: actions/checkout@v5
-        with:
-          path: runner-repo
+          TEST_ENV: ${{ env.TEST_ENV }}
+          PROJECT: ${{ github.event.inputs.browser }}
+          GREP: ${{ github.event.inputs.test_pattern }}
+        run: bash runner-repo/.github/scripts/list-shards.sh
 
       - name: Build HTML distribution map
         env:
@@ -781,7 +775,7 @@ jobs:
                 map(if .runNumber == $newRun.runNumber then $newRun else . end)
               else
                 . + [$newRun]
-              end | sort_by(.runNumber | tonumber) | reverse
+              end | sort_by(.runNumber | tostring | split("-")[0] | tonumber? // 0) | reverse
             ' run-history.json > run-history.tmp
             mv run-history.tmp run-history.json
           else
@@ -799,7 +793,7 @@ jobs:
                 map(if .runNumber == $newRun.runNumber then $newRun else . end)
               else
                 . + [$newRun]
-              end | sort_by(.runNumber | tonumber) | reverse
+              end | sort_by(.runNumber | tostring | split("-")[0] | tonumber? // 0) | reverse
             ' run-history.master.json > run-history.master.tmp && mv run-history.master.tmp run-history.master.json
           else
             echo "Creating master run history..."
@@ -824,12 +818,24 @@ jobs:
           DEPLOY_DIR="../site-deploy"
           mkdir -p "$DEPLOY_DIR/reports"
           if [ -n "$MIN_RUN" ]; then
-            echo "Deploy view: keeping runs with runNumber >= $MIN_RUN"
-            jq --argjson min "$MIN_RUN" '[.[] | select((.runNumber|tonumber) >= $min)] | sort_by(.runNumber | tonumber) | reverse' run-history.json > "$DEPLOY_DIR/run-history.json"
+            echo "Deploy view: keeping runs with main runNumber >= $MIN_RUN (reruns ride with their parent)"
+            # Keep main runs >= min AND reruns whose parent (numeric prefix) is >= min.
+            jq --argjson min "$MIN_RUN" '
+              ([ .[].runNumber | tostring | select(test("^[0-9]+$")) | tonumber | select(. >= $min) ]) as $keptMain
+              | map(select((.runNumber | tostring | split("-")[0] | tonumber?) as $mk | $mk != null and ($keptMain | index($mk) != null)))
+              | sort_by(.runNumber | tostring | split("-")[0] | tonumber? // 0) | reverse
+            ' run-history.json > "$DEPLOY_DIR/run-history.json"
             mapfile -t KEPT_RUNS < <(jq -r '.[].runNumber' "$DEPLOY_DIR/run-history.json")
           else
-            echo "Deploy view: keeping last $KEEP_LAST runs"
-            jq --argjson n "$KEEP_LAST" 'sort_by(.runNumber | tonumber) | reverse | .[:$n]' run-history.json > "$DEPLOY_DIR/run-history.json"
+            echo "Deploy view: keeping last $KEEP_LAST MAIN runs (their reruns ride along, not counted)"
+            # Keep the last N distinct MAIN run numbers, then keep every entry whose
+            # main key (numeric prefix) is in that set — so reruns ride with their
+            # parent and don't consume the N budget.
+            jq --argjson n "$KEEP_LAST" '
+              ([ .[].runNumber | tostring | select(test("^[0-9]+$")) | tonumber ] | unique | sort | reverse | .[:$n]) as $keptMain
+              | map(select((.runNumber | tostring | split("-")[0] | tonumber?) as $mk | $mk != null and ($keptMain | index($mk) != null)))
+              | sort_by(.runNumber | tostring | split("-")[0] | tonumber? // 0) | reverse
+            ' run-history.json > "$DEPLOY_DIR/run-history.json"
             mapfile -t KEPT_RUNS < <(jq -r '.[].runNumber' "$DEPLOY_DIR/run-history.json")
           fi
           echo "Deploy will include runs: ${KEPT_RUNS[*]}"
@@ -1446,6 +1452,7 @@ jobs:
             --repo "${{ github.repository }}" \
             --ref "${{ github.ref_name }}" \
             -f source_run_id="${{ github.run_id }}" \
+            -f origin_run_number="${{ github.run_number }}" \
             -f branch="${{ github.event.inputs.branch }}" \
             -f environment="${{ github.event.inputs.environment }}" \
             -f credential_set="${{ github.event.inputs.credential_set }}" \
@@ -1455,5 +1462,7 @@ jobs:
             -f num_retries="${{ github.event.inputs.num_retries }}" \
             -f video_mode="${{ github.event.inputs.video_mode }}" \
             -f trace_mode="${{ github.event.inputs.trace_mode }}" \
-            -f run_reason="RETRY FAILURES: ${{ github.event.inputs.run_reason }}"
-          echo "Dispatched rerun-failures for source run ${{ github.run_id }}"
+            -f run_reason="RETRY FAILURES: ${{ github.event.inputs.run_reason }}" \
+            -f rerun_passes="${{ github.event.inputs.rerun_passes }}" \
+            -f pass_number="1"
+          echo "Dispatched rerun-failures (pass 1 of ${{ github.event.inputs.rerun_passes }}) for source run ${{ github.run_id }}"
