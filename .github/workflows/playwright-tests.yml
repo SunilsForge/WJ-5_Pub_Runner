@@ -657,6 +657,16 @@ jobs:
           console.log('Wrote dashboard-summary.json with', failureGroups.length, 'failure groups,', flakyTests.length, 'flaky tests');
           SCRIPT
 
+      - name: Build per-test Results Table
+        # Renders merged-report/results-table.html (Passed/Failed/Flaky/Skipped for
+        # THIS run), linked from the merged report via the "Results Table" button.
+        env:
+          RUN_NUMBER: ${{ github.run_number }}
+          TEST_ENV: ${{ env.TEST_ENV }}
+          BROWSER: ${{ inputs.browser }}
+          TEST_PATTERN: ${{ github.event.inputs.test_pattern }}
+        run: node runner-repo/.github/scripts/build-main-results-table.js
+
       - name: Upload merged report artifact
         uses: actions/upload-artifact@v6
         with:
