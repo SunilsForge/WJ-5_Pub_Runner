@@ -1,0 +1,612 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts >>  LWIDNT UI And Reports >> Ages 4 to 5 - Score Error Scenario for SSP1 Test UI
+- Location: src/tests/ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts:12:13
+
+# Error details
+
+```
+Error: No matching row found where ExeeID contains "LWIDNT.W5PA"
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 36Pw Aut25AH" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "36Pw Aut25AH" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "Begin assignment Lola O'Conner_1784730860615 for N41920A75474, Shayna Lola O'Conner_1784730860615 More info 90 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e74] [cursor=pointer]:
+                    - cell "Begin assignment Lola O'Conner_1784730860615 for N41920A75474, Shayna" [ref=e75]:
+                      - button "Begin assignment Lola O'Conner_1784730860615 for N41920A75474, Shayna" [disabled] [ref=e76]:
+                        - generic [ref=e77]: N41920A75474, Shayna
+                    - cell "Lola O'Conner_1784730860615 More info" [ref=e78]:
+                      - generic [ref=e79]:
+                        - button "Lola O'Conner_1784730860615" [disabled] [ref=e80]:
+                          - generic [ref=e81]: Lola O'Conner_1784730860615
+                        - button "More info" [ref=e82]
+                    - cell "90 days" [ref=e83]:
+                      - button "90 days" [disabled] [ref=e84]
+                    - cell "● Submitted" [ref=e85]:
+                      - button "● Submitted" [disabled] [ref=e86]:
+                        - generic [ref=e87]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e88]:
+                      - button "Edit Assignment" [disabled] [ref=e89]
+                      - button "Add Tests" [disabled] [ref=e90]
+                      - button "Assignment actions" [ref=e91]
+                  - row "Begin assignment Cristina Wyman MD_1784730857604 for N7086A13643, Ignatius Cristina Wyman MD_1784730857604 More info 90 days ● In Progress ↩️ Resume Assignment Edit Assignment Add Tests Assignment actions" [ref=e92] [cursor=pointer]:
+                    - cell "Begin assignment Cristina Wyman MD_1784730857604 for N7086A13643, Ignatius" [ref=e93]:
+                      - button "Begin assignment Cristina Wyman MD_1784730857604 for N7086A13643, Ignatius" [disabled] [ref=e94]:
+                        - generic [ref=e95]: N7086A13643, Ignatius
+                    - cell "Cristina Wyman MD_1784730857604 More info" [ref=e96]:
+                      - generic [ref=e97]:
+                        - button "Cristina Wyman MD_1784730857604" [disabled] [ref=e98]:
+                          - generic [ref=e99]: Cristina Wyman MD_1784730857604
+                        - button "More info" [ref=e100]
+                    - cell "90 days" [ref=e101]:
+                      - button "90 days" [disabled] [ref=e102]
+                    - cell "● In Progress ↩️ Resume Assignment" [ref=e103]:
+                      - button "● In Progress ↩️ Resume Assignment" [disabled] [ref=e104]:
+                        - generic [ref=e105]: ●
+                        - text: In Progress
+                        - text: ↩️ Resume Assignment
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e106]:
+                      - button "Edit Assignment" [disabled] [ref=e107]
+                      - button "Add Tests" [disabled] [ref=e108]
+                      - button "Assignment actions" [ref=e109]
+                  - row "Begin assignment Clark Lynch_1784730500750 (+1 more) for N2937A5696, Lonzo Clark Lynch_1784730500750 (+1 more) More info 90 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e110] [cursor=pointer]:
+                    - cell "Begin assignment Clark Lynch_1784730500750 (+1 more) for N2937A5696, Lonzo" [ref=e111]:
+                      - button "Begin assignment Clark Lynch_1784730500750 (+1 more) for N2937A5696, Lonzo" [disabled] [ref=e112]:
+                        - generic [ref=e113]: N2937A5696, Lonzo
+                    - cell "Clark Lynch_1784730500750 (+1 more) More info" [ref=e114]:
+                      - generic [ref=e115]:
+                        - button "Clark Lynch_1784730500750 (+1 more)" [disabled] [ref=e116]:
+                          - generic [ref=e117]: Clark Lynch_1784730500750 (+1 more)
+                        - button "More info" [ref=e118]
+                    - cell "90 days" [ref=e119]:
+                      - button "90 days" [disabled] [ref=e120]
+                    - cell "● In Progress" [ref=e121]:
+                      - button "● In Progress" [disabled] [ref=e122]:
+                        - generic [ref=e123]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e124]:
+                      - button "Edit Assignment" [disabled] [ref=e125]
+                      - button "Add Tests" [disabled] [ref=e126]
+                      - button "Assignment actions" [ref=e127]
+                  - row "Begin assignment Ricardo O'Conner_1784730584582 for N77374A78377, Novella Ricardo O'Conner_1784730584582 More info 90 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e128] [cursor=pointer]:
+                    - cell "Begin assignment Ricardo O'Conner_1784730584582 for N77374A78377, Novella" [ref=e129]:
+                      - button "Begin assignment Ricardo O'Conner_1784730584582 for N77374A78377, Novella" [disabled] [ref=e130]:
+                        - generic [ref=e131]: N77374A78377, Novella
+                    - cell "Ricardo O'Conner_1784730584582 More info" [ref=e132]:
+                      - generic [ref=e133]:
+                        - button "Ricardo O'Conner_1784730584582" [disabled] [ref=e134]:
+                          - generic [ref=e135]: Ricardo O'Conner_1784730584582
+                        - button "More info" [ref=e136]
+                    - cell "90 days" [ref=e137]:
+                      - button "90 days" [disabled] [ref=e138]
+                    - cell "● Submitted" [ref=e139]:
+                      - button "● Submitted" [disabled] [ref=e140]:
+                        - generic [ref=e141]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e142]:
+                      - button "Edit Assignment" [disabled] [ref=e143]
+                      - button "Add Tests" [disabled] [ref=e144]
+                      - button "Assignment actions" [ref=e145]
+                  - row "Begin assignment Lori Tillman_1784730237147 for N52773A51398, Rosamond Lori Tillman_1784730237147 More info 90 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e146] [cursor=pointer]:
+                    - cell "Begin assignment Lori Tillman_1784730237147 for N52773A51398, Rosamond" [ref=e147]:
+                      - button "Begin assignment Lori Tillman_1784730237147 for N52773A51398, Rosamond" [disabled] [ref=e148]:
+                        - generic [ref=e149]: N52773A51398, Rosamond
+                    - cell "Lori Tillman_1784730237147 More info" [ref=e150]:
+                      - generic [ref=e151]:
+                        - button "Lori Tillman_1784730237147" [disabled] [ref=e152]:
+                          - generic [ref=e153]: Lori Tillman_1784730237147
+                        - button "More info" [ref=e154]
+                    - cell "90 days" [ref=e155]:
+                      - button "90 days" [disabled] [ref=e156]
+                    - cell "● Submitted" [ref=e157]:
+                      - button "● Submitted" [disabled] [ref=e158]:
+                        - generic [ref=e159]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e160]:
+                      - button "Edit Assignment" [disabled] [ref=e161]
+                      - button "Add Tests" [disabled] [ref=e162]
+                      - button "Assignment actions" [ref=e163]
+                  - row "Begin assignment Austin Lehner_1784730220907 for N30519A60538, Christiana Austin Lehner_1784730220907 More info 90 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e164] [cursor=pointer]:
+                    - cell "Begin assignment Austin Lehner_1784730220907 for N30519A60538, Christiana" [ref=e165]:
+                      - button "Begin assignment Austin Lehner_1784730220907 for N30519A60538, Christiana" [disabled] [ref=e166]:
+                        - generic [ref=e167]: N30519A60538, Christiana
+                    - cell "Austin Lehner_1784730220907 More info" [ref=e168]:
+                      - generic [ref=e169]:
+                        - button "Austin Lehner_1784730220907" [disabled] [ref=e170]:
+                          - generic [ref=e171]: Austin Lehner_1784730220907
+                        - button "More info" [ref=e172]
+                    - cell "90 days" [ref=e173]:
+                      - button "90 days" [disabled] [ref=e174]
+                    - cell "● Submitted" [ref=e175]:
+                      - button "● Submitted" [disabled] [ref=e176]:
+                        - generic [ref=e177]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e178]:
+                      - button "Edit Assignment" [disabled] [ref=e179]
+                      - button "Add Tests" [disabled] [ref=e180]
+                      - button "Assignment actions" [ref=e181]
+                  - row "Begin assignment Lorena Willms_1784729961973 for N94748A28036, Earlene Lorena Willms_1784729961973 More info 90 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e182] [cursor=pointer]:
+                    - cell "Begin assignment Lorena Willms_1784729961973 for N94748A28036, Earlene" [ref=e183]:
+                      - button "Begin assignment Lorena Willms_1784729961973 for N94748A28036, Earlene" [disabled] [ref=e184]:
+                        - generic [ref=e185]: N94748A28036, Earlene
+                    - cell "Lorena Willms_1784729961973 More info" [ref=e186]:
+                      - generic [ref=e187]:
+                        - button "Lorena Willms_1784729961973" [disabled] [ref=e188]:
+                          - generic [ref=e189]: Lorena Willms_1784729961973
+                        - button "More info" [ref=e190]
+                    - cell "90 days" [ref=e191]:
+                      - button "90 days" [disabled] [ref=e192]
+                    - cell "● Submitted" [ref=e193]:
+                      - button "● Submitted" [disabled] [ref=e194]:
+                        - generic [ref=e195]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e196]:
+                      - button "Edit Assignment" [disabled] [ref=e197]
+                      - button "Add Tests" [disabled] [ref=e198]
+                      - button "Assignment actions" [ref=e199]
+                  - row "Begin assignment Guadalupe Marvin_1784729715665 for N65590A45978, Morris Guadalupe Marvin_1784729715665 More info 90 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e200] [cursor=pointer]:
+                    - cell "Begin assignment Guadalupe Marvin_1784729715665 for N65590A45978, Morris" [ref=e201]:
+                      - button "Begin assignment Guadalupe Marvin_1784729715665 for N65590A45978, Morris" [disabled] [ref=e202]:
+                        - generic [ref=e203]: N65590A45978, Morris
+                    - cell "Guadalupe Marvin_1784729715665 More info" [ref=e204]:
+                      - generic [ref=e205]:
+                        - button "Guadalupe Marvin_1784729715665" [disabled] [ref=e206]:
+                          - generic [ref=e207]: Guadalupe Marvin_1784729715665
+                        - button "More info" [ref=e208]
+                    - cell "90 days" [ref=e209]:
+                      - button "90 days" [disabled] [ref=e210]
+                    - cell "● Submitted" [ref=e211]:
+                      - button "● Submitted" [disabled] [ref=e212]:
+                        - generic [ref=e213]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e214]:
+                      - button "Edit Assignment" [disabled] [ref=e215]
+                      - button "Add Tests" [disabled] [ref=e216]
+                      - button "Assignment actions" [ref=e217]
+                  - row "Begin assignment Ms. Claudia VonRueden III_1769171466743 for N75729A55735, Nat Ms. Claudia VonRueden III_1769171466743 More info 0 days ● Expired Generate Report Assignment actions" [ref=e218] [cursor=pointer]:
+                    - cell "Begin assignment Ms. Claudia VonRueden III_1769171466743 for N75729A55735, Nat" [ref=e219]:
+                      - button "Begin assignment Ms. Claudia VonRueden III_1769171466743 for N75729A55735, Nat" [disabled] [ref=e220]:
+                        - generic [ref=e221]: N75729A55735, Nat
+                    - cell "Ms. Claudia VonRueden III_1769171466743 More info" [ref=e222]:
+                      - generic [ref=e223]:
+                        - button "Ms. Claudia VonRueden III_1769171466743" [disabled] [ref=e224]:
+                          - generic [ref=e225]: Ms. Claudia VonRueden III_1769171466743
+                        - button "More info" [ref=e226]
+                    - cell "0 days" [ref=e227]:
+                      - button "0 days" [disabled] [ref=e228]
+                    - cell "● Expired" [ref=e229]:
+                      - button "● Expired" [disabled] [ref=e230]:
+                        - generic [ref=e231]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e232]:
+                      - button "Generate Report" [ref=e233]
+                      - button "Assignment actions" [ref=e234]
+                  - row "Begin assignment Dr. Jorge Reilly_1769171140623 for N20571A98126, Kaley Dr. Jorge Reilly_1769171140623 More info 0 days ● Expired Generate Report Assignment actions" [ref=e235] [cursor=pointer]:
+                    - cell "Begin assignment Dr. Jorge Reilly_1769171140623 for N20571A98126, Kaley" [ref=e236]:
+                      - button "Begin assignment Dr. Jorge Reilly_1769171140623 for N20571A98126, Kaley" [disabled] [ref=e237]:
+                        - generic [ref=e238]: N20571A98126, Kaley
+                    - cell "Dr. Jorge Reilly_1769171140623 More info" [ref=e239]:
+                      - generic [ref=e240]:
+                        - button "Dr. Jorge Reilly_1769171140623" [disabled] [ref=e241]:
+                          - generic [ref=e242]: Dr. Jorge Reilly_1769171140623
+                        - button "More info" [ref=e243]
+                    - cell "0 days" [ref=e244]:
+                      - button "0 days" [disabled] [ref=e245]
+                    - cell "● Expired" [ref=e246]:
+                      - button "● Expired" [disabled] [ref=e247]:
+                        - generic [ref=e248]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e249]:
+                      - button "Generate Report" [ref=e250]
+                      - button "Assignment actions" [ref=e251]
+                  - row "Begin assignment Matt Macejkovic_1769170812070 for N39404A10066, Thora Matt Macejkovic_1769170812070 More info 0 days ● Expired Generate Report Assignment actions" [ref=e252] [cursor=pointer]:
+                    - cell "Begin assignment Matt Macejkovic_1769170812070 for N39404A10066, Thora" [ref=e253]:
+                      - button "Begin assignment Matt Macejkovic_1769170812070 for N39404A10066, Thora" [disabled] [ref=e254]:
+                        - generic [ref=e255]: N39404A10066, Thora
+                    - cell "Matt Macejkovic_1769170812070 More info" [ref=e256]:
+                      - generic [ref=e257]:
+                        - button "Matt Macejkovic_1769170812070" [disabled] [ref=e258]:
+                          - generic [ref=e259]: Matt Macejkovic_1769170812070
+                        - button "More info" [ref=e260]
+                    - cell "0 days" [ref=e261]:
+                      - button "0 days" [disabled] [ref=e262]
+                    - cell "● Expired" [ref=e263]:
+                      - button "● Expired" [disabled] [ref=e264]:
+                        - generic [ref=e265]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e266]:
+                      - button "Generate Report" [ref=e267]
+                      - button "Assignment actions" [ref=e268]
+                  - row "Begin assignment Mr. Alfonso Luettgen_1769170491854 for N51380A86442, Polly Mr. Alfonso Luettgen_1769170491854 More info 0 days ● Expired Generate Report Assignment actions" [ref=e269] [cursor=pointer]:
+                    - cell "Begin assignment Mr. Alfonso Luettgen_1769170491854 for N51380A86442, Polly" [ref=e270]:
+                      - button "Begin assignment Mr. Alfonso Luettgen_1769170491854 for N51380A86442, Polly" [disabled] [ref=e271]:
+                        - generic [ref=e272]: N51380A86442, Polly
+                    - cell "Mr. Alfonso Luettgen_1769170491854 More info" [ref=e273]:
+                      - generic [ref=e274]:
+                        - button "Mr. Alfonso Luettgen_1769170491854" [disabled] [ref=e275]:
+                          - generic [ref=e276]: Mr. Alfonso Luettgen_1769170491854
+                        - button "More info" [ref=e277]
+                    - cell "0 days" [ref=e278]:
+                      - button "0 days" [disabled] [ref=e279]
+                    - cell "● Expired" [ref=e280]:
+                      - button "● Expired" [disabled] [ref=e281]:
+                        - generic [ref=e282]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e283]:
+                      - button "Generate Report" [ref=e284]
+                      - button "Assignment actions" [ref=e285]
+                  - row "Begin assignment Florence Lubowitz_1769170167914 for N34340A78655, Jordi Florence Lubowitz_1769170167914 More info 0 days ● Expired Generate Report Assignment actions" [ref=e286] [cursor=pointer]:
+                    - cell "Begin assignment Florence Lubowitz_1769170167914 for N34340A78655, Jordi" [ref=e287]:
+                      - button "Begin assignment Florence Lubowitz_1769170167914 for N34340A78655, Jordi" [disabled] [ref=e288]:
+                        - generic [ref=e289]: N34340A78655, Jordi
+                    - cell "Florence Lubowitz_1769170167914 More info" [ref=e290]:
+                      - generic [ref=e291]:
+                        - button "Florence Lubowitz_1769170167914" [disabled] [ref=e292]:
+                          - generic [ref=e293]: Florence Lubowitz_1769170167914
+                        - button "More info" [ref=e294]
+                    - cell "0 days" [ref=e295]:
+                      - button "0 days" [disabled] [ref=e296]
+                    - cell "● Expired" [ref=e297]:
+                      - button "● Expired" [disabled] [ref=e298]:
+                        - generic [ref=e299]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e300]:
+                      - button "Generate Report" [ref=e301]
+                      - button "Assignment actions" [ref=e302]
+                  - row "Begin assignment Marsha Hyatt_1769169844017 for N99216A47528, Hortense Marsha Hyatt_1769169844017 More info 0 days ● Expired Generate Report Assignment actions" [ref=e303] [cursor=pointer]:
+                    - cell "Begin assignment Marsha Hyatt_1769169844017 for N99216A47528, Hortense" [ref=e304]:
+                      - button "Begin assignment Marsha Hyatt_1769169844017 for N99216A47528, Hortense" [disabled] [ref=e305]:
+                        - generic [ref=e306]: N99216A47528, Hortense
+                    - cell "Marsha Hyatt_1769169844017 More info" [ref=e307]:
+                      - generic [ref=e308]:
+                        - button "Marsha Hyatt_1769169844017" [disabled] [ref=e309]:
+                          - generic [ref=e310]: Marsha Hyatt_1769169844017
+                        - button "More info" [ref=e311]
+                    - cell "0 days" [ref=e312]:
+                      - button "0 days" [disabled] [ref=e313]
+                    - cell "● Expired" [ref=e314]:
+                      - button "● Expired" [disabled] [ref=e315]:
+                        - generic [ref=e316]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e317]:
+                      - button "Generate Report" [ref=e318]
+                      - button "Assignment actions" [ref=e319]
+            - generic [ref=e320]:
+              - generic [ref=e323]:
+                - img [ref=e324]
+                - heading "Notifications Center" [level=2] [ref=e328]
+              - generic [ref=e329]:
+                - generic [ref=e331]:
+                  - img [ref=e332]
+                  - heading "Resources" [level=3] [ref=e336]
+                - list [ref=e337]:
+                  - listitem [ref=e338]:
+                    - button "Riverside Learn" [ref=e339] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e340]
+                      - img [ref=e342]
+                  - listitem [ref=e344]:
+                    - button "Onboarding Tutorial Videos" [ref=e345] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e346]
+                      - img [ref=e348]
+                  - listitem [ref=e350]:
+                    - button "Quick Reference Guides" [ref=e351] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e352]
+                      - img [ref=e354]
+                - button "View All" [ref=e357] [cursor=pointer]
+      - contentinfo [ref=e358]:
+        - generic [ref=e359]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e360] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e361]
+        - generic [ref=e362]:
+          - link "Riverside Insights Facebook" [ref=e363] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e364]
+          - link "Riverside Insights Twitter" [ref=e365] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e366]
+          - link "Riverside Insights LinkedIn" [ref=e367] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e368]
+          - link "Riverside Insights Instagram" [ref=e369] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e370]
+        - generic [ref=e371]:
+          - button "Leave Feedback" [ref=e372] [cursor=pointer]
+          - generic [ref=e373]: "|"
+          - link "Terms of Use" [ref=e374] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e375]: "|"
+          - link "Privacy Policy" [ref=e376] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e377]: Footer region end
+  - alertdialog [active] [ref=e379]:
+    - main "Expiration warning" [ref=e380]:
+      - generic [ref=e381]: Session Expiring
+      - generic [ref=e382]: Session will expire in 5 minutes, press continue to extend time.
+    - navigation [ref=e383]:
+      - button "Continue" [ref=e384] [cursor=pointer]
+  - region "Chat Widget" [ref=e385]:
+    - iframe [ref=e386]:
+      - button "Open live chat" [ref=f6e5]:
+        - img [ref=f6e8]
+        - img [ref=f6e15]
+    - generic "Drag" [ref=e387]:
+      - img [ref=e388]
+```
+
+# Test source
+
+```ts
+  385 |     let download;
+  386 |     try {
+  387 |       download = await downloadPromise;
+  388 |     } catch (error) {
+  389 |       throw new Error(
+  390 |         `Download for ${expectedReportName} did not start within 2 minutes after clicking the button.`,
+  391 |       );
+  392 |     }
+  393 | 
+  394 |     const zipPath = getExamineeZipFilePath(exportType, examineeID);
+  395 |     console.log(`Saving downloaded file to: ${zipPath}`);
+  396 |     await download.saveAs(zipPath);
+  397 |     await testinfo.attach("Downloaded Zip file", {
+  398 |       path: zipPath,
+  399 |       contentType: "application/zip",
+  400 |     });
+  401 |   }
+  402 | 
+  403 |   private requiredFile: any;
+  404 |   private requiredFilePath: any;
+  405 |   private txtFileContent: string;
+  406 | 
+  407 |   private examineeIdSet: Set<string> = new Set();
+  408 |   private examinerIdSet: Set<string> = new Set();
+  409 | 
+  410 |   async validateTheDownloadedReportWithRunTimeDataForSingleAndMulti(
+  411 |     $TestName: string,
+  412 |     $SumOfItemScores: number,
+  413 |     $BasalCredit: number,
+  414 |     $WlookUp: number,
+  415 |     $Wscore: number,
+  416 |     $semW: number,
+  417 |     $WlookUpAdminItems: string,
+  418 |     $ScoreString: string,
+  419 |     $StemForm: string,
+  420 |     $LookUpModel: string,
+  421 |     $totalItems: number,
+  422 |     $scoreFlag: string, // pending
+  423 |   ) {
+  424 |     const rows: string[] = this.txtFileContent.trim().split("\n");
+  425 |     const headers: string[] | undefined = rows.shift()?.split("\t");
+  426 | 
+  427 |     const examinerID: number | undefined = headers?.indexOf("ExerID");
+  428 |     const examineeID: number | undefined = headers?.indexOf("ExeeID");
+  429 |     const dateOfTest: number | undefined = headers?.indexOf("EDOT");
+  430 |     const testNumber: number | undefined = headers?.indexOf("TestNum");
+  431 |     const testName: number | undefined = headers?.indexOf("TestName");
+  432 |     const testStemForm: number | undefined = headers?.indexOf("TestStemForm");
+  433 |     const lookUpModel: number | undefined = headers?.indexOf("LookupModel");
+  434 |     const sumItemScores: number | undefined = headers?.indexOf("SumItemScores");
+  435 |     const baselCredit: number | undefined = headers?.indexOf("BasalCredit");
+  436 |     const wLookUp: number | undefined = headers?.indexOf("WLookup");
+  437 |     const WLkpAdminItems: number | undefined =
+  438 |       headers?.indexOf("WLkpAdminItems");
+  439 |     const wScore: number | undefined = headers?.indexOf("WScore");
+  440 |     const SEMW: number | undefined = headers?.indexOf("SEMW");
+  441 |     const scoreFlag: number | undefined = headers?.indexOf("ScoreFlags");
+  442 |     const scoreString: number | undefined = headers?.indexOf("ScoreString");
+  443 | 
+  444 |     const headersArray: (number | undefined)[] = [
+  445 |       examineeID,
+  446 |       // examinerID, // No more used (24 Sep 2024)
+  447 |       scoreString,
+  448 |       testNumber,
+  449 |       dateOfTest,
+  450 |     ];
+  451 |     for (const i of headersArray) {
+  452 |       if (i === undefined || i === -1) {
+  453 |         throw new Error(
+  454 |           `Heading "${i}" or ItemName  not found in the extracted file`,
+  455 |         );
+  456 |       }
+  457 |     }
+  458 | 
+  459 |     //let examinerid: string = "";
+  460 |     let examineeid: string = "";
+  461 |     let dateoftest: string = "";
+  462 |     let testnumber: string = "";
+  463 |     let testname: string = "";
+  464 |     let teststemform: string = "";
+  465 |     let lookupmodel: string = "";
+  466 |     let sumitemscores: string = "";
+  467 |     let baselcredit: string = "";
+  468 |     let wlookup: string = "";
+  469 |     let wscore: string = "";
+  470 |     let semw: string = "";
+  471 |     let wlkpadminitems: string = "";
+  472 |     let scoreflag: string = "";
+  473 |     let scorestring: string = "";
+  474 | 
+  475 |      const targetMatch = $StemForm; // ← Use your match value here
+  476 |      const targetColumnIndex = testStemForm!;
+  477 | 
+  478 |      const matchedRow = rows.find((line) => {
+  479 |        const columns = line.split("\t");
+  480 |        const cellValue = columns[targetColumnIndex]?.trim();
+  481 |        return cellValue && cellValue.includes(targetMatch);
+  482 |      });
+  483 | 
+  484 |      if (!matchedRow) {
+> 485 |        throw new Error(`No matching row found where ExeeID contains "${targetMatch}"`);
+      |              ^ Error: No matching row found where ExeeID contains "LWIDNT.W5PA"
+  486 |      }
+  487 |       const columnValues: string[] = matchedRow.split("\t");
+  488 | 
+  489 |       //examinerid = columnValues[examinerID!];
+  490 |       examineeid = columnValues[examineeID!];
+  491 |       dateoftest = columnValues[dateOfTest!];
+  492 |       testnumber = columnValues[testNumber!];
+  493 |       testname = columnValues[testName!];
+  494 |       teststemform = columnValues[testStemForm!];
+  495 |       lookupmodel = columnValues[lookUpModel!];
+  496 |       sumitemscores = columnValues[sumItemScores!];
+  497 |       baselcredit = columnValues[baselCredit!];
+  498 |       wlookup = columnValues[wLookUp!];
+  499 |       wscore = columnValues[wScore!];
+  500 |       semw = columnValues[SEMW!];
+  501 |       wlkpadminitems = columnValues[WLkpAdminItems!];
+  502 |       scoreflag = columnValues[scoreFlag!];
+  503 |       scorestring = columnValues[scoreString!] ?? "";
+  504 | 
+  505 |       if (testname !== "" && testname !== undefined && testname !== null) {
+  506 |         //this.reqWlookUpMap.set("examinerID", examinerid);
+  507 |         this.reqWlookUpMap.set("examineeID", examineeid);
+  508 |         this.reqWlookUpMap.set("dateOfTest", dateoftest);
+  509 |         this.reqWlookUpMap.set("testName", testname);
+  510 |         this.reqWlookUpMap.set("testStemForm", teststemform);
+  511 |         this.reqWlookUpMap.set("lookUpModel", lookupmodel);
+  512 |         this.reqWlookUpMap.set("sumItemScores", sumitemscores);
+  513 |         this.reqWlookUpMap.set("baselCredit", baselcredit);
+  514 |         this.reqWlookUpMap.set("wLookUp", wlookup);
+  515 |         this.reqWlookUpMap.set("wScore", wscore);
+  516 |         this.reqWlookUpMap.set("SEMW", semw);
+  517 |         this.reqWlookUpMap.set("WlkpAdminItems", wlkpadminitems);
+  518 |         this.reqWlookUpMap.set("scoreFlag", scoreflag);
+  519 |         this.reqWlookUpMap.set("scoreString", scorestring);
+  520 |       }
+  521 | 
+  522 |     const mapasJSON: string = JSON.stringify([...this.reqWlookUpMap]);
+  523 |     console.log("reqWlookUpMap - - >", mapasJSON);
+  524 | 
+  525 |     if (
+  526 |       examineeid == "" ||
+  527 |       examineeid == undefined ||
+  528 |       examineeid == null ||
+  529 |       examineeid.includes("No examinees meet the criteria specified.")
+  530 |     ) {
+  531 |       throw new Error(
+  532 |         "The Examinee ID assertion failed, probable cause the Report could be empty.",
+  533 |       );
+  534 |     }
+  535 | 
+  536 |     // //softAssertPrint(examinerid, examiner.examinerID, "Examiner ID");
+  537 |     softAssertPrint(examineeid, DashBoardPage.examineeID, "Examinee ID");
+  538 |     try {
+  539 |       softAssertPrint(
+  540 |         dateoftest,
+  541 |         await this.utils.getTheDOBYearsBack(0, "new Yark"),
+  542 |         "Date Of Test",
+  543 |       );
+  544 |     } catch (error) {
+  545 |       console.info(`\nSeems like there is a date mismatch  ${error}\n`);
+  546 |     }
+  547 | 
+  548 |     softAssertPrint(testname, $TestName, "Test Name");
+  549 |     softAssertPrint(teststemform, $StemForm, "TEst stem form");
+  550 |     softAssertPrint(lookupmodel, $LookUpModel, "Look Up Model");
+  551 |     softAssertPrint(Number(sumitemscores), $SumOfItemScores, "Sum Item Scores");
+  552 |     softAssertPrint(Number(baselcredit), $BasalCredit, "Basal Credit");
+  553 |     softAssertPrint(Number(wlookup), $WlookUp, "wLookUp");
+  554 |     softAssertPrint(wlkpadminitems, $WlookUpAdminItems, "WLkpAdminItems");
+  555 | 
+  556 |     softAssertPrint(scoreflag, $scoreFlag, "Score Flag");
+  557 |     softAssertPrint(Number(wscore), $Wscore, "wScore");
+  558 |     softAssertPrint(Number(semw), $semW, "semW");
+  559 |     softAssertPrint(scorestring, $ScoreString, "Score String");
+  560 |   }
+  561 | 
+  562 |   async getWScoreAndSemWByLookupScore(
+  563 |     // no need for now, need to check later
+  564 |     lookupScore: number,
+  565 |     scoreFlag: string,
+  566 |     typeOfTest: string,
+  567 |     negation: boolean,
+  568 |     testStemForm: string,
+  569 |   ): Promise<{ wScore: number; semW: number } | null> {
+  570 |     lookupScore = Math.abs(lookupScore);
+  571 | 
+  572 |     const result = getWabil_and_SEMW(`${testStemForm}`, lookupScore);
+  573 | 
+  574 |     if (
+  575 |       scoreFlag === "[!C]" &&
+  576 |       typeOfTest.match(/Answer only SampleItems (?:correct|incorrect)/i)
+  577 |     ) {
+  578 |       return { wScore: 0, semW: 0 };
+  579 |     } else if (result && negation) {
+  580 |       return { wScore: -result.W_Abil, semW: -result.SEMW };
+  581 |     } else if (result) {
+  582 |       return { wScore: result.W_Abil, semW: result.SEMW };
+  583 |     } else {
+  584 |       return null;
+  585 |     }
+```

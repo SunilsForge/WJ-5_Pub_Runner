@@ -1,0 +1,1531 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts >>  LWIDNT UI And Reports >> Age 7 - Rerouting End Test scenario for SSP3 Test UI
+- Location: src/tests/ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts:12:13
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button')
+    - locator resolved to <button disabled aria-live="polite" id="next-item-button" aria-label="Go on to " class="plain-button next-item-button">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    116 × waiting for element to be visible, enabled and stable
+        - element is not enabled
+      - retrying click action
+        - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 37Pw Aut25AH" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "37Pw Aut25AH" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "Begin assignment Mona Lubowitz_1784730405459 for N35332A49999, Andy Mona Lubowitz_1784730405459 More info 90 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e74] [cursor=pointer]:
+                    - cell "Begin assignment Mona Lubowitz_1784730405459 for N35332A49999, Andy" [ref=e75]:
+                      - button "Begin assignment Mona Lubowitz_1784730405459 for N35332A49999, Andy" [disabled] [ref=e76]:
+                        - generic [ref=e77]: N35332A49999, Andy
+                    - cell "Mona Lubowitz_1784730405459 More info" [ref=e78]:
+                      - generic [ref=e79]:
+                        - button "Mona Lubowitz_1784730405459" [disabled] [ref=e80]:
+                          - generic [ref=e81]: Mona Lubowitz_1784730405459
+                        - button "More info" [ref=e82]
+                    - cell "90 days" [ref=e83]:
+                      - button "90 days" [disabled] [ref=e84]
+                    - cell "● Submitted" [ref=e85]:
+                      - button "● Submitted" [disabled] [ref=e86]:
+                        - generic [ref=e87]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e88]:
+                      - button "Edit Assignment" [disabled] [ref=e89]
+                      - button "Add Tests" [disabled] [ref=e90]
+                      - button "Assignment actions" [ref=e91]
+                  - row "Begin assignment Eleanor Jenkins_1784730052325 for N96476A55717, Mallie Eleanor Jenkins_1784730052325 More info 90 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e92] [cursor=pointer]:
+                    - cell "Begin assignment Eleanor Jenkins_1784730052325 for N96476A55717, Mallie" [ref=e93]:
+                      - button "Begin assignment Eleanor Jenkins_1784730052325 for N96476A55717, Mallie" [disabled] [ref=e94]:
+                        - generic [ref=e95]: N96476A55717, Mallie
+                    - cell "Eleanor Jenkins_1784730052325 More info" [ref=e96]:
+                      - generic [ref=e97]:
+                        - button "Eleanor Jenkins_1784730052325" [disabled] [ref=e98]:
+                          - generic [ref=e99]: Eleanor Jenkins_1784730052325
+                        - button "More info" [ref=e100]
+                    - cell "90 days" [ref=e101]:
+                      - button "90 days" [disabled] [ref=e102]
+                    - cell "● Submitted" [ref=e103]:
+                      - button "● Submitted" [disabled] [ref=e104]:
+                        - generic [ref=e105]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e106]:
+                      - button "Edit Assignment" [disabled] [ref=e107]
+                      - button "Add Tests" [disabled] [ref=e108]
+                      - button "Assignment actions" [ref=e109]
+                  - row "Begin assignment Thomas Price_1781174188768 for N18947A26131, Dorcas Thomas Price_1781174188768 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e110] [cursor=pointer]:
+                    - cell "Begin assignment Thomas Price_1781174188768 for N18947A26131, Dorcas" [ref=e111]:
+                      - button "Begin assignment Thomas Price_1781174188768 for N18947A26131, Dorcas" [disabled] [ref=e112]:
+                        - generic [ref=e113]: N18947A26131, Dorcas
+                    - cell "Thomas Price_1781174188768 More info" [ref=e114]:
+                      - generic [ref=e115]:
+                        - button "Thomas Price_1781174188768" [disabled] [ref=e116]:
+                          - generic [ref=e117]: Thomas Price_1781174188768
+                        - button "More info" [ref=e118]
+                    - cell "49 days" [ref=e119]:
+                      - button "49 days" [disabled] [ref=e120]
+                    - cell "● Submitted" [ref=e121]:
+                      - button "● Submitted" [disabled] [ref=e122]:
+                        - generic [ref=e123]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e124]:
+                      - button "Edit Assignment" [disabled] [ref=e125]
+                      - button "Add Tests" [disabled] [ref=e126]
+                      - button "Assignment actions" [ref=e127]
+                  - row "Begin assignment Jan Metz_1781173809371 for N40401A1246, Lauren Jan Metz_1781173809371 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e128] [cursor=pointer]:
+                    - cell "Begin assignment Jan Metz_1781173809371 for N40401A1246, Lauren" [ref=e129]:
+                      - button "Begin assignment Jan Metz_1781173809371 for N40401A1246, Lauren" [disabled] [ref=e130]:
+                        - generic [ref=e131]: N40401A1246, Lauren
+                    - cell "Jan Metz_1781173809371 More info" [ref=e132]:
+                      - generic [ref=e133]:
+                        - button "Jan Metz_1781173809371" [disabled] [ref=e134]:
+                          - generic [ref=e135]: Jan Metz_1781173809371
+                        - button "More info" [ref=e136]
+                    - cell "49 days" [ref=e137]:
+                      - button "49 days" [disabled] [ref=e138]
+                    - cell "● Submitted" [ref=e139]:
+                      - button "● Submitted" [disabled] [ref=e140]:
+                        - generic [ref=e141]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e142]:
+                      - button "Edit Assignment" [disabled] [ref=e143]
+                      - button "Add Tests" [disabled] [ref=e144]
+                      - button "Assignment actions" [ref=e145]
+                  - row "Begin assignment Ginger Kerluke_1781173535963 for N77274A87879, Maggie Ginger Kerluke_1781173535963 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e146] [cursor=pointer]:
+                    - cell "Begin assignment Ginger Kerluke_1781173535963 for N77274A87879, Maggie" [ref=e147]:
+                      - button "Begin assignment Ginger Kerluke_1781173535963 for N77274A87879, Maggie" [disabled] [ref=e148]:
+                        - generic [ref=e149]: N77274A87879, Maggie
+                    - cell "Ginger Kerluke_1781173535963 More info" [ref=e150]:
+                      - generic [ref=e151]:
+                        - button "Ginger Kerluke_1781173535963" [disabled] [ref=e152]:
+                          - generic [ref=e153]: Ginger Kerluke_1781173535963
+                        - button "More info" [ref=e154]
+                    - cell "49 days" [ref=e155]:
+                      - button "49 days" [disabled] [ref=e156]
+                    - cell "● Submitted" [ref=e157]:
+                      - button "● Submitted" [disabled] [ref=e158]:
+                        - generic [ref=e159]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e160]:
+                      - button "Edit Assignment" [disabled] [ref=e161]
+                      - button "Add Tests" [disabled] [ref=e162]
+                      - button "Assignment actions" [ref=e163]
+                  - row "Begin assignment Arlene Dooley_1781173247240 for N2601A70326, Jonas Arlene Dooley_1781173247240 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e164] [cursor=pointer]:
+                    - cell "Begin assignment Arlene Dooley_1781173247240 for N2601A70326, Jonas" [ref=e165]:
+                      - button "Begin assignment Arlene Dooley_1781173247240 for N2601A70326, Jonas" [disabled] [ref=e166]:
+                        - generic [ref=e167]: N2601A70326, Jonas
+                    - cell "Arlene Dooley_1781173247240 More info" [ref=e168]:
+                      - generic [ref=e169]:
+                        - button "Arlene Dooley_1781173247240" [disabled] [ref=e170]:
+                          - generic [ref=e171]: Arlene Dooley_1781173247240
+                        - button "More info" [ref=e172]
+                    - cell "49 days" [ref=e173]:
+                      - button "49 days" [disabled] [ref=e174]
+                    - cell "● Submitted" [ref=e175]:
+                      - button "● Submitted" [disabled] [ref=e176]:
+                        - generic [ref=e177]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e178]:
+                      - button "Edit Assignment" [disabled] [ref=e179]
+                      - button "Add Tests" [disabled] [ref=e180]
+                      - button "Assignment actions" [ref=e181]
+                  - row "Begin assignment Inez Renner_1781172959953 for N23723A62145, Freddy Inez Renner_1781172959953 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e182] [cursor=pointer]:
+                    - cell "Begin assignment Inez Renner_1781172959953 for N23723A62145, Freddy" [ref=e183]:
+                      - button "Begin assignment Inez Renner_1781172959953 for N23723A62145, Freddy" [disabled] [ref=e184]:
+                        - generic [ref=e185]: N23723A62145, Freddy
+                    - cell "Inez Renner_1781172959953 More info" [ref=e186]:
+                      - generic [ref=e187]:
+                        - button "Inez Renner_1781172959953" [disabled] [ref=e188]:
+                          - generic [ref=e189]: Inez Renner_1781172959953
+                        - button "More info" [ref=e190]
+                    - cell "49 days" [ref=e191]:
+                      - button "49 days" [disabled] [ref=e192]
+                    - cell "● Submitted" [ref=e193]:
+                      - button "● Submitted" [disabled] [ref=e194]:
+                        - generic [ref=e195]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e196]:
+                      - button "Edit Assignment" [disabled] [ref=e197]
+                      - button "Add Tests" [disabled] [ref=e198]
+                      - button "Assignment actions" [ref=e199]
+                  - row "Begin assignment Sara Corwin_1781172608466 for N62801A43003, Elenor Sara Corwin_1781172608466 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e200] [cursor=pointer]:
+                    - cell "Begin assignment Sara Corwin_1781172608466 for N62801A43003, Elenor" [ref=e201]:
+                      - button "Begin assignment Sara Corwin_1781172608466 for N62801A43003, Elenor" [disabled] [ref=e202]:
+                        - generic [ref=e203]: N62801A43003, Elenor
+                    - cell "Sara Corwin_1781172608466 More info" [ref=e204]:
+                      - generic [ref=e205]:
+                        - button "Sara Corwin_1781172608466" [disabled] [ref=e206]:
+                          - generic [ref=e207]: Sara Corwin_1781172608466
+                        - button "More info" [ref=e208]
+                    - cell "49 days" [ref=e209]:
+                      - button "49 days" [disabled] [ref=e210]
+                    - cell "● Submitted" [ref=e211]:
+                      - button "● Submitted" [disabled] [ref=e212]:
+                        - generic [ref=e213]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e214]:
+                      - button "Edit Assignment" [disabled] [ref=e215]
+                      - button "Add Tests" [disabled] [ref=e216]
+                      - button "Assignment actions" [ref=e217]
+                  - row "Begin assignment Miss Joy Yundt_1781172229149 for N15264A79415, Miguel Miss Joy Yundt_1781172229149 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e218] [cursor=pointer]:
+                    - cell "Begin assignment Miss Joy Yundt_1781172229149 for N15264A79415, Miguel" [ref=e219]:
+                      - button "Begin assignment Miss Joy Yundt_1781172229149 for N15264A79415, Miguel" [disabled] [ref=e220]:
+                        - generic [ref=e221]: N15264A79415, Miguel
+                    - cell "Miss Joy Yundt_1781172229149 More info" [ref=e222]:
+                      - generic [ref=e223]:
+                        - button "Miss Joy Yundt_1781172229149" [disabled] [ref=e224]:
+                          - generic [ref=e225]: Miss Joy Yundt_1781172229149
+                        - button "More info" [ref=e226]
+                    - cell "49 days" [ref=e227]:
+                      - button "49 days" [disabled] [ref=e228]
+                    - cell "● Submitted" [ref=e229]:
+                      - button "● Submitted" [disabled] [ref=e230]:
+                        - generic [ref=e231]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e232]:
+                      - button "Edit Assignment" [disabled] [ref=e233]
+                      - button "Add Tests" [disabled] [ref=e234]
+                      - button "Assignment actions" [ref=e235]
+                  - row "Begin assignment Lonnie Feil_1781171955977 for N66880A46196, Alexane Lonnie Feil_1781171955977 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e236] [cursor=pointer]:
+                    - cell "Begin assignment Lonnie Feil_1781171955977 for N66880A46196, Alexane" [ref=e237]:
+                      - button "Begin assignment Lonnie Feil_1781171955977 for N66880A46196, Alexane" [disabled] [ref=e238]:
+                        - generic [ref=e239]: N66880A46196, Alexane
+                    - cell "Lonnie Feil_1781171955977 More info" [ref=e240]:
+                      - generic [ref=e241]:
+                        - button "Lonnie Feil_1781171955977" [disabled] [ref=e242]:
+                          - generic [ref=e243]: Lonnie Feil_1781171955977
+                        - button "More info" [ref=e244]
+                    - cell "49 days" [ref=e245]:
+                      - button "49 days" [disabled] [ref=e246]
+                    - cell "● Submitted" [ref=e247]:
+                      - button "● Submitted" [disabled] [ref=e248]:
+                        - generic [ref=e249]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e250]:
+                      - button "Edit Assignment" [disabled] [ref=e251]
+                      - button "Add Tests" [disabled] [ref=e252]
+                      - button "Assignment actions" [ref=e253]
+                  - row "Begin assignment Rose Hermiston_1781171671489 for N38382A54914, Kade Rose Hermiston_1781171671489 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e254] [cursor=pointer]:
+                    - cell "Begin assignment Rose Hermiston_1781171671489 for N38382A54914, Kade" [ref=e255]:
+                      - button "Begin assignment Rose Hermiston_1781171671489 for N38382A54914, Kade" [disabled] [ref=e256]:
+                        - generic [ref=e257]: N38382A54914, Kade
+                    - cell "Rose Hermiston_1781171671489 More info" [ref=e258]:
+                      - generic [ref=e259]:
+                        - button "Rose Hermiston_1781171671489" [disabled] [ref=e260]:
+                          - generic [ref=e261]: Rose Hermiston_1781171671489
+                        - button "More info" [ref=e262]
+                    - cell "49 days" [ref=e263]:
+                      - button "49 days" [disabled] [ref=e264]
+                    - cell "● Submitted" [ref=e265]:
+                      - button "● Submitted" [disabled] [ref=e266]:
+                        - generic [ref=e267]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e268]:
+                      - button "Edit Assignment" [disabled] [ref=e269]
+                      - button "Add Tests" [disabled] [ref=e270]
+                      - button "Assignment actions" [ref=e271]
+                  - row "Begin assignment Boyd Bogan_1781171363600 for N43230A36484, Tiara Boyd Bogan_1781171363600 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e272] [cursor=pointer]:
+                    - cell "Begin assignment Boyd Bogan_1781171363600 for N43230A36484, Tiara" [ref=e273]:
+                      - button "Begin assignment Boyd Bogan_1781171363600 for N43230A36484, Tiara" [disabled] [ref=e274]:
+                        - generic [ref=e275]: N43230A36484, Tiara
+                    - cell "Boyd Bogan_1781171363600 More info" [ref=e276]:
+                      - generic [ref=e277]:
+                        - button "Boyd Bogan_1781171363600" [disabled] [ref=e278]:
+                          - generic [ref=e279]: Boyd Bogan_1781171363600
+                        - button "More info" [ref=e280]
+                    - cell "49 days" [ref=e281]:
+                      - button "49 days" [disabled] [ref=e282]
+                    - cell "● Submitted" [ref=e283]:
+                      - button "● Submitted" [disabled] [ref=e284]:
+                        - generic [ref=e285]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e286]:
+                      - button "Edit Assignment" [disabled] [ref=e287]
+                      - button "Add Tests" [disabled] [ref=e288]
+                      - button "Assignment actions" [ref=e289]
+                  - row "Begin assignment Stephanie Yundt_1781171033230 for N52683A27903, Anjali Stephanie Yundt_1781171033230 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e290] [cursor=pointer]:
+                    - cell "Begin assignment Stephanie Yundt_1781171033230 for N52683A27903, Anjali" [ref=e291]:
+                      - button "Begin assignment Stephanie Yundt_1781171033230 for N52683A27903, Anjali" [disabled] [ref=e292]:
+                        - generic [ref=e293]: N52683A27903, Anjali
+                    - cell "Stephanie Yundt_1781171033230 More info" [ref=e294]:
+                      - generic [ref=e295]:
+                        - button "Stephanie Yundt_1781171033230" [disabled] [ref=e296]:
+                          - generic [ref=e297]: Stephanie Yundt_1781171033230
+                        - button "More info" [ref=e298]
+                    - cell "49 days" [ref=e299]:
+                      - button "49 days" [disabled] [ref=e300]
+                    - cell "● Submitted" [ref=e301]:
+                      - button "● Submitted" [disabled] [ref=e302]:
+                        - generic [ref=e303]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e304]:
+                      - button "Edit Assignment" [disabled] [ref=e305]
+                      - button "Add Tests" [disabled] [ref=e306]
+                      - button "Assignment actions" [ref=e307]
+                  - row "Begin assignment Nina Spencer_1781170654796 for N20685A46614, Marianne Nina Spencer_1781170654796 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e308] [cursor=pointer]:
+                    - cell "Begin assignment Nina Spencer_1781170654796 for N20685A46614, Marianne" [ref=e309]:
+                      - button "Begin assignment Nina Spencer_1781170654796 for N20685A46614, Marianne" [disabled] [ref=e310]:
+                        - generic [ref=e311]: N20685A46614, Marianne
+                    - cell "Nina Spencer_1781170654796 More info" [ref=e312]:
+                      - generic [ref=e313]:
+                        - button "Nina Spencer_1781170654796" [disabled] [ref=e314]:
+                          - generic [ref=e315]: Nina Spencer_1781170654796
+                        - button "More info" [ref=e316]
+                    - cell "49 days" [ref=e317]:
+                      - button "49 days" [disabled] [ref=e318]
+                    - cell "● Submitted" [ref=e319]:
+                      - button "● Submitted" [disabled] [ref=e320]:
+                        - generic [ref=e321]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e322]:
+                      - button "Edit Assignment" [disabled] [ref=e323]
+                      - button "Add Tests" [disabled] [ref=e324]
+                      - button "Assignment actions" [ref=e325]
+                  - row "Begin assignment Christy Cartwright_1781170377456 for N72713A86567, Gladys Christy Cartwright_1781170377456 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e326] [cursor=pointer]:
+                    - cell "Begin assignment Christy Cartwright_1781170377456 for N72713A86567, Gladys" [ref=e327]:
+                      - button "Begin assignment Christy Cartwright_1781170377456 for N72713A86567, Gladys" [disabled] [ref=e328]:
+                        - generic [ref=e329]: N72713A86567, Gladys
+                    - cell "Christy Cartwright_1781170377456 More info" [ref=e330]:
+                      - generic [ref=e331]:
+                        - button "Christy Cartwright_1781170377456" [disabled] [ref=e332]:
+                          - generic [ref=e333]: Christy Cartwright_1781170377456
+                        - button "More info" [ref=e334]
+                    - cell "49 days" [ref=e335]:
+                      - button "49 days" [disabled] [ref=e336]
+                    - cell "● Submitted" [ref=e337]:
+                      - button "● Submitted" [disabled] [ref=e338]:
+                        - generic [ref=e339]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e340]:
+                      - button "Edit Assignment" [disabled] [ref=e341]
+                      - button "Add Tests" [disabled] [ref=e342]
+                      - button "Assignment actions" [ref=e343]
+                  - row "Begin assignment Johanna Anderson II_1781170095135 for N33619A57197, Donavon Johanna Anderson II_1781170095135 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e344] [cursor=pointer]:
+                    - cell "Begin assignment Johanna Anderson II_1781170095135 for N33619A57197, Donavon" [ref=e345]:
+                      - button "Begin assignment Johanna Anderson II_1781170095135 for N33619A57197, Donavon" [disabled] [ref=e346]:
+                        - generic [ref=e347]: N33619A57197, Donavon
+                    - cell "Johanna Anderson II_1781170095135 More info" [ref=e348]:
+                      - generic [ref=e349]:
+                        - button "Johanna Anderson II_1781170095135" [disabled] [ref=e350]:
+                          - generic [ref=e351]: Johanna Anderson II_1781170095135
+                        - button "More info" [ref=e352]
+                    - cell "49 days" [ref=e353]:
+                      - button "49 days" [disabled] [ref=e354]
+                    - cell "● Submitted" [ref=e355]:
+                      - button "● Submitted" [disabled] [ref=e356]:
+                        - generic [ref=e357]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e358]:
+                      - button "Edit Assignment" [disabled] [ref=e359]
+                      - button "Add Tests" [disabled] [ref=e360]
+                      - button "Assignment actions" [ref=e361]
+                  - row "Begin assignment Ross Ferry_1781169766312 for N86731A12279, Nash Ross Ferry_1781169766312 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e362] [cursor=pointer]:
+                    - cell "Begin assignment Ross Ferry_1781169766312 for N86731A12279, Nash" [ref=e363]:
+                      - button "Begin assignment Ross Ferry_1781169766312 for N86731A12279, Nash" [disabled] [ref=e364]:
+                        - generic [ref=e365]: N86731A12279, Nash
+                    - cell "Ross Ferry_1781169766312 More info" [ref=e366]:
+                      - generic [ref=e367]:
+                        - button "Ross Ferry_1781169766312" [disabled] [ref=e368]:
+                          - generic [ref=e369]: Ross Ferry_1781169766312
+                        - button "More info" [ref=e370]
+                    - cell "49 days" [ref=e371]:
+                      - button "49 days" [disabled] [ref=e372]
+                    - cell "● Submitted" [ref=e373]:
+                      - button "● Submitted" [disabled] [ref=e374]:
+                        - generic [ref=e375]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e376]:
+                      - button "Edit Assignment" [disabled] [ref=e377]
+                      - button "Add Tests" [disabled] [ref=e378]
+                      - button "Assignment actions" [ref=e379]
+                  - row "Begin assignment Elmer Cruickshank DVM_1781169456691 for N25024A79830, Layne Elmer Cruickshank DVM_1781169456691 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e380] [cursor=pointer]:
+                    - cell "Begin assignment Elmer Cruickshank DVM_1781169456691 for N25024A79830, Layne" [ref=e381]:
+                      - button "Begin assignment Elmer Cruickshank DVM_1781169456691 for N25024A79830, Layne" [disabled] [ref=e382]:
+                        - generic [ref=e383]: N25024A79830, Layne
+                    - cell "Elmer Cruickshank DVM_1781169456691 More info" [ref=e384]:
+                      - generic [ref=e385]:
+                        - button "Elmer Cruickshank DVM_1781169456691" [disabled] [ref=e386]:
+                          - generic [ref=e387]: Elmer Cruickshank DVM_1781169456691
+                        - button "More info" [ref=e388]
+                    - cell "49 days" [ref=e389]:
+                      - button "49 days" [disabled] [ref=e390]
+                    - cell "● Submitted" [ref=e391]:
+                      - button "● Submitted" [disabled] [ref=e392]:
+                        - generic [ref=e393]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e394]:
+                      - button "Edit Assignment" [disabled] [ref=e395]
+                      - button "Add Tests" [disabled] [ref=e396]
+                      - button "Assignment actions" [ref=e397]
+                  - row "Begin assignment Guy Orn_1781169077939 for N57731A86780, Jeanette Guy Orn_1781169077939 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e398] [cursor=pointer]:
+                    - cell "Begin assignment Guy Orn_1781169077939 for N57731A86780, Jeanette" [ref=e399]:
+                      - button "Begin assignment Guy Orn_1781169077939 for N57731A86780, Jeanette" [disabled] [ref=e400]:
+                        - generic [ref=e401]: N57731A86780, Jeanette
+                    - cell "Guy Orn_1781169077939 More info" [ref=e402]:
+                      - generic [ref=e403]:
+                        - button "Guy Orn_1781169077939" [disabled] [ref=e404]:
+                          - generic [ref=e405]: Guy Orn_1781169077939
+                        - button "More info" [ref=e406]
+                    - cell "49 days" [ref=e407]:
+                      - button "49 days" [disabled] [ref=e408]
+                    - cell "● Submitted" [ref=e409]:
+                      - button "● Submitted" [disabled] [ref=e410]:
+                        - generic [ref=e411]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e412]:
+                      - button "Edit Assignment" [disabled] [ref=e413]
+                      - button "Add Tests" [disabled] [ref=e414]
+                      - button "Assignment actions" [ref=e415]
+                  - row "Begin assignment Lorenzo Nitzsche_1781168804484 for N23337A31426, Timmy Lorenzo Nitzsche_1781168804484 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e416] [cursor=pointer]:
+                    - cell "Begin assignment Lorenzo Nitzsche_1781168804484 for N23337A31426, Timmy" [ref=e417]:
+                      - button "Begin assignment Lorenzo Nitzsche_1781168804484 for N23337A31426, Timmy" [disabled] [ref=e418]:
+                        - generic [ref=e419]: N23337A31426, Timmy
+                    - cell "Lorenzo Nitzsche_1781168804484 More info" [ref=e420]:
+                      - generic [ref=e421]:
+                        - button "Lorenzo Nitzsche_1781168804484" [disabled] [ref=e422]:
+                          - generic [ref=e423]: Lorenzo Nitzsche_1781168804484
+                        - button "More info" [ref=e424]
+                    - cell "49 days" [ref=e425]:
+                      - button "49 days" [disabled] [ref=e426]
+                    - cell "● Submitted" [ref=e427]:
+                      - button "● Submitted" [disabled] [ref=e428]:
+                        - generic [ref=e429]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e430]:
+                      - button "Edit Assignment" [disabled] [ref=e431]
+                      - button "Add Tests" [disabled] [ref=e432]
+                      - button "Assignment actions" [ref=e433]
+                  - row "Begin assignment Jamie Goyette_1781168526463 for N76398A61030, Hattie Jamie Goyette_1781168526463 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e434] [cursor=pointer]:
+                    - cell "Begin assignment Jamie Goyette_1781168526463 for N76398A61030, Hattie" [ref=e435]:
+                      - button "Begin assignment Jamie Goyette_1781168526463 for N76398A61030, Hattie" [disabled] [ref=e436]:
+                        - generic [ref=e437]: N76398A61030, Hattie
+                    - cell "Jamie Goyette_1781168526463 More info" [ref=e438]:
+                      - generic [ref=e439]:
+                        - button "Jamie Goyette_1781168526463" [disabled] [ref=e440]:
+                          - generic [ref=e441]: Jamie Goyette_1781168526463
+                        - button "More info" [ref=e442]
+                    - cell "49 days" [ref=e443]:
+                      - button "49 days" [disabled] [ref=e444]
+                    - cell "● Submitted" [ref=e445]:
+                      - button "● Submitted" [disabled] [ref=e446]:
+                        - generic [ref=e447]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e448]:
+                      - button "Edit Assignment" [disabled] [ref=e449]
+                      - button "Add Tests" [disabled] [ref=e450]
+                      - button "Assignment actions" [ref=e451]
+                  - row "Begin assignment Natasha Cremin_1781168174160 for N48200A20060, Virginie Natasha Cremin_1781168174160 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e452] [cursor=pointer]:
+                    - cell "Begin assignment Natasha Cremin_1781168174160 for N48200A20060, Virginie" [ref=e453]:
+                      - button "Begin assignment Natasha Cremin_1781168174160 for N48200A20060, Virginie" [disabled] [ref=e454]:
+                        - generic [ref=e455]: N48200A20060, Virginie
+                    - cell "Natasha Cremin_1781168174160 More info" [ref=e456]:
+                      - generic [ref=e457]:
+                        - button "Natasha Cremin_1781168174160" [disabled] [ref=e458]:
+                          - generic [ref=e459]: Natasha Cremin_1781168174160
+                        - button "More info" [ref=e460]
+                    - cell "49 days" [ref=e461]:
+                      - button "49 days" [disabled] [ref=e462]
+                    - cell "● Submitted" [ref=e463]:
+                      - button "● Submitted" [disabled] [ref=e464]:
+                        - generic [ref=e465]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e466]:
+                      - button "Edit Assignment" [disabled] [ref=e467]
+                      - button "Add Tests" [disabled] [ref=e468]
+                      - button "Assignment actions" [ref=e469]
+                  - row "Begin assignment Kristopher Fay_1781167893771 for N20538A1960, Isac Kristopher Fay_1781167893771 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e470] [cursor=pointer]:
+                    - cell "Begin assignment Kristopher Fay_1781167893771 for N20538A1960, Isac" [ref=e471]:
+                      - button "Begin assignment Kristopher Fay_1781167893771 for N20538A1960, Isac" [disabled] [ref=e472]:
+                        - generic [ref=e473]: N20538A1960, Isac
+                    - cell "Kristopher Fay_1781167893771 More info" [ref=e474]:
+                      - generic [ref=e475]:
+                        - button "Kristopher Fay_1781167893771" [disabled] [ref=e476]:
+                          - generic [ref=e477]: Kristopher Fay_1781167893771
+                        - button "More info" [ref=e478]
+                    - cell "49 days" [ref=e479]:
+                      - button "49 days" [disabled] [ref=e480]
+                    - cell "● Submitted" [ref=e481]:
+                      - button "● Submitted" [disabled] [ref=e482]:
+                        - generic [ref=e483]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e484]:
+                      - button "Edit Assignment" [disabled] [ref=e485]
+                      - button "Add Tests" [disabled] [ref=e486]
+                      - button "Assignment actions" [ref=e487]
+                  - row "Begin assignment Sara Welch_1781167515421 for N26581A38026, Gina Sara Welch_1781167515421 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e488] [cursor=pointer]:
+                    - cell "Begin assignment Sara Welch_1781167515421 for N26581A38026, Gina" [ref=e489]:
+                      - button "Begin assignment Sara Welch_1781167515421 for N26581A38026, Gina" [disabled] [ref=e490]:
+                        - generic [ref=e491]: N26581A38026, Gina
+                    - cell "Sara Welch_1781167515421 More info" [ref=e492]:
+                      - generic [ref=e493]:
+                        - button "Sara Welch_1781167515421" [disabled] [ref=e494]:
+                          - generic [ref=e495]: Sara Welch_1781167515421
+                        - button "More info" [ref=e496]
+                    - cell "49 days" [ref=e497]:
+                      - button "49 days" [disabled] [ref=e498]
+                    - cell "● Submitted" [ref=e499]:
+                      - button "● Submitted" [disabled] [ref=e500]:
+                        - generic [ref=e501]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e502]:
+                      - button "Edit Assignment" [disabled] [ref=e503]
+                      - button "Add Tests" [disabled] [ref=e504]
+                      - button "Assignment actions" [ref=e505]
+                  - row "Begin assignment Nora Bauch_1781167239899 for N13436A30856, Tessie Nora Bauch_1781167239899 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e506] [cursor=pointer]:
+                    - cell "Begin assignment Nora Bauch_1781167239899 for N13436A30856, Tessie" [ref=e507]:
+                      - button "Begin assignment Nora Bauch_1781167239899 for N13436A30856, Tessie" [disabled] [ref=e508]:
+                        - generic [ref=e509]: N13436A30856, Tessie
+                    - cell "Nora Bauch_1781167239899 More info" [ref=e510]:
+                      - generic [ref=e511]:
+                        - button "Nora Bauch_1781167239899" [disabled] [ref=e512]:
+                          - generic [ref=e513]: Nora Bauch_1781167239899
+                        - button "More info" [ref=e514]
+                    - cell "49 days" [ref=e515]:
+                      - button "49 days" [disabled] [ref=e516]
+                    - cell "● Submitted" [ref=e517]:
+                      - button "● Submitted" [disabled] [ref=e518]:
+                        - generic [ref=e519]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e520]:
+                      - button "Edit Assignment" [disabled] [ref=e521]
+                      - button "Add Tests" [disabled] [ref=e522]
+                      - button "Assignment actions" [ref=e523]
+                  - row "Begin assignment Lula Simonis_1781166965712 for N12540A39278, Tad Lula Simonis_1781166965712 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e524] [cursor=pointer]:
+                    - cell "Begin assignment Lula Simonis_1781166965712 for N12540A39278, Tad" [ref=e525]:
+                      - button "Begin assignment Lula Simonis_1781166965712 for N12540A39278, Tad" [disabled] [ref=e526]:
+                        - generic [ref=e527]: N12540A39278, Tad
+                    - cell "Lula Simonis_1781166965712 More info" [ref=e528]:
+                      - generic [ref=e529]:
+                        - button "Lula Simonis_1781166965712" [disabled] [ref=e530]:
+                          - generic [ref=e531]: Lula Simonis_1781166965712
+                        - button "More info" [ref=e532]
+                    - cell "49 days" [ref=e533]:
+                      - button "49 days" [disabled] [ref=e534]
+                    - cell "● Submitted" [ref=e535]:
+                      - button "● Submitted" [disabled] [ref=e536]:
+                        - generic [ref=e537]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e538]:
+                      - button "Edit Assignment" [disabled] [ref=e539]
+                      - button "Add Tests" [disabled] [ref=e540]
+                      - button "Assignment actions" [ref=e541]
+                  - row "Begin assignment Willard Bogan I_1781166586257 for N95436A26226, Gilberto Willard Bogan I_1781166586257 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e542] [cursor=pointer]:
+                    - cell "Begin assignment Willard Bogan I_1781166586257 for N95436A26226, Gilberto" [ref=e543]:
+                      - button "Begin assignment Willard Bogan I_1781166586257 for N95436A26226, Gilberto" [disabled] [ref=e544]:
+                        - generic [ref=e545]: N95436A26226, Gilberto
+                    - cell "Willard Bogan I_1781166586257 More info" [ref=e546]:
+                      - generic [ref=e547]:
+                        - button "Willard Bogan I_1781166586257" [disabled] [ref=e548]:
+                          - generic [ref=e549]: Willard Bogan I_1781166586257
+                        - button "More info" [ref=e550]
+                    - cell "49 days" [ref=e551]:
+                      - button "49 days" [disabled] [ref=e552]
+                    - cell "● Submitted" [ref=e553]:
+                      - button "● Submitted" [disabled] [ref=e554]:
+                        - generic [ref=e555]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e556]:
+                      - button "Edit Assignment" [disabled] [ref=e557]
+                      - button "Add Tests" [disabled] [ref=e558]
+                      - button "Assignment actions" [ref=e559]
+                  - row "Begin assignment Jermaine Feeney_1781166326721 for N88853A53677, Maxie Jermaine Feeney_1781166326721 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e560] [cursor=pointer]:
+                    - cell "Begin assignment Jermaine Feeney_1781166326721 for N88853A53677, Maxie" [ref=e561]:
+                      - button "Begin assignment Jermaine Feeney_1781166326721 for N88853A53677, Maxie" [disabled] [ref=e562]:
+                        - generic [ref=e563]: N88853A53677, Maxie
+                    - cell "Jermaine Feeney_1781166326721 More info" [ref=e564]:
+                      - generic [ref=e565]:
+                        - button "Jermaine Feeney_1781166326721" [disabled] [ref=e566]:
+                          - generic [ref=e567]: Jermaine Feeney_1781166326721
+                        - button "More info" [ref=e568]
+                    - cell "49 days" [ref=e569]:
+                      - button "49 days" [disabled] [ref=e570]
+                    - cell "● Submitted" [ref=e571]:
+                      - button "● Submitted" [disabled] [ref=e572]:
+                        - generic [ref=e573]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e574]:
+                      - button "Edit Assignment" [disabled] [ref=e575]
+                      - button "Add Tests" [disabled] [ref=e576]
+                      - button "Assignment actions" [ref=e577]
+                  - row "Begin assignment Rolando Heathcote DDS_1781166094212 for N71746A46089, Cielo Rolando Heathcote DDS_1781166094212 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e578] [cursor=pointer]:
+                    - cell "Begin assignment Rolando Heathcote DDS_1781166094212 for N71746A46089, Cielo" [ref=e579]:
+                      - button "Begin assignment Rolando Heathcote DDS_1781166094212 for N71746A46089, Cielo" [disabled] [ref=e580]:
+                        - generic [ref=e581]: N71746A46089, Cielo
+                    - cell "Rolando Heathcote DDS_1781166094212 More info" [ref=e582]:
+                      - generic [ref=e583]:
+                        - button "Rolando Heathcote DDS_1781166094212" [disabled] [ref=e584]:
+                          - generic [ref=e585]: Rolando Heathcote DDS_1781166094212
+                        - button "More info" [ref=e586]
+                    - cell "49 days" [ref=e587]:
+                      - button "49 days" [disabled] [ref=e588]
+                    - cell "● Submitted" [ref=e589]:
+                      - button "● Submitted" [disabled] [ref=e590]:
+                        - generic [ref=e591]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e592]:
+                      - button "Edit Assignment" [disabled] [ref=e593]
+                      - button "Add Tests" [disabled] [ref=e594]
+                      - button "Assignment actions" [ref=e595]
+                  - row "Begin assignment Ms. Angela Gleason V_1781165677631 for N85482A29195, Megane Ms. Angela Gleason V_1781165677631 More info 49 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e596] [cursor=pointer]:
+                    - cell "Begin assignment Ms. Angela Gleason V_1781165677631 for N85482A29195, Megane" [ref=e597]:
+                      - button "Begin assignment Ms. Angela Gleason V_1781165677631 for N85482A29195, Megane" [disabled] [ref=e598]:
+                        - generic [ref=e599]: N85482A29195, Megane
+                    - cell "Ms. Angela Gleason V_1781165677631 More info" [ref=e600]:
+                      - generic [ref=e601]:
+                        - button "Ms. Angela Gleason V_1781165677631" [disabled] [ref=e602]:
+                          - generic [ref=e603]: Ms. Angela Gleason V_1781165677631
+                        - button "More info" [ref=e604]
+                    - cell "49 days" [ref=e605]:
+                      - button "49 days" [disabled] [ref=e606]
+                    - cell "● Submitted" [ref=e607]:
+                      - button "● Submitted" [disabled] [ref=e608]:
+                        - generic [ref=e609]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e610]:
+                      - button "Edit Assignment" [disabled] [ref=e611]
+                      - button "Add Tests" [disabled] [ref=e612]
+                      - button "Assignment actions" [ref=e613]
+                  - row "Begin assignment Caroline Johnston_1778840173658 (+1 more) for N16838A93637, Doris Caroline Johnston_1778840173658 (+1 more) More info 22 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e614] [cursor=pointer]:
+                    - cell "Begin assignment Caroline Johnston_1778840173658 (+1 more) for N16838A93637, Doris" [ref=e615]:
+                      - button "Begin assignment Caroline Johnston_1778840173658 (+1 more) for N16838A93637, Doris" [disabled] [ref=e616]:
+                        - generic [ref=e617]: N16838A93637, Doris
+                    - cell "Caroline Johnston_1778840173658 (+1 more) More info" [ref=e618]:
+                      - generic [ref=e619]:
+                        - button "Caroline Johnston_1778840173658 (+1 more)" [disabled] [ref=e620]:
+                          - generic [ref=e621]: Caroline Johnston_1778840173658 (+1 more)
+                        - button "More info" [ref=e622]
+                    - cell "22 days" [ref=e623]:
+                      - button "22 days" [disabled] [ref=e624]
+                    - cell "● In Progress" [ref=e625]:
+                      - button "● In Progress" [disabled] [ref=e626]:
+                        - generic [ref=e627]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e628]:
+                      - button "Edit Assignment" [disabled] [ref=e629]
+                      - button "Add Tests" [disabled] [ref=e630]
+                      - button "Assignment actions" [ref=e631]
+                  - row "Begin assignment Robin McClure_1778839813536 for N62266A73609, Myra Robin McClure_1778839813536 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e632] [cursor=pointer]:
+                    - cell "Begin assignment Robin McClure_1778839813536 for N62266A73609, Myra" [ref=e633]:
+                      - button "Begin assignment Robin McClure_1778839813536 for N62266A73609, Myra" [disabled] [ref=e634]:
+                        - generic [ref=e635]: N62266A73609, Myra
+                    - cell "Robin McClure_1778839813536 More info" [ref=e636]:
+                      - generic [ref=e637]:
+                        - button "Robin McClure_1778839813536" [disabled] [ref=e638]:
+                          - generic [ref=e639]: Robin McClure_1778839813536
+                        - button "More info" [ref=e640]
+                    - cell "22 days" [ref=e641]:
+                      - button "22 days" [disabled] [ref=e642]
+                    - cell "● Submitted" [ref=e643]:
+                      - button "● Submitted" [disabled] [ref=e644]:
+                        - generic [ref=e645]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e646]:
+                      - button "Edit Assignment" [disabled] [ref=e647]
+                      - button "Add Tests" [disabled] [ref=e648]
+                      - button "Assignment actions" [ref=e649]
+                  - row "Begin assignment Ricardo Schmidt DDS_1778839425687 for N62548A81975, Orville Ricardo Schmidt DDS_1778839425687 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e650] [cursor=pointer]:
+                    - cell "Begin assignment Ricardo Schmidt DDS_1778839425687 for N62548A81975, Orville" [ref=e651]:
+                      - button "Begin assignment Ricardo Schmidt DDS_1778839425687 for N62548A81975, Orville" [disabled] [ref=e652]:
+                        - generic [ref=e653]: N62548A81975, Orville
+                    - cell "Ricardo Schmidt DDS_1778839425687 More info" [ref=e654]:
+                      - generic [ref=e655]:
+                        - button "Ricardo Schmidt DDS_1778839425687" [disabled] [ref=e656]:
+                          - generic [ref=e657]: Ricardo Schmidt DDS_1778839425687
+                        - button "More info" [ref=e658]
+                    - cell "22 days" [ref=e659]:
+                      - button "22 days" [disabled] [ref=e660]
+                    - cell "● Submitted" [ref=e661]:
+                      - button "● Submitted" [disabled] [ref=e662]:
+                        - generic [ref=e663]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e664]:
+                      - button "Edit Assignment" [disabled] [ref=e665]
+                      - button "Add Tests" [disabled] [ref=e666]
+                      - button "Assignment actions" [ref=e667]
+                  - row "Begin assignment Joshua Corkery_1778838968256 (+1 more) for N22742A79037, Juliana Joshua Corkery_1778838968256 (+1 more) More info 22 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e668] [cursor=pointer]:
+                    - cell "Begin assignment Joshua Corkery_1778838968256 (+1 more) for N22742A79037, Juliana" [ref=e669]:
+                      - button "Begin assignment Joshua Corkery_1778838968256 (+1 more) for N22742A79037, Juliana" [disabled] [ref=e670]:
+                        - generic [ref=e671]: N22742A79037, Juliana
+                    - cell "Joshua Corkery_1778838968256 (+1 more) More info" [ref=e672]:
+                      - generic [ref=e673]:
+                        - button "Joshua Corkery_1778838968256 (+1 more)" [disabled] [ref=e674]:
+                          - generic [ref=e675]: Joshua Corkery_1778838968256 (+1 more)
+                        - button "More info" [ref=e676]
+                    - cell "22 days" [ref=e677]:
+                      - button "22 days" [disabled] [ref=e678]
+                    - cell "● In Progress" [ref=e679]:
+                      - button "● In Progress" [disabled] [ref=e680]:
+                        - generic [ref=e681]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e682]:
+                      - button "Edit Assignment" [disabled] [ref=e683]
+                      - button "Add Tests" [disabled] [ref=e684]
+                      - button "Assignment actions" [ref=e685]
+                  - row "Begin assignment Bradley Roob_1778838583120 for N42995A87836, Kaylah Bradley Roob_1778838583120 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e686] [cursor=pointer]:
+                    - cell "Begin assignment Bradley Roob_1778838583120 for N42995A87836, Kaylah" [ref=e687]:
+                      - button "Begin assignment Bradley Roob_1778838583120 for N42995A87836, Kaylah" [disabled] [ref=e688]:
+                        - generic [ref=e689]: N42995A87836, Kaylah
+                    - cell "Bradley Roob_1778838583120 More info" [ref=e690]:
+                      - generic [ref=e691]:
+                        - button "Bradley Roob_1778838583120" [disabled] [ref=e692]:
+                          - generic [ref=e693]: Bradley Roob_1778838583120
+                        - button "More info" [ref=e694]
+                    - cell "22 days" [ref=e695]:
+                      - button "22 days" [disabled] [ref=e696]
+                    - cell "● Submitted" [ref=e697]:
+                      - button "● Submitted" [disabled] [ref=e698]:
+                        - generic [ref=e699]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e700]:
+                      - button "Edit Assignment" [disabled] [ref=e701]
+                      - button "Add Tests" [disabled] [ref=e702]
+                      - button "Assignment actions" [ref=e703]
+                  - row "Begin assignment Brandi Hermiston_1778838212887 for N17499A7378, Aniya Brandi Hermiston_1778838212887 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e704] [cursor=pointer]:
+                    - cell "Begin assignment Brandi Hermiston_1778838212887 for N17499A7378, Aniya" [ref=e705]:
+                      - button "Begin assignment Brandi Hermiston_1778838212887 for N17499A7378, Aniya" [disabled] [ref=e706]:
+                        - generic [ref=e707]: N17499A7378, Aniya
+                    - cell "Brandi Hermiston_1778838212887 More info" [ref=e708]:
+                      - generic [ref=e709]:
+                        - button "Brandi Hermiston_1778838212887" [disabled] [ref=e710]:
+                          - generic [ref=e711]: Brandi Hermiston_1778838212887
+                        - button "More info" [ref=e712]
+                    - cell "22 days" [ref=e713]:
+                      - button "22 days" [disabled] [ref=e714]
+                    - cell "● Submitted" [ref=e715]:
+                      - button "● Submitted" [disabled] [ref=e716]:
+                        - generic [ref=e717]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e718]:
+                      - button "Edit Assignment" [disabled] [ref=e719]
+                      - button "Add Tests" [disabled] [ref=e720]
+                      - button "Assignment actions" [ref=e721]
+                  - row "Begin assignment Charles Wehner_1778837764755 (+1 more) for N62850A68057, Jarrod Charles Wehner_1778837764755 (+1 more) More info 22 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e722] [cursor=pointer]:
+                    - cell "Begin assignment Charles Wehner_1778837764755 (+1 more) for N62850A68057, Jarrod" [ref=e723]:
+                      - button "Begin assignment Charles Wehner_1778837764755 (+1 more) for N62850A68057, Jarrod" [disabled] [ref=e724]:
+                        - generic [ref=e725]: N62850A68057, Jarrod
+                    - cell "Charles Wehner_1778837764755 (+1 more) More info" [ref=e726]:
+                      - generic [ref=e727]:
+                        - button "Charles Wehner_1778837764755 (+1 more)" [disabled] [ref=e728]:
+                          - generic [ref=e729]: Charles Wehner_1778837764755 (+1 more)
+                        - button "More info" [ref=e730]
+                    - cell "22 days" [ref=e731]:
+                      - button "22 days" [disabled] [ref=e732]
+                    - cell "● In Progress" [ref=e733]:
+                      - button "● In Progress" [disabled] [ref=e734]:
+                        - generic [ref=e735]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e736]:
+                      - button "Edit Assignment" [disabled] [ref=e737]
+                      - button "Add Tests" [disabled] [ref=e738]
+                      - button "Assignment actions" [ref=e739]
+                  - row "Begin assignment Belinda Hammes_1778837404815 for N10717A9159, Reanna Belinda Hammes_1778837404815 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e740] [cursor=pointer]:
+                    - cell "Begin assignment Belinda Hammes_1778837404815 for N10717A9159, Reanna" [ref=e741]:
+                      - button "Begin assignment Belinda Hammes_1778837404815 for N10717A9159, Reanna" [disabled] [ref=e742]:
+                        - generic [ref=e743]: N10717A9159, Reanna
+                    - cell "Belinda Hammes_1778837404815 More info" [ref=e744]:
+                      - generic [ref=e745]:
+                        - button "Belinda Hammes_1778837404815" [disabled] [ref=e746]:
+                          - generic [ref=e747]: Belinda Hammes_1778837404815
+                        - button "More info" [ref=e748]
+                    - cell "22 days" [ref=e749]:
+                      - button "22 days" [disabled] [ref=e750]
+                    - cell "● Submitted" [ref=e751]:
+                      - button "● Submitted" [disabled] [ref=e752]:
+                        - generic [ref=e753]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e754]:
+                      - button "Edit Assignment" [disabled] [ref=e755]
+                      - button "Add Tests" [disabled] [ref=e756]
+                      - button "Assignment actions" [ref=e757]
+                  - row "Begin assignment Lena Langosh_1778837039953 for N59209A2645, Candida Lena Langosh_1778837039953 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e758] [cursor=pointer]:
+                    - cell "Begin assignment Lena Langosh_1778837039953 for N59209A2645, Candida" [ref=e759]:
+                      - button "Begin assignment Lena Langosh_1778837039953 for N59209A2645, Candida" [disabled] [ref=e760]:
+                        - generic [ref=e761]: N59209A2645, Candida
+                    - cell "Lena Langosh_1778837039953 More info" [ref=e762]:
+                      - generic [ref=e763]:
+                        - button "Lena Langosh_1778837039953" [disabled] [ref=e764]:
+                          - generic [ref=e765]: Lena Langosh_1778837039953
+                        - button "More info" [ref=e766]
+                    - cell "22 days" [ref=e767]:
+                      - button "22 days" [disabled] [ref=e768]
+                    - cell "● Submitted" [ref=e769]:
+                      - button "● Submitted" [disabled] [ref=e770]:
+                        - generic [ref=e771]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e772]:
+                      - button "Edit Assignment" [disabled] [ref=e773]
+                      - button "Add Tests" [disabled] [ref=e774]
+                      - button "Assignment actions" [ref=e775]
+                  - row "Begin assignment Courtney Kuvalis DVM_1778836732546 for N29993A9309, Caesar Courtney Kuvalis DVM_1778836732546 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e776] [cursor=pointer]:
+                    - cell "Begin assignment Courtney Kuvalis DVM_1778836732546 for N29993A9309, Caesar" [ref=e777]:
+                      - button "Begin assignment Courtney Kuvalis DVM_1778836732546 for N29993A9309, Caesar" [disabled] [ref=e778]:
+                        - generic [ref=e779]: N29993A9309, Caesar
+                    - cell "Courtney Kuvalis DVM_1778836732546 More info" [ref=e780]:
+                      - generic [ref=e781]:
+                        - button "Courtney Kuvalis DVM_1778836732546" [disabled] [ref=e782]:
+                          - generic [ref=e783]: Courtney Kuvalis DVM_1778836732546
+                        - button "More info" [ref=e784]
+                    - cell "22 days" [ref=e785]:
+                      - button "22 days" [disabled] [ref=e786]
+                    - cell "● Submitted" [ref=e787]:
+                      - button "● Submitted" [disabled] [ref=e788]:
+                        - generic [ref=e789]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e790]:
+                      - button "Edit Assignment" [disabled] [ref=e791]
+                      - button "Add Tests" [disabled] [ref=e792]
+                      - button "Assignment actions" [ref=e793]
+                  - row "Begin assignment Trevor Thiel_1778836339831 (+1 more) for N71815A55711, Andrew Trevor Thiel_1778836339831 (+1 more) More info 22 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e794] [cursor=pointer]:
+                    - cell "Begin assignment Trevor Thiel_1778836339831 (+1 more) for N71815A55711, Andrew" [ref=e795]:
+                      - button "Begin assignment Trevor Thiel_1778836339831 (+1 more) for N71815A55711, Andrew" [disabled] [ref=e796]:
+                        - generic [ref=e797]: N71815A55711, Andrew
+                    - cell "Trevor Thiel_1778836339831 (+1 more) More info" [ref=e798]:
+                      - generic [ref=e799]:
+                        - button "Trevor Thiel_1778836339831 (+1 more)" [disabled] [ref=e800]:
+                          - generic [ref=e801]: Trevor Thiel_1778836339831 (+1 more)
+                        - button "More info" [ref=e802]
+                    - cell "22 days" [ref=e803]:
+                      - button "22 days" [disabled] [ref=e804]
+                    - cell "● In Progress" [ref=e805]:
+                      - button "● In Progress" [disabled] [ref=e806]:
+                        - generic [ref=e807]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e808]:
+                      - button "Edit Assignment" [disabled] [ref=e809]
+                      - button "Add Tests" [disabled] [ref=e810]
+                      - button "Assignment actions" [ref=e811]
+                  - row "Begin assignment Simon Moore_1778835973724 for N30311A29156, Zachary Simon Moore_1778835973724 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e812] [cursor=pointer]:
+                    - cell "Begin assignment Simon Moore_1778835973724 for N30311A29156, Zachary" [ref=e813]:
+                      - button "Begin assignment Simon Moore_1778835973724 for N30311A29156, Zachary" [disabled] [ref=e814]:
+                        - generic [ref=e815]: N30311A29156, Zachary
+                    - cell "Simon Moore_1778835973724 More info" [ref=e816]:
+                      - generic [ref=e817]:
+                        - button "Simon Moore_1778835973724" [disabled] [ref=e818]:
+                          - generic [ref=e819]: Simon Moore_1778835973724
+                        - button "More info" [ref=e820]
+                    - cell "22 days" [ref=e821]:
+                      - button "22 days" [disabled] [ref=e822]
+                    - cell "● Submitted" [ref=e823]:
+                      - button "● Submitted" [disabled] [ref=e824]:
+                        - generic [ref=e825]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e826]:
+                      - button "Edit Assignment" [disabled] [ref=e827]
+                      - button "Add Tests" [disabled] [ref=e828]
+                      - button "Assignment actions" [ref=e829]
+                  - row "Begin assignment Rosa Parker I_1778835657627 for N35639A52202, Burnice Rosa Parker I_1778835657627 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e830] [cursor=pointer]:
+                    - cell "Begin assignment Rosa Parker I_1778835657627 for N35639A52202, Burnice" [ref=e831]:
+                      - button "Begin assignment Rosa Parker I_1778835657627 for N35639A52202, Burnice" [disabled] [ref=e832]:
+                        - generic [ref=e833]: N35639A52202, Burnice
+                    - cell "Rosa Parker I_1778835657627 More info" [ref=e834]:
+                      - generic [ref=e835]:
+                        - button "Rosa Parker I_1778835657627" [disabled] [ref=e836]:
+                          - generic [ref=e837]: Rosa Parker I_1778835657627
+                        - button "More info" [ref=e838]
+                    - cell "22 days" [ref=e839]:
+                      - button "22 days" [disabled] [ref=e840]
+                    - cell "● Submitted" [ref=e841]:
+                      - button "● Submitted" [disabled] [ref=e842]:
+                        - generic [ref=e843]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e844]:
+                      - button "Edit Assignment" [disabled] [ref=e845]
+                      - button "Add Tests" [disabled] [ref=e846]
+                      - button "Assignment actions" [ref=e847]
+                  - row "Begin assignment Della Hegmann_1778835414681 for N54403A37737, Jeffrey Della Hegmann_1778835414681 More info 22 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e848] [cursor=pointer]:
+                    - cell "Begin assignment Della Hegmann_1778835414681 for N54403A37737, Jeffrey" [ref=e849]:
+                      - button "Begin assignment Della Hegmann_1778835414681 for N54403A37737, Jeffrey" [disabled] [ref=e850]:
+                        - generic [ref=e851]: N54403A37737, Jeffrey
+                    - cell "Della Hegmann_1778835414681 More info" [ref=e852]:
+                      - generic [ref=e853]:
+                        - button "Della Hegmann_1778835414681" [disabled] [ref=e854]:
+                          - generic [ref=e855]: Della Hegmann_1778835414681
+                        - button "More info" [ref=e856]
+                    - cell "22 days" [ref=e857]:
+                      - button "22 days" [disabled] [ref=e858]
+                    - cell "● In Progress" [ref=e859]:
+                      - button "● In Progress" [disabled] [ref=e860]:
+                        - generic [ref=e861]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e862]:
+                      - button "Edit Assignment" [disabled] [ref=e863]
+                      - button "Add Tests" [disabled] [ref=e864]
+                      - button "Assignment actions" [ref=e865]
+                  - row "Begin assignment Dorothy Price_1778835171640 for N41171A37689, Shayne Dorothy Price_1778835171640 More info 22 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e866] [cursor=pointer]:
+                    - cell "Begin assignment Dorothy Price_1778835171640 for N41171A37689, Shayne" [ref=e867]:
+                      - button "Begin assignment Dorothy Price_1778835171640 for N41171A37689, Shayne" [disabled] [ref=e868]:
+                        - generic [ref=e869]: N41171A37689, Shayne
+                    - cell "Dorothy Price_1778835171640 More info" [ref=e870]:
+                      - generic [ref=e871]:
+                        - button "Dorothy Price_1778835171640" [disabled] [ref=e872]:
+                          - generic [ref=e873]: Dorothy Price_1778835171640
+                        - button "More info" [ref=e874]
+                    - cell "22 days" [ref=e875]:
+                      - button "22 days" [disabled] [ref=e876]
+                    - cell "● In Progress" [ref=e877]:
+                      - button "● In Progress" [disabled] [ref=e878]:
+                        - generic [ref=e879]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e880]:
+                      - button "Edit Assignment" [disabled] [ref=e881]
+                      - button "Add Tests" [disabled] [ref=e882]
+                      - button "Assignment actions" [ref=e883]
+                  - row "Begin assignment Geoffrey Price_1778834911803 for N240A31840, Rhea Geoffrey Price_1778834911803 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e884] [cursor=pointer]:
+                    - cell "Begin assignment Geoffrey Price_1778834911803 for N240A31840, Rhea" [ref=e885]:
+                      - button "Begin assignment Geoffrey Price_1778834911803 for N240A31840, Rhea" [disabled] [ref=e886]:
+                        - generic [ref=e887]: N240A31840, Rhea
+                    - cell "Geoffrey Price_1778834911803 More info" [ref=e888]:
+                      - generic [ref=e889]:
+                        - button "Geoffrey Price_1778834911803" [disabled] [ref=e890]:
+                          - generic [ref=e891]: Geoffrey Price_1778834911803
+                        - button "More info" [ref=e892]
+                    - cell "22 days" [ref=e893]:
+                      - button "22 days" [disabled] [ref=e894]
+                    - cell "● Submitted" [ref=e895]:
+                      - button "● Submitted" [disabled] [ref=e896]:
+                        - generic [ref=e897]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e898]:
+                      - button "Edit Assignment" [disabled] [ref=e899]
+                      - button "Add Tests" [disabled] [ref=e900]
+                      - button "Assignment actions" [ref=e901]
+                  - row "Begin assignment Tyler Breitenberg_1778834652945 for N68435A62807, Leonie Tyler Breitenberg_1778834652945 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e902] [cursor=pointer]:
+                    - cell "Begin assignment Tyler Breitenberg_1778834652945 for N68435A62807, Leonie" [ref=e903]:
+                      - button "Begin assignment Tyler Breitenberg_1778834652945 for N68435A62807, Leonie" [disabled] [ref=e904]:
+                        - generic [ref=e905]: N68435A62807, Leonie
+                    - cell "Tyler Breitenberg_1778834652945 More info" [ref=e906]:
+                      - generic [ref=e907]:
+                        - button "Tyler Breitenberg_1778834652945" [disabled] [ref=e908]:
+                          - generic [ref=e909]: Tyler Breitenberg_1778834652945
+                        - button "More info" [ref=e910]
+                    - cell "22 days" [ref=e911]:
+                      - button "22 days" [disabled] [ref=e912]
+                    - cell "● Submitted" [ref=e913]:
+                      - button "● Submitted" [disabled] [ref=e914]:
+                        - generic [ref=e915]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e916]:
+                      - button "Edit Assignment" [disabled] [ref=e917]
+                      - button "Add Tests" [disabled] [ref=e918]
+                      - button "Assignment actions" [ref=e919]
+                  - row "Begin assignment Elijah Jones_1778834394423 for N7535A67040, Grant Elijah Jones_1778834394423 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e920] [cursor=pointer]:
+                    - cell "Begin assignment Elijah Jones_1778834394423 for N7535A67040, Grant" [ref=e921]:
+                      - button "Begin assignment Elijah Jones_1778834394423 for N7535A67040, Grant" [disabled] [ref=e922]:
+                        - generic [ref=e923]: N7535A67040, Grant
+                    - cell "Elijah Jones_1778834394423 More info" [ref=e924]:
+                      - generic [ref=e925]:
+                        - button "Elijah Jones_1778834394423" [disabled] [ref=e926]:
+                          - generic [ref=e927]: Elijah Jones_1778834394423
+                        - button "More info" [ref=e928]
+                    - cell "22 days" [ref=e929]:
+                      - button "22 days" [disabled] [ref=e930]
+                    - cell "● Submitted" [ref=e931]:
+                      - button "● Submitted" [disabled] [ref=e932]:
+                        - generic [ref=e933]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e934]:
+                      - button "Edit Assignment" [disabled] [ref=e935]
+                      - button "Add Tests" [disabled] [ref=e936]
+                      - button "Assignment actions" [ref=e937]
+                  - row "Begin assignment Victoria Feeney DDS_1778834123534 for N70446A22926, Sallie Victoria Feeney DDS_1778834123534 More info 22 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e938] [cursor=pointer]:
+                    - cell "Begin assignment Victoria Feeney DDS_1778834123534 for N70446A22926, Sallie" [ref=e939]:
+                      - button "Begin assignment Victoria Feeney DDS_1778834123534 for N70446A22926, Sallie" [disabled] [ref=e940]:
+                        - generic [ref=e941]: N70446A22926, Sallie
+                    - cell "Victoria Feeney DDS_1778834123534 More info" [ref=e942]:
+                      - generic [ref=e943]:
+                        - button "Victoria Feeney DDS_1778834123534" [disabled] [ref=e944]:
+                          - generic [ref=e945]: Victoria Feeney DDS_1778834123534
+                        - button "More info" [ref=e946]
+                    - cell "22 days" [ref=e947]:
+                      - button "22 days" [disabled] [ref=e948]
+                    - cell "● Submitted" [ref=e949]:
+                      - button "● Submitted" [disabled] [ref=e950]:
+                        - generic [ref=e951]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e952]:
+                      - button "Edit Assignment" [disabled] [ref=e953]
+                      - button "Add Tests" [disabled] [ref=e954]
+                      - button "Assignment actions" [ref=e955]
+                  - row "Begin assignment Bennie Bayer_1778833893327 for N92869A4457, Mable Bennie Bayer_1778833893327 More info 22 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e956] [cursor=pointer]:
+                    - cell "Begin assignment Bennie Bayer_1778833893327 for N92869A4457, Mable" [ref=e957]:
+                      - button "Begin assignment Bennie Bayer_1778833893327 for N92869A4457, Mable" [disabled] [ref=e958]:
+                        - generic [ref=e959]: N92869A4457, Mable
+                    - cell "Bennie Bayer_1778833893327 More info" [ref=e960]:
+                      - generic [ref=e961]:
+                        - button "Bennie Bayer_1778833893327" [disabled] [ref=e962]:
+                          - generic [ref=e963]: Bennie Bayer_1778833893327
+                        - button "More info" [ref=e964]
+                    - cell "22 days" [ref=e965]:
+                      - button "22 days" [disabled] [ref=e966]
+                    - cell "● In Progress" [ref=e967]:
+                      - button "● In Progress" [disabled] [ref=e968]:
+                        - generic [ref=e969]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e970]:
+                      - button "Edit Assignment" [disabled] [ref=e971]
+                      - button "Add Tests" [disabled] [ref=e972]
+                      - button "Assignment actions" [ref=e973]
+                  - row "Begin assignment Candice Senger_1778833661801 for N86909A6812, Daniella Candice Senger_1778833661801 More info 22 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e974] [cursor=pointer]:
+                    - cell "Begin assignment Candice Senger_1778833661801 for N86909A6812, Daniella" [ref=e975]:
+                      - button "Begin assignment Candice Senger_1778833661801 for N86909A6812, Daniella" [disabled] [ref=e976]:
+                        - generic [ref=e977]: N86909A6812, Daniella
+                    - cell "Candice Senger_1778833661801 More info" [ref=e978]:
+                      - generic [ref=e979]:
+                        - button "Candice Senger_1778833661801" [disabled] [ref=e980]:
+                          - generic [ref=e981]: Candice Senger_1778833661801
+                        - button "More info" [ref=e982]
+                    - cell "22 days" [ref=e983]:
+                      - button "22 days" [disabled] [ref=e984]
+                    - cell "● In Progress" [ref=e985]:
+                      - button "● In Progress" [disabled] [ref=e986]:
+                        - generic [ref=e987]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e988]:
+                      - button "Edit Assignment" [disabled] [ref=e989]
+                      - button "Add Tests" [disabled] [ref=e990]
+                      - button "Assignment actions" [ref=e991]
+                  - row "Begin assignment Rolando Wisozk_1778833430280 for N91956A68897, Jayce Rolando Wisozk_1778833430280 More info 22 days ● In Progress Edit Assignment Add Tests Assignment actions" [ref=e992] [cursor=pointer]:
+                    - cell "Begin assignment Rolando Wisozk_1778833430280 for N91956A68897, Jayce" [ref=e993]:
+                      - button "Begin assignment Rolando Wisozk_1778833430280 for N91956A68897, Jayce" [disabled] [ref=e994]:
+                        - generic [ref=e995]: N91956A68897, Jayce
+                    - cell "Rolando Wisozk_1778833430280 More info" [ref=e996]:
+                      - generic [ref=e997]:
+                        - button "Rolando Wisozk_1778833430280" [disabled] [ref=e998]:
+                          - generic [ref=e999]: Rolando Wisozk_1778833430280
+                        - button "More info" [ref=e1000]
+                    - cell "22 days" [ref=e1001]:
+                      - button "22 days" [disabled] [ref=e1002]
+                    - cell "● In Progress" [ref=e1003]:
+                      - button "● In Progress" [disabled] [ref=e1004]:
+                        - generic [ref=e1005]: ●
+                        - text: In Progress
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1006]:
+                      - button "Edit Assignment" [disabled] [ref=e1007]
+                      - button "Add Tests" [disabled] [ref=e1008]
+                      - button "Assignment actions" [ref=e1009]
+                  - row "Begin assignment Ms. Jackie Wolf_1771572354967 for N93548A34151, Tyreek Ms. Jackie Wolf_1771572354967 More info 0 days ● Expired Generate Report Assignment actions" [ref=e1010] [cursor=pointer]:
+                    - cell "Begin assignment Ms. Jackie Wolf_1771572354967 for N93548A34151, Tyreek" [ref=e1011]:
+                      - button "Begin assignment Ms. Jackie Wolf_1771572354967 for N93548A34151, Tyreek" [disabled] [ref=e1012]:
+                        - generic [ref=e1013]: N93548A34151, Tyreek
+                    - cell "Ms. Jackie Wolf_1771572354967 More info" [ref=e1014]:
+                      - generic [ref=e1015]:
+                        - button "Ms. Jackie Wolf_1771572354967" [disabled] [ref=e1016]:
+                          - generic [ref=e1017]: Ms. Jackie Wolf_1771572354967
+                        - button "More info" [ref=e1018]
+                    - cell "0 days" [ref=e1019]:
+                      - button "0 days" [disabled] [ref=e1020]
+                    - cell "● Expired" [ref=e1021]:
+                      - button "● Expired" [disabled] [ref=e1022]:
+                        - generic [ref=e1023]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1024]:
+                      - button "Generate Report" [ref=e1025]
+                      - button "Assignment actions" [ref=e1026]
+                  - row "Begin assignment Roman Welch_1771571874430 for N33585A30454, Genesis Roman Welch_1771571874430 More info 0 days ● Expired Generate Report Assignment actions" [ref=e1027] [cursor=pointer]:
+                    - cell "Begin assignment Roman Welch_1771571874430 for N33585A30454, Genesis" [ref=e1028]:
+                      - button "Begin assignment Roman Welch_1771571874430 for N33585A30454, Genesis" [disabled] [ref=e1029]:
+                        - generic [ref=e1030]: N33585A30454, Genesis
+                    - cell "Roman Welch_1771571874430 More info" [ref=e1031]:
+                      - generic [ref=e1032]:
+                        - button "Roman Welch_1771571874430" [disabled] [ref=e1033]:
+                          - generic [ref=e1034]: Roman Welch_1771571874430
+                        - button "More info" [ref=e1035]
+                    - cell "0 days" [ref=e1036]:
+                      - button "0 days" [disabled] [ref=e1037]
+                    - cell "● Expired" [ref=e1038]:
+                      - button "● Expired" [disabled] [ref=e1039]:
+                        - generic [ref=e1040]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1041]:
+                      - button "Generate Report" [ref=e1042]
+                      - button "Assignment actions" [ref=e1043]
+                  - row "Begin assignment Juanita Crooks_1771571393726 for N82166A19814, Amina Juanita Crooks_1771571393726 More info 0 days ● Expired Generate Report Assignment actions" [ref=e1044] [cursor=pointer]:
+                    - cell "Begin assignment Juanita Crooks_1771571393726 for N82166A19814, Amina" [ref=e1045]:
+                      - button "Begin assignment Juanita Crooks_1771571393726 for N82166A19814, Amina" [disabled] [ref=e1046]:
+                        - generic [ref=e1047]: N82166A19814, Amina
+                    - cell "Juanita Crooks_1771571393726 More info" [ref=e1048]:
+                      - generic [ref=e1049]:
+                        - button "Juanita Crooks_1771571393726" [disabled] [ref=e1050]:
+                          - generic [ref=e1051]: Juanita Crooks_1771571393726
+                        - button "More info" [ref=e1052]
+                    - cell "0 days" [ref=e1053]:
+                      - button "0 days" [disabled] [ref=e1054]
+                    - cell "● Expired" [ref=e1055]:
+                      - button "● Expired" [disabled] [ref=e1056]:
+                        - generic [ref=e1057]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1058]:
+                      - button "Generate Report" [ref=e1059]
+                      - button "Assignment actions" [ref=e1060]
+                  - row "Begin assignment Martha Parisian_1771570452523 for N85535A84171, Francisca Martha Parisian_1771570452523 More info 0 days ● Expired Generate Report Assignment actions" [ref=e1061] [cursor=pointer]:
+                    - cell "Begin assignment Martha Parisian_1771570452523 for N85535A84171, Francisca" [ref=e1062]:
+                      - button "Begin assignment Martha Parisian_1771570452523 for N85535A84171, Francisca" [disabled] [ref=e1063]:
+                        - generic [ref=e1064]: N85535A84171, Francisca
+                    - cell "Martha Parisian_1771570452523 More info" [ref=e1065]:
+                      - generic [ref=e1066]:
+                        - button "Martha Parisian_1771570452523" [disabled] [ref=e1067]:
+                          - generic [ref=e1068]: Martha Parisian_1771570452523
+                        - button "More info" [ref=e1069]
+                    - cell "0 days" [ref=e1070]:
+                      - button "0 days" [disabled] [ref=e1071]
+                    - cell "● Expired" [ref=e1072]:
+                      - button "● Expired" [disabled] [ref=e1073]:
+                        - generic [ref=e1074]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1075]:
+                      - button "Generate Report" [ref=e1076]
+                      - button "Assignment actions" [ref=e1077]
+                  - row "Begin assignment Dave Wisozk_1771570067112 for N24087A89708, Lorine Dave Wisozk_1771570067112 More info 0 days ● Expired Generate Report Assignment actions" [ref=e1078] [cursor=pointer]:
+                    - cell "Begin assignment Dave Wisozk_1771570067112 for N24087A89708, Lorine" [ref=e1079]:
+                      - button "Begin assignment Dave Wisozk_1771570067112 for N24087A89708, Lorine" [disabled] [ref=e1080]:
+                        - generic [ref=e1081]: N24087A89708, Lorine
+                    - cell "Dave Wisozk_1771570067112 More info" [ref=e1082]:
+                      - generic [ref=e1083]:
+                        - button "Dave Wisozk_1771570067112" [disabled] [ref=e1084]:
+                          - generic [ref=e1085]: Dave Wisozk_1771570067112
+                        - button "More info" [ref=e1086]
+                    - cell "0 days" [ref=e1087]:
+                      - button "0 days" [disabled] [ref=e1088]
+                    - cell "● Expired" [ref=e1089]:
+                      - button "● Expired" [disabled] [ref=e1090]:
+                        - generic [ref=e1091]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1092]:
+                      - button "Generate Report" [ref=e1093]
+                      - button "Assignment actions" [ref=e1094]
+                  - row "Begin assignment Dora Ratke_1771569677712 for N2783A52732, Easter Dora Ratke_1771569677712 More info 0 days ● Expired Generate Report Assignment actions" [ref=e1095] [cursor=pointer]:
+                    - cell "Begin assignment Dora Ratke_1771569677712 for N2783A52732, Easter" [ref=e1096]:
+                      - button "Begin assignment Dora Ratke_1771569677712 for N2783A52732, Easter" [disabled] [ref=e1097]:
+                        - generic [ref=e1098]: N2783A52732, Easter
+                    - cell "Dora Ratke_1771569677712 More info" [ref=e1099]:
+                      - generic [ref=e1100]:
+                        - button "Dora Ratke_1771569677712" [disabled] [ref=e1101]:
+                          - generic [ref=e1102]: Dora Ratke_1771569677712
+                        - button "More info" [ref=e1103]
+                    - cell "0 days" [ref=e1104]:
+                      - button "0 days" [disabled] [ref=e1105]
+                    - cell "● Expired" [ref=e1106]:
+                      - button "● Expired" [disabled] [ref=e1107]:
+                        - generic [ref=e1108]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1109]:
+                      - button "Generate Report" [ref=e1110]
+                      - button "Assignment actions" [ref=e1111]
+                  - row "Begin assignment Robin Turcotte_1771567032240 for N86909A78719, Breanna Robin Turcotte_1771567032240 More info 0 days ● Expired Generate Report Assignment actions" [ref=e1112] [cursor=pointer]:
+                    - cell "Begin assignment Robin Turcotte_1771567032240 for N86909A78719, Breanna" [ref=e1113]:
+                      - button "Begin assignment Robin Turcotte_1771567032240 for N86909A78719, Breanna" [disabled] [ref=e1114]:
+                        - generic [ref=e1115]: N86909A78719, Breanna
+                    - cell "Robin Turcotte_1771567032240 More info" [ref=e1116]:
+                      - generic [ref=e1117]:
+                        - button "Robin Turcotte_1771567032240" [disabled] [ref=e1118]:
+                          - generic [ref=e1119]: Robin Turcotte_1771567032240
+                        - button "More info" [ref=e1120]
+                    - cell "0 days" [ref=e1121]:
+                      - button "0 days" [disabled] [ref=e1122]
+                    - cell "● Expired" [ref=e1123]:
+                      - button "● Expired" [disabled] [ref=e1124]:
+                        - generic [ref=e1125]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1126]:
+                      - button "Generate Report" [ref=e1127]
+                      - button "Assignment actions" [ref=e1128]
+                  - row "Begin assignment Carmen Strosin_1771566764496 for N5720A44477, Marilie Carmen Strosin_1771566764496 More info 0 days ● Expired Generate Report Assignment actions" [ref=e1129] [cursor=pointer]:
+                    - cell "Begin assignment Carmen Strosin_1771566764496 for N5720A44477, Marilie" [ref=e1130]:
+                      - button "Begin assignment Carmen Strosin_1771566764496 for N5720A44477, Marilie" [disabled] [ref=e1131]:
+                        - generic [ref=e1132]: N5720A44477, Marilie
+                    - cell "Carmen Strosin_1771566764496 More info" [ref=e1133]:
+                      - generic [ref=e1134]:
+                        - button "Carmen Strosin_1771566764496" [disabled] [ref=e1135]:
+                          - generic [ref=e1136]: Carmen Strosin_1771566764496
+                        - button "More info" [ref=e1137]
+                    - cell "0 days" [ref=e1138]:
+                      - button "0 days" [disabled] [ref=e1139]
+                    - cell "● Expired" [ref=e1140]:
+                      - button "● Expired" [disabled] [ref=e1141]:
+                        - generic [ref=e1142]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1143]:
+                      - button "Generate Report" [ref=e1144]
+                      - button "Assignment actions" [ref=e1145]
+                  - row "Begin assignment Neal Wiza_1771566494693 for N89055A58014, Herbert Neal Wiza_1771566494693 More info 0 days ● Expired Generate Report Assignment actions" [ref=e1146] [cursor=pointer]:
+                    - cell "Begin assignment Neal Wiza_1771566494693 for N89055A58014, Herbert" [ref=e1147]:
+                      - button "Begin assignment Neal Wiza_1771566494693 for N89055A58014, Herbert" [disabled] [ref=e1148]:
+                        - generic [ref=e1149]: N89055A58014, Herbert
+                    - cell "Neal Wiza_1771566494693 More info" [ref=e1150]:
+                      - generic [ref=e1151]:
+                        - button "Neal Wiza_1771566494693" [disabled] [ref=e1152]:
+                          - generic [ref=e1153]: Neal Wiza_1771566494693
+                        - button "More info" [ref=e1154]
+                    - cell "0 days" [ref=e1155]:
+                      - button "0 days" [disabled] [ref=e1156]
+                    - cell "● Expired" [ref=e1157]:
+                      - button "● Expired" [disabled] [ref=e1158]:
+                        - generic [ref=e1159]: ●
+                        - text: Expired
+                    - cell "Generate Report Assignment actions" [ref=e1160]:
+                      - button "Generate Report" [ref=e1161]
+                      - button "Assignment actions" [ref=e1162]
+                  - row "Begin assignment Cora Keebler_1769156882695 for N45480A62411, Angeline Cora Keebler_1769156882695 More info — ● Not Started Edit Assignment Add Tests Assignment actions" [ref=e1163] [cursor=pointer]:
+                    - cell "Begin assignment Cora Keebler_1769156882695 for N45480A62411, Angeline" [ref=e1164]:
+                      - button "Begin assignment Cora Keebler_1769156882695 for N45480A62411, Angeline" [disabled] [ref=e1165]:
+                        - generic [ref=e1166]: N45480A62411, Angeline
+                    - cell "Cora Keebler_1769156882695 More info" [ref=e1167]:
+                      - generic [ref=e1168]:
+                        - button "Cora Keebler_1769156882695" [disabled] [ref=e1169]:
+                          - generic [ref=e1170]: Cora Keebler_1769156882695
+                        - button "More info" [ref=e1171]
+                    - cell "—" [ref=e1172]:
+                      - button "—" [disabled] [ref=e1173]
+                    - cell "● Not Started" [ref=e1174]:
+                      - button "● Not Started" [disabled] [ref=e1175]:
+                        - generic [ref=e1176]: ●
+                        - text: Not Started
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e1177]:
+                      - button "Edit Assignment" [disabled] [ref=e1178]
+                      - button "Add Tests" [disabled] [ref=e1179]
+                      - button "Assignment actions" [ref=e1180]
+            - generic [ref=e1181]:
+              - generic [ref=e1184]:
+                - img [ref=e1185]
+                - heading "Notifications Center" [level=2] [ref=e1189]
+              - generic [ref=e1190]:
+                - generic [ref=e1192]:
+                  - img [ref=e1193]
+                  - heading "Resources" [level=3] [ref=e1197]
+                - list [ref=e1198]:
+                  - listitem [ref=e1199]:
+                    - button "Riverside Learn" [ref=e1200] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e1201]
+                      - img [ref=e1203]
+                  - listitem [ref=e1205]:
+                    - button "Onboarding Tutorial Videos" [ref=e1206] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e1207]
+                      - img [ref=e1209]
+                  - listitem [ref=e1211]:
+                    - button "Quick Reference Guides" [ref=e1212] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e1213]
+                      - img [ref=e1215]
+                - button "View All" [ref=e1218] [cursor=pointer]
+      - contentinfo [ref=e1219]:
+        - generic [ref=e1220]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e1221] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e1222]
+        - generic [ref=e1223]:
+          - link "Riverside Insights Facebook" [ref=e1224] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e1225]
+          - link "Riverside Insights Twitter" [ref=e1226] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e1227]
+          - link "Riverside Insights LinkedIn" [ref=e1228] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e1229]
+          - link "Riverside Insights Instagram" [ref=e1230] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e1231]
+        - generic [ref=e1232]:
+          - button "Leave Feedback" [ref=e1233] [cursor=pointer]
+          - generic [ref=e1234]: "|"
+          - link "Terms of Use" [ref=e1235] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e1236]: "|"
+          - link "Privacy Policy" [ref=e1237] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e1238]: Footer region end
+  - region "Chat Widget" [ref=e1239]:
+    - iframe [ref=e1240]:
+      - button "Open live chat" [ref=f3e5]:
+        - img [ref=f3e8]
+        - img [ref=f3e15]
+    - generic "Drag" [ref=e1241]:
+      - img [ref=e1242]
+```
+
+# Test source
+
+```ts
+  4267 |             } else if (testStemForm.match(/ANLSYN.W5PA|CONFRM.W5PA/) && (currentItemDetails.startsWith("Introduction"))) {
+  4268 |               await this.videoPlayButton.click();
+  4269 |               await this.waitTillVideoIsComplete();
+  4270 |               await this.plainNextButtonOrEndButton.click();
+  4271 |             } else if (currentItemDetails.includes("Introduction")) {
+  4272 |               await this.page.waitForTimeout(2000);
+  4273 |               await this.plainNextButtonOrEndButton.click();
+  4274 |               await this.page.waitForTimeout(1000);
+  4275 |             } else if (currentItemDetails.startsWith("Sample")) {
+  4276 |               await this.page.waitForTimeout(2000);
+  4277 |               await this.correctOptionButton.nth(0).click();
+  4278 |               await this.plainNextButtonOrEndButton.click();
+  4279 |             } else if (currentItemDetails.includes("Item") || currentItemDetails.endsWith("Presentation") || currentItemDetails.match(new RegExp(`Block\\s+[A-Z],\\s+Item\\s+\\d+`)) || currentItemDetails.match(new RegExp(`Story\\s+\\d+,\\s+Item\\s+\\d+`))) {
+  4280 |               await this.page.waitForTimeout(1000);
+  4281 |               if (currentItemDetails.endsWith("Presentation")) {
+  4282 |                 if (testStemForm.match('PARCMP.W5PA')) {
+  4283 |                   await this.examineeCursorButton.click();
+  4284 |                   await this.doneButton.click();
+  4285 |                 }
+  4286 |                 await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4287 |                 await this.page.waitForTimeout(500);
+  4288 |                 await this.plainNextButtonOrEndButton.click();
+  4289 |               } else {
+  4290 |                 await this.page.waitForTimeout(2000);
+  4291 |                 await this.iDontKnowButton.click();
+  4292 |                 await this.plainNextButtonOrEndButton.waitFor({ state: "visible" })
+  4293 |                 await this.plainNextButtonOrEndButton.click();
+  4294 |               }
+  4295 |             }
+  4296 |           }
+  4297 |           await this.addTestFromMainNavgation("Letter-Pattern Matching");
+  4298 |           await this.page.waitForTimeout(1000);
+  4299 |           for (let j = 1; j <= 5; j++) {
+  4300 |             let currentItemDetails = await this.itemDetails.textContent();
+  4301 |             if (currentItemDetails.includes("Introduction")) {
+  4302 |               await this.page.waitForTimeout(1000);
+  4303 |               await this.plainNextButtonOrEndButton.click();
+  4304 |               await this.page.waitForTimeout(1000);
+  4305 |             } else if (currentItemDetails.startsWith("Sample")) {
+  4306 |               await this.page.waitForTimeout(1000);
+  4307 |               await this.iDontKnowButton.click();
+  4308 |               await this.plainNextButtonOrEndButton.click();
+  4309 |               await this.page.waitForTimeout(1000);
+  4310 |             }
+  4311 |           }
+  4312 |           await this.endSessionForScoreErrorCheck(examinee_ID, browser, testName);
+  4313 |           await this.iDontKnowButton.click();
+  4314 |           await this.plainNextButtonOrEndButton.click();
+  4315 |           return;
+  4316 |         } else if (testStemForm === "VAL.W5PA") {
+  4317 |           const itemWrapper = this.page.locator("//div[@class='option-wrapper']/button");
+  4318 |           // Number of clicks per story
+  4319 |           const storyClickCounts: Record<string, number> = {
+  4320 |             "Story 1": 4,
+  4321 |           };
+  4322 |           const storyKey = Object.keys(storyClickCounts).find((story) =>
+  4323 |             itemDetails.startsWith(story)
+  4324 |           );
+  4325 | 
+  4326 |           if (storyKey) {
+  4327 |             const count = storyClickCounts[storyKey];
+  4328 | 
+  4329 |             for (let i = 0; i < count; i++) {
+  4330 |               await itemWrapper.nth(i).click();
+  4331 |             }
+  4332 |           }
+  4333 |           await this.addTestFromMainNavgation("Letter-Pattern Matching");
+  4334 |           await this.page.waitForTimeout(1000);
+  4335 |           for (let j = 1; j <= 5; j++) {
+  4336 |             let currentItemDetails = await this.itemDetails.textContent();
+  4337 |             if (currentItemDetails.includes("Introduction")) {
+  4338 |               await this.page.waitForTimeout(1000);
+  4339 |               await this.plainNextButtonOrEndButton.click();
+  4340 |               await this.page.waitForTimeout(1000);
+  4341 |             } else if (currentItemDetails.startsWith("Sample")) {
+  4342 |               await this.page.waitForTimeout(1000);
+  4343 |               await this.iDontKnowButton.click();
+  4344 |               await this.plainNextButtonOrEndButton.click();
+  4345 |               await this.page.waitForTimeout(1000);
+  4346 |             }
+  4347 |           }
+  4348 |           await this.endSessionForScoreErrorCheck(examinee_ID, browser, testName);
+  4349 |           await itemWrapper.nth(4).click();
+  4350 |           await this.plainNextButtonOrEndButton.click();
+  4351 |           return;
+  4352 |         }
+  4353 |       }  else if (typeOfTest.match(/Rerouting End Test scenario/i)) {
+  4354 |         if ((testStemForm.match(/BLKROT.W5PA/) && /^Introduction (1|2|4)/.test(itemDetails)) || (testStemForm.match(/MATRCZ.W5PA/) && itemDetails.startsWith("Introduction"))) {
+  4355 |           await this.activateTabletControlButton.click();
+  4356 |           await this.videoPlayButton.click();
+  4357 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4358 |         } else if ((testStemForm.match(/VAL.W5PA/) && itemDetails.startsWith("Introduction"))) {
+  4359 |           await this.examineeContentImg.hover();
+  4360 |         } else if (itemDetails.startsWith("Sample")) {
+  4361 |           await this.correctOptionButton.nth(0).click();
+  4362 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4363 |         } else if (itemDetails.includes("Item")) {
+  4364 |            for (let i = 1; i <= logicIndex; i++) {
+  4365 |             await this.correctOptionButton.nth(0).click();
+  4366 |             await this.page.waitForTimeout(2000);
+> 4367 |             await this.plainNextButtonOrEndButton.click();
+       |                                                   ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  4368 |           } if (testStemForm.match(/ORLSMP.W5PA/) && itemDetails.startsWith("Introduction")) {
+  4369 |             await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4370 |             await this.plainNextButtonOrEndButton.click();
+  4371 |           }
+  4372 |           for (let j = 1; j < logicIndex; j++) {
+  4373 |             await this.iDontKnowButton.click();
+  4374 |             await this.page.waitForTimeout(2000);
+  4375 |             await this.plainNextButtonOrEndButton.click();
+  4376 |           }
+  4377 |           await this.iDontKnowButton.click();
+  4378 |           await this.leftNavIncorrectAnswerContainer.nth(2).click();
+  4379 |           await this.page.mouse.move(300, 800);
+  4380 |           await this.iDontKnowButton.click();
+  4381 |           await this.correctOptionButton.nth(0).click();
+  4382 |           await expect.soft(this.itemDetails1).toHaveText("Test Routing Change");
+  4383 |           await this.continueButton.click();
+  4384 |           await this.plainNextButtonOrEndButton.click();
+  4385 |           for (let k = 1; k < index; k++) {
+  4386 |             await this.iDontKnowButton.click();
+  4387 |             await this.plainNextButtonOrEndButton.click();
+  4388 |           }
+  4389 |           await this.iDontKnowButton.click();
+  4390 |         } else if (testStemForm === "VAL.W5PA") {
+  4391 |           const itemWrapper = this.page.locator("//div[@class='option-wrapper']/button");
+  4392 |           // Number of clicks per story
+  4393 |           const storyClickCounts: Record<string, number> = {
+  4394 |             "Story 1": 4,
+  4395 |             "Story 2": 4,
+  4396 |           };
+  4397 |           const storyKey = Object.keys(storyClickCounts).find((story) =>
+  4398 |             itemDetails.startsWith(story)
+  4399 |           );
+  4400 | 
+  4401 |           if (storyKey) {
+  4402 |             const count = storyClickCounts[storyKey];
+  4403 | 
+  4404 |             for (let i = 0; i < count; i++) {
+  4405 |               if (storyKey === "Story 2" && i === 3) {
+  4406 |                 // Handling for Story 2, 4th click
+  4407 |                 await itemWrapper.nth(i).click();
+  4408 |                 await this.leftNavBlockContainer.nth(0).click();
+  4409 |                 await this.page.mouse.move(300, 800);
+  4410 |                 await this.leftNavAllItems.nth(0).click();
+  4411 |                 await itemWrapper.nth(4).click();
+  4412 |                 await expect.soft(this.itemDetails1).toHaveText("Test Routing Change");
+  4413 |                 await this.continueButton.click();
+  4414 |               } else {
+  4415 |                 await itemWrapper.nth(i).click();
+  4416 |               }
+  4417 |             }
+  4418 |           }
+  4419 |         }
+  4420 |       }else if (typeOfTest.match(/VWKMEM Review mode Verification scenario/i)) {
+  4421 |         for (let i = 1; i <= index; i++) {
+  4422 |           await this.page.waitForTimeout(5000);
+  4423 |           let itemDetails = await this.itemDetails.textContent();
+  4424 |           if (itemDetails.match(/Sample Item (A|B) Presentation, Trial 1/i)) {
+  4425 |             await this.page.waitForTimeout(2000);
+  4426 |             await this.plainNextButtonOrEndButton.click();
+  4427 |           } else if (itemDetails.match(/Sample Item (A|B) Response, Trial 1/i)) {
+  4428 |             await this.page.waitForTimeout(2000);
+  4429 |             await this.correctOptionButton.nth(0).click();
+  4430 |             await this.page.waitForTimeout(2000);
+  4431 |             await this.plainNextButtonOrEndButton.click();
+  4432 |           }
+  4433 |         }
+  4434 |         await this.breakTheLogicOut();
+  4435 |         await this.page.locator(`//span[starts-with(text(),'${examinee_ID}')]/ancestor::button`).click();
+  4436 |         await this.reviewModeButton.click();
+  4437 |         await this.page.waitForTimeout(5000);
+  4438 |         await this.page.locator(`//div[text() = '${testName}']`).nth(1).click();
+  4439 |         await this.page.waitForTimeout(2000);
+  4440 |         for (let j = 1; j <= incorrectIndex; j++) {
+  4441 |           await this.page.waitForTimeout(5000);
+  4442 |           await this.leftNavAllItems.nth(j).click();
+  4443 |           await this.page.mouse.move(100, 600);
+  4444 |           let currentItemDetails = await this.itemDetails.textContent();
+  4445 |           if (currentItemDetails.match(/Sample Item (A|B) Presentation, Trial 1/i) || currentItemDetails.match(/Sample Item (A|B) Presentation, Trial 2/i) || currentItemDetails.match(/Sample Item C Presentation/i)) {
+  4446 |             await expect(this.examineeNotConnectedText).toBeVisible();
+  4447 |             expect(await this.examineeNotConnectedText.textContent()).toContain("Examinee Not Connected");
+  4448 |             await expect(this.backToReviewButton).toBeVisible();
+  4449 |             await expect(this.backToReviewButton).toBeEnabled();
+  4450 |           } else if (currentItemDetails.match(/Sample Item (A|B) Response, Trial 1/i)) {
+  4451 |             await this.page.waitForTimeout(2000);
+  4452 |             await this.correctOptionButton.nth(0).click();
+  4453 |             await this.page.waitForTimeout(2000);
+  4454 |             await this.correctOptionButton.nth(0).isEnabled();
+  4455 |             await this.incorrectOptionButton.nth(0).isEnabled();
+  4456 |             await this.page.waitForTimeout(2000);
+  4457 |             await this.incorrectOptionButton.nth(0).click();
+  4458 |           } else if (currentItemDetails.includes("Introduction") || currentItemDetails.includes("Demonstration") || currentItemDetails.includes("Distractor") || currentItemDetails.includes("Response") || currentItemDetails.includes("Practice")) {
+  4459 |             await expect(this.examineeNotConnectedText).toBeVisible();
+  4460 |             await expect(this.backToReviewButton).toBeVisible();
+  4461 |           }
+  4462 |         }
+  4463 |         break;
+  4464 |       } else if (typeOfTest.match(/UNDDIR Review mode Verification scenario/i)) {
+  4465 |         for (let i = 1; i <= index; i++) {
+  4466 |           let itemDetails = await this.itemDetails.textContent();
+  4467 |           if (itemDetails.includes("Introduction") || itemDetails.includes("Presentation")) {
+```

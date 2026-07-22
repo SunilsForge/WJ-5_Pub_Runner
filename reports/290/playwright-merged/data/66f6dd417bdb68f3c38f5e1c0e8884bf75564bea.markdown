@@ -1,0 +1,400 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts >>  LWIDNT UI And Reports >> Age 12 to Adult - Rerouting End Test scenario for SSP6 Test UI
+- Location: src/tests/ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts:12:13
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button')
+    - locator resolved to <button disabled aria-live="polite" id="next-item-button" aria-label="Go on to " class="plain-button next-item-button">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    116 × waiting for element to be visible, enabled and stable
+        - element is not enabled
+      - retrying click action
+        - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 39Pw Aut25AH" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "39Pw Aut25AH" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "Begin assignment Marlene Collier_1784727101537 for N58597A60462, Kenna Marlene Collier_1784727101537 More info 90 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e74] [cursor=pointer]:
+                    - cell "Begin assignment Marlene Collier_1784727101537 for N58597A60462, Kenna" [ref=e75]:
+                      - button "Begin assignment Marlene Collier_1784727101537 for N58597A60462, Kenna" [disabled] [ref=e76]:
+                        - generic [ref=e77]: N58597A60462, Kenna
+                    - cell "Marlene Collier_1784727101537 More info" [ref=e78]:
+                      - generic [ref=e79]:
+                        - button "Marlene Collier_1784727101537" [disabled] [ref=e80]:
+                          - generic [ref=e81]: Marlene Collier_1784727101537
+                        - button "More info" [ref=e82]
+                    - cell "90 days" [ref=e83]:
+                      - button "90 days" [disabled] [ref=e84]
+                    - cell "● Submitted" [ref=e85]:
+                      - button "● Submitted" [disabled] [ref=e86]:
+                        - generic [ref=e87]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e88]:
+                      - button "Edit Assignment" [disabled] [ref=e89]
+                      - button "Add Tests" [disabled] [ref=e90]
+                      - button "Assignment actions" [ref=e91]
+                  - row "Begin assignment Erica Heathcote_1784726725032 for N86450A58521, Paolo Erica Heathcote_1784726725032 More info 90 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e92] [cursor=pointer]:
+                    - cell "Begin assignment Erica Heathcote_1784726725032 for N86450A58521, Paolo" [ref=e93]:
+                      - button "Begin assignment Erica Heathcote_1784726725032 for N86450A58521, Paolo" [disabled] [ref=e94]:
+                        - generic [ref=e95]: N86450A58521, Paolo
+                    - cell "Erica Heathcote_1784726725032 More info" [ref=e96]:
+                      - generic [ref=e97]:
+                        - button "Erica Heathcote_1784726725032" [disabled] [ref=e98]:
+                          - generic [ref=e99]: Erica Heathcote_1784726725032
+                        - button "More info" [ref=e100]
+                    - cell "90 days" [ref=e101]:
+                      - button "90 days" [disabled] [ref=e102]
+                    - cell "● Submitted" [ref=e103]:
+                      - button "● Submitted" [disabled] [ref=e104]:
+                        - generic [ref=e105]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e106]:
+                      - button "Edit Assignment" [disabled] [ref=e107]
+                      - button "Add Tests" [disabled] [ref=e108]
+                      - button "Assignment actions" [ref=e109]
+            - generic [ref=e110]:
+              - generic [ref=e113]:
+                - img [ref=e114]
+                - heading "Notifications Center" [level=2] [ref=e118]
+              - generic [ref=e119]:
+                - generic [ref=e121]:
+                  - img [ref=e122]
+                  - heading "Resources" [level=3] [ref=e126]
+                - list [ref=e127]:
+                  - listitem [ref=e128]:
+                    - button "Riverside Learn" [ref=e129] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e130]
+                      - img [ref=e132]
+                  - listitem [ref=e134]:
+                    - button "Onboarding Tutorial Videos" [ref=e135] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e136]
+                      - img [ref=e138]
+                  - listitem [ref=e140]:
+                    - button "Quick Reference Guides" [ref=e141] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e142]
+                      - img [ref=e144]
+                - button "View All" [ref=e147] [cursor=pointer]
+      - contentinfo [ref=e148]:
+        - generic [ref=e149]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e150] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e151]
+        - generic [ref=e152]:
+          - link "Riverside Insights Facebook" [ref=e153] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e154]
+          - link "Riverside Insights Twitter" [ref=e155] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e156]
+          - link "Riverside Insights LinkedIn" [ref=e157] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e158]
+          - link "Riverside Insights Instagram" [ref=e159] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e160]
+        - generic [ref=e161]:
+          - button "Leave Feedback" [ref=e162] [cursor=pointer]
+          - generic [ref=e163]: "|"
+          - link "Terms of Use" [ref=e164] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e165]: "|"
+          - link "Privacy Policy" [ref=e166] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e167]: Footer region end
+  - region "Chat Widget" [ref=e168]:
+    - iframe [ref=e169]:
+      - button "Open live chat" [ref=f3e5]:
+        - img [ref=f3e8]
+        - img [ref=f3e15]
+    - generic "Drag" [ref=e170]:
+      - img [ref=e171]
+```
+
+# Test source
+
+```ts
+  4267 |             } else if (testStemForm.match(/ANLSYN.W5PA|CONFRM.W5PA/) && (currentItemDetails.startsWith("Introduction"))) {
+  4268 |               await this.videoPlayButton.click();
+  4269 |               await this.waitTillVideoIsComplete();
+  4270 |               await this.plainNextButtonOrEndButton.click();
+  4271 |             } else if (currentItemDetails.includes("Introduction")) {
+  4272 |               await this.page.waitForTimeout(2000);
+  4273 |               await this.plainNextButtonOrEndButton.click();
+  4274 |               await this.page.waitForTimeout(1000);
+  4275 |             } else if (currentItemDetails.startsWith("Sample")) {
+  4276 |               await this.page.waitForTimeout(2000);
+  4277 |               await this.correctOptionButton.nth(0).click();
+  4278 |               await this.plainNextButtonOrEndButton.click();
+  4279 |             } else if (currentItemDetails.includes("Item") || currentItemDetails.endsWith("Presentation") || currentItemDetails.match(new RegExp(`Block\\s+[A-Z],\\s+Item\\s+\\d+`)) || currentItemDetails.match(new RegExp(`Story\\s+\\d+,\\s+Item\\s+\\d+`))) {
+  4280 |               await this.page.waitForTimeout(1000);
+  4281 |               if (currentItemDetails.endsWith("Presentation")) {
+  4282 |                 if (testStemForm.match('PARCMP.W5PA')) {
+  4283 |                   await this.examineeCursorButton.click();
+  4284 |                   await this.doneButton.click();
+  4285 |                 }
+  4286 |                 await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4287 |                 await this.page.waitForTimeout(500);
+  4288 |                 await this.plainNextButtonOrEndButton.click();
+  4289 |               } else {
+  4290 |                 await this.page.waitForTimeout(2000);
+  4291 |                 await this.iDontKnowButton.click();
+  4292 |                 await this.plainNextButtonOrEndButton.waitFor({ state: "visible" })
+  4293 |                 await this.plainNextButtonOrEndButton.click();
+  4294 |               }
+  4295 |             }
+  4296 |           }
+  4297 |           await this.addTestFromMainNavgation("Letter-Pattern Matching");
+  4298 |           await this.page.waitForTimeout(1000);
+  4299 |           for (let j = 1; j <= 5; j++) {
+  4300 |             let currentItemDetails = await this.itemDetails.textContent();
+  4301 |             if (currentItemDetails.includes("Introduction")) {
+  4302 |               await this.page.waitForTimeout(1000);
+  4303 |               await this.plainNextButtonOrEndButton.click();
+  4304 |               await this.page.waitForTimeout(1000);
+  4305 |             } else if (currentItemDetails.startsWith("Sample")) {
+  4306 |               await this.page.waitForTimeout(1000);
+  4307 |               await this.iDontKnowButton.click();
+  4308 |               await this.plainNextButtonOrEndButton.click();
+  4309 |               await this.page.waitForTimeout(1000);
+  4310 |             }
+  4311 |           }
+  4312 |           await this.endSessionForScoreErrorCheck(examinee_ID, browser, testName);
+  4313 |           await this.iDontKnowButton.click();
+  4314 |           await this.plainNextButtonOrEndButton.click();
+  4315 |           return;
+  4316 |         } else if (testStemForm === "VAL.W5PA") {
+  4317 |           const itemWrapper = this.page.locator("//div[@class='option-wrapper']/button");
+  4318 |           // Number of clicks per story
+  4319 |           const storyClickCounts: Record<string, number> = {
+  4320 |             "Story 1": 4,
+  4321 |           };
+  4322 |           const storyKey = Object.keys(storyClickCounts).find((story) =>
+  4323 |             itemDetails.startsWith(story)
+  4324 |           );
+  4325 | 
+  4326 |           if (storyKey) {
+  4327 |             const count = storyClickCounts[storyKey];
+  4328 | 
+  4329 |             for (let i = 0; i < count; i++) {
+  4330 |               await itemWrapper.nth(i).click();
+  4331 |             }
+  4332 |           }
+  4333 |           await this.addTestFromMainNavgation("Letter-Pattern Matching");
+  4334 |           await this.page.waitForTimeout(1000);
+  4335 |           for (let j = 1; j <= 5; j++) {
+  4336 |             let currentItemDetails = await this.itemDetails.textContent();
+  4337 |             if (currentItemDetails.includes("Introduction")) {
+  4338 |               await this.page.waitForTimeout(1000);
+  4339 |               await this.plainNextButtonOrEndButton.click();
+  4340 |               await this.page.waitForTimeout(1000);
+  4341 |             } else if (currentItemDetails.startsWith("Sample")) {
+  4342 |               await this.page.waitForTimeout(1000);
+  4343 |               await this.iDontKnowButton.click();
+  4344 |               await this.plainNextButtonOrEndButton.click();
+  4345 |               await this.page.waitForTimeout(1000);
+  4346 |             }
+  4347 |           }
+  4348 |           await this.endSessionForScoreErrorCheck(examinee_ID, browser, testName);
+  4349 |           await itemWrapper.nth(4).click();
+  4350 |           await this.plainNextButtonOrEndButton.click();
+  4351 |           return;
+  4352 |         }
+  4353 |       }  else if (typeOfTest.match(/Rerouting End Test scenario/i)) {
+  4354 |         if ((testStemForm.match(/BLKROT.W5PA/) && /^Introduction (1|2|4)/.test(itemDetails)) || (testStemForm.match(/MATRCZ.W5PA/) && itemDetails.startsWith("Introduction"))) {
+  4355 |           await this.activateTabletControlButton.click();
+  4356 |           await this.videoPlayButton.click();
+  4357 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4358 |         } else if ((testStemForm.match(/VAL.W5PA/) && itemDetails.startsWith("Introduction"))) {
+  4359 |           await this.examineeContentImg.hover();
+  4360 |         } else if (itemDetails.startsWith("Sample")) {
+  4361 |           await this.correctOptionButton.nth(0).click();
+  4362 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4363 |         } else if (itemDetails.includes("Item")) {
+  4364 |            for (let i = 1; i <= logicIndex; i++) {
+  4365 |             await this.correctOptionButton.nth(0).click();
+  4366 |             await this.page.waitForTimeout(2000);
+> 4367 |             await this.plainNextButtonOrEndButton.click();
+       |                                                   ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  4368 |           } if (testStemForm.match(/ORLSMP.W5PA/) && itemDetails.startsWith("Introduction")) {
+  4369 |             await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4370 |             await this.plainNextButtonOrEndButton.click();
+  4371 |           }
+  4372 |           for (let j = 1; j < logicIndex; j++) {
+  4373 |             await this.iDontKnowButton.click();
+  4374 |             await this.page.waitForTimeout(2000);
+  4375 |             await this.plainNextButtonOrEndButton.click();
+  4376 |           }
+  4377 |           await this.iDontKnowButton.click();
+  4378 |           await this.leftNavIncorrectAnswerContainer.nth(2).click();
+  4379 |           await this.page.mouse.move(300, 800);
+  4380 |           await this.iDontKnowButton.click();
+  4381 |           await this.correctOptionButton.nth(0).click();
+  4382 |           await expect.soft(this.itemDetails1).toHaveText("Test Routing Change");
+  4383 |           await this.continueButton.click();
+  4384 |           await this.plainNextButtonOrEndButton.click();
+  4385 |           for (let k = 1; k < index; k++) {
+  4386 |             await this.iDontKnowButton.click();
+  4387 |             await this.plainNextButtonOrEndButton.click();
+  4388 |           }
+  4389 |           await this.iDontKnowButton.click();
+  4390 |         } else if (testStemForm === "VAL.W5PA") {
+  4391 |           const itemWrapper = this.page.locator("//div[@class='option-wrapper']/button");
+  4392 |           // Number of clicks per story
+  4393 |           const storyClickCounts: Record<string, number> = {
+  4394 |             "Story 1": 4,
+  4395 |             "Story 2": 4,
+  4396 |           };
+  4397 |           const storyKey = Object.keys(storyClickCounts).find((story) =>
+  4398 |             itemDetails.startsWith(story)
+  4399 |           );
+  4400 | 
+  4401 |           if (storyKey) {
+  4402 |             const count = storyClickCounts[storyKey];
+  4403 | 
+  4404 |             for (let i = 0; i < count; i++) {
+  4405 |               if (storyKey === "Story 2" && i === 3) {
+  4406 |                 // Handling for Story 2, 4th click
+  4407 |                 await itemWrapper.nth(i).click();
+  4408 |                 await this.leftNavBlockContainer.nth(0).click();
+  4409 |                 await this.page.mouse.move(300, 800);
+  4410 |                 await this.leftNavAllItems.nth(0).click();
+  4411 |                 await itemWrapper.nth(4).click();
+  4412 |                 await expect.soft(this.itemDetails1).toHaveText("Test Routing Change");
+  4413 |                 await this.continueButton.click();
+  4414 |               } else {
+  4415 |                 await itemWrapper.nth(i).click();
+  4416 |               }
+  4417 |             }
+  4418 |           }
+  4419 |         }
+  4420 |       }else if (typeOfTest.match(/VWKMEM Review mode Verification scenario/i)) {
+  4421 |         for (let i = 1; i <= index; i++) {
+  4422 |           await this.page.waitForTimeout(5000);
+  4423 |           let itemDetails = await this.itemDetails.textContent();
+  4424 |           if (itemDetails.match(/Sample Item (A|B) Presentation, Trial 1/i)) {
+  4425 |             await this.page.waitForTimeout(2000);
+  4426 |             await this.plainNextButtonOrEndButton.click();
+  4427 |           } else if (itemDetails.match(/Sample Item (A|B) Response, Trial 1/i)) {
+  4428 |             await this.page.waitForTimeout(2000);
+  4429 |             await this.correctOptionButton.nth(0).click();
+  4430 |             await this.page.waitForTimeout(2000);
+  4431 |             await this.plainNextButtonOrEndButton.click();
+  4432 |           }
+  4433 |         }
+  4434 |         await this.breakTheLogicOut();
+  4435 |         await this.page.locator(`//span[starts-with(text(),'${examinee_ID}')]/ancestor::button`).click();
+  4436 |         await this.reviewModeButton.click();
+  4437 |         await this.page.waitForTimeout(5000);
+  4438 |         await this.page.locator(`//div[text() = '${testName}']`).nth(1).click();
+  4439 |         await this.page.waitForTimeout(2000);
+  4440 |         for (let j = 1; j <= incorrectIndex; j++) {
+  4441 |           await this.page.waitForTimeout(5000);
+  4442 |           await this.leftNavAllItems.nth(j).click();
+  4443 |           await this.page.mouse.move(100, 600);
+  4444 |           let currentItemDetails = await this.itemDetails.textContent();
+  4445 |           if (currentItemDetails.match(/Sample Item (A|B) Presentation, Trial 1/i) || currentItemDetails.match(/Sample Item (A|B) Presentation, Trial 2/i) || currentItemDetails.match(/Sample Item C Presentation/i)) {
+  4446 |             await expect(this.examineeNotConnectedText).toBeVisible();
+  4447 |             expect(await this.examineeNotConnectedText.textContent()).toContain("Examinee Not Connected");
+  4448 |             await expect(this.backToReviewButton).toBeVisible();
+  4449 |             await expect(this.backToReviewButton).toBeEnabled();
+  4450 |           } else if (currentItemDetails.match(/Sample Item (A|B) Response, Trial 1/i)) {
+  4451 |             await this.page.waitForTimeout(2000);
+  4452 |             await this.correctOptionButton.nth(0).click();
+  4453 |             await this.page.waitForTimeout(2000);
+  4454 |             await this.correctOptionButton.nth(0).isEnabled();
+  4455 |             await this.incorrectOptionButton.nth(0).isEnabled();
+  4456 |             await this.page.waitForTimeout(2000);
+  4457 |             await this.incorrectOptionButton.nth(0).click();
+  4458 |           } else if (currentItemDetails.includes("Introduction") || currentItemDetails.includes("Demonstration") || currentItemDetails.includes("Distractor") || currentItemDetails.includes("Response") || currentItemDetails.includes("Practice")) {
+  4459 |             await expect(this.examineeNotConnectedText).toBeVisible();
+  4460 |             await expect(this.backToReviewButton).toBeVisible();
+  4461 |           }
+  4462 |         }
+  4463 |         break;
+  4464 |       } else if (typeOfTest.match(/UNDDIR Review mode Verification scenario/i)) {
+  4465 |         for (let i = 1; i <= index; i++) {
+  4466 |           let itemDetails = await this.itemDetails.textContent();
+  4467 |           if (itemDetails.includes("Introduction") || itemDetails.includes("Presentation")) {
+```

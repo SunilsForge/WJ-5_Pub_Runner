@@ -1,0 +1,420 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts >>  LWIDNT UI And Reports >> Age 12 to Adult - LWIDNT 6 correct 6 incorrect then go back to bLock A and check next item for SSP6 Test UI
+- Location: src/tests/ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts:12:13
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button')
+    - locator resolved to <button disabled aria-live="polite" id="next-item-button" aria-label="Go on to " class="plain-button next-item-button">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    116 × waiting for element to be visible, enabled and stable
+        - element is not enabled
+      - retrying click action
+        - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 39Pw Aut25AH" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "39Pw Aut25AH" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| Subscription Details" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "Begin assignment Tom Berge_1784727456292 for N55938A21100, Shanny Tom Berge_1784727456292 More info 90 days ● In Progress ↩️ Resume Assignment Edit Assignment Add Tests Assignment actions" [ref=e74] [cursor=pointer]:
+                    - cell "Begin assignment Tom Berge_1784727456292 for N55938A21100, Shanny" [ref=e75]:
+                      - button "Begin assignment Tom Berge_1784727456292 for N55938A21100, Shanny" [disabled] [ref=e76]:
+                        - generic [ref=e77]: N55938A21100, Shanny
+                    - cell "Tom Berge_1784727456292 More info" [ref=e78]:
+                      - generic [ref=e79]:
+                        - button "Tom Berge_1784727456292" [disabled] [ref=e80]:
+                          - generic [ref=e81]: Tom Berge_1784727456292
+                        - button "More info" [ref=e82]
+                    - cell "90 days" [ref=e83]:
+                      - button "90 days" [disabled] [ref=e84]
+                    - cell "● In Progress ↩️ Resume Assignment" [ref=e85]:
+                      - button "● In Progress ↩️ Resume Assignment" [disabled] [ref=e86]:
+                        - generic [ref=e87]: ●
+                        - text: In Progress
+                        - text: ↩️ Resume Assignment
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e88]:
+                      - button "Edit Assignment" [disabled] [ref=e89]
+                      - button "Add Tests" [disabled] [ref=e90]
+                      - button "Assignment actions" [ref=e91]
+                  - row "Begin assignment Marlene Collier_1784727101537 for N58597A60462, Kenna Marlene Collier_1784727101537 More info 90 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e92] [cursor=pointer]:
+                    - cell "Begin assignment Marlene Collier_1784727101537 for N58597A60462, Kenna" [ref=e93]:
+                      - button "Begin assignment Marlene Collier_1784727101537 for N58597A60462, Kenna" [disabled] [ref=e94]:
+                        - generic [ref=e95]: N58597A60462, Kenna
+                    - cell "Marlene Collier_1784727101537 More info" [ref=e96]:
+                      - generic [ref=e97]:
+                        - button "Marlene Collier_1784727101537" [disabled] [ref=e98]:
+                          - generic [ref=e99]: Marlene Collier_1784727101537
+                        - button "More info" [ref=e100]
+                    - cell "90 days" [ref=e101]:
+                      - button "90 days" [disabled] [ref=e102]
+                    - cell "● Submitted" [ref=e103]:
+                      - button "● Submitted" [disabled] [ref=e104]:
+                        - generic [ref=e105]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e106]:
+                      - button "Edit Assignment" [disabled] [ref=e107]
+                      - button "Add Tests" [disabled] [ref=e108]
+                      - button "Assignment actions" [ref=e109]
+                  - row "Begin assignment Erica Heathcote_1784726725032 for N86450A58521, Paolo Erica Heathcote_1784726725032 More info 90 days ● Submitted Edit Assignment Add Tests Assignment actions" [ref=e110] [cursor=pointer]:
+                    - cell "Begin assignment Erica Heathcote_1784726725032 for N86450A58521, Paolo" [ref=e111]:
+                      - button "Begin assignment Erica Heathcote_1784726725032 for N86450A58521, Paolo" [disabled] [ref=e112]:
+                        - generic [ref=e113]: N86450A58521, Paolo
+                    - cell "Erica Heathcote_1784726725032 More info" [ref=e114]:
+                      - generic [ref=e115]:
+                        - button "Erica Heathcote_1784726725032" [disabled] [ref=e116]:
+                          - generic [ref=e117]: Erica Heathcote_1784726725032
+                        - button "More info" [ref=e118]
+                    - cell "90 days" [ref=e119]:
+                      - button "90 days" [disabled] [ref=e120]
+                    - cell "● Submitted" [ref=e121]:
+                      - button "● Submitted" [disabled] [ref=e122]:
+                        - generic [ref=e123]: ●
+                        - text: Submitted
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e124]:
+                      - button "Edit Assignment" [disabled] [ref=e125]
+                      - button "Add Tests" [disabled] [ref=e126]
+                      - button "Assignment actions" [ref=e127]
+            - generic [ref=e128]:
+              - generic [ref=e131]:
+                - img [ref=e132]
+                - heading "Notifications Center" [level=2] [ref=e136]
+              - generic [ref=e137]:
+                - generic [ref=e139]:
+                  - img [ref=e140]
+                  - heading "Resources" [level=3] [ref=e144]
+                - list [ref=e145]:
+                  - listitem [ref=e146]:
+                    - button "Riverside Learn" [ref=e147] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e148]
+                      - img [ref=e150]
+                  - listitem [ref=e152]:
+                    - button "Onboarding Tutorial Videos" [ref=e153] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e154]
+                      - img [ref=e156]
+                  - listitem [ref=e158]:
+                    - button "Quick Reference Guides" [ref=e159] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e160]
+                      - img [ref=e162]
+                - button "View All" [ref=e165] [cursor=pointer]
+      - contentinfo [ref=e166]:
+        - generic [ref=e167]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e168] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e169]
+        - generic [ref=e170]:
+          - link "Riverside Insights Facebook" [ref=e171] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e172]
+          - link "Riverside Insights Twitter" [ref=e173] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e174]
+          - link "Riverside Insights LinkedIn" [ref=e175] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e176]
+          - link "Riverside Insights Instagram" [ref=e177] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e178]
+        - generic [ref=e179]:
+          - button "Leave Feedback" [ref=e180] [cursor=pointer]
+          - generic [ref=e181]: "|"
+          - link "Terms of Use" [ref=e182] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e183]: "|"
+          - link "Privacy Policy" [ref=e184] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e185]: Footer region end
+  - region "Chat Widget" [ref=e186]:
+    - iframe [ref=e187]:
+      - button "Open live chat" [ref=f3e5]:
+        - img [ref=f3e8]
+        - img [ref=f3e15]
+    - generic "Drag" [ref=e188]:
+      - img [ref=e189]
+```
+
+# Test source
+
+```ts
+  5068 |           await this.videoPlayButton.click();
+  5069 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  5070 |         } else if (itemDetails.startsWith("Sample")) {
+  5071 |           await this.correctOptionButton.nth(0).click();
+  5072 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  5073 |         } else if (typeOfTest.match(/MATRCZ Sample Items Correct and then Incorrect Scenario for SSP1/i) && itemDetails.match(/^(Block (A|D)), Item ([1-8]|2[5-8]|3[0-2])\b/)) {
+  5074 |           await this.correctOptionButton.nth(0).click();
+  5075 |         } else if (typeOfTest.match(/MATRCZ Sample Items Correct and then Incorrect Scenario for SSP2/i) && itemDetails.match(/^(Block (B|D)), Item ([9]|1[0-6]|2[5-8]|3[0-2])\b/)) {
+  5076 |           await this.correctOptionButton.nth(0).click();
+  5077 |         } else if (itemDetails.includes("Block D, Item 29")) {
+  5078 |           await this.leftNavAllItems.nth(2).click();
+  5079 |           await this.correctOptionButton.nth(0).click();
+  5080 |           await this.iDontKnowButton.click();
+  5081 |           await expect.soft(this.nextText).toHaveText("Block D, Item 29");
+  5082 |           await this.plainNextButtonOrEndButton.click();
+  5083 |           await this.correctOptionButton.nth(0).click();
+  5084 |         }
+  5085 |       } else if (typeOfTest.match(/MATRCZ Sample Items Incorrect and then Correct Scenario/i)) {
+  5086 |         if (itemDetails.startsWith("Introduction")) {
+  5087 |           await this.activateTabletControlButton.click();
+  5088 |           await this.videoPlayButton.click();
+  5089 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  5090 |         } else if (/^Sample Item (A, Trial [1-2]|B, Trial 1)$/.test(itemDetails)) {
+  5091 |           await this.iDontKnowButton.click();
+  5092 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  5093 |         } else if (itemDetails.match("Sample Item B, Trial 2")) {
+  5094 |           await this.correctOptionButton.nth(0).click();
+  5095 |           await this.leftNavAllItems.nth(2).click();
+  5096 |           await this.iDontKnowButton.click();
+  5097 |           await this.correctOptionButton.nth(0).click();
+  5098 |           await expect.soft(this.nextText).toHaveText("Sample Item B, Trial 2");
+  5099 |           await this.plainNextButtonOrEndButton.click();
+  5100 |         } else if (typeOfTest.match(/MATRCZ Sample Items Incorrect and then Correct Scenario for SSP1/i) && itemDetails.match(/^(Block (A|D)), Item ([1-8]|2[5-9]|3[0-2])\b/)) {
+  5101 |           await this.correctOptionButton.nth(0).click();
+  5102 |         } else if (typeOfTest.match(/MATRCZ Sample Items Incorrect and then Correct Scenario for SSP2/i) && itemDetails.match(/^(Block (B|D)), Item ([9]|1[0-6]|2[5-9]|3[0-2])\b/)) {
+  5103 |           await this.correctOptionButton.nth(0).click();
+  5104 |         }
+  5105 |       } else if (typeOfTest.match(/MATRCZ Block B & Block A All Incorrect then Block B 1 correct Scenario for SSP2/i)) {
+  5106 |         if (itemDetails.startsWith("Introduction")) {
+  5107 |           await this.activateTabletControlButton.click();
+  5108 |           await this.videoPlayButton.click();
+  5109 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  5110 |         } else if (itemDetails.startsWith("Sample")) {
+  5111 |           await this.correctOptionButton.nth(0).click();
+  5112 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  5113 |         } else if (itemDetails.match(/^(Block [A|B]), Item ([1-7]|[9]|1[0-6])\b/)) {
+  5114 |           await this.iDontKnowButton.click();
+  5115 |         } else if (itemDetails.match("Block A, Item 8")) {
+  5116 |           await this.iDontKnowButton.click();
+  5117 |           await expect.soft(this.nextAndEndTestButton).toHaveText("End Test");
+  5118 |           await this.leftNavBlockContainer.nth(1).click();
+  5119 |           await this.leftNavIncorrectAnswerContainer.nth(0).click();
+  5120 |           await this.iDontKnowButton.click();
+  5121 |           await this.correctOptionButton.nth(0).click();
+  5122 |           await expect.soft(this.nextAndEndTestButton).toHaveText("End Test");
+  5123 |         }
+  5124 |       } else if (typeOfTest.match(/ANLSYN Sample Items Correct and then Incorrect Scenario/i)) {
+  5125 |         if (itemDetails.includes("Color Pretest")) {
+  5126 |           await this.correctOptionButton.nth(0).click();
+  5127 |         } else if (itemDetails.startsWith("Introduction")) {
+  5128 |           await this.videoPlayButton.click();
+  5129 |           await this.waitTillVideoIsComplete();
+  5130 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  5131 |         } else if (itemDetails.startsWith("Sample")) {
+  5132 |           await this.correctOptionButton.nth(0).click();
+  5133 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  5134 |         } else if (/^Item [1-5]\b/.test(itemDetails)) {
+  5135 |           await this.iDontKnowButton.click();
+  5136 |         } else if (itemDetails === "Item 6") {
+  5137 |           await this.iDontKnowButton.click();
+  5138 |           await this.leftNavAllItems.nth(9).click();
+  5139 |           await this.correctOptionButton.nth(0).click();
+  5140 |           await this.iDontKnowButton.click();
+  5141 |           await expect.soft(this.nextText).toHaveText("Item 7");
+  5142 |           await this.plainNextButtonOrEndButton.click();
+  5143 |           await this.iDontKnowButton.click();
+  5144 |         }
+  5145 |       } else if (typeOfTest.match(/ANLSYN Sample Items Incorrect and then Correct Scenario/i)) {
+  5146 |         if (itemDetails.includes("Color Pretest")) {
+  5147 |           await this.correctOptionButton.nth(0).click();
+  5148 |         } else if (itemDetails.startsWith("Introduction")) {
+  5149 |           await this.videoPlayButton.click();
+  5150 |           await this.waitTillVideoIsComplete();
+  5151 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  5152 |         } else if (/^Sample Item (A, Trial [1-2]|B, Trial 1)$/.test(itemDetails)) {
+  5153 |           await this.iDontKnowButton.click();
+  5154 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  5155 |         } else if (itemDetails.match("Sample Item B, Trial 2")) {
+  5156 |           await this.correctOptionButton.nth(0).click();
+  5157 |           await this.leftNavAllItems.nth(9).click();
+  5158 |           await this.iDontKnowButton.click();
+  5159 |           await this.correctOptionButton.nth(0).click();
+  5160 |           await expect.soft(this.nextText).toHaveText("Item 4");
+  5161 |         } else if (/^Item [1-7]\b/.test(itemDetails)) {
+  5162 |           await this.iDontKnowButton.click();
+  5163 |         }
+  5164 |         } else if (typeOfTest.match(/LWIDNT 6 correct 6 incorrect then go back to bLock A and check next item/i)) {//related to bug 27961
+  5165 |         if (itemDetails.startsWith("Item")) {
+  5166 |           for (let i = 1; i <= logicIndex; i++) {
+  5167 |             await this.correctOptionButton.nth(0).click();
+> 5168 |             await this.plainNextButtonOrEndButton.click();
+       |                                                   ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  5169 |           } for (let j = 1; j < logicIndex; j++) {
+  5170 |             await this.iDontKnowButton.click();
+  5171 |             await this.plainNextButtonOrEndButton.click();
+  5172 |           }
+  5173 |           await this.iDontKnowButton.click();
+  5174 |           await this.leftNavCorrectAnswerContainer.nth(1).click();
+  5175 | 
+  5176 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  5177 |           await this.correctOptionButton.nth(0).click();
+  5178 |           await this.iDontKnowButton.click();
+  5179 |           await expect.soft(this.itemDetails1).toHaveText("Test Routing Change");
+  5180 |           await this.continueButton.click();
+  5181 |           await this.plainNextButtonOrEndButton.click();
+  5182 |           for (let k = 1; k <= index; k++) {
+  5183 |             await this.iDontKnowButton.click();
+  5184 |             await this.plainNextButtonOrEndButton.click();
+  5185 |           }
+  5186 |           await expect.soft(this.itemDetails).toHaveText(`Introduction 1`);
+  5187 |           await expect.soft(this.nextText).toHaveText(`Item 1`);
+  5188 |           await this.plainNextButtonOrEndButton.click();
+  5189 |           for (let l = 1; l <= incorrectIndex; l++) {
+  5190 |             if (l == 5 || l == 15) {
+  5191 |               await this.plainNextButtonOrEndButton.click();
+  5192 |             } else {
+  5193 |               await this.iDontKnowButton.click();
+  5194 |               await this.plainNextButtonOrEndButton.click();
+  5195 |             }
+  5196 |           }
+  5197 |           await this.iDontKnowButton.click();
+  5198 |         }
+  5199 |       } else if (typeOfTest.match(/LWIDNT 6 correct 6 incorrect then go back to bLock A and skip Block B through left nav go to BLock C and check next item for SSP3/i)) {//related to bug 28226
+  5200 | 
+  5201 |         if (itemDetails.startsWith("Introduction")) {
+  5202 |         } else if (/^Item (?:[1-3]|3[0-5])\b/.test(itemDetails)) {
+  5203 |           await this.correctOptionButton.nth(0).click();
+  5204 |         } else if (/^Item (?:3[6-9]|4[0])\b/.test(itemDetails)) {
+  5205 |           await this.iDontKnowButton.click();
+  5206 |         }
+  5207 |         else if (itemDetails.match("Item 41")) {
+  5208 |           await this.iDontKnowButton.click();
+  5209 |           await this.leftNavCorrectAnswerContainer.nth(1).click();
+  5210 | 
+  5211 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  5212 |           await this.correctOptionButton.nth(0).click();
+  5213 |           await this.iDontKnowButton.click();
+  5214 |           await expect.soft(this.itemDetails1).toHaveText("Test Routing Change");
+  5215 |           await this.continueButton.click();
+  5216 |           await this.plainNextButtonOrEndButton.click();
+  5217 |           for (let k = 1; k <= index; k++) {
+  5218 |             await this.iDontKnowButton.click();
+  5219 |             await this.plainNextButtonOrEndButton.click();
+  5220 |           }
+  5221 |         } else if (itemDetails.match("Item 4")) {
+  5222 |           await this.correctOptionButton.nth(0).click();
+  5223 |           await this.plainNextButtonOrEndButton.click();
+  5224 |           await expect.soft(this.itemDetails).toHaveText(`Introduction 2`);
+  5225 |           await expect.soft(this.nextText).toHaveText(`Item 5`);
+  5226 |           await this.leftNavBlockContainer.nth(2).click();
+  5227 |           await this.leftNavIncorrectAnswerContainer.nth(0).click();
+  5228 |           await expect.soft(this.nextText).toHaveText("Introduction 2");
+  5229 |           await this.plainNextButtonOrEndButton.click();
+  5230 |           await this.plainNextButtonOrEndButton.click();
+  5231 |           for (let k = 1; k <= incorrectIndex; k++) {
+  5232 |             if (k == 10) {
+  5233 |               await this.plainNextButtonOrEndButton.click();
+  5234 |             } else {
+  5235 |               await this.iDontKnowButton.click();
+  5236 |               await this.plainNextButtonOrEndButton.click();
+  5237 |             }
+  5238 |           }
+  5239 |           await this.iDontKnowButton.click();
+  5240 |         }
+  5241 |       }else if (typeOfTest.match(/VWKMEM Sample Items Correct and then Incorrect Scenario/i)) {
+  5242 |         if (itemDetails.match(/^Sample Item (A|B) Presentation, Trial (1|2)$/i)) {
+  5243 |           await this.page.waitForTimeout(1000);
+  5244 |         } else if (itemDetails.match(/Sample Item A Response, Trial 1/i)) {
+  5245 |           await this.page.waitForTimeout(2000);
+  5246 |           await this.correctOptionButton.nth(0).click();
+  5247 |         } else if (itemDetails.match(/Sample Item B Response, Trial 1/i)) {
+  5248 |           await this.page.waitForTimeout(2000);
+  5249 |           await this.correctOptionButton.nth(0).click();
+  5250 |           await this.leftNavAllItems.nth(1).click();
+  5251 |           await this.page.mouse.move(300, 800);
+  5252 |           await this.correctOptionButton.nth(0).click();
+  5253 |           await this.incorrectOptionButton.nth(0).click();
+  5254 |           await expect.soft(this.nextText).toHaveText("Sample Item B Response, Trial 1");
+  5255 |           await this.plainNextButtonOrEndButton.click();
+  5256 |         } else if (itemDetails.startsWith("Introduction")) {
+  5257 |           await this.page.waitForTimeout(1000);
+  5258 |         } else if (itemDetails.match(/Demonstration 1/i)) {
+  5259 |           await this.page.waitForTimeout(1000);
+  5260 |           await this.demoYesButton.click();
+  5261 |         } else if (itemDetails.match(/Demonstration 2/i)) {
+  5262 |           await this.page.waitForTimeout(1000);
+  5263 |           await this.demoNoButton.click();
+  5264 |         } else if (itemDetails.match(/Practice Exercise Item (1|3|4)/i)) {
+  5265 |           await this.page.waitForTimeout(1000);
+  5266 |           await this.practiceExerciseNoButton.click();
+  5267 |         } else if (itemDetails.match(/Practice Exercise Item 2/i)) {
+  5268 |           await this.page.waitForTimeout(1000);
+```

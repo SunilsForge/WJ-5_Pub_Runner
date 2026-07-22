@@ -1,29 +1,5 @@
 [
   {
-    "runNumber": "289-retry-p2",
-    "parentRunNumber": "289",
-    "pass": 2,
-    "runReason": "RETRY FAILURES: Lets see the equal split for rerun this time",
-    "environment": "stage",
-    "browser": "chrome",
-    "isRerun": true,
-    "totalTests": 65,
-    "totalPassed": 17,
-    "totalFailed": 48
-  },
-  {
-    "runNumber": "289-retry-p1",
-    "parentRunNumber": "289",
-    "pass": 1,
-    "runReason": "RETRY FAILURES: Lets see the equal split for rerun this time",
-    "environment": "stage",
-    "browser": "chrome",
-    "isRerun": true,
-    "totalTests": 134,
-    "totalPassed": 69,
-    "totalFailed": 65
-  },
-  {
     "runNumber": "29782170972-retry",
     "runReason": "RETRY FAILURES: Reretry",
     "environment": "stage",
@@ -54,6 +30,20 @@
     "totalFailed": 70
   },
   {
+    "runNumber": "290",
+    "timestamp": "20260722_000000",
+    "runReason": "Running full regression of AE03 in PROD just like that",
+    "environment": "prod",
+    "browser": "chrome",
+    "testPattern": "@AUT_ENG_03",
+    "totalTests": 593,
+    "totalPassed": 552,
+    "totalFailed": 41,
+    "totalSkipped": 0,
+    "totalFlaky": 0,
+    "durationMs": 185297910
+  },
+  {
     "runNumber": "289",
     "timestamp": "20260721_000000",
     "runReason": "Lets see the equal split for rerun this time",
@@ -68,18 +58,40 @@
     "durationMs": 216826491
   },
   {
-    "runNumber": "288",
-    "timestamp": "20260721_000000",
-    "runReason": "running after latest changes with ReRerun",
+    "runNumber": "289-retry-p1",
+    "parentRunNumber": "289",
+    "pass": 1,
+    "runReason": "RETRY FAILURES: Lets see the equal split for rerun this time",
     "environment": "stage",
     "browser": "chrome",
-    "testPattern": "@AUT_ENG_03",
-    "totalTests": 684,
-    "totalPassed": 579,
-    "totalFailed": 105,
-    "totalSkipped": 0,
-    "totalFlaky": 0,
-    "durationMs": 221320253
+    "isRerun": true,
+    "totalTests": 134,
+    "totalPassed": 69,
+    "totalFailed": 65
+  },
+  {
+    "runNumber": "289-retry-p2",
+    "parentRunNumber": "289",
+    "pass": 2,
+    "runReason": "RETRY FAILURES: Lets see the equal split for rerun this time",
+    "environment": "stage",
+    "browser": "chrome",
+    "isRerun": true,
+    "totalTests": 65,
+    "totalPassed": 17,
+    "totalFailed": 48
+  },
+  {
+    "runNumber": "288-retry-p2",
+    "parentRunNumber": "288",
+    "pass": 2,
+    "runReason": "RETRY FAILURES: running after latest changes with ReRerun",
+    "environment": "stage",
+    "browser": "chrome",
+    "isRerun": true,
+    "totalTests": 52,
+    "totalPassed": 4,
+    "totalFailed": 48
   },
   {
     "runNumber": "288-retry-p1",
@@ -94,16 +106,18 @@
     "totalFailed": 52
   },
   {
-    "runNumber": "288-retry-p2",
-    "parentRunNumber": "288",
-    "pass": 2,
-    "runReason": "RETRY FAILURES: running after latest changes with ReRerun",
+    "runNumber": "288",
+    "timestamp": "20260721_000000",
+    "runReason": "running after latest changes with ReRerun",
     "environment": "stage",
     "browser": "chrome",
-    "isRerun": true,
-    "totalTests": 52,
-    "totalPassed": 4,
-    "totalFailed": 48
+    "testPattern": "@AUT_ENG_03",
+    "totalTests": 684,
+    "totalPassed": 579,
+    "totalFailed": 105,
+    "totalSkipped": 0,
+    "totalFlaky": 0,
+    "durationMs": 221320253
   },
   {
     "runNumber": "284",
