@@ -18,7 +18,7 @@ try {
 }
 
 let total = 0, passed = 0, failed = 0, flaky = 0, skipped = 0;
-const failedList = [], flakyList = [], skippedList = [];
+const failedList = [], flakyList = [], skippedList = [], passedList = [];
 
 function walk(suites) {
   for (const s of suites || []) {
@@ -27,7 +27,7 @@ function walk(suites) {
       for (const t of spec.tests || []) {
         total++;
         const row = { title: spec.title, file: spec.file || "" };
-        if (t.status === "expected") passed++;
+        if (t.status === "expected") { passed++; passedList.push(row); }
         else if (t.status === "unexpected") { failed++; failedList.push(row); }
         else if (t.status === "flaky") { flaky++; flakyList.push(row); }
         else if (t.status === "skipped") { skipped++; skippedList.push(row); }
@@ -64,7 +64,8 @@ const html = tpl
   .split("__SKIPPED__").join(String(skipped))
   .split("<!-- FAILED_ROWS -->").join(rows(failedList))
   .split("<!-- FLAKY_ROWS -->").join(rows(flakyList))
-  .split("<!-- SKIPPED_ROWS -->").join(rows(skippedList));
+  .split("<!-- SKIPPED_ROWS -->").join(rows(skippedList))
+  .split("<!-- PASSED_ROWS -->").join(rows(passedList));
 
 fs.mkdirSync("merged-report", { recursive: true });
 fs.writeFileSync("merged-report/results-table.html", html);
