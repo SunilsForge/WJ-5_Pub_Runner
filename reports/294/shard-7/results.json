@@ -1,0 +1,1666 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+        "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30259415223"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 7,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts",
+      "file": "derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " RDGFLU cluster Derived Export Automation ",
+          "file": "derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts",
+          "line": 25,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For SRDGFL - Age - All correct scenario,WRDGFL - Age - All correct scenario Complete The RDGFLU cluster & generate report",
+              "ok": false,
+              "tags": [
+                "RDGFLU",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1500000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 506674,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'None of the above\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'None of the above\\']')\u001b[22m\n\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts:152:15",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                          "column": 39,
+                          "line": 4021
+                        },
+                        "snippet": "   at ../pages/wj5_test.page.ts:4021\n\n\u001b[0m \u001b[90m 4019 |\u001b[39m   \u001b[36masync\u001b[39m endSessionRSB() {\n \u001b[90m 4020 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddTestObservationsNew\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4021 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcheckBoxNoneOfTheAbove\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4022 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendSessionButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4023 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4024 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                            "column": 39,
+                            "line": 4021
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'None of the above\\']')\u001b[22m\n\n\n   at ../pages/wj5_test.page.ts:4021\n\n  4019 |   async endSessionRSB() {\n  4020 |     await this.addTestObservationsNew.click();\n> 4021 |     await this.checkBoxNoneOfTheAbove.click();\n       |                                       ^\n  4022 |     await this.endSessionButton.click();\n  4023 |     await this.reviewModeButton.click();\n  4024 |     await this.page.waitForTimeout(3000);\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts:152:15"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S08PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S7:W0] Login successful for S08PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S7:W0] Login successful for S08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N65864A25548\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N65864A25548/dataFiles/Derived_Score_AutoFilter_Template_N65864A25548.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N65864A25548 FirstName=Asha LastName =N65864A25548 Age = 07/27/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N65864A25548\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Sentence Reading Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Map(128) {\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Practice Exercise 1'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Practice Exercise 2'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Practice Exercise 3'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Practice Exercise 4'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 1'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 2'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 3'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 4'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 5'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 6'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 7'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 8'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 9'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 10'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 11'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 12'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 13'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 14'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 15'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 16'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 17'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 18'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 19'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 20'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 21'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 22'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 23'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 24'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 25'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 26'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 27'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 28'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 29'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 30'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 31'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 32'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 33'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 34'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 35'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 36'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 37'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 38'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 39'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 40'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 41'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 42'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 43'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 44'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 45'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 46'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 47'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 48'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 49'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 50'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 51'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 52'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 53'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 54'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 55'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 56'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 57'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 58'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 59'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 60'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 61'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 62'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 63'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 64'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 65'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 66'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 67'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 68'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 69'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 70'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 71'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 72'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 73'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 74'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 75'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 76'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 77'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 78'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 79'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 80'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 81'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 82'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 83'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 84'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 85'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 86'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 87'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 88'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 89'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 90'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 91'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 92'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  ... 28 more items\n}\n"
+                        },
+                        {
+                          "text": "Type Of test SRDGFL - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Map(135) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Introduction 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Test Items'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 56'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 57'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 58'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 59'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 60'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 61'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 62'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 63'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 64'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 65'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 66'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 67'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 68'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 69'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 70'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 71'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 72'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 73'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 74'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 75'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 76'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 77'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 78'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 79'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 80'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 81'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 82'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 83'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 84'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 85'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 86'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 87'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 88'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  ... 35 more items\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^xxxxxxxxxxx111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111@>25y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'SRDGFL.W5PA'\u001b[39m: { wScores: \u001b[33m120\u001b[39m, Wabil: \u001b[33m693.05\u001b[39m, Semw: \u001b[33m18.2\u001b[39m, AE: \u001b[32m'>25y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Word Reading Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Map(98) {\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => [ \u001b[32m'pen'\u001b[39m, \u001b[32m'pencil'\u001b[39m ],\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => [ \u001b[32m'pen'\u001b[39m, \u001b[32m'pencil'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => [ \u001b[32m'blue'\u001b[39m, \u001b[32m'green'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => [ \u001b[32m'blue'\u001b[39m, \u001b[32m'green'\u001b[39m ],\n  \u001b[32m'Practice Exercise 1'\u001b[39m => [ \u001b[32m'dog'\u001b[39m, \u001b[32m'puppy'\u001b[39m ],\n  \u001b[32m'Practice Exercise 2'\u001b[39m => [ \u001b[32m'man'\u001b[39m, \u001b[32m'boy'\u001b[39m ],\n  \u001b[32m'Practice Exercise 3'\u001b[39m => [ \u001b[32m'shoe'\u001b[39m, \u001b[32m'sock'\u001b[39m ],\n  \u001b[32m'Practice Exercise 4'\u001b[39m => [ \u001b[32m'green'\u001b[39m, \u001b[32m'red'\u001b[39m ],\n  \u001b[32m'Item 1'\u001b[39m => [ \u001b[32m'cat'\u001b[39m, \u001b[32m'dog'\u001b[39m ],\n  \u001b[32m'Item 2'\u001b[39m => [ \u001b[32m'moon'\u001b[39m, \u001b[32m'sun'\u001b[39m ],\n  \u001b[32m'Item 3'\u001b[39m => [ \u001b[32m'east'\u001b[39m, \u001b[32m'west'\u001b[39m ],\n  \u001b[32m'Item 4'\u001b[39m => [ \u001b[32m'kid'\u001b[39m, \u001b[32m'boy'\u001b[39m ],\n  \u001b[32m'Item 5'\u001b[39m => [ \u001b[32m'mom'\u001b[39m, \u001b[32m'dad'\u001b[39m ],\n  \u001b[32m'Item 6'\u001b[39m => [ \u001b[32m'red'\u001b[39m, \u001b[32m'yellow'\u001b[39m ],\n  \u001b[32m'Item 7'\u001b[39m => [ \u001b[32m'boy'\u001b[39m, \u001b[32m'girl'\u001b[39m ],\n  \u001b[32m'Item 8'\u001b[39m => [ \u001b[32m'coin'\u001b[39m, \u001b[32m'dime'\u001b[39m ],\n  \u001b[32m'Item 9'\u001b[39m => [ \u001b[32m'hamburger'\u001b[39m, \u001b[32m'pizza'\u001b[39m ],\n  \u001b[32m'Item 10'\u001b[39m => [ \u001b[32m'piano'\u001b[39m, \u001b[32m'trumpet'\u001b[39m ],\n  \u001b[32m'Item 11'\u001b[39m => [ \u001b[32m'tiger'\u001b[39m, \u001b[32m'lion'\u001b[39m ],\n  \u001b[32m'Item 12'\u001b[39m => [ \u001b[32m'apple'\u001b[39m, \u001b[32m'orange'\u001b[39m ],\n  \u001b[32m'Item 13'\u001b[39m => [ \u001b[32m'car'\u001b[39m, \u001b[32m'bus'\u001b[39m ],\n  \u001b[32m'Item 14'\u001b[39m => [ \u001b[32m'Tom'\u001b[39m, \u001b[32m'Rob'\u001b[39m ],\n  \u001b[32m'Item 15'\u001b[39m => [ \u001b[32m'fork'\u001b[39m, \u001b[32m'spoon'\u001b[39m ],\n  \u001b[32m'Item 16'\u001b[39m => [ \u001b[32m'rose'\u001b[39m, \u001b[32m'tulip'\u001b[39m ],\n  \u001b[32m'Item 17'\u001b[39m => [ \u001b[32m'hat'\u001b[39m, \u001b[32m'shoe'\u001b[39m ],\n  \u001b[32m'Item 18'\u001b[39m => [ \u001b[32m'coffee'\u001b[39m, \u001b[32m'tea'\u001b[39m ],\n  \u001b[32m'Item 19'\u001b[39m => [ \u001b[32m'uncle'\u001b[39m, \u001b[32m'aunt'\u001b[39m ],\n  \u001b[32m'Item 20'\u001b[39m => [ \u001b[32m'rug'\u001b[39m, \u001b[32m'carpet'\u001b[39m ],\n  \u001b[32m'Item 21'\u001b[39m => [ \u001b[32m'pan'\u001b[39m, \u001b[32m'pot'\u001b[39m ],\n  \u001b[32m'Item 22'\u001b[39m => [ \u001b[32m'yes'\u001b[39m, \u001b[32m'no'\u001b[39m ],\n  \u001b[32m'Item 23'\u001b[39m => [ \u001b[32m'rat'\u001b[39m, \u001b[32m'mouse'\u001b[39m ],\n  \u001b[32m'Item 24'\u001b[39m => [ \u001b[32m'run'\u001b[39m, \u001b[32m'jump'\u001b[39m ],\n  \u001b[32m'Item 25'\u001b[39m => [ \u001b[32m'bat'\u001b[39m, \u001b[32m'ball'\u001b[39m ],\n  \u001b[32m'Item 26'\u001b[39m => [ \u001b[32m'cloud'\u001b[39m, \u001b[32m'star'\u001b[39m ],\n  \u001b[32m'Item 27'\u001b[39m => [ \u001b[32m'three'\u001b[39m, \u001b[32m'two'\u001b[39m ],\n  \u001b[32m'Item 28'\u001b[39m => [ \u001b[32m'milk'\u001b[39m, \u001b[32m'cream'\u001b[39m ],\n  \u001b[32m'Item 29'\u001b[39m => [ \u001b[32m'father'\u001b[39m, \u001b[32m'mother'\u001b[39m ],\n  \u001b[32m'Item 30'\u001b[39m => [ \u001b[32m'snow'\u001b[39m, \u001b[32m'rain'\u001b[39m ],\n  \u001b[32m'Item 31'\u001b[39m => [ \u001b[32m'lunch'\u001b[39m, \u001b[32m'supper'\u001b[39m ],\n  \u001b[32m'Item 32'\u001b[39m => [ \u001b[32m'bracelet'\u001b[39m, \u001b[32m'necklace'\u001b[39m ],\n  \u001b[32m'Item 33'\u001b[39m => [ \u001b[32m'hand'\u001b[39m, \u001b[32m'wrist'\u001b[39m ],\n  \u001b[32m'Item 34'\u001b[39m => [ \u001b[32m'monkey'\u001b[39m, \u001b[32m'gorilla'\u001b[39m ],\n  \u001b[32m'Item 35'\u001b[39m => [ \u001b[32m'blue'\u001b[39m, \u001b[32m'red'\u001b[39m ],\n  \u001b[32m'Item 36'\u001b[39m => [ \u001b[32m'six'\u001b[39m, \u001b[32m'ten'\u001b[39m ],\n  \u001b[32m'Item 37'\u001b[39m => [ \u001b[32m'orange'\u001b[39m, \u001b[32m'purple'\u001b[39m ],\n  \u001b[32m'Item 38'\u001b[39m => [ \u001b[32m'ship'\u001b[39m, \u001b[32m'boat'\u001b[39m ],\n  \u001b[32m'Item 39'\u001b[39m => [ \u001b[32m'radio'\u001b[39m, \u001b[32m'television'\u001b[39m ],\n  \u001b[32m'Item 40'\u001b[39m => [ \u001b[32m'penny'\u001b[39m, \u001b[32m'quarter'\u001b[39m ],\n  \u001b[32m'Item 41'\u001b[39m => [ \u001b[32m'coat'\u001b[39m, \u001b[32m'jacket'\u001b[39m ],\n  \u001b[32m'Item 42'\u001b[39m => [ \u001b[32m'street'\u001b[39m, \u001b[32m'road'\u001b[39m ],\n  \u001b[32m'Item 43'\u001b[39m => [ \u001b[32m'ocean'\u001b[39m, \u001b[32m'lake'\u001b[39m ],\n  \u001b[32m'Item 44'\u001b[39m => [ \u001b[32m'hello'\u001b[39m, \u001b[32m'goodbye'\u001b[39m ],\n  \u001b[32m'Item 45'\u001b[39m => [ \u001b[32m'salad'\u001b[39m, \u001b[32m'lettuce'\u001b[39m ],\n  \u001b[32m'Item 46'\u001b[39m => [ \u001b[32m'wallet'\u001b[39m, \u001b[32m'purse'\u001b[39m ],\n  \u001b[32m'Item 47'\u001b[39m => [ \u001b[32m'vase'\u001b[39m, \u001b[32m'flower'\u001b[39m ],\n  \u001b[32m'Item 48'\u001b[39m => [ \u001b[32m'pet'\u001b[39m, \u001b[32m'dog'\u001b[39m ],\n  \u001b[32m'Item 49'\u001b[39m => [ \u001b[32m'carrot'\u001b[39m, \u001b[32m'celery'\u001b[39m ],\n  \u001b[32m'Item 50'\u001b[39m => [ \u001b[32m'sandal'\u001b[39m, \u001b[32m'slipper'\u001b[39m ],\n  \u001b[32m'Item 51'\u001b[39m => [ \u001b[32m'winter'\u001b[39m, \u001b[32m'summer'\u001b[39m ],\n  \u001b[32m'Item 52'\u001b[39m => [ \u001b[32m'mast'\u001b[39m, \u001b[32m'sail'\u001b[39m ],\n  \u001b[32m'Item 53'\u001b[39m => [ \u001b[32m'washcloth'\u001b[39m, \u001b[32m'towel'\u001b[39m ],\n  \u001b[32m'Item 54'\u001b[39m => [ \u001b[32m'hog'\u001b[39m, \u001b[32m'pig'\u001b[39m ],\n  \u001b[32m'Item 55'\u001b[39m => [ \u001b[32m'orange'\u001b[39m, \u001b[32m'blue'\u001b[39m ],\n  \u001b[32m'Item 56'\u001b[39m => [ \u001b[32m'plane'\u001b[39m, \u001b[32m'jet'\u001b[39m ],\n  \u001b[32m'Item 57'\u001b[39m => [ \u001b[32m'tree'\u001b[39m, \u001b[32m'branch'\u001b[39m ],\n  \u001b[32m'Item 58'\u001b[39m => [ \u001b[32m'luggage'\u001b[39m, \u001b[32m'suitcase'\u001b[39m ],\n  \u001b[32m'Item 59'\u001b[39m => [ \u001b[32m'home'\u001b[39m, \u001b[32m'house'\u001b[39m ],\n  \u001b[32m'Item 60'\u001b[39m => [ \u001b[32m'radish'\u001b[39m, \u001b[32m'cabbage'\u001b[39m ],\n  \u001b[32m'Item 61'\u001b[39m => [ \u001b[32m'book'\u001b[39m, \u001b[32m'page'\u001b[39m ],\n  \u001b[32m'Item 62'\u001b[39m => [ \u001b[32m'sell'\u001b[39m, \u001b[32m'buy'\u001b[39m ],\n  \u001b[32m'Item 63'\u001b[39m => [ \u001b[32m'baseball'\u001b[39m, \u001b[32m'football'\u001b[39m ],\n  \u001b[32m'Item 64'\u001b[39m => [ \u001b[32m'agenda'\u001b[39m, \u001b[32m'schedule'\u001b[39m ],\n  \u001b[32m'Item 65'\u001b[39m => [ \u001b[32m'seal'\u001b[39m, \u001b[32m'walrus'\u001b[39m ],\n  \u001b[32m'Item 66'\u001b[39m => [ \u001b[32m'draw'\u001b[39m, \u001b[32m'write'\u001b[39m ],\n  \u001b[32m'Item 67'\u001b[39m => [ \u001b[32m'telescope'\u001b[39m, \u001b[32m'microscope'\u001b[39m ],\n  \u001b[32m'Item 68'\u001b[39m => [ \u001b[32m'pupil'\u001b[39m, \u001b[32m'student'\u001b[39m ],\n  \u001b[32m'Item 69'\u001b[39m => [ \u001b[32m'stream'\u001b[39m, \u001b[32m'river'\u001b[39m ],\n  \u001b[32m'Item 70'\u001b[39m => [ \u001b[32m'symphony'\u001b[39m, \u001b[32m'orchestra'\u001b[39m ],\n  \u001b[32m'Item 71'\u001b[39m => [ \u001b[32m'horn'\u001b[39m, \u001b[32m'trumpet'\u001b[39m ],\n  \u001b[32m'Item 72'\u001b[39m => [ \u001b[32m'hike'\u001b[39m, \u001b[32m'walk'\u001b[39m ],\n  \u001b[32m'Item 73'\u001b[39m => [ \u001b[32m'ghost'\u001b[39m, \u001b[32m'goblin'\u001b[39m ],\n  \u001b[32m'Item 74'\u001b[39m => [ \u001b[32m'clock'\u001b[39m, \u001b[32m'watch'\u001b[39m ],\n  \u001b[32m'Item 75'\u001b[39m => [ \u001b[32m'math'\u001b[39m, \u001b[32m'count'\u001b[39m ],\n  \u001b[32m'Item 76'\u001b[39m => [ \u001b[32m'chase'\u001b[39m, \u001b[32m'catch'\u001b[39m ],\n  \u001b[32m'Item 77'\u001b[39m => [ \u001b[32m'indigestion'\u001b[39m, \u001b[32m'heartburn'\u001b[39m ],\n  \u001b[32m'Item 78'\u001b[39m => [ \u001b[32m'meteor'\u001b[39m, \u001b[32m'asteroid'\u001b[39m ],\n  \u001b[32m'Item 79'\u001b[39m => [ \u001b[32m'lunar'\u001b[39m, \u001b[32m'solar'\u001b[39m ],\n  \u001b[32m'Item 80'\u001b[39m => [ \u001b[32m'museum'\u001b[39m, \u001b[32m'gallery'\u001b[39m ],\n  \u001b[32m'Item 81'\u001b[39m => [ \u001b[32m'glass'\u001b[39m, \u001b[32m'cup'\u001b[39m ],\n  \u001b[32m'Item 82'\u001b[39m => [ \u001b[32m'prefix'\u001b[39m, \u001b[32m'suffix'\u001b[39m ],\n  \u001b[32m'Item 83'\u001b[39m => [ \u001b[32m'rubbish'\u001b[39m, \u001b[32m'garbage'\u001b[39m ],\n  \u001b[32m'Item 84'\u001b[39m => [ \u001b[32m'eyes'\u001b[39m, \u001b[32m'glasses'\u001b[39m ],\n  \u001b[32m'Item 85'\u001b[39m => [ \u001b[32m'carnivore'\u001b[39m, \u001b[32m'herbivore'\u001b[39m ],\n  \u001b[32m'Item 86'\u001b[39m => [ \u001b[32m'reflection'\u001b[39m, \u001b[32m'mirror'\u001b[39m ],\n  \u001b[32m'Item 87'\u001b[39m => [ \u001b[32m'ornament'\u001b[39m, \u001b[32m'decoration'\u001b[39m ],\n  \u001b[32m'Item 88'\u001b[39m => [ \u001b[32m'decade'\u001b[39m, \u001b[32m'century'\u001b[39m ],\n  \u001b[32m'Item 89'\u001b[39m => [ \u001b[32m'thermometer'\u001b[39m, \u001b[32m'barometer'\u001b[39m ],\n  \u001b[32m'Item 90'\u001b[39m => [ \u001b[32m'aviator'\u001b[39m, \u001b[32m'pilot'\u001b[39m ]\n}\n"
+                        },
+                        {
+                          "text": "Type Of test WRDGFL - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Map(105) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Introduction 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Test Items'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 56'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 57'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 58'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 59'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 60'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 61'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 62'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 63'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 64'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 65'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 66'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 67'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 68'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 69'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 70'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 71'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 72'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 73'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 74'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 75'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 76'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 77'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 78'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 79'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 80'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 81'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 82'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 83'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 84'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 85'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 86'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 87'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 88'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  ... 5 more items\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^xxxxxxxxxxx111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111@>28y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'SRDGFL.W5PA'\u001b[39m: { wScores: \u001b[33m120\u001b[39m, Wabil: \u001b[33m693.05\u001b[39m, Semw: \u001b[33m18.2\u001b[39m, AE: \u001b[32m'>25y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m },\n  \u001b[32m'WRDGFL.W5PA'\u001b[39m: { wScores: \u001b[33m90\u001b[39m, Wabil: \u001b[33m691.33\u001b[39m, Semw: \u001b[33m14.99\u001b[39m, AE: \u001b[32m'>28y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-27T10:50:52.614Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-f6134-FLU-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-f6134-FLU-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-f6134-FLU-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-f6134-FLU-cluster-generate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-f6134-FLU-cluster-generate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                        "column": 39,
+                        "line": 4021
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 481366,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'None of the above\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'None of the above\\']')\u001b[22m\n\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts:152:15",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                          "column": 39,
+                          "line": 4021
+                        },
+                        "snippet": "   at ../pages/wj5_test.page.ts:4021\n\n\u001b[0m \u001b[90m 4019 |\u001b[39m   \u001b[36masync\u001b[39m endSessionRSB() {\n \u001b[90m 4020 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddTestObservationsNew\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4021 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcheckBoxNoneOfTheAbove\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4022 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendSessionButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4023 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4024 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                            "column": 39,
+                            "line": 4021
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'None of the above\\']')\u001b[22m\n\n\n   at ../pages/wj5_test.page.ts:4021\n\n  4019 |   async endSessionRSB() {\n  4020 |     await this.addTestObservationsNew.click();\n> 4021 |     await this.checkBoxNoneOfTheAbove.click();\n       |                                       ^\n  4022 |     await this.endSessionButton.click();\n  4023 |     await this.reviewModeButton.click();\n  4024 |     await this.page.waitForTimeout(3000);\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts:152:15"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S08PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S7:W1] Login successful for S08PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S7:W1] Login successful for S08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N14801A20724\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N14801A20724/dataFiles/Derived_Score_AutoFilter_Template_N14801A20724.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N14801A20724 FirstName=Cecilia LastName =N14801A20724 Age = 07/27/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N14801A20724\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Sentence Reading Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Map(128) {\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Practice Exercise 1'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Practice Exercise 2'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Practice Exercise 3'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Practice Exercise 4'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 1'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 2'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 3'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 4'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 5'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 6'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 7'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 8'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 9'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 10'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 11'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 12'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 13'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 14'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 15'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 16'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 17'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 18'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 19'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 20'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 21'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 22'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 23'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 24'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 25'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 26'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 27'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 28'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 29'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 30'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 31'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 32'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 33'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 34'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 35'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 36'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 37'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 38'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 39'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 40'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 41'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 42'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 43'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 44'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 45'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 46'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 47'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 48'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 49'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 50'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 51'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 52'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 53'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 54'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 55'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 56'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 57'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 58'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 59'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 60'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 61'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 62'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 63'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 64'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 65'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 66'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 67'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 68'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 69'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 70'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 71'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 72'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 73'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 74'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 75'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 76'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 77'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 78'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 79'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 80'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 81'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 82'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 83'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 84'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 85'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 86'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 87'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 88'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 89'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 90'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 91'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 92'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  ... 28 more items\n}\n"
+                        },
+                        {
+                          "text": "Type Of test SRDGFL - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Map(135) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Introduction 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Test Items'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 56'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 57'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 58'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 59'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 60'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 61'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 62'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 63'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 64'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 65'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 66'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 67'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 68'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 69'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 70'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 71'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 72'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 73'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 74'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 75'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 76'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 77'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 78'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 79'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 80'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 81'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 82'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 83'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 84'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 85'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 86'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 87'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 88'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  ... 35 more items\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^xxxxxxxxxxx111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111@>25y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'SRDGFL.W5PA'\u001b[39m: { wScores: \u001b[33m120\u001b[39m, Wabil: \u001b[33m693.05\u001b[39m, Semw: \u001b[33m18.2\u001b[39m, AE: \u001b[32m'>25y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Word Reading Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Map(98) {\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => [ \u001b[32m'pen'\u001b[39m, \u001b[32m'pencil'\u001b[39m ],\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => [ \u001b[32m'pen'\u001b[39m, \u001b[32m'pencil'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => [ \u001b[32m'blue'\u001b[39m, \u001b[32m'green'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => [ \u001b[32m'blue'\u001b[39m, \u001b[32m'green'\u001b[39m ],\n  \u001b[32m'Practice Exercise 1'\u001b[39m => [ \u001b[32m'dog'\u001b[39m, \u001b[32m'puppy'\u001b[39m ],\n  \u001b[32m'Practice Exercise 2'\u001b[39m => [ \u001b[32m'man'\u001b[39m, \u001b[32m'boy'\u001b[39m ],\n  \u001b[32m'Practice Exercise 3'\u001b[39m => [ \u001b[32m'shoe'\u001b[39m, \u001b[32m'sock'\u001b[39m ],\n  \u001b[32m'Practice Exercise 4'\u001b[39m => [ \u001b[32m'green'\u001b[39m, \u001b[32m'red'\u001b[39m ],\n  \u001b[32m'Item 1'\u001b[39m => [ \u001b[32m'cat'\u001b[39m, \u001b[32m'dog'\u001b[39m ],\n  \u001b[32m'Item 2'\u001b[39m => [ \u001b[32m'moon'\u001b[39m, \u001b[32m'sun'\u001b[39m ],\n  \u001b[32m'Item 3'\u001b[39m => [ \u001b[32m'east'\u001b[39m, \u001b[32m'west'\u001b[39m ],\n  \u001b[32m'Item 4'\u001b[39m => [ \u001b[32m'kid'\u001b[39m, \u001b[32m'boy'\u001b[39m ],\n  \u001b[32m'Item 5'\u001b[39m => [ \u001b[32m'mom'\u001b[39m, \u001b[32m'dad'\u001b[39m ],\n  \u001b[32m'Item 6'\u001b[39m => [ \u001b[32m'red'\u001b[39m, \u001b[32m'yellow'\u001b[39m ],\n  \u001b[32m'Item 7'\u001b[39m => [ \u001b[32m'boy'\u001b[39m, \u001b[32m'girl'\u001b[39m ],\n  \u001b[32m'Item 8'\u001b[39m => [ \u001b[32m'coin'\u001b[39m, \u001b[32m'dime'\u001b[39m ],\n  \u001b[32m'Item 9'\u001b[39m => [ \u001b[32m'hamburger'\u001b[39m, \u001b[32m'pizza'\u001b[39m ],\n  \u001b[32m'Item 10'\u001b[39m => [ \u001b[32m'piano'\u001b[39m, \u001b[32m'trumpet'\u001b[39m ],\n  \u001b[32m'Item 11'\u001b[39m => [ \u001b[32m'tiger'\u001b[39m, \u001b[32m'lion'\u001b[39m ],\n  \u001b[32m'Item 12'\u001b[39m => [ \u001b[32m'apple'\u001b[39m, \u001b[32m'orange'\u001b[39m ],\n  \u001b[32m'Item 13'\u001b[39m => [ \u001b[32m'car'\u001b[39m, \u001b[32m'bus'\u001b[39m ],\n  \u001b[32m'Item 14'\u001b[39m => [ \u001b[32m'Tom'\u001b[39m, \u001b[32m'Rob'\u001b[39m ],\n  \u001b[32m'Item 15'\u001b[39m => [ \u001b[32m'fork'\u001b[39m, \u001b[32m'spoon'\u001b[39m ],\n  \u001b[32m'Item 16'\u001b[39m => [ \u001b[32m'rose'\u001b[39m, \u001b[32m'tulip'\u001b[39m ],\n  \u001b[32m'Item 17'\u001b[39m => [ \u001b[32m'hat'\u001b[39m, \u001b[32m'shoe'\u001b[39m ],\n  \u001b[32m'Item 18'\u001b[39m => [ \u001b[32m'coffee'\u001b[39m, \u001b[32m'tea'\u001b[39m ],\n  \u001b[32m'Item 19'\u001b[39m => [ \u001b[32m'uncle'\u001b[39m, \u001b[32m'aunt'\u001b[39m ],\n  \u001b[32m'Item 20'\u001b[39m => [ \u001b[32m'rug'\u001b[39m, \u001b[32m'carpet'\u001b[39m ],\n  \u001b[32m'Item 21'\u001b[39m => [ \u001b[32m'pan'\u001b[39m, \u001b[32m'pot'\u001b[39m ],\n  \u001b[32m'Item 22'\u001b[39m => [ \u001b[32m'yes'\u001b[39m, \u001b[32m'no'\u001b[39m ],\n  \u001b[32m'Item 23'\u001b[39m => [ \u001b[32m'rat'\u001b[39m, \u001b[32m'mouse'\u001b[39m ],\n  \u001b[32m'Item 24'\u001b[39m => [ \u001b[32m'run'\u001b[39m, \u001b[32m'jump'\u001b[39m ],\n  \u001b[32m'Item 25'\u001b[39m => [ \u001b[32m'bat'\u001b[39m, \u001b[32m'ball'\u001b[39m ],\n  \u001b[32m'Item 26'\u001b[39m => [ \u001b[32m'cloud'\u001b[39m, \u001b[32m'star'\u001b[39m ],\n  \u001b[32m'Item 27'\u001b[39m => [ \u001b[32m'three'\u001b[39m, \u001b[32m'two'\u001b[39m ],\n  \u001b[32m'Item 28'\u001b[39m => [ \u001b[32m'milk'\u001b[39m, \u001b[32m'cream'\u001b[39m ],\n  \u001b[32m'Item 29'\u001b[39m => [ \u001b[32m'father'\u001b[39m, \u001b[32m'mother'\u001b[39m ],\n  \u001b[32m'Item 30'\u001b[39m => [ \u001b[32m'snow'\u001b[39m, \u001b[32m'rain'\u001b[39m ],\n  \u001b[32m'Item 31'\u001b[39m => [ \u001b[32m'lunch'\u001b[39m, \u001b[32m'supper'\u001b[39m ],\n  \u001b[32m'Item 32'\u001b[39m => [ \u001b[32m'bracelet'\u001b[39m, \u001b[32m'necklace'\u001b[39m ],\n  \u001b[32m'Item 33'\u001b[39m => [ \u001b[32m'hand'\u001b[39m, \u001b[32m'wrist'\u001b[39m ],\n  \u001b[32m'Item 34'\u001b[39m => [ \u001b[32m'monkey'\u001b[39m, \u001b[32m'gorilla'\u001b[39m ],\n  \u001b[32m'Item 35'\u001b[39m => [ \u001b[32m'blue'\u001b[39m, \u001b[32m'red'\u001b[39m ],\n  \u001b[32m'Item 36'\u001b[39m => [ \u001b[32m'six'\u001b[39m, \u001b[32m'ten'\u001b[39m ],\n  \u001b[32m'Item 37'\u001b[39m => [ \u001b[32m'orange'\u001b[39m, \u001b[32m'purple'\u001b[39m ],\n  \u001b[32m'Item 38'\u001b[39m => [ \u001b[32m'ship'\u001b[39m, \u001b[32m'boat'\u001b[39m ],\n  \u001b[32m'Item 39'\u001b[39m => [ \u001b[32m'radio'\u001b[39m, \u001b[32m'television'\u001b[39m ],\n  \u001b[32m'Item 40'\u001b[39m => [ \u001b[32m'penny'\u001b[39m, \u001b[32m'quarter'\u001b[39m ],\n  \u001b[32m'Item 41'\u001b[39m => [ \u001b[32m'coat'\u001b[39m, \u001b[32m'jacket'\u001b[39m ],\n  \u001b[32m'Item 42'\u001b[39m => [ \u001b[32m'street'\u001b[39m, \u001b[32m'road'\u001b[39m ],\n  \u001b[32m'Item 43'\u001b[39m => [ \u001b[32m'ocean'\u001b[39m, \u001b[32m'lake'\u001b[39m ],\n  \u001b[32m'Item 44'\u001b[39m => [ \u001b[32m'hello'\u001b[39m, \u001b[32m'goodbye'\u001b[39m ],\n  \u001b[32m'Item 45'\u001b[39m => [ \u001b[32m'salad'\u001b[39m, \u001b[32m'lettuce'\u001b[39m ],\n  \u001b[32m'Item 46'\u001b[39m => [ \u001b[32m'wallet'\u001b[39m, \u001b[32m'purse'\u001b[39m ],\n  \u001b[32m'Item 47'\u001b[39m => [ \u001b[32m'vase'\u001b[39m, \u001b[32m'flower'\u001b[39m ],\n  \u001b[32m'Item 48'\u001b[39m => [ \u001b[32m'pet'\u001b[39m, \u001b[32m'dog'\u001b[39m ],\n  \u001b[32m'Item 49'\u001b[39m => [ \u001b[32m'carrot'\u001b[39m, \u001b[32m'celery'\u001b[39m ],\n  \u001b[32m'Item 50'\u001b[39m => [ \u001b[32m'sandal'\u001b[39m, \u001b[32m'slipper'\u001b[39m ],\n  \u001b[32m'Item 51'\u001b[39m => [ \u001b[32m'winter'\u001b[39m, \u001b[32m'summer'\u001b[39m ],\n  \u001b[32m'Item 52'\u001b[39m => [ \u001b[32m'mast'\u001b[39m, \u001b[32m'sail'\u001b[39m ],\n  \u001b[32m'Item 53'\u001b[39m => [ \u001b[32m'washcloth'\u001b[39m, \u001b[32m'towel'\u001b[39m ],\n  \u001b[32m'Item 54'\u001b[39m => [ \u001b[32m'hog'\u001b[39m, \u001b[32m'pig'\u001b[39m ],\n  \u001b[32m'Item 55'\u001b[39m => [ \u001b[32m'orange'\u001b[39m, \u001b[32m'blue'\u001b[39m ],\n  \u001b[32m'Item 56'\u001b[39m => [ \u001b[32m'plane'\u001b[39m, \u001b[32m'jet'\u001b[39m ],\n  \u001b[32m'Item 57'\u001b[39m => [ \u001b[32m'tree'\u001b[39m, \u001b[32m'branch'\u001b[39m ],\n  \u001b[32m'Item 58'\u001b[39m => [ \u001b[32m'luggage'\u001b[39m, \u001b[32m'suitcase'\u001b[39m ],\n  \u001b[32m'Item 59'\u001b[39m => [ \u001b[32m'home'\u001b[39m, \u001b[32m'house'\u001b[39m ],\n  \u001b[32m'Item 60'\u001b[39m => [ \u001b[32m'radish'\u001b[39m, \u001b[32m'cabbage'\u001b[39m ],\n  \u001b[32m'Item 61'\u001b[39m => [ \u001b[32m'book'\u001b[39m, \u001b[32m'page'\u001b[39m ],\n  \u001b[32m'Item 62'\u001b[39m => [ \u001b[32m'sell'\u001b[39m, \u001b[32m'buy'\u001b[39m ],\n  \u001b[32m'Item 63'\u001b[39m => [ \u001b[32m'baseball'\u001b[39m, \u001b[32m'football'\u001b[39m ],\n  \u001b[32m'Item 64'\u001b[39m => [ \u001b[32m'agenda'\u001b[39m, \u001b[32m'schedule'\u001b[39m ],\n  \u001b[32m'Item 65'\u001b[39m => [ \u001b[32m'seal'\u001b[39m, \u001b[32m'walrus'\u001b[39m ],\n  \u001b[32m'Item 66'\u001b[39m => [ \u001b[32m'draw'\u001b[39m, \u001b[32m'write'\u001b[39m ],\n  \u001b[32m'Item 67'\u001b[39m => [ \u001b[32m'telescope'\u001b[39m, \u001b[32m'microscope'\u001b[39m ],\n  \u001b[32m'Item 68'\u001b[39m => [ \u001b[32m'pupil'\u001b[39m, \u001b[32m'student'\u001b[39m ],\n  \u001b[32m'Item 69'\u001b[39m => [ \u001b[32m'stream'\u001b[39m, \u001b[32m'river'\u001b[39m ],\n  \u001b[32m'Item 70'\u001b[39m => [ \u001b[32m'symphony'\u001b[39m, \u001b[32m'orchestra'\u001b[39m ],\n  \u001b[32m'Item 71'\u001b[39m => [ \u001b[32m'horn'\u001b[39m, \u001b[32m'trumpet'\u001b[39m ],\n  \u001b[32m'Item 72'\u001b[39m => [ \u001b[32m'hike'\u001b[39m, \u001b[32m'walk'\u001b[39m ],\n  \u001b[32m'Item 73'\u001b[39m => [ \u001b[32m'ghost'\u001b[39m, \u001b[32m'goblin'\u001b[39m ],\n  \u001b[32m'Item 74'\u001b[39m => [ \u001b[32m'clock'\u001b[39m, \u001b[32m'watch'\u001b[39m ],\n  \u001b[32m'Item 75'\u001b[39m => [ \u001b[32m'math'\u001b[39m, \u001b[32m'count'\u001b[39m ],\n  \u001b[32m'Item 76'\u001b[39m => [ \u001b[32m'chase'\u001b[39m, \u001b[32m'catch'\u001b[39m ],\n  \u001b[32m'Item 77'\u001b[39m => [ \u001b[32m'indigestion'\u001b[39m, \u001b[32m'heartburn'\u001b[39m ],\n  \u001b[32m'Item 78'\u001b[39m => [ \u001b[32m'meteor'\u001b[39m, \u001b[32m'asteroid'\u001b[39m ],\n  \u001b[32m'Item 79'\u001b[39m => [ \u001b[32m'lunar'\u001b[39m, \u001b[32m'solar'\u001b[39m ],\n  \u001b[32m'Item 80'\u001b[39m => [ \u001b[32m'museum'\u001b[39m, \u001b[32m'gallery'\u001b[39m ],\n  \u001b[32m'Item 81'\u001b[39m => [ \u001b[32m'glass'\u001b[39m, \u001b[32m'cup'\u001b[39m ],\n  \u001b[32m'Item 82'\u001b[39m => [ \u001b[32m'prefix'\u001b[39m, \u001b[32m'suffix'\u001b[39m ],\n  \u001b[32m'Item 83'\u001b[39m => [ \u001b[32m'rubbish'\u001b[39m, \u001b[32m'garbage'\u001b[39m ],\n  \u001b[32m'Item 84'\u001b[39m => [ \u001b[32m'eyes'\u001b[39m, \u001b[32m'glasses'\u001b[39m ],\n  \u001b[32m'Item 85'\u001b[39m => [ \u001b[32m'carnivore'\u001b[39m, \u001b[32m'herbivore'\u001b[39m ],\n  \u001b[32m'Item 86'\u001b[39m => [ \u001b[32m'reflection'\u001b[39m, \u001b[32m'mirror'\u001b[39m ],\n  \u001b[32m'Item 87'\u001b[39m => [ \u001b[32m'ornament'\u001b[39m, \u001b[32m'decoration'\u001b[39m ],\n  \u001b[32m'Item 88'\u001b[39m => [ \u001b[32m'decade'\u001b[39m, \u001b[32m'century'\u001b[39m ],\n  \u001b[32m'Item 89'\u001b[39m => [ \u001b[32m'thermometer'\u001b[39m, \u001b[32m'barometer'\u001b[39m ],\n  \u001b[32m'Item 90'\u001b[39m => [ \u001b[32m'aviator'\u001b[39m, \u001b[32m'pilot'\u001b[39m ]\n}\n"
+                        },
+                        {
+                          "text": "Type Of test WRDGFL - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Map(105) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Introduction 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Test Items'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 56'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 57'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 58'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 59'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 60'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 61'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 62'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 63'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 64'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 65'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 66'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 67'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 68'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 69'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 70'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 71'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 72'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 73'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 74'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 75'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 76'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 77'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 78'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 79'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 80'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 81'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 82'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 83'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 84'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 85'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 86'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 87'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 88'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  ... 5 more items\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^xxxxxxxxxxx111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111@>28y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'SRDGFL.W5PA'\u001b[39m: { wScores: \u001b[33m120\u001b[39m, Wabil: \u001b[33m693.05\u001b[39m, Semw: \u001b[33m18.2\u001b[39m, AE: \u001b[32m'>25y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m },\n  \u001b[32m'WRDGFL.W5PA'\u001b[39m: { wScores: \u001b[33m90\u001b[39m, Wabil: \u001b[33m691.33\u001b[39m, Semw: \u001b[33m14.99\u001b[39m, AE: \u001b[32m'>28y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-07-27T10:59:31.548Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-f6134-FLU-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-f6134-FLU-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-f6134-FLU-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-f6134-FLU-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                        "column": 39,
+                        "line": 4021
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4d2ccc7a60204aa8215-93748f8b2fee9ef820b3",
+              "file": "derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "For SRDGFL - K12 - All correct scenario,WRDGFL - K12 - All correct scenario Complete The RDGFLU cluster & generate report",
+              "ok": false,
+              "tags": [
+                "RDGFLU",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1500000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 507856,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'None of the above\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'None of the above\\']')\u001b[22m\n\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts:152:15",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                          "column": 39,
+                          "line": 4021
+                        },
+                        "snippet": "   at ../pages/wj5_test.page.ts:4021\n\n\u001b[0m \u001b[90m 4019 |\u001b[39m   \u001b[36masync\u001b[39m endSessionRSB() {\n \u001b[90m 4020 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddTestObservationsNew\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4021 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcheckBoxNoneOfTheAbove\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4022 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendSessionButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4023 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4024 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                            "column": 39,
+                            "line": 4021
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'None of the above\\']')\u001b[22m\n\n\n   at ../pages/wj5_test.page.ts:4021\n\n  4019 |   async endSessionRSB() {\n  4020 |     await this.addTestObservationsNew.click();\n> 4021 |     await this.checkBoxNoneOfTheAbove.click();\n       |                                       ^\n  4022 |     await this.endSessionButton.click();\n  4023 |     await this.reviewModeButton.click();\n  4024 |     await this.page.waitForTimeout(3000);\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts:152:15"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S08PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S7:W2] Login successful for S08PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S7:W2] Login successful for S08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N22644A22990\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N22644A22990/dataFiles/Derived_Score_AutoFilter_Template_N22644A22990.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N22644A22990 FirstName=Luigi LastName =N22644A22990 Age = 07/27/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N22644A22990\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Sentence Reading Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Map(128) {\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Practice Exercise 1'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Practice Exercise 2'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Practice Exercise 3'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Practice Exercise 4'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 1'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 2'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 3'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 4'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 5'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 6'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 7'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 8'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 9'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 10'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 11'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 12'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 13'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 14'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 15'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 16'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 17'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 18'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 19'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 20'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 21'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 22'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 23'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 24'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 25'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 26'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 27'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 28'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 29'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 30'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 31'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 32'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 33'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 34'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 35'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 36'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 37'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 38'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 39'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 40'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 41'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 42'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 43'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 44'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 45'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 46'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 47'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 48'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 49'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 50'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 51'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 52'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 53'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 54'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 55'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 56'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 57'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 58'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 59'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 60'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 61'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 62'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 63'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 64'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 65'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 66'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 67'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 68'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 69'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 70'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 71'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 72'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 73'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 74'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 75'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 76'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 77'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 78'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 79'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 80'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 81'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 82'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 83'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 84'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 85'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 86'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 87'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 88'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 89'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 90'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 91'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 92'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  ... 28 more items\n}\n"
+                        },
+                        {
+                          "text": "Type Of test SRDGFL - K12 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Map(135) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Introduction 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Test Items'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 56'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 57'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 58'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 59'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 60'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 61'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 62'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 63'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 64'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 65'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 66'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 67'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 68'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 69'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 70'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 71'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 72'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 73'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 74'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 75'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 76'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 77'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 78'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 79'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 80'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 81'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 82'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 83'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 84'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 85'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 86'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 87'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 88'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  ... 35 more items\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^xxxxxxxxxxx111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111@>25y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'SRDGFL.W5PA'\u001b[39m: { wScores: \u001b[33m120\u001b[39m, Wabil: \u001b[33m693.05\u001b[39m, Semw: \u001b[33m18.2\u001b[39m, AE: \u001b[32m'>25y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Word Reading Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Map(98) {\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => [ \u001b[32m'pen'\u001b[39m, \u001b[32m'pencil'\u001b[39m ],\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => [ \u001b[32m'pen'\u001b[39m, \u001b[32m'pencil'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => [ \u001b[32m'blue'\u001b[39m, \u001b[32m'green'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => [ \u001b[32m'blue'\u001b[39m, \u001b[32m'green'\u001b[39m ],\n  \u001b[32m'Practice Exercise 1'\u001b[39m => [ \u001b[32m'dog'\u001b[39m, \u001b[32m'puppy'\u001b[39m ],\n  \u001b[32m'Practice Exercise 2'\u001b[39m => [ \u001b[32m'man'\u001b[39m, \u001b[32m'boy'\u001b[39m ],\n  \u001b[32m'Practice Exercise 3'\u001b[39m => [ \u001b[32m'shoe'\u001b[39m, \u001b[32m'sock'\u001b[39m ],\n  \u001b[32m'Practice Exercise 4'\u001b[39m => [ \u001b[32m'green'\u001b[39m, \u001b[32m'red'\u001b[39m ],\n  \u001b[32m'Item 1'\u001b[39m => [ \u001b[32m'cat'\u001b[39m, \u001b[32m'dog'\u001b[39m ],\n  \u001b[32m'Item 2'\u001b[39m => [ \u001b[32m'moon'\u001b[39m, \u001b[32m'sun'\u001b[39m ],\n  \u001b[32m'Item 3'\u001b[39m => [ \u001b[32m'east'\u001b[39m, \u001b[32m'west'\u001b[39m ],\n  \u001b[32m'Item 4'\u001b[39m => [ \u001b[32m'kid'\u001b[39m, \u001b[32m'boy'\u001b[39m ],\n  \u001b[32m'Item 5'\u001b[39m => [ \u001b[32m'mom'\u001b[39m, \u001b[32m'dad'\u001b[39m ],\n  \u001b[32m'Item 6'\u001b[39m => [ \u001b[32m'red'\u001b[39m, \u001b[32m'yellow'\u001b[39m ],\n  \u001b[32m'Item 7'\u001b[39m => [ \u001b[32m'boy'\u001b[39m, \u001b[32m'girl'\u001b[39m ],\n  \u001b[32m'Item 8'\u001b[39m => [ \u001b[32m'coin'\u001b[39m, \u001b[32m'dime'\u001b[39m ],\n  \u001b[32m'Item 9'\u001b[39m => [ \u001b[32m'hamburger'\u001b[39m, \u001b[32m'pizza'\u001b[39m ],\n  \u001b[32m'Item 10'\u001b[39m => [ \u001b[32m'piano'\u001b[39m, \u001b[32m'trumpet'\u001b[39m ],\n  \u001b[32m'Item 11'\u001b[39m => [ \u001b[32m'tiger'\u001b[39m, \u001b[32m'lion'\u001b[39m ],\n  \u001b[32m'Item 12'\u001b[39m => [ \u001b[32m'apple'\u001b[39m, \u001b[32m'orange'\u001b[39m ],\n  \u001b[32m'Item 13'\u001b[39m => [ \u001b[32m'car'\u001b[39m, \u001b[32m'bus'\u001b[39m ],\n  \u001b[32m'Item 14'\u001b[39m => [ \u001b[32m'Tom'\u001b[39m, \u001b[32m'Rob'\u001b[39m ],\n  \u001b[32m'Item 15'\u001b[39m => [ \u001b[32m'fork'\u001b[39m, \u001b[32m'spoon'\u001b[39m ],\n  \u001b[32m'Item 16'\u001b[39m => [ \u001b[32m'rose'\u001b[39m, \u001b[32m'tulip'\u001b[39m ],\n  \u001b[32m'Item 17'\u001b[39m => [ \u001b[32m'hat'\u001b[39m, \u001b[32m'shoe'\u001b[39m ],\n  \u001b[32m'Item 18'\u001b[39m => [ \u001b[32m'coffee'\u001b[39m, \u001b[32m'tea'\u001b[39m ],\n  \u001b[32m'Item 19'\u001b[39m => [ \u001b[32m'uncle'\u001b[39m, \u001b[32m'aunt'\u001b[39m ],\n  \u001b[32m'Item 20'\u001b[39m => [ \u001b[32m'rug'\u001b[39m, \u001b[32m'carpet'\u001b[39m ],\n  \u001b[32m'Item 21'\u001b[39m => [ \u001b[32m'pan'\u001b[39m, \u001b[32m'pot'\u001b[39m ],\n  \u001b[32m'Item 22'\u001b[39m => [ \u001b[32m'yes'\u001b[39m, \u001b[32m'no'\u001b[39m ],\n  \u001b[32m'Item 23'\u001b[39m => [ \u001b[32m'rat'\u001b[39m, \u001b[32m'mouse'\u001b[39m ],\n  \u001b[32m'Item 24'\u001b[39m => [ \u001b[32m'run'\u001b[39m, \u001b[32m'jump'\u001b[39m ],\n  \u001b[32m'Item 25'\u001b[39m => [ \u001b[32m'bat'\u001b[39m, \u001b[32m'ball'\u001b[39m ],\n  \u001b[32m'Item 26'\u001b[39m => [ \u001b[32m'cloud'\u001b[39m, \u001b[32m'star'\u001b[39m ],\n  \u001b[32m'Item 27'\u001b[39m => [ \u001b[32m'three'\u001b[39m, \u001b[32m'two'\u001b[39m ],\n  \u001b[32m'Item 28'\u001b[39m => [ \u001b[32m'milk'\u001b[39m, \u001b[32m'cream'\u001b[39m ],\n  \u001b[32m'Item 29'\u001b[39m => [ \u001b[32m'father'\u001b[39m, \u001b[32m'mother'\u001b[39m ],\n  \u001b[32m'Item 30'\u001b[39m => [ \u001b[32m'snow'\u001b[39m, \u001b[32m'rain'\u001b[39m ],\n  \u001b[32m'Item 31'\u001b[39m => [ \u001b[32m'lunch'\u001b[39m, \u001b[32m'supper'\u001b[39m ],\n  \u001b[32m'Item 32'\u001b[39m => [ \u001b[32m'bracelet'\u001b[39m, \u001b[32m'necklace'\u001b[39m ],\n  \u001b[32m'Item 33'\u001b[39m => [ \u001b[32m'hand'\u001b[39m, \u001b[32m'wrist'\u001b[39m ],\n  \u001b[32m'Item 34'\u001b[39m => [ \u001b[32m'monkey'\u001b[39m, \u001b[32m'gorilla'\u001b[39m ],\n  \u001b[32m'Item 35'\u001b[39m => [ \u001b[32m'blue'\u001b[39m, \u001b[32m'red'\u001b[39m ],\n  \u001b[32m'Item 36'\u001b[39m => [ \u001b[32m'six'\u001b[39m, \u001b[32m'ten'\u001b[39m ],\n  \u001b[32m'Item 37'\u001b[39m => [ \u001b[32m'orange'\u001b[39m, \u001b[32m'purple'\u001b[39m ],\n  \u001b[32m'Item 38'\u001b[39m => [ \u001b[32m'ship'\u001b[39m, \u001b[32m'boat'\u001b[39m ],\n  \u001b[32m'Item 39'\u001b[39m => [ \u001b[32m'radio'\u001b[39m, \u001b[32m'television'\u001b[39m ],\n  \u001b[32m'Item 40'\u001b[39m => [ \u001b[32m'penny'\u001b[39m, \u001b[32m'quarter'\u001b[39m ],\n  \u001b[32m'Item 41'\u001b[39m => [ \u001b[32m'coat'\u001b[39m, \u001b[32m'jacket'\u001b[39m ],\n  \u001b[32m'Item 42'\u001b[39m => [ \u001b[32m'street'\u001b[39m, \u001b[32m'road'\u001b[39m ],\n  \u001b[32m'Item 43'\u001b[39m => [ \u001b[32m'ocean'\u001b[39m, \u001b[32m'lake'\u001b[39m ],\n  \u001b[32m'Item 44'\u001b[39m => [ \u001b[32m'hello'\u001b[39m, \u001b[32m'goodbye'\u001b[39m ],\n  \u001b[32m'Item 45'\u001b[39m => [ \u001b[32m'salad'\u001b[39m, \u001b[32m'lettuce'\u001b[39m ],\n  \u001b[32m'Item 46'\u001b[39m => [ \u001b[32m'wallet'\u001b[39m, \u001b[32m'purse'\u001b[39m ],\n  \u001b[32m'Item 47'\u001b[39m => [ \u001b[32m'vase'\u001b[39m, \u001b[32m'flower'\u001b[39m ],\n  \u001b[32m'Item 48'\u001b[39m => [ \u001b[32m'pet'\u001b[39m, \u001b[32m'dog'\u001b[39m ],\n  \u001b[32m'Item 49'\u001b[39m => [ \u001b[32m'carrot'\u001b[39m, \u001b[32m'celery'\u001b[39m ],\n  \u001b[32m'Item 50'\u001b[39m => [ \u001b[32m'sandal'\u001b[39m, \u001b[32m'slipper'\u001b[39m ],\n  \u001b[32m'Item 51'\u001b[39m => [ \u001b[32m'winter'\u001b[39m, \u001b[32m'summer'\u001b[39m ],\n  \u001b[32m'Item 52'\u001b[39m => [ \u001b[32m'mast'\u001b[39m, \u001b[32m'sail'\u001b[39m ],\n  \u001b[32m'Item 53'\u001b[39m => [ \u001b[32m'washcloth'\u001b[39m, \u001b[32m'towel'\u001b[39m ],\n  \u001b[32m'Item 54'\u001b[39m => [ \u001b[32m'hog'\u001b[39m, \u001b[32m'pig'\u001b[39m ],\n  \u001b[32m'Item 55'\u001b[39m => [ \u001b[32m'orange'\u001b[39m, \u001b[32m'blue'\u001b[39m ],\n  \u001b[32m'Item 56'\u001b[39m => [ \u001b[32m'plane'\u001b[39m, \u001b[32m'jet'\u001b[39m ],\n  \u001b[32m'Item 57'\u001b[39m => [ \u001b[32m'tree'\u001b[39m, \u001b[32m'branch'\u001b[39m ],\n  \u001b[32m'Item 58'\u001b[39m => [ \u001b[32m'luggage'\u001b[39m, \u001b[32m'suitcase'\u001b[39m ],\n  \u001b[32m'Item 59'\u001b[39m => [ \u001b[32m'home'\u001b[39m, \u001b[32m'house'\u001b[39m ],\n  \u001b[32m'Item 60'\u001b[39m => [ \u001b[32m'radish'\u001b[39m, \u001b[32m'cabbage'\u001b[39m ],\n  \u001b[32m'Item 61'\u001b[39m => [ \u001b[32m'book'\u001b[39m, \u001b[32m'page'\u001b[39m ],\n  \u001b[32m'Item 62'\u001b[39m => [ \u001b[32m'sell'\u001b[39m, \u001b[32m'buy'\u001b[39m ],\n  \u001b[32m'Item 63'\u001b[39m => [ \u001b[32m'baseball'\u001b[39m, \u001b[32m'football'\u001b[39m ],\n  \u001b[32m'Item 64'\u001b[39m => [ \u001b[32m'agenda'\u001b[39m, \u001b[32m'schedule'\u001b[39m ],\n  \u001b[32m'Item 65'\u001b[39m => [ \u001b[32m'seal'\u001b[39m, \u001b[32m'walrus'\u001b[39m ],\n  \u001b[32m'Item 66'\u001b[39m => [ \u001b[32m'draw'\u001b[39m, \u001b[32m'write'\u001b[39m ],\n  \u001b[32m'Item 67'\u001b[39m => [ \u001b[32m'telescope'\u001b[39m, \u001b[32m'microscope'\u001b[39m ],\n  \u001b[32m'Item 68'\u001b[39m => [ \u001b[32m'pupil'\u001b[39m, \u001b[32m'student'\u001b[39m ],\n  \u001b[32m'Item 69'\u001b[39m => [ \u001b[32m'stream'\u001b[39m, \u001b[32m'river'\u001b[39m ],\n  \u001b[32m'Item 70'\u001b[39m => [ \u001b[32m'symphony'\u001b[39m, \u001b[32m'orchestra'\u001b[39m ],\n  \u001b[32m'Item 71'\u001b[39m => [ \u001b[32m'horn'\u001b[39m, \u001b[32m'trumpet'\u001b[39m ],\n  \u001b[32m'Item 72'\u001b[39m => [ \u001b[32m'hike'\u001b[39m, \u001b[32m'walk'\u001b[39m ],\n  \u001b[32m'Item 73'\u001b[39m => [ \u001b[32m'ghost'\u001b[39m, \u001b[32m'goblin'\u001b[39m ],\n  \u001b[32m'Item 74'\u001b[39m => [ \u001b[32m'clock'\u001b[39m, \u001b[32m'watch'\u001b[39m ],\n  \u001b[32m'Item 75'\u001b[39m => [ \u001b[32m'math'\u001b[39m, \u001b[32m'count'\u001b[39m ],\n  \u001b[32m'Item 76'\u001b[39m => [ \u001b[32m'chase'\u001b[39m, \u001b[32m'catch'\u001b[39m ],\n  \u001b[32m'Item 77'\u001b[39m => [ \u001b[32m'indigestion'\u001b[39m, \u001b[32m'heartburn'\u001b[39m ],\n  \u001b[32m'Item 78'\u001b[39m => [ \u001b[32m'meteor'\u001b[39m, \u001b[32m'asteroid'\u001b[39m ],\n  \u001b[32m'Item 79'\u001b[39m => [ \u001b[32m'lunar'\u001b[39m, \u001b[32m'solar'\u001b[39m ],\n  \u001b[32m'Item 80'\u001b[39m => [ \u001b[32m'museum'\u001b[39m, \u001b[32m'gallery'\u001b[39m ],\n  \u001b[32m'Item 81'\u001b[39m => [ \u001b[32m'glass'\u001b[39m, \u001b[32m'cup'\u001b[39m ],\n  \u001b[32m'Item 82'\u001b[39m => [ \u001b[32m'prefix'\u001b[39m, \u001b[32m'suffix'\u001b[39m ],\n  \u001b[32m'Item 83'\u001b[39m => [ \u001b[32m'rubbish'\u001b[39m, \u001b[32m'garbage'\u001b[39m ],\n  \u001b[32m'Item 84'\u001b[39m => [ \u001b[32m'eyes'\u001b[39m, \u001b[32m'glasses'\u001b[39m ],\n  \u001b[32m'Item 85'\u001b[39m => [ \u001b[32m'carnivore'\u001b[39m, \u001b[32m'herbivore'\u001b[39m ],\n  \u001b[32m'Item 86'\u001b[39m => [ \u001b[32m'reflection'\u001b[39m, \u001b[32m'mirror'\u001b[39m ],\n  \u001b[32m'Item 87'\u001b[39m => [ \u001b[32m'ornament'\u001b[39m, \u001b[32m'decoration'\u001b[39m ],\n  \u001b[32m'Item 88'\u001b[39m => [ \u001b[32m'decade'\u001b[39m, \u001b[32m'century'\u001b[39m ],\n  \u001b[32m'Item 89'\u001b[39m => [ \u001b[32m'thermometer'\u001b[39m, \u001b[32m'barometer'\u001b[39m ],\n  \u001b[32m'Item 90'\u001b[39m => [ \u001b[32m'aviator'\u001b[39m, \u001b[32m'pilot'\u001b[39m ]\n}\n"
+                        },
+                        {
+                          "text": "Type Of test WRDGFL - K12 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Map(105) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Introduction 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Test Items'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 56'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 57'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 58'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 59'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 60'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 61'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 62'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 63'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 64'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 65'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 66'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 67'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 68'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 69'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 70'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 71'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 72'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 73'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 74'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 75'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 76'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 77'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 78'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 79'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 80'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 81'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 82'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 83'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 84'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 85'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 86'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 87'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 88'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  ... 5 more items\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^xxxxxxxxxxx111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111@>28y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'SRDGFL.W5PA'\u001b[39m: { wScores: \u001b[33m120\u001b[39m, Wabil: \u001b[33m693.05\u001b[39m, Semw: \u001b[33m18.2\u001b[39m, AE: \u001b[32m'>25y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m },\n  \u001b[32m'WRDGFL.W5PA'\u001b[39m: { wScores: \u001b[33m90\u001b[39m, Wabil: \u001b[33m691.33\u001b[39m, Semw: \u001b[33m14.99\u001b[39m, AE: \u001b[32m'>28y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-27T11:07:34.693Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-50f84-FLU-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-50f84-FLU-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-50f84-FLU-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-50f84-FLU-cluster-generate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-50f84-FLU-cluster-generate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                        "column": 39,
+                        "line": 4021
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 481900,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'None of the above\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'None of the above\\']')\u001b[22m\n\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts:152:15",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                          "column": 39,
+                          "line": 4021
+                        },
+                        "snippet": "   at ../pages/wj5_test.page.ts:4021\n\n\u001b[0m \u001b[90m 4019 |\u001b[39m   \u001b[36masync\u001b[39m endSessionRSB() {\n \u001b[90m 4020 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddTestObservationsNew\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4021 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcheckBoxNoneOfTheAbove\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4022 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendSessionButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4023 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mreviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 4024 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                            "column": 39,
+                            "line": 4021
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'None of the above\\']')\u001b[22m\n\n\n   at ../pages/wj5_test.page.ts:4021\n\n  4019 |   async endSessionRSB() {\n  4020 |     await this.addTestObservationsNew.click();\n> 4021 |     await this.checkBoxNoneOfTheAbove.click();\n       |                                       ^\n  4022 |     await this.endSessionButton.click();\n  4023 |     await this.reviewModeButton.click();\n  4024 |     await this.page.waitForTimeout(3000);\n    at wj5TestPage.endSessionRSB (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts:4021:39)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts:152:15"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S08PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S7:W3] Login successful for S08PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S7:W3] Login successful for S08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N60407A87916\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N60407A87916/dataFiles/Derived_Score_AutoFilter_Template_N60407A87916.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N60407A87916 FirstName=Remington LastName =N60407A87916 Age = 07/27/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N60407A87916\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Sentence Reading Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Map(128) {\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Practice Exercise 1'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Practice Exercise 2'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Practice Exercise 3'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Practice Exercise 4'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 1'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 2'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 3'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 4'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 5'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 6'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 7'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 8'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 9'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 10'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 11'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 12'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 13'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 14'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 15'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 16'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 17'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 18'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 19'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 20'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 21'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 22'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 23'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 24'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 25'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 26'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 27'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 28'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 29'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 30'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 31'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 32'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 33'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 34'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 35'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 36'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 37'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 38'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 39'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 40'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 41'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 42'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 43'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 44'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 45'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 46'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 47'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 48'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 49'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 50'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 51'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 52'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 53'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 54'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 55'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 56'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 57'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 58'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 59'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 60'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 61'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 62'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 63'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 64'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 65'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 66'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 67'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 68'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 69'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 70'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 71'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 72'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 73'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 74'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 75'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 76'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 77'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 78'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 79'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 80'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 81'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 82'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 83'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 84'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 85'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 86'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 87'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 88'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 89'\u001b[39m => [ \u001b[32m'Yes'\u001b[39m ],\n  \u001b[32m'Item 90'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 91'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  \u001b[32m'Item 92'\u001b[39m => [ \u001b[32m'No'\u001b[39m ],\n  ... 28 more items\n}\n"
+                        },
+                        {
+                          "text": "Type Of test SRDGFL - K12 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: SRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Map(135) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Introduction 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Test Items'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 56'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 57'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 58'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 59'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 60'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 61'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 62'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 63'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 64'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 65'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 66'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 67'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 68'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 69'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 70'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 71'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 72'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 73'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 74'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 75'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 76'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 77'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 78'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 79'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 80'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 81'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 82'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 83'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 84'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 85'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 86'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 87'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 88'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  ... 35 more items\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^xxxxxxxxxxx111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111@>25y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'SRDGFL.W5PA'\u001b[39m: { wScores: \u001b[33m120\u001b[39m, Wabil: \u001b[33m693.05\u001b[39m, Semw: \u001b[33m18.2\u001b[39m, AE: \u001b[32m'>25y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Word Reading Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Map(98) {\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => [ \u001b[32m'pen'\u001b[39m, \u001b[32m'pencil'\u001b[39m ],\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => [ \u001b[32m'pen'\u001b[39m, \u001b[32m'pencil'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => [ \u001b[32m'blue'\u001b[39m, \u001b[32m'green'\u001b[39m ],\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => [ \u001b[32m'blue'\u001b[39m, \u001b[32m'green'\u001b[39m ],\n  \u001b[32m'Practice Exercise 1'\u001b[39m => [ \u001b[32m'dog'\u001b[39m, \u001b[32m'puppy'\u001b[39m ],\n  \u001b[32m'Practice Exercise 2'\u001b[39m => [ \u001b[32m'man'\u001b[39m, \u001b[32m'boy'\u001b[39m ],\n  \u001b[32m'Practice Exercise 3'\u001b[39m => [ \u001b[32m'shoe'\u001b[39m, \u001b[32m'sock'\u001b[39m ],\n  \u001b[32m'Practice Exercise 4'\u001b[39m => [ \u001b[32m'green'\u001b[39m, \u001b[32m'red'\u001b[39m ],\n  \u001b[32m'Item 1'\u001b[39m => [ \u001b[32m'cat'\u001b[39m, \u001b[32m'dog'\u001b[39m ],\n  \u001b[32m'Item 2'\u001b[39m => [ \u001b[32m'moon'\u001b[39m, \u001b[32m'sun'\u001b[39m ],\n  \u001b[32m'Item 3'\u001b[39m => [ \u001b[32m'east'\u001b[39m, \u001b[32m'west'\u001b[39m ],\n  \u001b[32m'Item 4'\u001b[39m => [ \u001b[32m'kid'\u001b[39m, \u001b[32m'boy'\u001b[39m ],\n  \u001b[32m'Item 5'\u001b[39m => [ \u001b[32m'mom'\u001b[39m, \u001b[32m'dad'\u001b[39m ],\n  \u001b[32m'Item 6'\u001b[39m => [ \u001b[32m'red'\u001b[39m, \u001b[32m'yellow'\u001b[39m ],\n  \u001b[32m'Item 7'\u001b[39m => [ \u001b[32m'boy'\u001b[39m, \u001b[32m'girl'\u001b[39m ],\n  \u001b[32m'Item 8'\u001b[39m => [ \u001b[32m'coin'\u001b[39m, \u001b[32m'dime'\u001b[39m ],\n  \u001b[32m'Item 9'\u001b[39m => [ \u001b[32m'hamburger'\u001b[39m, \u001b[32m'pizza'\u001b[39m ],\n  \u001b[32m'Item 10'\u001b[39m => [ \u001b[32m'piano'\u001b[39m, \u001b[32m'trumpet'\u001b[39m ],\n  \u001b[32m'Item 11'\u001b[39m => [ \u001b[32m'tiger'\u001b[39m, \u001b[32m'lion'\u001b[39m ],\n  \u001b[32m'Item 12'\u001b[39m => [ \u001b[32m'apple'\u001b[39m, \u001b[32m'orange'\u001b[39m ],\n  \u001b[32m'Item 13'\u001b[39m => [ \u001b[32m'car'\u001b[39m, \u001b[32m'bus'\u001b[39m ],\n  \u001b[32m'Item 14'\u001b[39m => [ \u001b[32m'Tom'\u001b[39m, \u001b[32m'Rob'\u001b[39m ],\n  \u001b[32m'Item 15'\u001b[39m => [ \u001b[32m'fork'\u001b[39m, \u001b[32m'spoon'\u001b[39m ],\n  \u001b[32m'Item 16'\u001b[39m => [ \u001b[32m'rose'\u001b[39m, \u001b[32m'tulip'\u001b[39m ],\n  \u001b[32m'Item 17'\u001b[39m => [ \u001b[32m'hat'\u001b[39m, \u001b[32m'shoe'\u001b[39m ],\n  \u001b[32m'Item 18'\u001b[39m => [ \u001b[32m'coffee'\u001b[39m, \u001b[32m'tea'\u001b[39m ],\n  \u001b[32m'Item 19'\u001b[39m => [ \u001b[32m'uncle'\u001b[39m, \u001b[32m'aunt'\u001b[39m ],\n  \u001b[32m'Item 20'\u001b[39m => [ \u001b[32m'rug'\u001b[39m, \u001b[32m'carpet'\u001b[39m ],\n  \u001b[32m'Item 21'\u001b[39m => [ \u001b[32m'pan'\u001b[39m, \u001b[32m'pot'\u001b[39m ],\n  \u001b[32m'Item 22'\u001b[39m => [ \u001b[32m'yes'\u001b[39m, \u001b[32m'no'\u001b[39m ],\n  \u001b[32m'Item 23'\u001b[39m => [ \u001b[32m'rat'\u001b[39m, \u001b[32m'mouse'\u001b[39m ],\n  \u001b[32m'Item 24'\u001b[39m => [ \u001b[32m'run'\u001b[39m, \u001b[32m'jump'\u001b[39m ],\n  \u001b[32m'Item 25'\u001b[39m => [ \u001b[32m'bat'\u001b[39m, \u001b[32m'ball'\u001b[39m ],\n  \u001b[32m'Item 26'\u001b[39m => [ \u001b[32m'cloud'\u001b[39m, \u001b[32m'star'\u001b[39m ],\n  \u001b[32m'Item 27'\u001b[39m => [ \u001b[32m'three'\u001b[39m, \u001b[32m'two'\u001b[39m ],\n  \u001b[32m'Item 28'\u001b[39m => [ \u001b[32m'milk'\u001b[39m, \u001b[32m'cream'\u001b[39m ],\n  \u001b[32m'Item 29'\u001b[39m => [ \u001b[32m'father'\u001b[39m, \u001b[32m'mother'\u001b[39m ],\n  \u001b[32m'Item 30'\u001b[39m => [ \u001b[32m'snow'\u001b[39m, \u001b[32m'rain'\u001b[39m ],\n  \u001b[32m'Item 31'\u001b[39m => [ \u001b[32m'lunch'\u001b[39m, \u001b[32m'supper'\u001b[39m ],\n  \u001b[32m'Item 32'\u001b[39m => [ \u001b[32m'bracelet'\u001b[39m, \u001b[32m'necklace'\u001b[39m ],\n  \u001b[32m'Item 33'\u001b[39m => [ \u001b[32m'hand'\u001b[39m, \u001b[32m'wrist'\u001b[39m ],\n  \u001b[32m'Item 34'\u001b[39m => [ \u001b[32m'monkey'\u001b[39m, \u001b[32m'gorilla'\u001b[39m ],\n  \u001b[32m'Item 35'\u001b[39m => [ \u001b[32m'blue'\u001b[39m, \u001b[32m'red'\u001b[39m ],\n  \u001b[32m'Item 36'\u001b[39m => [ \u001b[32m'six'\u001b[39m, \u001b[32m'ten'\u001b[39m ],\n  \u001b[32m'Item 37'\u001b[39m => [ \u001b[32m'orange'\u001b[39m, \u001b[32m'purple'\u001b[39m ],\n  \u001b[32m'Item 38'\u001b[39m => [ \u001b[32m'ship'\u001b[39m, \u001b[32m'boat'\u001b[39m ],\n  \u001b[32m'Item 39'\u001b[39m => [ \u001b[32m'radio'\u001b[39m, \u001b[32m'television'\u001b[39m ],\n  \u001b[32m'Item 40'\u001b[39m => [ \u001b[32m'penny'\u001b[39m, \u001b[32m'quarter'\u001b[39m ],\n  \u001b[32m'Item 41'\u001b[39m => [ \u001b[32m'coat'\u001b[39m, \u001b[32m'jacket'\u001b[39m ],\n  \u001b[32m'Item 42'\u001b[39m => [ \u001b[32m'street'\u001b[39m, \u001b[32m'road'\u001b[39m ],\n  \u001b[32m'Item 43'\u001b[39m => [ \u001b[32m'ocean'\u001b[39m, \u001b[32m'lake'\u001b[39m ],\n  \u001b[32m'Item 44'\u001b[39m => [ \u001b[32m'hello'\u001b[39m, \u001b[32m'goodbye'\u001b[39m ],\n  \u001b[32m'Item 45'\u001b[39m => [ \u001b[32m'salad'\u001b[39m, \u001b[32m'lettuce'\u001b[39m ],\n  \u001b[32m'Item 46'\u001b[39m => [ \u001b[32m'wallet'\u001b[39m, \u001b[32m'purse'\u001b[39m ],\n  \u001b[32m'Item 47'\u001b[39m => [ \u001b[32m'vase'\u001b[39m, \u001b[32m'flower'\u001b[39m ],\n  \u001b[32m'Item 48'\u001b[39m => [ \u001b[32m'pet'\u001b[39m, \u001b[32m'dog'\u001b[39m ],\n  \u001b[32m'Item 49'\u001b[39m => [ \u001b[32m'carrot'\u001b[39m, \u001b[32m'celery'\u001b[39m ],\n  \u001b[32m'Item 50'\u001b[39m => [ \u001b[32m'sandal'\u001b[39m, \u001b[32m'slipper'\u001b[39m ],\n  \u001b[32m'Item 51'\u001b[39m => [ \u001b[32m'winter'\u001b[39m, \u001b[32m'summer'\u001b[39m ],\n  \u001b[32m'Item 52'\u001b[39m => [ \u001b[32m'mast'\u001b[39m, \u001b[32m'sail'\u001b[39m ],\n  \u001b[32m'Item 53'\u001b[39m => [ \u001b[32m'washcloth'\u001b[39m, \u001b[32m'towel'\u001b[39m ],\n  \u001b[32m'Item 54'\u001b[39m => [ \u001b[32m'hog'\u001b[39m, \u001b[32m'pig'\u001b[39m ],\n  \u001b[32m'Item 55'\u001b[39m => [ \u001b[32m'orange'\u001b[39m, \u001b[32m'blue'\u001b[39m ],\n  \u001b[32m'Item 56'\u001b[39m => [ \u001b[32m'plane'\u001b[39m, \u001b[32m'jet'\u001b[39m ],\n  \u001b[32m'Item 57'\u001b[39m => [ \u001b[32m'tree'\u001b[39m, \u001b[32m'branch'\u001b[39m ],\n  \u001b[32m'Item 58'\u001b[39m => [ \u001b[32m'luggage'\u001b[39m, \u001b[32m'suitcase'\u001b[39m ],\n  \u001b[32m'Item 59'\u001b[39m => [ \u001b[32m'home'\u001b[39m, \u001b[32m'house'\u001b[39m ],\n  \u001b[32m'Item 60'\u001b[39m => [ \u001b[32m'radish'\u001b[39m, \u001b[32m'cabbage'\u001b[39m ],\n  \u001b[32m'Item 61'\u001b[39m => [ \u001b[32m'book'\u001b[39m, \u001b[32m'page'\u001b[39m ],\n  \u001b[32m'Item 62'\u001b[39m => [ \u001b[32m'sell'\u001b[39m, \u001b[32m'buy'\u001b[39m ],\n  \u001b[32m'Item 63'\u001b[39m => [ \u001b[32m'baseball'\u001b[39m, \u001b[32m'football'\u001b[39m ],\n  \u001b[32m'Item 64'\u001b[39m => [ \u001b[32m'agenda'\u001b[39m, \u001b[32m'schedule'\u001b[39m ],\n  \u001b[32m'Item 65'\u001b[39m => [ \u001b[32m'seal'\u001b[39m, \u001b[32m'walrus'\u001b[39m ],\n  \u001b[32m'Item 66'\u001b[39m => [ \u001b[32m'draw'\u001b[39m, \u001b[32m'write'\u001b[39m ],\n  \u001b[32m'Item 67'\u001b[39m => [ \u001b[32m'telescope'\u001b[39m, \u001b[32m'microscope'\u001b[39m ],\n  \u001b[32m'Item 68'\u001b[39m => [ \u001b[32m'pupil'\u001b[39m, \u001b[32m'student'\u001b[39m ],\n  \u001b[32m'Item 69'\u001b[39m => [ \u001b[32m'stream'\u001b[39m, \u001b[32m'river'\u001b[39m ],\n  \u001b[32m'Item 70'\u001b[39m => [ \u001b[32m'symphony'\u001b[39m, \u001b[32m'orchestra'\u001b[39m ],\n  \u001b[32m'Item 71'\u001b[39m => [ \u001b[32m'horn'\u001b[39m, \u001b[32m'trumpet'\u001b[39m ],\n  \u001b[32m'Item 72'\u001b[39m => [ \u001b[32m'hike'\u001b[39m, \u001b[32m'walk'\u001b[39m ],\n  \u001b[32m'Item 73'\u001b[39m => [ \u001b[32m'ghost'\u001b[39m, \u001b[32m'goblin'\u001b[39m ],\n  \u001b[32m'Item 74'\u001b[39m => [ \u001b[32m'clock'\u001b[39m, \u001b[32m'watch'\u001b[39m ],\n  \u001b[32m'Item 75'\u001b[39m => [ \u001b[32m'math'\u001b[39m, \u001b[32m'count'\u001b[39m ],\n  \u001b[32m'Item 76'\u001b[39m => [ \u001b[32m'chase'\u001b[39m, \u001b[32m'catch'\u001b[39m ],\n  \u001b[32m'Item 77'\u001b[39m => [ \u001b[32m'indigestion'\u001b[39m, \u001b[32m'heartburn'\u001b[39m ],\n  \u001b[32m'Item 78'\u001b[39m => [ \u001b[32m'meteor'\u001b[39m, \u001b[32m'asteroid'\u001b[39m ],\n  \u001b[32m'Item 79'\u001b[39m => [ \u001b[32m'lunar'\u001b[39m, \u001b[32m'solar'\u001b[39m ],\n  \u001b[32m'Item 80'\u001b[39m => [ \u001b[32m'museum'\u001b[39m, \u001b[32m'gallery'\u001b[39m ],\n  \u001b[32m'Item 81'\u001b[39m => [ \u001b[32m'glass'\u001b[39m, \u001b[32m'cup'\u001b[39m ],\n  \u001b[32m'Item 82'\u001b[39m => [ \u001b[32m'prefix'\u001b[39m, \u001b[32m'suffix'\u001b[39m ],\n  \u001b[32m'Item 83'\u001b[39m => [ \u001b[32m'rubbish'\u001b[39m, \u001b[32m'garbage'\u001b[39m ],\n  \u001b[32m'Item 84'\u001b[39m => [ \u001b[32m'eyes'\u001b[39m, \u001b[32m'glasses'\u001b[39m ],\n  \u001b[32m'Item 85'\u001b[39m => [ \u001b[32m'carnivore'\u001b[39m, \u001b[32m'herbivore'\u001b[39m ],\n  \u001b[32m'Item 86'\u001b[39m => [ \u001b[32m'reflection'\u001b[39m, \u001b[32m'mirror'\u001b[39m ],\n  \u001b[32m'Item 87'\u001b[39m => [ \u001b[32m'ornament'\u001b[39m, \u001b[32m'decoration'\u001b[39m ],\n  \u001b[32m'Item 88'\u001b[39m => [ \u001b[32m'decade'\u001b[39m, \u001b[32m'century'\u001b[39m ],\n  \u001b[32m'Item 89'\u001b[39m => [ \u001b[32m'thermometer'\u001b[39m, \u001b[32m'barometer'\u001b[39m ],\n  \u001b[32m'Item 90'\u001b[39m => [ \u001b[32m'aviator'\u001b[39m, \u001b[32m'pilot'\u001b[39m ]\n}\n"
+                        },
+                        {
+                          "text": "Type Of test WRDGFL - K12 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "taskStem value: WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "Map(105) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Introduction 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Practice Exercise 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Test Items'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 56'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 57'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 58'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 59'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 60'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 61'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 62'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 63'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 64'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 65'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 66'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 67'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 68'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 69'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 70'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 71'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 72'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 73'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 74'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 75'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 76'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 77'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 78'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 79'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 80'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 81'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 82'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 83'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 84'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 85'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 86'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 87'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 88'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  ... 5 more items\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^xxxxxxxxxxx111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111@>28y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'SRDGFL.W5PA'\u001b[39m: { wScores: \u001b[33m120\u001b[39m, Wabil: \u001b[33m693.05\u001b[39m, Semw: \u001b[33m18.2\u001b[39m, AE: \u001b[32m'>25y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m },\n  \u001b[32m'WRDGFL.W5PA'\u001b[39m: { wScores: \u001b[33m90\u001b[39m, Wabil: \u001b[33m691.33\u001b[39m, Semw: \u001b[33m14.99\u001b[39m, AE: \u001b[32m'>28y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-07-27T11:16:14.873Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-50f84-FLU-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-50f84-FLU-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-50f84-FLU-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-50f84-FLU-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.page.ts",
+                        "column": 39,
+                        "line": 4021
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4d2ccc7a60204aa8215-be0f28d6bfdf5130b53a",
+              "file": "derived_scores(compounds & clusters)/RDGFLU_cluster_pub.spec.ts",
+              "line": 27,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-07-27T10:50:37.858Z",
+    "duration": 2019584.103,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
