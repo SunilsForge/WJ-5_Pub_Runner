@@ -1,0 +1,376 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/SubscriptionActivationNewUser.spec.ts >> Unlimited Medium - new user activation flow
+- Location: src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:13:7
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "Phoebe SubAut30Jul26153755"
+Received: "—"
+```
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "sunil.adeptpros+SubAut30Jul26153755@gmail.com"
+Received: "—"
+```
+
+```
+Error: expect(locator).toContainText(expected) failed
+
+Locator: locator('//div[contains(@class,\'subscription-details-container\')]//div[contains(@class,\'sd-row-cell\')][.//div[normalize-space()=\'ACTIVATION CONTACT\']]//div[contains(@class,\'sd-value\')][not(contains(@class,\'sd-value2\'))]')
+Expected substring: "Phoebe SubAut30Jul26153755"
+Received string:    "—"
+Timeout: 60000ms
+
+Call log:
+  - Expect "soft toContainText" with timeout 60000ms
+  - waiting for locator('//div[contains(@class,\'subscription-details-container\')]//div[contains(@class,\'sd-row-cell\')][.//div[normalize-space()=\'ACTIVATION CONTACT\']]//div[contains(@class,\'sd-value\')][not(contains(@class,\'sd-value2\'))]')
+    63 × locator resolved to <div class="sd-value">—</div>
+       - unexpected value "—"
+
+```
+
+```
+Error: expect(locator).toContainText(expected) failed
+
+Locator: locator('//div[contains(@class,\'subscription-details-container\')]//div[contains(@class,\'sd-row-cell\')][.//div[normalize-space()=\'ACTIVATION CONTACT\']]//div[contains(@class,\'sd-value2\')]')
+Expected substring: "sunil.adeptpros+SubAut30Jul26153755@gmail.com"
+Received string:    "—"
+Timeout: 60000ms
+
+Call log:
+  - Expect "soft toContainText" with timeout 60000ms
+  - waiting for locator('//div[contains(@class,\'subscription-details-container\')]//div[contains(@class,\'sd-row-cell\')][.//div[normalize-space()=\'ACTIVATION CONTACT\']]//div[contains(@class,\'sd-value2\')]')
+    63 × locator resolved to <div class="sd-value sd-value2">—</div>
+       - unexpected value "—"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello Phoebe SubAut30Jul26153755" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "Phoebe SubAut30Jul26153755" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [active] [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - generic "WJ V Settings Navigation" [ref=e41]:
+                - img [ref=e43]
+                - text: WJ V Settings
+              - menu [ref=e45]:
+                - menuitem "Subscription Management" [ref=e46] [cursor=pointer]
+                - menuitem "Report Settings" [ref=e47] [cursor=pointer]
+            - generic [ref=e49]:
+              - heading "Subscription Management" [level=1] [ref=e50]
+              - generic [ref=e51]:
+                - generic [ref=e52]:
+                  - generic [ref=e53]: START DATE
+                  - generic [ref=e54]: 07/30/2026
+                - generic [ref=e55]:
+                  - generic [ref=e56]: EXPIRATION DATE
+                  - generic [ref=e57]: 07/29/2027
+              - generic [ref=e59]:
+                - generic [ref=e60]: ACCOUNT HOLDER
+                - generic [ref=e61]: Phoebe SubAut30Jul26153755
+                - generic [ref=e62]: sunil.adeptpros+SubAut30Jul26153755@gmail.com
+              - generic [ref=e64]:
+                - generic [ref=e65]: ACTIVATION CONTACT
+                - generic [ref=e66]: —
+                - generic [ref=e67]: —
+                - button "More info" [ref=e68]
+              - link "Terms and Conditions" [ref=e71] [cursor=pointer]:
+                - /url: https://info.riversideinsights.com/terms-of-use
+              - heading "Unlimited Subscription Usage" [level=1] [ref=e72]
+              - generic [ref=e74]:
+                - generic [ref=e75]: SUBTESTS USED
+                - generic [ref=e76]: "0"
+              - generic [ref=e78]:
+                - generic [ref=e79]: TOTAL ACTIVE STAFF
+                - generic [ref=e80]: "1"
+              - generic [ref=e82]:
+                - generic [ref=e83]: AUTO RENEWAL STATUS
+                - generic [ref=e84]: "ON"
+                - button "More info" [ref=e85]
+      - contentinfo [ref=e86]:
+        - generic [ref=e87]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e88] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e89]
+        - generic [ref=e90]:
+          - link "Riverside Insights Facebook" [ref=e91] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e92]
+          - link "Riverside Insights Twitter" [ref=e93] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e94]
+          - link "Riverside Insights LinkedIn" [ref=e95] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e96]
+          - link "Riverside Insights Instagram" [ref=e97] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e98]
+        - generic [ref=e99]:
+          - button "Leave Feedback" [ref=e100] [cursor=pointer]
+          - generic [ref=e101]: "|"
+          - link "Terms of Use" [ref=e102] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e103]: "|"
+          - link "Privacy Policy" [ref=e104] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e105]: Footer region end
+  - region "Chat Widget" [ref=e106]:
+    - iframe [ref=e107]:
+      - button "Open live chat" [ref=f14e5]:
+        - img [ref=f14e8]
+        - img [ref=f14e15]
+    - generic "Drag" [ref=e108]:
+      - img [ref=e109]
+```
+
+# Test source
+
+```ts
+  550 | 
+  551 |   async verifyGIATestSetAccess(cognitiveAccess: boolean) {
+  552 |     await this.dismissPendoGuideIfPresent();
+  553 |     await this.testSetButton.click();
+  554 |     try {
+  555 |       await this.page.waitForLoadState('load', { timeout: 30_000 });
+  556 |     } catch {}
+  557 |     if (cognitiveAccess) {
+  558 |       await expect.soft(this.giaTestSetNameSpan).toBeVisible();
+  559 |     } else {
+  560 |       await expect.soft(this.giaTestSetNameSpan).not.toBeVisible();
+  561 |     }
+  562 |   }
+  563 | 
+  564 |   async verifyEntitlementApiAfterActivation(
+  565 |     formData: SubscriptionActivationFormData,
+  566 |     scenario: ActivationCode,
+  567 |     actualStartDate: string,
+  568 |     actualEndDate: string
+  569 |   ) {
+  570 |     const subApi = new subscriptionApi(this.page);
+  571 |     const [summary, extras] = await subApi.getOrgSubscriptionDetails(formData.username);
+  572 | 
+  573 |     const expectedFullName = `${formData.firstName} ${formData.lastName}`;
+  574 |     const expectedStart = actualStartDate;
+  575 |     const expectedEnd = actualEndDate;
+  576 | 
+  577 |     expect.soft(summary.OrganizationId, 'OrganizationId should be returned').toBeGreaterThan(0);
+  578 |     expect.soft(summary.SubscriptionType).toContain(scenario.subscriptionType);
+  579 |     expect.soft(summary.CognitiveTesting).toBe(scenario.cognitiveAccess);
+  580 |     expect.soft(extras.accountHolderName).toBe(expectedFullName);
+  581 |     expect.soft(extras.accountHolderEmail).toBe(formData.email);
+  582 |     expect.soft(extras.activationContactName).toBe(expectedFullName);
+  583 |     expect.soft(extras.activationContactEmail).toBe(formData.email);
+  584 |     expect.soft(extras.currentStartDate).toContain(mmddyyyyToIsoPrefix(expectedStart));
+  585 |     expect.soft(extras.currentEndDate).toContain(mmddyyyyToIsoPrefix(expectedEnd));
+  586 | 
+  587 |     if (scenario.subtestCount !== undefined) {
+  588 |       expect.soft(extras.remainingSubtests).toBe(scenario.subtestCount);
+  589 |     }
+  590 |   }
+  591 | 
+  592 |   async verifyRenewalApiState(username: string, expectedRenewalEndMMDDYYYY: string, expectedSubtestCount?: number, checkHasRenewal = true) {
+  593 |     const subApi = new subscriptionApi(this.page);
+  594 |     const [summary, extras] = await subApi.getOrgSubscriptionDetails(username);
+  595 |     if (checkHasRenewal) {
+  596 |       expect.soft(summary.HasRenewal, 'HasRenewal').toBe('true');
+  597 |     }
+  598 |     if (summary.SubscriptionTo) {
+  599 |       expect.soft(isoToMMDDYYYY(summary.SubscriptionTo)).toBe(expectedRenewalEndMMDDYYYY);
+  600 |     }
+  601 |     if (expectedSubtestCount !== undefined && extras.remainingSubtests !== undefined) {
+  602 |       expect.soft(extras.remainingSubtests, 'remainingSubtests').toBeGreaterThan(0);
+  603 |       expect.soft(extras.remainingSubtests, 'remainingSubtests purchased count').toBe(expectedSubtestCount);
+  604 |     }
+  605 |     RawValueLogger.log('S32 API snapshot', { hasRenewal: summary.HasRenewal, renewalEndDate: summary.RenewalEndDate, remainingSubtests: extras.remainingSubtests });
+  606 |   }
+  607 | 
+  608 |   async verifySubscriptionDetailsAfterRenewal(renewalEndMMDDYYYY: string, expectedRemainingSubtests?: number) {
+  609 |     await this.openSubscriptionDetailsPage();
+  610 |     await this.subscriptionDetailsExpirationDateValue.waitFor({ state: 'visible', timeout: 15000 });
+  611 |     await expect.soft(this.subscriptionDetailsExpirationDateValue).toContainText(renewalEndMMDDYYYY);
+  612 |     if (expectedRemainingSubtests !== undefined) {
+  613 |       await expect.soft(this.subscriptionDetailsRemainingSubtestsValue).toHaveText(String(expectedRemainingSubtests));
+  614 |     }
+  615 |   }
+  616 | 
+  617 |   async openSubscriptionDetailsPage() {
+  618 |     try {
+  619 |       await this.page.waitForLoadState('load', { timeout: 30_000 });
+  620 |     } catch {
+  621 |       /* ignore */
+  622 |     }
+  623 |     await this.dismissPendoGuideIfPresent();
+  624 |     await this.page.waitForTimeout(2000);
+  625 |     await this.subscriptionDetailsButton.click();
+  626 |   }
+  627 | 
+  628 |   async verifySubscriptionDetailsPage(
+  629 |     formData: SubscriptionActivationFormData,
+  630 |     scenario: ActivationCode,
+  631 |     actualStartDate: string,
+  632 |     actualEndDate: string
+  633 |   ) {
+  634 |     try {
+  635 |       await this.page.waitForLoadState('load', { timeout: 30_000 });
+  636 |     } catch {
+  637 |       /* ignore */
+  638 |     }
+  639 |     await this.page.waitForTimeout(2000);
+  640 | 
+  641 |     const expectedStart = actualStartDate;
+  642 |     const expectedEnd = actualEndDate;
+  643 |     const expectedFullName = `${formData.firstName} ${formData.lastName}`;
+  644 | 
+  645 |     await expect.soft(this.subscriptionDetailsStartDateValue).toContainText(expectedStart);
+  646 |     await expect.soft(this.subscriptionDetailsExpirationDateValue).toContainText(expectedEnd);
+  647 |     await expect.soft(this.subscriptionDetailsAccountHolderNameValue).toContainText(expectedFullName);
+  648 |     await expect.soft(this.subscriptionDetailsAccountHolderEmailValue).toContainText(formData.email);
+  649 |     await expect.soft(this.subscriptionDetailsActivationContactNameValue).toContainText(expectedFullName);
+> 650 |     await expect.soft(this.subscriptionDetailsActivationContactEmailValue).toContainText(formData.email);
+      |                                                                            ^ Error: expect(locator).toContainText(expected) failed
+  651 | 
+  652 |     await expect.soft(this.subscriptionDetailsSubscriptionUsageHeading).toContainText(scenario.subscriptionType);
+  653 |     if (scenario.subtestCount !== undefined) {
+  654 |       await expect.soft(this.subscriptionDetailsRemainingSubtestsValue).toHaveText(String(scenario.subtestCount));
+  655 |     }
+  656 |     await expect.soft(this.subscriptionDetailsSubtestsUsedValue).toHaveText('0');
+  657 |     await expect.soft(this.subscriptionDetailsTotalActiveStaffValue).toHaveText('1');
+  658 |     if (scenario.subtestCount === undefined) {
+  659 |       await expect.soft(this.subscriptionDetailsAutoRenewalStatusValue).toContainText('ON');
+  660 |     }
+  661 |   }
+  662 | 
+  663 |   async verifySubtestErrorPopup(activationCode: string) {
+  664 |     await this.gotoActivationUrl(activationCode);
+  665 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  666 |     await expect.soft(this.activationCustomerNameText).toBeVisible();
+  667 |   }
+  668 | 
+  669 |   async ensureSubtestWindowState(
+  670 |     user: ExistingUser,
+  671 |     window: 'addon' | 'rollover'
+  672 |   ): Promise<{ summary: OrgSubscriptionSummary; extras: OrgSubscriptionExtras }> {
+  673 |     const subApi = new subscriptionApi(this.page);
+  674 |     const endDate = window === 'addon'
+  675 |       ? addDaysToServerTodayMMDDYYYY(150)
+  676 |       : addDaysToServerTodayMMDDYYYY(60);
+  677 |     await subApi.updateSubscriptionDetails(user.username, endDate, false);
+  678 |     const [summary, extras] = await subApi.getOrgSubscriptionDetails(user.username);
+  679 |     return { summary, extras };
+  680 |   }
+  681 | 
+  682 |   async createFreshOrg(
+  683 |     seedScenario: ActivationCode,
+  684 |     formData: SubscriptionActivationFormData
+  685 |   ): Promise<void> {
+  686 |     await this.resetActivationStateAndLand(seedScenario);
+  687 |     await this.selectCreateLoginAndProceed();
+  688 |     await this.fillContactInfo(formData);
+  689 |     await this.fillUsernameAndPassword(formData);
+  690 |     await this.fillLocationAndSubmit(formData);
+  691 |     await this.confirmActivation();
+  692 |     await this.dismiss2FAPopupIfPresent();
+  693 |     await this.acceptTermsDialogIfPresent();
+  694 |     await this.signOutFromHeader();
+  695 |   }
+  696 | 
+  697 |   async verifyAddOnConfirmDetails(
+  698 |     orgName: string,
+  699 |     currentStartMMDDYYYY: string,
+  700 |     currentEndMMDDYYYY: string,
+  701 |     subtestCount: number
+  702 |   ) {
+  703 |     await expect.soft(this.confirmActivationHeading).toBeVisible();
+  704 |     await expect.soft(this.confirmSubscriptionValueText).toContainText('Subtest Subscription');
+  705 |     await expect.soft(this.confirmLocationNameValueText).toContainText(orgName);
+  706 |     await expect.soft(this.confirmLocationNameValueText).toContainText(`${subtestCount} Subtests`);
+  707 |     await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();
+  708 |     await expect.soft(this.confirmStartDateInput).toHaveValue(currentStartMMDDYYYY);
+  709 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();
+  710 |     await expect.soft(this.confirmEndDateInput).toHaveValue(currentEndMMDDYYYY);
+  711 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();
+  712 |   }
+  713 | 
+  714 |   async verifySubtestPoolApiState(
+  715 |     username: string,
+  716 |     expectedRemaining: number,
+  717 |     expectedRollover?: number
+  718 |   ) {
+  719 |     const subApi = new subscriptionApi(this.page);
+  720 |     const [, extras] = await subApi.getOrgSubscriptionDetails(username);
+  721 |     RawValueLogger.log('Subtest pool API state', {
+  722 |       remainingSubtests: extras.remainingSubtests,
+  723 |       subtestsRollover: extras.subtestsRollover,
+  724 |       rolloverStartDate: extras.rolloverStartDate,
+  725 |       rolloverEndDate: extras.rolloverEndDate,
+  726 |     });
+  727 |     expect.soft(extras.remainingSubtests, 'remainingSubtests').toBe(expectedRemaining);
+  728 |     if (expectedRollover !== undefined) {
+  729 |       expect.soft(extras.subtestsRollover, 'subtestsRollover').toBe(expectedRollover);
+  730 |     }
+  731 |   }
+  732 | 
+  733 |   async verifyAbandonedCodeIsAvailable(scenario: ActivationCode) {
+  734 |     await this.gotoActivationUrl(scenario.activationCode);
+  735 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  736 |     await expect.soft(this.iNeedToCreateALoginSpan).toBeVisible();
+  737 |   }
+  738 | 
+  739 |   async verifyRolloverSubscriptionDetailsPage(
+  740 |     expirationDateMMDDYYYY: string,
+  741 |     expectedRemainingSubtests: number,
+  742 |     rolloverCount: number,
+  743 |     rolloverExpiryMMDDYYYY: string
+  744 |   ) {
+  745 |     await this.openSubscriptionDetailsPage();
+  746 |     await this.subscriptionDetailsExpirationDateValue.waitFor({ state: 'visible', timeout: 15000 });
+  747 |     await expect.soft(this.subscriptionDetailsExpirationDateValue).toContainText(expirationDateMMDDYYYY);
+  748 |     await expect.soft(this.subscriptionDetailsRemainingSubtestsValue).toHaveText(String(expectedRemainingSubtests));
+  749 |     await expect.soft(this.subscriptionDetailsRolloverCountValue).toHaveText(String(rolloverCount));
+  750 |     await expect.soft(this.subscriptionDetailsRolloverLabel).toContainText(rolloverExpiryMMDDYYYY);
+```

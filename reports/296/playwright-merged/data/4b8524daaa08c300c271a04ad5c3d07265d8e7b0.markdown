@@ -1,0 +1,319 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts >> AC2 Happy path - Subtest user (add-on window, >4 months remaining) redeems Subtest Medium code - subtests added to existing pool
+- Location: src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:22:5
+
+# Error details
+
+```
+TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event "response"
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - banner [ref=e5]:
+        - generic [ref=e6]:
+          - button [ref=e7]: Skip to main Content
+          - link [ref=e8] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e9]: Riverside Insights Logo
+          - generic [ref=e10]:
+            - heading [level=2] [ref=e11]:
+              - generic [ref=e12]: Hello
+              - button [ref=e13] [cursor=pointer]: Mariela SubAut30Jul26154240
+            - navigation [ref=e16]:
+              - link [ref=e17] [cursor=pointer]:
+                - /url: https://riversideinsights.com/explore
+                - text: Shop Now
+              - button [ref=e18] [cursor=pointer]: "| Contact Us"
+              - button [ref=e19] [cursor=pointer]: "| Sign Out"
+      - main [ref=e20]:
+        - button [ref=e28] [cursor=pointer]: Update Profile
+        - heading [level=1] [ref=e31]: "To access scoring and reporting, please make a selection below:"
+        - menubar [ref=e32]:
+          - menuitem [ref=e33] [cursor=pointer]
+        - generic [ref=e34]:
+          - tablist [ref=e35]:
+            - tab [selected] [ref=e36] [cursor=pointer]: Riverside Updates
+            - tab [ref=e37] [cursor=pointer]: Webinars
+            - tab [ref=e38] [cursor=pointer]: Blog Posts
+            - tab [ref=e39] [cursor=pointer]: Forums
+          - generic [ref=e41]:
+            - heading [level=2] [ref=e42]: Test
+            - img [ref=e44]
+    - contentinfo [ref=e45]:
+      - generic [ref=e46]: Footer region,
+      - link [ref=e47] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img [ref=e48]
+      - generic [ref=e49]:
+        - link [ref=e50] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e51]
+        - link [ref=e52] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e53]
+        - link [ref=e54] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e55]
+        - link [ref=e56] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e57]
+      - generic [ref=e58]:
+        - img [ref=e59]
+        - button [ref=e60] [cursor=pointer]
+        - button [ref=e61] [cursor=pointer]
+      - generic [ref=e62]:
+        - img [ref=e63]
+        - generic [ref=e64]:
+          - button [ref=e65] [cursor=pointer]
+          - button [ref=e66] [cursor=pointer]
+          - button [ref=e67] [cursor=pointer]
+      - generic [ref=e68]:
+        - button [ref=e69] [cursor=pointer]: Leave Feedback
+        - generic [ref=e70]: "|"
+        - link [ref=e71] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e72]: "|"
+        - link [ref=e73] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e74]: Footer region end
+  - region "Chat Widget" [ref=e75]:
+    - iframe [ref=e76]:
+      - button "Open live chat" [ref=f3e5]:
+        - img [ref=f3e8]
+        - img [ref=f3e15]
+    - generic "Drag" [ref=e77]:
+      - img [ref=e78]
+  - dialog [active] [ref=e81]:
+    - heading "2-Factor Authentication" [level=1] [ref=e82]
+    - generic [ref=e83]:
+      - generic [ref=e84]:
+        - paragraph [ref=e85]: In the near future, Riverside Score will see implementation of 2-Factor Authentication upon login. You will have an option to receive a code to your mobile phone number or email address that will need to be entered for login.
+        - paragraph [ref=e86]: Please take the time to update your phone number for ease of access when 2FA is implemented. Thank you!
+      - generic [ref=e87]: PHONE NUMBER
+      - textbox "Phone number input field" [ref=e89]: "5302606939"
+      - paragraph [ref=e91]: Phone number can be updated at any time in your Profile and Settings by selecting your name in the upper-right.
+    - generic [ref=e92]:
+      - button "Cancel" [ref=e93] [cursor=pointer]
+      - button "Update" [ref=e94] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  402 |     await this.credentialsConfirmPasswordInput.pressSequentially(data.password, { delay: 50 });
+  403 |     await this.wizardNextButton.click();
+  404 |   }
+  405 | 
+  406 |   async fillLocationAndSubmit(data: SubscriptionActivationFormData) {
+  407 |     await expect.soft(this.locationSubmitButton).toBeDisabled();
+  408 |     await this.locationNameInput.pressSequentially(data.locationName, { delay: 50 });
+  409 |     await this.addressLine1Input.pressSequentially(data.addressLine1, { delay: 50 });
+  410 |     // Address Line 2 intentionally skipped — server rejects special chars in faker's "Apt. 403"-style output.
+  411 |     await this.cityInput.pressSequentially(data.city, { delay: 50 });
+  412 |     await this.stateDropdown.click();
+  413 |     await this.stateCaliforniaOption.click();
+  414 |     await this.zipCodeInput.pressSequentially(data.zipCode, { delay: 50 });
+  415 |     await Promise.all([
+  416 |       this.page.waitForResponse(
+  417 |         response => response.url().includes('CreateActivationSubscriptionNewUser') && response.status() === 200,
+  418 |         { timeout: 2 * 60 * 1000 }
+  419 |       ),
+  420 |       this.locationSubmitButton.click(),
+  421 |     ]);
+  422 |   }
+  423 | 
+  424 |   async verifyConfirmActivationDetails(
+  425 |     expectedSubscriptionContains: string,
+  426 |     expectedLocationName: string,
+  427 |     subtestCount?: number
+  428 |   ) {
+  429 |     if (subtestCount !== undefined) {
+  430 |       await expect.soft(this.confirmSubscriptionValueText).toContainText('Subtest Subscription');
+  431 |     } else {
+  432 |       await expect.soft(this.confirmSubscriptionValueText).toContainText(expectedSubscriptionContains);
+  433 |     }
+  434 |     await expect.soft(this.confirmLocationNameValueText).toContainText(expectedLocationName);
+  435 |     if (subtestCount !== undefined) {
+  436 |       await expect.soft(this.confirmLocationNameValueText).toContainText(`${subtestCount} Subtests`);
+  437 |       await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();
+  438 |     }
+  439 |   }
+  440 | 
+  441 |   async verifyConfirmActivationStartAndEndDates(): Promise<{ startDate: string; endDate: string }> {
+  442 |     const startDateValue = (await this.confirmStartDateInput.inputValue()).trim();
+  443 |     const endDateValue = (await this.confirmEndDateInput.inputValue()).trim();
+  444 | 
+  445 |     const expectedStart = getServerTodayMMDDYYYY();
+  446 | 
+  447 |     const [m, d, y] = startDateValue.split('/').map(Number);
+  448 |     const endDateFromActualStart = new Date(y + 1, m - 1, d - 1);
+  449 |     const expectedEnd = formatMMDDYYYY(endDateFromActualStart);
+  450 | 
+  451 |     expect.soft(startDateValue).toBe(expectedStart);
+  452 |     expect.soft(endDateValue).toBe(expectedEnd);
+  453 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();
+  454 | 
+  455 |     return { startDate: startDateValue, endDate: endDateValue };
+  456 |   }
+  457 | 
+  458 |   async setStartDate(dateMMDDYYYY: string) {
+  459 |     await this.confirmStartDateInput.click();
+  460 |     await this.confirmStartDateInput.press('Control+A');
+  461 |     await this.confirmStartDateInput.press('Delete');
+  462 |     await this.confirmStartDateInput.pressSequentially(dateMMDDYYYY, { delay: 50 });
+  463 |     await this.confirmStartDateInput.press('Enter');
+  464 |   }
+  465 | 
+  466 |   async clearStartDate() {
+  467 |     await this.confirmStartDateInput.click();
+  468 |     await this.confirmStartDateInput.press('Control+A');
+  469 |     await this.confirmStartDateInput.press('Delete');
+  470 |     await this.confirmStartDateInput.press('Enter');
+  471 |   }
+  472 | 
+  473 |   async assertDateErrorContains(expectedText: string) {
+  474 |     await expect.soft(this.confirmDateErrorMessage).toContainText(expectedText);
+  475 |   }
+  476 | 
+  477 |   async assertNoDateError() {
+  478 |     await expect.soft(this.confirmDateErrorMessage).not.toBeVisible();
+  479 |   }
+  480 | 
+  481 |   async assertEndDateValueEquals(expectedMMDDYYYY: string) {
+  482 |     await expect.soft(this.confirmEndDateInput).toHaveValue(expectedMMDDYYYY);
+  483 |   }
+  484 | 
+  485 |   async assertEndDateValueEmpty() {
+  486 |     await expect.soft(this.confirmEndDateInput).toHaveValue('');
+  487 |   }
+  488 | 
+  489 |   async clickAbandonActivation() {
+  490 |     await this.confirmAbandonActivationButton.click();
+  491 |   }
+  492 | 
+  493 |   async verifyOnLoginPageAfterAbandon() {
+  494 |     const baseUrl = getSiteUrl().replace(/\/+$/, '');
+  495 |     await this.page.waitForURL(url => url.toString().startsWith(baseUrl), { timeout: 30_000 });
+  496 |     await expect.soft(this.signInButton).toBeVisible();
+  497 |   }
+  498 | 
+  499 |   async confirmActivation() {
+  500 |     await this.confirmAcceptTermsCheckbox.click();
+  501 |     await Promise.all([
+> 502 |       this.page.waitForResponse(response => response.url().includes('ConfirmActivation') && response.status() === 200, {
+      |                 ^ TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event "response"
+  503 |         timeout: 2 * 60 * 1000,
+  504 |       }),
+  505 |       this.confirmActivationButton.click(),
+  506 |     ]);
+  507 |   }
+  508 | 
+  509 |   async dismiss2FAPopupIfPresent() {
+  510 |     try {
+  511 |       await this.page.waitForLoadState('load', { timeout: 30_000 });
+  512 |     } catch {}
+  513 |     await this.page.waitForTimeout(3000);
+  514 | 
+  515 |     try {
+  516 |       if (await this.twoFactorAuthCancelButton.isVisible()) {
+  517 |         await this.twoFactorAuthCancelButton.click();
+  518 |       }
+  519 |     } catch (error) {
+  520 |       console.warn('Error while dismissing 2FA popup: ', error);
+  521 |     }
+  522 |   }
+  523 | 
+  524 |   async acceptTermsDialogIfPresent() {
+  525 |     try {
+  526 |       const updateTermsPopup = await this.page.getByRole('dialog').first().isVisible();
+  527 |       if (updateTermsPopup) {
+  528 |         await this.page.getByRole('button', { name: 'I Accept' }).click();
+  529 |       }
+  530 |     } catch (error) {
+  531 |       console.warn('Error while accepting user terms: ', error);
+  532 |     }
+  533 |   }
+  534 | 
+  535 |   async dismissPendoGuideIfPresent() {
+  536 |     try {
+  537 |       await this.pendoGuideCloseButton.waitFor({ state: 'visible', timeout: 3000 });
+  538 |       await this.pendoGuideCloseButton.click();
+  539 |     } catch {
+  540 |       /* Pendo guide didn't appear in time — proceed */
+  541 |     }
+  542 |   }
+  543 | 
+  544 |   async clickWJVTileAndVerifyDashboard(expectedHeaderName: string) {
+  545 |     await expect.soft(this.userNameDisplayHeader).toHaveText(expectedHeaderName);
+  546 |     await this.productDisplayCardWJV.click();
+  547 |     await this.dismissPendoGuideIfPresent();
+  548 |     await expect(this.myTestAssignmentsText).toBeVisible();
+  549 |   }
+  550 | 
+  551 |   async verifyGIATestSetAccess(cognitiveAccess: boolean) {
+  552 |     await this.dismissPendoGuideIfPresent();
+  553 |     await this.testSetButton.click();
+  554 |     try {
+  555 |       await this.page.waitForLoadState('load', { timeout: 30_000 });
+  556 |     } catch {}
+  557 |     if (cognitiveAccess) {
+  558 |       await expect.soft(this.giaTestSetNameSpan).toBeVisible();
+  559 |     } else {
+  560 |       await expect.soft(this.giaTestSetNameSpan).not.toBeVisible();
+  561 |     }
+  562 |   }
+  563 | 
+  564 |   async verifyEntitlementApiAfterActivation(
+  565 |     formData: SubscriptionActivationFormData,
+  566 |     scenario: ActivationCode,
+  567 |     actualStartDate: string,
+  568 |     actualEndDate: string
+  569 |   ) {
+  570 |     const subApi = new subscriptionApi(this.page);
+  571 |     const [summary, extras] = await subApi.getOrgSubscriptionDetails(formData.username);
+  572 | 
+  573 |     const expectedFullName = `${formData.firstName} ${formData.lastName}`;
+  574 |     const expectedStart = actualStartDate;
+  575 |     const expectedEnd = actualEndDate;
+  576 | 
+  577 |     expect.soft(summary.OrganizationId, 'OrganizationId should be returned').toBeGreaterThan(0);
+  578 |     expect.soft(summary.SubscriptionType).toContain(scenario.subscriptionType);
+  579 |     expect.soft(summary.CognitiveTesting).toBe(scenario.cognitiveAccess);
+  580 |     expect.soft(extras.accountHolderName).toBe(expectedFullName);
+  581 |     expect.soft(extras.accountHolderEmail).toBe(formData.email);
+  582 |     expect.soft(extras.activationContactName).toBe(expectedFullName);
+  583 |     expect.soft(extras.activationContactEmail).toBe(formData.email);
+  584 |     expect.soft(extras.currentStartDate).toContain(mmddyyyyToIsoPrefix(expectedStart));
+  585 |     expect.soft(extras.currentEndDate).toContain(mmddyyyyToIsoPrefix(expectedEnd));
+  586 | 
+  587 |     if (scenario.subtestCount !== undefined) {
+  588 |       expect.soft(extras.remainingSubtests).toBe(scenario.subtestCount);
+  589 |     }
+  590 |   }
+  591 | 
+  592 |   async verifyRenewalApiState(username: string, expectedRenewalEndMMDDYYYY: string, expectedSubtestCount?: number, checkHasRenewal = true) {
+  593 |     const subApi = new subscriptionApi(this.page);
+  594 |     const [summary, extras] = await subApi.getOrgSubscriptionDetails(username);
+  595 |     if (checkHasRenewal) {
+  596 |       expect.soft(summary.HasRenewal, 'HasRenewal').toBe('true');
+  597 |     }
+  598 |     if (summary.SubscriptionTo) {
+  599 |       expect.soft(isoToMMDDYYYY(summary.SubscriptionTo)).toBe(expectedRenewalEndMMDDYYYY);
+  600 |     }
+  601 |     if (expectedSubtestCount !== undefined && extras.remainingSubtests !== undefined) {
+  602 |       expect.soft(extras.remainingSubtests, 'remainingSubtests').toBeGreaterThan(0);
+```
