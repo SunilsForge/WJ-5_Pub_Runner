@@ -1,0 +1,812 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+        "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "commitHash": "131f1eccbfc89f0a22aacf26601459edcefe3bbe",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30637358676"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 14,
+      "total": 15
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/dashboard/testAssignments_A.spec.ts",
+      "file": "functional/dashboard/testAssignments_A.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Validate Dashboard Test Assignments functionality",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_A",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24006_24067_24927, 28823_29687",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                    "line": 21,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 641887,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 04PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S14:W0] Login successful for 04PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 04PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S14:W0] Login successful for 04PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N10340A9228\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N10340A9228 FirstName=Jerrold LastName =N10340A9228 Age = 07/31/2021\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N10340A9228\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N98511A65845\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N98511A65845 FirstName=Fletcher LastName =N98511A65845 Age = 07/31/2020\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N98511A65845\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N68731A39020\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N68731A39020 FirstName=Irma LastName =N68731A39020 Age = 07/31/2019\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N68731A39020\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N97415A24695\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N97415A24695 FirstName=Louisa LastName =N97415A24695 Age = 07/31/2018\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N97415A24695\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Verify newly added test assignment is displayed at the top of the table and also Verify \"Create New Test Assignment\" from Dashboard",
+                      "duration": 248606
+                    },
+                    {
+                      "title": "Verify add test to test set functionality and The table is ordered by the mostly recently “interacted” test assignment at the top",
+                      "duration": 25590
+                    },
+                    {
+                      "title": "Verify all the 5 Columns are visible",
+                      "duration": 48
+                    },
+                    {
+                      "title": "Verify Closed columns are correctly displayed",
+                      "duration": 10114
+                    },
+                    {
+                      "title": "Verify edited test assignment 'Examinee name and test set' is displayed at the top of the table",
+                      "duration": 37895
+                    },
+                    {
+                      "title": "Verify DELETE test assignment functionality \"Not Started\"",
+                      "duration": 18305
+                    },
+                    {
+                      "title": "Verify search test assignment functionality",
+                      "duration": 37044
+                    },
+                    {
+                      "title": "Verify Edit Assignments Icon can only be seen for \"In Progress, Not Started, Submitted\" and not for \"Closed, Expired\" ",
+                      "duration": 48131
+                    },
+                    {
+                      "title": "Verify \"Not Started\" Edit Test Assignment functionality\"",
+                      "duration": 11399
+                    },
+                    {
+                      "title": "AH:- Verify select Examinee name and cancel it should not update the test assignment status- \"Not Started\"",
+                      "duration": 47780
+                    },
+                    {
+                      "title": "AH:- Verify select Test Set and cancel it should not update the test assignment status- \"Not Started\"",
+                      "duration": 52931
+                    }
+                  ],
+                  "startTime": "2026-07-31T14:10:52.356Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927, 28823_29687",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                        "line": 21,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8fc2817f86ae5d361ccf-dbe5ee4a50b6cd1a6bea",
+          "file": "functional/dashboard/testAssignments_A.spec.ts",
+          "line": 21,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+      "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verify review mode for my 'In Progress' test assignments",
+          "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Administer a selective test and leave the test in diff statuses as a part of 'in progress' test assignment validation",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "ReviewMode",
+                "InProgressTestAssignments",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 2400000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1720116,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S14:W1] Login successful for 04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N89662A33122\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N89662A33122 FirstName=Barton LastName =N89662A33122 Age = 07/31/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N89662A33122\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Analysis-Synthesis\n"
+                        },
+                        {
+                          "text": "Block Rotation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22599|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "Letter-Word Identification\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22088|Age 6|22089\n"
+                        },
+                        {
+                          "text": "Math Facts Fluency\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14914|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Number-Pattern Matching\n"
+                        },
+                        {
+                          "text": "taskStem value: NUMPAT.W5PA\n"
+                        },
+                        {
+                          "text": "Number Series\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13015|Ages 4 to 5|\n"
+                        },
+                        {
+                          "text": "Rapid Letter Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16289|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Number Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 23232|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Phoneme Naming\n"
+                        },
+                        {
+                          "text": "Story Recall\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13853|Ages 4 to 6|13854\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22639|Ages 5 to 7|22640,22641\n"
+                        },
+                        {
+                          "text": "Semantic Word Retrieval\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error while clicking on Next button : locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"end-test-button\" class=\"plain-button nav-button\">End Test</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at CommonTestPage.completeTestInAdministrationMode \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:10053:60\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:104:30 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts'\u001b[39m,\n      line: \u001b[33m10053\u001b[39m,\n      column: \u001b[33m60\u001b[39m,\n      function: \u001b[32m'CommonTestPage.completeTestInAdministrationMode'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m'button.plain-button.next-item-button, button.plain-button.nav-button >> nth=-1'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@861'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@861'\u001b[39m,\n      _title: \u001b[32m\"Click locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1785508923483\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button id=\"end-test-button\" class=\"plain-button nav-button\">End Test</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button').last()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button id=\"end-test-button\" class=\"plain-button nav-button\">End Test</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - scrolling into view if needed\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - done scrolling\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open Overlay\">…</div> from <div class=\"ReactModalPortal\">…</div> subtree intercepts pointer events\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.completeTestInAdministrationMode (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:10053:60)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:104:30'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verify statuses of the tests from left nav > tests'",
+                          "duration": 8432
+                        }
+                      ],
+                      "startTime": "2026-07-31T14:21:36.068Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c839c71415aac1f8fd0-98bf6782be6d7d46548e",
+              "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "Validate different scenarios for 'In Progress' test assignment in review mode",
+              "ok": false,
+              "tags": [
+                "ReviewMode",
+                "InProgressTestAssignments",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [
+                    {
+                      "type": "Original user story, Automation user story",
+                      "description": "27994, (29273, 29290)",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                        "line": 180,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 265535,
+                      "error": {
+                        "message": "Error: Test failures:\nTime is up popup is not visible ...', 'Clicking on End Test button to get it",
+                        "stack": "Error: Test failures:\nTime is up popup is not visible ...', 'Clicking on End Test button to get it\n    at Function.checkErrors (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts:45:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:366:14",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts",
+                          "column": 19,
+                          "line": 45
+                        },
+                        "snippet": "   at ../utils/rawValueLogger.ts:45\n\n\u001b[0m \u001b[90m 43 |\u001b[39m     \u001b[36mstatic\u001b[39m checkErrors() {\n \u001b[90m 44 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrors\u001b[33m.\u001b[39mlength \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Test failures:\\n'\u001b[39m \u001b[33m+\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrors\u001b[33m.\u001b[39mjoin(\u001b[32m'\\n'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m         }\n \u001b[90m 47 |\u001b[39m     }\n \u001b[90m 48 |\u001b[39m }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts",
+                            "column": 19,
+                            "line": 45
+                          },
+                          "message": "Error: Test failures:\nTime is up popup is not visible ...', 'Clicking on End Test button to get it\n\n   at ../utils/rawValueLogger.ts:45\n\n  43 |     static checkErrors() {\n  44 |         if (this.errors.length > 0) {\n> 45 |             throw new Error('Test failures:\\n' + this.errors.join('\\n'));\n     |                   ^\n  46 |         }\n  47 |     }\n  48 | }\n    at Function.checkErrors (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts:45:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:366:14"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S14:W1] Login successful for 04PwAut25Ex_01\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verify statuses for test administered at left nav > tests",
+                          "duration": 15743
+                        },
+                        {
+                          "title": "Verify 'Score Later', 'Needs Attention', 'Invalidated' and 'Flagged' in review mode Administration Summary",
+                          "duration": 20197
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when clicked on blue hyperlink",
+                          "duration": 11294
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when selected test from Left Nav>Tests",
+                          "duration": 13673
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from Administration Summary",
+                          "duration": 22330
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from left nav > tests",
+                          "duration": 11224
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from Administration Summary",
+                          "duration": 10002
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from left nav > tests",
+                          "duration": 22220
+                        },
+                        {
+                          "title": "Validate 'Score error (Need Attention)' functionality from Administration Summary",
+                          "duration": 89608
+                        }
+                      ],
+                      "startTime": "2026-07-31T14:50:16.721Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "27994, (29273, 29290)",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "line": 180,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-092d1-t-assignment-in-review-mode-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-092d1-t-assignment-in-review-mode-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/rawValueLogger.ts",
+                        "column": 19,
+                        "line": 45
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2c839c71415aac1f8fd0-836fc9345793af6c3fb1",
+              "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+              "line": 180,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-07-31T14:10:39.050Z",
+    "duration": 2652332.4129999997,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
