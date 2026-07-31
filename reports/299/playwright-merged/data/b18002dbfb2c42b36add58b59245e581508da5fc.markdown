@@ -1,0 +1,430 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/dashboard/testAssignments_C.spec.ts >> Validate Dashboard Test Assignments functionality Part_C
+- Location: src/tests/functional/dashboard/testAssignments_C.spec.ts:13:5
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('//button[text()=\'Start Test\']')
+Expected: visible
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for locator('//button[text()=\'Start Test\']')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - banner [ref=e6]:
+    - button "Show Main Navigation" [ref=e7] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic [ref=e9] [cursor=pointer]: Academic Vocabulary
+      - button "View Test Information" [ref=e10] [cursor=pointer]:
+        - img [ref=e11]
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - 'button "N88001A88357, Nyah Age: 4y Grade: Kindergarten" [ref=e16] [cursor=pointer]':
+          - img [ref=e17]
+          - generic [ref=e20]:
+            - generic [ref=e21]: N88001A88357, Nyah
+            - generic [ref=e22]: "Age: 4y Grade: Kindergarten"
+        - button "Your browser is blocking voice capture" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]:
+        - button "Flag Item" [ref=e25] [cursor=pointer]:
+          - generic [ref=e26]: Flag
+        - button "Open Notes" [ref=e27] [cursor=pointer]:
+          - generic [ref=e28]: Note
+  - main "Examiner Assessment view" [ref=e29]:
+    - navigation "Item navigation" [ref=e30]:
+      - button "Item navigation" [expanded] [ref=e31]:
+        - img [ref=e33]
+      - radiogroup "Test items" [ref=e37]:
+        - generic [ref=e40]: Starting Point
+        - radio "Item 1 Incorrect" [checked] [ref=e43]:
+          - generic [ref=e44]: Item 1
+          - img "Incorrect" [ref=e45]
+        - radio "Item 2 Incorrect" [checked] [ref=e48]:
+          - generic [ref=e49]: Item 2
+          - img "Incorrect" [ref=e50]
+        - radio "Item 3 Incorrect" [checked] [ref=e53]:
+          - generic [ref=e54]: Item 3
+          - img "Incorrect" [ref=e55]
+        - radio "Item 4 Incorrect" [checked] [ref=e58]:
+          - generic [ref=e59]: Item 4
+          - img "Incorrect" [ref=e60]
+        - radio "Item 5 In Progress" [checked] [ref=e63]:
+          - generic [ref=e64]: Item 5
+          - img "In Progress" [ref=e65]
+        - radio "Item 6" [checked] [ref=e70]:
+          - generic [ref=e71]: Item 6
+          - img [ref=e72]
+        - radio "Item 7" [checked] [ref=e75]:
+          - generic [ref=e76]: Item 7
+          - img [ref=e77]
+        - radio "Item 8" [checked] [ref=e80]:
+          - generic [ref=e81]: Item 8
+          - img [ref=e82]
+        - radio "Item 9" [checked] [ref=e85]:
+          - generic [ref=e86]: Item 9
+          - img [ref=e87]
+        - radio "Item 10" [checked] [ref=e90]:
+          - generic [ref=e91]: Item 10
+          - img [ref=e92]
+        - radio "Item 11" [checked] [ref=e95]:
+          - generic [ref=e96]: Item 11
+          - img [ref=e97]
+        - radio "Item 12" [checked] [ref=e100]:
+          - generic [ref=e101]: Item 12
+          - img [ref=e102]
+        - radio "Item 13" [checked] [ref=e105]:
+          - generic [ref=e106]: Item 13
+          - img [ref=e107]
+        - radio "Item 14" [checked] [ref=e110]:
+          - generic [ref=e111]: Item 14
+          - img [ref=e112]
+        - radio "Item 15" [checked] [ref=e115]:
+          - generic [ref=e116]: Item 15
+          - img [ref=e117]
+        - radio "Item 16" [checked] [ref=e120]:
+          - generic [ref=e121]: Item 16
+          - img [ref=e122]
+        - radio "Item 17" [checked] [ref=e125]:
+          - generic [ref=e126]: Item 17
+          - img [ref=e127]
+        - radio "Item 18" [checked] [ref=e130]:
+          - generic [ref=e131]: Item 18
+          - img [ref=e132]
+        - radio "Item 19" [checked] [ref=e135]:
+          - generic [ref=e136]: Item 19
+          - img [ref=e137]
+        - radio "Item 20" [checked] [ref=e140]:
+          - generic [ref=e141]: Item 20
+          - img [ref=e142]
+        - radio "Item 21" [checked] [ref=e145]:
+          - generic [ref=e146]: Item 21
+          - img [ref=e147]
+        - radio "Item 22" [checked] [ref=e150]:
+          - generic [ref=e151]: Item 22
+          - img [ref=e152]
+        - radio "Item 23" [checked] [ref=e155]:
+          - generic [ref=e156]: Item 23
+          - img [ref=e157]
+        - radio "Item 24" [checked] [ref=e160]:
+          - generic [ref=e161]: Item 24
+          - img [ref=e162]
+        - radio "Item 25" [checked] [ref=e165]:
+          - generic [ref=e166]: Item 25
+          - img [ref=e167]
+        - radio "Item 26" [checked] [ref=e170]:
+          - generic [ref=e171]: Item 26
+          - img [ref=e172]
+        - radio "Item 27" [checked] [ref=e175]:
+          - generic [ref=e176]: Item 27
+          - img [ref=e177]
+        - radio "Item 28" [checked] [ref=e180]:
+          - generic [ref=e181]: Item 28
+          - img [ref=e182]
+        - radio "Item 29" [checked] [ref=e185]:
+          - generic [ref=e186]: Item 29
+          - img [ref=e187]
+        - radio "Item 30" [checked] [ref=e190]:
+          - generic [ref=e191]: Item 30
+          - img [ref=e192]
+        - radio "Item 31" [checked] [ref=e195]:
+          - generic [ref=e196]: Item 31
+          - img [ref=e197]
+        - radio "Item 32" [checked] [ref=e200]:
+          - generic [ref=e201]: Item 32
+          - img [ref=e202]
+        - radio "Item 33" [checked] [ref=e205]:
+          - generic [ref=e206]: Item 33
+          - img [ref=e207]
+        - radio "Item 34" [checked] [ref=e210]:
+          - generic [ref=e211]: Item 34
+          - img [ref=e212]
+        - radio "Item 35" [checked] [ref=e215]:
+          - generic [ref=e216]: Item 35
+          - img [ref=e217]
+        - radio "Item 36" [checked] [ref=e220]:
+          - generic [ref=e221]: Item 36
+          - img [ref=e222]
+        - generic [ref=e226]: End of Items
+      - button "Jump to last item" [ref=e228]:
+        - img [ref=e229]
+    - generic [ref=e232]:
+      - heading "Item 5 * What is this? *" [level=1] [ref=e233]:
+        - img [ref=e234]
+        - generic [ref=e239]:
+          - generic [ref=e240]: Item 5
+          - paragraph [ref=e241]:
+            - strong [ref=e243]:
+              - generic "* What is this? *"
+              - text: What is this?
+      - generic [ref=e244]:
+        - img [ref=e245]
+        - radiogroup "Correct responses" [ref=e248]:
+          - radio "mushroom" [ref=e249] [cursor=pointer]
+          - radio "fungus" [ref=e250] [cursor=pointer]
+          - radio "toadstool" [ref=e251] [cursor=pointer]
+      - generic [ref=e252]:
+        - img [ref=e253]
+        - radiogroup "Incorrect responses" [ref=e256]:
+          - radio "Incorrect" [checked] [ref=e257] [cursor=pointer]
+      - generic [ref=e258]:
+        - img [ref=e259]
+        - radiogroup "Query responses" [ref=e262]:
+          - radio "plant" [ref=e263] [cursor=pointer]
+      - generic [ref=e264]:
+        - img [ref=e265]
+        - generic [ref=e270]:
+          - generic [ref=e271]: "Other:"
+          - generic [ref=e272]:
+            - radio "0" [ref=e273] [cursor=pointer]
+            - radio "1" [ref=e274] [cursor=pointer]
+          - 'textbox "Other: Examinee''s response" [disabled] [ref=e275]':
+            - /placeholder: "Optional: Examinee's Response"
+      - generic [ref=e276]:
+        - radio "I Donʼt Know" [ref=e277] [cursor=pointer]
+        - radio "No Response" [ref=e278] [cursor=pointer]
+      - generic [ref=e279]:
+        - generic [ref=e280]:
+          - generic [ref=e281]: "0"
+          - 'generic "itemId: 15546" [ref=e282]': ITEM SCORE
+        - generic [ref=e283]:
+          - text: Basal
+          - img [ref=e286]
+        - generic [ref=e289]:
+          - text: Ceiling
+          - img [ref=e292]
+        - button "End Test" [ref=e296] [cursor=pointer]
+  - region "Examinee View" [ref=e297]:
+    - generic [ref=e299]:
+      - button "Hide examinee content - content is currently displayed" [ref=e300] [cursor=pointer]:
+        - generic [ref=e301]: Hide
+      - button "Activate Tablet Control" [ref=e302] [cursor=pointer]:
+        - generic [ref=e303]: Control
+      - button "Connection Status - Comms Up" [ref=e304] [cursor=pointer]
+      - button "Collapse examinee view" [ref=e305] [cursor=pointer]
+    - img "Examinee art" [ref=e309]
+```
+
+# Test source
+
+```ts
+  6299 |         }
+  6300 |     }
+  6301 | 
+  6302 |   async getActualTestName() {
+  6303 |     return await this.testNameAtAdminOverview.textContent();
+  6304 |   }
+  6305 | 
+  6306 |   async clickOnLetsBeginButtonAndStartTest(testName: string, ssp: string) {
+  6307 |     await this.letsBeginButton.waitFor({
+  6308 |       state: "visible",
+  6309 |       timeout: 5 * 60 * 1000,
+  6310 |     });
+  6311 | 
+  6312 |     let actualTestName = await this.getActualTestName();
+  6313 |     if (actualTestName != testName) {
+  6314 |       await this.page.waitForTimeout(1000);
+  6315 |       await this.mainNavigation.click();
+  6316 |       await this.mainNavigationTests.click();
+  6317 |       const testButton = this.page
+  6318 |         .locator("//div[@class='TestList_mcs_testName']")
+  6319 |         .getByText(testName, { exact: true });
+  6320 |       try {
+  6321 |         await testButton.waitFor({ state: "visible", timeout: 10000 });
+  6322 |         await testButton.click();
+  6323 |       } catch {
+  6324 |         // Test not present in left nav — add it via "+ Add Test", then re-select.
+  6325 |         await this.addPlusTestsButton.click();
+  6326 |         await this.searchTests.fill(testName);
+  6327 |         await this.searchIcon.click();
+  6328 |         await this.page.waitForTimeout(1000);
+  6329 |         await this.selectTests.first().click();
+  6330 |         await this.addTestsButton.click();
+  6331 |         await this.page.waitForTimeout(2000);
+  6332 |         await testButton.waitFor({ state: "visible", timeout: 10000 });
+  6333 |         await testButton.click();
+  6334 |       }
+  6335 |       await this.page.waitForLoadState("domcontentloaded");
+  6336 |       await this.page.waitForTimeout(1000);
+  6337 |     }
+  6338 |     actualTestName = await this.getActualTestName();
+  6339 |     expect(actualTestName, {
+  6340 |       message: "The test name didnt match at Administration Overview page",
+  6341 |     }).toContain(testName);
+  6342 |     console.log(actualTestName);
+  6343 |     await this.letsBeginButton.click();
+  6344 |     await this.page.waitForTimeout(1000);
+  6345 |     if (ssp === "All Examinees") {
+  6346 |       await this.startTestButton.click();
+  6347 |     } else {
+  6348 |       await this.setTheSuggestedStartingPointTo(ssp);
+  6349 |       await this.page.waitForTimeout(1500);
+  6350 |       await this.startTestButton.click();
+  6351 |     }
+  6352 |   }
+  6353 | 
+  6354 |   async clickOnLetsBeginAndResumeInProgressTest(testName: string) {
+  6355 |     if (await this.closeNavigationButton.isVisible()) {
+  6356 |       await this.closeNavigationButton.click();
+  6357 |     }
+  6358 | 
+  6359 |     await this.letsBeginButton.waitFor({
+  6360 |       state: "visible",
+  6361 |       timeout: 5 * 60 * 1000,
+  6362 |     });
+  6363 | 
+  6364 |     let actualTestName = await this.getActualTestName();
+  6365 |     if (actualTestName != testName) {
+  6366 |       await this.page.waitForTimeout(1000);
+  6367 |       await this.mainNavigation.click();
+  6368 |       await this.mainNavigationTests.click();
+  6369 |       const testButton = this.page
+  6370 |         .locator("//div[@class='TestList_mcs_testName']")
+  6371 |         .getByText(testName, { exact: true });
+  6372 |       await testButton.waitFor({ state: "visible", timeout: 10000 });
+  6373 |       await testButton.click();
+  6374 |       await this.page.waitForLoadState("domcontentloaded");
+  6375 |       await this.page.waitForTimeout(1000);
+  6376 |     }
+  6377 |     actualTestName = await this.getActualTestName();
+  6378 |     expect(actualTestName, {
+  6379 |       message: "The test name didn't match at Administration Overview page",
+  6380 |     }).toContain(testName);
+  6381 | 
+  6382 |     await this.letsBeginButton.click();
+  6383 |     await this.page.waitForLoadState();
+  6384 |     await this.page.waitForTimeout(1000);
+  6385 |     await this.nextItemButton.click();
+  6386 |     await this.page.waitForTimeout(1000);
+  6387 |   }
+  6388 | 
+  6389 |   async endTestAndEnterReviewMode() {
+  6390 |     await this.plainNextButtonOrEndButton.last().click();
+  6391 |     await this.endSessionButton.waitFor({ state: "visible", timeout: 60000 });
+  6392 |     await this.endSessionButton.click();
+  6393 |     await this.reviewFromConfirmButton.waitFor({ state: "visible", timeout: 60000 });
+  6394 |     await this.reviewFromConfirmButton.click();
+  6395 |     await this.dashboardPage.waitForLoadingSpinnerToDisappear();
+  6396 |   }
+  6397 | 
+  6398 |   async setTheSuggestedStartingPointTo(sspOption: string) {
+> 6399 |     await expect(this.startTestButton).toBeVisible({ timeout: 10000 });
+       |                                        ^ Error: expect(locator).toBeVisible() failed
+  6400 |     await this.page.waitForTimeout(5000);
+  6401 |     if (this.loading.isVisible())
+  6402 |       await this.loading.waitFor({ state: "hidden", timeout: 3 * 60 * 1000 });
+  6403 |     await this.sspDropDown.selectOption({ label: sspOption }, { timeout: 60000 });
+  6404 |     await this.page.waitForTimeout(2000);
+  6405 | 
+  6406 |     try {
+  6407 |       const selectedSsp = await this.page.$eval(
+  6408 |         ".starting-point-dropdown",
+  6409 |         (ele) => (ele as HTMLSelectElement).value
+  6410 |       );
+  6411 |       console.log(`selected ssp is = ${selectedSsp}`);
+  6412 | 
+  6413 |       expect(selectedSsp).toContain(sspOption);
+  6414 |     } catch (error) {
+  6415 |       await this.sspDropDown.selectOption({ label: sspOption });
+  6416 |       console.error(
+  6417 |         `the ssp drop down didnt select the one we want at first attempt so trying one more time ... ${error}`
+  6418 |       );
+  6419 |     }
+  6420 |   }
+  6421 | 
+  6422 |   async selectTheCheckbox(radioButton: number, info?: string) {
+  6423 |     await this.multiRadioButtons.nth(radioButton).click();
+  6424 |   }
+  6425 | 
+  6426 |   async selectTheDropdownOption(
+  6427 |     dropDown: number,
+  6428 |     dropDownOpt: string,
+  6429 |     info?: string
+  6430 |   ) {
+  6431 |     await this.dropDowns.nth(dropDown).click();
+  6432 |     await this.page.waitForTimeout(650);
+  6433 |     // await this.dropDowns.locator(this.dropDownOption).nth(dropDownOption).click();
+  6434 |     await this.dropDowns
+  6435 |       .locator("//following-sibling::ul/li//*[text()='" + dropDownOpt + "']")
+  6436 |       .click();
+  6437 |   }
+  6438 | 
+  6439 |   async validateEndTestPopUpTextContent(
+  6440 |     AE: string,
+  6441 |     GE: string,
+  6442 |     ScoreCheckText: string,
+  6443 |     FlagsText: string,
+  6444 |     OutcomeMsg: string,
+  6445 |     rsb: string[],
+  6446 |     testStemForm: string,
+  6447 |     typeOfTest: string
+  6448 |   ) {
+  6449 |     const testNames: string[] = ["WRTSMP.W5PA", "SWRTAC.W5PA"];
+  6450 |     const testNames1: string[] = ["SWRTFL.W5PA", "MTHFLU.W5PA", "LWRTFL.W5PA","LWRTFL.W5PX",];
+  6451 |     const testNames2: string[] = [
+  6452 |       "RPDPHO.W5PA",
+  6453 |       "LETPAT.W5PA",
+  6454 |       "RPDLET.W5PA",
+  6455 |       "RPDPIC.W5PA",
+  6456 |       "NUMPAT.W5PA",
+  6457 |       "SRDGFL.W5PA",
+  6458 |       "NUMPAT.W5PX",
+  6459 |       "MAGCMP.W5PA",
+  6460 |       "WRDGFL.W5PA",
+  6461 |       "MAGCMP.W5PX",
+  6462 |       "RPDPHO.W5PX",
+  6463 |       "RPDQNT.W5PA",
+  6464 |       "RPDNUM.W5PA",
+  6465 |       "RPDNUM.W5PX",
+  6466 |       "RPDQNT.W5PX",
+  6467 |       "RPDPIC.W5PX",
+  6468 |       "RPDLET.W5PX",
+  6469 |       "LETPAT.W5PX",
+  6470 |       "RPDPHO.W5PX",
+  6471 |       "SYMBIN.W5PA",
+  6472 |       "SRDGFL.W5PB",
+  6473 |       "WRDGFL.W5PB",
+  6474 |     ];
+  6475 |     await expect.soft(this.aeValue).toHaveText(AE);
+  6476 |     await expect.soft(this.geValue).toHaveText(GE);
+  6477 |     expect
+  6478 |       .soft(await this.endTestPopUpElements.nth(1).textContent())
+  6479 |       .toContain(ScoreCheckText);
+  6480 |     if (
+  6481 |       testNames.includes(testStemForm) &&
+  6482 |       !typeOfTest.match(/Block A Discontinue Scenario WRTSMP|Sample Items End Test Scenario/i)
+  6483 |     ) {
+  6484 |       expect
+  6485 |         .soft(await this.endTestPopUpElements.nth(10).textContent())
+  6486 |         .toContain(FlagsText);
+  6487 |       expect
+  6488 |         .soft(await this.endTestPopUpElements.nth(15).textContent())
+  6489 |         .toContain(OutcomeMsg);
+  6490 |       await this.endTestPopUpElements.nth(17).click();
+  6491 |     } else if (testNames2.includes(testStemForm)) {
+  6492 |       expect
+  6493 |         .soft(await this.endTestPopUpElements.nth(9).textContent())
+  6494 |         .toContain(FlagsText);
+  6495 |       expect
+  6496 |         .soft(await this.endTestPopUpElements.nth(14).textContent())
+  6497 |         .toContain(OutcomeMsg);
+  6498 |       await this.endTestPopUpElements.nth(18).click();
+  6499 |     } else if (
+```
