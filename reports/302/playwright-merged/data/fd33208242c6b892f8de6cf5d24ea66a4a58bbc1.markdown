@@ -1,0 +1,271 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts >> AC2 Happy path - Subtest user (add-on window, >4 months remaining) redeems Subtest Medium code - subtests added to existing pool
+- Location: src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:22:5
+
+# Error details
+
+```
+Error: Invalid activation code: 'h9khVlrAZBErjbkXfMH7IA%3d%3d'. Not recoverable — check the code in the scenarios file.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main "Clinical Login" [ref=e4]:
+    - generic [ref=e6]:
+      - img "Riverside Score Logo" [ref=e7]
+      - text: Subscription Activation
+      - generic [ref=e8]: Invalid activation code
+  - contentinfo [ref=e9]:
+    - generic [ref=e10]: Footer region,
+    - link "w w w dot riverside insights dot com" [ref=e11] [cursor=pointer]:
+      - /url: https://www.riversideinsights.com/
+      - img "Riverside Insights Website" [ref=e12]
+    - generic [ref=e13]:
+      - link "Riverside Insights Facebook" [ref=e14] [cursor=pointer]:
+        - /url: https://www.facebook.com/RiversideInsights/
+        - img "Riverside Insights Facebook" [ref=e15]
+      - link "Riverside Insights Twitter" [ref=e16] [cursor=pointer]:
+        - /url: https://twitter.com/1BillionLives
+        - img "Riverside Insights Twitter" [ref=e17]
+      - link "Riverside Insights LinkedIn" [ref=e18] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/riverside-insights/
+        - img "Riverside Insights LinkedIn" [ref=e19]
+      - link "Riverside Insights Instagram" [ref=e20] [cursor=pointer]:
+        - /url: https://www.instagram.com/riversideinsightsassessments/
+        - img "Riverside Insights Instagram" [ref=e21]
+    - generic [ref=e22]:
+      - img "WJ IV Mobile Data Solution" [ref=e23]
+      - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e24] [cursor=pointer]
+      - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e25] [cursor=pointer]
+    - generic [ref=e26]:
+      - img "Bdi 3 Mobile Data Solution" [ref=e27]
+      - generic [ref=e28]:
+        - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e29] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from Google Play" [ref=e30] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from App Store" [ref=e31] [cursor=pointer]
+    - generic [ref=e32]:
+      - button "Leave Feedback" [ref=e33] [cursor=pointer]
+      - generic [ref=e34]: "|"
+      - link "Terms of Use" [ref=e35] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - generic [ref=e36]: "|"
+      - link "Privacy Policy" [ref=e37] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+    - generic [ref=e38]: Footer region end
+```
+
+# Test source
+
+```ts
+  43  | function mmddyyyyToIsoPrefix(mmddyyyy: string): string {
+  44  |   const [m, d, y] = mmddyyyy.split('/');
+  45  |   return `${y}-${m}-${d}`;
+  46  | }
+  47  | 
+  48  | export function addDaysToServerTodayMMDDYYYY(days: number): string {
+  49  |   const todayStr = getServerTodayMMDDYYYY();
+  50  |   const [m, d, y] = todayStr.split('/').map(Number);
+  51  |   return formatMMDDYYYY(new Date(y, m - 1, d + days));
+  52  | }
+  53  | 
+  54  | export function expectedEndForStart(startMMDDYYYY: string): string {
+  55  |   const [m, d, y] = startMMDDYYYY.split('/').map(Number);
+  56  |   return formatMMDDYYYY(new Date(y + 1, m - 1, d - 1));
+  57  | }
+  58  | 
+  59  | export function isoToMMDDYYYY(iso: string): string {
+  60  |   const [datePart] = iso.split('T');
+  61  |   const [y, m, d] = datePart.split('-');
+  62  |   return `${m}/${d}/${y}`;
+  63  | }
+  64  | 
+  65  | export function addDaysToDateMMDDYYYY(baseMMDDYYYY: string, days: number): string {
+  66  |   const [m, d, y] = baseMMDDYYYY.split('/').map(Number);
+  67  |   return formatMMDDYYYY(new Date(y, m - 1, d + days));
+  68  | }
+  69  | 
+  70  | export function earlierMMDDYYYY(a: string, b: string): string {
+  71  |   const toDate = (s: string) => {
+  72  |     const [m, d, y] = s.split('/').map(Number);
+  73  |     return new Date(y, m - 1, d);
+  74  |   };
+  75  |   return toDate(a).getTime() <= toDate(b).getTime() ? a : b;
+  76  | }
+  77  | 
+  78  | function buildUsername(): string {
+  79  |   const now = new Date();
+  80  |   const dd = String(now.getDate()).padStart(2, '0');
+  81  |   const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  82  |   const mmm = months[now.getMonth()];
+  83  |   const yy = String(now.getFullYear()).slice(-2);
+  84  |   const HH = String(now.getHours()).padStart(2, '0');
+  85  |   const mm = String(now.getMinutes()).padStart(2, '0');
+  86  |   const ss = String(now.getSeconds()).padStart(2, '0');
+  87  |   return `SubAut${dd}${mmm}${yy}${HH}${mm}${ss}`;
+  88  | }
+  89  | 
+  90  | export function generateSubscriptionActivationFormData(): SubscriptionActivationFormData {
+  91  |   const username = buildUsername();
+  92  |   return {
+  93  |     username,
+  94  |     firstName: faker.person.firstName(),
+  95  |     lastName: username,
+  96  |     customerId: username,
+  97  |     email: `sunil.adeptpros+${username}@gmail.com`,
+  98  |     phone: faker.phone.number(),
+  99  |     password: 'SubAut@100',
+  100 |     locationName: `Location_${username}`,
+  101 |     addressLine1: faker.location.streetAddress(),
+  102 |     addressLine2: faker.location.secondaryAddress(),
+  103 |     city: faker.location.city(),
+  104 |     state: 'California',
+  105 |     zipCode: faker.location.zipCode({ format: '#####' }),
+  106 |   };
+  107 | }
+  108 | 
+  109 | export default class SubscriptionActivationPage extends Locators {
+  110 |   constructor(public page: Page) {
+  111 |     super(page);
+  112 |   }
+  113 | 
+  114 |   async gotoActivationUrl(activationCode: string) {
+  115 |     await this.page.goto(`${getSiteUrl()}?ActivationCode=${activationCode}`);
+  116 |   }
+  117 | 
+  118 |   async verifyLandingPageVisible() {
+  119 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  120 |     await expect(this.iNeedToCreateALoginSpan).toBeVisible();
+  121 |   }
+  122 | 
+  123 |   async landOnActivationPage(scenario: ActivationCode, maxRetries = 1) {
+  124 |     for (let attempt = 0; attempt <= maxRetries; attempt++) {
+  125 |       await this.gotoActivationUrl(scenario.activationCode);
+  126 |       await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  127 | 
+  128 |       const customerNameText = (await this.activationCustomerNameText.isVisible())
+  129 |         ? ((await this.activationCustomerNameText.textContent()) ?? '').trim()
+  130 |         : '';
+  131 | 
+  132 |       const isAlreadyActivated = customerNameText.includes('Activation code is already activated');
+  133 |       const isSoNumberUsed = customerNameText.includes('Subscription order number is already used');
+  134 |       const isInvalidCode = customerNameText.includes('Invalid activation code');
+  135 | 
+  136 |       if (!isAlreadyActivated && !isSoNumberUsed && !isInvalidCode) {
+  137 |         await expect(this.iNeedToCreateALoginSpan).toBeVisible();
+  138 |         await expect(this.activationSubscriptionTypeText).toContainText(scenario.subscriptionType);
+  139 |         return;
+  140 |       }
+  141 | 
+  142 |       if (isInvalidCode) {
+> 143 |         throw new Error(
+      |               ^ Error: Invalid activation code: 'h9khVlrAZBErjbkXfMH7IA%3d%3d'. Not recoverable — check the code in the scenarios file.
+  144 |           `Invalid activation code: '${scenario.activationCode}'. Not recoverable — check the code in the scenarios file.`
+  145 |         );
+  146 |       }
+  147 | 
+  148 |       if (attempt >= maxRetries) {
+  149 |         throw new Error(
+  150 |           `Activation landing still showing "${customerNameText}" after ${maxRetries} recovery attempt(s).`
+  151 |         );
+  152 |       }
+  153 | 
+  154 |       RawValueLogger.log('Activation landing - recovering from error', {
+  155 |         attempt: attempt + 1,
+  156 |         errorText: customerNameText,
+  157 |         activationCode: scenario.activationCode,
+  158 |         salesOrderNumber: scenario.salesOrderNumber,
+  159 |       });
+  160 |       console.log(
+  161 |         `[ACTIVATION-RECOVERY] attempt ${attempt + 1} - "${customerNameText}" - code=${scenario.activationCode} SO=${
+  162 |           scenario.salesOrderNumber
+  163 |         }`
+  164 |       );
+  165 | 
+  166 |       const subApi = new subscriptionApi(this.page);
+  167 | 
+  168 |       if (isAlreadyActivated) {
+  169 |         await subApi.resetActivationCode(scenario.activationCode);
+  170 |         await subApi.updateSalesOrder(scenario.salesOrderNumber);
+  171 |         continue;
+  172 |       }
+  173 | 
+  174 |       if (isSoNumberUsed) {
+  175 |         await subApi.updateSalesOrder(scenario.salesOrderNumber);
+  176 |         continue;
+  177 |       }
+  178 |     }
+  179 |   }
+  180 | 
+  181 |   async verifyFinalSubmitTestAssignmentIsDisabled() {
+  182 |     await this.submitTestAssignmentButton.click();
+  183 |     await this.reviewNotesTab.click();
+  184 |     await expect.soft(this.submitTestAssignmentFinalButton).toBeDisabled();
+  185 |   }
+  186 | 
+  187 |   async signOutFromHeader() {
+  188 |     await this.signOutButton.click();
+  189 |   }
+  190 | 
+  191 |   async signInAs(username: string, password: string) {
+  192 |     await this.userName.fill(username);
+  193 |     await this.passWord.fill(password);
+  194 |     await this.signInButton.click();
+  195 |   }
+  196 | 
+  197 |   async verifyAHRetainedWithWJVOnLandingPage(formData: SubscriptionActivationFormData) {
+  198 |     await expect.soft(this.productDisplayCardWJV).toBeVisible();
+  199 |     await expect.soft(this.userNameDisplayHeader).toHaveText(`${formData.firstName} ${formData.lastName}`);
+  200 |   }
+  201 | 
+  202 |   async verifyActivationCodeAlreadyUsedError(activationCode: string) {
+  203 |     await this.gotoActivationUrl(activationCode);
+  204 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  205 |     await expect.soft(this.activationCustomerNameText).toContainText('Activation code is already activated');
+  206 |   }
+  207 | 
+  208 |   async verifyInvalidActivationCodeError(malformedCode: string) {
+  209 |     await this.gotoActivationUrl(malformedCode);
+  210 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  211 |     await expect.soft(this.activationCustomerNameText).toContainText('Invalid activation code');
+  212 |   }
+  213 | 
+  214 |   async fillContactWithInvalidEmailAndPhone(
+  215 |     data: SubscriptionActivationFormData,
+  216 |     invalidEmail: string,
+  217 |     invalidPhone: string
+  218 |   ) {
+  219 |     await this.contactFirstNameInput.pressSequentially(data.firstName, { delay: 50 });
+  220 |     await this.contactLastNameInput.pressSequentially(data.lastName, { delay: 50 });
+  221 |     await this.contactEmailInput.pressSequentially(invalidEmail, { delay: 50 });
+  222 |     await this.contactEmailInput.press('Tab');
+  223 |     await this.contactPhoneInput.pressSequentially(invalidPhone, { delay: 50 });
+  224 |     await this.contactPhoneInput.press('Tab');
+  225 |   }
+  226 | 
+  227 |   async assertContactInvalidEmailErrorVisible() {
+  228 |     await expect.soft(this.contactInvalidEmailError).toBeVisible();
+  229 |   }
+  230 | 
+  231 |   async assertContactInvalidPhoneErrorVisible() {
+  232 |     await expect.soft(this.contactInvalidPhoneError).toBeVisible();
+  233 |   }
+  234 | 
+  235 |   async correctContactEmailAndPhone(validEmail: string, validPhone: string) {
+  236 |     await this.contactEmailInput.click();
+  237 |     await this.contactEmailInput.press('Control+A');
+  238 |     await this.contactEmailInput.press('Delete');
+  239 |     await this.contactEmailInput.pressSequentially(validEmail, { delay: 50 });
+  240 |     await this.contactEmailInput.press('Tab');
+  241 | 
+  242 |     await this.contactPhoneInput.click();
+  243 |     await this.contactPhoneInput.press('Control+A');
+```

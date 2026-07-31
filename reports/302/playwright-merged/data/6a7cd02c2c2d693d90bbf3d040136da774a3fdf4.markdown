@@ -1,0 +1,521 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: derived_scores(compounds & clusters)/GR_cluster_pub.spec.ts >>  GR cluster Derived Export Automation  >> For SEMRET - Age - All correct scenario,PHNRET - Age - All correct scenario Complete The GR cluster & generate report
+- Location: src/tests/derived_scores(compounds & clusters)/GR_cluster_pub.spec.ts:26:9
+
+# Error details
+
+```
+TimeoutError: locator.textContent: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('.introduction b.semibold, b').first()
+
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: S04PwAut25AH ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| WJ V Settings"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+        - generic [ref=e34]:
+          - switch [ref=e35] [cursor=pointer]: "OFF"
+          - generic [ref=e36]: Offline Mode
+      - main [ref=e37]:
+        - generic [ref=e38]:
+          - heading [level=1] [ref=e39]: REPORT CENTER
+          - navigation [ref=e40]:
+            - tablist [ref=e41]:
+              - tab [selected] [ref=e42] [cursor=pointer]: Report Library
+              - button [ref=e43] [cursor=pointer]:
+                - img [ref=e44]
+          - generic [ref=e53]:
+            - grid [ref=e54]:
+              - generic [ref=e55]:
+                - generic [ref=e58]: Report Name
+                - generic [ref=e61]: Status
+                - generic [ref=e64]: Date Created
+                - generic [ref=e67]: Actions
+              - rowgroup [ref=e68]:
+                - row [ref=e69]:
+                  - gridcell [ref=e71]: Derived_Score_AutoFilter_Template_N68581A31631
+                  - gridcell [ref=e73]: Completed
+                  - gridcell [ref=e75]: 07/31/2026 02:24 PM
+                  - generic [ref=e76]:
+                    - gridcell [ref=e78] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e80] [cursor=pointer]: Delete
+                    - img [ref=e81] [cursor=pointer]
+                - row [ref=e83]:
+                  - gridcell [ref=e85]: Derived_Score_AutoFilter_Template_N45203A2990
+                  - gridcell [ref=e87]: Completed
+                  - gridcell [ref=e89]: 07/31/2026 02:19 PM
+                  - generic [ref=e90]:
+                    - gridcell [ref=e92] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e94] [cursor=pointer]: Delete
+                    - img [ref=e95] [cursor=pointer]
+                - row [ref=e97]:
+                  - gridcell [ref=e99]: Derived_Score_AutoFilter_Template_N66298A63527
+                  - gridcell [ref=e101]: Completed
+                  - gridcell [ref=e103]: 07/31/2026 02:14 PM
+                  - generic [ref=e104]:
+                    - gridcell [ref=e106] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e108] [cursor=pointer]: Delete
+                    - img [ref=e109] [cursor=pointer]
+                - row [ref=e111]:
+                  - gridcell [ref=e113]: Derived_Score_AutoFilter_Template_N77704A29956
+                  - gridcell [ref=e115]: Completed
+                  - gridcell [ref=e117]: 07/31/2026 01:58 PM
+                  - generic [ref=e118]:
+                    - gridcell [ref=e120] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e122] [cursor=pointer]: Delete
+                    - img [ref=e123] [cursor=pointer]
+                - row [ref=e125]:
+                  - gridcell [ref=e127]: Derived_Score_AutoFilter_Template_N59021A18475
+                  - gridcell [ref=e129]: Completed
+                  - gridcell [ref=e131]: 07/31/2026 01:46 PM
+                  - generic [ref=e132]:
+                    - gridcell [ref=e134] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e136] [cursor=pointer]: Delete
+                    - img [ref=e137] [cursor=pointer]
+                - row [ref=e139]:
+                  - gridcell [ref=e141]: Derived_Score_AutoFilter_Template_N78270A13491
+                  - gridcell [ref=e143]: Completed
+                  - gridcell [ref=e145]: 07/31/2026 01:35 PM
+                  - generic [ref=e146]:
+                    - gridcell [ref=e148] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e150] [cursor=pointer]: Delete
+                    - img [ref=e151] [cursor=pointer]
+                - row [ref=e153]:
+                  - gridcell [ref=e155]: Derived_Score_AutoFilter_Template_N30738A52930
+                  - gridcell [ref=e157]: Completed
+                  - gridcell [ref=e159]: 07/31/2026 12:44 PM
+                  - generic [ref=e160]:
+                    - gridcell [ref=e162] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e164] [cursor=pointer]: Delete
+                    - img [ref=e165] [cursor=pointer]
+                - row [ref=e167]:
+                  - gridcell [ref=e169]: Derived_Score_AutoFilter_Template_N41404A77847
+                  - gridcell [ref=e171]: Completed
+                  - gridcell [ref=e173]: 07/31/2026 12:34 PM
+                  - generic [ref=e174]:
+                    - gridcell [ref=e176] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e178] [cursor=pointer]: Delete
+                    - img [ref=e179] [cursor=pointer]
+                - row [ref=e181]:
+                  - gridcell [ref=e183]: Derived_Score_AutoFilter_Template_N2894A64055
+                  - gridcell [ref=e185]: Completed
+                  - gridcell [ref=e187]: 07/31/2026 12:25 PM
+                  - generic [ref=e188]:
+                    - gridcell [ref=e190] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e192] [cursor=pointer]: Delete
+                    - img [ref=e193] [cursor=pointer]
+                - row [ref=e195]:
+                  - gridcell [ref=e197]: Derived_Score_AutoFilter_Template_N94976A62573
+                  - gridcell [ref=e199]: Completed
+                  - gridcell [ref=e201]: 07/31/2026 12:08 PM
+                  - generic [ref=e202]:
+                    - gridcell [ref=e204] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e206] [cursor=pointer]: Delete
+                    - img [ref=e207] [cursor=pointer]
+                - row [ref=e209]:
+                  - gridcell [ref=e211]: Derived_Score_AutoFilter_Template_N75953A74570
+                  - gridcell [ref=e213]: Completed
+                  - gridcell [ref=e215]: 07/31/2026 08:52 AM
+                  - generic [ref=e216]:
+                    - gridcell [ref=e218] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e220] [cursor=pointer]: Delete
+                    - img [ref=e221] [cursor=pointer]
+                - row [ref=e223]:
+                  - gridcell [ref=e225]: Derived_Score_AutoFilter_Template_N25286A70984
+                  - gridcell [ref=e227]: Completed
+                  - gridcell [ref=e229]: 07/31/2026 08:40 AM
+                  - generic [ref=e230]:
+                    - gridcell [ref=e232] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e234] [cursor=pointer]: Delete
+                    - img [ref=e235] [cursor=pointer]
+                - row [ref=e237]:
+                  - gridcell [ref=e239]: Derived_Score_AutoFilter_Template_N25286A70984
+                  - gridcell [ref=e241]: Completed
+                  - gridcell [ref=e243]: 07/31/2026 08:37 AM
+                  - generic [ref=e244]:
+                    - gridcell [ref=e246] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e248] [cursor=pointer]: Delete
+                    - img [ref=e249] [cursor=pointer]
+                - row [ref=e251]:
+                  - gridcell [ref=e253]: Derived_Score_AutoFilter_Template_N25286A70984
+                  - gridcell [ref=e255]: Completed
+                  - gridcell [ref=e257]: 07/31/2026 08:35 AM
+                  - generic [ref=e258]:
+                    - gridcell [ref=e260] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e262] [cursor=pointer]: Delete
+                    - img [ref=e263] [cursor=pointer]
+                - row [ref=e265]:
+                  - gridcell [ref=e267]: Derived_Score_AutoFilter_Template_N77292A42694
+                  - gridcell [ref=e269]: Completed
+                  - gridcell [ref=e271]: 07/31/2026 08:17 AM
+                  - generic [ref=e272]:
+                    - gridcell [ref=e274] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e276] [cursor=pointer]: Delete
+                    - img [ref=e277] [cursor=pointer]
+                - row [ref=e279]:
+                  - gridcell [ref=e281]: Derived_Score_AutoFilter_Template_N77292A42694
+                  - gridcell [ref=e283]: Completed
+                  - gridcell [ref=e285]: 07/31/2026 08:15 AM
+                  - generic [ref=e286]:
+                    - gridcell [ref=e288] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e290] [cursor=pointer]: Delete
+                    - img [ref=e291] [cursor=pointer]
+                - row [ref=e293]:
+                  - gridcell [ref=e295]: Derived_Score_AutoFilter_Template_N77292A42694
+                  - gridcell [ref=e297]: Completed
+                  - gridcell [ref=e299]: 07/31/2026 08:12 AM
+                  - generic [ref=e300]:
+                    - gridcell [ref=e302] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e304] [cursor=pointer]: Delete
+                    - img [ref=e305] [cursor=pointer]
+                - row [ref=e307]:
+                  - gridcell [ref=e309]: Derived_Score_AutoFilter_Template_N81877A81126
+                  - gridcell [ref=e311]: Completed
+                  - gridcell [ref=e313]: 07/31/2026 06:27 AM
+                  - generic [ref=e314]:
+                    - gridcell [ref=e316] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e318] [cursor=pointer]: Delete
+                    - img [ref=e319] [cursor=pointer]
+                - row [ref=e321]:
+                  - gridcell [ref=e323]: Derived_Score_AutoFilter_Template_N87898A36947
+                  - gridcell [ref=e325]: Completed
+                  - gridcell [ref=e327]: 07/31/2026 06:16 AM
+                  - generic [ref=e328]:
+                    - gridcell [ref=e330] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e332] [cursor=pointer]: Delete
+                    - img [ref=e333] [cursor=pointer]
+                - row [ref=e335]:
+                  - gridcell [ref=e337]: Derived_Score_AutoFilter_Template_N13309A64141
+                  - gridcell [ref=e339]: Completed
+                  - gridcell [ref=e341]: 07/31/2026 06:05 AM
+                  - generic [ref=e342]:
+                    - gridcell [ref=e344] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e346] [cursor=pointer]: Delete
+                    - img [ref=e347] [cursor=pointer]
+                - row [ref=e349]:
+                  - gridcell [ref=e351]: Derived_Score_AutoFilter_Template_N58960A60172
+                  - gridcell [ref=e353]: Completed
+                  - gridcell [ref=e355]: 07/31/2026 05:54 AM
+                  - generic [ref=e356]:
+                    - gridcell [ref=e358] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e360] [cursor=pointer]: Delete
+                    - img [ref=e361] [cursor=pointer]
+                - row [ref=e363]:
+                  - gridcell [ref=e365]: Derived_Score_AutoFilter_Template_N47911A58028
+                  - gridcell [ref=e367]: Completed
+                  - gridcell [ref=e369]: 07/31/2026 05:43 AM
+                  - generic [ref=e370]:
+                    - gridcell [ref=e372] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e374] [cursor=pointer]: Delete
+                    - img [ref=e375] [cursor=pointer]
+                - row [ref=e377]:
+                  - gridcell [ref=e379]: Derived_Score_AutoFilter_Template_N20334A68389
+                  - gridcell [ref=e381]: Completed
+                  - gridcell [ref=e383]: 07/31/2026 05:36 AM
+                  - generic [ref=e384]:
+                    - gridcell [ref=e386] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e388] [cursor=pointer]: Delete
+                    - img [ref=e389] [cursor=pointer]
+                - row [ref=e391]:
+                  - gridcell [ref=e393]: Derived_Score_AutoFilter_Template_N69972A88073
+                  - gridcell [ref=e395]: Completed
+                  - gridcell [ref=e397]: 07/31/2026 05:30 AM
+                  - generic [ref=e398]:
+                    - gridcell [ref=e400] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e402] [cursor=pointer]: Delete
+                    - img [ref=e403] [cursor=pointer]
+                - row [ref=e405]:
+                  - gridcell [ref=e407]: Derived_Score_AutoFilter_Template_N74276A21132
+                  - gridcell [ref=e409]: Completed
+                  - gridcell [ref=e411]: 07/31/2026 05:23 AM
+                  - generic [ref=e412]:
+                    - gridcell [ref=e414] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e416] [cursor=pointer]: Delete
+                    - img [ref=e417] [cursor=pointer]
+            - navigation [ref=e419]:
+              - button [disabled] [ref=e420]: <<
+              - button [disabled] [ref=e421]: <
+              - button [ref=e422] [cursor=pointer]: "1"
+              - button [ref=e423] [cursor=pointer]: "2"
+              - button [ref=e424] [cursor=pointer]: "3"
+              - button [ref=e425] [cursor=pointer]: "4"
+              - button [ref=e426] [cursor=pointer]: ">"
+              - button [ref=e427] [cursor=pointer]: ">>"
+    - contentinfo [ref=e428]:
+      - generic [ref=e429]: Footer region,
+      - link [ref=e430] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img [ref=e431]
+      - generic [ref=e432]:
+        - link [ref=e433] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e434]
+        - link [ref=e435] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e436]
+        - link [ref=e437] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e438]
+        - link [ref=e439] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e440]
+      - generic [ref=e441]:
+        - button [ref=e442] [cursor=pointer]: Leave Feedback
+        - generic [ref=e443]: "|"
+        - link [ref=e444] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e445]: "|"
+        - link [ref=e446] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e447]: Footer region end
+  - alertdialog [active] [ref=e449]:
+    - main "Expiration warning" [ref=e450]:
+      - generic [ref=e451]: Session Expiring
+      - generic [ref=e452]: Session will expire in 5 minutes, press continue to extend time.
+    - navigation [ref=e453]:
+      - button "Continue" [ref=e454] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  903  |       .getByText("Yes")
+  904  |       .click();
+  905  |     await this.page.waitForLoadState();
+  906  |   }
+  907  | 
+  908  |   async completeTheTakenTestForDerivedScores(
+  909  |     typeOfTest: string,
+  910  |     stemForm: string,
+  911  |     BbyC: number,
+  912  |     flag: string,
+  913  |   ): Promise<Map<string, string>> {
+  914  |     let correctCount: number = 1;
+  915  |     let inCorrectCount: number = 1;
+  916  |     let timerTest = false;
+  917  |     let patternTestCorrectResponses;
+  918  |     let tapFluency = false;
+  919  | 
+  920  |     if (stemForm.includes("MATRCZ.W5PA")) {
+  921  |       this.scoreMap.clear();
+  922  |       this.scoreMap =
+  923  |         await this.utils.getRowDataOfSpecifiedColumnFromSchemaFiles(
+  924  |           "MATRCZ.W5PA_TestSchema.xlsx",
+  925  |           "/Heading/",
+  926  |         );
+  927  |     } else if (stemForm.includes("SEGMNT.W5PA")) {
+  928  |       this.scoreMap.clear();
+  929  |       this.scoreMap =
+  930  |         await this.utils.getRowDataOfSpecifiedColumnFromSchemaFiles(
+  931  |           "SEGMNT.W5PA_TestSchema.xlsx",
+  932  |           "Heading",
+  933  |         );
+  934  |     } else if (/^(NUMPAT|LETPAT)\.W5PA$/.test(stemForm)) {
+  935  |       const matchedPattern = stemForm;
+  936  |       const patternConfig: Record<string, { schemaFile: string }> = {
+  937  |         "NUMPAT.W5PA": { schemaFile: "NUMPAT.W5PA_TestSchema.xlsx" },
+  938  |         "LETPAT.W5PA": { schemaFile: "LETPAT.W5PA_TestSchema.xlsx" },
+  939  |       };
+  940  | 
+  941  |       if (!matchedPattern || !patternConfig[matchedPattern]) {
+  942  |         throw new Error(`No configuration found for the stemForm: ${stemForm}`);
+  943  |       }
+  944  | 
+  945  |       const { schemaFile } = patternConfig[matchedPattern];
+  946  | 
+  947  |       this.scoreMap.clear();
+  948  | 
+  949  |       this.scoreMap =
+  950  |         await this.utils.getRowDataOfSpecifiedColumnFromSchemaFiles(
+  951  |           schemaFile,
+  952  |           "Heading",
+  953  |         );
+  954  | 
+  955  |       patternTestCorrectResponses =
+  956  |         await this.utils.readCorrectValuesFromPatternTest(
+  957  |           matchedPattern,
+  958  |           "Heading",
+  959  |           "TabStim Resps",
+  960  |         );
+  961  |     } else if (stemForm.includes("MAGCMP.W5PA")) {
+  962  |       this.scoreMap.clear();
+  963  |       this.scoreMap =
+  964  |         await this.utils.getRowDataOfSpecifiedColumnFromSchemaFiles(
+  965  |           "MAGCMP.W5PA_TestSchema.xlsx",
+  966  |           "Heading",
+  967  |         );
+  968  |       patternTestCorrectResponses =
+  969  |         await this.utils.readCorrectValuesFromPatternTest(
+  970  |           "MAGCMP.W5PA",
+  971  |           "Heading",
+  972  |           "CorrectResponse",
+  973  |         );
+  974  |     } else if (stemForm.includes("MTHFLU.W5PA")) {
+  975  |       // compared to other fluency tests, MTHFLU.W5PA is total diff, it has to be handled diff
+  976  | 
+  977  |       this.scoreMap.clear();
+  978  | 
+  979  |       this.scoreMap.set("Practice Exercise", "");
+  980  |       this.scoreMap.set("Page 4", "");
+  981  |       this.scoreMap.set("Page 5", "");
+  982  |     } else {
+  983  |       const lastItemNumber = await this.page
+  984  |         .locator(".items-container div span.item-text")
+  985  |         .last()
+  986  |         .textContent();
+  987  |       const itemNumber: number = parseInt(lastItemNumber.split(" ")[1], 10);
+  988  |       console.log(`the last item number is = ${itemNumber}`);
+  989  |       this.scoreMap.clear();
+  990  |       this.scoreMap.set(` `, "^");
+  991  |       for (let index = 1; index <= itemNumber; index++) {
+  992  |         if (stemForm.includes("STYREC.W5PA")) {
+  993  |           this.scoreMap.set(`Story ${index}`, "x");
+  994  |         } else {
+  995  |           this.scoreMap.set(`Item ${index}`, "x");
+  996  |         }
+  997  |       }
+  998  |     }
+  999  | 
+  1000 |     console.log(`Type Of test ${typeOfTest} \n`);
+  1001 |     while (await this.plainNextButtonOrEndButton.first().isVisible()) {
+  1002 |       await this.page.waitForTimeout(2000);
+> 1003 |       const itemDetails: string = (await this.itemDetails.textContent())!;
+       |                                                           ^ TimeoutError: locator.textContent: Timeout 60000ms exceeded.
+  1004 |       console.log(itemDetails);
+  1005 |       const correctlocator: Locator = this.corectOptionButton.first();
+  1006 |       const incorrectlocator: Locator = this.incorrectOptionButton.first();
+  1007 |       const correctlocatorsAll: Promise<Locator[]> =
+  1008 |         this.corectOptionButton.all();
+  1009 |       const incorrectlocatorAll: Promise<Locator[]> =
+  1010 |         this.incorrectOptionButton.all();
+  1011 | 
+  1012 |       const startTimerVisable: boolean = await this.startTimer.isVisible();
+  1013 | 
+  1014 |       if (itemDetails.startsWith("Introduction")) {
+  1015 |         if (await this.videoPlayButton.isVisible()) {
+  1016 |           await this.videoPlayButton.click();
+  1017 |           await expect(this.replayButton).toBeVisible({ timeout: 70000 });
+  1018 |         }
+  1019 |       } else if (
+  1020 |         typeOfTest.match(/All correct scenario/i) &&
+  1021 |         stemForm.match("MTHFLU.W5PA")
+  1022 |       ) {
+  1023 |         this.scoreMap.set("Practice Exercise", "5");
+  1024 |         this.scoreMap.set("Page 4", "80");
+  1025 |         this.scoreMap.set("Page 5", "80");
+  1026 | 
+  1027 |         await this.answerMTHFLUTest(itemDetails, typeOfTest);
+  1028 |       } else if (
+  1029 |         typeOfTest.match(/All incorrect scenario/i) &&
+  1030 |         stemForm.match("MTHFLU.W5PA")
+  1031 |       ) {
+  1032 |         this.scoreMap.set("Practice Exercise", "0");
+  1033 | 
+  1034 |         await this.answerMTHFLUTest(itemDetails, typeOfTest);
+  1035 |       } else if (
+  1036 |         typeOfTest.match(/All correct scenario/i) &&
+  1037 |         /^(Story)/.test(itemDetails)
+  1038 |       ) {
+  1039 |         await this.clickAllCorrectOption(correctlocatorsAll, itemDetails);
+  1040 |       } else if (
+  1041 |         typeOfTest.match(/All correct scenario/i) &&
+  1042 |         startTimerVisable
+  1043 |       ) {
+  1044 |         await this.clickPlusCorrectOption(itemDetails);
+  1045 |         timerTest = true;
+  1046 |       } else if (
+  1047 |         typeOfTest.match(/All correct scenario/i) &&
+  1048 |         /^(Practice Exercise|Test Items)/.test(itemDetails) &&
+  1049 |         stemForm.includes("MAGCMP.W5PA")
+  1050 |       ) {
+  1051 |         await this.answerCorrectForMAGCMPTest(itemDetails, patternTestCorrectResponses);
+  1052 |         if (itemDetails.startsWith("Test Items")) {
+  1053 |           // timerTest = false; // since we are clicking the 
+  1054 |         } else {
+  1055 |           tapFluency = true;
+  1056 |         }
+  1057 |       } else if (
+  1058 |         typeOfTest.match(/All correct scenario/i) &&
+  1059 |         /^(Practice Exercise|Test Items)/.test(itemDetails)
+  1060 |       ) {
+  1061 |         await this.answerCorrectForTimerTest(
+  1062 |           stemForm,
+  1063 |           itemDetails,
+  1064 |           patternTestCorrectResponses,
+  1065 |         );
+  1066 |         tapFluency = true;
+  1067 |       } else if (
+  1068 |         typeOfTest.match(/All correct scenario/i) &&
+  1069 |         stemForm.includes("MAGCMP.W5PA")
+  1070 |       ) {
+  1071 |         // Sample A/B trial items: click the left option (index 0) — any tap is acceptable for samples
+  1072 |         const magcmpRows = await this.page
+  1073 |           .locator("div[class='options MAGCMP']")
+  1074 |           .all();
+  1075 |         if (magcmpRows.length > 0) {
+  1076 |           await magcmpRows[0]
+  1077 |             .locator("button[class^='plain-button']")
+  1078 |             .nth(0)
+  1079 |             .click();
+  1080 |         }
+  1081 |       } else if (typeOfTest.match(/All correct scenario/i)) {
+  1082 |         await this.clickCorrectOption(correctlocator, itemDetails);
+  1083 |       } else if (typeOfTest.match(/Quick Basal Ceiling/i)) {
+  1084 |         if (BbyC && itemDetails.startsWith("Item ")) {
+  1085 |           if (correctCount <= BbyC) {
+  1086 |             await this.clickCorrectOption(correctlocator, itemDetails);
+  1087 |             correctCount++;
+  1088 |           } else if (inCorrectCount <= BbyC) {
+  1089 |             await this.clickInCorrectOption(incorrectlocator, itemDetails);
+  1090 |             inCorrectCount++;
+  1091 |           }
+  1092 |         } else {
+  1093 |           await this.clickCorrectOption(correctlocator, itemDetails);
+  1094 |         }
+  1095 |       } else if (typeOfTest.match(/Attain Basel but not ceiling/i)) {
+  1096 |         if (BbyC && itemDetails.startsWith("Item ")) {
+  1097 |           if (correctCount <= BbyC) {
+  1098 |             await this.clickCorrectOption(correctlocator, itemDetails);
+  1099 |             correctCount++;
+  1100 |           } else if (inCorrectCount <= BbyC) {
+  1101 |             await this.clickInCorrectOption(incorrectlocator, itemDetails);
+  1102 |             inCorrectCount++;
+  1103 |           }
+```

@@ -1,0 +1,518 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts >>  AWKMEM cluster Derived Export Automation  >> For VRBATN - Age - All correct scenario,NUMREV - Age - All correct scenario Complete The AWKMEM cluster & generate report
+- Location: src/tests/derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts:26:9
+
+# Error details
+
+```
+Error: Failed to find or add test "Verbal Attention"
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: S02PwAut25AH ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| WJ V Settings"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+        - generic [ref=e34]:
+          - switch [ref=e35] [cursor=pointer]: "OFF"
+          - generic [ref=e36]: Offline Mode
+      - main [ref=e37]:
+        - generic [ref=e38]:
+          - heading [level=1] [ref=e39]: REPORT CENTER
+          - navigation [ref=e40]:
+            - tablist [ref=e41]:
+              - tab [selected] [ref=e42] [cursor=pointer]: Report Library
+              - button [ref=e43] [cursor=pointer]:
+                - img [ref=e44]
+          - generic [ref=e53]:
+            - grid [ref=e54]:
+              - generic [ref=e55]:
+                - generic [ref=e58]: Report Name
+                - generic [ref=e61]: Status
+                - generic [ref=e64]: Date Created
+                - generic [ref=e67]: Actions
+              - rowgroup [ref=e68]:
+                - row [ref=e69]:
+                  - gridcell [ref=e71]: Derived_Score_AutoFilter_Template_N42506A59722
+                  - gridcell [ref=e73]: Completed
+                  - gridcell [ref=e75]: 07/31/2026 02:14 PM
+                  - generic [ref=e76]:
+                    - gridcell [ref=e78] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e80] [cursor=pointer]: Delete
+                    - img [ref=e81] [cursor=pointer]
+                - row [ref=e83]:
+                  - gridcell [ref=e85]: Derived_Score_AutoFilter_Template_N52521A61221
+                  - gridcell [ref=e87]: Completed
+                  - gridcell [ref=e89]: 07/31/2026 02:07 PM
+                  - generic [ref=e90]:
+                    - gridcell [ref=e92] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e94] [cursor=pointer]: Delete
+                    - img [ref=e95] [cursor=pointer]
+                - row [ref=e97]:
+                  - gridcell [ref=e99]: Derived_Score_AutoFilter_Template_N88314A31228
+                  - gridcell [ref=e101]: Completed
+                  - gridcell [ref=e103]: 07/31/2026 01:59 PM
+                  - generic [ref=e104]:
+                    - gridcell [ref=e106] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e108] [cursor=pointer]: Delete
+                    - img [ref=e109] [cursor=pointer]
+                - row [ref=e111]:
+                  - gridcell [ref=e113]: Derived_Score_AutoFilter_Template_N3176A49474
+                  - gridcell [ref=e115]: Completed
+                  - gridcell [ref=e117]: 07/31/2026 01:54 PM
+                  - generic [ref=e118]:
+                    - gridcell [ref=e120] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e122] [cursor=pointer]: Delete
+                    - img [ref=e123] [cursor=pointer]
+                - row [ref=e125]:
+                  - gridcell [ref=e127]: Derived_Score_AutoFilter_Template_N92967A22198
+                  - gridcell [ref=e129]: Completed
+                  - gridcell [ref=e131]: 07/31/2026 01:37 PM
+                  - generic [ref=e132]:
+                    - gridcell [ref=e134] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e136] [cursor=pointer]: Delete
+                    - img [ref=e137] [cursor=pointer]
+                - row [ref=e139]:
+                  - gridcell [ref=e141]: Derived_Score_AutoFilter_Template_N24193A82483
+                  - gridcell [ref=e143]: Completed
+                  - gridcell [ref=e145]: 07/31/2026 01:29 PM
+                  - generic [ref=e146]:
+                    - gridcell [ref=e148] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e150] [cursor=pointer]: Delete
+                    - img [ref=e151] [cursor=pointer]
+                - row [ref=e153]:
+                  - gridcell [ref=e155]: Derived_Score_AutoFilter_Template_N85580A19002
+                  - gridcell [ref=e157]: Completed
+                  - gridcell [ref=e159]: 07/31/2026 12:23 PM
+                  - generic [ref=e160]:
+                    - gridcell [ref=e162] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e164] [cursor=pointer]: Delete
+                    - img [ref=e165] [cursor=pointer]
+                - row [ref=e167]:
+                  - gridcell [ref=e169]: Derived_Score_AutoFilter_Template_N16461A74956
+                  - gridcell [ref=e171]: Completed
+                  - gridcell [ref=e173]: 07/31/2026 12:17 PM
+                  - generic [ref=e174]:
+                    - gridcell [ref=e176] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e178] [cursor=pointer]: Delete
+                    - img [ref=e179] [cursor=pointer]
+                - row [ref=e181]:
+                  - gridcell [ref=e183]: Derived_Score_AutoFilter_Template_N48478A53124
+                  - gridcell [ref=e185]: Completed
+                  - gridcell [ref=e187]: 07/31/2026 12:10 PM
+                  - generic [ref=e188]:
+                    - gridcell [ref=e190] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e192] [cursor=pointer]: Delete
+                    - img [ref=e193] [cursor=pointer]
+                - row [ref=e195]:
+                  - gridcell [ref=e197]: Derived_Score_AutoFilter_Template_N74158A78640
+                  - gridcell [ref=e199]: Completed
+                  - gridcell [ref=e201]: 07/31/2026 12:01 PM
+                  - generic [ref=e202]:
+                    - gridcell [ref=e204] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e206] [cursor=pointer]: Delete
+                    - img [ref=e207] [cursor=pointer]
+                - row [ref=e209]:
+                  - gridcell [ref=e211]: Derived_Score_AutoFilter_Template_N71716A36969
+                  - gridcell [ref=e213]: Completed
+                  - gridcell [ref=e215]: 07/31/2026 08:32 AM
+                  - generic [ref=e216]:
+                    - gridcell [ref=e218] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e220] [cursor=pointer]: Delete
+                    - img [ref=e221] [cursor=pointer]
+                - row [ref=e223]:
+                  - gridcell [ref=e225]: Derived_Score_AutoFilter_Template_N79183A93774
+                  - gridcell [ref=e227]: Completed
+                  - gridcell [ref=e229]: 07/31/2026 08:23 AM
+                  - generic [ref=e230]:
+                    - gridcell [ref=e232] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e234] [cursor=pointer]: Delete
+                    - img [ref=e235] [cursor=pointer]
+                - row [ref=e237]:
+                  - gridcell [ref=e239]: Derived_Score_AutoFilter_Template_N52981A57673
+                  - gridcell [ref=e241]: Completed
+                  - gridcell [ref=e243]: 07/31/2026 08:16 AM
+                  - generic [ref=e244]:
+                    - gridcell [ref=e246] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e248] [cursor=pointer]: Delete
+                    - img [ref=e249] [cursor=pointer]
+                - row [ref=e251]:
+                  - gridcell [ref=e253]: Derived_Score_AutoFilter_Template_N54603A36299
+                  - gridcell [ref=e255]: Completed
+                  - gridcell [ref=e257]: 07/31/2026 08:09 AM
+                  - generic [ref=e258]:
+                    - gridcell [ref=e260] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e262] [cursor=pointer]: Delete
+                    - img [ref=e263] [cursor=pointer]
+                - row [ref=e265]:
+                  - gridcell [ref=e267]: Derived_Score_AutoFilter_Template_N54603A36299
+                  - gridcell [ref=e269]: Completed
+                  - gridcell [ref=e271]: 07/31/2026 08:06 AM
+                  - generic [ref=e272]:
+                    - gridcell [ref=e274] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e276] [cursor=pointer]: Delete
+                    - img [ref=e277] [cursor=pointer]
+                - row [ref=e279]:
+                  - gridcell [ref=e281]: Derived_Score_AutoFilter_Template_N9517A95972
+                  - gridcell [ref=e283]: Completed
+                  - gridcell [ref=e285]: 07/31/2026 05:32 AM
+                  - generic [ref=e286]:
+                    - gridcell [ref=e288] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e290] [cursor=pointer]: Delete
+                    - img [ref=e291] [cursor=pointer]
+                - row [ref=e293]:
+                  - gridcell [ref=e295]: Derived_Score_AutoFilter_Template_N96951A65076
+                  - gridcell [ref=e297]: Completed
+                  - gridcell [ref=e299]: 07/31/2026 05:24 AM
+                  - generic [ref=e300]:
+                    - gridcell [ref=e302] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e304] [cursor=pointer]: Delete
+                    - img [ref=e305] [cursor=pointer]
+                - row [ref=e307]:
+                  - gridcell [ref=e309]: Derived_Score_AutoFilter_Template_N49913A64743
+                  - gridcell [ref=e311]: Completed
+                  - gridcell [ref=e313]: 07/31/2026 05:16 AM
+                  - generic [ref=e314]:
+                    - gridcell [ref=e316] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e318] [cursor=pointer]: Delete
+                    - img [ref=e319] [cursor=pointer]
+                - row [ref=e321]:
+                  - gridcell [ref=e323]: Derived_Score_AutoFilter_Template_N50536A84759
+                  - gridcell [ref=e325]: Completed
+                  - gridcell [ref=e327]: 07/31/2026 05:08 AM
+                  - generic [ref=e328]:
+                    - gridcell [ref=e330] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e332] [cursor=pointer]: Delete
+                    - img [ref=e333] [cursor=pointer]
+                - row [ref=e335]:
+                  - gridcell [ref=e337]: Derived_Score_AutoFilter_Template_N19139A99168
+                  - gridcell [ref=e339]: Completed
+                  - gridcell [ref=e341]: 07/31/2026 05:00 AM
+                  - generic [ref=e342]:
+                    - gridcell [ref=e344] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e346] [cursor=pointer]: Delete
+                    - img [ref=e347] [cursor=pointer]
+                - row [ref=e349]:
+                  - gridcell [ref=e351]: Derived_Score_AutoFilter_Template_N32101A72832
+                  - gridcell [ref=e353]: Completed
+                  - gridcell [ref=e355]: 07/31/2026 04:51 AM
+                  - generic [ref=e356]:
+                    - gridcell [ref=e358] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e360] [cursor=pointer]: Delete
+                    - img [ref=e361] [cursor=pointer]
+                - row [ref=e363]:
+                  - gridcell [ref=e365]: Derived_Score_AutoFilter_Template_N98884A16430
+                  - gridcell [ref=e367]: Completed
+                  - gridcell [ref=e369]: 07/31/2026 04:42 AM
+                  - generic [ref=e370]:
+                    - gridcell [ref=e372] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e374] [cursor=pointer]: Delete
+                    - img [ref=e375] [cursor=pointer]
+                - row [ref=e377]:
+                  - gridcell [ref=e379]: Derived_Score_AutoFilter_Template_N60119A98726
+                  - gridcell [ref=e381]: Completed
+                  - gridcell [ref=e383]: 07/31/2026 04:33 AM
+                  - generic [ref=e384]:
+                    - gridcell [ref=e386] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e388] [cursor=pointer]: Delete
+                    - img [ref=e389] [cursor=pointer]
+                - row [ref=e391]:
+                  - gridcell [ref=e393]: Derived_Score_AutoFilter_Template_N18258A89383
+                  - gridcell [ref=e395]: Completed
+                  - gridcell [ref=e397]: 07/31/2026 04:25 AM
+                  - generic [ref=e398]:
+                    - gridcell [ref=e400] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e402] [cursor=pointer]: Delete
+                    - img [ref=e403] [cursor=pointer]
+                - row [ref=e405]:
+                  - gridcell [ref=e407]: Derived_Score_AutoFilter_Template_N18258A89383
+                  - gridcell [ref=e409]: Completed
+                  - gridcell [ref=e411]: 07/31/2026 04:22 AM
+                  - generic [ref=e412]:
+                    - gridcell [ref=e414] [cursor=pointer]: Download/Print
+                    - gridcell [ref=e416] [cursor=pointer]: Delete
+                    - img [ref=e417] [cursor=pointer]
+            - navigation [ref=e419]:
+              - button [disabled] [ref=e420]: <<
+              - button [disabled] [ref=e421]: <
+              - button [ref=e422] [cursor=pointer]: "1"
+              - button [ref=e423] [cursor=pointer]: "2"
+              - button [ref=e424] [cursor=pointer]: "3"
+              - button [ref=e425] [cursor=pointer]: "4"
+              - button [ref=e426] [cursor=pointer]: ">"
+              - button [ref=e427] [cursor=pointer]: ">>"
+    - contentinfo [ref=e428]:
+      - generic [ref=e429]: Footer region,
+      - link [ref=e430] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img [ref=e431]
+      - generic [ref=e432]:
+        - link [ref=e433] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e434]
+        - link [ref=e435] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e436]
+        - link [ref=e437] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e438]
+        - link [ref=e439] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e440]
+      - generic [ref=e441]:
+        - button [ref=e442] [cursor=pointer]: Leave Feedback
+        - generic [ref=e443]: "|"
+        - link [ref=e444] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e445]: "|"
+        - link [ref=e446] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e447]: Footer region end
+  - alertdialog [active] [ref=e449]:
+    - main "Expiration warning" [ref=e450]:
+      - generic [ref=e451]: Session Expiring
+      - generic [ref=e452]: Session will expire in 5 minutes, press continue to extend time.
+    - navigation [ref=e453]:
+      - button "Continue" [ref=e454] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  140 |       .click();
+  141 |   }
+  142 | 
+  143 |   //   async clickOnNextButton() {
+  144 |   //     await this.nextButton.click();
+  145 |   //   }
+  146 | 
+  147 |   async completeTheTestSessionIntro(acceptButtonMethod: void): Promise<void> {
+  148 |     await this.page.bringToFront();
+  149 | 
+  150 |     // await this.page.waitForTimeout(3000);
+  151 | 
+  152 |     await expect(this.nextORendTestButton).toBeVisible();
+  153 | 
+  154 |     while (await this.nextORendTestButton.isVisible()) {
+  155 |       try {
+  156 |         await this.nextORendTestButton.click();
+  157 |       } catch (error) {
+  158 |         acceptButtonMethod;
+  159 |         console.error(" Cant click on ");
+  160 |       }
+  161 | 
+  162 |       // await this.page.waitForSelector(this.nextORendTestButton, { visible: true }, { timeout: 1000 });
+  163 | 
+  164 |       await this.page.waitForTimeout(1000);
+  165 |     }
+  166 |   }
+  167 | 
+  168 |   async getSspPopUpTestName(): Promise<string> {
+  169 |     return await this.sspPopUpTestName.textContent();
+  170 |   }
+  171 | 
+  172 |   async getPageUrl() {
+  173 |     return await this.page.url();
+  174 |   }
+  175 | 
+  176 |   async pickTheTestNeeded(
+  177 |     testName: string,
+  178 |     ssp: string,
+  179 |     examinee: wj5ExamineePage,
+  180 |   ) {
+  181 |     RawValueLogger.log('pickTheTestNeeded: start', { testName });
+  182 | 
+  183 |     await this.page.bringToFront();
+  184 |     await this.page.waitForTimeout(2000);
+  185 | 
+  186 |     if (
+  187 |       (await this.administrationOverviewPageTestName.isVisible()) &&
+  188 |       (await this.administrationOverviewPageTestName.textContent()).includes(testName)
+  189 |     ) {
+  190 |       RawValueLogger.log('test already visible on overview page', { testName });
+  191 |       return;
+  192 |     }
+  193 | 
+  194 |     const menuButton = this.mainNavigation;
+  195 |     const testListButton = this.mainNavigationTests;
+  196 |     const introText = this.page.locator('.intro-text');
+  197 |     const testLocator = (name: string) => this.page.locator(`//div[@class='TestList_mcs_testName' and text()='${name}']`);
+  198 | 
+  199 |     RawValueLogger.log('attempt', { testName });
+  200 | 
+  201 |     try {
+  202 |       await introText.waitFor({ state: 'visible', timeout: 5000 });
+  203 |       RawValueLogger.log('intro text visible - opening menu');
+  204 | 
+  205 |       await menuButton.click();
+  206 |       await this.page.waitForTimeout(500);
+  207 | 
+  208 |       await testListButton.click();
+  209 |       await this.page.waitForTimeout(500);
+  210 | 
+  211 |       const activeTestName = this.page.locator("svg[aria-disabled='true']+div[class='TestList_mcs_testName']");
+  212 |       if (await activeTestName.isVisible().catch(() => false) && (await activeTestName.textContent())?.trim() === testName) {
+  213 |         RawValueLogger.log('test is already active - closing nav', { testName });
+  214 |         await this.page.locator("button.close-btn[aria-label='Close navigation']").click();
+  215 |         return;
+  216 |       }
+  217 | 
+  218 |       const test = testLocator(testName);
+  219 |       await test.waitFor({ state: 'visible', timeout: 3000 });
+  220 |       RawValueLogger.log('test found - clicking', { testName });
+  221 |       await test.click();
+  222 |       RawValueLogger.log('test clicked successfully', { testName });
+  223 |       return;
+  224 |     } catch (err: any) {
+  225 |       RawValueLogger.log('test not found or click failed', {
+  226 |         testName,
+  227 |         message: err?.message ?? err,
+  228 |       });
+  229 | 
+  230 |       RawValueLogger.log('test not found - attempting to add test', { testName });
+  231 |       try {
+  232 |         await this.addTestButton.click();
+  233 |         await this._addAndRetrySelectTest(testName);
+  234 |         return;
+  235 |       } catch (addErr: any) {
+  236 |         RawValueLogger.log('failed to add test', {
+  237 |           testName,
+  238 |           addError: addErr?.message ?? addErr,
+  239 |         });
+> 240 |         throw new Error(`Failed to find or add test "${testName}"`);
+      |               ^ Error: Failed to find or add test "Verbal Attention"
+  241 |       }
+  242 |     }
+  243 |   }
+  244 | 
+  245 |   private async _addAndRetrySelectTest(testName: string): Promise<void> {
+  246 |     RawValueLogger.log('adding test via search', { testName });
+  247 | 
+  248 |     await this.searchTests.fill(testName);
+  249 |     await this.searchIcon.click();
+  250 |     await this.page.waitForTimeout(1000);
+  251 | 
+  252 |     await this.selectTests.first().click();
+  253 |     await this.addTestsButton.click();
+  254 | 
+  255 |     RawValueLogger.log('test added - retrying selection', { testName });
+  256 |     await this.page.waitForTimeout(2000);
+  257 | 
+  258 |     const testLocator = (name: string) => this.page.locator(`//div[@class='TestList_mcs_testName' and text()='${name}']`);
+  259 | 
+  260 |     const test = testLocator(testName);
+  261 |     await test.waitFor({ state: 'visible', timeout: 3000 });
+  262 |     await test.click();
+  263 | 
+  264 |     RawValueLogger.log('test selected after add', { testName });
+  265 |   }
+  266 | 
+  267 |   async clickOnLetsBeginButtonAndStartTest(
+  268 |     
+  269 |     testName: string,
+  270 |     ssp: string,
+  271 |     i: number,
+  272 |   ) {
+  273 |     // Validate the test name at the Administration Overview page
+  274 |     console.log("Validating test name...");
+  275 |     await expect(this.testNameAtAdminOverview).toBeVisible({ timeout: 10000 });
+  276 |     const textContent = await this.testNameAtAdminOverview.textContent();
+  277 |     console.log(`Text content: "${textContent}"`);
+  278 |     expect(textContent?.trim(), {
+  279 |       message: "The test name didn't match at Administration Overview page",
+  280 |     }).toContain(testName.trim());
+  281 | 
+  282 |     // Ensure the "Let's Begin" button is visible and enabled before clicking
+  283 |     console.log("Waiting for 'Let's Begin' button...");
+  284 |     await expect(this.letsBeginButton).toBeVisible({ timeout: 10000 });
+  285 |     await expect(this.letsBeginButton).toBeEnabled({ timeout: 10000 });
+  286 | 
+  287 |     console.log("Clicking 'Let's Begin' button...");
+  288 |     await this.letsBeginButton.click();
+  289 | 
+  290 |     // Handle the SSP selection logic and click the "Start Test" button
+  291 |     if (ssp === "All Examinees") {
+  292 |       console.log("Clicking 'Start Test' button...");
+  293 |       await expect(this.startTestButton).toBeVisible({ timeout: 10000 });
+  294 |       await this.startTestButton.click();
+  295 |     } else {
+  296 |       console.log(`Setting SSP to: ${ssp}`);
+  297 |       await this.setTheSSPto(ssp);
+  298 |       console.log("Clicking 'Start Test' button...");
+  299 |       await expect(this.startTestButton).toBeVisible({ timeout: 10000 });
+  300 |       await this.startTestButton.click();
+  301 |     }
+  302 |   }
+  303 | 
+  304 |   async setTheSSPto(sspOption: string) {
+  305 |     await expect(this.startTestButton).toBeVisible({ timeout: 10000 });
+  306 |     await this.page.waitForTimeout(Number(3000));
+  307 |     if (this.loading.isVisible())
+  308 |       await this.loading.waitFor({ state: "hidden", timeout: 3 * 60 * 1000 });
+  309 |     await this.sspDropDown.selectOption(
+  310 |       { label: sspOption },
+  311 |       { timeout: 60000 },
+  312 |     );
+  313 |     await this.page.waitForTimeout(Number(2000));
+  314 | 
+  315 |     try {
+  316 |       const selectedSsp = await this.page.$eval(
+  317 |         ".starting-point-dropdown",
+  318 |         (ele) => (ele as HTMLSelectElement).value,
+  319 |       );
+  320 |       console.log(`selected ssp is = ${selectedSsp}`);
+  321 | 
+  322 |       expect(selectedSsp).toContain(sspOption);
+  323 |     } catch (error) {
+  324 |       await this.sspDropDown.selectOption({ label: sspOption });
+  325 |       console.error(
+  326 |         `the ssp drop down didnt select the one we want at first attempt so trying one more time ... ${error}`,
+  327 |       );
+  328 |     }
+  329 |   }
+  330 | 
+  331 |   async completeTheTakenTestForDerivedScoresForVRBATNTest(
+  332 |     typeOfTest: string,
+  333 |     stemForm: string,
+  334 |     BbyC: number,
+  335 |     flag: string,
+  336 |   ): Promise<Map<string, string>> {
+  337 |     let correctCount: number = 1;
+  338 |     let inCorrectCount: number = 1;
+  339 |     const itemNumber: number = Number(
+  340 |       await this.page.locator(".itemnav-wrapper div span").last().textContent(),
+```
