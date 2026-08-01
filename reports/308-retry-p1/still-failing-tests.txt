@@ -1,0 +1,19 @@
+Still failing after rerun pass 1 (main run #308) — 6 test(s)
+
+1. Kindergarten to Grade 3 - Flag Item with Notes and Review scenario SSP2 Test Rerouting
+   ReroutingandLeftNav/UNDDIR_Rerouting.spec.ts
+2. Age 4 - UNDDIR Review mode Verification scenario Test Rerouting
+   ReroutingandLeftNav/UNDDIR_Rerouting.spec.ts
+3. Grade 4 to Adult - Flag Item with Notes and Review scenario SSP3 Test Rerouting
+   ReroutingandLeftNav/UNDDIR_Rerouting.spec.ts
+4. All Examinees - Validate Item score texts by clicking add and minus buttons after timer runs out Test UI
+   UIAndReports/SEMRET_Single_Timer.spec.ts
+5. Preschool - Flag Item with Notes and Review scenario SSP1 Test Rerouting
+   ReroutingandLeftNav/UNDDIR_Rerouting.spec.ts
+6. Preschool to Grade 1 - Practice Exercise !C scenario when Score Entry Equal To 5 Test UI
+   UIAndReports/MTHFLU_Single_ScoreLater.spec.ts
+
+Affected spec files (3):
+  ReroutingandLeftNav/UNDDIR_Rerouting.spec.ts
+  UIAndReports/MTHFLU_Single_ScoreLater.spec.ts
+  UIAndReports/SEMRET_Single_Timer.spec.ts
