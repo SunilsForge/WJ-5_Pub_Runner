@@ -420,6 +420,31 @@ jobs:
           fi
           echo "pass=$pass max=$max still_failing=$still -> chain further: $([ "${still:-0}" -gt 0 ] && [ "${pass:-1}" -lt "${max:-1}" ] && echo yes || echo no)"
 
+      - name: Create All-Index artifact (this rerun pass)
+        # Same idea as the main pipeline's All-Index: collect every rerun shard's
+        # standalone Playwright HTML index into one downloadable archive artifact.
+        if: always()
+        run: |
+          mkdir -p all-index
+          for ((i=1; i<=${{ needs.collect.outputs.shard_count }}; i++)); do
+            source_file="all-artifacts/rerun-report-shard-$i/playwright-report/index.html"
+            if [ -f "$source_file" ]; then
+              cp "$source_file" "all-index/${i}_index.html"
+            else
+              echo "Warning: $source_file not found"
+            fi
+          done
+          echo "Contents of all-index:"
+          ls -l all-index
+
+      - name: Upload All-Index artifact (this rerun pass)
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: All-Index-Rerun-p${{ inputs.pass_number }}
+          path: all-index/
+          retention-days: 90
+
       - name: Checkout gh-pages
         uses: actions/checkout@v5
         with:
