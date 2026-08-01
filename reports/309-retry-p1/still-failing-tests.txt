@@ -1,0 +1,106 @@
+Still failing after rerun pass 1 (main run #309) — 43 test(s)
+
+1. Ages 4 to 7 - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/ACDVOC_Single_BC5.spec.ts
+2. Ages 12 to 15 - Rerouting End Test Scenario for SSP6 Test Rerouting
+   ReroutingandLeftNav/APPROB_Rerouting.spec.ts
+3. Ages 11 to 13 - Flag Item with Notes and Review scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/STYREC_Multi_Block.spec.ts
+4. All Examinees - Test Items All incorrect scenario Test UI
+   UIAndReports/SRDGFL_FormB_Single_Timer.spec.ts
+5. Ages 9 to 11 - LWIDNT 6 correct 6 incorrect then go back to bLock A and check next item for SSP5 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+6. All Examinees - Sample Items Rerouting Scenario Test Rerouting
+   ReroutingandLeftNav/SRDGFL_Single_Timer.spec.ts
+7. All Examinees -  When Timer Ran Out on the First Page of of ALL Item Sets Test UI
+   UIAndReports/SYMBIN_Single_Timer.spec.ts
+8. Age 12 to Adult - Rerouting End Test scenario for SSP6 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+9. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/SRDGFL_Single_Timer.spec.ts
+10. Ages 4 to 6 - 5 Lowest incorrect items SSP1 Test UI
+   UIAndReports/SNDBLN_Single_BC5.spec.ts
+11. All Examinees - Test Items When Timer Ran Out for Last Item set Test UI
+   UIAndReports/WRDGFL_Single_Timer.spec.ts
+12. Age 12 to Adult - LWIDNT 6 correct 6 incorrect then go back to bLock A and check next item for SSP6 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+13. All Examinees - Practice Exercise All incorrect scenario Test UI
+   UIAndReports/SRDGFL_FormB_Single_Timer.spec.ts
+14. Age 9 - Rerouting End Test Scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/APPROB_Rerouting.spec.ts
+15. Ages 4 to 7 - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/MEMWRD_Single_BC4.spec.ts
+16. Grades 2 to 5 - Flag Item with Notes and Review scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/STYREC_Multi_Block.spec.ts
+17. All Examinees - Test Items All correct scenario Test UI
+   UIAndReports/SRDGFL_FormB_Single_Timer.spec.ts
+18. Ages 10 to 11 - Rerouting End Test Scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/APPROB_Rerouting.spec.ts
+19. All Examinees - Test Items 5 Correct 5 Incorrect scenario Test UI
+   UIAndReports/SRDGFL_FormB_Single_Timer.spec.ts
+20. Grades 5 to 6 - Score Error Scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/ACDVOC_Single_BC5.spec.ts
+21. Age 16 to Average Adult - Rerouting End Test Scenario for SSP7 Test Rerouting
+   ReroutingandLeftNav/APPROB_Rerouting.spec.ts
+22. Age 7 - Rerouting End Test scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+23. All Examinees - Review mode Verification scenario Test Rerouting
+   ReroutingandLeftNav/SYMBIN_Rerouting.spec.ts
+24. All Examinees - Test Items When Timer Ran Out for Last Item set Test UI
+   UIAndReports/SRDGFL_FormB_Single_Timer.spec.ts
+25. Age 7 - LWIDNT 6 correct 6 incorrect then go back to bLock A and check next item for SSP3 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+26. Preschool to Grade 2 - Review mode Verification scenario Test Rerouting
+   ReroutingandLeftNav/RPDNUM_Backup_Rerouting.spec.ts
+27. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/SYMBIN_Rerouting.spec.ts
+28. Ages 6 to 7 - Story 1 to 3 correct and story 4 incorrect for SSP1 Test UI
+   UIAndReports/ORLRDG_Multi_Block.spec.ts
+29. All Examinees - Answer only one sample item Test UI
+   UIAndReports/SRDGFL_FormB_Single_Timer.spec.ts
+30. Grades 1 to 2 - Story 1 to 4 correct and story 5 incorrect for SSP1 Test UI
+   UIAndReports/ORLRDG_Multi_Block.spec.ts
+31. All Examinees - Answer both sample items Test UI
+   UIAndReports/SRDGFL_FormB_Single_Timer.spec.ts
+32. Preschool to Grade 1 - CALC Sample item Correct and then Incorrect scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/CALC_Single_BC5.spec.ts
+33. Ages 6 to 7 - Story 1 to 5 correct and story 6 incorrect for SSP1 Test UI
+   UIAndReports/ORLRDG_Multi_Block.spec.ts
+34. Age 8 - Rerouting End Test scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+35. All Examinees - Sample Items Rerouting Scenario Test Rerouting
+   ReroutingandLeftNav/SRDGFL_FormB_Rerouting.spec.ts
+36. Grade 3 to Adult - Story 3&4 correct and story 5 incorrect for SSP2 Test UI
+   UIAndReports/ORLRDG_Multi_Block.spec.ts
+37. Age 8 - LWIDNT 6 correct 6 incorrect then go back to bLock A and check next item for SSP4 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+38. All Examinees - Sample Items Rerouting Scenario Test Rerouting
+   ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts
+39. Above Average Adult - Rerouting End Test Scenario for SSP8 Test Rerouting
+   ReroutingandLeftNav/APPROB_Rerouting.spec.ts
+40. Ages 9 to 11 - Rerouting End Test scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+41. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/SRDGFL_FormB_Rerouting.spec.ts
+42. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts
+43. All Examinees - Item Set All incorrect scenario Test UI
+   UIAndReports/SYMBIN_Single_Timer.spec.ts
+
+Affected spec files (16):
+  ReroutingandLeftNav/ACDVOC_Single_BC5.spec.ts
+  ReroutingandLeftNav/APPROB_Rerouting.spec.ts
+  ReroutingandLeftNav/CALC_Single_BC5.spec.ts
+  ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+  ReroutingandLeftNav/MEMWRD_Single_BC4.spec.ts
+  ReroutingandLeftNav/RPDNUM_Backup_Rerouting.spec.ts
+  ReroutingandLeftNav/SRDGFL_FormB_Rerouting.spec.ts
+  ReroutingandLeftNav/SRDGFL_Single_Timer.spec.ts
+  ReroutingandLeftNav/STYREC_Multi_Block.spec.ts
+  ReroutingandLeftNav/SYMBIN_Rerouting.spec.ts
+  ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts
+  UIAndReports/ORLRDG_Multi_Block.spec.ts
+  UIAndReports/SNDBLN_Single_BC5.spec.ts
+  UIAndReports/SRDGFL_FormB_Single_Timer.spec.ts
+  UIAndReports/SYMBIN_Single_Timer.spec.ts
+  UIAndReports/WRDGFL_Single_Timer.spec.ts
