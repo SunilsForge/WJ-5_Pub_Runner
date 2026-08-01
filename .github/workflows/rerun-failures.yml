@@ -361,9 +361,24 @@ jobs:
         # works without npm ci. Output lands in playwright-report/ by default.
         run: |
           mkdir -p all-blob-reports
+          # IMPORTANT: rerun shards run WITHOUT --shard (each has its own slice), so
+          # Playwright names every shard's blob identically ("report.zip" — it only
+          # appends an index when --shard is set). Copying them into one dir would
+          # overwrite, leaving a merged report with just ONE shard's tests. Rename
+          # each to report-<shard>.zip (Playwright's own sharded convention) using
+          # the shard number from the artifact directory name.
           for dir in all-artifacts/rerun-report-shard-*/blob-report; do
-            [ -d "$dir" ] && cp "$dir"/* all-blob-reports/ 2>/dev/null || true
+            [ -d "$dir" ] || continue
+            shard=$(basename "$(dirname "$dir")"); shard="${shard##*-shard-}"
+            i=0
+            for f in "$dir"/*.zip; do
+              [ -f "$f" ] || continue
+              if [ "$i" -eq 0 ]; then out="report-${shard}.zip"; else out="report-${shard}-${i}.zip"; fi
+              cp "$f" "all-blob-reports/${out}"
+              i=$((i + 1))
+            done
           done
+          echo "Collected $(ls all-blob-reports/*.zip 2>/dev/null | wc -l) blob(s): $(ls all-blob-reports 2>/dev/null | tr '\n' ' ')"
           if [ "$(ls all-blob-reports 2>/dev/null | wc -l)" -gt 0 ]; then
             npx playwright@1.59.1 merge-reports --reporter=html all-blob-reports || true
             if [ -d playwright-report ]; then
