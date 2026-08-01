@@ -1,5 +1,17 @@
 [
   {
+    "runNumber": "308-retry-p2",
+    "parentRunNumber": "308",
+    "pass": 2,
+    "runReason": "RETRY FAILURES: BHARATHI: running AE04 SMOKE in Prod as part 31 july release",
+    "environment": "prod",
+    "browser": "chrome",
+    "isRerun": true,
+    "totalTests": 6,
+    "totalPassed": 0,
+    "totalFailed": 6
+  },
+  {
     "runNumber": "308-retry-p1",
     "parentRunNumber": "308",
     "pass": 1,
