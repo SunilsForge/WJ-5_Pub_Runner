@@ -1,5 +1,17 @@
 [
   {
+    "runNumber": "303-retry-p2",
+    "parentRunNumber": "303",
+    "pass": 2,
+    "runReason": "RETRY FAILURES: Running AE03 SMOKE in PROD as part of 30 julyrelease",
+    "environment": "prod",
+    "browser": "chrome",
+    "isRerun": true,
+    "totalTests": 16,
+    "totalPassed": 3,
+    "totalFailed": 13
+  },
+  {
     "runNumber": "303-retry-p1",
     "parentRunNumber": "303",
     "pass": 1,
