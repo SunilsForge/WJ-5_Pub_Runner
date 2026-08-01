@@ -66,6 +66,13 @@ const mergedLink = hasMerged
   ? '<a class="btn" href="./playwright-merged/index.html">Open full Playwright report &rarr;</a>'
   : "";
 
+// Offer the still-failing marker for a local `--last-failed` re-run (only if built).
+const hasLocal = fs.existsSync(path.join("rerun-report", "last-run.json"));
+const localLink = hasLocal
+  ? '<a class="btn btn-alt" href="./last-run.json" download="last-run.json">&darr; Still-failing list for local re-run</a>' +
+    ' <a class="how" href="./local-rerun-README.txt" target="_blank">how to use</a>'
+  : "";
+
 // "Pass N of M · " prefix when this is part of a multi-pass chain (else blank).
 const passN = process.env.PASS_NUMBER || "";
 const passMax = process.env.RERUN_PASSES || "";
@@ -75,6 +82,7 @@ const tpl = fs.readFileSync(path.join(__dirname, "..", "templates", "rerun-repor
 const html = tpl
   .split("__PASS__").join(passStr)
   .split("__MERGED_LINK__").join(mergedLink)
+  .split("__LOCAL_LINK__").join(localLink)
   .split("__SOURCE_RUN__").join(esc(process.env.SOURCE_RUN_ID || ""))
   .split("__RUN_REASON__").join(esc(process.env.RUN_REASON || ""))
   .split("__ENV__").join(esc(process.env.TEST_ENV || ""))

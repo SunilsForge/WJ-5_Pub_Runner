@@ -392,6 +392,30 @@ jobs:
             echo "No blob reports found — skipping native merge"
           fi
 
+      - name: Build local-rerun file for still-failing tests
+        # Unions every shard's leftover .last-run.json into one marker a developer
+        # can drop into a local checkout and re-run with `--last-failed`.
+        if: always()
+        env:
+          BRANCH: ${{ inputs.branch }}
+          TEST_ENV: ${{ inputs.environment }}
+          BROWSER: ${{ inputs.browser }}
+          PASS_NUMBER: ${{ inputs.pass_number }}
+          ORIGIN_RUN: ${{ inputs.origin_run_number != '' && inputs.origin_run_number || inputs.source_run_id }}
+        run: node runner-repo/.github/scripts/build-local-last-run.js
+
+      - name: Upload local-rerun file
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: still-failing-local-rerun-p${{ inputs.pass_number }}
+          path: |
+            rerun-report/last-run.json
+            rerun-report/local-rerun-README.txt
+            rerun-report/still-failing-tests.txt
+          if-no-files-found: ignore
+          retention-days: 90
+
       - name: Classify results & build report
         id: classify
         env:
