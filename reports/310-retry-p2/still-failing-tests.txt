@@ -1,0 +1,65 @@
+Still failing after rerun pass 2 (main run #310) — 25 test(s)
+
+1. Above Average Adult - Rerouting End Test Scenario for SSP8 Test Rerouting
+   ReroutingandLeftNav/APPROB_Rerouting.spec.ts
+2. Ages 4 to 6 - 5 Lowest incorrect items SSP1 Test UI
+   UIAndReports/SNDBLN_Single_BC5.spec.ts
+3. Ages 12 to 15 - Rerouting End Test Scenario for SSP6 Test Rerouting
+   ReroutingandLeftNav/APPROB_Rerouting.spec.ts
+4. Age 12 to Adult - LWIDNT 6 correct 6 incorrect then go back to bLock A and check next item for SSP6 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+5. All Examinees -  When Timer Ran Out on the First Page of of ALL Item Sets Test UI
+   UIAndReports/SYMBIN_Single_Timer.spec.ts
+6. Age 16 to Average Adult - Rerouting End Test Scenario for SSP7 Test Rerouting
+   ReroutingandLeftNav/APPROB_Rerouting.spec.ts
+7. Ages 9 to 11 - Rerouting End Test scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+8. Ages 4 to 6 - PARCMP-Re-routing End Test scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/PARCMP_Rerouting.spec.ts
+9. Age 8 - Rerouting End Test scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+10. Ages 9 to 11 - LWIDNT 6 correct 6 incorrect then go back to bLock A and check next item for SSP5 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+11. Ages 6 to 7 - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/ORLRDG_Multi_Block.spec.ts
+12. All Examinees - Sample Items Rerouting Scenario Test Rerouting
+   ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts
+13. Grades 1 to 2 - Story 1 to 4 correct and story 5 incorrect for SSP1 Test UI
+   UIAndReports/ORLRDG_Multi_Block.spec.ts
+14. Age 9 - Rerouting End Test Scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/APPROB_Rerouting.spec.ts
+15. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/SRDGFL_FormB_Rerouting.spec.ts
+16. Age 7 - Rerouting End Test scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+17. Age 12 to Adult - Rerouting End Test scenario for SSP6 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+18. All Examinees - Test Items When Timer Ran Out for First Item set Test UI
+   UIAndReports/SRDGFL_FormB_Single_Timer.spec.ts
+19. All Examinees - Item Set All incorrect scenario Test UI
+   UIAndReports/SYMBIN_Single_Timer.spec.ts
+20. Ages 10 to 11 - Rerouting End Test Scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/APPROB_Rerouting.spec.ts
+21. Age 8 - LWIDNT 6 correct 6 incorrect then go back to bLock A and check next item for SSP4 Test Rerouting
+   ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+22. Grade 3 to Adult - Flag Item with Notes and Review scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/ORLRDG_Multi_Block.spec.ts
+23. All Examinees - Sample Items Rerouting Scenario Test Rerouting
+   ReroutingandLeftNav/SRDGFL_FormB_Rerouting.spec.ts
+24. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/SYMBIN_Rerouting.spec.ts
+25. Age 8 to Adult - Story 3 to 5 correct and story 6 incorrect for SSP2 Test UI
+   UIAndReports/ORLRDG_Multi_Block.spec.ts
+
+Affected spec files (11):
+  ReroutingandLeftNav/APPROB_Rerouting.spec.ts
+  ReroutingandLeftNav/LWIDNT_Multi_BC6.spec.ts
+  ReroutingandLeftNav/ORLRDG_Multi_Block.spec.ts
+  ReroutingandLeftNav/PARCMP_Rerouting.spec.ts
+  ReroutingandLeftNav/SRDGFL_FormB_Rerouting.spec.ts
+  ReroutingandLeftNav/SYMBIN_Rerouting.spec.ts
+  ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts
+  UIAndReports/ORLRDG_Multi_Block.spec.ts
+  UIAndReports/SNDBLN_Single_BC5.spec.ts
+  UIAndReports/SRDGFL_FormB_Single_Timer.spec.ts
+  UIAndReports/SYMBIN_Single_Timer.spec.ts
