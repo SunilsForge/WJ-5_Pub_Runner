@@ -1,0 +1,1971 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+        "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "commitHash": "87efe5bed390bd940ceb41c9507eb34dacf3a473",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/30810350981"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 36,
+      "total": 95
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ReroutingandLeftNav/VRBANL_Single_BC5.spec.ts",
+      "file": "ReroutingandLeftNav/VRBANL_Single_BC5.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " VRBANL Rerouting and LeftNav",
+          "file": "ReroutingandLeftNav/VRBANL_Single_BC5.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Above Average Adult - Score Error Scenario for SSP5 Test Rerouting",
+              "ok": true,
+              "tags": [
+                "VRBANL",
+                "Rerouting",
+                "Regression",
+                "AUT_ENG_03"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 345081,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N68166A4383\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N68166A4383/dataFiles/Score_DataExport_AutoFilter_Template_N68166A4383.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N68166A4383 FirstName=Carrie LastName =N68166A4383 Age = 08/03/2012\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Verbal Analogies\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N68166A4383\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Verbal Analogies\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Verbal Analogies\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13914|Above Average Adult|\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item C, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Retrieved words fluently'\u001b[39m,\n  \u001b[32m'Demonstrated good understanding of the relationships among the words'\u001b[39m,\n  \u001b[32m'Displayed age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Demonstrated good understanding of vocabulary'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N68166A4383/dataFiles/Score_DataExport_AutoFilter_Template_N68166A4383.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N68166A4383\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N68166A4383; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N68166A4383.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N68166A4383/downloads/wLookUp_N68166A4383_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N68166A4383/downloads/wLookUp_N68166A4383_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N68166A4383/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N68166A4383', Available files: [Score_DataExport_AutoFilter_Template_N68166A4383_Decile.txt, Score_DataExport_AutoFilter_Template_N68166A4383_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N68166A4383_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N68166A4383_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N68166A4383/downloads/extracted/Score_DataExport_AutoFilter_Template_N68166A4383_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N68166A4383\"],[\"dateOfTest\",\"2026-08-03\"],[\"testName\",\"Verbal Analogies\"],[\"testStemForm\",\"VRBANL.W5PA\"],[\"lookUpModel\",\"SingleTable\"],[\"sumItemScores\",\"0\"],[\"baselCredit\",\"0\"],[\"wLookUp\",\"0\"],[\"wScore\",\"424.50\"],[\"SEMW\",\"15.11\"],[\"WlkpAdminItems\",\"\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^000000xxxx0xxxx0xxxxxxxxxxxxxxxxxxx\"]]\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N68166A4383 <> N68166A4383\n"
+                        },
+                        {
+                          "text": "2 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-08-03 <> 2026-08-03\n"
+                        },
+                        {
+                          "text": "3 Test Name ->  value from the RunTime VS downloaded file is =  Verbal Analogies <> Verbal Analogies\n"
+                        },
+                        {
+                          "text": "4 TEst stem form ->  value from the RunTime VS downloaded file is =  VRBANL.W5PA <> VRBANL.W5PA\n"
+                        },
+                        {
+                          "text": "5 Look Up Model ->  value from the RunTime VS downloaded file is =  SingleTable <> SingleTable\n"
+                        },
+                        {
+                          "text": "6 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "7 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "8 wLookUp ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "9 WLkpAdminItems ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "10 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "11 wScore ->  value from the RunTime VS downloaded file is =  424.5 <> 424.5\n"
+                        },
+                        {
+                          "text": "12 semW ->  value from the RunTime VS downloaded file is =  15.11 <> 15.11\n"
+                        },
+                        {
+                          "text": "13 Score String ->  value from the RunTime VS downloaded file is =  ^000000xxxx0xxxx0xxxxxxxxxxxxxxxxxxx <> ^000000xxxx0xxxx0xxxxxxxxxxxxxxxxxxx\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:248:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:316:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6727:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/ReroutingandLeftNav/VRBANL_Single_BC5.spec.ts:41:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m248\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@469'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@469'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1785763068923\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:248:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:316:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6727:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/VRBANL_Single_BC5.spec.ts:41:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-08-03T13:12:04.242Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-VRBANL-3da37-rio-for-SSP5-Test-Rerouting-chrome/attachments/Downloaded-Zip-file-70ea8c790d9d49c94ac9039c9d4aa4ce7819afe3.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "00c2a7ba3cb5a1c192f6-2f37cc1af7aa9c796a50",
+              "file": "ReroutingandLeftNav/VRBANL_Single_BC5.spec.ts",
+              "line": 8,
+              "column": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts",
+      "file": "ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " WRDGFL Rerouting and LeftNav",
+          "file": "ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "All Examinees - Sample Items Rerouting Scenario Test Rerouting",
+              "ok": true,
+              "tags": [
+                "WRDGFL",
+                "Rerouting",
+                "Regression",
+                "AUT_ENG_03"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 240655,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N2851A75898\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N2851A75898/dataFiles/Score_DataExport_AutoFilter_Template_N2851A75898.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N2851A75898 FirstName=Leonel LastName =N2851A75898 Age = 08/03/1950\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Word Reading Fluency\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N2851A75898\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Word Reading Fluency\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Word Reading Fluency\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Appeared to mark responses carefully'\u001b[39m,\n  \u001b[32m'Appeared to read words slowly but accurately'\u001b[39m,\n  \u001b[32m'Appeared to mark responses randomly without a strategy'\u001b[39m,\n  \u001b[32m'Appeared to read words slowly and inaccurately'\u001b[39m,\n  \u001b[32m'Appeared to read words quickly and accurately'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Appeared to read words quickly but inaccurately'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N2851A75898/dataFiles/Score_DataExport_AutoFilter_Template_N2851A75898.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N2851A75898\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N2851A75898; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N2851A75898.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N2851A75898/downloads/wLookUp_N2851A75898_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N2851A75898/downloads/wLookUp_N2851A75898_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N2851A75898/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N2851A75898', Available files: [Score_DataExport_AutoFilter_Template_N2851A75898_Decile.txt, Score_DataExport_AutoFilter_Template_N2851A75898_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N2851A75898_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N2851A75898_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N2851A75898/downloads/extracted/Score_DataExport_AutoFilter_Template_N2851A75898_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N2851A75898\"],[\"dateOfTest\",\"2026-08-03\"],[\"testName\",\"Word Reading Fluency\"],[\"testStemForm\",\"WRDGFL.W5PA\"],[\"lookUpModel\",\"SingleTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"0\"],[\"wScore\",\"427.06\"],[\"SEMW\",\"14.64\"],[\"WlkpAdminItems\",\"\"],[\"scoreFlag\",\"[!A]\"],[\"scoreString\",\"\"]]\n"
+                        },
+                        {
+                          "text": "14 Examinee ID ->  value from the RunTime VS downloaded file is =  N2851A75898 <> N2851A75898\n"
+                        },
+                        {
+                          "text": "15 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-08-03 <> 2026-08-03\n"
+                        },
+                        {
+                          "text": "16 Test Name ->  value from the RunTime VS downloaded file is =  Word Reading Fluency <> Word Reading Fluency\n"
+                        },
+                        {
+                          "text": "17 TEst stem form ->  value from the RunTime VS downloaded file is =  WRDGFL.W5PA <> WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "18 Look Up Model ->  value from the RunTime VS downloaded file is =  SingleTable <> SingleTable\n"
+                        },
+                        {
+                          "text": "19 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "20 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "21 wLookUp ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "22 WLkpAdminItems ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "23 Score Flag ->  value from the RunTime VS downloaded file is =  [!A] <> [!A]\n"
+                        },
+                        {
+                          "text": "24 wScore ->  value from the RunTime VS downloaded file is =  427.06 <> 427.06\n"
+                        },
+                        {
+                          "text": "25 semW ->  value from the RunTime VS downloaded file is =  14.64 <> 14.64\n"
+                        },
+                        {
+                          "text": "26 Score String ->  value from the RunTime VS downloaded file is =   <> \n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:248:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:316:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6727:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts:44:11 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m248\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@358'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@358'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1785763310328\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:248:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:316:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6727:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts:44:11'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-08-03T13:17:49.931Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRDGFL-8ec53-ing-Scenario-Test-Rerouting-chrome/attachments/Downloaded-Zip-file-66072ffaea00d2eeddbf20d5fb229b6c489080d4.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "858b111ec52bc0669c04-e5b183c118bb173aa26b",
+              "file": "ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts",
+              "line": 10,
+              "column": 9
+            },
+            {
+              "title": "All Examinees - Samples Items A And B rerouting Flow Scenario Test Rerouting",
+              "ok": true,
+              "tags": [
+                "WRDGFL",
+                "Rerouting",
+                "Regression",
+                "AUT_ENG_03"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 253465,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N29748A5366\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N29748A5366/dataFiles/Score_DataExport_AutoFilter_Template_N29748A5366.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N29748A5366 FirstName=Reagan LastName =N29748A5366 Age = 02/01/1950\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Word Reading Fluency\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N29748A5366\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Word Reading Fluency\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Word Reading Fluency\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 2\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Appeared to mark responses carefully'\u001b[39m,\n  \u001b[32m'Appeared to read words slowly but accurately'\u001b[39m,\n  \u001b[32m'Appeared to mark responses randomly without a strategy'\u001b[39m,\n  \u001b[32m'Appeared to read words slowly and inaccurately'\u001b[39m,\n  \u001b[32m'Appeared to read words quickly and accurately'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Appeared to read words quickly but inaccurately'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N29748A5366/dataFiles/Score_DataExport_AutoFilter_Template_N29748A5366.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N29748A5366\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N29748A5366; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N29748A5366.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N29748A5366/downloads/wLookUp_N29748A5366_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N29748A5366/downloads/wLookUp_N29748A5366_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N29748A5366/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N29748A5366', Available files: [Score_DataExport_AutoFilter_Template_N29748A5366_Decile.txt, Score_DataExport_AutoFilter_Template_N29748A5366_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N29748A5366_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N29748A5366_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N29748A5366/downloads/extracted/Score_DataExport_AutoFilter_Template_N29748A5366_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N29748A5366\"],[\"dateOfTest\",\"2026-08-03\"],[\"testName\",\"Word Reading Fluency\"],[\"testStemForm\",\"WRDGFL.W5PA\"],[\"lookUpModel\",\"SingleTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"0\"],[\"wScore\",\"427.06\"],[\"SEMW\",\"14.64\"],[\"WlkpAdminItems\",\"\"],[\"scoreFlag\",\"[!A]\"],[\"scoreString\",\"\"]]\n"
+                        },
+                        {
+                          "text": "27 Examinee ID ->  value from the RunTime VS downloaded file is =  N29748A5366 <> N29748A5366\n"
+                        },
+                        {
+                          "text": "28 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-08-03 <> 2026-08-03\n"
+                        },
+                        {
+                          "text": "29 Test Name ->  value from the RunTime VS downloaded file is =  Word Reading Fluency <> Word Reading Fluency\n"
+                        },
+                        {
+                          "text": "30 TEst stem form ->  value from the RunTime VS downloaded file is =  WRDGFL.W5PA <> WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "31 Look Up Model ->  value from the RunTime VS downloaded file is =  SingleTable <> SingleTable\n"
+                        },
+                        {
+                          "text": "32 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "33 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "34 wLookUp ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "35 WLkpAdminItems ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "36 Score Flag ->  value from the RunTime VS downloaded file is =  [!A] <> [!A]\n"
+                        },
+                        {
+                          "text": "37 wScore ->  value from the RunTime VS downloaded file is =  427.06 <> 427.06\n"
+                        },
+                        {
+                          "text": "38 semW ->  value from the RunTime VS downloaded file is =  14.64 <> 14.64\n"
+                        },
+                        {
+                          "text": "39 Score String ->  value from the RunTime VS downloaded file is =   <> \n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:248:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:316:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6727:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts:44:11 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m248\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@373'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@373'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1785763563833\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:248:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:316:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6727:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts:44:11'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-08-03T13:21:50.615Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRDGFL-d32ea-low-Scenario-Test-Rerouting-chrome/attachments/Downloaded-Zip-file-71f381e96046d03c39ce8808d36076b944318ee9.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "858b111ec52bc0669c04-abb42c0726defae598e0",
+              "file": "ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts",
+              "line": 10,
+              "column": 9
+            },
+            {
+              "title": "All Examinees - Flag Item with Notes and Review scenario Test Rerouting",
+              "ok": true,
+              "tags": [
+                "WRDGFL",
+                "Rerouting",
+                "Regression",
+                "AUT_ENG_03"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 249825,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N94100A96452\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N94100A96452/dataFiles/Score_DataExport_AutoFilter_Template_N94100A96452.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N94100A96452 FirstName=Shanna LastName =N94100A96452 Age = 02/01/1949\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Word Reading Fluency\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N94100A96452\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Word Reading Fluency\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Word Reading Fluency\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Appeared to mark responses carefully'\u001b[39m,\n  \u001b[32m'Appeared to read words slowly but accurately'\u001b[39m,\n  \u001b[32m'Appeared to mark responses randomly without a strategy'\u001b[39m,\n  \u001b[32m'Appeared to read words slowly and inaccurately'\u001b[39m,\n  \u001b[32m'Appeared to read words quickly and accurately'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Appeared to read words quickly but inaccurately'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N94100A96452/dataFiles/Score_DataExport_AutoFilter_Template_N94100A96452.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N94100A96452\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N94100A96452; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N94100A96452.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N94100A96452/downloads/wLookUp_N94100A96452_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N94100A96452/downloads/wLookUp_N94100A96452_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N94100A96452/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N94100A96452', Available files: [Score_DataExport_AutoFilter_Template_N94100A96452_Decile.txt, Score_DataExport_AutoFilter_Template_N94100A96452_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N94100A96452_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N94100A96452_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N94100A96452/downloads/extracted/Score_DataExport_AutoFilter_Template_N94100A96452_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N94100A96452\"],[\"dateOfTest\",\"2026-08-03\"],[\"testName\",\"Word Reading Fluency\"],[\"testStemForm\",\"WRDGFL.W5PA\"],[\"lookUpModel\",\"SingleTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"0\"],[\"wScore\",\"427.06\"],[\"SEMW\",\"14.64\"],[\"WlkpAdminItems\",\"\"],[\"scoreFlag\",\"[!A]\"],[\"scoreString\",\"\"]]\n"
+                        },
+                        {
+                          "text": "40 Examinee ID ->  value from the RunTime VS downloaded file is =  N94100A96452 <> N94100A96452\n"
+                        },
+                        {
+                          "text": "41 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-08-03 <> 2026-08-03\n"
+                        },
+                        {
+                          "text": "42 Test Name ->  value from the RunTime VS downloaded file is =  Word Reading Fluency <> Word Reading Fluency\n"
+                        },
+                        {
+                          "text": "43 TEst stem form ->  value from the RunTime VS downloaded file is =  WRDGFL.W5PA <> WRDGFL.W5PA\n"
+                        },
+                        {
+                          "text": "44 Look Up Model ->  value from the RunTime VS downloaded file is =  SingleTable <> SingleTable\n"
+                        },
+                        {
+                          "text": "45 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "46 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "47 wLookUp ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "48 WLkpAdminItems ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "49 Score Flag ->  value from the RunTime VS downloaded file is =  [!A] <> [!A]\n"
+                        },
+                        {
+                          "text": "50 wScore ->  value from the RunTime VS downloaded file is =  427.06 <> 427.06\n"
+                        },
+                        {
+                          "text": "51 semW ->  value from the RunTime VS downloaded file is =  14.64 <> 14.64\n"
+                        },
+                        {
+                          "text": "52 Score String ->  value from the RunTime VS downloaded file is =   <> \n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:248:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:316:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6727:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts:44:11 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m248\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@363'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@363'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1785763813657\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:248:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:316:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6727:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts:44:11'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-08-03T13:26:04.104Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRDGFL-b951e-iew-scenario-Test-Rerouting-chrome/attachments/Downloaded-Zip-file-fbde1ad71b86b8b4f6af23ba50273e0a332e6dee.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "858b111ec52bc0669c04-384ded25ee6b68f5a422",
+              "file": "ReroutingandLeftNav/WRDGFL_Single_Timer.spec.ts",
+              "line": 10,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "UIAndReports/ACDVOC_Single_BC5.spec.ts",
+      "file": "UIAndReports/ACDVOC_Single_BC5.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " ACDVOC UI And Reports",
+          "file": "UIAndReports/ACDVOC_Single_BC5.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Ages 4 to 7 - All correct SSP1 Test UI",
+              "ok": true,
+              "tags": [
+                "ACDVOC",
+                "Single",
+                "BC5",
+                "Regression",
+                "AUT_ENG_03"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 304025,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N43407A27496\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N43407A27496/dataFiles/Score_DataExport_AutoFilter_Template_N43407A27496.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N43407A27496 FirstName=Maxine LastName =N43407A27496 Age = 08/03/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N43407A27496\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Academic Vocabulary\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 15542|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Displayed good knowledge of content area vocabulary'\u001b[39m,\n  \u001b[32m'Had difficulty retrieving words'\u001b[39m,\n  \u001b[32m'Displayed limited knowledge of content area vocabulary'\u001b[39m,\n  \u001b[32m'Displayed age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'Expressed oral responses with ease'\u001b[39m,\n  \u001b[32m'Did not display age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'Had difficulty expressing oral responses'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Retrieved words fluently'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N43407A27496/dataFiles/Score_DataExport_AutoFilter_Template_N43407A27496.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N43407A27496\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N43407A27496; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N43407A27496.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N43407A27496/downloads/wLookUp_N43407A27496_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N43407A27496/downloads/wLookUp_N43407A27496_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N43407A27496/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N43407A27496', Available files: [Score_DataExport_AutoFilter_Template_N43407A27496_Decile.txt, Score_DataExport_AutoFilter_Template_N43407A27496_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N43407A27496_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N43407A27496_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N43407A27496/downloads/extracted/Score_DataExport_AutoFilter_Template_N43407A27496_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N43407A27496\"],[\"dateOfTest\",\"2026-08-03\"],[\"testName\",\"Academic Vocabulary\"],[\"testStemForm\",\"ACDVOC.W5PA\"],[\"lookUpModel\",\"SingleTable\"],[\"sumItemScores\",\"36\"],[\"baselCredit\",\"0\"],[\"wLookUp\",\"36\"],[\"wScore\",\"568.50\"],[\"SEMW\",\"15.28\"],[\"WlkpAdminItems\",\"\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^111111111111111111111111111111111111\"]]\n"
+                        },
+                        {
+                          "text": "53 Examinee ID ->  value from the RunTime VS downloaded file is =  N43407A27496 <> N43407A27496\n"
+                        },
+                        {
+                          "text": "54 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-08-03 <> 2026-08-03\n"
+                        },
+                        {
+                          "text": "55 Test Name ->  value from the RunTime VS downloaded file is =  Academic Vocabulary <> Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "56 TEst stem form ->  value from the RunTime VS downloaded file is =  ACDVOC.W5PA <> ACDVOC.W5PA\n"
+                        },
+                        {
+                          "text": "57 Look Up Model ->  value from the RunTime VS downloaded file is =  SingleTable <> SingleTable\n"
+                        },
+                        {
+                          "text": "58 Sum Item Scores ->  value from the RunTime VS downloaded file is =  36 <> 36\n"
+                        },
+                        {
+                          "text": "59 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "60 wLookUp ->  value from the RunTime VS downloaded file is =  36 <> 36\n"
+                        },
+                        {
+                          "text": "61 WLkpAdminItems ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "62 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "63 wScore ->  value from the RunTime VS downloaded file is =  568.5 <> 568.5\n"
+                        },
+                        {
+                          "text": "64 semW ->  value from the RunTime VS downloaded file is =  15.28 <> 15.28\n"
+                        },
+                        {
+                          "text": "65 Score String ->  value from the RunTime VS downloaded file is =  ^111111111111111111111111111111111111 <> ^111111111111111111111111111111111111\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:248:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:316:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6727:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/UIAndReports/ACDVOC_Single_BC5.spec.ts:40:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m248\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@609'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@609'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1785764117726\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:248:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:316:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6727:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/ACDVOC_Single_BC5.spec.ts:40:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-08-03T13:30:13.962Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-ACDVOC_Single-7d403----All-correct-SSP1-Test-UI-chrome/attachments/Downloaded-Zip-file-5a8cf9cbe565e569a71c7b1ad1b68feff96548e5.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a574aa996c03d96a1391-6af28d1f131778db3fe5",
+              "file": "UIAndReports/ACDVOC_Single_BC5.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Preschool to Grade 2 - 5 lowest incorrect items SSP1 Test UI",
+              "ok": true,
+              "tags": [
+                "ACDVOC",
+                "Single",
+                "BC5",
+                "Regression",
+                "AUT_ENG_03"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 236731,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N39639A36238\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N39639A36238/dataFiles/Score_DataExport_AutoFilter_Template_N39639A36238.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N39639A36238 FirstName=Dave LastName =N39639A36238 Age = 08/03/2024\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N39639A36238\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Academic Vocabulary\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 15542|Preschool to Grade 2|\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Displayed good knowledge of content area vocabulary'\u001b[39m,\n  \u001b[32m'Had difficulty retrieving words'\u001b[39m,\n  \u001b[32m'Displayed limited knowledge of content area vocabulary'\u001b[39m,\n  \u001b[32m'Displayed age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'Expressed oral responses with ease'\u001b[39m,\n  \u001b[32m'Did not display age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'Had difficulty expressing oral responses'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Retrieved words fluently'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N39639A36238/dataFiles/Score_DataExport_AutoFilter_Template_N39639A36238.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N39639A36238\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N39639A36238; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N39639A36238.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N39639A36238/downloads/wLookUp_N39639A36238_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N39639A36238/downloads/wLookUp_N39639A36238_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N39639A36238/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N39639A36238', Available files: [Score_DataExport_AutoFilter_Template_N39639A36238_Decile.txt, Score_DataExport_AutoFilter_Template_N39639A36238_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N39639A36238_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N39639A36238_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N39639A36238/downloads/extracted/Score_DataExport_AutoFilter_Template_N39639A36238_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N39639A36238\"],[\"dateOfTest\",\"2026-08-03\"],[\"testName\",\"Academic Vocabulary\"],[\"testStemForm\",\"ACDVOC.W5PA\"],[\"lookUpModel\",\"SingleTable\"],[\"sumItemScores\",\"0\"],[\"baselCredit\",\"0\"],[\"wLookUp\",\"0\"],[\"wScore\",\"393.64\"],[\"SEMW\",\"16.06\"],[\"WlkpAdminItems\",\"\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^00000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"]]\n"
+                        },
+                        {
+                          "text": "66 Examinee ID ->  value from the RunTime VS downloaded file is =  N39639A36238 <> N39639A36238\n"
+                        },
+                        {
+                          "text": "67 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-08-03 <> 2026-08-03\n"
+                        },
+                        {
+                          "text": "68 Test Name ->  value from the RunTime VS downloaded file is =  Academic Vocabulary <> Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "69 TEst stem form ->  value from the RunTime VS downloaded file is =  ACDVOC.W5PA <> ACDVOC.W5PA\n"
+                        },
+                        {
+                          "text": "70 Look Up Model ->  value from the RunTime VS downloaded file is =  SingleTable <> SingleTable\n"
+                        },
+                        {
+                          "text": "71 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "72 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "73 wLookUp ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "74 WLkpAdminItems ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "75 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "76 wScore ->  value from the RunTime VS downloaded file is =  393.64 <> 393.64\n"
+                        },
+                        {
+                          "text": "77 semW ->  value from the RunTime VS downloaded file is =  16.06 <> 16.06\n"
+                        },
+                        {
+                          "text": "78 Score String ->  value from the RunTime VS downloaded file is =  ^00000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx <> ^00000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:248:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:316:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6727:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/UIAndReports/ACDVOC_Single_BC5.spec.ts:40:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m248\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@356'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@356'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1785764354466\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:248:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:316:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6727:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/ACDVOC_Single_BC5.spec.ts:40:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-08-03T13:35:18.014Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-ACDVOC_Single-0ac99-ncorrect-items-SSP1-Test-UI-chrome/attachments/Downloaded-Zip-file-d01d3a51fa6e66a771812f21679564761ab1818d.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a574aa996c03d96a1391-a3e36ba27233c71b40b3",
+              "file": "UIAndReports/ACDVOC_Single_BC5.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 4 to 7 - 5 correct and 5 incorrect SSP1 Test UI",
+              "ok": true,
+              "tags": [
+                "ACDVOC",
+                "Single",
+                "BC5",
+                "Regression",
+                "AUT_ENG_03"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 269947,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_03\n"
+                        },
+                        {
+                          "text": "Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S36:W0] Login successful for 25PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N9685A30293\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N9685A30293/dataFiles/Score_DataExport_AutoFilter_Template_N9685A30293.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N9685A30293 FirstName=Ivory LastName =N9685A30293 Age = 08/03/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N9685A30293\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Academic Vocabulary\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 15542|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Displayed good knowledge of content area vocabulary'\u001b[39m,\n  \u001b[32m'Had difficulty retrieving words'\u001b[39m,\n  \u001b[32m'Displayed limited knowledge of content area vocabulary'\u001b[39m,\n  \u001b[32m'Displayed age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'Expressed oral responses with ease'\u001b[39m,\n  \u001b[32m'Did not display age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'Had difficulty expressing oral responses'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Retrieved words fluently'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N9685A30293/dataFiles/Score_DataExport_AutoFilter_Template_N9685A30293.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N9685A30293\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N9685A30293; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N9685A30293.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N9685A30293/downloads/wLookUp_N9685A30293_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N9685A30293/downloads/wLookUp_N9685A30293_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N9685A30293/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N9685A30293', Available files: [Score_DataExport_AutoFilter_Template_N9685A30293_Decile.txt, Score_DataExport_AutoFilter_Template_N9685A30293_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N9685A30293_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N9685A30293_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N9685A30293/downloads/extracted/Score_DataExport_AutoFilter_Template_N9685A30293_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N9685A30293\"],[\"dateOfTest\",\"2026-08-03\"],[\"testName\",\"Academic Vocabulary\"],[\"testStemForm\",\"ACDVOC.W5PA\"],[\"lookUpModel\",\"SingleTable\"],[\"sumItemScores\",\"5\"],[\"baselCredit\",\"0\"],[\"wLookUp\",\"5\"],[\"wScore\",\"444.51\"],[\"SEMW\",\"9.35\"],[\"WlkpAdminItems\",\"\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^1111100000xxxxxxxxxxxxxxxxxxxxxxxxxx\"]]\n"
+                        },
+                        {
+                          "text": "79 Examinee ID ->  value from the RunTime VS downloaded file is =  N9685A30293 <> N9685A30293\n"
+                        },
+                        {
+                          "text": "80 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-08-03 <> 2026-08-03\n"
+                        },
+                        {
+                          "text": "81 Test Name ->  value from the RunTime VS downloaded file is =  Academic Vocabulary <> Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "82 TEst stem form ->  value from the RunTime VS downloaded file is =  ACDVOC.W5PA <> ACDVOC.W5PA\n"
+                        },
+                        {
+                          "text": "83 Look Up Model ->  value from the RunTime VS downloaded file is =  SingleTable <> SingleTable\n"
+                        },
+                        {
+                          "text": "84 Sum Item Scores ->  value from the RunTime VS downloaded file is =  5 <> 5\n"
+                        },
+                        {
+                          "text": "85 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "86 wLookUp ->  value from the RunTime VS downloaded file is =  5 <> 5\n"
+                        },
+                        {
+                          "text": "87 WLkpAdminItems ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "88 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "89 wScore ->  value from the RunTime VS downloaded file is =  444.51 <> 444.51\n"
+                        },
+                        {
+                          "text": "90 semW ->  value from the RunTime VS downloaded file is =  9.35 <> 9.35\n"
+                        },
+                        {
+                          "text": "91 Score String ->  value from the RunTime VS downloaded file is =  ^1111100000xxxxxxxxxxxxxxxxxxxxxxxxxx <> ^1111100000xxxxxxxxxxxxxxxxxxxxxxxxxx\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:248:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:316:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6727:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/UIAndReports/ACDVOC_Single_BC5.spec.ts:40:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m248\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@406'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@406'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1785764624440\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:248:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:316:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6727:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/ACDVOC_Single_BC5.spec.ts:40:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-08-03T13:39:14.774Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-ACDVOC_Single-f2026-nd-5-incorrect-SSP1-Test-UI-chrome/attachments/Downloaded-Zip-file-a363a75b414abff6323a18714231f85e58ac0d3a.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a574aa996c03d96a1391-16e842572643f066c390",
+              "file": "UIAndReports/ACDVOC_Single_BC5.spec.ts",
+              "line": 10,
+              "column": 13
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-03T13:11:47.633Z",
+    "duration": 1920831.254,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
