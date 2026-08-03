@@ -61,9 +61,9 @@ on:
         default: "RETRY FAILURES:"
         type: string
       tests_per_shard:
-        description: "Target tests per rerun shard (shard count = ceil(failures / this))"
+        description: "Max tests per rerun shard (shard count = ceil(failures / this), capped at 40). Small values keep each shard's memory low."
         required: false
-        default: "5"
+        default: "3"
         type: string
       rerun_passes:
         description: "Total rerun passes requested (chaining). Pass N re-runs pass N-1's still-failing tests."
@@ -126,8 +126,12 @@ jobs:
           node <<'SCRIPT'
           const fs = require('fs'), path = require('path');
           const root = 'src-artifacts';
-          const per = Math.max(1, parseInt(process.env.TESTS_PER_SHARD || '5', 10));
-          const CAP = 20; // never explode into more than this many rerun shards
+          const per = Math.max(1, parseInt(process.env.TESTS_PER_SHARD || '3', 10));
+          // Cap the fan-out, but keep it high enough that the cap rarely forces
+          // fatter shards: at 3/shard this honours the target up to 120 failures.
+          // (Fat shards are what re-introduces the rerun OOM — ~1GB accumulates
+          // per test and is never released, against a 16GB runner.)
+          const CAP = 40;
           const failed = new Set();
           let dirs = [];
           try { dirs = fs.readdirSync(root).filter(d => /report-shard-\d+$/.test(d)); }
@@ -583,6 +587,7 @@ jobs:
             -f trace_mode="${{ inputs.trace_mode }}" \
             -f run_reason="${{ inputs.run_reason }}" \
             -f rerun_passes="${{ inputs.rerun_passes }}" \
+            -f tests_per_shard="${{ inputs.tests_per_shard }}" \
             -f pass_number="$NEXT"
           echo "Dispatched rerun pass $NEXT of ${{ inputs.rerun_passes }} (source = this run ${{ github.run_id }})"
 
