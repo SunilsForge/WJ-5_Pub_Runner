@@ -1,0 +1,7 @@
+Still failing after rerun pass 4 (main run #314) — 1 test(s)
+
+1. All Examinees - VWKMEM Review mode Verification scenario Test Rerouting
+   ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
+
+Affected spec files (1):
+  ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
