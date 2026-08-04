@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rerun of #314</title>
+  <style>
+    body{font-family:-apple-system,system-ui,sans-serif;margin:24px;background:#f6f8fa;color:#1b1f24}
+    h1{margin:0 0 4px}
+    .meta{color:#57606a;margin-bottom:16px}
+    .cards{display:flex;gap:12px;margin:16px 0}
+    .card{background:#fff;border:1px solid #eaeef2;border-radius:6px;padding:12px 18px;min-width:120px}
+    .card b{display:block;font-size:24px}
+    .ok b{color:#1a7f37}
+    .bad b{color:#cf222e}
+    table{border-collapse:collapse;background:#fff;border-radius:6px;overflow:hidden;width:100%;margin:8px 0 20px;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+    th,td{padding:7px 12px;border-bottom:1px solid #eaeef2;text-align:left;font-size:13px}
+    th{background:#f0f3f6}
+    .mono{font-family:ui-monospace,monospace;color:#57606a}
+    .empty{color:#8c959f;font-style:italic}
+    .btn{display:inline-block;background:#0969da;color:#fff;padding:8px 14px;border-radius:6px;text-decoration:none;font-size:13px;margin:0 8px 16px 0}
+    .btn-alt{background:#6e40c9}
+    .how{font-size:12px;color:#57606a}
+  </style>
+</head>
+<body>
+  <h1>&#128257; Rerun of Run #314</h1>
+  <div class="meta">Pass 1 of 4 &middot; RETRY FAILURES: BHARATHI : (?=.*@AUT_ENG_02)(?=.*@Smoke) in PROD as part of HOTFIX &middot; Env <code>prod</code> &middot; Browser <code>chrome</code></div>
+  <div class="cards">
+    <div class="card"><b>5</b>re-run</div>
+    <div class="card ok"><b>1</b>now passing (flaky)</div>
+    <div class="card bad"><b>4</b>still failing (real)</div>
+  </div>
+  <a class="btn" href="./playwright-merged/index.html">Open full Playwright report &rarr;</a> <a class="btn btn-alt" href="./last-run.json" download="last-run.json">&darr; Still-failing list for local re-run</a> <a class="how" href="./local-rerun-README.txt" target="_blank">how to use</a>
+  <h2>Still failing (real)</h2>
+  <table><thead><tr><th>#</th><th>Test</th><th>File</th></tr></thead><tbody><tr><td>1</td><td>Preschool to Grade 2 - BLKROT Sample Items Correct and then Incorrect Scenario for SSP1 Test Rerouting</td><td class="mono">ReroutingandLeftNav/BLKROT_Rerouting.spec.ts</td></tr><tr><td>2</td><td>All Examinees - Sample Items Rerouting Scenario Test Rerouting</td><td class="mono">ReroutingandLeftNav/LETPAT_Rerouting.spec.ts</td></tr><tr><td>3</td><td>All Examinees - Test Items When Timer Ran Out for First Item set Test UI</td><td class="mono">UIAndReports/LETPAT_Single_Timer.spec.ts</td></tr><tr><td>4</td><td>All Examinees - VWKMEM Review mode Verification scenario Test Rerouting</td><td class="mono">ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts</td></tr></tbody></table>
+  <h2>Now passing on rerun (flaky)</h2>
+  <table><thead><tr><th>#</th><th>Test</th><th>File</th></tr></thead><tbody><tr><td>1</td><td>Ages 4 to 7 - Score Error Scenario for SSP1 Test Rerouting</td><td class="mono">ReroutingandLeftNav/BLKROT_Rerouting.spec.ts</td></tr></tbody></table>
+</body>
+</html>
