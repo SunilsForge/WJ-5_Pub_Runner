@@ -1,0 +1,13 @@
+Still failing after rerun pass 2 (main run #314) — 3 test(s)
+
+1. Preschool to Grade 2 - BLKROT Sample Items Correct and then Incorrect Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+2. All Examinees - Sample Items Rerouting Scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Rerouting.spec.ts
+3. All Examinees - VWKMEM Review mode Verification scenario Test Rerouting
+   ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
+
+Affected spec files (3):
+  ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+  ReroutingandLeftNav/LETPAT_Rerouting.spec.ts
+  ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
