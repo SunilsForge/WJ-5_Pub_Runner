@@ -1,0 +1,1101 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+        "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 18,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "S05 - Malformed activation code shows \"Invalid activation code\" error (existing-user landing context)",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "ExistingUser",
+            "Negative",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24544, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+                    "line": 21,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6574,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to malformed activation URL and verify \"Invalid activation code\" message",
+                      "duration": 6068
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:10:24.524Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24544, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+                        "line": 21,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a9fab08109f1de8989ce-b19de24e081ae870910a",
+          "file": "functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+          "line": 21,
+          "column": 5
+        },
+        {
+          "title": "S09 - Invalid credentials on Sign In to Activate page show error and stay on login",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "ExistingUser",
+            "Negative",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24544, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+                    "line": 46,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9072,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page",
+                      "duration": 2428
+                    },
+                    {
+                      "title": "Select \"Use my Existing Login\" → click Sign In → lands on Sign In to Activate",
+                      "duration": 2531
+                    },
+                    {
+                      "title": "Submit invalid credentials and verify we remain on the Sign In to Activate page",
+                      "duration": 3728
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:10:31.718Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24544, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+                        "line": 46,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a9fab08109f1de8989ce-9a65f76418deda508e83",
+          "file": "functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+          "line": 46,
+          "column": 5
+        },
+        {
+          "title": "S15 - GetOrgSubscriptionDetails API returns a graceful (non-500) error for a bad username",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "ExistingUser",
+            "Negative",
+            "API",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24544, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+                    "line": 76,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 749,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Call GetOrgSubscriptionDetails with bogus username and assert it does not 5xx",
+                      "duration": 559
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:10:40.821Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24544, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+                        "line": 76,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a9fab08109f1de8989ce-1c31a53811f8e97fa731",
+          "file": "functional/subscriptions/SubscriptionActivationExistingUserNegative.spec.ts",
+          "line": 76,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Unlimited High - new user activation flow",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "HappyPath",
+            "NewUser",
+            "Unlimited",
+            "High",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                    "line": 13,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 159132,
+                  "error": {
+                    "message": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"",
+                    "stack": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"\n    at SubscriptionActivationPage.confirmActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:544:17)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:77:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:68:7",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                      "column": 17,
+                      "line": 544
+                    },
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:544\n\n\u001b[0m \u001b[90m 542 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmAcceptTermsCheckbox\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 543 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 544 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForResponse(response \u001b[33m=>\u001b[39m response\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(\u001b[32m'ConfirmActivation'\u001b[39m) \u001b[33m&&\u001b[39m response\u001b[33m.\u001b[39mstatus() \u001b[33m===\u001b[39m \u001b[35m200\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 545 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m2\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 546 |\u001b[39m       })\u001b[33m,\u001b[39m\n \u001b[90m 547 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmActivationButton\u001b[33m.\u001b[39mclick()\u001b[33m,\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 17,
+                        "line": 544
+                      },
+                      "message": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"\n\n   at ../page/subscriptionActivationPage.ts:544\n\n  542 |     await this.confirmAcceptTermsCheckbox.click();\n  543 |     await Promise.all([\n> 544 |       this.page.waitForResponse(response => response.url().includes('ConfirmActivation') && response.status() === 200, {\n      |                 ^\n  545 |         timeout: 2 * 60 * 1000,\n  546 |       }),\n  547 |       this.confirmActivationButton.click(),\n    at SubscriptionActivationPage.confirmActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:544:17)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:77:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:68:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Unlimited High - Land on activation page (recover if code/SO already used)",
+                      "duration": 2549
+                    },
+                    {
+                      "title": "Unlimited High - Select Create-a-Login and click Create an Account",
+                      "duration": 2529
+                    },
+                    {
+                      "title": "Unlimited High - Fill contact info and proceed",
+                      "duration": 10577
+                    },
+                    {
+                      "title": "Unlimited High - S13 - Click auto-generate username and verify it contains first name",
+                      "duration": 2517
+                    },
+                    {
+                      "title": "Unlimited High - Set username and password",
+                      "duration": 6964
+                    },
+                    {
+                      "title": "Unlimited High - Fill location and submit",
+                      "duration": 11870
+                    },
+                    {
+                      "title": "Unlimited High - Verify subscription details and confirm activation",
+                      "duration": 121328,
+                      "error": {
+                        "message": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"",
+                        "stack": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"\n    at SubscriptionActivationPage.confirmActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:544:17)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:77:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:68:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 17,
+                          "line": 544
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:544\n\n\u001b[0m \u001b[90m 542 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmAcceptTermsCheckbox\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 543 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 544 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForResponse(response \u001b[33m=>\u001b[39m response\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(\u001b[32m'ConfirmActivation'\u001b[39m) \u001b[33m&&\u001b[39m response\u001b[33m.\u001b[39mstatus() \u001b[33m===\u001b[39m \u001b[35m200\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 545 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m2\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 546 |\u001b[39m       })\u001b[33m,\u001b[39m\n \u001b[90m 547 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmActivationButton\u001b[33m.\u001b[39mclick()\u001b[33m,\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:10:42.867Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-c9458----new-user-activation-flow-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-c9458----new-user-activation-flow-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-c9458----new-user-activation-flow-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                    "column": 17,
+                    "line": 544
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 67034,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=IP3VhUHEHXCfKJ03Io8l1A%3d%3d SO=SO292847\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Unlimited High - Land on activation page (recover if code/SO already used)",
+                      "duration": 3863
+                    },
+                    {
+                      "title": "Unlimited High - Select Create-a-Login and click Create an Account",
+                      "duration": 2518
+                    },
+                    {
+                      "title": "Unlimited High - Fill contact info and proceed",
+                      "duration": 10694
+                    },
+                    {
+                      "title": "Unlimited High - S13 - Click auto-generate username and verify it contains first name",
+                      "duration": 2467
+                    },
+                    {
+                      "title": "Unlimited High - Set username and password",
+                      "duration": 6946
+                    },
+                    {
+                      "title": "Unlimited High - Fill location and submit",
+                      "duration": 11787
+                    },
+                    {
+                      "title": "Unlimited High - Verify subscription details and confirm activation",
+                      "duration": 2547
+                    },
+                    {
+                      "title": "Unlimited High - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
+                      "duration": 6776
+                    },
+                    {
+                      "title": "Unlimited High - Verify GIA test set access matches qualification level",
+                      "duration": 4338
+                    },
+                    {
+                      "title": "Unlimited High - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
+                      "duration": 171
+                    },
+                    {
+                      "title": "Unlimited High - Open Subscription Details page and verify entered data is reflected",
+                      "duration": 8314
+                    },
+                    {
+                      "title": "Unlimited High - S45 sign out, re-login as AH, verify WJ V tile and name retained",
+                      "duration": 4878
+                    },
+                    {
+                      "title": "Unlimited High - S05 verify re-navigating to a just-used activation code shows \"already activated\" error",
+                      "duration": 1340
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:13:24.441Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "flaky"
+            }
+          ],
+          "id": "f20505f53e7fcdc1e661-f1b47a623df3ae1884f6",
+          "file": "functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Unlimited Medium - new user activation flow",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "HappyPath",
+            "NewUser",
+            "Unlimited",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                    "line": 13,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 70728,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Unlimited Medium - Land on activation page (recover if code/SO already used)",
+                      "duration": 2115
+                    },
+                    {
+                      "title": "Unlimited Medium - Select Create-a-Login and click Create an Account",
+                      "duration": 2962
+                    },
+                    {
+                      "title": "Unlimited Medium - Fill contact info and proceed",
+                      "duration": 10727
+                    },
+                    {
+                      "title": "Unlimited Medium - S13 - Click auto-generate username and verify it contains first name",
+                      "duration": 2503
+                    },
+                    {
+                      "title": "Unlimited Medium - Set username and password",
+                      "duration": 6971
+                    },
+                    {
+                      "title": "Unlimited Medium - Fill location and submit",
+                      "duration": 11785
+                    },
+                    {
+                      "title": "Unlimited Medium - Verify subscription details and confirm activation",
+                      "duration": 4389
+                    },
+                    {
+                      "title": "Unlimited Medium - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
+                      "duration": 8458
+                    },
+                    {
+                      "title": "Unlimited Medium - Verify GIA test set access matches qualification level",
+                      "duration": 4380
+                    },
+                    {
+                      "title": "Unlimited Medium - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
+                      "duration": 175
+                    },
+                    {
+                      "title": "Unlimited Medium - Open Subscription Details page and verify entered data is reflected",
+                      "duration": 8802
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:14:32.018Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f20505f53e7fcdc1e661-f9c8fcb24bce53088088",
+          "file": "functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Subtest High - new user activation flow",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "HappyPath",
+            "NewUser",
+            "Subtest",
+            "High",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                    "line": 13,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 68982,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Subscription order number is already used\" - code=cCPSEDKgAKFJN%2bFCcRoNtw%3d%3d SO=SO292939\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Subtest High - Land on activation page (recover if code/SO already used)",
+                      "duration": 4514
+                    },
+                    {
+                      "title": "Subtest High - Select Create-a-Login and click Create an Account",
+                      "duration": 2520
+                    },
+                    {
+                      "title": "Subtest High - Fill contact info and proceed",
+                      "duration": 10871
+                    },
+                    {
+                      "title": "Subtest High - S13 - Click auto-generate username and verify it contains first name",
+                      "duration": 2506
+                    },
+                    {
+                      "title": "Subtest High - Set username and password",
+                      "duration": 6963
+                    },
+                    {
+                      "title": "Subtest High - Fill location and submit",
+                      "duration": 12177
+                    },
+                    {
+                      "title": "Subtest High - Verify subscription details and confirm activation",
+                      "duration": 2553
+                    },
+                    {
+                      "title": "Subtest High - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
+                      "duration": 6877
+                    },
+                    {
+                      "title": "Subtest High - Verify GIA test set access matches qualification level",
+                      "duration": 4358
+                    },
+                    {
+                      "title": "Subtest High - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
+                      "duration": 200
+                    },
+                    {
+                      "title": "Subtest High - Open Subscription Details page and verify entered data is reflected",
+                      "duration": 8518
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:15:42.809Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f20505f53e7fcdc1e661-1d97b15dbd6ba6d84f32",
+          "file": "functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Subtest Medium - new user activation flow",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "HappyPath",
+            "NewUser",
+            "Subtest",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                    "line": 13,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 73467,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=CqNGA8GKhoaqZ8xp%2fzfxCw%3d%3d SO=SO292850\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Subtest Medium - Land on activation page (recover if code/SO already used)",
+                      "duration": 4661
+                    },
+                    {
+                      "title": "Subtest Medium - Select Create-a-Login and click Create an Account",
+                      "duration": 2516
+                    },
+                    {
+                      "title": "Subtest Medium - Fill contact info and proceed",
+                      "duration": 10812
+                    },
+                    {
+                      "title": "Subtest Medium - S13 - Click auto-generate username and verify it contains first name",
+                      "duration": 2496
+                    },
+                    {
+                      "title": "Subtest Medium - Set username and password",
+                      "duration": 7017
+                    },
+                    {
+                      "title": "Subtest Medium - Fill location and submit",
+                      "duration": 12020
+                    },
+                    {
+                      "title": "Subtest Medium - Verify subscription details and confirm activation",
+                      "duration": 2548
+                    },
+                    {
+                      "title": "Subtest Medium - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
+                      "duration": 8564
+                    },
+                    {
+                      "title": "Subtest Medium - Verify GIA test set access matches qualification level",
+                      "duration": 4688
+                    },
+                    {
+                      "title": "Subtest Medium - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
+                      "duration": 191
+                    },
+                    {
+                      "title": "Subtest Medium - Open Subscription Details page and verify entered data is reflected",
+                      "duration": 8735
+                    },
+                    {
+                      "title": "Subtest Medium - S27 - Re-navigating to just-activated Subtest code shows \"Subscription Error\" popup",
+                      "duration": 2043
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:16:51.836Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+                        "line": 13,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f20505f53e7fcdc1e661-13abec060b2dbeb7dd20",
+          "file": "functional/subscriptions/SubscriptionActivationNewUser.spec.ts",
+          "line": 13,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-12T18:10:08.868Z",
+    "duration": 476791.912,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 1
+  }
+}

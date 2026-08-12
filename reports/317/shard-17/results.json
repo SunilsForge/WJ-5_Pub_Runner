@@ -1,0 +1,1112 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+        "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 17,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/subscriptions/lockedDates/PostConfirmationBehaviour.spec.ts",
+      "file": "functional/subscriptions/lockedDates/PostConfirmationBehaviour.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PV-022/023/024 - After activation the confirm popup does not re-appear and the link reads Activated",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "LockedDates",
+            "PostConfirmation",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "27018, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/PostConfirmationBehaviour.spec.ts",
+                    "line": 16,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 60458,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Activate a fresh org and stay signed in",
+                      "duration": 45679
+                    },
+                    {
+                      "title": "PV-024 - Activation service reports the link as Activated",
+                      "duration": 380
+                    },
+                    {
+                      "title": "Setup - Sign out and sign back in as the same Account Holder",
+                      "duration": 7924
+                    },
+                    {
+                      "title": "PV-022 - The Confirm Activation popup does not re-appear on a later login",
+                      "duration": 12
+                    },
+                    {
+                      "title": "PV-023 - The user lands straight on the product page with WJ V available",
+                      "duration": 4353
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:10:33.611Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "27018, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/PostConfirmationBehaviour.spec.ts",
+                        "line": 16,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed42c6502595500a3e92-ea20c07182b5ec796483",
+          "file": "functional/subscriptions/lockedDates/PostConfirmationBehaviour.spec.ts",
+          "line": 16,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/qualifications/QualificationCognitiveTestSession.spec.ts",
+      "file": "functional/subscriptions/qualifications/QualificationCognitiveTestSession.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "QF-009 - High-qualified user can build a Test Set from Cognitive tests and start an administration with it",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "Qualification",
+            "CognitiveSession",
+            "High",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24752, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationCognitiveTestSession.spec.ts",
+                    "line": 45,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 220539,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N67287A37873\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N67287A37873 FirstName=Isai LastName =N67287A37873 Age = 08/12/2019\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N67287A37873\n"
+                    },
+                    {
+                      "text": "Filling the session ID input box...\n"
+                    },
+                    {
+                      "text": "Attempt 1 to join the session.\n"
+                    },
+                    {
+                      "text": "Clicked Join Session button.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Activate a fresh High-qualified org and stay signed in",
+                      "duration": 47216
+                    },
+                    {
+                      "title": "Setup - Derive the Cognitive test names available to this High-qualified org",
+                      "duration": 8923
+                    },
+                    {
+                      "title": "QF-009 - Create a custom Test Set containing multiple Cognitive tests",
+                      "duration": 23677
+                    },
+                    {
+                      "title": "Setup - Create an Examinee to administer the Cognitive test set to",
+                      "duration": 18544
+                    },
+                    {
+                      "title": "QF-009 - Assign the Cognitive test set to the Examinee and launch it",
+                      "duration": 25867
+                    },
+                    {
+                      "title": "QF-009 - Connect examinee device and open a Cognitive test from the administration nav",
+                      "duration": 83592
+                    },
+                    {
+                      "title": "QF-009 - Every Cognitive test in the Test Set is listed in the administration nav",
+                      "duration": 4276
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:11:35.944Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24752, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationCognitiveTestSession.spec.ts",
+                        "line": 45,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cf892a27266152e7f83c-9a1a7ca7a3c0fe35d081",
+          "file": "functional/subscriptions/qualifications/QualificationCognitiveTestSession.spec.ts",
+          "line": 45,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts",
+      "file": "functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "QF-017 - Cognitive Testing indicator on Add Staff reflects High qualification (BUG-26117)",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "Qualification",
+            "StaffPermissions",
+            "High",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24752, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts",
+                    "line": 23,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 58035,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Activate a fresh High-qualified org and stay signed in",
+                      "duration": 47754
+                    },
+                    {
+                      "title": "Setup - Confirm the API reports CognitiveTesting = true",
+                      "duration": 275
+                    },
+                    {
+                      "title": "QF-017 - Add Staff form shows the Cognitive Testing switch as expected",
+                      "duration": 5669
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:15:18.513Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24752, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts",
+                        "line": 23,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "176d4820556b310d90ce-1c37741d9963787a6407",
+          "file": "functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts",
+          "line": 23,
+          "column": 7
+        },
+        {
+          "title": "QF-017 - Cognitive Testing indicator on Add Staff reflects Medium qualification (BUG-26117)",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "Qualification",
+            "StaffPermissions",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24752, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts",
+                    "line": 23,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 52909,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Activate a fresh Medium-qualified org and stay signed in",
+                      "duration": 44061
+                    },
+                    {
+                      "title": "Setup - Confirm the API reports CognitiveTesting = false",
+                      "duration": 326
+                    },
+                    {
+                      "title": "QF-017 - Add Staff form shows the Cognitive Testing switch as expected",
+                      "duration": 5648
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:16:17.108Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24752, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts",
+                        "line": 23,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "176d4820556b310d90ce-5977bf59f9c0095474a4",
+          "file": "functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts",
+          "line": 23,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/qualifications/QualificationTestSetAccess.spec.ts",
+      "file": "functional/subscriptions/qualifications/QualificationTestSetAccess.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "QF-005/006/008 - High-qualified user sees Cognitive, Achievement and Virtual Test Library content",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "Qualification",
+            "TestSetAccess",
+            "High",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24752, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationTestSetAccess.spec.ts",
+                    "line": 27,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 64762,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Activate a fresh High-qualified org and stay signed in",
+                      "duration": 46506
+                    },
+                    {
+                      "title": "Setup - Confirm the API reports cognitive access for this org",
+                      "duration": 291
+                    },
+                    {
+                      "title": "Setup - Open Test Set Creation on the Clusters tab",
+                      "duration": 8930
+                    },
+                    {
+                      "title": "QF-008 - All three Cognitive cluster groups are listed",
+                      "duration": 72
+                    },
+                    {
+                      "title": "QF-006 - Virtual Test Library section and its cluster groups are listed",
+                      "duration": 31
+                    },
+                    {
+                      "title": "QF-005/007 - Achievement clusters listed, and All Tests contains every Achievement and Cognitive test",
+                      "duration": 3381
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:17:11.364Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24752, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationTestSetAccess.spec.ts",
+                        "line": 27,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ad7770a01b1b2dcdfada-9e827fb6a6acc42c4f83",
+          "file": "functional/subscriptions/qualifications/QualificationTestSetAccess.spec.ts",
+          "line": 27,
+          "column": 5
+        },
+        {
+          "title": "QF-010/011/012/013/014 - Medium-qualified user sees Achievement and Virtual Test Library only, no Cognitive content",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "Qualification",
+            "TestSetAccess",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24752, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationTestSetAccess.spec.ts",
+                    "line": 99,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 69847,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Activate a fresh Medium-qualified org and stay signed in",
+                      "duration": 45563
+                    },
+                    {
+                      "title": "Setup - Confirm the API reports no cognitive access for this org",
+                      "duration": 323
+                    },
+                    {
+                      "title": "Setup - Open Test Set Creation on the Clusters tab",
+                      "duration": 8992
+                    },
+                    {
+                      "title": "QF-013 - Cognitive Abilities section and its clusters are absent",
+                      "duration": 38
+                    },
+                    {
+                      "title": "QF-011 - Virtual Test Library section is still available for Medium",
+                      "duration": 26
+                    },
+                    {
+                      "title": "QF-010 - Achievement section lists all cluster groups",
+                      "duration": 20
+                    },
+                    {
+                      "title": "QF-010/012 - All Tests lists exactly the Achievement tests and nothing cognitive",
+                      "duration": 3504
+                    },
+                    {
+                      "title": "QF-014 - GIA preloaded cluster is not visible on the Test Sets list (BUG-26098)",
+                      "duration": 4509
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:18:16.645Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24752, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationTestSetAccess.spec.ts",
+                        "line": 99,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ad7770a01b1b2dcdfada-cb5757fca8cf39cff502",
+          "file": "functional/subscriptions/qualifications/QualificationTestSetAccess.spec.ts",
+          "line": 99,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Existing user (Active subscription) redeems Unlimited Medium code - Confirm Renewal with read-only dates",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "ExistingUser",
+            "HappyPath",
+            "ActiveSubscription",
+            "Unlimited",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24544, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+                    "line": 23,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 74498,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=1cVBlWSgZVeEGzrxpStUYw%3d%3d SO=SO292849\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Phase 1 - Create fresh org via Unlimited High code",
+                      "duration": 43535
+                    },
+                    {
+                      "title": "Phase 2 - Set active subscription (+150 days) and capture org state",
+                      "duration": 404
+                    },
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page",
+                      "duration": 3662
+                    },
+                    {
+                      "title": "S03 - Select \"Use my Existing Login\" and click Sign In (lands on Sign In to Activate)",
+                      "duration": 2494
+                    },
+                    {
+                      "title": "S07/S08 - Sign in with existing AH credentials",
+                      "duration": 3673
+                    },
+                    {
+                      "title": "S16/S17/S20 - Confirm Renewal popup: subscription, org, dates from API, START disabled",
+                      "duration": 54
+                    },
+                    {
+                      "title": "SP-033 - Confirm button is disabled before terms checkbox is ticked",
+                      "duration": 6
+                    },
+                    {
+                      "title": "S24 - Accept terms, click Confirm, wait for renewal API success",
+                      "duration": 2459
+                    },
+                    {
+                      "title": "S26 - Dismiss 2FA + terms + Pendo, click WJ V tile, verify dashboard + AH name in header",
+                      "duration": 7237
+                    },
+                    {
+                      "title": "S32 - Verify renewal reflected in API state and Subscription Details page",
+                      "duration": 6769
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:19:28.012Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24544, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+                        "line": 23,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4c6f953a637fac058223-a6a57b0bee8b275bd431",
+          "file": "functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+          "line": 23,
+          "column": 5
+        },
+        {
+          "title": "Existing user (Expired subscription) redeems Subtest High code - Confirm Renewal with editable dates",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "ExistingUser",
+            "HappyPath",
+            "ExpiredSubscription",
+            "Subtest",
+            "High",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24544, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+                    "line": 132,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 79132,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=cCPSEDKgAKFJN%2bFCcRoNtw%3d%3d SO=SO292939\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Phase 1 - Create fresh org via Subtest Medium code",
+                      "duration": 42591
+                    },
+                    {
+                      "title": "Phase 2 - Expire subscription via API and capture org state",
+                      "duration": 382
+                    },
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page",
+                      "duration": 3640
+                    },
+                    {
+                      "title": "S03 - Select \"Use my Existing Login\" and click Sign In (lands on Sign In to Activate)",
+                      "duration": 2471
+                    },
+                    {
+                      "title": "S07/S08 - Sign in with existing AH credentials",
+                      "duration": 3674
+                    },
+                    {
+                      "title": "S16/S17/S20 - Confirm Activation popup: subscription, org, dates default to today (editable)",
+                      "duration": 62
+                    },
+                    {
+                      "title": "SP-033 - Confirm button is disabled before terms checkbox is ticked",
+                      "duration": 6
+                    },
+                    {
+                      "title": "S24 - Accept terms, click Confirm, wait for renewal API success",
+                      "duration": 2468
+                    },
+                    {
+                      "title": "S26 - Dismiss 2FA + terms + Pendo, click WJ V tile, verify dashboard + AH name in header",
+                      "duration": 7479
+                    },
+                    {
+                      "title": "S10 - Verify GIA test set access matches qualification level",
+                      "duration": 4338
+                    },
+                    {
+                      "title": "S32 - Verify new subscription reflected in API state",
+                      "duration": 333
+                    },
+                    {
+                      "title": "S32 UI - Verify Subscription Details page shows correct expiration and remaining subtests",
+                      "duration": 6346
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:20:43.035Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24544, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+                        "line": 132,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4c6f953a637fac058223-fe57e37ec9932fd7584b",
+          "file": "functional/subscriptions/SubscriptionActivationExistingUser.spec.ts",
+          "line": 132,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-12T18:10:18.349Z",
+    "duration": 704116.924,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

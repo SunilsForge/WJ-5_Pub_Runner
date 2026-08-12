@@ -1,0 +1,993 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+        "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/31626171032"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 19,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Date Edge Cases on Confirm Activation modal - 180-day start window",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "DateEdgeCases",
+            "StartDateWindow",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819, 27103, 27193",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts",
+                    "line": 24,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 106789,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Pin the purchase date to today so every offset below is a future date",
+                      "duration": 1506
+                    },
+                    {
+                      "title": "Setup - Fetch PurchaseDate from GetSubscriptionOrder API for SO292847",
+                      "duration": 283
+                    },
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page (guarantees mutable START DATE)",
+                      "duration": 3050
+                    },
+                    {
+                      "title": "Setup - Create login → contact → credentials → location → reach Confirm modal",
+                      "duration": 33829
+                    },
+                    {
+                      "title": "S43 - Past date (today-2) rejected with \"Date entered cannot be before current date.\"",
+                      "duration": 7480
+                    },
+                    {
+                      "title": "S40 - Error clears after entering a valid (today) date",
+                      "duration": 6646
+                    },
+                    {
+                      "title": "S37/SD-003/SD-005 - Start date > 180 days from PurchaseDate (purchase+181) rejected with \"Date cannot exceed 180 days...\"",
+                      "duration": 6647
+                    },
+                    {
+                      "title": "SD-009/MY-018 - Out-of-range error references 180 days, not the superseded 60-day limit",
+                      "duration": 8
+                    },
+                    {
+                      "title": "S36/MY-019 - Start date purchase+179 days is accepted (no error) + end = start + 1 yr - 1 day",
+                      "duration": 6657
+                    },
+                    {
+                      "title": "MY-020/SD-004 - Boundary: start date at exactly purchase+180 is accepted",
+                      "duration": 6657
+                    },
+                    {
+                      "title": "SD-013 - Start date at purchase+61 is accepted (was invalid under the superseded 60-day limit)",
+                      "duration": 6663
+                    },
+                    {
+                      "title": "SD-011 - School-year alignment: start date ~90 days from purchase is accepted",
+                      "duration": 6639
+                    },
+                    {
+                      "title": "SD-012/MY-005 - Start date within 60 days still works, and end date is start + 1 yr - 1 day",
+                      "duration": 6659
+                    },
+                    {
+                      "title": "S39 - End date reflects 1-year-out when start date changes (today+4)",
+                      "duration": 6647
+                    },
+                    {
+                      "title": "S38 - Clearing start date clears the end date input value",
+                      "duration": 4892
+                    },
+                    {
+                      "title": "S42 - \"Abandon Activation and Log-out\" redirects to login page",
+                      "duration": 1326
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:11:04.199Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819, 27103, 27193",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts",
+                        "line": 24,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d1bc6cbc35874be7103e-a378c73d93f7ac62d54a",
+          "file": "functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts",
+          "line": 24,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Future-dated activation - admin tasks allowed + Submit blocked + banner (S49, S50, S51)",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "FutureDate",
+            "Subtest",
+            "Medium",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts",
+                    "line": 50,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 307515,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N17824A23591\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N17824A23591 FirstName=Justice LastName =N17824A23591 Age = 08/12/2019\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N17824A23591\n"
+                    },
+                    {
+                      "text": "Filling the session ID input box...\n"
+                    },
+                    {
+                      "text": "Attempt 1 to join the session.\n"
+                    },
+                    {
+                      "text": "Clicked Join Session button.\n"
+                    },
+                    {
+                      "text": "Calculation\n"
+                    },
+                    {
+                      "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page (guarantees mutable START DATE)",
+                      "duration": 2938
+                    },
+                    {
+                      "title": "Setup - Wizard: Create-a-Login → Contact → Credentials → Location",
+                      "duration": 32895
+                    },
+                    {
+                      "title": "Setup - Confirm modal: change START DATE to today+5 (08/17/2026) and confirm",
+                      "duration": 9175
+                    },
+                    {
+                      "title": "Setup - Dismiss 2FA + terms + Pendo, click WJ V tile, verify dashboard",
+                      "duration": 8781
+                    },
+                    {
+                      "title": "S51 - FUTURE reminder banner is visible on dashboard with the correct copy",
+                      "duration": 18509
+                    },
+                    {
+                      "title": "S49a - AH can create a Staff member (admin: staff management)",
+                      "duration": 17592
+                    },
+                    {
+                      "title": "S49b - AH can create an Examinee (admin: child management)",
+                      "duration": 18548
+                    },
+                    {
+                      "title": "S49c - AH can create a custom Test Set with [Calculation] (admin: test set creation)",
+                      "duration": 19698
+                    },
+                    {
+                      "title": "S49d - AH can assign the custom Test Set to the Examinee and launch it (admin: assignment + launch allowed)",
+                      "duration": 26072
+                    },
+                    {
+                      "title": "S50 - Connect examinee device, take Calculation (answer wrong), reach Submit screen",
+                      "duration": 140123
+                    },
+                    {
+                      "title": "S50 - Open Submit popup, advance to Notes tab, assert final Submit is DISABLED",
+                      "duration": 2489
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:12:52.885Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts",
+                        "line": 50,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e825697c4ceb1037ddd7-ef758149d787c8a72717",
+          "file": "functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts",
+          "line": 50,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "S05 - Malformed activation code shows \"Invalid activation code\" error",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "Negative",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483_24544, 31819, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+                    "line": 20,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3002,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to malformed activation URL and verify \"Invalid activation code\" message",
+                      "duration": 2282
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:18:02.378Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+                        "line": 20,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "81eaacdef0019ec1a6ae-20c7a2688e9b29982076",
+          "file": "functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+          "line": 20,
+          "column": 5
+        },
+        {
+          "title": "S10/S11/S17/S18/S22 - Contact + credentials inline validations and Back navigation",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "Negative",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24483, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+                    "line": 45,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 81492,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=IP3VhUHEHXCfKJ03Io8l1A%3d%3d SO=SO292847\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Setup - Land on activation page (self-recover if code/SO already used)",
+                      "duration": 4484
+                    },
+                    {
+                      "title": "Setup - Select Create-a-Login and click Create an Account",
+                      "duration": 2844
+                    },
+                    {
+                      "title": "S11 - Invalid email and phone show inline errors on Contact Information",
+                      "duration": 8965
+                    },
+                    {
+                      "title": "Recover - Fix email/phone with valid values and proceed to Username & Password",
+                      "duration": 16604
+                    },
+                    {
+                      "title": "S18 - Short password (< 8 chars) shows length error",
+                      "duration": 6314
+                    },
+                    {
+                      "title": "S18 - Long password (> 10 chars) shows length error",
+                      "duration": 6793
+                    },
+                    {
+                      "title": "S17 - Mismatched password and confirm shows \"Passwords do not match\" error",
+                      "duration": 11820
+                    },
+                    {
+                      "title": "Recover - Set valid credentials and proceed to Add Location",
+                      "duration": 19190
+                    },
+                    {
+                      "title": "S22 - Click Back on Add Location → lands on Username & Password page",
+                      "duration": 1289
+                    },
+                    {
+                      "title": "S10 - Click Back on Username & Password → lands on Contact Information page",
+                      "duration": 1260
+                    },
+                    {
+                      "title": "S10 - Click Back on Contact Information → lands on activation landing page",
+                      "duration": 1268
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:18:05.875Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+                        "line": 45,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "81eaacdef0019ec1a6ae-a74823e0458fde73b9ee",
+          "file": "functional/subscriptions/SubscriptionActivationNewUserNegative.spec.ts",
+          "line": 45,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+      "file": "functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "AC2 Happy path - Subtest user (add-on window, >4 months remaining) redeems Subtest Medium code - subtests added to existing pool",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "SubsequentPurchase",
+            "ExistingUser",
+            "Subtest",
+            "AddOn",
+            "AC2",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "25467, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                    "line": 22,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 74947,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=CqNGA8GKhoaqZ8xp%2fzfxCw%3d%3d SO=SO292850\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Phase 1 - Create fresh org via Subtest High code",
+                      "duration": 43490
+                    },
+                    {
+                      "title": "Setup - Set subscription to add-on window (+150 days) and capture state",
+                      "duration": 398
+                    },
+                    {
+                      "title": "Setup - Land on activation page",
+                      "duration": 3670
+                    },
+                    {
+                      "title": "S03 - Select \"Use my Existing Login\" and click Sign In",
+                      "duration": 2477
+                    },
+                    {
+                      "title": "S07/S08 - Sign in with existing AH credentials",
+                      "duration": 3672
+                    },
+                    {
+                      "title": "SP-005/006/007/008/009/010/011 - Confirm Activation popup: subscription, org, subtest count, current sub dates",
+                      "duration": 77
+                    },
+                    {
+                      "title": "SP-033 - Confirm button is disabled before terms checkbox is ticked",
+                      "duration": 6
+                    },
+                    {
+                      "title": "SP-012 - Accept terms and confirm activation",
+                      "duration": 2471
+                    },
+                    {
+                      "title": "SP-026 - Dismiss 2FA + accept terms, click WJ V tile, verify dashboard",
+                      "duration": 7475
+                    },
+                    {
+                      "title": "SP-012 API - Verify subtest pool reflects added subtests",
+                      "duration": 348
+                    },
+                    {
+                      "title": "SP-012 UI - Verify Subscription Details page shows correct expiration date and remaining subtests",
+                      "duration": 6563
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:19:28.567Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "25467, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                        "line": 22,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e684c5b20939aad6b21e-e502a69fb387b88dffd1",
+          "file": "functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+          "line": 22,
+          "column": 5
+        },
+        {
+          "title": "AC2 Abandon - Subtest user (add-on window) abandons Confirm Activation popup - code remains available",
+          "ok": true,
+          "tags": [
+            "SubscriptionActivation",
+            "SubsequentPurchase",
+            "ExistingUser",
+            "Subtest",
+            "AddOn",
+            "AC2",
+            "Abandon",
+            "Regression",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "25467, ",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                    "line": 126,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 56946,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=CqNGA8GKhoaqZ8xp%2fzfxCw%3d%3d SO=SO292850\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Phase 1 - Create fresh org via Subtest High code",
+                      "duration": 42741
+                    },
+                    {
+                      "title": "Setup - Set subscription to add-on window (+150 days)",
+                      "duration": 391
+                    },
+                    {
+                      "title": "Setup - Land on activation page",
+                      "duration": 3742
+                    },
+                    {
+                      "title": "S03 - Select \"Use my Existing Login\" and click Sign In",
+                      "duration": 2479
+                    },
+                    {
+                      "title": "S07/S08 - Sign in with existing AH credentials",
+                      "duration": 3667
+                    },
+                    {
+                      "title": "SP-014 - Wait for Confirm Activation popup, abandon, verify code still available",
+                      "duration": 2730
+                    }
+                  ],
+                  "startTime": "2026-08-12T18:20:44.011Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "25467, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                        "line": 126,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e684c5b20939aad6b21e-536126901d45343f8323",
+          "file": "functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+          "line": 126,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-12T18:10:49.386Z",
+    "duration": 651911.1140000001,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
