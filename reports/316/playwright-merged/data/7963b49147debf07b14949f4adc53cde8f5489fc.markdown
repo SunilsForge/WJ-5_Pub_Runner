@@ -1,0 +1,159 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/reviewMode/SubmittedTestAssignments.spec.ts >> I want the ability to launch into review mode for my submitted test assignments >> Validate different scenarios in submitted test assignment in review mode
+- Location: src/tests/functional/reviewMode/SubmittedTestAssignments.spec.ts:168:9
+
+# Error details
+
+```
+Test timeout of 600000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 06PwAut25Ex_01 ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "06PwAut25Ex_01 ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [active] [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                    - text: N17636A4687
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [disabled] [ref=e56]
+                  - button "Closed" [disabled] [ref=e57]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "Begin assignment Form A (+1 more) for N17636A4687, Maria Form A (+1 more) More info 90 days ● In Progress ↩️ Resume Assignment Edit Assignment Add Tests Assignment actions" [ref=e74] [cursor=pointer]:
+                    - cell "Begin assignment Form A (+1 more) for N17636A4687, Maria" [ref=e75]:
+                      - button "Begin assignment Form A (+1 more) for N17636A4687, Maria" [ref=e76]:
+                        - generic [ref=e77]: N17636A4687, Maria
+                    - cell "Form A (+1 more) More info" [ref=e78]:
+                      - generic [ref=e79]:
+                        - button "Form A (+1 more)" [ref=e80]:
+                          - generic [ref=e81]: Form A (+1 more)
+                        - button "More info" [ref=e82]
+                    - cell "90 days" [ref=e83]:
+                      - button "90 days" [ref=e84]
+                    - cell "● In Progress ↩️ Resume Assignment" [ref=e85]:
+                      - button "● In Progress ↩️ Resume Assignment" [ref=e86]:
+                        - generic [ref=e87]: ●
+                        - text: In Progress
+                        - text: ↩️ Resume Assignment
+                    - cell "Edit Assignment Add Tests Assignment actions" [ref=e88]:
+                      - button "Edit Assignment" [ref=e89]
+                      - button "Add Tests" [ref=e90]
+                      - button "Assignment actions" [ref=e91]
+            - generic [ref=e92]:
+              - generic [ref=e95]:
+                - img [ref=e96]
+                - heading "Notifications Center" [level=2] [ref=e100]
+              - generic [ref=e101]:
+                - generic [ref=e103]:
+                  - img [ref=e104]
+                  - heading "Resources" [level=3] [ref=e108]
+                - list [ref=e109]:
+                  - listitem [ref=e110]:
+                    - button "Riverside Learn" [ref=e111] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e112]
+                      - img [ref=e114]
+                  - listitem [ref=e116]:
+                    - button "Onboarding Tutorial Videos" [ref=e117] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e118]
+                      - img [ref=e120]
+                  - listitem [ref=e122]:
+                    - button "Quick Reference Guides" [ref=e123] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e124]
+                      - img [ref=e126]
+                - button "View All" [ref=e129] [cursor=pointer]
+      - contentinfo [ref=e130]:
+        - generic [ref=e131]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e132] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e133]
+        - generic [ref=e134]:
+          - link "Riverside Insights Facebook" [ref=e135] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e136]
+          - link "Riverside Insights Twitter" [ref=e137] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e138]
+          - link "Riverside Insights LinkedIn" [ref=e139] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e140]
+          - link "Riverside Insights Instagram" [ref=e141] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e142]
+        - generic [ref=e143]:
+          - button "Leave Feedback" [ref=e144] [cursor=pointer]
+          - generic [ref=e145]: "|"
+          - link "Terms of Use" [ref=e146] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e147]: "|"
+          - link "Privacy Policy" [ref=e148] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e149]: Footer region end
+  - region "Chat Widget" [ref=e150]:
+    - iframe [ref=e151]:
+      - button "Open live chat" [ref=f16e5]:
+        - img [ref=f16e8]
+        - img [ref=f16e15]
+    - generic "Drag" [ref=e152]:
+      - img [ref=e153]
+```

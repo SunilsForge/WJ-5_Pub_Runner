@@ -1,0 +1,384 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/SubscriptionActivationNewUser.spec.ts >> Subtest High - new user activation flow
+- Location: src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:13:7
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('button[aria-label="Woodcock Johnson V"]')
+    - locator resolved to <button tabindex="0" type="button" role="menuitem" aria-current="false" aria-label="Woodcock Johnson V" class="product-display wjv-logo"></button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="ReactModal__Overlay ReactModal__Overlay--after-open Overlay">…</div> from <div class="ReactModalPortal">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="update-phone-header">PHONE NUMBER</div> from <div class="ReactModalPortal">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 100ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="update-phone-section">…</div> from <div class="ReactModalPortal">…</div> subtree intercepts pointer events
+  28 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="ReactModal__Overlay ReactModal__Overlay--after-open Overlay">…</div> from <div class="ReactModalPortal">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="update-phone-header">PHONE NUMBER</div> from <div class="ReactModalPortal">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="update-phone-section">…</div> from <div class="ReactModalPortal">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="update-phone-section">…</div> from <div class="ReactModalPortal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="ReactModal__Overlay ReactModal__Overlay--after-open Overlay">…</div> from <div class="ReactModalPortal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="update-phone-header">PHONE NUMBER</div> from <div class="ReactModalPortal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="update-phone-section">…</div> from <div class="ReactModalPortal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - banner [ref=e5]:
+        - generic [ref=e6]:
+          - button [ref=e7]: Skip to main Content
+          - link [ref=e8] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e9]: Riverside Insights Logo
+          - generic [ref=e10]:
+            - heading [level=2] [ref=e11]:
+              - generic [ref=e12]: Hello
+              - button [ref=e13] [cursor=pointer]: Dante SubAut12Aug26150930
+            - navigation [ref=e16]:
+              - link [ref=e17] [cursor=pointer]:
+                - /url: https://riversideinsights.com/explore
+                - text: Shop Now
+              - button [ref=e18] [cursor=pointer]: "| Contact Us"
+              - button [ref=e19] [cursor=pointer]: "| Sign Out"
+      - main [ref=e20]:
+        - button [ref=e28] [cursor=pointer]: Update Profile
+        - heading [level=1] [ref=e31]: "To access scoring and reporting, please make a selection below:"
+        - menubar [ref=e32]:
+          - menuitem [ref=e33] [cursor=pointer]
+        - generic [ref=e34]:
+          - tablist [ref=e35]:
+            - tab [selected] [ref=e36] [cursor=pointer]: Riverside Updates
+            - tab [ref=e37] [cursor=pointer]: Webinars
+            - tab [ref=e38] [cursor=pointer]: Blog Posts
+            - tab [ref=e39] [cursor=pointer]: Forums
+          - generic [ref=e41]:
+            - heading [level=2] [ref=e42]: Test
+            - img [ref=e44]
+    - contentinfo [ref=e45]:
+      - generic [ref=e46]: Footer region,
+      - link [ref=e47] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com
+        - img [ref=e48]
+      - generic [ref=e49]:
+        - link [ref=e50] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e51]
+        - link [ref=e52] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e53]
+        - link [ref=e54] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e55]
+        - link [ref=e56] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e57]
+      - generic [ref=e58]:
+        - button [ref=e59] [cursor=pointer]: Leave Feedback
+        - generic [ref=e60]: "|"
+        - link [ref=e61] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e62]: "|"
+        - link [ref=e63] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e64]: Footer region end
+  - region "Chat Widget" [ref=e65]:
+    - iframe [ref=e66]:
+      - button "Open live chat" [ref=f17e5]:
+        - img [ref=f17e8]
+        - img [ref=f17e15]
+    - generic "Drag" [ref=e67]:
+      - img [ref=e68]
+  - dialog [active] [ref=e71]:
+    - heading "2-Factor Authentication" [level=1] [ref=e72]
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - paragraph [ref=e75]: In the near future, Riverside Score will see implementation of 2-Factor Authentication upon login. You will have an option to receive a code to your mobile phone number or email address that will need to be entered for login.
+        - paragraph [ref=e76]: Please take the time to update your phone number for ease of access when 2FA is implemented. Thank you!
+      - generic [ref=e77]: PHONE NUMBER
+      - textbox "Phone number input field" [ref=e79]: "6369173284"
+      - paragraph [ref=e81]: Phone number can be updated at any time in your Profile and Settings by selecting your name in the upper-right.
+    - generic [ref=e82]:
+      - button "Cancel" [ref=e83] [cursor=pointer]
+      - button "Update" [ref=e84] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  488 | 
+  489 |     const [m, d, y] = startDateValue.split('/').map(Number);
+  490 |     const endDateFromActualStart = new Date(y + 1, m - 1, d - 1);
+  491 |     const expectedEnd = formatMMDDYYYY(endDateFromActualStart);
+  492 | 
+  493 |     expect.soft(startDateValue).toBe(expectedStart);
+  494 |     expect.soft(endDateValue).toBe(expectedEnd);
+  495 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();
+  496 | 
+  497 |     return { startDate: startDateValue, endDate: endDateValue };
+  498 |   }
+  499 | 
+  500 |   async setStartDate(dateMMDDYYYY: string) {
+  501 |     await this.confirmStartDateInput.click();
+  502 |     await this.confirmStartDateInput.press('Control+A');
+  503 |     await this.confirmStartDateInput.press('Delete');
+  504 |     await this.confirmStartDateInput.pressSequentially(dateMMDDYYYY, { delay: 50 });
+  505 |     await this.confirmStartDateInput.press('Enter');
+  506 |   }
+  507 | 
+  508 |   async clearStartDate() {
+  509 |     await this.confirmStartDateInput.click();
+  510 |     await this.confirmStartDateInput.press('Control+A');
+  511 |     await this.confirmStartDateInput.press('Delete');
+  512 |     await this.confirmStartDateInput.press('Enter');
+  513 |   }
+  514 | 
+  515 |   async assertDateErrorContains(expectedText: string) {
+  516 |     await expect.soft(this.confirmDateErrorMessage).toContainText(expectedText);
+  517 |   }
+  518 | 
+  519 |   async assertNoDateError() {
+  520 |     await expect.soft(this.confirmDateErrorMessage).not.toBeVisible();
+  521 |   }
+  522 | 
+  523 |   async assertEndDateValueEquals(expectedMMDDYYYY: string) {
+  524 |     await expect.soft(this.confirmEndDateInput).toHaveValue(expectedMMDDYYYY);
+  525 |   }
+  526 | 
+  527 |   async assertEndDateValueEmpty() {
+  528 |     await expect.soft(this.confirmEndDateInput).toHaveValue('');
+  529 |   }
+  530 | 
+  531 |   async clickAbandonActivation() {
+  532 |     await this.confirmAbandonActivationButton.click();
+  533 |   }
+  534 | 
+  535 |   async verifyOnLoginPageAfterAbandon() {
+  536 |     const baseUrl = getSiteUrl().replace(/\/+$/, '');
+  537 |     await this.page.waitForURL(url => url.toString().startsWith(baseUrl), { timeout: 30_000 });
+  538 |     await expect.soft(this.signInButton).toBeVisible();
+  539 |   }
+  540 | 
+  541 |   async confirmActivation() {
+  542 |     await this.confirmAcceptTermsCheckbox.click();
+  543 |     await Promise.all([
+  544 |       this.page.waitForResponse(response => response.url().includes('ConfirmActivation') && response.status() === 200, {
+  545 |         timeout: 2 * 60 * 1000,
+  546 |       }),
+  547 |       this.confirmActivationButton.click(),
+  548 |     ]);
+  549 |   }
+  550 | 
+  551 |   async dismiss2FAPopupIfPresent() {
+  552 |     try {
+  553 |       await this.page.waitForLoadState('load', { timeout: 30_000 });
+  554 |     } catch {}
+  555 |     await this.page.waitForTimeout(3000);
+  556 | 
+  557 |     try {
+  558 |       if (await this.twoFactorAuthCancelButton.isVisible()) {
+  559 |         await this.twoFactorAuthCancelButton.click();
+  560 |       }
+  561 |     } catch (error) {
+  562 |       console.warn('Error while dismissing 2FA popup: ', error);
+  563 |     }
+  564 |   }
+  565 | 
+  566 |   async acceptTermsDialogIfPresent() {
+  567 |     try {
+  568 |       const updateTermsPopup = await this.page.getByRole('dialog').first().isVisible();
+  569 |       if (updateTermsPopup) {
+  570 |         await this.page.getByRole('button', { name: 'I Accept' }).click();
+  571 |       }
+  572 |     } catch (error) {
+  573 |       console.warn('Error while accepting user terms: ', error);
+  574 |     }
+  575 |   }
+  576 | 
+  577 |   async dismissPendoGuideIfPresent() {
+  578 |     try {
+  579 |       await this.pendoGuideCloseButton.waitFor({ state: 'visible', timeout: 3000 });
+  580 |       await this.pendoGuideCloseButton.click();
+  581 |     } catch {
+  582 |       /* Pendo guide didn't appear in time — proceed */
+  583 |     }
+  584 |   }
+  585 | 
+  586 |   async clickWJVTileAndVerifyDashboard(expectedHeaderName: string) {
+  587 |     await expect.soft(this.userNameDisplayHeader).toHaveText(expectedHeaderName);
+> 588 |     await this.productDisplayCardWJV.click();
+      |                                      ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  589 |     await this.dismissPendoGuideIfPresent();
+  590 |     await expect(this.myTestAssignmentsText).toBeVisible();
+  591 |   }
+  592 | 
+  593 |   async verifyGIATestSetAccess(cognitiveAccess: boolean) {
+  594 |     await this.dismissPendoGuideIfPresent();
+  595 |     await this.testSetButton.click();
+  596 |     try {
+  597 |       await this.page.waitForLoadState('load', { timeout: 30_000 });
+  598 |     } catch {}
+  599 |     if (cognitiveAccess) {
+  600 |       await expect.soft(this.giaTestSetNameSpan).toBeVisible();
+  601 |     } else {
+  602 |       await expect.soft(this.giaTestSetNameSpan).not.toBeVisible();
+  603 |     }
+  604 |   }
+  605 | 
+  606 |   async verifyEntitlementApiAfterActivation(
+  607 |     formData: SubscriptionActivationFormData,
+  608 |     scenario: ActivationCode,
+  609 |     actualStartDate: string,
+  610 |     actualEndDate: string
+  611 |   ) {
+  612 |     const subApi = new subscriptionApi(this.page);
+  613 |     const [summary, extras] = await subApi.getOrgSubscriptionDetails(formData.username);
+  614 | 
+  615 |     const expectedFullName = `${formData.firstName} ${formData.lastName}`;
+  616 |     const expectedStart = actualStartDate;
+  617 |     const expectedEnd = actualEndDate;
+  618 | 
+  619 |     expect.soft(summary.OrganizationId, 'OrganizationId should be returned').toBeGreaterThan(0);
+  620 |     expect.soft(summary.SubscriptionType).toContain(scenario.subscriptionType);
+  621 |     expect.soft(summary.CognitiveTesting).toBe(scenario.cognitiveAccess);
+  622 |     expect.soft(extras.accountHolderName).toBe(expectedFullName);
+  623 |     expect.soft(extras.accountHolderEmail).toBe(formData.email);
+  624 |     expect.soft(extras.activationContactName).toBe(expectedFullName);
+  625 |     expect.soft(extras.activationContactEmail).toBe(formData.email);
+  626 |     expect.soft(extras.currentStartDate).toContain(mmddyyyyToIsoPrefix(expectedStart));
+  627 |     expect.soft(extras.currentEndDate).toContain(mmddyyyyToIsoPrefix(expectedEnd));
+  628 | 
+  629 |     if (scenario.subtestCount !== undefined) {
+  630 |       expect.soft(extras.remainingSubtests).toBe(scenario.subtestCount);
+  631 |     }
+  632 |   }
+  633 | 
+  634 |   async verifyRenewalApiState(username: string, expectedRenewalEndMMDDYYYY: string, expectedSubtestCount?: number, checkHasRenewal = true) {
+  635 |     const subApi = new subscriptionApi(this.page);
+  636 |     const [summary, extras] = await subApi.getOrgSubscriptionDetails(username);
+  637 |     if (checkHasRenewal) {
+  638 |       expect.soft(summary.HasRenewal, 'HasRenewal').toBe('true');
+  639 |     }
+  640 |     if (summary.SubscriptionTo) {
+  641 |       expect.soft(isoToMMDDYYYY(summary.SubscriptionTo)).toBe(expectedRenewalEndMMDDYYYY);
+  642 |     }
+  643 |     if (expectedSubtestCount !== undefined && extras.remainingSubtests !== undefined) {
+  644 |       expect.soft(extras.remainingSubtests, 'remainingSubtests').toBeGreaterThan(0);
+  645 |       expect.soft(extras.remainingSubtests, 'remainingSubtests purchased count').toBe(expectedSubtestCount);
+  646 |     }
+  647 |     RawValueLogger.log('S32 API snapshot', { hasRenewal: summary.HasRenewal, renewalEndDate: summary.RenewalEndDate, remainingSubtests: extras.remainingSubtests });
+  648 |   }
+  649 | 
+  650 |   async verifySubscriptionDetailsAfterRenewal(renewalEndMMDDYYYY: string, expectedRemainingSubtests?: number) {
+  651 |     await this.openSubscriptionDetailsPage();
+  652 |     await this.subscriptionDetailsExpirationDateValue.waitFor({ state: 'visible', timeout: 15000 });
+  653 |     await expect.soft(this.subscriptionDetailsExpirationDateValue).toContainText(renewalEndMMDDYYYY);
+  654 |     if (expectedRemainingSubtests !== undefined) {
+  655 |       await expect.soft(this.subscriptionDetailsRemainingSubtestsValue).toHaveText(String(expectedRemainingSubtests));
+  656 |     }
+  657 |   }
+  658 | 
+  659 |   async openSubscriptionDetailsPage() {
+  660 |     try {
+  661 |       await this.page.waitForLoadState('load', { timeout: 30_000 });
+  662 |     } catch {
+  663 |       /* ignore */
+  664 |     }
+  665 |     await this.dismissPendoGuideIfPresent();
+  666 |     await this.page.waitForTimeout(2000);
+  667 |     await this.subscriptionDetailsButton.click();
+  668 |   }
+  669 | 
+  670 |   async verifySubscriptionDetailsPage(
+  671 |     formData: SubscriptionActivationFormData,
+  672 |     scenario: ActivationCode,
+  673 |     actualStartDate: string,
+  674 |     actualEndDate: string
+  675 |   ) {
+  676 |     try {
+  677 |       await this.page.waitForLoadState('load', { timeout: 30_000 });
+  678 |     } catch {
+  679 |       /* ignore */
+  680 |     }
+  681 |     await this.page.waitForTimeout(2000);
+  682 | 
+  683 |     const expectedStart = actualStartDate;
+  684 |     const expectedEnd = actualEndDate;
+  685 |     const expectedFullName = `${formData.firstName} ${formData.lastName}`;
+  686 | 
+  687 |     await expect.soft(this.subscriptionDetailsStartDateValue).toContainText(expectedStart);
+  688 |     await expect.soft(this.subscriptionDetailsExpirationDateValue).toContainText(expectedEnd);
+```
