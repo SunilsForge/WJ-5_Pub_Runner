@@ -344,7 +344,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 60458,
+                  "duration": 65021,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -352,15 +352,15 @@
                   "steps": [
                     {
                       "title": "Setup - Activate a fresh org and stay signed in",
-                      "duration": 45679
+                      "duration": 48985
                     },
                     {
                       "title": "PV-024 - Activation service reports the link as Activated",
-                      "duration": 380
+                      "duration": 273
                     },
                     {
                       "title": "Setup - Sign out and sign back in as the same Account Holder",
-                      "duration": 7924
+                      "duration": 7914
                     },
                     {
                       "title": "PV-022 - The Confirm Activation popup does not re-appear on a later login",
@@ -368,10 +368,10 @@
                     },
                     {
                       "title": "PV-023 - The user lands straight on the product page with WJ V available",
-                      "duration": 4353
+                      "duration": 4297
                     }
                   ],
-                  "startTime": "2026-08-12T18:10:33.611Z",
+                  "startTime": "2026-08-12T19:33:25.923Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -435,20 +435,20 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 220539,
+                  "duration": 219042,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N67287A37873\n"
+                      "text": "Examinee ID N20380A46911\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N67287A37873 FirstName=Isai LastName =N67287A37873 Age = 08/12/2019\n"
+                      "text": "Successfully added an Examinee  ID =N20380A46911 FirstName=Eula LastName =N20380A46911 Age = 08/12/2019\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N67287A37873\n"
+                      "text": "Successfully selected examinee: N20380A46911\n"
                     },
                     {
                       "text": "Filling the session ID input box...\n"
@@ -465,34 +465,34 @@
                   "steps": [
                     {
                       "title": "Setup - Activate a fresh High-qualified org and stay signed in",
-                      "duration": 47216
+                      "duration": 47008
                     },
                     {
                       "title": "Setup - Derive the Cognitive test names available to this High-qualified org",
-                      "duration": 8923
+                      "duration": 9148
                     },
                     {
                       "title": "QF-009 - Create a custom Test Set containing multiple Cognitive tests",
-                      "duration": 23677
+                      "duration": 23278
                     },
                     {
                       "title": "Setup - Create an Examinee to administer the Cognitive test set to",
-                      "duration": 18544
+                      "duration": 18492
                     },
                     {
                       "title": "QF-009 - Assign the Cognitive test set to the Examinee and launch it",
-                      "duration": 25867
+                      "duration": 25537
                     },
                     {
                       "title": "QF-009 - Connect examinee device and open a Cognitive test from the administration nav",
-                      "duration": 83592
+                      "duration": 84056
                     },
                     {
                       "title": "QF-009 - Every Cognitive test in the Test Set is listed in the administration nav",
-                      "duration": 4276
+                      "duration": 2940
                     }
                   ],
-                  "startTime": "2026-08-12T18:11:35.944Z",
+                  "startTime": "2026-08-12T19:34:32.879Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -555,27 +555,106 @@
                 {
                   "workerIndex": 2,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 58035,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 159580,
+                  "error": {
+                    "message": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"",
+                    "stack": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"\n    at SubscriptionActivationPage.confirmActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:544:17)\n    at SubscriptionActivationPage.createFreshOrg (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:734:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts:51:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts:49:7",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                      "column": 17,
+                      "line": 544
+                    },
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:544\n\n\u001b[0m \u001b[90m 542 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmAcceptTermsCheckbox\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 543 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 544 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForResponse(response \u001b[33m=>\u001b[39m response\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(\u001b[32m'ConfirmActivation'\u001b[39m) \u001b[33m&&\u001b[39m response\u001b[33m.\u001b[39mstatus() \u001b[33m===\u001b[39m \u001b[35m200\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 545 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m2\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 546 |\u001b[39m       })\u001b[33m,\u001b[39m\n \u001b[90m 547 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmActivationButton\u001b[33m.\u001b[39mclick()\u001b[33m,\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 17,
+                        "line": 544
+                      },
+                      "message": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"\n\n   at ../page/subscriptionActivationPage.ts:544\n\n  542 |     await this.confirmAcceptTermsCheckbox.click();\n  543 |     await Promise.all([\n> 544 |       this.page.waitForResponse(response => response.url().includes('ConfirmActivation') && response.status() === 200, {\n      |                 ^\n  545 |         timeout: 2 * 60 * 1000,\n  546 |       }),\n  547 |       this.confirmActivationButton.click(),\n    at SubscriptionActivationPage.confirmActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:544:17)\n    at SubscriptionActivationPage.createFreshOrg (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:734:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts:51:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts:49:7"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Setup - Activate a fresh High-qualified org and stay signed in",
-                      "duration": 47754
+                      "duration": 158784,
+                      "error": {
+                        "message": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"",
+                        "stack": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"\n    at SubscriptionActivationPage.confirmActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:544:17)\n    at SubscriptionActivationPage.createFreshOrg (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:734:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts:51:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts:49:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 17,
+                          "line": 544
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:544\n\n\u001b[0m \u001b[90m 542 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmAcceptTermsCheckbox\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 543 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 544 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForResponse(response \u001b[33m=>\u001b[39m response\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(\u001b[32m'ConfirmActivation'\u001b[39m) \u001b[33m&&\u001b[39m response\u001b[33m.\u001b[39mstatus() \u001b[33m===\u001b[39m \u001b[35m200\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 545 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m2\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 546 |\u001b[39m       })\u001b[33m,\u001b[39m\n \u001b[90m 547 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmActivationButton\u001b[33m.\u001b[39mclick()\u001b[33m,\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-08-12T19:38:13.921Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24752, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts",
+                        "line": 23,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-q-a5450-gh-qualification-BUG-26117--chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-q-a5450-gh-qualification-BUG-26117--chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-q-a5450-gh-qualification-BUG-26117--chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                    "column": 17,
+                    "line": 544
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 51646,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Setup - Activate a fresh High-qualified org and stay signed in",
+                      "duration": 45619
                     },
                     {
                       "title": "Setup - Confirm the API reports CognitiveTesting = true",
-                      "duration": 275
+                      "duration": 152
                     },
                     {
                       "title": "QF-017 - Add Staff form shows the Cognitive Testing switch as expected",
-                      "duration": 5669
+                      "duration": 5545
                     }
                   ],
-                  "startTime": "2026-08-12T18:15:18.513Z",
+                  "startTime": "2026-08-12T19:40:55.890Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -590,7 +669,7 @@
                   "attachments": []
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
           "id": "176d4820556b310d90ce-1c37741d9963787a6407",
@@ -628,29 +707,42 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 2,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 52909,
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
+                  "startTime": "2026-08-12T19:40:54.670Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 50752,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
                   "steps": [
                     {
                       "title": "Setup - Activate a fresh Medium-qualified org and stay signed in",
-                      "duration": 44061
+                      "duration": 44565
                     },
                     {
                       "title": "Setup - Confirm the API reports CognitiveTesting = false",
-                      "duration": 326
+                      "duration": 177
                     },
                     {
                       "title": "QF-017 - Add Staff form shows the Cognitive Testing switch as expected",
-                      "duration": 5648
+                      "duration": 5590
                     }
                   ],
-                  "startTime": "2026-08-12T18:16:17.108Z",
+                  "startTime": "2026-08-12T19:41:48.069Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -711,10 +803,10 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 64762,
+                  "duration": 67275,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -722,30 +814,30 @@
                   "steps": [
                     {
                       "title": "Setup - Activate a fresh High-qualified org and stay signed in",
-                      "duration": 46506
+                      "duration": 46557
                     },
                     {
                       "title": "Setup - Confirm the API reports cognitive access for this org",
-                      "duration": 291
+                      "duration": 273
                     },
                     {
                       "title": "Setup - Open Test Set Creation on the Clusters tab",
-                      "duration": 8930
+                      "duration": 9386
                     },
                     {
                       "title": "QF-008 - All three Cognitive cluster groups are listed",
-                      "duration": 72
+                      "duration": 32
                     },
                     {
                       "title": "QF-006 - Virtual Test Library section and its cluster groups are listed",
-                      "duration": 31
+                      "duration": 121
                     },
                     {
                       "title": "QF-005/007 - Achievement clusters listed, and All Tests contains every Achievement and Cognitive test",
-                      "duration": 3381
+                      "duration": 3540
                     }
                   ],
-                  "startTime": "2026-08-12T18:17:11.364Z",
+                  "startTime": "2026-08-12T19:42:40.277Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -798,10 +890,10 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 69847,
+                  "duration": 71148,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -809,38 +901,38 @@
                   "steps": [
                     {
                       "title": "Setup - Activate a fresh Medium-qualified org and stay signed in",
-                      "duration": 45563
+                      "duration": 45528
                     },
                     {
                       "title": "Setup - Confirm the API reports no cognitive access for this org",
-                      "duration": 323
+                      "duration": 171
                     },
                     {
                       "title": "Setup - Open Test Set Creation on the Clusters tab",
-                      "duration": 8992
+                      "duration": 8960
                     },
                     {
                       "title": "QF-013 - Cognitive Abilities section and its clusters are absent",
-                      "duration": 38
+                      "duration": 93
                     },
                     {
                       "title": "QF-011 - Virtual Test Library section is still available for Medium",
-                      "duration": 26
+                      "duration": 126
                     },
                     {
                       "title": "QF-010 - Achievement section lists all cluster groups",
-                      "duration": 20
+                      "duration": 42
                     },
                     {
                       "title": "QF-010/012 - All Tests lists exactly the Achievement tests and nothing cognitive",
-                      "duration": 3504
+                      "duration": 3806
                     },
                     {
                       "title": "QF-014 - GIA preloaded cluster is not visible on the Test Sets list (BUG-26098)",
-                      "duration": 4509
+                      "duration": 4333
                     }
                   ],
-                  "startTime": "2026-08-12T18:18:16.645Z",
+                  "startTime": "2026-08-12T19:43:48.114Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -903,10 +995,10 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 74498,
+                  "duration": 77706,
                   "errors": [],
                   "stdout": [
                     {
@@ -918,23 +1010,23 @@
                   "steps": [
                     {
                       "title": "Phase 1 - Create fresh org via Unlimited High code",
-                      "duration": 43535
+                      "duration": 43213
                     },
                     {
                       "title": "Phase 2 - Set active subscription (+150 days) and capture org state",
-                      "duration": 404
+                      "duration": 185
                     },
                     {
                       "title": "Setup - Force-reset activation state and land on activation page",
-                      "duration": 3662
+                      "duration": 3933
                     },
                     {
                       "title": "S03 - Select \"Use my Existing Login\" and click Sign In (lands on Sign In to Activate)",
-                      "duration": 2494
+                      "duration": 2493
                     },
                     {
                       "title": "S07/S08 - Sign in with existing AH credentials",
-                      "duration": 3673
+                      "duration": 3672
                     },
                     {
                       "title": "S16/S17/S20 - Confirm Renewal popup: subscription, org, dates from API, START disabled",
@@ -946,18 +1038,18 @@
                     },
                     {
                       "title": "S24 - Accept terms, click Confirm, wait for renewal API success",
-                      "duration": 2459
+                      "duration": 2458
                     },
                     {
                       "title": "S26 - Dismiss 2FA + terms + Pendo, click WJ V tile, verify dashboard + AH name in header",
-                      "duration": 7237
+                      "duration": 7303
                     },
                     {
                       "title": "S32 - Verify renewal reflected in API state and Subscription Details page",
-                      "duration": 6769
+                      "duration": 6773
                     }
                   ],
-                  "startTime": "2026-08-12T18:19:28.012Z",
+                  "startTime": "2026-08-12T19:45:00.759Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -1012,10 +1104,10 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 79132,
+                  "duration": 83171,
                   "errors": [],
                   "stdout": [
                     {
@@ -1027,54 +1119,54 @@
                   "steps": [
                     {
                       "title": "Phase 1 - Create fresh org via Subtest Medium code",
-                      "duration": 42591
+                      "duration": 42941
                     },
                     {
                       "title": "Phase 2 - Expire subscription via API and capture org state",
-                      "duration": 382
+                      "duration": 210
                     },
                     {
                       "title": "Setup - Force-reset activation state and land on activation page",
-                      "duration": 3640
+                      "duration": 4109
                     },
                     {
                       "title": "S03 - Select \"Use my Existing Login\" and click Sign In (lands on Sign In to Activate)",
-                      "duration": 2471
+                      "duration": 2483
                     },
                     {
                       "title": "S07/S08 - Sign in with existing AH credentials",
-                      "duration": 3674
+                      "duration": 3667
                     },
                     {
                       "title": "S16/S17/S20 - Confirm Activation popup: subscription, org, dates default to today (editable)",
-                      "duration": 62
+                      "duration": 66
                     },
                     {
                       "title": "SP-033 - Confirm button is disabled before terms checkbox is ticked",
-                      "duration": 6
+                      "duration": 7
                     },
                     {
                       "title": "S24 - Accept terms, click Confirm, wait for renewal API success",
-                      "duration": 2468
+                      "duration": 2463
                     },
                     {
                       "title": "S26 - Dismiss 2FA + terms + Pendo, click WJ V tile, verify dashboard + AH name in header",
-                      "duration": 7479
+                      "duration": 7553
                     },
                     {
                       "title": "S10 - Verify GIA test set access matches qualification level",
-                      "duration": 4338
+                      "duration": 4458
                     },
                     {
                       "title": "S32 - Verify new subscription reflected in API state",
-                      "duration": 333
+                      "duration": 240
                     },
                     {
                       "title": "S32 UI - Verify Subscription Details page shows correct expiration and remaining subtests",
-                      "duration": 6346
+                      "duration": 6469
                     }
                   ],
-                  "startTime": "2026-08-12T18:20:43.035Z",
+                  "startTime": "2026-08-12T19:46:19.022Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -1102,11 +1194,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-12T18:10:18.349Z",
-    "duration": 704116.924,
-    "expected": 8,
+    "startTime": "2026-08-12T19:33:10.981Z",
+    "duration": 871568.948,
+    "expected": 7,
     "skipped": 0,
     "unexpected": 0,
-    "flaky": 0
+    "flaky": 1
   }
 }

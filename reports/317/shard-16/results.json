@@ -340,7 +340,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 543360,
+                      "duration": 550625,
                       "errors": [],
                       "stdout": [
                         {
@@ -365,16 +365,16 @@
                           "text": "Trying to add an Examinee \n\n"
                         },
                         {
-                          "text": "Examinee ID N12497A2516\n"
+                          "text": "Examinee ID N55300A60089\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N12497A2516/dataFiles/Derived_Score_AutoFilter_Template_N12497A2516.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N55300A60089/dataFiles/Derived_Score_AutoFilter_Template_N55300A60089.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N12497A2516 FirstName=Laurel LastName =N12497A2516 Age = 08/12/2021\n"
+                          "text": "Successfully added an Examinee  ID =N55300A60089 FirstName=Axel LastName =N55300A60089 Age = 08/12/2021\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N12497A2516\n"
+                          "text": "Successfully selected examinee: N55300A60089\n"
                         },
                         {
                           "text": "Attempt 1: Checking accept button readiness.\n"
@@ -640,7 +640,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-12T18:10:35.943Z",
+                      "startTime": "2026-08-12T19:33:27.262Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -684,7 +684,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 526572,
+                      "duration": 530037,
                       "errors": [],
                       "stdout": [
                         {
@@ -711,42 +711,42 @@
                       "steps": [
                         {
                           "title": "Just Relauch the test assignment should not make the status move to 'In Progress'",
-                          "duration": 25926
+                          "duration": 25889
                         },
                         {
                           "title": "Opening up review mode for a submitted test assignment or just opening a test will not automatically change that test assignment to return back to in progress status",
-                          "duration": 69857
+                          "duration": 69033
                         },
                         {
                           "title": " For a test assignment to change back to ‘In progress’ from ‘Submitted’ in review mode, the user needs to change an answer.",
-                          "duration": 51960
+                          "duration": 52117
                         },
                         {
                           "title": " Verify Submitted test assignment in review mode should change ‘In progress’ to ‘Submitted’.",
-                          "duration": 37367
+                          "duration": 37784
                         },
                         {
                           "title": " For a test assignment to change back to ‘In progress’ from ‘Submitted’ in review mode, the user add a test to their test assignment.",
-                          "duration": 82599
+                          "duration": 81139
                         },
                         {
                           "title": " If a user is in review mode for a Submitted test assignment and “skips” a test using the side test set panel",
-                          "duration": 37817
+                          "duration": 39960
                         },
                         {
                           "title": " If a user is in review mode for a Submitted test assignment and adds any notes, or flags/unflags an item the test assignment will not return to in progress status",
-                          "duration": 52050
+                          "duration": 51994
                         },
                         {
                           "title": " verify that saved notes test level is displays on the HTML report",
-                          "duration": 22375
+                          "duration": 22427
                         },
                         {
                           "title": "Launching the test in admin mode will make the status move to 'In Progress'",
-                          "duration": 79936
+                          "duration": 79305
                         }
                       ],
-                      "startTime": "2026-08-12T18:19:39.820Z",
+                      "startTime": "2026-08-12T19:42:38.569Z",
                       "annotations": [
                         {
                           "type": "Original user story, Automation user story",
@@ -811,7 +811,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 133685,
+                  "duration": 130558,
                   "error": {
                     "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Next\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"blue-button-no-margin\">Next</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
                     "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Next\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"blue-button-no-margin\">Next</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at SubscriptionActivationPage.fillUsernameAndPassword (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:445:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:84:5",
@@ -842,27 +842,27 @@
                   "steps": [
                     {
                       "title": "Setup - Free the code and pin its purchase date to today",
-                      "duration": 5305
+                      "duration": 2030
                     },
                     {
                       "title": "PV-002 - A link inside the 60-day window is not flagged pending verification",
-                      "duration": 355
+                      "duration": 186
                     },
                     {
                       "title": "Setup - Consume the code by activating a first org",
-                      "duration": 42606
+                      "duration": 42848
                     },
                     {
                       "title": "Setup - Confirm the activated link now carries subscription dates",
-                      "duration": 89
+                      "duration": 44
                     },
                     {
                       "title": "PV-020 - Resetting the code clears SubscriptionStartDate and SubscriptionEndDate",
-                      "duration": 338
+                      "duration": 299
                     },
                     {
                       "title": "PV-021 - The reset code activates again with editable, non-locked dates",
-                      "duration": 83800,
+                      "duration": 83728,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Next\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"blue-button-no-margin\">Next</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Next\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"blue-button-no-margin\">Next</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at SubscriptionActivationPage.fillUsernameAndPassword (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:445:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:84:5",
@@ -875,7 +875,7 @@
                       }
                     }
                   ],
-                  "startTime": "2026-08-12T18:28:27.543Z",
+                  "startTime": "2026-08-12T19:51:30.243Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -914,25 +914,25 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 47424,
+                  "duration": 126316,
                   "error": {
-                    "message": "Error: Activation landing still showing \"Activation code is already activated\" after 1 recovery attempt(s).",
-                    "stack": "Error: Activation landing still showing \"Activation code is already activated\" after 1 recovery attempt(s).\n    at SubscriptionActivationPage.landOnActivationPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:164:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:90:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:84:5",
+                    "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Next\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"blue-button-no-margin\">Next</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Next\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"blue-button-no-margin\">Next</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at SubscriptionActivationPage.fillUsernameAndPassword (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:445:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:84:5",
                     "location": {
                       "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
-                      "column": 15,
-                      "line": 164
+                      "column": 33,
+                      "line": 445
                     },
-                    "snippet": "   at ../page/subscriptionActivationPage.ts:164\n\n\u001b[0m \u001b[90m 162 |\u001b[39m\n \u001b[90m 163 |\u001b[39m       \u001b[36mif\u001b[39m (attempt \u001b[33m>=\u001b[39m maxRetries) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 164 |\u001b[39m         \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 165 |\u001b[39m           \u001b[32m`Activation landing still showing \"${customerNameText}\" after ${maxRetries} recovery attempt(s).`\u001b[39m\n \u001b[90m 166 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m       }\u001b[0m"
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:445\n\n\u001b[0m \u001b[90m 443 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcredentialsPasswordInput\u001b[33m.\u001b[39mpressSequentially(data\u001b[33m.\u001b[39mpassword\u001b[33m,\u001b[39m { delay\u001b[33m:\u001b[39m \u001b[35m50\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 444 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcredentialsConfirmPasswordInput\u001b[33m.\u001b[39mpressSequentially(data\u001b[33m.\u001b[39mpassword\u001b[33m,\u001b[39m { delay\u001b[33m:\u001b[39m \u001b[35m50\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 445 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwizardNextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 446 |\u001b[39m   }\n \u001b[90m 447 |\u001b[39m\n \u001b[90m 448 |\u001b[39m   \u001b[36masync\u001b[39m fillLocationAndSubmit(data\u001b[33m:\u001b[39m \u001b[33mSubscriptionActivationFormData\u001b[39m) {\u001b[0m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
-                        "column": 15,
-                        "line": 164
+                        "column": 33,
+                        "line": 445
                       },
-                      "message": "Error: Activation landing still showing \"Activation code is already activated\" after 1 recovery attempt(s).\n\n   at ../page/subscriptionActivationPage.ts:164\n\n  162 |\n  163 |       if (attempt >= maxRetries) {\n> 164 |         throw new Error(\n      |               ^\n  165 |           `Activation landing still showing \"${customerNameText}\" after ${maxRetries} recovery attempt(s).`\n  166 |         );\n  167 |       }\n    at SubscriptionActivationPage.landOnActivationPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:164:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:90:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:84:5"
+                      "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Next\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"blue-button-no-margin\">Next</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:445\n\n  443 |     await this.credentialsPasswordInput.pressSequentially(data.password, { delay: 50 });\n  444 |     await this.credentialsConfirmPasswordInput.pressSequentially(data.password, { delay: 50 });\n> 445 |     await this.wizardNextButton.click();\n      |                                 ^\n  446 |   }\n  447 |\n  448 |   async fillLocationAndSubmit(data: SubscriptionActivationFormData) {\n    at SubscriptionActivationPage.fillUsernameAndPassword (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:445:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:84:5"
                     }
                   ],
                   "stdout": [
@@ -945,40 +945,40 @@
                   "steps": [
                     {
                       "title": "Setup - Free the code and pin its purchase date to today",
-                      "duration": 1326
+                      "duration": 920
                     },
                     {
                       "title": "PV-002 - A link inside the 60-day window is not flagged pending verification",
-                      "duration": 312
+                      "duration": 303
                     },
                     {
                       "title": "Setup - Consume the code by activating a first org",
-                      "duration": 42152
+                      "duration": 41889
                     },
                     {
                       "title": "Setup - Confirm the activated link now carries subscription dates",
-                      "duration": 106
+                      "duration": 35
                     },
                     {
                       "title": "PV-020 - Resetting the code clears SubscriptionStartDate and SubscriptionEndDate",
-                      "duration": 330
+                      "duration": 195
                     },
                     {
                       "title": "PV-021 - The reset code activates again with editable, non-locked dates",
-                      "duration": 2902,
+                      "duration": 82663,
                       "error": {
-                        "message": "Error: Activation landing still showing \"Activation code is already activated\" after 1 recovery attempt(s).",
-                        "stack": "Error: Activation landing still showing \"Activation code is already activated\" after 1 recovery attempt(s).\n    at SubscriptionActivationPage.landOnActivationPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:164:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:90:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:84:5",
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Next\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"blue-button-no-margin\">Next</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Next\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"blue-button-no-margin\">Next</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at SubscriptionActivationPage.fillUsernameAndPassword (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:445:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/ActivationCodeResetReuse.spec.ts:84:5",
                         "location": {
                           "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
-                          "column": 15,
-                          "line": 164
+                          "column": 33,
+                          "line": 445
                         },
-                        "snippet": "   at ../page/subscriptionActivationPage.ts:164\n\n\u001b[0m \u001b[90m 162 |\u001b[39m\n \u001b[90m 163 |\u001b[39m       \u001b[36mif\u001b[39m (attempt \u001b[33m>=\u001b[39m maxRetries) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 164 |\u001b[39m         \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 165 |\u001b[39m           \u001b[32m`Activation landing still showing \"${customerNameText}\" after ${maxRetries} recovery attempt(s).`\u001b[39m\n \u001b[90m 166 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m       }\u001b[0m"
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:445\n\n\u001b[0m \u001b[90m 443 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcredentialsPasswordInput\u001b[33m.\u001b[39mpressSequentially(data\u001b[33m.\u001b[39mpassword\u001b[33m,\u001b[39m { delay\u001b[33m:\u001b[39m \u001b[35m50\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 444 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcredentialsConfirmPasswordInput\u001b[33m.\u001b[39mpressSequentially(data\u001b[33m.\u001b[39mpassword\u001b[33m,\u001b[39m { delay\u001b[33m:\u001b[39m \u001b[35m50\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 445 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwizardNextButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 446 |\u001b[39m   }\n \u001b[90m 447 |\u001b[39m\n \u001b[90m 448 |\u001b[39m   \u001b[36masync\u001b[39m fillLocationAndSubmit(data\u001b[33m:\u001b[39m \u001b[33mSubscriptionActivationFormData\u001b[39m) {\u001b[0m"
                       }
                     }
                   ],
-                  "startTime": "2026-08-12T18:30:43.488Z",
+                  "startTime": "2026-08-12T19:53:43.789Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -1004,8 +1004,8 @@
                   ],
                   "errorLocation": {
                     "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
-                    "column": 15,
-                    "line": 164
+                    "column": 33,
+                    "line": 445
                   }
                 }
               ],
@@ -1066,7 +1066,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "skipped",
-                  "duration": 1406,
+                  "duration": 1391,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -1074,15 +1074,15 @@
                   "steps": [
                     {
                       "title": "Setup - Free the code BEFORE backdating (order matters)",
-                      "duration": 619
+                      "duration": 798
                     },
                     {
                       "title": "Setup - Backdate the Unlimited link to 62 days before today",
-                      "duration": 293
+                      "duration": 139
                     },
                     {
                       "title": "DL-006/SD-008 - Link is flagged pending verification (precondition)",
-                      "duration": 240,
+                      "duration": 183,
                       "error": {
                         "message": "Error: Test is skipped: Unlimited (62d past purchase, status \"unused\"). Link is not in \"Activependingverification\". UpdatePurchaseDate only writes the date — the 60-day re-evaluation is scheduled, not on-demand, and resetActivationCode returns the link to \"unused\". Needs a status-setting or re-evaluation endpoint before this can run unattended.",
                         "stack": "Error: Test is skipped: Unlimited (62d past purchase, status \"unused\"). Link is not in \"Activependingverification\". UpdatePurchaseDate only writes the date — the 60-day re-evaluation is scheduled, not on-demand, and resetActivationCode returns the link to \"unused\". Needs a status-setting or re-evaluation endpoint before this can run unattended.\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/LockedDatesNewUser.spec.ts:152:14\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/LockedDatesNewUser.spec.ts:140:7",
@@ -1095,7 +1095,7 @@
                       }
                     }
                   ],
-                  "startTime": "2026-08-12T18:31:32.367Z",
+                  "startTime": "2026-08-12T19:55:51.884Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -1168,7 +1168,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "skipped",
-                  "duration": 562,
+                  "duration": 424,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -1176,15 +1176,15 @@
                   "steps": [
                     {
                       "title": "Setup - Free the code BEFORE backdating (order matters)",
-                      "duration": 217
+                      "duration": 173
                     },
                     {
                       "title": "Setup - Backdate the Subtest link to 62 days before today",
-                      "duration": 117
+                      "duration": 53
                     },
                     {
                       "title": "DL-006/SD-008 - Link is flagged pending verification (precondition)",
-                      "duration": 90,
+                      "duration": 35,
                       "error": {
                         "message": "Error: Test is skipped: Subtest (62d past purchase, status \"unused\"). Link is not in \"Activependingverification\". UpdatePurchaseDate only writes the date — the 60-day re-evaluation is scheduled, not on-demand, and resetActivationCode returns the link to \"unused\". Needs a status-setting or re-evaluation endpoint before this can run unattended.",
                         "stack": "Error: Test is skipped: Subtest (62d past purchase, status \"unused\"). Link is not in \"Activependingverification\". UpdatePurchaseDate only writes the date — the 60-day re-evaluation is scheduled, not on-demand, and resetActivationCode returns the link to \"unused\". Needs a status-setting or re-evaluation endpoint before this can run unattended.\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/LockedDatesNewUser.spec.ts:152:14\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/LockedDatesNewUser.spec.ts:140:7",
@@ -1197,7 +1197,7 @@
                       }
                     }
                   ],
-                  "startTime": "2026-08-12T18:31:34.166Z",
+                  "startTime": "2026-08-12T19:55:53.774Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -1254,7 +1254,7 @@
                 },
                 {
                   "type": "skip",
-                  "description": "Unlimited Medium (62d past purchase, status \"Activated\"). Link is not in \"Activependingverification\". UpdatePurchaseDate only writes the date — the 60-day re-evaluation is scheduled, not on-demand, and resetActivationCode returns the link to \"unused\". Needs a status-setting or re-evaluation endpoint before this can run unattended.",
+                  "description": "Unlimited Medium (62d past purchase, status \"unused\"). Link is not in \"Activependingverification\". UpdatePurchaseDate only writes the date — the 60-day re-evaluation is scheduled, not on-demand, and resetActivationCode returns the link to \"unused\". Needs a status-setting or re-evaluation endpoint before this can run unattended.",
                   "location": {
                     "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/LockedDatesNewUser.spec.ts",
                     "line": 295,
@@ -1270,7 +1270,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "skipped",
-                  "duration": 371,
+                  "duration": 340,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -1278,14 +1278,14 @@
                   "steps": [
                     {
                       "title": "Setup - Backdate the link to 62 days before today",
-                      "duration": 135
+                      "duration": 63
                     },
                     {
                       "title": "Precondition - Link is flagged pending verification",
-                      "duration": 102,
+                      "duration": 53,
                       "error": {
-                        "message": "Error: Test is skipped: Unlimited Medium (62d past purchase, status \"Activated\"). Link is not in \"Activependingverification\". UpdatePurchaseDate only writes the date — the 60-day re-evaluation is scheduled, not on-demand, and resetActivationCode returns the link to \"unused\". Needs a status-setting or re-evaluation endpoint before this can run unattended.",
-                        "stack": "Error: Test is skipped: Unlimited Medium (62d past purchase, status \"Activated\"). Link is not in \"Activependingverification\". UpdatePurchaseDate only writes the date — the 60-day re-evaluation is scheduled, not on-demand, and resetActivationCode returns the link to \"unused\". Needs a status-setting or re-evaluation endpoint before this can run unattended.\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/LockedDatesNewUser.spec.ts:295:12\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/LockedDatesNewUser.spec.ts:286:5",
+                        "message": "Error: Test is skipped: Unlimited Medium (62d past purchase, status \"unused\"). Link is not in \"Activependingverification\". UpdatePurchaseDate only writes the date — the 60-day re-evaluation is scheduled, not on-demand, and resetActivationCode returns the link to \"unused\". Needs a status-setting or re-evaluation endpoint before this can run unattended.",
+                        "stack": "Error: Test is skipped: Unlimited Medium (62d past purchase, status \"unused\"). Link is not in \"Activependingverification\". UpdatePurchaseDate only writes the date — the 60-day re-evaluation is scheduled, not on-demand, and resetActivationCode returns the link to \"unused\". Needs a status-setting or re-evaluation endpoint before this can run unattended.\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/LockedDatesNewUser.spec.ts:295:12\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/LockedDatesNewUser.spec.ts:286:5",
                         "location": {
                           "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/LockedDatesNewUser.spec.ts",
                           "column": 12,
@@ -1295,7 +1295,7 @@
                       }
                     }
                   ],
-                  "startTime": "2026-08-12T18:31:34.743Z",
+                  "startTime": "2026-08-12T19:55:54.229Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -1308,7 +1308,7 @@
                     },
                     {
                       "type": "skip",
-                      "description": "Unlimited Medium (62d past purchase, status \"Activated\"). Link is not in \"Activependingverification\". UpdatePurchaseDate only writes the date — the 60-day re-evaluation is scheduled, not on-demand, and resetActivationCode returns the link to \"unused\". Needs a status-setting or re-evaluation endpoint before this can run unattended.",
+                      "description": "Unlimited Medium (62d past purchase, status \"unused\"). Link is not in \"Activependingverification\". UpdatePurchaseDate only writes the date — the 60-day re-evaluation is scheduled, not on-demand, and resetActivationCode returns the link to \"unused\". Needs a status-setting or re-evaluation endpoint before this can run unattended.",
                       "location": {
                         "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/lockedDates/LockedDatesNewUser.spec.ts",
                         "line": 295,
@@ -1332,8 +1332,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-12T18:10:24.841Z",
-    "duration": 1270357.1130000001,
+    "startTime": "2026-08-12T19:33:11.270Z",
+    "duration": 1363412.652,
     "expected": 2,
     "skipped": 3,
     "unexpected": 1,

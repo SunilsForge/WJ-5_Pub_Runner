@@ -344,7 +344,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6574,
+                  "duration": 2731,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -352,10 +352,10 @@
                   "steps": [
                     {
                       "title": "Navigate to malformed activation URL and verify \"Invalid activation code\" message",
-                      "duration": 6068
+                      "duration": 2142
                     }
                   ],
-                  "startTime": "2026-08-12T18:10:24.524Z",
+                  "startTime": "2026-08-12T19:33:38.397Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -410,7 +410,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9072,
+                  "duration": 8761,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -418,18 +418,18 @@
                   "steps": [
                     {
                       "title": "Setup - Force-reset activation state and land on activation page",
-                      "duration": 2428
+                      "duration": 2044
                     },
                     {
                       "title": "Select \"Use my Existing Login\" → click Sign In → lands on Sign In to Activate",
-                      "duration": 2531
+                      "duration": 2628
                     },
                     {
                       "title": "Submit invalid credentials and verify we remain on the Sign In to Activate page",
-                      "duration": 3728
+                      "duration": 3708
                     }
                   ],
-                  "startTime": "2026-08-12T18:10:31.718Z",
+                  "startTime": "2026-08-12T19:33:41.735Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -485,7 +485,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 749,
+                  "duration": 982,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -493,10 +493,10 @@
                   "steps": [
                     {
                       "title": "Call GetOrgSubscriptionDetails with bogus username and assert it does not 5xx",
-                      "duration": 559
+                      "duration": 794
                     }
                   ],
-                  "startTime": "2026-08-12T18:10:40.821Z",
+                  "startTime": "2026-08-12T19:33:50.517Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -529,7 +529,7 @@
       "specs": [
         {
           "title": "Unlimited High - new user activation flow",
-          "ok": true,
+          "ok": false,
           "tags": [
             "SubscriptionActivation",
             "HappyPath",
@@ -561,7 +561,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 159132,
+                  "duration": 159188,
                   "error": {
                     "message": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"",
                     "stack": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"\n    at SubscriptionActivationPage.confirmActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:544:17)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:77:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:68:7",
@@ -588,19 +588,19 @@
                   "steps": [
                     {
                       "title": "Unlimited High - Land on activation page (recover if code/SO already used)",
-                      "duration": 2549
+                      "duration": 2065
                     },
                     {
                       "title": "Unlimited High - Select Create-a-Login and click Create an Account",
-                      "duration": 2529
+                      "duration": 2889
                     },
                     {
                       "title": "Unlimited High - Fill contact info and proceed",
-                      "duration": 10577
+                      "duration": 10811
                     },
                     {
                       "title": "Unlimited High - S13 - Click auto-generate username and verify it contains first name",
-                      "duration": 2517
+                      "duration": 2501
                     },
                     {
                       "title": "Unlimited High - Set username and password",
@@ -608,11 +608,11 @@
                     },
                     {
                       "title": "Unlimited High - Fill location and submit",
-                      "duration": 11870
+                      "duration": 11603
                     },
                     {
                       "title": "Unlimited High - Verify subscription details and confirm activation",
-                      "duration": 121328,
+                      "duration": 121509,
                       "error": {
                         "message": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"",
                         "stack": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"\n    at SubscriptionActivationPage.confirmActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:544:17)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:77:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:68:7",
@@ -625,7 +625,7 @@
                       }
                     }
                   ],
-                  "startTime": "2026-08-12T18:10:42.867Z",
+                  "startTime": "2026-08-12T19:33:52.774Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -663,71 +663,72 @@
                 {
                   "workerIndex": 2,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 67034,
-                  "errors": [],
-                  "stdout": [
+                  "status": "failed",
+                  "duration": 157879,
+                  "error": {
+                    "message": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"",
+                    "stack": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"\n    at SubscriptionActivationPage.confirmActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:544:17)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:77:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:68:7",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                      "column": 17,
+                      "line": 544
+                    },
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:544\n\n\u001b[0m \u001b[90m 542 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmAcceptTermsCheckbox\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 543 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 544 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForResponse(response \u001b[33m=>\u001b[39m response\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(\u001b[32m'ConfirmActivation'\u001b[39m) \u001b[33m&&\u001b[39m response\u001b[33m.\u001b[39mstatus() \u001b[33m===\u001b[39m \u001b[35m200\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 545 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m2\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 546 |\u001b[39m       })\u001b[33m,\u001b[39m\n \u001b[90m 547 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmActivationButton\u001b[33m.\u001b[39mclick()\u001b[33m,\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
                     {
-                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=IP3VhUHEHXCfKJ03Io8l1A%3d%3d SO=SO292847\n"
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 17,
+                        "line": 544
+                      },
+                      "message": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"\n\n   at ../page/subscriptionActivationPage.ts:544\n\n  542 |     await this.confirmAcceptTermsCheckbox.click();\n  543 |     await Promise.all([\n> 544 |       this.page.waitForResponse(response => response.url().includes('ConfirmActivation') && response.status() === 200, {\n      |                 ^\n  545 |         timeout: 2 * 60 * 1000,\n  546 |       }),\n  547 |       this.confirmActivationButton.click(),\n    at SubscriptionActivationPage.confirmActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:544:17)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:77:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:68:7"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 1,
                   "steps": [
                     {
                       "title": "Unlimited High - Land on activation page (recover if code/SO already used)",
-                      "duration": 3863
+                      "duration": 1832
                     },
                     {
                       "title": "Unlimited High - Select Create-a-Login and click Create an Account",
-                      "duration": 2518
+                      "duration": 2491
                     },
                     {
                       "title": "Unlimited High - Fill contact info and proceed",
-                      "duration": 10694
+                      "duration": 10609
                     },
                     {
                       "title": "Unlimited High - S13 - Click auto-generate username and verify it contains first name",
-                      "duration": 2467
+                      "duration": 2469
                     },
                     {
                       "title": "Unlimited High - Set username and password",
-                      "duration": 6946
+                      "duration": 6930
                     },
                     {
                       "title": "Unlimited High - Fill location and submit",
-                      "duration": 11787
+                      "duration": 11976
                     },
                     {
                       "title": "Unlimited High - Verify subscription details and confirm activation",
-                      "duration": 2547
-                    },
-                    {
-                      "title": "Unlimited High - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
-                      "duration": 6776
-                    },
-                    {
-                      "title": "Unlimited High - Verify GIA test set access matches qualification level",
-                      "duration": 4338
-                    },
-                    {
-                      "title": "Unlimited High - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
-                      "duration": 171
-                    },
-                    {
-                      "title": "Unlimited High - Open Subscription Details page and verify entered data is reflected",
-                      "duration": 8314
-                    },
-                    {
-                      "title": "Unlimited High - S45 sign out, re-login as AH, verify WJ V tile and name retained",
-                      "duration": 4878
-                    },
-                    {
-                      "title": "Unlimited High - S05 verify re-navigating to a just-used activation code shows \"already activated\" error",
-                      "duration": 1340
+                      "duration": 121274,
+                      "error": {
+                        "message": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"",
+                        "stack": "TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event \"response\"\n    at SubscriptionActivationPage.confirmActivation (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:544:17)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:77:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUser.spec.ts:68:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 17,
+                          "line": 544
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:544\n\n\u001b[0m \u001b[90m 542 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmAcceptTermsCheckbox\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 543 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 544 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForResponse(response \u001b[33m=>\u001b[39m response\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(\u001b[32m'ConfirmActivation'\u001b[39m) \u001b[33m&&\u001b[39m response\u001b[33m.\u001b[39mstatus() \u001b[33m===\u001b[39m \u001b[35m200\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 545 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m2\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 546 |\u001b[39m       })\u001b[33m,\u001b[39m\n \u001b[90m 547 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmActivationButton\u001b[33m.\u001b[39mclick()\u001b[33m,\u001b[39m\u001b[0m"
+                      }
                     }
                   ],
-                  "startTime": "2026-08-12T18:13:24.441Z",
+                  "startTime": "2026-08-12T19:36:34.381Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -739,10 +740,26 @@
                       }
                     }
                   ],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-c9458----new-user-activation-flow-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-c9458----new-user-activation-flow-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                    "column": 17,
+                    "line": 544
+                  }
                 }
               ],
-              "status": "flaky"
+              "status": "unexpected"
             }
           ],
           "id": "f20505f53e7fcdc1e661-f1b47a623df3ae1884f6",
@@ -781,61 +798,65 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 70728,
+                  "duration": 71110,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=1cVBlWSgZVeEGzrxpStUYw%3d%3d SO=SO292849\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Unlimited Medium - Land on activation page (recover if code/SO already used)",
-                      "duration": 2115
+                      "duration": 4780
                     },
                     {
                       "title": "Unlimited Medium - Select Create-a-Login and click Create an Account",
-                      "duration": 2962
+                      "duration": 2507
                     },
                     {
                       "title": "Unlimited Medium - Fill contact info and proceed",
-                      "duration": 10727
+                      "duration": 10853
                     },
                     {
                       "title": "Unlimited Medium - S13 - Click auto-generate username and verify it contains first name",
-                      "duration": 2503
+                      "duration": 2509
                     },
                     {
                       "title": "Unlimited Medium - Set username and password",
-                      "duration": 6971
+                      "duration": 6983
                     },
                     {
                       "title": "Unlimited Medium - Fill location and submit",
-                      "duration": 11785
+                      "duration": 11683
                     },
                     {
                       "title": "Unlimited Medium - Verify subscription details and confirm activation",
-                      "duration": 4389
+                      "duration": 2570
                     },
                     {
                       "title": "Unlimited Medium - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
-                      "duration": 8458
+                      "duration": 9002
                     },
                     {
                       "title": "Unlimited Medium - Verify GIA test set access matches qualification level",
-                      "duration": 4380
+                      "duration": 4312
                     },
                     {
                       "title": "Unlimited Medium - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
-                      "duration": 175
+                      "duration": 270
                     },
                     {
                       "title": "Unlimited Medium - Open Subscription Details page and verify entered data is reflected",
-                      "duration": 8802
+                      "duration": 8573
                     }
                   ],
-                  "startTime": "2026-08-12T18:14:32.018Z",
+                  "startTime": "2026-08-12T19:39:14.077Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -889,14 +910,14 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 68982,
+                  "duration": 70417,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Subscription order number is already used\" - code=cCPSEDKgAKFJN%2bFCcRoNtw%3d%3d SO=SO292939\n"
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=cCPSEDKgAKFJN%2bFCcRoNtw%3d%3d SO=SO292939\n"
                     }
                   ],
                   "stderr": [],
@@ -904,50 +925,50 @@
                   "steps": [
                     {
                       "title": "Subtest High - Land on activation page (recover if code/SO already used)",
-                      "duration": 4514
+                      "duration": 4020
                     },
                     {
                       "title": "Subtest High - Select Create-a-Login and click Create an Account",
-                      "duration": 2520
+                      "duration": 2514
                     },
                     {
                       "title": "Subtest High - Fill contact info and proceed",
-                      "duration": 10871
+                      "duration": 10450
                     },
                     {
                       "title": "Subtest High - S13 - Click auto-generate username and verify it contains first name",
-                      "duration": 2506
+                      "duration": 2500
                     },
                     {
                       "title": "Subtest High - Set username and password",
-                      "duration": 6963
+                      "duration": 6960
                     },
                     {
                       "title": "Subtest High - Fill location and submit",
-                      "duration": 12177
+                      "duration": 12270
                     },
                     {
                       "title": "Subtest High - Verify subscription details and confirm activation",
-                      "duration": 2553
+                      "duration": 2577
                     },
                     {
                       "title": "Subtest High - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
-                      "duration": 6877
+                      "duration": 8539
                     },
                     {
                       "title": "Subtest High - Verify GIA test set access matches qualification level",
-                      "duration": 4358
+                      "duration": 4316
                     },
                     {
                       "title": "Subtest High - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
-                      "duration": 200
+                      "duration": 314
                     },
                     {
                       "title": "Subtest High - Open Subscription Details page and verify entered data is reflected",
-                      "duration": 8518
+                      "duration": 8618
                     }
                   ],
-                  "startTime": "2026-08-12T18:15:42.809Z",
+                  "startTime": "2026-08-12T19:40:25.759Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -1001,69 +1022,65 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 73467,
+                  "duration": 67387,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=CqNGA8GKhoaqZ8xp%2fzfxCw%3d%3d SO=SO292850\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Subtest Medium - Land on activation page (recover if code/SO already used)",
-                      "duration": 4661
+                      "duration": 2157
                     },
                     {
                       "title": "Subtest Medium - Select Create-a-Login and click Create an Account",
-                      "duration": 2516
+                      "duration": 2609
                     },
                     {
                       "title": "Subtest Medium - Fill contact info and proceed",
-                      "duration": 10812
+                      "duration": 10822
                     },
                     {
                       "title": "Subtest Medium - S13 - Click auto-generate username and verify it contains first name",
-                      "duration": 2496
+                      "duration": 2558
                     },
                     {
                       "title": "Subtest Medium - Set username and password",
-                      "duration": 7017
+                      "duration": 6982
                     },
                     {
                       "title": "Subtest Medium - Fill location and submit",
-                      "duration": 12020
+                      "duration": 12100
                     },
                     {
                       "title": "Subtest Medium - Verify subscription details and confirm activation",
-                      "duration": 2548
+                      "duration": 2580
                     },
                     {
                       "title": "Subtest Medium - Dismiss 2FA + terms dialog, click WJ V tile, verify dashboard + user name in header",
-                      "duration": 8564
+                      "duration": 8543
                     },
                     {
                       "title": "Subtest Medium - Verify GIA test set access matches qualification level",
-                      "duration": 4688
+                      "duration": 4652
                     },
                     {
                       "title": "Subtest Medium - Verify Entitlement API (GetOrgSubscriptionDetails) reflects activation",
-                      "duration": 191
+                      "duration": 312
                     },
                     {
                       "title": "Subtest Medium - Open Subscription Details page and verify entered data is reflected",
-                      "duration": 8735
+                      "duration": 8476
                     },
                     {
                       "title": "Subtest Medium - S27 - Re-navigating to just-activated Subtest code shows \"Subscription Error\" popup",
-                      "duration": 2043
+                      "duration": 1626
                     }
                   ],
-                  "startTime": "2026-08-12T18:16:51.836Z",
+                  "startTime": "2026-08-12T19:41:36.231Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -1091,11 +1108,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-12T18:10:08.868Z",
-    "duration": 476791.912,
+    "startTime": "2026-08-12T19:33:21.969Z",
+    "duration": 561989.0769999999,
     "expected": 6,
     "skipped": 0,
-    "unexpected": 0,
-    "flaky": 1
+    "unexpected": 1,
+    "flaky": 0
   }
 }

@@ -1,0 +1,261 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/SubscriptionActivationSubsequentPurchaseNegative.spec.ts >> SP-003 Negative - Unlimited org redeems Subtest code - subscription type mismatch error
+- Location: src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseNegative.spec.ts:31:5
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('.subscription-error-popup') to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - banner [ref=e5]:
+        - generic [ref=e6]:
+          - button [ref=e7]: Skip to main Content
+          - link [ref=e8] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e9]: Riverside Insights Logo
+          - generic [ref=e10]:
+            - heading [level=2] [ref=e11]:
+              - generic [ref=e12]: Hello
+              - button [ref=e13] [cursor=pointer]: Don SubAut12Aug26193931
+            - navigation [ref=e16]:
+              - link [ref=e17] [cursor=pointer]:
+                - /url: https://riversideinsights.com/explore
+                - text: Shop Now
+              - button [ref=e18] [cursor=pointer]: "| Contact Us"
+              - button [ref=e19] [cursor=pointer]: "| Sign Out"
+      - main [ref=e20]:
+        - button [ref=e28] [cursor=pointer]: Update Profile
+        - heading [level=1] [ref=e31]: "To access scoring and reporting, please make a selection below:"
+        - menubar [ref=e32]:
+          - menuitem [ref=e33] [cursor=pointer]
+        - generic [ref=e34]:
+          - tablist [ref=e35]:
+            - tab [selected] [ref=e36] [cursor=pointer]: Riverside Updates
+            - tab [ref=e37] [cursor=pointer]: Webinars
+            - tab [ref=e38] [cursor=pointer]: Blog Posts
+            - tab [ref=e39] [cursor=pointer]: Forums
+          - generic [ref=e41]:
+            - heading [level=2] [ref=e42]: Test
+            - img [ref=e44]
+    - contentinfo [ref=e45]:
+      - generic [ref=e46]: Footer region,
+      - link [ref=e47] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img [ref=e48]
+      - generic [ref=e49]:
+        - link [ref=e50] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e51]
+        - link [ref=e52] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e53]
+        - link [ref=e54] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e55]
+        - link [ref=e56] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e57]
+      - generic [ref=e58]:
+        - img [ref=e59]
+        - button [ref=e60] [cursor=pointer]
+        - button [ref=e61] [cursor=pointer]
+      - generic [ref=e62]:
+        - img [ref=e63]
+        - generic [ref=e64]:
+          - button [ref=e65] [cursor=pointer]
+          - button [ref=e66] [cursor=pointer]
+          - button [ref=e67] [cursor=pointer]
+      - generic [ref=e68]:
+        - button [ref=e69] [cursor=pointer]: Leave Feedback
+        - generic [ref=e70]: "|"
+        - link [ref=e71] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e72]: "|"
+        - link [ref=e73] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e74]: Footer region end
+  - region "Chat Widget" [ref=e75]:
+    - iframe [ref=e76]:
+      - button "Open live chat" [ref=f18e5]:
+        - img [ref=f18e8]
+        - img [ref=f18e15]
+    - generic "Drag" [ref=e77]:
+      - img [ref=e78]
+  - dialog [ref=e81]:
+    - alert "Confirm Activation" [ref=e82]:
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - heading "Confirm Renewal" [level=4] [ref=e86]
+          - heading "Your Start Date has Already Been Set" [level=1] [ref=e87]
+        - generic [ref=e88]:
+          - generic [ref=e89]: "Subscription:"
+          - generic [ref=e90]: WJ V Subtest Subscription
+          - generic [ref=e91]: "Location Name:"
+          - generic [ref=e92]: Location_SubAut12Aug26193931 - 100 Subtests
+        - generic [ref=e93]:
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - generic [ref=e99]: START DATE
+              - generic [ref=e100]:
+                - textbox "START DATE" [disabled] [ref=e101]:
+                  - /placeholder: mm/dd/yyyy
+                  - text: 01/10/2027
+                - button "Show Calendar" [disabled] [ref=e102]
+            - application "Use arrow keys to navigate and enter to select a date"
+          - generic [ref=e108]:
+            - generic [ref=e109]:
+              - generic [ref=e110]: END DATE
+              - generic [ref=e111]:
+                - textbox "END DATE" [disabled] [ref=e112]:
+                  - /placeholder: ""
+                  - text: 01/09/2028
+                - button "Show Calendar" [disabled] [ref=e113]
+            - application "Use arrow keys to navigate and enter to select a date"
+        - generic [ref=e115]:
+          - generic [ref=e116]: The Woodcock-Johnson V (WJ V) system is structured to offer customized, efficient, and flexible assessments that examiners need to accurately evaluate learning problems in children and adults. The WJ V is designed to measure intellectual abilities, academic achievement, and oral language abilities.
+          - generic [ref=e117]: Please note there is a grace period for subtests purchased within the last 4 months of a subscription’s cycle. Those subtests will roll over to the next subscription cycle.
+        - generic [ref=e118]:
+          - button "I accept the terms and conditionson" [ref=e119] [cursor=pointer]
+          - text: I accept the
+          - link "terms and conditions" [ref=e121] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+        - generic:
+          - button "Abandon Activation and Log-out" [ref=e123] [cursor=pointer]: Abandon Activation and Log-out
+          - button "Confirm" [disabled] [ref=e125]
+```
+
+# Test source
+
+```ts
+  700 |     if (scenario.subtestCount === undefined) {
+  701 |       await expect.soft(this.subscriptionDetailsAutoRenewalStatusValue).toContainText('ON');
+  702 |     }
+  703 |   }
+  704 | 
+  705 |   async verifySubtestErrorPopup(activationCode: string) {
+  706 |     await this.gotoActivationUrl(activationCode);
+  707 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  708 |     await expect.soft(this.activationCustomerNameText).toBeVisible();
+  709 |   }
+  710 | 
+  711 |   async ensureSubtestWindowState(
+  712 |     user: ExistingUser,
+  713 |     window: 'addon' | 'rollover'
+  714 |   ): Promise<{ summary: OrgSubscriptionSummary; extras: OrgSubscriptionExtras }> {
+  715 |     const subApi = new subscriptionApi(this.page);
+  716 |     const endDate = window === 'addon'
+  717 |       ? addDaysToServerTodayMMDDYYYY(150)
+  718 |       : addDaysToServerTodayMMDDYYYY(60);
+  719 |     await subApi.updateSubscriptionDetails(user.username, endDate, false);
+  720 |     const [summary, extras] = await subApi.getOrgSubscriptionDetails(user.username);
+  721 |     return { summary, extras };
+  722 |   }
+  723 | 
+  724 |   async createFreshOrg(
+  725 |     seedScenario: ActivationCode,
+  726 |     formData: SubscriptionActivationFormData,
+  727 |     signOutAfter = true
+  728 |   ): Promise<void> {
+  729 |     await this.resetActivationStateAndLand(seedScenario);
+  730 |     await this.selectCreateLoginAndProceed();
+  731 |     await this.fillContactInfo(formData);
+  732 |     await this.fillUsernameAndPassword(formData);
+  733 |     await this.fillLocationAndSubmit(formData);
+  734 |     await this.confirmActivation();
+  735 |     await this.dismiss2FAPopupIfPresent();
+  736 |     await this.acceptTermsDialogIfPresent();
+  737 |     if (!signOutAfter) {
+  738 |       return;
+  739 |     }
+  740 |     await this.signOutFromHeader();
+  741 |   }
+  742 | 
+  743 |   async verifyAddOnConfirmDetails(
+  744 |     orgName: string,
+  745 |     currentStartMMDDYYYY: string,
+  746 |     currentEndMMDDYYYY: string,
+  747 |     subtestCount: number
+  748 |   ) {
+  749 |     await expect.soft(this.confirmActivationHeading).toBeVisible();
+  750 |     await expect.soft(this.confirmSubscriptionValueText).toContainText('Subtest Subscription');
+  751 |     await expect.soft(this.confirmLocationNameValueText).toContainText(orgName);
+  752 |     await expect.soft(this.confirmLocationNameValueText).toContainText(`${subtestCount} Subtests`);
+  753 |     await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();
+  754 |     await expect.soft(this.confirmStartDateInput).toHaveValue(currentStartMMDDYYYY);
+  755 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();
+  756 |     await expect.soft(this.confirmEndDateInput).toHaveValue(currentEndMMDDYYYY);
+  757 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();
+  758 |   }
+  759 | 
+  760 |   async verifySubtestPoolApiState(
+  761 |     username: string,
+  762 |     expectedRemaining: number,
+  763 |     expectedRollover?: number
+  764 |   ) {
+  765 |     const subApi = new subscriptionApi(this.page);
+  766 |     const [, extras] = await subApi.getOrgSubscriptionDetails(username);
+  767 |     RawValueLogger.log('Subtest pool API state', {
+  768 |       remainingSubtests: extras.remainingSubtests,
+  769 |       subtestsRollover: extras.subtestsRollover,
+  770 |       rolloverStartDate: extras.rolloverStartDate,
+  771 |       rolloverEndDate: extras.rolloverEndDate,
+  772 |     });
+  773 |     expect.soft(extras.remainingSubtests, 'remainingSubtests').toBe(expectedRemaining);
+  774 |     if (expectedRollover !== undefined) {
+  775 |       expect.soft(extras.subtestsRollover, 'subtestsRollover').toBe(expectedRollover);
+  776 |     }
+  777 |   }
+  778 | 
+  779 |   async verifyAbandonedCodeIsAvailable(scenario: ActivationCode) {
+  780 |     await this.gotoActivationUrl(scenario.activationCode);
+  781 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  782 |     await expect.soft(this.iNeedToCreateALoginSpan).toBeVisible();
+  783 |   }
+  784 | 
+  785 |   async verifyRolloverSubscriptionDetailsPage(
+  786 |     expirationDateMMDDYYYY: string,
+  787 |     expectedRemainingSubtests: number,
+  788 |     rolloverCount: number,
+  789 |     rolloverExpiryMMDDYYYY: string
+  790 |   ) {
+  791 |     await this.openSubscriptionDetailsPage();
+  792 |     await this.subscriptionDetailsExpirationDateValue.waitFor({ state: 'visible', timeout: 15000 });
+  793 |     await expect.soft(this.subscriptionDetailsExpirationDateValue).toContainText(expirationDateMMDDYYYY);
+  794 |     await expect.soft(this.subscriptionDetailsRemainingSubtestsValue).toHaveText(String(expectedRemainingSubtests));
+  795 |     await expect.soft(this.subscriptionDetailsRolloverCountValue).toHaveText(String(rolloverCount));
+  796 |     await expect.soft(this.subscriptionDetailsRolloverLabel).toContainText(rolloverExpiryMMDDYYYY);
+  797 |   }
+  798 | 
+  799 |   async verifyTypeMismatchError() {
+> 800 |     await this.subscriptionErrorPopup.waitFor({ state: 'visible', timeout: 30000 });
+      |                                       ^ TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+  801 |     await expect.soft(this.subscriptionErrorHeading).toHaveText('SUBSCRIPTION ERROR');
+  802 |     await expect.soft(this.subscriptionErrorMessage).toContainText('does not match your current subscription type');
+  803 |   }
+  804 | 
+  805 |   async clickSubscriptionErrorLogout() {
+  806 |     await this.subscriptionErrorLogoutButton.click();
+  807 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 30000 });
+  808 |   }
+  809 | }
+  810 | 
+```

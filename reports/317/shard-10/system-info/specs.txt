@@ -47,7 +47,7 @@ Vulnerability Vmscape:                   Not affected
 -e 
 Memory Information:
                total        used        free      shared  buff/cache   available
-Mem:            15Gi       1.3Gi       9.4Gi        46Mi       5.4Gi        14Gi
+Mem:            15Gi       1.4Gi       9.2Gi        46Mi       5.4Gi        14Gi
 Swap:          3.0Gi          0B       3.0Gi
 -e 
 Disk Information:
@@ -60,7 +60,7 @@ tmpfs           3.2G  1.1M  3.2G   1% /run/docker.sock
 tmpfs           4.0K     0  4.0K   0% /proc/acpi
 -e 
 System Load:
- 18:09:29 up 2 min,  0 user,  load average: 0.61, 0.20, 0.07
+ 19:32:34 up 1 min,  0 user,  load average: 1.40, 0.45, 0.16
 -e 
 Container Information:
 PRETTY_NAME="Ubuntu 24.04.4 LTS"

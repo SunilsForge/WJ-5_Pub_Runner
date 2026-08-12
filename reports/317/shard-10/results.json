@@ -341,9 +341,28 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 341681,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 162554,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Start Test\\']')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Start Test\\']')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Start Test\\']')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Start Test\\']')\u001b[22m\n\n    at CommonTestPage.setTheSuggestedStartingPointTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6399:40)\n    at CommonTestPage.clickOnLetsBeginButtonAndStartTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6348:18)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:75:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:47:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                      "column": 40,
+                      "line": 6399
+                    },
+                    "snippet": "   at ../page/commonTestPage.ts:6399\n\n\u001b[0m \u001b[90m 6397 |\u001b[39m\n \u001b[90m 6398 |\u001b[39m   \u001b[36masync\u001b[39m setTheSuggestedStartingPointTo(sspOption\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6399 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mstartTestButton)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6400 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6401 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloading\u001b[33m.\u001b[39misVisible())\n \u001b[90m 6402 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloading\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m\"hidden\"\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m3\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 40,
+                        "line": 6399
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Start Test\\']')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Start Test\\']')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:6399\n\n  6397 |\n  6398 |   async setTheSuggestedStartingPointTo(sspOption: string) {\n> 6399 |     await expect(this.startTestButton).toBeVisible({ timeout: 10000 });\n       |                                        ^\n  6400 |     await this.page.waitForTimeout(5000);\n  6401 |     if (this.loading.isVisible())\n  6402 |       await this.loading.waitFor({ state: \"hidden\", timeout: 3 * 60 * 1000 });\n    at CommonTestPage.setTheSuggestedStartingPointTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6399:40)\n    at CommonTestPage.clickOnLetsBeginButtonAndStartTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6348:18)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:75:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:47:5"
+                    }
+                  ],
                   "stdout": [
                     {
                       "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
@@ -353,6 +372,91 @@
                     },
                     {
                       "text": "[S10:W0] Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Examiner:- Verify subtests successfully applied for submitted test assignment",
+                      "duration": 29395
+                    },
+                    {
+                      "title": "Examiner:- Complete one test and verify subtests used count is increased by 1",
+                      "duration": 98932,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Start Test\\']')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Start Test\\']')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//button[text()=\\'Start Test\\']')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button[text()=\\'Start Test\\']')\u001b[22m\n\n    at CommonTestPage.setTheSuggestedStartingPointTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6399:40)\n    at CommonTestPage.clickOnLetsBeginButtonAndStartTest (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6348:18)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:75:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts:47:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 40,
+                          "line": 6399
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6399\n\n\u001b[0m \u001b[90m 6397 |\u001b[39m\n \u001b[90m 6398 |\u001b[39m   \u001b[36masync\u001b[39m setTheSuggestedStartingPointTo(sspOption\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6399 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mstartTestButton)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6400 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6401 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloading\u001b[33m.\u001b[39misVisible())\n \u001b[90m 6402 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloading\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m\"hidden\"\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m3\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-08-12T19:33:40.653Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "27345_27549, 30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_C.spec.ts",
+                        "line": 13,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome/test-failed-2.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4c01e-nments-functionality-Part-C-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                    "column": 40,
+                    "line": 6399
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 304652,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S11PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S10:W1] Login successful for S11PwAut25Ex_01\n"
                     },
                     {
                       "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
@@ -395,58 +499,58 @@
                     }
                   ],
                   "stderr": [],
-                  "retry": 0,
+                  "retry": 1,
                   "steps": [
                     {
                       "title": "Examiner:- Verify subtests successfully applied for submitted test assignment",
-                      "duration": 26217
+                      "duration": 24049
                     },
                     {
                       "title": "Examiner:- Complete one test and verify subtests used count is increased by 1",
-                      "duration": 156371
+                      "duration": 147068
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Not Started\" status",
-                      "duration": 10572
+                      "duration": 10127
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"In Progress\" status",
-                      "duration": 8620
+                      "duration": 8146
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Submitted\" status",
-                      "duration": 8744
+                      "duration": 8159
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Expired\" status",
-                      "duration": 8547
+                      "duration": 8186
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Closed\" status",
-                      "duration": 6069
+                      "duration": 5297
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Not Started\" status from Examinees tab",
-                      "duration": 18340
+                      "duration": 18008
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"In Progress\" status from Examinees tab",
-                      "duration": 13826
+                      "duration": 13504
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Submitted\" status from Examinees tab",
-                      "duration": 14696
+                      "duration": 11972
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Expired\" status from Examinees tab",
-                      "duration": 16274
+                      "duration": 13490
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Closed\" status from Examinees tab",
-                      "duration": 16257
+                      "duration": 12986
                     }
                   ],
-                  "startTime": "2026-08-12T18:10:32.918Z",
+                  "startTime": "2026-08-12T19:36:34.055Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -461,7 +565,7 @@
                   "attachments": []
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
           "id": "d312348875e4a5b34876-2b1cdf25fad60f867cc3",
@@ -502,10 +606,10 @@
                   "projectName": "chrome",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 119449,
+                      "duration": 117730,
                       "errors": [],
                       "stdout": [
                         {
@@ -515,7 +619,7 @@
                           "text": "Login successful for S11PwAut25AH\n"
                         },
                         {
-                          "text": "[S10:W0] Login successful for S11PwAut25AH\n"
+                          "text": "[S10:W1] Login successful for S11PwAut25AH\n"
                         },
                         {
                           "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
@@ -524,19 +628,19 @@
                           "text": "Login successful for S11PwAut25Ex_01\n"
                         },
                         {
-                          "text": "[S10:W0] Login successful for S11PwAut25Ex_01\n"
+                          "text": "[S10:W1] Login successful for S11PwAut25Ex_01\n"
                         },
                         {
                           "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                         },
                         {
-                          "text": "Examinee ID N96343A90463\n"
+                          "text": "Examinee ID N38002A55310\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N96343A90463/dataFiles/Score_DataExport_AutoFilter_Template_N96343A90463.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N38002A55310/dataFiles/Score_DataExport_AutoFilter_Template_N38002A55310.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N96343A90463 FirstName=Krystel LastName =N96343A90463 Age = 08/12/2026\n"
+                          "text": "Successfully added an Examinee  ID =N38002A55310 FirstName=Emelie LastName =N38002A55310 Age = 08/12/2026\n"
                         },
                         {
                           "text": "Found 62 checkboxes\n"
@@ -545,12 +649,12 @@
                           "text": "Selected test: General Information–What\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N96343A90463\n"
+                          "text": "Successfully selected examinee: N38002A55310\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-12T18:16:15.237Z",
+                      "startTime": "2026-08-12T19:41:39.239Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -602,10 +706,10 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 869,
+                  "duration": 876,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -613,22 +717,22 @@
                   "steps": [
                     {
                       "title": "MY-023 - unlimitedHigh (SO292847) exposes SubscriptionTerm",
-                      "duration": 334
+                      "duration": 340
                     },
                     {
                       "title": "MY-023 - unlimitedMedium (SO292849) exposes SubscriptionTerm",
-                      "duration": 101
+                      "duration": 103
                     },
                     {
                       "title": "MY-023 - subtestHigh (SO292939) exposes SubscriptionTerm",
-                      "duration": 104
+                      "duration": 109
                     },
                     {
                       "title": "MY-023 - subtestMedium (SO292850) exposes SubscriptionTerm",
-                      "duration": 100
+                      "duration": 110
                     }
                   ],
-                  "startTime": "2026-08-12T18:18:14.729Z",
+                  "startTime": "2026-08-12T19:43:37.015Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -680,10 +784,10 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 10,
+                  "duration": 11,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -718,7 +822,7 @@
                       "duration": 0
                     }
                   ],
-                  "startTime": "2026-08-12T18:18:15.640Z",
+                  "startTime": "2026-08-12T19:43:37.940Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -746,11 +850,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-12T18:10:17.802Z",
-    "duration": 478494.027,
-    "expected": 4,
+    "startTime": "2026-08-12T19:33:25.302Z",
+    "duration": 613228.7019999999,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
-    "flaky": 0
+    "flaky": 1
   }
 }
