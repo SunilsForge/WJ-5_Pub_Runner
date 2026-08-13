@@ -314,7 +314,7 @@
       "specs": [
         {
           "title": "Date Edge Cases on Confirm Activation modal - 180-day start window",
-          "ok": true,
+          "ok": false,
           "tags": [
             "SubscriptionActivation",
             "DateEdgeCases",
@@ -343,79 +343,108 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 106789,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 170963,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\nExpected: not visible\nReceived: visible\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft not toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div role=\"alert\" class=\"redError\">Date entered cannot be before current date.</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\nExpected: not visible\nReceived: visible\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft not toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div role=\"alert\" class=\"redError\">Date entered cannot be before current date.</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n    at SubscriptionActivationPage.assertNoDateError (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:520:57)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts:96:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts:93:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                      "column": 57,
+                      "line": 520
+                    },
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:520\n\n\u001b[0m \u001b[90m 518 |\u001b[39m\n \u001b[90m 519 |\u001b[39m   \u001b[36masync\u001b[39m assertNoDateError() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 520 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmDateErrorMessage)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 521 |\u001b[39m   }\n \u001b[90m 522 |\u001b[39m\n \u001b[90m 523 |\u001b[39m   \u001b[36masync\u001b[39m assertEndDateValueEquals(expectedMMDDYYYY\u001b[33m:\u001b[39m string) {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 57,
+                        "line": 520
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\nExpected: not visible\nReceived: visible\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft not toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div role=\"alert\" class=\"redError\">Date entered cannot be before current date.</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:520\n\n  518 |\n  519 |   async assertNoDateError() {\n> 520 |     await expect.soft(this.confirmDateErrorMessage).not.toBeVisible();\n      |                                                         ^\n  521 |   }\n  522 |\n  523 |   async assertEndDateValueEquals(expectedMMDDYYYY: string) {\n    at SubscriptionActivationPage.assertNoDateError (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:520:57)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts:96:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts:93:5"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Setup - Pin the purchase date to today so every offset below is a future date",
-                      "duration": 1506
+                      "duration": 1330
                     },
                     {
                       "title": "Setup - Fetch PurchaseDate from GetSubscriptionOrder API for SO292847",
-                      "duration": 283
+                      "duration": 2066
                     },
                     {
                       "title": "Setup - Force-reset activation state and land on activation page (guarantees mutable START DATE)",
-                      "duration": 3050
+                      "duration": 6893
                     },
                     {
                       "title": "Setup - Create login → contact → credentials → location → reach Confirm modal",
-                      "duration": 33829
+                      "duration": 32677
                     },
                     {
                       "title": "S43 - Past date (today-2) rejected with \"Date entered cannot be before current date.\"",
-                      "duration": 7480
+                      "duration": 6679
                     },
                     {
                       "title": "S40 - Error clears after entering a valid (today) date",
-                      "duration": 6646
+                      "duration": 66654,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\nExpected: not visible\nReceived: visible\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft not toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div role=\"alert\" class=\"redError\">Date entered cannot be before current date.</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\nExpected: not visible\nReceived: visible\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft not toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div role=\"alert\" class=\"redError\">Date entered cannot be before current date.</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n    at SubscriptionActivationPage.assertNoDateError (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:520:57)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts:96:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts:93:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 57,
+                          "line": 520
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:520\n\n\u001b[0m \u001b[90m 518 |\u001b[39m\n \u001b[90m 519 |\u001b[39m   \u001b[36masync\u001b[39m assertNoDateError() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 520 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmDateErrorMessage)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 521 |\u001b[39m   }\n \u001b[90m 522 |\u001b[39m\n \u001b[90m 523 |\u001b[39m   \u001b[36masync\u001b[39m assertEndDateValueEquals(expectedMMDDYYYY\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      }
                     },
                     {
                       "title": "S37/SD-003/SD-005 - Start date > 180 days from PurchaseDate (purchase+181) rejected with \"Date cannot exceed 180 days...\"",
-                      "duration": 6647
+                      "duration": 6637
                     },
                     {
                       "title": "SD-009/MY-018 - Out-of-range error references 180 days, not the superseded 60-day limit",
-                      "duration": 8
+                      "duration": 6
                     },
                     {
                       "title": "S36/MY-019 - Start date purchase+179 days is accepted (no error) + end = start + 1 yr - 1 day",
-                      "duration": 6657
+                      "duration": 6644
                     },
                     {
                       "title": "MY-020/SD-004 - Boundary: start date at exactly purchase+180 is accepted",
-                      "duration": 6657
+                      "duration": 6632
                     },
                     {
                       "title": "SD-013 - Start date at purchase+61 is accepted (was invalid under the superseded 60-day limit)",
-                      "duration": 6663
+                      "duration": 6625
                     },
                     {
                       "title": "SD-011 - School-year alignment: start date ~90 days from purchase is accepted",
-                      "duration": 6639
+                      "duration": 6612
                     },
                     {
                       "title": "SD-012/MY-005 - Start date within 60 days still works, and end date is start + 1 yr - 1 day",
-                      "duration": 6659
+                      "duration": 6619
                     },
                     {
                       "title": "S39 - End date reflects 1-year-out when start date changes (today+4)",
-                      "duration": 6647
+                      "duration": 6619
                     },
                     {
                       "title": "S38 - Clearing start date clears the end date input value",
-                      "duration": 4892
+                      "duration": 4898
                     },
                     {
                       "title": "S42 - \"Abandon Activation and Log-out\" redirects to login page",
-                      "duration": 1326
+                      "duration": 2149
                     }
                   ],
-                  "startTime": "2026-08-12T18:11:04.199Z",
+                  "startTime": "2026-08-13T02:27:03.695Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -427,10 +456,165 @@
                       }
                     }
                   ],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-53c0a-odal---180-day-start-window-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-53c0a-odal---180-day-start-window-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-53c0a-odal---180-day-start-window-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                    "column": 57,
+                    "line": 520
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 165077,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\nExpected: not visible\nReceived: visible\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft not toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div role=\"alert\" class=\"redError\">Date entered cannot be before current date.</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\nExpected: not visible\nReceived: visible\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft not toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div role=\"alert\" class=\"redError\">Date entered cannot be before current date.</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n    at SubscriptionActivationPage.assertNoDateError (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:520:57)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts:96:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts:93:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                      "column": 57,
+                      "line": 520
+                    },
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:520\n\n\u001b[0m \u001b[90m 518 |\u001b[39m\n \u001b[90m 519 |\u001b[39m   \u001b[36masync\u001b[39m assertNoDateError() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 520 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmDateErrorMessage)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 521 |\u001b[39m   }\n \u001b[90m 522 |\u001b[39m\n \u001b[90m 523 |\u001b[39m   \u001b[36masync\u001b[39m assertEndDateValueEquals(expectedMMDDYYYY\u001b[33m:\u001b[39m string) {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 57,
+                        "line": 520
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\nExpected: not visible\nReceived: visible\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft not toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div role=\"alert\" class=\"redError\">Date entered cannot be before current date.</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:520\n\n  518 |\n  519 |   async assertNoDateError() {\n> 520 |     await expect.soft(this.confirmDateErrorMessage).not.toBeVisible();\n      |                                                         ^\n  521 |   }\n  522 |\n  523 |   async assertEndDateValueEquals(expectedMMDDYYYY: string) {\n    at SubscriptionActivationPage.assertNoDateError (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:520:57)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts:96:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts:93:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Setup - Pin the purchase date to today so every offset below is a future date",
+                      "duration": 478
+                    },
+                    {
+                      "title": "Setup - Fetch PurchaseDate from GetSubscriptionOrder API for SO292847",
+                      "duration": 288
+                    },
+                    {
+                      "title": "Setup - Force-reset activation state and land on activation page (guarantees mutable START DATE)",
+                      "duration": 6543
+                    },
+                    {
+                      "title": "Setup - Create login → contact → credentials → location → reach Confirm modal",
+                      "duration": 31891
+                    },
+                    {
+                      "title": "S43 - Past date (today-2) rejected with \"Date entered cannot be before current date.\"",
+                      "duration": 6597
+                    },
+                    {
+                      "title": "S40 - Error clears after entering a valid (today) date",
+                      "duration": 66600,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\nExpected: not visible\nReceived: visible\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft not toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div role=\"alert\" class=\"redError\">Date entered cannot be before current date.</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\nExpected: not visible\nReceived: visible\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft not toBeVisible\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-date-message\\')]//div[contains(@class,\\'redError\\')]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div role=\"alert\" class=\"redError\">Date entered cannot be before current date.</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n    at SubscriptionActivationPage.assertNoDateError (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:520:57)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts:96:40\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts:93:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 57,
+                          "line": 520
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:520\n\n\u001b[0m \u001b[90m 518 |\u001b[39m\n \u001b[90m 519 |\u001b[39m   \u001b[36masync\u001b[39m assertNoDateError() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 520 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmDateErrorMessage)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 521 |\u001b[39m   }\n \u001b[90m 522 |\u001b[39m\n \u001b[90m 523 |\u001b[39m   \u001b[36masync\u001b[39m assertEndDateValueEquals(expectedMMDDYYYY\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "S37/SD-003/SD-005 - Start date > 180 days from PurchaseDate (purchase+181) rejected with \"Date cannot exceed 180 days...\"",
+                      "duration": 6619
+                    },
+                    {
+                      "title": "SD-009/MY-018 - Out-of-range error references 180 days, not the superseded 60-day limit",
+                      "duration": 3
+                    },
+                    {
+                      "title": "S36/MY-019 - Start date purchase+179 days is accepted (no error) + end = start + 1 yr - 1 day",
+                      "duration": 6611
+                    },
+                    {
+                      "title": "MY-020/SD-004 - Boundary: start date at exactly purchase+180 is accepted",
+                      "duration": 6616
+                    },
+                    {
+                      "title": "SD-013 - Start date at purchase+61 is accepted (was invalid under the superseded 60-day limit)",
+                      "duration": 6613
+                    },
+                    {
+                      "title": "SD-011 - School-year alignment: start date ~90 days from purchase is accepted",
+                      "duration": 6598
+                    },
+                    {
+                      "title": "SD-012/MY-005 - Start date within 60 days still works, and end date is start + 1 yr - 1 day",
+                      "duration": 6604
+                    },
+                    {
+                      "title": "S39 - End date reflects 1-year-out when start date changes (today+4)",
+                      "duration": 6611
+                    },
+                    {
+                      "title": "S38 - Clearing start date clears the end date input value",
+                      "duration": 4857
+                    },
+                    {
+                      "title": "S42 - \"Abandon Activation and Log-out\" redirects to login page",
+                      "duration": 1260
+                    }
+                  ],
+                  "startTime": "2026-08-13T02:29:57.440Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24483_24544, 31819, 27103, 27193",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationNewUserDateEdge.spec.ts",
+                        "line": 24,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-53c0a-odal---180-day-start-window-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-53c0a-odal---180-day-start-window-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                    "column": 57,
+                    "line": 520
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "d1bc6cbc35874be7103e-a378c73d93f7ac62d54a",
@@ -476,23 +660,23 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 307515,
+                  "duration": 302865,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N17824A23591\n"
+                      "text": "Examinee ID N74494A76755\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N17824A23591 FirstName=Justice LastName =N17824A23591 Age = 08/12/2019\n"
+                      "text": "Successfully added an Examinee  ID =N74494A76755 FirstName=Keeley LastName =N74494A76755 Age = 08/12/2019\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N17824A23591\n"
+                      "text": "Successfully selected examinee: N74494A76755\n"
                     },
                     {
                       "text": "Filling the session ID input box...\n"
@@ -515,50 +699,50 @@
                   "steps": [
                     {
                       "title": "Setup - Force-reset activation state and land on activation page (guarantees mutable START DATE)",
-                      "duration": 2938
+                      "duration": 2895
                     },
                     {
                       "title": "Setup - Wizard: Create-a-Login → Contact → Credentials → Location",
-                      "duration": 32895
+                      "duration": 31873
                     },
                     {
                       "title": "Setup - Confirm modal: change START DATE to today+5 (08/17/2026) and confirm",
-                      "duration": 9175
+                      "duration": 9212
                     },
                     {
                       "title": "Setup - Dismiss 2FA + terms + Pendo, click WJ V tile, verify dashboard",
-                      "duration": 8781
+                      "duration": 8283
                     },
                     {
                       "title": "S51 - FUTURE reminder banner is visible on dashboard with the correct copy",
-                      "duration": 18509
+                      "duration": 18575
                     },
                     {
                       "title": "S49a - AH can create a Staff member (admin: staff management)",
-                      "duration": 17592
+                      "duration": 15460
                     },
                     {
                       "title": "S49b - AH can create an Examinee (admin: child management)",
-                      "duration": 18548
+                      "duration": 18542
                     },
                     {
                       "title": "S49c - AH can create a custom Test Set with [Calculation] (admin: test set creation)",
-                      "duration": 19698
+                      "duration": 19178
                     },
                     {
                       "title": "S49d - AH can assign the custom Test Set to the Examinee and launch it (admin: assignment + launch allowed)",
-                      "duration": 26072
+                      "duration": 25403
                     },
                     {
                       "title": "S50 - Connect examinee device, take Calculation (answer wrong), reach Submit screen",
-                      "duration": 140123
+                      "duration": 139923
                     },
                     {
                       "title": "S50 - Open Submit popup, advance to Notes tab, assert final Submit is DISABLED",
-                      "duration": 2489
+                      "duration": 2530
                     }
                   ],
-                  "startTime": "2026-08-12T18:12:52.885Z",
+                  "startTime": "2026-08-13T02:32:44.331Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -617,10 +801,10 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3002,
+                  "duration": 4992,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -628,10 +812,10 @@
                   "steps": [
                     {
                       "title": "Navigate to malformed activation URL and verify \"Invalid activation code\" message",
-                      "duration": 2282
+                      "duration": 4501
                     }
                   ],
-                  "startTime": "2026-08-12T18:18:02.378Z",
+                  "startTime": "2026-08-13T02:37:49.179Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -682,65 +866,61 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 81492,
+                  "duration": 80945,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=IP3VhUHEHXCfKJ03Io8l1A%3d%3d SO=SO292847\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Setup - Land on activation page (self-recover if code/SO already used)",
-                      "duration": 4484
+                      "duration": 3877
                     },
                     {
                       "title": "Setup - Select Create-a-Login and click Create an Account",
-                      "duration": 2844
+                      "duration": 2504
                     },
                     {
                       "title": "S11 - Invalid email and phone show inline errors on Contact Information",
-                      "duration": 8965
+                      "duration": 9067
                     },
                     {
                       "title": "Recover - Fix email/phone with valid values and proceed to Username & Password",
-                      "duration": 16604
+                      "duration": 16871
                     },
                     {
                       "title": "S18 - Short password (< 8 chars) shows length error",
-                      "duration": 6314
+                      "duration": 6281
                     },
                     {
                       "title": "S18 - Long password (> 10 chars) shows length error",
-                      "duration": 6793
+                      "duration": 6758
                     },
                     {
                       "title": "S17 - Mismatched password and confirm shows \"Passwords do not match\" error",
-                      "duration": 11820
+                      "duration": 11807
                     },
                     {
                       "title": "Recover - Set valid credentials and proceed to Add Location",
-                      "duration": 19190
+                      "duration": 19181
                     },
                     {
                       "title": "S22 - Click Back on Add Location → lands on Username & Password page",
-                      "duration": 1289
+                      "duration": 1266
                     },
                     {
                       "title": "S10 - Click Back on Username & Password → lands on Contact Information page",
-                      "duration": 1260
+                      "duration": 1268
                     },
                     {
                       "title": "S10 - Click Back on Contact Information → lands on activation landing page",
-                      "duration": 1268
+                      "duration": 1276
                     }
                   ],
-                  "startTime": "2026-08-12T18:18:05.875Z",
+                  "startTime": "2026-08-13T02:37:54.688Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -773,7 +953,7 @@
       "specs": [
         {
           "title": "AC2 Happy path - Subtest user (add-on window, >4 months remaining) redeems Subtest Medium code - subtests added to existing pool",
-          "ok": true,
+          "ok": false,
           "tags": [
             "SubscriptionActivation",
             "SubsequentPurchase",
@@ -803,11 +983,70 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 4,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 74947,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 377955,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\nExpected: \u001b[32m\"0\u001b[7m1\u001b[27m/1\u001b[7m0\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m8\u001b[27m/1\u001b[7m3\u001b[27m/2026\"\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input id=\"tbi_22\" type=\"text\" translate=\"yes\" autocomplete=\"off\" value=\"08/13/2026\" aria-labelledby=\"tb_22\" placeholder=\"mm/dd/yyyy\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"08/13/2026\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\nExpected: \u001b[32m\"0\u001b[7m1\u001b[27m/1\u001b[7m0\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m8\u001b[27m/1\u001b[7m3\u001b[27m/2026\"\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input id=\"tbi_22\" type=\"text\" translate=\"yes\" autocomplete=\"off\" value=\"08/13/2026\" aria-labelledby=\"tb_22\" placeholder=\"mm/dd/yyyy\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"08/13/2026\"\u001b[22m\n\n    at SubscriptionActivationPage.verifyAddOnConfirmDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:754:51)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:91:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                      "column": 51,
+                      "line": 754
+                    },
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:754\n\n\u001b[0m \u001b[90m 752 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmLocationNameValueText)\u001b[33m.\u001b[39mtoContainText(\u001b[32m`${subtestCount} Subtests`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 753 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmSubtestDescriptionNote)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 754 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmStartDateInput)\u001b[33m.\u001b[39mtoHaveValue(currentStartMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 755 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmStartDateInput)\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m 756 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmEndDateInput)\u001b[33m.\u001b[39mtoHaveValue(currentEndMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m 757 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmEndDateInput)\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 51,
+                        "line": 754
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\nExpected: \u001b[32m\"0\u001b[7m1\u001b[27m/1\u001b[7m0\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m8\u001b[27m/1\u001b[7m3\u001b[27m/2026\"\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input id=\"tbi_22\" type=\"text\" translate=\"yes\" autocomplete=\"off\" value=\"08/13/2026\" aria-labelledby=\"tb_22\" placeholder=\"mm/dd/yyyy\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"08/13/2026\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:754\n\n  752 |     await expect.soft(this.confirmLocationNameValueText).toContainText(`${subtestCount} Subtests`);\n  753 |     await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();\n> 754 |     await expect.soft(this.confirmStartDateInput).toHaveValue(currentStartMMDDYYYY);\n      |                                                   ^\n  755 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();\n  756 |     await expect.soft(this.confirmEndDateInput).toHaveValue(currentEndMMDDYYYY);\n  757 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();\n    at SubscriptionActivationPage.verifyAddOnConfirmDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:754:51)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:91:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 51,
+                        "line": 755
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\nExpected: disabled\nReceived: enabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeDisabled\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input id=\"tbi_22\" type=\"text\" translate=\"yes\" autocomplete=\"off\" value=\"08/13/2026\" aria-labelledby=\"tb_22\" placeholder=\"mm/dd/yyyy\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"enabled\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:755\n\n  753 |     await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();\n  754 |     await expect.soft(this.confirmStartDateInput).toHaveValue(currentStartMMDDYYYY);\n> 755 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();\n      |                                                   ^\n  756 |     await expect.soft(this.confirmEndDateInput).toHaveValue(currentEndMMDDYYYY);\n  757 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();\n  758 |   }\n    at SubscriptionActivationPage.verifyAddOnConfirmDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:755:51)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:91:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 49,
+                        "line": 756
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'END DATE\\']/following-sibling::div/input')\nExpected: \u001b[32m\"0\u001b[7m1/09\u001b[27m/2027\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m8/12\u001b[27m/2027\"\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'END DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input disabled id=\"tbi_24\" type=\"text\" placeholder=\"\" translate=\"yes\" autocomplete=\"off\" value=\"08/12/2027\" aria-labelledby=\"tb_24\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"08/12/2027\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:756\n\n  754 |     await expect.soft(this.confirmStartDateInput).toHaveValue(currentStartMMDDYYYY);\n  755 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();\n> 756 |     await expect.soft(this.confirmEndDateInput).toHaveValue(currentEndMMDDYYYY);\n      |                                                 ^\n  757 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();\n  758 |   }\n  759 |\n    at SubscriptionActivationPage.verifyAddOnConfirmDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:756:49)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:91:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 64,
+                        "line": 773
+                      },
+                      "message": "Error: remainingSubtests\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m100\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n\n   at ../page/subscriptionActivationPage.ts:773\n\n  771 |       rolloverEndDate: extras.rolloverEndDate,\n  772 |     });\n> 773 |     expect.soft(extras.remainingSubtests, 'remainingSubtests').toBe(expectedRemaining);\n      |                                                                ^\n  774 |     if (expectedRollover !== undefined) {\n  775 |       expect.soft(extras.subtestsRollover, 'subtestsRollover').toBe(expectedRollover);\n  776 |     }\n    at SubscriptionActivationPage.verifySubtestPoolApiState (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:773:64)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:111:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:110:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 68,
+                        "line": 653
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'EXPIRATION DATE\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\nExpected substring: \u001b[32m\"01/09/2027\"\u001b[39m\nReceived string:    \u001b[31m\"—\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'EXPIRATION DATE\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-value\">—</div>\u001b[22m\n\u001b[2m       - unexpected value \"—\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:653\n\n  651 |     await this.openSubscriptionDetailsPage();\n  652 |     await this.subscriptionDetailsExpirationDateValue.waitFor({ state: 'visible', timeout: 15000 });\n> 653 |     await expect.soft(this.subscriptionDetailsExpirationDateValue).toContainText(renewalEndMMDDYYYY);\n      |                                                                    ^\n  654 |     if (expectedRemainingSubtests !== undefined) {\n  655 |       await expect.soft(this.subscriptionDetailsRemainingSubtestsValue).toHaveText(String(expectedRemainingSubtests));\n  656 |     }\n    at SubscriptionActivationPage.verifySubscriptionDetailsAfterRenewal (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:653:68)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:118:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:117:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 73,
+                        "line": 655
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'REMAINING SUBTESTS\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\nExpected: \u001b[32m\"100\"\u001b[39m\nTimeout: 60000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'REMAINING SUBTESTS\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:655\n\n  653 |     await expect.soft(this.subscriptionDetailsExpirationDateValue).toContainText(renewalEndMMDDYYYY);\n  654 |     if (expectedRemainingSubtests !== undefined) {\n> 655 |       await expect.soft(this.subscriptionDetailsRemainingSubtestsValue).toHaveText(String(expectedRemainingSubtests));\n      |                                                                         ^\n  656 |     }\n  657 |   }\n  658 |\n    at SubscriptionActivationPage.verifySubscriptionDetailsAfterRenewal (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:655:73)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:118:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:117:5"
+                    }
+                  ],
                   "stdout": [
                     {
                       "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=CqNGA8GKhoaqZ8xp%2fzfxCw%3d%3d SO=SO292850\n"
@@ -818,50 +1057,80 @@
                   "steps": [
                     {
                       "title": "Phase 1 - Create fresh org via Subtest High code",
-                      "duration": 43490
+                      "duration": 44420
                     },
                     {
                       "title": "Setup - Set subscription to add-on window (+150 days) and capture state",
-                      "duration": 398
+                      "duration": 260
                     },
                     {
                       "title": "Setup - Land on activation page",
-                      "duration": 3670
+                      "duration": 3436
                     },
                     {
                       "title": "S03 - Select \"Use my Existing Login\" and click Sign In",
-                      "duration": 2477
+                      "duration": 2481
                     },
                     {
                       "title": "S07/S08 - Sign in with existing AH credentials",
-                      "duration": 3672
+                      "duration": 3658
                     },
                     {
                       "title": "SP-005/006/007/008/009/010/011 - Confirm Activation popup: subscription, org, subtest count, current sub dates",
-                      "duration": 77
+                      "duration": 180087,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\nExpected: \u001b[32m\"0\u001b[7m1\u001b[27m/1\u001b[7m0\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m8\u001b[27m/1\u001b[7m3\u001b[27m/2026\"\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input id=\"tbi_22\" type=\"text\" translate=\"yes\" autocomplete=\"off\" value=\"08/13/2026\" aria-labelledby=\"tb_22\" placeholder=\"mm/dd/yyyy\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"08/13/2026\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\nExpected: \u001b[32m\"0\u001b[7m1\u001b[27m/1\u001b[7m0\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m8\u001b[27m/1\u001b[7m3\u001b[27m/2026\"\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input id=\"tbi_22\" type=\"text\" translate=\"yes\" autocomplete=\"off\" value=\"08/13/2026\" aria-labelledby=\"tb_22\" placeholder=\"mm/dd/yyyy\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"08/13/2026\"\u001b[22m\n\n    at SubscriptionActivationPage.verifyAddOnConfirmDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:754:51)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:91:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 51,
+                          "line": 754
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:754\n\n\u001b[0m \u001b[90m 752 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmLocationNameValueText)\u001b[33m.\u001b[39mtoContainText(\u001b[32m`${subtestCount} Subtests`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 753 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmSubtestDescriptionNote)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 754 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmStartDateInput)\u001b[33m.\u001b[39mtoHaveValue(currentStartMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 755 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmStartDateInput)\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m 756 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmEndDateInput)\u001b[33m.\u001b[39mtoHaveValue(currentEndMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m 757 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmEndDateInput)\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\u001b[0m"
+                      }
                     },
                     {
                       "title": "SP-033 - Confirm button is disabled before terms checkbox is ticked",
-                      "duration": 6
+                      "duration": 9
                     },
                     {
                       "title": "SP-012 - Accept terms and confirm activation",
-                      "duration": 2471
+                      "duration": 2468
                     },
                     {
                       "title": "SP-026 - Dismiss 2FA + accept terms, click WJ V tile, verify dashboard",
-                      "duration": 7475
+                      "duration": 7174
                     },
                     {
                       "title": "SP-012 API - Verify subtest pool reflects added subtests",
-                      "duration": 348
+                      "duration": 257,
+                      "error": {
+                        "message": "Error: remainingSubtests\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m100\u001b[39m\nReceived: \u001b[31mnull\u001b[39m",
+                        "stack": "Error: remainingSubtests\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m100\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n    at SubscriptionActivationPage.verifySubtestPoolApiState (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:773:64)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:111:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:110:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 64,
+                          "line": 773
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:773\n\n\u001b[0m \u001b[90m 771 |\u001b[39m       rolloverEndDate\u001b[33m:\u001b[39m extras\u001b[33m.\u001b[39mrolloverEndDate\u001b[33m,\u001b[39m\n \u001b[90m 772 |\u001b[39m     })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 773 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(extras\u001b[33m.\u001b[39mremainingSubtests\u001b[33m,\u001b[39m \u001b[32m'remainingSubtests'\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedRemaining)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 774 |\u001b[39m     \u001b[36mif\u001b[39m (expectedRollover \u001b[33m!==\u001b[39m undefined) {\n \u001b[90m 775 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(extras\u001b[33m.\u001b[39msubtestsRollover\u001b[33m,\u001b[39m \u001b[32m'subtestsRollover'\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedRollover)\u001b[33m;\u001b[39m\n \u001b[90m 776 |\u001b[39m     }\u001b[0m"
+                      }
                     },
                     {
                       "title": "SP-012 UI - Verify Subscription Details page shows correct expiration date and remaining subtests",
-                      "duration": 6563
+                      "duration": 126410,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'EXPIRATION DATE\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\nExpected substring: \u001b[32m\"01/09/2027\"\u001b[39m\nReceived string:    \u001b[31m\"—\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'EXPIRATION DATE\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-value\">—</div>\u001b[22m\n\u001b[2m       - unexpected value \"—\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'EXPIRATION DATE\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\nExpected substring: \u001b[32m\"01/09/2027\"\u001b[39m\nReceived string:    \u001b[31m\"—\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'EXPIRATION DATE\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-value\">—</div>\u001b[22m\n\u001b[2m       - unexpected value \"—\"\u001b[22m\n\n    at SubscriptionActivationPage.verifySubscriptionDetailsAfterRenewal (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:653:68)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:118:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:117:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 68,
+                          "line": 653
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:653\n\n\u001b[0m \u001b[90m 651 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mopenSubscriptionDetailsPage()\u001b[33m;\u001b[39m\n \u001b[90m 652 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsExpirationDateValue\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 653 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsExpirationDateValue)\u001b[33m.\u001b[39mtoContainText(renewalEndMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 654 |\u001b[39m     \u001b[36mif\u001b[39m (expectedRemainingSubtests \u001b[33m!==\u001b[39m undefined) {\n \u001b[90m 655 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRemainingSubtestsValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mString\u001b[39m(expectedRemainingSubtests))\u001b[33m;\u001b[39m\n \u001b[90m 656 |\u001b[39m     }\u001b[0m"
+                      }
                     }
                   ],
-                  "startTime": "2026-08-12T18:19:28.567Z",
+                  "startTime": "2026-08-13T02:39:16.935Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -873,10 +1142,209 @@
                       }
                     }
                   ],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-01955-ests-added-to-existing-pool-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-01955-ests-added-to-existing-pool-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-01955-ests-added-to-existing-pool-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                    "column": 51,
+                    "line": 754
+                  }
+                },
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 368001,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\nExpected: \u001b[32m\"0\u001b[7m1\u001b[27m/1\u001b[7m0\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m8\u001b[27m/1\u001b[7m3\u001b[27m/2026\"\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input id=\"tbi_22\" type=\"text\" translate=\"yes\" autocomplete=\"off\" value=\"08/13/2026\" aria-labelledby=\"tb_22\" placeholder=\"mm/dd/yyyy\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"08/13/2026\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\nExpected: \u001b[32m\"0\u001b[7m1\u001b[27m/1\u001b[7m0\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m8\u001b[27m/1\u001b[7m3\u001b[27m/2026\"\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input id=\"tbi_22\" type=\"text\" translate=\"yes\" autocomplete=\"off\" value=\"08/13/2026\" aria-labelledby=\"tb_22\" placeholder=\"mm/dd/yyyy\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"08/13/2026\"\u001b[22m\n\n    at SubscriptionActivationPage.verifyAddOnConfirmDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:754:51)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:91:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                      "column": 51,
+                      "line": 754
+                    },
+                    "snippet": "   at ../page/subscriptionActivationPage.ts:754\n\n\u001b[0m \u001b[90m 752 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmLocationNameValueText)\u001b[33m.\u001b[39mtoContainText(\u001b[32m`${subtestCount} Subtests`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 753 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmSubtestDescriptionNote)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 754 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmStartDateInput)\u001b[33m.\u001b[39mtoHaveValue(currentStartMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 755 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmStartDateInput)\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m 756 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmEndDateInput)\u001b[33m.\u001b[39mtoHaveValue(currentEndMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m 757 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmEndDateInput)\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 51,
+                        "line": 754
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\nExpected: \u001b[32m\"0\u001b[7m1\u001b[27m/1\u001b[7m0\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m8\u001b[27m/1\u001b[7m3\u001b[27m/2026\"\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input id=\"tbi_22\" type=\"text\" translate=\"yes\" autocomplete=\"off\" value=\"08/13/2026\" aria-labelledby=\"tb_22\" placeholder=\"mm/dd/yyyy\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"08/13/2026\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:754\n\n  752 |     await expect.soft(this.confirmLocationNameValueText).toContainText(`${subtestCount} Subtests`);\n  753 |     await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();\n> 754 |     await expect.soft(this.confirmStartDateInput).toHaveValue(currentStartMMDDYYYY);\n      |                                                   ^\n  755 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();\n  756 |     await expect.soft(this.confirmEndDateInput).toHaveValue(currentEndMMDDYYYY);\n  757 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();\n    at SubscriptionActivationPage.verifyAddOnConfirmDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:754:51)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:91:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 51,
+                        "line": 755
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\nExpected: disabled\nReceived: enabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeDisabled\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input id=\"tbi_22\" type=\"text\" translate=\"yes\" autocomplete=\"off\" value=\"08/13/2026\" aria-labelledby=\"tb_22\" placeholder=\"mm/dd/yyyy\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"enabled\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:755\n\n  753 |     await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();\n  754 |     await expect.soft(this.confirmStartDateInput).toHaveValue(currentStartMMDDYYYY);\n> 755 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();\n      |                                                   ^\n  756 |     await expect.soft(this.confirmEndDateInput).toHaveValue(currentEndMMDDYYYY);\n  757 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();\n  758 |   }\n    at SubscriptionActivationPage.verifyAddOnConfirmDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:755:51)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:91:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 49,
+                        "line": 756
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'END DATE\\']/following-sibling::div/input')\nExpected: \u001b[32m\"0\u001b[7m1/09\u001b[27m/2027\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m8/12\u001b[27m/2027\"\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'END DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input disabled id=\"tbi_24\" type=\"text\" placeholder=\"\" translate=\"yes\" autocomplete=\"off\" value=\"08/12/2027\" aria-labelledby=\"tb_24\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"08/12/2027\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:756\n\n  754 |     await expect.soft(this.confirmStartDateInput).toHaveValue(currentStartMMDDYYYY);\n  755 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();\n> 756 |     await expect.soft(this.confirmEndDateInput).toHaveValue(currentEndMMDDYYYY);\n      |                                                 ^\n  757 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();\n  758 |   }\n  759 |\n    at SubscriptionActivationPage.verifyAddOnConfirmDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:756:49)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:91:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 64,
+                        "line": 773
+                      },
+                      "message": "Error: remainingSubtests\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m100\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n\n   at ../page/subscriptionActivationPage.ts:773\n\n  771 |       rolloverEndDate: extras.rolloverEndDate,\n  772 |     });\n> 773 |     expect.soft(extras.remainingSubtests, 'remainingSubtests').toBe(expectedRemaining);\n      |                                                                ^\n  774 |     if (expectedRollover !== undefined) {\n  775 |       expect.soft(extras.subtestsRollover, 'subtestsRollover').toBe(expectedRollover);\n  776 |     }\n    at SubscriptionActivationPage.verifySubtestPoolApiState (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:773:64)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:111:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:110:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 68,
+                        "line": 653
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'EXPIRATION DATE\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\nExpected substring: \u001b[32m\"01/09/2027\"\u001b[39m\nReceived string:    \u001b[31m\"—\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'EXPIRATION DATE\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-value\">—</div>\u001b[22m\n\u001b[2m       - unexpected value \"—\"\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:653\n\n  651 |     await this.openSubscriptionDetailsPage();\n  652 |     await this.subscriptionDetailsExpirationDateValue.waitFor({ state: 'visible', timeout: 15000 });\n> 653 |     await expect.soft(this.subscriptionDetailsExpirationDateValue).toContainText(renewalEndMMDDYYYY);\n      |                                                                    ^\n  654 |     if (expectedRemainingSubtests !== undefined) {\n  655 |       await expect.soft(this.subscriptionDetailsRemainingSubtestsValue).toHaveText(String(expectedRemainingSubtests));\n  656 |     }\n    at SubscriptionActivationPage.verifySubscriptionDetailsAfterRenewal (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:653:68)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:118:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:117:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                        "column": 73,
+                        "line": 655
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'REMAINING SUBTESTS\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\nExpected: \u001b[32m\"100\"\u001b[39m\nTimeout: 60000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'REMAINING SUBTESTS\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\u001b[22m\n\n\n   at ../page/subscriptionActivationPage.ts:655\n\n  653 |     await expect.soft(this.subscriptionDetailsExpirationDateValue).toContainText(renewalEndMMDDYYYY);\n  654 |     if (expectedRemainingSubtests !== undefined) {\n> 655 |       await expect.soft(this.subscriptionDetailsRemainingSubtestsValue).toHaveText(String(expectedRemainingSubtests));\n      |                                                                         ^\n  656 |     }\n  657 |   }\n  658 |\n    at SubscriptionActivationPage.verifySubscriptionDetailsAfterRenewal (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:655:73)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:118:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:117:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=CqNGA8GKhoaqZ8xp%2fzfxCw%3d%3d SO=SO292850\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Phase 1 - Create fresh org via Subtest High code",
+                      "duration": 42454
+                    },
+                    {
+                      "title": "Setup - Set subscription to add-on window (+150 days) and capture state",
+                      "duration": 338
+                    },
+                    {
+                      "title": "Setup - Land on activation page",
+                      "duration": 2942
+                    },
+                    {
+                      "title": "S03 - Select \"Use my Existing Login\" and click Sign In",
+                      "duration": 2491
+                    },
+                    {
+                      "title": "S07/S08 - Sign in with existing AH credentials",
+                      "duration": 3643
+                    },
+                    {
+                      "title": "SP-005/006/007/008/009/010/011 - Confirm Activation popup: subscription, org, subtest count, current sub dates",
+                      "duration": 180047,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\nExpected: \u001b[32m\"0\u001b[7m1\u001b[27m/1\u001b[7m0\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m8\u001b[27m/1\u001b[7m3\u001b[27m/2026\"\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input id=\"tbi_22\" type=\"text\" translate=\"yes\" autocomplete=\"off\" value=\"08/13/2026\" aria-labelledby=\"tb_22\" placeholder=\"mm/dd/yyyy\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"08/13/2026\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\nExpected: \u001b[32m\"0\u001b[7m1\u001b[27m/1\u001b[7m0\u001b[27m/2026\"\u001b[39m\nReceived: \u001b[31m\"0\u001b[7m8\u001b[27m/1\u001b[7m3\u001b[27m/2026\"\u001b[39m\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//label[text()=\\'START DATE\\']/following-sibling::div/input')\u001b[22m\n\u001b[2m    63 × locator resolved to <input id=\"tbi_22\" type=\"text\" translate=\"yes\" autocomplete=\"off\" value=\"08/13/2026\" aria-labelledby=\"tb_22\" placeholder=\"mm/dd/yyyy\" class=\"text-input with-icon\"/>\u001b[22m\n\u001b[2m       - unexpected value \"08/13/2026\"\u001b[22m\n\n    at SubscriptionActivationPage.verifyAddOnConfirmDetails (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:754:51)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:93:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:91:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 51,
+                          "line": 754
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:754\n\n\u001b[0m \u001b[90m 752 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmLocationNameValueText)\u001b[33m.\u001b[39mtoContainText(\u001b[32m`${subtestCount} Subtests`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 753 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmSubtestDescriptionNote)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 754 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmStartDateInput)\u001b[33m.\u001b[39mtoHaveValue(currentStartMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 755 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmStartDateInput)\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m 756 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmEndDateInput)\u001b[33m.\u001b[39mtoHaveValue(currentEndMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m 757 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mconfirmEndDateInput)\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "SP-033 - Confirm button is disabled before terms checkbox is ticked",
+                      "duration": 4
+                    },
+                    {
+                      "title": "SP-012 - Accept terms and confirm activation",
+                      "duration": 2460
+                    },
+                    {
+                      "title": "SP-026 - Dismiss 2FA + accept terms, click WJ V tile, verify dashboard",
+                      "duration": 6932
+                    },
+                    {
+                      "title": "SP-012 API - Verify subtest pool reflects added subtests",
+                      "duration": 170,
+                      "error": {
+                        "message": "Error: remainingSubtests\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m100\u001b[39m\nReceived: \u001b[31mnull\u001b[39m",
+                        "stack": "Error: remainingSubtests\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m100\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n    at SubscriptionActivationPage.verifySubtestPoolApiState (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:773:64)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:111:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:110:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 64,
+                          "line": 773
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:773\n\n\u001b[0m \u001b[90m 771 |\u001b[39m       rolloverEndDate\u001b[33m:\u001b[39m extras\u001b[33m.\u001b[39mrolloverEndDate\u001b[33m,\u001b[39m\n \u001b[90m 772 |\u001b[39m     })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 773 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(extras\u001b[33m.\u001b[39mremainingSubtests\u001b[33m,\u001b[39m \u001b[32m'remainingSubtests'\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedRemaining)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 774 |\u001b[39m     \u001b[36mif\u001b[39m (expectedRollover \u001b[33m!==\u001b[39m undefined) {\n \u001b[90m 775 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(extras\u001b[33m.\u001b[39msubtestsRollover\u001b[33m,\u001b[39m \u001b[32m'subtestsRollover'\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedRollover)\u001b[33m;\u001b[39m\n \u001b[90m 776 |\u001b[39m     }\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "SP-012 UI - Verify Subscription Details page shows correct expiration date and remaining subtests",
+                      "duration": 126271,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'EXPIRATION DATE\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\nExpected substring: \u001b[32m\"01/09/2027\"\u001b[39m\nReceived string:    \u001b[31m\"—\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'EXPIRATION DATE\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-value\">—</div>\u001b[22m\n\u001b[2m       - unexpected value \"—\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'EXPIRATION DATE\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\nExpected substring: \u001b[32m\"01/09/2027\"\u001b[39m\nReceived string:    \u001b[31m\"—\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[contains(@class,\\'subscription-details-container\\')]//div[@class=\\'sd-label\\'][normalize-space()=\\'EXPIRATION DATE\\']/following-sibling::div[contains(@class,\\'sd-value\\')][1]')\u001b[22m\n\u001b[2m    63 × locator resolved to <div class=\"sd-value\">—</div>\u001b[22m\n\u001b[2m       - unexpected value \"—\"\u001b[22m\n\n    at SubscriptionActivationPage.verifySubscriptionDetailsAfterRenewal (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts:653:68)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:118:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts:117:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                          "column": 68,
+                          "line": 653
+                        },
+                        "snippet": "   at ../page/subscriptionActivationPage.ts:653\n\n\u001b[0m \u001b[90m 651 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mopenSubscriptionDetailsPage()\u001b[33m;\u001b[39m\n \u001b[90m 652 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsExpirationDateValue\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 653 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsExpirationDateValue)\u001b[33m.\u001b[39mtoContainText(renewalEndMMDDYYYY)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 654 |\u001b[39m     \u001b[36mif\u001b[39m (expectedRemainingSubtests \u001b[33m!==\u001b[39m undefined) {\n \u001b[90m 655 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubscriptionDetailsRemainingSubtestsValue)\u001b[33m.\u001b[39mtoHaveText(\u001b[33mString\u001b[39m(expectedRemainingSubtests))\u001b[33m;\u001b[39m\n \u001b[90m 656 |\u001b[39m     }\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-08-13T02:45:45.204Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "25467, ",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
+                        "line": 22,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-01955-ests-added-to-existing-pool-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-subscriptions-S-01955-ests-added-to-existing-pool-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/subscriptionActivationPage.ts",
+                    "column": 51,
+                    "line": 754
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "e684c5b20939aad6b21e-e502a69fb387b88dffd1",
@@ -900,7 +1368,7 @@
           ],
           "tests": [
             {
-              "timeout": 300000,
+              "timeout": 600000,
               "annotations": [
                 {
                   "type": "original user story, automation user story",
@@ -917,60 +1385,33 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 3,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 56946,
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[ACTIVATION-RECOVERY] attempt 1 - \"Activation code is already activated\" - code=CqNGA8GKhoaqZ8xp%2fzfxCw%3d%3d SO=SO292850\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Phase 1 - Create fresh org via Subtest High code",
-                      "duration": 42741
-                    },
-                    {
-                      "title": "Setup - Set subscription to add-on window (+150 days)",
-                      "duration": 391
-                    },
-                    {
-                      "title": "Setup - Land on activation page",
-                      "duration": 3742
-                    },
-                    {
-                      "title": "S03 - Select \"Use my Existing Login\" and click Sign In",
-                      "duration": 2479
-                    },
-                    {
-                      "title": "S07/S08 - Sign in with existing AH credentials",
-                      "duration": 3667
-                    },
-                    {
-                      "title": "SP-014 - Wait for Confirm Activation popup, abandon, verify code still available",
-                      "duration": 2730
-                    }
-                  ],
-                  "startTime": "2026-08-12T18:20:44.011Z",
-                  "annotations": [
-                    {
-                      "type": "original user story, automation user story",
-                      "description": "25467, ",
-                      "location": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/subscriptions/SubscriptionActivationSubsequentPurchaseAC2.spec.ts",
-                        "line": 126,
-                        "column": 5
-                      }
-                    }
-                  ],
+                  "startTime": "2026-08-13T02:45:43.931Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T02:51:53.958Z",
+                  "annotations": [],
                   "attachments": []
                 }
               ],
-              "status": "expected"
+              "status": "skipped"
             }
           ],
           "id": "e684c5b20939aad6b21e-536126901d45343f8323",
@@ -983,11 +1424,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-12T18:10:49.386Z",
-    "duration": 651911.1140000001,
-    "expected": 6,
-    "skipped": 0,
-    "unexpected": 0,
+    "startTime": "2026-08-13T02:26:48.989Z",
+    "duration": 1504992.696,
+    "expected": 3,
+    "skipped": 1,
+    "unexpected": 2,
     "flaky": 0
   }
 }
