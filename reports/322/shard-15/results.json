@@ -1,0 +1,1212 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+        "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "commitHash": "0ff4fa43a7bef6e4ecebc5b03c30df39336c3a38",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/32441035221"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 15,
+      "total": 15
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/reviewMode/SubmittedTestAssignments.spec.ts",
+      "file": "functional/reviewMode/SubmittedTestAssignments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "I want the ability to launch into review mode for my submitted test assignments",
+          "file": "functional/reviewMode/SubmittedTestAssignments.spec.ts",
+          "line": 31,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Complete testing for tests selected in the block and submit",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "ReviewMode",
+                "SubmittedTestAssignments",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 516421,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 05PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S15:W0] Login successful for 05PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S15:W0] Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N85268A33760\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N85268A33760/dataFiles/Derived_Score_AutoFilter_Template_N85268A33760.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N85268A33760 FirstName=Sherwood LastName =N85268A33760 Age = 08/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N85268A33760\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Oral Vocabulary–Synonyms\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 11\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17738|Ages 4 to 11|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 25\n"
+                        },
+                        {
+                          "text": "Type Of test OVSYN - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(29) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'N/A'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'N/A'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxx@N/AN/A\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Oral Vocabulary–Antonyms\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 8\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17770|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 30\n"
+                        },
+                        {
+                          "text": "Type Of test OVANT - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(34) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m },\n  \u001b[32m'OVANT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m422.07\u001b[39m, Semw: \u001b[33m15.06\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Matrices\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 11\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16746|Ages 4 to 11|16747\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MATRCZ - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Block A, Item 1\n"
+                        },
+                        {
+                          "text": "Block A, Item 2\n"
+                        },
+                        {
+                          "text": "Block A, Item 3\n"
+                        },
+                        {
+                          "text": "Block A, Item 4\n"
+                        },
+                        {
+                          "text": "Block A, Item 5\n"
+                        },
+                        {
+                          "text": "Block A, Item 6\n"
+                        },
+                        {
+                          "text": "Block A, Item 7\n"
+                        },
+                        {
+                          "text": "Block A, Item 8\n"
+                        },
+                        {
+                          "text": "Map(43) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Introduction 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block A, Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 6'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 7'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block A, Item 8'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Block B, Item 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 5'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block B, Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Introduction 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item A, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Introduction 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Sample Item B, Trial 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 5'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block C, Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 1'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 2'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 3'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 4'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 5'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Block D, Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^x00000000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m },\n  \u001b[32m'OVANT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m422.07\u001b[39m, Semw: \u001b[33m15.06\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'MATRCZ.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m441.8\u001b[39m, Semw: \u001b[33m15.55\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Verbal Attention\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 8\n"
+                        },
+                        {
+                          "text": "selected ssp is = 12973|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "the last item number is = 36\n"
+                        },
+                        {
+                          "text": "Type Of test VRBATN - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Map(40) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'x'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^00000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'OVSYN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m444.94\u001b[39m, Semw: \u001b[33m14.84\u001b[39m, AE: \u001b[32m'N/A'\u001b[39m, GE: \u001b[32m'N/A'\u001b[39m },\n  \u001b[32m'OVANT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m422.07\u001b[39m, Semw: \u001b[33m15.06\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'MATRCZ.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m441.8\u001b[39m, Semw: \u001b[33m15.55\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'VRBATN.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m421.34\u001b[39m, Semw: \u001b[33m14.92\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-21T02:48:32.492Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "079c699c8af826fa3a9c-67a70209b7b805734106",
+              "file": "functional/reviewMode/SubmittedTestAssignments.spec.ts",
+              "line": 35,
+              "column": 9
+            },
+            {
+              "title": "Validate different scenarios in submitted test assignment in review mode",
+              "ok": true,
+              "tags": [
+                "ReviewMode",
+                "SubmittedTestAssignments",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [
+                    {
+                      "type": "Original user story, Automation user story",
+                      "description": "27995, 29065",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/SubmittedTestAssignments.spec.ts",
+                        "line": 168,
+                        "column": 9
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 524414,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S15:W0] Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Just Relauch the test assignment should not make the status move to 'In Progress'",
+                          "duration": 25849
+                        },
+                        {
+                          "title": "Opening up review mode for a submitted test assignment or just opening a test will not automatically change that test assignment to return back to in progress status",
+                          "duration": 67558
+                        },
+                        {
+                          "title": " For a test assignment to change back to ‘In progress’ from ‘Submitted’ in review mode, the user needs to change an answer.",
+                          "duration": 52203
+                        },
+                        {
+                          "title": " Verify Submitted test assignment in review mode should change ‘In progress’ to ‘Submitted’.",
+                          "duration": 37504
+                        },
+                        {
+                          "title": " For a test assignment to change back to ‘In progress’ from ‘Submitted’ in review mode, the user add a test to their test assignment.",
+                          "duration": 80781
+                        },
+                        {
+                          "title": " If a user is in review mode for a Submitted test assignment and “skips” a test using the side test set panel",
+                          "duration": 38027
+                        },
+                        {
+                          "title": " If a user is in review mode for a Submitted test assignment and adds any notes, or flags/unflags an item the test assignment will not return to in progress status",
+                          "duration": 51983
+                        },
+                        {
+                          "title": " verify that saved notes test level is displays on the HTML report",
+                          "duration": 22441
+                        },
+                        {
+                          "title": "Launching the test in admin mode will make the status move to 'In Progress'",
+                          "duration": 79211
+                        }
+                      ],
+                      "startTime": "2026-08-21T02:57:09.489Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "27995, 29065",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/SubmittedTestAssignments.spec.ts",
+                            "line": 168,
+                            "column": 9
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "079c699c8af826fa3a9c-f1af2fe1ba7aa86d74fb",
+              "file": "functional/reviewMode/SubmittedTestAssignments.spec.ts",
+              "line": 168,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "functional/testSets/TestSetVerification.spec.ts",
+      "file": "functional/testSets/TestSetVerification.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Test Set Verification",
+          "file": "functional/testSets/TestSetVerification.spec.ts",
+          "line": 93,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify test set integrity across default/custom sets, examinee switching, mid-administration, and review mode",
+              "ok": true,
+              "tags": [
+                "TestSetVerification",
+                "Functional",
+                "Aut_Eng_01",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [
+                    {
+                      "type": "Original customer issue, Automation user story",
+                      "description": "CLINICAL-30804, CLINICAL-31186 & CLINICAL-31587",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                        "line": 96,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2299859,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S15:W1] Login successful for 05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N55620A93051\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N55620A93051 FirstName=Grover LastName =N55620A93051 Age = 08/20/2019\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N55620A93051\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N11110A50529\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N11110A50529 FirstName=Delfina LastName =N11110A50529 Age = 08/20/2017\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N11110A50529\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N41001A58212, Collin\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N55620A93051\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N11110A50529\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N41001A58212, Collin\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17958|Ages 4 to 6|17959\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17958|Ages 4 to 6|17959\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Setup: Get Old Examinee from dashboard",
+                          "duration": 23173
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 1 + assign Broad Achievement",
+                          "duration": 44421
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 2 + assign Broad Achievement",
+                          "duration": 44423
+                        },
+                        {
+                          "title": "Setup: Assign Broad Achievement to Old Examinee",
+                          "duration": 24259
+                        },
+                        {
+                          "title": "S1: Open New Examinee 1 → capture baseline + verify 9 tests",
+                          "duration": 97714
+                        },
+                        {
+                          "title": "S1: Open Old Examinee → verify test list matches",
+                          "duration": 97439
+                        },
+                        {
+                          "title": "S1: Re-open Old Examinee → verify still intact",
+                          "duration": 97414
+                        },
+                        {
+                          "title": "S1: Open New Examinee 2 → verify test list matches",
+                          "duration": 97485
+                        },
+                        {
+                          "title": "S1: Re-open New Examinee 2 → verify test set still intact",
+                          "duration": 97435
+                        },
+                        {
+                          "title": "S2 Setup: Create custom test set with 19 tests",
+                          "duration": 63757
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 1",
+                          "duration": 21576
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 2",
+                          "duration": 24178
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to Old Examinee",
+                          "duration": 24089
+                        },
+                        {
+                          "title": "S2: Open New Examinee 1 (custom) → capture baseline + verify 19 tests",
+                          "duration": 98704
+                        },
+                        {
+                          "title": "S2: Open Old Examinee (custom) → verify",
+                          "duration": 98649
+                        },
+                        {
+                          "title": "S2: Re-open Old Examinee (custom) → verify still intact",
+                          "duration": 98835
+                        },
+                        {
+                          "title": "S2: Open New Examinee 2 (custom) → verify",
+                          "duration": 98856
+                        },
+                        {
+                          "title": "S2: Re-open New Examinee 2 (custom) → verify test set still intact",
+                          "duration": 98780
+                        },
+                        {
+                          "title": "S3: Semi-administer Calculation for New Examinee 1 (default test set)",
+                          "duration": 144740
+                        },
+                        {
+                          "title": "S3: Open Old Examinee (default) → verify NO in-progress carryover",
+                          "duration": 97478
+                        },
+                        {
+                          "title": "S3: Open New Examinee 1 in Review Mode (from dashboard) → verify Calculation is In Progress",
+                          "duration": 22451
+                        },
+                        {
+                          "title": "S3: Reopen New Examinee 1 from dashboard → verify left nav + in-progress status",
+                          "duration": 92471
+                        },
+                        {
+                          "title": "S3: Complete the in-progress Calculation test (5 wrong → ceiling)",
+                          "duration": 21004
+                        },
+                        {
+                          "title": "S3: Enter Review Mode → verify Calculation now Complete + test list = 9",
+                          "duration": 7540
+                        },
+                        {
+                          "title": "S4: Open Old Examinee (custom) → verify 19 tests + semi-administer Calculation",
+                          "duration": 147920
+                        },
+                        {
+                          "title": "S4: Open New Examinee 2 (custom) → verify NO in-progress carryover",
+                          "duration": 98860
+                        },
+                        {
+                          "title": "S4: Open Old Examinee in Review Mode (from dashboard) → verify Calculation In Progress + 19 tests",
+                          "duration": 22492
+                        },
+                        {
+                          "title": "S4: Reopen Old Examinee → verify left nav + complete Calculation",
+                          "duration": 114861
+                        },
+                        {
+                          "title": "S4: Review Mode → verify Calculation Complete + test list = 19",
+                          "duration": 7666
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 default test set via direct launch",
+                          "duration": 97416
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 custom test set via direct launch",
+                          "duration": 98741
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 default test set via Review Mode (from dashboard)",
+                          "duration": 22654
+                        }
+                      ],
+                      "startTime": "2026-08-21T03:05:55.258Z",
+                      "annotations": [
+                        {
+                          "type": "Original customer issue, Automation user story",
+                          "description": "CLINICAL-30804, CLINICAL-31186 & CLINICAL-31587",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                            "line": 96,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cf0eb0cce83021816cd8-796a3d69c79e5f725e21",
+              "file": "functional/testSets/TestSetVerification.spec.ts",
+              "line": 96,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-21T02:48:18.009Z",
+    "duration": 3357886.074,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
