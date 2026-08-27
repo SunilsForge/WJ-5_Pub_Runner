@@ -1,0 +1,232 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts >> QF-017 - Cognitive Testing indicator on Add Staff reflects Medium qualification (BUG-26117)
+- Location: src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts:23:7
+
+# Error details
+
+```
+Error: CognitiveTesting
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: false
+Received: true
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: Gina SubAut27Aug26155958
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| WJ V Settings"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+        - generic [ref=e34]:
+          - switch [ref=e35] [cursor=pointer]: "OFF"
+          - generic [ref=e36]: Offline Mode
+      - main [ref=e37]:
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - heading [level=2] [ref=e41]: Staff
+            - generic [ref=e44]:
+              - textbox [ref=e45]:
+                - /placeholder: Search Staff
+              - button [ref=e46] [cursor=pointer]
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - button [ref=e50] [cursor=pointer]: Add Staff
+              - generic [ref=e51]:
+                - button [ref=e52] [cursor=pointer]: Active
+                - button [ref=e53] [cursor=pointer]: Deactivated
+            - generic [ref=e54]:
+              - generic [ref=e55]: Name
+              - generic [ref=e56]: Email
+              - generic [ref=e57]: Status
+              - generic [ref=e58]: Actions
+              - generic [ref=e59]: No Staff have been created.
+    - contentinfo [ref=e60]:
+      - generic [ref=e61]: Footer region,
+      - link [ref=e62] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img [ref=e63]
+      - generic [ref=e64]:
+        - link [ref=e65] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e66]
+        - link [ref=e67] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e68]
+        - link [ref=e69] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e70]
+        - link [ref=e71] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e72]
+      - generic [ref=e73]:
+        - button [ref=e74] [cursor=pointer]: Leave Feedback
+        - generic [ref=e75]: "|"
+        - link [ref=e76] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e77]: "|"
+        - link [ref=e78] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e79]: Footer region end
+  - region "Chat Widget" [ref=e80]:
+    - iframe [ref=e81]:
+      - button "Open live chat" [ref=f13e5]:
+        - img [ref=f13e8]
+        - img [ref=f13e15]
+    - generic "Drag" [ref=e82]:
+      - img [ref=e83]
+  - dialog [active] [ref=e86]:
+    - form [ref=e88]:
+      - heading "Add New Staff" [level=2] [ref=e90]
+      - generic "Staff Information" [ref=e91]:
+        - generic [ref=e92]:
+          - heading "Permissions" [level=3] [ref=e95]
+          - list [ref=e96]:
+            - switch "Manage All Staff" [ref=e98] [cursor=pointer]: Manage All Staff
+            - switch "Share Examinees" [ref=e101] [cursor=pointer]: Share Examinees
+        - generic [ref=e103]:
+          - heading "Add Recipient" [level=3] [ref=e104]
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - generic [ref=e107]:
+                - text: FIRST NAME*
+                - generic [ref=e108]: ",Required"
+              - textbox "FIRST NAME* ,Required" [ref=e110]:
+                - /placeholder: Enter First Name
+            - generic [ref=e111]:
+              - generic [ref=e112]:
+                - text: LAST NAME*
+                - generic [ref=e113]: ",Required"
+              - textbox "LAST NAME* ,Required" [ref=e115]:
+                - /placeholder: Enter Last Name
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - generic [ref=e118]:
+                - text: EMAIL ADDRESS*
+                - generic [ref=e119]: ",Required"
+              - textbox "EMAIL ADDRESS* ,Required" [ref=e121]:
+                - /placeholder: Enter Email Address
+            - generic [ref=e122]:
+              - generic [ref=e123]:
+                - generic [ref=e124]:
+                  - text: USERNAME*
+                  - generic [ref=e125]: ",Required"
+                - generic [ref=e126]:
+                  - textbox "USERNAME* ,Required" [ref=e127]:
+                    - /placeholder: Enter Username
+                  - button "Auto-generate a unique username" [ref=e128] [cursor=pointer]
+              - paragraph [ref=e130]: "*When inviting an existing user, the input username must match the recipient's current username exactly."
+      - generic [ref=e131]:
+        - button "Cancel" [ref=e132] [cursor=pointer]
+        - button "Send Invite" [disabled] [ref=e133]
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '../../../../base/basePageFixture';
+  2  | import { getActivationCodes } from '../../../../utils/activationCodesData';
+  3  | import { generateSubscriptionActivationFormData } from '../../../../page/subscriptionActivationPage';
+  4  | import { subscriptionApi } from '../../../../utils/apis/subscriptionApi';
+  5  | import { RawValueLogger } from '../../../../utils/rawValueLogger';
+  6  | 
+  7  | test.describe.configure({ mode: 'serial' });
+  8  | 
+  9  | test.use({
+  10 |   launchOptions: {
+  11 |     slowMo: 1200,
+  12 |   },
+  13 | });
+  14 | 
+  15 | const codes = getActivationCodes();
+  16 | 
+  17 | const indicatorCases = [
+  18 |   { codeKey: 'unlimitedHigh', qualification: 'High', cognitiveAccess: true },
+  19 |   { codeKey: 'unlimitedMedium', qualification: 'Medium', cognitiveAccess: false },
+  20 | ];
+  21 | 
+  22 | for (const { codeKey, qualification, cognitiveAccess } of indicatorCases) {
+  23 |   test(
+  24 |     `QF-017 - Cognitive Testing indicator on Add Staff reflects ${qualification} qualification (BUG-26117)`,
+  25 |     {
+  26 |       annotation: {
+  27 |         type: 'original user story, automation user story',
+  28 |         description: '24752, ',
+  29 |       },
+  30 |       tag: [
+  31 |         '@SubscriptionActivation',
+  32 |         '@Qualification',
+  33 |         '@StaffPermissions',
+  34 |         `@${qualification}`,
+  35 |         '@Regression',
+  36 |         '@Aut_Eng_01',
+  37 |       ],
+  38 |     },
+  39 |     async ({ subscriptionActivationPage, staffPage }) => {
+  40 |       test.setTimeout(8 * 60 * 1000);
+  41 | 
+  42 |       const scenario = codes[codeKey];
+  43 |       if (!scenario) {
+  44 |         throw new Error(`${codeKey} not configured for current env — cannot run QF-017.`);
+  45 |       }
+  46 | 
+  47 |       const formData = generateSubscriptionActivationFormData();
+  48 | 
+  49 |       await test.step(`Setup - Activate a fresh ${qualification}-qualified org and stay signed in`, async () => {
+  50 |         RawValueLogger.log('QF-017 org', { username: formData.username, qualification });
+  51 |         await subscriptionActivationPage.createFreshOrg(scenario, formData, false);
+  52 |         await subscriptionActivationPage.clickWJVTileAndVerifyDashboard(`${formData.firstName} ${formData.lastName}`);
+  53 |       });
+  54 | 
+  55 |       await test.step(`Setup - Confirm the API reports CognitiveTesting = ${cognitiveAccess}`, async () => {
+  56 |         const subApi = new subscriptionApi(subscriptionActivationPage.page);
+  57 |         const [summary] = await subApi.getOrgSubscriptionDetails(formData.username);
+> 58 |         expect.soft(summary.CognitiveTesting, 'CognitiveTesting').toBe(cognitiveAccess);
+     |                                                                   ^ Error: CognitiveTesting
+  59 |       });
+  60 | 
+  61 |       await test.step(`QF-017 - Add Staff form shows the Cognitive Testing switch as expected`, async () => {
+  62 |         await subscriptionActivationPage.dismissPendoGuideIfPresent();
+  63 |         await staffPage.navigateToStaffPage();
+  64 |         await staffPage.openAddStaffForm();
+  65 |         await staffPage.verifyCognitiveTestingSwitch(cognitiveAccess);
+  66 |       });
+  67 |     }
+  68 |   );
+  69 | }
+  70 | 
+```
