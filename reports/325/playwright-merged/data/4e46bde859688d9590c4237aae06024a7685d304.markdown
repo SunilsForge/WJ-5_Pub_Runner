@@ -1,0 +1,310 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ReroutingandLeftNav/MATRCZ_Rerouting.spec.ts >>  MATRCZ Rerouting and LeftNav >> Grade 7 to Adult - Score Error Scenario for SSP2 Test Rerouting
+- Location: src/tests/ReroutingandLeftNav/MATRCZ_Rerouting.spec.ts:10:9
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('.plain-button.menu-button')
+    - locator resolved to <button class="plain-button menu-button" aria-label="Show Main Navigation">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="loading-overlay top-most"></div> from <div>…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main "Clinical Login" [ref=e4]:
+    - generic [ref=e5]:
+      - img "Riverside Insights Logo" [ref=e6]
+      - heading "Riverside Updates" [level=1] [ref=e7]
+    - generic [ref=e8]:
+      - img "Riverside Score Logo" [ref=e9]
+      - form "Sign in details" [ref=e10]:
+        - generic [ref=e11]:
+          - text: USERNAME
+          - textbox "USERNAME" [active] [ref=e13]:
+            - /placeholder: Username
+          - generic [ref=e15]:
+            - text: PASSWORD
+            - textbox "PASSWORD" [ref=e17]:
+              - /placeholder: Password
+          - button "Sign In" [ref=e18] [cursor=pointer]
+          - generic [ref=e19]:
+            - button "Remember Me" [ref=e20] [cursor=pointer]: Remember Me
+            - link "Forgot my password" [ref=e23] [cursor=pointer]:
+              - /url: /forgot
+          - alert [ref=e24]: You have been logged out due to inactivity.
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - text: For help accessing Riverside Score™, see the
+        - link "online help" [ref=e27] [cursor=pointer]:
+          - /url: https://onlinehelp.riversideinsights.com/Help/Riverside_Score/index.htm#t=Overview.htm
+        - text: for signing in.
+      - link "Check Platform Status" [ref=e29] [cursor=pointer]:
+        - /url: https://riversideinsights.com/platform-status
+  - contentinfo [ref=e30]:
+    - generic [ref=e31]: Footer region,
+    - link "w w w dot riverside insights dot com" [ref=e32] [cursor=pointer]:
+      - /url: https://www.riversideinsights.com/
+      - img "Riverside Insights Website" [ref=e33]
+    - generic [ref=e34]:
+      - link "Riverside Insights Facebook" [ref=e35] [cursor=pointer]:
+        - /url: https://www.facebook.com/RiversideInsights/
+        - img "Riverside Insights Facebook" [ref=e36]
+      - link "Riverside Insights Twitter" [ref=e37] [cursor=pointer]:
+        - /url: https://twitter.com/1BillionLives
+        - img "Riverside Insights Twitter" [ref=e38]
+      - link "Riverside Insights LinkedIn" [ref=e39] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/riverside-insights/
+        - img "Riverside Insights LinkedIn" [ref=e40]
+      - link "Riverside Insights Instagram" [ref=e41] [cursor=pointer]:
+        - /url: https://www.instagram.com/riversideinsightsassessments/
+        - img "Riverside Insights Instagram" [ref=e42]
+    - generic [ref=e43]:
+      - img "WJ IV Mobile Data Solution" [ref=e44]
+      - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e45] [cursor=pointer]
+      - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e46] [cursor=pointer]
+    - generic [ref=e47]:
+      - img "Bdi 3 Mobile Data Solution" [ref=e48]
+      - generic [ref=e49]:
+        - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e50] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from Google Play" [ref=e51] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from App Store" [ref=e52] [cursor=pointer]
+    - generic [ref=e53]:
+      - button "Leave Feedback" [ref=e54] [cursor=pointer]
+      - generic [ref=e55]: "|"
+      - link "Terms of Use" [ref=e56] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - generic [ref=e57]: "|"
+      - link "Privacy Policy" [ref=e58] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+    - generic [ref=e59]: Footer region end
+```
+
+# Test source
+
+```ts
+  6164 |               await this.correctOptionButton.nth(m).click();
+  6165 |             }
+  6166 |             await this.iDontKnowButton.click();
+  6167 |             await this.page.waitForTimeout(1000);
+  6168 |             await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  6169 |             await this.plainNextButtonOrEndButton.click();
+  6170 |             return;
+  6171 |           }
+  6172 |           await this.plainNextButtonOrEndButton.click();
+  6173 |           await this.page.waitForTimeout(1000);
+  6174 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  6175 |         }
+  6176 |       } else if (typeOfTest.match(/Score Error Scenario/i)) {
+  6177 |         if (itemDetails.includes("Story")) {
+  6178 |           for (let i = 1; i < incorrectIndex; i++) {
+  6179 |             if (testStemForm.match('STYREC.W5PA')) {
+  6180 |               await this.page.waitForTimeout(1000);
+  6181 |               await this.iDontKnowButton.click();
+  6182 |             } else if (testStemForm.match('ORLRDG.W5PA')) {
+  6183 |               await this.page.waitForTimeout(1000);
+  6184 |               await this.noResponse.click();
+  6185 |             } else if (testStemForm.match('RDGREC.W5PA')) {
+  6186 |               await this.activateTabletControlButton.click();
+  6187 |               await this.page.waitForTimeout(1000);
+  6188 |               await this.doneButton.click();
+  6189 |               await this.page.waitForTimeout(1000);
+  6190 |               await this.plainNextButtonOrEndButton.click();
+  6191 |               await this.page.waitForTimeout(1000);
+  6192 |               await this.iDontKnowButton.click();
+  6193 |             }
+  6194 |             await this.plainNextButtonOrEndButton.click();
+  6195 |           }
+  6196 |           await this.addTestFromMainNavgation("Letter-Pattern Matching");
+  6197 |           await this.page.waitForTimeout(1000);
+  6198 |           for (let j = 1; j <= 5; j++) {
+  6199 |             let currentItemDetails = await this.itemDetails.textContent();
+  6200 |             if (currentItemDetails.includes("Introduction")) {
+  6201 |               await this.page.waitForTimeout(1000);
+  6202 |               await this.plainNextButtonOrEndButton.click();
+  6203 |               await this.page.waitForTimeout(1000);
+  6204 |             } else if (currentItemDetails.startsWith("Sample")) {
+  6205 |               await this.page.waitForTimeout(1000);
+  6206 |               await this.iDontKnowButton.click();
+  6207 |               await this.plainNextButtonOrEndButton.click();
+  6208 |               await this.page.waitForTimeout(1000);
+  6209 |             }
+  6210 |           }
+  6211 |           await this.endSessionForScoreErrorCheck(examinee_ID, browser, testName);
+  6212 |           if (testStemForm.match('STYREC.W5PA')) {
+  6213 |             await this.iDontKnowButton.click();
+  6214 |           } else if (testStemForm.match('ORLRDG.W5PA')) {
+  6215 |             await this.noResponse.click();
+  6216 |           } else if (testStemForm.match('RDGREC.W5PA')) {
+  6217 |             await this.doneButton.click();
+  6218 |             await this.page.waitForTimeout(1000);
+  6219 |             await this.plainNextButtonOrEndButton.click();
+  6220 |             await this.page.waitForTimeout(1000);
+  6221 |             await this.iDontKnowButton.click();
+  6222 |           }
+  6223 |         }
+  6224 | 
+  6225 |       } else {
+  6226 |         throw new Error(
+  6227 |           `The ${typeOfTest} didnt match with any of the conditions provided`
+  6228 |         );
+  6229 |       }
+  6230 |       await this.plainNextButtonOrEndButton.click();
+  6231 |       if (
+  6232 |         (await this.plainNextButtonOrEndButton.textContent()) === "End Test"
+  6233 |       ) {
+  6234 |         break;
+  6235 |       }
+  6236 |     }
+  6237 |   }
+  6238 |     async pickTheTestNeeded(testName: string, student:StudentPage) {
+  6239 |         await this.page.bringToFront();
+  6240 |         await this.page.waitForTimeout(2000);
+  6241 | 
+  6242 |         const testSessionIntro: Locator = await this.page.locator("//b[text()='Test Session Introduction']");
+  6243 |         if (await testSessionIntro.isVisible()) {
+  6244 |             for (let i = 1; i <= 3; i++) {
+  6245 |                 await this.page.waitForTimeout(2000);
+  6246 |                 if (await this.plainNextButtonOrEndButton.isEnabled()) {
+  6247 |                     if (i === 3) {
+  6248 |                         await this.beginAdminButton.click();
+  6249 |                     } else {
+  6250 |                         await this.page.waitForTimeout(2000);
+  6251 |                         await this.plainNextButtonOrEndButton.click();
+  6252 |                     }
+  6253 |                 } else {
+  6254 |                     await this.plainNextButtonOrEndButton.waitFor({state: 'visible', timeout: 50000});
+  6255 |                 }
+  6256 |             }
+  6257 |         }
+  6258 |         if ((await this.administrationOverviewPageTestName.isVisible()) && (await this.administrationOverviewPageTestName.textContent()).includes(testName)) {
+  6259 |             return;
+  6260 |         } else {
+  6261 |             for (let i = 0; i < 3; i++) {
+  6262 |                 if (await this.mainNavigation.isEnabled()) {
+  6263 |                     await this.page.waitForTimeout(1000);
+> 6264 |                     await this.mainNavigation.click();
+       |                                               ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  6265 |                     break;
+  6266 |                 }
+  6267 |                 await this.page.waitForTimeout(1000);
+  6268 |             }
+  6269 |             await this.mainNavigationTests.waitFor({
+  6270 |                 state: "visible",
+  6271 |                 timeout: 80000,
+  6272 |             });
+  6273 |             await this.page.waitForTimeout(1000);
+  6274 |             await this.mainNavigationTests.click();
+  6275 |             const testButton = this.page
+  6276 |                 .locator("//div[@class='TestList_mcs_testName']")
+  6277 |                 .getByText(testName, {exact: true});
+  6278 |             await testButton.waitFor({state: "visible", timeout: 10000});
+  6279 | 
+  6280 |             const isDisabled = await testButton.isDisabled();
+  6281 |             const buttonText = await testButton.textContent();
+  6282 |             if (isDisabled && buttonText === testName) {
+  6283 |                 console.log(
+  6284 |                     `Test "${testName}" is already selected and disabled; closing menu`
+  6285 |                 );
+  6286 |                 const closeButton = this.page.locator(
+  6287 |                     "//button[@class='plain-button close-btn']"
+  6288 |                 );
+  6289 |                 await closeButton.waitFor({state: "visible", timeout: 5000});
+  6290 |                 await closeButton.click();
+  6291 |                 return;
+  6292 |             }
+  6293 |             await testButton.click();
+  6294 |             console.log(`Selected test "${testName}"`);
+  6295 |         }
+  6296 |         if (await this.syncDevicePopUp.isVisible()) {
+  6297 |             await student.clickOnAcceptButton();
+  6298 |             return;
+  6299 |         }
+  6300 |     }
+  6301 | 
+  6302 |   async getActualTestName() {
+  6303 |     return await this.testNameAtAdminOverview.textContent();
+  6304 |   }
+  6305 | 
+  6306 |   async clickOnLetsBeginButtonAndStartTest(testName: string, ssp: string) {
+  6307 |     await this.letsBeginButton.waitFor({
+  6308 |       state: "visible",
+  6309 |       timeout: 5 * 60 * 1000,
+  6310 |     });
+  6311 | 
+  6312 |     let actualTestName = await this.getActualTestName();
+  6313 |     if (actualTestName != testName) {
+  6314 |       await this.page.waitForTimeout(1000);
+  6315 |       await this.mainNavigation.click();
+  6316 |       await this.mainNavigationTests.click();
+  6317 |       const testButton = this.page
+  6318 |         .locator("//div[@class='TestList_mcs_testName']")
+  6319 |         .getByText(testName, { exact: true });
+  6320 |       try {
+  6321 |         await testButton.waitFor({ state: "visible", timeout: 10000 });
+  6322 |         await testButton.click();
+  6323 |       } catch {
+  6324 |         // Test not present in left nav — add it via "+ Add Test", then re-select.
+  6325 |         await this.addPlusTestsButton.click();
+  6326 |         await this.searchTests.fill(testName);
+  6327 |         await this.searchIcon.click();
+  6328 |         await this.page.waitForTimeout(1000);
+  6329 |         await this.selectTests.first().click();
+  6330 |         await this.addTestsButton.click();
+  6331 |         await this.page.waitForTimeout(2000);
+  6332 |         await testButton.waitFor({ state: "visible", timeout: 10000 });
+  6333 |         await testButton.click();
+  6334 |       }
+  6335 |       await this.page.waitForLoadState("domcontentloaded");
+  6336 |       await this.page.waitForTimeout(1000);
+  6337 |     }
+  6338 |     actualTestName = await this.getActualTestName();
+  6339 |     expect(actualTestName, {
+  6340 |       message: "The test name didnt match at Administration Overview page",
+  6341 |     }).toContain(testName);
+  6342 |     console.log(actualTestName);
+  6343 |     await this.letsBeginButton.click();
+  6344 |     await this.page.waitForTimeout(1000);
+  6345 |     if (ssp === "All Examinees") {
+  6346 |       await this.startTestButton.click();
+  6347 |     } else {
+  6348 |       await this.setTheSuggestedStartingPointTo(ssp);
+  6349 |       await this.page.waitForTimeout(1500);
+  6350 |       await this.startTestButton.click();
+  6351 |     }
+  6352 |   }
+  6353 | 
+  6354 |   async clickOnLetsBeginAndResumeInProgressTest(testName: string) {
+  6355 |     if (await this.closeNavigationButton.isVisible()) {
+  6356 |       await this.closeNavigationButton.click();
+  6357 |     }
+  6358 | 
+  6359 |     await this.letsBeginButton.waitFor({
+  6360 |       state: "visible",
+  6361 |       timeout: 5 * 60 * 1000,
+  6362 |     });
+  6363 | 
+  6364 |     let actualTestName = await this.getActualTestName();
+```

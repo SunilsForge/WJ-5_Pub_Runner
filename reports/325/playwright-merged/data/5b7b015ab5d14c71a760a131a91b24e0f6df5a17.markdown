@@ -1,0 +1,299 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: UIAndReports/CONFRM_Multi_Block.spec.ts >>  CONFRM UI And Reports >> Ages 4 to 6 - Sample Item End Test Scenario for SSP1 and Test Ends after Sample Item E Test UI
+- Location: src/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:10:13
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Matcher error: received value must not be null nor undefined
+
+Received has value: undefined
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main "Clinical Login" [ref=e4]:
+    - generic [ref=e5]:
+      - img "Riverside Insights Logo" [ref=e6]
+      - heading "Riverside Updates" [level=1] [ref=e7]
+    - generic [ref=e8]:
+      - img "Riverside Score Logo" [ref=e9]
+      - form "Sign in details" [ref=e10]:
+        - generic [ref=e11]:
+          - text: USERNAME
+          - textbox "USERNAME" [active] [ref=e13]:
+            - /placeholder: Username
+          - generic [ref=e15]:
+            - text: PASSWORD
+            - textbox "PASSWORD" [ref=e17]:
+              - /placeholder: Password
+          - button "Sign In" [ref=e18] [cursor=pointer]
+          - generic [ref=e19]:
+            - button "Remember Me" [ref=e20] [cursor=pointer]: Remember Me
+            - link "Forgot my password" [ref=e23] [cursor=pointer]:
+              - /url: /forgot
+          - alert [ref=e24]: You have been logged out due to inactivity.
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - text: For help accessing Riverside Score™, see the
+        - link "online help" [ref=e27] [cursor=pointer]:
+          - /url: https://onlinehelp.riversideinsights.com/Help/Riverside_Score/index.htm#t=Overview.htm
+        - text: for signing in.
+      - link "Check Platform Status" [ref=e29] [cursor=pointer]:
+        - /url: https://riversideinsights.com/platform-status
+  - contentinfo [ref=e30]:
+    - generic [ref=e31]: Footer region,
+    - link "w w w dot riverside insights dot com" [ref=e32] [cursor=pointer]:
+      - /url: https://www.riversideinsights.com/
+      - img "Riverside Insights Website" [ref=e33]
+    - generic [ref=e34]:
+      - link "Riverside Insights Facebook" [ref=e35] [cursor=pointer]:
+        - /url: https://www.facebook.com/RiversideInsights/
+        - img "Riverside Insights Facebook" [ref=e36]
+      - link "Riverside Insights Twitter" [ref=e37] [cursor=pointer]:
+        - /url: https://twitter.com/1BillionLives
+        - img "Riverside Insights Twitter" [ref=e38]
+      - link "Riverside Insights LinkedIn" [ref=e39] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/riverside-insights/
+        - img "Riverside Insights LinkedIn" [ref=e40]
+      - link "Riverside Insights Instagram" [ref=e41] [cursor=pointer]:
+        - /url: https://www.instagram.com/riversideinsightsassessments/
+        - img "Riverside Insights Instagram" [ref=e42]
+    - generic [ref=e43]:
+      - img "WJ IV Mobile Data Solution" [ref=e44]
+      - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e45] [cursor=pointer]
+      - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e46] [cursor=pointer]
+    - generic [ref=e47]:
+      - img "Bdi 3 Mobile Data Solution" [ref=e48]
+      - generic [ref=e49]:
+        - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e50] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from Google Play" [ref=e51] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from App Store" [ref=e52] [cursor=pointer]
+    - generic [ref=e53]:
+      - button "Leave Feedback" [ref=e54] [cursor=pointer]
+      - generic [ref=e55]: "|"
+      - link "Terms of Use" [ref=e56] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - generic [ref=e57]: "|"
+      - link "Privacy Policy" [ref=e58] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+    - generic [ref=e59]: Footer region end
+```
+
+# Test source
+
+```ts
+  6493 |         .soft(await this.endTestPopUpElements.nth(9).textContent())
+  6494 |         .toContain(FlagsText);
+  6495 |       expect
+  6496 |         .soft(await this.endTestPopUpElements.nth(14).textContent())
+  6497 |         .toContain(OutcomeMsg);
+  6498 |       await this.endTestPopUpElements.nth(18).click();
+  6499 |     } else if (
+  6500 |       testStemForm === "SEMRET.W5PA" || testStemForm === "PHNRET.W5PA" ||testStemForm === "SEMRET.W5PX"   ||testStemForm === "PHNRET.W5PX")
+  6501 |      {
+  6502 |       expect
+  6503 |         .soft(await this.endTestPopUpElements.nth(9).textContent())
+  6504 |         .toContain(FlagsText);
+  6505 |       expect
+  6506 |         .soft(await this.endTestPopUpElements.nth(14).textContent())
+  6507 |         .toContain(OutcomeMsg);
+  6508 |       await this.endTestPopUpElements.nth(16).click();
+  6509 |     } else if 
+  6510 |       (testStemForm === "MAGCMP.W5PA" || testStemForm === "MAGCMP.W5PX") {
+  6511 |       expect
+  6512 |         .soft(await this.endTestPopUpElements.nth(9).textContent())
+  6513 |         .toContain(FlagsText);
+  6514 |       expect
+  6515 |         .soft(await this.endTestPopUpElements.nth(14).textContent())
+  6516 |         .toContain(OutcomeMsg);
+  6517 |       await this.endTestPopUpElements.nth(17).click();
+  6518 |     }else if 
+  6519 |       (testStemForm === "VWKMEM.W5PA") {
+  6520 |       expect
+  6521 |         .soft(await this.endTestPopUpElements.nth(8).textContent())
+  6522 |         .toContain(FlagsText);
+  6523 |       expect
+  6524 |         .soft(await this.endTestPopUpElements.nth(13).textContent())
+  6525 |         .toContain(OutcomeMsg);
+  6526 |       await this.endTestPopUpElements.nth(17).click();
+  6527 |     }else if (testNames1.includes(testStemForm)) {
+  6528 |       expect
+  6529 |         .soft(await this.endTestPopUpElements.nth(11).textContent())
+  6530 |         .toContain(FlagsText);
+  6531 |       expect
+  6532 |         .soft(await this.endTestPopUpElements.nth(16).textContent())
+  6533 |         .toContain(OutcomeMsg);
+  6534 |       await this.endTestPopUpElements.nth(19).click();
+  6535 |     } else if(testStemForm === "BLKROT.W5PA" &&
+  6536 |         typeOfTest.match(
+  6537 |             /Answer only one sample item for SSP(1|2|3)/i
+  6538 |         )) {
+  6539 |         expect
+  6540 |             .soft(await this.endTestPopUpElements.nth(9).textContent())
+  6541 |             .toContain(FlagsText);
+  6542 |         expect
+  6543 |             .soft(await this.endTestPopUpElements.nth(14).textContent())
+  6544 |             .toContain(OutcomeMsg);
+  6545 |         await this.endTestPopUpElements.nth(17).click();
+  6546 |     } else {
+  6547 |       expect
+  6548 |         .soft(await this.endTestPopUpElements.nth(8).textContent())
+  6549 |         .toContain(FlagsText);
+  6550 |       expect
+  6551 |         .soft(await this.endTestPopUpElements.nth(13).textContent())
+  6552 |         .toContain(OutcomeMsg);
+  6553 |       if (testNames1.includes(testStemForm)) {
+  6554 |         await this.endTestPopUpElements.nth(17).click();
+  6555 |       } else if (testNames2.includes(testStemForm)) {
+  6556 |         await this.endTestPopUpElements.nth(18).click();
+  6557 |       } else if (
+  6558 |         (testStemForm === "STYCMP.W5PA" &&
+  6559 |           typeOfTest.match(/Sample Item EndTest Flow when RS is (0|1)/i)) ||
+  6560 |         (testStemForm === "WRDATK.W5PA" &&
+  6561 |           typeOfTest.match(/Block A End Test Flow with 2 correct Scenario for SSP1|Block A End Test Flow with Samples and Items administered wrong scenario for SSP1|Sample A correct !C scenario SSP1/i)) ||
+  6562 |         (testStemForm === "PSGCMP.W5PA" &&
+  6563 |           typeOfTest.match(/5 Lowest incorrect items (SSP2|SSP3|SSP4|SSP5|SSP6)|Reverse Logic (SSP2|SSP3|SSP4|SSP5|SSP6)|5 correct 5 incorrect-Block B All incorrect-Block A SSP2|Score Error Scenario for (SSP2|SSP3|SSP4|SSP5|SSP6)/i)) ||
+  6564 |         (testStemForm === "LWIDNT.W5PA" &&
+  6565 |           typeOfTest.match(/lowest incorrect items SSP1|1 correct 1 incorrect SSP1/i)) ||
+  6566 |         (testStemForm === "MPRBID.W5PA" &&
+  6567 |           typeOfTest.match(
+  6568 |             /Sample Items AB discontinue Scenario for SSP (1|2|3)/i
+  6569 |           ))
+  6570 |       ) {
+  6571 |         await this.endTestPopUpElements.nth(16).click();
+  6572 |       } else if 
+  6573 |         (testStemForm === "MAGCMP.W5PA" || testStemForm === "MAGCMP.W5PX" || testStemForm === "VAL.W5PA" || (testStemForm === "CALC.W5PA" && typeOfTest.match(/CALC Sample End Test scenario for SSP1/i))) {
+  6574 |         await this.endTestPopUpElements.nth(17).click();
+  6575 |       } else {
+  6576 |         await this.endTestPopUpElements.nth(15).click();
+  6577 |       }
+  6578 |     }
+  6579 |     const rsbelements = await this.page.locator(
+  6580 |       "//button[@class='rsi-checkbox']"
+  6581 |     );
+  6582 |     const count = await rsbelements.count();
+  6583 |     // Array to store text contents
+  6584 |     const responseStyleBehaviours: string[] = [];
+  6585 |     // Iterate over each element and fetch text content
+  6586 |     for (let i = 0; i < count; i++) {
+  6587 |       const element = rsbelements.nth(i);
+  6588 |       const textContent = await element.textContent();
+  6589 |       responseStyleBehaviours.push(textContent?.trim() || "");
+  6590 |     }
+  6591 |     console.log(responseStyleBehaviours);
+  6592 |     rsb.forEach((rsbehaviourText, index) => {
+> 6593 |       expect(responseStyleBehaviours[index]).toContain(rsbehaviourText);
+       |                                              ^ Error: expect(received).toContain(expected) // indexOf
+  6594 |     });
+  6595 |     if (testNames.includes(testStemForm)) {
+  6596 |       await this.endTestPopUpElements.nth(17).click();
+  6597 |     } else if (testNames2.includes(testStemForm)) {
+  6598 |       await this.endTestPopUpElements.nth(18).click();
+  6599 |     } else if (testNames1.includes(testStemForm)) {
+  6600 |       await this.endTestPopUpElements.nth(19).click();
+  6601 |     } else if (
+  6602 |       (testStemForm === "STYCMP.W5PA" &&
+  6603 |         typeOfTest.match(/Sample Item EndTest Flow when RS is (0|1)/i)) ||
+  6604 |       (testStemForm === "WRDATK.W5PA" &&
+  6605 |         typeOfTest.match(/Block A End Test Flow with 2 correct Scenario for SSP1|Block A End Test Flow with Samples and Items administered wrong scenario for SSP1|Sample A correct !C scenario SSP1/i)) ||
+  6606 |       (testStemForm === "PSGCMP.W5PA" &&
+  6607 |         typeOfTest.match(/5 Lowest incorrect items (SSP2|SSP3|SSP4|SSP5|SSP6)|Reverse Logic (SSP2|SSP3|SSP4|SSP5|SSP6)|5 correct 5 incorrect-Block B All incorrect-Block A SSP2|Score Error Scenario for (SSP2|SSP3|SSP4|SPP5|SSP6)/i)) ||
+  6608 |       (testStemForm === "LWIDNT.W5PA" &&
+  6609 |         typeOfTest.match(/Lowest incorrect items SSP1|1 correct 1 incorrect SSP1/i)) ||
+  6610 |       (testStemForm === "SEMRET.W5PA" || testStemForm === "SEMRET.W5PX" || testStemForm === "PHNRET.W5PA"  || testStemForm === "PHNRET.W5PX" ) ||
+  6611 |       (testStemForm === "MPRBID.W5PA" &&
+  6612 |         typeOfTest.match(
+  6613 |           /Sample Items AB discontinue Scenario for SSP (1|2|3)/i
+  6614 |         ))
+  6615 |     ) {
+  6616 |       await this.endTestPopUpElements.nth(16).click();
+  6617 |     } else if 
+  6618 |       (testStemForm === "MAGCMP.W5PA" || testStemForm === "MAGCMP.W5PX"|| testStemForm === "VAL.W5PA"|| (testStemForm === "CALC.W5PA" && typeOfTest.match(/CALC Sample End Test scenario for SSP1/i))) {
+  6619 |       await this.endTestPopUpElements.nth(17).click();
+  6620 |     } else {
+  6621 |       await this.endTestPopUpElements.nth(15).click();
+  6622 |     }
+  6623 |     await this.page.waitForTimeout(2000);
+  6624 |   }
+  6625 | 
+  6626 |   async completeTestSessionObservationsAndClickNext(typeOfTest?: string, testStemForm?: string) {
+  6627 |     await this.page.bringToFront();
+  6628 |     if (await this.levelOfProficiency.isVisible()) {
+  6629 |     await this.page.waitForTimeout(1000);
+  6630 |     await this.selectTheCheckbox(0, "Examinee MAsk");
+  6631 |     await this.page.waitForTimeout(1000);
+  6632 |     await this.selectTheCheckbox(2, "examiner MAsk");
+  6633 |     await this.selectTheDropdownOption(
+  6634 |       0,
+  6635 |       "Advanced",
+  6636 |       "Level of Conversational Proficiency"
+  6637 |     );
+  6638 |     await this.selectTheDropdownOption(
+  6639 |       1,
+  6640 |       "Was uncooperative at times",
+  6641 |       "Level of Cooperation"
+  6642 |     );
+  6643 |     await this.selectTheDropdownOption(
+  6644 |       2,
+  6645 |       "Seemed lethargic",
+  6646 |       "Level of Activity"
+  6647 |     );
+  6648 |     await this.selectTheDropdownOption(
+  6649 |       3,
+  6650 |       "Appeared distracted some of the time",
+  6651 |       "Attention and Concentration"
+  6652 |     );
+  6653 |     await this.selectTheDropdownOption(
+  6654 |       4,
+  6655 |       "Appeared overly anxious",
+  6656 |       "Self-Confidence"
+  6657 |     );
+  6658 |     await this.selectTheDropdownOption(
+  6659 |       5,
+  6660 |       "Responded impulsively and carelessly",
+  6661 |       "Care in Responding"
+  6662 |     );
+  6663 |     await this.selectTheDropdownOption(
+  6664 |       6,
+  6665 |       "Made random guesses",
+  6666 |       "Response to Difficult Items and Corrective Feedback"
+  6667 |     );
+  6668 |     await this.selectTheDropdownOption(
+  6669 |       7,
+  6670 |       "Was resistant to tasks",
+  6671 |       "Motivation"
+  6672 |     );
+  6673 |     } 
+  6674 |    if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== "SWRTFL.W5PA"){
+  6675 |     await this.nextButton.click();
+  6676 |     await this.submitTestSetAndFinishAdministration.last().click();
+  6677 |    }else{
+  6678 |     await this.submitTestSetAndFinishAdministration.last().click();
+  6679 |   }
+  6680 | }
+  6681 | 
+  6682 |   async endSessionWithResponseStyleAndBehaviours() {
+  6683 |     await this.endSessionButton.click();
+  6684 |     await this.endSessionReviewButton.waitFor({
+  6685 |       state: "attached",
+  6686 |       timeout: 80000,
+  6687 |     });
+  6688 |     await this.endSessionReviewButton.click();
+  6689 |       await this.submitTestSetAndFinishAdministration.waitFor({
+  6690 |           state: "attached",
+  6691 |           timeout: 150000,
+  6692 |       });
+  6693 |       await this.submitTestSetAndFinishAdministration.click();
+```
