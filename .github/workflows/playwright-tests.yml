@@ -114,6 +114,11 @@ on:
           - "retain-on-failure"
           - "retain-on-first-failure"
           - "retry-with-trace"
+      log_raw_values:
+        description: "Verbose raw-value logging (RawValueLogger / LOG_RAW_VALUES=true) — prints API responses & per-item comparisons to test stdout. CASCADES to the rerun pipeline and every rerun pass. Intended for targeted debug runs, NOT regression (inflates report/artifact size)."
+        required: false
+        default: false
+        type: boolean
       run_reason:
         description: "Reason/context for the run (also saved as pre-run notes). You may append optional directives like 'min_run=120'."
         required: true
@@ -126,6 +131,11 @@ env:
   NUM_RETRIES: ${{ github.event.inputs.num_retries }}
   VIDEO_MODE: ${{ github.event.inputs.video_mode }}
   TRACE_MODE: ${{ github.event.inputs.trace_mode }}
+  # RawValueLogger (test repo: src/utils/rawValueLogger.ts) latches this at MODULE
+  # IMPORT time and compares it strictly to the string 'true' — so it must be in the
+  # process env before Playwright starts. Set workflow-wide (not per-step) so every
+  # job that spawns Playwright inherits it. A boolean input renders as `true`/`false`.
+  LOG_RAW_VALUES: ${{ inputs.log_raw_values }}
   SLOW_MODE_DELAY_IN_MS: 0
   CI: "true"
   PLAYWRIGHT_WORKERS: 1
@@ -338,10 +348,14 @@ jobs:
           CREDENTIAL_SET: ${{ env.CREDENTIAL_SET }}
           VIDEO_MODE: ${{ github.event.inputs.video_mode }}
           TRACE_MODE: ${{ github.event.inputs.trace_mode }}
+          # Inherited from the workflow env; restated here so the toggle is visible
+          # at the point where Playwright is actually launched.
+          LOG_RAW_VALUES: ${{ env.LOG_RAW_VALUES }}
           CI: "true"
           PLAYWRIGHT_JSON_OUTPUT_NAME: results.json
         run: |
           echo "Running shard ${{ matrix.shard }} of ${{ github.event.inputs.shard_count }}"
+          echo "Raw value logging (LOG_RAW_VALUES): ${LOG_RAW_VALUES:-false}"
           npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
             --grep '${{ github.event.inputs.test_pattern }}' \
             --project=${{ github.event.inputs.browser }} \
@@ -379,6 +393,7 @@ jobs:
           echo "Retries: ${{ env.NUM_RETRIES }}" >> test-status/status.txt
           echo "Video Mode: ${{ github.event.inputs.video_mode }}" >> test-status/status.txt
           echo "Trace Mode: ${{ github.event.inputs.trace_mode }}" >> test-status/status.txt
+          echo "Raw Value Logging: ${{ inputs.log_raw_values }}" >> test-status/status.txt
       - name: Upload status
         if: always()
         uses: actions/upload-artifact@v6
@@ -434,6 +449,9 @@ jobs:
           sed -i "s|__NUM_RETRIES__|${{ inputs.num_retries }}|g" merged-report/index.html
           sed -i "s|__VIDEO_MODE__|${{ inputs.video_mode }}|g" merged-report/index.html
           sed -i "s|__TRACE_MODE__|${{ inputs.trace_mode }}|g" merged-report/index.html
+          # Older reports rendered before this placeholder existed simply won't contain
+          # it; new runs always show on/off so a verbose debug run is identifiable.
+          sed -i "s|__LOG_RAW_VALUES__|${{ inputs.log_raw_values && 'ON (verbose)' || 'off' }}|g" merged-report/index.html
           sed -i "s|__CURRENT_DATE__|${current_date}|g" merged-report/index.html
           sed -i "s|__GITHUB_RUN_ID__|${{ github.run_id }}|g" merged-report/index.html
 
@@ -1469,6 +1487,7 @@ jobs:
             -f browser="${{ github.event.inputs.browser }}" \
             -f keep_last_runs="${{ github.event.inputs.keep_last_runs }}" \
             -f distribute_by_test="${{ inputs.distribute_by_test }}" \
+            -f log_raw_values="${{ inputs.log_raw_values }}" \
             -f num_retries="${{ github.event.inputs.num_retries }}" \
             -f video_mode="${{ github.event.inputs.video_mode }}" \
             -f trace_mode="${{ github.event.inputs.trace_mode }}" \

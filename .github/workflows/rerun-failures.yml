@@ -44,6 +44,11 @@ on:
         required: false
         default: false
         type: boolean
+      log_raw_values:
+        description: "Verbose raw-value logging (LOG_RAW_VALUES=true). Inherited from the source run and carried down every chained pass."
+        required: false
+        default: false
+        type: boolean
       num_retries:
         required: true
         default: "2"
@@ -82,6 +87,9 @@ env:
   NUM_RETRIES: ${{ inputs.num_retries }}
   VIDEO_MODE: ${{ inputs.video_mode }}
   TRACE_MODE: ${{ inputs.trace_mode }}
+  # See the main pipeline: RawValueLogger latches this at module import, so it is set
+  # workflow-wide rather than per-step. Cascaded in from the source run.
+  LOG_RAW_VALUES: ${{ inputs.log_raw_values }}
   SLOW_MODE_DELAY_IN_MS: 0
   CI: "true"
   PLAYWRIGHT_WORKERS: 1
@@ -304,6 +312,7 @@ jobs:
           PLAYWRIGHT_JSON_OUTPUT_NAME: results.json
         run: |
           echo "Rerun shard ${{ matrix.shard }} of ${{ needs.collect.outputs.shard_count }} (this shard's failed slice)"
+          echo "Raw value logging (LOG_RAW_VALUES): ${LOG_RAW_VALUES:-false}"
           # No --shard: this shard's .last-run.json already contains ONLY its slice.
           npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
             --last-failed \
@@ -582,6 +591,7 @@ jobs:
             -f browser="${{ inputs.browser }}" \
             -f keep_last_runs="${{ inputs.keep_last_runs }}" \
             -f distribute_by_test="${{ inputs.distribute_by_test }}" \
+            -f log_raw_values="${{ inputs.log_raw_values }}" \
             -f num_retries="${{ inputs.num_retries }}" \
             -f video_mode="${{ inputs.video_mode }}" \
             -f trace_mode="${{ inputs.trace_mode }}" \
