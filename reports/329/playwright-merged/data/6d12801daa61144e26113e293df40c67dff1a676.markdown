@@ -1,0 +1,226 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/testSets/TestSetVerification.spec.ts >> Test Set Verification >> Verify test set integrity across default/custom sets, examinee switching, mid-administration, and review mode
+- Location: src/tests/functional/testSets/TestSetVerification.spec.ts:96:7
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('.plain-button.menu-button')
+
+```
+
+# Test source
+
+```ts
+  9997  |               await this.correctOptionButton.nth(i).click();
+  9998  |             }
+  9999  |           } else {
+  10000 |             await this.correctOptionButton.first().click();
+  10001 |           }
+  10002 |         } else if (response === 'incorrect') {
+  10003 |           await this.incorrectOptionButton.first().click();
+  10004 |         } else if (response === 'No Response') {
+  10005 |           await this.noResponse.first().click();
+  10006 |         } else if (response === 'Done') {
+  10007 |           await this.doneButton.click();
+  10008 |         } else if (response === 'next') {
+  10009 |           // Do nothing as we have to click on next button below
+  10010 |         } else if (response === 'START TIMER') {
+  10011 |           await this.page.locator("//button[text()='START TIMER']").click();
+  10012 |           continue;
+  10013 |         } else {
+  10014 |         }
+  10015 |       }
+  10016 | 
+  10017 |       if (flag && !tapFluency) {
+  10018 |         try {
+  10019 |           await this.flagIcon.click();
+  10020 | 
+  10021 |           if (!this.flagData[data.testName]) {
+  10022 |             this.flagData[data.testName] = {};
+  10023 |           }
+  10024 | 
+  10025 |           this.flagData[data.testName][key] = { response: response };
+  10026 |         } catch (error) {
+  10027 |           console.error(`Error setting flag data for ${data.testName} - ${key}:`, error);
+  10028 |         }
+  10029 |       }
+  10030 | 
+  10031 |       if (notes) {
+  10032 |         const notesText = data.testName + ' - ' + key + ' - notes added';
+  10033 |         await this.dashboardPage.addNotes('item', notesText);
+  10034 |       }
+  10035 | 
+  10036 |       if (await response.startsWith('Score Later')) {
+  10037 |         await this.scoreLaterButton.click();
+  10038 |         return response;
+  10039 |       } else if (tapFluency) {
+  10040 |         const isDoneButtonVisible: boolean = await this.doneButton.isVisible();
+  10041 |         if (isDoneButtonVisible) {
+  10042 |           await this.doneButton.click();
+  10043 |         } else {
+  10044 |           try {
+  10045 |             await this.page.waitForTimeout(3000);
+  10046 |             const isPopupFooterVisible = await this.page.locator("div[class='popup-footer']").isVisible();
+  10047 |             if (isPopupFooterVisible) {
+  10048 |               await expect(this.plainNextButtonOrEndButton.last(), "End Test button is not enabled in Time is up popup").toBeEnabled();
+  10049 |               await this.plainNextButtonOrEndButton.last().click();
+  10050 |             } else if (!isPopupFooterVisible) {
+  10051 |               TestErrors.addError("Time is up popup is not visible ...', 'Clicking on End Test button to get it");
+  10052 |               await this.plainNextButtonOrEndButton.first().click();
+  10053 |               await this.page.locator("div[class='popup-footer']").waitFor({ state: 'visible', timeout: 10000 });
+  10054 |               await this.plainNextButtonOrEndButton.last().click();
+  10055 |             }
+  10056 |           } catch (error) {
+  10057 |             console.error(`Error while clicking on Next button :`, error);
+  10058 |           }
+  10059 |           // return response;
+  10060 |         }
+  10061 |       } else {
+  10062 |         await this.page.waitForTimeout(1000);
+  10063 |         if (
+  10064 |           (await data.testStemForm.startsWith('CALC') || await data.testStemForm.startsWith('LWIDNT')) &&
+  10065 |           Object.keys(data.items).indexOf(key) === Object.keys(data.items).length - 2
+  10066 |         ) {
+  10067 |           continue;
+  10068 |         }
+  10069 |         await this.plainNextButtonOrEndButton.last().click();
+  10070 |       }
+  10071 |     }
+  10072 |   }
+  10073 | 
+  10074 |   async getTestStatusData() {
+  10075 |     return {
+  10076 |       completeTests: Array.from(this.completeTestsData),
+  10077 |       needAttentionTests: Array.from(this.needAttentionTestsData),
+  10078 |       inProgressTests: Array.from(this.inProgressTestsData),
+  10079 |       invalidateTests: Array.from(this.invalidateTestsData),
+  10080 |       scoreLaterTests: Array.from(this.scoreLaterTestsData),
+  10081 |       flaggedTests: this.flagData,
+  10082 |     };
+  10083 |   }
+  10084 | 
+  10085 |   private async setFlag(flag: boolean) { }
+  10086 | 
+  10087 |   async selectNextTestFromMainNavigation(testName: string) {
+  10088 |     await this.mainNavigation.click();
+  10089 |     await this.mainNavigationTests.click();
+  10090 |     const testButton = this.page.getByText(testName, { exact: true });
+  10091 |     await testButton.waitFor({ state: 'visible', timeout: 10000 });
+  10092 |     await testButton.click();
+  10093 |     RawValueLogger.log('Selected test = ', testName);
+  10094 |   }
+  10095 | 
+  10096 |   async clickOnLeftNavTests() {
+> 10097 |     await this.mainNavigation.click();
+        |                               ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  10098 |     await this.mainNavigationTests.click();
+  10099 |   }
+  10100 | 
+  10101 |   async getLeftNavTestNames(): Promise<string[]> {
+  10102 |     await this.testSelectionInReviewmode.first().waitFor({ state: 'visible', timeout: 30_000 });
+  10103 |     return (await this.testSelectionInReviewmode.allTextContents()).map(name => name.trim());
+  10104 |   }
+  10105 | 
+  10106 |   async selectTestFromNextTestDd(testName: string, maxAttempts = 3) {
+  10107 |     RawValueLogger.log('selectTestFromNextTestDd: start', { testName, maxAttempts });
+  10108 | 
+  10109 |     const optionLocator = (name: string) => this.page.locator(`//span[text()="${name}"]`);
+  10110 |     const selectBox = this.page.locator('.select-box');
+  10111 |     const beginBtn = this.beginNextTestButton;
+  10112 |     const currentValue = this.nextTestSelectValue;
+  10113 |     const addTestBtn = this.addTestButton;
+  10114 | 
+  10115 |     for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+  10116 |       RawValueLogger.log('attempt', { attempt });
+  10117 | 
+  10118 |       try {
+  10119 |         const raw = await currentValue.textContent();
+  10120 |         const current = (raw ?? '').trim();
+  10121 |         RawValueLogger.log('current selection', { current });
+  10122 | 
+  10123 |         if (current && current.includes(testName)) {
+  10124 |           RawValueLogger.log('already selected - clicking Begin');
+  10125 |           await beginBtn.click();
+  10126 |           return;
+  10127 |         }
+  10128 | 
+  10129 |         RawValueLogger.log('opening dropdown');
+  10130 |         await selectBox.click();
+  10131 | 
+  10132 |         const opt = optionLocator(testName);
+  10133 |         await opt.waitFor({ state: 'visible', timeout: 3000 });
+  10134 |         RawValueLogger.log('clicking option', { testName });
+  10135 |         await opt.click();
+  10136 | 
+  10137 |         const newRaw = await currentValue.textContent();
+  10138 |         const newValue = (newRaw ?? '').trim();
+  10139 |         RawValueLogger.log('new selection', { newValue });
+  10140 | 
+  10141 |         if (newValue && newValue.includes(testName)) {
+  10142 |           RawValueLogger.log('selection verified - clicking Begin');
+  10143 |           await beginBtn.click();
+  10144 |           return;
+  10145 |         }
+  10146 | 
+  10147 |         RawValueLogger.log('selection not verified, will retry', { attempt });
+  10148 | 
+  10149 |       } catch (err: any) {
+  10150 |         RawValueLogger.log('error on attempt', { attempt, message: err?.message ?? err });
+  10151 | 
+  10152 |         try {
+  10153 |           RawValueLogger.log('attempting add test flow', { testName });
+  10154 |           await addTestBtn.click();
+  10155 |           await this.searchForSupplementalTestAndAdd(testName);
+  10156 |         } catch (addErr: any) {
+  10157 |           RawValueLogger.log('add test failed', { addError: addErr?.message ?? addErr });
+  10158 |         }
+  10159 |       }
+  10160 |       await this.page.waitForTimeout(300);
+  10161 |     }
+  10162 | 
+  10163 |     RawValueLogger.log('all attempts exhausted', { testName, maxAttempts });
+  10164 |     throw new Error(`Failed to select test "${testName}" after ${maxAttempts} attempts.`);
+  10165 |   }
+  10166 | 
+  10167 |   async searchForSupplementalTestAndAdd(testName: string) {
+  10168 |     await this.searchTests.fill(testName);
+  10169 |     await this.searchIcon.click();
+  10170 |     await this.checkboxes.first().click();
+  10171 |     await this.addTestsButton.click();
+  10172 |   }
+  10173 | 
+  10174 |   async answerCorrectForTimerTest(stemForm: string, itemDetails: string, correctResp: Map<string, string[]>) {
+  10175 |     const locatorPathConfig: Record<string, { path: string }> = {
+  10176 |       'NUMPAT.W5PA': { path: 'NUMPAT' },
+  10177 |       'LETPAT.W5PA': { path: 'LETPAT_Left' },
+  10178 |     };
+  10179 |     console.log(`taskStem value: ${stemForm}`);
+  10180 |     if (!locatorPathConfig[stemForm]) {
+  10181 |       throw new Error(`Invalid taskStem: ${stemForm}. Please check your input.`);
+  10182 |     }
+  10183 |     let localItemDetails = itemDetails;
+  10184 |     await this.page.waitForTimeout(3000);
+  10185 | 
+  10186 |     if (localItemDetails.startsWith('Test Items')) {
+  10187 |       localItemDetails = 'Item';
+  10188 |     }
+  10189 |     const isPracticeTimerVisable = await this.startPracticeAndStartTimerButton.isVisible();
+  10190 |     const isStartTimerVisable = await this.startTimerButton.isVisible();
+  10191 |     if (isPracticeTimerVisable) {
+  10192 |       await this.startPracticeAndStartTimerButton.click();
+  10193 |       await this.page.waitForTimeout(1500);
+  10194 |       await this.activateTabletControlIfRequired();
+  10195 |       this.index = 1;
+  10196 |     } else if (isStartTimerVisable) {
+  10197 |       try {
+```

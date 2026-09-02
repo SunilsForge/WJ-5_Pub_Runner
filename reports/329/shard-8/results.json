@@ -1,0 +1,2248 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+        "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 8,
+      "total": 10
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/testSets/TestSetVerification.spec.ts",
+      "file": "functional/testSets/TestSetVerification.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Test Set Verification",
+          "file": "functional/testSets/TestSetVerification.spec.ts",
+          "line": 93,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify test set integrity across default/custom sets, examinee switching, mid-administration, and review mode",
+              "ok": true,
+              "tags": [
+                "TestSetVerification",
+                "Functional",
+                "Aut_Eng_01",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [
+                    {
+                      "type": "Original customer issue, Automation user story",
+                      "description": "CLINICAL-30804, CLINICAL-31186 & CLINICAL-31587",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                        "line": 96,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2128883,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.plain-button.menu-button')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.plain-button.menu-button')\u001b[22m\n\n    at CommonTestPage.clickOnLeftNavTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:10097:31)\n    at captureLeftNavTestNames (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:38:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:627:45\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:620:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 31,
+                          "line": 10097
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:10097\n\n\u001b[0m \u001b[90m 10095 |\u001b[39m\n \u001b[90m 10096 |\u001b[39m   \u001b[36masync\u001b[39m clickOnLeftNavTests() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10097 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainNavigation\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m       |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10098 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainNavigationTests\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 10099 |\u001b[39m   }\n \u001b[90m 10100 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 31,
+                            "line": 10097
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.plain-button.menu-button')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:10097\n\n  10095 |\n  10096 |   async clickOnLeftNavTests() {\n> 10097 |     await this.mainNavigation.click();\n        |                               ^\n  10098 |     await this.mainNavigationTests.click();\n  10099 |   }\n  10100 |\n    at CommonTestPage.clickOnLeftNavTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:10097:31)\n    at captureLeftNavTestNames (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:38:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:627:45\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:620:7"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S09PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S8:W0] Login successful for S09PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[>->->: Fetched details for 1 rows:: [{\"examinee\":\"N4442A2363, Oma\",\"testSet\":\"Form AOral Vocabulary–SynonymsOral Vocabulary–AntonymsMatricesSpatial RelationsStory RecallSemantic Word RetrievalVerbal AttentionNumber-Pattern MatchingVerbal Analogies...\",\"daysLeftToEdit\":\"84 days\",\"status\":\"●Submitted\"}]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: Old Examinee name from dashboard: \"N4442A2363, Oma\"  ]\n\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N7622A89349\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N7622A89349 FirstName=Kurtis LastName =N7622A89349 Age = 09/02/2019\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N7622A89349\n"
+                        },
+                        {
+                          "text": "[>->->: New Examinee 1 created: {\"examinee_ID\":\"N7622A89349\",\"dateOfBirth\":\"09/02/2019\",\"examineelastNameAndFirstName\":\"N7622A89349, Kurtis\"}  ]\n\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N29985A62176\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N29985A62176 FirstName=Addie LastName =N29985A62176 Age = 09/02/2017\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N29985A62176\n"
+                        },
+                        {
+                          "text": "[>->->: New Examinee 2 created: {\"examinee_ID\":\"N29985A62176\",\"dateOfBirth\":\"09/02/2017\",\"examineelastNameAndFirstName\":\"N29985A62176, Addie\"}  ]\n\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N4442A2363, Oma\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - New Examinee 1 first launch - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - New Examinee 1 first launch - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - Old Examinee - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - Old Examinee - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - Old Examinee re-launch - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - Old Examinee re-launch - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - New Examinee 2 - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - New Examinee 2 - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - New Examinee 2 re-open - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - New Examinee 2 re-open - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"selectTheRequiredTestsExact: Found 62 checkboxes\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Academic Vocabulary\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Analysis-Synthesis\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Applied Problems\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Calculation\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Letter-Word Identification\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Math Facts Fluency\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Number Series\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Oral Comprehension\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Passage Comprehension\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Picture Vocabulary\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Sentence Reading Fluency\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Sentence Writing Fluency\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Sound Blending\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Sound Deletion\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Spelling\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Story Recall\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Verbal Analogies\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Verbal Attention\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Written Language Samples\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: Custom test set created: \"AutoTest_o92gyu\"  ]\n\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N7622A89349\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N29985A62176\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N4442A2363, Oma\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - New Examinee 1 custom first launch - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - New Examinee 1 custom first launch - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - Old Examinee custom - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - Old Examinee custom - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - Old Examinee custom re-open - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - Old Examinee custom re-open - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - New Examinee 2 custom - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - New Examinee 2 custom - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - New Examinee 2 custom re-open - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - New Examinee 2 custom re-open - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "[>->->: testData = : {\"Introduction 1\":{\"response\":\"image\",\"notes\":false,\"flag\":false},\"Sample Item A\":{\"response\":\"correct\",\"notes\":false,\"flag\":false},\"Sample Item B\":{\"response\":\"correct\",\"notes\":false,\"flag\":false},\"Introduction 2\":{\"response\":\"image\",\"notes\":false,\"flag\":false},\"Item 1\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Item 2\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Item 3\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Exit Test\":{\"response\":\"In Progress\",\"notes\":false,\"flag\":false}}  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Introduction 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Introduction 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"image\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Sample Item A\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Sample Item A\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"correct\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: respSize = : 1  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Sample Item B\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Sample Item B\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"correct\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: respSize = : 1  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Introduction 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Introduction 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"image\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 3\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 3\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Calculation in-progress status: \"Exit Test\"  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Old Examinee no carryover - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Old Examinee no carryover - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Old Examinee in-progress tests (should be empty): []  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Review mode test list: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - New Examinee 1 reopen after in-progress - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - New Examinee 1 reopen after in-progress - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: testData = : {\"Item 4\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Item 5\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"End Test\":{\"response\":\"Complete\",\"notes\":false,\"flag\":false}}  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 4\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 4\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 5\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 5\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Calculation completion status: \"End Test\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Review mode after completion: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - Old Examinee custom before admin - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - Old Examinee custom before admin - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "[>->->: testData = : {\"Introduction 1\":{\"response\":\"image\",\"notes\":false,\"flag\":false},\"Sample Item A\":{\"response\":\"correct\",\"notes\":false,\"flag\":false},\"Sample Item B\":{\"response\":\"correct\",\"notes\":false,\"flag\":false},\"Introduction 2\":{\"response\":\"image\",\"notes\":false,\"flag\":false},\"Item 1\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Item 2\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Item 3\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Exit Test\":{\"response\":\"In Progress\",\"notes\":false,\"flag\":false}}  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Introduction 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Introduction 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"image\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Sample Item A\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Sample Item A\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"correct\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: respSize = : 1  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Sample Item B\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Sample Item B\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"correct\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: respSize = : 1  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Introduction 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Introduction 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"image\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 3\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 3\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - Old Examinee Calculation in-progress status: \"Exit Test\"  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - New Examinee 2 custom no carryover - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - New Examinee 2 custom no carryover - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - New Examinee 2 in-progress tests (should be empty): []  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - Old Examinee review mode custom test list: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Setup: Get Old Examinee from dashboard",
+                          "duration": 25881
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 1 + assign Broad Achievement",
+                          "duration": 43420
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 2 + assign Broad Achievement",
+                          "duration": 42941
+                        },
+                        {
+                          "title": "Setup: Assign Broad Achievement to Old Examinee",
+                          "duration": 26545
+                        },
+                        {
+                          "title": "S1: Open New Examinee 1 → capture baseline + verify 9 tests",
+                          "duration": 97845
+                        },
+                        {
+                          "title": "S1: Open Old Examinee → verify test list matches",
+                          "duration": 97576
+                        },
+                        {
+                          "title": "S1: Re-open Old Examinee → verify still intact",
+                          "duration": 97567
+                        },
+                        {
+                          "title": "S1: Open New Examinee 2 → verify test list matches",
+                          "duration": 97736
+                        },
+                        {
+                          "title": "S1: Re-open New Examinee 2 → verify test set still intact",
+                          "duration": 97640
+                        },
+                        {
+                          "title": "S2 Setup: Create custom test set with 19 tests",
+                          "duration": 63173
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 1",
+                          "duration": 21862
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 2",
+                          "duration": 25040
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to Old Examinee",
+                          "duration": 24153
+                        },
+                        {
+                          "title": "S2: Open New Examinee 1 (custom) → capture baseline + verify 19 tests",
+                          "duration": 98962
+                        },
+                        {
+                          "title": "S2: Open Old Examinee (custom) → verify",
+                          "duration": 100118
+                        },
+                        {
+                          "title": "S2: Re-open Old Examinee (custom) → verify still intact",
+                          "duration": 100631
+                        },
+                        {
+                          "title": "S2: Open New Examinee 2 (custom) → verify",
+                          "duration": 98815
+                        },
+                        {
+                          "title": "S2: Re-open New Examinee 2 (custom) → verify test set still intact",
+                          "duration": 100724
+                        },
+                        {
+                          "title": "S3: Semi-administer Calculation for New Examinee 1 (default test set)",
+                          "duration": 147162
+                        },
+                        {
+                          "title": "S3: Open Old Examinee (default) → verify NO in-progress carryover",
+                          "duration": 99737
+                        },
+                        {
+                          "title": "S3: Open New Examinee 1 in Review Mode (from dashboard) → verify Calculation is In Progress",
+                          "duration": 22525
+                        },
+                        {
+                          "title": "S3: Reopen New Examinee 1 from dashboard → verify left nav + in-progress status",
+                          "duration": 92566
+                        },
+                        {
+                          "title": "S3: Complete the in-progress Calculation test (5 wrong → ceiling)",
+                          "duration": 20862
+                        },
+                        {
+                          "title": "S3: Enter Review Mode → verify Calculation now Complete + test list = 9",
+                          "duration": 7665
+                        },
+                        {
+                          "title": "S4: Open Old Examinee (custom) → verify 19 tests + semi-administer Calculation",
+                          "duration": 151489
+                        },
+                        {
+                          "title": "S4: Open New Examinee 2 (custom) → verify NO in-progress carryover",
+                          "duration": 99040
+                        },
+                        {
+                          "title": "S4: Open Old Examinee in Review Mode (from dashboard) → verify Calculation In Progress + 19 tests",
+                          "duration": 25230
+                        },
+                        {
+                          "title": "S4: Reopen Old Examinee → verify left nav + complete Calculation",
+                          "duration": 152526,
+                          "error": {
+                            "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.plain-button.menu-button')\u001b[22m\n",
+                            "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.plain-button.menu-button')\u001b[22m\n\n    at CommonTestPage.clickOnLeftNavTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:10097:31)\n    at captureLeftNavTestNames (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:38:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:627:45\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:620:7",
+                            "location": {
+                              "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                              "column": 31,
+                              "line": 10097
+                            },
+                            "snippet": "   at ../page/commonTestPage.ts:10097\n\n\u001b[0m \u001b[90m 10095 |\u001b[39m\n \u001b[90m 10096 |\u001b[39m   \u001b[36masync\u001b[39m clickOnLeftNavTests() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10097 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainNavigation\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m       |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10098 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainNavigationTests\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 10099 |\u001b[39m   }\n \u001b[90m 10100 |\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-09-02T12:44:32.506Z",
+                      "annotations": [
+                        {
+                          "type": "Original customer issue, Automation user story",
+                          "description": "CLINICAL-30804, CLINICAL-31186 & CLINICAL-31587",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                            "line": 96,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-testSets-TestSe-1f22f-inistration-and-review-mode-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-testSets-TestSe-1f22f-inistration-and-review-mode-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-testSets-TestSe-1f22f-inistration-and-review-mode-chrome/error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-testSets-TestSe-1f22f-inistration-and-review-mode-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-testSets-TestSe-1f22f-inistration-and-review-mode-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 31,
+                        "line": 10097
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2266971,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S09PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S8:W1] Login successful for S09PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[>->->: Fetched details for 1 rows:: [{\"examinee\":\"N4442A2363, Oma\",\"testSet\":\"Form AOral Vocabulary–SynonymsOral Vocabulary–AntonymsMatricesSpatial RelationsStory RecallSemantic Word RetrievalVerbal AttentionNumber-Pattern MatchingVerbal Analogies...\",\"daysLeftToEdit\":\"84 days\",\"status\":\"●Submitted\"}]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: Old Examinee name from dashboard: \"N4442A2363, Oma\"  ]\n\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N13171A36877\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N13171A36877 FirstName=Dayna LastName =N13171A36877 Age = 09/02/2019\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N13171A36877\n"
+                        },
+                        {
+                          "text": "[>->->: New Examinee 1 created: {\"examinee_ID\":\"N13171A36877\",\"dateOfBirth\":\"09/02/2019\",\"examineelastNameAndFirstName\":\"N13171A36877, Dayna\"}  ]\n\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N7599A10567\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N7599A10567 FirstName=Faustino LastName =N7599A10567 Age = 09/02/2017\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N7599A10567\n"
+                        },
+                        {
+                          "text": "[>->->: New Examinee 2 created: {\"examinee_ID\":\"N7599A10567\",\"dateOfBirth\":\"09/02/2017\",\"examineelastNameAndFirstName\":\"N7599A10567, Faustino\"}  ]\n\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N4442A2363, Oma\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - New Examinee 1 first launch - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - New Examinee 1 first launch - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - Old Examinee - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - Old Examinee - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - Old Examinee re-launch - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - Old Examinee re-launch - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - New Examinee 2 - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - New Examinee 2 - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - New Examinee 2 re-open - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S1 - New Examinee 2 re-open - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"selectTheRequiredTestsExact: Found 62 checkboxes\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Academic Vocabulary\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Analysis-Synthesis\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Applied Problems\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Calculation\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Letter-Word Identification\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Math Facts Fluency\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Number Series\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Oral Comprehension\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Passage Comprehension\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Picture Vocabulary\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Sentence Reading Fluency\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Sentence Writing Fluency\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Sound Blending\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Sound Deletion\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Spelling\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Story Recall\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Verbal Analogies\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Verbal Attention\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Selected (exact): Written Language Samples\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: Custom test set created: \"AutoTest_2m2q4w\"  ]\n\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N13171A36877\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N7599A10567\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N4442A2363, Oma\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - New Examinee 1 custom first launch - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - New Examinee 1 custom first launch - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - Old Examinee custom - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - Old Examinee custom - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - Old Examinee custom re-open - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - Old Examinee custom re-open - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - New Examinee 2 custom - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - New Examinee 2 custom - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - New Examinee 2 custom re-open - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S2 - New Examinee 2 custom re-open - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "[>->->: testData = : {\"Introduction 1\":{\"response\":\"image\",\"notes\":false,\"flag\":false},\"Sample Item A\":{\"response\":\"correct\",\"notes\":false,\"flag\":false},\"Sample Item B\":{\"response\":\"correct\",\"notes\":false,\"flag\":false},\"Introduction 2\":{\"response\":\"image\",\"notes\":false,\"flag\":false},\"Item 1\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Item 2\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Item 3\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Exit Test\":{\"response\":\"In Progress\",\"notes\":false,\"flag\":false}}  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Introduction 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Introduction 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"image\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Sample Item A\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Sample Item A\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"correct\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: respSize = : 1  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Sample Item B\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Sample Item B\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"correct\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: respSize = : 1  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Introduction 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Introduction 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"image\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 3\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 3\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Calculation in-progress status: \"Exit Test\"  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Old Examinee no carryover - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Old Examinee no carryover - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Old Examinee in-progress tests (should be empty): []  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Review mode test list: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - New Examinee 1 reopen after in-progress - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - New Examinee 1 reopen after in-progress - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: testData = : {\"Item 4\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Item 5\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"End Test\":{\"response\":\"Complete\",\"notes\":false,\"flag\":false}}  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 4\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 4\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 5\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 5\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Calculation completion status: \"End Test\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S3 - Review mode after completion: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - Old Examinee custom before admin - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - Old Examinee custom before admin - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "[>->->: testData = : {\"Introduction 1\":{\"response\":\"image\",\"notes\":false,\"flag\":false},\"Sample Item A\":{\"response\":\"correct\",\"notes\":false,\"flag\":false},\"Sample Item B\":{\"response\":\"correct\",\"notes\":false,\"flag\":false},\"Introduction 2\":{\"response\":\"image\",\"notes\":false,\"flag\":false},\"Item 1\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Item 2\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Item 3\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Exit Test\":{\"response\":\"In Progress\",\"notes\":false,\"flag\":false}}  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Introduction 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Introduction 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"image\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Sample Item A\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Sample Item A\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"correct\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: respSize = : 1  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Sample Item B\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Sample Item B\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"correct\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: respSize = : 1  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Introduction 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Introduction 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"image\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 1\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 2\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 3\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 3\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - Old Examinee Calculation in-progress status: \"Exit Test\"  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - New Examinee 2 custom no carryover - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - New Examinee 2 custom no carryover - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - New Examinee 2 in-progress tests (should be empty): []  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - Old Examinee review mode custom test list: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - Old Examinee custom reopen - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - Old Examinee custom reopen - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: testData = : {\"Item 4\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"Item 5\":{\"response\":\"incorrect\",\"notes\":false,\"flag\":false},\"End Test\":{\"response\":\"Complete\",\"notes\":false,\"flag\":false}}  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 4\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 4\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: itemNameValue = : \"Item 5\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: key = : \"Item 5\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: response = : \"incorrect\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: notes = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: flag = : false  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - Old Examinee Calculation completion status: \"End Test\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S4 - Review mode after completion: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S5 - New Examinee 2 default unaffected - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S5 - New Examinee 2 default unaffected - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "[>->->: \"Accept button visible. Clicking.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: \"Sloth icon detected. Accept process completed.\"  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S5 - New Examinee 2 custom unaffected - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\",\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Number Series\",\"Oral Comprehension\",\"Verbal Attention\",\"Sound Deletion\",\"Picture Vocabulary\",\"Sound Blending\",\"Story Recall\",\"Verbal Analogies\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S5 - New Examinee 2 custom unaffected - Actual tests: [\"Academic Vocabulary\",\"Analysis-Synthesis\",\"Applied Problems\",\"Calculation\",\"Letter-Word Identification\",\"Math Facts Fluency\",\"Number Series\",\"Oral Comprehension\",\"Passage Comprehension\",\"Picture Vocabulary\",\"Sentence Reading Fluency\",\"Sentence Writing Fluency\",\"Sound Blending\",\"Sound Deletion\",\"Spelling\",\"Story Recall\",\"Verbal Analogies\",\"Verbal Attention\",\"Written Language Samples\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S5 - New Examinee 2 review mode default - Expected tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        },
+                        {
+                          "text": "[>->->: S5 - New Examinee 2 review mode default - Actual tests: [\"Letter-Word Identification\",\"Calculation\",\"Spelling\",\"Math Facts Fluency\",\"Passage Comprehension\",\"Applied Problems\",\"Sentence Reading Fluency\",\"Written Language Samples\",\"Sentence Writing Fluency\"]  ]\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Setup: Get Old Examinee from dashboard",
+                          "duration": 21885
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 1 + assign Broad Achievement",
+                          "duration": 39660
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 2 + assign Broad Achievement",
+                          "duration": 39667
+                        },
+                        {
+                          "title": "Setup: Assign Broad Achievement to Old Examinee",
+                          "duration": 23046
+                        },
+                        {
+                          "title": "S1: Open New Examinee 1 → capture baseline + verify 9 tests",
+                          "duration": 96989
+                        },
+                        {
+                          "title": "S1: Open Old Examinee → verify test list matches",
+                          "duration": 96913
+                        },
+                        {
+                          "title": "S1: Re-open Old Examinee → verify still intact",
+                          "duration": 98673
+                        },
+                        {
+                          "title": "S1: Open New Examinee 2 → verify test list matches",
+                          "duration": 96867
+                        },
+                        {
+                          "title": "S1: Re-open New Examinee 2 → verify test set still intact",
+                          "duration": 98771
+                        },
+                        {
+                          "title": "S2 Setup: Create custom test set with 19 tests",
+                          "duration": 61556
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 1",
+                          "duration": 19964
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 2",
+                          "duration": 22923
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to Old Examinee",
+                          "duration": 22959
+                        },
+                        {
+                          "title": "S2: Open New Examinee 1 (custom) → capture baseline + verify 19 tests",
+                          "duration": 98012
+                        },
+                        {
+                          "title": "S2: Open Old Examinee (custom) → verify",
+                          "duration": 98067
+                        },
+                        {
+                          "title": "S2: Re-open Old Examinee (custom) → verify still intact",
+                          "duration": 100006
+                        },
+                        {
+                          "title": "S2: Open New Examinee 2 (custom) → verify",
+                          "duration": 98023
+                        },
+                        {
+                          "title": "S2: Re-open New Examinee 2 (custom) → verify test set still intact",
+                          "duration": 97995
+                        },
+                        {
+                          "title": "S3: Semi-administer Calculation for New Examinee 1 (default test set)",
+                          "duration": 145270
+                        },
+                        {
+                          "title": "S3: Open Old Examinee (default) → verify NO in-progress carryover",
+                          "duration": 98907
+                        },
+                        {
+                          "title": "S3: Open New Examinee 1 in Review Mode (from dashboard) → verify Calculation is In Progress",
+                          "duration": 23033
+                        },
+                        {
+                          "title": "S3: Reopen New Examinee 1 from dashboard → verify left nav + in-progress status",
+                          "duration": 92168
+                        },
+                        {
+                          "title": "S3: Complete the in-progress Calculation test (5 wrong → ceiling)",
+                          "duration": 20257
+                        },
+                        {
+                          "title": "S3: Enter Review Mode → verify Calculation now Complete + test list = 9",
+                          "duration": 7468
+                        },
+                        {
+                          "title": "S4: Open Old Examinee (custom) → verify 19 tests + semi-administer Calculation",
+                          "duration": 146602
+                        },
+                        {
+                          "title": "S4: Open New Examinee 2 (custom) → verify NO in-progress carryover",
+                          "duration": 98187
+                        },
+                        {
+                          "title": "S4: Open Old Examinee in Review Mode (from dashboard) → verify Calculation In Progress + 19 tests",
+                          "duration": 22214
+                        },
+                        {
+                          "title": "S4: Reopen Old Examinee → verify left nav + complete Calculation",
+                          "duration": 113640
+                        },
+                        {
+                          "title": "S4: Review Mode → verify Calculation Complete + test list = 19",
+                          "duration": 7461
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 default test set via direct launch",
+                          "duration": 99998
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 custom test set via direct launch",
+                          "duration": 98194
+                        },
+                        {
+                          "title": "S5: Verify New Examinee 2 default test set via Review Mode (from dashboard)",
+                          "duration": 22209
+                        }
+                      ],
+                      "startTime": "2026-09-02T13:20:17.834Z",
+                      "annotations": [
+                        {
+                          "type": "Original customer issue, Automation user story",
+                          "description": "CLINICAL-30804, CLINICAL-31186 & CLINICAL-31587",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                            "line": 96,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "cf0eb0cce83021816cd8-796a3d69c79e5f725e21",
+              "file": "functional/testSets/TestSetVerification.spec.ts",
+              "line": 96,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-02T12:44:16.953Z",
+    "duration": 4428537.609,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 1
+  }
+}

@@ -1,0 +1,799 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+        "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/33631461363"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 1,
+      "total": 10
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/dashboard/testAssignments_A.spec.ts",
+      "file": "functional/dashboard/testAssignments_A.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Validate Dashboard Test Assignments functionality",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_A",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24006_24067_24927, 28823_29687",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                    "line": 21,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 577846,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1996:74)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1675:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1632:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 74,
+                      "line": 1996
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:1996\n\n\u001b[0m \u001b[90m 1994 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"button[class='select-box']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 1995 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"[placeholder='Search...']\"\u001b[39m)\u001b[33m.\u001b[39mfill(targetTestSet)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1996 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[class='item-text single-select']\"\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1997 |\u001b[39m   }\n \u001b[90m 1998 |\u001b[39m\n \u001b[90m 1999 |\u001b[39m   \u001b[36masync\u001b[39m clickOnCancelButtonInEditTestAssignmentPopUp() {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 74,
+                        "line": 1996
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n\n\n   at ../page/dashboardPage.ts:1996\n\n  1994 |     await dialog.locator(\"button[class='select-box']\").click();\n  1995 |     await dialog.locator(\"[placeholder='Search...']\").fill(targetTestSet);\n> 1996 |     await dialog.locator(\"div[class='item-text single-select']\").first().click();\n       |                                                                          ^\n  1997 |   }\n  1998 |\n  1999 |   async clickOnCancelButtonInEditTestAssignmentPopUp() {\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1996:74)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1675:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1632:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S02PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S1:W0] Login successful for S02PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S02PwAut25Ex_02\n"
+                    },
+                    {
+                      "text": "[S1:W0] Login successful for S02PwAut25Ex_02\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N22048A67169\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N22048A67169 FirstName=Rubie LastName =N22048A67169 Age = 09/02/2021\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N22048A67169\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N85011A15213\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N85011A15213 FirstName=Ola LastName =N85011A15213 Age = 09/02/2020\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N85011A15213\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N73144A57321\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N73144A57321 FirstName=Kendrick LastName =N73144A57321 Age = 09/02/2019\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N73144A57321\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N34A75940\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N34A75940 FirstName=Maybell LastName =N34A75940 Age = 09/02/2018\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N34A75940\n"
+                    },
+                    {
+                      "text": "[>->->: Created examinee details: {\"examinee1\":{\"examinee_ID\":\"N22048A67169\",\"dateOfBirth\":\"09/02/2021\",\"examineelastNameAndFirstName\":\"N22048A67169, Rubie\",\"testSet\":\"Dyslexia Test Set\"},\"examinee2\":{\"examinee_ID\":\"N85011A15213\",\"dateOfBirth\":\"09/02/2020\",\"examineelastNameAndFirstName\":\"N85011A15213, Ola\",\"testSet\":\"General Intellectual Ability (GIA)\"},\"examinee3\":{\"examinee_ID\":\"N73144A57321\",\"dateOfBirth\":\"09/02/2019\",\"examineelastNameAndFirstName\":\"N73144A57321, Kendrick\",\"testSet\":\"Broad Achievement\"},\"examinee4\":{\"examinee_ID\":\"N34A75940\",\"dateOfBirth\":\"09/02/2018\",\"examineelastNameAndFirstName\":\"N34A75940, Maybell\",\"testSet\":\"Rapid Automatized Naming (RAN)\"}}  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Examinee list: [\"N34A75940, Maybell\",\"N73144A57321, Kendrick\",\"N85011A15213, Ola\",\"N22048A67169, Rubie\",\"N81349A79485, Beryl\",\"N53081A92090, Mikel\",\"N10528A5113, Adah\",\"N82099A81455, Rey\",\"N79161A69379, Elwyn\",\"N55740A96908, Richard\",\"N85336A19189, Bennie\",\"N94014A58207, Duane\",\"N60163A44900, Eloisa\",\"N70999A62109, Rosalyn\",\"N60163A44900, Eloisa\",\"N55691A17503, Rebecca\",\"N70999A62109, Rosalyn\",\"N55691A17503, Rebecca\",\"N4424A98778, Milo\",\"N86242A87644, Laurel\",\"N60504A8432, Lizzie\",\"N99351A15350, Jody\",\"N94611A35506, Frances\",\"N73890A76186, Ansley\",\"N53563A11515, Quentin\",\"N89487A25427, Madison\",\"N55989A88056, King\",\"N92383A41711, Milo\",\"N70776A20084, Ray\",\"N18651A5937, Reuben\",\"N26011A11166, Aletha\",\"N15496A60942, Ryleigh\",\"N68635A91458, Coleman\",\"N25128A5214, Sid\",\"N34624A12535, Genoveva\",\"N82712A1302, Einar\",\"N57943A45141, Bernice\",\"N28038A36065, Estella\",\"N34341A38950, Thomas\",\"N53876A78178, Mariah\",\"N60544A74214, Ralph\",\"N38544A21733, Lilla\",\"N76366A19726, Ola\",\"N35232A57025, Diamond\",\"N82001A23959, Flossie\",\"N60933A8080, Broderick\",\"N52588A71892, Christophe\",\"N92761A68203, Jada\",\"N85210A93385, Penelope\",\"N51274A99298, Esther\",\"N24762A23178, Jana\",\"N54758A16309, Wyman\",\"N1094A78253, Henriette\",\"N34511A84462, Deshawn\",\"N17118A76114, Imogene\",\"N3998A79039, Buster\",\"N12384A1403, Julio\",\"N99106A40888, Burdette\",\"N96962A51933, Nikita\",\"N80920A21207, Assunta\",\"N23821A63526, Kathlyn\",\"N24701A84918, Ian\",\"N36766A4174, Holden\",\"N11805A37622, Ulices\",\"N52394A86410, Veda\",\"N20940A66173, Dayana\",\"N37437A2987, Patience\",\"N2284A51296, Jan\",\"N32576A47526, Deondre\",\"N12983A35300, Cortney\",\"N47122A58150, Ariane\",\"N77373A5671, Dorothy\",\"N66982A28486, Mallie\",\"N39725A9114, Kyler\",\"N49089A62079, Joe\",\"N20690A60874, Idella\",\"N47465A40211, Beulah\",\"N78350A28668, Bella\",\"N31554A37735, Marina\",\"N43130A74391, Lulu\",\"N50355A27508, Rocio\",\"N64A51605, Maribel\",\"N4604A64621, Jaleel\",\"N47603A27792, Gaetano\",\"N41485A80510, Tyrique\",\"N92404A40655, Ervin\",\"N46362A24268, Lilliana\",\"N70481A68224, Rod\",\"N61081A47726, Rusty\",\"N54448A6410, Heber\",\"N10823A77777, Misty\",\"N25573A82261, Leonardo\",\"N50821A31040, Layla\",\"N28467A41092, Joyce\",\"N78632A65669, Pascale\",\"N3669A787, Alexandrine\",\"N27080A68106, Etha\",\"N91618A72455, Krystel\",\"N39317A94467, Dortha\",\"N19704A39071, Jaycee\",\"N20554A94422, Gayle\",\"N54808A41521, Tanya\",\"N52937A56189, Keira\",\"N82504A19331, Marlene\",\"N5017A25225, Gino\",\"N25692A79780, Madaline\",\"N35037A96878, Ivah\",\"N1495A52988, Arch\",\"N11971A88491, Rasheed\",\"N79865A83737, Luigi\",\"N34260A35365, Golden\",\"N33152A29034, Floyd\",\"N89311A20040, Aurelie\",\"N20405A85909, Kody\",\"N20687A77631, Jamil\",\"N40773A71686, Evangeline\",\"N89894A96184, Khalil\",\"N55712A34956, Fannie\",\"N95911A53564, Onie\",\"N62884A30019, Coralie\",\"N85589A23963, Buford\",\"N12183A32258, Bettie\",\"N38910A81716, Deangelo\",\"N54655A3380, Keyon\",\"N60732A66170, Emelia\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Required Examinee: \"N85011A15213, Ola\"  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Examinee list: [\"N85011A15213, Ola\",\"N34A75940, Maybell\",\"N73144A57321, Kendrick\",\"N22048A67169, Rubie\",\"N81349A79485, Beryl\",\"N53081A92090, Mikel\",\"N10528A5113, Adah\",\"N82099A81455, Rey\",\"N79161A69379, Elwyn\",\"N55740A96908, Richard\",\"N85336A19189, Bennie\",\"N94014A58207, Duane\",\"N60163A44900, Eloisa\",\"N70999A62109, Rosalyn\",\"N60163A44900, Eloisa\",\"N55691A17503, Rebecca\",\"N70999A62109, Rosalyn\",\"N55691A17503, Rebecca\",\"N4424A98778, Milo\",\"N86242A87644, Laurel\",\"N60504A8432, Lizzie\",\"N99351A15350, Jody\",\"N94611A35506, Frances\",\"N73890A76186, Ansley\",\"N53563A11515, Quentin\",\"N89487A25427, Madison\",\"N55989A88056, King\",\"N92383A41711, Milo\",\"N70776A20084, Ray\",\"N18651A5937, Reuben\",\"N26011A11166, Aletha\",\"N15496A60942, Ryleigh\",\"N68635A91458, Coleman\",\"N25128A5214, Sid\",\"N34624A12535, Genoveva\",\"N82712A1302, Einar\",\"N57943A45141, Bernice\",\"N28038A36065, Estella\",\"N34341A38950, Thomas\",\"N53876A78178, Mariah\",\"N60544A74214, Ralph\",\"N38544A21733, Lilla\",\"N76366A19726, Ola\",\"N35232A57025, Diamond\",\"N82001A23959, Flossie\",\"N60933A8080, Broderick\",\"N52588A71892, Christophe\",\"N92761A68203, Jada\",\"N85210A93385, Penelope\",\"N51274A99298, Esther\",\"N24762A23178, Jana\",\"N54758A16309, Wyman\",\"N1094A78253, Henriette\",\"N34511A84462, Deshawn\",\"N17118A76114, Imogene\",\"N3998A79039, Buster\",\"N12384A1403, Julio\",\"N99106A40888, Burdette\",\"N96962A51933, Nikita\",\"N80920A21207, Assunta\",\"N23821A63526, Kathlyn\",\"N24701A84918, Ian\",\"N36766A4174, Holden\",\"N11805A37622, Ulices\",\"N52394A86410, Veda\",\"N20940A66173, Dayana\",\"N37437A2987, Patience\",\"N2284A51296, Jan\",\"N32576A47526, Deondre\",\"N12983A35300, Cortney\",\"N47122A58150, Ariane\",\"N77373A5671, Dorothy\",\"N66982A28486, Mallie\",\"N39725A9114, Kyler\",\"N49089A62079, Joe\",\"N20690A60874, Idella\",\"N47465A40211, Beulah\",\"N78350A28668, Bella\",\"N31554A37735, Marina\",\"N43130A74391, Lulu\",\"N50355A27508, Rocio\",\"N64A51605, Maribel\",\"N4604A64621, Jaleel\",\"N47603A27792, Gaetano\",\"N41485A80510, Tyrique\",\"N92404A40655, Ervin\",\"N46362A24268, Lilliana\",\"N70481A68224, Rod\",\"N61081A47726, Rusty\",\"N54448A6410, Heber\",\"N10823A77777, Misty\",\"N25573A82261, Leonardo\",\"N50821A31040, Layla\",\"N28467A41092, Joyce\",\"N78632A65669, Pascale\",\"N3669A787, Alexandrine\",\"N27080A68106, Etha\",\"N91618A72455, Krystel\",\"N39317A94467, Dortha\",\"N19704A39071, Jaycee\",\"N20554A94422, Gayle\",\"N54808A41521, Tanya\",\"N52937A56189, Keira\",\"N82504A19331, Marlene\",\"N5017A25225, Gino\",\"N25692A79780, Madaline\",\"N35037A96878, Ivah\",\"N1495A52988, Arch\",\"N11971A88491, Rasheed\",\"N79865A83737, Luigi\",\"N34260A35365, Golden\",\"N33152A29034, Floyd\",\"N89311A20040, Aurelie\",\"N20405A85909, Kody\",\"N20687A77631, Jamil\",\"N40773A71686, Evangeline\",\"N89894A96184, Khalil\",\"N55712A34956, Fannie\",\"N95911A53564, Onie\",\"N62884A30019, Coralie\",\"N85589A23963, Buford\",\"N12183A32258, Bettie\",\"N38910A81716, Deangelo\",\"N54655A3380, Keyon\",\"N60732A66170, Emelia\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Computed Value: [\"ExamineeThis is the student or individual being assessed.\",\"Test SetA collection of tests grouped together for assessment.\",\"Days Left to EditYou can edit this assignment for up to 90 days after testing begins.\",\"StatusStatus shows where the test is in the process. Statuses include Not Started, In Progress, Complete, Closed, Expired, and Offline.\",\"ActionsActions available are based on your role and test status.\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Computed Value: [\"ExamineeThis is the student or individual being assessed.\",\"Test SetA collection of tests grouped together for assessment.\",\"Earliest Date of TestingFirst day of testing, marking the beginning of the 90-day window to complete all tests.\",\"StatusStatus shows where the test is in the process. Statuses include Not Started, In Progress, Complete, Closed, Expired, and Offline.\",\"ActionsActions available are based on your role and test status.\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Actual Statuses:: [\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Expected Allowed Statuses:: [\"Closed\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: \"All visible statuses are within the expected list.\"  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Examinee list: [\"N85011A15213, Ola\",\"N34A75940, Maybell\",\"N73144A57321, Kendrick\",\"N22048A67169, Rubie\",\"N81349A79485, Beryl\",\"N53081A92090, Mikel\",\"N10528A5113, Adah\",\"N82099A81455, Rey\",\"N79161A69379, Elwyn\",\"N55740A96908, Richard\",\"N85336A19189, Bennie\",\"N94014A58207, Duane\",\"N60163A44900, Eloisa\",\"N70999A62109, Rosalyn\",\"N60163A44900, Eloisa\",\"N55691A17503, Rebecca\",\"N70999A62109, Rosalyn\",\"N55691A17503, Rebecca\",\"N4424A98778, Milo\",\"N86242A87644, Laurel\",\"N60504A8432, Lizzie\",\"N99351A15350, Jody\",\"N94611A35506, Frances\",\"N73890A76186, Ansley\",\"N53563A11515, Quentin\",\"N89487A25427, Madison\",\"N55989A88056, King\",\"N92383A41711, Milo\",\"N70776A20084, Ray\",\"N18651A5937, Reuben\",\"N26011A11166, Aletha\",\"N15496A60942, Ryleigh\",\"N68635A91458, Coleman\",\"N25128A5214, Sid\",\"N34624A12535, Genoveva\",\"N82712A1302, Einar\",\"N57943A45141, Bernice\",\"N28038A36065, Estella\",\"N34341A38950, Thomas\",\"N53876A78178, Mariah\",\"N60544A74214, Ralph\",\"N38544A21733, Lilla\",\"N76366A19726, Ola\",\"N35232A57025, Diamond\",\"N82001A23959, Flossie\",\"N60933A8080, Broderick\",\"N52588A71892, Christophe\",\"N92761A68203, Jada\",\"N85210A93385, Penelope\",\"N51274A99298, Esther\",\"N24762A23178, Jana\",\"N54758A16309, Wyman\",\"N1094A78253, Henriette\",\"N34511A84462, Deshawn\",\"N17118A76114, Imogene\",\"N3998A79039, Buster\",\"N12384A1403, Julio\",\"N99106A40888, Burdette\",\"N96962A51933, Nikita\",\"N80920A21207, Assunta\",\"N23821A63526, Kathlyn\",\"N24701A84918, Ian\",\"N36766A4174, Holden\",\"N11805A37622, Ulices\",\"N52394A86410, Veda\",\"N20940A66173, Dayana\",\"N37437A2987, Patience\",\"N2284A51296, Jan\",\"N32576A47526, Deondre\",\"N12983A35300, Cortney\",\"N47122A58150, Ariane\",\"N77373A5671, Dorothy\",\"N66982A28486, Mallie\",\"N39725A9114, Kyler\",\"N49089A62079, Joe\",\"N20690A60874, Idella\",\"N47465A40211, Beulah\",\"N78350A28668, Bella\",\"N31554A37735, Marina\",\"N43130A74391, Lulu\",\"N50355A27508, Rocio\",\"N64A51605, Maribel\",\"N4604A64621, Jaleel\",\"N47603A27792, Gaetano\",\"N41485A80510, Tyrique\",\"N92404A40655, Ervin\",\"N46362A24268, Lilliana\",\"N70481A68224, Rod\",\"N61081A47726, Rusty\",\"N54448A6410, Heber\",\"N10823A77777, Misty\",\"N25573A82261, Leonardo\",\"N50821A31040, Layla\",\"N28467A41092, Joyce\",\"N78632A65669, Pascale\",\"N3669A787, Alexandrine\",\"N27080A68106, Etha\",\"N91618A72455, Krystel\",\"N39317A94467, Dortha\",\"N19704A39071, Jaycee\",\"N20554A94422, Gayle\",\"N54808A41521, Tanya\",\"N52937A56189, Keira\",\"N82504A19331, Marlene\",\"N5017A25225, Gino\",\"N25692A79780, Madaline\",\"N35037A96878, Ivah\",\"N1495A52988, Arch\",\"N11971A88491, Rasheed\",\"N79865A83737, Luigi\",\"N34260A35365, Golden\",\"N33152A29034, Floyd\",\"N89311A20040, Aurelie\",\"N20405A85909, Kody\",\"N20687A77631, Jamil\",\"N40773A71686, Evangeline\",\"N89894A96184, Khalil\",\"N55712A34956, Fannie\",\"N95911A53564, Onie\",\"N62884A30019, Coralie\",\"N85589A23963, Buford\",\"N12183A32258, Bettie\",\"N38910A81716, Deangelo\",\"N54655A3380, Keyon\",\"N60732A66170, Emelia\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Required Examinee: \"N85011A15213, Ola\"  ]\n\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "Login failed for S02PwAut25AH: page.waitForLoadState: Timeout 60000ms exceeded.\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:46:23\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5ah \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:55:24\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m46\u001b[39m,\n      column: \u001b[33m23\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m'Wait for load state \"networkidle\"'\u001b[39m,\n    apiName: \u001b[32m'page.waitForLoadState'\u001b[39m,\n    params: { info: \u001b[36m[Object]\u001b[39m },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@32'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@32'\u001b[39m,\n      _title: \u001b[32m'Wait for load state \"networkidle\"'\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1788353130459\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:46:23)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5ah (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:55:24)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                    },
+                    {
+                      "text": "[S1:W0] Login attempt 1 failed for S02PwAut25AH\n"
+                    },
+                    {
+                      "text": "Login failed for S02PwAut25Ex_02: page.waitForLoadState: Timeout 60000ms exceeded.\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:46:23\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m46\u001b[39m,\n      column: \u001b[33m23\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m'Wait for load state \"networkidle\"'\u001b[39m,\n    apiName: \u001b[32m'page.waitForLoadState'\u001b[39m,\n    params: { info: \u001b[36m[Object]\u001b[39m },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@64'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@64'\u001b[39m,\n      _title: \u001b[32m'Wait for load state \"networkidle\"'\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1788353230091\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:46:23)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                    },
+                    {
+                      "text": "[S1:W0] Login attempt 1 failed for S02PwAut25Ex_02\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Verify newly added test assignment is displayed at the top of the table and also Verify \"Create New Test Assignment\" from Dashboard",
+                      "duration": 231789
+                    },
+                    {
+                      "title": "Verify add test to test set functionality and The table is ordered by the mostly recently “interacted” test assignment at the top",
+                      "duration": 26517
+                    },
+                    {
+                      "title": "Verify all the 5 Columns are visible",
+                      "duration": 27
+                    },
+                    {
+                      "title": "Verify Closed columns are correctly displayed",
+                      "duration": 10225
+                    },
+                    {
+                      "title": "Verify edited test assignment 'Examinee name and test set' is displayed at the top of the table",
+                      "duration": 85832,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1996:74)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1675:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1632:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 74,
+                          "line": 1996
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1996\n\n\u001b[0m \u001b[90m 1994 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"button[class='select-box']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 1995 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"[placeholder='Search...']\"\u001b[39m)\u001b[33m.\u001b[39mfill(targetTestSet)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1996 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[class='item-text single-select']\"\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1997 |\u001b[39m   }\n \u001b[90m 1998 |\u001b[39m\n \u001b[90m 1999 |\u001b[39m   \u001b[36masync\u001b[39m clickOnCancelButtonInEditTestAssignmentPopUp() {\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-09-02T12:44:27.708Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927, 28823_29687",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                        "line": 21,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 74,
+                    "line": 1996
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 644247,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S02PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S1:W1] Login successful for S02PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S02PwAut25Ex_02\n"
+                    },
+                    {
+                      "text": "[S1:W1] Login successful for S02PwAut25Ex_02\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N56875A52479\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N56875A52479 FirstName=Maida LastName =N56875A52479 Age = 09/02/2021\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N56875A52479\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N87812A39950\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N87812A39950 FirstName=Eileen LastName =N87812A39950 Age = 09/02/2020\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N87812A39950\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N21583A37906\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N21583A37906 FirstName=Thomas LastName =N21583A37906 Age = 09/02/2019\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N21583A37906\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N22698A57836\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N22698A57836 FirstName=Lyric LastName =N22698A57836 Age = 09/02/2018\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N22698A57836\n"
+                    },
+                    {
+                      "text": "[>->->: Created examinee details: {\"examinee1\":{\"examinee_ID\":\"N56875A52479\",\"dateOfBirth\":\"09/02/2021\",\"examineelastNameAndFirstName\":\"N56875A52479, Maida\",\"testSet\":\"Dyslexia Test Set\"},\"examinee2\":{\"examinee_ID\":\"N87812A39950\",\"dateOfBirth\":\"09/02/2020\",\"examineelastNameAndFirstName\":\"N87812A39950, Eileen\",\"testSet\":\"General Intellectual Ability (GIA)\"},\"examinee3\":{\"examinee_ID\":\"N21583A37906\",\"dateOfBirth\":\"09/02/2019\",\"examineelastNameAndFirstName\":\"N21583A37906, Thomas\",\"testSet\":\"Broad Achievement\"},\"examinee4\":{\"examinee_ID\":\"N22698A57836\",\"dateOfBirth\":\"09/02/2018\",\"examineelastNameAndFirstName\":\"N22698A57836, Lyric\",\"testSet\":\"Rapid Automatized Naming (RAN)\"}}  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Examinee list: [\"N22698A57836, Lyric\",\"N21583A37906, Thomas\",\"N87812A39950, Eileen\",\"N56875A52479, Maida\",\"N34A75940, Maybell\",\"N34A75940, Maybell\",\"N73144A57321, Kendrick\",\"N22048A67169, Rubie\",\"N81349A79485, Beryl\",\"N53081A92090, Mikel\",\"N10528A5113, Adah\",\"N82099A81455, Rey\",\"N79161A69379, Elwyn\",\"N55740A96908, Richard\",\"N85336A19189, Bennie\",\"N94014A58207, Duane\",\"N60163A44900, Eloisa\",\"N70999A62109, Rosalyn\",\"N60163A44900, Eloisa\",\"N55691A17503, Rebecca\",\"N70999A62109, Rosalyn\",\"N55691A17503, Rebecca\",\"N4424A98778, Milo\",\"N86242A87644, Laurel\",\"N60504A8432, Lizzie\",\"N99351A15350, Jody\",\"N94611A35506, Frances\",\"N73890A76186, Ansley\",\"N53563A11515, Quentin\",\"N89487A25427, Madison\",\"N55989A88056, King\",\"N92383A41711, Milo\",\"N70776A20084, Ray\",\"N18651A5937, Reuben\",\"N26011A11166, Aletha\",\"N15496A60942, Ryleigh\",\"N68635A91458, Coleman\",\"N25128A5214, Sid\",\"N34624A12535, Genoveva\",\"N82712A1302, Einar\",\"N57943A45141, Bernice\",\"N28038A36065, Estella\",\"N34341A38950, Thomas\",\"N53876A78178, Mariah\",\"N60544A74214, Ralph\",\"N38544A21733, Lilla\",\"N76366A19726, Ola\",\"N35232A57025, Diamond\",\"N82001A23959, Flossie\",\"N60933A8080, Broderick\",\"N52588A71892, Christophe\",\"N92761A68203, Jada\",\"N85210A93385, Penelope\",\"N51274A99298, Esther\",\"N24762A23178, Jana\",\"N54758A16309, Wyman\",\"N1094A78253, Henriette\",\"N34511A84462, Deshawn\",\"N17118A76114, Imogene\",\"N3998A79039, Buster\",\"N12384A1403, Julio\",\"N99106A40888, Burdette\",\"N96962A51933, Nikita\",\"N80920A21207, Assunta\",\"N23821A63526, Kathlyn\",\"N24701A84918, Ian\",\"N36766A4174, Holden\",\"N11805A37622, Ulices\",\"N52394A86410, Veda\",\"N20940A66173, Dayana\",\"N37437A2987, Patience\",\"N2284A51296, Jan\",\"N32576A47526, Deondre\",\"N12983A35300, Cortney\",\"N47122A58150, Ariane\",\"N77373A5671, Dorothy\",\"N66982A28486, Mallie\",\"N39725A9114, Kyler\",\"N49089A62079, Joe\",\"N20690A60874, Idella\",\"N47465A40211, Beulah\",\"N78350A28668, Bella\",\"N31554A37735, Marina\",\"N43130A74391, Lulu\",\"N50355A27508, Rocio\",\"N64A51605, Maribel\",\"N4604A64621, Jaleel\",\"N47603A27792, Gaetano\",\"N41485A80510, Tyrique\",\"N92404A40655, Ervin\",\"N46362A24268, Lilliana\",\"N70481A68224, Rod\",\"N61081A47726, Rusty\",\"N54448A6410, Heber\",\"N10823A77777, Misty\",\"N25573A82261, Leonardo\",\"N50821A31040, Layla\",\"N28467A41092, Joyce\",\"N78632A65669, Pascale\",\"N3669A787, Alexandrine\",\"N27080A68106, Etha\",\"N91618A72455, Krystel\",\"N39317A94467, Dortha\",\"N19704A39071, Jaycee\",\"N20554A94422, Gayle\",\"N54808A41521, Tanya\",\"N52937A56189, Keira\",\"N82504A19331, Marlene\",\"N5017A25225, Gino\",\"N25692A79780, Madaline\",\"N35037A96878, Ivah\",\"N1495A52988, Arch\",\"N11971A88491, Rasheed\",\"N79865A83737, Luigi\",\"N34260A35365, Golden\",\"N33152A29034, Floyd\",\"N89311A20040, Aurelie\",\"N20405A85909, Kody\",\"N20687A77631, Jamil\",\"N40773A71686, Evangeline\",\"N89894A96184, Khalil\",\"N55712A34956, Fannie\",\"N95911A53564, Onie\",\"N62884A30019, Coralie\",\"N85589A23963, Buford\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Required Examinee: \"N56875A52479, Maida\"  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Examinee list: [\"N56875A52479, Maida\",\"N22698A57836, Lyric\",\"N21583A37906, Thomas\",\"N87812A39950, Eileen\",\"N34A75940, Maybell\",\"N34A75940, Maybell\",\"N73144A57321, Kendrick\",\"N22048A67169, Rubie\",\"N81349A79485, Beryl\",\"N53081A92090, Mikel\",\"N10528A5113, Adah\",\"N82099A81455, Rey\",\"N79161A69379, Elwyn\",\"N55740A96908, Richard\",\"N85336A19189, Bennie\",\"N94014A58207, Duane\",\"N60163A44900, Eloisa\",\"N70999A62109, Rosalyn\",\"N60163A44900, Eloisa\",\"N55691A17503, Rebecca\",\"N70999A62109, Rosalyn\",\"N55691A17503, Rebecca\",\"N4424A98778, Milo\",\"N86242A87644, Laurel\",\"N60504A8432, Lizzie\",\"N99351A15350, Jody\",\"N94611A35506, Frances\",\"N73890A76186, Ansley\",\"N53563A11515, Quentin\",\"N89487A25427, Madison\",\"N55989A88056, King\",\"N92383A41711, Milo\",\"N70776A20084, Ray\",\"N18651A5937, Reuben\",\"N26011A11166, Aletha\",\"N15496A60942, Ryleigh\",\"N68635A91458, Coleman\",\"N25128A5214, Sid\",\"N34624A12535, Genoveva\",\"N82712A1302, Einar\",\"N57943A45141, Bernice\",\"N28038A36065, Estella\",\"N34341A38950, Thomas\",\"N53876A78178, Mariah\",\"N60544A74214, Ralph\",\"N38544A21733, Lilla\",\"N76366A19726, Ola\",\"N35232A57025, Diamond\",\"N82001A23959, Flossie\",\"N60933A8080, Broderick\",\"N52588A71892, Christophe\",\"N92761A68203, Jada\",\"N85210A93385, Penelope\",\"N51274A99298, Esther\",\"N24762A23178, Jana\",\"N54758A16309, Wyman\",\"N1094A78253, Henriette\",\"N34511A84462, Deshawn\",\"N17118A76114, Imogene\",\"N3998A79039, Buster\",\"N12384A1403, Julio\",\"N99106A40888, Burdette\",\"N96962A51933, Nikita\",\"N80920A21207, Assunta\",\"N23821A63526, Kathlyn\",\"N24701A84918, Ian\",\"N36766A4174, Holden\",\"N11805A37622, Ulices\",\"N52394A86410, Veda\",\"N20940A66173, Dayana\",\"N37437A2987, Patience\",\"N2284A51296, Jan\",\"N32576A47526, Deondre\",\"N12983A35300, Cortney\",\"N47122A58150, Ariane\",\"N77373A5671, Dorothy\",\"N66982A28486, Mallie\",\"N39725A9114, Kyler\",\"N49089A62079, Joe\",\"N20690A60874, Idella\",\"N47465A40211, Beulah\",\"N78350A28668, Bella\",\"N31554A37735, Marina\",\"N43130A74391, Lulu\",\"N50355A27508, Rocio\",\"N64A51605, Maribel\",\"N4604A64621, Jaleel\",\"N47603A27792, Gaetano\",\"N41485A80510, Tyrique\",\"N92404A40655, Ervin\",\"N46362A24268, Lilliana\",\"N70481A68224, Rod\",\"N61081A47726, Rusty\",\"N54448A6410, Heber\",\"N10823A77777, Misty\",\"N25573A82261, Leonardo\",\"N50821A31040, Layla\",\"N28467A41092, Joyce\",\"N78632A65669, Pascale\",\"N3669A787, Alexandrine\",\"N27080A68106, Etha\",\"N91618A72455, Krystel\",\"N39317A94467, Dortha\",\"N19704A39071, Jaycee\",\"N20554A94422, Gayle\",\"N54808A41521, Tanya\",\"N52937A56189, Keira\",\"N82504A19331, Marlene\",\"N5017A25225, Gino\",\"N25692A79780, Madaline\",\"N35037A96878, Ivah\",\"N1495A52988, Arch\",\"N11971A88491, Rasheed\",\"N79865A83737, Luigi\",\"N34260A35365, Golden\",\"N33152A29034, Floyd\",\"N89311A20040, Aurelie\",\"N20405A85909, Kody\",\"N20687A77631, Jamil\",\"N40773A71686, Evangeline\",\"N89894A96184, Khalil\",\"N55712A34956, Fannie\",\"N95911A53564, Onie\",\"N62884A30019, Coralie\",\"N85589A23963, Buford\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Computed Value: [\"ExamineeThis is the student or individual being assessed.\",\"Test SetA collection of tests grouped together for assessment.\",\"Days Left to EditYou can edit this assignment for up to 90 days after testing begins.\",\"StatusStatus shows where the test is in the process. Statuses include Not Started, In Progress, Complete, Closed, Expired, and Offline.\",\"ActionsActions available are based on your role and test status.\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Computed Value: [\"ExamineeThis is the student or individual being assessed.\",\"Test SetA collection of tests grouped together for assessment.\",\"Earliest Date of TestingFirst day of testing, marking the beginning of the 90-day window to complete all tests.\",\"StatusStatus shows where the test is in the process. Statuses include Not Started, In Progress, Complete, Closed, Expired, and Offline.\",\"ActionsActions available are based on your role and test status.\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Actual Statuses:: [\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\",\"Closed\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Expected Allowed Statuses:: [\"Closed\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: \"All visible statuses are within the expected list.\"  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Examinee list: [\"N56875A52479, Maida\",\"N22698A57836, Lyric\",\"N21583A37906, Thomas\",\"N87812A39950, Eileen\",\"N34A75940, Maybell\",\"N34A75940, Maybell\",\"N73144A57321, Kendrick\",\"N22048A67169, Rubie\",\"N81349A79485, Beryl\",\"N53081A92090, Mikel\",\"N10528A5113, Adah\",\"N82099A81455, Rey\",\"N79161A69379, Elwyn\",\"N55740A96908, Richard\",\"N85336A19189, Bennie\",\"N94014A58207, Duane\",\"N60163A44900, Eloisa\",\"N70999A62109, Rosalyn\",\"N60163A44900, Eloisa\",\"N55691A17503, Rebecca\",\"N70999A62109, Rosalyn\",\"N55691A17503, Rebecca\",\"N4424A98778, Milo\",\"N86242A87644, Laurel\",\"N60504A8432, Lizzie\",\"N99351A15350, Jody\",\"N94611A35506, Frances\",\"N73890A76186, Ansley\",\"N53563A11515, Quentin\",\"N89487A25427, Madison\",\"N55989A88056, King\",\"N92383A41711, Milo\",\"N70776A20084, Ray\",\"N18651A5937, Reuben\",\"N26011A11166, Aletha\",\"N15496A60942, Ryleigh\",\"N68635A91458, Coleman\",\"N25128A5214, Sid\",\"N34624A12535, Genoveva\",\"N82712A1302, Einar\",\"N57943A45141, Bernice\",\"N28038A36065, Estella\",\"N34341A38950, Thomas\",\"N53876A78178, Mariah\",\"N60544A74214, Ralph\",\"N38544A21733, Lilla\",\"N76366A19726, Ola\",\"N35232A57025, Diamond\",\"N82001A23959, Flossie\",\"N60933A8080, Broderick\",\"N52588A71892, Christophe\",\"N92761A68203, Jada\",\"N85210A93385, Penelope\",\"N51274A99298, Esther\",\"N24762A23178, Jana\",\"N54758A16309, Wyman\",\"N1094A78253, Henriette\",\"N34511A84462, Deshawn\",\"N17118A76114, Imogene\",\"N3998A79039, Buster\",\"N12384A1403, Julio\",\"N99106A40888, Burdette\",\"N96962A51933, Nikita\",\"N80920A21207, Assunta\",\"N23821A63526, Kathlyn\",\"N24701A84918, Ian\",\"N36766A4174, Holden\",\"N11805A37622, Ulices\",\"N52394A86410, Veda\",\"N20940A66173, Dayana\",\"N37437A2987, Patience\",\"N2284A51296, Jan\",\"N32576A47526, Deondre\",\"N12983A35300, Cortney\",\"N47122A58150, Ariane\",\"N77373A5671, Dorothy\",\"N66982A28486, Mallie\",\"N39725A9114, Kyler\",\"N49089A62079, Joe\",\"N20690A60874, Idella\",\"N47465A40211, Beulah\",\"N78350A28668, Bella\",\"N31554A37735, Marina\",\"N43130A74391, Lulu\",\"N50355A27508, Rocio\",\"N64A51605, Maribel\",\"N4604A64621, Jaleel\",\"N47603A27792, Gaetano\",\"N41485A80510, Tyrique\",\"N92404A40655, Ervin\",\"N46362A24268, Lilliana\",\"N70481A68224, Rod\",\"N61081A47726, Rusty\",\"N54448A6410, Heber\",\"N10823A77777, Misty\",\"N25573A82261, Leonardo\",\"N50821A31040, Layla\",\"N28467A41092, Joyce\",\"N78632A65669, Pascale\",\"N3669A787, Alexandrine\",\"N27080A68106, Etha\",\"N91618A72455, Krystel\",\"N39317A94467, Dortha\",\"N19704A39071, Jaycee\",\"N20554A94422, Gayle\",\"N54808A41521, Tanya\",\"N52937A56189, Keira\",\"N82504A19331, Marlene\",\"N5017A25225, Gino\",\"N25692A79780, Madaline\",\"N35037A96878, Ivah\",\"N1495A52988, Arch\",\"N11971A88491, Rasheed\",\"N79865A83737, Luigi\",\"N34260A35365, Golden\",\"N33152A29034, Floyd\",\"N89311A20040, Aurelie\",\"N20405A85909, Kody\",\"N20687A77631, Jamil\",\"N40773A71686, Evangeline\",\"N89894A96184, Khalil\",\"N55712A34956, Fannie\",\"N95911A53564, Onie\",\"N62884A30019, Coralie\",\"N85589A23963, Buford\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Required Examinee: \"N22698A57836, Lyric\"  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Examinee list: [\"N21583A37906, Thomas\",\"N56875A52479, Maida\",\"N21583A37906, Thomas\",\"N87812A39950, Eileen\",\"N34A75940, Maybell\",\"N34A75940, Maybell\",\"N73144A57321, Kendrick\",\"N22048A67169, Rubie\",\"N81349A79485, Beryl\",\"N53081A92090, Mikel\",\"N10528A5113, Adah\",\"N82099A81455, Rey\",\"N79161A69379, Elwyn\",\"N55740A96908, Richard\",\"N85336A19189, Bennie\",\"N94014A58207, Duane\",\"N60163A44900, Eloisa\",\"N70999A62109, Rosalyn\",\"N60163A44900, Eloisa\",\"N55691A17503, Rebecca\",\"N70999A62109, Rosalyn\",\"N55691A17503, Rebecca\",\"N4424A98778, Milo\",\"N86242A87644, Laurel\",\"N60504A8432, Lizzie\",\"N99351A15350, Jody\",\"N94611A35506, Frances\",\"N73890A76186, Ansley\",\"N53563A11515, Quentin\",\"N89487A25427, Madison\",\"N55989A88056, King\",\"N92383A41711, Milo\",\"N70776A20084, Ray\",\"N18651A5937, Reuben\",\"N26011A11166, Aletha\",\"N15496A60942, Ryleigh\",\"N68635A91458, Coleman\",\"N25128A5214, Sid\",\"N34624A12535, Genoveva\",\"N82712A1302, Einar\",\"N57943A45141, Bernice\",\"N28038A36065, Estella\",\"N34341A38950, Thomas\",\"N53876A78178, Mariah\",\"N60544A74214, Ralph\",\"N38544A21733, Lilla\",\"N76366A19726, Ola\",\"N35232A57025, Diamond\",\"N82001A23959, Flossie\",\"N60933A8080, Broderick\",\"N52588A71892, Christophe\",\"N92761A68203, Jada\",\"N85210A93385, Penelope\",\"N51274A99298, Esther\",\"N24762A23178, Jana\",\"N54758A16309, Wyman\",\"N1094A78253, Henriette\",\"N34511A84462, Deshawn\",\"N17118A76114, Imogene\",\"N3998A79039, Buster\",\"N12384A1403, Julio\",\"N99106A40888, Burdette\",\"N96962A51933, Nikita\",\"N80920A21207, Assunta\",\"N23821A63526, Kathlyn\",\"N24701A84918, Ian\",\"N36766A4174, Holden\",\"N11805A37622, Ulices\",\"N52394A86410, Veda\",\"N20940A66173, Dayana\",\"N37437A2987, Patience\",\"N2284A51296, Jan\",\"N32576A47526, Deondre\",\"N12983A35300, Cortney\",\"N47122A58150, Ariane\",\"N77373A5671, Dorothy\",\"N66982A28486, Mallie\",\"N39725A9114, Kyler\",\"N49089A62079, Joe\",\"N20690A60874, Idella\",\"N47465A40211, Beulah\",\"N78350A28668, Bella\",\"N31554A37735, Marina\",\"N43130A74391, Lulu\",\"N50355A27508, Rocio\",\"N64A51605, Maribel\",\"N4604A64621, Jaleel\",\"N47603A27792, Gaetano\",\"N41485A80510, Tyrique\",\"N92404A40655, Ervin\",\"N46362A24268, Lilliana\",\"N70481A68224, Rod\",\"N61081A47726, Rusty\",\"N54448A6410, Heber\",\"N10823A77777, Misty\",\"N25573A82261, Leonardo\",\"N50821A31040, Layla\",\"N28467A41092, Joyce\",\"N78632A65669, Pascale\",\"N3669A787, Alexandrine\",\"N27080A68106, Etha\",\"N91618A72455, Krystel\",\"N39317A94467, Dortha\",\"N19704A39071, Jaycee\",\"N20554A94422, Gayle\",\"N54808A41521, Tanya\",\"N52937A56189, Keira\",\"N82504A19331, Marlene\",\"N5017A25225, Gino\",\"N25692A79780, Madaline\",\"N35037A96878, Ivah\",\"N1495A52988, Arch\",\"N11971A88491, Rasheed\",\"N79865A83737, Luigi\",\"N34260A35365, Golden\",\"N33152A29034, Floyd\",\"N89311A20040, Aurelie\",\"N20405A85909, Kody\",\"N20687A77631, Jamil\",\"N40773A71686, Evangeline\",\"N89894A96184, Khalil\",\"N55712A34956, Fannie\",\"N95911A53564, Onie\",\"N62884A30019, Coralie\",\"N85589A23963, Buford\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Examinee list: [\"N56875A52479, Maida\",\"N21583A37906, Thomas\",\"N87812A39950, Eileen\",\"N34A75940, Maybell\",\"N34A75940, Maybell\",\"N73144A57321, Kendrick\",\"N22048A67169, Rubie\",\"N81349A79485, Beryl\",\"N53081A92090, Mikel\",\"N10528A5113, Adah\",\"N82099A81455, Rey\",\"N79161A69379, Elwyn\",\"N55740A96908, Richard\",\"N85336A19189, Bennie\",\"N94014A58207, Duane\",\"N60163A44900, Eloisa\",\"N70999A62109, Rosalyn\",\"N60163A44900, Eloisa\",\"N55691A17503, Rebecca\",\"N70999A62109, Rosalyn\",\"N55691A17503, Rebecca\",\"N4424A98778, Milo\",\"N86242A87644, Laurel\",\"N60504A8432, Lizzie\",\"N99351A15350, Jody\",\"N94611A35506, Frances\",\"N73890A76186, Ansley\",\"N53563A11515, Quentin\",\"N89487A25427, Madison\",\"N55989A88056, King\",\"N92383A41711, Milo\",\"N70776A20084, Ray\",\"N18651A5937, Reuben\",\"N26011A11166, Aletha\",\"N15496A60942, Ryleigh\",\"N68635A91458, Coleman\",\"N25128A5214, Sid\",\"N34624A12535, Genoveva\",\"N82712A1302, Einar\",\"N57943A45141, Bernice\",\"N28038A36065, Estella\",\"N34341A38950, Thomas\",\"N53876A78178, Mariah\",\"N60544A74214, Ralph\",\"N38544A21733, Lilla\",\"N76366A19726, Ola\",\"N35232A57025, Diamond\",\"N82001A23959, Flossie\",\"N60933A8080, Broderick\",\"N52588A71892, Christophe\",\"N92761A68203, Jada\",\"N85210A93385, Penelope\",\"N51274A99298, Esther\",\"N24762A23178, Jana\",\"N54758A16309, Wyman\",\"N1094A78253, Henriette\",\"N34511A84462, Deshawn\",\"N17118A76114, Imogene\",\"N3998A79039, Buster\",\"N12384A1403, Julio\",\"N99106A40888, Burdette\",\"N96962A51933, Nikita\",\"N80920A21207, Assunta\",\"N23821A63526, Kathlyn\",\"N24701A84918, Ian\",\"N36766A4174, Holden\",\"N11805A37622, Ulices\",\"N52394A86410, Veda\",\"N20940A66173, Dayana\",\"N37437A2987, Patience\",\"N2284A51296, Jan\",\"N32576A47526, Deondre\",\"N12983A35300, Cortney\",\"N47122A58150, Ariane\",\"N77373A5671, Dorothy\",\"N66982A28486, Mallie\",\"N39725A9114, Kyler\",\"N49089A62079, Joe\",\"N20690A60874, Idella\",\"N47465A40211, Beulah\",\"N78350A28668, Bella\",\"N31554A37735, Marina\",\"N43130A74391, Lulu\",\"N50355A27508, Rocio\",\"N64A51605, Maribel\",\"N4604A64621, Jaleel\",\"N47603A27792, Gaetano\",\"N41485A80510, Tyrique\",\"N92404A40655, Ervin\",\"N46362A24268, Lilliana\",\"N70481A68224, Rod\",\"N61081A47726, Rusty\",\"N54448A6410, Heber\",\"N10823A77777, Misty\",\"N25573A82261, Leonardo\",\"N50821A31040, Layla\",\"N28467A41092, Joyce\",\"N78632A65669, Pascale\",\"N3669A787, Alexandrine\",\"N27080A68106, Etha\",\"N91618A72455, Krystel\",\"N39317A94467, Dortha\",\"N19704A39071, Jaycee\",\"N20554A94422, Gayle\",\"N54808A41521, Tanya\",\"N52937A56189, Keira\",\"N82504A19331, Marlene\",\"N5017A25225, Gino\",\"N25692A79780, Madaline\",\"N35037A96878, Ivah\",\"N1495A52988, Arch\",\"N11971A88491, Rasheed\",\"N79865A83737, Luigi\",\"N34260A35365, Golden\",\"N33152A29034, Floyd\",\"N89311A20040, Aurelie\",\"N20405A85909, Kody\",\"N20687A77631, Jamil\",\"N40773A71686, Evangeline\",\"N89894A96184, Khalil\",\"N55712A34956, Fannie\",\"N95911A53564, Onie\",\"N62884A30019, Coralie\",\"N85589A23963, Buford\",\"N12183A32258, Bettie\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Actual Statuses:: [\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\",\"Not Started\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Expected Allowed Statuses:: [\"Not Started\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: \"All visible statuses are within the expected list.\"  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Actual Statuses:: [\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\",\"In Progress\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Expected Allowed Statuses:: [\"In Progress\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: \"All visible statuses are within the expected list.\"  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Actual Statuses:: [\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\",\"Expired\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Expected Allowed Statuses:: [\"Expired\"]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: \"All visible statuses are within the expected list.\"  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Fetched details for 3 rows:: [{\"examinee\":\"N56875A52479, Maida\",\"testSet\":\"Dyslexia Test Set (+1 more)Picture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\",\"daysLeftToEdit\":\"—\",\"status\":\"●Not Started\"},{\"examinee\":\"N21583A37906, Thomas\",\"testSet\":\"Broad AchievementLetter-Word IdentificationCalculationSpellingMath Facts FluencyPassage ComprehensionApplied ProblemsSentence Reading FluencyWritten Language SamplesSentence Writing Fluency\",\"daysLeftToEdit\":\"—\",\"status\":\"●Not Started\"},{\"examinee\":\"N87812A39950, Eileen\",\"testSet\":\"General Intellectual Ability (GIA)Oral Vocabulary–SynonymsOral Vocabulary–AntonymsMatricesSpatial RelationsStory RecallSemantic Word RetrievalVerbal AttentionNumber-Pattern MatchingVerbal Analogies\",\"daysLeftToEdit\":\"—\",\"status\":\"●Not Started\"}]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Fetched details for 3 rows:: [{\"examinee\":\"N56875A52479, Maida\",\"testSet\":\"Dyslexia Test Set (+1 more)Picture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\",\"daysLeftToEdit\":\"—\",\"status\":\"●Not Started\"},{\"examinee\":\"N21583A37906, Thomas\",\"testSet\":\"Broad AchievementLetter-Word IdentificationCalculationSpellingMath Facts FluencyPassage ComprehensionApplied ProblemsSentence Reading FluencyWritten Language SamplesSentence Writing Fluency\",\"daysLeftToEdit\":\"—\",\"status\":\"●Not Started\"},{\"examinee\":\"N87812A39950, Eileen\",\"testSet\":\"General Intellectual Ability (GIA)Oral Vocabulary–SynonymsOral Vocabulary–AntonymsMatricesSpatial RelationsStory RecallSemantic Word RetrievalVerbal AttentionNumber-Pattern MatchingVerbal Analogies\",\"daysLeftToEdit\":\"—\",\"status\":\"●Not Started\"}]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Fetched details for 3 rows:: [{\"examinee\":\"N56875A52479, Maida\",\"testSet\":\"Dyslexia Test Set (+1 more)Picture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\",\"daysLeftToEdit\":\"—\",\"status\":\"●Not Started\"},{\"examinee\":\"N21583A37906, Thomas\",\"testSet\":\"Broad AchievementLetter-Word IdentificationCalculationSpellingMath Facts FluencyPassage ComprehensionApplied ProblemsSentence Reading FluencyWritten Language SamplesSentence Writing Fluency\",\"daysLeftToEdit\":\"—\",\"status\":\"●Not Started\"},{\"examinee\":\"N87812A39950, Eileen\",\"testSet\":\"General Intellectual Ability (GIA)Oral Vocabulary–SynonymsOral Vocabulary–AntonymsMatricesSpatial RelationsStory RecallSemantic Word RetrievalVerbal AttentionNumber-Pattern MatchingVerbal Analogies\",\"daysLeftToEdit\":\"—\",\"status\":\"●Not Started\"}]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Fetched details for 1 rows:: [{\"examinee\":\"N21583A37906, Thomas\",\"testSet\":\"Broad AchievementLetter-Word IdentificationCalculationSpellingMath Facts FluencyPassage ComprehensionApplied ProblemsSentence Reading FluencyWritten Language SamplesSentence Writing Fluency\",\"daysLeftToEdit\":\"—\",\"status\":\"●Not Started\"}]  ]\n\n"
+                    },
+                    {
+                      "text": "[>->->: Fetched details for 1 rows:: [{\"examinee\":\"N56875A52479, Maida\",\"testSet\":\"Dyslexia Test Set (+1 more)Picture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\",\"daysLeftToEdit\":\"—\",\"status\":\"●Not Started\"}]  ]\n\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "Login failed for S02PwAut25Ex_02: page.waitForLoadState: Timeout 60000ms exceeded.\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:46:23\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m46\u001b[39m,\n      column: \u001b[33m23\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m'Wait for load state \"networkidle\"'\u001b[39m,\n    apiName: \u001b[32m'page.waitForLoadState'\u001b[39m,\n    params: { info: \u001b[36m[Object]\u001b[39m },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@60'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@60'\u001b[39m,\n      _title: \u001b[32m'Wait for load state \"networkidle\"'\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1788353758223\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:46:23)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                    },
+                    {
+                      "text": "[S1:W1] Login attempt 1 failed for S02PwAut25Ex_02\n"
+                    }
+                  ],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Verify newly added test assignment is displayed at the top of the table and also Verify \"Create New Test Assignment\" from Dashboard",
+                      "duration": 218478
+                    },
+                    {
+                      "title": "Verify add test to test set functionality and The table is ordered by the mostly recently “interacted” test assignment at the top",
+                      "duration": 25304
+                    },
+                    {
+                      "title": "Verify all the 5 Columns are visible",
+                      "duration": 10
+                    },
+                    {
+                      "title": "Verify Closed columns are correctly displayed",
+                      "duration": 9930
+                    },
+                    {
+                      "title": "Verify edited test assignment 'Examinee name and test set' is displayed at the top of the table",
+                      "duration": 37558
+                    },
+                    {
+                      "title": "Verify DELETE test assignment functionality \"Not Started\"",
+                      "duration": 19130
+                    },
+                    {
+                      "title": "Verify search test assignment functionality",
+                      "duration": 36276
+                    },
+                    {
+                      "title": "Verify Edit Assignments Icon can only be seen for \"In Progress, Not Started, Submitted\" and not for \"Closed, Expired\" ",
+                      "duration": 47258
+                    },
+                    {
+                      "title": "Verify \"Not Started\" Edit Test Assignment functionality\"",
+                      "duration": 12461
+                    },
+                    {
+                      "title": "AH:- Verify select Examinee name and cancel it should not update the test assignment status- \"Not Started\"",
+                      "duration": 46427
+                    },
+                    {
+                      "title": "AH:- Verify select Test Set and cancel it should not update the test assignment status- \"Not Started\"",
+                      "duration": 51682
+                    }
+                  ],
+                  "startTime": "2026-09-02T12:54:19.474Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927, 28823_29687",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                        "line": 21,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "flaky"
+            }
+          ],
+          "id": "8fc2817f86ae5d361ccf-dbe5ee4a50b6cd1a6bea",
+          "file": "functional/dashboard/testAssignments_A.spec.ts",
+          "line": 21,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-02T12:44:11.776Z",
+    "duration": 1252752.803,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 1
+  }
+}
