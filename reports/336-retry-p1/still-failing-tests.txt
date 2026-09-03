@@ -1,0 +1,113 @@
+Still failing after rerun pass 1 (main run #336) — 47 test(s)
+
+1. Ages 9 to 11 - 4 correct and 4 incorrect SSP3 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+2. All Examinees - Sample Items Rerouting Scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Backup_Rerouting.spec.ts
+3. Grade 1 - Rerouting End Test scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+4. All Examinees - Test Items When Timer Ran Out for First Item set Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+5. All Examinees - Samples Items A And B rerouting Flow Scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Backup_Rerouting.spec.ts
+6. Age 7 - Rerouting End Test scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+7. All Examinees - Test Items When Timer Ran Out for Last Item set Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+8. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Backup_Rerouting.spec.ts
+9. Grades 3 to 4 - Rerouting End Test scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+10. All Examinees - Answer both sample items Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+11. Ages 10 to Average Adult - Rerouting End Test scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+12. All Examinees - Sample A Correct And Sample B Incorrect Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+13. Above Average Adult - Rerouting End Test scenario for SSP6 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+14. All Examinees - Practice Exercise All incorrect and then 1 correct scenario Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+15. All Examinees - Practice Exercise All incorrect and then 3 correct scenario Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+16. All Examinees - Sample Items Rerouting Scenario Test Rerouting
+   ReroutingandLeftNav/NUMPAT_Rerouting.spec.ts
+17. Ages 4 to 6 - Sample Item End Test Scenario for SSP1 and Test Ends after Sample Item E Test UI
+   UIAndReports/CONFRM_Multi_Block.spec.ts
+18. All Examinees - Test Items When Timer Ran Out for First Item set Test UI
+   UIAndReports/NUMPAT_Single_Timer.spec.ts
+19. Grade 4 to Adult - Rerouting End Test scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/ANINUM_Rerouting.spec.ts
+20. Ages 4 to 5 - 1 correct 1 incorrect SSP1 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+21. Ages 4 to 6 - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/RDGREC_Rerouting.spec.ts
+22. Ages 4 to 5 - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+23. Preschool to Kindergarten - ORLSMP-Re-routing End Test scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+24. Ages 6 to 8 - All correct SSP2 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+25. Preschool to Kindergarten - First and Last item check Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+26. Grade 3 to Adult - ORLSMP-Re-routing End Test scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+27. Ages 9 to 11 - All correct SSP3 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+28. All Examinees - Timer Ran Out at Item Set 8 RPDPIC Test UI
+   UIAndReports/RPDPIC_Decile_Timer.spec.ts
+29. Age 8 to Adult - ORLSMP Sample Items Correct and then Incorrect Scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+30. Ages 9 to 11 - 4 lowest incorrect items SSP3 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+31. Ages 4 to 7 - Test Items All incorrect scenario Test UI
+   UIAndReports/RPDQNT_Decile_Timer.spec.ts
+32. Grades 2 to 4 - Flag Item with Notes and Review scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/RDGREC_Rerouting.spec.ts
+33. Age 15 to Adult - All correct SSP5 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+34. Ages 8 to Adult - Test Items When Timer Ran Out for Last Item set Test UI
+   UIAndReports/RPDQNT_Decile_Timer.spec.ts
+35. Ages 10 to 13 - Flag Item with Notes and Review scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/RDGREC_Rerouting.spec.ts
+36. Ages 4 to 5 - Answer only Sample Items SSP1 Test UI
+   UIAndReports/SENREP_Multi_BC4.spec.ts
+37. Grade 9 to Adult - Flag Item with Notes and Review scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/RDGREC_Rerouting.spec.ts
+38. Grade 1 - Answer only Sample Items SSP2 Test UI
+   UIAndReports/SENREP_Multi_BC4.spec.ts
+39. Grades 4 to 6 - Score Error Scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+40. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/RPDPIC_Timer_Rerouting.spec.ts
+41. All Examinees - Practice Exercise All incorrect scenario Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+42. Grades 7 to 9 - Score Error Scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+43. All Examinees - Test Items All correct scenario Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+44. Grade 10 to Adult - Score Error Scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+45. All Examinees - Test Items 5 Correct 5 Incorrect scenario Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+46. All Examinees - Review mode Verification scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Backup_Rerouting.spec.ts
+47. All Examinees - Test Items All incorrect scenario Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+
+Affected spec files (15):
+  ReroutingandLeftNav/ANINUM_Rerouting.spec.ts
+  ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+  ReroutingandLeftNav/LETPAT_Backup_Rerouting.spec.ts
+  ReroutingandLeftNav/NUMPAT_Rerouting.spec.ts
+  ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+  ReroutingandLeftNav/RDGREC_Rerouting.spec.ts
+  ReroutingandLeftNav/RPDPIC_Timer_Rerouting.spec.ts
+  ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+  UIAndReports/CONFRM_Multi_Block.spec.ts
+  UIAndReports/GIWHAT_Single_BC4.spec.ts
+  UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+  UIAndReports/NUMPAT_Single_Timer.spec.ts
+  UIAndReports/RPDPIC_Decile_Timer.spec.ts
+  UIAndReports/RPDQNT_Decile_Timer.spec.ts
+  UIAndReports/SENREP_Multi_BC4.spec.ts
