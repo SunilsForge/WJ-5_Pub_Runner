@@ -1,0 +1,418 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: test_dataExport/SWRTAC_Pub.spec.ts >> SWRTAC.W5PA Test Data Export Automation  >> For Ages 4 to 7 - All correct End Test Scenario For Block A And B Conduct test and validate report
+- Location: src/tests/test_dataExport/SWRTAC_Pub.spec.ts:16:9
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: '+ Add Response Style and Behavior Statements' })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 08PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "08PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - heading "REPORT CENTER" [level=1] [ref=e39]
+            - navigation [ref=e40]:
+              - tablist [ref=e41]:
+                - tab "Report Library" [selected] [ref=e42] [cursor=pointer]
+                - button "Zoom In" [ref=e43] [cursor=pointer]:
+                  - img "Zoom Page In Icon" [ref=e44]
+            - generic "Report Library" [ref=e53]:
+              - grid [ref=e54]:
+                - generic [ref=e55]:
+                  - generic "Report Name" [ref=e56]:
+                    - generic [ref=e58]: Report Name
+                  - generic "Status" [ref=e59]:
+                    - generic [ref=e61]: Status
+                  - generic "Date Created" [ref=e62]:
+                    - generic [ref=e64]: Date Created
+                  - generic "Actions" [ref=e65]:
+                    - generic [ref=e67]: Actions
+                - rowgroup [ref=e68]:
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N27057A91163 Status Completed Date Created 09/03/2026 12:52 AM Download/Print Delete View Data Export Format" [ref=e69]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N27057A91163" [ref=e71]: Test_DataExport_AutoFilter_Template_N27057A91163
+                    - gridcell "Status Completed" [ref=e73]: Completed
+                    - gridcell "Date Created 09/03/2026 12:52 AM" [ref=e75]: 09/03/2026 12:52 AM
+                    - generic [ref=e76]:
+                      - gridcell "Download/Print" [active] [ref=e78] [cursor=pointer]
+                      - gridcell "Delete" [ref=e80] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e81] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N62778A36812 Status Completed Date Created 09/03/2026 12:43 AM Download/Print Delete View Data Export Format" [ref=e83]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N62778A36812" [ref=e85]: Test_DataExport_AutoFilter_Template_N62778A36812
+                    - gridcell "Status Completed" [ref=e87]: Completed
+                    - gridcell "Date Created 09/03/2026 12:43 AM" [ref=e89]: 09/03/2026 12:43 AM
+                    - generic [ref=e90]:
+                      - gridcell "Download/Print" [ref=e92] [cursor=pointer]
+                      - gridcell "Delete" [ref=e94] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e95] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N68463A22263 Status Completed Date Created 09/03/2026 12:36 AM Download/Print Delete View Data Export Format" [ref=e97]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N68463A22263" [ref=e99]: Test_DataExport_AutoFilter_Template_N68463A22263
+                    - gridcell "Status Completed" [ref=e101]: Completed
+                    - gridcell "Date Created 09/03/2026 12:36 AM" [ref=e103]: 09/03/2026 12:36 AM
+                    - generic [ref=e104]:
+                      - gridcell "Download/Print" [ref=e106] [cursor=pointer]
+                      - gridcell "Delete" [ref=e108] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e109] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N13619A10545 Status Completed Date Created 08/30/2026 07:08 PM Download/Print Delete View Data Export Format" [ref=e111]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N13619A10545" [ref=e113]: Test_DataExport_AutoFilter_Template_N13619A10545
+                    - gridcell "Status Completed" [ref=e115]: Completed
+                    - gridcell "Date Created 08/30/2026 07:08 PM" [ref=e117]: 08/30/2026 07:08 PM
+                    - generic [ref=e118]:
+                      - gridcell "Download/Print" [ref=e120] [cursor=pointer]
+                      - gridcell "Delete" [ref=e122] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e123] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N13619A10545 Status Completed Date Created 08/30/2026 07:05 PM Download/Print Delete View Data Export Format" [ref=e125]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N13619A10545" [ref=e127]: Test_DataExport_AutoFilter_Template_N13619A10545
+                    - gridcell "Status Completed" [ref=e129]: Completed
+                    - gridcell "Date Created 08/30/2026 07:05 PM" [ref=e131]: 08/30/2026 07:05 PM
+                    - generic [ref=e132]:
+                      - gridcell "Download/Print" [ref=e134] [cursor=pointer]
+                      - gridcell "Delete" [ref=e136] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e137] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N13619A10545 Status Completed Date Created 08/30/2026 07:02 PM Download/Print Delete View Data Export Format" [ref=e139]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N13619A10545" [ref=e141]: Test_DataExport_AutoFilter_Template_N13619A10545
+                    - gridcell "Status Completed" [ref=e143]: Completed
+                    - gridcell "Date Created 08/30/2026 07:02 PM" [ref=e145]: 08/30/2026 07:02 PM
+                    - generic [ref=e146]:
+                      - gridcell "Download/Print" [ref=e148] [cursor=pointer]
+                      - gridcell "Delete" [ref=e150] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e151] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N63156A37881 Status Completed Date Created 08/30/2026 06:53 PM Download/Print Delete View Data Export Format" [ref=e153]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N63156A37881" [ref=e155]: Test_DataExport_AutoFilter_Template_N63156A37881
+                    - gridcell "Status Completed" [ref=e157]: Completed
+                    - gridcell "Date Created 08/30/2026 06:53 PM" [ref=e159]: 08/30/2026 06:53 PM
+                    - generic [ref=e160]:
+                      - gridcell "Download/Print" [ref=e162] [cursor=pointer]
+                      - gridcell "Delete" [ref=e164] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e165] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N63156A37881 Status Completed Date Created 08/30/2026 06:50 PM Download/Print Delete View Data Export Format" [ref=e167]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N63156A37881" [ref=e169]: Test_DataExport_AutoFilter_Template_N63156A37881
+                    - gridcell "Status Completed" [ref=e171]: Completed
+                    - gridcell "Date Created 08/30/2026 06:50 PM" [ref=e173]: 08/30/2026 06:50 PM
+                    - generic [ref=e174]:
+                      - gridcell "Download/Print" [ref=e176] [cursor=pointer]
+                      - gridcell "Delete" [ref=e178] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e179] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N63156A37881 Status Completed Date Created 08/30/2026 06:46 PM Download/Print Delete View Data Export Format" [ref=e181]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N63156A37881" [ref=e183]: Test_DataExport_AutoFilter_Template_N63156A37881
+                    - gridcell "Status Completed" [ref=e185]: Completed
+                    - gridcell "Date Created 08/30/2026 06:46 PM" [ref=e187]: 08/30/2026 06:46 PM
+                    - generic [ref=e188]:
+                      - gridcell "Download/Print" [ref=e190] [cursor=pointer]
+                      - gridcell "Delete" [ref=e192] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e193] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N10354A55579 Status Completed Date Created 08/23/2026 06:51 PM Download/Print Delete View Data Export Format" [ref=e195]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N10354A55579" [ref=e197]: Test_DataExport_AutoFilter_Template_N10354A55579
+                    - gridcell "Status Completed" [ref=e199]: Completed
+                    - gridcell "Date Created 08/23/2026 06:51 PM" [ref=e201]: 08/23/2026 06:51 PM
+                    - generic [ref=e202]:
+                      - gridcell "Download/Print" [ref=e204] [cursor=pointer]
+                      - gridcell "Delete" [ref=e206] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e207] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N20318A95540 Status Completed Date Created 08/16/2026 06:50 PM Download/Print Delete View Data Export Format" [ref=e209]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N20318A95540" [ref=e211]: Test_DataExport_AutoFilter_Template_N20318A95540
+                    - gridcell "Status Completed" [ref=e213]: Completed
+                    - gridcell "Date Created 08/16/2026 06:50 PM" [ref=e215]: 08/16/2026 06:50 PM
+                    - generic [ref=e216]:
+                      - gridcell "Download/Print" [ref=e218] [cursor=pointer]
+                      - gridcell "Delete" [ref=e220] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e221] [cursor=pointer]
+                  - row "Report Name Test_DataExport_AutoFilter_Template_N13921A85291 Status Completed Date Created 08/09/2026 06:57 PM Download/Print Delete View Data Export Format" [ref=e223]:
+                    - gridcell "Report Name Test_DataExport_AutoFilter_Template_N13921A85291" [ref=e225]: Test_DataExport_AutoFilter_Template_N13921A85291
+                    - gridcell "Status Completed" [ref=e227]: Completed
+                    - gridcell "Date Created 08/09/2026 06:57 PM" [ref=e229]: 08/09/2026 06:57 PM
+                    - generic [ref=e230]:
+                      - gridcell "Download/Print" [ref=e232] [cursor=pointer]
+                      - gridcell "Delete" [ref=e234] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e235] [cursor=pointer]
+      - contentinfo [ref=e237]:
+        - generic [ref=e238]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e239] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com/
+          - img "Riverside Insights Website" [ref=e240]
+        - generic [ref=e241]:
+          - link "Riverside Insights Facebook" [ref=e242] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e243]
+          - link "Riverside Insights Twitter" [ref=e244] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e245]
+          - link "Riverside Insights LinkedIn" [ref=e246] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e247]
+          - link "Riverside Insights Instagram" [ref=e248] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e249]
+        - generic [ref=e250]:
+          - button "Leave Feedback" [ref=e251] [cursor=pointer]
+          - generic [ref=e252]: "|"
+          - link "Terms of Use" [ref=e253] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e254]: "|"
+          - link "Privacy Policy" [ref=e255] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e256]: Footer region end
+```
+
+# Test source
+
+```ts
+  3920 |     await this.doneOrNextButton.click();
+  3921 |   }
+  3922 | 
+  3923 |   async completeTheTakenTestForWlookUpScoresForMAGCMPTest(typeOfTest: string): Promise<Map<string, string>> {
+  3924 |     const itemNumber: number = Number(await this.page.locator('.items-container div span').last().textContent());
+  3925 | 
+  3926 |     await this.page.waitForTimeout(1000);
+  3927 |     const itemDetails: string = (await this.itemDetails.textContent())!;
+  3928 |     await this.plainNextButtonOrEndButton.click();
+  3929 |     await this.listOfOptionsForMagnitudeComparison.nth(0).click();
+  3930 |     await this.plainNextButtonOrEndButton.click();
+  3931 |     if (typeOfTest.match(/Answer only one sample item/i)) {
+  3932 |       if (itemDetails.startsWith('Sample Item B, Trial 1')) {
+  3933 |       }
+  3934 |     } else if (typeOfTest.match(/Answer both sample items/i)) {
+  3935 |       await this.page.waitForTimeout(1000);
+  3936 |       await this.listOfOptionsForMagnitudeComparison.nth(0).click();
+  3937 |       await this.page.waitForTimeout(1000);
+  3938 |       await this.plainNextButtonOrEndButton.click();
+  3939 |       await this.page.waitForTimeout(1000);
+  3940 |       if (itemDetails.startsWith('Practice Exercise')) {
+  3941 |         await this.page.waitForTimeout(1000);
+  3942 |       }
+  3943 |     } else if (typeOfTest.match(/Discontinue scenario/i)) {
+  3944 |       await this.page.waitForTimeout(1000);
+  3945 |       await this.listOfOptionsForMagnitudeComparison.nth(0).click();
+  3946 |       await this.page.waitForTimeout(1000);
+  3947 |       await this.plainNextButtonOrEndButton.click();
+  3948 |       await this.startPracticeAndStartTimerButton.click();
+  3949 |       await this.examineeCursorButton.click();
+  3950 |       await this.listOfOptionsForMagnitudeComparison.nth(0).click();
+  3951 |       await this.listOfOptionsForMagnitudeComparison.nth(2).click();
+  3952 |       await this.listOfOptionsForMagnitudeComparison.nth(4).click();
+  3953 |       await this.listOfOptionsForMagnitudeComparison.nth(6).click();
+  3954 |       await this.listOfOptionsForMagnitudeComparison.nth(8).click();
+  3955 |       await this.listOfOptionsForMagnitudeComparison.nth(11).click();
+  3956 |       await this.doneOrNextButton.click();
+  3957 |       await this.doneOrNextButton.click();
+  3958 |       await this.page.waitForTimeout(3000);
+  3959 |     } else {
+  3960 |       await this.listOfOptionsForMagnitudeComparison.nth(0).click();
+  3961 |       await this.plainNextButtonOrEndButton.click();
+  3962 |       await this.startPracticeAndStartTimerButton.click();
+  3963 |       await this.examineeCursorButton.click();
+  3964 |       await this.listOfOptionsForMagnitudeComparison.nth(1).click();
+  3965 |       await this.listOfOptionsForMagnitudeComparison.nth(3).click();
+  3966 |       await this.listOfOptionsForMagnitudeComparison.nth(5).click();
+  3967 |       await this.listOfOptionsForMagnitudeComparison.nth(7).click();
+  3968 |       await this.listOfOptionsForMagnitudeComparison.nth(9).click();
+  3969 |       await this.listOfOptionsForMagnitudeComparison.nth(10).click();
+  3970 |       await this.doneOrNextButton.click();
+  3971 |       await this.page.waitForTimeout(500);
+  3972 |       await this.startTheTimerAndDisplayTheTestItemsButton.click();
+  3973 |       await this.page.waitForTimeout(500);
+  3974 |       await this.examineeCursorButton.click();
+  3975 | 
+  3976 |       if (typeOfTest.match(/All correct scenario/i)) {
+  3977 |         await this.verifyCharacterLimitOnItemLevelNotes();
+  3978 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('0', '2', '5', '6', '9', '11', '12', '14', '16', '19');
+  3979 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('0', '3', '4', '7', '8', '11', '13', '14', '17', '18');
+  3980 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('1', '2', '4', '7', '9', '10', '12', '14', '16', '19');
+  3981 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('0', '2', '5', '6', '9', '10', '12', '14', '17', '18');
+  3982 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('1', '3', '5', '6', '8', '11', '12', '15', '17', '18');
+  3983 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('0', '2', '5', '6', '9', '11', '12', '14', '16','19');
+  3984 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('1', '2', '4', '6', '9', '10', '12', '14', '17', '18');
+  3985 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('0', '2', '4', '7', '8', '11', '13', '14', '17', '19');
+  3986 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('0', '2', '5', '7', '9', '10', '13', '14', '17', '19');
+  3987 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('0', '2', '4', '6', '8', '11', '12', '14', '16', '19');
+  3988 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('0', '2', '5', '7', '8', '10', '13', '14', '16', '18');
+  3989 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('1', '2', '4', '6', '8', '11', '13', '15', '17', '18');
+  3990 |         await this.examineeCursorButton.click();
+  3991 |       } else if (typeOfTest.match(/All incorrect scenario/i)) {
+  3992 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('1', '3', '4', '7', '8', '10', '13', '15', '17', '18');
+  3993 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('1', '2', '5', '6', '9', '10', '12', '15', '16', '19');
+  3994 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('0', '3', '5', '6', '8', '11', '13', '15', '17', '18');
+  3995 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('1', '3', '4', '7', '8', '11', '13', '15', '16', '19');
+  3996 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('0', '2', '4', '7', '9', '10', '13', '14', '16', '19');
+  3997 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('1', '3', '4', '7', '8', '10', '13', '15', '17','18');
+  3998 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('0', '3', '5', '7', '8', '11', '13', '15', '16', '19');
+  3999 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('1', '3', '5', '6', '9', '10', '12', '15', '16', '18');
+  4000 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('1', '3', '4', '6', '8', '11', '12', '15', '16', '18');
+  4001 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('1', '3', '5', '7', '9', '10', '13', '15', '17', '18');
+  4002 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('1', '3', '4', '6', '9', '11', '12', '15', '17', '19');
+  4003 |         await this.verifyScoringAllTestItemsInEachPageWithOneTapForMagnitudeComparison('0', '3', '5', '7', '9', '10', '12', '14', '16', '19');
+  4004 |         await this.examineeCursorButton.click();
+  4005 |       } else {
+  4006 |         throw new Error(
+  4007 |           `The ${typeOfTest} didnt match with any of the conditions provided`,
+  4008 |         );
+  4009 |       }
+  4010 |     }
+  4011 | 
+  4012 |     if ((await this.nextAndEndTestButton.first().textContent()) === 'End Test') {
+  4013 |       await this.nextAndEndTestButton.first().click();
+  4014 |     }
+  4015 |     console.log(this.scoreMap);
+  4016 |     return this.scoreMap;
+  4017 |   }
+  4018 | 
+  4019 |   async endSessionRSB() {
+> 4020 |     await this.addTestObservationsNew.click();
+       |                                       ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  4021 |     await this.checkBoxNoneOfTheAbove.click();
+  4022 |     await this.endSessionButton.click();
+  4023 |     await this.reviewModeButton.click();
+  4024 |     await this.page.waitForTimeout(3000);
+  4025 |     // await this.page.waitForResponse(response => response.url().includes('GetItemResults') && response.status() === 200);
+  4026 |     await this.submitTestAssignmentButton.click();
+  4027 |   }
+  4028 | 
+  4029 |   async validateEndTestPopUpTextContent(
+  4030 |     AE: string,
+  4031 |     GE: string,
+  4032 |     ScoreCheckText: string,
+  4033 |     FlagsText: string,
+  4034 |     OutcomeMsg: string,
+  4035 |     rsb: string[],
+  4036 |     testStemForm: string,
+  4037 |     typeOfTest: string
+  4038 |   ) {
+  4039 |     const testNames: string[] = ['WRTSMP.W5PA'];
+  4040 |     const testNames1: string[] = ['SWRTFL.W5PA', 'MTHFLU.W5PA'];
+  4041 |     const testNames2: string[] = [
+  4042 |       'RPDPHO.W5PA',
+  4043 |       'LETPAT.W5PA',
+  4044 |       'RPDLET.W5PA',
+  4045 |       'RPDPIC.W5PA',
+  4046 |       'NUMPAT.W5PA',
+  4047 |       'SRDGFL.W5PA',
+  4048 |       'NUMPAT.W5PX',
+  4049 |       'MAGCMP.W5PA',
+  4050 |     ];
+  4051 |     await expect.soft(this.aeValue).toHaveText(AE);
+  4052 |     await expect.soft(this.geValue).toHaveText(GE);
+  4053 |     expect.soft(await this.endTestPopUpElements.nth(1).textContent()).toContain(ScoreCheckText);
+  4054 |     if (testNames.includes(testStemForm) && !typeOfTest.match(/Block A Discontinue Scenario WRTSMP/i)) {
+  4055 |       expect.soft(await this.endTestPopUpElements.nth(10).textContent()).toContain(FlagsText);
+  4056 |       expect.soft(await this.endTestPopUpElements.nth(15).textContent()).toContain(OutcomeMsg);
+  4057 |       await this.endTestPopUpElements.nth(17).click();
+  4058 |     } else if (testNames2.includes(testStemForm)) {
+  4059 |       expect.soft(await this.endTestPopUpElements.nth(9).textContent()).toContain(FlagsText);
+  4060 |       expect.soft(await this.endTestPopUpElements.nth(14).textContent()).toContain(OutcomeMsg);
+  4061 |       await this.endTestPopUpElements.nth(18).click();
+  4062 |     } else if (testStemForm === 'SEMRET.W5PA' && typeOfTest.match(/125 correct scenario|All incorrect scenario/i)) {
+  4063 |       expect.soft(await this.endTestPopUpElements.nth(9).textContent()).toContain(FlagsText);
+  4064 |       expect.soft(await this.endTestPopUpElements.nth(14).textContent()).toContain(OutcomeMsg);
+  4065 |       await this.endTestPopUpElements.nth(16).click();
+  4066 |     } else if (
+  4067 |       (testStemForm === 'WRDGFL.W5PA' &&
+  4068 |         typeOfTest.match(
+  4069 |           /Sample Item EndTest Flow when RS is (0|1)|Practice Exercise All Incorrect|Test Items (All Correct|All Incorrect|6 Correct)/i
+  4070 |         )) ||
+  4071 |       testStemForm === 'MAGCMP.W5PA'
+  4072 |     ) {
+  4073 |       expect.soft(await this.endTestPopUpElements.nth(9).textContent()).toContain(FlagsText);
+  4074 |       expect.soft(await this.endTestPopUpElements.nth(14).textContent()).toContain(OutcomeMsg);
+  4075 |       await this.endTestPopUpElements.nth(17).click();
+  4076 |     } else if (testNames1.includes(testStemForm)) {
+  4077 |       expect.soft(await this.endTestPopUpElements.nth(11).textContent()).toContain(FlagsText);
+  4078 |       expect.soft(await this.endTestPopUpElements.nth(16).textContent()).toContain(OutcomeMsg);
+  4079 |       await this.endTestPopUpElements.nth(19).click();
+  4080 |     } else {
+  4081 |       expect.soft(await this.endTestPopUpElements.nth(8).textContent()).toContain(FlagsText);
+  4082 |       expect.soft(await this.endTestPopUpElements.nth(13).textContent()).toContain(OutcomeMsg);
+  4083 |       if (testNames1.includes(testStemForm)) {
+  4084 |         await this.endTestPopUpElements.nth(17).click();
+  4085 |       } else if (testNames2.includes(testStemForm)) {
+  4086 |         await this.endTestPopUpElements.nth(18).click();
+  4087 |       } else if (
+  4088 |         (testStemForm === 'STYCMP.W5PA' && typeOfTest.match(/Sample Item EndTest Flow when RS is (0|1)/i)) ||
+  4089 |         (testStemForm === 'WRDATK.W5PA' && typeOfTest === 'Block A EndTest Flow when RS is 2') ||
+  4090 |         (testStemForm === 'LWIDNT.W5PA' &&
+  4091 |           typeOfTest.match(/Block A EndTest Flow when RS is 0|Block AB EndTest flow scenario when RS is 9/)) ||
+  4092 |         (testStemForm === 'MPRBID.W5PA' && typeOfTest.match(/Sample Items AB discontinue Scenario for SSP (1|2|3)/i))
+  4093 |       ) {
+  4094 |         await this.endTestPopUpElements.nth(16).click();
+  4095 |       } else if (
+  4096 |         (testStemForm === 'WRDGFL.W5PA' &&
+  4097 |           typeOfTest.match(
+  4098 |             /Sample Item EndTest Flow when RS is (0|1)|Practice Exercise All Incorrect|Test Items (All Correct|All Incorrect|6 Correct)/i
+  4099 |           )) ||
+  4100 |         testStemForm === 'MAGCMP.W5PA'
+  4101 |       ) {
+  4102 |         await this.endTestPopUpElements.nth(17).click();
+  4103 |       } else {
+  4104 |         await this.endTestPopUpElements.nth(15).click();
+  4105 |       }
+  4106 |     }
+  4107 |     const rsbelements = await this.page.locator("//button[@class='rsi-checkbox']");
+  4108 |     const count = await rsbelements.count();
+  4109 |     // Array to store text contents
+  4110 |     const responseStyleBehaviours: string[] = [];
+  4111 |     // Iterate over each element and fetch text content
+  4112 |     for (let i = 0; i < count; i++) {
+  4113 |       const element = rsbelements.nth(i);
+  4114 |       const textContent = await element.textContent();
+  4115 |       responseStyleBehaviours.push(textContent?.trim() || '');
+  4116 |     }
+  4117 |     console.log(responseStyleBehaviours);
+  4118 |     rsb.forEach((rsbehaviourText, index) => {
+  4119 |       expect(responseStyleBehaviours[index]).toContain(rsbehaviourText);
+  4120 |     });
+```
