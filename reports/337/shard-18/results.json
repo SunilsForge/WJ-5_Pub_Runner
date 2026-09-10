@@ -1,0 +1,1439 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+        "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/766c3247263b9a7411c412d5db84252f17d68e7b",
+            "commitHash": "766c3247263b9a7411c412d5db84252f17d68e7b",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/34469262839"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 18,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/dashboard/testAssignments_A.spec.ts",
+      "file": "functional/dashboard/testAssignments_A.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Validate Dashboard Test Assignments functionality",
+          "ok": false,
+          "tags": [
+            "DashboardTestAssignments_A",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24006_24067_24927, 28823_29687",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                    "line": 21,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 454965,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1996:74)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1675:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1632:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 74,
+                      "line": 1996
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:1996\n\n\u001b[0m \u001b[90m 1994 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"button[class='select-box']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 1995 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"[placeholder='Search...']\"\u001b[39m)\u001b[33m.\u001b[39mfill(targetTestSet)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1996 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[class='item-text single-select']\"\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1997 |\u001b[39m   }\n \u001b[90m 1998 |\u001b[39m\n \u001b[90m 1999 |\u001b[39m   \u001b[36masync\u001b[39m clickOnCancelButtonInEditTestAssignmentPopUp() {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 74,
+                        "line": 1996
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n\n\n   at ../page/dashboardPage.ts:1996\n\n  1994 |     await dialog.locator(\"button[class='select-box']\").click();\n  1995 |     await dialog.locator(\"[placeholder='Search...']\").fill(targetTestSet);\n> 1996 |     await dialog.locator(\"div[class='item-text single-select']\").first().click();\n       |                                                                          ^\n  1997 |   }\n  1998 |\n  1999 |   async clickOnCancelButtonInEditTestAssignmentPopUp() {\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1996:74)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1675:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1632:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 08PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S18:W0] Login successful for 08PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 08PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S18:W0] Login successful for 08PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N65416A27807\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N65416A27807 FirstName=Eulalia LastName =N65416A27807 Age = 09/10/2021\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N65416A27807\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N54817A56639\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N54817A56639 FirstName=Thalia LastName =N54817A56639 Age = 09/10/2020\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N54817A56639\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N13261A67103\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N13261A67103 FirstName=Elijah LastName =N13261A67103 Age = 09/10/2019\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N13261A67103\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N49916A2575\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N49916A2575 FirstName=Amparo LastName =N49916A2575 Age = 09/10/2018\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N49916A2575\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Verify newly added test assignment is displayed at the top of the table and also Verify \"Create New Test Assignment\" from Dashboard",
+                      "duration": 232242
+                    },
+                    {
+                      "title": "Verify add test to test set functionality and The table is ordered by the mostly recently “interacted” test assignment at the top",
+                      "duration": 27519
+                    },
+                    {
+                      "title": "Verify all the 5 Columns are visible",
+                      "duration": 41
+                    },
+                    {
+                      "title": "Verify Closed columns are correctly displayed",
+                      "duration": 10164
+                    },
+                    {
+                      "title": "Verify edited test assignment 'Examinee name and test set' is displayed at the top of the table",
+                      "duration": 85831,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1996:74)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1675:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1632:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 74,
+                          "line": 1996
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1996\n\n\u001b[0m \u001b[90m 1994 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"button[class='select-box']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 1995 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"[placeholder='Search...']\"\u001b[39m)\u001b[33m.\u001b[39mfill(targetTestSet)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1996 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[class='item-text single-select']\"\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1997 |\u001b[39m   }\n \u001b[90m 1998 |\u001b[39m\n \u001b[90m 1999 |\u001b[39m   \u001b[36masync\u001b[39m clickOnCancelButtonInEditTestAssignmentPopUp() {\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-09-10T11:05:18.021Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927, 28823_29687",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                        "line": 21,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/test-failed-2.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 74,
+                    "line": 1996
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 435969,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1996:74)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1675:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1632:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 74,
+                      "line": 1996
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:1996\n\n\u001b[0m \u001b[90m 1994 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"button[class='select-box']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 1995 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"[placeholder='Search...']\"\u001b[39m)\u001b[33m.\u001b[39mfill(targetTestSet)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1996 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[class='item-text single-select']\"\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1997 |\u001b[39m   }\n \u001b[90m 1998 |\u001b[39m\n \u001b[90m 1999 |\u001b[39m   \u001b[36masync\u001b[39m clickOnCancelButtonInEditTestAssignmentPopUp() {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 74,
+                        "line": 1996
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n\n\n   at ../page/dashboardPage.ts:1996\n\n  1994 |     await dialog.locator(\"button[class='select-box']\").click();\n  1995 |     await dialog.locator(\"[placeholder='Search...']\").fill(targetTestSet);\n> 1996 |     await dialog.locator(\"div[class='item-text single-select']\").first().click();\n       |                                                                          ^\n  1997 |   }\n  1998 |\n  1999 |   async clickOnCancelButtonInEditTestAssignmentPopUp() {\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1996:74)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1675:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1632:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 08PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S18:W1] Login successful for 08PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 08PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S18:W1] Login successful for 08PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N38455A39969\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N38455A39969 FirstName=Gladys LastName =N38455A39969 Age = 09/10/2021\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N38455A39969\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N81289A623\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N81289A623 FirstName=Braxton LastName =N81289A623 Age = 09/10/2020\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N81289A623\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N91924A26070\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N91924A26070 FirstName=Quinten LastName =N91924A26070 Age = 09/10/2019\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N91924A26070\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N84202A95623\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N84202A95623 FirstName=Valentina LastName =N84202A95623 Age = 09/10/2018\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N84202A95623\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Verify newly added test assignment is displayed at the top of the table and also Verify \"Create New Test Assignment\" from Dashboard",
+                      "duration": 236840
+                    },
+                    {
+                      "title": "Verify add test to test set functionality and The table is ordered by the mostly recently “interacted” test assignment at the top",
+                      "duration": 25235
+                    },
+                    {
+                      "title": "Verify all the 5 Columns are visible",
+                      "duration": 10
+                    },
+                    {
+                      "title": "Verify Closed columns are correctly displayed",
+                      "duration": 9882
+                    },
+                    {
+                      "title": "Verify edited test assignment 'Examinee name and test set' is displayed at the top of the table",
+                      "duration": 85534,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('div[class=\\'item-text single-select\\']').first()\u001b[22m\n\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1996:74)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1675:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1632:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 74,
+                          "line": 1996
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1996\n\n\u001b[0m \u001b[90m 1994 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"button[class='select-box']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 1995 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"[placeholder='Search...']\"\u001b[39m)\u001b[33m.\u001b[39mfill(targetTestSet)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1996 |\u001b[39m     \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[class='item-text single-select']\"\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1997 |\u001b[39m   }\n \u001b[90m 1998 |\u001b[39m\n \u001b[90m 1999 |\u001b[39m   \u001b[36masync\u001b[39m clickOnCancelButtonInEditTestAssignmentPopUp() {\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-09-10T11:13:06.845Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927, 28823_29687",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                        "line": 21,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome-retry1/test-failed-2.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 74,
+                    "line": 1996
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8fc2817f86ae5d361ccf-dbe5ee4a50b6cd1a6bea",
+          "file": "functional/dashboard/testAssignments_A.spec.ts",
+          "line": 21,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+      "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verify review mode for my 'In Progress' test assignments",
+          "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Administer a selective test and leave the test in diff statuses as a part of 'in progress' test assignment validation",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "ReviewMode",
+                "InProgressTestAssignments",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 2400000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1648830,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W2] Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N73003A7342\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N73003A7342 FirstName=Madisyn LastName =N73003A7342 Age = 09/10/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N73003A7342\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Analysis-Synthesis\n"
+                        },
+                        {
+                          "text": "Block Rotation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22599|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "Letter-Word Identification\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22088|Age 6|22089\n"
+                        },
+                        {
+                          "text": "Math Facts Fluency\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14914|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Number-Pattern Matching\n"
+                        },
+                        {
+                          "text": "taskStem value: NUMPAT.W5PA\n"
+                        },
+                        {
+                          "text": "Number Series\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13015|Ages 4 to 5|\n"
+                        },
+                        {
+                          "text": "Rapid Letter Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16289|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Number Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 23232|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Phoneme Naming\n"
+                        },
+                        {
+                          "text": "Story Recall\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13853|Ages 4 to 6|13854\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22639|Ages 5 to 7|22640,22641\n"
+                        },
+                        {
+                          "text": "Semantic Word Retrieval\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verify statuses of the tests from left nav > tests'",
+                          "duration": 8534
+                        }
+                      ],
+                      "startTime": "2026-09-10T11:20:24.705Z",
+                      "annotations": [],
+                      "attachments": []
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1615049,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W3] Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N5918A10151\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N5918A10151 FirstName=Kyra LastName =N5918A10151 Age = 09/10/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N5918A10151\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Analysis-Synthesis\n"
+                        },
+                        {
+                          "text": "Block Rotation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22599|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Calculation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22399|Ages 4 to 6|22400\n"
+                        },
+                        {
+                          "text": "Letter-Word Identification\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22088|Age 6|22089\n"
+                        },
+                        {
+                          "text": "Math Facts Fluency\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14914|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Number-Pattern Matching\n"
+                        },
+                        {
+                          "text": "taskStem value: NUMPAT.W5PA\n"
+                        },
+                        {
+                          "text": "Number Series\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13015|Ages 4 to 5|\n"
+                        },
+                        {
+                          "text": "Rapid Letter Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16289|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Number Naming\n"
+                        },
+                        {
+                          "text": "selected ssp is = 23232|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Rapid Phoneme Naming\n"
+                        },
+                        {
+                          "text": "Story Recall\n"
+                        },
+                        {
+                          "text": "selected ssp is = 13853|Ages 4 to 6|13854\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22639|Ages 5 to 7|22640,22641\n"
+                        },
+                        {
+                          "text": "Semantic Word Retrieval\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Verify statuses of the tests from left nav > tests'",
+                          "duration": 8407
+                        }
+                      ],
+                      "startTime": "2026-09-10T11:52:28.986Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c839c71415aac1f8fd0-98bf6782be6d7d46548e",
+              "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "Validate different scenarios for 'In Progress' test assignment in review mode",
+              "ok": true,
+              "tags": [
+                "ReviewMode",
+                "InProgressTestAssignments",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [
+                    {
+                      "type": "Original user story, Automation user story",
+                      "description": "27994, (29273, 29290)",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                        "line": 180,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 265991,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:215:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:205:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                          "column": 48,
+                          "line": 358
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 356 |\u001b[39m   \u001b[36mconst\u001b[39m invalidatedTests \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetInvalidatedTests()\u001b[33m;\u001b[39m\n \u001b[90m 357 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Invalidated Tests:'\u001b[39m\u001b[33m,\u001b[39m invalidatedTests)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 358 |\u001b[39m   expect\u001b[33m.\u001b[39msoft(invalidatedTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m.\u001b[39mtoEqual(savedData\u001b[33m.\u001b[39minvalidateTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 359 |\u001b[39m\n \u001b[90m 360 |\u001b[39m   \u001b[36mconst\u001b[39m flaggedItems \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetFlaggedTestsWithItemData()\u001b[33m;\u001b[39m\n \u001b[90m 361 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Flagged Items:'\u001b[39m\u001b[33m,\u001b[39m flaggedItems)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "column": 48,
+                            "line": 358
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  356 |   const invalidatedTests = await wj5ExaminerDashPage.getInvalidatedTests();\n  357 |   RawValueLogger.log('Actual Invalidated Tests:', invalidatedTests);\n> 358 |   expect.soft(invalidatedTests.slice().sort()).toEqual(savedData.invalidateTests.slice().sort());\n      |                                                ^\n  359 |\n  360 |   const flaggedItems = await wj5ExaminerDashPage.getFlaggedTestsWithItemData();\n  361 |   RawValueLogger.log('Actual Flagged Items:', flaggedItems);\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:215:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:205:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 52,
+                            "line": 1219
+                          },
+                          "message": "Error: Flagged tests verification failed:\n- Found unexpected test sections: Number-Pattern Matching\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n   at ../page/dashboardPage.ts:1219\n\n  1217 |         .concat(mismatches)\n  1218 |         .join('\\n- ');\n> 1219 |       expect.soft(mismatches.length, errorMessage).toBe(0);\n       |                                                    ^\n  1220 |     }\n  1221 |\n  1222 |     RawValueLogger.log('Flagged Tests Verification:',\n    at DashBoardPage.verifyFlaggedTestsWithItemData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1219:52)\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:362:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:215:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:205:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "column": 48,
+                            "line": 358
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  356 |   const invalidatedTests = await wj5ExaminerDashPage.getInvalidatedTests();\n  357 |   RawValueLogger.log('Actual Invalidated Tests:', invalidatedTests);\n> 358 |   expect.soft(invalidatedTests.slice().sort()).toEqual(savedData.invalidateTests.slice().sort());\n      |                                                ^\n  359 |\n  360 |   const flaggedItems = await wj5ExaminerDashPage.getFlaggedTestsWithItemData();\n  361 |   RawValueLogger.log('Actual Flagged Items:', flaggedItems);\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:228:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:219:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 52,
+                            "line": 1219
+                          },
+                          "message": "Error: Flagged tests verification failed:\n- Found unexpected test sections: Number-Pattern Matching\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n   at ../page/dashboardPage.ts:1219\n\n  1217 |         .concat(mismatches)\n  1218 |         .join('\\n- ');\n> 1219 |       expect.soft(mismatches.length, errorMessage).toBe(0);\n       |                                                    ^\n  1220 |     }\n  1221 |\n  1222 |     RawValueLogger.log('Flagged Tests Verification:',\n    at DashBoardPage.verifyFlaggedTestsWithItemData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1219:52)\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:362:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:228:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:219:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "column": 48,
+                            "line": 358
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  356 |   const invalidatedTests = await wj5ExaminerDashPage.getInvalidatedTests();\n  357 |   RawValueLogger.log('Actual Invalidated Tests:', invalidatedTests);\n> 358 |   expect.soft(invalidatedTests.slice().sort()).toEqual(savedData.invalidateTests.slice().sort());\n      |                                                ^\n  359 |\n  360 |   const flaggedItems = await wj5ExaminerDashPage.getFlaggedTestsWithItemData();\n  361 |   RawValueLogger.log('Actual Flagged Items:', flaggedItems);\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:243:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:231:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 52,
+                            "line": 1219
+                          },
+                          "message": "Error: Flagged tests verification failed:\n- Found unexpected test sections: Number-Pattern Matching\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n   at ../page/dashboardPage.ts:1219\n\n  1217 |         .concat(mismatches)\n  1218 |         .join('\\n- ');\n> 1219 |       expect.soft(mismatches.length, errorMessage).toBe(0);\n       |                                                    ^\n  1220 |     }\n  1221 |\n  1222 |     RawValueLogger.log('Flagged Tests Verification:',\n    at DashBoardPage.verifyFlaggedTestsWithItemData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1219:52)\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:362:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:243:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:231:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "column": 48,
+                            "line": 358
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  356 |   const invalidatedTests = await wj5ExaminerDashPage.getInvalidatedTests();\n  357 |   RawValueLogger.log('Actual Invalidated Tests:', invalidatedTests);\n> 358 |   expect.soft(invalidatedTests.slice().sort()).toEqual(savedData.invalidateTests.slice().sort());\n      |                                                ^\n  359 |\n  360 |   const flaggedItems = await wj5ExaminerDashPage.getFlaggedTestsWithItemData();\n  361 |   RawValueLogger.log('Actual Flagged Items:', flaggedItems);\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:251:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:246:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 52,
+                            "line": 1219
+                          },
+                          "message": "Error: Flagged tests verification failed:\n- Found unexpected test sections: Number-Pattern Matching\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n   at ../page/dashboardPage.ts:1219\n\n  1217 |         .concat(mismatches)\n  1218 |         .join('\\n- ');\n> 1219 |       expect.soft(mismatches.length, errorMessage).toBe(0);\n       |                                                    ^\n  1220 |     }\n  1221 |\n  1222 |     RawValueLogger.log('Flagged Tests Verification:',\n    at DashBoardPage.verifyFlaggedTestsWithItemData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1219:52)\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:362:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:251:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:246:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "column": 48,
+                            "line": 358
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  356 |   const invalidatedTests = await wj5ExaminerDashPage.getInvalidatedTests();\n  357 |   RawValueLogger.log('Actual Invalidated Tests:', invalidatedTests);\n> 358 |   expect.soft(invalidatedTests.slice().sort()).toEqual(savedData.invalidateTests.slice().sort());\n      |                                                ^\n  359 |\n  360 |   const flaggedItems = await wj5ExaminerDashPage.getFlaggedTestsWithItemData();\n  361 |   RawValueLogger.log('Actual Flagged Items:', flaggedItems);\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:261:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:246:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 52,
+                            "line": 1219
+                          },
+                          "message": "Error: Flagged tests verification failed:\n- Found unexpected test sections: Number-Pattern Matching\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n   at ../page/dashboardPage.ts:1219\n\n  1217 |         .concat(mismatches)\n  1218 |         .join('\\n- ');\n> 1219 |       expect.soft(mismatches.length, errorMessage).toBe(0);\n       |                                                    ^\n  1220 |     }\n  1221 |\n  1222 |     RawValueLogger.log('Flagged Tests Verification:',\n    at DashBoardPage.verifyFlaggedTestsWithItemData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1219:52)\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:362:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:261:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:246:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "column": 48,
+                            "line": 358
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  356 |   const invalidatedTests = await wj5ExaminerDashPage.getInvalidatedTests();\n  357 |   RawValueLogger.log('Actual Invalidated Tests:', invalidatedTests);\n> 358 |   expect.soft(invalidatedTests.slice().sort()).toEqual(savedData.invalidateTests.slice().sort());\n      |                                                ^\n  359 |\n  360 |   const flaggedItems = await wj5ExaminerDashPage.getFlaggedTestsWithItemData();\n  361 |   RawValueLogger.log('Actual Flagged Items:', flaggedItems);\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:272:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:264:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 52,
+                            "line": 1219
+                          },
+                          "message": "Error: Flagged tests verification failed:\n- Found unexpected test sections: Number-Pattern Matching\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n   at ../page/dashboardPage.ts:1219\n\n  1217 |         .concat(mismatches)\n  1218 |         .join('\\n- ');\n> 1219 |       expect.soft(mismatches.length, errorMessage).toBe(0);\n       |                                                    ^\n  1220 |     }\n  1221 |\n  1222 |     RawValueLogger.log('Flagged Tests Verification:',\n    at DashBoardPage.verifyFlaggedTestsWithItemData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1219:52)\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:362:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:272:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:264:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "column": 48,
+                            "line": 358
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  356 |   const invalidatedTests = await wj5ExaminerDashPage.getInvalidatedTests();\n  357 |   RawValueLogger.log('Actual Invalidated Tests:', invalidatedTests);\n> 358 |   expect.soft(invalidatedTests.slice().sort()).toEqual(savedData.invalidateTests.slice().sort());\n      |                                                ^\n  359 |\n  360 |   const flaggedItems = await wj5ExaminerDashPage.getFlaggedTestsWithItemData();\n  361 |   RawValueLogger.log('Actual Flagged Items:', flaggedItems);\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:280:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:275:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 52,
+                            "line": 1219
+                          },
+                          "message": "Error: Flagged tests verification failed:\n- Found unexpected test sections: Number-Pattern Matching\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n   at ../page/dashboardPage.ts:1219\n\n  1217 |         .concat(mismatches)\n  1218 |         .join('\\n- ');\n> 1219 |       expect.soft(mismatches.length, errorMessage).toBe(0);\n       |                                                    ^\n  1220 |     }\n  1221 |\n  1222 |     RawValueLogger.log('Flagged Tests Verification:',\n    at DashBoardPage.verifyFlaggedTestsWithItemData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1219:52)\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:362:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:280:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:275:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "column": 48,
+                            "line": 358
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  356 |   const invalidatedTests = await wj5ExaminerDashPage.getInvalidatedTests();\n  357 |   RawValueLogger.log('Actual Invalidated Tests:', invalidatedTests);\n> 358 |   expect.soft(invalidatedTests.slice().sort()).toEqual(savedData.invalidateTests.slice().sort());\n      |                                                ^\n  359 |\n  360 |   const flaggedItems = await wj5ExaminerDashPage.getFlaggedTestsWithItemData();\n  361 |   RawValueLogger.log('Actual Flagged Items:', flaggedItems);\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:289:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:283:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 52,
+                            "line": 1219
+                          },
+                          "message": "Error: Flagged tests verification failed:\n- Found unexpected test sections: Number-Pattern Matching\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n   at ../page/dashboardPage.ts:1219\n\n  1217 |         .concat(mismatches)\n  1218 |         .join('\\n- ');\n> 1219 |       expect.soft(mismatches.length, errorMessage).toBe(0);\n       |                                                    ^\n  1220 |     }\n  1221 |\n  1222 |     RawValueLogger.log('Flagged Tests Verification:',\n    at DashBoardPage.verifyFlaggedTestsWithItemData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1219:52)\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:362:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:289:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:283:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "column": 48,
+                            "line": 358
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  356 |   const invalidatedTests = await wj5ExaminerDashPage.getInvalidatedTests();\n  357 |   RawValueLogger.log('Actual Invalidated Tests:', invalidatedTests);\n> 358 |   expect.soft(invalidatedTests.slice().sort()).toEqual(savedData.invalidateTests.slice().sort());\n      |                                                ^\n  359 |\n  360 |   const flaggedItems = await wj5ExaminerDashPage.getFlaggedTestsWithItemData();\n  361 |   RawValueLogger.log('Actual Flagged Items:', flaggedItems);\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:296:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:283:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 52,
+                            "line": 1219
+                          },
+                          "message": "Error: Flagged tests verification failed:\n- Found unexpected test sections: Number-Pattern Matching\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n   at ../page/dashboardPage.ts:1219\n\n  1217 |         .concat(mismatches)\n  1218 |         .join('\\n- ');\n> 1219 |       expect.soft(mismatches.length, errorMessage).toBe(0);\n       |                                                    ^\n  1220 |     }\n  1221 |\n  1222 |     RawValueLogger.log('Flagged Tests Verification:',\n    at DashBoardPage.verifyFlaggedTestsWithItemData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1219:52)\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:362:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:296:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:283:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "column": 48,
+                            "line": 358
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  356 |   const invalidatedTests = await wj5ExaminerDashPage.getInvalidatedTests();\n  357 |   RawValueLogger.log('Actual Invalidated Tests:', invalidatedTests);\n> 358 |   expect.soft(invalidatedTests.slice().sort()).toEqual(savedData.invalidateTests.slice().sort());\n      |                                                ^\n  359 |\n  360 |   const flaggedItems = await wj5ExaminerDashPage.getFlaggedTestsWithItemData();\n  361 |   RawValueLogger.log('Actual Flagged Items:', flaggedItems);\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:331:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:299:7"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 52,
+                            "line": 1219
+                          },
+                          "message": "Error: Flagged tests verification failed:\n- Found unexpected test sections: Number-Pattern Matching\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n   at ../page/dashboardPage.ts:1219\n\n  1217 |         .concat(mismatches)\n  1218 |         .join('\\n- ');\n> 1219 |       expect.soft(mismatches.length, errorMessage).toBe(0);\n       |                                                    ^\n  1220 |     }\n  1221 |\n  1222 |     RawValueLogger.log('Flagged Tests Verification:',\n    at DashBoardPage.verifyFlaggedTestsWithItemData (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1219:52)\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:362:29)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:331:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:299:7"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W2] Login successful for 08PwAut25Ex_01\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verify statuses for test administered at left nav > tests",
+                          "duration": 15388
+                        },
+                        {
+                          "title": "Verify 'Score Later', 'Needs Attention', 'Invalidated' and 'Flagged' in review mode Administration Summary",
+                          "duration": 20384,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:215:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:205:7",
+                            "location": {
+                              "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                              "column": 48,
+                              "line": 358
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 356 |\u001b[39m   \u001b[36mconst\u001b[39m invalidatedTests \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetInvalidatedTests()\u001b[33m;\u001b[39m\n \u001b[90m 357 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Invalidated Tests:'\u001b[39m\u001b[33m,\u001b[39m invalidatedTests)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 358 |\u001b[39m   expect\u001b[33m.\u001b[39msoft(invalidatedTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m.\u001b[39mtoEqual(savedData\u001b[33m.\u001b[39minvalidateTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 359 |\u001b[39m\n \u001b[90m 360 |\u001b[39m   \u001b[36mconst\u001b[39m flaggedItems \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetFlaggedTestsWithItemData()\u001b[33m;\u001b[39m\n \u001b[90m 361 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Flagged Items:'\u001b[39m\u001b[33m,\u001b[39m flaggedItems)\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when clicked on blue hyperlink",
+                          "duration": 11542,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:228:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:219:7",
+                            "location": {
+                              "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                              "column": 48,
+                              "line": 358
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 356 |\u001b[39m   \u001b[36mconst\u001b[39m invalidatedTests \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetInvalidatedTests()\u001b[33m;\u001b[39m\n \u001b[90m 357 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Invalidated Tests:'\u001b[39m\u001b[33m,\u001b[39m invalidatedTests)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 358 |\u001b[39m   expect\u001b[33m.\u001b[39msoft(invalidatedTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m.\u001b[39mtoEqual(savedData\u001b[33m.\u001b[39minvalidateTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 359 |\u001b[39m\n \u001b[90m 360 |\u001b[39m   \u001b[36mconst\u001b[39m flaggedItems \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetFlaggedTestsWithItemData()\u001b[33m;\u001b[39m\n \u001b[90m 361 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Flagged Items:'\u001b[39m\u001b[33m,\u001b[39m flaggedItems)\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when selected test from Left Nav>Tests",
+                          "duration": 13894,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:243:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:231:7",
+                            "location": {
+                              "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                              "column": 48,
+                              "line": 358
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 356 |\u001b[39m   \u001b[36mconst\u001b[39m invalidatedTests \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetInvalidatedTests()\u001b[33m;\u001b[39m\n \u001b[90m 357 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Invalidated Tests:'\u001b[39m\u001b[33m,\u001b[39m invalidatedTests)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 358 |\u001b[39m   expect\u001b[33m.\u001b[39msoft(invalidatedTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m.\u001b[39mtoEqual(savedData\u001b[33m.\u001b[39minvalidateTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 359 |\u001b[39m\n \u001b[90m 360 |\u001b[39m   \u001b[36mconst\u001b[39m flaggedItems \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetFlaggedTestsWithItemData()\u001b[33m;\u001b[39m\n \u001b[90m 361 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Flagged Items:'\u001b[39m\u001b[33m,\u001b[39m flaggedItems)\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from Administration Summary",
+                          "duration": 22605,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:251:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:246:7",
+                            "location": {
+                              "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                              "column": 48,
+                              "line": 358
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 356 |\u001b[39m   \u001b[36mconst\u001b[39m invalidatedTests \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetInvalidatedTests()\u001b[33m;\u001b[39m\n \u001b[90m 357 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Invalidated Tests:'\u001b[39m\u001b[33m,\u001b[39m invalidatedTests)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 358 |\u001b[39m   expect\u001b[33m.\u001b[39msoft(invalidatedTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m.\u001b[39mtoEqual(savedData\u001b[33m.\u001b[39minvalidateTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 359 |\u001b[39m\n \u001b[90m 360 |\u001b[39m   \u001b[36mconst\u001b[39m flaggedItems \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetFlaggedTestsWithItemData()\u001b[33m;\u001b[39m\n \u001b[90m 361 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Flagged Items:'\u001b[39m\u001b[33m,\u001b[39m flaggedItems)\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from left nav > tests",
+                          "duration": 11275,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:272:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:264:7",
+                            "location": {
+                              "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                              "column": 48,
+                              "line": 358
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 356 |\u001b[39m   \u001b[36mconst\u001b[39m invalidatedTests \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetInvalidatedTests()\u001b[33m;\u001b[39m\n \u001b[90m 357 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Invalidated Tests:'\u001b[39m\u001b[33m,\u001b[39m invalidatedTests)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 358 |\u001b[39m   expect\u001b[33m.\u001b[39msoft(invalidatedTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m.\u001b[39mtoEqual(savedData\u001b[33m.\u001b[39minvalidateTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 359 |\u001b[39m\n \u001b[90m 360 |\u001b[39m   \u001b[36mconst\u001b[39m flaggedItems \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetFlaggedTestsWithItemData()\u001b[33m;\u001b[39m\n \u001b[90m 361 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Flagged Items:'\u001b[39m\u001b[33m,\u001b[39m flaggedItems)\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from Administration Summary",
+                          "duration": 10072,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:280:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:275:7",
+                            "location": {
+                              "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                              "column": 48,
+                              "line": 358
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 356 |\u001b[39m   \u001b[36mconst\u001b[39m invalidatedTests \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetInvalidatedTests()\u001b[33m;\u001b[39m\n \u001b[90m 357 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Invalidated Tests:'\u001b[39m\u001b[33m,\u001b[39m invalidatedTests)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 358 |\u001b[39m   expect\u001b[33m.\u001b[39msoft(invalidatedTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m.\u001b[39mtoEqual(savedData\u001b[33m.\u001b[39minvalidateTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 359 |\u001b[39m\n \u001b[90m 360 |\u001b[39m   \u001b[36mconst\u001b[39m flaggedItems \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetFlaggedTestsWithItemData()\u001b[33m;\u001b[39m\n \u001b[90m 361 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Flagged Items:'\u001b[39m\u001b[33m,\u001b[39m flaggedItems)\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from left nav > tests",
+                          "duration": 22457,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:289:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:283:7",
+                            "location": {
+                              "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                              "column": 48,
+                              "line": 358
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 356 |\u001b[39m   \u001b[36mconst\u001b[39m invalidatedTests \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetInvalidatedTests()\u001b[33m;\u001b[39m\n \u001b[90m 357 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Invalidated Tests:'\u001b[39m\u001b[33m,\u001b[39m invalidatedTests)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 358 |\u001b[39m   expect\u001b[33m.\u001b[39msoft(invalidatedTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m.\u001b[39mtoEqual(savedData\u001b[33m.\u001b[39minvalidateTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 359 |\u001b[39m\n \u001b[90m 360 |\u001b[39m   \u001b[36mconst\u001b[39m flaggedItems \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetFlaggedTestsWithItemData()\u001b[33m;\u001b[39m\n \u001b[90m 361 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Flagged Items:'\u001b[39m\u001b[33m,\u001b[39m flaggedItems)\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        },
+                        {
+                          "title": "Validate 'Score error (Need Attention)' functionality from Administration Summary",
+                          "duration": 89873,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Number-Pattern Matching\",\u001b[39m\n\u001b[2m    \"Rapid Letter Naming\",\u001b[22m\n\u001b[2m    \"Rapid Number Naming\",\u001b[22m\n\u001b[2m    \"Rapid Phoneme Naming\",\u001b[22m\n\u001b[2m    \"Semantic Word Retrieval\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at verifyAllTestStatusesFromAdministrationSummary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:358:48)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:331:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:299:7",
+                            "location": {
+                              "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                              "column": 48,
+                              "line": 358
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 356 |\u001b[39m   \u001b[36mconst\u001b[39m invalidatedTests \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetInvalidatedTests()\u001b[33m;\u001b[39m\n \u001b[90m 357 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Invalidated Tests:'\u001b[39m\u001b[33m,\u001b[39m invalidatedTests)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 358 |\u001b[39m   expect\u001b[33m.\u001b[39msoft(invalidatedTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m.\u001b[39mtoEqual(savedData\u001b[33m.\u001b[39minvalidateTests\u001b[33m.\u001b[39mslice()\u001b[33m.\u001b[39msort())\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 359 |\u001b[39m\n \u001b[90m 360 |\u001b[39m   \u001b[36mconst\u001b[39m flaggedItems \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m wj5ExaminerDashPage\u001b[33m.\u001b[39mgetFlaggedTestsWithItemData()\u001b[33m;\u001b[39m\n \u001b[90m 361 |\u001b[39m   \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m'Actual Flagged Items:'\u001b[39m\u001b[33m,\u001b[39m flaggedItems)\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-09-10T11:47:54.153Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "27994, (29273, 29290)",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "line": 180,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-092d1-t-assignment-in-review-mode-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-092d1-t-assignment-in-review-mode-chrome/error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-092d1-t-assignment-in-review-mode-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-092d1-t-assignment-in-review-mode-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                        "column": 48,
+                        "line": 358
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 253856,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W3] Login successful for 08PwAut25Ex_01\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Verify statuses for test administered at left nav > tests",
+                          "duration": 15274
+                        },
+                        {
+                          "title": "Verify 'Score Later', 'Needs Attention', 'Invalidated' and 'Flagged' in review mode Administration Summary",
+                          "duration": 19624
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when clicked on blue hyperlink",
+                          "duration": 10812
+                        },
+                        {
+                          "title": "Perfom some actions on 'Flagged Items' and verify the expected results when selected test from Left Nav>Tests",
+                          "duration": 13283
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from Administration Summary",
+                          "duration": 21596
+                        },
+                        {
+                          "title": "Validate 'Score Later' functionality from left nav > tests",
+                          "duration": 10776
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from Administration Summary",
+                          "duration": 9611
+                        },
+                        {
+                          "title": "Validate 'Invalidated Tests' functionality from left nav > tests",
+                          "duration": 21449
+                        },
+                        {
+                          "title": "Validate 'Score error (Need Attention)' functionality from Administration Summary",
+                          "duration": 87967
+                        }
+                      ],
+                      "startTime": "2026-09-10T12:19:24.571Z",
+                      "annotations": [
+                        {
+                          "type": "Original user story, Automation user story",
+                          "description": "27994, (29273, 29290)",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "line": 180,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "2c839c71415aac1f8fd0-836fc9345793af6c3fb1",
+              "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+              "line": 180,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-10T11:05:02.584Z",
+    "duration": 4715976.95,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 1
+  }
+}
