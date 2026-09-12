@@ -76,7 +76,10 @@ const localLink = hasLocal
 // "Pass N of M · " prefix when this is part of a multi-pass chain (else blank).
 const passN = process.env.PASS_NUMBER || "";
 const passMax = process.env.RERUN_PASSES || "";
-const passStr = passMax && passMax !== "1" ? `Pass ${esc(passN)} of ${esc(passMax)} &middot; ` : "";
+// Flag the final slow-mo pass so a slower/greener pass isn't mistaken for a normal one.
+const slowMo = parseInt(process.env.SLOW_MODE_DELAY_IN_MS || "0", 10);
+const slowStr = slowMo > 0 ? `slow-mo ${slowMo}ms &middot; ` : "";
+const passStr = passMax && passMax !== "1" ? `Pass ${esc(passN)} of ${esc(passMax)} &middot; ${slowStr}` : slowStr;
 
 const tpl = fs.readFileSync(path.join(__dirname, "..", "templates", "rerun-report-template.html"), "utf8");
 const html = tpl

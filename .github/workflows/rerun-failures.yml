@@ -80,6 +80,11 @@ on:
         required: false
         default: "1"
         type: string
+      final_pass_slowmo_ms:
+        description: "Slow-mo (ms) applied to the FINAL pass only (pass_number == rerun_passes, and only when rerun_passes >= 2). Inherited from the source run."
+        required: false
+        default: "500"
+        type: string
 
 env:
   TEST_ENV: ${{ inputs.environment }}
@@ -308,17 +313,44 @@ jobs:
           CREDENTIAL_SET: ${{ env.CREDENTIAL_SET }}
           VIDEO_MODE: ${{ inputs.video_mode }}
           TRACE_MODE: ${{ inputs.trace_mode }}
+          # FINAL-PASS SLOW-MO. Overrides the workflow-level `SLOW_MODE_DELAY_IN_MS: 0`
+          # for the last pass only, so timing-flaky tests get breathing room on their
+          # last chance. Requires rerun_passes >= 2 — with a single rerun there is no
+          # earlier full-speed pass, so passes=1 keeps its existing behaviour exactly.
+          # An empty/absent final_pass_slowmo_ms falls through to '0' (off).
+          SLOW_MODE_DELAY_IN_MS: ${{ (inputs.rerun_passes != '1' && inputs.pass_number == inputs.rerun_passes) && inputs.final_pass_slowmo_ms || '0' }}
           CI: "true"
           PLAYWRIGHT_JSON_OUTPUT_NAME: results.json
         run: |
           echo "Rerun shard ${{ matrix.shard }} of ${{ needs.collect.outputs.shard_count }} (this shard's failed slice)"
           echo "Raw value logging (LOG_RAW_VALUES): ${LOG_RAW_VALUES:-false}"
+
+          # playwright.config.ts does parseInt(SLOW_MODE_DELAY_IN_MS) with no guard, so a
+          # non-numeric value would yield slowMo: NaN. Normalise to a clean integer here.
+          SLOWMO="${SLOW_MODE_DELAY_IN_MS:-0}"
+          case "$SLOWMO" in ''|*[!0-9]*) SLOWMO=0 ;; esac
+          export SLOW_MODE_DELAY_IN_MS="$SLOWMO"
+
+          # slowMo delays EVERY Playwright action but does NOT extend timeouts (only
+          # test.slow() does, and it's a per-spec API we can't call from CI). Left alone,
+          # the added delay would eat into the 10-min per-test budget and cause the very
+          # timeouts this pass exists to avoid — so give the slow pass 2x (20 min).
+          TIMEOUT_ARG=""
+          if [ "$SLOWMO" -gt 0 ]; then
+            TIMEOUT_ARG="--timeout=1200000"
+            echo "FINAL PASS (${{ inputs.pass_number }}/${{ inputs.rerun_passes }}): slow-mo ${SLOWMO}ms, per-test timeout 20m (2x)"
+          else
+            echo "Full-speed pass (${{ inputs.pass_number }}/${{ inputs.rerun_passes }}): no slow-mo"
+          fi
+
           # No --shard: this shard's .last-run.json already contains ONLY its slice.
+          # $TIMEOUT_ARG is intentionally unquoted — empty means "omit the flag".
           npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
             --last-failed \
             --project=${{ inputs.browser }} \
             --workers=1 \
             --retries=${{ env.NUM_RETRIES }} \
+            $TIMEOUT_ARG \
             --reporter=html,json,blob
 
       - name: Preserve last-failed marker
@@ -440,6 +472,8 @@ jobs:
           BROWSER: ${{ inputs.browser }}
           PASS_NUMBER: ${{ inputs.pass_number }}
           RERUN_PASSES: ${{ inputs.rerun_passes }}
+          # Same expression as the rerun step — the report header labels the slow pass.
+          SLOW_MODE_DELAY_IN_MS: ${{ (inputs.rerun_passes != '1' && inputs.pass_number == inputs.rerun_passes) && inputs.final_pass_slowmo_ms || '0' }}
         run: node runner-repo/.github/scripts/build-rerun-report.js
 
       - name: Decide whether to chain another pass
@@ -598,6 +632,7 @@ jobs:
             -f run_reason="${{ inputs.run_reason }}" \
             -f rerun_passes="${{ inputs.rerun_passes }}" \
             -f tests_per_shard="${{ inputs.tests_per_shard }}" \
+            -f final_pass_slowmo_ms="${{ inputs.final_pass_slowmo_ms }}" \
             -f pass_number="$NEXT"
           echo "Dispatched rerun pass $NEXT of ${{ inputs.rerun_passes }} (source = this run ${{ github.run_id }})"
 
