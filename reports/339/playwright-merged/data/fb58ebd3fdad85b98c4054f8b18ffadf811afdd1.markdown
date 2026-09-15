@@ -1,0 +1,427 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts >> Future-dated activation - admin tasks allowed + Submit blocked + banner (S49, S50, S51)
+- Location: src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:51:5
+
+# Error details
+
+```
+Error: expect(locator).toBeEnabled() failed
+
+Locator:  locator('button[role=\'menuitem\']:text(\'Reports\')')
+Expected: enabled
+Received: disabled
+Timeout:  60000ms
+
+Call log:
+  - Expect "soft toBeEnabled" with timeout 60000ms
+  - waiting for locator('button[role=\'menuitem\']:text(\'Reports\')')
+    63 × locator resolved to <button disabled tabindex="0" type="button" role="menuitem" aria-haspopup="menu" data-selected="false" aria-expanded="false" aria-owns="menuPart_mi_5" class="menu-item menu-magenta">…</button>
+       - unexpected value "disabled"
+
+```
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('//button[text()=\'Submit Test Assignment\']').last()
+
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: Maurine SubAut15Sep26172112
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| WJ V Settings"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [disabled] [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+        - generic [ref=e34]:
+          - switch [ref=e35] [cursor=pointer]: "OFF"
+          - generic [ref=e36]: Offline Mode
+      - main [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: NEW!
+            - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+            - link [ref=e43] [cursor=pointer]:
+              - /url: /media/OfflineMode.pdf
+              - text: Read More
+            - button [ref=e44] [cursor=pointer]: ✕
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - heading [level=1] [ref=e47]: My Test Assignments
+              - button [ref=e48] [cursor=pointer]: Create New Test Assignment
+            - generic [ref=e49]:
+              - generic [ref=e52]:
+                - textbox [ref=e53]:
+                  - /placeholder: Search Test Assignments
+                  - text: N71842A62340
+                - button [ref=e54] [cursor=pointer]
+              - generic [ref=e55]:
+                - button [disabled] [ref=e56]: Active
+                - button [disabled] [ref=e57]: Closed
+            - table [ref=e59]:
+              - rowgroup [ref=e66]:
+                - row [ref=e67]:
+                  - columnheader [ref=e68]: Examinee
+                  - columnheader [ref=e69]: Test Set
+                  - columnheader [ref=e70]: Days Left to Edit
+                  - columnheader [ref=e71]: Status
+                  - columnheader [ref=e72]: Actions
+              - rowgroup [ref=e73]:
+                - row [ref=e74] [cursor=pointer]:
+                  - cell [ref=e75]:
+                    - button [ref=e76]:
+                      - generic [ref=e77]: N71842A62340, Michele
+                  - cell [ref=e78]:
+                    - generic [ref=e79]:
+                      - button [ref=e80]:
+                        - generic [ref=e81]: AutoTest_an9ox3
+                      - button [ref=e82]
+                  - cell [ref=e83]:
+                    - button [ref=e84]: 90 days
+                  - cell [ref=e85]:
+                    - button [ref=e86]:
+                      - generic [ref=e87]: ●
+                      - text: In Progress
+                  - cell [ref=e88]:
+                    - button [ref=e89]
+                    - button [ref=e90]
+                    - button [ref=e91]
+          - generic [ref=e92]:
+            - generic [ref=e95]:
+              - img [ref=e96]
+              - heading [level=2] [ref=e100]: Notifications Center
+            - generic [ref=e101]:
+              - generic [ref=e103]:
+                - img [ref=e104]
+                - heading [level=3] [ref=e108]: Resources
+              - list [ref=e109]:
+                - listitem [ref=e110]:
+                  - button [ref=e111] [cursor=pointer]:
+                    - heading [level=4] [ref=e112]: Riverside Learn
+                    - img [ref=e114]
+                - listitem [ref=e116]:
+                  - button [ref=e117] [cursor=pointer]:
+                    - heading [level=4] [ref=e118]: Onboarding Tutorial Videos
+                    - img [ref=e120]
+                - listitem [ref=e122]:
+                  - button [ref=e123] [cursor=pointer]:
+                    - heading [level=4] [ref=e124]: Quick Reference Guides
+                    - img [ref=e126]
+              - button [ref=e129] [cursor=pointer]: View All
+    - contentinfo [ref=e130]:
+      - generic [ref=e131]: Footer region,
+      - link [ref=e132] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com
+        - img [ref=e133]
+      - generic [ref=e134]:
+        - link [ref=e135] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e136]
+        - link [ref=e137] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e138]
+        - link [ref=e139] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e140]
+        - link [ref=e141] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e142]
+      - generic [ref=e143]:
+        - button [ref=e144] [cursor=pointer]: Leave Feedback
+        - generic [ref=e145]: "|"
+        - link [ref=e146] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e147]: "|"
+        - link [ref=e148] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e149]: Footer region end
+  - generic:
+    - img [ref=e151]
+    - generic [ref=e161]:
+      - img [ref=e162]
+      - img [ref=e167]
+      - img [ref=e174]
+      - img [ref=e181]
+      - img [ref=e188]
+      - img [ref=e195]
+  - region "Chat Widget" [ref=e202]:
+    - iframe [ref=e203]:
+      - button "Open live chat" [ref=f16e5]:
+        - img [ref=f16e8]
+        - img [ref=f16e15]
+    - generic "Drag" [ref=e204]:
+      - img [ref=e205]
+  - dialog "Launch Test Session" [active] [ref=e208]:
+    - generic [ref=e209]:
+      - generic [ref=e210]:
+        - generic [ref=e211]: Launch Test Session
+        - button "Close Session Intro" [ref=e212] [cursor=pointer]: ✕
+      - generic [ref=e213]:
+        - generic [ref=e214]:
+          - generic [ref=e215]: "Examinee: N71842A62340, Michele"
+          - generic [ref=e216]: "Test Set: AutoTest_an9ox3"
+          - generic [ref=e217]: "Test Name: Calculation"
+        - generic [ref=e218]:
+          - button "Review Mode" [ref=e219] [cursor=pointer]
+          - generic [ref=e220]:
+            - generic [ref=e221]: "Note:"
+            - text: For use without Examinee. Review and Submit here.
+      - generic [ref=e222]:
+        - generic [ref=e224]: Before you start the session, sync the Examinee’s tablet with the test session.
+        - generic [ref=e225]:
+          - generic [ref=e226]: Point the tablet's camera at this QR code.
+          - img [ref=e227]
+          - generic [ref=e231]:
+            - img "QR code to join test session btzjFYGrp" [ref=e232]
+            - img [ref=e235]:
+              - generic [ref=e238]: Scan Me
+        - generic [ref=e241]:
+          - generic [ref=e242]:
+            - text: If the QR code does not launch your session, navigate to
+            - link "https://stage.riversidescore.com/examinee" [ref=e243] [cursor=pointer]:
+              - /url: https://stage.riversidescore.com/examinee
+              - generic [ref=e244]: https://stage.riversidescore.com/examinee
+            - text: on the examinee's tablet and enter the
+            - text: "following Test Session ID:"
+          - generic [ref=e246]: btzjFYGrp
+```
+
+# Test source
+
+```ts
+  112 | }
+  113 | 
+  114 | export function generateSubscriptionActivationFormData(): SubscriptionActivationFormData {
+  115 |   const username = buildUsername();
+  116 |   return {
+  117 |     username,
+  118 |     firstName: faker.person.firstName(),
+  119 |     lastName: username,
+  120 |     customerId: username,
+  121 |     email: `sunil.adeptpros+${username}@gmail.com`,
+  122 |     phone: faker.phone.number(),
+  123 |     password: 'SubAut@100',
+  124 |     locationName: `Location_${username}`,
+  125 |     addressLine1: faker.location.streetAddress(),
+  126 |     addressLine2: faker.location.secondaryAddress(),
+  127 |     city: faker.location.city(),
+  128 |     state: 'California',
+  129 |     zipCode: faker.location.zipCode({ format: '#####' }),
+  130 |   };
+  131 | }
+  132 | 
+  133 | export default class SubscriptionActivationPage extends Locators {
+  134 |   constructor(public page: Page) {
+  135 |     super(page);
+  136 |   }
+  137 | 
+  138 |   async gotoActivationUrl(activationCode: string) {
+  139 |     await this.page.goto(`${getSiteUrl()}?ActivationCode=${activationCode}`);
+  140 |   }
+  141 | 
+  142 |   async verifyLandingPageVisible() {
+  143 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  144 |     await expect(this.iNeedToCreateALoginSpan).toBeVisible();
+  145 |   }
+  146 | 
+  147 |   async landOnActivationPage(scenario: ActivationCode, maxRetries = 1) {
+  148 |     for (let attempt = 0; attempt <= maxRetries; attempt++) {
+  149 |       await this.gotoActivationUrl(scenario.activationCode);
+  150 |       await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  151 | 
+  152 |       const customerNameText = (await this.activationCustomerNameText.isVisible())
+  153 |         ? ((await this.activationCustomerNameText.textContent()) ?? '').trim()
+  154 |         : '';
+  155 | 
+  156 |       const isAlreadyActivated = customerNameText.includes('Activation code is already activated');
+  157 |       const isSoNumberUsed = customerNameText.includes('Subscription order number is already used');
+  158 |       const isInvalidCode = customerNameText.includes('Invalid activation code');
+  159 | 
+  160 |       if (!isAlreadyActivated && !isSoNumberUsed && !isInvalidCode) {
+  161 |         await expect(this.iNeedToCreateALoginSpan).toBeVisible();
+  162 |         await expect(this.activationSubscriptionTypeText).toContainText(scenario.subscriptionType);
+  163 |         return;
+  164 |       }
+  165 | 
+  166 |       if (isInvalidCode) {
+  167 |         throw new Error(
+  168 |           `Invalid activation code: '${scenario.activationCode}'. Not recoverable — check the code in the scenarios file.`
+  169 |         );
+  170 |       }
+  171 | 
+  172 |       if (attempt >= maxRetries) {
+  173 |         throw new Error(
+  174 |           `Activation landing still showing "${customerNameText}" after ${maxRetries} recovery attempt(s).`
+  175 |         );
+  176 |       }
+  177 | 
+  178 |       RawValueLogger.log('Activation landing - recovering from error', {
+  179 |         attempt: attempt + 1,
+  180 |         errorText: customerNameText,
+  181 |         activationCode: scenario.activationCode,
+  182 |         salesOrderNumber: scenario.salesOrderNumber,
+  183 |       });
+  184 |       console.log(
+  185 |         `[ACTIVATION-RECOVERY] attempt ${attempt + 1} - "${customerNameText}" - code=${scenario.activationCode} SO=${
+  186 |           scenario.salesOrderNumber
+  187 |         }`
+  188 |       );
+  189 | 
+  190 |       const subApi = new subscriptionApi(this.page);
+  191 | 
+  192 |       if (isAlreadyActivated) {
+  193 |         await subApi.resetActivationCode(scenario.activationCode);
+  194 |         await subApi.updateSalesOrder(scenario.salesOrderNumber);
+  195 |         continue;
+  196 |       }
+  197 | 
+  198 |       if (isSoNumberUsed) {
+  199 |         await subApi.updateSalesOrder(scenario.salesOrderNumber);
+  200 |         continue;
+  201 |       }
+  202 |     }
+  203 |   }
+  204 | 
+  205 |   async verifyFinalSubmitTestAssignmentIsDisabled() {
+  206 |     await this.submitTestAssignmentButton.click();
+  207 |     await this.reviewNotesTab.click();
+  208 |     await expect.soft(this.submitTestAssignmentFinalButton).toBeDisabled();
+  209 |   }
+  210 | 
+  211 |   async verifyFinalSubmitTestAssignmentIsEnabled() {
+> 212 |     await this.submitTestAssignmentButton.click();
+      |                                           ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  213 |     await this.reviewNotesTab.click();
+  214 |     await expect.soft(this.submitTestAssignmentFinalButton).toBeEnabled();
+  215 |   }
+  216 | 
+  217 |   async verifyConfirmButtonIsDisabled() {
+  218 |     await expect.soft(this.confirmActivationButton).toBeDisabled();
+  219 |   }
+  220 | 
+  221 |   async verifyDateErrorDoesNotMention(text: string) {
+  222 |     await expect.soft(this.confirmDateErrorMessage).not.toContainText(text);
+  223 |   }
+  224 | 
+  225 |   async verifyStartDateIsEditable() {
+  226 |     await expect.soft(this.confirmStartDateInput).toBeEnabled();
+  227 |   }
+  228 | 
+  229 |   async verifyStartDateIsReadOnly() {
+  230 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();
+  231 |   }
+  232 | 
+  233 |   async verifyConfirmDatesAreReadOnly() {
+  234 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();
+  235 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();
+  236 |   }
+  237 | 
+  238 |   async verifyConfirmDatesMatch(startMMDDYYYY: string, endMMDDYYYY: string) {
+  239 |     await expect.soft(this.confirmStartDateInput).toHaveValue(startMMDDYYYY);
+  240 |     await expect.soft(this.confirmEndDateInput).toHaveValue(endMMDDYYYY);
+  241 |   }
+  242 | 
+  243 |   async getConfirmDateValues(): Promise<{ startValue: string; endValue: string }> {
+  244 |     return {
+  245 |       startValue: await this.confirmStartDateInput.inputValue(),
+  246 |       endValue: await this.confirmEndDateInput.inputValue(),
+  247 |     };
+  248 |   }
+  249 | 
+  250 |   async verifyRolloverConfirmExtras() {
+  251 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();
+  252 |     await expect.soft(this.confirmSubtestRolloverNote).toBeVisible();
+  253 |   }
+  254 | 
+  255 |   async verifyConfirmNotesForType(expectsRolloverNote: boolean) {
+  256 |     await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();
+  257 |     if (expectsRolloverNote) {
+  258 |       await expect.soft(this.confirmSubtestRolloverNote).toBeVisible();
+  259 |     } else {
+  260 |       await expect
+  261 |         .soft(this.confirmSubtestRolloverNote, 'rollover note must not show for Unlimited')
+  262 |         .toHaveCount(0);
+  263 |     }
+  264 |   }
+  265 | 
+  266 |   async verifyNoConfirmPopupIsShown() {
+  267 |     await expect.soft(this.confirmActivationHeading).toHaveCount(0);
+  268 |     await expect.soft(this.confirmRenewalHeading).toHaveCount(0);
+  269 |   }
+  270 | 
+  271 |   async verifyOnSignInToActivatePageWithoutRenewalPopup() {
+  272 |     await expect.soft(this.signInToActivateHeading).toBeVisible();
+  273 |     await expect.soft(this.confirmRenewalHeading).not.toBeVisible();
+  274 |   }
+  275 | 
+  276 |   async verifySignInButtonIsVisible() {
+  277 |     await expect(this.signInButton).toBeVisible();
+  278 |   }
+  279 | 
+  280 |   async verifyFutureDateBannerVisible(futureStartMMDDYYYY: string) {
+  281 |     await expect.soft(this.subscriptionFutureDateBanner).toBeVisible();
+  282 |     await expect
+  283 |       .soft(this.subscriptionFutureDateBanner)
+  284 |       .toContainText(`Your subscription begins on ${futureStartMMDDYYYY}`);
+  285 |   }
+  286 | 
+  287 |   async verifyFutureDateBannerIsAbsent() {
+  288 |     await expect.soft(this.subscriptionFutureDateBanner).toHaveCount(0);
+  289 |   }
+  290 | 
+  291 |   async verifyReportsTabEnabledState(isEnabled: boolean) {
+  292 |     if (isEnabled) {
+  293 |       await expect.soft(this.reportsTab).toBeEnabled();
+  294 |     } else {
+  295 |       await expect.soft(this.reportsTab).toBeDisabled();
+  296 |     }
+  297 |   }
+  298 | 
+  299 |   async signOutFromHeader() {
+  300 |     await this.signOutButton.click();
+  301 |   }
+  302 | 
+  303 |   async signInAs(username: string, password: string) {
+  304 |     await this.userName.fill(username);
+  305 |     await this.passWord.fill(password);
+  306 |     await this.signInButton.click();
+  307 |   }
+  308 | 
+  309 |   async verifyAHRetainedWithWJVOnLandingPage(formData: SubscriptionActivationFormData) {
+  310 |     await expect.soft(this.productDisplayCardWJV).toBeVisible();
+  311 |     await expect.soft(this.userNameDisplayHeader).toHaveText(`${formData.firstName} ${formData.lastName}`);
+  312 |   }
+```
