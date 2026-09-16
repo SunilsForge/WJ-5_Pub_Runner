@@ -1,0 +1,1055 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+        "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "commitHash": "97d1cfbac4c4e7f66eaf7d64f8d2214f6888d09a",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/35124438347"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 12,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/chatBotTest.spec.ts",
+      "file": "functional/chatBotTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Validate Chat Bot functionality when logged in as AH user and at login page",
+          "ok": true,
+          "tags": [
+            "ChatBot",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "automation user story",
+                  "description": "30273",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts",
+                    "line": 6,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 49752,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S12:W0] Login successful for 02PwAut25AH\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to login page and verify chat bot functionality",
+                      "duration": 3360
+                    },
+                    {
+                      "title": "AH:- Verify chat bot functionality on Dashboard page",
+                      "duration": 3876
+                    },
+                    {
+                      "title": "AH:- Verify chat bot functionality on Testset page",
+                      "duration": 1216
+                    },
+                    {
+                      "title": "AH:- Verify chat bot functionality on Examinees page",
+                      "duration": 9188
+                    },
+                    {
+                      "title": "AH:- Verify chat bot functionality on Staff page",
+                      "duration": 331
+                    },
+                    {
+                      "title": "AH:- Verify chat bot functionality on Reports>Library  page",
+                      "duration": 4177
+                    }
+                  ],
+                  "startTime": "2026-09-16T16:52:20.113Z",
+                  "annotations": [
+                    {
+                      "type": "automation user story",
+                      "description": "30273",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts",
+                        "line": 6,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9c81ba0b665322d5790a-5f4b9de4d32455fc0d39",
+          "file": "functional/chatBotTest.spec.ts",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "Validate Chat Bot functionality when logged in as Examiner user",
+          "ok": true,
+          "tags": [
+            "ChatBot",
+            "Smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "automation user story",
+                  "description": "30273",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts",
+                    "line": 55,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 55941,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W0] Login successful for 02PwAut25Ex_01\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Examiner:- Verify chat bot functionality on Dashboard page",
+                      "duration": 3346
+                    },
+                    {
+                      "title": "Examiner:- Verify chat bot functionality on Testset page",
+                      "duration": 289
+                    },
+                    {
+                      "title": "Examiner:- Verify chat bot functionality on Examinees page",
+                      "duration": 19160
+                    },
+                    {
+                      "title": "Examiner:- Verify chat bot functionality on Staff page",
+                      "duration": 336
+                    },
+                    {
+                      "title": "Examiner:- Verify chat bot functionality on Reports>Library  page",
+                      "duration": 5098
+                    }
+                  ],
+                  "startTime": "2026-09-16T16:53:10.444Z",
+                  "annotations": [
+                    {
+                      "type": "automation user story",
+                      "description": "30273",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts",
+                        "line": 55,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9c81ba0b665322d5790a-911b7197d7245a5559c4",
+          "file": "functional/chatBotTest.spec.ts",
+          "line": 55,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "functional/dashboard/testAssignments_B.spec.ts",
+      "file": "functional/dashboard/testAssignments_B.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Run the test Preschool to Grade 2 - 5 lowest incorrect items SSP1 to create test data for InProgress sets",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 136407,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W0] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N47639A60201\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N47639A60201/dataFiles/Score_DataExport_AutoFilter_Template_N47639A60201.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N47639A60201 FirstName=Kennedi LastName =N47639A60201 Age = 09/16/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N47639A60201\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T16:54:06.423Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Generated wLookUp Filter Template (N47639A60201)",
+                      "contentType": "text/csv",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N47639A60201--dcf50374b10761c4939bdbaf58b7065a2896e60b.csv"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 36992,
+                  "error": {
+                    "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username') to be visible\u001b[22m\n",
+                    "stack": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:49:27)\n    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\n    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:19:5)\n    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
+                      "column": 27,
+                      "line": 49
+                    },
+                    "snippet": "   at ../pages/wj5_login.page.ts:49\n\n\u001b[0m \u001b[90m 47 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muserName\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m\"visible\"\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muserName\u001b[33m.\u001b[39mclear()\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpassWord\u001b[33m.\u001b[39mclear()\u001b[33m;\u001b[39m\n \u001b[90m 52 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muserName\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
+                        "column": 27,
+                        "line": 49
+                      },
+                      "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username') to be visible\u001b[22m\n\n\n   at ../pages/wj5_login.page.ts:49\n\n  47 |       await this.page.waitForTimeout(1000);\n  48 |\n> 49 |       await this.userName.waitFor({ state: \"visible\", timeout: 10000 });\n     |                           ^\n  50 |       await this.userName.clear();\n  51 |       await this.passWord.clear();\n  52 |       await this.userName.fill(username);\n    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:49:27)\n    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\n    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:19:5)\n    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "Login failed for 02PwAut25Ex_01: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:49:27\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:19:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m49\u001b[39m,\n      column: \u001b[33m27\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector getByPlaceholder('Username')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m'internal:attr=[placeholder=\"Username\"i]'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m10000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@35'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@35'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector getByPlaceholder('Username')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1789578012883\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for getByPlaceholder('Username') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for getByPlaceholder('Username') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:49:27)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:19:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                    },
+                    {
+                      "text": "[S12:W1] Login attempt 1 failed for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Login failed for 02PwAut25Ex_01: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:49:27\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:19:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m49\u001b[39m,\n      column: \u001b[33m27\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector getByPlaceholder('Username')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m'internal:attr=[placeholder=\"Username\"i]'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m10000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@41'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@41'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector getByPlaceholder('Username')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1789578025440\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for getByPlaceholder('Username') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for getByPlaceholder('Username') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:49:27)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:19:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                    },
+                    {
+                      "text": "[S12:W1] Login attempt 2 failed for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Login failed for 02PwAut25Ex_01: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:49:27\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:19:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m49\u001b[39m,\n      column: \u001b[33m27\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector getByPlaceholder('Username')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m'internal:attr=[placeholder=\"Username\"i]'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m10000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@47'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@47'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector getByPlaceholder('Username')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1789578038000\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for getByPlaceholder('Username') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for getByPlaceholder('Username') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:49:27)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:19:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                    },
+                    {
+                      "text": "[S12:W1] Login attempt 3 failed for 02PwAut25Ex_01\n"
+                    }
+                  ],
+                  "retry": 1,
+                  "startTime": "2026-09-16T17:00:00.571Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
+                    "column": 27,
+                    "line": 49
+                  }
+                }
+              ],
+              "status": "flaky"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-a91349b67f51d4577e3b",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 17,
+          "column": 7
+        },
+        {
+          "title": "Run the test Ages 4 to 7 - 5 correct and 5 incorrect SSP1 to create test data for InProgress sets",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 169937,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W0] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N70592A64491\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N70592A64491/dataFiles/Score_DataExport_AutoFilter_Template_N70592A64491.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N70592A64491 FirstName=Adriel LastName =N70592A64491 Age = 09/16/2022\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N70592A64491\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T16:56:22.851Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Generated wLookUp Filter Template (N70592A64491)",
+                      "contentType": "text/csv",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6fb69-st-data-for-InProgress-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N70592A64491--90ab0a897fb4feb041e13495f80184e464778ccd.csv"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-09-16T17:00:38.140Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-916a453762de36db6ee2",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 17,
+          "column": 7
+        },
+        {
+          "title": "Run the test Preschool to Grade 2 - 1 correct 1 incorrect SSP1 to create test data for InProgress sets",
+          "ok": false,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 37315,
+                  "error": {
+                    "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username') to be visible\u001b[22m\n",
+                    "stack": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:49:27)\n    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\n    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:19:5)\n    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
+                      "column": 27,
+                      "line": 49
+                    },
+                    "snippet": "   at ../pages/wj5_login.page.ts:49\n\n\u001b[0m \u001b[90m 47 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muserName\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m\"visible\"\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muserName\u001b[33m.\u001b[39mclear()\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpassWord\u001b[33m.\u001b[39mclear()\u001b[33m;\u001b[39m\n \u001b[90m 52 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muserName\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
+                        "column": 27,
+                        "line": 49
+                      },
+                      "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username') to be visible\u001b[22m\n\n\n   at ../pages/wj5_login.page.ts:49\n\n  47 |       await this.page.waitForTimeout(1000);\n  48 |\n> 49 |       await this.userName.waitFor({ state: \"visible\", timeout: 10000 });\n     |                           ^\n  50 |       await this.userName.clear();\n  51 |       await this.passWord.clear();\n  52 |       await this.userName.fill(username);\n    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:49:27)\n    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\n    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:19:5)\n    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "Login failed for 02PwAut25Ex_01: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:49:27\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:19:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m49\u001b[39m,\n      column: \u001b[33m27\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector getByPlaceholder('Username')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m'internal:attr=[placeholder=\"Username\"i]'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m10000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@29'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@29'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector getByPlaceholder('Username')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1789577964645\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for getByPlaceholder('Username') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for getByPlaceholder('Username') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:49:27)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:19:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                    },
+                    {
+                      "text": "[S12:W0] Login attempt 1 failed for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Login failed for 02PwAut25Ex_01: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:49:27\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:19:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m49\u001b[39m,\n      column: \u001b[33m27\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector getByPlaceholder('Username')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m'internal:attr=[placeholder=\"Username\"i]'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m10000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@35'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@35'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector getByPlaceholder('Username')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1789577977226\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for getByPlaceholder('Username') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for getByPlaceholder('Username') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:49:27)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:19:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                    },
+                    {
+                      "text": "[S12:W0] Login attempt 2 failed for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Login failed for 02PwAut25Ex_01: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:49:27\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:19:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m49\u001b[39m,\n      column: \u001b[33m27\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector getByPlaceholder('Username')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m'internal:attr=[placeholder=\"Username\"i]'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m10000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@41'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@41'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector getByPlaceholder('Username')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1789577989815\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for getByPlaceholder('Username') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for getByPlaceholder('Username') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:49:27)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:19:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                    },
+                    {
+                      "text": "[S12:W0] Login attempt 3 failed for 02PwAut25Ex_01\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-09-16T16:59:12.834Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome/test-failed-3.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome/test-failed-5.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome/test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome/test-failed-4.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
+                    "column": 27,
+                    "line": 49
+                  }
+                },
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-09-16T17:00:38.140Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-b7a74be7d72e70cf862a",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 17,
+          "column": 7
+        },
+        {
+          "title": "Run the test Preschool to Grade 2 - 5 lowest incorrect items SSP1 to create test data for Submitted sets",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T16:59:59.228Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-09-16T17:00:38.140Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-36caeb061099a043f544",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 17,
+          "column": 7
+        },
+        {
+          "title": "Validate Dashboard Test Assignments functionality Part_B",
+          "ok": true,
+          "tags": [
+            "DashboardTestAssignments_B",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24006_24067_24927_26988_27345_29976_28792, 28823_29687_30275_30670",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                    "line": 76,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T16:59:59.229Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-09-16T17:00:38.140Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "ed18dc26dc5c1351a836-856fcf7f0a9195f6efdf",
+          "file": "functional/dashboard/testAssignments_B.spec.ts",
+          "line": 76,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-16T16:52:04.914Z",
+    "duration": 513249.017,
+    "expected": 3,
+    "skipped": 2,
+    "unexpected": 1,
+    "flaky": 1
+  }
+}

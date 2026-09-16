@@ -1,0 +1,233 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/reviewMode/InProgressTestAssignments.spec.ts >> Verify review mode for my 'In Progress' test assignments >> Administer a selective test and leave the test in diff statuses as a part of 'in progress' test assignment validation
+- Location: src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:41:7
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('.plain-button.replay-button')
+Expected: visible
+Timeout: 70000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 70000ms
+  - waiting for locator('.plain-button.replay-button')
+
+```
+
+# Test source
+
+```ts
+  9933  |                 await this.selectAndVerifyTestStatus(i, 6, 5);
+  9934  |                 await this.flaggedItemOnLeftNav.click();
+  9935  |                 await this.page.waitForTimeout(1000);
+  9936  |                 await this.flagIcon.click();
+  9937  |                 await this.iDontKnowButton.click();
+  9938  |                 await this.clickCorrectOption();
+  9939  |                 await this.clickCorrectOption();
+  9940  |                 await this.iDontKnowButton.click();
+  9941  |                 await this.selectAndVerifyTestStatus(i, 6, 3);
+  9942  |                 await this.selectAndVerifyTestStatus(i, 4, 4);
+  9943  |                 await this.selectAndVerifyTestStatus(i, 3, 3);
+  9944  |                 await this.selectAndVerifyTestStatus(i, 2, 2);
+  9945  |                 await this.selectAndVerifyTestStatus(i, 1, 1);
+  9946  |                 await this.leftNavItemsForReviewMode.nth(4).click();
+  9947  |                 await this.page.waitForTimeout(1000);
+  9948  |                 await this.page.mouse.down();
+  9949  |                 await this.clickCorrectOption();
+  9950  |                 await this.page.waitForTimeout(1000);
+  9951  |                 await this.iDontKnowButton.click();
+  9952  |                 await this.plainNextButtonOrEndButton.click();
+  9953  |                 await this.endTestDropdown.click();
+  9954  |                 const verifyStatuses = async (mode: string) => {
+  9955  |                     const statuses = [
+  9956  |                         [i, 1, 1], [i, 2, 2], [i, 3, 3],
+  9957  |                         [i, 4, 4], [i, 6, 3]
+  9958  |                     ];
+  9959  |                     for (const [a, b, c] of statuses) {
+  9960  |                         await this.selectAndVerifyTestStatus(a, b, c, mode);
+  9961  |                     }
+  9962  |                 };
+  9963  |                 await verifyStatuses("End Test Popup");
+  9964  |                 await this.endSessionButton.click();
+  9965  |                 await this.endSessionReviewButton.waitFor({
+  9966  |                     state: "attached",
+  9967  |                     timeout: 80000,
+  9968  |                 });
+  9969  |                 await this.endSessionReviewButton.click();
+  9970  |                 await verifyStatuses("Review");
+  9971  |                 await this.selectAndVerifyTestStatus(i, 2, 4, "Needs Attention");
+  9972  |                 await this.selectAndVerifyTestStatus(i, 4, 4, "Needs Attention");
+  9973  |                 await this.verifyFlaggedItemOnAdministrationSummary(i, 0, 0);
+  9974  |                 await this.verifyFlaggedItemOnAdministrationSummary(i, 2, 1);
+  9975  |                 break;
+  9976  |             }
+  9977  |             else {
+  9978  |                 throw new Error(
+  9979  |                     `The ${testData.typeOfTest} didnt match with any of the conditions provided`
+  9980  |                 );
+  9981  |             }
+  9982  | 
+  9983  |         }
+  9984  |     }
+  9985  | 
+  9986  |      async completeTestInAdministrationMode(data): Promise<string> {
+  9987  |     let tapFluency = false;
+  9988  |     RawValueLogger.log('testData = ', data.items);
+  9989  | 
+  9990  |     for (const [key, itemData] of Object.entries(data.items)) {
+  9991  |       await this.page.waitForTimeout(1000);
+  9992  |       const _response = data.items[key].response;
+  9993  | 
+  9994  |       if (_response.includes('Complete')) {
+  9995  |         this.completeTestsData.add(data.testName);
+  9996  |       } else if (_response.includes('Score Error')) {
+  9997  |         this.needAttentionTestsData.add(data.testName);
+  9998  |       } else if (_response.includes('In Progress')) {
+  9999  |         this.inProgressTestsData.add(data.testName);
+  10000 |       } else if (_response.includes('Invalidate Test')) {
+  10001 |         this.invalidateTestsData.add(data.testName);
+  10002 |       } else if (_response.includes('Score Later')) {
+  10003 |         this.scoreLaterTestsData.add(data.testName);
+  10004 |       }
+  10005 | 
+  10006 |       if (key == 'Exit Test' || key.startsWith('End Test')) {
+  10007 |         return key;
+  10008 |       } else if (key == 'None Attempted') {
+  10009 |         await this.page
+  10010 |           .locator("div[class*='popup-infopage-modal']>div[class='introduction error']")
+  10011 |           .waitFor({ state: 'visible', timeout: 1 * 60 * 1000 });
+  10012 |         await this.noneAttemptedButton.click();
+  10013 |         return _response;
+  10014 |       } else {
+  10015 |       }
+  10016 | 
+  10017 |       await expect(this.plainNextButtonOrEndButton.first()).toBeVisible();
+  10018 |       const itemNameValue: string = (await this.itemDetails.textContent())!;
+  10019 |       RawValueLogger.log('itemNameValue = ', itemNameValue);
+  10020 |       await expect(itemNameValue).toEqual(key);
+  10021 |       const { response, notes, flag } = data.items[key];
+  10022 |       RawValueLogger.log('key = ', key);
+  10023 | 
+  10024 |       let i = 0;
+  10025 | 
+  10026 |       RawValueLogger.log('response = ', response);
+  10027 |       RawValueLogger.log('notes = ', notes);
+  10028 |       RawValueLogger.log('flag = ', flag);
+  10029 | 
+  10030 |       if (key.startsWith('Introduction')) {
+  10031 |         if (await this.videoPlayButton.isVisible()) {
+  10032 |           await this.videoPlayButton.click();
+> 10033 |           await expect(this.replayButton).toBeVisible({ timeout: 70000 });
+        |                                           ^ Error: expect(locator).toBeVisible() failed
+  10034 |         }
+  10035 |       } else if (key.startsWith('Practice Exercise')) {
+  10036 |         if (data.testStemForm.startsWith('NUMPAT')) {
+  10037 |           const matchedPattern = data.testStemForm;
+  10038 |           const patternConfig: Record<string, { schemaFile: string }> = {
+  10039 |             'NUMPAT.W5PA': { schemaFile: 'NUMPAT.W5PA_TestSchema.xlsx' },
+  10040 |             'LETPAT.W5PA': { schemaFile: 'LETPAT.W5PA_TestSchema.xlsx' },
+  10041 |           };
+  10042 | 
+  10043 |           if (!matchedPattern || !patternConfig[matchedPattern]) {
+  10044 |             throw new Error(`No configuration found for the stemForm: ${data.testStemForm}`);
+  10045 |           }
+  10046 | 
+  10047 |           const { schemaFile } = patternConfig[matchedPattern];
+  10048 | 
+  10049 |           this.patternTestCorrectResponses = await this.utils.readCorrectValuesFromPatternTest(
+  10050 |             matchedPattern,
+  10051 |             'Heading',
+  10052 |             'TabStim Resps'
+  10053 |           );
+  10054 | 
+  10055 |           await this.answerCorrectForTimerTest(data.testStemForm, itemNameValue, this.patternTestCorrectResponses);
+  10056 |           tapFluency = true;
+  10057 |         } else {
+  10058 |           await this.startPracticeAndStartTimerButton.click();
+  10059 |           await this.stopIcon.waitFor({ state: 'visible', timeout: 25000 });
+  10060 |           await this.scoreText.fill(response);
+  10061 |         }
+  10062 |       } else if (key.startsWith('Test Items')) {
+  10063 |         await this.startTimerAndDisplayTestItems.click({ timeout: 2000 });
+  10064 |         try {
+  10065 |           await this.timeIsUp.waitFor({ state: 'visible', timeout: 3.2 * 60 * 1000 });
+  10066 |         } catch (error) {
+  10067 |           RawValueLogger.log('seems Time is up is not visible ...', error);
+  10068 |         }
+  10069 |       } else if (key.startsWith('Test Introduction')) {
+  10070 |         await this.clickStartTimerForTestItems();
+  10071 |       } else {
+  10072 |         if (response.startsWith('correct')) {
+  10073 |           const respSize = await response.split('|');
+  10074 |           RawValueLogger.log('respSize = ', await respSize.length);
+  10075 |           if ((await respSize.length) > 1) {
+  10076 |             for (i = 0; i < Number(respSize[1]); i++) {
+  10077 |               await this.correctOptionButton.nth(i).click();
+  10078 |             }
+  10079 |           } else {
+  10080 |             await this.correctOptionButton.first().click();
+  10081 |           }
+  10082 |         } else if (response === 'incorrect') {
+  10083 |           await this.incorrectOptionButton.first().click();
+  10084 |         } else if (response === 'No Response') {
+  10085 |           await this.noResponse.first().click();
+  10086 |         } else if (response === 'Done') {
+  10087 |           await this.doneButton.click();
+  10088 |         } else if (response === 'next') {
+  10089 |           // Do nothing as we have to click on next button below
+  10090 |         } else if (response === 'START TIMER') {
+  10091 |           await this.page.locator("//button[text()='START TIMER']").click();
+  10092 |           continue;
+  10093 |         } else {
+  10094 |         }
+  10095 |       }
+  10096 | 
+  10097 |       if (flag && !tapFluency) {
+  10098 |         try {
+  10099 |           await this.flagIcon.click();
+  10100 | 
+  10101 |           if (!this.flagData[data.testName]) {
+  10102 |             this.flagData[data.testName] = {};
+  10103 |           }
+  10104 | 
+  10105 |           this.flagData[data.testName][key] = { response: response };
+  10106 |         } catch (error) {
+  10107 |           console.error(`Error setting flag data for ${data.testName} - ${key}:`, error);
+  10108 |         }
+  10109 |       }
+  10110 | 
+  10111 |       if (notes) {
+  10112 |         const notesText = data.testName + ' - ' + key + ' - notes added';
+  10113 |         await this.dashboardPage.addNotes('item', notesText);
+  10114 |       }
+  10115 | 
+  10116 |       if (await response.startsWith('Score Later')) {
+  10117 |         await this.scoreLaterButton.click();
+  10118 |         return response;
+  10119 |       } else if (tapFluency) {
+  10120 |         const isDoneButtonVisible: boolean = await this.doneButton.isVisible();
+  10121 |         if (isDoneButtonVisible) {
+  10122 |           await this.doneButton.click();
+  10123 |         } else {
+  10124 |           try {
+  10125 |             await this.page.waitForTimeout(3000);
+  10126 |             const isPopupFooterVisible = await this.page.locator("div[class='popup-footer']").isVisible();
+  10127 |             if (isPopupFooterVisible) {
+  10128 |               await expect(this.plainNextButtonOrEndButton.last(), "End Test button is not enabled in Time is up popup").toBeEnabled();
+  10129 |               await this.plainNextButtonOrEndButton.last().click();
+  10130 |             } else if (!isPopupFooterVisible) {
+  10131 |               TestErrors.addError("Time is up popup is not visible ...', 'Clicking on End Test button to get it");
+  10132 |               await this.plainNextButtonOrEndButton.first().click();
+  10133 |               await this.page.locator("div[class='popup-footer']").waitFor({ state: 'visible', timeout: 10000 });
+```
