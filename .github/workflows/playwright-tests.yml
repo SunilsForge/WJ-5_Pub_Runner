@@ -9,7 +9,7 @@ on:
         default: "50"
         type: string
       branch: # New input
-        description: "Branch in the private repo (SunilsForge/WJ-5_Pub) to run tests from"
+        description: "Branch in SunilsForge/WJ-5_Pub to test"
         required: true
         default: "main" # Default to main branch
         type: string
@@ -18,7 +18,7 @@ on:
         required: true
         default: "stage"
       test_pattern:
-        description: "Test pattern {e.g., @Smoke,   @TestDe|@DerivedScores,   (?=.*@RDGBAS)(?=.*@DerivedScores),    (?=.*@DerivedScores)(?=.*(@PHNMAN|@RDGBAS)),    (?=.*@Smoke)(?=.*(@TestDe|@DerivedScores|@SingleTable|@MultiTable))   }"
+        description: "Tag regex. OR: @TestDe|@DerivedScores — AND: (?=.*@RDGBAS)(?=.*@DerivedScores)"
         required: true
         default: "(?=.*@RDGBAS)(?=.*@DerivedScores)"
       credential_set:
@@ -51,17 +51,17 @@ on:
           - "40"
           - "95"
       distribute_by_test:
-        description: "Balance by test COUNT (scenarios), not spec file. Affects ONLY UIAndReports & ReroutingandLeftNav; all other folders keep their current file-level flow."
+        description: "Balance shards by test count, not spec file. Affects only UIAndReports & ReroutingandLeftNav."
         required: false
         default: false
         type: boolean
       rerun_failed:
-        description: "After this run finishes (deploy + Slack), auto-trigger a second pipeline that re-runs ONLY the failed tests (own report + Slack). Inherits branch/env/creds/retries/trace; shards auto-sized."
+        description: "After this run, auto-trigger a pipeline that re-runs only the failed tests (own report + Slack)."
         required: false
         default: false
         type: boolean
       rerun_passes:
-        description: "How many rerun passes when rerun_failed is on. 1 = main+rerun, 2 = +re-rerun, … Each pass re-runs the previous pass's still-failing tests; stops early once a pass is clean."
+        description: "Rerun passes (needs rerun_failed). Each pass retries the last pass's failures; stops once clean. 2+ = final pass runs in slow-mo."
         required: false
         default: "1"
         type: choice
@@ -115,12 +115,23 @@ on:
           - "retain-on-first-failure"
           - "retry-with-trace"
       log_raw_values:
-        description: "Verbose raw-value logging (RawValueLogger / LOG_RAW_VALUES=true) — prints API responses & per-item comparisons to test stdout. CASCADES to the rerun pipeline and every rerun pass. Intended for targeted debug runs, NOT regression (inflates report/artifact size)."
+        description: "Verbose raw-value logging (LOG_RAW_VALUES) — prints API responses to stdout. Debug runs only; cascades to reruns."
         required: false
         default: false
         type: boolean
+      final_pass_slowmo_ms:
+        description: "Slow-mo (ms) on the LAST rerun pass only, to settle timing-flaky tests. Needs rerun_passes 2+. That pass also gets 2x the test timeout."
+        required: false
+        default: "500"
+        type: choice
+        options:
+          - "250"
+          - "500"
+          - "1000"
+          - "1500"
+          - "2000"
       run_reason:
-        description: "Reason/context for the run (also saved as pre-run notes). You may append optional directives like 'min_run=120'."
+        description: "Run reason / pre-run notes. Optional directive: min_run=120"
         required: true
         default: "Env_@Tag_Reason"
         type: string
@@ -1493,5 +1504,6 @@ jobs:
             -f trace_mode="${{ github.event.inputs.trace_mode }}" \
             -f run_reason="RETRY FAILURES: ${{ github.event.inputs.run_reason }}" \
             -f rerun_passes="${{ github.event.inputs.rerun_passes }}" \
+            -f final_pass_slowmo_ms="${{ github.event.inputs.final_pass_slowmo_ms }}" \
             -f pass_number="1"
           echo "Dispatched rerun-failures (pass 1 of ${{ github.event.inputs.rerun_passes }}) for source run ${{ github.run_id }}"
