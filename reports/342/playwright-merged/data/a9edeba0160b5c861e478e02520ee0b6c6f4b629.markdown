@@ -1,0 +1,564 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: derived_scores(compounds & clusters)/GS_cluster_pub.spec.ts >>  GS cluster Derived Export Automation  >> For LETPAT - Age - All correct scenario,NUMPAT - Age - All correct scenario Complete The GS cluster & generate report
+- Location: src/tests/derived_scores(compounds & clusters)/GS_cluster_pub.spec.ts:28:9
+
+# Error details
+
+```
+Error: 863 W_Abil ->  value from the RunTime VS downloaded file is =  767.46 <> 758.04
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "767.46"
+Received: "758.04"
+```
+
+```
+Error: 864 SEMW ->  value from the RunTime VS downloaded file is =  14.93 <> 9.99
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "14.93"
+Received: "9.99"
+```
+
+```
+Error: 865 W68_Low ->  value from the RunTime VS downloaded file is =  753 <> 748
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "753"
+Received: "748"
+```
+
+```
+Error: 866 W68_High ->  value from the RunTime VS downloaded file is =  782 <> 768
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "782"
+Received: "768"
+```
+
+```
+Error: 867 W90_Low ->  value from the RunTime VS downloaded file is =  743 <> 742
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "743"
+Received: "742"
+```
+
+```
+Error: 868 W90_High ->  value from the RunTime VS downloaded file is =  792 <> 774
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "792"
+Received: "774"
+```
+
+```
+Error: 870 W95_High ->  value from the RunTime VS downloaded file is =  797 <> 778
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "797"
+Received: "778"
+```
+
+```
+Error: 885 WDIFF ->  value from the RunTime VS downloaded file is =  326.46 <> 317.04
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "326.46"
+Received: "317.04"
+```
+
+```
+Error: 894 Z_Score ->  value from the RunTime VS downloaded file is =  12.7 <> 12.34
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "12.7"
+Received: "12.34"
+```
+
+```
+Error: 895 StdScore_Computed ->  value from the RunTime VS downloaded file is =  290.54 <> 285.04
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "290.54"
+Received: "285.04"
+```
+
+```
+Error: 898 SEMSS ->  value from the RunTime VS downloaded file is =  8.71 <> 5.83
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "8.71"
+Received: "5.83"
+```
+
+```
+Error: 912 T_Score_Computed ->  value from the RunTime VS downloaded file is =  177.03 <> 173.36
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "177.03"
+Received: "173.36"
+```
+
+```
+Error: 914 SEMT ->  value from the RunTime VS downloaded file is =  5.81 <> 3.89
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "5.81"
+Received: "3.89"
+```
+
+```
+Error: 930 Composite W_Abil ->  value from the RunTime VS downloaded file is =  751.87 <> 747.16
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "751.87"
+Received: "747.16"
+```
+
+```
+Error: 931 Composite SEMW ->  value from the RunTime VS downloaded file is =  10.74 <> 9.19
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "10.74"
+Received: "9.19"
+```
+
+```
+Error: 932 W68_Low ->  value from the RunTime VS downloaded file is =  741 <> 738
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "741"
+Received: "738"
+```
+
+```
+Error: 933 W68_High ->  value from the RunTime VS downloaded file is =  763 <> 756
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "763"
+Received: "756"
+```
+
+```
+Error: 934 W90_Low ->  value from the RunTime VS downloaded file is =  734 <> 732
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "734"
+Received: "732"
+```
+
+```
+Error: 935 W90_High ->  value from the RunTime VS downloaded file is =  770 <> 762
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "770"
+Received: "762"
+```
+
+```
+Error: 936 W95_Low ->  value from the RunTime VS downloaded file is =  731 <> 729
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "731"
+Received: "729"
+```
+
+```
+Error: 937 W95_High ->  value from the RunTime VS downloaded file is =  773 <> 765
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "773"
+Received: "765"
+```
+
+```
+Error: 950 WDIFF ->  value from the RunTime VS downloaded file is =  307.51 <> 302.8
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "307.51"
+Received: "302.8"
+```
+
+```
+Error: 959 Z_Score ->  value from the RunTime VS downloaded file is =  14.51 <> 14.28
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "14.51"
+Received: "14.28"
+```
+
+```
+Error: 960 StdScore_Computed ->  value from the RunTime VS downloaded file is =  317.58 <> 314.25
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "317.58"
+Received: "314.25"
+```
+
+```
+Error: 963 SEMSS ->  value from the RunTime VS downloaded file is =  7.6 <> 6.5
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "7.6"
+Received: "6.5"
+```
+
+```
+Error: 977 T_Score_Computed ->  value from the RunTime VS downloaded file is =  195.05 <> 192.83
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "195.05"
+Received: "192.83"
+```
+
+```
+Error: 979 SEMT ->  value from the RunTime VS downloaded file is =  5.07 <> 4.33
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "5.07"
+Received: "4.33"
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: S05PwAut25AH ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| WJ V Settings"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+        - generic [ref=e34]:
+          - switch [ref=e35] [cursor=pointer]: "OFF"
+          - generic [ref=e36]: Offline Mode
+      - main [ref=e37]:
+        - generic [ref=e38]:
+          - heading [level=1] [ref=e39]: REPORT CENTER
+          - navigation [ref=e40]:
+            - tablist [ref=e41]:
+              - tab [selected] [ref=e42] [cursor=pointer]: Report Library
+              - button [ref=e43] [cursor=pointer]:
+                - img [ref=e44]
+          - grid [ref=e54]:
+            - generic [ref=e55]:
+              - generic [ref=e58]: Report Name
+              - generic [ref=e61]: Status
+              - generic [ref=e64]: Date Created
+              - generic [ref=e67]: Actions
+            - rowgroup [ref=e68]:
+              - row [ref=e69]:
+                - gridcell [ref=e71]: Derived_Score_AutoFilter_Template_N96934A93695
+                - gridcell [ref=e73]: Completed
+                - gridcell [ref=e75]: 09/17/2026 12:31 AM
+                - generic [ref=e76]:
+                  - gridcell [ref=e78] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e80] [cursor=pointer]: Delete
+                  - img [ref=e81] [cursor=pointer]
+              - row [ref=e83]:
+                - gridcell [ref=e85]: Derived_Score_AutoFilter_Template_N72421A89863
+                - gridcell [ref=e87]: Completed
+                - gridcell [ref=e89]: 09/17/2026 12:25 AM
+                - generic [ref=e90]:
+                  - gridcell [ref=e92] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e94] [cursor=pointer]: Delete
+                  - img [ref=e95] [cursor=pointer]
+              - row [ref=e97]:
+                - gridcell [ref=e99]: Derived_Score_AutoFilter_Template_N85886A9791
+                - gridcell [ref=e101]: Completed
+                - gridcell [ref=e103]: 09/17/2026 12:16 AM
+                - generic [ref=e104]:
+                  - gridcell [ref=e106] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e108] [cursor=pointer]: Delete
+                  - img [ref=e109] [cursor=pointer]
+              - row [ref=e111]:
+                - gridcell [ref=e113]: Derived_Score_AutoFilter_Template_N69104A63342
+                - gridcell [ref=e115]: Completed
+                - gridcell [ref=e117]: 09/17/2026 12:07 AM
+                - generic [ref=e118]:
+                  - gridcell [ref=e120] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e122] [cursor=pointer]: Delete
+                  - img [ref=e123] [cursor=pointer]
+              - row [ref=e125]:
+                - gridcell [ref=e127]: Derived_Score_AutoFilter_Template_N13353A12346
+                - gridcell [ref=e129]: Completed
+                - gridcell [ref=e131]: 09/17/2026 12:02 AM
+                - generic [ref=e132]:
+                  - gridcell [ref=e134] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e136] [cursor=pointer]: Delete
+                  - img [ref=e137] [cursor=pointer]
+              - row [ref=e139]:
+                - gridcell [ref=e141]: Derived_Score_AutoFilter_Template_N17460A64170
+                - gridcell [ref=e143]: Completed
+                - gridcell [ref=e145]: 09/11/2026 12:42 AM
+                - generic [ref=e146]:
+                  - gridcell [ref=e148] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e150] [cursor=pointer]: Delete
+                  - img [ref=e151] [cursor=pointer]
+              - row [ref=e153]:
+                - gridcell [ref=e155]: Derived_Score_AutoFilter_Template_N40687A34421
+                - gridcell [ref=e157]: Completed
+                - gridcell [ref=e159]: 09/11/2026 12:38 AM
+                - generic [ref=e160]:
+                  - gridcell [ref=e162] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e164] [cursor=pointer]: Delete
+                  - img [ref=e165] [cursor=pointer]
+              - row [ref=e167]:
+                - gridcell [ref=e169]: Derived_Score_AutoFilter_Template_N78481A17238
+                - gridcell [ref=e171]: Completed
+                - gridcell [ref=e173]: 09/11/2026 12:25 AM
+                - generic [ref=e174]:
+                  - gridcell [ref=e176] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e178] [cursor=pointer]: Delete
+                  - img [ref=e179] [cursor=pointer]
+              - row [ref=e181]:
+                - gridcell [ref=e183]: Derived_Score_AutoFilter_Template_N78481A17238
+                - gridcell [ref=e185]: Completed
+                - gridcell [ref=e187]: 09/11/2026 12:20 AM
+                - generic [ref=e188]:
+                  - gridcell [ref=e190] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e192] [cursor=pointer]: Delete
+                  - img [ref=e193] [cursor=pointer]
+              - row [ref=e195]:
+                - gridcell [ref=e197]: Derived_Score_AutoFilter_Template_N78481A17238
+                - gridcell [ref=e199]: Completed
+                - gridcell [ref=e201]: 09/11/2026 12:15 AM
+                - generic [ref=e202]:
+                  - gridcell [ref=e204] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e206] [cursor=pointer]: Delete
+                  - img [ref=e207] [cursor=pointer]
+              - row [ref=e209]:
+                - gridcell [ref=e211]: Derived_Score_AutoFilter_Template_N59431A85857
+                - gridcell [ref=e213]: Completed
+                - gridcell [ref=e215]: 09/03/2026 01:10 AM
+                - generic [ref=e216]:
+                  - gridcell [ref=e218] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e220] [cursor=pointer]: Delete
+                  - img [ref=e221] [cursor=pointer]
+              - row [ref=e223]:
+                - gridcell [ref=e225]: Derived_Score_AutoFilter_Template_N32233A17878
+                - gridcell [ref=e227]: Completed
+                - gridcell [ref=e229]: 09/03/2026 01:04 AM
+                - generic [ref=e230]:
+                  - gridcell [ref=e232] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e234] [cursor=pointer]: Delete
+                  - img [ref=e235] [cursor=pointer]
+              - row [ref=e237]:
+                - gridcell [ref=e239]: Derived_Score_AutoFilter_Template_N38008A60679
+                - gridcell [ref=e241]: Completed
+                - gridcell [ref=e243]: 09/03/2026 12:59 AM
+                - generic [ref=e244]:
+                  - gridcell [ref=e246] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e248] [cursor=pointer]: Delete
+                  - img [ref=e249] [cursor=pointer]
+              - row [ref=e251]:
+                - gridcell [ref=e253]: Derived_Score_AutoFilter_Template_N50703A73025
+                - gridcell [ref=e255]: Completed
+                - gridcell [ref=e257]: 09/03/2026 12:49 AM
+                - generic [ref=e258]:
+                  - gridcell [ref=e260] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e262] [cursor=pointer]: Delete
+                  - img [ref=e263] [cursor=pointer]
+              - row [ref=e265]:
+                - gridcell [ref=e267]: Derived_Score_AutoFilter_Template_N6199A69130
+                - gridcell [ref=e269]: Completed
+                - gridcell [ref=e271]: 09/03/2026 12:40 AM
+                - generic [ref=e272]:
+                  - gridcell [ref=e274] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e276] [cursor=pointer]: Delete
+                  - img [ref=e277] [cursor=pointer]
+              - row [ref=e279]:
+                - gridcell [ref=e281]: Derived_Score_AutoFilter_Template_N77209A15846
+                - gridcell [ref=e283]: Completed
+                - gridcell [ref=e285]: 09/03/2026 12:36 AM
+                - generic [ref=e286]:
+                  - gridcell [ref=e288] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e290] [cursor=pointer]: Delete
+                  - img [ref=e291] [cursor=pointer]
+              - row [ref=e293]:
+                - gridcell [ref=e295]: Derived_Score_AutoFilter_Template_N30444A94812
+                - gridcell [ref=e297]: Completed
+                - gridcell [ref=e299]: 08/31/2026 09:52 AM
+                - generic [ref=e300]:
+                  - gridcell [ref=e302] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e304] [cursor=pointer]: Delete
+                  - img [ref=e305] [cursor=pointer]
+              - row [ref=e307]:
+                - gridcell [ref=e309]: Derived_Score_AutoFilter_Template_N69099A4464
+                - gridcell [ref=e311]: Completed
+                - gridcell [ref=e313]: 08/31/2026 09:48 AM
+                - generic [ref=e314]:
+                  - gridcell [ref=e316] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e318] [cursor=pointer]: Delete
+                  - img [ref=e319] [cursor=pointer]
+              - row [ref=e321]:
+                - gridcell [ref=e323]: Derived_Score_AutoFilter_Template_N37632A64593
+                - gridcell [ref=e325]: Completed
+                - gridcell [ref=e327]: 08/20/2026 10:01 PM
+                - generic [ref=e328]:
+                  - gridcell [ref=e330] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e332] [cursor=pointer]: Delete
+                  - img [ref=e333] [cursor=pointer]
+              - row [ref=e335]:
+                - gridcell [ref=e337]: Derived_Score_AutoFilter_Template_N12948A89212
+                - gridcell [ref=e339]: Completed
+                - gridcell [ref=e341]: 08/20/2026 09:57 PM
+                - generic [ref=e342]:
+                  - gridcell [ref=e344] [cursor=pointer]: Download/Print
+                  - gridcell [ref=e346] [cursor=pointer]: Delete
+                  - img [ref=e347] [cursor=pointer]
+    - contentinfo [ref=e349]:
+      - generic [ref=e350]: Footer region,
+      - link [ref=e351] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com/
+        - img [ref=e352]
+      - generic [ref=e353]:
+        - link [ref=e354] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e355]
+        - link [ref=e356] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e357]
+        - link [ref=e358] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e359]
+        - link [ref=e360] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e361]
+      - generic [ref=e362]:
+        - button [ref=e363] [cursor=pointer]: Leave Feedback
+        - generic [ref=e364]: "|"
+        - link [ref=e365] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e366]: "|"
+        - link [ref=e367] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e368]: Footer region end
+  - alertdialog [active] [ref=e370]:
+    - main "Expiration warning" [ref=e371]:
+      - generic [ref=e372]: Session Expiring
+      - generic [ref=e373]: Session will expire in 5 minutes, press continue to extend time.
+    - navigation [ref=e374]:
+      - button "Continue" [ref=e375] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1  | import { expect } from "../base/basePageFixtures";
+  2  | 
+  3  | let slNo = 1;
+  4  | 
+  5  | export const softAssertPrint = function (
+  6  |   firstVal: string | number,
+  7  |   secondVal: string | number,
+  8  |   param: string,
+  9  | ) {
+  10 |   expect
+  11 |     .soft(
+  12 |         String(secondVal).trim(),
+  13 |       `${slNo} ${param} ->  value from the RunTime VS downloaded file is =  ${firstVal!} <> ${secondVal}`,
+  14 |     )
+> 15 |       .toEqual(String(firstVal).trim());
+     |        ^ Error: 979 SEMT ->  value from the RunTime VS downloaded file is =  5.07 <> 4.33
+  16 |   console.log(
+  17 |     `${slNo} ${param} ->  value from the RunTime VS downloaded file is =  ${firstVal!} <> ${secondVal}`,
+  18 |   );
+  19 |   slNo++;
+  20 | };
+  21 | export const softAssertAndPrint = function (
+  22 |     firstVal: string | number, // runtime
+  23 |     secondVal: string | number, // txt file
+  24 |     param: string,
+  25 | ) {
+  26 |   const firstValue: number = Number(firstVal.toString().match(/\d+/g));
+  27 |   const secondValue: number = Number(secondVal.toString().match(/\d+/g));
+  28 |   expect
+  29 |       .soft(
+  30 |           Math.abs(secondValue - firstValue),
+  31 |           `${slNo} ${param} ->  value from the RunTime VS downloaded file is =  ${firstVal!} <~> ${secondVal}`,
+  32 |       )
+  33 |       .toBeLessThanOrEqual(1);
+  34 |   console.log(
+  35 |       `${slNo} ${param} ->  value from the RunTime VS downloaded file is =  ${firstVal!} <~> ${secondVal}`,
+  36 |   );
+  37 |   slNo++;
+  38 | };
+  39 | 
+  40 | export const softAssertArray = function (
+  41 |   firstVal: string[] | number[],
+  42 |   secondVal: string[] | number[],
+  43 |   param: string,
+  44 | ) {
+  45 |   // Map elements to string, then trim and sort
+  46 |   const firstArray = firstVal.map((item) => String(item).trim()).sort();
+  47 |   const secondArray = secondVal.map((item) => String(item).trim()).sort();
+  48 |   expect
+  49 |     .soft(
+  50 |       firstArray,
+  51 |         `${slNo} : ${param} ->  value from the RunTime VS downloaded file is =  ${JSON.stringify(firstVal)} <> ${JSON.stringify(secondVal)}`,
+  52 |     )
+  53 |     .toEqual(secondArray);
+  54 |   console.log(
+  55 |       `${slNo} ${param} ->  value from the RunTime VS downloaded file is =  ${JSON.stringify(firstVal)} <> ${JSON.stringify(secondVal)}`,
+  56 |   );
+  57 |   slNo++;
+  58 | };
+```

@@ -1,0 +1,539 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: derived_scores(compounds & clusters)/GIA_cluster_pub.spec.ts >>  GIA cluster Derived Export Automation  >> For OVSYN - K12 - Attain Quick Basal Ceiling scenario,OVANT - K12 - All correct scenario,MATRCZ - K12 - All correct scenario,SPAREL - K12 - All incorrect scenario,STYREC - K12 - All correct scenario,SEMRET - K12 - All correct scenario,VRBATN - K12 - All correct scenario,NUMPAT - K12 - All correct scenario,VRBANL - K12 - Attain Quick Basal Ceiling scenario Complete The GIA cluster & generate report
+- Location: src/tests/derived_scores(compounds & clusters)/GIA_cluster_pub.spec.ts:28:9
+
+# Error details
+
+```
+Error: 2328 W_Abil ->  value from the RunTime VS downloaded file is =  767.46 <> 758.04
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "767.46"
+Received: "758.04"
+```
+
+```
+Error: 2329 SEMW ->  value from the RunTime VS downloaded file is =  14.93 <> 9.99
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "14.93"
+Received: "9.99"
+```
+
+```
+Error: 2330 W68_Low ->  value from the RunTime VS downloaded file is =  753 <> 748
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "753"
+Received: "748"
+```
+
+```
+Error: 2331 W68_High ->  value from the RunTime VS downloaded file is =  782 <> 768
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "782"
+Received: "768"
+```
+
+```
+Error: 2332 W90_Low ->  value from the RunTime VS downloaded file is =  743 <> 742
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "743"
+Received: "742"
+```
+
+```
+Error: 2333 W90_High ->  value from the RunTime VS downloaded file is =  792 <> 774
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "792"
+Received: "774"
+```
+
+```
+Error: 2335 W95_High ->  value from the RunTime VS downloaded file is =  797 <> 778
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "797"
+Received: "778"
+```
+
+```
+Error: 2350 WDIFF ->  value from the RunTime VS downloaded file is =  292.33 <> 282.91
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "292.33"
+Received: "282.91"
+```
+
+```
+Error: 2359 Z_Score ->  value from the RunTime VS downloaded file is =  10.76 <> 10.41
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "10.76"
+Received: "10.41"
+```
+
+```
+Error: 2360 StdScore_Computed ->  value from the RunTime VS downloaded file is =  261.33 <> 256.13
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "261.33"
+Received: "256.13"
+```
+
+```
+Error: 2363 SEMSS ->  value from the RunTime VS downloaded file is =  8.24 <> 5.51
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "8.24"
+Received: "5.51"
+```
+
+```
+Error: 2377 T_Score_Computed ->  value from the RunTime VS downloaded file is =  157.55 <> 154.09
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "157.55"
+Received: "154.09"
+```
+
+```
+Error: 2379 SEMT ->  value from the RunTime VS downloaded file is =  5.49 <> 3.68
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "5.49"
+Received: "3.68"
+```
+
+```
+Error: 2526 Composite W_Abil ->  value from the RunTime VS downloaded file is =  542.42 <> 541.24
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "542.42"
+Received: "541.24"
+```
+
+```
+Error: 2527 Composite SEMW ->  value from the RunTime VS downloaded file is =  4.43 <> 4.2
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "4.43"
+Received: "4.2"
+```
+
+```
+Error: 2528 W68_Low ->  value from the RunTime VS downloaded file is =  538 <> 537
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "538"
+Received: "537"
+```
+
+```
+Error: 2529 W68_High ->  value from the RunTime VS downloaded file is =  547 <> 545
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "547"
+Received: "545"
+```
+
+```
+Error: 2530 W90_Low ->  value from the RunTime VS downloaded file is =  535 <> 534
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "535"
+Received: "534"
+```
+
+```
+Error: 2531 W90_High ->  value from the RunTime VS downloaded file is =  550 <> 548
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "550"
+Received: "548"
+```
+
+```
+Error: 2532 W95_Low ->  value from the RunTime VS downloaded file is =  534 <> 533
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "534"
+Received: "533"
+```
+
+```
+Error: 2533 W95_High ->  value from the RunTime VS downloaded file is =  551 <> 549
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "551"
+Received: "549"
+```
+
+```
+Error: 2546 WDIFF ->  value from the RunTime VS downloaded file is =  56.88 <> 55.7
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "56.88"
+Received: "55.7"
+```
+
+```
+Error: 2555 Z_Score ->  value from the RunTime VS downloaded file is =  7.41 <> 7.25
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "7.41"
+Received: "7.25"
+```
+
+```
+Error: 2556 StdScore_Computed ->  value from the RunTime VS downloaded file is =  211.09 <> 208.79
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "211.09"
+Received: "208.79"
+```
+
+```
+Error: 2559 SEMSS ->  value from the RunTime VS downloaded file is =  8.65 <> 8.2
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "8.65"
+Received: "8.2"
+```
+
+```
+Error: 2573 T_Score_Computed ->  value from the RunTime VS downloaded file is =  124.06 <> 122.53
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "124.06"
+Received: "122.53"
+```
+
+```
+Error: 2575 SEMT ->  value from the RunTime VS downloaded file is =  5.77 <> 5.47
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "5.77"
+Received: "5.47"
+```
+
+```
+Error: 2721 Composite W_Abil ->  value from the RunTime VS downloaded file is =  677.6 <> 672.9
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "677.6"
+Received: "672.9"
+```
+
+```
+Error: 2722 Composite SEMW ->  value from the RunTime VS downloaded file is =  10.99 <> 9.48
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "10.99"
+Received: "9.48"
+```
+
+```
+Error: 2723 W68_Low ->  value from the RunTime VS downloaded file is =  667 <> 663
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "667"
+Received: "663"
+```
+
+```
+Error: 2724 W68_High ->  value from the RunTime VS downloaded file is =  689 <> 682
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "689"
+Received: "682"
+```
+
+```
+Error: 2725 W90_Low ->  value from the RunTime VS downloaded file is =  660 <> 657
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "660"
+Received: "657"
+```
+
+```
+Error: 2726 W90_High ->  value from the RunTime VS downloaded file is =  696 <> 688
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "696"
+Received: "688"
+```
+
+```
+Error: 2727 W95_Low ->  value from the RunTime VS downloaded file is =  656 <> 654
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "656"
+Received: "654"
+```
+
+```
+Error: 2728 W95_High ->  value from the RunTime VS downloaded file is =  699 <> 691
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "699"
+Received: "691"
+```
+
+```
+Error: 2741 WDIFF ->  value from the RunTime VS downloaded file is =  199.27 <> 194.57
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "199.27"
+Received: "194.57"
+```
+
+```
+Error: 2750 Z_Score ->  value from the RunTime VS downloaded file is =  11.79 <> 11.51
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "11.79"
+Received: "11.51"
+```
+
+```
+Error: 2751 StdScore_Computed ->  value from the RunTime VS downloaded file is =  276.87 <> 272.7
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "276.87"
+Received: "272.7"
+```
+
+```
+Error: 2754 SEMSS ->  value from the RunTime VS downloaded file is =  9.75 <> 8.41
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "9.75"
+Received: "8.41"
+```
+
+```
+Error: 2768 T_Score_Computed ->  value from the RunTime VS downloaded file is =  167.91 <> 165.13
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "167.91"
+Received: "165.13"
+```
+
+```
+Error: 2770 SEMT ->  value from the RunTime VS downloaded file is =  6.50 <> 5.61
+
+expect(received).toEqual(expected) // deep equality
+
+Expected: "6.50"
+Received: "5.61"
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main "Clinical Login" [ref=e4]:
+    - generic [ref=e5]:
+      - img "Riverside Insights Logo" [ref=e6]
+      - heading "Looking for the Canadian login page? Click Here" [level=4] [ref=e8]:
+        - text: Looking for the Canadian login page?
+        - link "Click Here" [ref=e9] [cursor=pointer]:
+          - /url: https://ca.riversidescore.com
+      - heading "Riverside Updates" [level=1] [ref=e10]
+      - generic [ref=e13]:
+        - paragraph [ref=e14]:
+          - generic [ref=e15]: The RiversideScore platform will be down for maintenance on Wednesday, September 16th, from 9:30 PM
+          - text: to 12:00 AM Central.
+          - generic [ref=e16]: During this time, access will be unavailable. If you have any questions, please contact
+          - text: "Customer Support Monday- Friday 8AM- 4PM Central at:"
+        - paragraph [ref=e17]:
+          - text: "Tel:"
+          - link "800-323-9540" [ref=e18] [cursor=pointer]:
+            - /url: tel:8003239540
+          - text: "Email:"
+          - link "Inquiry@service.riversideinsights.com" [ref=e20] [cursor=pointer]:
+            - /url: mailto:Inquiry@service.riversideinsights.com
+        - paragraph [ref=e21]: We appreciate your patience as we work to improve the experience!
+    - generic [ref=e22]:
+      - img "Riverside Score Logo" [ref=e23]
+      - form "Sign in details" [ref=e24]:
+        - generic [ref=e25]:
+          - text: USERNAME
+          - textbox "USERNAME" [active] [ref=e27]:
+            - /placeholder: Username
+          - generic [ref=e29]:
+            - text: PASSWORD
+            - textbox "PASSWORD" [ref=e31]:
+              - /placeholder: Password
+          - button "Sign In" [ref=e32] [cursor=pointer]
+          - generic [ref=e33]:
+            - button "Remember Me" [ref=e34] [cursor=pointer]: Remember Me
+            - link "Forgot my password" [ref=e37] [cursor=pointer]:
+              - /url: /forgot
+          - alert [ref=e38]: You have been logged out due to inactivity.
+        - generic [ref=e39]:
+          - heading "Are you looking to purchase our products?" [level=4] [ref=e40]
+          - link "Click Here!" [ref=e41] [cursor=pointer]:
+            - /url: https://riversideinsights.com/explore
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - text: For help accessing Riverside Score™, see the
+        - link "online help" [ref=e44] [cursor=pointer]:
+          - /url: https://onlinehelp.riversideinsights.com/Help/Riverside_Score/index.htm#t=Overview.htm
+        - text: for signing in.
+      - link "Check Platform Status" [ref=e46] [cursor=pointer]:
+        - /url: https://riversideinsights.com/platform-status
+  - contentinfo [ref=e47]:
+    - generic [ref=e48]: Footer region,
+    - link "w w w dot riverside insights dot com" [ref=e49] [cursor=pointer]:
+      - /url: https://www.riversideinsights.com/
+      - img "Riverside Insights Website" [ref=e50]
+    - generic [ref=e51]:
+      - link "Riverside Insights Facebook" [ref=e52] [cursor=pointer]:
+        - /url: https://www.facebook.com/RiversideInsights/
+        - img "Riverside Insights Facebook" [ref=e53]
+      - link "Riverside Insights Twitter" [ref=e54] [cursor=pointer]:
+        - /url: https://twitter.com/1BillionLives
+        - img "Riverside Insights Twitter" [ref=e55]
+      - link "Riverside Insights LinkedIn" [ref=e56] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/riverside-insights/
+        - img "Riverside Insights LinkedIn" [ref=e57]
+      - link "Riverside Insights Instagram" [ref=e58] [cursor=pointer]:
+        - /url: https://www.instagram.com/riversideinsightsassessments/
+        - img "Riverside Insights Instagram" [ref=e59]
+    - generic [ref=e60]:
+      - img "WJ IV Mobile Data Solution" [ref=e61]
+      - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e62] [cursor=pointer]
+      - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e63] [cursor=pointer]
+    - generic [ref=e64]:
+      - img "Bdi 3 Mobile Data Solution" [ref=e65]
+      - generic [ref=e66]:
+        - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e67] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from Google Play" [ref=e68] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from App Store" [ref=e69] [cursor=pointer]
+    - generic [ref=e70]:
+      - button "Leave Feedback" [ref=e71] [cursor=pointer]
+      - generic [ref=e72]: "|"
+      - link "Terms of Use" [ref=e73] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - generic [ref=e74]: "|"
+      - link "Privacy Policy" [ref=e75] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+    - generic [ref=e76]: Footer region end
+```
+
+# Test source
+
+```ts
+  1  | import { expect } from "../base/basePageFixtures";
+  2  | 
+  3  | let slNo = 1;
+  4  | 
+  5  | export const softAssertPrint = function (
+  6  |   firstVal: string | number,
+  7  |   secondVal: string | number,
+  8  |   param: string,
+  9  | ) {
+  10 |   expect
+  11 |     .soft(
+  12 |         String(secondVal).trim(),
+  13 |       `${slNo} ${param} ->  value from the RunTime VS downloaded file is =  ${firstVal!} <> ${secondVal}`,
+  14 |     )
+> 15 |       .toEqual(String(firstVal).trim());
+     |        ^ Error: 2770 SEMT ->  value from the RunTime VS downloaded file is =  6.50 <> 5.61
+  16 |   console.log(
+  17 |     `${slNo} ${param} ->  value from the RunTime VS downloaded file is =  ${firstVal!} <> ${secondVal}`,
+  18 |   );
+  19 |   slNo++;
+  20 | };
+  21 | export const softAssertAndPrint = function (
+  22 |     firstVal: string | number, // runtime
+  23 |     secondVal: string | number, // txt file
+  24 |     param: string,
+  25 | ) {
+  26 |   const firstValue: number = Number(firstVal.toString().match(/\d+/g));
+  27 |   const secondValue: number = Number(secondVal.toString().match(/\d+/g));
+  28 |   expect
+  29 |       .soft(
+  30 |           Math.abs(secondValue - firstValue),
+  31 |           `${slNo} ${param} ->  value from the RunTime VS downloaded file is =  ${firstVal!} <~> ${secondVal}`,
+  32 |       )
+  33 |       .toBeLessThanOrEqual(1);
+  34 |   console.log(
+  35 |       `${slNo} ${param} ->  value from the RunTime VS downloaded file is =  ${firstVal!} <~> ${secondVal}`,
+  36 |   );
+  37 |   slNo++;
+  38 | };
+  39 | 
+  40 | export const softAssertArray = function (
+  41 |   firstVal: string[] | number[],
+  42 |   secondVal: string[] | number[],
+  43 |   param: string,
+  44 | ) {
+  45 |   // Map elements to string, then trim and sort
+  46 |   const firstArray = firstVal.map((item) => String(item).trim()).sort();
+  47 |   const secondArray = secondVal.map((item) => String(item).trim()).sort();
+  48 |   expect
+  49 |     .soft(
+  50 |       firstArray,
+  51 |         `${slNo} : ${param} ->  value from the RunTime VS downloaded file is =  ${JSON.stringify(firstVal)} <> ${JSON.stringify(secondVal)}`,
+  52 |     )
+  53 |     .toEqual(secondArray);
+  54 |   console.log(
+  55 |       `${slNo} ${param} ->  value from the RunTime VS downloaded file is =  ${JSON.stringify(firstVal)} <> ${JSON.stringify(secondVal)}`,
+  56 |   );
+  57 |   slNo++;
+  58 | };
+```
