@@ -1,0 +1,363 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts >> Future-dated activation - admin tasks allowed + Submit blocked + banner (S49, S50, S51)
+- Location: src/tests/functional/subscriptions/SubscriptionActivationNewUserFutureDate.spec.ts:51:5
+
+# Error details
+
+```
+Error: expect(locator).toHaveCount(expected) failed
+
+Locator:  locator('//div[contains(@class,\'WJVHome_mcs_message\') and @data-status=\'FUTURE\']')
+Expected: 0
+Received: 1
+Timeout:  60000ms
+
+Call log:
+  - Expect "soft toHaveCount" with timeout 60000ms
+  - waiting for locator('//div[contains(@class,\'WJVHome_mcs_message\') and @data-status=\'FUTURE\']')
+    63 × locator resolved to 1 element
+       - unexpected value "1"
+
+```
+
+```
+Error: expect(locator).toBeEnabled() failed
+
+Locator:  locator('button[role=\'menuitem\']:text(\'Reports\')')
+Expected: enabled
+Received: disabled
+Timeout:  60000ms
+
+Call log:
+  - Expect "soft toBeEnabled" with timeout 60000ms
+  - waiting for locator('button[role=\'menuitem\']:text(\'Reports\')')
+    63 × locator resolved to <button disabled tabindex="0" type="button" role="menuitem" aria-haspopup="menu" data-selected="false" aria-expanded="false" aria-owns="menuPart_mi_5" class="menu-item menu-magenta">…</button>
+       - unexpected value "disabled"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello Lynn SubAut23Sep26171755beq" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "Lynn SubAut23Sep26171755beq" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [active] [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - generic "WJ V Settings Navigation" [ref=e41]:
+                - img [ref=e43]
+                - text: WJ V Settings
+              - menu [ref=e45]:
+                - menuitem "Subscription Management" [ref=e46] [cursor=pointer]
+                - menuitem "Report Settings" [ref=e47] [cursor=pointer]
+            - generic [ref=e49]:
+              - heading "Subscription Management" [level=1] [ref=e50]
+              - generic [ref=e51]:
+                - generic [ref=e52]:
+                  - generic [ref=e53]: START DATE
+                  - generic [ref=e54]: 09/23/2026
+                - generic [ref=e55]:
+                  - generic [ref=e56]: EXPIRATION DATE
+                  - generic [ref=e57]: 09/22/2027
+              - generic [ref=e59]:
+                - generic [ref=e60]: ACCOUNT HOLDER
+                - generic [ref=e61]: Lynn SubAut23Sep26171755beq
+                - generic [ref=e62]: sunil.adeptpros+SubAut23Sep26171755beq@gmail.com
+              - generic [ref=e64]:
+                - generic [ref=e65]: ACTIVATION CONTACT
+                - generic [ref=e66]: Lynn SubAut23Sep26171755beq
+                - generic [ref=e67]: sunil.adeptpros+SubAut23Sep26171755beq@gmail.com
+                - button "More info" [ref=e68]
+              - link "Terms and Conditions" [ref=e71] [cursor=pointer]:
+                - /url: https://info.riversideinsights.com/terms-of-use
+              - heading "Subtest Subscription Usage" [level=1] [ref=e72]
+              - generic [ref=e73]:
+                - generic [ref=e74]:
+                  - generic [ref=e75]: REMAINING SUBTESTS
+                  - generic [ref=e76]: "99"
+                  - button "More info" [ref=e77]
+                - generic [ref=e78]:
+                  - generic [ref=e79]: SUBTESTS USED
+                  - generic [ref=e80]: "1"
+              - generic [ref=e82]:
+                - generic [ref=e83]: TOTAL ACTIVE STAFF
+                - generic [ref=e84]: "2"
+      - contentinfo [ref=e85]:
+        - generic [ref=e86]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e87] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e88]
+        - generic [ref=e89]:
+          - link "Riverside Insights Facebook" [ref=e90] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e91]
+          - link "Riverside Insights Twitter" [ref=e92] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e93]
+          - link "Riverside Insights LinkedIn" [ref=e94] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e95]
+          - link "Riverside Insights Instagram" [ref=e96] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e97]
+        - generic [ref=e98]:
+          - button "Leave Feedback" [ref=e99] [cursor=pointer]
+          - generic [ref=e100]: "|"
+          - link "Terms of Use" [ref=e101] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e102]: "|"
+          - link "Privacy Policy" [ref=e103] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e104]: Footer region end
+  - region "Chat Widget" [ref=e105]:
+    - iframe [ref=e106]:
+      - button "Open live chat" [ref=f7e5]:
+        - img [ref=f7e8]
+        - img [ref=f7e15]
+    - generic "Drag" [ref=e107]:
+      - img [ref=e108]
+```
+
+# Test source
+
+```ts
+  198 |         }`
+  199 |       );
+  200 | 
+  201 |       const subApi = new subscriptionApi(this.page);
+  202 | 
+  203 |       if (isAlreadyActivated) {
+  204 |         await subApi.resetActivationCode(scenario.activationCode);
+  205 |         await subApi.updateSalesOrder(scenario.salesOrderNumber);
+  206 |         continue;
+  207 |       }
+  208 | 
+  209 |       if (isSoNumberUsed) {
+  210 |         await subApi.updateSalesOrder(scenario.salesOrderNumber);
+  211 |         continue;
+  212 |       }
+  213 |     }
+  214 |   }
+  215 | 
+  216 |   async verifyFinalSubmitTestAssignmentIsDisabled() {
+  217 |     await this.submitTestAssignmentButton.click();
+  218 |     await this.reviewNotesTab.click();
+  219 |     await expect.soft(this.submitTestAssignmentFinalButton).toBeDisabled();
+  220 |   }
+  221 | 
+  222 |   async verifyConfirmButtonIsDisabled() {
+  223 |     await expect.soft(this.confirmActivationButton).toBeDisabled();
+  224 |   }
+  225 | 
+  226 |   async verifyDateErrorDoesNotMention(text: string) {
+  227 |     await expect.soft(this.confirmDateErrorMessage).not.toContainText(text);
+  228 |   }
+  229 | 
+  230 |   async verifyStartDateIsEditable() {
+  231 |     await expect.soft(this.confirmStartDateInput).toBeEnabled();
+  232 |   }
+  233 | 
+  234 |   async verifyStartDateIsReadOnly() {
+  235 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();
+  236 |   }
+  237 | 
+  238 |   async verifyConfirmDatesAreReadOnly() {
+  239 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();
+  240 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();
+  241 |   }
+  242 | 
+  243 |   async verifyConfirmDatesMatch(startMMDDYYYY: string, endMMDDYYYY: string) {
+  244 |     await expect.soft(this.confirmStartDateInput).toHaveValue(startMMDDYYYY);
+  245 |     await expect.soft(this.confirmEndDateInput).toHaveValue(endMMDDYYYY);
+  246 |   }
+  247 | 
+  248 |   async getConfirmDateValues(): Promise<{ startValue: string; endValue: string }> {
+  249 |     return {
+  250 |       startValue: await this.confirmStartDateInput.inputValue(),
+  251 |       endValue: await this.confirmEndDateInput.inputValue(),
+  252 |     };
+  253 |   }
+  254 | 
+  255 |   async verifyRolloverConfirmExtras() {
+  256 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();
+  257 |     await expect.soft(this.confirmSubtestRolloverNote).toBeVisible();
+  258 |   }
+  259 | 
+  260 |   async verifyConfirmNotesForType(expectsRolloverNote: boolean) {
+  261 |     await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();
+  262 |     if (expectsRolloverNote) {
+  263 |       await expect.soft(this.confirmSubtestRolloverNote).toBeVisible();
+  264 |     } else {
+  265 |       await expect
+  266 |         .soft(this.confirmSubtestRolloverNote, 'rollover note must not show for Unlimited')
+  267 |         .toHaveCount(0);
+  268 |     }
+  269 |   }
+  270 | 
+  271 |   async verifyNoConfirmPopupIsShown() {
+  272 |     await expect.soft(this.confirmActivationHeading).toHaveCount(0);
+  273 |     await expect.soft(this.confirmRenewalHeading).toHaveCount(0);
+  274 |   }
+  275 | 
+  276 |   async verifyOnSignInToActivatePageWithoutRenewalPopup() {
+  277 |     await expect.soft(this.signInToActivateHeading).toBeVisible();
+  278 |     await expect.soft(this.confirmRenewalHeading).not.toBeVisible();
+  279 |   }
+  280 | 
+  281 |   async verifySignInButtonIsVisible() {
+  282 |     await expect(this.signInButton).toBeVisible();
+  283 |   }
+  284 | 
+  285 |   async verifyFutureDateBannerVisible(futureStartMMDDYYYY: string) {
+  286 |     await expect.soft(this.subscriptionFutureDateBanner).toBeVisible();
+  287 |     await expect
+  288 |       .soft(this.subscriptionFutureDateBanner)
+  289 |       .toContainText(`Your subscription begins on ${futureStartMMDDYYYY}`);
+  290 |   }
+  291 | 
+  292 |   async verifyFutureDateBannerIsAbsent() {
+  293 |     await expect.soft(this.subscriptionFutureDateBanner).toHaveCount(0);
+  294 |   }
+  295 | 
+  296 |   async verifyReportsTabEnabledState(isEnabled: boolean) {
+  297 |     if (isEnabled) {
+> 298 |       await expect.soft(this.reportsTab).toBeEnabled();
+      |                                          ^ Error: expect(locator).toBeEnabled() failed
+  299 |     } else {
+  300 |       await expect.soft(this.reportsTab).toBeDisabled();
+  301 |     }
+  302 |   }
+  303 | 
+  304 |   async signOutFromHeader() {
+  305 |     await this.signOutButton.click();
+  306 |   }
+  307 | 
+  308 |   async signInAs(username: string, password: string) {
+  309 |     await this.userName.fill(username);
+  310 |     await this.passWord.fill(password);
+  311 |     await this.signInButton.click();
+  312 |   }
+  313 | 
+  314 |   async verifyAHRetainedWithWJVOnLandingPage(formData: SubscriptionActivationFormData) {
+  315 |     await expect.soft(this.productDisplayCardWJV).toBeVisible();
+  316 |     await expect.soft(this.userNameDisplayHeader).toHaveText(`${formData.firstName} ${formData.lastName}`);
+  317 |   }
+  318 | 
+  319 |   async verifyActivationCodeAlreadyUsedError(activationCode: string) {
+  320 |     await this.gotoActivationUrl(activationCode);
+  321 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  322 |     await expect.soft(this.activationCustomerNameText).toContainText('Activation code is already activated');
+  323 |   }
+  324 | 
+  325 |   async verifyInvalidActivationCodeError(malformedCode: string) {
+  326 |     await this.gotoActivationUrl(malformedCode);
+  327 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  328 |     await expect.soft(this.activationCustomerNameText).toContainText('Invalid activation code');
+  329 |   }
+  330 | 
+  331 |   async fillContactWithInvalidEmailAndPhone(
+  332 |     data: SubscriptionActivationFormData,
+  333 |     invalidEmail: string,
+  334 |     invalidPhone: string
+  335 |   ) {
+  336 |     await this.contactFirstNameInput.pressSequentially(data.firstName, { delay: 50 });
+  337 |     await this.contactLastNameInput.pressSequentially(data.lastName, { delay: 50 });
+  338 |     await this.contactEmailInput.pressSequentially(invalidEmail, { delay: 50 });
+  339 |     await this.contactEmailInput.press('Tab');
+  340 |     await this.contactPhoneInput.pressSequentially(invalidPhone, { delay: 50 });
+  341 |     await this.contactPhoneInput.press('Tab');
+  342 |   }
+  343 | 
+  344 |   async assertContactInvalidEmailErrorVisible() {
+  345 |     await expect.soft(this.contactInvalidEmailError).toBeVisible();
+  346 |   }
+  347 | 
+  348 |   async assertContactInvalidPhoneErrorVisible() {
+  349 |     await expect.soft(this.contactInvalidPhoneError).toBeVisible();
+  350 |   }
+  351 | 
+  352 |   async correctContactEmailAndPhone(validEmail: string, validPhone: string) {
+  353 |     await this.contactEmailInput.click();
+  354 |     await this.contactEmailInput.press('Control+A');
+  355 |     await this.contactEmailInput.press('Delete');
+  356 |     await this.contactEmailInput.pressSequentially(validEmail, { delay: 50 });
+  357 |     await this.contactEmailInput.press('Tab');
+  358 | 
+  359 |     await this.contactPhoneInput.click();
+  360 |     await this.contactPhoneInput.press('Control+A');
+  361 |     await this.contactPhoneInput.press('Delete');
+  362 |     await this.contactPhoneInput.pressSequentially(validPhone, { delay: 50 });
+  363 |     await this.contactPhoneInput.press('Tab');
+  364 | 
+  365 |     await this.wizardNextButton.click();
+  366 |   }
+  367 | 
+  368 |   async fillPasswordOnly(password: string) {
+  369 |     await this.credentialsPasswordInput.click();
+  370 |     await this.credentialsPasswordInput.press('Control+A');
+  371 |     await this.credentialsPasswordInput.press('Delete');
+  372 |     await this.credentialsPasswordInput.pressSequentially(password, { delay: 50 });
+  373 |     await this.credentialsPasswordInput.press('Tab');
+  374 |   }
+  375 | 
+  376 |   async assertPasswordLengthErrorVisible() {
+  377 |     await expect.soft(this.passwordLengthError).toBeVisible();
+  378 |   }
+  379 | 
+  380 |   async fillMismatchedPasswords(password: string, confirmPassword: string) {
+  381 |     await this.credentialsPasswordInput.click();
+  382 |     await this.credentialsPasswordInput.press('Control+A');
+  383 |     await this.credentialsPasswordInput.press('Delete');
+  384 |     await this.credentialsPasswordInput.pressSequentially(password, { delay: 50 });
+  385 | 
+  386 |     await this.credentialsConfirmPasswordInput.click();
+  387 |     await this.credentialsConfirmPasswordInput.press('Control+A');
+  388 |     await this.credentialsConfirmPasswordInput.press('Delete');
+  389 |     await this.credentialsConfirmPasswordInput.pressSequentially(confirmPassword, { delay: 50 });
+  390 |     await this.credentialsConfirmPasswordInput.press('Tab');
+  391 |   }
+  392 | 
+  393 |   async fillValidCredentialsAndProceed(data: SubscriptionActivationFormData) {
+  394 |     await this.credentialsUsernameInput.click();
+  395 |     await this.credentialsUsernameInput.press('Control+A');
+  396 |     await this.credentialsUsernameInput.press('Delete');
+  397 |     await this.credentialsUsernameInput.pressSequentially(data.username, { delay: 50 });
+  398 | 
+```
