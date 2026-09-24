@@ -178,9 +178,13 @@ jobs:
 
       - name: Save pre-run notes
         if: inputs.run_reason != ''
+        # Free-text inputs go through env (never ${{ }} inside run:), so quotes / $() / backticks
+        # in run_reason are plain data, not shell.
+        env:
+          RUN_REASON: ${{ inputs.run_reason }}
         run: |
           mkdir -p run-metadata
-          echo "${{ inputs.run_reason }}" > run-metadata/pre-run-notes.txt
+          printf '%s\n' "$RUN_REASON" > run-metadata/pre-run-notes.txt
 
       - name: Upload pre-run notes
         if: inputs.run_reason != ''
@@ -364,11 +368,12 @@ jobs:
           LOG_RAW_VALUES: ${{ env.LOG_RAW_VALUES }}
           CI: "true"
           PLAYWRIGHT_JSON_OUTPUT_NAME: results.json
+          GREP_PATTERN: ${{ github.event.inputs.test_pattern }}
         run: |
           echo "Running shard ${{ matrix.shard }} of ${{ github.event.inputs.shard_count }}"
           echo "Raw value logging (LOG_RAW_VALUES): ${LOG_RAW_VALUES:-false}"
-          npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
-            --grep '${{ github.event.inputs.test_pattern }}' \
+          npx cross-env test="$TEST_ENV" npx playwright test \
+            --grep "$GREP_PATTERN" \
             --project=${{ github.event.inputs.browser }} \
             --shard=${{ matrix.shard }}/${{ github.event.inputs.shard_count }} \
             --workers=1 \
@@ -394,13 +399,16 @@ jobs:
           retention-days: 90
       - name: Create status file
         if: always()
+        env:
+          ENVIRONMENT: ${{ github.event.inputs.environment }}
+          TEST_PATTERN: ${{ github.event.inputs.test_pattern }}
         run: |
           mkdir -p test-status
           echo "${{ steps.run_tests.outcome }}" > test-status/status.txt
           echo "Shard: ${{ matrix.shard }}" >> test-status/status.txt
-          echo "Environment: ${{ github.event.inputs.environment }}" >> test-status/status.txt
+          printf 'Environment: %s\n' "$ENVIRONMENT" >> test-status/status.txt
           echo "Browser: ${{ github.event.inputs.browser }}" >> test-status/status.txt
-          echo "Test Pattern: ${{ github.event.inputs.test_pattern }}" >> test-status/status.txt
+          printf 'Test Pattern: %s\n' "$TEST_PATTERN" >> test-status/status.txt
           echo "Retries: ${{ env.NUM_RETRIES }}" >> test-status/status.txt
           echo "Video Mode: ${{ github.event.inputs.video_mode }}" >> test-status/status.txt
           echo "Trace Mode: ${{ github.event.inputs.trace_mode }}" >> test-status/status.txt
@@ -438,36 +446,21 @@ jobs:
           path: runner-repo
 
       - name: Create merged report from template
+        env:
+          ENVIRONMENT: ${{ inputs.environment }}
+          BROWSER: ${{ inputs.browser }}
+          TEST_PATTERN: ${{ inputs.test_pattern }}
+          SHARD_COUNT: ${{ inputs.shard_count }}
+          NUM_RETRIES: ${{ inputs.num_retries }}
+          VIDEO_MODE: ${{ inputs.video_mode }}
+          TRACE_MODE: ${{ inputs.trace_mode }}
+          # New runs always show on/off so a verbose debug run is identifiable.
+          LOG_RAW_VALUES_LABEL: ${{ inputs.log_raw_values && 'ON (verbose)' || 'off' }}
+          RUN_ID: ${{ github.run_id }}
         run: |
-          mkdir -p merged-report
-          current_date=$(date +%Y-%m-%d_%H-%M-%S)
-
-          # Copy template
-          cp runner-repo/.github/templates/merged-report-template.html merged-report/index.html
-
-          # Build pre-run notes block (HTML-escape user input to prevent XSS)
-          PRE_RUN_NOTES=""
-          if [ -f "all-artifacts/run-metadata/pre-run-notes.txt" ]; then
-            ESCAPED_NOTES=$(cat all-artifacts/run-metadata/pre-run-notes.txt | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g')
-            PRE_RUN_NOTES="<div class='notes-section'><h3>Pre-Run Notes</h3><p>${ESCAPED_NOTES}</p></div>"
-          fi
-          awk -v val="$PRE_RUN_NOTES" '{gsub(/<!-- PRE_RUN_NOTES -->/, val)}1' merged-report/index.html > merged-report/index.tmp && mv merged-report/index.tmp merged-report/index.html
-
-          # Replace simple placeholders
-          sed -i "s|__ENVIRONMENT__|${{ inputs.environment }}|g" merged-report/index.html
-          sed -i "s|__BROWSER__|${{ inputs.browser }}|g" merged-report/index.html
-          sed -i "s|__SHARD_COUNT__|${{ inputs.shard_count }}|g" merged-report/index.html
-          sed -i "s|__NUM_RETRIES__|${{ inputs.num_retries }}|g" merged-report/index.html
-          sed -i "s|__VIDEO_MODE__|${{ inputs.video_mode }}|g" merged-report/index.html
-          sed -i "s|__TRACE_MODE__|${{ inputs.trace_mode }}|g" merged-report/index.html
-          # Older reports rendered before this placeholder existed simply won't contain
-          # it; new runs always show on/off so a verbose debug run is identifiable.
-          sed -i "s|__LOG_RAW_VALUES__|${{ inputs.log_raw_values && 'ON (verbose)' || 'off' }}|g" merged-report/index.html
-          sed -i "s|__CURRENT_DATE__|${current_date}|g" merged-report/index.html
-          sed -i "s|__GITHUB_RUN_ID__|${{ github.run_id }}|g" merged-report/index.html
-
-          # Replace test_pattern using awk (safe for regex special chars like |, (, ) etc.)
-          awk -v val="${{ inputs.test_pattern }}" '{gsub(/__TEST_PATTERN__/, val)}1' merged-report/index.html > merged-report/index.tmp && mv merged-report/index.tmp merged-report/index.html
+          # Settings header + HTML-escaped pre-run notes (all values read from env —
+          # safe for quotes, |, &, < in run_reason / test_pattern).
+          CURRENT_DATE=$(date +%Y-%m-%d_%H-%M-%S) node runner-repo/.github/scripts/fill-merged-report.js
 
           # Build shard entries into a temp file
           > shard_entries.html
@@ -778,80 +771,60 @@ jobs:
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Organize reports (copy and histories)
+      - name: Build run-history entry
+        # jq --arg makes every value a proper JSON string, so quotes/backslashes in
+        # run_reason or test_pattern can no longer produce invalid history JSON.
+        env:
+          RUN_NUMBER: ${{ steps.run-info.outputs.run_number }}
+          RUN_TIMESTAMP: ${{ steps.run-info.outputs.timestamp }}
+          RUN_REASON: ${{ inputs.run_reason }}
+          ENVIRONMENT: ${{ inputs.environment }}
+          BROWSER: ${{ inputs.browser }}
+          TEST_PATTERN: ${{ inputs.test_pattern }}
         run: |
-          cd gh-pages
+          jq -nc --arg runNumber "$RUN_NUMBER" --arg timestamp "$RUN_TIMESTAMP"             --arg runReason "$RUN_REASON" --arg environment "$ENVIRONMENT"             --arg browser "$BROWSER" --arg testPattern "$TEST_PATTERN"             '{runNumber:$runNumber, timestamp:$timestamp, runReason:$runReason, environment:$environment, browser:$browser, testPattern:$testPattern}'             > current-run.json
+          mkdir -p new-report/metadata
+          cp current-run.json new-report/metadata/run-info.json
 
-          # Create directory for new report
-          mkdir -p "reports/${{ steps.run-info.outputs.run_number }}"
-
-          # Copy files (excluding large ones)
-          echo "Copying files to gh-pages branch directory..."
-          rsync -av --exclude="*.zip" --exclude="*.mp4" --exclude="*.webm" \
-            --exclude="*.gif" --exclude="*.trace" --exclude="*.webp" --max-size=100M \
-            "../new-report/" "reports/${{ steps.run-info.outputs.run_number }}/"
-
-          # Create and Update Run History
-          CURRENT_RUN="{\"runNumber\": \"${{ steps.run-info.outputs.run_number }}\", \"timestamp\": \"${{ steps.run-info.outputs.timestamp }}\", \"runReason\": \"${{ inputs.run_reason }}\", \"environment\": \"${{ inputs.environment }}\", \"browser\": \"${{ inputs.browser }}\", \"testPattern\": \"${{ inputs.test_pattern }}\"}"
-          mkdir -p "../new-report/metadata"
-          echo "$CURRENT_RUN" > "../new-report/metadata/run-info.json"
-
-          # Merge dashboard counts into CURRENT_RUN if merge-reports produced them.
-          # If the file is missing (older artifacts, or extraction step failed), CURRENT_RUN
-          # stays in its legacy shape — run-history.json keeps working, dashboard treats
-          # the run as "unknown".
-          if [ -f "../new-report/run-counts.json" ]; then
-            COUNTS=$(cat "../new-report/run-counts.json")
-            CURRENT_RUN=$(echo "$CURRENT_RUN" | jq --argjson c "$COUNTS" '. + $c' -c)
-            echo "Extended CURRENT_RUN with dashboard counts"
+          # Merge dashboard counts if merge-reports produced them. If missing (older
+          # artifacts, or extraction step failed) the entry keeps its legacy shape and
+          # the dashboard treats the run as "unknown".
+          if [ -f new-report/run-counts.json ]; then
+            jq -c --slurpfile c new-report/run-counts.json '. + $c[0]' current-run.json > current-run.tmp && mv current-run.tmp current-run.json
+            echo "Extended entry with dashboard counts"
           else
-            echo "No run-counts.json found — keeping legacy CURRENT_RUN shape"
+            echo "No run-counts.json found — keeping legacy entry shape"
           fi
-          if [ -f "run-history.json" ]; then
-            echo "Updating existing run history..."
-            jq --argjson newRun "$CURRENT_RUN" '
-              if (map(.runNumber == $newRun.runNumber) | any) then
-                map(if .runNumber == $newRun.runNumber then $newRun else . end)
-              else
-                . + [$newRun]
-              end | sort_by(.runNumber | tostring | split("-")[0] | tonumber? // 0) | reverse
-            ' run-history.json > run-history.tmp
-            mv run-history.tmp run-history.json
-          else
-            echo "Creating new run history..."
-            echo "[$CURRENT_RUN]" > run-history.json
-          fi
-          echo "Contents of run history file:"
-          cat run-history.json
+          cat current-run.json
 
-          # Also persist an explicitly named full copy for clarity (never pruned)
-          if [ -f "run-history.master.json" ]; then
-            echo "Updating master run history..."
-            jq --argjson newRun "$CURRENT_RUN" '
-              if (map(.runNumber == $newRun.runNumber) | any) then
-                map(if .runNumber == $newRun.runNumber then $newRun else . end)
-              else
-                . + [$newRun]
-              end | sort_by(.runNumber | tostring | split("-")[0] | tonumber? // 0) | reverse
-            ' run-history.master.json > run-history.master.tmp && mv run-history.master.tmp run-history.master.json
-          else
-            echo "Creating master run history..."
-            cp run-history.json run-history.master.json
-          fi
+      - name: Publish report + history to gh-pages
+        # Race-safe: if a concurrent run (main or rerun) pushed first, the helper resets
+        # to the latest gh-pages and re-applies this run's changes (see the script header).
+        env:
+          RUN_NUMBER: ${{ steps.run-info.outputs.run_number }}
+          RUN_REASON: ${{ inputs.run_reason }}
+          NEW_REPORT_DIR: ${{ github.workspace }}/new-report
+          CURRENT_RUN_FILE: ${{ github.workspace }}/current-run.json
+          HISTORY_TEMPLATE: ${{ github.workspace }}/runner-repo/.github/templates/history-index-template.html
+        run: |
+          bash runner-repo/.github/scripts/gh-pages-push.sh             "$GITHUB_WORKSPACE/runner-repo/.github/scripts/apply-main-run.sh"             "Add test report for run #${RUN_NUMBER} (Reason: ${RUN_REASON})"
 
       - name: Build pruned deploy view
+        # Built AFTER the push, from the gh-pages tree that was actually published —
+        # so it also includes any run a concurrent pipeline pushed in the meantime.
+        env:
+          KEEP_LAST: ${{ github.event.inputs.keep_last_runs }}
+          RUN_REASON: ${{ inputs.run_reason }}
         run: |
           cd gh-pages
           echo "Evaluating pruning policy for deploy view..."
           # Parse optional min_run=N directive from run_reason; if present it takes priority over keep_last_runs
-          KEEP_LAST="${{ github.event.inputs.keep_last_runs }}"
-          RUN_REASON="${{ inputs.run_reason }}"
-          MIN_RUN=$(echo "$RUN_REASON" | sed -n 's/.*min_run=\([0-9]\+\).*/\1/p')
+          MIN_RUN=$(printf '%s' "$RUN_REASON" | sed -n 's/.*min_run=\([0-9]\+\).*/\1/p')
+          # keep_last_runs is free text — anything non-numeric falls back to 50
+          case "$KEEP_LAST" in ''|*[!0-9]*) KEEP_LAST="50" ;; esac
           # min_run takes priority; only fall back to KEEP_LAST when min_run is absent
           if [ -n "$MIN_RUN" ]; then
             KEEP_LAST=""
-          elif [ -z "$KEEP_LAST" ]; then
-            KEEP_LAST="50"
           fi
           mkdir -p ../site-deploy
           DEPLOY_DIR="../site-deploy"
@@ -914,6 +887,9 @@ jobs:
           mkdir -p "$RUN_DIR/large-files-info"
           echo "Checking for large files..."
           max_file_size=$((100 * 1024 * 1024)) # 100MB in bytes
+          # Start empty — this runs after the gh-pages push now, so an older committed
+          # copy of the list must not leak previous runs' entries into this run's page.
+          : > large_files_list.txt
           find ../new-report -type f -size +${max_file_size}c | while read -r file; do
             file_size=$(du -b "$file" | cut -f1)
             file_size_mb=$(echo "scale=2; $file_size / 1048576" | bc)
@@ -1025,66 +1001,6 @@ jobs:
             fi
           fi
 
-
-          # Copy history index template (fully static — loads run-history.json client-side)
-          cp "$GITHUB_WORKSPACE/runner-repo/.github/templates/history-index-template.html" index.html
-
-      - name: Configure Git
-        run: |
-          cd gh-pages
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-
-      - name: Commit and Push Changes
-        run: |
-          cd gh-pages
-          git fetch origin gh-pages
-
-          # Check if gh-pages branch exists locally
-          if [ -z "$(git branch --list gh-pages)" ]; then
-            git checkout -b gh-pages
-          else
-            git checkout gh-pages
-          fi
-
-          # Stage and commit changes from Organize reports before pulling
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "Committing changes before pulling..."
-            git add .
-            git commit -m "Add test report for run #${{ steps.run-info.outputs.run_number }} (Reason: ${{ inputs.run_reason }}) - Initial commit"
-          fi
-
-          # Pull with rebase to integrate upstream changes
-          git pull origin gh-pages --rebase --allow-unrelated-histories
-
-          # Commit any additional changes after rebase (unlikely but possible)
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "Committing additional changes after rebase..."
-            git add .
-            git commit -m "Add test report for run #${{ steps.run-info.outputs.run_number }} (Reason: ${{ inputs.run_reason }}) - Post-rebase commit"
-          fi
-
-          # Push with retry logic if there are commits ahead
-          if [ "$(git log origin/gh-pages..HEAD --oneline | wc -l)" -gt 0 ]; then
-            MAX_RETRIES=3
-            RETRY_COUNT=0
-            while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
-              if git push origin gh-pages; then
-                echo "Push successful"
-                break
-              else
-                RETRY_COUNT=$((RETRY_COUNT+1))
-                echo "Push failed, attempt $RETRY_COUNT of $MAX_RETRIES"
-                git fetch origin gh-pages
-                git rebase origin/gh-pages
-                [ $RETRY_COUNT -eq $MAX_RETRIES ] && exit 1
-                sleep 5
-              fi
-            done
-          else
-            echo "No changes to push after rebase"
-          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
@@ -1486,23 +1402,28 @@ jobs:
       - name: Dispatch rerun-failures workflow
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Free-text inputs via env so quotes / $() in them are passed through verbatim.
+          BRANCH: ${{ github.event.inputs.branch }}
+          ENVIRONMENT: ${{ github.event.inputs.environment }}
+          KEEP_LAST_RUNS: ${{ github.event.inputs.keep_last_runs }}
+          RUN_REASON: ${{ github.event.inputs.run_reason }}
         run: |
           gh workflow run rerun-failures.yml \
             --repo "${{ github.repository }}" \
             --ref "${{ github.ref_name }}" \
             -f source_run_id="${{ github.run_id }}" \
             -f origin_run_number="${{ github.run_number }}" \
-            -f branch="${{ github.event.inputs.branch }}" \
-            -f environment="${{ github.event.inputs.environment }}" \
+            -f branch="$BRANCH" \
+            -f environment="$ENVIRONMENT" \
             -f credential_set="${{ github.event.inputs.credential_set }}" \
             -f browser="${{ github.event.inputs.browser }}" \
-            -f keep_last_runs="${{ github.event.inputs.keep_last_runs }}" \
+            -f keep_last_runs="$KEEP_LAST_RUNS" \
             -f distribute_by_test="${{ inputs.distribute_by_test }}" \
             -f log_raw_values="${{ inputs.log_raw_values }}" \
             -f num_retries="${{ github.event.inputs.num_retries }}" \
             -f video_mode="${{ github.event.inputs.video_mode }}" \
             -f trace_mode="${{ github.event.inputs.trace_mode }}" \
-            -f run_reason="RETRY FAILURES: ${{ github.event.inputs.run_reason }}" \
+            -f run_reason="RETRY FAILURES: $RUN_REASON" \
             -f rerun_passes="${{ github.event.inputs.rerun_passes }}" \
             -f final_pass_slowmo_ms="${{ github.event.inputs.final_pass_slowmo_ms }}" \
             -f pass_number="1"

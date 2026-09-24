@@ -345,7 +345,7 @@ jobs:
 
           # No --shard: this shard's .last-run.json already contains ONLY its slice.
           # $TIMEOUT_ARG is intentionally unquoted — empty means "omit the flag".
-          npx cross-env test=${{ env.TEST_ENV }} npx playwright test \
+          npx cross-env test="$TEST_ENV" npx playwright test \
             --last-failed \
             --project=${{ inputs.browser }} \
             --workers=1 \
@@ -524,40 +524,53 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Place report & update history
+      - name: Build rerun history entry
+        # jq --arg / numeric guards: quotes in run_reason or an empty/non-numeric count
+        # can no longer produce invalid history JSON.
+        env:
+          ORIGIN_RUN_NUMBER: ${{ inputs.origin_run_number }}
+          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+          PASS_NUMBER: ${{ inputs.pass_number }}
+          RUN_REASON: ${{ inputs.run_reason }}
+          ENVIRONMENT: ${{ inputs.environment }}
+          BROWSER: ${{ inputs.browser }}
+          RERAN: ${{ steps.classify.outputs.reran }}
+          FLAKY: ${{ steps.classify.outputs.flaky }}
+          STILL: ${{ steps.classify.outputs.still_failing }}
         run: |
+          num() { case "$1" in ''|*[!0-9]*) echo "${2:-0}" ;; *) echo "$1" ;; esac; }
           # Key = {original main run}-retry-p{pass} so every pass is traceable to
           # its main run AND sorts next to it (prefix is the main run number).
-          ORIGIN="${{ inputs.origin_run_number }}"; ORIGIN="${ORIGIN:-${{ inputs.source_run_id }}}"
-          RUNKEY="${ORIGIN}-retry-p${{ inputs.pass_number }}"
-          mkdir -p "gh-pages/reports/${RUNKEY}"
-          cp -r rerun-report/* "gh-pages/reports/${RUNKEY}/"
-          cd gh-pages
-          ENTRY=$(cat <<EOF
-          {"runNumber":"${RUNKEY}","parentRunNumber":"${ORIGIN}","pass":${{ inputs.pass_number }},"runReason":"${{ inputs.run_reason }}","environment":"${{ inputs.environment }}","browser":"${{ inputs.browser }}","isRerun":true,"totalTests":${{ steps.classify.outputs.reran }},"totalPassed":${{ steps.classify.outputs.flaky }},"totalFailed":${{ steps.classify.outputs.still_failing }}}
-          EOF
-          )
-          for HIST in run-history.json run-history.master.json; do
-            if [ -f "$HIST" ]; then
-              jq --argjson e "$ENTRY" '[$e] + . ' "$HIST" > "$HIST.tmp" && mv "$HIST.tmp" "$HIST"
-            else
-              echo "[$ENTRY]" > "$HIST"
-            fi
-          done
+          ORIGIN="${ORIGIN_RUN_NUMBER:-$SOURCE_RUN_ID}"
+          PASS=$(num "$PASS_NUMBER" 1)
+          RUNKEY="${ORIGIN}-retry-p${PASS}"
+          echo "RUNKEY=$RUNKEY" >> "$GITHUB_ENV"
+          jq -nc --arg runNumber "$RUNKEY" --arg parent "$ORIGIN" --argjson pass "$PASS" \
+            --arg runReason "$RUN_REASON" --arg environment "$ENVIRONMENT" --arg browser "$BROWSER" \
+            --argjson reran "$(num "$RERAN")" --argjson flaky "$(num "$FLAKY")" --argjson still "$(num "$STILL")" \
+            '{runNumber:$runNumber, parentRunNumber:$parent, pass:$pass, runReason:$runReason, environment:$environment,
+              browser:$browser, isRerun:true, totalTests:$reran, totalPassed:$flaky, totalFailed:$still}' > rerun-entry.json
+          cat rerun-entry.json
 
-      - name: Commit gh-pages
+      - name: Publish rerun report + history to gh-pages
+        # Race-safe: previously `git push || echo "push skipped"` silently lost this
+        # pass's history entry when a main run pushed at the same moment. The helper
+        # resets to the latest gh-pages and re-applies on rejection (see script header).
+        env:
+          REPORT_DIR: ${{ github.workspace }}/rerun-report
+          ENTRY_FILE: ${{ github.workspace }}/rerun-entry.json
         run: |
-          cd gh-pages
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Rerun report for #${{ inputs.source_run_id }}" || echo "nothing to commit"
-          git push origin gh-pages || echo "push skipped"
+          bash runner-repo/.github/scripts/gh-pages-push.sh \
+            "$GITHUB_WORKSPACE/runner-repo/.github/scripts/apply-rerun.sh" \
+            "Rerun report ${RUNKEY}"
 
       - name: Build pruned deploy view
+        env:
+          KEEP: ${{ inputs.keep_last_runs }}
         run: |
           cd gh-pages
-          KEEP="${{ inputs.keep_last_runs }}"; KEEP="${KEEP:-50}"
+          # keep_last_runs is free text — anything non-numeric falls back to 50
+          case "$KEEP" in ''|*[!0-9]*) KEEP="50" ;; esac
           DEPLOY_DIR="../site-deploy"
           mkdir -p "$DEPLOY_DIR/reports"
           [ -f index.html ] && cp index.html "$DEPLOY_DIR/index.html" || true
@@ -609,6 +622,11 @@ jobs:
       - name: Dispatch next rerun pass
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Free-text inputs via env so quotes / $() in them are passed through verbatim.
+          BRANCH: ${{ inputs.branch }}
+          ENVIRONMENT: ${{ inputs.environment }}
+          KEEP_LAST_RUNS: ${{ inputs.keep_last_runs }}
+          RUN_REASON: ${{ inputs.run_reason }}
         run: |
           NEXT=$(( ${{ inputs.pass_number }} + 1 ))
           # Carry the ORIGINAL main run id unchanged down the chain (fallback to
@@ -619,17 +637,17 @@ jobs:
             --ref "${{ github.ref_name }}" \
             -f source_run_id="${{ github.run_id }}" \
             -f origin_run_number="$ORIGIN" \
-            -f branch="${{ inputs.branch }}" \
-            -f environment="${{ inputs.environment }}" \
+            -f branch="$BRANCH" \
+            -f environment="$ENVIRONMENT" \
             -f credential_set="${{ inputs.credential_set }}" \
             -f browser="${{ inputs.browser }}" \
-            -f keep_last_runs="${{ inputs.keep_last_runs }}" \
+            -f keep_last_runs="$KEEP_LAST_RUNS" \
             -f distribute_by_test="${{ inputs.distribute_by_test }}" \
             -f log_raw_values="${{ inputs.log_raw_values }}" \
             -f num_retries="${{ inputs.num_retries }}" \
             -f video_mode="${{ inputs.video_mode }}" \
             -f trace_mode="${{ inputs.trace_mode }}" \
-            -f run_reason="${{ inputs.run_reason }}" \
+            -f run_reason="$RUN_REASON" \
             -f rerun_passes="${{ inputs.rerun_passes }}" \
             -f tests_per_shard="${{ inputs.tests_per_shard }}" \
             -f final_pass_slowmo_ms="${{ inputs.final_pass_slowmo_ms }}" \
