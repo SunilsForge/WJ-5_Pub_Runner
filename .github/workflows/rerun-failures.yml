@@ -38,7 +38,7 @@ on:
         type: string
       keep_last_runs:
         required: true
-        default: "50"
+        default: "20"
         type: string
       distribute_by_test:
         required: false
@@ -537,6 +537,7 @@ jobs:
           RERAN: ${{ steps.classify.outputs.reran }}
           FLAKY: ${{ steps.classify.outputs.flaky }}
           STILL: ${{ steps.classify.outputs.still_failing }}
+          RUN_ID: ${{ github.run_id }}
         run: |
           num() { case "$1" in ''|*[!0-9]*) echo "${2:-0}" ;; *) echo "$1" ;; esac; }
           # Key = {original main run}-retry-p{pass} so every pass is traceable to
@@ -548,8 +549,9 @@ jobs:
           jq -nc --arg runNumber "$RUNKEY" --arg parent "$ORIGIN" --argjson pass "$PASS" \
             --arg runReason "$RUN_REASON" --arg environment "$ENVIRONMENT" --arg browser "$BROWSER" \
             --argjson reran "$(num "$RERAN")" --argjson flaky "$(num "$FLAKY")" --argjson still "$(num "$STILL")" \
+            --argjson runId "$(num "$RUN_ID")" \
             '{runNumber:$runNumber, parentRunNumber:$parent, pass:$pass, runReason:$runReason, environment:$environment,
-              browser:$browser, isRerun:true, totalTests:$reran, totalPassed:$flaky, totalFailed:$still}' > rerun-entry.json
+              browser:$browser, isRerun:true, totalTests:$reran, totalPassed:$flaky, totalFailed:$still, runId:$runId}' > rerun-entry.json
           cat rerun-entry.json
 
       - name: Publish rerun report + history to gh-pages
@@ -569,8 +571,8 @@ jobs:
           KEEP: ${{ inputs.keep_last_runs }}
         run: |
           cd gh-pages
-          # keep_last_runs is free text — anything non-numeric falls back to 50
-          case "$KEEP" in ''|*[!0-9]*) KEEP="50" ;; esac
+          # keep_last_runs is free text — anything non-numeric falls back to 20
+          case "$KEEP" in ''|*[!0-9]*) KEEP="20" ;; esac
           DEPLOY_DIR="../site-deploy"
           mkdir -p "$DEPLOY_DIR/reports"
           [ -f index.html ] && cp index.html "$DEPLOY_DIR/index.html" || true
@@ -589,6 +591,14 @@ jobs:
           for r in $(jq -r '.[].runNumber' "$DEPLOY_DIR/run-history.json"); do
             [ -d "reports/$r" ] && { mkdir -p "$DEPLOY_DIR/reports/$r"; cp -r "reports/$r/." "$DEPLOY_DIR/reports/$r/"; } || true
           done
+
+      - name: Map run numbers to GitHub Actions runs (history sidebar links)
+        # This pass redeploys Pages too, so rebuild the map or the sidebar would lose
+        # old-run links until the next main run. Non-critical.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash runner-repo/.github/scripts/build-actions-run-map.sh site-deploy/actions-runs.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
