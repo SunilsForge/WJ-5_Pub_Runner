@@ -1,0 +1,327 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts >> QF-017 - Cognitive Testing indicator on Add Staff reflects Medium qualification (BUG-26117)
+- Location: src/tests/functional/subscriptions/qualifications/QualificationStaffCognitiveIndicator.spec.ts:23:7
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('//button[text()=\'Submit\']')
+    - locator resolved to <button disabled class="blue-button-no-margin">Submit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    116 × waiting for element to be visible, enabled and stable
+        - element is not enabled
+      - retrying click action
+        - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main "Clinical Login" [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img "Riverside Score Logo" [ref=e7]
+        - text: Subscription Activation
+        - generic [ref=e8]:
+          - text: Adel de Soto Minburn Cmnty SD |
+          - generic [ref=e9]: WJ V Unlimited
+      - form "Sign in details" [ref=e10]:
+        - generic [ref=e12]:
+          - generic [ref=e13]:
+            - generic [ref=e17]: Add a Location to "Adel de Soto Minburn Cmnty SD"
+            - generic [ref=e20]: "* = Required fields"
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - generic [ref=e24]:
+                - generic [ref=e25]:
+                  - text: LOCATION NAME*
+                  - generic [ref=e26]: ",Required"
+                - textbox "LOCATION NAME* ,Required" [ref=e28]: Location_SubAut24Sep26094429l6u
+              - generic [ref=e30]:
+                - text: "NOTE: Locations help Administrators have separate data but share a subscription."
+                - text: Once created feel free to invite staff who are part of the same location.
+            - generic [ref=e33]:
+              - generic [ref=e34]:
+                - generic [ref=e35]: ADDRESS
+                - textbox "ADDRESS" [ref=e37]:
+                  - /placeholder: Address Line 1
+                  - text: 61713 St George's Road
+                - alert [ref=e38]: Special characters are not allowed.
+              - textbox [ref=e44]:
+                - /placeholder: Address Line 2
+              - textbox [ref=e50]:
+                - /placeholder: City
+                - text: Tayastad
+              - generic [ref=e51]:
+                - combobox [ref=e55] [cursor=pointer]:
+                  - generic [ref=e56]: California
+                - textbox [active] [ref=e61]:
+                  - /placeholder: Zip Code
+                  - text: "64154"
+          - generic [ref=e62]:
+            - button "Back" [ref=e65] [cursor=pointer]
+            - button "Submit" [disabled] [ref=e68]
+  - contentinfo [ref=e69]:
+    - generic [ref=e70]: Footer region,
+    - link "w w w dot riverside insights dot com" [ref=e71] [cursor=pointer]:
+      - /url: https://www.riversideinsights.com
+      - img "Riverside Insights Website" [ref=e72]
+    - generic [ref=e73]:
+      - link "Riverside Insights Facebook" [ref=e74] [cursor=pointer]:
+        - /url: https://www.facebook.com/RiversideInsights/
+        - img "Riverside Insights Facebook" [ref=e75]
+      - link "Riverside Insights Twitter" [ref=e76] [cursor=pointer]:
+        - /url: https://twitter.com/1BillionLives
+        - img "Riverside Insights Twitter" [ref=e77]
+      - link "Riverside Insights LinkedIn" [ref=e78] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/riverside-insights/
+        - img "Riverside Insights LinkedIn" [ref=e79]
+      - link "Riverside Insights Instagram" [ref=e80] [cursor=pointer]:
+        - /url: https://www.instagram.com/riversideinsightsassessments/
+        - img "Riverside Insights Instagram" [ref=e81]
+    - generic [ref=e82]:
+      - img "WJ IV Mobile Data Solution" [ref=e83]
+      - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e84] [cursor=pointer]
+      - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e85] [cursor=pointer]
+    - generic [ref=e86]:
+      - img "Bdi 3 Mobile Data Solution" [ref=e87]
+      - generic [ref=e88]:
+        - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e89] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from Google Play" [ref=e90] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from App Store" [ref=e91] [cursor=pointer]
+    - generic [ref=e92]:
+      - button "Leave Feedback" [ref=e93] [cursor=pointer]
+      - generic [ref=e94]: "|"
+      - link "Terms of Use" [ref=e95] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - generic [ref=e96]: "|"
+      - link "Privacy Policy" [ref=e97] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+    - generic [ref=e98]: Footer region end
+```
+
+# Test source
+
+```ts
+  539 |       const onLoginPage = await this.signInButton.isVisible().catch(() => false);
+  540 |       const onProductsPage = await this.productDisplayCardWJV.isVisible().catch(() => false);
+  541 |       RawValueLogger.log('Confirm Renewal popup did not appear', {
+  542 |         url: this.page.url(),
+  543 |         onLoginPage,
+  544 |         onProductsPage,
+  545 |       });
+  546 |       if (onLoginPage || onProductsPage) {
+  547 |         throw new Error(
+  548 |           `Confirm Renewal never appeared - landed on the ${onLoginPage ? 'login' : 'products'} page ` +
+  549 |             `instead (${this.page.url()}). The activation context was lost between landing on the ` +
+  550 |             `activation URL and signing in, so the code was never applied to the org.`
+  551 |         );
+  552 |       }
+  553 |       throw error;
+  554 |     }
+  555 |   }
+  556 | 
+  557 |   async waitForConfirmActivationPopup() {
+  558 |     await this.confirmActivationHeading.waitFor({ state: 'visible', timeout: 60_000 });
+  559 |   }
+  560 | 
+  561 |   async verifyConfirmRenewalDetails(
+  562 |     expectedSubscriptionContains: string,
+  563 |     expectedLocationName: string,
+  564 |     expectedStartMMDDYYYY: string,
+  565 |     expectedEndMMDDYYYY: string,
+  566 |     isActiveSub: boolean,
+  567 |     subtestCount?: number
+  568 |   ) {
+  569 |     await expect.soft(isActiveSub ? this.confirmRenewalHeading : this.confirmActivationHeading).toBeVisible();
+  570 |     await expect.soft(this.confirmSubscriptionValueText).toContainText(expectedSubscriptionContains);
+  571 |     await expect.soft(this.confirmLocationNameValueText).toContainText(expectedLocationName);
+  572 |     await expect.soft(this.confirmStartDateInput).toHaveValue(expectedStartMMDDYYYY);
+  573 |     await expect.soft(this.confirmEndDateInput).toHaveValue(expectedEndMMDDYYYY);
+  574 |     if (isActiveSub) {
+  575 |       await expect.soft(this.confirmStartDateInput).toBeDisabled();
+  576 |     }
+  577 |     if (subtestCount !== undefined) {
+  578 |       await expect.soft(this.confirmLocationNameValueText).toContainText(`${subtestCount} Subtests`);
+  579 |       await expect.soft(this.confirmSubscriptionValueText).toContainText('Subtest Subscription');
+  580 |       await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();
+  581 |     }
+  582 |   }
+  583 | 
+  584 |   async confirmRenewal() {
+  585 |     await this.confirmAcceptTermsCheckbox.click();
+  586 |     await Promise.all([
+  587 |       this.page.waitForResponse(
+  588 |         response =>
+  589 |           (response.url().includes('ConfirmActivation') || response.url().includes('ConfirmRenewal')) &&
+  590 |           response.status() === 200,
+  591 |         { timeout: 2 * 60 * 1000 }
+  592 |       ),
+  593 |       this.confirmActivationButton.click(),
+  594 |     ]);
+  595 |   }
+  596 | 
+  597 |   async fillContactInfo(data: SubscriptionActivationFormData) {
+  598 |     await expect.soft(this.wizardNextButton).toBeDisabled();
+  599 |     await this.contactFirstNameInput.pressSequentially(data.firstName, { delay: 50 });
+  600 |     await this.contactLastNameInput.pressSequentially(data.lastName, { delay: 50 });
+  601 |     await this.contactEmailInput.pressSequentially(data.email, { delay: 50 });
+  602 |     await this.contactPhoneInput.pressSequentially(data.phone, { delay: 50 });
+  603 |     await this.wizardNextButton.click();
+  604 |   }
+  605 | 
+  606 |   async verifyUsernameAutoGeneration(formData: SubscriptionActivationFormData) {
+  607 |     await this.usernamePasswordPageHeading.waitFor({ state: 'visible' });
+  608 |     await this.autoGenerateUsernameButton.click();
+  609 |     const usernameInput = this.autoGenerateUsernameButton.locator('xpath=preceding-sibling::input');
+  610 |     await usernameInput.waitFor({ state: 'attached' });
+  611 |     await expect(usernameInput).not.toHaveValue('', { timeout: 5000 });
+  612 |     const generatedValue = await usernameInput.inputValue();
+  613 |     expect.soft(generatedValue).toContain(formData.firstName);
+  614 |     RawValueLogger.log('S13 auto-generated username', { generated: generatedValue, firstName: formData.firstName });
+  615 |     await usernameInput.clear();
+  616 |   }
+  617 | 
+  618 |   async fillUsernameAndPassword(data: SubscriptionActivationFormData) {
+  619 |     await this.credentialsUsernameInput.pressSequentially(data.username, { delay: 50 });
+  620 |     await this.credentialsPasswordInput.pressSequentially(data.password, { delay: 50 });
+  621 |     await this.credentialsConfirmPasswordInput.pressSequentially(data.password, { delay: 50 });
+  622 |     await this.wizardNextButton.click();
+  623 |   }
+  624 | 
+  625 |   async fillLocationAndSubmit(data: SubscriptionActivationFormData) {
+  626 |     await expect.soft(this.locationSubmitButton).toBeDisabled();
+  627 |     await this.locationNameInput.pressSequentially(data.locationName, { delay: 50 });
+  628 |     await this.addressLine1Input.pressSequentially(data.addressLine1, { delay: 50 });
+  629 |     // Address Line 2 intentionally skipped — server rejects special chars in faker's "Apt. 403"-style output.
+  630 |     await this.cityInput.pressSequentially(data.city, { delay: 50 });
+  631 |     await this.stateDropdown.click();
+  632 |     await this.stateCaliforniaOption.click();
+  633 |     await this.zipCodeInput.pressSequentially(data.zipCode, { delay: 50 });
+  634 |     await Promise.all([
+  635 |       this.page.waitForResponse(
+  636 |         response => response.url().includes('CreateActivationSubscriptionNewUser') && response.status() === 200,
+  637 |         { timeout: 2 * 60 * 1000 }
+  638 |       ),
+> 639 |       this.locationSubmitButton.click(),
+      |                                 ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  640 |     ]);
+  641 |   }
+  642 | 
+  643 |   async verifyConfirmActivationDetails(
+  644 |     expectedSubscriptionContains: string,
+  645 |     expectedLocationName: string,
+  646 |     subtestCount?: number
+  647 |   ) {
+  648 |     if (subtestCount !== undefined) {
+  649 |       await expect.soft(this.confirmSubscriptionValueText).toContainText('Subtest Subscription');
+  650 |     } else {
+  651 |       await expect.soft(this.confirmSubscriptionValueText).toContainText(expectedSubscriptionContains);
+  652 |     }
+  653 |     await expect.soft(this.confirmLocationNameValueText).toContainText(expectedLocationName);
+  654 |     if (subtestCount !== undefined) {
+  655 |       await expect.soft(this.confirmLocationNameValueText).toContainText(`${subtestCount} Subtests`);
+  656 |       await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();
+  657 |     }
+  658 |   }
+  659 | 
+  660 |   async verifyConfirmActivationStartAndEndDates(): Promise<{ startDate: string; endDate: string }> {
+  661 |     const startDateValue = (await this.confirmStartDateInput.inputValue()).trim();
+  662 |     const endDateValue = (await this.confirmEndDateInput.inputValue()).trim();
+  663 | 
+  664 |     const expectedStart = getServerTodayMMDDYYYY();
+  665 | 
+  666 |     const [m, d, y] = startDateValue.split('/').map(Number);
+  667 |     const endDateFromActualStart = new Date(y + 1, m - 1, d - 1);
+  668 |     const expectedEnd = formatMMDDYYYY(endDateFromActualStart);
+  669 | 
+  670 |     expect.soft(startDateValue).toBe(expectedStart);
+  671 |     expect.soft(endDateValue).toBe(expectedEnd);
+  672 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();
+  673 | 
+  674 |     return { startDate: startDateValue, endDate: endDateValue };
+  675 |   }
+  676 | 
+  677 |   async setStartDate(dateMMDDYYYY: string) {
+  678 |     await this.confirmStartDateInput.click();
+  679 |     await this.confirmStartDateInput.press('Control+A');
+  680 |     await this.confirmStartDateInput.press('Delete');
+  681 |     await this.confirmStartDateInput.pressSequentially(dateMMDDYYYY, { delay: 50 });
+  682 |     await this.confirmStartDateInput.press('Enter');
+  683 |   }
+  684 | 
+  685 |   async clearStartDate() {
+  686 |     await this.confirmStartDateInput.click();
+  687 |     await this.confirmStartDateInput.press('Control+A');
+  688 |     await this.confirmStartDateInput.press('Delete');
+  689 |     await this.confirmStartDateInput.press('Enter');
+  690 |   }
+  691 | 
+  692 |   async assertDateErrorContains(expectedText: string) {
+  693 |     await expect.soft(this.confirmDateErrorMessage).toContainText(expectedText);
+  694 |   }
+  695 | 
+  696 |   async assertNoDateError() {
+  697 |     await expect.soft(this.confirmDateErrorMessage).not.toBeVisible();
+  698 |   }
+  699 | 
+  700 |   async assertEndDateValueEquals(expectedMMDDYYYY: string) {
+  701 |     await expect.soft(this.confirmEndDateInput).toHaveValue(expectedMMDDYYYY);
+  702 |   }
+  703 | 
+  704 |   async assertEndDateValueEmpty() {
+  705 |     await expect.soft(this.confirmEndDateInput).toHaveValue('');
+  706 |   }
+  707 | 
+  708 |   async clickAbandonActivation() {
+  709 |     await this.confirmAbandonActivationButton.click();
+  710 |   }
+  711 | 
+  712 |   async verifyOnLoginPageAfterAbandon() {
+  713 |     const baseUrl = getSiteUrl().replace(/\/+$/, '');
+  714 |     await this.page.waitForURL(url => url.toString().startsWith(baseUrl), { timeout: 30_000 });
+  715 |     await expect.soft(this.signInButton).toBeVisible();
+  716 |   }
+  717 | 
+  718 |   async confirmActivation() {
+  719 |     await this.confirmAcceptTermsCheckbox.click();
+  720 |     await this.confirmActivationButton.click();
+  721 |     await this.confirmActivationButton.waitFor({ state: 'hidden', timeout: 2 * 60 * 1000 });
+  722 |   }
+  723 | 
+  724 |   async dismiss2FAPopupIfPresent() {
+  725 |     try {
+  726 |       await this.page.waitForLoadState('load', { timeout: 30_000 });
+  727 |     } catch {}
+  728 |     await this.page.waitForTimeout(3000);
+  729 | 
+  730 |     try {
+  731 |       if (await this.twoFactorAuthCancelButton.isVisible()) {
+  732 |         await this.twoFactorAuthCancelButton.click();
+  733 |       }
+  734 |     } catch (error) {
+  735 |       console.warn('Error while dismissing 2FA popup: ', error);
+  736 |     }
+  737 |   }
+  738 | 
+  739 |   async acceptTermsDialogIfPresent() {
+```
