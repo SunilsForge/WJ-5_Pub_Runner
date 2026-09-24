@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Playwright Test Run Summary</title>
+  <title>Run #__RUN_NUMBER__ · Playwright Test Run Summary</title>
   <style>
     :root {
       --primary-color: #0366d6;
@@ -157,6 +157,57 @@
     .system-info-toggle.active .toggle-arrow {
       transform: rotate(90deg);
     }
+    /* Run Setup: every trigger input + run context (filled by fill-merged-report.js) */
+    .run-setup h2 {
+      margin: 1.5rem 0 0.75rem;
+      font-size: 1.25rem;
+      color: #24292e;
+    }
+    .setup-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1rem;
+    }
+    .setup-card {
+      background: #f6f8fa;
+      border: 1px solid #eaecef;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+    }
+    .setup-card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+      color: var(--primary-color);
+    }
+    .setup-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.3rem 0;
+      border-bottom: 1px dashed #e1e4e8;
+      font-size: 0.92rem;
+    }
+    .setup-row:last-child { border-bottom: none; }
+    .setup-label { color: var(--neutral-color); white-space: nowrap; }
+    .setup-value { text-align: right; word-break: break-word; }
+    .setup-value code {
+      background: #eef1f4;
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+    .setup-value a { color: var(--primary-color); }
+    .pill {
+      display: inline-block;
+      padding: 0.05rem 0.55rem;
+      border-radius: 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .pill.on   { background: #e6ffed; color: var(--success-color); }
+    .pill.off  { background: #eef1f4; color: var(--neutral-color); }
+    .pill.info { background: #e7f1ff; color: var(--primary-color); }
+    .pill.warn { background: #fff3cd; color: #856404; }
     .notes-section {
       background: #fff3cd;
       border: 1px solid #ffeeba;
@@ -197,19 +248,9 @@
 </head>
 <body>
   <div class="container">
-    <h1>Playwright Test Reports</h1>
+    <h1>🎭 Playwright Test Report — Run #__RUN_NUMBER__</h1>
 <!-- PRE_RUN_NOTES -->
-    <div class='meta-info'>
-      <p><strong>Environment:</strong> __ENVIRONMENT__</p>
-      <p><strong>Browser:</strong> __BROWSER__</p>
-      <p><strong>Test Pattern:</strong> __TEST_PATTERN__</p>
-      <p><strong>Total Shards:</strong> __SHARD_COUNT__</p>
-      <p><strong>Retries:</strong> __NUM_RETRIES__</p>
-      <p><strong>Video Mode:</strong> __VIDEO_MODE__</p>
-      <p><strong>Trace Mode:</strong> __TRACE_MODE__</p>
-      <p><strong>Raw Value Logging:</strong> __LOG_RAW_VALUES__</p>
-      <p><strong>Last Updated:</strong> __CURRENT_DATE__</p>
-    </div>
+<!-- RUN_SETUP -->
     <!-- Report shortcuts: native Timeline (left) + per-test Results Table (right) -->
     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0;">
       <div>

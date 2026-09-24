@@ -14,7 +14,7 @@
       min-height: 100vh;
     }
     .sidebar {
-      width: 280px;
+      width: 320px;
       background: #24292e;
       color: white;
       padding: 20px;
@@ -27,7 +27,7 @@
     }
     .main-content {
       flex: 1;
-      margin-left: 280px;
+      margin-left: 320px;
       padding: 20px;
       box-sizing: border-box;
     }
@@ -110,6 +110,32 @@
       padding-bottom: 10px;
       margin-bottom: 15px;
     }
+    /* Sidebar run items are links to the GitHub Actions run itself */
+    a.run-item {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      border-left: 3px solid #6e7681;
+    }
+    a.run-item.passed { border-left-color: #3fb950; }
+    a.run-item.failed { border-left-color: #f85149; }
+    .run-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      color: #58a6ff;
+    }
+    .run-top .ext { color: #8b949e; font-weight: 400; font-size: 0.8em; }
+    .run-item .run-meta { margin-top: 4px; font-size: 0.8em; line-height: 1.45; }
+    .run-item .run-meta div { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .run-item .run-meta div:has(.run-reason) { white-space: normal; }
+    .run-item .run-reason { color: #c9d1d9; }
+    .run-item .run-counts { color: #c9d1d9; }
+    .run-item .run-rerun { color: #e3b341; }
+    .sidebar-sub { color: #8b949e; font-size: 0.8em; margin: -8px 0 12px; }
     @media (max-width: 768px) {
       body {
         flex-direction: column;
@@ -127,9 +153,10 @@
 </head>
 <body>
   <div class="sidebar">
-    <h2 class="sidebar-header">Run History</h2>
+    <h2 class="sidebar-header">🗂️ Run History</h2>
+    <p class="sidebar-sub" id="sidebarSub">Loading…</p>
     <div class="filter-bar">
-      <input type="text" class="search-input" placeholder="Search reasons or runs..." id="sidebarSearch">
+      <input type="text" class="search-input" placeholder="🔍 Search run, reason, env, tag, branch…" id="sidebarSearch">
       <select class="sort-select" id="sidebarSort">
         <option value="newest">Newest First</option>
         <option value="oldest">Oldest First</option>
@@ -168,31 +195,56 @@
   </div>
 
   <script>
-    // Load the run history from the JSON file
-    fetch('./run-history.json')
-      .then(response => {
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        return response.json();
-      })
-      .then(runHistory => {
+    // ── Data sources ───────────────────────────────────────────────────────────
+    //   run-history.json        pruned: the runs whose REPORTS are deployed → report cards (main area)
+    //   run-history.master.json full history (never pruned)          → sidebar (latest SIDEBAR_LIMIT main runs)
+    //   actions-runs.json       {runNumber: runId} from the Actions API → sidebar links for old runs
+    //                           that were recorded before entries carried a runId
+    const SIDEBAR_LIMIT = 150;
+    const REPO = (() => {
+      // <owner>.github.io/<repo>/ → owner/repo; fallback for local previews
+      const owner = location.hostname.endsWith('.github.io') ? location.hostname.split('.')[0] : '';
+      const name = location.pathname.split('/').filter(Boolean)[0] || '';
+      return owner && name ? owner + '/' + name : 'SunilsForge/WJ-5_Pub_Runner';
+    })();
+    const WORKFLOW_RUNS_URL = 'https://github.com/' + REPO + '/actions/workflows/playwright-tests.yml';
+
+    const getJson = url => fetch(url, { cache: 'no-cache' }).then(r => {
+      if (!r.ok) throw new Error(url + ' → HTTP ' + r.status);
+      return r.json();
+    });
+
+    Promise.all([
+      getJson('./run-history.json'),
+      getJson('./run-history.master.json').catch(() => null),
+      getJson('./actions-runs.json').catch(() => ({}))
+    ])
+      .then(([runHistory, master, actionsRuns]) => {
         if (!Array.isArray(runHistory) || runHistory.length === 0) {
           throw new Error('Run history is empty or invalid');
         }
-        // Normalize and sort by runNumber descending
-        const normalizedHistory = runHistory.map(run => ({
-          ...run,
-          runNumber: String(run.runNumber)
-        })).sort((a, b) => parseInt(b.runNumber) - parseInt(a.runNumber));
+        const normalize = list => list.map(run => ({ ...run, runNumber: String(run.runNumber) }))
+          .sort((a, b) => parseInt(b.runNumber) - parseInt(a.runNumber));
 
-        populateRunsList(normalizedHistory);
+        const normalizedHistory = normalize(runHistory);
+        const sidebarSource = Array.isArray(master) && master.length ? normalize(master) : normalizedHistory;
+
+        populateRunsList(sidebarSource, actionsRuns || {});
         populateReportsContainer(normalizedHistory);
-        setupEventListeners(normalizedHistory);
+        setupEventListeners();
       })
       .catch(error => {
         console.error('Error loading run history:', error);
+        document.getElementById('sidebarSub').textContent = '';
         document.getElementById('runsList').innerHTML = '<p style="color: #f85149;">Failed to load run history. Check console.</p>';
         document.getElementById('reportsContainer').innerHTML = '<p style="color: #f85149;">No reports available.</p>';
       });
+
+    function escapeHtml(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, c => (
+        { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+      ));
+    }
 
     function formatTimestamp(timestamp) {
       if (!timestamp) return 'Unknown date';
@@ -208,7 +260,9 @@
           const minute = timePart.substring(2, 4);
           const second = timePart.substring(4, 6);
           const date = new Date(Date.UTC(year, month-1, day, hour, minute, second));
-          return date.toLocaleString();
+          // Entries recorded before 2026-09-24 only kept the DATE (time was always
+          // 00:00:00 — see deploy-report "Set Run Info"), so don't show a fake time.
+          return timePart === '000000' ? date.toLocaleDateString() : date.toLocaleString();
         }
       } catch (e) {
         console.warn('Error formatting date:', e);
@@ -216,36 +270,82 @@
       return 'Unknown date';
     }
 
-    function populateRunsList(runHistory) {
+    const isRerun = run => run.isRerun === true || /-retry/.test(run.runNumber);
+
+    function populateRunsList(allEntries, actionsRuns) {
       const runsList = document.getElementById('runsList');
       runsList.innerHTML = '';
 
-      runHistory.sort((a, b) => parseInt(b.runNumber) - parseInt(a.runNumber));
+      // runId → runNumber, to attach legacy "<sourceRunId>-retry" reruns to their parent
+      const numberById = {};
+      for (const [num, id] of Object.entries(actionsRuns)) numberById[String(id)] = num;
 
-      runHistory.forEach(run => {
-        const runItem = document.createElement('div');
-        runItem.className = 'run-item';
+      const rerunsByParent = {};
+      for (const r of allEntries.filter(isRerun)) {
+        let parent = r.parentRunNumber ? String(r.parentRunNumber) : '';
+        if (!parent) {
+          const prefix = r.runNumber.split('-')[0];
+          parent = numberById[prefix] || '';
+        }
+        if (parent) (rerunsByParent[parent] = rerunsByParent[parent] || []).push(r);
+      }
+
+      const mainRuns = allEntries.filter(r => !isRerun(r));
+      const shown = mainRuns.slice(0, SIDEBAR_LIMIT);
+      document.getElementById('sidebarSub').textContent =
+        'Latest ' + shown.length + ' of ' + mainRuns.length + ' runs · click opens the GitHub Actions run ↗';
+
+      shown.forEach(run => {
+        const runId = run.runId || actionsRuns[run.runNumber];
+        const href = runId ? 'https://github.com/' + REPO + '/actions/runs/' + runId : WORKFLOW_RUNS_URL;
+        const failed = typeof run.totalFailed === 'number' ? run.totalFailed : null;
+        const status = failed === null ? 'unknown' : failed > 0 ? 'failed' : 'passed';
+        const statusIcon = status === 'passed' ? '✅' : status === 'failed' ? '❌' : '⚪';
+
+        const runItem = document.createElement('a');
+        runItem.className = 'run-item ' + status;
+        runItem.href = href;
+        runItem.target = '_blank';
+        runItem.rel = 'noopener';
+        runItem.title = runId ? 'Open GitHub Actions run ' + runId : 'Run id unknown — opens the workflow run list';
         runItem.dataset.runNumber = run.runNumber;
 
-        const formattedDate = formatTimestamp(run.timestamp);
+        const lines = [];
+        lines.push('🕒 ' + escapeHtml(formatTimestamp(run.timestamp)) +
+          (run.triggeredBy ? ' · 👤 ' + escapeHtml(run.triggeredBy) : ''));
+        lines.push('🌍 ' + escapeHtml(run.environment || '—') + ' · 🌐 ' + escapeHtml(run.browser || '—') +
+          (run.shardCount ? ' · 🧩 ' + escapeHtml(run.shardCount) + ' shard' + (run.shardCount == 1 ? '' : 's') : ''));
+        if (run.testPattern) lines.push('🏷️ <span title="' + escapeHtml(run.testPattern) + '">' + escapeHtml(run.testPattern) + '</span>');
+        if (run.branch || run.credentialSet) {
+          lines.push((run.branch ? '🌿 ' + escapeHtml(run.branch) + (run.testCommit ? ' @' + escapeHtml(String(run.testCommit).slice(0, 7)) : '') : '') +
+            (run.branch && run.credentialSet ? ' · ' : '') +
+            (run.credentialSet ? '🔐 ' + escapeHtml(run.credentialSet) : ''));
+        }
+        lines.push('<span class="run-reason">📝 ' + escapeHtml(run.runReason || 'No reason given') + '</span>');
+        if (typeof run.totalTests === 'number') {
+          lines.push('<span class="run-counts">📊 ' + run.totalTests + ' tests · ✅ ' + (run.totalPassed ?? 0) +
+            ' · ❌ ' + (run.totalFailed ?? 0) +
+            (run.totalFlaky ? ' · ⚠️ ' + run.totalFlaky : '') +
+            (run.totalSkipped ? ' · ⏭️ ' + run.totalSkipped : '') + '</span>');
+        }
+        const passes = (rerunsByParent[run.runNumber] || []).sort((a, b) => (a.pass || 0) - (b.pass || 0));
+        if (passes.length) {
+          const last = passes[passes.length - 1];
+          const nowPass = passes.reduce((s, p) => s + (typeof p.totalPassed === 'number' ? p.totalPassed : 0), 0);
+          const still = typeof last.totalFailed === 'number' ? last.totalFailed : '?';
+          lines.push('<span class="run-rerun">🔁 ' + (passes.length > 1 ? passes.length + ' rerun passes' : 'Rerun') +
+            ': ' + nowPass + ' now pass · ' + still + ' still fail</span>');
+        }
 
-        runItem.innerHTML = `
-          <h3>Run #${run.runNumber}</h3>
-          <div class="run-meta">
-            <div>Executed: ${formattedDate}</div>
-            <div>Reason: ${run.runReason || 'Not specified'}</div>
-            <div>Environment: ${run.environment || 'Not specified'}</div>
-            <div>Browser: ${run.browser || 'Not specified'}</div>
-          </div>
-        `;
-
-        runItem.addEventListener('click', () => {
-          window.location.href = `./reports/${run.runNumber}/index.html`;
-        });
+        runItem.innerHTML =
+          '<div class="run-top"><span>#' + escapeHtml(run.runNumber) + ' ' + statusIcon + '</span>' +
+          '<span class="ext">Actions ↗</span></div>' +
+          '<div class="run-meta">' + lines.map(l => '<div>' + l + '</div>').join('') + '</div>';
 
         runsList.appendChild(runItem);
       });
-      console.log(`Displayed ${runHistory.length} runs in the sidebar`);
+      console.log('Displayed ' + shown.length + ' of ' + mainRuns.length + ' main runs in the sidebar (' +
+        Object.keys(actionsRuns).length + ' Actions run ids mapped)');
     }
 
     function populateReportsContainer(runHistory) {
@@ -259,13 +359,13 @@
         const formattedDate = formatTimestamp(run.timestamp);
 
         card.innerHTML = `
-          <a href="./reports/${run.runNumber}/index.html" class="report-link">
-            <h3>Run #${run.runNumber}</h3>
+          <a href="./reports/${encodeURIComponent(run.runNumber)}/index.html" class="report-link">
+            <h3>Run #${escapeHtml(run.runNumber)}</h3>
             <div class="report-meta">
-              <div>Executed: ${formattedDate}</div>
-              <div>Reason: ${run.runReason || 'Not specified'}</div>
-              <div>Environment: ${run.environment || 'Not specified'}</div>
-              <div>Browser: ${run.browser || 'Not specified'}</div>
+              <div>Executed: ${escapeHtml(formattedDate)}</div>
+              <div>Reason: ${escapeHtml(run.runReason || 'Not specified')}</div>
+              <div>Environment: ${escapeHtml(run.environment || 'Not specified')}</div>
+              <div>Browser: ${escapeHtml(run.browser || 'Not specified')}</div>
             </div>
           </a>
         `;
@@ -274,7 +374,7 @@
       });
     }
 
-    function setupEventListeners(originalRunHistory) {
+    function setupEventListeners() {
       document.getElementById('searchInput').addEventListener('input', (e) => {
         filterReports(e.target.value.toLowerCase());
       });
