@@ -1,0 +1,7 @@
+ScoreExportVariable,ScoreExportValue,Instruction
+ExerID,,Partial matching ExaminerID values
+ExeeID,N53025A86154,Partial matching ExamineeID values
+EDOT,,Earliest date of testing (by exee and test) as a date range like 01/15/2023 - 02/15/2023
+TestStemForm,,Complete match of TestStemForm
+ScoringTable_Version,,"If blank, platform should use latest alphanumeric version posted. If not blank, entry must be an exact match for a deployed version code (e.g., V230724A or V230805B)"
+DecileTable_Version,,"If blank, platform should use latest alphanumeric version posted. If not blank, entry must be an exact match for a deployed version code (e.g., V230724A or V230805B)"
