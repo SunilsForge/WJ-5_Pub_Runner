@@ -342,7 +342,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 338452,
+                  "duration": 321701,
                   "errors": [],
                   "stdout": [
                     {
@@ -399,54 +399,54 @@
                   "steps": [
                     {
                       "title": "Examiner:- Verify subtests successfully applied for submitted test assignment",
-                      "duration": 33807
+                      "duration": 24914
                     },
                     {
                       "title": "Examiner:- Complete one test and verify subtests used count is increased by 1",
-                      "duration": 166456
+                      "duration": 161172
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Not Started\" status",
-                      "duration": 10794
+                      "duration": 10629
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"In Progress\" status",
-                      "duration": 8511
+                      "duration": 8531
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Submitted\" status",
-                      "duration": 8611
+                      "duration": 8675
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Expired\" status",
-                      "duration": 8812
+                      "duration": 8813
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Closed\" status",
-                      "duration": 5898
+                      "duration": 5929
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Not Started\" status from Examinees tab",
-                      "duration": 18844
+                      "duration": 13558
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"In Progress\" status from Examinees tab",
-                      "duration": 12054
+                      "duration": 10036
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Submitted\" status from Examinees tab",
-                      "duration": 10518
+                      "duration": 10618
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Expired\" status from Examinees tab",
-                      "duration": 10707
+                      "duration": 12615
                     },
                     {
                       "title": "Examiner:- Verify ellipse menu options for \"Closed\" status from Examinees tab",
-                      "duration": 10556
+                      "duration": 10080
                     }
                   ],
-                  "startTime": "2026-09-24T19:55:40.850Z",
+                  "startTime": "2026-09-25T04:29:14.404Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -505,7 +505,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 106073,
+                      "duration": 101087,
                       "errors": [],
                       "stdout": [
                         {
@@ -530,13 +530,13 @@
                           "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                         },
                         {
-                          "text": "Examinee ID N33203A96792\n"
+                          "text": "Examinee ID N75359A51981\n"
                         },
                         {
-                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N33203A96792/dataFiles/Score_DataExport_AutoFilter_Template_N33203A96792.csv successfully.\n"
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N75359A51981/dataFiles/Score_DataExport_AutoFilter_Template_N75359A51981.csv successfully.\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N33203A96792 FirstName=Ottilie LastName =N33203A96792 Age = 09/24/2026\n"
+                          "text": "Successfully added an Examinee  ID =N75359A51981 FirstName=Christa LastName =N75359A51981 Age = 09/24/2026\n"
                         },
                         {
                           "text": "Found 62 checkboxes\n"
@@ -545,18 +545,18 @@
                           "text": "Selected test: General Information–What\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N33203A96792\n"
+                          "text": "Successfully selected examinee: N75359A51981\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-24T20:01:19.912Z",
+                      "startTime": "2026-09-25T04:34:36.752Z",
                       "annotations": [],
                       "attachments": [
                         {
-                          "name": "Generated wLookUp Filter Template (N33203A96792)",
+                          "name": "Generated wLookUp Filter Template (N75359A51981)",
                           "contentType": "text/csv",
-                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-Revi-fdd99----All-correct-SSP1-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N33203A96792--cf8c98c0c61d1fb82627e357a3c169d3bcf73ccb.csv"
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-Revi-fdd99----All-correct-SSP1-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N75359A51981--758d3f45bb67c6fab1fed338ae6886808b02256a.csv"
                         }
                       ]
                     }
@@ -576,8 +576,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-09-24T19:55:25.104Z",
-    "duration": 461407.022,
+    "startTime": "2026-09-25T04:28:58.395Z",
+    "duration": 439998.565,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

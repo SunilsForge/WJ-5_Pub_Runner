@@ -314,7 +314,7 @@
       "specs": [
         {
           "title": "Validate Chat Bot functionality when logged in as AH user and at login page",
-          "ok": true,
+          "ok": false,
           "tags": [
             "ChatBot",
             "Smoke",
@@ -341,9 +341,33 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 45075,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 61684,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 76,
+                        "line": 2076
+                      },
+                      "message": "Error: Chat bot icon should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\nExpected: visible\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Chat bot icon should be visible with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2076\n\n  2074 |   }\n  2075 |   async verifyChatBotFunctionality() {\n> 2076 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n       |                                                                            ^\n  2077 |     await this.chatBotIcon.click();\n  2078 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2079 |     await this.chatBotCloseIcon.click();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2076:76)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:27\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 28,
+                        "line": 2077
+                      },
+                      "message": "Error: locator.click: Target page, context or browser has been closed\n\n   at ../page/dashboardPage.ts:2077\n\n  2075 |   async verifyChatBotFunctionality() {\n  2076 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n> 2077 |     await this.chatBotIcon.click();\n       |                            ^\n  2078 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2079 |     await this.chatBotCloseIcon.click();\n  2080 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2077:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
+                    }
+                  ],
                   "stdout": [
                     {
                       "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
@@ -360,30 +384,20 @@
                   "steps": [
                     {
                       "title": "Navigate to login page and verify chat bot functionality",
-                      "duration": 2921
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Dashboard page",
-                      "duration": 2937
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Testset page",
-                      "duration": 239
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Examinees page",
-                      "duration": 8289
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Staff page",
-                      "duration": 262
-                    },
-                    {
-                      "title": "AH:- Verify chat bot functionality on Reports>Library  page",
-                      "duration": 3210
+                      "duration": 36243,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2077:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 28,
+                          "line": 2077
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:2077\n\n\u001b[0m \u001b[90m 2075 |\u001b[39m   \u001b[36masync\u001b[39m verifyChatBotFunctionality() {\n \u001b[90m 2076 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2077 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2078 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotPopup\u001b[33m,\u001b[39m \u001b[32m'Chat bot popup should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 2079 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotCloseIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 2080 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      }
                     }
                   ],
-                  "startTime": "2026-09-24T19:55:54.534Z",
+                  "startTime": "2026-09-25T04:29:26.721Z",
                   "annotations": [
                     {
                       "type": "automation user story",
@@ -395,10 +409,194 @@
                       }
                     }
                   ],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-chatBotTest-Val-f0d3e-s-AH-user-and-at-login-page-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-chatBotTest-Val-f0d3e-s-AH-user-and-at-login-page-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-chatBotTest-Val-f0d3e-s-AH-user-and-at-login-page-chrome/trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 60141,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 76,
+                        "line": 2076
+                      },
+                      "message": "Error: Chat bot icon should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\nExpected: visible\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Chat bot icon should be visible with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2076\n\n  2074 |   }\n  2075 |   async verifyChatBotFunctionality() {\n> 2076 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n       |                                                                            ^\n  2077 |     await this.chatBotIcon.click();\n  2078 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2079 |     await this.chatBotCloseIcon.click();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2076:76)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:27\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 28,
+                        "line": 2077
+                      },
+                      "message": "Error: locator.click: Target page, context or browser has been closed\n\n   at ../page/dashboardPage.ts:2077\n\n  2075 |   async verifyChatBotFunctionality() {\n  2076 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n> 2077 |     await this.chatBotIcon.click();\n       |                            ^\n  2078 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2079 |     await this.chatBotCloseIcon.click();\n  2080 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2077:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S12:W1] Login successful for 02PwAut25AH\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Navigate to login page and verify chat bot functionality",
+                      "duration": 35782,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2077:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 28,
+                          "line": 2077
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:2077\n\n\u001b[0m \u001b[90m 2075 |\u001b[39m   \u001b[36masync\u001b[39m verifyChatBotFunctionality() {\n \u001b[90m 2076 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2077 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2078 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotPopup\u001b[33m,\u001b[39m \u001b[32m'Chat bot popup should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 2079 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotCloseIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 2080 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-09-25T04:30:32.038Z",
+                  "annotations": [
+                    {
+                      "type": "automation user story",
+                      "description": "30273",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts",
+                        "line": 6,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-chatBotTest-Val-f0d3e-s-AH-user-and-at-login-page-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-chatBotTest-Val-f0d3e-s-AH-user-and-at-login-page-chrome-retry1/error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 60147,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 76,
+                        "line": 2076
+                      },
+                      "message": "Error: Chat bot icon should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\nExpected: visible\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Chat bot icon should be visible with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test-id=\"chat-widget-iframe\"]').contentFrame().getByRole('button', { name: 'Open live chat' })\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2076\n\n  2074 |   }\n  2075 |   async verifyChatBotFunctionality() {\n> 2076 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n       |                                                                            ^\n  2077 |     await this.chatBotIcon.click();\n  2078 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2079 |     await this.chatBotCloseIcon.click();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2076:76)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:27\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 28,
+                        "line": 2077
+                      },
+                      "message": "Error: locator.click: Target page, context or browser has been closed\n\n   at ../page/dashboardPage.ts:2077\n\n  2075 |   async verifyChatBotFunctionality() {\n  2076 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n> 2077 |     await this.chatBotIcon.click();\n       |                            ^\n  2078 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();\n  2079 |     await this.chatBotCloseIcon.click();\n  2080 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2077:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S12:W2] Login successful for 02PwAut25AH\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 2,
+                  "steps": [
+                    {
+                      "title": "Navigate to login page and verify chat bot functionality",
+                      "duration": 35848,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\n    at DashBoardPage.verifyChatBotFunctionality (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2077:28)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:24:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts:21:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 28,
+                          "line": 2077
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:2077\n\n\u001b[0m \u001b[90m 2075 |\u001b[39m   \u001b[36masync\u001b[39m verifyChatBotFunctionality() {\n \u001b[90m 2076 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2077 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2078 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotPopup\u001b[33m,\u001b[39m \u001b[32m'Chat bot popup should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 2079 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotCloseIcon\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 2080 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mchatBotIcon\u001b[33m,\u001b[39m \u001b[32m'Chat bot icon should be visible'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-09-25T04:31:33.960Z",
+                  "annotations": [
+                    {
+                      "type": "automation user story",
+                      "description": "30273",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts",
+                        "line": 6,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-chatBotTest-Val-f0d3e-s-AH-user-and-at-login-page-chrome-retry2/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-chatBotTest-Val-f0d3e-s-AH-user-and-at-login-page-chrome-retry2/error-context.md"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "9c81ba0b665322d5790a-5f4b9de4d32455fc0d39",
@@ -415,7 +613,7 @@
           ],
           "tests": [
             {
-              "timeout": 60000,
+              "timeout": 600000,
               "annotations": [
                 {
                   "type": "automation user story",
@@ -432,62 +630,46 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 38696,
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
-                    },
-                    {
-                      "text": "Login successful for 02PwAut25Ex_01\n"
-                    },
-                    {
-                      "text": "[S12:W0] Login successful for 02PwAut25Ex_01\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Examiner:- Verify chat bot functionality on Dashboard page",
-                      "duration": 3660
-                    },
-                    {
-                      "title": "Examiner:- Verify chat bot functionality on Testset page",
-                      "duration": 263
-                    },
-                    {
-                      "title": "Examiner:- Verify chat bot functionality on Examinees page",
-                      "duration": 4385
-                    },
-                    {
-                      "title": "Examiner:- Verify chat bot functionality on Staff page",
-                      "duration": 240
-                    },
-                    {
-                      "title": "Examiner:- Verify chat bot functionality on Reports>Library  page",
-                      "duration": 3199
-                    }
-                  ],
-                  "startTime": "2026-09-24T19:56:40.146Z",
-                  "annotations": [
-                    {
-                      "type": "automation user story",
-                      "description": "30273",
-                      "location": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/chatBotTest.spec.ts",
-                        "line": 55,
-                        "column": 5
-                      }
-                    }
-                  ],
+                  "startTime": "2026-09-25T04:30:30.817Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-09-25T04:31:32.778Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-09-25T04:32:34.731Z",
+                  "annotations": [],
                   "attachments": []
                 }
               ],
-              "status": "expected"
+              "status": "skipped"
             }
           ],
           "id": "9c81ba0b665322d5790a-911b7197d7245a5559c4",
@@ -520,76 +702,10 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 508734,
-                  "error": {
-                    "message": "TimeoutError: locator.waitFor: Timeout 480000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('span[class=\\'loading-icon\\']') to be hidden\u001b[22m\n\u001b[2m    957 × locator resolved to visible <span class=\"loading-icon\"></span>\u001b[22m\n",
-                    "stack": "TimeoutError: locator.waitFor: Timeout 480000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('span[class=\\'loading-icon\\']') to be hidden\u001b[22m\n\u001b[2m    957 × locator resolved to visible <span class=\"loading-icon\"></span>\u001b[22m\n\n    at DashBoardPage.waitForLoaderToDisappear (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:189:8)\n    at DashBoardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:121:16)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:23:44",
-                    "location": {
-                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                      "column": 8,
-                      "line": 189
-                    },
-                    "snippet": "   at ../page/dashboardPage.ts:189\n\n\u001b[0m \u001b[90m 187 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\n \u001b[90m 188 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"span[class='loading-icon']\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 189 |\u001b[39m       \u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m\"hidden\"\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m8\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 190 |\u001b[39m   }\n \u001b[90m 191 |\u001b[39m\n \u001b[90m 192 |\u001b[39m   \u001b[36masync\u001b[39m dismissTestAssignmentDialogIfPresent() {\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                        "column": 8,
-                        "line": 189
-                      },
-                      "message": "TimeoutError: locator.waitFor: Timeout 480000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('span[class=\\'loading-icon\\']') to be hidden\u001b[22m\n\u001b[2m    957 × locator resolved to visible <span class=\"loading-icon\"></span>\u001b[22m\n\n\n   at ../page/dashboardPage.ts:189\n\n  187 |     await this.page\n  188 |       .locator(\"span[class='loading-icon']\")\n> 189 |       .waitFor({ state: \"hidden\", timeout: 8 * 60 * 1000 });\n      |        ^\n  190 |   }\n  191 |\n  192 |   async dismissTestAssignmentDialogIfPresent() {\n    at DashBoardPage.waitForLoaderToDisappear (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:189:8)\n    at DashBoardPage.addNewExamineeAndUpdateTheTemplate (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:121:16)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:23:44"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
-                    },
-                    {
-                      "text": "Login successful for 02PwAut25Ex_01\n"
-                    },
-                    {
-                      "text": "[S12:W0] Login successful for 02PwAut25Ex_01\n"
-                    },
-                    {
-                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-09-24T19:57:18.873Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome/test-failed-1.png"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome/error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                    "column": 8,
-                    "line": 189
-                  }
-                },
-                {
-                  "workerIndex": 1,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 130082,
+                  "duration": 142887,
                   "errors": [],
                   "stdout": [
                     {
@@ -599,19 +715,19 @@
                       "text": "Login successful for 02PwAut25Ex_01\n"
                     },
                     {
-                      "text": "[S12:W1] Login successful for 02PwAut25Ex_01\n"
+                      "text": "[S12:W3] Login successful for 02PwAut25Ex_01\n"
                     },
                     {
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N62255A68784\n"
+                      "text": "Examinee ID N71788A74244\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N62255A68784/dataFiles/Score_DataExport_AutoFilter_Template_N62255A68784.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N71788A74244/dataFiles/Score_DataExport_AutoFilter_Template_N71788A74244.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N62255A68784 FirstName=Kris LastName =N62255A68784 Age = 09/24/2024\n"
+                      "text": "Successfully added an Examinee  ID =N71788A74244 FirstName=Kirstin LastName =N71788A74244 Age = 09/24/2024\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -620,7 +736,78 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N62255A68784\n"
+                      "text": "Successfully selected examinee: N71788A74244\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T04:32:35.999Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Generated wLookUp Filter Template (N71788A74244)",
+                      "contentType": "text/csv",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N71788A74244--e3806a0c790de3d18206713c8abb4f6bf5223552.csv"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 131468,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W4] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N3942A4569\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3942A4569/dataFiles/Score_DataExport_AutoFilter_Template_N3942A4569.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N3942A4569 FirstName=Laurianne LastName =N3942A4569 Age = 09/24/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N3942A4569\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -646,41 +833,22 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-09-24T20:05:58.529Z",
+                  "startTime": "2026-09-25T04:48:58.427Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "Generated wLookUp Filter Template (N62255A68784)",
+                      "name": "Generated wLookUp Filter Template (N3942A4569)",
                       "contentType": "text/csv",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N62255A68784--435269406de9d3d5ef0721b7e6becde5605d34f2.csv"
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N3942A4569--1e42d6235163f82a72a1d4785ab6a1ed6ca2ead4.csv"
                     }
                   ]
                 },
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 5,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 44435,
-                  "error": {
-                    "message": "Error: page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://stage.riversidescore.com/examinee/C7xpq8qKt\nCall log:\n\u001b[2m  - navigating to \"https://stage.riversidescore.com/examinee/C7xpq8qKt\", waiting until \"load\"\u001b[22m\n",
-                    "stack": "Error: page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://stage.riversidescore.com/examinee/C7xpq8qKt\nCall log:\n\u001b[2m  - navigating to \"https://stage.riversidescore.com/examinee/C7xpq8qKt\", waiting until \"load\"\u001b[22m\n\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:42:26",
-                    "location": {
-                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
-                      "column": 26,
-                      "line": 42
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 40 |\u001b[39m       \u001b[36mconst\u001b[39m wj5examineepage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mStudentPage\u001b[39m(examineePage\u001b[33m,\u001b[39m sessionid)\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 42 |\u001b[39m       \u001b[36mawait\u001b[39m examineePage\u001b[33m.\u001b[39mgoto(getExamineeURL() \u001b[33m+\u001b[39m sessionid)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m       \u001b[90m// await examineePage.goto(getExamineeURL());\u001b[39m\n \u001b[90m 45 |\u001b[39m       \u001b[90m// await wj5examineepage.joinSessionUsingSessionID();\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
-                        "column": 26,
-                        "line": 42
-                      },
-                      "message": "Error: page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://stage.riversidescore.com/examinee/C7xpq8qKt\nCall log:\n\u001b[2m  - navigating to \"https://stage.riversidescore.com/examinee/C7xpq8qKt\", waiting until \"load\"\u001b[22m\n\n\n  40 |       const wj5examineepage = new StudentPage(examineePage, sessionid);\n  41 |\n> 42 |       await examineePage.goto(getExamineeURL() + sessionid);\n     |                          ^\n  43 |\n  44 |       // await examineePage.goto(getExamineeURL());\n  45 |       // await wj5examineepage.joinSessionUsingSessionID();\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:42:26"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 131069,
+                  "errors": [],
                   "stdout": [
                     {
                       "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
@@ -689,19 +857,19 @@
                       "text": "Login successful for 02PwAut25Ex_01\n"
                     },
                     {
-                      "text": "[S12:W2] Login successful for 02PwAut25Ex_01\n"
+                      "text": "[S12:W5] Login successful for 02PwAut25Ex_01\n"
                     },
                     {
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N76675A9365\n"
+                      "text": "Examinee ID N77841A39310\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N76675A9365/dataFiles/Score_DataExport_AutoFilter_Template_N76675A9365.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N77841A39310/dataFiles/Score_DataExport_AutoFilter_Template_N77841A39310.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N76675A9365 FirstName=Darien LastName =N76675A9365 Age = 09/24/2024\n"
+                      "text": "Successfully added an Examinee  ID =N77841A39310 FirstName=Jaren LastName =N77841A39310 Age = 09/25/2024\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -710,43 +878,44 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N76675A9365\n"
+                      "text": "Successfully selected examinee: N77841A39310\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2026-09-24T20:21:25.395Z",
+                  "startTime": "2026-09-25T05:04:03.718Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "Generated wLookUp Filter Template (N76675A9365)",
+                      "name": "Generated wLookUp Filter Template (N77841A39310)",
                       "contentType": "text/csv",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry2/attachments/Generated-wLookUp-Filter-Template-N76675A9365--c7dfc4a95cebc6f78feea4ce0d1c9d55242643e5.csv"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry2/test-failed-1.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry2/test-failed-2.png"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry2/error-context.md"
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry2/attachments/Generated-wLookUp-Filter-Template-N77841A39310--df1d1d9f13adc7f7c39e503467c189f96514f27b.csv"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
-                    "column": 26,
-                    "line": 42
-                  }
+                  ]
                 }
               ],
-              "status": "flaky"
+              "status": "expected"
             }
           ],
           "id": "ed18dc26dc5c1351a836-a91349b67f51d4577e3b",
@@ -771,23 +940,10 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-09-24T20:05:57.641Z",
-                  "annotations": [],
-                  "attachments": []
-                },
-                {
-                  "workerIndex": 1,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 162645,
+                  "duration": 176234,
                   "errors": [],
                   "stdout": [
                     {
@@ -797,19 +953,19 @@
                       "text": "Login successful for 02PwAut25Ex_01\n"
                     },
                     {
-                      "text": "[S12:W1] Login successful for 02PwAut25Ex_01\n"
+                      "text": "[S12:W3] Login successful for 02PwAut25Ex_01\n"
                     },
                     {
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N27949A99277\n"
+                      "text": "Examinee ID N78267A92067\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N27949A99277/dataFiles/Score_DataExport_AutoFilter_Template_N27949A99277.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N78267A92067/dataFiles/Score_DataExport_AutoFilter_Template_N78267A92067.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N27949A99277 FirstName=Brooklyn LastName =N27949A99277 Age = 09/24/2022\n"
+                      "text": "Successfully added an Examinee  ID =N78267A92067 FirstName=Dillon LastName =N78267A92067 Age = 09/24/2022\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -818,7 +974,93 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N27949A99277\n"
+                      "text": "Successfully selected examinee: N78267A92067\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T04:34:59.414Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Generated wLookUp Filter Template (N78267A92067)",
+                      "contentType": "text/csv",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6fb69-st-data-for-InProgress-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N78267A92067--0184e59af57a0b6af709cb1e3daca54f569ab473.csv"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 161922,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W4] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N49352A64901\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N49352A64901/dataFiles/Score_DataExport_AutoFilter_Template_N49352A64901.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N49352A64901 FirstName=Orville LastName =N49352A64901 Age = 09/24/2022\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N49352A64901\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -859,28 +1101,101 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-09-24T20:08:09.054Z",
+                  "startTime": "2026-09-25T04:51:10.409Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "Generated wLookUp Filter Template (N27949A99277)",
+                      "name": "Generated wLookUp Filter Template (N49352A64901)",
                       "contentType": "text/csv",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6fb69-st-data-for-InProgress-sets-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N27949A99277--983dc37d5f284a0a3232b0500e68503a1c04f788.csv"
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6fb69-st-data-for-InProgress-sets-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N49352A64901--1397578ce35e79e95571aaeffd8a06452788cb28.csv"
                     }
                   ]
                 },
                 {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 162031,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W5] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N91087A9231\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N91087A9231/dataFiles/Score_DataExport_AutoFilter_Template_N91087A9231.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N91087A9231 FirstName=Leann LastName =N91087A9231 Age = 09/25/2022\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N91087A9231\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2026-09-24T20:22:10.370Z",
+                  "startTime": "2026-09-25T05:06:15.283Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "Generated wLookUp Filter Template (N91087A9231)",
+                      "contentType": "text/csv",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6fb69-st-data-for-InProgress-sets-chrome-retry2/attachments/Generated-wLookUp-Filter-Template-N91087A9231--c9f8580fca83b844434ff116befb9b4f715e3284.csv"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -908,23 +1223,10 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-09-24T20:05:57.642Z",
-                  "annotations": [],
-                  "attachments": []
-                },
-                {
-                  "workerIndex": 1,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 192195,
+                  "duration": 219258,
                   "errors": [],
                   "stdout": [
                     {
@@ -934,19 +1236,19 @@
                       "text": "Login successful for 02PwAut25Ex_01\n"
                     },
                     {
-                      "text": "[S12:W1] Login successful for 02PwAut25Ex_01\n"
+                      "text": "[S12:W3] Login successful for 02PwAut25Ex_01\n"
                     },
                     {
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N47780A60081\n"
+                      "text": "Examinee ID N99952A37839\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N47780A60081/dataFiles/Score_DataExport_AutoFilter_Template_N47780A60081.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N99952A37839/dataFiles/Score_DataExport_AutoFilter_Template_N99952A37839.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N47780A60081 FirstName=Barrett LastName =N47780A60081 Age = 03/26/2022\n"
+                      "text": "Successfully added an Examinee  ID =N99952A37839 FirstName=Earnest LastName =N99952A37839 Age = 03/26/2022\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -955,7 +1257,171 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N47780A60081\n"
+                      "text": "Successfully selected examinee: N99952A37839\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    },
+                    {
+                      "text": "Item 11\n"
+                    },
+                    {
+                      "text": "Item 12\n"
+                    },
+                    {
+                      "text": "Item 13\n"
+                    },
+                    {
+                      "text": "Item 14\n"
+                    },
+                    {
+                      "text": "Item 15\n"
+                    },
+                    {
+                      "text": "Item 16\n"
+                    },
+                    {
+                      "text": "Item 17\n"
+                    },
+                    {
+                      "text": "Item 18\n"
+                    },
+                    {
+                      "text": "Item 19\n"
+                    },
+                    {
+                      "text": "Item 20\n"
+                    },
+                    {
+                      "text": "Item 21\n"
+                    },
+                    {
+                      "text": "Item 22\n"
+                    },
+                    {
+                      "text": "Item 23\n"
+                    },
+                    {
+                      "text": "Item 24\n"
+                    },
+                    {
+                      "text": "Item 25\n"
+                    },
+                    {
+                      "text": "Item 26\n"
+                    },
+                    {
+                      "text": "Item 27\n"
+                    },
+                    {
+                      "text": "Item 28\n"
+                    },
+                    {
+                      "text": "Item 29\n"
+                    },
+                    {
+                      "text": "Item 30\n"
+                    },
+                    {
+                      "text": "Item 31\n"
+                    },
+                    {
+                      "text": "Item 32\n"
+                    },
+                    {
+                      "text": "Item 33\n"
+                    },
+                    {
+                      "text": "Item 34\n"
+                    },
+                    {
+                      "text": "Item 35\n"
+                    },
+                    {
+                      "text": "Item 36\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T04:37:55.695Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Generated wLookUp Filter Template (N99952A37839)",
+                      "contentType": "text/csv",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N99952A37839--cfe327fbb4495ed8bf0a4e2d2dd6e9b9f63322e1.csv"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 194871,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W4] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N16755A23240\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N16755A23240/dataFiles/Score_DataExport_AutoFilter_Template_N16755A23240.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N16755A23240 FirstName=Dayne LastName =N16755A23240 Age = 03/26/2022\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N16755A23240\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -1074,28 +1540,179 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-09-24T20:10:51.716Z",
+                  "startTime": "2026-09-25T04:53:52.368Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "Generated wLookUp Filter Template (N47780A60081)",
+                      "name": "Generated wLookUp Filter Template (N16755A23240)",
                       "contentType": "text/csv",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N47780A60081--5dab324391b49a3fa052c3ffb3c2f782810dda77.csv"
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N16755A23240--87a445dc50995dfbb4ddbf4165c3dab2810462c5.csv"
                     }
                   ]
                 },
                 {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 204270,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W5] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N34862A41154\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N34862A41154/dataFiles/Score_DataExport_AutoFilter_Template_N34862A41154.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N34862A41154 FirstName=Noemy LastName =N34862A41154 Age = 03/26/2022\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N34862A41154\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    },
+                    {
+                      "text": "Item 6\n"
+                    },
+                    {
+                      "text": "Item 7\n"
+                    },
+                    {
+                      "text": "Item 8\n"
+                    },
+                    {
+                      "text": "Item 9\n"
+                    },
+                    {
+                      "text": "Item 10\n"
+                    },
+                    {
+                      "text": "Item 11\n"
+                    },
+                    {
+                      "text": "Item 12\n"
+                    },
+                    {
+                      "text": "Item 13\n"
+                    },
+                    {
+                      "text": "Item 14\n"
+                    },
+                    {
+                      "text": "Item 15\n"
+                    },
+                    {
+                      "text": "Item 16\n"
+                    },
+                    {
+                      "text": "Item 17\n"
+                    },
+                    {
+                      "text": "Item 18\n"
+                    },
+                    {
+                      "text": "Item 19\n"
+                    },
+                    {
+                      "text": "Item 20\n"
+                    },
+                    {
+                      "text": "Item 21\n"
+                    },
+                    {
+                      "text": "Item 22\n"
+                    },
+                    {
+                      "text": "Item 23\n"
+                    },
+                    {
+                      "text": "Item 24\n"
+                    },
+                    {
+                      "text": "Item 25\n"
+                    },
+                    {
+                      "text": "Item 26\n"
+                    },
+                    {
+                      "text": "Item 27\n"
+                    },
+                    {
+                      "text": "Item 28\n"
+                    },
+                    {
+                      "text": "Item 29\n"
+                    },
+                    {
+                      "text": "Item 30\n"
+                    },
+                    {
+                      "text": "Item 31\n"
+                    },
+                    {
+                      "text": "Item 32\n"
+                    },
+                    {
+                      "text": "Item 33\n"
+                    },
+                    {
+                      "text": "Item 34\n"
+                    },
+                    {
+                      "text": "Item 35\n"
+                    },
+                    {
+                      "text": "Item 36\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2026-09-24T20:22:10.370Z",
+                  "startTime": "2026-09-25T05:08:57.341Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "Generated wLookUp Filter Template (N34862A41154)",
+                      "contentType": "text/csv",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome-retry2/attachments/Generated-wLookUp-Filter-Template-N34862A41154--d4c5ab02ba05dbbfc211edb51cac73533d647af3.csv"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -1123,23 +1740,10 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-09-24T20:05:57.642Z",
-                  "annotations": [],
-                  "attachments": []
-                },
-                {
-                  "workerIndex": 1,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 137585,
+                  "duration": 150069,
                   "errors": [],
                   "stdout": [
                     {
@@ -1149,19 +1753,19 @@
                       "text": "Login successful for 02PwAut25Ex_01\n"
                     },
                     {
-                      "text": "[S12:W1] Login successful for 02PwAut25Ex_01\n"
+                      "text": "[S12:W3] Login successful for 02PwAut25Ex_01\n"
                     },
                     {
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N97413A61722\n"
+                      "text": "Examinee ID N92732A91886\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N97413A61722/dataFiles/Score_DataExport_AutoFilter_Template_N97413A61722.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N92732A91886/dataFiles/Score_DataExport_AutoFilter_Template_N92732A91886.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N97413A61722 FirstName=Brett LastName =N97413A61722 Age = 09/24/2024\n"
+                      "text": "Successfully added an Examinee  ID =N92732A91886 FirstName=Giovanny LastName =N92732A91886 Age = 09/24/2024\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -1170,7 +1774,78 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N97413A61722\n"
+                      "text": "Successfully selected examinee: N92732A91886\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-25T04:41:35.012Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Generated wLookUp Filter Template (N92732A91886)",
+                      "contentType": "text/csv",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N92732A91886--e85f524c7f5ab177eec4cc983d01122667cc4632.csv"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 136557,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W4] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N37194A51718\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37194A51718/dataFiles/Score_DataExport_AutoFilter_Template_N37194A51718.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N37194A51718 FirstName=Emile LastName =N37194A51718 Age = 09/24/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N37194A51718\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -1196,28 +1871,86 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-09-24T20:14:03.926Z",
+                  "startTime": "2026-09-25T04:57:07.270Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "Generated wLookUp Filter Template (N97413A61722)",
+                      "name": "Generated wLookUp Filter Template (N37194A51718)",
                       "contentType": "text/csv",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N97413A61722--a3d6ac9bcf25a22baa9c50f4ed3773f5b48cf904.csv"
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N37194A51718--1848f825f17b536beda0105948a2734e98b419f6.csv"
                     }
                   ]
                 },
                 {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 142529,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W5] Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N18354A72559\n"
+                    },
+                    {
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N18354A72559/dataFiles/Score_DataExport_AutoFilter_Template_N18354A72559.csv successfully.\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N18354A72559 FirstName=Judson LastName =N18354A72559 Age = 09/25/2024\n"
+                    },
+                    {
+                      "text": "Found 62 checkboxes\n"
+                    },
+                    {
+                      "text": "Selected test: Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N18354A72559\n"
+                    },
+                    {
+                      "text": "Academic Vocabulary\n"
+                    },
+                    {
+                      "text": "selected ssp is = 16478|Preschool to Grade 2|\n"
+                    },
+                    {
+                      "text": "Item 1\n"
+                    },
+                    {
+                      "text": "Item 2\n"
+                    },
+                    {
+                      "text": "Item 3\n"
+                    },
+                    {
+                      "text": "Item 4\n"
+                    },
+                    {
+                      "text": "Item 5\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2026-09-24T20:22:10.370Z",
+                  "startTime": "2026-09-25T05:12:21.644Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "Generated wLookUp Filter Template (N18354A72559)",
+                      "contentType": "text/csv",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome-retry2/attachments/Generated-wLookUp-Filter-Template-N18354A72559--a257419b628b0fbff682388ed454029d34a2a074.csv"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -1230,7 +1963,7 @@
         },
         {
           "title": "Validate Dashboard Test Assignments functionality Part_B",
-          "ok": false,
+          "ok": true,
           "tags": [
             "DashboardTestAssignments_B",
             "Smoke",
@@ -1255,49 +1988,28 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-09-24T20:05:57.642Z",
-                  "annotations": [],
-                  "attachments": []
-                },
-                {
-                  "workerIndex": 1,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 302877,
+                  "duration": 280524,
                   "error": {
-                    "message": "Error: page.reload: net::ERR_HTTP_RESPONSE_CODE_FAILURE\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
-                    "stack": "Error: page.reload: net::ERR_HTTP_RESPONSE_CODE_FAILURE\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n\n    at DashBoardPage.waitForLoadingSpinnerToDisappear (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:755:17)\n    at DashBoardPage.searchExaminee (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2098:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:101:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:93:5",
+                    "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m",
+                    "stack": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1625:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:96:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:93:5",
                     "location": {
                       "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                      "column": 17,
-                      "line": 755
+                      "column": 77,
+                      "line": 1625
                     },
-                    "snippet": "   at ../page/dashboardPage.ts:755\n\n\u001b[0m \u001b[90m 753 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 754 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 755 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 756 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdashboardLoadingSpinnerIcon\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mwaitFor({\n \u001b[90m 757 |\u001b[39m         state\u001b[33m:\u001b[39m \u001b[32m\"hidden\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 758 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m4\u001b[39m \u001b[33m*\u001b[39m \u001b[35m60\u001b[39m \u001b[33m*\u001b[39m \u001b[35m1000\u001b[39m\u001b[33m,\u001b[39m\u001b[0m"
+                    "snippet": "   at ../page/dashboardPage.ts:1625\n\n\u001b[0m \u001b[90m 1623 |\u001b[39m     \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m\"Expected Days Left\"\u001b[39m\u001b[33m,\u001b[39m daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m 1624 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"days\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1625 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1626 |\u001b[39m   }\n \u001b[90m 1627 |\u001b[39m\n \u001b[90m 1628 |\u001b[39m   \u001b[36masync\u001b[39m verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\u001b[0m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                        "column": 17,
-                        "line": 755
+                        "column": 77,
+                        "line": 1625
                       },
-                      "message": "Error: page.reload: net::ERR_HTTP_RESPONSE_CODE_FAILURE\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n\n\n   at ../page/dashboardPage.ts:755\n\n  753 |       await this.page.waitForTimeout(2000);\n  754 |     } catch (error) {\n> 755 |       this.page.reload();\n      |                 ^\n  756 |       await this.dashboardLoadingSpinnerIcon.last().waitFor({\n  757 |         state: \"hidden\",\n  758 |         timeout: 4 * 60 * 1000,\n    at DashBoardPage.waitForLoadingSpinnerToDisappear (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:755:17)\n    at DashBoardPage.searchExaminee (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2098:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:101:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:93:5"
-                    },
-                    {
-                      "location": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                        "column": 65,
-                        "line": 2102
-                      },
-                      "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'N97413A61722\\']')\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2102\n\n  2100 |\n  2101 |   async clickOnSearchedExaminee(examineeId: string) {\n> 2102 |     await this.page.locator(`//button[text()='${examineeId}']`).click();\n       |                                                                 ^\n  2103 |     await this.page.waitForLoadState(\"domcontentloaded\");\n  2104 |     await this.waitForLoadingSpinnerToDisappear();\n  2105 |   }\n    at DashBoardPage.clickOnSearchedExaminee (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2102:65)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:102:33\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:93:5"
+                      "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n\n   at ../page/dashboardPage.ts:1625\n\n  1623 |     RawValueLogger.log(\"Expected Days Left\", daysLeft);\n  1624 |     expect.soft(actualDaysLeftText, \"Days left text should contain 'days'\").toContain(\"days\");\n> 1625 |     expect.soft(actualDaysLeftText, \"Days left text should contain 'days'\").toContain(daysLeft);\n       |                                                                             ^\n  1626 |   }\n  1627 |\n  1628 |   async verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1625:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:96:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:93:5"
                     }
                   ],
                   "stdout": [
@@ -1308,7 +2020,7 @@
                       "text": "Login successful for 02PwAut25AH\n"
                     },
                     {
-                      "text": "[S12:W1] Login successful for 02PwAut25AH\n"
+                      "text": "[S12:W3] Login successful for 02PwAut25AH\n"
                     },
                     {
                       "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
@@ -1317,32 +2029,227 @@
                       "text": "Login successful for 02PwAut25Ex_01\n"
                     },
                     {
-                      "text": "[S12:W1] Login successful for 02PwAut25Ex_01\n"
+                      "text": "[S12:W3] Login successful for 02PwAut25Ex_01\n"
                     }
                   ],
-                  "stderr": [
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
                     {
-                      "text": "Error waiting for loading spinner to disappear: locator.waitFor: Timeout 240000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[style*=\\'visible\\']>span[class=\\'loading-icon\\']').last() to be hidden\u001b[22m\n\u001b[2m    482 × locator resolved to visible <span class=\"loading-icon\"></span>\u001b[22m\n\n    at DashBoardPage.waitForLoadingSpinnerToDisappear \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:749:53\u001b[90m)\u001b[39m\n    at DashBoardPage.searchExaminee \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:2098:16\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/functional/dashboard/testAssignments_B.spec.ts:101:7\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/functional/dashboard/testAssignments_B.spec.ts:93:5 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m749\u001b[39m,\n      column: \u001b[33m53\u001b[39m,\n      function: \u001b[32m'DashBoardPage.waitForLoadingSpinnerToDisappear'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('div[style*=\\\\'visible\\\\']>span[class=\\\\'loading-icon\\\\']').last()\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"div[style*='visible']>span[class='loading-icon'] >> nth=-1\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'hidden'\u001b[39m,\n      timeout: \u001b[33m240000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@116'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@116'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('div[style*=\\\\'visible\\\\']>span[class=\\\\'loading-icon\\\\']').last()\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1790281281958\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 240000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('div[style*=\\\\'visible\\\\']>span[class=\\\\'loading-icon\\\\']').last() to be hidden\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    482 × locator resolved to visible <span class=\"loading-icon\"></span>\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 240000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('div[style*=\\\\'visible\\\\']>span[class=\\\\'loading-icon\\\\']').last() to be hidden\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    482 × locator resolved to visible <span class=\"loading-icon\"></span>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.waitForLoadingSpinnerToDisappear (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:749:53)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.searchExaminee (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2098:16)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:101:7\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:93:5'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                      "title": "Verify submitted test set has 90 Days left to edit and verify hover text on dashboard and examinee screen",
+                      "duration": 31076,
+                      "error": {
+                        "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m",
+                        "stack": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1625:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:96:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:93:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 77,
+                          "line": 1625
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1625\n\n\u001b[0m \u001b[90m 1623 |\u001b[39m     \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m\"Expected Days Left\"\u001b[39m\u001b[33m,\u001b[39m daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m 1624 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"days\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1625 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1626 |\u001b[39m   }\n \u001b[90m 1627 |\u001b[39m\n \u001b[90m 1628 |\u001b[39m   \u001b[36masync\u001b[39m verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\u001b[0m"
+                      }
+                    },
+                    {
+                      "title": "Examiner:- Verify we can not edit the examinee name or test set when the status is \"In Progress\"",
+                      "duration": 35271
+                    },
+                    {
+                      "title": "Examiner:- Expire In Progress test to achieve - assignment line has gone to its greyed out inactive state after the 90-day editing window has passed and these assignments cannot be launched for status \"In Progress\"",
+                      "duration": 23448
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible",
+                      "duration": 13834
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"NO\" button",
+                      "duration": 122
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up",
+                      "duration": 7294
+                    },
+                    {
+                      "title": "Examiner:- Verify \"Expired\" status turns to \"Closed\" and subscription subtest count is increased, Also verify Hovertext on \"Earlier Date of testing\"",
+                      "duration": 14203
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible at Examinee management page",
+                      "duration": 9512
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up at Examinee General Info popup and consumes a subtest",
+                      "duration": 15604
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality \"Inprogress\" When clicked \"No\"",
+                      "duration": 20965
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality \"Inprogress\" When clicked \"Proceed\"",
+                      "duration": 19517
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality is not visible for \"Submitted\"",
+                      "duration": 5312
+                    },
+                    {
+                      "title": "AH:- Verify ah cant delete examiner \"Inprogress\" test assignment",
+                      "duration": 15453
                     }
                   ],
+                  "startTime": "2026-09-25T04:44:05.114Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927_26988_27345_29976_28792, 28823_29687_30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "line": 75,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/test-failed-2.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 77,
+                    "line": 1625
+                  }
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 278448,
+                  "error": {
+                    "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m",
+                    "stack": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1625:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:96:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:93:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 77,
+                      "line": 1625
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:1625\n\n\u001b[0m \u001b[90m 1623 |\u001b[39m     \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m\"Expected Days Left\"\u001b[39m\u001b[33m,\u001b[39m daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m 1624 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"days\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1625 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1626 |\u001b[39m   }\n \u001b[90m 1627 |\u001b[39m\n \u001b[90m 1628 |\u001b[39m   \u001b[36masync\u001b[39m verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 77,
+                        "line": 1625
+                      },
+                      "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n\n   at ../page/dashboardPage.ts:1625\n\n  1623 |     RawValueLogger.log(\"Expected Days Left\", daysLeft);\n  1624 |     expect.soft(actualDaysLeftText, \"Days left text should contain 'days'\").toContain(\"days\");\n> 1625 |     expect.soft(actualDaysLeftText, \"Days left text should contain 'days'\").toContain(daysLeft);\n       |                                                                             ^\n  1626 |   }\n  1627 |\n  1628 |   async verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1625:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:96:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:93:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S12:W4] Login successful for 02PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W4] Login successful for 02PwAut25Ex_01\n"
+                    }
+                  ],
+                  "stderr": [],
                   "retry": 1,
                   "steps": [
                     {
                       "title": "Verify submitted test set has 90 Days left to edit and verify hover text on dashboard and examinee screen",
-                      "duration": 254577,
+                      "duration": 31746,
                       "error": {
-                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'N97413A61722\\']')\u001b[22m\n",
-                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'N97413A61722\\']')\u001b[22m\n\n    at DashBoardPage.clickOnSearchedExaminee (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2102:65)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:102:33\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:93:5",
+                        "message": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m",
+                        "stack": "Error: Days left text should contain 'days'\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"90\"\u001b[39m\nReceived string:    \u001b[31m\"89 days \"\u001b[39m\n    at DashBoardPage.verifyDaysleftToEditIsEqualTo (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1625:77)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:96:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts:93:5",
                         "location": {
                           "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                          "column": 65,
-                          "line": 2102
+                          "column": 77,
+                          "line": 1625
                         },
-                        "snippet": "   at ../page/dashboardPage.ts:2102\n\n\u001b[0m \u001b[90m 2100 |\u001b[39m\n \u001b[90m 2101 |\u001b[39m   \u001b[36masync\u001b[39m clickOnSearchedExaminee(examineeId\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2102 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m`//button[text()='${examineeId}']`\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"domcontentloaded\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 2104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForLoadingSpinnerToDisappear()\u001b[33m;\u001b[39m\n \u001b[90m 2105 |\u001b[39m   }\u001b[0m"
+                        "snippet": "   at ../page/dashboardPage.ts:1625\n\n\u001b[0m \u001b[90m 1623 |\u001b[39m     \u001b[33mRawValueLogger\u001b[39m\u001b[33m.\u001b[39mlog(\u001b[32m\"Expected Days Left\"\u001b[39m\u001b[33m,\u001b[39m daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m 1624 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"days\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1625 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(actualDaysLeftText\u001b[33m,\u001b[39m \u001b[32m\"Days left text should contain 'days'\"\u001b[39m)\u001b[33m.\u001b[39mtoContain(daysLeft)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1626 |\u001b[39m   }\n \u001b[90m 1627 |\u001b[39m\n \u001b[90m 1628 |\u001b[39m   \u001b[36masync\u001b[39m verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable() {\u001b[0m"
                       }
+                    },
+                    {
+                      "title": "Examiner:- Verify we can not edit the examinee name or test set when the status is \"In Progress\"",
+                      "duration": 35075
+                    },
+                    {
+                      "title": "Examiner:- Expire In Progress test to achieve - assignment line has gone to its greyed out inactive state after the 90-day editing window has passed and these assignments cannot be launched for status \"In Progress\"",
+                      "duration": 23446
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible",
+                      "duration": 13495
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"NO\" button",
+                      "duration": 94
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up",
+                      "duration": 10180
+                    },
+                    {
+                      "title": "Examiner:- Verify \"Expired\" status turns to \"Closed\" and subscription subtest count is increased, Also verify Hovertext on \"Earlier Date of testing\"",
+                      "duration": 14270
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible at Examinee management page",
+                      "duration": 9033
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up at Examinee General Info popup and consumes a subtest",
+                      "duration": 22822
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality \"Inprogress\" When clicked \"No\"",
+                      "duration": 27574
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality \"Inprogress\" When clicked \"Proceed\"",
+                      "duration": 19266
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality is not visible for \"Submitted\"",
+                      "duration": 5111
+                    },
+                    {
+                      "title": "AH:- Verify ah cant delete examiner \"Inprogress\" test assignment",
+                      "duration": 15145
                     }
                   ],
-                  "startTime": "2026-09-24T20:16:21.523Z",
+                  "startTime": "2026-09-25T04:59:23.853Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -1373,25 +2280,108 @@
                   ],
                   "errorLocation": {
                     "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
-                    "column": 17,
-                    "line": 755
+                    "column": 77,
+                    "line": 1625
                   }
                 },
                 {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 256586,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S12:W5] Login successful for 02PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 02PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S12:W5] Login successful for 02PwAut25Ex_01\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2026-09-24T20:22:10.370Z",
-                  "annotations": [],
+                  "steps": [
+                    {
+                      "title": "Verify submitted test set has 90 Days left to edit and verify hover text on dashboard and examinee screen",
+                      "duration": 29044
+                    },
+                    {
+                      "title": "Examiner:- Verify we can not edit the examinee name or test set when the status is \"In Progress\"",
+                      "duration": 34671
+                    },
+                    {
+                      "title": "Examiner:- Expire In Progress test to achieve - assignment line has gone to its greyed out inactive state after the 90-day editing window has passed and these assignments cannot be launched for status \"In Progress\"",
+                      "duration": 22354
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible",
+                      "duration": 13501
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"NO\" button",
+                      "duration": 104
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up",
+                      "duration": 7213
+                    },
+                    {
+                      "title": "Examiner:- Verify \"Expired\" status turns to \"Closed\" and subscription subtest count is increased, Also verify Hovertext on \"Earlier Date of testing\"",
+                      "duration": 14257
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible at Examinee management page",
+                      "duration": 8049
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up at Examinee General Info popup and consumes a subtest",
+                      "duration": 17419
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality \"Inprogress\" When clicked \"No\"",
+                      "duration": 21070
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality \"Inprogress\" When clicked \"Proceed\"",
+                      "duration": 19241
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality is not visible for \"Submitted\"",
+                      "duration": 5104
+                    },
+                    {
+                      "title": "AH:- Verify ah cant delete examiner \"Inprogress\" test assignment",
+                      "duration": 15149
+                    }
+                  ],
+                  "startTime": "2026-09-25T05:14:44.192Z",
+                  "annotations": [
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927_26988_27345_29976_28792, 28823_29687_30275_30670",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_B.spec.ts",
+                        "line": 75,
+                        "column": 5
+                      }
+                    }
+                  ],
                   "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "flaky"
             }
           ],
           "id": "ed18dc26dc5c1351a836-856fcf7f0a9195f6efdf",
@@ -1404,10 +2394,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-09-24T19:55:45.244Z",
-    "duration": 1585148.6670000001,
-    "expected": 5,
-    "skipped": 0,
+    "startTime": "2026-09-25T04:29:10.906Z",
+    "duration": 2990079.231,
+    "expected": 4,
+    "skipped": 1,
     "unexpected": 1,
     "flaky": 1
   }

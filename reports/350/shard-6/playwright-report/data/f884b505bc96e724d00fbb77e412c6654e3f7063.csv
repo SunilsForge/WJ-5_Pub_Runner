@@ -1,0 +1,10 @@
+DerivedExportVariable,DerivedExportValue,Instruction
+Examinee_ID,N49558A66964,Partial matching ExamineeID values
+EDOT,,Earliest date of testing (by exee and test) as a date range like 01/15/2023 - 02/15/2023
+TaskStemForm,,"complete match of the test abbreviation and form (ie, LWIDNT.W5N). Accepts multiple entries separated by semicolons (no spaces)."
+NormBasis,Age,"Alpha-numeric, either ""Age"" or ""K12"""
+Examinee_Grade,1.9,"Alpha-numeric, either ""K"" or 1 through 12 followed by a decimal and grade-tenth. Such as K.9, 3.5 etc."
+DecileTable_Version,,"If blank, platform should use latest alphanumeric version posted. If not blank, entry must be an exact match for a deployed version code (e.g., V230724A or V230805B)"
+ScoringTable_Version,,"If blank, platform should use latest alphanumeric version posted. If not blank, entry must be an exact match for a deployed version code (e.g., V230724A or V230805B)"
+SelTestTable_Version,,"If blank, platform should use latest alphanumeric version posted. If not blank, entry must be an exact match for a deployed version code (e.g., V230724A or V230805B)"
+NormTable_Version,,"If blank, platform should use latest alphanumeric version posted. If not blank, entry must be an exact match for a deployed version code (e.g., V230724A or V230805B)"

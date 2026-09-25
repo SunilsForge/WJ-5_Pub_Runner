@@ -1,0 +1,526 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: derived_scores(compounds & clusters)/GR_cluster_pub.spec.ts >>  GR cluster Derived Export Automation  >> For SEMRET - K12 - All correct scenario,PHNRET - K12 - All correct scenario Complete The GR cluster & generate report
+- Location: src/tests/derived_scores(compounds & clusters)/GR_cluster_pub.spec.ts:26:9
+
+# Error details
+
+```
+TimeoutError: locator.textContent: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('.introduction b.semibold, b').first()
+
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S05PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S05PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - heading "REPORT CENTER" [level=1] [ref=e39]
+            - navigation [ref=e40]:
+              - tablist [ref=e41]:
+                - tab "Report Library" [selected] [ref=e42] [cursor=pointer]
+                - button "Zoom In" [ref=e43] [cursor=pointer]:
+                  - img "Zoom Page In Icon" [ref=e44]
+            - generic "Report Library" [ref=e53]:
+              - grid [ref=e54]:
+                - generic [ref=e55]:
+                  - generic "Report Name" [ref=e56]:
+                    - generic [ref=e58]: Report Name
+                  - generic "Status" [ref=e59]:
+                    - generic [ref=e61]: Status
+                  - generic "Date Created" [ref=e62]:
+                    - generic [ref=e64]: Date Created
+                  - generic "Actions" [ref=e65]:
+                    - generic [ref=e67]: Actions
+                - rowgroup [ref=e68]:
+                  - row "Report Name Derived_Score_AutoFilter_Template_N97348A7200 Status Completed Date Created 09/24/2026 11:46 PM Download/Print Delete View Data Export Format" [ref=e69]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N97348A7200" [ref=e71]: Derived_Score_AutoFilter_Template_N97348A7200
+                    - gridcell "Status Completed" [ref=e73]: Completed
+                    - gridcell "Date Created 09/24/2026 11:46 PM" [ref=e75]: 09/24/2026 11:46 PM
+                    - generic [ref=e76]:
+                      - gridcell "Download/Print" [active] [ref=e78] [cursor=pointer]
+                      - gridcell "Delete" [ref=e80] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e81] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N6567A55647 Status Completed Date Created 09/24/2026 11:37 PM Download/Print Delete View Data Export Format" [ref=e83]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N6567A55647" [ref=e85]: Derived_Score_AutoFilter_Template_N6567A55647
+                    - gridcell "Status Completed" [ref=e87]: Completed
+                    - gridcell "Date Created 09/24/2026 11:37 PM" [ref=e89]: 09/24/2026 11:37 PM
+                    - generic [ref=e90]:
+                      - gridcell "Download/Print" [ref=e92] [cursor=pointer]
+                      - gridcell "Delete" [ref=e94] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e95] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N96451A12873 Status Completed Date Created 09/24/2026 11:33 PM Download/Print Delete View Data Export Format" [ref=e97]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N96451A12873" [ref=e99]: Derived_Score_AutoFilter_Template_N96451A12873
+                    - gridcell "Status Completed" [ref=e101]: Completed
+                    - gridcell "Date Created 09/24/2026 11:33 PM" [ref=e103]: 09/24/2026 11:33 PM
+                    - generic [ref=e104]:
+                      - gridcell "Download/Print" [ref=e106] [cursor=pointer]
+                      - gridcell "Delete" [ref=e108] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e109] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N7516A37541 Status Completed Date Created 09/24/2026 03:34 PM Download/Print Delete View Data Export Format" [ref=e111]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N7516A37541" [ref=e113]: Derived_Score_AutoFilter_Template_N7516A37541
+                    - gridcell "Status Completed" [ref=e115]: Completed
+                    - gridcell "Date Created 09/24/2026 03:34 PM" [ref=e117]: 09/24/2026 03:34 PM
+                    - generic [ref=e118]:
+                      - gridcell "Download/Print" [ref=e120] [cursor=pointer]
+                      - gridcell "Delete" [ref=e122] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e123] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N6033A28830 Status Completed Date Created 09/24/2026 03:28 PM Download/Print Delete View Data Export Format" [ref=e125]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N6033A28830" [ref=e127]: Derived_Score_AutoFilter_Template_N6033A28830
+                    - gridcell "Status Completed" [ref=e129]: Completed
+                    - gridcell "Date Created 09/24/2026 03:28 PM" [ref=e131]: 09/24/2026 03:28 PM
+                    - generic [ref=e132]:
+                      - gridcell "Download/Print" [ref=e134] [cursor=pointer]
+                      - gridcell "Delete" [ref=e136] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e137] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N32865A23794 Status Completed Date Created 09/24/2026 03:23 PM Download/Print Delete View Data Export Format" [ref=e139]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N32865A23794" [ref=e141]: Derived_Score_AutoFilter_Template_N32865A23794
+                    - gridcell "Status Completed" [ref=e143]: Completed
+                    - gridcell "Date Created 09/24/2026 03:23 PM" [ref=e145]: 09/24/2026 03:23 PM
+                    - generic [ref=e146]:
+                      - gridcell "Download/Print" [ref=e148] [cursor=pointer]
+                      - gridcell "Delete" [ref=e150] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e151] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N9719A30286 Status Completed Date Created 09/24/2026 03:14 PM Download/Print Delete View Data Export Format" [ref=e153]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N9719A30286" [ref=e155]: Derived_Score_AutoFilter_Template_N9719A30286
+                    - gridcell "Status Completed" [ref=e157]: Completed
+                    - gridcell "Date Created 09/24/2026 03:14 PM" [ref=e159]: 09/24/2026 03:14 PM
+                    - generic [ref=e160]:
+                      - gridcell "Download/Print" [ref=e162] [cursor=pointer]
+                      - gridcell "Delete" [ref=e164] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e165] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N49090A4915 Status Completed Date Created 09/24/2026 03:04 PM Download/Print Delete View Data Export Format" [ref=e167]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N49090A4915" [ref=e169]: Derived_Score_AutoFilter_Template_N49090A4915
+                    - gridcell "Status Completed" [ref=e171]: Completed
+                    - gridcell "Date Created 09/24/2026 03:04 PM" [ref=e173]: 09/24/2026 03:04 PM
+                    - generic [ref=e174]:
+                      - gridcell "Download/Print" [ref=e176] [cursor=pointer]
+                      - gridcell "Delete" [ref=e178] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e179] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N7729A52318 Status Completed Date Created 09/24/2026 03:00 PM Download/Print Delete View Data Export Format" [ref=e181]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N7729A52318" [ref=e183]: Derived_Score_AutoFilter_Template_N7729A52318
+                    - gridcell "Status Completed" [ref=e185]: Completed
+                    - gridcell "Date Created 09/24/2026 03:00 PM" [ref=e187]: 09/24/2026 03:00 PM
+                    - generic [ref=e188]:
+                      - gridcell "Download/Print" [ref=e190] [cursor=pointer]
+                      - gridcell "Delete" [ref=e192] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e193] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N29689A68698 Status Completed Date Created 09/24/2026 06:51 AM Download/Print Delete View Data Export Format" [ref=e195]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N29689A68698" [ref=e197]: Derived_Score_AutoFilter_Template_N29689A68698
+                    - gridcell "Status Completed" [ref=e199]: Completed
+                    - gridcell "Date Created 09/24/2026 06:51 AM" [ref=e201]: 09/24/2026 06:51 AM
+                    - generic [ref=e202]:
+                      - gridcell "Download/Print" [ref=e204] [cursor=pointer]
+                      - gridcell "Delete" [ref=e206] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e207] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N27171A17447 Status Completed Date Created 09/24/2026 06:47 AM Download/Print Delete View Data Export Format" [ref=e209]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N27171A17447" [ref=e211]: Derived_Score_AutoFilter_Template_N27171A17447
+                    - gridcell "Status Completed" [ref=e213]: Completed
+                    - gridcell "Date Created 09/24/2026 06:47 AM" [ref=e215]: 09/24/2026 06:47 AM
+                    - generic [ref=e216]:
+                      - gridcell "Download/Print" [ref=e218] [cursor=pointer]
+                      - gridcell "Delete" [ref=e220] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e221] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N30292A96182 Status Completed Date Created 09/16/2026 12:30 PM Download/Print Delete View Data Export Format" [ref=e223]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N30292A96182" [ref=e225]: Derived_Score_AutoFilter_Template_N30292A96182
+                    - gridcell "Status Completed" [ref=e227]: Completed
+                    - gridcell "Date Created 09/16/2026 12:30 PM" [ref=e229]: 09/16/2026 12:30 PM
+                    - generic [ref=e230]:
+                      - gridcell "Download/Print" [ref=e232] [cursor=pointer]
+                      - gridcell "Delete" [ref=e234] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e235] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N96065A59396 Status Completed Date Created 09/16/2026 12:25 PM Download/Print Delete View Data Export Format" [ref=e237]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N96065A59396" [ref=e239]: Derived_Score_AutoFilter_Template_N96065A59396
+                    - gridcell "Status Completed" [ref=e241]: Completed
+                    - gridcell "Date Created 09/16/2026 12:25 PM" [ref=e243]: 09/16/2026 12:25 PM
+                    - generic [ref=e244]:
+                      - gridcell "Download/Print" [ref=e246] [cursor=pointer]
+                      - gridcell "Delete" [ref=e248] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e249] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N87986A34798 Status Completed Date Created 09/16/2026 12:19 PM Download/Print Delete View Data Export Format" [ref=e251]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N87986A34798" [ref=e253]: Derived_Score_AutoFilter_Template_N87986A34798
+                    - gridcell "Status Completed" [ref=e255]: Completed
+                    - gridcell "Date Created 09/16/2026 12:19 PM" [ref=e257]: 09/16/2026 12:19 PM
+                    - generic [ref=e258]:
+                      - gridcell "Download/Print" [ref=e260] [cursor=pointer]
+                      - gridcell "Delete" [ref=e262] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e263] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N52424A20252 Status Completed Date Created 09/16/2026 12:10 PM Download/Print Delete View Data Export Format" [ref=e265]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N52424A20252" [ref=e267]: Derived_Score_AutoFilter_Template_N52424A20252
+                    - gridcell "Status Completed" [ref=e269]: Completed
+                    - gridcell "Date Created 09/16/2026 12:10 PM" [ref=e271]: 09/16/2026 12:10 PM
+                    - generic [ref=e272]:
+                      - gridcell "Download/Print" [ref=e274] [cursor=pointer]
+                      - gridcell "Delete" [ref=e276] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e277] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N28058A8279 Status Completed Date Created 09/16/2026 11:56 AM Download/Print Delete View Data Export Format" [ref=e279]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N28058A8279" [ref=e281]: Derived_Score_AutoFilter_Template_N28058A8279
+                    - gridcell "Status Completed" [ref=e283]: Completed
+                    - gridcell "Date Created 09/16/2026 11:56 AM" [ref=e285]: 09/16/2026 11:56 AM
+                    - generic [ref=e286]:
+                      - gridcell "Download/Print" [ref=e288] [cursor=pointer]
+                      - gridcell "Delete" [ref=e290] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e291] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N48014A62695 Status Completed Date Created 09/10/2026 06:17 AM Download/Print Delete View Data Export Format" [ref=e293]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N48014A62695" [ref=e295]: Derived_Score_AutoFilter_Template_N48014A62695
+                    - gridcell "Status Completed" [ref=e297]: Completed
+                    - gridcell "Date Created 09/10/2026 06:17 AM" [ref=e299]: 09/10/2026 06:17 AM
+                    - generic [ref=e300]:
+                      - gridcell "Download/Print" [ref=e302] [cursor=pointer]
+                      - gridcell "Delete" [ref=e304] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e305] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N15713A40800 Status Completed Date Created 09/10/2026 06:13 AM Download/Print Delete View Data Export Format" [ref=e307]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N15713A40800" [ref=e309]: Derived_Score_AutoFilter_Template_N15713A40800
+                    - gridcell "Status Completed" [ref=e311]: Completed
+                    - gridcell "Date Created 09/10/2026 06:13 AM" [ref=e313]: 09/10/2026 06:13 AM
+                    - generic [ref=e314]:
+                      - gridcell "Download/Print" [ref=e316] [cursor=pointer]
+                      - gridcell "Delete" [ref=e318] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e319] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N18090A53493 Status Completed Date Created 08/27/2026 10:12 AM Download/Print Delete View Data Export Format" [ref=e321]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N18090A53493" [ref=e323]: Derived_Score_AutoFilter_Template_N18090A53493
+                    - gridcell "Status Completed" [ref=e325]: Completed
+                    - gridcell "Date Created 08/27/2026 10:12 AM" [ref=e327]: 08/27/2026 10:12 AM
+                    - generic [ref=e328]:
+                      - gridcell "Download/Print" [ref=e330] [cursor=pointer]
+                      - gridcell "Delete" [ref=e332] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e333] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N83272A21071 Status Completed Date Created 08/27/2026 10:07 AM Download/Print Delete View Data Export Format" [ref=e335]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N83272A21071" [ref=e337]: Derived_Score_AutoFilter_Template_N83272A21071
+                    - gridcell "Status Completed" [ref=e339]: Completed
+                    - gridcell "Date Created 08/27/2026 10:07 AM" [ref=e341]: 08/27/2026 10:07 AM
+                    - generic [ref=e342]:
+                      - gridcell "Download/Print" [ref=e344] [cursor=pointer]
+                      - gridcell "Delete" [ref=e346] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e347] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N22830A9809 Status Completed Date Created 08/27/2026 10:01 AM Download/Print Delete View Data Export Format" [ref=e349]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N22830A9809" [ref=e351]: Derived_Score_AutoFilter_Template_N22830A9809
+                    - gridcell "Status Completed" [ref=e353]: Completed
+                    - gridcell "Date Created 08/27/2026 10:01 AM" [ref=e355]: 08/27/2026 10:01 AM
+                    - generic [ref=e356]:
+                      - gridcell "Download/Print" [ref=e358] [cursor=pointer]
+                      - gridcell "Delete" [ref=e360] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e361] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N96840A71524 Status Completed Date Created 08/27/2026 09:51 AM Download/Print Delete View Data Export Format" [ref=e363]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N96840A71524" [ref=e365]: Derived_Score_AutoFilter_Template_N96840A71524
+                    - gridcell "Status Completed" [ref=e367]: Completed
+                    - gridcell "Date Created 08/27/2026 09:51 AM" [ref=e369]: 08/27/2026 09:51 AM
+                    - generic [ref=e370]:
+                      - gridcell "Download/Print" [ref=e372] [cursor=pointer]
+                      - gridcell "Delete" [ref=e374] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e375] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N8141A12707 Status Completed Date Created 08/27/2026 09:42 AM Download/Print Delete View Data Export Format" [ref=e377]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N8141A12707" [ref=e379]: Derived_Score_AutoFilter_Template_N8141A12707
+                    - gridcell "Status Completed" [ref=e381]: Completed
+                    - gridcell "Date Created 08/27/2026 09:42 AM" [ref=e383]: 08/27/2026 09:42 AM
+                    - generic [ref=e384]:
+                      - gridcell "Download/Print" [ref=e386] [cursor=pointer]
+                      - gridcell "Delete" [ref=e388] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e389] [cursor=pointer]
+                  - row "Report Name Derived_Score_AutoFilter_Template_N94138A45632 Status Completed Date Created 08/27/2026 09:37 AM Download/Print Delete View Data Export Format" [ref=e391]:
+                    - gridcell "Report Name Derived_Score_AutoFilter_Template_N94138A45632" [ref=e393]: Derived_Score_AutoFilter_Template_N94138A45632
+                    - gridcell "Status Completed" [ref=e395]: Completed
+                    - gridcell "Date Created 08/27/2026 09:37 AM" [ref=e397]: 08/27/2026 09:37 AM
+                    - generic [ref=e398]:
+                      - gridcell "Download/Print" [ref=e400] [cursor=pointer]
+                      - gridcell "Delete" [ref=e402] [cursor=pointer]
+                      - button "View Data Export Format":
+                        - img [ref=e403] [cursor=pointer]
+      - contentinfo [ref=e405]:
+        - generic [ref=e406]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e407] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e408]
+        - generic [ref=e409]:
+          - link "Riverside Insights Facebook" [ref=e410] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e411]
+          - link "Riverside Insights Twitter" [ref=e412] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e413]
+          - link "Riverside Insights LinkedIn" [ref=e414] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e415]
+          - link "Riverside Insights Instagram" [ref=e416] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e417]
+        - generic [ref=e418]:
+          - button "Leave Feedback" [ref=e419] [cursor=pointer]
+          - generic [ref=e420]: "|"
+          - link "Terms of Use" [ref=e421] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e422]: "|"
+          - link "Privacy Policy" [ref=e423] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e424]: Footer region end
+```
+
+# Test source
+
+```ts
+  903  |       .getByText("Yes")
+  904  |       .click();
+  905  |     await this.page.waitForLoadState();
+  906  |   }
+  907  | 
+  908  |   async completeTheTakenTestForDerivedScores(
+  909  |     typeOfTest: string,
+  910  |     stemForm: string,
+  911  |     BbyC: number,
+  912  |     flag: string,
+  913  |   ): Promise<Map<string, string>> {
+  914  |     let correctCount: number = 1;
+  915  |     let inCorrectCount: number = 1;
+  916  |     let timerTest = false;
+  917  |     let patternTestCorrectResponses;
+  918  |     let tapFluency = false;
+  919  | 
+  920  |     if (stemForm.includes("MATRCZ.W5PA")) {
+  921  |       this.scoreMap.clear();
+  922  |       this.scoreMap =
+  923  |         await this.utils.getRowDataOfSpecifiedColumnFromSchemaFiles(
+  924  |           "MATRCZ.W5PA_TestSchema.xlsx",
+  925  |           "/Heading/",
+  926  |         );
+  927  |     } else if (stemForm.includes("SEGMNT.W5PA")) {
+  928  |       this.scoreMap.clear();
+  929  |       this.scoreMap =
+  930  |         await this.utils.getRowDataOfSpecifiedColumnFromSchemaFiles(
+  931  |           "SEGMNT.W5PA_TestSchema.xlsx",
+  932  |           "Heading",
+  933  |         );
+  934  |     } else if (/^(NUMPAT|LETPAT)\.W5PA$/.test(stemForm)) {
+  935  |       const matchedPattern = stemForm;
+  936  |       const patternConfig: Record<string, { schemaFile: string }> = {
+  937  |         "NUMPAT.W5PA": { schemaFile: "NUMPAT.W5PA_TestSchema.xlsx" },
+  938  |         "LETPAT.W5PA": { schemaFile: "LETPAT.W5PA_TestSchema.xlsx" },
+  939  |       };
+  940  | 
+  941  |       if (!matchedPattern || !patternConfig[matchedPattern]) {
+  942  |         throw new Error(`No configuration found for the stemForm: ${stemForm}`);
+  943  |       }
+  944  | 
+  945  |       const { schemaFile } = patternConfig[matchedPattern];
+  946  | 
+  947  |       this.scoreMap.clear();
+  948  | 
+  949  |       this.scoreMap =
+  950  |         await this.utils.getRowDataOfSpecifiedColumnFromSchemaFiles(
+  951  |           schemaFile,
+  952  |           "Heading",
+  953  |         );
+  954  | 
+  955  |       patternTestCorrectResponses =
+  956  |         await this.utils.readCorrectValuesFromPatternTest(
+  957  |           matchedPattern,
+  958  |           "Heading",
+  959  |           "TabStim Resps",
+  960  |         );
+  961  |     } else if (stemForm.includes("MAGCMP.W5PA")) {
+  962  |       this.scoreMap.clear();
+  963  |       this.scoreMap =
+  964  |         await this.utils.getRowDataOfSpecifiedColumnFromSchemaFiles(
+  965  |           "MAGCMP.W5PA_TestSchema.xlsx",
+  966  |           "Heading",
+  967  |         );
+  968  |       patternTestCorrectResponses =
+  969  |         await this.utils.readCorrectValuesFromPatternTest(
+  970  |           "MAGCMP.W5PA",
+  971  |           "Heading",
+  972  |           "CorrectResponse",
+  973  |         );
+  974  |     } else if (stemForm.includes("MTHFLU.W5PA")) {
+  975  |       // compared to other fluency tests, MTHFLU.W5PA is total diff, it has to be handled diff
+  976  | 
+  977  |       this.scoreMap.clear();
+  978  | 
+  979  |       this.scoreMap.set("Practice Exercise", "");
+  980  |       this.scoreMap.set("Page 4", "");
+  981  |       this.scoreMap.set("Page 5", "");
+  982  |     } else {
+  983  |       const lastItemNumber = await this.page
+  984  |         .locator(".items-container div span.item-text")
+  985  |         .last()
+  986  |         .textContent();
+  987  |       const itemNumber: number = parseInt(lastItemNumber.split(" ")[1], 10);
+  988  |       console.log(`the last item number is = ${itemNumber}`);
+  989  |       this.scoreMap.clear();
+  990  |       this.scoreMap.set(` `, "^");
+  991  |       for (let index = 1; index <= itemNumber; index++) {
+  992  |         if (stemForm.includes("STYREC.W5PA")) {
+  993  |           this.scoreMap.set(`Story ${index}`, "x");
+  994  |         } else {
+  995  |           this.scoreMap.set(`Item ${index}`, "x");
+  996  |         }
+  997  |       }
+  998  |     }
+  999  | 
+  1000 |     console.log(`Type Of test ${typeOfTest} \n`);
+  1001 |     while (await this.plainNextButtonOrEndButton.first().isVisible()) {
+  1002 |       await this.page.waitForTimeout(2000);
+> 1003 |       const itemDetails: string = (await this.itemDetails.textContent())!;
+       |                                                           ^ TimeoutError: locator.textContent: Timeout 60000ms exceeded.
+  1004 |       console.log(itemDetails);
+  1005 |       const correctlocator: Locator = this.corectOptionButton.first();
+  1006 |       const incorrectlocator: Locator = this.incorrectOptionButton.first();
+  1007 |       const correctlocatorsAll: Promise<Locator[]> =
+  1008 |         this.corectOptionButton.all();
+  1009 |       const incorrectlocatorAll: Promise<Locator[]> =
+  1010 |         this.incorrectOptionButton.all();
+  1011 | 
+  1012 |       const startTimerVisable: boolean = await this.startTimer.isVisible();
+  1013 | 
+  1014 |       if (itemDetails.startsWith("Introduction")) {
+  1015 |         if (await this.videoPlayButton.isVisible()) {
+  1016 |           await this.videoPlayButton.click();
+  1017 |           await expect(this.replayButton).toBeVisible({ timeout: 70000 });
+  1018 |         }
+  1019 |       } else if (
+  1020 |         typeOfTest.match(/All correct scenario/i) &&
+  1021 |         stemForm.match("MTHFLU.W5PA")
+  1022 |       ) {
+  1023 |         this.scoreMap.set("Practice Exercise", "5");
+  1024 |         this.scoreMap.set("Page 4", "80");
+  1025 |         this.scoreMap.set("Page 5", "80");
+  1026 | 
+  1027 |         await this.answerMTHFLUTest(itemDetails, typeOfTest);
+  1028 |       } else if (
+  1029 |         typeOfTest.match(/All incorrect scenario/i) &&
+  1030 |         stemForm.match("MTHFLU.W5PA")
+  1031 |       ) {
+  1032 |         this.scoreMap.set("Practice Exercise", "0");
+  1033 | 
+  1034 |         await this.answerMTHFLUTest(itemDetails, typeOfTest);
+  1035 |       } else if (
+  1036 |         typeOfTest.match(/All correct scenario/i) &&
+  1037 |         /^(Story)/.test(itemDetails)
+  1038 |       ) {
+  1039 |         await this.clickAllCorrectOption(correctlocatorsAll, itemDetails);
+  1040 |       } else if (
+  1041 |         typeOfTest.match(/All correct scenario/i) &&
+  1042 |         startTimerVisable
+  1043 |       ) {
+  1044 |         await this.clickPlusCorrectOption(itemDetails);
+  1045 |         timerTest = true;
+  1046 |       } else if (
+  1047 |         typeOfTest.match(/All correct scenario/i) &&
+  1048 |         /^(Practice Exercise|Test Items)/.test(itemDetails) &&
+  1049 |         stemForm.includes("MAGCMP.W5PA")
+  1050 |       ) {
+  1051 |         await this.answerCorrectForMAGCMPTest(itemDetails, patternTestCorrectResponses);
+  1052 |         if (itemDetails.startsWith("Test Items")) {
+  1053 |           // timerTest = false; // since we are clicking the 
+  1054 |         } else {
+  1055 |           tapFluency = true;
+  1056 |         }
+  1057 |       } else if (
+  1058 |         typeOfTest.match(/All correct scenario/i) &&
+  1059 |         /^(Practice Exercise|Test Items)/.test(itemDetails)
+  1060 |       ) {
+  1061 |         await this.answerCorrectForTimerTest(
+  1062 |           stemForm,
+  1063 |           itemDetails,
+  1064 |           patternTestCorrectResponses,
+  1065 |         );
+  1066 |         tapFluency = true;
+  1067 |       } else if (
+  1068 |         typeOfTest.match(/All correct scenario/i) &&
+  1069 |         stemForm.includes("MAGCMP.W5PA")
+  1070 |       ) {
+  1071 |         // Sample A/B trial items: click the left option (index 0) — any tap is acceptable for samples
+  1072 |         const magcmpRows = await this.page
+  1073 |           .locator("div[class='options MAGCMP']")
+  1074 |           .all();
+  1075 |         if (magcmpRows.length > 0) {
+  1076 |           await magcmpRows[0]
+  1077 |             .locator("button[class^='plain-button']")
+  1078 |             .nth(0)
+  1079 |             .click();
+  1080 |         }
+  1081 |       } else if (typeOfTest.match(/All correct scenario/i)) {
+  1082 |         await this.clickCorrectOption(correctlocator, itemDetails);
+  1083 |       } else if (typeOfTest.match(/Quick Basal Ceiling/i)) {
+  1084 |         if (BbyC && itemDetails.startsWith("Item ")) {
+  1085 |           if (correctCount <= BbyC) {
+  1086 |             await this.clickCorrectOption(correctlocator, itemDetails);
+  1087 |             correctCount++;
+  1088 |           } else if (inCorrectCount <= BbyC) {
+  1089 |             await this.clickInCorrectOption(incorrectlocator, itemDetails);
+  1090 |             inCorrectCount++;
+  1091 |           }
+  1092 |         } else {
+  1093 |           await this.clickCorrectOption(correctlocator, itemDetails);
+  1094 |         }
+  1095 |       } else if (typeOfTest.match(/Attain Basel but not ceiling/i)) {
+  1096 |         if (BbyC && itemDetails.startsWith("Item ")) {
+  1097 |           if (correctCount <= BbyC) {
+  1098 |             await this.clickCorrectOption(correctlocator, itemDetails);
+  1099 |             correctCount++;
+  1100 |           } else if (inCorrectCount <= BbyC) {
+  1101 |             await this.clickInCorrectOption(incorrectlocator, itemDetails);
+  1102 |             inCorrectCount++;
+  1103 |           }
+```
