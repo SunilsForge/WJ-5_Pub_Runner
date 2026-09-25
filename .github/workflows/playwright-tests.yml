@@ -71,6 +71,17 @@ on:
           - "3"
           - "4"
           - "5"
+      final_pass_slowmo_ms:
+        description: "Slow-mo (ms) on the LAST rerun pass only, to settle timing-flaky tests. Needs rerun_passes 2+. That pass also gets 2x the test timeout."
+        required: false
+        default: "500"
+        type: choice
+        options:
+          - "250"
+          - "500"
+          - "1000"
+          - "1500"
+          - "2000"
       browser:
         description: "Browser to run tests on"
         required: true
@@ -83,7 +94,7 @@ on:
       num_retries:
         description: "Number of test retries"
         required: true
-        default: "2"
+        default: "0"
         type: choice
         options:
           - "0"
@@ -104,7 +115,7 @@ on:
       trace_mode:
         description: "Trace recording mode"
         required: true
-        default: "retain-on-first-failure"
+        default: "off"
         type: choice
         options:
           - "on"
@@ -119,17 +130,6 @@ on:
         required: false
         default: false
         type: boolean
-      final_pass_slowmo_ms:
-        description: "Slow-mo (ms) on the LAST rerun pass only, to settle timing-flaky tests. Needs rerun_passes 2+. That pass also gets 2x the test timeout."
-        required: false
-        default: "500"
-        type: choice
-        options:
-          - "250"
-          - "500"
-          - "1000"
-          - "1500"
-          - "2000"
       run_reason:
         description: "Run reason / pre-run notes. Optional directive: min_run=120"
         required: true

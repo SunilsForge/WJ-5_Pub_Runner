@@ -51,7 +51,7 @@ on:
         type: boolean
       num_retries:
         required: true
-        default: "2"
+        default: "0"
         type: string
       video_mode:
         required: true
@@ -59,7 +59,7 @@ on:
         type: string
       trace_mode:
         required: true
-        default: "retain-on-first-failure"
+        default: "off"
         type: string
       run_reason:
         required: true
