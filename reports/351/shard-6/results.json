@@ -1,0 +1,1990 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+        "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 6,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts",
+      "file": "derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " RDGBRF cluster Derived Export Automation ",
+          "file": "derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts",
+          "line": 24,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For LWIDNT - Age - All correct scenario,PSGCMP - Age - All incorrect scenario Complete The RDGBRF cluster & generate report",
+              "ok": false,
+              "tags": [
+                "RDGBRF",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 597762,
+                      "error": {
+                        "message": "Error: Download/Print for \"Derived_Score_AutoFilter_Template_N63364A47189\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N63364A47189\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Derived_Score_AutoFilter_Template_N63364A47189\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N63364A47189\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                        "stack": "Error: Download/Print for \"Derived_Score_AutoFilter_Template_N63364A47189\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N63364A47189\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Derived_Score_AutoFilter_Template_N63364A47189\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N63364A47189\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:168:9",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                          "column": 109,
+                          "line": 43
+                        },
+                        "snippet": "   at ../utils/reportDownload.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m downloadButtonLocator \u001b[33m=\u001b[39m reportRowLocator\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label=\"Download/Print\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m expect(downloadButtonLocator\u001b[33m,\u001b[39m \u001b[32m`Download/Print for \"${expectedReportName}\" never became clickable.`\u001b[39m)\u001b[33m.\u001b[39mtoBeEnabled(\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[33mDOWNLOAD_ENABLED_TIMEOUT_IN_MS\u001b[39m }\n \u001b[90m 45 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                            "column": 109,
+                            "line": 43
+                          },
+                          "message": "Error: Download/Print for \"Derived_Score_AutoFilter_Template_N63364A47189\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N63364A47189\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Derived_Score_AutoFilter_Template_N63364A47189\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N63364A47189\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n   at ../utils/reportDownload.ts:43\n\n  41 |\n  42 |   const downloadButtonLocator = reportRowLocator.locator('button[aria-label=\"Download/Print\"]');\n> 43 |   await expect(downloadButtonLocator, `Download/Print for \"${expectedReportName}\" never became clickable.`).toBeEnabled(\n     |                                                                                                             ^\n  44 |     { timeout: DOWNLOAD_ENABLED_TIMEOUT_IN_MS }\n  45 |   );\n  46 |\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:168:9"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S6:W0] Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S6:W0] Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N63364A47189\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N63364A47189/dataFiles/Derived_Score_AutoFilter_Template_N63364A47189.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N63364A47189 FirstName=Braulio LastName =N63364A47189 Age = 09/28/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N63364A47189\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Letter-Word Identification\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 5\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17616|Ages 4 to 5|17617\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test LWIDNT - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Item 39\n"
+                        },
+                        {
+                          "text": "Item 40\n"
+                        },
+                        {
+                          "text": "Item 41\n"
+                        },
+                        {
+                          "text": "Item 42\n"
+                        },
+                        {
+                          "text": "Item 43\n"
+                        },
+                        {
+                          "text": "Item 44\n"
+                        },
+                        {
+                          "text": "Item 45\n"
+                        },
+                        {
+                          "text": "Item 46\n"
+                        },
+                        {
+                          "text": "Item 47\n"
+                        },
+                        {
+                          "text": "Item 48\n"
+                        },
+                        {
+                          "text": "Item 49\n"
+                        },
+                        {
+                          "text": "Item 50\n"
+                        },
+                        {
+                          "text": "Item 51\n"
+                        },
+                        {
+                          "text": "Item 52\n"
+                        },
+                        {
+                          "text": "Item 53\n"
+                        },
+                        {
+                          "text": "Item 54\n"
+                        },
+                        {
+                          "text": "Item 55\n"
+                        },
+                        {
+                          "text": "Item 56\n"
+                        },
+                        {
+                          "text": "Item 57\n"
+                        },
+                        {
+                          "text": "Item 58\n"
+                        },
+                        {
+                          "text": "Item 59\n"
+                        },
+                        {
+                          "text": "Item 60\n"
+                        },
+                        {
+                          "text": "Item 61\n"
+                        },
+                        {
+                          "text": "Item 62\n"
+                        },
+                        {
+                          "text": "Item 63\n"
+                        },
+                        {
+                          "text": "Item 64\n"
+                        },
+                        {
+                          "text": "Item 65\n"
+                        },
+                        {
+                          "text": "Item 66\n"
+                        },
+                        {
+                          "text": "Item 67\n"
+                        },
+                        {
+                          "text": "Item 68\n"
+                        },
+                        {
+                          "text": "Item 69\n"
+                        },
+                        {
+                          "text": "Item 70\n"
+                        },
+                        {
+                          "text": "Item 71\n"
+                        },
+                        {
+                          "text": "Item 72\n"
+                        },
+                        {
+                          "text": "Item 73\n"
+                        },
+                        {
+                          "text": "Item 74\n"
+                        },
+                        {
+                          "text": "Item 75\n"
+                        },
+                        {
+                          "text": "Item 76\n"
+                        },
+                        {
+                          "text": "Item 77\n"
+                        },
+                        {
+                          "text": "Item 78\n"
+                        },
+                        {
+                          "text": "Item 79\n"
+                        },
+                        {
+                          "text": "Item 80\n"
+                        },
+                        {
+                          "text": "Item 81\n"
+                        },
+                        {
+                          "text": "Item 82\n"
+                        },
+                        {
+                          "text": "Item 83\n"
+                        },
+                        {
+                          "text": "Item 84\n"
+                        },
+                        {
+                          "text": "Item 85\n"
+                        },
+                        {
+                          "text": "Item 86\n"
+                        },
+                        {
+                          "text": "Item 87\n"
+                        },
+                        {
+                          "text": "Item 88\n"
+                        },
+                        {
+                          "text": "Item 89\n"
+                        },
+                        {
+                          "text": "Map(93) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 56'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 57'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 58'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 59'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 60'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 61'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 62'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 63'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 64'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 65'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 66'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 67'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 68'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 69'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 70'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 71'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 72'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 73'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 74'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 75'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 76'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 77'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 78'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 79'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 80'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 81'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 82'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 83'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 84'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 85'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 86'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 87'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 88'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 89'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m89\u001b[39m, Wabil: \u001b[33m585.2\u001b[39m, Semw: \u001b[33m15.64\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18116|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Map(11) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^0000000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m89\u001b[39m, Wabil: \u001b[33m585.2\u001b[39m, Semw: \u001b[33m15.64\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m },\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m403.31\u001b[39m, Semw: \u001b[33m15.38\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N63364A47189/dataFiles/Derived_Score_AutoFilter_Template_N63364A47189.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N63364A47189\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Derived_Score_AutoFilter_Template_N63364A47189 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-09-28T10:58:03.377Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N63364A47189)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome/attachments/Generated-derived-Filter-Template-N63364A47189--7acfc4d724a2958fe0f79c7adb5bb5434bc439b2.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                        "column": 109,
+                        "line": 43
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 600540,
+                      "error": {
+                        "message": "Error: Download/Print for \"Derived_Score_AutoFilter_Template_N20881A30169\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N20881A30169\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Derived_Score_AutoFilter_Template_N20881A30169\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N20881A30169\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                        "stack": "Error: Download/Print for \"Derived_Score_AutoFilter_Template_N20881A30169\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N20881A30169\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Derived_Score_AutoFilter_Template_N20881A30169\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N20881A30169\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:168:9",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                          "column": 109,
+                          "line": 43
+                        },
+                        "snippet": "   at ../utils/reportDownload.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m downloadButtonLocator \u001b[33m=\u001b[39m reportRowLocator\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label=\"Download/Print\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m expect(downloadButtonLocator\u001b[33m,\u001b[39m \u001b[32m`Download/Print for \"${expectedReportName}\" never became clickable.`\u001b[39m)\u001b[33m.\u001b[39mtoBeEnabled(\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[33mDOWNLOAD_ENABLED_TIMEOUT_IN_MS\u001b[39m }\n \u001b[90m 45 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                            "column": 109,
+                            "line": 43
+                          },
+                          "message": "Error: Download/Print for \"Derived_Score_AutoFilter_Template_N20881A30169\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N20881A30169\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Derived_Score_AutoFilter_Template_N20881A30169\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N20881A30169\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n   at ../utils/reportDownload.ts:43\n\n  41 |\n  42 |   const downloadButtonLocator = reportRowLocator.locator('button[aria-label=\"Download/Print\"]');\n> 43 |   await expect(downloadButtonLocator, `Download/Print for \"${expectedReportName}\" never became clickable.`).toBeEnabled(\n     |                                                                                                             ^\n  44 |     { timeout: DOWNLOAD_ENABLED_TIMEOUT_IN_MS }\n  45 |   );\n  46 |\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:168:9"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S6:W1] Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S6:W1] Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N20881A30169\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N20881A30169/dataFiles/Derived_Score_AutoFilter_Template_N20881A30169.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N20881A30169 FirstName=Lauren LastName =N20881A30169 Age = 09/28/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N20881A30169\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Letter-Word Identification\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 5\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17616|Ages 4 to 5|17617\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test LWIDNT - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Item 39\n"
+                        },
+                        {
+                          "text": "Item 40\n"
+                        },
+                        {
+                          "text": "Item 41\n"
+                        },
+                        {
+                          "text": "Item 42\n"
+                        },
+                        {
+                          "text": "Item 43\n"
+                        },
+                        {
+                          "text": "Item 44\n"
+                        },
+                        {
+                          "text": "Item 45\n"
+                        },
+                        {
+                          "text": "Item 46\n"
+                        },
+                        {
+                          "text": "Item 47\n"
+                        },
+                        {
+                          "text": "Item 48\n"
+                        },
+                        {
+                          "text": "Item 49\n"
+                        },
+                        {
+                          "text": "Item 50\n"
+                        },
+                        {
+                          "text": "Item 51\n"
+                        },
+                        {
+                          "text": "Item 52\n"
+                        },
+                        {
+                          "text": "Item 53\n"
+                        },
+                        {
+                          "text": "Item 54\n"
+                        },
+                        {
+                          "text": "Item 55\n"
+                        },
+                        {
+                          "text": "Item 56\n"
+                        },
+                        {
+                          "text": "Item 57\n"
+                        },
+                        {
+                          "text": "Item 58\n"
+                        },
+                        {
+                          "text": "Item 59\n"
+                        },
+                        {
+                          "text": "Item 60\n"
+                        },
+                        {
+                          "text": "Item 61\n"
+                        },
+                        {
+                          "text": "Item 62\n"
+                        },
+                        {
+                          "text": "Item 63\n"
+                        },
+                        {
+                          "text": "Item 64\n"
+                        },
+                        {
+                          "text": "Item 65\n"
+                        },
+                        {
+                          "text": "Item 66\n"
+                        },
+                        {
+                          "text": "Item 67\n"
+                        },
+                        {
+                          "text": "Item 68\n"
+                        },
+                        {
+                          "text": "Item 69\n"
+                        },
+                        {
+                          "text": "Item 70\n"
+                        },
+                        {
+                          "text": "Item 71\n"
+                        },
+                        {
+                          "text": "Item 72\n"
+                        },
+                        {
+                          "text": "Item 73\n"
+                        },
+                        {
+                          "text": "Item 74\n"
+                        },
+                        {
+                          "text": "Item 75\n"
+                        },
+                        {
+                          "text": "Item 76\n"
+                        },
+                        {
+                          "text": "Item 77\n"
+                        },
+                        {
+                          "text": "Item 78\n"
+                        },
+                        {
+                          "text": "Item 79\n"
+                        },
+                        {
+                          "text": "Item 80\n"
+                        },
+                        {
+                          "text": "Item 81\n"
+                        },
+                        {
+                          "text": "Item 82\n"
+                        },
+                        {
+                          "text": "Item 83\n"
+                        },
+                        {
+                          "text": "Item 84\n"
+                        },
+                        {
+                          "text": "Item 85\n"
+                        },
+                        {
+                          "text": "Item 86\n"
+                        },
+                        {
+                          "text": "Item 87\n"
+                        },
+                        {
+                          "text": "Item 88\n"
+                        },
+                        {
+                          "text": "Item 89\n"
+                        },
+                        {
+                          "text": "Map(93) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 39'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 40'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 41'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 42'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 43'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 44'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 45'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 46'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 47'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 48'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 49'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 50'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 51'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 52'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 53'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 54'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 55'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 56'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 57'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 58'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 59'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 60'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 61'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 62'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 63'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 64'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 65'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 66'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 67'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 68'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 69'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 70'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 71'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 72'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 73'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 74'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 75'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 76'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 77'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 78'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 79'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 80'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 81'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 82'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 83'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 84'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 85'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 86'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 87'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 88'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 89'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m89\u001b[39m, Wabil: \u001b[33m585.2\u001b[39m, Semw: \u001b[33m15.64\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18116|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Map(11) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^0000000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m89\u001b[39m, Wabil: \u001b[33m585.2\u001b[39m, Semw: \u001b[33m15.64\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m },\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m403.31\u001b[39m, Semw: \u001b[33m15.38\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N20881A30169/dataFiles/Derived_Score_AutoFilter_Template_N20881A30169.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N20881A30169\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Derived_Score_AutoFilter_Template_N20881A30169 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        }
+                      ],
+                      "retry": 1,
+                      "startTime": "2026-09-28T11:08:02.933Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N20881A30169)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome-retry1/attachments/Generated-derived-Filter-Template-N20881A30169--18239522c2c2e2fc46eaf280f35f0db15a709dff.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-513fc-BRF-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                        "column": 109,
+                        "line": 43
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "fdc7ec709e0691e9c4d0-672b7e28d3fc6def3647",
+              "file": "derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts",
+              "line": 26,
+              "column": 9
+            },
+            {
+              "title": "For LWIDNT - K12 - All incorrect scenario,PSGCMP - K12 - All correct scenario Complete The RDGBRF cluster & generate report",
+              "ok": false,
+              "tags": [
+                "RDGBRF",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 456848,
+                      "error": {
+                        "message": "Error: Download/Print for \"Derived_Score_AutoFilter_Template_N4045A90256\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N4045A90256\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Derived_Score_AutoFilter_Template_N4045A90256\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N4045A90256\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                        "stack": "Error: Download/Print for \"Derived_Score_AutoFilter_Template_N4045A90256\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N4045A90256\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Derived_Score_AutoFilter_Template_N4045A90256\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N4045A90256\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:168:9",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                          "column": 109,
+                          "line": 43
+                        },
+                        "snippet": "   at ../utils/reportDownload.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m downloadButtonLocator \u001b[33m=\u001b[39m reportRowLocator\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label=\"Download/Print\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m expect(downloadButtonLocator\u001b[33m,\u001b[39m \u001b[32m`Download/Print for \"${expectedReportName}\" never became clickable.`\u001b[39m)\u001b[33m.\u001b[39mtoBeEnabled(\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[33mDOWNLOAD_ENABLED_TIMEOUT_IN_MS\u001b[39m }\n \u001b[90m 45 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                            "column": 109,
+                            "line": 43
+                          },
+                          "message": "Error: Download/Print for \"Derived_Score_AutoFilter_Template_N4045A90256\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N4045A90256\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Derived_Score_AutoFilter_Template_N4045A90256\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N4045A90256\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n   at ../utils/reportDownload.ts:43\n\n  41 |\n  42 |   const downloadButtonLocator = reportRowLocator.locator('button[aria-label=\"Download/Print\"]');\n> 43 |   await expect(downloadButtonLocator, `Download/Print for \"${expectedReportName}\" never became clickable.`).toBeEnabled(\n     |                                                                                                             ^\n  44 |     { timeout: DOWNLOAD_ENABLED_TIMEOUT_IN_MS }\n  45 |   );\n  46 |\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:168:9"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S6:W2] Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S6:W2] Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N4045A90256\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N4045A90256/dataFiles/Derived_Score_AutoFilter_Template_N4045A90256.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N4045A90256 FirstName=Clarissa LastName =N4045A90256 Age = 09/28/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N4045A90256\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Letter-Word Identification\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 5\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17616|Ages 4 to 5|17617\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test LWIDNT - K12 - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Map(8) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^0000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m303.79\u001b[39m, Semw: \u001b[33m15.66\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18116|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - K12 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Map(42) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^11111111111111111111111111111111111111@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m303.79\u001b[39m, Semw: \u001b[33m15.66\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m38\u001b[39m, Wabil: \u001b[33m557.89\u001b[39m, Semw: \u001b[33m14.85\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N4045A90256/dataFiles/Derived_Score_AutoFilter_Template_N4045A90256.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N4045A90256\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Derived_Score_AutoFilter_Template_N4045A90256 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-09-28T11:18:05.192Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N4045A90256)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome/attachments/Generated-derived-Filter-Template-N4045A90256--70c4c2bb459ab55486d346f0c96fb04330d56918.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                        "column": 109,
+                        "line": 43
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 457675,
+                      "error": {
+                        "message": "Error: Download/Print for \"Derived_Score_AutoFilter_Template_N97028A46273\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N97028A46273\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Derived_Score_AutoFilter_Template_N97028A46273\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N97028A46273\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                        "stack": "Error: Download/Print for \"Derived_Score_AutoFilter_Template_N97028A46273\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N97028A46273\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Derived_Score_AutoFilter_Template_N97028A46273\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N97028A46273\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:168:9",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                          "column": 109,
+                          "line": 43
+                        },
+                        "snippet": "   at ../utils/reportDownload.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m downloadButtonLocator \u001b[33m=\u001b[39m reportRowLocator\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label=\"Download/Print\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m expect(downloadButtonLocator\u001b[33m,\u001b[39m \u001b[32m`Download/Print for \"${expectedReportName}\" never became clickable.`\u001b[39m)\u001b[33m.\u001b[39mtoBeEnabled(\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[33mDOWNLOAD_ENABLED_TIMEOUT_IN_MS\u001b[39m }\n \u001b[90m 45 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                            "column": 109,
+                            "line": 43
+                          },
+                          "message": "Error: Download/Print for \"Derived_Score_AutoFilter_Template_N97028A46273\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N97028A46273\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Derived_Score_AutoFilter_Template_N97028A46273\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Derived_Score_AutoFilter_Template_N97028A46273\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n   at ../utils/reportDownload.ts:43\n\n  41 |\n  42 |   const downloadButtonLocator = reportRowLocator.locator('button[aria-label=\"Download/Print\"]');\n> 43 |   await expect(downloadButtonLocator, `Download/Print for \"${expectedReportName}\" never became clickable.`).toBeEnabled(\n     |                                                                                                             ^\n  44 |     { timeout: DOWNLOAD_ENABLED_TIMEOUT_IN_MS }\n  45 |   );\n  46 |\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts:168:9"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S6:W3] Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S6:W3] Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N97028A46273\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N97028A46273/dataFiles/Derived_Score_AutoFilter_Template_N97028A46273.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N97028A46273 FirstName=Thurman LastName =N97028A46273 Age = 09/28/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N97028A46273\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Letter-Word Identification\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 5\n"
+                        },
+                        {
+                          "text": "selected ssp is = 17616|Ages 4 to 5|17617\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test LWIDNT - K12 - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Map(8) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^0000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m303.79\u001b[39m, Semw: \u001b[33m15.66\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18116|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - K12 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Map(42) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^11111111111111111111111111111111111111@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores = {\n  \u001b[32m'LWIDNT.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m303.79\u001b[39m, Semw: \u001b[33m15.66\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m },\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m38\u001b[39m, Wabil: \u001b[33m557.89\u001b[39m, Semw: \u001b[33m14.85\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N97028A46273/dataFiles/Derived_Score_AutoFilter_Template_N97028A46273.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Derived_Score_AutoFilter_Template_N97028A46273\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Derived_Score_AutoFilter_Template_N97028A46273 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        }
+                      ],
+                      "retry": 1,
+                      "startTime": "2026-09-28T11:25:43.741Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N97028A46273)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome-retry1/attachments/Generated-derived-Filter-Template-N97028A46273--dc578cc3e2c10ee281ae0877d248f6971510c9da.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-81258-BRF-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                        "column": 109,
+                        "line": 43
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "fdc7ec709e0691e9c4d0-0f851ffd950296e8875b",
+              "file": "derived_scores(compounds & clusters)/RDGBRF_cluster_pub.spec.ts",
+              "line": 26,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-28T10:57:48.340Z",
+    "duration": 2133672.046,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,1537 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+        "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/36412625474"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 12,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "test_dataExport/APPROB_Pub.spec.ts",
+      "file": "test_dataExport/APPROB_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " APPROB.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/APPROB_Pub.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "@Test_De For Age 4 - All correct scenario login as AH Conduct test as Examiner and generate reports",
+              "ok": false,
+              "tags": [
+                "Test_De",
+                "APPROB",
+                "TestDe",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 480000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 480306,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 480000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 480000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 480000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S12:W0] Login successful for 02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 02PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S12:W0] Login successful for 02PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N2560A1652\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N2560A1652/dataFiles/Test_DataExport_AutoFilter_Template_N2560A1652.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N2560A1652 FirstName=Fredy LastName =N2560A1652 Age = 09/28/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N2560A1652\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Applied Problems\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22261|Age 4|\n"
+                        },
+                        {
+                          "text": "Item Number 48 \n\n"
+                        },
+                        {
+                          "text": "Type Of test Age 4 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Item 39\n"
+                        },
+                        {
+                          "text": "Item 40\n"
+                        },
+                        {
+                          "text": "Item 41\n"
+                        },
+                        {
+                          "text": "Item 42\n"
+                        },
+                        {
+                          "text": "Item 43\n"
+                        },
+                        {
+                          "text": "Item 44\n"
+                        },
+                        {
+                          "text": "Item 45\n"
+                        },
+                        {
+                          "text": "Item 46\n"
+                        },
+                        {
+                          "text": "Item 47\n"
+                        },
+                        {
+                          "text": "Item 48\n"
+                        },
+                        {
+                          "text": "{\n  \u001b[32m'Item 1'\u001b[39m: { RT: \u001b[33m0.036\u001b[39m, Delivered_Order: \u001b[33m0\u001b[39m, Response: \u001b[32m'1'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 2'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m'3'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 3'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m2\u001b[39m, Response: \u001b[32m'2'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 4'\u001b[39m: { RT: \u001b[33m0.042\u001b[39m, Delivered_Order: \u001b[33m3\u001b[39m, Response: \u001b[32m'3'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 5'\u001b[39m: { RT: \u001b[33m0.028\u001b[39m, Delivered_Order: \u001b[33m4\u001b[39m, Response: \u001b[32m'3'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 6'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m5\u001b[39m, Response: \u001b[32m'Correct'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 7'\u001b[39m: { RT: \u001b[33m0.044\u001b[39m, Delivered_Order: \u001b[33m6\u001b[39m, Response: \u001b[32m'4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 8'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m7\u001b[39m, Response: \u001b[32m'5'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 9'\u001b[39m: { RT: \u001b[33m0.042\u001b[39m, Delivered_Order: \u001b[33m8\u001b[39m, Response: \u001b[32m'Correct'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 10'\u001b[39m: { RT: \u001b[33m0.04\u001b[39m, Delivered_Order: \u001b[33m9\u001b[39m, Response: \u001b[32m'4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 11'\u001b[39m: { RT: \u001b[33m0.044\u001b[39m, Delivered_Order: \u001b[33m10\u001b[39m, Response: \u001b[32m'6'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 12'\u001b[39m: { RT: \u001b[33m0.026\u001b[39m, Delivered_Order: \u001b[33m11\u001b[39m, Response: \u001b[32m'7'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 13'\u001b[39m: { RT: \u001b[33m0.027\u001b[39m, Delivered_Order: \u001b[33m12\u001b[39m, Response: \u001b[32m'Correct'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 14'\u001b[39m: {\n    RT: \u001b[33m0.033\u001b[39m,\n    Delivered_Order: \u001b[33m13\u001b[39m,\n    Response: \u001b[32m'7:50 (seven fifty)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 15'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m14\u001b[39m, Response: \u001b[32m'32'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 16'\u001b[39m: { RT: \u001b[33m0.03\u001b[39m, Delivered_Order: \u001b[33m15\u001b[39m, Response: \u001b[32m'5'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 17'\u001b[39m: { RT: \u001b[33m0.039\u001b[39m, Delivered_Order: \u001b[33m16\u001b[39m, Response: \u001b[32m'Correct'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 18'\u001b[39m: { RT: \u001b[33m0.031\u001b[39m, Delivered_Order: \u001b[33m17\u001b[39m, Response: \u001b[32m'3'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 19'\u001b[39m: { RT: \u001b[33m0.04\u001b[39m, Delivered_Order: \u001b[33m18\u001b[39m, Response: \u001b[32m'12'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 20'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m19\u001b[39m, Response: \u001b[32m'4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 21'\u001b[39m: { RT: \u001b[33m0.029\u001b[39m, Delivered_Order: \u001b[33m20\u001b[39m, Response: \u001b[32m'10'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 22'\u001b[39m: {\n    RT: \u001b[33m0.039\u001b[39m,\n    Delivered_Order: \u001b[33m21\u001b[39m,\n    Response: \u001b[32m'$30 (thirty dollars)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 23'\u001b[39m: { RT: \u001b[33m0.043\u001b[39m, Delivered_Order: \u001b[33m22\u001b[39m, Response: \u001b[32m'17'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 24'\u001b[39m: { RT: \u001b[33m0.04\u001b[39m, Delivered_Order: \u001b[33m23\u001b[39m, Response: \u001b[32m'10'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 25'\u001b[39m: { RT: \u001b[33m0.038\u001b[39m, Delivered_Order: \u001b[33m24\u001b[39m, Response: \u001b[32m'2 inches'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 26'\u001b[39m: {\n    RT: \u001b[33m0.042\u001b[39m,\n    Delivered_Order: \u001b[33m25\u001b[39m,\n    Response: \u001b[32m' (three fifths)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 27'\u001b[39m: { RT: \u001b[33m0.04\u001b[39m, Delivered_Order: \u001b[33m26\u001b[39m, Response: \u001b[32m'6'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 28'\u001b[39m: { RT: \u001b[33m0.029\u001b[39m, Delivered_Order: \u001b[33m27\u001b[39m, Response: \u001b[32m'75'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 29'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m28\u001b[39m, Response: \u001b[32m'16'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 30'\u001b[39m: { RT: \u001b[33m0.039\u001b[39m, Delivered_Order: \u001b[33m29\u001b[39m, Response: \u001b[32m' (one half)'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 31'\u001b[39m: { RT: \u001b[33m0.028\u001b[39m, Delivered_Order: \u001b[33m30\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 32'\u001b[39m: {\n    RT: \u001b[33m0.029\u001b[39m,\n    Delivered_Order: \u001b[33m31\u001b[39m,\n    Response: \u001b[32m'$1,440 (one thousand four hundred forty dollars or fourteen hundred forty dollars)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 33'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m32\u001b[39m, Response: \u001b[32m'50 degrees'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 34'\u001b[39m: { RT: \u001b[33m0.027\u001b[39m, Delivered_Order: \u001b[33m33\u001b[39m, Response: \u001b[32m'11'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 35'\u001b[39m: { RT: \u001b[33m0.048\u001b[39m, Delivered_Order: \u001b[33m34\u001b[39m, Response: \u001b[32m'4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 36'\u001b[39m: { RT: \u001b[33m0.042\u001b[39m, Delivered_Order: \u001b[33m35\u001b[39m, Response: \u001b[32m'4 to 1'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 37'\u001b[39m: {\n    RT: \u001b[33m0.028\u001b[39m,\n    Delivered_Order: \u001b[33m36\u001b[39m,\n    Response: \u001b[32m'$40 (forty dollars)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 38'\u001b[39m: {\n    RT: \u001b[33m0.042\u001b[39m,\n    Delivered_Order: \u001b[33m37\u001b[39m,\n    Response: \u001b[32m'5,000 cubic feet'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 39'\u001b[39m: {\n    RT: \u001b[33m0.041\u001b[39m,\n    Delivered_Order: \u001b[33m38\u001b[39m,\n    Response: \u001b[32m' (negative one third)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 40'\u001b[39m: {\n    RT: \u001b[33m0.04\u001b[39m,\n    Delivered_Order: \u001b[33m39\u001b[39m,\n    Response: \u001b[32m'$6,655 (six thousand six hundred fifty-five dollars or sixty-six hundred fifty-five dollars)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 41'\u001b[39m: { RT: \u001b[33m0.042\u001b[39m, Delivered_Order: \u001b[33m40\u001b[39m, Response: \u001b[32m'6.4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 42'\u001b[39m: { RT: \u001b[33m0.042\u001b[39m, Delivered_Order: \u001b[33m41\u001b[39m, Response: \u001b[32m'40'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 43'\u001b[39m: {\n    RT: \u001b[33m0.027\u001b[39m,\n    Delivered_Order: \u001b[33m42\u001b[39m,\n    Response: \u001b[32m' (negative two thirds)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 44'\u001b[39m: {\n    RT: \u001b[33m0.041\u001b[39m,\n    Delivered_Order: \u001b[33m43\u001b[39m,\n    Response: \u001b[32m'any answer between 628.0 and 628.6 feet'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 45'\u001b[39m: { RT: \u001b[33m0.036\u001b[39m, Delivered_Order: \u001b[33m44\u001b[39m, Response: \u001b[32m'52'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 46'\u001b[39m: {\n    RT: \u001b[33m0.04\u001b[39m,\n    Delivered_Order: \u001b[33m45\u001b[39m,\n    Response: \u001b[32m' (sixteen times the square root of three) square inches'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 47'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m46\u001b[39m, Response: \u001b[32m'40,500'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 48'\u001b[39m: {\n    RT: \u001b[33m0.042\u001b[39m,\n    Delivered_Order: \u001b[33m47\u001b[39m,\n    Response: \u001b[32m' inch per minute (leading zero is optional)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N2560A1652/dataFiles/Test_DataExport_AutoFilter_Template_N2560A1652.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N2560A1652\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N2560A1652/dataFiles/Test_DataExport_AutoFilter_Template_N2560A1652.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N2560A1652\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N2560A1652 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 1 for fetching the report failed. 2 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N2560A1652\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N2560A1652\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N2560A1652\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N2560A1652\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N2560A1652 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 2 for fetching the report failed. 1 retries left. expect.toBeEnabled: Target page, context or browser has been closed\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-09-28T10:58:02.245Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated testData Filter Template (N2560A1652)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/attachments/Generated-testData-Filter-Template-N2560A1652--db96e70b51ebfea6507d7696505b5de7ded72c9e.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome/error-context.md"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 480325,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 480000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 480000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 480000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S12:W1] Login successful for 02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 02PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S12:W1] Login successful for 02PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N3061A47124\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3061A47124/dataFiles/Test_DataExport_AutoFilter_Template_N3061A47124.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N3061A47124 FirstName=Art LastName =N3061A47124 Age = 09/28/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N3061A47124\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Applied Problems\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22261|Age 4|\n"
+                        },
+                        {
+                          "text": "Item Number 48 \n\n"
+                        },
+                        {
+                          "text": "Type Of test Age 4 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Item 39\n"
+                        },
+                        {
+                          "text": "Item 40\n"
+                        },
+                        {
+                          "text": "Item 41\n"
+                        },
+                        {
+                          "text": "Item 42\n"
+                        },
+                        {
+                          "text": "Item 43\n"
+                        },
+                        {
+                          "text": "Item 44\n"
+                        },
+                        {
+                          "text": "Item 45\n"
+                        },
+                        {
+                          "text": "Item 46\n"
+                        },
+                        {
+                          "text": "Item 47\n"
+                        },
+                        {
+                          "text": "Item 48\n"
+                        },
+                        {
+                          "text": "{\n  \u001b[32m'Item 1'\u001b[39m: { RT: \u001b[33m0.052\u001b[39m, Delivered_Order: \u001b[33m0\u001b[39m, Response: \u001b[32m'1'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 2'\u001b[39m: { RT: \u001b[33m0.039\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m'3'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 3'\u001b[39m: { RT: \u001b[33m0.025\u001b[39m, Delivered_Order: \u001b[33m2\u001b[39m, Response: \u001b[32m'2'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 4'\u001b[39m: { RT: \u001b[33m0.03\u001b[39m, Delivered_Order: \u001b[33m3\u001b[39m, Response: \u001b[32m'3'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 5'\u001b[39m: { RT: \u001b[33m0.044\u001b[39m, Delivered_Order: \u001b[33m4\u001b[39m, Response: \u001b[32m'3'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 6'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m5\u001b[39m, Response: \u001b[32m'Correct'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 7'\u001b[39m: { RT: \u001b[33m0.043\u001b[39m, Delivered_Order: \u001b[33m6\u001b[39m, Response: \u001b[32m'4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 8'\u001b[39m: { RT: \u001b[33m0.043\u001b[39m, Delivered_Order: \u001b[33m7\u001b[39m, Response: \u001b[32m'5'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 9'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m8\u001b[39m, Response: \u001b[32m'Correct'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 10'\u001b[39m: { RT: \u001b[33m0.04\u001b[39m, Delivered_Order: \u001b[33m9\u001b[39m, Response: \u001b[32m'4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 11'\u001b[39m: { RT: \u001b[33m0.032\u001b[39m, Delivered_Order: \u001b[33m10\u001b[39m, Response: \u001b[32m'6'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 12'\u001b[39m: { RT: \u001b[33m0.044\u001b[39m, Delivered_Order: \u001b[33m11\u001b[39m, Response: \u001b[32m'7'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 13'\u001b[39m: { RT: \u001b[33m0.042\u001b[39m, Delivered_Order: \u001b[33m12\u001b[39m, Response: \u001b[32m'Correct'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 14'\u001b[39m: {\n    RT: \u001b[33m0.045\u001b[39m,\n    Delivered_Order: \u001b[33m13\u001b[39m,\n    Response: \u001b[32m'7:50 (seven fifty)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 15'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m14\u001b[39m, Response: \u001b[32m'32'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 16'\u001b[39m: { RT: \u001b[33m0.04\u001b[39m, Delivered_Order: \u001b[33m15\u001b[39m, Response: \u001b[32m'5'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 17'\u001b[39m: { RT: \u001b[33m0.038\u001b[39m, Delivered_Order: \u001b[33m16\u001b[39m, Response: \u001b[32m'Correct'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 18'\u001b[39m: { RT: \u001b[33m0.039\u001b[39m, Delivered_Order: \u001b[33m17\u001b[39m, Response: \u001b[32m'3'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 19'\u001b[39m: { RT: \u001b[33m0.029\u001b[39m, Delivered_Order: \u001b[33m18\u001b[39m, Response: \u001b[32m'12'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 20'\u001b[39m: { RT: \u001b[33m0.028\u001b[39m, Delivered_Order: \u001b[33m19\u001b[39m, Response: \u001b[32m'4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 21'\u001b[39m: { RT: \u001b[33m0.042\u001b[39m, Delivered_Order: \u001b[33m20\u001b[39m, Response: \u001b[32m'10'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 22'\u001b[39m: {\n    RT: \u001b[33m0.041\u001b[39m,\n    Delivered_Order: \u001b[33m21\u001b[39m,\n    Response: \u001b[32m'$30 (thirty dollars)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 23'\u001b[39m: { RT: \u001b[33m0.045\u001b[39m, Delivered_Order: \u001b[33m22\u001b[39m, Response: \u001b[32m'17'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 24'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m23\u001b[39m, Response: \u001b[32m'10'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 25'\u001b[39m: { RT: \u001b[33m0.028\u001b[39m, Delivered_Order: \u001b[33m24\u001b[39m, Response: \u001b[32m'2 inches'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 26'\u001b[39m: {\n    RT: \u001b[33m0.04\u001b[39m,\n    Delivered_Order: \u001b[33m25\u001b[39m,\n    Response: \u001b[32m' (three fifths)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 27'\u001b[39m: { RT: \u001b[33m0.075\u001b[39m, Delivered_Order: \u001b[33m26\u001b[39m, Response: \u001b[32m'6'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 28'\u001b[39m: { RT: \u001b[33m0.061\u001b[39m, Delivered_Order: \u001b[33m27\u001b[39m, Response: \u001b[32m'75'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 29'\u001b[39m: { RT: \u001b[33m0.04\u001b[39m, Delivered_Order: \u001b[33m28\u001b[39m, Response: \u001b[32m'16'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 30'\u001b[39m: { RT: \u001b[33m0.042\u001b[39m, Delivered_Order: \u001b[33m29\u001b[39m, Response: \u001b[32m' (one half)'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 31'\u001b[39m: { RT: \u001b[33m0.04\u001b[39m, Delivered_Order: \u001b[33m30\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 32'\u001b[39m: {\n    RT: \u001b[33m0.045\u001b[39m,\n    Delivered_Order: \u001b[33m31\u001b[39m,\n    Response: \u001b[32m'$1,440 (one thousand four hundred forty dollars or fourteen hundred forty dollars)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 33'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m32\u001b[39m, Response: \u001b[32m'50 degrees'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 34'\u001b[39m: { RT: \u001b[33m0.028\u001b[39m, Delivered_Order: \u001b[33m33\u001b[39m, Response: \u001b[32m'11'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 35'\u001b[39m: { RT: \u001b[33m0.028\u001b[39m, Delivered_Order: \u001b[33m34\u001b[39m, Response: \u001b[32m'4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 36'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m35\u001b[39m, Response: \u001b[32m'4 to 1'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 37'\u001b[39m: {\n    RT: \u001b[33m0.041\u001b[39m,\n    Delivered_Order: \u001b[33m36\u001b[39m,\n    Response: \u001b[32m'$40 (forty dollars)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 38'\u001b[39m: {\n    RT: \u001b[33m0.026\u001b[39m,\n    Delivered_Order: \u001b[33m37\u001b[39m,\n    Response: \u001b[32m'5,000 cubic feet'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 39'\u001b[39m: {\n    RT: \u001b[33m0.044\u001b[39m,\n    Delivered_Order: \u001b[33m38\u001b[39m,\n    Response: \u001b[32m' (negative one third)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 40'\u001b[39m: {\n    RT: \u001b[33m0.04\u001b[39m,\n    Delivered_Order: \u001b[33m39\u001b[39m,\n    Response: \u001b[32m'$6,655 (six thousand six hundred fifty-five dollars or sixty-six hundred fifty-five dollars)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 41'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m40\u001b[39m, Response: \u001b[32m'6.4'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 42'\u001b[39m: { RT: \u001b[33m0.041\u001b[39m, Delivered_Order: \u001b[33m41\u001b[39m, Response: \u001b[32m'40'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 43'\u001b[39m: {\n    RT: \u001b[33m0.029\u001b[39m,\n    Delivered_Order: \u001b[33m42\u001b[39m,\n    Response: \u001b[32m' (negative two thirds)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 44'\u001b[39m: {\n    RT: \u001b[33m0.042\u001b[39m,\n    Delivered_Order: \u001b[33m43\u001b[39m,\n    Response: \u001b[32m'any answer between 628.0 and 628.6 feet'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 45'\u001b[39m: { RT: \u001b[33m0.042\u001b[39m, Delivered_Order: \u001b[33m44\u001b[39m, Response: \u001b[32m'52'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 46'\u001b[39m: {\n    RT: \u001b[33m0.043\u001b[39m,\n    Delivered_Order: \u001b[33m45\u001b[39m,\n    Response: \u001b[32m' (sixteen times the square root of three) square inches'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 47'\u001b[39m: { RT: \u001b[33m0.04\u001b[39m, Delivered_Order: \u001b[33m46\u001b[39m, Response: \u001b[32m'40,500'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 48'\u001b[39m: {\n    RT: \u001b[33m0.042\u001b[39m,\n    Delivered_Order: \u001b[33m47\u001b[39m,\n    Response: \u001b[32m' inch per minute (leading zero is optional)'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3061A47124/dataFiles/Test_DataExport_AutoFilter_Template_N3061A47124.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N3061A47124\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3061A47124/dataFiles/Test_DataExport_AutoFilter_Template_N3061A47124.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N3061A47124\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N3061A47124 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 1 for fetching the report failed. 2 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N3061A47124\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N3061A47124\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N3061A47124\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N3061A47124\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N3061A47124 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 2 for fetching the report failed. 1 retries left. expect.toBeEnabled: Target page, context or browser has been closed\n"
+                        }
+                      ],
+                      "retry": 1,
+                      "startTime": "2026-09-28T11:06:04.387Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated testData Filter Template (N3061A47124)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome-retry1/attachments/Generated-testData-Filter-Template-N3061A47124--0dc1575ae617bd9c2643a73bcc753acbcaa419d7.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-APPROB_Pub-45b93-aminer-and-generate-reports-chrome-retry1/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "05b0a1eb7c902dae2d78-da0a550cf9232684182a",
+              "file": "test_dataExport/APPROB_Pub.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "test_dataExport/BLKROT_Pub.spec.ts",
+      "file": "test_dataExport/BLKROT_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "BLKROT.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/BLKROT_Pub.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For Ages 4 to 7 - All correct scenario Conduct test and validate report",
+              "ok": false,
+              "tags": [
+                "BLKROT",
+                "TestDe",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 851204,
+                      "error": {
+                        "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N58708A77391\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N58708A77391\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N58708A77391\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N58708A77391\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                        "stack": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N58708A77391\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N58708A77391\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N58708A77391\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N58708A77391\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/BLKROT_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                          "column": 109,
+                          "line": 43
+                        },
+                        "snippet": "   at ../utils/reportDownload.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m downloadButtonLocator \u001b[33m=\u001b[39m reportRowLocator\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label=\"Download/Print\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m expect(downloadButtonLocator\u001b[33m,\u001b[39m \u001b[32m`Download/Print for \"${expectedReportName}\" never became clickable.`\u001b[39m)\u001b[33m.\u001b[39mtoBeEnabled(\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[33mDOWNLOAD_ENABLED_TIMEOUT_IN_MS\u001b[39m }\n \u001b[90m 45 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                            "column": 109,
+                            "line": 43
+                          },
+                          "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N58708A77391\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N58708A77391\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N58708A77391\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N58708A77391\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n   at ../utils/reportDownload.ts:43\n\n  41 |\n  42 |   const downloadButtonLocator = reportRowLocator.locator('button[aria-label=\"Download/Print\"]');\n> 43 |   await expect(downloadButtonLocator, `Download/Print for \"${expectedReportName}\" never became clickable.`).toBeEnabled(\n     |                                                                                                             ^\n  44 |     { timeout: DOWNLOAD_ENABLED_TIMEOUT_IN_MS }\n  45 |   );\n  46 |\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/BLKROT_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S12:W2] Login successful for 02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 02PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S12:W2] Login successful for 02PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N58708A77391\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N58708A77391/dataFiles/Test_DataExport_AutoFilter_Template_N58708A77391.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N58708A77391 FirstName=Myriam LastName =N58708A77391 Age = 09/28/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N58708A77391\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Block Rotation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18158|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Item Number 10 \n\n"
+                        },
+                        {
+                          "text": "Type Of test Ages 4 to 7 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Sample Item C, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "{\n  \u001b[32m'Introduction 1'\u001b[39m: { RT: \u001b[33m23.043\u001b[39m, Delivered_Order: \u001b[33m0\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m: { RT: \u001b[33m0.2\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m'[A|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Introduction 2'\u001b[39m: { RT: \u001b[33m33.015\u001b[39m, Delivered_Order: \u001b[33m2\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m: { RT: \u001b[33m0.08\u001b[39m, Delivered_Order: \u001b[33m3\u001b[39m, Response: \u001b[32m'[A|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Introduction 3'\u001b[39m: { RT: \u001b[33m0.003\u001b[39m, Delivered_Order: \u001b[33m4\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 1'\u001b[39m: { RT: \u001b[33m0.136\u001b[39m, Delivered_Order: \u001b[33m5\u001b[39m, Response: \u001b[32m'[B|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 2'\u001b[39m: { RT: \u001b[33m0.134\u001b[39m, Delivered_Order: \u001b[33m6\u001b[39m, Response: \u001b[32m'[B|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 3'\u001b[39m: { RT: \u001b[33m0.169\u001b[39m, Delivered_Order: \u001b[33m7\u001b[39m, Response: \u001b[32m'[A|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 4'\u001b[39m: { RT: \u001b[33m0.138\u001b[39m, Delivered_Order: \u001b[33m8\u001b[39m, Response: \u001b[32m'[B|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 5'\u001b[39m: { RT: \u001b[33m0.136\u001b[39m, Delivered_Order: \u001b[33m9\u001b[39m, Response: \u001b[32m'[A|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 6'\u001b[39m: { RT: \u001b[33m0.137\u001b[39m, Delivered_Order: \u001b[33m10\u001b[39m, Response: \u001b[32m'[C|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 7'\u001b[39m: { RT: \u001b[33m0.127\u001b[39m, Delivered_Order: \u001b[33m11\u001b[39m, Response: \u001b[32m'[B|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 8'\u001b[39m: { RT: \u001b[33m0.116\u001b[39m, Delivered_Order: \u001b[33m12\u001b[39m, Response: \u001b[32m'[A|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 9'\u001b[39m: { RT: \u001b[33m0.135\u001b[39m, Delivered_Order: \u001b[33m13\u001b[39m, Response: \u001b[32m'[C|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Introduction 4'\u001b[39m: { RT: \u001b[33m33.56\u001b[39m, Delivered_Order: \u001b[33m14\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item C, Trial 1'\u001b[39m: { RT: \u001b[33m0.098\u001b[39m, Delivered_Order: \u001b[33m15\u001b[39m, Response: \u001b[32m'[C|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Introduction 5'\u001b[39m: { RT: \u001b[33m0.004\u001b[39m, Delivered_Order: \u001b[33m16\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 10'\u001b[39m: { RT: \u001b[33m0.134\u001b[39m, Delivered_Order: \u001b[33m17\u001b[39m, Response: \u001b[32m'[B|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 11'\u001b[39m: { RT: \u001b[33m0.208\u001b[39m, Delivered_Order: \u001b[33m18\u001b[39m, Response: \u001b[32m'[B|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 12'\u001b[39m: { RT: \u001b[33m0.144\u001b[39m, Delivered_Order: \u001b[33m19\u001b[39m, Response: \u001b[32m'[D|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 13'\u001b[39m: { RT: \u001b[33m0.145\u001b[39m, Delivered_Order: \u001b[33m20\u001b[39m, Response: \u001b[32m'[C|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 14'\u001b[39m: { RT: \u001b[33m0.166\u001b[39m, Delivered_Order: \u001b[33m21\u001b[39m, Response: \u001b[32m'[B|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 15'\u001b[39m: { RT: \u001b[33m0.137\u001b[39m, Delivered_Order: \u001b[33m22\u001b[39m, Response: \u001b[32m'[A|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 16'\u001b[39m: { RT: \u001b[33m0.142\u001b[39m, Delivered_Order: \u001b[33m23\u001b[39m, Response: \u001b[32m'[D|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 17'\u001b[39m: { RT: \u001b[33m0.189\u001b[39m, Delivered_Order: \u001b[33m24\u001b[39m, Response: \u001b[32m'[A|B]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 18'\u001b[39m: { RT: \u001b[33m0.148\u001b[39m, Delivered_Order: \u001b[33m25\u001b[39m, Response: \u001b[32m'[A|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 19'\u001b[39m: { RT: \u001b[33m0.14\u001b[39m, Delivered_Order: \u001b[33m26\u001b[39m, Response: \u001b[32m'[A|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 20'\u001b[39m: { RT: \u001b[33m0.16\u001b[39m, Delivered_Order: \u001b[33m27\u001b[39m, Response: \u001b[32m'[A|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 21'\u001b[39m: { RT: \u001b[33m0.133\u001b[39m, Delivered_Order: \u001b[33m28\u001b[39m, Response: \u001b[32m'[C|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 22'\u001b[39m: { RT: \u001b[33m0.203\u001b[39m, Delivered_Order: \u001b[33m29\u001b[39m, Response: \u001b[32m'[A|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 23'\u001b[39m: { RT: \u001b[33m0.165\u001b[39m, Delivered_Order: \u001b[33m30\u001b[39m, Response: \u001b[32m'[A|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 24'\u001b[39m: { RT: \u001b[33m0.134\u001b[39m, Delivered_Order: \u001b[33m31\u001b[39m, Response: \u001b[32m'[B|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 25'\u001b[39m: { RT: \u001b[33m0.145\u001b[39m, Delivered_Order: \u001b[33m32\u001b[39m, Response: \u001b[32m'[A|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 26'\u001b[39m: { RT: \u001b[33m0.214\u001b[39m, Delivered_Order: \u001b[33m33\u001b[39m, Response: \u001b[32m'[B|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 27'\u001b[39m: { RT: \u001b[33m0.145\u001b[39m, Delivered_Order: \u001b[33m34\u001b[39m, Response: \u001b[32m'[A|B]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 28'\u001b[39m: { RT: \u001b[33m0.134\u001b[39m, Delivered_Order: \u001b[33m35\u001b[39m, Response: \u001b[32m'[B|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N58708A77391/dataFiles/Test_DataExport_AutoFilter_Template_N58708A77391.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N58708A77391\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N58708A77391/dataFiles/Test_DataExport_AutoFilter_Template_N58708A77391.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N58708A77391\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N58708A77391/dataFiles/Test_DataExport_AutoFilter_Template_N58708A77391.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N58708A77391\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N58708A77391 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 1 for fetching the report failed. 2 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N58708A77391\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N58708A77391\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N58708A77391\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N58708A77391\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N58708A77391 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 2 for fetching the report failed. 1 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N58708A77391\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N58708A77391\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N58708A77391\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N58708A77391\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N58708A77391 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 3 for fetching the report failed. 0 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N58708A77391\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N58708A77391\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N58708A77391\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N58708A77391\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-09-28T11:14:06.455Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated testData Filter Template (N58708A77391)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-BLKROT_Pub-006d7-ct-test-and-validate-report-chrome/attachments/Generated-testData-Filter-Template-N58708A77391--e6b31d4bab5d7c8837471d0bb7afe1700d386186.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-BLKROT_Pub-006d7-ct-test-and-validate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-BLKROT_Pub-006d7-ct-test-and-validate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-BLKROT_Pub-006d7-ct-test-and-validate-report-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                        "column": 109,
+                        "line": 43
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 850112,
+                      "error": {
+                        "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N37552A19667\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N37552A19667\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N37552A19667\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N37552A19667\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                        "stack": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N37552A19667\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N37552A19667\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N37552A19667\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N37552A19667\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/BLKROT_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                          "column": 109,
+                          "line": 43
+                        },
+                        "snippet": "   at ../utils/reportDownload.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m downloadButtonLocator \u001b[33m=\u001b[39m reportRowLocator\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label=\"Download/Print\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m expect(downloadButtonLocator\u001b[33m,\u001b[39m \u001b[32m`Download/Print for \"${expectedReportName}\" never became clickable.`\u001b[39m)\u001b[33m.\u001b[39mtoBeEnabled(\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[33mDOWNLOAD_ENABLED_TIMEOUT_IN_MS\u001b[39m }\n \u001b[90m 45 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                            "column": 109,
+                            "line": 43
+                          },
+                          "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N37552A19667\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N37552A19667\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N37552A19667\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N37552A19667\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n   at ../utils/reportDownload.ts:43\n\n  41 |\n  42 |   const downloadButtonLocator = reportRowLocator.locator('button[aria-label=\"Download/Print\"]');\n> 43 |   await expect(downloadButtonLocator, `Download/Print for \"${expectedReportName}\" never became clickable.`).toBeEnabled(\n     |                                                                                                             ^\n  44 |     { timeout: DOWNLOAD_ENABLED_TIMEOUT_IN_MS }\n  45 |   );\n  46 |\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/BLKROT_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S12:W3] Login successful for 02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 02PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S12:W3] Login successful for 02PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N37552A19667\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37552A19667/dataFiles/Test_DataExport_AutoFilter_Template_N37552A19667.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N37552A19667 FirstName=Adrien LastName =N37552A19667 Age = 09/28/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N37552A19667\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Block Rotation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 18158|Ages 4 to 7|\n"
+                        },
+                        {
+                          "text": "Item Number 10 \n\n"
+                        },
+                        {
+                          "text": "Type Of test Ages 4 to 7 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Sample Item C, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "{\n  \u001b[32m'Introduction 1'\u001b[39m: { RT: \u001b[33m22.995\u001b[39m, Delivered_Order: \u001b[33m0\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m: { RT: \u001b[33m0.186\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m'[A|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Introduction 2'\u001b[39m: { RT: \u001b[33m33.056\u001b[39m, Delivered_Order: \u001b[33m2\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m: { RT: \u001b[33m0.114\u001b[39m, Delivered_Order: \u001b[33m3\u001b[39m, Response: \u001b[32m'[A|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Introduction 3'\u001b[39m: { RT: \u001b[33m0.002\u001b[39m, Delivered_Order: \u001b[33m4\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 1'\u001b[39m: { RT: \u001b[33m0.135\u001b[39m, Delivered_Order: \u001b[33m5\u001b[39m, Response: \u001b[32m'[B|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 2'\u001b[39m: { RT: \u001b[33m0.129\u001b[39m, Delivered_Order: \u001b[33m6\u001b[39m, Response: \u001b[32m'[B|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 3'\u001b[39m: { RT: \u001b[33m0.17\u001b[39m, Delivered_Order: \u001b[33m7\u001b[39m, Response: \u001b[32m'[A|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 4'\u001b[39m: { RT: \u001b[33m0.14\u001b[39m, Delivered_Order: \u001b[33m8\u001b[39m, Response: \u001b[32m'[B|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 5'\u001b[39m: { RT: \u001b[33m0.133\u001b[39m, Delivered_Order: \u001b[33m9\u001b[39m, Response: \u001b[32m'[A|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 6'\u001b[39m: { RT: \u001b[33m0.111\u001b[39m, Delivered_Order: \u001b[33m10\u001b[39m, Response: \u001b[32m'[C|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 7'\u001b[39m: { RT: \u001b[33m0.126\u001b[39m, Delivered_Order: \u001b[33m11\u001b[39m, Response: \u001b[32m'[B|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 8'\u001b[39m: { RT: \u001b[33m0.116\u001b[39m, Delivered_Order: \u001b[33m12\u001b[39m, Response: \u001b[32m'[A|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 9'\u001b[39m: { RT: \u001b[33m0.128\u001b[39m, Delivered_Order: \u001b[33m13\u001b[39m, Response: \u001b[32m'[C|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Introduction 4'\u001b[39m: { RT: \u001b[33m33.555\u001b[39m, Delivered_Order: \u001b[33m14\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item C, Trial 1'\u001b[39m: { RT: \u001b[33m0.127\u001b[39m, Delivered_Order: \u001b[33m15\u001b[39m, Response: \u001b[32m'[C|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Introduction 5'\u001b[39m: { RT: \u001b[33m0.002\u001b[39m, Delivered_Order: \u001b[33m16\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 10'\u001b[39m: { RT: \u001b[33m0.132\u001b[39m, Delivered_Order: \u001b[33m17\u001b[39m, Response: \u001b[32m'[B|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 11'\u001b[39m: { RT: \u001b[33m0.16\u001b[39m, Delivered_Order: \u001b[33m18\u001b[39m, Response: \u001b[32m'[B|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 12'\u001b[39m: { RT: \u001b[33m0.128\u001b[39m, Delivered_Order: \u001b[33m19\u001b[39m, Response: \u001b[32m'[D|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 13'\u001b[39m: { RT: \u001b[33m0.144\u001b[39m, Delivered_Order: \u001b[33m20\u001b[39m, Response: \u001b[32m'[C|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 14'\u001b[39m: { RT: \u001b[33m0.166\u001b[39m, Delivered_Order: \u001b[33m21\u001b[39m, Response: \u001b[32m'[B|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 15'\u001b[39m: { RT: \u001b[33m0.142\u001b[39m, Delivered_Order: \u001b[33m22\u001b[39m, Response: \u001b[32m'[A|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 16'\u001b[39m: { RT: \u001b[33m0.135\u001b[39m, Delivered_Order: \u001b[33m23\u001b[39m, Response: \u001b[32m'[D|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 17'\u001b[39m: { RT: \u001b[33m0.202\u001b[39m, Delivered_Order: \u001b[33m24\u001b[39m, Response: \u001b[32m'[A|B]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 18'\u001b[39m: { RT: \u001b[33m0.134\u001b[39m, Delivered_Order: \u001b[33m25\u001b[39m, Response: \u001b[32m'[A|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 19'\u001b[39m: { RT: \u001b[33m0.142\u001b[39m, Delivered_Order: \u001b[33m26\u001b[39m, Response: \u001b[32m'[A|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 20'\u001b[39m: { RT: \u001b[33m0.17\u001b[39m, Delivered_Order: \u001b[33m27\u001b[39m, Response: \u001b[32m'[A|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 21'\u001b[39m: { RT: \u001b[33m0.166\u001b[39m, Delivered_Order: \u001b[33m28\u001b[39m, Response: \u001b[32m'[C|E]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 22'\u001b[39m: { RT: \u001b[33m0.132\u001b[39m, Delivered_Order: \u001b[33m29\u001b[39m, Response: \u001b[32m'[A|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 23'\u001b[39m: { RT: \u001b[33m0.215\u001b[39m, Delivered_Order: \u001b[33m30\u001b[39m, Response: \u001b[32m'[A|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 24'\u001b[39m: { RT: \u001b[33m0.158\u001b[39m, Delivered_Order: \u001b[33m31\u001b[39m, Response: \u001b[32m'[B|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 25'\u001b[39m: { RT: \u001b[33m0.135\u001b[39m, Delivered_Order: \u001b[33m32\u001b[39m, Response: \u001b[32m'[A|D]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 26'\u001b[39m: { RT: \u001b[33m0.2\u001b[39m, Delivered_Order: \u001b[33m33\u001b[39m, Response: \u001b[32m'[B|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 27'\u001b[39m: { RT: \u001b[33m0.119\u001b[39m, Delivered_Order: \u001b[33m34\u001b[39m, Response: \u001b[32m'[A|B]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Item 28'\u001b[39m: { RT: \u001b[33m0.159\u001b[39m, Delivered_Order: \u001b[33m35\u001b[39m, Response: \u001b[32m'[B|C]'\u001b[39m, Score: \u001b[33m1\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37552A19667/dataFiles/Test_DataExport_AutoFilter_Template_N37552A19667.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N37552A19667\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37552A19667/dataFiles/Test_DataExport_AutoFilter_Template_N37552A19667.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N37552A19667\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37552A19667/dataFiles/Test_DataExport_AutoFilter_Template_N37552A19667.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N37552A19667\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N37552A19667 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 1 for fetching the report failed. 2 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N37552A19667\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N37552A19667\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N37552A19667\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N37552A19667\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N37552A19667 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 2 for fetching the report failed. 1 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N37552A19667\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N37552A19667\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N37552A19667\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N37552A19667\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N37552A19667 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 3 for fetching the report failed. 0 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N37552A19667\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N37552A19667\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N37552A19667\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N37552A19667\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 1,
+                      "startTime": "2026-09-28T11:28:19.426Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated testData Filter Template (N37552A19667)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-BLKROT_Pub-006d7-ct-test-and-validate-report-chrome-retry1/attachments/Generated-testData-Filter-Template-N37552A19667--1a400de513fc117ffcfe86acd620b25fa2db2416.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-BLKROT_Pub-006d7-ct-test-and-validate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-BLKROT_Pub-006d7-ct-test-and-validate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-BLKROT_Pub-006d7-ct-test-and-validate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                        "column": 109,
+                        "line": 43
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6d3a1fa46e053b32765a-37d7f1d7640c7663ea20",
+              "file": "test_dataExport/BLKROT_Pub.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-28T10:57:46.812Z",
+    "duration": 2683368.775,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

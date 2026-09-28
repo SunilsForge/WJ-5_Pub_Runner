@@ -1,0 +1,469 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/reviewMode/InProgressTestAssignments.spec.ts >> Verify review mode for my 'In Progress' test assignments >> Validate different scenarios for 'In Progress' test assignment in review mode
+- Location: src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:180:7
+
+# Error details
+
+```
+Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 0
+
+  Array [
+-   "Number-Pattern Matching",
+    "Rapid Letter Naming",
+    "Rapid Number Naming",
+    "Rapid Phoneme Naming",
+    "Semantic Word Retrieval",
+  ]
+```
+
+```
+Error: Flagged tests verification failed:
+- Found unexpected test sections: Number-Pattern Matching
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: 1
+```
+
+```
+Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 0
+
+  Array [
+-   "Number-Pattern Matching",
+    "Rapid Letter Naming",
+    "Rapid Number Naming",
+    "Rapid Phoneme Naming",
+    "Semantic Word Retrieval",
+  ]
+```
+
+```
+Error: Flagged tests verification failed:
+- Found unexpected test sections: Number-Pattern Matching
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: 1
+```
+
+```
+Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 0
+
+  Array [
+-   "Number-Pattern Matching",
+    "Rapid Letter Naming",
+    "Rapid Number Naming",
+    "Rapid Phoneme Naming",
+    "Semantic Word Retrieval",
+  ]
+```
+
+```
+Error: Flagged tests verification failed:
+- Found unexpected test sections: Number-Pattern Matching
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: 1
+```
+
+```
+Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 0
+
+  Array [
+-   "Number-Pattern Matching",
+    "Rapid Letter Naming",
+    "Rapid Number Naming",
+    "Rapid Phoneme Naming",
+    "Semantic Word Retrieval",
+  ]
+```
+
+```
+Error: Flagged tests verification failed:
+- Found unexpected test sections: Number-Pattern Matching
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: 1
+```
+
+```
+Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 0
+
+  Array [
+-   "Number-Pattern Matching",
+    "Rapid Letter Naming",
+    "Rapid Number Naming",
+    "Rapid Phoneme Naming",
+    "Semantic Word Retrieval",
+  ]
+```
+
+```
+Error: Flagged tests verification failed:
+- Found unexpected test sections: Number-Pattern Matching
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: 1
+```
+
+```
+Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 0
+
+  Array [
+-   "Number-Pattern Matching",
+    "Rapid Letter Naming",
+    "Rapid Number Naming",
+    "Rapid Phoneme Naming",
+    "Semantic Word Retrieval",
+  ]
+```
+
+```
+Error: Flagged tests verification failed:
+- Found unexpected test sections: Number-Pattern Matching
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: 1
+```
+
+```
+Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 0
+
+  Array [
+-   "Number-Pattern Matching",
+    "Rapid Letter Naming",
+    "Rapid Number Naming",
+    "Rapid Phoneme Naming",
+    "Semantic Word Retrieval",
+  ]
+```
+
+```
+Error: Flagged tests verification failed:
+- Found unexpected test sections: Number-Pattern Matching
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: 1
+```
+
+```
+Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 0
+
+  Array [
+-   "Number-Pattern Matching",
+    "Rapid Letter Naming",
+    "Rapid Number Naming",
+    "Rapid Phoneme Naming",
+    "Semantic Word Retrieval",
+  ]
+```
+
+```
+Error: Flagged tests verification failed:
+- Found unexpected test sections: Number-Pattern Matching
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: 1
+```
+
+```
+Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 0
+
+  Array [
+-   "Number-Pattern Matching",
+    "Rapid Letter Naming",
+    "Rapid Number Naming",
+    "Rapid Phoneme Naming",
+    "Semantic Word Retrieval",
+  ]
+```
+
+```
+Error: Flagged tests verification failed:
+- Found unexpected test sections: Number-Pattern Matching
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: 1
+```
+
+```
+Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 0
+
+  Array [
+-   "Number-Pattern Matching",
+    "Rapid Letter Naming",
+    "Rapid Number Naming",
+    "Rapid Phoneme Naming",
+    "Semantic Word Retrieval",
+  ]
+```
+
+```
+Error: Flagged tests verification failed:
+- Found unexpected test sections: Number-Pattern Matching
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: 1
+```
+
+# Test source
+
+```ts
+  1135 |       const needAttentionTests = this.getReviewModeTestsWithNameByStatus('score-error');
+  1136 |       await needAttentionTests.first().waitFor({ state: 'visible', timeout: 60000 });
+  1137 |       const testNames = await needAttentionTests.allTextContents();
+  1138 |       return testNames.map(name => name.trim());
+  1139 |     } catch (error) {
+  1140 |       console.error('Error getting need attention tests:', error);
+  1141 |       throw error;
+  1142 |     }
+  1143 |   }
+  1144 | 
+  1145 |   async getInvalidatedTests(): Promise<string[]> {
+  1146 |     try {
+  1147 |       const invalidatedTests = this.getReviewModeTestsByStatus('invalidated');
+  1148 |       await invalidatedTests.first().waitFor({ state: 'visible', timeout: 60000 });
+  1149 |       const testNames = await invalidatedTests.allTextContents();
+  1150 |       return testNames.map(name => name.trim());
+  1151 |     } catch (error) {
+  1152 |       console.error('Error getting invalidated tests:', error);
+  1153 |       throw error;
+  1154 |     }
+  1155 |   }
+  1156 | 
+  1157 |   async getFlaggedTestsWithItemData(): Promise<Record<string, Record<string, { response: string }>>> {
+  1158 |     try {
+  1159 |       const flaggedData: Record<string, Record<string, { response: string }>> = {};
+  1160 | 
+  1161 |       const testSections = this.page.locator('div.test-group h5');
+  1162 |       const testNames = await testSections.allTextContents();
+  1163 | 
+  1164 |       for (const testName of testNames) {
+  1165 |         flaggedData[testName] = {};
+  1166 | 
+  1167 |         const itemsSelector = "//h5[text()='" + testName + "']/following-sibling::button[not(preceding-sibling::h5[1][text()!='" + testName + "'])]";
+  1168 |         const flaggedItems = await this.page.locator(itemsSelector).all();
+  1169 | 
+  1170 |         for (const item of flaggedItems) {
+  1171 |           const itemName = await item.locator('.test-name').textContent() || '';
+  1172 |           const score = await item.locator('.test-score').textContent() || '';
+  1173 |           const scoreValue = score.replace('Score: ', '');
+  1174 | 
+  1175 |           let response: string;
+  1176 | 
+  1177 |           if (testName === 'Story Recall') {
+  1178 |             response = `correct | ${scoreValue}`;
+  1179 |           } else if (testName === 'Math Facts Fluency') {
+  1180 |             response = scoreValue;
+  1181 |           } else {
+  1182 |             response = scoreValue === '1' ? 'correct' :
+  1183 |               scoreValue === '0' ? 'incorrect' :
+  1184 |                 scoreValue === '-' ? 'No Response' : scoreValue;
+  1185 |           }
+  1186 | 
+  1187 |           flaggedData[testName][itemName] = { response };
+  1188 |         }
+  1189 | 
+  1190 |         if (Object.keys(flaggedData[testName]).length === 0) {
+  1191 |           delete flaggedData[testName];
+  1192 |         }
+  1193 |       }
+  1194 | 
+  1195 |       return flaggedData;
+  1196 |     } catch (error) {
+  1197 |       console.error('Error getting flagged items:', error);
+  1198 |       throw error;
+  1199 |     }
+  1200 |   }
+  1201 | 
+  1202 |   async verifyFlaggedTestsWithItemData(expected: Record<string, Record<string, { response: string }>>,
+  1203 |     actual: Record<string, Record<string, { response: string }>>) {
+  1204 |     const mismatches: string[] = [];
+  1205 | 
+  1206 |     for (const testName of Object.keys(expected)) {
+  1207 |       if (!actual[testName]) {
+  1208 |         mismatches.push(`Test "${testName}" is missing from actual results`);
+  1209 |         continue;
+  1210 |       }
+  1211 | 
+  1212 |       const expectedItems = Object.keys(expected[testName]);
+  1213 |       const actualItems = Object.keys(actual[testName]);
+  1214 | 
+  1215 |       const missingItems = expectedItems.filter(item => !actual[testName][item]);
+  1216 |       if (missingItems.length > 0) {
+  1217 |         mismatches.push(`Test "${testName}" is missing items: ${missingItems.join(', ')}`);
+  1218 |       }
+  1219 | 
+  1220 |       const extraItems = actualItems.filter(item => !expected[testName][item]);
+  1221 |       if (extraItems.length > 0) {
+  1222 |         mismatches.push(`Test "${testName}" has unexpected items: ${extraItems.join(', ')}`);
+  1223 |       }
+  1224 |     }
+  1225 | 
+  1226 |     const extraTests = Object.keys(actual).filter(test => !expected[test]);
+  1227 |     if (extraTests.length > 0) {
+  1228 |       mismatches.push(`Found unexpected test sections: ${extraTests.join(', ')}`);
+  1229 |     }
+  1230 | 
+  1231 |     if (mismatches.length > 0) {
+  1232 |       const errorMessage = ['Flagged tests verification failed:']
+  1233 |         .concat(mismatches)
+  1234 |         .join('\n- ');
+> 1235 |       expect.soft(mismatches.length, errorMessage).toBe(0);
+       |                                                    ^ Error: Flagged tests verification failed:
+  1236 |     }
+  1237 | 
+  1238 |     RawValueLogger.log('Flagged Tests Verification:',
+  1239 |       mismatches.length === 0 ? 'All tests and items match' : 'Found mismatches');
+  1240 |   }
+  1241 | 
+  1242 |   async getItemData(jsonData: any, testName: string) {
+  1243 |     return await jsonData[testName] || {};
+  1244 |   }
+  1245 | 
+  1246 |   async convertJsonToArray(jsonData: Record<string, Record<string, { response: string }>>): Promise<{
+  1247 |     tests: Array<{
+  1248 |       index: number,
+  1249 |       testName: string,
+  1250 |       items: string[]
+  1251 |     }>
+  1252 |   }> {
+  1253 |     const testsArray = Object.entries(jsonData).map(([testName, testData], index) => ({
+  1254 |       index,
+  1255 |       testName,
+  1256 |       items: Object.keys(testData)
+  1257 |     }));
+  1258 | 
+  1259 |     return Promise.resolve({
+  1260 |       tests: testsArray
+  1261 |     });
+  1262 |   }
+  1263 | 
+  1264 |   async deleteTestDataFromFlaggedList(flaggedTestData: any, testName: string): Promise<void> {
+  1265 |     if (testName in flaggedTestData) {
+  1266 |       delete flaggedTestData[testName];
+  1267 |       RawValueLogger.log("", `Deleted test "${testName}" from flagged list`);
+  1268 |       RawValueLogger.log('Updated Flagged Tests after deletion:', flaggedTestData.updatedFlaggedTests);
+  1269 |     } else {
+  1270 |       RawValueLogger.log("", `Test "${testName}" not found in flagged list`);
+  1271 |     }
+  1272 |   }
+  1273 | 
+  1274 | // In dashboardPage.ts
+  1275 | async addFlaggedTestToUpdatedList(
+  1276 |   testDataReviewMode: {
+  1277 |     testName: string;
+  1278 |     flaggedItems?: Record<string, { response: string; notes?: boolean; flag?: boolean }>
+  1279 |   }[],
+  1280 |   testName: string,
+  1281 |   updatedFlaggedTests: Record<string, Record<string, { response: string }>>  // Pass it in
+  1282 | ): Promise<void> {
+  1283 |   try {
+  1284 |     const test = testDataReviewMode.find(t => t.testName === testName);
+  1285 | 
+  1286 |     if (!test || !test.flaggedItems) {
+  1287 |       RawValueLogger.log('Warning:', `No flagged items found for test "${testName}"`);
+  1288 |       return;
+  1289 |     }
+  1290 | 
+  1291 |     updatedFlaggedTests[testName] = {}; // Mutate the passed-in object directly
+  1292 | 
+  1293 |     for (const [itemName, itemData] of Object.entries<{
+  1294 |       response: string;
+  1295 |       notes?: boolean;
+  1296 |       flag?: boolean;
+  1297 |     }>(test.flaggedItems)) {
+  1298 |       updatedFlaggedTests[testName][itemName] = {
+  1299 |         response: itemData.response
+  1300 |       };
+  1301 |     }
+  1302 | 
+  1303 |     RawValueLogger.log('Success:', `Added flagged items for test "${testName}"`);
+  1304 |     RawValueLogger.log('Updated Flagged Tests:', updatedFlaggedTests);
+  1305 |   } catch (error) {
+  1306 |     console.error(`Error adding flagged items for test "${testName}":`, error);
+  1307 |     throw error;
+  1308 |   }
+  1309 | }
+  1310 | 
+  1311 |   async removeFollowingTestFrom(array: string[], valueToRemove: string): Promise<void> {
+  1312 |     const index = array.indexOf(valueToRemove);
+  1313 |     if (index > -1) {
+  1314 |       array.splice(index, 1);
+  1315 |       RawValueLogger.log("Removed test from array:", valueToRemove);
+  1316 |       RawValueLogger.log("Updated array:", array);
+  1317 |     } else {
+  1318 |       RawValueLogger.log("Value not found in array:", valueToRemove);
+  1319 |     }
+  1320 |   }
+  1321 | 
+  1322 |   async clickOnFollowingTestLinkFromAdministrationSummary(testName: string) {
+  1323 |     try {
+  1324 |       const selector = `
+  1325 |             //div[@class='test-name'][text()='${testName}'] | 
+  1326 |             //h4//following-sibling::button[text()='${testName}']
+  1327 |         `;
+  1328 | 
+  1329 |       await this.page.locator(selector).waitFor({ state: 'visible', timeout: 60000 });
+  1330 |       await this.page.locator(selector).click();
+  1331 |       await this.page.waitForLoadState("domcontentloaded");
+  1332 | 
+  1333 |       RawValueLogger.log("Clicked on test link:", testName);
+  1334 |     } catch (error) {
+  1335 |       console.error(`Failed to click on test link for "${testName}":`, error);
+```
