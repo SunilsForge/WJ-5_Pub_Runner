@@ -1,0 +1,16 @@
+Still failing after rerun pass 5 (main run #356) — 5 test(s)
+
+1. Preschool to Kindergarten - Score Error Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+2. Preschool to Grade 8 - Score Error Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/SNDREV_Rerouting.spec.ts
+3. Grades 1 to 3 - Score Error Scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+4. Grades 7 to 9 - Score Error Scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+5. Grade 10 to Adult - Score Error Scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+
+Affected spec files (2):
+  ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+  ReroutingandLeftNav/SNDREV_Rerouting.spec.ts
