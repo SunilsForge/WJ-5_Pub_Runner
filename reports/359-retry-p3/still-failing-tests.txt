@@ -1,0 +1,9 @@
+Still failing after rerun pass 3 (main run #359) — 2 test(s)
+
+1. Grades 1 to 3 - Score Error Scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+2. Grades 7 to 9 - Score Error Scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+
+Affected spec files (1):
+  ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
