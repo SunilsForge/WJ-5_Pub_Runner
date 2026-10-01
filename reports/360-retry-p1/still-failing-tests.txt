@@ -1,0 +1,23 @@
+Still failing after rerun pass 1 (main run #360) — 9 test(s)
+
+1. Preschool to Kindergarten - All correct SSP1 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+2. Grades 1 to 3 - 4 lowest incorrect items SSP2 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+3. Grades 7 to 9 - 4 lowest incorrect items SSP4 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+4. Ages 4 to 5 - 4 lowest incorrect items SSP1 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+5. Ages 6 to 8 - 4 correct and 4 incorrect SSP2 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+6. Ages 12 to 14 - Reverse Logic SSP4 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+7. Ages 9 to 11 - 4 correct and 4 incorrect SSP3 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+8. Ages 6 to 8 - All correct SSP2 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+9. Ages 12 to 14 - All correct SSP4 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+
+Affected spec files (1):
+  UIAndReports/GIWHAT_Single_BC4.spec.ts

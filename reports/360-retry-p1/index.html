@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rerun of #360</title>
+  <style>
+    body{font-family:-apple-system,system-ui,sans-serif;margin:24px;background:#f6f8fa;color:#1b1f24}
+    h1{margin:0 0 4px}
+    .meta{color:#57606a;margin-bottom:16px}
+    .cards{display:flex;gap:12px;margin:16px 0}
+    .card{background:#fff;border:1px solid #eaeef2;border-radius:6px;padding:12px 18px;min-width:120px}
+    .card b{display:block;font-size:24px}
+    .ok b{color:#1a7f37}
+    .bad b{color:#cf222e}
+    table{border-collapse:collapse;background:#fff;border-radius:6px;overflow:hidden;width:100%;margin:8px 0 20px;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+    th,td{padding:7px 12px;border-bottom:1px solid #eaeef2;text-align:left;font-size:13px}
+    th{background:#f0f3f6}
+    .mono{font-family:ui-monospace,monospace;color:#57606a}
+    .empty{color:#8c959f;font-style:italic}
+    .btn{display:inline-block;background:#0969da;color:#fff;padding:8px 14px;border-radius:6px;text-decoration:none;font-size:13px;margin:0 8px 16px 0}
+    .btn-alt{background:#6e40c9}
+    .how{font-size:12px;color:#57606a}
+  </style>
+</head>
+<body>
+  <h1>&#128257; Rerun of Run #360</h1>
+  <div class="meta">RETRY FAILURES: Env_@Tag_Reason &middot; Env <code>prod</code> &middot; Browser <code>chrome</code></div>
+  <div class="cards">
+    <div class="card"><b>14</b>re-run</div>
+    <div class="card ok"><b>5</b>now passing (flaky)</div>
+    <div class="card bad"><b>9</b>still failing (real)</div>
+  </div>
+  <a class="btn" href="./playwright-merged/index.html">Open full Playwright report &rarr;</a> <a class="btn btn-alt" href="./last-run.json" download="last-run.json">&darr; Still-failing list for local re-run</a> <a class="how" href="./local-rerun-README.txt" target="_blank">how to use</a>
+  <h2>Still failing (real)</h2>
+  <table><thead><tr><th>#</th><th>Test</th><th>File</th></tr></thead><tbody><tr><td>1</td><td>Preschool to Kindergarten - All correct SSP1 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr><tr><td>2</td><td>Grades 1 to 3 - 4 lowest incorrect items SSP2 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr><tr><td>3</td><td>Grades 7 to 9 - 4 lowest incorrect items SSP4 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr><tr><td>4</td><td>Ages 4 to 5 - 4 lowest incorrect items SSP1 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr><tr><td>5</td><td>Ages 6 to 8 - 4 correct and 4 incorrect SSP2 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr><tr><td>6</td><td>Ages 12 to 14 - Reverse Logic SSP4 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr><tr><td>7</td><td>Ages 9 to 11 - 4 correct and 4 incorrect SSP3 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr><tr><td>8</td><td>Ages 6 to 8 - All correct SSP2 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr><tr><td>9</td><td>Ages 12 to 14 - All correct SSP4 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr></tbody></table>
+  <h2>Now passing on rerun (flaky)</h2>
+  <table><thead><tr><th>#</th><th>Test</th><th>File</th></tr></thead><tbody><tr><td>1</td><td>Preschool to Kindergarten - 4 correct and 4 incorrect SSP1 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr><tr><td>2</td><td>Ages 6 to 8 - Reverse Logic SSP2 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr><tr><td>3</td><td>Age 15 to Adult - 4 correct and 4 incorrect SSP5 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr><tr><td>4</td><td>Ages 4 to 5 - 1 correct 1 incorrect SSP1 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr><tr><td>5</td><td>Grade 10 to Adult - 1 correct 1 incorrect SSP5 Test UI</td><td class="mono">UIAndReports/GIWHAT_Single_BC4.spec.ts</td></tr></tbody></table>
+</body>
+</html>
