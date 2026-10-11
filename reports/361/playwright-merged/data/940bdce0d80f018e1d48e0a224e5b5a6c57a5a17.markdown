@@ -1,0 +1,412 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/dashboard/testAssignments_A.spec.ts >> Validate Dashboard Test Assignments functionality
+- Location: src/tests/functional/dashboard/testAssignments_A.spec.ts:21:5
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('div[role=\'dialog\']').locator('div[class=\'item-text single-select\']').first()
+
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic [ref=e1]:
+      - banner [ref=e2]:
+        - generic [ref=e3]:
+          - button [ref=e4]: Skip to main Content
+          - link [ref=e5] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e6]: Riverside Insights Logo
+          - generic [ref=e7]:
+            - heading [level=2] [ref=e8]:
+              - generic [ref=e9]: Hello
+              - button [ref=e10] [cursor=pointer]: 09PwAut25AH ln
+            - navigation [ref=e13]:
+              - button [ref=e14] [cursor=pointer]: Contact Us
+              - button [ref=e15] [cursor=pointer]: "| WJ V Settings"
+              - button [ref=e16] [cursor=pointer]: "| Sign Out"
+      - navigation [ref=e17]:
+        - menubar [ref=e19]:
+          - menuitem [ref=e21] [cursor=pointer]: Dashboard
+          - menuitem [ref=e23] [cursor=pointer]: Test Sets
+          - menuitem [ref=e25] [cursor=pointer]: Examinees
+          - menuitem [ref=e27] [cursor=pointer]: Staff
+          - menuitem [ref=e29] [cursor=pointer]:
+            - text: Reports
+            - img [ref=e30]
+          - menuitem [ref=e33] [cursor=pointer]: Resources
+        - generic [ref=e34]:
+          - switch [ref=e35] [cursor=pointer]: "OFF"
+          - generic [ref=e36]: Offline Mode
+      - main [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: NEW!
+            - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+            - link [ref=e43] [cursor=pointer]:
+              - /url: /media/OfflineMode.pdf
+              - text: Read More
+            - button [ref=e44] [cursor=pointer]: ✕
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - heading [level=1] [ref=e47]: My Test Assignments
+              - button [ref=e48] [cursor=pointer]: Create New Test Assignment
+            - generic [ref=e49]:
+              - generic [ref=e52]:
+                - textbox [ref=e53]:
+                  - /placeholder: Search Test Assignments
+                  - text: N33607A75822, Andrew
+                - button [ref=e54] [cursor=pointer]
+              - generic [ref=e55]:
+                - button [disabled] [ref=e56]: Active
+                - button [disabled] [ref=e57]: Closed
+            - table [ref=e59]:
+              - rowgroup [ref=e66]:
+                - row [ref=e67]:
+                  - columnheader [ref=e68]: Examinee
+                  - columnheader [ref=e69]: Test Set
+                  - columnheader [ref=e70]: Days Left to Edit
+                  - columnheader [ref=e71]: Status
+                  - columnheader [ref=e72]: Actions
+              - rowgroup [ref=e73]:
+                - row [ref=e74] [cursor=pointer]:
+                  - cell [ref=e75]:
+                    - button [ref=e76]:
+                      - generic [ref=e77]: N33607A75822, Andrew
+                  - cell [ref=e78]:
+                    - generic [ref=e79]:
+                      - button [ref=e80]:
+                        - generic [ref=e81]: General Intellectual Ability (GIA)
+                      - button [ref=e82]
+                  - cell [ref=e83]:
+                    - button [ref=e84]: —
+                  - cell [ref=e85]:
+                    - button [ref=e86]:
+                      - generic [ref=e87]: ●
+                      - text: Not Started
+                  - cell [ref=e88]:
+                    - button [ref=e89]
+                    - button [ref=e90]
+                    - button [ref=e91]
+          - generic [ref=e92]:
+            - generic [ref=e95]:
+              - img [ref=e96]
+              - heading [level=2] [ref=e100]: Notifications Center
+            - generic [ref=e101]:
+              - generic [ref=e103]:
+                - img [ref=e104]
+                - heading [level=3] [ref=e108]: Resources
+              - list [ref=e109]:
+                - listitem [ref=e110]:
+                  - button [ref=e111] [cursor=pointer]:
+                    - heading [level=4] [ref=e112]: Riverside Learn
+                    - img [ref=e114]
+                - listitem [ref=e116]:
+                  - button [ref=e117] [cursor=pointer]:
+                    - heading [level=4] [ref=e118]: Onboarding Tutorial Videos
+                    - img [ref=e120]
+                - listitem [ref=e122]:
+                  - button [ref=e123] [cursor=pointer]:
+                    - heading [level=4] [ref=e124]: Quick Reference Guides
+                    - img [ref=e126]
+              - button [ref=e129] [cursor=pointer]: View All
+    - contentinfo [ref=e130]:
+      - generic [ref=e131]: Footer region,
+      - link [ref=e132] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com
+        - img [ref=e133]
+      - generic [ref=e134]:
+        - link [ref=e135] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e136]
+        - link [ref=e137] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e138]
+        - link [ref=e139] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e140]
+        - link [ref=e141] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e142]
+      - generic [ref=e143]:
+        - button [ref=e144] [cursor=pointer]: Leave Feedback
+        - generic [ref=e145]: "|"
+        - link [ref=e146] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e147]: "|"
+        - link [ref=e148] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e149]: Footer region end
+  - dialog [ref=e151]:
+    - generic [ref=e152]:
+      - heading "Edit Test Assignment" [level=1] [ref=e153]
+      - generic [ref=e161]:
+        - generic [ref=e162]:
+          - generic [ref=e163]: Examinee
+          - generic [ref=e164]: Complete
+        - generic [ref=e165]:
+          - generic [ref=e166]: Test Sets
+          - generic [ref=e167]: In Progress
+        - generic [ref=e168]:
+          - generic [ref=e169]: Settings
+          - generic [ref=e170]: Complete
+    - generic [ref=e171]:
+      - heading "Select a Test Set" [level=3] [ref=e172]
+      - generic [ref=e173]:
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - generic [ref=e177]: Test Set Name
+            - button "Test Set Name" [expanded] [ref=e179] [cursor=pointer]:
+              - generic [ref=e180]: Select Test Set
+          - generic [ref=e181]:
+            - generic [ref=e184]:
+              - textbox [active] [ref=e185]:
+                - /placeholder: Search...
+                - text: Form A
+              - button "Search" [ref=e186] [cursor=pointer]
+            - tree "Test Set Name"
+        - generic [ref=e188]:
+          - generic [ref=e189]:
+            - heading "General Intellectual Ability (GIA)" [level=3] [ref=e190]
+            - generic [ref=e191]:
+              - img [ref=e192]
+              - text: "Time Estimate:"
+              - generic [ref=e199]: 40 min
+          - generic [ref=e200]:
+            - generic [ref=e201]: Oral Vocabulary–Synonyms
+            - generic [ref=e202]: Oral Vocabulary–Antonyms
+            - generic [ref=e203]: Matrices
+            - generic [ref=e204]: Spatial Relations
+            - generic [ref=e205]: Story Recall
+            - generic [ref=e206]: Semantic Word Retrieval
+            - generic [ref=e207]: Verbal Attention
+            - generic [ref=e208]: Number-Pattern Matching
+            - generic [ref=e209]: Verbal Analogies
+    - generic [ref=e210]:
+      - button "Cancel" [ref=e211] [cursor=pointer]
+      - generic [ref=e212]:
+        - button "Back" [ref=e213] [cursor=pointer]
+        - button "Update" [ref=e214] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1924 |     await this.waitForLoadingSpinnerToDisappear();
+  1925 |     await this.page.waitForTimeout(3000);
+  1926 |   }
+  1927 | 
+  1928 |   async getNumberOfRowsInMyTestAssignments(): Promise<number> {
+  1929 |     await this.page.waitForLoadState("domcontentloaded");
+  1930 |     await this.waitForLoadingSpinnerToDisappear();
+  1931 |     return await this.myTestAssignmentsRow.count();
+  1932 |   }
+  1933 | 
+  1934 |   async getNumberOfEditAssignmentIcons(): Promise<number> {
+  1935 |     await this.page.waitForLoadState("domcontentloaded");
+  1936 |     await this.waitForLoadingSpinnerToDisappear();
+  1937 |     return await this.getLinkButton('edit').count();
+  1938 |   }
+  1939 | 
+  1940 |   async verifyEditTestAssignmentPopUp() {
+  1941 |     await expect.soft(this.page.getByRole('heading', { name: 'Edit Test Assignment' })).toBeVisible();
+  1942 |     await expect.soft(this.page.locator(`//div[text()='Examinee and test set pairing may be changed up until administration starts. Preferences can be modified at any time during the administration by accessing settings.']`)).toBeVisible();
+  1943 |     await expect.soft(this.page.getByRole('heading', { name: 'Last, First' }), 'Last, First heading should be visible').toBeVisible();
+  1944 |     await expect.soft(this.page.getByRole('heading', { name: 'Examinee ID' }), 'Examinee ID heading should be visible').toBeVisible();
+  1945 |     await expect.soft(this.page.getByRole('heading', { name: 'DOB' }), 'DOB heading should be visible').toBeVisible();
+  1946 |     await expect.soft(this.page.getByRole('heading', { name: 'Test Set' }), 'Test Set heading should be visible').toBeVisible();
+  1947 |     await expect.soft(this.page.getByRole('heading', { name: 'Education' }), 'Education heading should be visible').toBeVisible();
+  1948 |     await expect.soft(this.page.getByRole('heading', { name: 'Default Starting Point' }), 'Default Starting Point heading should be visible').toBeVisible();
+  1949 |     await expect.soft(this.page.getByRole('heading', { name: 'Voice Capture' }), 'Voice Capture heading should be visible').toBeVisible();
+  1950 |   }
+  1951 | 
+  1952 | 
+  1953 |   async clickEditIconForTheFirstRowInMyTestAssignments() {
+  1954 |     await this.editTestAssignmentButton.first().click();
+  1955 |     await this.waitForDialogToAppear();
+  1956 |     await this.waitForLoadingInnerToDisappear();
+  1957 |   }
+  1958 | 
+  1959 |   async clickOnAddTestsToTestSetButton() {
+  1960 |     await this.addTestsToTestSetButton.click();
+  1961 |     await this.page.waitForLoadState("domcontentloaded");
+  1962 |     await this.page.waitForTimeout(2000);
+  1963 |   }
+  1964 | 
+  1965 |   async getExamineesDetailsFromTestAssignmentTable(
+  1966 |     numberOfRows: number,
+  1967 |   ): Promise<
+  1968 |     Array<{
+  1969 |       examinee: string | undefined;
+  1970 |       testSet: string | undefined;
+  1971 |       daysLeftToEdit: string | undefined;
+  1972 |       status: string | undefined;
+  1973 |     }>
+  1974 |   > {
+  1975 |     await this.page.waitForLoadState("domcontentloaded");
+  1976 |     await this.waitForLoadingSpinnerToDisappear();
+  1977 | 
+  1978 |     const examineeDetailsArray: Array<{
+  1979 |       examinee: string | undefined;
+  1980 |       testSet: string | undefined;
+  1981 |       daysLeftToEdit: string | undefined;
+  1982 |       status: string | undefined;
+  1983 |     }> = [];
+  1984 | 
+  1985 |     // Fetch details for the first numberOfRows rows
+  1986 |     for (let i = 1; i <= numberOfRows; i++) {
+  1987 |       const rowDetails = await this.getTheTestAssignmentsRowDetails(i);
+  1988 |       examineeDetailsArray.push({
+  1989 |         examinee: rowDetails.examinee,
+  1990 |         testSet: rowDetails.testSet,
+  1991 |         daysLeftToEdit: rowDetails.daysLeftEdit,
+  1992 |         status: rowDetails.status,
+  1993 |       });
+  1994 |     }
+  1995 | 
+  1996 |     // Log the results with RawValueLogger for debugging
+  1997 |     RawValueLogger.log(
+  1998 |       `Fetched details for ${numberOfRows} rows:`,
+  1999 |       examineeDetailsArray,
+  2000 |     );
+  2001 | 
+  2002 |     return examineeDetailsArray;
+  2003 |   }
+  2004 | 
+  2005 |   private get editTestAssignmentDialog() {
+  2006 |     return this.page.locator("div[role='dialog']");
+  2007 |   }
+  2008 | 
+  2009 |   async changeExamineeNameInEditTestAssignmentPopUp(examineeName: string) {
+  2010 |     const dialog = this.editTestAssignmentDialog;
+  2011 |     await dialog.locator("button.plain-button:has(svg title:text('Edit'))").first().click();
+  2012 |     await dialog.locator("button[class='select-box']").click();
+  2013 |     await dialog.locator("[placeholder='Search...']").fill(examineeName);
+  2014 |     await dialog.locator("div[class='item-text single-select']").click();
+  2015 |   }
+  2016 | 
+  2017 |   async changeTestSetInEditTestAssignmentPopUp(testSetName: string) {
+  2018 |     const dialog = this.editTestAssignmentDialog;
+  2019 |     const currentTestSet = (await dialog.locator("//div[contains(@class,'TestAssignment')]/h4[text()='Test Set']/following-sibling::span").textContent()) ?? '';
+  2020 |     const targetTestSet = currentTestSet.trim() === testSetName.trim() ? 'Form A' : testSetName;
+  2021 |     await dialog.locator("button#edit_test_set").click();
+  2022 |     await dialog.locator("button[class='select-box']").click();
+  2023 |     await dialog.locator("[placeholder='Search...']").fill(targetTestSet);
+> 2024 |     await dialog.locator("div[class='item-text single-select']").first().click();
+       |                                                                          ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  2025 |   }
+  2026 | 
+  2027 |   async clickOnCancelButtonInEditTestAssignmentPopUp() {
+  2028 |     await this.cancelButton.click();
+  2029 |     await this.areYouSureYesButton.click();    
+  2030 |   }
+  2031 | 
+  2032 |   async verifyEditIconGrayedOutForExamineeName() {
+  2033 |     const dialog = this.editTestAssignmentDialog;
+  2034 |     const examineeEditButton = dialog.locator("button.plain-button:has(svg title:text('Edit'))").first();
+  2035 |     await expect.soft(examineeEditButton, 'Edit icon for examinee name should be disabled').toBeDisabled();
+  2036 |   }
+  2037 | 
+  2038 |   async verifyEditIconGrayedOutForTestSet() {
+  2039 |     const dialog = this.editTestAssignmentDialog;
+  2040 |     await expect.soft(dialog.locator("button#edit_test_set"), 'Edit icon for test set should be disabled').toBeDisabled();
+  2041 |   }
+  2042 | 
+  2043 |   async verifyEducationAndVoiceCaptureSectionIsEditable() {
+  2044 |     const dialog = this.editTestAssignmentDialog;
+  2045 |     await expect.soft(dialog.locator("button#edit_assignment_settings"), 'Edit icon for education should be visible').toBeVisible();
+  2046 |   }
+  2047 | 
+  2048 |   async verifyGenerateReportsIcon() {
+  2049 |     return await this.generateReportIcon.isVisible();
+  2050 |   }
+  2051 | 
+  2052 |   async verifyEditTestAssignmentIcon() {
+  2053 |     return await this.editTestAssignmentButton.isVisible();
+  2054 |   }
+  2055 | 
+  2056 |   async clickOnGenerateReportIcon() {
+  2057 |     await this.generateReportIcon.click();
+  2058 |     await this.page.waitForLoadState("domcontentloaded");
+  2059 |   }
+  2060 | 
+  2061 |   async verifyTestAssignmentExpiredPopUp() {
+  2062 |     await this.page.waitForLoadState("domcontentloaded");
+  2063 |     await expect.soft(this.page.getByRole('heading', { name: 'Test Assignment Expired' }), 'Test Assignment Expired heading should be visible').toBeVisible();
+  2064 |     await expect.soft(this.page.locator(`//p[text()='This test assignment has expired as 90 days have passed since the earliest date of testing. No further changes can be made, however, you may still submit for reporting.']`), 'Test Assignment Expired body text should be visible').toBeVisible();
+  2065 |     await expect.soft(this.page.locator("//p[text()='Do you want to submit this test assignment for reporting?']"), 'Do you want to submit this test assignment for reporting? body text should be visible').toBeVisible();
+  2066 |   }
+  2067 | 
+  2068 |   async clickNoButtonInExpiredPopUp() {
+  2069 |     await this.noButton.click();
+  2070 |   }
+  2071 | 
+  2072 |   async clickYesButtonInPopUp() {
+  2073 |     await this.page.waitForTimeout(2000);
+  2074 |     await this.yesButton.click();
+  2075 |   }
+  2076 | 
+  2077 |   async verifyCreateReportPopUpIsVisible() {
+  2078 |     await this.waitForLoadingInnerToDisappear();
+  2079 |     await this.page.waitForLoadState("domcontentloaded");
+  2080 |     await expect.soft(this.createReportHeading, 'Create a Report heading should be visible').toBeVisible();
+  2081 |   }
+  2082 | 
+  2083 |   async clickOnSubscriptionDetails() {
+  2084 |     await this.subscriptionDetails.click();
+  2085 |     await this.page.waitForLoadState("domcontentloaded");
+  2086 |   }
+  2087 |   async verifyChatBotFunctionality() {
+  2088 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();
+  2089 |     await this.chatBotIcon.click();
+  2090 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();
+  2091 |     await this.chatBotCloseIcon.click();
+  2092 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();
+  2093 |   }
+  2094 | 
+  2095 |   async clickOnTestSetsTab() {
+  2096 |     await this.testSetButton.click();
+  2097 |     await this.page.waitForLoadState("domcontentloaded");
+  2098 |   }
+  2099 | 
+  2100 |   async clickOnExamineesTab() {
+  2101 |     await this.examinees.click();
+  2102 |     await this.page.waitForLoadState("domcontentloaded");
+  2103 |     await this.waitForLoadingSpinnerToDisappear();
+  2104 |   }
+  2105 | 
+  2106 |   async searchExaminee(examineeName: string) {
+  2107 |     await this.searchExaminees.fill(examineeName);
+  2108 |     await this.searchExaminees.press('Enter');
+  2109 |     await this.page.waitForLoadState("domcontentloaded");
+  2110 |     await this.waitForLoadingSpinnerToDisappear();
+  2111 |   }
+  2112 | 
+  2113 |   async clickOnSearchedExaminee(examineeId: string) {
+  2114 |     await this.page.locator(`//button[text()='${examineeId}']`).click();
+  2115 |     await this.page.waitForLoadState("domcontentloaded");
+  2116 |     await this.waitForLoadingSpinnerToDisappear();
+  2117 |   }
+  2118 | 
+  2119 |   async clickResetButton() {
+  2120 |     await this.resetButton.click();
+  2121 |     await this.page.waitForLoadState("domcontentloaded");
+  2122 |     await this.waitForLoadingSpinnerToDisappear();
+  2123 |   }
+  2124 | 
+```
