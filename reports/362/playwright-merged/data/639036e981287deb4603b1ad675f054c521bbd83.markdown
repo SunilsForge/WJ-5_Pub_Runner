@@ -1,0 +1,341 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/accessFee/AccessFeeRenewalAndExpiry.spec.ts >> AF-32 - Activation-code renewal sets the fee back to Yes
+- Location: src/tests/functional/subscriptions/accessFee/AccessFeeRenewalAndExpiry.spec.ts:117:5
+
+# Error details
+
+```
+Error: Confirm Renewal never appeared - landed on the products page instead (https://stage.riversidescore.com/products). The activation context was lost between landing on the activation URL and signing in, so the code was never applied to the org.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - banner [ref=e5]:
+        - generic [ref=e6]:
+          - button [ref=e7]: Skip to main Content
+          - link [ref=e8] [cursor=pointer]:
+            - /url: /products
+          - generic [ref=e9]: Riverside Insights Logo
+          - generic [ref=e10]:
+            - heading [level=2] [ref=e11]:
+              - generic [ref=e12]: Hello
+              - button [ref=e13] [cursor=pointer]: Jeremie SubAut11Oct26044901mi2
+            - navigation [ref=e16]:
+              - link [ref=e17] [cursor=pointer]:
+                - /url: https://riversideinsights.com/explore
+                - text: Shop Now
+              - button [ref=e18] [cursor=pointer]: "| Contact Us"
+              - button [ref=e19] [cursor=pointer]: "| Sign Out"
+      - main [ref=e20]:
+        - button [ref=e28] [cursor=pointer]: Update Profile
+        - heading [level=1] [ref=e31]: "To access scoring and reporting, please make a selection below:"
+        - menubar [ref=e32]:
+          - menuitem [ref=e33] [cursor=pointer]
+        - generic [ref=e34]:
+          - tablist [ref=e35]:
+            - tab [selected] [ref=e36] [cursor=pointer]: Riverside Updates
+            - tab [ref=e37] [cursor=pointer]: Webinars
+            - tab [ref=e38] [cursor=pointer]: Blog Posts
+            - tab [ref=e39] [cursor=pointer]: Forums
+          - generic [ref=e41]:
+            - heading [level=2] [ref=e42]: Test
+            - img [ref=e44]
+    - contentinfo [ref=e45]:
+      - generic [ref=e46]: Footer region,
+      - link [ref=e47] [cursor=pointer]:
+        - /url: https://www.riversideinsights.com
+        - img [ref=e48]
+      - generic [ref=e49]:
+        - link [ref=e50] [cursor=pointer]:
+          - /url: https://www.facebook.com/RiversideInsights/
+          - img [ref=e51]
+        - link [ref=e52] [cursor=pointer]:
+          - /url: https://twitter.com/1BillionLives
+          - img [ref=e53]
+        - link [ref=e54] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/riverside-insights/
+          - img [ref=e55]
+        - link [ref=e56] [cursor=pointer]:
+          - /url: https://www.instagram.com/riversideinsightsassessments/
+          - img [ref=e57]
+      - generic [ref=e58]:
+        - img [ref=e59]
+        - button [ref=e60] [cursor=pointer]
+        - button [ref=e61] [cursor=pointer]
+      - generic [ref=e62]:
+        - img [ref=e63]
+        - generic [ref=e64]:
+          - button [ref=e65] [cursor=pointer]
+          - button [ref=e66] [cursor=pointer]
+          - button [ref=e67] [cursor=pointer]
+      - generic [ref=e68]:
+        - button [ref=e69] [cursor=pointer]: Leave Feedback
+        - generic [ref=e70]: "|"
+        - link [ref=e71] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/terms-of-use
+          - text: Terms of Use
+        - generic [ref=e72]: "|"
+        - link [ref=e73] [cursor=pointer]:
+          - /url: https://info.riversideinsights.com/privacy-assessment_policy
+          - text: Privacy Policy
+      - generic [ref=e74]: Footer region end
+  - dialog [ref=e76]:
+    - alert "Confirm Activation" [ref=e77]:
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - heading "Confirm Activation" [level=4] [ref=e81]
+          - heading "Set Your Start Date" [level=1] [ref=e82]
+        - generic [ref=e83]:
+          - generic [ref=e84]: "Subscription:"
+          - generic [ref=e85]: WJ V Subtest Subscription
+          - generic [ref=e86]: "Location Name:"
+          - generic [ref=e87]: Location_SubAut11Oct26044901mi2 - 100 Subtests
+        - generic [ref=e88]:
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - generic [ref=e94]: START DATE
+              - generic [ref=e95]:
+                - textbox "START DATE" [ref=e96]:
+                  - /placeholder: mm/dd/yyyy
+                  - text: 10/11/2026
+                - button "Show Calendar" [ref=e97] [cursor=pointer]
+            - application "Use arrow keys to navigate and enter to select a date"
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - generic [ref=e105]: END DATE
+              - generic [ref=e106]:
+                - textbox "END DATE" [disabled] [ref=e107]:
+                  - /placeholder: ""
+                  - text: 10/10/2027
+                - button "Show Calendar" [disabled] [ref=e108]
+            - application "Use arrow keys to navigate and enter to select a date"
+        - generic [ref=e110]:
+          - generic [ref=e111]: The Woodcock-Johnson V (WJ V) system is structured to offer customized, efficient, and flexible assessments that examiners need to accurately evaluate learning problems in children and adults. The WJ V is designed to measure intellectual abilities, academic achievement, and oral language abilities.
+          - generic [ref=e112]: Please note there is a grace period for subtests purchased within the last 4 months of a subscription’s cycle. Those subtests will roll over to the next subscription cycle.
+        - generic [ref=e113]:
+          - button "I accept the terms and conditionson" [ref=e114] [cursor=pointer]
+          - text: I accept the
+          - link "terms and conditions" [ref=e116] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+        - generic:
+          - button "Abandon Activation and Log-out" [ref=e118] [cursor=pointer]: Abandon Activation and Log-out
+          - button "Confirm" [disabled] [ref=e120]
+```
+
+# Test source
+
+```ts
+  456 |         },
+  457 |         {
+  458 |           message: `Waiting for ${owner.username}'s subscription to report Active`,
+  459 |           intervals: [5_000],
+  460 |           timeout: 3 * 60 * 1000,
+  461 |         }
+  462 |       )
+  463 |       .toBe('Active');
+  464 |   }
+  465 | 
+  466 |   async getOrgCustomerId(owner: ApiOrgOwner): Promise<string> {
+  467 |     const subApi = new subscriptionApi(this.page, toApiCreds(owner));
+  468 |     const [summary] = await subApi.getOrgSubscriptionDetails(owner.username);
+  469 |     return summary.CustomerOrgId;
+  470 |   }
+  471 | 
+  472 |   async verifySubscriptionErrorModal(expectedHeading: string, expectedBody: string) {
+  473 |     await this.subscriptionErrorModal.waitFor({ state: 'visible', timeout: 60_000 });
+  474 |     await expect.soft(this.subscriptionErrorModalHeading, 'error modal heading').toHaveText(expectedHeading);
+  475 | 
+  476 |     const body = normalizeModalCopy((await this.subscriptionErrorModalBody.textContent()) ?? '');
+  477 |     RawValueLogger.log('Subscription Error modal', { body });
+  478 |     expect.soft(body, 'error modal body copy').toBe(normalizeModalCopy(expectedBody));
+  479 |   }
+  480 | 
+  481 |   async alignOrgCustomerIdToCode(owner: ApiOrgOwner, scenario: ActivationCode) {
+  482 |     if (!scenario.Customer_Id) {
+  483 |       RawValueLogger.log('Customer id alignment skipped - code has no Customer_Id', {
+  484 |         salesOrder: scenario.salesOrderNumber,
+  485 |       });
+  486 |       return;
+  487 |     }
+  488 | 
+  489 |     const subApi = new subscriptionApi(this.page, toApiCreds(owner));
+  490 |     const response = await subApi.updateOrgCustomerIds(owner.username, {
+  491 |       customerOrgId: scenario.Customer_Id,
+  492 |     });
+  493 |     RawValueLogger.log('Org customer id aligned to the code being redeemed', {
+  494 |       org: response.OrganizationName,
+  495 |       salesOrder: scenario.salesOrderNumber,
+  496 |       expected: scenario.Customer_Id,
+  497 |       actual: response.CustomerOrgId,
+  498 |     });
+  499 |     expect(
+  500 |       response.CustomerOrgId,
+  501 |       `Org customer id must match the sales order's customer before ${scenario.salesOrderNumber} can be entitled`
+  502 |     ).toBe(scenario.Customer_Id);
+  503 |   }
+  504 | 
+  505 |   async resetActivationStateAndLand(scenario: ActivationCode) {
+  506 |     const subApi = new subscriptionApi(this.page);
+  507 |     await subApi.resetActivationCode(scenario.activationCode);
+  508 |     await subApi.updateSalesOrder(scenario.salesOrderNumber);
+  509 |     await this.landOnActivationPage(scenario);
+  510 |   }
+  511 | 
+  512 |   async selectCreateLoginAndProceed() {
+  513 |     await expect.soft(this.createAccountButton).toBeDisabled();
+  514 |     await this.iNeedToCreateLoginCheckbox.click();
+  515 |     await this.createAccountButton.click();
+  516 |   }
+  517 | 
+  518 |   async selectExistingLoginAndProceed() {
+  519 |     await expect.soft(this.activationSignInButton).toBeDisabled();
+  520 |     await this.useMyExistingLoginCheckbox.click();
+  521 |     await this.activationSignInButton.click();
+  522 |     await expect.soft(this.signInToActivateHeading).toBeVisible();
+  523 |   }
+  524 | 
+  525 |   async ensureExistingUserState(
+  526 |     user: ExistingUser
+  527 |   ): Promise<{ summary: OrgSubscriptionSummary; extras: OrgSubscriptionExtras }> {
+  528 |     const subApi = new subscriptionApi(this.page, toApiCreds(user));
+  529 |     let [summary, extras] = await subApi.getOrgSubscriptionDetails(user.username);
+  530 | 
+  531 |     if (user.expectedState === 'expired') {
+  532 |       await subApi.updateSubscriptionDetails(user.username, '12/31/2025', true);
+  533 |       [summary, extras] = await subApi.getOrgSubscriptionDetails(user.username);
+  534 |     }
+  535 | 
+  536 |     if (user.expectedState === 'active' && summary.CurrentSubscriptionStatus !== 'Active') {
+  537 |       console.warn(`[existing-user] ${user.username} expected Active but is ${summary.CurrentSubscriptionStatus}.`);
+  538 |     }
+  539 | 
+  540 |     return { summary, extras };
+  541 |   }
+  542 | 
+  543 |   async waitForConfirmRenewalPopup() {
+  544 |     // §2 — see subscriptionActivationPage.notes.md
+  545 |     try {
+  546 |       await this.confirmRenewalHeading.waitFor({ state: 'visible', timeout: 60_000 });
+  547 |     } catch (error) {
+  548 |       const onLoginPage = await this.signInButton.isVisible().catch(() => false);
+  549 |       const onProductsPage = await this.productDisplayCardWJV.isVisible().catch(() => false);
+  550 |       RawValueLogger.log('Confirm Renewal popup did not appear', {
+  551 |         url: this.page.url(),
+  552 |         onLoginPage,
+  553 |         onProductsPage,
+  554 |       });
+  555 |       if (onLoginPage || onProductsPage) {
+> 556 |         throw new Error(
+      |               ^ Error: Confirm Renewal never appeared - landed on the products page instead (https://stage.riversidescore.com/products). The activation context was lost between landing on the activation URL and signing in, so the code was never applied to the org.
+  557 |           `Confirm Renewal never appeared - landed on the ${onLoginPage ? 'login' : 'products'} page ` +
+  558 |             `instead (${this.page.url()}). The activation context was lost between landing on the ` +
+  559 |             `activation URL and signing in, so the code was never applied to the org.`
+  560 |         );
+  561 |       }
+  562 |       throw error;
+  563 |     }
+  564 |   }
+  565 | 
+  566 |   async waitForConfirmActivationPopup() {
+  567 |     await this.confirmActivationHeading.waitFor({ state: 'visible', timeout: 60_000 });
+  568 |   }
+  569 | 
+  570 |   async verifyConfirmRenewalDetails(
+  571 |     expectedSubscriptionContains: string,
+  572 |     expectedLocationName: string,
+  573 |     expectedStartMMDDYYYY: string,
+  574 |     expectedEndMMDDYYYY: string,
+  575 |     isActiveSub: boolean,
+  576 |     subtestCount?: number
+  577 |   ) {
+  578 |     await expect.soft(isActiveSub ? this.confirmRenewalHeading : this.confirmActivationHeading).toBeVisible();
+  579 |     await expect.soft(this.confirmSubscriptionValueText).toContainText(expectedSubscriptionContains);
+  580 |     await expect.soft(this.confirmLocationNameValueText).toContainText(expectedLocationName);
+  581 |     await expect.soft(this.confirmStartDateInput).toHaveValue(expectedStartMMDDYYYY);
+  582 |     await expect.soft(this.confirmEndDateInput).toHaveValue(expectedEndMMDDYYYY);
+  583 |     if (isActiveSub) {
+  584 |       await expect.soft(this.confirmStartDateInput).toBeDisabled();
+  585 |     }
+  586 |     if (subtestCount !== undefined) {
+  587 |       await expect.soft(this.confirmLocationNameValueText).toContainText(`${subtestCount} Subtests`);
+  588 |       await expect.soft(this.confirmSubscriptionValueText).toContainText('Subtest Subscription');
+  589 |       await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();
+  590 |     }
+  591 |   }
+  592 | 
+  593 |   async confirmRenewal() {
+  594 |     await this.confirmAcceptTermsCheckbox.click();
+  595 |     await Promise.all([
+  596 |       this.page.waitForResponse(
+  597 |         response =>
+  598 |           (response.url().includes('ConfirmActivation') || response.url().includes('ConfirmRenewal')) &&
+  599 |           response.status() === 200,
+  600 |         { timeout: 2 * 60 * 1000 }
+  601 |       ),
+  602 |       this.confirmActivationButton.click(),
+  603 |     ]);
+  604 |   }
+  605 | 
+  606 |   async fillContactInfo(data: SubscriptionActivationFormData) {
+  607 |     await expect.soft(this.wizardNextButton).toBeDisabled();
+  608 |     await this.contactFirstNameInput.pressSequentially(data.firstName, { delay: 50 });
+  609 |     await this.contactLastNameInput.pressSequentially(data.lastName, { delay: 50 });
+  610 |     await this.contactEmailInput.pressSequentially(data.email, { delay: 50 });
+  611 |     await this.contactPhoneInput.pressSequentially(data.phone, { delay: 50 });
+  612 |     await this.wizardNextButton.click();
+  613 |   }
+  614 | 
+  615 |   async verifyUsernameAutoGeneration(formData: SubscriptionActivationFormData) {
+  616 |     await this.usernamePasswordPageHeading.waitFor({ state: 'visible' });
+  617 |     await this.autoGenerateUsernameButton.click();
+  618 |     const usernameInput = this.autoGenerateUsernameButton.locator('xpath=preceding-sibling::input');
+  619 |     await usernameInput.waitFor({ state: 'attached' });
+  620 |     await expect(usernameInput).not.toHaveValue('', { timeout: 5000 });
+  621 |     const generatedValue = await usernameInput.inputValue();
+  622 |     expect.soft(generatedValue).toContain(formData.firstName);
+  623 |     RawValueLogger.log('S13 auto-generated username', { generated: generatedValue, firstName: formData.firstName });
+  624 |     await usernameInput.clear();
+  625 |   }
+  626 | 
+  627 |   async fillUsernameAndPassword(data: SubscriptionActivationFormData) {
+  628 |     await this.credentialsUsernameInput.pressSequentially(data.username, { delay: 50 });
+  629 |     await this.credentialsPasswordInput.pressSequentially(data.password, { delay: 50 });
+  630 |     await this.credentialsConfirmPasswordInput.pressSequentially(data.password, { delay: 50 });
+  631 |     await this.wizardNextButton.click();
+  632 |   }
+  633 | 
+  634 |   async fillLocationAndSubmit(data: SubscriptionActivationFormData) {
+  635 |     await expect.soft(this.locationSubmitButton).toBeDisabled();
+  636 |     await this.locationNameInput.pressSequentially(data.locationName, { delay: 50 });
+  637 |     await this.addressLine1Input.pressSequentially(data.addressLine1, { delay: 50 });
+  638 |     // Address Line 2 intentionally skipped — server rejects special chars in faker's "Apt. 403"-style output.
+  639 |     await this.cityInput.pressSequentially(data.city, { delay: 50 });
+  640 |     await this.stateDropdown.click();
+  641 |     await this.stateCaliforniaOption.click();
+  642 |     await this.zipCodeInput.pressSequentially(data.zipCode, { delay: 50 });
+  643 |     await Promise.all([
+  644 |       this.page.waitForResponse(
+  645 |         response => response.url().includes('CreateActivationSubscriptionNewUser') && response.status() === 200,
+  646 |         { timeout: 2 * 60 * 1000 }
+  647 |       ),
+  648 |       this.locationSubmitButton.click(),
+  649 |     ]);
+  650 |   }
+  651 | 
+  652 |   async verifyConfirmActivationDetails(
+  653 |     expectedSubscriptionContains: string,
+  654 |     expectedLocationName: string,
+  655 |     subtestCount?: number
+  656 |   ) {
+```

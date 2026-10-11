@@ -1,0 +1,381 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/accessFee/AccessFeeAdmin.spec.ts >> AF-04/05 - Changing Subtest Access Fee in admin persists and writes an Account Note each way
+- Location: src/tests/functional/subscriptions/accessFee/AccessFeeAdmin.spec.ts:101:5
+
+# Error details
+
+```
+Error: account note matching /The Subtest Renewal Access Fee was changed from Yes to No by .+ on \d{2}\/\d{2}\/\d{4} at \d{1,2}:\d{2} [AP]M EST/
+
+expect(locator).toHaveCount(expected) failed
+
+Locator:  locator('ul.content.testTable li.testRow').filter({ hasText: /The Subtest Renewal Access Fee was changed from Yes to No by .+ on \d{2}\/\d{2}\/\d{4} at \d{1,2}:\d{2} [AP]M EST/ })
+Expected: 1
+Received: 0
+Timeout:  30000ms
+
+Call log:
+  - account note matching /The Subtest Renewal Access Fee was changed from Yes to No by .+ on \d{2}\/\d{2}\/\d{4} at \d{1,2}:\d{2} [AP]M EST/ with timeout 30000ms
+  - waiting for locator('ul.content.testTable li.testRow').filter({ hasText: /The Subtest Renewal Access Fee was changed from Yes to No by .+ on \d{2}\/\d{2}\/\d{4} at \d{1,2}:\d{2} [AP]M EST/ })
+    34 × locator resolved to 0 elements
+       - unexpected value "0"
+
+```
+
+```
+Error: account note order column
+
+expect(locator).toContainText(expected) failed
+
+Locator: locator('ul.content.testTable li.testRow').filter({ hasText: /The Subtest Renewal Access Fee was changed from Yes to No by .+ on \d{2}\/\d{2}\/\d{4} at \d{1,2}:\d{2} [AP]M EST/ })
+Expected substring: "Autv3bctta"
+Timeout: 60000ms
+Error: element(s) not found
+
+Call log:
+  - account note order column with timeout 60000ms
+  - waiting for locator('ul.content.testTable li.testRow').filter({ hasText: /The Subtest Renewal Access Fee was changed from Yes to No by .+ on \d{2}\/\d{2}\/\d{4} at \d{1,2}:\d{2} [AP]M EST/ })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - list [ref=e6]:
+    - listitem
+    - listitem [ref=e7]:
+      - generic [ref=e8]: soli soli
+    - listitem [ref=e9]:
+      - link "Log Out" [ref=e10] [cursor=pointer]:
+        - /url: javascript:document.getElementById('logoutForm').submit()
+  - list [ref=e12]:
+    - listitem [ref=e13]:
+      - link "Dashboard" [ref=e14] [cursor=pointer]:
+        - /url: /Home/Dashboard
+    - listitem [ref=e15]:
+      - link "Organizations" [ref=e16] [cursor=pointer]:
+        - /url: /Navigation/Landing/185
+    - listitem [ref=e17]:
+      - link "Program Coordinator" [ref=e18] [cursor=pointer]:
+        - /url: /Navigation/Landing/207
+    - listitem [ref=e19]:
+      - link "Partner" [ref=e20] [cursor=pointer]:
+        - /url: /Navigation/Landing/218
+    - listitem [ref=e21]:
+      - link "Administration" [ref=e22] [cursor=pointer]:
+        - /url: /Navigation/Landing/188
+  - generic [ref=e23]:
+    - generic [ref=e25]:
+      - generic:
+        - generic [ref=e26]: Organizations
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - link "Add" [ref=e29] [cursor=pointer]:
+              - /url: /Organization/OrganizationProfileForm
+          - listitem [ref=e30]:
+            - link "Search/Edit" [ref=e31] [cursor=pointer]:
+              - /url: /Organization/Search
+    - generic [ref=e33]:
+      - heading "Customer Licenses" [level=2] [ref=e34]
+      - list [ref=e35]:
+        - listitem [ref=e36]:
+          - link "WJ V" [ref=e37] [cursor=pointer]:
+            - /url: /Customer/CustomerLicensing?OrganizationID=65330&ProductID=18&isDisableStatus=True&isDistributor=False
+      - generic [ref=e38]:
+        - heading "WJ V" [level=2] [ref=e39]
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - text: "Organization Name:"
+            - link "Location_SubAut11Oct26041855vjh" [ref=e42] [cursor=pointer]:
+              - /url: /Organization/OrganizationProfileForm?OrganizationID=65330
+          - list [ref=e43]:
+            - listitem [ref=e44]:
+              - link "Subscriptions" [ref=e45] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e46]:
+              - link "Renewals" [ref=e47] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e48]:
+              - link "Account Notes" [active] [ref=e49] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e50]:
+            - generic [ref=e51]:
+              - list [ref=e52]:
+                - listitem [ref=e53]:
+                  - link "Date " [ref=e55] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                    - text: Date
+                    - generic [ref=e56]: 
+                  - link "User " [ref=e58] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                    - text: User
+                    - generic [ref=e59]: 
+                  - link "Note " [ref=e61] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                    - text: Note
+                    - generic [ref=e62]: 
+                  - link "Order " [ref=e64] [cursor=pointer]:
+                    - /url: javascript:void(0)
+                    - text: Order
+                    - generic [ref=e65]: 
+                  - generic [ref=e66]: Actions
+              - list [ref=e68]:
+                - listitem [ref=e69]:
+                  - generic [ref=e70]: 10/10/2026
+                  - generic [ref=e71]: Dev
+                  - generic [ref=e72]: The Subtest Renewal Access Fee was changed from No to Yes by Dev on 10/10/2026 at 11:21 PM EST.
+                  - generic [ref=e73]: Autv3bctta
+                - listitem [ref=e75]:
+                  - generic [ref=e76]: 10/10/2026
+                  - generic [ref=e77]: Dev
+                  - generic [ref=e78]: A WJ V Nonverbal Subtest subscription was edited by Dev on 10/10/2026 at 11:21 PM EST
+                  - generic [ref=e79]: Autv3bctta
+                - listitem [ref=e81]:
+                  - generic [ref=e82]: 10/10/2026
+                  - generic [ref=e83]: Dev
+                  - generic [ref=e84]: A WJ V Nonverbal Subtest subscription was edited by Dev on 10/10/2026 at 11:20 PM EST
+                  - generic [ref=e85]: Autv3bctta
+                - listitem [ref=e87]:
+                  - generic [ref=e88]: 10/10/2026
+                  - generic [ref=e89]: SubAut11Oct26041855vjh
+                  - generic [ref=e90]: 100 subtests for WJ V were added by SubAut11Oct26041855vjh on 10/10/2026 at 11:19 PM EST
+                  - generic [ref=e91]: SO292939
+                - listitem [ref=e93]:
+                  - generic [ref=e94]: 10/10/2026
+                  - generic [ref=e95]: SubAut11Oct26041855vjh
+                  - generic [ref=e96]: A WJ V Nonverbal Subtest renewal was added by SubAut11Oct26041855vjh on 10/10/2026 at 11:19 PM EST
+                  - generic [ref=e97]: SO292939
+            - button "Add New Note" [ref=e99] [cursor=pointer]
+            - button "Export Notes" [ref=e100] [cursor=pointer]
+  - generic [ref=e102]:
+    - list [ref=e103]:
+      - listitem [ref=e104]:
+        - link "Dashboard" [ref=e105] [cursor=pointer]:
+          - /url: /Home/Dashboard
+      - listitem [ref=e106]:
+        - link "Organizations" [ref=e107] [cursor=pointer]:
+          - /url: /Navigation/Landing/185
+      - listitem [ref=e108]:
+        - link "Program Coordinator" [ref=e109] [cursor=pointer]:
+          - /url: /Navigation/Landing/207
+      - listitem [ref=e110]:
+        - link "Partner" [ref=e111] [cursor=pointer]:
+          - /url: /Navigation/Landing/218
+      - listitem [ref=e112]:
+        - link "Administration" [ref=e113] [cursor=pointer]:
+          - /url: /Navigation/Landing/188
+    - paragraph [ref=e114]:
+      - generic [ref=e115]:
+        - text: Copyright © 2014 by The Riverside Publishing Company. • All rights reserved. • (800) 323-9540 •
+        - link "www.riversideinsights.com" [ref=e116] [cursor=pointer]:
+          - /url: http://www.riversideinsights.com
+    - generic [ref=e117]:
+      - link "Terms of Use" [ref=e118] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - link "Privacy Policy" [ref=e119] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+```
+
+# Test source
+
+```ts
+  87  |       .locator(
+  88  |         "//table[@class='search-results']//descendant::td[text()='" +
+  89  |           orgName +
+  90  |           "']//parent::tr//descendant::a[text()='License']"
+  91  |       )
+  92  |       .click();
+  93  |     await this.page.waitForLoadState();
+  94  |   }
+  95  |   async getSubscriptionOrderNumber(): Promise<string> {
+  96  |     return await this.subOrderNUmber.inputValue();
+  97  |   }
+  98  |   async goToAccountNotes() {
+  99  |     await this.page.waitForTimeout(3000);
+  100 |     await this.accountNotesTab.click();
+  101 |     await this.page.waitForLoadState();
+  102 |   }
+  103 |   async getSubscriptionModel(): Promise<AdminSubscriptionModel> {
+  104 |     await this.licenseSaveButton.waitFor({ state: 'visible', timeout: 60_000 });
+  105 |     const model = await this.page.evaluate(
+  106 |       () => (window as unknown as { subscriptionModel: AdminSubscriptionModel }).subscriptionModel
+  107 |     );
+  108 |     if (!model) {
+  109 |       throw new Error('subscriptionModel is not on the page - the Customer Licenses page did not load as expected.');
+  110 |     }
+  111 |     RawValueLogger.log('Admin licence page subscriptionModel', model);
+  112 |     return model;
+  113 |   }
+  114 | 
+  115 |   async verifyOrganizationName(expectedOrgName: string) {
+  116 |     await expect.soft(this.licenseOrganizationNameLink, 'admin licence page org name').toHaveText(expectedOrgName);
+  117 |   }
+  118 | 
+  119 |   async verifySubscriptionTypeSelected(expectedTypeId: number) {
+  120 |     const radios: Record<number, typeof this.licenseTypeUnlimitedRadio> = {
+  121 |       [SUBSCRIPTION_TYPE_ID.unlimited]: this.licenseTypeUnlimitedRadio,
+  122 |       [SUBSCRIPTION_TYPE_ID.subtest]: this.licenseTypeSubtestRadio,
+  123 |       [SUBSCRIPTION_TYPE_ID.multiYear18Month]: this.licenseTypeMultiYear18MonthRadio,
+  124 |       [SUBSCRIPTION_TYPE_ID.multiYear30Month]: this.licenseTypeMultiYear30MonthRadio,
+  125 |     };
+  126 |     await expect.soft(radios[expectedTypeId], `subscription type ${expectedTypeId} selected`).toBeChecked();
+  127 |   }
+  128 | 
+  129 |   async verifyMultiYearTypesCannotBeSelected() {
+  130 |     await expect.soft(this.licenseTypeMultiYear18MonthRadio, '18-month radio disabled').toBeDisabled();
+  131 |     await expect.soft(this.licenseTypeMultiYear30MonthRadio, '30-month radio disabled').toBeDisabled();
+  132 |   }
+  133 | 
+  134 |   async verifyAutoRenew(expectedOn: boolean) {
+  135 |     const expected = expectedOn ? this.licenseAutoRenewOnRadio : this.licenseAutoRenewOffRadio;
+  136 |     await expect.soft(expected, `auto-renew ${expectedOn ? 'On' : 'Off'} selected`).toBeChecked();
+  137 |   }
+  138 | 
+  139 |   async verifyCognitiveTestAccess(expectedAllow: boolean) {
+  140 |     const expected = expectedAllow ? this.licenseCognitiveAllowRadio : this.licenseCognitiveDenyRadio;
+  141 |     await expect.soft(expected, `cognitive access ${expectedAllow ? 'Allow' : 'Deny'} selected`).toBeChecked();
+  142 |   }
+  143 | 
+  144 |   async verifyNonverbalCognitiveAccess(expectedAllow: boolean) {
+  145 |     const expected = expectedAllow ? this.licenseNonverbalAllowRadio : this.licenseNonverbalDenyRadio;
+  146 |     await expect.soft(expected, `nonverbal access ${expectedAllow ? 'Allow' : 'Deny'} selected`).toBeChecked();
+  147 |   }
+  148 | 
+  149 |   async verifySubtestAccessFee(expectedPaid: boolean) {
+  150 |     const expected = expectedPaid ? this.licenseAccessFeeYesRadio : this.licenseAccessFeeNoRadio;
+  151 |     await expect.soft(expected, `Subtest Access Fee ${expectedPaid ? 'Yes' : 'No'} selected`).toBeChecked();
+  152 |   }
+  153 | 
+  154 |   async verifySubtestAccessFeeHidden() {
+  155 |     await expect.soft(this.licenseAccessFeeYesRadio, 'Subtest Access Fee Yes hidden').toBeHidden();
+  156 |     await expect.soft(this.licenseAccessFeeNoRadio, 'Subtest Access Fee No hidden').toBeHidden();
+  157 |   }
+  158 | 
+  159 |   async setSubtestAccessFee(paid: boolean) {
+  160 |     await (paid ? this.licenseAccessFeeYesLabel : this.licenseAccessFeeNoLabel).click();
+  161 |   }
+  162 | 
+  163 |   // Key events are required: fill() alone does not register as a change.
+  164 |   async setSalesOrderNumber(salesOrderNo: string) {
+  165 |     await this.subOrderNUmber.fill('');
+  166 |     await this.subOrderNUmber.pressSequentially(salesOrderNo, { delay: 40 });
+  167 |     await this.subOrderNUmber.press('Tab');
+  168 |   }
+  169 | 
+  170 |   // Same key-event rule as the SO field; Escape closes the datepicker overlay.
+  171 |   async setLicenseEndDate(endMMDDYYYY: string) {
+  172 |     await this.licenseEndDateInput.fill('');
+  173 |     await this.licenseEndDateInput.pressSequentially(endMMDDYYYY, { delay: 40 });
+  174 |     await this.licenseEndDateInput.press('Tab');
+  175 |     await this.page.keyboard.press('Escape');
+  176 |   }
+  177 | 
+  178 |   // Renewals reuses the Subscriptions panel ids; reload returns to Subscriptions.
+  179 |   async openRenewalsTab() {
+  180 |     await this.renewalsTab.click();
+  181 |     await this.licenseSaveButton.waitFor({ state: 'visible', timeout: 60_000 });
+  182 |   }
+  183 | 
+  184 |   async verifyAccountNoteExists(notePattern: RegExp, expectedSalesOrderNo: string) {
+  185 |     const row = this.accountNotesRows.filter({ hasText: notePattern });
+  186 |     await expect.soft(row, `account note matching ${notePattern}`).toHaveCount(1, { timeout: 30_000 });
+> 187 |     await expect.soft(row, 'account note order column').toContainText(expectedSalesOrderNo);
+      |                                                         ^ Error: account note order column
+  188 |   }
+  189 | 
+  190 |   // Changes the value without saving; reload discards it.
+  191 |   async verifySubtestAccessFeeIsEditable() {
+  192 |     await this.licenseAccessFeeNoLabel.click();
+  193 |     await expect.soft(this.licenseAccessFeeNoRadio, 'fee switches to No').toBeChecked();
+  194 |     await expect.soft(this.licenseSaveButton, 'Save enabled after fee change').not.toHaveClass(/disableCl/);
+  195 |   }
+  196 | 
+  197 |   async verifyLicenseDates(expectedStartMMDDYYYY: string, expectedEndMMDDYYYY: string) {
+  198 |     await expect.soft(this.licenseStartDateInput, 'licence START DATE').toHaveValue(expectedStartMMDDYYYY);
+  199 |     await expect.soft(this.licenseEndDateInput, 'licence END DATE').toHaveValue(expectedEndMMDDYYYY);
+  200 |   }
+  201 | 
+  202 |   async verifySaveIsBlocked(expectBlocked: boolean) {
+  203 |     const assertion = expect.soft(this.licenseSaveButton, `Save ${expectBlocked ? 'blocked' : 'available'}`);
+  204 |     if (expectBlocked) {
+  205 |       await assertion.toHaveClass(/disableCl/);
+  206 |     } else {
+  207 |       await assertion.not.toHaveClass(/disableCl/);
+  208 |     }
+  209 |   }
+  210 | 
+  211 |   async verifySalesOrderMatchesActivationCode(expectedSalesOrderNo: string) {
+  212 |     await expect.soft(this.subOrderNUmber, 'licence page sales order').toHaveValue(expectedSalesOrderNo);
+  213 |     expect
+  214 |       .soft(expectedSalesOrderNo.length, `sales order "${expectedSalesOrderNo}" within admin maxlength`)
+  215 |       .toBeLessThanOrEqual(ADMIN_SALES_ORDER_MAX_LENGTH);
+  216 |     await expect.soft(this.licenseSalesOrderError, 'sales order error hidden').toBeHidden();
+  217 |   }
+  218 | 
+  219 |   async setAutoRenew(on: boolean) {
+  220 |     await (on ? this.licenseAutoRenewOnRadio : this.licenseAutoRenewOffRadio).check();
+  221 |   }
+  222 | 
+  223 |   async setCognitiveTestAccess(allow: boolean) {
+  224 |     await (allow ? this.licenseCognitiveAllowRadio : this.licenseCognitiveDenyRadio).check();
+  225 |   }
+  226 | 
+  227 |   async saveLicenseChanges() {
+  228 |     await expect(this.licenseSaveButton, 'Save must be available before clicking').not.toHaveClass(/disableCl/, {
+  229 |       timeout: 30_000,
+  230 |     });
+  231 |     await this.licenseSaveButton.click();
+  232 |     await this.page.waitForLoadState('load');
+  233 |     await expect
+  234 |       .soft(this.licenseSaveMessage, 'save confirmation')
+  235 |       .toHaveText('Record Saved Successfully', { timeout: 30_000 });
+  236 |   }
+  237 | 
+  238 |   async removeAccess() {
+  239 |     await this.licenseRemoveAccessButton.click();
+  240 |     await this.licenseRemoveAccessDialog.waitFor({ state: 'visible', timeout: 30_000 });
+  241 |     await this.licenseRemoveAccessConfirmButton.click();
+  242 |     await expect
+  243 |       .soft(this.licenseSaveMessage, 'remove access confirmation')
+  244 |       .toHaveText('Access Removed Successfully', { timeout: 30_000 });
+  245 |   }
+  246 | 
+  247 |   async verifyAddRemoveSubtestsAvailable(expectAvailable: boolean) {
+  248 |     if (expectAvailable) {
+  249 |       await expect.soft(this.licenseAddRemoveSubtestsButton, 'Add or Remove Subtests available').toBeVisible();
+  250 |       await expect
+  251 |         .soft(this.licenseAddRemoveSubtestsButton, 'Add or Remove Subtests not greyed out')
+  252 |         .not.toHaveClass(/disableCl/);
+  253 |     } else {
+  254 |       await expect.soft(this.licenseAddRemoveSubtestsButton, 'Add or Remove Subtests hidden').toBeHidden();
+  255 |     }
+  256 |   }
+  257 | 
+  258 |   async reloadAndGetSubscriptionModel(): Promise<AdminSubscriptionModel> {
+  259 |     await this.page.reload({ waitUntil: 'load' });
+  260 |     return this.getSubscriptionModel();
+  261 |   }
+  262 | 
+  263 |   async verifyAccountNotesTableData(user: string, note: string) {
+  264 |     const orderNumber = await this.getSubscriptionOrderNumber();
+  265 |     const today = new Date();
+  266 |     const todayFormatted = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
+  267 |     await this.page.locator("ul.content.testTable").first().waitFor({ state: "visible", timeout: 60000 });
+  268 |     const row = this.page.locator(`ul.content.testTable li`).first().filter({ hasText: user });
+  269 |     await row.waitFor({ state: "visible", timeout: 60000 });
+  270 |     await expect.soft(row.locator("span:nth-child(1)")).toHaveText(todayFormatted);
+  271 |     await expect.soft(row.locator("span:nth-child(2)")).toHaveText(user);
+  272 |     await expect.soft(row.locator("span:nth-child(3)")).toContainText(note);
+  273 |     await expect.soft(row.locator("span:nth-child(4)")).toHaveText(orderNumber);
+  274 |   }
+  275 | }
+  276 | 
+```
