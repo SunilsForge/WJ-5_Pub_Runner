@@ -1,0 +1,347 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ReroutingandLeftNav/SENREP_Rerouting.spec.ts >>  SENREP Rerouting and LeftNav >> Ages 4 to 5 - Score Error Scenario for SSP1 Test Rerouting
+- Location: src/tests/ReroutingandLeftNav/SENREP_Rerouting.spec.ts:10:9
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('//span[starts-with(text(),\'N28867A83560\')]/ancestor::button')
+    - locator resolved to <button tabindex="-1" class="plain-button examinee-info-button">…</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S02PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S02PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "No Test Assignments have been created." [ref=e74] [cursor=pointer]:
+                    - cell "No Test Assignments have been created." [ref=e75]
+            - generic [ref=e76]:
+              - generic [ref=e79]:
+                - img [ref=e80]
+                - heading "Notifications Center" [level=2] [ref=e84]
+              - generic [ref=e85]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - heading "Resources" [level=3] [ref=e92]
+                - list [ref=e93]:
+                  - listitem [ref=e94]:
+                    - button "Riverside Learn" [ref=e95] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e96]
+                      - img [ref=e98]
+                  - listitem [ref=e100]:
+                    - button "Onboarding Tutorial Videos" [ref=e101] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e102]
+                      - img [ref=e104]
+                  - listitem [ref=e106]:
+                    - button "Quick Reference Guides" [ref=e107] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e108]
+                      - img [ref=e110]
+                - button "View All" [ref=e113] [cursor=pointer]
+      - contentinfo [ref=e114]:
+        - generic [ref=e115]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e116] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e117]
+        - generic [ref=e118]:
+          - link "Riverside Insights Facebook" [ref=e119] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e120]
+          - link "Riverside Insights Twitter" [ref=e121] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e122]
+          - link "Riverside Insights LinkedIn" [ref=e123] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e124]
+          - link "Riverside Insights Instagram" [ref=e125] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e126]
+        - generic [ref=e127]:
+          - button "Leave Feedback" [ref=e128] [cursor=pointer]
+          - generic [ref=e129]: "|"
+          - link "Terms of Use" [ref=e130] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e131]: "|"
+          - link "Privacy Policy" [ref=e132] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e133]: Footer region end
+```
+
+# Test source
+
+```ts
+  3872 |         }
+  3873 |       }
+  3874 |       else {
+  3875 |         throw new Error(
+  3876 |           `The ${typeOfTest} didnt match with any of the conditions provided`
+  3877 |         );
+  3878 |       }
+  3879 |       await this.plainNextButtonOrEndButton.click();
+  3880 |       if (
+  3881 |         (await this.plainNextButtonOrEndButton.textContent()) === "End Test"
+  3882 |       ) {
+  3883 |         break;
+  3884 |       }
+  3885 | 
+  3886 |     }
+  3887 |   }
+  3888 | 
+  3889 | 
+  3890 |   async clickCorrectOption() {
+  3891 |     try {
+  3892 |       await this.correctOptionButton.nth(0).click();
+  3893 |       await this.plainNextButtonOrEndButton.waitFor({
+  3894 |         state: "visible",
+  3895 |         timeout: 80000,
+  3896 |       });
+  3897 |     } catch (error) {
+  3898 |       console.error(`Not able to click on the Correct Options ${error}`);
+  3899 |     }
+  3900 |   }
+  3901 | 
+  3902 |   async reviewMethodForSSP1(index:number){
+  3903 | 
+  3904 |     for (let i = 1; i <= index; i++) {
+  3905 |             await this.reviewFlaggedItemsButton.click();
+  3906 |             await this.closeNotes.click();
+  3907 |             await this.iDontKnowButton.click();
+  3908 |             await this.clickCorrectOption();
+  3909 |             await this.reviewDoneButton.click();                  
+  3910 |             }
+  3911 | 
+  3912 |             await this.page.waitForTimeout(500);
+  3913 |             await this.launchTestAndResolveButton.click();
+  3914 |             await this.page.waitForTimeout(500);
+  3915 |             for (let i = 1; i <= index; i++) {
+  3916 |                await this.iDontKnowButton.click();
+  3917 |                await this.plainNextButtonOrEndButton.click();
+  3918 |             }
+  3919 | 
+  3920 |   }
+  3921 |    
+  3922 |     async reviewMethodForOtherSSPs(index:number){
+  3923 |         let i =1;
+  3924 |            for (i = 1; i <= index; i++) {
+  3925 |             await this.reviewFlaggedItemsButton.click();
+  3926 |             await this.page.waitForTimeout(500);
+  3927 |             await this.closeNotes.click();
+  3928 |             await this.page.waitForTimeout(500);
+  3929 |             await this.reviewDoneButton.click();
+  3930 |             await this.page.waitForTimeout(500);
+  3931 |           }
+  3932 |           if(i===4){
+  3933 |             await this.continueLink.click();
+  3934 |             await this.page.waitForTimeout(500);
+  3935 |           }
+  3936 | 
+  3937 |   }
+  3938 | 
+  3939 |   async addTestFromMainNavgation(testName1: string) {
+  3940 |     await this.mainNavigation.click();
+  3941 |     await this.mainNavigationTests.click();
+  3942 |     await this.addTestButtonFromMainNavigation.click();
+  3943 |       await this.page.locator(`//button[@aria-label = '${testName1}']`).click();
+  3944 |     await this.page.waitForTimeout(1000);
+  3945 |     const testButton = this.page
+  3946 |       .locator("//div[@class='TestList_mcs_testName']")
+  3947 |       .getByText(testName1, { exact: true });
+  3948 |     await this.addTestsButton.click();
+  3949 |     await testButton.waitFor({ state: "visible", timeout: 10000 });
+  3950 |     await testButton.click();
+  3951 |     await this.letsBeginButton.click();
+  3952 |     await this.page.waitForTimeout(1000);
+  3953 |     await this.startTestButton.click();
+  3954 |   }
+  3955 |     async endSessionForScoreError(childPage,typeOfTest:string) {
+  3956 |             await this.endSessionButton.click();
+  3957 |             await this.endSessionReviewButton.waitFor({
+  3958 |                 state: "attached",
+  3959 |                 timeout: 80000,
+  3960 |             });
+  3961 |             await this.endSessionReviewButton.click();
+  3962 |             await this.submitTestSetAndFinishAdministration.click();
+  3963 |             await this.completeTestSessionObservationsAndClickNext(typeOfTest);
+  3964 |             await childPage.switchToTheChildScreenAndWaitUntilToSeeTheJoinSessionButton();
+  3965 |         }
+  3966 | 
+  3967 |     async endSessionForScoreErrorCheck(examinee_ID: string, browser, testName: string) {
+  3968 |         await this.endSessionButton.click();
+  3969 |         await this.endSessionReviewButton.click();
+  3970 |         await expect(this.needsAttentionText).toBeVisible();
+  3971 |         await this.exitReviewModeButton.click();
+> 3972 |         await this.page.locator(`//span[starts-with(text(),'${examinee_ID}')]/ancestor::button`).click();
+       |                                                                                                  ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  3973 |         const ipad7 = devices["iPad (gen 7) landscape"];
+  3974 |         const sessionId = await this.dashboardPage.getSessionID();
+  3975 |         const examineeContext = await browser.newContext({...ipad7, viewport: { width: 600, height: 800 }});
+  3976 |         const examineePage = await examineeContext.newPage();
+  3977 |         const studentPage = new StudentPage(examineePage, sessionId);
+  3978 |         await examineePage.goto(getExamineeURL());
+  3979 |         await studentPage.joinSessionUsingSessionID();
+  3980 |         await studentPage.clickOnAcceptButton();
+  3981 |         await this.page.bringToFront();
+  3982 |         await this.page.waitForTimeout(2000);
+  3983 |         await this.mainNavigation.click();
+  3984 |         await this.mainNavigationTests.click();
+  3985 |         const testButton = this.page
+  3986 |             .locator("//div[@class='TestList_mcs_testName']")
+  3987 |             .getByText(testName, { exact: true });
+  3988 |         await testButton.waitFor({ state: "visible", timeout: 10000 });
+  3989 |         await testButton.click();
+  3990 |         await this.letsBeginButton.click();
+  3991 |         await this.page.waitForTimeout(1000);
+  3992 |     }
+  3993 | 
+  3994 |   async reroutingUsingLeftNavForBlockTests(
+  3995 |     typeOfTest: string,
+  3996 |     totalItems: number,
+  3997 |     logicIndex: number,
+  3998 |     incorrectIndex: number,
+  3999 |     index: number,
+  4000 |     testStemForm: string,
+  4001 |     firstItem: number | string,
+  4002 |     lastItem?: number | string,
+  4003 |     correctIndex?: number,
+  4004 |     examinee_ID?: string,
+  4005 |     testName?: string,
+  4006 |     browser?: Browser,
+  4007 |     firstPicture?: number,
+  4008 |     lastPicture?: number
+  4009 | 
+  4010 |   ) {
+  4011 |     let incorrectCount = 0;
+  4012 |     let correctCount = 0;
+  4013 | 
+  4014 |     const notesActions = [
+  4015 |       { note: "Item", selectOption: "item" },
+  4016 |       { note: "Test", selectOption: "test" },
+  4017 |       { note: "Test Set", selectOption: "testBlock" }
+  4018 |     ];
+  4019 | 
+  4020 |     await this.page.waitForTimeout(1000);
+  4021 | 
+  4022 |     while (await this.plainNextButtonOrEndButton.isVisible()) {
+  4023 |       await this.page.waitForTimeout(2000);
+  4024 |       const itemDetails: string = (await this.itemDetails.textContent())!;
+  4025 |       console.log(itemDetails);
+  4026 | 
+  4027 |       if (typeOfTest.match(/Flag Item with Notes and Review scenario/i)) {
+  4028 |         if ((testStemForm.match(/BLKROT.W5PA|BLKROT.W5NV/) && /^Introduction (1|2|4)/.test(itemDetails)) || (testStemForm.match(/MATRCZ.W5PA|MATRCZ.W5NV/) && itemDetails.startsWith("Introduction"))) {
+  4029 |           await this.activateTabletControlButton.click();
+  4030 |           await this.videoPlayButton.click();
+  4031 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4032 |         } else if (testStemForm.match(/ANLSYN.W5PA|ANLSYN.W5NV|CONFRM.W5PA/) && (itemDetails.startsWith("Introduction"))) {
+  4033 |           await this.activateTabletControlButton.click();
+  4034 |           await this.videoPlayButton.click();
+  4035 |           await this.waitTillVideoIsComplete();
+  4036 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4037 |        } else if (testStemForm.match(/ANLSYN.W5NV/) && /^Color Pretest\s*$/.test(itemDetails)) {
+  4038 |           await this.videoPlayButton.click();
+  4039 |           await this.waitTillVideoIsComplete();
+  4040 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4041 |         } else if (testStemForm.match(/ANLSYN.W5PA|ANLSYN.W5NV/) && (itemDetails.includes("Color Pretest"))) {
+  4042 |           await this.correctOptionButton.nth(0).click();
+  4043 |         } else if (itemDetails.startsWith("Sample")) {
+  4044 |           await this.correctOptionButton.nth(0).click();
+  4045 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4046 |         } else if (itemDetails.endsWith("Presentation")) {
+  4047 |           if (testStemForm.match('PARCMP.W5PA')) {
+  4048 |             await this.examineeCursorButton.click();
+  4049 |             await this.doneButton.click();
+  4050 |           }
+  4051 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4052 |         } else if (itemDetails.includes("Item") || itemDetails.match(new RegExp(`Block\\s+[A-Z],\\s+Item\\s+\\d+`)) || itemDetails.match(new RegExp(`Story\\s+\\d+,\\s+Item\\s+\\d+`))) {
+  4053 |           for (let i = 1; i <= incorrectIndex; i++) {
+  4054 |             await this.page.waitForTimeout(2000);
+  4055 |             let currentItemDetails = await this.itemDetails.textContent();
+  4056 |             if ((testStemForm.match(/BLKROT.W5PA|BLKROT.W5NV/) && /^Introduction (1|2|4)/.test(currentItemDetails)) || (testStemForm.match(/MATRCZ.W5PA|MATRCZ.W5NV/) && currentItemDetails.startsWith("Introduction"))) {
+  4057 |               await this.page.waitForTimeout(1000);
+  4058 |               await this.activateTabletControlButton.click();
+  4059 |               await this.videoPlayButton.click();
+  4060 |             } else if (testStemForm.match(/ANLSYN.W5PA|ANLSYN.W5NV|CONFRM.W5PA/) && (currentItemDetails.startsWith("Introduction"))) {
+  4061 |               await this.videoPlayButton.click();
+  4062 |               await this.waitTillVideoIsComplete();
+  4063 |             } else if (currentItemDetails.includes("Introduction")) {
+  4064 |               await this.page.waitForTimeout(2000);
+  4065 |             } else if (currentItemDetails.startsWith("Sample")) {
+  4066 |               await this.page.waitForTimeout(5000);
+  4067 |               await this.correctOptionButton.nth(0).click();
+  4068 |               await this.page.waitForTimeout(1000);
+  4069 |             } else if (currentItemDetails.includes("Introduction 2") && testStemForm.match('/ORLSMP.W5PA')) {
+  4070 |               await this.page.waitForTimeout(1000);
+  4071 |             } else if (currentItemDetails.includes("Item") || currentItemDetails.endsWith("Presentation") || currentItemDetails.match(new RegExp(`Block\\s+[A-Z],\\s+Item\\s+\\d+`)) || currentItemDetails.match(new RegExp(`Story\\s+\\d+,\\s+Item\\s+\\d+`))) {
+  4072 |               await this.page.waitForTimeout(1000);
+```

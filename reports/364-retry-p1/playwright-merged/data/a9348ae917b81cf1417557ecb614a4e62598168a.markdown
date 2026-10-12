@@ -1,0 +1,344 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ReroutingandLeftNav/PICVOC_Rerouting.spec.ts >>  PICVOC Rerouting and LeftNav >> Age 15 to Average Adult -  Flag Item with Notes and Review scenario for SSP6 Test Rerouting
+- Location: src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:10:13
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 120000ms exceeded.
+Call log:
+  - waiting for locator('div[style*=\'visible\']>span[class=\'loading-icon\']') to be hidden
+    243 × locator resolved to visible <span class="loading-icon"></span>
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 01PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "01PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "No Test Assignments have been created." [ref=e74] [cursor=pointer]:
+                    - cell "No Test Assignments have been created." [ref=e75]
+            - generic [ref=e76]:
+              - generic [ref=e79]:
+                - img [ref=e80]
+                - heading "Notifications Center" [level=2] [ref=e84]
+              - generic [ref=e85]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - heading "Resources" [level=3] [ref=e92]
+                - list [ref=e93]:
+                  - listitem [ref=e94]:
+                    - button "Riverside Learn" [ref=e95] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e96]
+                      - img [ref=e98]
+                  - listitem [ref=e100]:
+                    - button "Onboarding Tutorial Videos" [ref=e101] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e102]
+                      - img [ref=e104]
+                  - listitem [ref=e106]:
+                    - button "Quick Reference Guides" [ref=e107] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e108]
+                      - img [ref=e110]
+                - button "View All" [ref=e113] [cursor=pointer]
+      - contentinfo [ref=e114]:
+        - generic [ref=e115]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e116] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e117]
+        - generic [ref=e118]:
+          - link "Riverside Insights Facebook" [ref=e119] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e120]
+          - link "Riverside Insights Twitter" [ref=e121] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e122]
+          - link "Riverside Insights LinkedIn" [ref=e123] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e124]
+          - link "Riverside Insights Instagram" [ref=e125] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e126]
+        - generic [ref=e127]:
+          - button "Leave Feedback" [ref=e128] [cursor=pointer]
+          - generic [ref=e129]: "|"
+          - link "Terms of Use" [ref=e130] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e131]: "|"
+          - link "Privacy Policy" [ref=e132] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e133]: Footer region end
+```
+
+# Test source
+
+```ts
+  77  |   async getAllTestNames(): Promise<string[]> {
+  78  |     await expect
+  79  |       .poll(async () => await this.testSetLevel3Checkboxes.count(), {
+  80  |         message: 'Waiting for the All Tests list to render',
+  81  |         timeout: 15_000,
+  82  |       })
+  83  |       .toBeGreaterThan(0);
+  84  |     return (
+  85  |       await this.testSetLevel3Checkboxes.evaluateAll(nodes => nodes.map(n => n.getAttribute('aria-label') ?? ''))
+  86  |     ).filter(Boolean);
+  87  |   }
+  88  | 
+  89  |   async clickClose() {
+  90  |     await this.page.waitForTimeout(2000);
+  91  |     await this.timerCloseButton.click();
+  92  |   }
+  93  | 
+  94  |   async selectAllTests(): Promise<void> {
+  95  |     await this.page.waitForLoadState('domcontentloaded');
+  96  |     await this.page.waitForTimeout(1000);
+  97  | 
+  98  |     await expect
+  99  |       .poll(
+  100 |         async () => await this.checkboxes.count(),
+  101 |         {
+  102 |           message: 'Waiting for checkbox count to be greater than 0',
+  103 |           timeout: 10_000
+  104 |         }
+  105 |       )
+  106 |       .toBeGreaterThan(0);
+  107 | 
+  108 |     const checkboxCount = await this.checkboxes.count();
+  109 |     RawValueLogger.log(`Found ${checkboxCount} checkboxes`);
+  110 | 
+  111 |     for (let i = 0; i < checkboxCount; i++) {
+  112 |       if (i === 7 || i === 24) continue;
+  113 | 
+  114 |       const checkbox = this.checkboxes.nth(i);
+  115 |       await checkbox.scrollIntoViewIfNeeded();
+  116 |       await checkbox.click();
+  117 |     }
+  118 |   }
+  119 | 
+  120 | 
+  121 |   async selectTheRequiredTests(testname: string | string[]) {
+  122 | 
+  123 |     await this.page.waitForLoadState('domcontentloaded');
+  124 |     await this.page.waitForTimeout(1000);
+  125 | 
+  126 |     await expect
+  127 |       .poll(
+  128 |         async () => await this.checkboxes.count(),
+  129 |         {
+  130 |           message: 'Waiting for checkbox count to be greater than 0',
+  131 |           timeout: 10_000
+  132 |         }
+  133 |       )
+  134 |       .toBeGreaterThan(0);
+  135 | 
+  136 |     const checkboxCount = await this.checkboxes.count();
+  137 |     console.log(`Found ${checkboxCount} checkboxes`);
+  138 |     const testNames = Array.isArray(testname) ? testname : [testname];
+  139 |     const defaultExcludedTests = ["Oral Vocabulary–Antonyms", "General Information–What"];
+  140 |     const checkboxLabels: string[] = [];
+  141 |     for (let i = 0; i < checkboxCount; i++) {
+  142 |       checkboxLabels.push((await this.checkboxes.nth(i).getAttribute("aria-label")) ?.trim() ?? "");
+  143 |     }
+  144 |     for (const name of testNames) {
+  145 |       const matchIndex = checkboxLabels.findIndex(label =>
+  146 |         label === name &&
+  147 |         (!defaultExcludedTests.includes(label) || testNames.includes(label))
+  148 |       );
+  149 | 
+  150 |       if (matchIndex === -1) {
+  151 |         console.log(`No matching checkbox found for: ${name}`);
+  152 |         continue;
+  153 |       }
+  154 | 
+  155 |       await this.checkboxes.nth(matchIndex).click();
+  156 |       console.log(`Selected test: ${checkboxLabels[matchIndex]}`);
+  157 |     }
+  158 |   }
+  159 | 
+  160 | async createRandomTestSetWithAllTheTests(testname?:string) {
+  161 |   await this.page.bringToFront();
+  162 |   await this.clickTestSetsOnMenu();
+  163 |   await this.clickOnCreateNewTestSetButton();
+  164 |   await this.clickOnAllTestsTab();
+  165 |   if(testname) {
+  166 |     await this.selectTheRequiredTests(testname);
+  167 |   } else {
+  168 |     await this.selectAllTests();
+  169 |   }
+  170 |   await this.clickOnSaveButton();
+  171 |   TestSetsPage.tSetName = `${faker.person.fullName()}_${Date.now()}`;
+  172 |   await this.testSetName.fill(TestSetsPage.tSetName);
+  173 |   await this.clickOnSaveTestSetNameButton.click();
+  174 |   await this.clickClose();
+  175 |   await this.examinees.click();
+  176 |   await this.page.waitForLoadState("domcontentloaded");
+> 177 |   await this.dashboardLoadingSpinnerIcon.waitFor({ state: "hidden", timeout: 2 * 60 * 1000 });
+      |                                          ^ TimeoutError: locator.waitFor: Timeout 120000ms exceeded.
+  178 |   return TestSetsPage.tSetName;
+  179 | }
+  180 | 
+  181 | async selectEveryTest(): Promise<number> {
+  182 |   await this.page.waitForLoadState('domcontentloaded');
+  183 |   await this.page.waitForTimeout(1000);
+  184 | 
+  185 |   await expect
+  186 |     .poll(
+  187 |       async () => await this.checkboxes.count(),
+  188 |       {
+  189 |         message: 'Waiting for the All Tests list to render',
+  190 |         timeout: 10_000
+  191 |       }
+  192 |     )
+  193 |     .toBeGreaterThan(0);
+  194 | 
+  195 |   const checkboxCount = await this.checkboxes.count();
+  196 |   RawValueLogger.log(`selectEveryTest: Found ${checkboxCount} checkboxes`);
+  197 | 
+  198 |   for (let i = 0; i < checkboxCount; i++) {
+  199 |     const checkbox = this.checkboxes.nth(i);
+  200 |     await checkbox.scrollIntoViewIfNeeded();
+  201 |     await checkbox.click();
+  202 |   }
+  203 | 
+  204 |   return checkboxCount;
+  205 | }
+  206 | 
+  207 | async createTestSetWithAllTests(testSetName: string): Promise<string> {
+  208 |   await this.page.bringToFront();
+  209 |   await this.clickTestSetsOnMenu();
+  210 |   await this.clickOnCreateNewTestSetButton();
+  211 |   await this.clickOnAllTestsTab();
+  212 |   await this.selectEveryTest();
+  213 |   await this.clickOnSaveButton();
+  214 |   await this.testSetName.fill(testSetName);
+  215 |   await this.clickOnSaveTestSetNameButton.click();
+  216 |   await this.clickClose();
+  217 |   return testSetName;
+  218 | }
+  219 | 
+  220 | async selectTheRequiredTestsExact(testNames: string[]) {
+  221 |   await this.page.waitForLoadState('domcontentloaded');
+  222 |   await this.page.waitForTimeout(1000);
+  223 | 
+  224 |   await expect
+  225 |     .poll(
+  226 |       async () => await this.checkboxes.count(),
+  227 |       {
+  228 |         message: 'Waiting for checkbox count to be greater than 0',
+  229 |         timeout: 10_000,
+  230 |       },
+  231 |     )
+  232 |     .toBeGreaterThan(0);
+  233 | 
+  234 |   const normalizeDash = (s: string) => s.replace(/[–—]/g, '-');
+  235 |   const targetSet = new Set(testNames.map(normalizeDash));
+  236 | 
+  237 |   const checkboxCount = await this.checkboxes.count();
+  238 |   RawValueLogger.log(`selectTheRequiredTestsExact: Found ${checkboxCount} checkboxes`);
+  239 | 
+  240 |   for (let i = 0; i < checkboxCount; i++) {
+  241 |     const testLabel = await this.checkboxes.nth(i).getAttribute('aria-label');
+  242 |     if (testLabel && targetSet.has(normalizeDash(testLabel))) {
+  243 |       await this.checkboxes.nth(i).scrollIntoViewIfNeeded();
+  244 |       await this.checkboxes.nth(i).click();
+  245 |       RawValueLogger.log(`Selected (exact): ${testLabel}`);
+  246 |     }
+  247 |   }
+  248 | }
+  249 | 
+  250 | async createRandomTestSetWithExactTests(testNames: string[]) {
+  251 |   await this.page.bringToFront();
+  252 |   await this.clickTestSetsOnMenu();
+  253 |   await this.clickOnCreateNewTestSetButton();
+  254 |   await this.clickOnAllTestsTab();
+  255 |   await this.selectTheRequiredTestsExact(testNames);
+  256 |   await this.clickOnSaveButton();
+  257 |   const randomSuffix = Math.random().toString(36).slice(2, 8);
+  258 |   TestSetsPage.tSetName = `AutoTest_${randomSuffix}`;
+  259 |   await this.testSetName.fill(TestSetsPage.tSetName);
+  260 |   await this.clickOnSaveTestSetNameButton.click();
+  261 |   await this.clickClose();
+  262 |   await this.examinees.click();
+  263 |   await this.page.waitForLoadState("domcontentloaded");
+  264 |   await this.dashboardLoadingSpinnerIcon.waitFor({ state: "hidden", timeout: 2 * 60 * 1000 });
+  265 |   return TestSetsPage.tSetName;
+  266 | }
+  267 | 
+  268 |   async createTestAssignmentFromExamineeManagement(examineeID: string, education: string, normBasis: string, testSet: string = TestSetsPage.tSetName, launchAssignment: boolean = true) {
+  269 |     await this.page.waitForLoadState("domcontentloaded");
+  270 |     await this.dashboardLoadingSpinnerIcon.waitFor({ state: "hidden", timeout: 2 * 60 * 1000 });
+  271 |     await this.createTestAssignmentFromExamineePage.click();
+  272 |     await this.dashboardPage.selectExaminee(examineeID);
+  273 |     await this.clickOnNextButton();
+  274 |     await this.selectTestSet(testSet);
+  275 |     await this.clickOnNextButton();
+  276 |     await this.selectEducation(education);
+  277 |     await this.dashboardPage.selectNormBasis(normBasis);
+```

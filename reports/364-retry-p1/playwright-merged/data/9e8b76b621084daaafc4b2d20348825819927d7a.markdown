@@ -1,0 +1,358 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ReroutingandLeftNav/NUMSER_Rerouting.spec.ts >>  NUMSER Rerouting and LeftNav >> Age 11 to Adult - Flag Item with Notes and Review scenario for SSP5 Test Rerouting
+- Location: src/tests/ReroutingandLeftNav/NUMSER_Rerouting.spec.ts:10:13
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "0 items"
+Received string:    " 2 Items"
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "Examinee completed all required test items"
+Received string:    "2 Items"
+```
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Matcher error: received value must not be null nor undefined
+
+Received has value: undefined
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 01PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "01PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "No Test Assignments have been created." [ref=e74] [cursor=pointer]:
+                    - cell "No Test Assignments have been created." [ref=e75]
+            - generic [ref=e76]:
+              - generic [ref=e79]:
+                - img [ref=e80]
+                - heading "Notifications Center" [level=2] [ref=e84]
+              - generic [ref=e85]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - heading "Resources" [level=3] [ref=e92]
+                - list [ref=e93]:
+                  - listitem [ref=e94]:
+                    - button "Riverside Learn" [ref=e95] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e96]
+                      - img [ref=e98]
+                  - listitem [ref=e100]:
+                    - button "Onboarding Tutorial Videos" [ref=e101] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e102]
+                      - img [ref=e104]
+                  - listitem [ref=e106]:
+                    - button "Quick Reference Guides" [ref=e107] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e108]
+                      - img [ref=e110]
+                - button "View All" [ref=e113] [cursor=pointer]
+      - contentinfo [ref=e114]:
+        - generic [ref=e115]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e116] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e117]
+        - generic [ref=e118]:
+          - link "Riverside Insights Facebook" [ref=e119] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e120]
+          - link "Riverside Insights Twitter" [ref=e121] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e122]
+          - link "Riverside Insights LinkedIn" [ref=e123] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e124]
+          - link "Riverside Insights Instagram" [ref=e125] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e126]
+        - generic [ref=e127]:
+          - button "Leave Feedback" [ref=e128] [cursor=pointer]
+          - generic [ref=e129]: "|"
+          - link "Terms of Use" [ref=e130] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e131]: "|"
+          - link "Privacy Policy" [ref=e132] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e133]: Footer region end
+```
+
+# Test source
+
+```ts
+  6548 |         .soft(await this.endTestPopUpElements.nth(9).textContent())
+  6549 |         .toContain(FlagsText);
+  6550 |       expect
+  6551 |         .soft(await this.endTestPopUpElements.nth(14).textContent())
+  6552 |         .toContain(OutcomeMsg);
+  6553 |       await this.endTestPopUpElements.nth(18).click();
+  6554 |     } else if (
+  6555 |       testStemForm === "SEMRET.W5PA" || testStemForm === "PHNRET.W5PA" ||testStemForm === "SEMRET.W5PX"   ||testStemForm === "PHNRET.W5PX")
+  6556 |      {
+  6557 |       expect
+  6558 |         .soft(await this.endTestPopUpElements.nth(9).textContent())
+  6559 |         .toContain(FlagsText);
+  6560 |       expect
+  6561 |         .soft(await this.endTestPopUpElements.nth(14).textContent())
+  6562 |         .toContain(OutcomeMsg);
+  6563 |       await this.endTestPopUpElements.nth(16).click();
+  6564 |     } else if 
+  6565 |       (testStemForm === "MAGCMP.W5PA" || testStemForm === "MAGCMP.W5PX") {
+  6566 |       expect
+  6567 |         .soft(await this.endTestPopUpElements.nth(9).textContent())
+  6568 |         .toContain(FlagsText);
+  6569 |       expect
+  6570 |         .soft(await this.endTestPopUpElements.nth(14).textContent())
+  6571 |         .toContain(OutcomeMsg);
+  6572 |       await this.endTestPopUpElements.nth(17).click();
+  6573 |     }else if 
+  6574 |       (testStemForm === "VWKMEM.W5PA") {
+  6575 |       expect
+  6576 |         .soft(await this.endTestPopUpElements.nth(8).textContent())
+  6577 |         .toContain(FlagsText);
+  6578 |       expect
+  6579 |         .soft(await this.endTestPopUpElements.nth(13).textContent())
+  6580 |         .toContain(OutcomeMsg);
+  6581 |       await this.endTestPopUpElements.nth(17).click();
+  6582 |     }else if (testNames1.includes(testStemForm)) {
+  6583 |       expect
+  6584 |         .soft(await this.endTestPopUpElements.nth(11).textContent())
+  6585 |         .toContain(FlagsText);
+  6586 |       expect
+  6587 |         .soft(await this.endTestPopUpElements.nth(16).textContent())
+  6588 |         .toContain(OutcomeMsg);
+  6589 |       await this.endTestPopUpElements.nth(19).click();
+  6590 |     } else if(testStemForm === "BLKROT.W5PA|BLKROT.W5NV" &&
+  6591 |         typeOfTest.match(
+  6592 |             /Answer only one sample item for SSP(1|2|3)/i
+  6593 |         )) {
+  6594 |         expect
+  6595 |             .soft(await this.endTestPopUpElements.nth(9).textContent())
+  6596 |             .toContain(FlagsText);
+  6597 |         expect
+  6598 |             .soft(await this.endTestPopUpElements.nth(14).textContent())
+  6599 |             .toContain(OutcomeMsg);
+  6600 |         await this.endTestPopUpElements.nth(17).click();
+  6601 |     } else {
+  6602 |       expect
+  6603 |         .soft(await this.endTestPopUpElements.nth(8).textContent())
+  6604 |         .toContain(FlagsText);
+  6605 |       expect
+  6606 |         .soft(await this.endTestPopUpElements.nth(13).textContent())
+  6607 |         .toContain(OutcomeMsg);
+  6608 |       if (testNames1.includes(testStemForm)) {
+  6609 |         await this.endTestPopUpElements.nth(17).click();
+  6610 |       } else if (testNames2.includes(testStemForm)) {
+  6611 |         await this.endTestPopUpElements.nth(18).click();
+  6612 |       } else if (
+  6613 |         (testStemForm === "STYCMP.W5PA" &&
+  6614 |           typeOfTest.match(/Sample Item EndTest Flow when RS is (0|1)/i)) ||
+  6615 |         (testStemForm === "WRDATK.W5PA" &&
+  6616 |           typeOfTest.match(/Block A End Test Flow with 2 correct Scenario for SSP1|Block A End Test Flow with Samples and Items administered wrong scenario for SSP1|Sample A correct !C scenario SSP1/i)) ||
+  6617 |         (testStemForm === "PSGCMP.W5PA" &&
+  6618 |           typeOfTest.match(/5 Lowest incorrect items (SSP2|SSP3|SSP4|SSP5|SSP6)|Reverse Logic (SSP2|SSP3|SSP4|SSP5|SSP6)|5 correct 5 incorrect-Block B All incorrect-Block A SSP2|Score Error Scenario for (SSP2|SSP3|SSP4|SSP5|SSP6)/i)) ||
+  6619 |         (testStemForm === "LWIDNT.W5PA" &&
+  6620 |           typeOfTest.match(/lowest incorrect items SSP1|1 correct 1 incorrect SSP1/i)) ||
+  6621 |         (testStemForm === "MPRBID.W5PA" &&
+  6622 |           typeOfTest.match(
+  6623 |             /Sample Items AB discontinue Scenario for SSP (1|2|3)/i
+  6624 |           ))
+  6625 |       ) {
+  6626 |         await this.endTestPopUpElements.nth(16).click();
+  6627 |       } else if 
+  6628 |         (testStemForm === "MAGCMP.W5PA" || testStemForm === "MAGCMP.W5PX" || testStemForm === "VAL.W5PA" || (testStemForm === "CALC.W5PA" && typeOfTest.match(/CALC Sample End Test scenario for SSP1/i))) {
+  6629 |         await this.endTestPopUpElements.nth(17).click();
+  6630 |       } else {
+  6631 |         await this.endTestPopUpElements.nth(15).click();
+  6632 |       }
+  6633 |     }
+  6634 |     const rsbelements = await this.page.locator(
+  6635 |       "//button[@class='rsi-checkbox']"
+  6636 |     );
+  6637 |     const count = await rsbelements.count();
+  6638 |     // Array to store text contents
+  6639 |     const responseStyleBehaviours: string[] = [];
+  6640 |     // Iterate over each element and fetch text content
+  6641 |     for (let i = 0; i < count; i++) {
+  6642 |       const element = rsbelements.nth(i);
+  6643 |       const textContent = await element.textContent();
+  6644 |       responseStyleBehaviours.push(textContent?.trim() || "");
+  6645 |     }
+  6646 |     console.log(responseStyleBehaviours);
+  6647 |     rsb.forEach((rsbehaviourText, index) => {
+> 6648 |       expect(responseStyleBehaviours[index]).toContain(rsbehaviourText);
+       |                                              ^ Error: expect(received).toContain(expected) // indexOf
+  6649 |     });
+  6650 |     if (testNames.includes(testStemForm)) {
+  6651 |       await this.endTestPopUpElements.nth(17).click();
+  6652 |     } else if (testNames2.includes(testStemForm)) {
+  6653 |       await this.endTestPopUpElements.nth(18).click();
+  6654 |     } else if (testNames1.includes(testStemForm)) {
+  6655 |       await this.endTestPopUpElements.nth(19).click();
+  6656 |     } else if (
+  6657 |       (testStemForm === "STYCMP.W5PA" &&
+  6658 |         typeOfTest.match(/Sample Item EndTest Flow when RS is (0|1)/i)) ||
+  6659 |       (testStemForm === "WRDATK.W5PA" &&
+  6660 |         typeOfTest.match(/Block A End Test Flow with 2 correct Scenario for SSP1|Block A End Test Flow with Samples and Items administered wrong scenario for SSP1|Sample A correct !C scenario SSP1/i)) ||
+  6661 |       (testStemForm === "PSGCMP.W5PA" &&
+  6662 |         typeOfTest.match(/5 Lowest incorrect items (SSP2|SSP3|SSP4|SSP5|SSP6)|Reverse Logic (SSP2|SSP3|SSP4|SSP5|SSP6)|5 correct 5 incorrect-Block B All incorrect-Block A SSP2|Score Error Scenario for (SSP2|SSP3|SSP4|SPP5|SSP6)/i)) ||
+  6663 |       (testStemForm === "LWIDNT.W5PA" &&
+  6664 |         typeOfTest.match(/Lowest incorrect items SSP1|1 correct 1 incorrect SSP1/i)) ||
+  6665 |       (testStemForm === "SEMRET.W5PA" || testStemForm === "SEMRET.W5PX" || testStemForm === "PHNRET.W5PA"  || testStemForm === "PHNRET.W5PX" ) ||
+  6666 |       (testStemForm === "MPRBID.W5PA" &&
+  6667 |         typeOfTest.match(
+  6668 |           /Sample Items AB discontinue Scenario for SSP (1|2|3)/i
+  6669 |         ))
+  6670 |     ) {
+  6671 |       await this.endTestPopUpElements.nth(16).click();
+  6672 |     } else if 
+  6673 |       (testStemForm === "MAGCMP.W5PA" || testStemForm === "MAGCMP.W5PX"|| testStemForm === "VAL.W5PA"|| (testStemForm === "CALC.W5PA" && typeOfTest.match(/CALC Sample End Test scenario for SSP1/i))) {
+  6674 |       await this.endTestPopUpElements.nth(17).click();
+  6675 |     } else {
+  6676 |       await this.endTestPopUpElements.nth(15).click();
+  6677 |     }
+  6678 |     await this.page.waitForTimeout(2000);
+  6679 |   }
+  6680 | 
+  6681 |   async completeTestSessionObservationsAndClickNext(typeOfTest?: string, testStemForm?: string) {
+  6682 |     await this.page.bringToFront();
+  6683 |     if (await this.levelOfProficiency.isVisible()) {
+  6684 |     await this.page.waitForTimeout(1000);
+  6685 |     await this.selectTheCheckbox(0, "Examinee MAsk");
+  6686 |     await this.page.waitForTimeout(1000);
+  6687 |     await this.selectTheCheckbox(2, "examiner MAsk");
+  6688 |     await this.selectTheDropdownOption(
+  6689 |       0,
+  6690 |       "Advanced",
+  6691 |       "Level of Conversational Proficiency"
+  6692 |     );
+  6693 |     await this.selectTheDropdownOption(
+  6694 |       1,
+  6695 |       "Was uncooperative at times",
+  6696 |       "Level of Cooperation"
+  6697 |     );
+  6698 |     await this.selectTheDropdownOption(
+  6699 |       2,
+  6700 |       "Seemed lethargic",
+  6701 |       "Level of Activity"
+  6702 |     );
+  6703 |     await this.selectTheDropdownOption(
+  6704 |       3,
+  6705 |       "Appeared distracted some of the time",
+  6706 |       "Attention and Concentration"
+  6707 |     );
+  6708 |     await this.selectTheDropdownOption(
+  6709 |       4,
+  6710 |       "Appeared overly anxious",
+  6711 |       "Self-Confidence"
+  6712 |     );
+  6713 |     await this.selectTheDropdownOption(
+  6714 |       5,
+  6715 |       "Responded impulsively and carelessly",
+  6716 |       "Care in Responding"
+  6717 |     );
+  6718 |     await this.selectTheDropdownOption(
+  6719 |       6,
+  6720 |       "Made random guesses",
+  6721 |       "Response to Difficult Items and Corrective Feedback"
+  6722 |     );
+  6723 |     await this.selectTheDropdownOption(
+  6724 |       7,
+  6725 |       "Was resistant to tasks",
+  6726 |       "Motivation"
+  6727 |     );
+  6728 |     } 
+  6729 |    
+  6730 |     if (typeOfTest && typeOfTest.match(/Score Error Scenario|Score Later Error Scenario|Flag Item with Notes and Review scenario for Score Later|Practice Exercise !C scenario when Score Entry Equal To 5/i) && testStemForm !== "SWRTFL.W5PA" && testStemForm !== "SWRTFL.W5PB") {
+  6731 |     await this.nextButton.click();
+  6732 |     await this.submitTestSetAndFinishAdministration.last().click();
+  6733 |     } else {
+  6734 |     await this.submitTestSetAndFinishAdministration.last().click();
+  6735 |     }
+  6736 |   }
+  6737 | 
+  6738 |   async endSessionWithResponseStyleAndBehaviours() {
+  6739 |     await this.endSessionButton.click();
+  6740 |     await this.endSessionReviewButton.waitFor({
+  6741 |       state: "attached",
+  6742 |       timeout: 80000,
+  6743 |     });
+  6744 |     await this.endSessionReviewButton.click();
+  6745 |       await this.submitTestSetAndFinishAdministration.waitFor({
+  6746 |           state: "attached",
+  6747 |           timeout: 150000,
+  6748 |       });
+```

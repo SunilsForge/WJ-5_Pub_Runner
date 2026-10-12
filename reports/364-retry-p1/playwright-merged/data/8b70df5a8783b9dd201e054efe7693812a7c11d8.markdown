@@ -1,0 +1,357 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts >>  ORLSMP Rerouting and LeftNav >> Grade 3 to Adult - ORLSMP-Re-routing End Test scenario for SSP3 Test Rerouting
+- Location: src/tests/ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts:10:9
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('button.plain-button.next-item-button, button.plain-button.nav-button')
+    - locator resolved to <button disabled aria-live="polite" id="next-item-button" aria-label="Go on to " class="plain-button next-item-button">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    116 × waiting for element to be visible, enabled and stable
+        - element is not enabled
+      - retrying click action
+        - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S05PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S05PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "No Test Assignments have been created." [ref=e74] [cursor=pointer]:
+                    - cell "No Test Assignments have been created." [ref=e75]
+            - generic [ref=e76]:
+              - generic [ref=e79]:
+                - img [ref=e80]
+                - heading "Notifications Center" [level=2] [ref=e84]
+              - generic [ref=e85]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - heading "Resources" [level=3] [ref=e92]
+                - list [ref=e93]:
+                  - listitem [ref=e94]:
+                    - button "Riverside Learn" [ref=e95] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e96]
+                      - img [ref=e98]
+                  - listitem [ref=e100]:
+                    - button "Onboarding Tutorial Videos" [ref=e101] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e102]
+                      - img [ref=e104]
+                  - listitem [ref=e106]:
+                    - button "Quick Reference Guides" [ref=e107] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e108]
+                      - img [ref=e110]
+                - button "View All" [ref=e113] [cursor=pointer]
+      - contentinfo [ref=e114]:
+        - generic [ref=e115]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e116] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e117]
+        - generic [ref=e118]:
+          - link "Riverside Insights Facebook" [ref=e119] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e120]
+          - link "Riverside Insights Twitter" [ref=e121] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e122]
+          - link "Riverside Insights LinkedIn" [ref=e123] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e124]
+          - link "Riverside Insights Instagram" [ref=e125] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e126]
+        - generic [ref=e127]:
+          - button "Leave Feedback" [ref=e128] [cursor=pointer]
+          - generic [ref=e129]: "|"
+          - link "Terms of Use" [ref=e130] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e131]: "|"
+          - link "Privacy Policy" [ref=e132] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e133]: Footer region end
+```
+
+# Test source
+
+```ts
+  4680 |             await expect(this.examineeNotConnectedText).toBeVisible();
+  4681 |             expect(await this.examineeNotConnectedText.textContent()).toContain("Examinee Not Connected");
+  4682 |             await expect(this.backToReviewButton).toBeVisible();
+  4683 |             await expect(this.backToReviewButton).toBeEnabled();
+  4684 |           }
+  4685 |           else if (currentItemDetails.match(/Sample Item (A|B), Trial 1/i)) {
+  4686 |             await this.correctOptionButton.nth(0).click();
+  4687 |             await this.page.waitForTimeout(1000);
+  4688 |             await this.correctOptionButton.nth(0).isEnabled();
+  4689 |             await this.incorrectOptionButton.nth(0).isEnabled();
+  4690 |             await this.noResponse.isEnabled();
+  4691 |             await this.iDontKnowButton.click();
+  4692 |             await expect(this.correctOptionButton.nth(0)).toHaveAttribute("disabled", "");
+  4693 |             await expect(this.incorrectOptionButton.nth(0)).toHaveAttribute("disabled", "");
+  4694 |             await expect(this.noResponse.nth(0)).toHaveAttribute("disabled", "");
+  4695 |           } else if (/^Item [1-3]\b/.test(currentItemDetails)) {
+  4696 |             await this.correctOptionButton.nth(0).click();
+  4697 |             await this.iDontKnowButton.click();
+  4698 |             await expect(this.correctOptionButton.nth(0)).toHaveAttribute("disabled", "");
+  4699 |             await expect(this.incorrectOptionButton.nth(0)).toHaveAttribute("disabled", "");
+  4700 |             await expect(this.noResponse.nth(0)).toHaveAttribute("disabled", "");
+  4701 |           } else {
+  4702 |             await expect(this.correctOptionButton.nth(0)).toHaveAttribute("disabled", "");
+  4703 |             await expect(this.incorrectOptionButton.nth(0)).toHaveAttribute("disabled", "");
+  4704 |             await expect(this.iDontKnowButton).toHaveAttribute("disabled", "");
+  4705 |             await expect(this.noResponse).toHaveAttribute("disabled", "");
+  4706 |           }
+  4707 |         }
+  4708 |         break;
+  4709 |       }
+  4710 |        else if (typeOfTest.match(/ORLSMP Sample Items Correct and then Incorrect Scenario/i)) {
+  4711 |         if (itemDetails.startsWith("Intro")) {
+  4712 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4713 |         } else if (itemDetails.includes("Sample")) {
+  4714 |           await this.correctOptionButton.nth(0).click();
+  4715 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4716 |         } else if (typeOfTest.match(/ORLSMP Sample Items Correct and then Incorrect Scenario for SSP1/i)) {
+  4717 |           if (/Block A, Item [1-3]\b/.test(itemDetails)) {
+  4718 |             await this.correctOptionButton.nth(0).click();
+  4719 |           } else if (itemDetails.match("Block A, Item 4")) {
+  4720 |             await this.leftNavAllItems.nth(1).click();
+  4721 |             await this.correctOptionButton.nth(0).click();
+  4722 |             await this.page.waitForTimeout(1000);
+  4723 |             await this.iDontKnowButton.click();
+  4724 |             await expect.soft(this.nextText).toHaveText("Block A, Item 4");
+  4725 |             await this.plainNextButtonOrEndButton.click();
+  4726 |             await this.page.waitForTimeout(1000);
+  4727 |             await this.iDontKnowButton.click();
+  4728 |           }
+  4729 |         } else if (typeOfTest.match(/ORLSMP Sample Items Correct and then Incorrect Scenario for SSP2/i)) {
+  4730 |           if (/Block B, Item [1-4]\b/.test(itemDetails)) {
+  4731 |             await this.correctOptionButton.nth(0).click();
+  4732 |             await this.page.waitForTimeout(1000);
+  4733 |           } else if (itemDetails.match("Block B, Item 5")) {
+  4734 |             await this.leftNavAllItems.nth(5).click();
+  4735 |             await this.page.waitForTimeout(1000);
+  4736 |             await this.correctOptionButton.nth(0).click();
+  4737 |             await this.page.waitForTimeout(1000);
+  4738 |             await this.iDontKnowButton.click();
+  4739 |             await expect.soft(this.nextText).toHaveText("Block B, Item 5");
+  4740 |             await this.page.waitForTimeout(1000);
+  4741 |             await this.plainNextButtonOrEndButton.click();
+  4742 |             await this.page.waitForTimeout(1000);
+  4743 |             await this.correctOptionButton.nth(0).click();
+  4744 |             await this.page.waitForTimeout(1000);
+  4745 |             await this.plainNextButtonOrEndButton.click();
+  4746 |           } else if (/Block C, Item ([1-9]|1[0-2])\b/.test(itemDetails)) {
+  4747 |             await this.iDontKnowButton.click();
+  4748 |           }
+  4749 |         } else if (typeOfTest.match(/ORLSMP Sample Items Correct and then Incorrect Scenario for SSP3/i)) {
+  4750 |           if (/Block C, Item [1-4]\b/.test(itemDetails)) {
+  4751 |             await this.correctOptionButton.nth(0).click();
+  4752 |             await this.page.waitForTimeout(1000);
+  4753 |           } else if (itemDetails.match("Block C, Item 5")) {
+  4754 |             await this.leftNavAllItems.nth(13).click();
+  4755 |             await this.page.waitForTimeout(1000);
+  4756 |             await this.correctOptionButton.nth(0).click();
+  4757 |             await this.page.waitForTimeout(1000);
+  4758 |             await this.iDontKnowButton.click();
+  4759 |             await expect.soft(this.nextText).toHaveText("Block C, Item 5");
+  4760 |             await this.page.waitForTimeout(1000);
+  4761 |             await this.plainNextButtonOrEndButton.click();
+  4762 |             await this.page.waitForTimeout(1000);
+  4763 |             await this.correctOptionButton.nth(0).click();
+  4764 |             await this.page.waitForTimeout(1000);
+  4765 |             await this.plainNextButtonOrEndButton.click();
+  4766 |           } if (/Block C, Item ([5-9]|1[0-2])\b/.test(itemDetails)) {
+  4767 |             await this.iDontKnowButton.click();
+  4768 |           }
+  4769 |         }
+  4770 |       } else if (typeOfTest.match(/ORLSMP-Re-routing End Test scenario/i)) {
+  4771 | 
+  4772 |         if (itemDetails.startsWith("Intro")) {
+  4773 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4774 |         } else if (itemDetails.startsWith("Sample")) {
+  4775 |           await this.correctOptionButton.nth(0).click();
+  4776 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4777 |         } else if (itemDetails.includes("Block ") || itemDetails.includes("Item")) {
+  4778 |           for (let i = 1; i <= index; i++) {
+  4779 |             await this.correctOptionButton.nth(0).click();
+> 4780 |             await this.plainNextButtonOrEndButton.click();
+       |                                                   ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  4781 |           }
+  4782 |           if (!(typeOfTest.match(/ORLSMP-Re-routing End Test scenario for SSP3/i))) {
+  4783 |             await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4784 |             await this.plainNextButtonOrEndButton.click();
+  4785 |             await this.correctOptionButton.nth(0).click();
+  4786 |             await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4787 |             await this.plainNextButtonOrEndButton.click();
+  4788 |           }
+  4789 | 
+  4790 |           for (let j = 1; j < incorrectIndex; j++) {
+  4791 |             await this.iDontKnowButton.click();
+  4792 |             await this.plainNextButtonOrEndButton.click();
+  4793 |           }
+  4794 |           await this.iDontKnowButton.click();
+  4795 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  4796 |           //For 1st left nav item
+  4797 |            await this.page.waitForTimeout(1000);
+  4798 |           await this.leftNavIncorrectAnswerContainer.nth(2).click();
+  4799 |           await this.page.mouse.move(0, 0);
+  4800 |           await this.page.waitForTimeout(2000);
+  4801 |           await this.iDontKnowButton.click();
+  4802 |           await this.correctOptionButton.nth(0).click();
+  4803 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  4804 |           if ((typeOfTest.match(/ORLSMP-Re-routing End Test scenario for SSP1/i))) {
+  4805 |             await this.leftNavIncorrectAnswerContainer.nth(3).click();
+  4806 |           } else {
+  4807 |             //For 2nd left nav item
+  4808 |             await this.leftNavIncorrectAnswerContainer.nth(4).click();
+  4809 |           }
+  4810 |           await this.page.mouse.move(300, 600);
+  4811 |           await this.iDontKnowButton.click();
+  4812 |           await this.correctOptionButton.nth(0).click();
+  4813 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  4814 |           //For 3rd left nav item
+  4815 |           await this.leftNavIncorrectAnswerContainer.nth(0).click();
+  4816 |           await this.page.mouse.move(300, 600);
+  4817 |           await this.iDontKnowButton.click();
+  4818 |           await this.correctOptionButton.nth(0).click();
+  4819 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  4820 |         }
+  4821 |       }else if (typeOfTest.match(/PARCMP-Re-routing End Test scenario/i)) {
+  4822 |         if (itemDetails.startsWith("Sample")) {
+  4823 |           await this.correctOptionButton.nth(0).click();
+  4824 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4825 |         } else if (itemDetails.includes("Story ") || itemDetails.includes("Item")) {
+  4826 |           for (let i = 1; i <= index; i++) {
+  4827 |             await this.page.waitForTimeout(1000);
+  4828 |             let currentItemDetails = await this.itemDetails.textContent();
+  4829 |             if (currentItemDetails.endsWith("Presentation")) {
+  4830 |               await this.examineeCursorButton.click();
+  4831 |               await this.doneButton.click();
+  4832 |               await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4833 |               await this.plainNextButtonOrEndButton.click();
+  4834 |               await this.page.waitForTimeout(500);
+  4835 |             }
+  4836 |             await this.correctOptionButton.nth(0).click();
+  4837 |             await this.plainNextButtonOrEndButton.click();
+  4838 |           }
+  4839 |           for (let j = 1; j < incorrectIndex; j++) {
+  4840 |             await this.page.waitForTimeout(1000);
+  4841 |             let currentItemDetails = await this.itemDetails.textContent();
+  4842 |             if (currentItemDetails.endsWith("Presentation")) {
+  4843 |               await this.examineeCursorButton.click();
+  4844 |               await this.doneButton.click();
+  4845 |               await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4846 |               await this.plainNextButtonOrEndButton.click();
+  4847 |               await this.page.waitForTimeout(500);
+  4848 |             }
+  4849 |             await this.iDontKnowButton.click();
+  4850 |             await this.plainNextButtonOrEndButton.click();
+  4851 |           }
+  4852 |           await this.iDontKnowButton.click();
+  4853 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  4854 |           //For 1st left nav item
+  4855 |           await this.leftNavIncorrectAnswerContainer.nth(2).click();
+  4856 |           await this.page.mouse.move(100, 500);
+  4857 |           await this.iDontKnowButton.click();
+  4858 |           await this.correctOptionButton.nth(0).click();
+  4859 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  4860 |           //For 2nd left nav item
+  4861 |           await this.leftNavIncorrectAnswerContainer.nth(4).click();
+  4862 |           await this.page.mouse.move(100, 500);
+  4863 |           await this.iDontKnowButton.click();
+  4864 |           await this.correctOptionButton.nth(0).click();
+  4865 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  4866 |           //For 3rd left nav item
+  4867 |           await this.leftNavIncorrectAnswerContainer.nth(0).click();
+  4868 |           await this.page.mouse.move(100, 500);
+  4869 |           await this.iDontKnowButton.click();
+  4870 |           await this.correctOptionButton.nth(0).click();
+  4871 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  4872 |         }
+  4873 |       } else if (typeOfTest.match(/STYCMP-Re-routing End Test scenario/i)) {
+  4874 |         if (itemDetails.startsWith("Sample")) {
+  4875 |           await this.correctOptionButton.nth(0).click();
+  4876 |           await this.plainNextButtonOrEndButton.waitFor({ state: "visible" });
+  4877 |         } else if (itemDetails.includes("Story ") || itemDetails.includes("Item")) {
+  4878 |           for (let i = 1; i <= index; i++) {
+  4879 |             await this.page.waitForTimeout(1000);
+  4880 |             let currentItemDetails = await this.itemDetails.textContent();
+```
