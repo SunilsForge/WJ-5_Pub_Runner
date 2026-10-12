@@ -1,0 +1,374 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/dashboard/testAssignments_C.spec.ts >> Validate Dashboard Test Assignments functionality Part_C
+- Location: src/tests/functional/dashboard/testAssignments_C.spec.ts:13:5
+
+# Error details
+
+```
+TimeoutError: locator.isDisabled: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('//button[@class=\'plain-button svg-icon TestList_mcs_testButton\']/descendant::div').filter({ hasText: 'Academic Vocabulary' })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic:
+  - dialog "Administration Overview for General Information–What" [ref=e2]:
+    - banner [ref=e3]:
+      - button "Main Navigation" [ref=e4] [cursor=pointer]
+      - generic "General Information–What" [ref=e5] [cursor=pointer]:
+        - generic [ref=e6]: General Information–What
+      - 'button "N14871A55120, Elinore Age: 12y, 6m Grade: 5" [ref=e9] [cursor=pointer]':
+        - img [ref=e10]
+        - generic [ref=e13]:
+          - generic [ref=e14]: N14871A55120, Elinore
+          - generic [ref=e15]: "Age: 12y, 6m Grade: 5"
+    - generic [ref=e17]:
+      - heading "General Information–What" [level=2] [ref=e18]
+      - generic [ref=e19]:
+        - text: Read the instructions below or
+        - button "begin the test." [disabled] [ref=e20]
+    - generic [ref=e21]:
+      - heading "Things to Know:" [level=2] [ref=e23]
+      - generic [ref=e27]: This test uses voice capture.
+      - button "Check Audio Settings" [ref=e28] [cursor=pointer]
+    - generic [ref=e29]:
+      - paragraph [ref=e30]: Administration Overview
+      - generic [ref=e31]:
+        - generic [ref=e32]: ✦
+        - paragraph [ref=e34]: Do not penalize the examinee for mispronunciations resulting from articulation errors, dialect variations, or regional speech patterns.
+      - generic [ref=e35]:
+        - generic [ref=e36]: ✦
+        - paragraph [ref=e38]: Know the exact pronunciation of each test item before administering this test.
+      - generic [ref=e39]:
+        - generic [ref=e40]: ✦
+        - paragraph [ref=e42]: You may repeat any item on this test if the examinee requests it.
+      - generic [ref=e43]:
+        - generic [ref=e44]: ✦
+        - paragraph [ref=e46]: The platform selects an appropriate starting point based on the examinee’s age or grade/education level.
+      - generic [ref=e47]:
+        - generic [ref=e48]: ✦
+        - paragraph [ref=e50]: The test ends when the examinee has met the basal and ceiling requirements.
+      - generic [ref=e51]:
+        - generic [ref=e52]: ✦
+        - paragraph [ref=e54]:
+          - text: Consult the Resources tab of Riverside Score
+          - superscript [ref=e55]: ®
+          - text: for audio clips containing correct pronunciations.
+      - generic [ref=e56]:
+        - generic [ref=e57]: ✦
+        - paragraph [ref=e59]:
+          - text: "Basal: 4 consecutive lowest-numbered items administered correct or Item 1"
+          - text: "Ceiling: 4 consecutive highest-numbered items administered incorrect and no higher-numbered items administered are correct, or the last item on the test"
+      - generic [ref=e60]:
+        - generic [ref=e61]: ✦
+        - paragraph [ref=e63]: The platform will administer General Information–Where first, followed immediately by General Information–What.
+      - generic [ref=e64]:
+        - generic [ref=e65]: ✦
+        - paragraph [ref=e67]:
+          - text: "If the examinee responds to a “what” item with a “where” response, repeat the question using the complete sentence:"
+          - strong [ref=e69]:
+            - generic "* What would people usually do with ______? *"
+            - text: What would people usually do with ______?
+          - text: Score the item after the examinee responds. Give this reminder only once.
+      - paragraph [ref=e70]: Scoring
+      - generic [ref=e71]:
+        - generic [ref=e72]: ✦
+        - paragraph [ref=e74]: If the examinee provides a response that requires querying, click the response and follow the instructions to query for more information. Then select the response option from the scoring key that matches the examinee’s next response.
+      - generic [ref=e75]:
+        - generic [ref=e76]: ✦
+        - paragraph [ref=e78]: The platform assigns 1 point for correct responses and 0 points for incorrect responses.
+      - generic [ref=e79]:
+        - generic [ref=e80]: ✦
+        - paragraph [ref=e82]: The platform computes the total test score by summing the item scores for all administered items and adding 1 point for each unadministered item below the basal.
+      - generic [ref=e83]:
+        - generic [ref=e84]: ✦
+        - paragraph [ref=e86]: For each item administered, select the response option from the scoring key that matches the examinee’s response. If the examinee provides a response that is not listed in the scoring key, use the Other option to assign it a score of 1 (correct) or 0 (incorrect).
+    - generic [ref=e87]:
+      - button "Letʼs Begin" [ref=e88] [cursor=pointer]
+      - button "SCROLL FOR MORE ↓" [ref=e89] [cursor=pointer]:
+        - text: SCROLL
+        - text: FOR MORE
+        - text: ↓
+  - dialog "Main navigation" [ref=e91]:
+    - navigation "Main navigation" [ref=e92]:
+      - heading "Main navigation" [level=2] [ref=e93]
+      - button "Close navigation" [ref=e94] [cursor=pointer]: ✕
+      - button "Home" [ref=e95] [cursor=pointer]:
+        - img [ref=e96]
+      - button "Tests" [expanded] [active] [ref=e99] [cursor=pointer]:
+        - img [ref=e100]
+        - generic [ref=e103]: Tests
+      - button "Test Assignment Defaults" [ref=e104] [cursor=pointer]:
+        - img [ref=e105]
+      - button "Log Out" [ref=e107] [cursor=pointer]:
+        - img [ref=e108]
+    - generic [ref=e112]:
+      - generic [ref=e113]:
+        - generic [ref=e114]: "Filter tests by:"
+        - generic [ref=e115]:
+          - button "Complete" [ref=e116] [cursor=pointer]:
+            - img "Complete" [ref=e117]
+          - button "In Progress" [ref=e121] [cursor=pointer]:
+            - img "In Progress" [ref=e122]
+          - button "Not Yet Administered" [ref=e130] [cursor=pointer]:
+            - img "Not Yet Administered" [ref=e131]
+          - button "Complete + Score Error" [ref=e135] [cursor=pointer]:
+            - img "Complete + Score Error" [ref=e136]
+          - button "Score Later" [ref=e140] [cursor=pointer]:
+            - img "Score Later" [ref=e141]
+      - generic [ref=e146]:
+        - generic [ref=e147]:
+          - img [ref=e148]
+          - generic [ref=e150]: Paula Hessel_1791812290431 (+1 more)
+          - button "Hide Scores" [ref=e151] [cursor=pointer]
+        - generic [ref=e152]:
+          - generic [ref=e154]:
+            - button "Not Yet Administered General Information–Where" [ref=e155] [cursor=pointer]:
+              - img "Not Yet Administered" [ref=e156]
+              - generic [ref=e160]: General Information–Where
+            - button "Skip test" [ref=e161] [cursor=pointer]: ✕
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - button "Complete General Information–What" [disabled] [pressed] [ref=e164]:
+                - img "Complete" [ref=e165]
+                - generic [ref=e169]: General Information–What
+              - button "Skip test" [ref=e170] [cursor=pointer]: ✕
+            - generic [ref=e171]:
+              - generic [ref=e172]:
+                - generic [ref=e173]:
+                  - generic [ref=e174]: SS
+                  - generic [ref=e175]: N/A
+                - generic [ref=e176]:
+                  - generic [ref=e177]: PR
+                  - generic [ref=e178]: N/A
+              - generic [ref=e179]:
+                - generic [ref=e180]:
+                  - generic [ref=e181]: AE
+                  - generic [ref=e182]: N/A
+                - generic [ref=e183]:
+                  - generic [ref=e184]: GE
+                  - generic [ref=e185]: N/A
+          - generic [ref=e187]:
+            - button "Not Yet Administered Academic Facts" [ref=e188] [cursor=pointer]:
+              - img "Not Yet Administered" [ref=e189]
+              - generic [ref=e193]: Academic Facts
+            - button "Skip test" [ref=e194] [cursor=pointer]: ✕
+        - button "+ Add Test" [ref=e195] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  6277 |       } else {
+  6278 |         throw new Error(
+  6279 |           `The ${typeOfTest} didnt match with any of the conditions provided`
+  6280 |         );
+  6281 |       }
+  6282 |       await this.plainNextButtonOrEndButton.click();
+  6283 |       if (
+  6284 |         (await this.plainNextButtonOrEndButton.textContent()) === "End Test"
+  6285 |       ) {
+  6286 |         break;
+  6287 |       }
+  6288 |     }
+  6289 |   }
+  6290 |     async pickTheTestNeeded(testName: string, student:StudentPage) {
+  6291 |         await this.page.bringToFront();
+  6292 |         await this.page.waitForTimeout(2000);
+  6293 | 
+  6294 |         const testSessionIntro: Locator = await this.page.locator("//b[text()='Test Session Introduction']");
+  6295 |         if (await testSessionIntro.isVisible()) {
+  6296 |             for (let i = 1; i <= 3; i++) {
+  6297 |                 await this.page.waitForTimeout(2000);
+  6298 |                 if (await this.plainNextButtonOrEndButton.isEnabled()) {
+  6299 |                     if (i === 3) {
+  6300 |                         await this.beginAdminButton.click();
+  6301 |                     } else {
+  6302 |                         await this.page.waitForTimeout(2000);
+  6303 |                         await this.plainNextButtonOrEndButton.click();
+  6304 |                     }
+  6305 |                 } else {
+  6306 |                     await this.plainNextButtonOrEndButton.waitFor({state: 'visible', timeout: 50000});
+  6307 |                 }
+  6308 |             }
+  6309 |         }
+  6310 |         if ((await this.administrationOverviewPageTestName.isVisible()) && (await this.administrationOverviewPageTestName.textContent()).includes(testName)) {
+  6311 |             return;
+  6312 |         } else {
+  6313 |           for (let i = 0; i < 3; i++) {
+  6314 |             if (await this.mainNavigation.isEnabled()) {
+  6315 |               await this.page.waitForTimeout(1000);
+  6316 |               await this.mainNavigation.click();
+  6317 |               break;
+  6318 |             }
+  6319 |             await this.page.waitForTimeout(1000);
+  6320 |           }
+  6321 |           await this.mainNavigationTests.waitFor({
+  6322 |             state: "visible",
+  6323 |             timeout: 80000,
+  6324 |           });
+  6325 |           await this.page.waitForTimeout(1000);
+  6326 |           await this.mainNavigationTests.click();
+  6327 |           const testButton = this.page
+  6328 |             .locator("//div[@class='TestList_mcs_testName']")
+  6329 |             .getByText(testName, { exact: true });
+  6330 |           await testButton.waitFor({ state: "visible", timeout: 10000 });
+  6331 |           const selectedTestInLeftNav = this.page
+  6332 |             .locator("//button[@class='plain-button svg-icon TestList_mcs_testButton']/descendant::div")
+  6333 |             .getByText(testName, { exact: true });
+  6334 |           const isDisabled = await selectedTestInLeftNav.isDisabled();
+  6335 |           const buttonText = await testButton.textContent();
+  6336 |           if (isDisabled && buttonText === testName) {
+  6337 |             console.log(
+  6338 |               `Test "${testName}" is already selected and disabled; closing menu`
+  6339 |             );
+  6340 |             const closeButton = this.page.locator(
+  6341 |               "//button[@class='plain-button close-btn']"
+  6342 |             );
+  6343 |             await closeButton.waitFor({ state: "visible", timeout: 5000 });
+  6344 |             await closeButton.click();
+  6345 |           } else {
+  6346 |           await testButton.click();
+  6347 |           console.log(`Selected test "${testName}"`);
+  6348 |         }
+  6349 |         }
+  6350 |         if (await this.syncDevicePopUp.isVisible()) {
+  6351 |             await student.clickOnAcceptButton();
+  6352 |             return;
+  6353 |         }
+  6354 |     }
+  6355 | 
+  6356 |   async getActualTestName() {
+  6357 |     return await this.testNameAtAdminOverview.textContent();
+  6358 |   }
+  6359 | 
+  6360 |   async clickOnLetsBeginButtonAndStartTest(testName: string, ssp: string) {
+  6361 |     await this.letsBeginButton.waitFor({
+  6362 |       state: "visible",
+  6363 |       timeout: 5 * 60 * 1000,
+  6364 |     });
+  6365 | 
+  6366 |     let actualTestName = await this.getActualTestName();
+  6367 |     if (actualTestName != testName) {
+  6368 |       await this.page.waitForTimeout(1000);
+  6369 |       await this.mainNavigation.click();
+  6370 |       await this.mainNavigationTests.click();
+  6371 |       const testButton = this.page
+  6372 |         .locator("//div[@class='TestList_mcs_testName']")
+  6373 |         .getByText(testName, { exact: true });
+  6374 |       const selectedTestInLeftNav = this.page
+  6375 |         .locator("//button[@class='plain-button svg-icon TestList_mcs_testButton']/descendant::div")
+  6376 |         .filter({ hasText: testName });
+> 6377 |       const isDisabled = await selectedTestInLeftNav.isDisabled();
+       |                                                      ^ TimeoutError: locator.isDisabled: Timeout 60000ms exceeded.
+  6378 |       const buttonText = await testButton.textContent();
+  6379 |       if (isDisabled && buttonText === testName) {
+  6380 |         console.log(
+  6381 |           `Test "${testName}" is already selected and disabled; closing menu`
+  6382 |         );
+  6383 |         const closeButton = this.page.locator(
+  6384 |           "//button[@class='plain-button close-btn']"
+  6385 |         );
+  6386 |         await closeButton.waitFor({ state: "visible", timeout: 5000 });
+  6387 |         await closeButton.click();
+  6388 |       } else {
+  6389 |         try {
+  6390 |           await testButton.waitFor({ state: "visible", timeout: 10000 });
+  6391 |           await testButton.click();
+  6392 |         } catch {
+  6393 |           // Test not present in left nav — add it via "+ Add Test", then re-select.
+  6394 |           await this.addPlusTestsButton.click();
+  6395 |           await this.searchTests.fill(testName);
+  6396 |           await this.searchIcon.click();
+  6397 |           await this.page.waitForTimeout(1000);
+  6398 |           await this.selectTests.first().click();
+  6399 |           await this.addTestsButton.click();
+  6400 |           await this.page.waitForTimeout(2000);
+  6401 |           await testButton.waitFor({ state: "visible", timeout: 10000 });
+  6402 |           await testButton.click();
+  6403 |         }
+  6404 |       }
+  6405 |       await this.page.waitForLoadState("domcontentloaded");
+  6406 |       await this.page.waitForTimeout(1000);
+  6407 |     }
+  6408 |     actualTestName = await this.getActualTestName();
+  6409 |     expect(actualTestName, {
+  6410 |       message: "The test name didnt match at Administration Overview page",
+  6411 |     }).toContain(testName);
+  6412 |     console.log(actualTestName);
+  6413 |     await this.letsBeginButton.click();
+  6414 |     await this.page.waitForTimeout(1000);
+  6415 |     if (ssp === "All Examinees") {
+  6416 |       await this.startTestButton.click();
+  6417 |     } else {
+  6418 |       await this.setTheSuggestedStartingPointTo(ssp);
+  6419 |       await this.page.waitForTimeout(1500);
+  6420 |       await this.startTestButton.click();
+  6421 |     }
+  6422 |   }
+  6423 | 
+  6424 |   async clickOnLetsBeginAndResumeInProgressTest(testName: string) {
+  6425 |     if (await this.closeNavigationButton.isVisible()) {
+  6426 |       await this.closeNavigationButton.click();
+  6427 |     }
+  6428 | 
+  6429 |     await this.letsBeginButton.waitFor({
+  6430 |       state: "visible",
+  6431 |       timeout: 5 * 60 * 1000,
+  6432 |     });
+  6433 | 
+  6434 |     let actualTestName = await this.getActualTestName();
+  6435 |     if (actualTestName != testName) {
+  6436 |       await this.page.waitForTimeout(1000);
+  6437 |       await this.mainNavigation.click();
+  6438 |       await this.mainNavigationTests.click();
+  6439 |       const testButton = this.page
+  6440 |         .locator("//div[@class='TestList_mcs_testName']")
+  6441 |         .getByText(testName, { exact: true });
+  6442 |       await testButton.waitFor({ state: "visible", timeout: 10000 });
+  6443 |       await testButton.click();
+  6444 |       await this.page.waitForLoadState("domcontentloaded");
+  6445 |       await this.page.waitForTimeout(1000);
+  6446 |     }
+  6447 |     actualTestName = await this.getActualTestName();
+  6448 |     expect(actualTestName, {
+  6449 |       message: "The test name didn't match at Administration Overview page",
+  6450 |     }).toContain(testName);
+  6451 | 
+  6452 |     await this.letsBeginButton.click();
+  6453 |     await this.page.waitForLoadState();
+  6454 |     await this.page.waitForTimeout(1000);
+  6455 |     await this.nextItemButton.click();
+  6456 |     await this.page.waitForTimeout(1000);
+  6457 |   }
+  6458 | 
+  6459 |   async endTestAndEnterReviewMode() {
+  6460 |     await this.plainNextButtonOrEndButton.last().click();
+  6461 |     await this.endSessionButton.waitFor({ state: "visible", timeout: 60000 });
+  6462 |     await this.endSessionButton.click();
+  6463 |     await this.reviewFromConfirmButton.waitFor({ state: "visible", timeout: 60000 });
+  6464 |     await this.reviewFromConfirmButton.click();
+  6465 |     await this.dashboardPage.waitForLoadingSpinnerToDisappear();
+  6466 |   }
+  6467 | 
+  6468 |   async setTheSuggestedStartingPointTo(sspOption: string) {
+  6469 |     await expect(this.startTestButton).toBeVisible({ timeout: 10000 });
+  6470 |     await this.page.waitForTimeout(5000);
+  6471 |     if (this.loading.isVisible())
+  6472 |       await this.loading.waitFor({ state: "hidden", timeout: 3 * 60 * 1000 });
+  6473 |     await this.sspDropDown.selectOption({ label: sspOption }, { timeout: 60000 });
+  6474 |     await this.page.waitForTimeout(2000);
+  6475 | 
+  6476 |     try {
+  6477 |       const selectedSsp = await this.page.$eval(
+```
