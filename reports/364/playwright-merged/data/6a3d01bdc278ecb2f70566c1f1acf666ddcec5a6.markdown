@@ -1,0 +1,357 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts >>  LETPAT UI And Reports >> All Examinees - Answer only one sample item Test UI
+- Location: src/tests/UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts:10:13
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[@class=\'plain-button next-item-button\' or @class =\'plain-button nav-button\'])').first()
+    - locator resolved to <button disabled aria-live="polite" id="next-item-button" aria-label="Go on to " class="plain-button next-item-button">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    116 × waiting for element to be visible, enabled and stable
+        - element is not enabled
+      - retrying click action
+        - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 04PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "04PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "No Test Assignments have been created." [ref=e74] [cursor=pointer]:
+                    - cell "No Test Assignments have been created." [ref=e75]
+            - generic [ref=e76]:
+              - generic [ref=e79]:
+                - img [ref=e80]
+                - heading "Notifications Center" [level=2] [ref=e84]
+              - generic [ref=e85]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - heading "Resources" [level=3] [ref=e92]
+                - list [ref=e93]:
+                  - listitem [ref=e94]:
+                    - button "Riverside Learn" [ref=e95] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e96]
+                      - img [ref=e98]
+                  - listitem [ref=e100]:
+                    - button "Onboarding Tutorial Videos" [ref=e101] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e102]
+                      - img [ref=e104]
+                  - listitem [ref=e106]:
+                    - button "Quick Reference Guides" [ref=e107] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e108]
+                      - img [ref=e110]
+                - button "View All" [ref=e113] [cursor=pointer]
+      - contentinfo [ref=e114]:
+        - generic [ref=e115]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e116] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e117]
+        - generic [ref=e118]:
+          - link "Riverside Insights Facebook" [ref=e119] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e120]
+          - link "Riverside Insights Twitter" [ref=e121] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e122]
+          - link "Riverside Insights LinkedIn" [ref=e123] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e124]
+          - link "Riverside Insights Instagram" [ref=e125] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e126]
+        - generic [ref=e127]:
+          - button "Leave Feedback" [ref=e128] [cursor=pointer]
+          - generic [ref=e129]: "|"
+          - link "Terms of Use" [ref=e130] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e131]: "|"
+          - link "Privacy Policy" [ref=e132] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e133]: Footer region end
+```
+
+# Test source
+
+```ts
+  1098 |             await this.verifyScoringAllTestItemsInEachPage('LETPAT.W5PA', '0', '5', '7', '11', '14', '16', '20', '23', '26', '27', '32', '35', '38', '41', '43', '46', '49', '51', '55', '59');
+  1099 |             await this.verifyScoringAllTestItemsInEachPage('LETPAT.W5PA', '0', '1', '6', '7', '12', '13', '18', '19', '24', '25', '31', '32', '37', '38', '43', '44', '49', '50', '55', '56');
+  1100 |             await this.verifyScoringAllTestItemsInEachPage('LETPAT.W5PA', '2', '5', '6', '9', '12', '17', '20', '23', '26', '28', '31', '34', '37', '40', '45', '47', '50', '53', '54', '57');
+  1101 |           } else if (testStemForm.match(/NUMPAT.W5PA/)) {
+  1102 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PA', '1', '2', '9', '10', '12', '14', '19', '22', '24', '29', '31', '34', '36', '40', '45', '46', '48', '53', '56', '58');
+  1103 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PA', '0', '1', '6', '7', '12', '13', '18', '19', '24', '25', '31', '32', '37', '39', '43', '44', '49', '50', '55', '56');
+  1104 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PA', '0', '3', '9', '10', '13', '17', '18', '20', '26', '28', '31', '33', '36', '41', '44', '47', '51', '52', '54', '58');
+  1105 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PA', '0', '1', '6', '7', '12', '13', '18', '19', '25', '26', '31', '32', '37', '38', '43', '44', '49', '50', '55', '56');
+  1106 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PA', '2', '5', '9', '10', '12', '17', '19', '20', '28', '29', '30', '33', '37', '40', '42', '45', '50', '53', '55', '57');
+  1107 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PA', '0', '1', '6', '7', '12', '13', '18', '19', '24', '25', '31', '32', '37', '38', '43', '44', '49', '50', '56', '57');
+  1108 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PA', '0', '3', '8', '10', '12', '17', '19', '22', '24', '27', '31', '34', '38', '41', '44', '46', '48', '51', '55', '59');
+  1109 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PA', '0', '1', '6', '7', '12', '13', '18', '19', '24', '25', '31', '32', '37', '38', '43', '44', '49', '50', '55', '56');
+  1110 |           } else if (testStemForm.match(/SRDGFL.W5PA/)) {
+  1111 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PA', '0', '2', '4', '7', '8', '11', '12', '14', '16', '18');
+  1112 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PA', '0', '3', '5', '6', '8', '10', '12', '14', '17', '18');
+  1113 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PA', '1', '2', '5', '6', '9', '10', '13', '14', '16', '19');
+  1114 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PA', '0', '2', '5', '6', '9', '11', '12', '14', '16', '19');
+  1115 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PA', '0', '3', '5', '6', '8', '10', '12', '14', '17', '18');
+  1116 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PA', '0', '2', '5', '6', '8', '11', '12', '14', '16', '18');
+  1117 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PA', '1', '2', '4', '7', '9', '11', '13', '14', '17', '18');
+  1118 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PA', '1', '3', '4', '6', '9', '11', '12', '15', '17', '19');
+  1119 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PA', '1', '2', '4', '7', '8', '11', '13', '14', '16', '19');
+  1120 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PA', '0', '2', '4', '7', '8', '10', '12', '15', '17', '19');
+  1121 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PA', '0', '3', '5', '6', '9', '11', '12', '14', '16', '19');
+  1122 |           } else if (testStemForm.match(/WRDGFL.W5PA/)) {
+  1123 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PA', '0', '2', '4', '5', '10', '11', '12', '15', '16', '19', '22', '23', '24', '26', '28', '31', '32', '33', '36', '37');
+  1124 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PA', '0', '2', '5', '6', '10', '11', '13', '15', '17', '18', '21', '22', '24', '27', '29', '31', '32', '34', '36', '39');
+  1125 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PA', '0', '2', '6', '7', '10', '11', '12', '13', '17', '18', '20', '22', '24', '25', '29', '30', '33', '34', '36', '37');
+  1126 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PA', '1', '3', '5', '7', '9', '10', '12', '15', '16', '18', '20', '23', '25', '27', '28', '31', '32', '33', '36', '39');
+  1127 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PA', '0', '1', '4', '7', '8', '11', '12', '14', '16', '18', '21', '23', '25', '27', '30', '31', '32', '33', '36', '37');
+  1128 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PA', '1', '2', '5', '7', '9', '10', '12', '15', '17', '18', '20', '22', '24', '27', '28', '29', '32', '33', '38', '39');
+  1129 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PA', '0', '2', '4', '5', '8', '11', '12', '13', '17', '18', '21', '22', '26', '27', '28', '30', '34', '35', '36', '37');
+  1130 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PA', '0', '2', '6', '7', '9', '10', '13', '15', '16', '17', '21', '23', '25', '26', '29', '31', '32', '33', '38', '39');
+  1131 |           } else if (testStemForm.match(/MAGCMP.W5PA/) || testStemForm.match(/MAGCMP.W5PX/)) {
+  1132 |             if (testStemForm.match(/MAGCMP.W5PA/)) {
+  1133 |               await this.verifyScoringAllTestItemsInEachPage(testStemForm, '0', '2', '5', '6', '9', '11', '12', '14', '16', '19');
+  1134 |               await this.verifyScoringAllTestItemsInEachPage(testStemForm, '1', '2', '5', '6', '9', '10', '12', '15', '16', '19');
+  1135 |               await this.verifyScoringAllTestItemsInEachPage('MAGCMPL.W5PA', '0', '3', '5', '6', '8', '11', '13', '15', '17', '18');
+  1136 |             } else {
+  1137 |               await this.verifyScoringAllTestItemsInEachPage(testStemForm, '1', '3', '4', '7', '8', '10', '13', '15', '17', '18');
+  1138 |               await this.verifyScoringAllTestItemsInEachPage(testStemForm, '0', '2', '4', '7', '8', '11', '12', '15', '16', '18');
+  1139 |               await this.verifyScoringAllTestItemsInEachPage('MAGCMP.W5PX', '0', '3', '5', '6', '9', '11', '13', '14', '17', '18');
+  1140 |             }
+  1141 |             await this.verifyScoringAllTestItemsInEachPage(testStemForm, '1', '3', '4', '7', '8', '11', '13', '15', '16', '19');
+  1142 |             await this.verifyScoringAllTestItemsInEachPage(testStemForm, '1', '3', '5', '6', '8', '11', '12', '15', '17', '18');
+  1143 |             await this.verifyScoringAllTestItemsInEachPage(testStemForm, '1', '3', '4', '7', '8', '10', '13', '15', '17', '18');
+  1144 |             await this.verifyScoringAllTestItemsInEachPage(testStemForm, '1', '2', '4', '6', '9', '10', '12', '14', '17', '18');
+  1145 |             await this.verifyScoringAllTestItemsInEachPage(testStemForm, '1', '3', '5', '6', '9', '10', '12', '15', '16', '18');
+  1146 |             await this.verifyScoringAllTestItemsInEachPage(testStemForm, '0', '2', '5', '7', '9', '10', '13', '14', '17', '19');
+  1147 |             await this.verifyScoringAllTestItemsInEachPage(testStemForm, '1', '3', '5', '7', '9', '10', '13', '15', '17', '18');
+  1148 |             await this.verifyScoringAllTestItemsInEachPage(testStemForm, '0', '2', '5 ', '7', '8', '10', '13', '14', '16', '18');
+  1149 |           } else if (testStemForm.match(/NUMPAT.W5PX/)) {
+  1150 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PX', '0', '3', '8', '10', '16', '17', '19', '22', '25', '27', '31', '34', '38', '40', '45', '46', '48', '51', '56', '58');
+  1151 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PX', '0', '3', '7', '10', '14', '17', '19', '20', '28', '29', '31', '32', '39', '40', '43', '47', '49', '52', '58', '59');
+  1152 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PX', '0', '4', '7', '11', '14', '16', '18', '22', '25', '28', '31', '34', '37', '41', '45', '46', '50', '52', '55', '56');
+  1153 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PX', '2', '3', '6', '11', '13', '15', '22', '23', ' 24', '26', '30', '31', '40', '41', '42', '43', '48', '49', '55', '56');
+  1154 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PX', '2', '3', '6', '11', '13', '15', '22', '23', '24', '26', '33', '34', '38', '39', '43', '45', '50', '52', '55', '59');
+  1155 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PX', '2', '4', '7', '11', '12', '15', '18', '22', '25', '27', '33', '35', '37', '39', '43', '46', '49', '51', '54', '56');
+  1156 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PX', '3', '5', '7', '10', '14', '17', '18', '21', '25', '29', '35', '34', '37', '39', '44', '46', '49', '53', '55', '57');
+  1157 |             await this.verifyScoringAllTestItemsInEachPage('NUMPAT.W5PX', '1', '4', '8', '11', '13', '14', '18', '22', '26', '29', '35', '34', '36', '41', '43', '46', '49', '53', '55', '58');
+  1158 |             await this.activateTabletControlButton.click();
+  1159 |           } else if (testStemForm.match(/LETPAT.W5PX/)) {
+  1160 |             await this.verifyScoringAllTestItemsInEachPage('LETPAT.W5PX', '0', '2', '3', '4', '7', '8', '10', '11', '12', '14', '17', '18', '20', '23', '26', '28', '29', '31', '34', '38');
+  1161 |             await this.verifyScoringAllTestItemsInEachPage('LETPAT.W5PX', '0', '1', '6', '7', '12', '13', '18', '19', '24', '25', '31', '32', '37', '38', '43', '44', '49', '50', '55', '56');
+  1162 |             await this.verifyScoringAllTestItemsInEachPage('LETPAT.W5PX', '0', '5', '6', '10', '14', '16', '19', '22', '24', '26', '31', '34', '38', '39', '45', '47', '48', '51', '55', '59');
+  1163 |             await this.verifyScoringAllTestItemsInEachPage('LETPAT.W5PX', '0', '1', '6', '7', '12', '13', '18', '19', '24', '25', '31', '32', '37', '38', '43', '44', '49', '50', '55', '56');
+  1164 |             await this.verifyScoringAllTestItemsInEachPage('LETPAT.W5PX', '0', '4', '8', '10', '16', '17', '18', '23', '25', '28', '30', '33', '38', '41', '43', '46', '48', '53', '55', '58');
+  1165 |             await this.verifyScoringAllTestItemsInEachPage('LETPAT.W5PX', '0', '1', '6', '7', '12', '13', '18', '19', '24', '25', '31', '32', '37', '38', '43', '44', '49', '50', '55', '56');
+  1166 |             await this.verifyScoringAllTestItemsInEachPage('LETPAT.W5PX', '0', '5', '7', '11', '14', '16', '19', '23', '26', '29', '32', '35', '38', '41', '43', '46', '49', '53', '55', '59');
+  1167 |             await this.verifyScoringAllTestItemsInEachPage('LETPAT.W5PX', '0', '1', '6', '7', '12', '13', '18', '19', '24', '25', '31', '32', '37', '38', '43', '44', '49', '50', '55', '56');
+  1168 |             await this.verifyScoringAllTestItemsInEachPage('LETPAT.W5PX', '2', '5', '6', '9', '12', '17', '20', '23', '26', '28', '31', '33', '37', '40', '45', '47', '50', '53', '56', '58');
+  1169 |           } else if (testStemForm.match(/SRDGFL.W5PB/)) {
+  1170 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PB', '0', '2', '5', '7', '8', '11', '13', '14', '16', '18');
+  1171 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PB', '1', '2', '5', '6', '9', '11', '12', '15', '16', '19');
+  1172 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PB', '0', '3', '5', '6', '9', '10', '12', '15', '17', '18');
+  1173 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PB', '0', '3', '4', '6', '8', '11', '12', '14', '17', '19');
+  1174 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PB', '0', '2', '5', '7', '8', '11', '12', '14', '16', '19');
+  1175 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PB', '1', '3', '4', '6', '9', '11', '13', '14', '17', '18');
+  1176 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PB', '1', '2', '4', '7', '8', '11', '13', '14', '17', '19');
+  1177 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PB', '0', '2', '4', '7', '8', '11', '13', '14', '17', '18');
+  1178 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PB', '1', '2', '5', '7', '9', '10', '12', '14', '17', '19');
+  1179 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PB', '1', '3', '5', '7', '8', '11', '12', '15', '17', '18');
+  1180 |             await this.verifyScoringAllTestItemsInEachPage('SRDGFL.W5PB', '0', '3', '4', '6', '9', '10', '12', '14', '16', '19');
+  1181 |           } else if (testStemForm.match(/WRDGFL.W5PB/)) {
+  1182 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PB', '0', '3', '4', '6', '8', '9', '13', '14', '16', '18', '20', '21', '25', '27', '28', '31', '33', '35', '36', '37');
+  1183 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PB', '0', '3', '6', '7', '9', '10', '13', '14', '16', '19', '21', '22', '25', '27', '29', '31', '32', '34', '36', '37');
+  1184 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PB', '0', '1', '6', '7', '8', '11', '12', '14', '17', '18', '20', '22', '26', '27', '28', '29', '32', '35', '38', '39');
+  1185 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PB', '0', '3', '5', '6', '9', '10', '12', '15', '17', '18', '21', '23', '26', '27', '29', '31', '33', '34', '36', '37');
+  1186 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PB', '0', '1', '5', '6', '8', '10', '12', '13', '18', '19', '21', '22', '24', '27', '28', '29', '32', '35', '36', '37');
+  1187 |            await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PB', '0', '1', '5', '7', '10', '11', '12', '15', '18', '19', '21', '22', '26', '27', '28', '31', '34', '35', '36', '39');
+  1188 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PB', '1', '2', '4', '5', '8', '10', '13', '14', '16', '19', '21', '22', '24', '25', '30', '31', '33', '34', '37', '38');
+  1189 |             await this.verifyScoringAllTestItemsInEachPage('WRDGFL.W5PB', '0', '1', '5', '6', '8', '11', '12', '14', '16', '17', '20', '22', '25', '27', '29', '30', '33', '35', '37', '39');
+  1190 |             await this.activateTabletControlButton.click();
+  1191 |           }
+  1192 |           await this.timeUpView.waitFor({ state: "visible", timeout: 200000 });
+  1193 |           await this.timerCloseButton.click();
+  1194 |         }
+  1195 |       } else {
+  1196 |         throw new Error(`The ${typeOfTest} didnt match with any of the conditions provided`);
+  1197 |       }
+> 1198 |       await this.nextAndEndTestButton.nth(0).click();
+       |                                              ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  1199 |       if (
+  1200 |         (await this.nextAndEndTestButton.nth(0).textContent()) === "End Test") {
+  1201 |         break;
+  1202 |       }
+  1203 |     }
+  1204 |   }
+  1205 | 
+  1206 | 
+  1207 |   async completeTheTakenTestForScoreLaterTests(
+  1208 |     typeOfTest: string,
+  1209 |     testStemForm: string,
+  1210 |     practiseItemsScore: number,
+  1211 |     testItemsScore: number[],
+  1212 |     examinee_ID?: string,
+  1213 |   ) {
+  1214 |     await this.page.waitForTimeout(1000);
+  1215 |     while (await this.plainNextButtonOrEndButton.isVisible()) {
+  1216 |       await this.page.waitForTimeout(2000);
+  1217 |       const itemDetails: string = (await this.itemDetails.textContent())!;
+  1218 |       if (testStemForm.match(/MTHFLU.W5PA|MTHFLU.W5PB/) && typeOfTest.match(/Practice Exercise Score Entry Equal To 0 and End Test/i)) { 
+  1219 |         await this.clickOnStartPracticeAndStartTimerButton();
+  1220 |         await this.timerActive.isEnabled();
+  1221 |         expect(await this.listOfPagesAndTotalText.nth(0).textContent()).toEqual("Practice Exercise:");
+  1222 |         await this.timeText.waitFor({ state: "visible" });
+  1223 |         await expect(this.introductionErrorText).toBeVisible();
+  1224 |         if (testStemForm.match(/MTHFLU.W5PA/)) {
+  1225 |           expect(await this.introductionErrorText.textContent()).toContain("Stop. Put your pencil down. ");
+  1226 |         } else if (testStemForm.match(/MTHFLU.W5PB/)) {
+  1227 |           expect(await this.introductionErrorText.textContent()).toContain("Stop. Put your pencil down.");
+  1228 |         }
+  1229 |         await expect(this.timerButton).toHaveAttribute("disabled", "");
+  1230 |         await this.listOfScores.isEnabled();
+  1231 |         await this.listOfScores.nth(0).click();
+  1232 |         await this.listOfScores.nth(0).fill(practiseItemsScore.toString());
+  1233 |       } else if (testStemForm.match(/MTHFLU.W5PA|MTHFLU.W5PB/) && typeOfTest.match(/Practice Exercise !C scenario when Score Entry Equal To 5/i)) {
+  1234 |         await this.clickOnStartPracticeAndStartTimerButton();
+  1235 |         await this.timerIcons.nth(0).click();
+  1236 |         await this.listOfScores.isEnabled();
+  1237 |         await this.listOfScores.nth(0).click();
+  1238 |         await this.listOfScores.nth(0).fill(practiseItemsScore.toString());
+  1239 |         await this.plainNextButtonOrEndButton.click();
+  1240 |         await this.startTimerButton.click();
+  1241 |         await this.breakTheLogicOut();
+  1242 |         await this.page.waitForTimeout(3000);
+  1243 |         await this.page.locator(`//span[starts-with(text(),'${examinee_ID}')]/ancestor::button`).click();
+  1244 |         await this.reviewModeButton.click();
+  1245 |         await this.submitTestSetAndFinishAdministration.click();
+  1246 |         return;
+  1247 |       }
+  1248 |       else if (testStemForm.match(/SWRTFL.W5PA|SWRTFL.W5PB/) && typeOfTest.match(/Sample Items End Test scenario/i)) {
+  1249 |         if (itemDetails.startsWith("Sample")) {
+  1250 |           await this.iDontKnowButton.click();
+  1251 |         }
+  1252 |       } else if (testStemForm.match(/SWRTFL.W5PA|SWRTFL.W5PB/) && typeOfTest.match(/Sample A Trial 1 correct and remaining sample items incorrect then End Test scenario/i)) {
+  1253 |         if(itemDetails.startsWith("Sample Item A, Trial 1")){
+  1254 |           await this.correctOptionButton.nth(0).click();
+  1255 |         } else if(itemDetails.match("Sample Item [BC]")){
+  1256 |             await this.iDontKnowButton.click();
+  1257 |         }
+  1258 |       } else if (testStemForm.match(/SWRTFL.W5PA|SWRTFL.W5PB/) && typeOfTest.match(/Sample B Trial 1 correct and remaining sample items incorrect then End Test scenario/i)) {
+  1259 |         if(itemDetails.startsWith("Sample Item B, Trial 1")){
+  1260 |           await this.correctOptionButton.nth(0).click();
+  1261 |         } else if(itemDetails.match("Sample Item [AC]")){
+  1262 |             await this.iDontKnowButton.click();
+  1263 |         }
+  1264 |       } else if (testStemForm.match(/SWRTFL.W5PA|SWRTFL.W5PB/) && typeOfTest.match(/Sample C Trial 1 correct and remaining sample items incorrect then End Test scenario/i)) {
+  1265 |         if(itemDetails.startsWith("Sample Item C, Trial 1")){
+  1266 |           await this.correctOptionButton.nth(0).click();
+  1267 |         } else if(itemDetails.match("Sample Item [AB]")){
+  1268 |             await this.iDontKnowButton.click();
+  1269 |         }
+  1270 |       } else if(typeOfTest.match(/Test Items Score Entry With All 0 Score/i)) {
+  1271 |           if (itemDetails.startsWith("Sample")) {
+  1272 |             await this.correctOptionButton.nth(0).click();
+  1273 |           } else if (itemDetails.startsWith("Practice Exercise")) {
+  1274 |             await this.completePractiseExercise(practiseItemsScore);  
+  1275 |           } else if (itemDetails.startsWith("Test Introduction")) {
+  1276 |             await this.clickStartTimerForTestItems();
+  1277 |             await expect(this.pencilIcon.nth(0)).toBeVisible();
+  1278 |             await this.pencilIcon.nth(0).isEnabled();
+  1279 |             await expect(this.submitButton).toHaveAttribute("disabled", "");
+  1280 |             await this.scoreLaterButton.isEnabled();
+  1281 | 
+  1282 |             if(testStemForm.match(/MTHFLU.W5PA|MTHFLU.W5PB/)){
+  1283 |             expect(await this.listOfPagesAndTotalText.nth(0).textContent()).toEqual("Page 4:");
+  1284 |             expect(await this.listOfPagesAndTotalText.nth(1).textContent()).toEqual("Page 5:");
+  1285 |             expect(await this.listOfPagesAndTotalText.nth(2).textContent()).toEqual("Total:");
+  1286 |             for (let i = 0; i <= 1; i++) {
+  1287 |               await this.listOfScores.nth(i).click();
+  1288 |               await this.listOfScores.nth(i).isEnabled();
+  1289 |               await this.listOfScores.nth(i).fill(testItemsScore[0].toString());
+  1290 |               if (i == 1) {
+  1291 |                 await this.submitButton.isEnabled();
+  1292 |               } else {
+  1293 |                 await expect(this.submitButton).toHaveAttribute("disabled", "");
+  1294 |               }
+  1295 |             }
+  1296 |             expect(await this.totalScore.nth(2).textContent()).toContain("0");
+  1297 |             } else if(testStemForm.match(/SWRTFL.W5PA|SWRTFL.W5PB/)){
+  1298 |             expect(await this.listOfPagesAndTotalText.nth(0).textContent()).toEqual("Page 2:");
+```

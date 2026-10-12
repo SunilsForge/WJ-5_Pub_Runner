@@ -1,0 +1,1457 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+        "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 24,
+      "total": 95
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ReroutingandLeftNav/PICVOC_Rerouting.spec.ts",
+      "file": "ReroutingandLeftNav/PICVOC_Rerouting.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " PICVOC Rerouting and LeftNav",
+          "file": "ReroutingandLeftNav/PICVOC_Rerouting.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Ages 11 to 14 -  Flag Item with Notes and Review scenario for SSP5 Test Rerouting",
+              "ok": false,
+              "tags": [
+                "PICVOC",
+                "Rerouting",
+                "Regression",
+                "AUT_ENG_02"
+              ],
+              "tests": [
+                {
+                  "timeout": 5400000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 245099,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"0 items\"\u001b[39m\nReceived string:    \u001b[31m\" 2 Items\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"0 items\"\u001b[39m\nReceived string:    \u001b[31m\" 2 Items\"\u001b[39m\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6604:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:27:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 10,
+                          "line": 6604
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6604\n\n\u001b[0m \u001b[90m 6602 |\u001b[39m       expect\n \u001b[90m 6603 |\u001b[39m         \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m8\u001b[39m)\u001b[33m.\u001b[39mtextContent())\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6604 |\u001b[39m         \u001b[33m.\u001b[39mtoContain(\u001b[33mFlagsText\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6605 |\u001b[39m       expect\n \u001b[90m 6606 |\u001b[39m         \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m13\u001b[39m)\u001b[33m.\u001b[39mtextContent())\n \u001b[90m 6607 |\u001b[39m         \u001b[33m.\u001b[39mtoContain(\u001b[33mOutcomeMsg\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 10,
+                            "line": 6604
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"0 items\"\u001b[39m\nReceived string:    \u001b[31m\" 2 Items\"\u001b[39m\n\n   at ../page/commonTestPage.ts:6604\n\n  6602 |       expect\n  6603 |         .soft(await this.endTestPopUpElements.nth(8).textContent())\n> 6604 |         .toContain(FlagsText);\n       |          ^\n  6605 |       expect\n  6606 |         .soft(await this.endTestPopUpElements.nth(13).textContent())\n  6607 |         .toContain(OutcomeMsg);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6604:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:27:21"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 10,
+                            "line": 6607
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Examinee completed all required test items\"\u001b[39m\nReceived string:    \u001b[31m\"2 Items\"\u001b[39m\n\n   at ../page/commonTestPage.ts:6607\n\n  6605 |       expect\n  6606 |         .soft(await this.endTestPopUpElements.nth(13).textContent())\n> 6607 |         .toContain(OutcomeMsg);\n       |          ^\n  6608 |       if (testNames1.includes(testStemForm)) {\n  6609 |         await this.endTestPopUpElements.nth(17).click();\n  6610 |       } else if (testNames2.includes(testStemForm)) {\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6607:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:27:21"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 46,
+                            "line": 6648
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must not be null nor undefined\n\nReceived has value: \u001b[31mundefined\u001b[39m\n\n   at ../page/commonTestPage.ts:6648\n\n  6646 |     console.log(responseStyleBehaviours);\n  6647 |     rsb.forEach((rsbehaviourText, index) => {\n> 6648 |       expect(responseStyleBehaviours[index]).toContain(rsbehaviourText);\n       |                                              ^\n  6649 |     });\n  6650 |     if (testNames.includes(testStemForm)) {\n  6651 |       await this.endTestPopUpElements.nth(17).click();\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6648:46)\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6647:9)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:27:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S24:W0] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S24:W0] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N75964A67804\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N75964A67804/dataFiles/Score_DataExport_AutoFilter_Template_N75964A67804.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N75964A67804 FirstName=Wilton LastName =N75964A67804 Age = 10/12/2020\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N75964A67804\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Picture Vocabulary\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22753|Ages 11 to 14|\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "[]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-12T08:52:12.167Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N75964A67804)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-93df7-rio-for-SSP5-Test-Rerouting-chrome/attachments/Generated-wLookUp-Filter-Template-N75964A67804--6b160a9cf2f1eb67588dc42236d6e1ef1ed4aafd.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-93df7-rio-for-SSP5-Test-Rerouting-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-93df7-rio-for-SSP5-Test-Rerouting-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-93df7-rio-for-SSP5-Test-Rerouting-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-93df7-rio-for-SSP5-Test-Rerouting-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 10,
+                        "line": 6604
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1bbcbfade8812fa3f7bb-5b63fe060d968318cdc9",
+              "file": "ReroutingandLeftNav/PICVOC_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Grades 6 to 9 - First and Last item check Scenario for SSP5 Test Rerouting",
+              "ok": true,
+              "tags": [
+                "PICVOC",
+                "Rerouting",
+                "Regression",
+                "AUT_ENG_02"
+              ],
+              "tests": [
+                {
+                  "timeout": 5400000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 488919,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S24:W1] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S24:W1] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N7401A45078\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N7401A45078/dataFiles/Score_DataExport_AutoFilter_Template_N7401A45078.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N7401A45078 FirstName=Tiara LastName =N7401A45078 Age = 04/12/2020\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N7401A45078\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Picture Vocabulary\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22753|Grades 6 to 9|\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Displayed good vocabulary knowledge'\u001b[39m,\n  \u001b[32m'Had difficulty retrieving words'\u001b[39m,\n  \u001b[32m'Displayed limited vocabulary knowledge'\u001b[39m,\n  \u001b[32m'Displayed age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'Expressed oral responses with ease'\u001b[39m,\n  \u001b[32m'Did not display age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'Had difficulty expressing oral responses'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Retrieved words fluently'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N7401A45078/dataFiles/Score_DataExport_AutoFilter_Template_N7401A45078.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N7401A45078\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N7401A45078; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N7401A45078.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N7401A45078/downloads/wLookUp_N7401A45078_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N7401A45078/downloads/wLookUp_N7401A45078_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N7401A45078/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N7401A45078', Available files: [Score_DataExport_AutoFilter_Template_N7401A45078_Decile.txt, Score_DataExport_AutoFilter_Template_N7401A45078_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N7401A45078_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N7401A45078_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N7401A45078/downloads/extracted/Score_DataExport_AutoFilter_Template_N7401A45078_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N7401A45078\"],[\"dateOfTest\",\"2026-10-12\"],[\"testName\",\"Picture Vocabulary\"],[\"testStemForm\",\"PICVOC.W5PA\"],[\"lookUpModel\",\"SingleTable\"],[\"sumItemScores\",\"29\"],[\"baselCredit\",\"17\"],[\"wLookUp\",\"46\"],[\"wScore\",\"575.25\"],[\"SEMW\",\"9.87\"],[\"WlkpAdminItems\",\"\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xxxxxxxxxxxxxxxxx111111111101111111111111111111\"]]\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N7401A45078 <> N7401A45078\n"
+                        },
+                        {
+                          "text": "2 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-10-12 <> 2026-10-12\n"
+                        },
+                        {
+                          "text": "3 Test Name ->  value from the RunTime VS downloaded file is =  Picture Vocabulary <> Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "4 TEst stem form ->  value from the RunTime VS downloaded file is =  PICVOC.W5PA <> PICVOC.W5PA\n"
+                        },
+                        {
+                          "text": "5 Look Up Model ->  value from the RunTime VS downloaded file is =  SingleTable <> SingleTable\n"
+                        },
+                        {
+                          "text": "6 Sum Item Scores ->  value from the RunTime VS downloaded file is =  29 <> 29\n"
+                        },
+                        {
+                          "text": "7 Basal Credit ->  value from the RunTime VS downloaded file is =  17 <> 17\n"
+                        },
+                        {
+                          "text": "8 wLookUp ->  value from the RunTime VS downloaded file is =  46 <> 46\n"
+                        },
+                        {
+                          "text": "9 WLkpAdminItems ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "10 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "11 wScore ->  value from the RunTime VS downloaded file is =  575.25 <> 575.25\n"
+                        },
+                        {
+                          "text": "12 semW ->  value from the RunTime VS downloaded file is =  9.87 <> 9.87\n"
+                        },
+                        {
+                          "text": "13 Score String ->  value from the RunTime VS downloaded file is =  ^xxxxxxxxxxxxxxxxx111111111101111111111111111111 <> ^xxxxxxxxxxxxxxxxx111111111101111111111111111111\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:256:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:324:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6783:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:53:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m256\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@575'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@575'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1791795868254\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:256:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:324:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6783:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:53:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-10-12T08:56:19.464Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N7401A45078)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-9740c-rio-for-SSP5-Test-Rerouting-chrome/attachments/Generated-wLookUp-Filter-Template-N7401A45078--f99a0f3f7cc06a155be9a4bfaa44dca4a6091005.csv"
+                        },
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-9740c-rio-for-SSP5-Test-Rerouting-chrome/attachments/Downloaded-Zip-file-8e54d04aed6f4969d692cb44363b5605fdece9de.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1bbcbfade8812fa3f7bb-3334c52a340d2c13d7dd",
+              "file": "ReroutingandLeftNav/PICVOC_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 11 to 14 - Rerouting End Test Scenario for SSP5 Test Rerouting",
+              "ok": true,
+              "tags": [
+                "PICVOC",
+                "Rerouting",
+                "Regression",
+                "AUT_ENG_02"
+              ],
+              "tests": [
+                {
+                  "timeout": 5400000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 343295,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S24:W1] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S24:W1] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N23312A54441\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N23312A54441/dataFiles/Score_DataExport_AutoFilter_Template_N23312A54441.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N23312A54441 FirstName=Aidan LastName =N23312A54441 Age = 10/12/2019\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N23312A54441\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Picture Vocabulary\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22753|Ages 11 to 14|\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Displayed good vocabulary knowledge'\u001b[39m,\n  \u001b[32m'Had difficulty retrieving words'\u001b[39m,\n  \u001b[32m'Displayed limited vocabulary knowledge'\u001b[39m,\n  \u001b[32m'Displayed age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'Expressed oral responses with ease'\u001b[39m,\n  \u001b[32m'Did not display age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'Had difficulty expressing oral responses'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Retrieved words fluently'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N23312A54441/dataFiles/Score_DataExport_AutoFilter_Template_N23312A54441.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N23312A54441\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N23312A54441; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N23312A54441.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N23312A54441/downloads/wLookUp_N23312A54441_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N23312A54441/downloads/wLookUp_N23312A54441_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N23312A54441/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N23312A54441', Available files: [Score_DataExport_AutoFilter_Template_N23312A54441_Decile.txt, Score_DataExport_AutoFilter_Template_N23312A54441_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N23312A54441_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N23312A54441_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N23312A54441/downloads/extracted/Score_DataExport_AutoFilter_Template_N23312A54441_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N23312A54441\"],[\"dateOfTest\",\"2026-10-12\"],[\"testName\",\"Picture Vocabulary\"],[\"testStemForm\",\"PICVOC.W5PA\"],[\"lookUpModel\",\"SingleTable\"],[\"sumItemScores\",\"6\"],[\"baselCredit\",\"17\"],[\"wLookUp\",\"23\"],[\"wScore\",\"491.88\"],[\"SEMW\",\"5.30\"],[\"WlkpAdminItems\",\"\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xxxxxxxxxxxxxxxxx1111100100000xxxxxxxxxxxxxxxxx\"]]\n"
+                        },
+                        {
+                          "text": "14 Examinee ID ->  value from the RunTime VS downloaded file is =  N23312A54441 <> N23312A54441\n"
+                        },
+                        {
+                          "text": "15 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-10-12 <> 2026-10-12\n"
+                        },
+                        {
+                          "text": "16 Test Name ->  value from the RunTime VS downloaded file is =  Picture Vocabulary <> Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "17 TEst stem form ->  value from the RunTime VS downloaded file is =  PICVOC.W5PA <> PICVOC.W5PA\n"
+                        },
+                        {
+                          "text": "18 Look Up Model ->  value from the RunTime VS downloaded file is =  SingleTable <> SingleTable\n"
+                        },
+                        {
+                          "text": "19 Sum Item Scores ->  value from the RunTime VS downloaded file is =  6 <> 6\n"
+                        },
+                        {
+                          "text": "20 Basal Credit ->  value from the RunTime VS downloaded file is =  17 <> 17\n"
+                        },
+                        {
+                          "text": "21 wLookUp ->  value from the RunTime VS downloaded file is =  23 <> 23\n"
+                        },
+                        {
+                          "text": "22 WLkpAdminItems ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "23 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "24 wScore ->  value from the RunTime VS downloaded file is =  491.88 <> 491.88\n"
+                        },
+                        {
+                          "text": "25 semW ->  value from the RunTime VS downloaded file is =  5.3 <> 5.3\n"
+                        },
+                        {
+                          "text": "26 Score String ->  value from the RunTime VS downloaded file is =  ^xxxxxxxxxxxxxxxxx1111100100000xxxxxxxxxxxxxxxxx <> ^xxxxxxxxxxxxxxxxx1111100100000xxxxxxxxxxxxxxxxx\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:256:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:324:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6783:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:53:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m256\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@403'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@403'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1791796211559\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:256:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:324:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6783:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:53:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-10-12T09:04:28.859Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N23312A54441)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-45708-rio-for-SSP5-Test-Rerouting-chrome/attachments/Generated-wLookUp-Filter-Template-N23312A54441--48edaa1700ff0ba3232ab9b28c8825b846cac246.csv"
+                        },
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-45708-rio-for-SSP5-Test-Rerouting-chrome/attachments/Downloaded-Zip-file-fda22455ebae379cff8b44de9f55ba51ae369a3e.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1bbcbfade8812fa3f7bb-cd618a1c69abc0d570e5",
+              "file": "ReroutingandLeftNav/PICVOC_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Grades 6 to 9 - Score Error Scenario for SSP5 Test Rerouting",
+              "ok": false,
+              "tags": [
+                "PICVOC",
+                "Rerouting",
+                "Regression",
+                "AUT_ENG_02"
+              ],
+              "tests": [
+                {
+                  "timeout": 5400000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 313330,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(),\\'N15027A48343\\')]/ancestor::button')\u001b[22m\n\u001b[2m    - locator resolved to <button tabindex=\"-1\" class=\"plain-button examinee-info-button\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(),\\'N15027A48343\\')]/ancestor::button')\u001b[22m\n\u001b[2m    - locator resolved to <button tabindex=\"-1\" class=\"plain-button examinee-info-button\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n\n    at CommonTestPage.endSessionForScoreErrorCheck (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:3972:98)\n    at CommonTestPage.reroutingUsingLeftNavForBasalAndCeilingTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:3829:11)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:25:17",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 98,
+                          "line": 3972
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:3972\n\n\u001b[0m \u001b[90m 3970 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mneedsAttentionText)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 3971 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mexitReviewModeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 3972 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m`//span[starts-with(text(),'${examinee_ID}')]/ancestor::button`\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 3973 |\u001b[39m         \u001b[36mconst\u001b[39m ipad7 \u001b[33m=\u001b[39m devices[\u001b[32m\"iPad (gen 7) landscape\"\u001b[39m]\u001b[33m;\u001b[39m\n \u001b[90m 3974 |\u001b[39m         \u001b[36mconst\u001b[39m sessionId \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdashboardPage\u001b[33m.\u001b[39mgetSessionID()\u001b[33m;\u001b[39m\n \u001b[90m 3975 |\u001b[39m         \u001b[36mconst\u001b[39m examineeContext \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m browser\u001b[33m.\u001b[39mnewContext({\u001b[33m...\u001b[39mipad7\u001b[33m,\u001b[39m viewport\u001b[33m:\u001b[39m { width\u001b[33m:\u001b[39m \u001b[35m600\u001b[39m\u001b[33m,\u001b[39m height\u001b[33m:\u001b[39m \u001b[35m800\u001b[39m }})\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 98,
+                            "line": 3972
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(),\\'N15027A48343\\')]/ancestor::button')\u001b[22m\n\u001b[2m    - locator resolved to <button tabindex=\"-1\" class=\"plain-button examinee-info-button\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n\n\n   at ../page/commonTestPage.ts:3972\n\n  3970 |         await expect(this.needsAttentionText).toBeVisible();\n  3971 |         await this.exitReviewModeButton.click();\n> 3972 |         await this.page.locator(`//span[starts-with(text(),'${examinee_ID}')]/ancestor::button`).click();\n       |                                                                                                  ^\n  3973 |         const ipad7 = devices[\"iPad (gen 7) landscape\"];\n  3974 |         const sessionId = await this.dashboardPage.getSessionID();\n  3975 |         const examineeContext = await browser.newContext({...ipad7, viewport: { width: 600, height: 800 }});\n    at CommonTestPage.endSessionForScoreErrorCheck (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:3972:98)\n    at CommonTestPage.reroutingUsingLeftNavForBasalAndCeilingTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:3829:11)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:25:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S24:W1] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S24:W1] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N15027A48343\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N15027A48343/dataFiles/Score_DataExport_AutoFilter_Template_N15027A48343.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N15027A48343 FirstName=Lora LastName =N15027A48343 Age = 04/12/2019\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N15027A48343\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Picture Vocabulary\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22753|Grades 6 to 9|\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-12T09:10:12.193Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N15027A48343)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-fe3c7-rio-for-SSP5-Test-Rerouting-chrome/attachments/Generated-wLookUp-Filter-Template-N15027A48343--cc9429e364a78275bce069b79c523a7692465389.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-fe3c7-rio-for-SSP5-Test-Rerouting-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-fe3c7-rio-for-SSP5-Test-Rerouting-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-fe3c7-rio-for-SSP5-Test-Rerouting-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-fe3c7-rio-for-SSP5-Test-Rerouting-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 98,
+                        "line": 3972
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1bbcbfade8812fa3f7bb-004430b3c1379a1d9254",
+              "file": "ReroutingandLeftNav/PICVOC_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Age 15 to Average Adult -  Flag Item with Notes and Review scenario for SSP6 Test Rerouting",
+              "ok": false,
+              "tags": [
+                "PICVOC",
+                "Rerouting",
+                "Regression",
+                "AUT_ENG_02"
+              ],
+              "tests": [
+                {
+                  "timeout": 5400000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 237989,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"0 items\"\u001b[39m\nReceived string:    \u001b[31m\" 4 Items\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"0 items\"\u001b[39m\nReceived string:    \u001b[31m\" 4 Items\"\u001b[39m\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6604:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:27:21",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 10,
+                          "line": 6604
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:6604\n\n\u001b[0m \u001b[90m 6602 |\u001b[39m       expect\n \u001b[90m 6603 |\u001b[39m         \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m8\u001b[39m)\u001b[33m.\u001b[39mtextContent())\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6604 |\u001b[39m         \u001b[33m.\u001b[39mtoContain(\u001b[33mFlagsText\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6605 |\u001b[39m       expect\n \u001b[90m 6606 |\u001b[39m         \u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mendTestPopUpElements\u001b[33m.\u001b[39mnth(\u001b[35m13\u001b[39m)\u001b[33m.\u001b[39mtextContent())\n \u001b[90m 6607 |\u001b[39m         \u001b[33m.\u001b[39mtoContain(\u001b[33mOutcomeMsg\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 10,
+                            "line": 6604
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"0 items\"\u001b[39m\nReceived string:    \u001b[31m\" 4 Items\"\u001b[39m\n\n   at ../page/commonTestPage.ts:6604\n\n  6602 |       expect\n  6603 |         .soft(await this.endTestPopUpElements.nth(8).textContent())\n> 6604 |         .toContain(FlagsText);\n       |          ^\n  6605 |       expect\n  6606 |         .soft(await this.endTestPopUpElements.nth(13).textContent())\n  6607 |         .toContain(OutcomeMsg);\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6604:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:27:21"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 10,
+                            "line": 6607
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Examinee completed all required test items\"\u001b[39m\nReceived string:    \u001b[31m\"4 Items\"\u001b[39m\n\n   at ../page/commonTestPage.ts:6607\n\n  6605 |       expect\n  6606 |         .soft(await this.endTestPopUpElements.nth(13).textContent())\n> 6607 |         .toContain(OutcomeMsg);\n       |          ^\n  6608 |       if (testNames1.includes(testStemForm)) {\n  6609 |         await this.endTestPopUpElements.nth(17).click();\n  6610 |       } else if (testNames2.includes(testStemForm)) {\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6607:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:27:21"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 46,
+                            "line": 6648
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must not be null nor undefined\n\nReceived has value: \u001b[31mundefined\u001b[39m\n\n   at ../page/commonTestPage.ts:6648\n\n  6646 |     console.log(responseStyleBehaviours);\n  6647 |     rsb.forEach((rsbehaviourText, index) => {\n> 6648 |       expect(responseStyleBehaviours[index]).toContain(rsbehaviourText);\n       |                                              ^\n  6649 |     });\n  6650 |     if (testNames.includes(testStemForm)) {\n  6651 |       await this.endTestPopUpElements.nth(17).click();\n    at forEach (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6648:46)\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6647:9)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:27:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S24:W2] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S24:W2] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N84955A77124\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N84955A77124/dataFiles/Score_DataExport_AutoFilter_Template_N84955A77124.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N84955A77124 FirstName=Katrina LastName =N84955A77124 Age = 10/12/2018\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N84955A77124\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Picture Vocabulary\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22757|Age 15 to Average Adult|\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "[]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-12T09:15:27.025Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N84955A77124)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-3c265-rio-for-SSP6-Test-Rerouting-chrome/attachments/Generated-wLookUp-Filter-Template-N84955A77124--392905423b1a20831bf4350c4c6b70b0f3cd21bd.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-3c265-rio-for-SSP6-Test-Rerouting-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-3c265-rio-for-SSP6-Test-Rerouting-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-3c265-rio-for-SSP6-Test-Rerouting-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-3c265-rio-for-SSP6-Test-Rerouting-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 10,
+                        "line": 6604
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1bbcbfade8812fa3f7bb-2f53a289b9dc030bd615",
+              "file": "ReroutingandLeftNav/PICVOC_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Grade 10 to Average Adult - First and Last item check Scenario for SSP6 Test Rerouting",
+              "ok": true,
+              "tags": [
+                "PICVOC",
+                "Rerouting",
+                "Regression",
+                "AUT_ENG_02"
+              ],
+              "tests": [
+                {
+                  "timeout": 5400000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 448354,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S24:W3] Login successful for S04PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S24:W3] Login successful for S04PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N70432A22875\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N70432A22875/dataFiles/Score_DataExport_AutoFilter_Template_N70432A22875.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N70432A22875 FirstName=Coy LastName =N70432A22875 Age = 04/12/2018\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N70432A22875\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Picture Vocabulary\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22757|Grade 10 to Average Adult|\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Displayed good vocabulary knowledge'\u001b[39m,\n  \u001b[32m'Had difficulty retrieving words'\u001b[39m,\n  \u001b[32m'Displayed limited vocabulary knowledge'\u001b[39m,\n  \u001b[32m'Displayed age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'Expressed oral responses with ease'\u001b[39m,\n  \u001b[32m'Did not display age-appropriate speech and articulation'\u001b[39m,\n  \u001b[32m'Had difficulty expressing oral responses'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Retrieved words fluently'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N70432A22875/dataFiles/Score_DataExport_AutoFilter_Template_N70432A22875.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N70432A22875\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N70432A22875; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N70432A22875.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N70432A22875/downloads/wLookUp_N70432A22875_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N70432A22875/downloads/wLookUp_N70432A22875_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N70432A22875/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N70432A22875', Available files: [Score_DataExport_AutoFilter_Template_N70432A22875_Decile.txt, Score_DataExport_AutoFilter_Template_N70432A22875_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N70432A22875_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N70432A22875_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N70432A22875/downloads/extracted/Score_DataExport_AutoFilter_Template_N70432A22875_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N70432A22875\"],[\"dateOfTest\",\"2026-10-12\"],[\"testName\",\"Picture Vocabulary\"],[\"testStemForm\",\"PICVOC.W5PA\"],[\"lookUpModel\",\"SingleTable\"],[\"sumItemScores\",\"25\"],[\"baselCredit\",\"21\"],[\"wLookUp\",\"46\"],[\"wScore\",\"575.25\"],[\"SEMW\",\"9.87\"],[\"WlkpAdminItems\",\"\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xxxxxxxxxxxxxxxxxxxxx11111111110111111111111111\"]]\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N70432A22875 <> N70432A22875\n"
+                        },
+                        {
+                          "text": "2 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-10-12 <> 2026-10-12\n"
+                        },
+                        {
+                          "text": "3 Test Name ->  value from the RunTime VS downloaded file is =  Picture Vocabulary <> Picture Vocabulary\n"
+                        },
+                        {
+                          "text": "4 TEst stem form ->  value from the RunTime VS downloaded file is =  PICVOC.W5PA <> PICVOC.W5PA\n"
+                        },
+                        {
+                          "text": "5 Look Up Model ->  value from the RunTime VS downloaded file is =  SingleTable <> SingleTable\n"
+                        },
+                        {
+                          "text": "6 Sum Item Scores ->  value from the RunTime VS downloaded file is =  25 <> 25\n"
+                        },
+                        {
+                          "text": "7 Basal Credit ->  value from the RunTime VS downloaded file is =  21 <> 21\n"
+                        },
+                        {
+                          "text": "8 wLookUp ->  value from the RunTime VS downloaded file is =  46 <> 46\n"
+                        },
+                        {
+                          "text": "9 WLkpAdminItems ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "10 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "11 wScore ->  value from the RunTime VS downloaded file is =  575.25 <> 575.25\n"
+                        },
+                        {
+                          "text": "12 semW ->  value from the RunTime VS downloaded file is =  9.87 <> 9.87\n"
+                        },
+                        {
+                          "text": "13 Score String ->  value from the RunTime VS downloaded file is =  ^xxxxxxxxxxxxxxxxxxxxx11111111110111111111111111 <> ^xxxxxxxxxxxxxxxxxxxxx11111111110111111111111111\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:256:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:324:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6783:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:53:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m256\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@543'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@543'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1791797215284\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:256:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:324:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6783:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/PICVOC_Rerouting.spec.ts:53:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-10-12T09:19:27.084Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N70432A22875)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-62597-rio-for-SSP6-Test-Rerouting-chrome/attachments/Generated-wLookUp-Filter-Template-N70432A22875--e23a8c131278c08c0a96d867fd58809afe0d8849.csv"
+                        },
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-PICVOC-62597-rio-for-SSP6-Test-Rerouting-chrome/attachments/Downloaded-Zip-file-c0c5eb2e0dfef6c73c29ff5cc44f250e1e75c3bb.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1bbcbfade8812fa3f7bb-3475b00c9f7d1757955c",
+              "file": "ReroutingandLeftNav/PICVOC_Rerouting.spec.ts",
+              "line": 10,
+              "column": 13
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-12T08:51:56.098Z",
+    "duration": 2099949.809,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

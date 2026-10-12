@@ -1,0 +1,2133 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+        "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "commitHash": "d0d77a7eade3e7adbf251470ae490abd17f10c6f",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/38221563916"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 48,
+      "total": 95
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "UIAndReports/CONFRM_Multi_Block.spec.ts",
+      "file": "UIAndReports/CONFRM_Multi_Block.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " CONFRM UI And Reports",
+          "file": "UIAndReports/CONFRM_Multi_Block.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Ages 7 to Adult - For SSP2 End Test scenario when test ends at item 11 with score 1 Test UI",
+              "ok": true,
+              "tags": [
+                "CONFRM",
+                "Multi",
+                "Block",
+                "Regression",
+                "AUT_ENG_02",
+                "UIAndReports"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 481815,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S48:W0] Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S48:W0] Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N66486A36093\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66486A36093/dataFiles/Score_DataExport_AutoFilter_Template_N66486A36093.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N66486A36093 FirstName=Ashlynn LastName =N66486A36093 Age = 04/12/2015\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Concept Formation\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N66486A36093\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Concept Formation\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Concept Formation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 24296|Ages 7 to Adult|\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item C\n"
+                        },
+                        {
+                          "text": "Sample Item D, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item E, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Easily comprehended long, complex verbal instructions'\u001b[39m,\n  \u001b[32m'Used ‟self-talk” strategy'\u001b[39m,\n  \u001b[32m'Appeared to have difficulty comprehending long, complex verbal instructions'\u001b[39m,\n  \u001b[32m'Controlled frustration level as the items increased in difficulty'\u001b[39m,\n  \u001b[32m'Appeared to benefit from corrective feedback'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Displayed cognitive flexibility when moving between different item types/sets'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66486A36093/dataFiles/Score_DataExport_AutoFilter_Template_N66486A36093.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N66486A36093\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N66486A36093; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N66486A36093.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N66486A36093/downloads/wLookUp_N66486A36093_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66486A36093/downloads/wLookUp_N66486A36093_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66486A36093/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N66486A36093', Available files: [Score_DataExport_AutoFilter_Template_N66486A36093_Decile.txt, Score_DataExport_AutoFilter_Template_N66486A36093_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N66486A36093_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N66486A36093_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66486A36093/downloads/extracted/Score_DataExport_AutoFilter_Template_N66486A36093_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N66486A36093\"],[\"dateOfTest\",\"2026-10-12\"],[\"testName\",\"Concept Formation\"],[\"testStemForm\",\"CONFRM.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"6\"],[\"wScore\",\"463.21\"],[\"SEMW\",\"6.82\"],[\"WlkpAdminItems\",\"AB\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^05,01,xx,xx,xx\"]]\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N66486A36093 <> N66486A36093\n"
+                        },
+                        {
+                          "text": "2 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-10-12 <> 2026-10-12\n"
+                        },
+                        {
+                          "text": "3 Test Name ->  value from the RunTime VS downloaded file is =  Concept Formation <> Concept Formation\n"
+                        },
+                        {
+                          "text": "4 TEst stem form ->  value from the RunTime VS downloaded file is =  CONFRM.W5PA <> CONFRM.W5PA\n"
+                        },
+                        {
+                          "text": "5 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "6 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "7 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "8 wLookUp ->  value from the RunTime VS downloaded file is =  6 <> 6\n"
+                        },
+                        {
+                          "text": "9 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  AB <> AB\n"
+                        },
+                        {
+                          "text": "10 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "11 wScore ->  value from the RunTime VS downloaded file is =  463.21 <> 463.21\n"
+                        },
+                        {
+                          "text": "12 semW ->  value from the RunTime VS downloaded file is =  6.82 <> 6.82\n"
+                        },
+                        {
+                          "text": "13 Score String ->  value from the RunTime VS downloaded file is =  ^05,01,xx,xx,xx <> ^05,01,xx,xx,xx\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:256:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:324:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6783:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:48:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m256\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@438'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@438'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1791798275449\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:256:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:324:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6783:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:48:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-10-12T09:36:33.815Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N66486A36093)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-CONFRM_Multi_-fa43a-tem-11-with-score-1-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N66486A36093--c80fac50441f99232e1f2d3ab006f093387e86be.csv"
+                        },
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-CONFRM_Multi_-fa43a-tem-11-with-score-1-Test-UI-chrome/attachments/Downloaded-Zip-file-83ade06f3e287b8b0478029afbf8cbbe3877d1af.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51cdc574882827643113-a32971411e9d47690b20",
+              "file": "UIAndReports/CONFRM_Multi_Block.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Grade 2 to Adult - For SSP2 End Test scenario when test ends at item 20 with score 7 Test UI",
+              "ok": true,
+              "tags": [
+                "CONFRM",
+                "Multi",
+                "Block",
+                "Regression",
+                "AUT_ENG_02",
+                "UIAndReports"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 439005,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S48:W0] Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S48:W0] Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N99775A52107\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N99775A52107/dataFiles/Score_DataExport_AutoFilter_Template_N99775A52107.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N99775A52107 FirstName=Dagmar LastName =N99775A52107 Age = 10/12/2016\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Concept Formation\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N99775A52107\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Concept Formation\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Concept Formation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 24296|Grade 2 to Adult|\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item C\n"
+                        },
+                        {
+                          "text": "Sample Item D, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item E, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Sample Item F, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item G, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Easily comprehended long, complex verbal instructions'\u001b[39m,\n  \u001b[32m'Used ‟self-talk” strategy'\u001b[39m,\n  \u001b[32m'Appeared to have difficulty comprehending long, complex verbal instructions'\u001b[39m,\n  \u001b[32m'Controlled frustration level as the items increased in difficulty'\u001b[39m,\n  \u001b[32m'Appeared to benefit from corrective feedback'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Displayed cognitive flexibility when moving between different item types/sets'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N99775A52107/dataFiles/Score_DataExport_AutoFilter_Template_N99775A52107.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N99775A52107\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N99775A52107; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N99775A52107.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N99775A52107/downloads/wLookUp_N99775A52107_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N99775A52107/downloads/wLookUp_N99775A52107_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N99775A52107/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N99775A52107', Available files: [Score_DataExport_AutoFilter_Template_N99775A52107_Decile.txt, Score_DataExport_AutoFilter_Template_N99775A52107_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N99775A52107_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N99775A52107_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N99775A52107/downloads/extracted/Score_DataExport_AutoFilter_Template_N99775A52107_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N99775A52107\"],[\"dateOfTest\",\"2026-10-12\"],[\"testName\",\"Concept Formation\"],[\"testStemForm\",\"CONFRM.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"7\"],[\"wScore\",\"476.92\"],[\"SEMW\",\"5.09\"],[\"WlkpAdminItems\",\"BC\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,06,01,xx,xx\"]]\n"
+                        },
+                        {
+                          "text": "14 Examinee ID ->  value from the RunTime VS downloaded file is =  N99775A52107 <> N99775A52107\n"
+                        },
+                        {
+                          "text": "15 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-10-12 <> 2026-10-12\n"
+                        },
+                        {
+                          "text": "16 Test Name ->  value from the RunTime VS downloaded file is =  Concept Formation <> Concept Formation\n"
+                        },
+                        {
+                          "text": "17 TEst stem form ->  value from the RunTime VS downloaded file is =  CONFRM.W5PA <> CONFRM.W5PA\n"
+                        },
+                        {
+                          "text": "18 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "19 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "20 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "21 wLookUp ->  value from the RunTime VS downloaded file is =  7 <> 7\n"
+                        },
+                        {
+                          "text": "22 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  BC <> BC\n"
+                        },
+                        {
+                          "text": "23 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "24 wScore ->  value from the RunTime VS downloaded file is =  476.92 <> 476.92\n"
+                        },
+                        {
+                          "text": "25 semW ->  value from the RunTime VS downloaded file is =  5.09 <> 5.09\n"
+                        },
+                        {
+                          "text": "26 Score String ->  value from the RunTime VS downloaded file is =  ^xx,06,01,xx,xx <> ^xx,06,01,xx,xx\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:256:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:324:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6783:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:48:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m256\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@448'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@448'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1791798714547\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:256:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:324:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6783:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:48:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-10-12T09:44:36.084Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N99775A52107)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-CONFRM_Multi_-3220b-tem-20-with-score-7-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N99775A52107--fe2f2bc83e4ba0cd383c4eeb8dff3ce1fdb25706.csv"
+                        },
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-CONFRM_Multi_-3220b-tem-20-with-score-7-Test-UI-chrome/attachments/Downloaded-Zip-file-7f080505f1f85b1ac1c01dcb144b108ac160e0e3.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51cdc574882827643113-cfb6b21c9eedd7211e68",
+              "file": "UIAndReports/CONFRM_Multi_Block.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 7 to Adult - For SSP2 End Test scenario when test ends at item 29 with score 13 Test UI",
+              "ok": true,
+              "tags": [
+                "CONFRM",
+                "Multi",
+                "Block",
+                "Regression",
+                "AUT_ENG_02",
+                "UIAndReports"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 489162,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S48:W0] Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S48:W0] Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N76541A1468\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N76541A1468/dataFiles/Score_DataExport_AutoFilter_Template_N76541A1468.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N76541A1468 FirstName=Emil LastName =N76541A1468 Age = 04/12/2016\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Concept Formation\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N76541A1468\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Concept Formation\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Concept Formation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 24296|Ages 7 to Adult|\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item C\n"
+                        },
+                        {
+                          "text": "Sample Item D, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item E, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Sample Item F, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item G, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Sample Item H, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Sample Item I, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Easily comprehended long, complex verbal instructions'\u001b[39m,\n  \u001b[32m'Used ‟self-talk” strategy'\u001b[39m,\n  \u001b[32m'Appeared to have difficulty comprehending long, complex verbal instructions'\u001b[39m,\n  \u001b[32m'Controlled frustration level as the items increased in difficulty'\u001b[39m,\n  \u001b[32m'Appeared to benefit from corrective feedback'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Displayed cognitive flexibility when moving between different item types/sets'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N76541A1468/dataFiles/Score_DataExport_AutoFilter_Template_N76541A1468.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N76541A1468\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N76541A1468; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N76541A1468.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N76541A1468/downloads/wLookUp_N76541A1468_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N76541A1468/downloads/wLookUp_N76541A1468_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N76541A1468/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N76541A1468', Available files: [Score_DataExport_AutoFilter_Template_N76541A1468_Decile.txt, Score_DataExport_AutoFilter_Template_N76541A1468_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N76541A1468_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N76541A1468_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N76541A1468/downloads/extracted/Score_DataExport_AutoFilter_Template_N76541A1468_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N76541A1468\"],[\"dateOfTest\",\"2026-10-12\"],[\"testName\",\"Concept Formation\"],[\"testStemForm\",\"CONFRM.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"13\"],[\"wScore\",\"491.49\"],[\"SEMW\",\"5.01\"],[\"WlkpAdminItems\",\"BCD\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,06,07,00,xx\"]]\n"
+                        },
+                        {
+                          "text": "27 Examinee ID ->  value from the RunTime VS downloaded file is =  N76541A1468 <> N76541A1468\n"
+                        },
+                        {
+                          "text": "28 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-10-12 <> 2026-10-12\n"
+                        },
+                        {
+                          "text": "29 Test Name ->  value from the RunTime VS downloaded file is =  Concept Formation <> Concept Formation\n"
+                        },
+                        {
+                          "text": "30 TEst stem form ->  value from the RunTime VS downloaded file is =  CONFRM.W5PA <> CONFRM.W5PA\n"
+                        },
+                        {
+                          "text": "31 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "32 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "33 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "34 wLookUp ->  value from the RunTime VS downloaded file is =  13 <> 13\n"
+                        },
+                        {
+                          "text": "35 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  BCD <> BCD\n"
+                        },
+                        {
+                          "text": "36 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "37 wScore ->  value from the RunTime VS downloaded file is =  491.49 <> 491.49\n"
+                        },
+                        {
+                          "text": "38 semW ->  value from the RunTime VS downloaded file is =  5.01 <> 5.01\n"
+                        },
+                        {
+                          "text": "39 Score String ->  value from the RunTime VS downloaded file is =  ^xx,06,07,00,xx <> ^xx,06,07,00,xx\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:256:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:324:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6783:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:48:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m256\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@526'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@526'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1791799203743\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:256:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:324:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6783:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:48:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-10-12T09:51:55.113Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N76541A1468)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-CONFRM_Multi_-6b93c-em-29-with-score-13-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N76541A1468--264fd3323af3507ca52dcf0483f26365b0e7c769.csv"
+                        },
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-CONFRM_Multi_-6b93c-em-29-with-score-13-Test-UI-chrome/attachments/Downloaded-Zip-file-8fc610b41195bd4e23ee174bb6c93b982a43338a.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51cdc574882827643113-e98faf827c5070856cdd",
+              "file": "UIAndReports/CONFRM_Multi_Block.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Grade 2 to Adult - For SSP2 Forward flow scenario at item 11 with score 2 Test UI",
+              "ok": true,
+              "tags": [
+                "CONFRM",
+                "Multi",
+                "Block",
+                "Regression",
+                "AUT_ENG_02",
+                "UIAndReports"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 409249,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S48:W0] Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S48:W0] Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N48316A51134\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N48316A51134/dataFiles/Score_DataExport_AutoFilter_Template_N48316A51134.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N48316A51134 FirstName=Asia LastName =N48316A51134 Age = 10/12/2015\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Concept Formation\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N48316A51134\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Concept Formation\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Concept Formation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 24296|Grade 2 to Adult|\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item C\n"
+                        },
+                        {
+                          "text": "Sample Item D, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item E, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Sample Item F, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item G, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Easily comprehended long, complex verbal instructions'\u001b[39m,\n  \u001b[32m'Used ‟self-talk” strategy'\u001b[39m,\n  \u001b[32m'Appeared to have difficulty comprehending long, complex verbal instructions'\u001b[39m,\n  \u001b[32m'Controlled frustration level as the items increased in difficulty'\u001b[39m,\n  \u001b[32m'Appeared to benefit from corrective feedback'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Displayed cognitive flexibility when moving between different item types/sets'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N48316A51134/dataFiles/Score_DataExport_AutoFilter_Template_N48316A51134.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N48316A51134\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N48316A51134; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N48316A51134.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N48316A51134/downloads/wLookUp_N48316A51134_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N48316A51134/downloads/wLookUp_N48316A51134_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N48316A51134/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N48316A51134', Available files: [Score_DataExport_AutoFilter_Template_N48316A51134_Decile.txt, Score_DataExport_AutoFilter_Template_N48316A51134_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N48316A51134_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N48316A51134_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N48316A51134/downloads/extracted/Score_DataExport_AutoFilter_Template_N48316A51134_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N48316A51134\"],[\"dateOfTest\",\"2026-10-12\"],[\"testName\",\"Concept Formation\"],[\"testStemForm\",\"CONFRM.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"2\"],[\"wScore\",\"459.06\"],[\"SEMW\",\"7.17\"],[\"WlkpAdminItems\",\"BC\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,02,00,xx,xx\"]]\n"
+                        },
+                        {
+                          "text": "40 Examinee ID ->  value from the RunTime VS downloaded file is =  N48316A51134 <> N48316A51134\n"
+                        },
+                        {
+                          "text": "41 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-10-12 <> 2026-10-12\n"
+                        },
+                        {
+                          "text": "42 Test Name ->  value from the RunTime VS downloaded file is =  Concept Formation <> Concept Formation\n"
+                        },
+                        {
+                          "text": "43 TEst stem form ->  value from the RunTime VS downloaded file is =  CONFRM.W5PA <> CONFRM.W5PA\n"
+                        },
+                        {
+                          "text": "44 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "45 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "46 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "47 wLookUp ->  value from the RunTime VS downloaded file is =  2 <> 2\n"
+                        },
+                        {
+                          "text": "48 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  BC <> BC\n"
+                        },
+                        {
+                          "text": "49 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "50 wScore ->  value from the RunTime VS downloaded file is =  459.06 <> 459.06\n"
+                        },
+                        {
+                          "text": "51 semW ->  value from the RunTime VS downloaded file is =  7.17 <> 7.17\n"
+                        },
+                        {
+                          "text": "52 Score String ->  value from the RunTime VS downloaded file is =  ^xx,02,00,xx,xx <> ^xx,02,00,xx,xx\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:256:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:324:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6783:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:48:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m256\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@447'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@447'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1791799613043\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:256:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:324:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6783:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:48:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-10-12T10:00:04.299Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N48316A51134)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-CONFRM_Multi_-0f3c1-tem-11-with-score-2-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N48316A51134--592b442fb554ae033d44eb8d260e8b87da92b3b3.csv"
+                        },
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-CONFRM_Multi_-0f3c1-tem-11-with-score-2-Test-UI-chrome/attachments/Downloaded-Zip-file-f841ca6720414f9d7201786ae1ed33c397c7f5a4.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51cdc574882827643113-52b52531c7fb0d8a4f60",
+              "file": "UIAndReports/CONFRM_Multi_Block.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Ages 7 to Adult - For SSP2 Forward flow scenario at item 20 with score 8 Test UI",
+              "ok": true,
+              "tags": [
+                "CONFRM",
+                "Multi",
+                "Block",
+                "Regression",
+                "AUT_ENG_02",
+                "UIAndReports"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 489928,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S48:W0] Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S48:W0] Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N28664A28777\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N28664A28777/dataFiles/Score_DataExport_AutoFilter_Template_N28664A28777.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N28664A28777 FirstName=Jovan LastName =N28664A28777 Age = 10/12/2017\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Concept Formation\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N28664A28777\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Concept Formation\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Concept Formation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 24296|Ages 7 to Adult|\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item C\n"
+                        },
+                        {
+                          "text": "Sample Item D, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item E, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Sample Item F, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item G, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Sample Item H, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Sample Item I, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Easily comprehended long, complex verbal instructions'\u001b[39m,\n  \u001b[32m'Used ‟self-talk” strategy'\u001b[39m,\n  \u001b[32m'Appeared to have difficulty comprehending long, complex verbal instructions'\u001b[39m,\n  \u001b[32m'Controlled frustration level as the items increased in difficulty'\u001b[39m,\n  \u001b[32m'Appeared to benefit from corrective feedback'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Displayed cognitive flexibility when moving between different item types/sets'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N28664A28777/dataFiles/Score_DataExport_AutoFilter_Template_N28664A28777.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N28664A28777\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N28664A28777; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N28664A28777.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N28664A28777/downloads/wLookUp_N28664A28777_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N28664A28777/downloads/wLookUp_N28664A28777_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N28664A28777/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N28664A28777', Available files: [Score_DataExport_AutoFilter_Template_N28664A28777_Decile.txt, Score_DataExport_AutoFilter_Template_N28664A28777_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N28664A28777_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N28664A28777_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N28664A28777/downloads/extracted/Score_DataExport_AutoFilter_Template_N28664A28777_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N28664A28777\"],[\"dateOfTest\",\"2026-10-12\"],[\"testName\",\"Concept Formation\"],[\"testStemForm\",\"CONFRM.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"8\"],[\"wScore\",\"478.63\"],[\"SEMW\",\"4.81\"],[\"WlkpAdminItems\",\"BCD\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,06,02,00,xx\"]]\n"
+                        },
+                        {
+                          "text": "53 Examinee ID ->  value from the RunTime VS downloaded file is =  N28664A28777 <> N28664A28777\n"
+                        },
+                        {
+                          "text": "54 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-10-12 <> 2026-10-12\n"
+                        },
+                        {
+                          "text": "55 Test Name ->  value from the RunTime VS downloaded file is =  Concept Formation <> Concept Formation\n"
+                        },
+                        {
+                          "text": "56 TEst stem form ->  value from the RunTime VS downloaded file is =  CONFRM.W5PA <> CONFRM.W5PA\n"
+                        },
+                        {
+                          "text": "57 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "58 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "59 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "60 wLookUp ->  value from the RunTime VS downloaded file is =  8 <> 8\n"
+                        },
+                        {
+                          "text": "61 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  BCD <> BCD\n"
+                        },
+                        {
+                          "text": "62 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "63 wScore ->  value from the RunTime VS downloaded file is =  478.63 <> 478.63\n"
+                        },
+                        {
+                          "text": "64 semW ->  value from the RunTime VS downloaded file is =  4.81 <> 4.81\n"
+                        },
+                        {
+                          "text": "65 Score String ->  value from the RunTime VS downloaded file is =  ^xx,06,02,00,xx <> ^xx,06,02,00,xx\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:256:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:324:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6783:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:48:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m256\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@526'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@526'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1791800102942\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:256:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:324:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6783:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:48:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-10-12T10:06:53.573Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N28664A28777)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-CONFRM_Multi_-d7d76-tem-20-with-score-8-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N28664A28777--36f27cd54f432ccc6e749d9e8d5e0d61a4c3a39a.csv"
+                        },
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-CONFRM_Multi_-d7d76-tem-20-with-score-8-Test-UI-chrome/attachments/Downloaded-Zip-file-e0f521338c862c7e9b2e5e287347ce5a33c02f1d.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51cdc574882827643113-67af563e47028c7617fe",
+              "file": "UIAndReports/CONFRM_Multi_Block.spec.ts",
+              "line": 10,
+              "column": 13
+            },
+            {
+              "title": "Grade 2 to Adult - For SSP2 Forward flow scenario at item 29 with score 14 Test UI",
+              "ok": true,
+              "tags": [
+                "CONFRM",
+                "Multi",
+                "Block",
+                "Regression",
+                "AUT_ENG_02",
+                "UIAndReports"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 496485,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S48:W0] Login successful for S07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S48:W0] Login successful for S07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N3432A49272\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3432A49272/dataFiles/Score_DataExport_AutoFilter_Template_N3432A49272.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N3432A49272 FirstName=Giovanny LastName =N3432A49272 Age = 04/12/2019\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Concept Formation\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N3432A49272\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Concept Formation\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Concept Formation\n"
+                        },
+                        {
+                          "text": "selected ssp is = 24296|Grade 2 to Adult|\n"
+                        },
+                        {
+                          "text": "Introduction 2\n"
+                        },
+                        {
+                          "text": "Sample Item C\n"
+                        },
+                        {
+                          "text": "Sample Item D, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item E, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Sample Item F, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item G, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Sample Item H, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Introduction 4\n"
+                        },
+                        {
+                          "text": "Sample Item I, Trial 1\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Item 39\n"
+                        },
+                        {
+                          "text": "Item 40\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Easily comprehended long, complex verbal instructions'\u001b[39m,\n  \u001b[32m'Used ‟self-talk” strategy'\u001b[39m,\n  \u001b[32m'Appeared to have difficulty comprehending long, complex verbal instructions'\u001b[39m,\n  \u001b[32m'Controlled frustration level as the items increased in difficulty'\u001b[39m,\n  \u001b[32m'Appeared to benefit from corrective feedback'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m,\n  \u001b[32m'Displayed cognitive flexibility when moving between different item types/sets'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3432A49272/dataFiles/Score_DataExport_AutoFilter_Template_N3432A49272.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N3432A49272\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N3432A49272; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "A new tab opened while downloading: \n"
+                        },
+                        {
+                          "text": "Download event on  - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N3432A49272.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N3432A49272/downloads/wLookUp_N3432A49272_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3432A49272/downloads/wLookUp_N3432A49272_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3432A49272/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N3432A49272', Available files: [Score_DataExport_AutoFilter_Template_N3432A49272_Decile.txt, Score_DataExport_AutoFilter_Template_N3432A49272_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N3432A49272_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N3432A49272_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3432A49272/downloads/extracted/Score_DataExport_AutoFilter_Template_N3432A49272_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N3432A49272\"],[\"dateOfTest\",\"2026-10-12\"],[\"testName\",\"Concept Formation\"],[\"testStemForm\",\"CONFRM.W5PA\"],[\"lookUpModel\",\"MultiTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"14\"],[\"wScore\",\"490.17\"],[\"SEMW\",\"4.27\"],[\"WlkpAdminItems\",\"BCDE\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^xx,06,08,00,00\"]]\n"
+                        },
+                        {
+                          "text": "66 Examinee ID ->  value from the RunTime VS downloaded file is =  N3432A49272 <> N3432A49272\n"
+                        },
+                        {
+                          "text": "67 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-10-12 <> 2026-10-12\n"
+                        },
+                        {
+                          "text": "68 Test Name ->  value from the RunTime VS downloaded file is =  Concept Formation <> Concept Formation\n"
+                        },
+                        {
+                          "text": "69 TEst stem form ->  value from the RunTime VS downloaded file is =  CONFRM.W5PA <> CONFRM.W5PA\n"
+                        },
+                        {
+                          "text": "70 Look Up Model ->  value from the RunTime VS downloaded file is =  MultiTable <> MultiTable\n"
+                        },
+                        {
+                          "text": "71 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "72 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "73 wLookUp ->  value from the RunTime VS downloaded file is =  14 <> 14\n"
+                        },
+                        {
+                          "text": "74 WLkpAdminItems ->  value from the RunTime VS downloaded file is =  BCDE <> BCDE\n"
+                        },
+                        {
+                          "text": "75 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "76 wScore ->  value from the RunTime VS downloaded file is =  490.17 <> 490.17\n"
+                        },
+                        {
+                          "text": "77 semW ->  value from the RunTime VS downloaded file is =  4.27 <> 4.27\n"
+                        },
+                        {
+                          "text": "78 Score String ->  value from the RunTime VS downloaded file is =  ^xx,06,08,00,00 <> ^xx,06,08,00,00\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:256:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:324:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6783:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:48:21 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts'\u001b[39m,\n      line: \u001b[33m256\u001b[39m,\n      column: \u001b[33m17\u001b[39m,\n      function: \u001b[32m'DashBoardPage.goToTheMainMenuChildPage'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text() = 'Report Library'] >> nth=0\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m60000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@592'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@592'\u001b[39m,\n      _title: \u001b[32m\"Click locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1791800599371\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:256:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:324:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6783:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/CONFRM_Multi_Block.spec.ts:48:21'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-10-12T10:15:03.523Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N3432A49272)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-CONFRM_Multi_-43bb0-em-29-with-score-14-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N3432A49272--a499f62f6b7b19afb0b97e264e7bb0f5ae8026c2.csv"
+                        },
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-CONFRM_Multi_-43bb0-em-29-with-score-14-Test-UI-chrome/attachments/Downloaded-Zip-file-00c931ce585d52c0034db7a4e4523e84732e25df.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51cdc574882827643113-96ca19d363ba22c2faa4",
+              "file": "UIAndReports/CONFRM_Multi_Block.spec.ts",
+              "line": 10,
+              "column": 13
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-12T09:36:20.608Z",
+    "duration": 2819558.647,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

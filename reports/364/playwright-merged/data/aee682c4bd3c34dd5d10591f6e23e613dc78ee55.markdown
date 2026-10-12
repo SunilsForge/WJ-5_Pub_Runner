@@ -1,0 +1,357 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: UIAndReports/GIWHAT_Single_BC4.spec.ts >>  GIWHAT UI And Reports >> Preschool to Kindergarten - All correct SSP1 Test UI
+- Location: src/tests/UIAndReports/GIWHAT_Single_BC4.spec.ts:10:13
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('//button[@class=\'rsi-checkbox\']').first()
+    - locator resolved to <button tabindex="0" class="rsi-checkbox" aria-disabled="true" aria-label="General Information–What">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    116 × waiting for element to be visible, enabled and stable
+        - element is not enabled
+      - retrying click action
+        - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello S08PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "S08PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "No Test Assignments have been created." [ref=e74] [cursor=pointer]:
+                    - cell "No Test Assignments have been created." [ref=e75]
+            - generic [ref=e76]:
+              - generic [ref=e79]:
+                - img [ref=e80]
+                - heading "Notifications Center" [level=2] [ref=e84]
+              - generic [ref=e85]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - heading "Resources" [level=3] [ref=e92]
+                - list [ref=e93]:
+                  - listitem [ref=e94]:
+                    - button "Riverside Learn" [ref=e95] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e96]
+                      - img [ref=e98]
+                  - listitem [ref=e100]:
+                    - button "Onboarding Tutorial Videos" [ref=e101] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e102]
+                      - img [ref=e104]
+                  - listitem [ref=e106]:
+                    - button "Quick Reference Guides" [ref=e107] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e108]
+                      - img [ref=e110]
+                - button "View All" [ref=e113] [cursor=pointer]
+      - contentinfo [ref=e114]:
+        - generic [ref=e115]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e116] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e117]
+        - generic [ref=e118]:
+          - link "Riverside Insights Facebook" [ref=e119] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e120]
+          - link "Riverside Insights Twitter" [ref=e121] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e122]
+          - link "Riverside Insights LinkedIn" [ref=e123] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e124]
+          - link "Riverside Insights Instagram" [ref=e125] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e126]
+        - generic [ref=e127]:
+          - button "Leave Feedback" [ref=e128] [cursor=pointer]
+          - generic [ref=e129]: "|"
+          - link "Terms of Use" [ref=e130] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e131]: "|"
+          - link "Privacy Policy" [ref=e132] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e133]: Footer region end
+```
+
+# Test source
+
+```ts
+  6280 |       }
+  6281 |       await this.plainNextButtonOrEndButton.click();
+  6282 |       if (
+  6283 |         (await this.plainNextButtonOrEndButton.textContent()) === "End Test"
+  6284 |       ) {
+  6285 |         break;
+  6286 |       }
+  6287 |     }
+  6288 |   }
+  6289 |     async pickTheTestNeeded(testName: string, student:StudentPage) {
+  6290 |         await this.page.bringToFront();
+  6291 |         await this.page.waitForTimeout(2000);
+  6292 | 
+  6293 |         const testSessionIntro: Locator = await this.page.locator("//b[text()='Test Session Introduction']");
+  6294 |         if (await testSessionIntro.isVisible()) {
+  6295 |             for (let i = 1; i <= 3; i++) {
+  6296 |                 await this.page.waitForTimeout(2000);
+  6297 |                 if (await this.plainNextButtonOrEndButton.isEnabled()) {
+  6298 |                     if (i === 3) {
+  6299 |                         await this.beginAdminButton.click();
+  6300 |                     } else {
+  6301 |                         await this.page.waitForTimeout(2000);
+  6302 |                         await this.plainNextButtonOrEndButton.click();
+  6303 |                     }
+  6304 |                 } else {
+  6305 |                     await this.plainNextButtonOrEndButton.waitFor({state: 'visible', timeout: 50000});
+  6306 |                 }
+  6307 |             }
+  6308 |         }
+  6309 |         if ((await this.administrationOverviewPageTestName.isVisible()) && (await this.administrationOverviewPageTestName.textContent()).includes(testName)) {
+  6310 |             return;
+  6311 |         } else {
+  6312 |             for (let i = 0; i < 3; i++) {
+  6313 |                 if (await this.mainNavigation.isEnabled()) {
+  6314 |                     await this.page.waitForTimeout(1000);
+  6315 |                     await this.mainNavigation.click();
+  6316 |                     break;
+  6317 |                 }
+  6318 |                 await this.page.waitForTimeout(1000);
+  6319 |             }
+  6320 |             await this.mainNavigationTests.waitFor({
+  6321 |                 state: "visible",
+  6322 |                 timeout: 80000,
+  6323 |             });
+  6324 |             await this.page.waitForTimeout(1000);
+  6325 |             await this.mainNavigationTests.click();
+  6326 |             const testButton = this.page
+  6327 |                 .locator("//div[@class='TestList_mcs_testName']")
+  6328 |                 .getByText(testName, {exact: true});
+  6329 |             await testButton.waitFor({state: "visible", timeout: 10000});
+  6330 | 
+  6331 |             const isDisabled = await testButton.isDisabled();
+  6332 |             const buttonText = await testButton.textContent();
+  6333 |             if (isDisabled && buttonText === testName) {
+  6334 |                 console.log(
+  6335 |                     `Test "${testName}" is already selected and disabled; closing menu`
+  6336 |                 );
+  6337 |                 const closeButton = this.page.locator(
+  6338 |                     "//button[@class='plain-button close-btn']"
+  6339 |                 );
+  6340 |                 await closeButton.waitFor({state: "visible", timeout: 5000});
+  6341 |                 await closeButton.click();
+  6342 |                 return;
+  6343 |             }
+  6344 |             await testButton.click();
+  6345 |             console.log(`Selected test "${testName}"`);
+  6346 |         }
+  6347 |         if (await this.syncDevicePopUp.isVisible()) {
+  6348 |             await student.clickOnAcceptButton();
+  6349 |             return;
+  6350 |         }
+  6351 |     }
+  6352 | 
+  6353 |   async getActualTestName() {
+  6354 |     return await this.testNameAtAdminOverview.textContent();
+  6355 |   }
+  6356 | 
+  6357 |   async clickOnLetsBeginButtonAndStartTest(testName: string, ssp: string) {
+  6358 |     await this.letsBeginButton.waitFor({
+  6359 |       state: "visible",
+  6360 |       timeout: 5 * 60 * 1000,
+  6361 |     });
+  6362 | 
+  6363 |     let actualTestName = await this.getActualTestName();
+  6364 |     if (actualTestName != testName) {
+  6365 |       await this.page.waitForTimeout(1000);
+  6366 |       await this.mainNavigation.click();
+  6367 |       await this.mainNavigationTests.click();
+  6368 |       const testButton = this.page
+  6369 |         .locator("//div[@class='TestList_mcs_testName']")
+  6370 |         .getByText(testName, { exact: true });
+  6371 |       try {
+  6372 |         await testButton.waitFor({ state: "visible", timeout: 10000 });
+  6373 |         await testButton.click();
+  6374 |       } catch {
+  6375 |         // Test not present in left nav — add it via "+ Add Test", then re-select.
+  6376 |         await this.addPlusTestsButton.click();
+  6377 |         await this.searchTests.fill(testName);
+  6378 |         await this.searchIcon.click();
+  6379 |         await this.page.waitForTimeout(1000);
+> 6380 |         await this.selectTests.first().click();
+       |                                        ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  6381 |         await this.addTestsButton.click();
+  6382 |         await this.page.waitForTimeout(2000);
+  6383 |         await testButton.waitFor({ state: "visible", timeout: 10000 });
+  6384 |         await testButton.click();
+  6385 |       }
+  6386 |       await this.page.waitForLoadState("domcontentloaded");
+  6387 |       await this.page.waitForTimeout(1000);
+  6388 |     }
+  6389 |     actualTestName = await this.getActualTestName();
+  6390 |     expect(actualTestName, {
+  6391 |       message: "The test name didnt match at Administration Overview page",
+  6392 |     }).toContain(testName);
+  6393 |     console.log(actualTestName);
+  6394 |     await this.letsBeginButton.click();
+  6395 |     await this.page.waitForTimeout(1000);
+  6396 |     if (ssp === "All Examinees") {
+  6397 |       await this.startTestButton.click();
+  6398 |     } else {
+  6399 |       await this.setTheSuggestedStartingPointTo(ssp);
+  6400 |       await this.page.waitForTimeout(1500);
+  6401 |       await this.startTestButton.click();
+  6402 |     }
+  6403 |   }
+  6404 | 
+  6405 |   async clickOnLetsBeginAndResumeInProgressTest(testName: string) {
+  6406 |     if (await this.closeNavigationButton.isVisible()) {
+  6407 |       await this.closeNavigationButton.click();
+  6408 |     }
+  6409 | 
+  6410 |     await this.letsBeginButton.waitFor({
+  6411 |       state: "visible",
+  6412 |       timeout: 5 * 60 * 1000,
+  6413 |     });
+  6414 | 
+  6415 |     let actualTestName = await this.getActualTestName();
+  6416 |     if (actualTestName != testName) {
+  6417 |       await this.page.waitForTimeout(1000);
+  6418 |       await this.mainNavigation.click();
+  6419 |       await this.mainNavigationTests.click();
+  6420 |       const testButton = this.page
+  6421 |         .locator("//div[@class='TestList_mcs_testName']")
+  6422 |         .getByText(testName, { exact: true });
+  6423 |       await testButton.waitFor({ state: "visible", timeout: 10000 });
+  6424 |       await testButton.click();
+  6425 |       await this.page.waitForLoadState("domcontentloaded");
+  6426 |       await this.page.waitForTimeout(1000);
+  6427 |     }
+  6428 |     actualTestName = await this.getActualTestName();
+  6429 |     expect(actualTestName, {
+  6430 |       message: "The test name didn't match at Administration Overview page",
+  6431 |     }).toContain(testName);
+  6432 | 
+  6433 |     await this.letsBeginButton.click();
+  6434 |     await this.page.waitForLoadState();
+  6435 |     await this.page.waitForTimeout(1000);
+  6436 |     await this.nextItemButton.click();
+  6437 |     await this.page.waitForTimeout(1000);
+  6438 |   }
+  6439 | 
+  6440 |   async endTestAndEnterReviewMode() {
+  6441 |     await this.plainNextButtonOrEndButton.last().click();
+  6442 |     await this.endSessionButton.waitFor({ state: "visible", timeout: 60000 });
+  6443 |     await this.endSessionButton.click();
+  6444 |     await this.reviewFromConfirmButton.waitFor({ state: "visible", timeout: 60000 });
+  6445 |     await this.reviewFromConfirmButton.click();
+  6446 |     await this.dashboardPage.waitForLoadingSpinnerToDisappear();
+  6447 |   }
+  6448 | 
+  6449 |   async setTheSuggestedStartingPointTo(sspOption: string) {
+  6450 |     await expect(this.startTestButton).toBeVisible({ timeout: 10000 });
+  6451 |     await this.page.waitForTimeout(5000);
+  6452 |     if (this.loading.isVisible())
+  6453 |       await this.loading.waitFor({ state: "hidden", timeout: 3 * 60 * 1000 });
+  6454 |     await this.sspDropDown.selectOption({ label: sspOption }, { timeout: 60000 });
+  6455 |     await this.page.waitForTimeout(2000);
+  6456 | 
+  6457 |     try {
+  6458 |       const selectedSsp = await this.page.$eval(
+  6459 |         ".starting-point-dropdown",
+  6460 |         (ele) => (ele as HTMLSelectElement).value
+  6461 |       );
+  6462 |       console.log(`selected ssp is = ${selectedSsp}`);
+  6463 | 
+  6464 |       expect(selectedSsp).toContain(sspOption);
+  6465 |     } catch (error) {
+  6466 |       await this.sspDropDown.selectOption({ label: sspOption });
+  6467 |       console.error(
+  6468 |         `the ssp drop down didnt select the one we want at first attempt so trying one more time ... ${error}`
+  6469 |       );
+  6470 |     }
+  6471 |   }
+  6472 | 
+  6473 |   async selectTheCheckbox(radioButton: number, info?: string) {
+  6474 |     await this.multiRadioButtons.nth(radioButton).click();
+  6475 |   }
+  6476 | 
+  6477 |   async selectTheDropdownOption(
+  6478 |     dropDown: number,
+  6479 |     dropDownOpt: string,
+  6480 |     info?: string
+```

@@ -1,0 +1,344 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ReroutingandLeftNav/SNDREV_Rerouting.spec.ts >>  SNDREV Left Nav and Rerouting >> Grade 9 to Adult - Score Error Scenario for SSP2 Test Rerouting
+- Location: src/tests/ReroutingandLeftNav/SNDREV_Rerouting.spec.ts:10:13
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 480000ms exceeded.
+Call log:
+  - waiting for locator('span[class=\'loading-icon\']') to be hidden
+    959 × locator resolved to visible <span class="loading-icon"></span>
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Riverside Insights Logo" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 03PwAut25AH ln" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "03PwAut25AH ln" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - img [ref=e30]
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row "This is the student or individual being assessed. A collection of tests grouped together for assessment. Number of days remaining to edit this assignment. Status of the test assignment. Actions available are based on your role and test status." [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "A collection of tests grouped together for assessment." [ref=e69]: Test Set
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row "No Test Assignments have been created." [ref=e74] [cursor=pointer]:
+                    - cell "No Test Assignments have been created." [ref=e75]
+            - generic [ref=e76]:
+              - generic [ref=e79]:
+                - img [ref=e80]
+                - heading "Notifications Center" [level=2] [ref=e84]
+              - generic [ref=e85]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - heading "Resources" [level=3] [ref=e92]
+                - list [ref=e93]:
+                  - listitem [ref=e94]:
+                    - button "Riverside Learn" [ref=e95] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e96]
+                      - img [ref=e98]
+                  - listitem [ref=e100]:
+                    - button "Onboarding Tutorial Videos" [ref=e101] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e102]
+                      - img [ref=e104]
+                  - listitem [ref=e106]:
+                    - button "Quick Reference Guides" [ref=e107] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e108]
+                      - img [ref=e110]
+                - button "View All" [ref=e113] [cursor=pointer]
+      - contentinfo [ref=e114]:
+        - generic [ref=e115]: Footer region,
+        - link "w w w dot riverside insights dot com" [ref=e116] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e117]
+        - generic [ref=e118]:
+          - link "Riverside Insights Facebook" [ref=e119] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e120]
+          - link "Riverside Insights Twitter" [ref=e121] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e122]
+          - link "Riverside Insights LinkedIn" [ref=e123] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e124]
+          - link "Riverside Insights Instagram" [ref=e125] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e126]
+        - generic [ref=e127]:
+          - button "Leave Feedback" [ref=e128] [cursor=pointer]
+          - generic [ref=e129]: "|"
+          - link "Terms of Use" [ref=e130] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [ref=e131]: "|"
+          - link "Privacy Policy" [ref=e132] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e133]: Footer region end
+```
+
+# Test source
+
+```ts
+  89  | 
+  90  | 
+  91  |   private getCheckboxLocator(state: 'unchecked' | 'checked'): Locator {
+  92  |     const selectorMap = {
+  93  |       'unchecked': "//button[contains(@class,'checkbox') and not(@aria-disabled='true')]",
+  94  |       'checked': "//button[contains(@class,'checkbox')]"
+  95  |     };
+  96  |     return this.page.locator(selectorMap[state]);
+  97  |   }
+  98  | 
+  99  |   // ==================== End of Helper Methods ====================
+  100 | 
+  101 |   static examineeID: string;
+  102 | 
+  103 |   async addNewExamineeAndUpdateTheTemplate(
+  104 |     url: string,
+  105 |     age: number,
+  106 |     gender: string,
+  107 |     testStemForm?: string,
+  108 |     normBasis?: string,
+  109 |     examineeGrade?: string,
+  110 |     generateTemplate: boolean = true,
+  111 |   ): Promise<{
+  112 |     examinee_ID: string;
+  113 |     dateOfBirth: string;
+  114 |     examineelastNameAndFirstName: string;
+  115 |   }> {
+  116 |     console.log("Trying to add an examinee at URL:", url);
+  117 |     await this.page.bringToFront();
+  118 |     await this.page.waitForTimeout(3000);
+  119 | 
+  120 |     await this.dismissTestAssignmentDialogIfPresent();
+  121 |     await this.waitForLoaderToDisappear();
+  122 |     await this.examinees.click();
+  123 |     await this.waitForLoaderToDisappear();
+  124 | 
+  125 | 
+  126 | 
+  127 |     await this.page.waitForTimeout(3000);
+  128 |     await this.addExaminee.click();
+  129 |     await this.loadingIcon.waitFor({ state: "hidden" });
+  130 |     const firstName: string = faker.person.firstName();
+  131 |     await this.examineeFirstName.fill(firstName);
+  132 |     const dateOfBirth = (await this.utils.getTheDOBYearsBack(age)).toString();
+  133 |     await this.examineeDateOfBirth.fill(dateOfBirth);
+  134 |     await this.addExamineePage.selectGender(gender);
+  135 |     DashBoardPage.examineeID = `N${await this.utils.randomNumberGenerateBetween(1,99999)}A${await this.utils.randomNumberGenerateBetween(1, 99999)}`;
+  136 |     await this.examineeId.fill(DashBoardPage.examineeID);
+  137 |     await this.examineeLastName.fill(DashBoardPage.examineeID);
+  138 |     console.log("Examinee ID", DashBoardPage.examineeID);
+  139 | 
+  140 |     if (generateTemplate) {
+  141 |     const exportType = getCurrentExportType();
+  142 |     switch (exportType) {
+  143 |       case "derived":
+  144 |         await derivedScoreFilterTemplate_CSVfileWriter(
+  145 |           DashBoardPage.examineeID,
+  146 |           normBasis,
+  147 |           examineeGrade,
+  148 |         );
+  149 |         break;
+  150 |       case "wLookUp":
+  151 |         await scoreDataFilterTemplate_CSVfileWriter(
+  152 |           DashBoardPage.examineeID,
+  153 |         );
+  154 |         break;
+  155 |       case "testData":
+  156 |         await testDataExportFilterTemplate_CSVfileWriter(
+  157 |           DashBoardPage.examineeID,
+  158 |           testStemForm,
+  159 |         );
+  160 |     }
+  161 | 
+  162 |     await test.info().attach(
+  163 |       `Generated ${exportType} Filter Template (${DashBoardPage.examineeID})`,
+  164 |       {
+  165 |         path: getGeneratedTemplatePath(DashBoardPage.examineeID, exportType),
+  166 |         contentType: "text/csv",
+  167 |       },
+  168 |     );
+  169 |   }
+  170 | 
+  171 |     if (await this.examineeSaveButton.isEnabled({ timeout: 3000 })) {
+  172 |       await this.addExamineePage.saveExaminee();
+  173 |     } else {
+  174 |       console.error("Save Button IS Not Enabled");
+  175 |     }
+  176 |     console.log(
+  177 |       `Successfully added an Examinee  ID =${DashBoardPage.examineeID} FirstName=${firstName} LastName =${DashBoardPage.examineeID} Age = ${dateOfBirth}`,
+  178 |     );
+  179 |     return {
+  180 |       examinee_ID: DashBoardPage.examineeID,
+  181 |       dateOfBirth,
+  182 |       examineelastNameAndFirstName: `${DashBoardPage.examineeID}, ${firstName}`,
+  183 |     };
+  184 |   }
+  185 | 
+  186 |     async waitForLoaderToDisappear() {
+  187 |     await this.page
+  188 |       .locator("span[class='loading-icon']")
+> 189 |       .waitFor({ state: "hidden", timeout: 8 * 60 * 1000 });
+      |        ^ TimeoutError: locator.waitFor: Timeout 480000ms exceeded.
+  190 |   }
+  191 | 
+  192 |   async dismissTestAssignmentDialogIfPresent() {
+  193 |     const dialog = this.page.locator("div[role='dialog']");
+  194 |     if (await dialog.isVisible({ timeout: 3000 }).catch(() => false)) {
+  195 |       const closeBtn = dialog.locator("//button[text()='Close']");
+  196 |       if (await closeBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
+  197 |         await closeBtn.click();
+  198 |         await dialog.waitFor({ state: "hidden", timeout: 10000 });
+  199 |       }
+  200 |     }
+  201 |   }
+  202 | 
+  203 |   async clickOnLaunchAssignmentButton() {
+  204 |     await this.testAssignmentSuccessMessage.waitFor({ state: "visible" });
+  205 |       await this.launchAssignmentButton.click({ timeout: 2 * 60 * 1000 });
+  206 |   }
+  207 | 
+  208 |   async selectExaminee(examineeId: string) {
+  209 |     try {
+  210 |       await this.selectExamineeButton.click();
+  211 |       await this.searchExamineeTestSetNameAndEducation.last().fill(examineeId);
+  212 |       await this.page
+  213 |         .locator(".item-text.single-select")
+  214 |         .getByText(examineeId)
+  215 |         .waitFor({ state: "attached", timeout: 90000 });
+  216 |       await this.selectExamineeFromDropdown
+  217 |         .getByText(new RegExp(examineeId))
+  218 |         .click({ timeout: 30000 });
+  219 |       await this.page
+  220 |         .getByText("Selected Examinee Details")
+  221 |         .waitFor({ state: "visible" });
+  222 |       console.log(`Successfully selected examinee: ${examineeId}`);
+  223 |     } catch (error) {
+  224 |       console.error(`Failed to select examinee with ID: ${examineeId}`, error);
+  225 |       throw error;
+  226 |     }
+  227 |   }
+  228 | 
+  229 |   async selectNormBasis(normBasis: string) {
+  230 |     await this.page
+  231 |       .locator('[class*="checkbox"]')
+  232 |       .filter({ hasText: normBasis })
+  233 |       .locator(".radio-item")
+  234 |       .click();
+  235 |   }
+  236 |   async clickOnNextButton() {
+  237 |     await this.page.getByText("Next").click();
+  238 |   }
+  239 | 
+  240 |   async clickOnSaveButton() {
+  241 |     await this.page.getByText("Save").click();
+  242 |   }
+  243 | 
+  244 |   async goToTheMainMenuChildPage(
+  245 |     mainMenuDd: string,
+  246 |     childDd?: string,
+  247 |   ): Promise<boolean> {
+  248 |     await this.page.locator(`//button[text() = '${mainMenuDd}']`).click();
+  249 |     await this.page.waitForLoadState("load");
+  250 |     if (childDd) {
+  251 |       const val: Locator = this.page
+  252 |         .locator(`//button[text() = '${childDd}']`)
+  253 |         .first();
+  254 |       await val.waitFor({ state: "visible" });
+  255 |       await this.page.waitForTimeout(3000);
+  256 |       await val.click();
+  257 |       await this.page.waitForLoadState("load");
+  258 |     }
+  259 |     return true;
+  260 |   }
+  261 |   async welcomeTextToBeVisable() {
+  262 |     await this.page.bringToFront();
+  263 |     console.log("welcomeTextToBeVisable called");
+  264 |   }
+  265 |   async getSessionID() {
+  266 |     this.sessionID = await this.sessionCode.textContent();
+  267 |     return this.sessionID;
+  268 |   }
+  269 | 
+  270 |   async clickOnTheReportToDownload(testinfo: TestInfo) {
+  271 |     await this.page.waitForTimeout(5000);
+  272 |     await this.goToTheMainMenuChildPage("Reports", "Report Library");
+  273 |     expect(this.page.url()).toContain("home");
+  274 |     await this.greyDownloadPrint.first().waitFor({ state: "detached" });
+  275 | 
+  276 |     await Promise.all([
+  277 |       this.page.waitForResponse(
+  278 |         (response) =>
+  279 |           response.url().includes("GetSavedResearchExportData") &&
+  280 |           response.status() === 200,
+  281 |         { timeout: 5 * 60 * 1000 },
+  282 |       ),
+  283 |     ]);
+  284 | 
+  285 |     const downloadPromise = this.page.waitForEvent("download", {
+  286 |       timeout: 60000,
+  287 |     });
+  288 |     let reqFile: string = await getTemplateName();
+  289 |     console.log(
+```
