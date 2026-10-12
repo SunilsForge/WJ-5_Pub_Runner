@@ -1,0 +1,162 @@
+Still failing after rerun pass 2 (main run #364) — 71 test(s)
+
+1. All Examinees - Test Items When Timer Ran Out for Last Item set Test UI
+   UIAndReports/NUMPAT_Single_Timer.spec.ts
+2. Ages 6 to 7 - Flag Item with Notes and Review scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/NUMSER_Rerouting.spec.ts
+3. Above Average Adult - Rerouting End Test scenario for SSP6 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+4. Grade 1 - Rerouting End Test scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+5. Grades 4 to 5 - Score Error Scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/SPELL_Rerouting.spec.ts
+6. Grades 1 to 3 - 1 correct 1 incorrect SSP2 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+7. All Examinees - Sample Items End Test Flow scenario Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+8. All Examinees - Sample Items Rerouting Scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Backup_Rerouting.spec.ts
+9. Ages 9 to 11 - All correct SSP3 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+10. Above Average Adult -  Flag Item with Notes and Review scenario for SSP7 Test Rerouting
+   ReroutingandLeftNav/PICVOC_Rerouting.spec.ts
+11. Age 8 - Flag Item with Notes and Review scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/NUMSER_Rerouting.spec.ts
+12. Ages 4 to 5 - Rerouting End Test Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+13. Age 7 - Rerouting End Test scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+14. Grade 10 to Adult - Score Error Scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+15. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Backup_Rerouting.spec.ts
+16. Preschool to Kindergarten - All correct SSP1 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+17. Grade 4 to Adult - Rerouting End Test scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/ANINUM_Rerouting.spec.ts
+18. Grade 3 to Adult - ORLSMP-Re-routing End Test scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+19. Ages 4 to 6 - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/RDGREC_Rerouting.spec.ts
+20. Ages 8 to 9 - Flag Item with Notes and Review scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+21. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/NUMPAT_Rerouting.spec.ts
+22. Preschool to Kindergarten - Score Error Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+23. Grades 1 to 2 - ORLSMP-Re-routing End Test scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+24. Grades 4 to 6 - 1 correct 1 incorrect SSP3 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+25. All Examinees - Test Items All correct scenario Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+26. Preschool to Kindergarten - Score Error Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+27. Age 15 to Adult - Rerouting End Test Scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+28. Age 8 to Adult - ORLSMP Sample Items Correct and then Incorrect Scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+29. Grades 2 to 4 - Flag Item with Notes and Review scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/RDGREC_Rerouting.spec.ts
+30. Grades 7 to 9 - 1 correct 1 incorrect SSP4 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+31. All Examinees - Test Items 5 Correct 5 Incorrect scenario Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+32. Ages 4 to 6 - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/CONFRM_Rerouting.spec.ts
+33. Ages 6 to 8 - Flag Item with Notes and Review scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+34. Ages 4 to 11 - MATRCZ Sample Items Correct and then Incorrect Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/MATRCZ_Rerouting.spec.ts
+35. Ages 9 to 10 - Flag Item with Notes and Review scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/NUMSER_Rerouting.spec.ts
+36. Ages 10 to 13 - Flag Item with Notes and Review scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/RDGREC_Rerouting.spec.ts
+37. Ages 12 to 14 - Reverse Logic SSP4 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+38. Preschool to Kindergarten - 4 correct and 4 incorrect SSP1 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+39. All Examinees - Test Items All incorrect scenario Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+40. Ages 4 to 6 - Score Error Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/CONFRM_Rerouting.spec.ts
+41. Grade 7 to Adult - Flag Item with Notes and Review scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/MATRCZ_Rerouting.spec.ts
+42. Ages 5 to 6 - Flag Item with Notes and Review scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/PICVOC_Rerouting.spec.ts
+43. Grades 4 to 6 - Score Error Scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+44. Grade 9 to Adult - Flag Item with Notes and Review scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/RDGREC_Rerouting.spec.ts
+45. Ages 10 to Average Adult - Rerouting End Test scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+46. Ages 9 to 11 - Reverse Logic SSP3 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+47. All Examinees - Test Items When Timer Ran Out for First Item set Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+48. Grades 3 to 4 - Rerouting End Test scenario for SSP4 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+49. Grade 10 to Adult - First and Last item check Scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+50. Ages 7 to 8 - Flag Item with Notes and Review scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/PICVOC_Rerouting.spec.ts
+51. Ages 4 to 8 - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/ANINUM_Rerouting.spec.ts
+52. Grade 3 to Adult - Flag Item with Notes and Review scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+53. Grade 9 to Adult - Score Error Scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/SNDREV_Rerouting.spec.ts
+54. Age 11 to Adult - Flag Item with Notes and Review scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/NUMSER_Rerouting.spec.ts
+55. Ages 11 to 14 -  Flag Item with Notes and Review scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/PICVOC_Rerouting.spec.ts
+56. Ages 12 to 14 - All correct SSP4 Test UI
+   UIAndReports/GIWHAT_Single_BC4.spec.ts
+57. Grade 5 to Average Adult - Flag Item with Notes and Review scenario for SSP5 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+58. All Examinees - Answer only one sample item Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+59. Preschool to Kindergarten - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+60. Ages 4 to 5 - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+61. Grades 4 to 6 - First and Last item check Scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+62. Preschool to Kindergarten - ORLSMP-Re-routing End Test scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+63. Ages 4 to 5 - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/NUMSER_Rerouting.spec.ts
+64. Above Average Adult - Flag Item with Notes and Review scenario for SSP6 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+65. Age 6 - Flag Item with Notes and Review scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+66. Grades 1 to 2 - Flag Item with Notes and Review scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+67. Age 15 to Average Adult -  Flag Item with Notes and Review scenario for SSP6 Test Rerouting
+   ReroutingandLeftNav/PICVOC_Rerouting.spec.ts
+68. All Examinees - Practice Exercise All incorrect and then 1 correct scenario Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+69. Ages 9 to 11 - Rerouting End Test Scenario for SSP3 Test Rerouting
+   ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+70. All Examinees - Review mode Verification scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Backup_Rerouting.spec.ts
+71. All Examinees - Practice Exercise All incorrect and then 3 correct scenario Test UI
+   UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+
+Affected spec files (16):
+  ReroutingandLeftNav/ANINUM_Rerouting.spec.ts
+  ReroutingandLeftNav/CONFRM_Rerouting.spec.ts
+  ReroutingandLeftNav/GIWHAT_Rerouting.spec.ts
+  ReroutingandLeftNav/LETPAT_Backup_Rerouting.spec.ts
+  ReroutingandLeftNav/MATRCZ_Rerouting.spec.ts
+  ReroutingandLeftNav/NUMPAT_Rerouting.spec.ts
+  ReroutingandLeftNav/NUMSER_Rerouting.spec.ts
+  ReroutingandLeftNav/ORLSMP_Rerouting.spec.ts
+  ReroutingandLeftNav/PICVOC_Rerouting.spec.ts
+  ReroutingandLeftNav/RDGREC_Rerouting.spec.ts
+  ReroutingandLeftNav/SENREP_Rerouting.spec.ts
+  ReroutingandLeftNav/SNDREV_Rerouting.spec.ts
+  ReroutingandLeftNav/SPELL_Rerouting.spec.ts
+  UIAndReports/GIWHAT_Single_BC4.spec.ts
+  UIAndReports/LETPAT_BackUp_Single_Timer.spec.ts
+  UIAndReports/NUMPAT_Single_Timer.spec.ts
