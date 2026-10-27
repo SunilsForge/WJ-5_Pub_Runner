@@ -1,0 +1,317 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/chatBotTest.spec.ts >> Validate Chat Bot functionality when logged in as AH user and at login page
+- Location: src/tests/functional/chatBotTest.spec.ts:6:5
+
+# Error details
+
+```
+Error: Chat bot icon should be visible
+
+expect(locator).toBeVisible() failed
+
+Locator: locator('[data-test-id="chat-widget-iframe"]').contentFrame().getByRole('button', { name: 'Open live chat' })
+Expected: visible
+Timeout: 60000ms
+Error: element(s) not found
+
+Call log:
+  - Chat bot icon should be visible with timeout 60000ms
+  - waiting for locator('[data-test-id="chat-widget-iframe"]').contentFrame().getByRole('button', { name: 'Open live chat' })
+
+```
+
+```
+Test timeout of 90000ms exceeded.
+```
+
+```
+Error: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('[data-test-id="chat-widget-iframe"]').contentFrame().getByRole('button', { name: 'Open live chat' })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main "Clinical Login" [ref=e4]:
+    - generic [ref=e5]:
+      - img "Riverside Insights Logo" [ref=e6]
+      - heading "Riverside Updates" [level=1] [ref=e7]
+    - generic [ref=e8]:
+      - img "Riverside Score Logo" [ref=e9]
+      - form "Sign in details" [ref=e10]:
+        - generic [ref=e11]:
+          - text: USERNAME
+          - textbox "USERNAME" [active] [ref=e13]:
+            - /placeholder: Username
+          - generic [ref=e15]:
+            - text: PASSWORD
+            - textbox "PASSWORD" [ref=e17]:
+              - /placeholder: Password
+          - button "Sign In" [ref=e18] [cursor=pointer]
+          - generic [ref=e19]:
+            - button "Remember Me" [ref=e20] [cursor=pointer]: Remember Me
+            - link "Forgot my password" [ref=e23] [cursor=pointer]:
+              - /url: /forgot
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - text: For help accessing Riverside Score™, see the
+        - link "online help" [ref=e26] [cursor=pointer]:
+          - /url: https://onlinehelp.riversideinsights.com/Help/Riverside_Score/index.htm#t=Overview.htm
+        - text: for signing in.
+      - link "Check Platform Status" [ref=e28] [cursor=pointer]:
+        - /url: https://riversideinsights.com/platform-status
+  - contentinfo [ref=e29]:
+    - generic [ref=e30]: Footer region,
+    - link "w w w dot riverside insights dot com" [ref=e31] [cursor=pointer]:
+      - /url: https://www.riversideinsights.com
+      - img "Riverside Insights Website" [ref=e32]
+    - generic [ref=e33]:
+      - link "Riverside Insights Facebook" [ref=e34] [cursor=pointer]:
+        - /url: https://www.facebook.com/RiversideInsights/
+        - img "Riverside Insights Facebook" [ref=e35]
+      - link "Riverside Insights Twitter" [ref=e36] [cursor=pointer]:
+        - /url: https://twitter.com/1BillionLives
+        - img "Riverside Insights Twitter" [ref=e37]
+      - link "Riverside Insights LinkedIn" [ref=e38] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/riverside-insights/
+        - img "Riverside Insights LinkedIn" [ref=e39]
+      - link "Riverside Insights Instagram" [ref=e40] [cursor=pointer]:
+        - /url: https://www.instagram.com/riversideinsightsassessments/
+        - img "Riverside Insights Instagram" [ref=e41]
+    - generic [ref=e42]:
+      - img "WJ IV Mobile Data Solution" [ref=e43]
+      - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e44] [cursor=pointer]
+      - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e45] [cursor=pointer]
+    - generic [ref=e46]:
+      - img "Bdi 3 Mobile Data Solution" [ref=e47]
+      - generic [ref=e48]:
+        - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e49] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from Google Play" [ref=e50] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from App Store" [ref=e51] [cursor=pointer]
+    - generic [ref=e52]:
+      - button "Leave Feedback" [ref=e53] [cursor=pointer]
+      - generic [ref=e54]: "|"
+      - link "Terms of Use" [ref=e55] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - generic [ref=e56]: "|"
+      - link "Privacy Policy" [ref=e57] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+    - generic [ref=e58]: Footer region end
+```
+
+# Test source
+
+```ts
+  1988 |         examinee: rowDetails.examinee,
+  1989 |         testSet: rowDetails.testSet,
+  1990 |         daysLeftToEdit: rowDetails.daysLeftEdit,
+  1991 |         status: rowDetails.status,
+  1992 |       });
+  1993 |     }
+  1994 | 
+  1995 |     // Log the results with RawValueLogger for debugging
+  1996 |     RawValueLogger.log(
+  1997 |       `Fetched details for ${numberOfRows} rows:`,
+  1998 |       examineeDetailsArray,
+  1999 |     );
+  2000 | 
+  2001 |     return examineeDetailsArray;
+  2002 |   }
+  2003 | 
+  2004 |   private get editTestAssignmentDialog() {
+  2005 |     return this.page.locator("div[role='dialog']");
+  2006 |   }
+  2007 | 
+  2008 |   async changeExamineeNameInEditTestAssignmentPopUp(examineeName: string) {
+  2009 |     const dialog = this.editTestAssignmentDialog;
+  2010 |     await dialog.locator("button.plain-button:has(svg title:text('Edit'))").first().click();
+  2011 |     await dialog.locator("button[class='select-box']").click();
+  2012 |     await dialog.locator("[placeholder='Search...']").fill(examineeName);
+  2013 |     await dialog.locator("div[class='item-text single-select']").click();
+  2014 |   }
+  2015 | 
+  2016 |   async changeTestSetInEditTestAssignmentPopUp(testSetName: string) {
+  2017 |     const dialog = this.editTestAssignmentDialog;
+  2018 |     const currentTestSet = (await dialog.locator("//div[contains(@class,'TestAssignment')]/h4[text()='Test Set']/following-sibling::span").textContent()) ?? '';
+  2019 |     const targetTestSet = currentTestSet.trim() === testSetName.trim() ? 'Form A' : testSetName;
+  2020 |     await dialog.locator("button#edit_test_set").click();
+  2021 |     await dialog.locator("button[class='select-box']").click();
+  2022 |     await dialog.locator("[placeholder='Search...']").fill(targetTestSet);
+  2023 |     await dialog.locator("div[class='item-text single-select']").first().click();
+  2024 |   }
+  2025 | 
+  2026 |   async clickOnCancelButtonInEditTestAssignmentPopUp() {
+  2027 |     await this.cancelButton.click();
+  2028 |     await this.areYouSureYesButton.click();    
+  2029 |   }
+  2030 | 
+  2031 |   async verifyEditIconGrayedOutForExamineeName() {
+  2032 |     const dialog = this.editTestAssignmentDialog;
+  2033 |     const examineeEditButton = dialog.locator("button.plain-button:has(svg title:text('Edit'))").first();
+  2034 |     await expect.soft(examineeEditButton, 'Edit icon for examinee name should be disabled').toBeDisabled();
+  2035 |   }
+  2036 | 
+  2037 |   async verifyEditIconGrayedOutForTestSet() {
+  2038 |     const dialog = this.editTestAssignmentDialog;
+  2039 |     await expect.soft(dialog.locator("button#edit_test_set"), 'Edit icon for test set should be disabled').toBeDisabled();
+  2040 |   }
+  2041 | 
+  2042 |   async verifyEducationAndVoiceCaptureSectionIsEditable() {
+  2043 |     const dialog = this.editTestAssignmentDialog;
+  2044 |     await expect.soft(dialog.locator("button#edit_assignment_settings"), 'Edit icon for education should be visible').toBeVisible();
+  2045 |   }
+  2046 | 
+  2047 |   async verifyGenerateReportsIcon() {
+  2048 |     return await this.generateReportIcon.isVisible();
+  2049 |   }
+  2050 | 
+  2051 |   async verifyEditTestAssignmentIcon() {
+  2052 |     return await this.editTestAssignmentButton.isVisible();
+  2053 |   }
+  2054 | 
+  2055 |   async clickOnGenerateReportIcon() {
+  2056 |     await this.generateReportIcon.click();
+  2057 |     await this.page.waitForLoadState("domcontentloaded");
+  2058 |   }
+  2059 | 
+  2060 |   async verifyTestAssignmentExpiredPopUp() {
+  2061 |     await this.page.waitForLoadState("domcontentloaded");
+  2062 |     await expect.soft(this.page.getByRole('heading', { name: 'Test Assignment Expired' }), 'Test Assignment Expired heading should be visible').toBeVisible();
+  2063 |     await expect.soft(this.page.locator(`//p[text()='This test assignment has expired as 90 days have passed since the earliest date of testing. No further changes can be made, however, you may still submit for reporting.']`), 'Test Assignment Expired body text should be visible').toBeVisible();
+  2064 |     await expect.soft(this.page.locator("//p[text()='Do you want to submit this test assignment for reporting?']"), 'Do you want to submit this test assignment for reporting? body text should be visible').toBeVisible();
+  2065 |   }
+  2066 | 
+  2067 |   async clickNoButtonInExpiredPopUp() {
+  2068 |     await this.noButton.click();
+  2069 |   }
+  2070 | 
+  2071 |   async clickYesButtonInPopUp() {
+  2072 |     await this.page.waitForTimeout(2000);
+  2073 |     await this.yesButton.click();
+  2074 |   }
+  2075 | 
+  2076 |   async verifyCreateReportPopUpIsVisible() {
+  2077 |     await this.waitForLoadingInnerToDisappear();
+  2078 |     await this.page.waitForLoadState("domcontentloaded");
+  2079 |     await expect.soft(this.createReportHeading, 'Create a Report heading should be visible').toBeVisible();
+  2080 |   }
+  2081 | 
+  2082 |   async clickOnSubscriptionDetails() {
+  2083 |     await this.subscriptionDetails.click();
+  2084 |     await this.page.waitForLoadState("domcontentloaded");
+  2085 |   }
+  2086 |   async verifyChatBotFunctionality() {
+  2087 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();
+> 2088 |     await this.chatBotIcon.click();
+       |                            ^ Error: locator.click: Target page, context or browser has been closed
+  2089 |     await expect.soft(this.chatBotPopup, 'Chat bot popup should be visible').toBeVisible();
+  2090 |     await this.chatBotCloseIcon.click();
+  2091 |     await expect.soft(this.chatBotIcon, 'Chat bot icon should be visible').toBeVisible();
+  2092 |   }
+  2093 | 
+  2094 |   async clickOnTestSetsTab() {
+  2095 |     await this.testSetButton.click();
+  2096 |     await this.page.waitForLoadState("domcontentloaded");
+  2097 |   }
+  2098 | 
+  2099 |   async clickOnExamineesTab() {
+  2100 |     await this.examinees.click();
+  2101 |     await this.page.waitForLoadState("domcontentloaded");
+  2102 |     await this.waitForLoadingSpinnerToDisappear();
+  2103 |   }
+  2104 | 
+  2105 |   async searchExaminee(examineeName: string) {
+  2106 |     await this.searchExaminees.fill(examineeName);
+  2107 |     await this.searchExaminees.press('Enter');
+  2108 |     await this.page.waitForLoadState("domcontentloaded");
+  2109 |     await this.waitForLoadingSpinnerToDisappear();
+  2110 |   }
+  2111 | 
+  2112 |   async clickOnSearchedExaminee(examineeId: string) {
+  2113 |     await this.page.locator(`//button[text()='${examineeId}']`).click();
+  2114 |     await this.page.waitForLoadState("domcontentloaded");
+  2115 |     await this.waitForLoadingSpinnerToDisappear();
+  2116 |   }
+  2117 | 
+  2118 |   async clickResetButton() {
+  2119 |     await this.resetButton.click();
+  2120 |     await this.page.waitForLoadState("domcontentloaded");
+  2121 |     await this.waitForLoadingSpinnerToDisappear();
+  2122 |   }
+  2123 | 
+  2124 |   async findRowIndexInPopupByStatus(expectedStatus: string): Promise<number> {
+  2125 |     await this.page.waitForLoadState("domcontentloaded");
+  2126 |     await this.waitForLoadingInnerToDisappear();
+  2127 |     await this.page.waitForTimeout(1000);
+  2128 | 
+  2129 |     const popup = this.page.locator("div[role='dialog']");
+  2130 |     await popup.waitFor({ state: 'visible', timeout: 1 * 60 * 1000 });
+  2131 | 
+  2132 |     const rows = popup.locator("tbody > tr");
+  2133 |     const rowCount = await rows.count();
+  2134 | 
+  2135 |     for (let i = 0; i < rowCount; i++) {
+  2136 |       const row = rows.nth(i);
+  2137 |       const statusMarker = row.locator("span[class*='TestAssignmentModule_mcs_marker']");
+  2138 |       const statusText = await statusMarker.getAttribute('data-status');
+  2139 | 
+  2140 |       if (statusText?.trim() === expectedStatus) {
+  2141 |         return i;
+  2142 |       }
+  2143 |     }
+  2144 | 
+  2145 |     throw new Error(`Row with status '${expectedStatus}' not found in Test Assignment History table`);
+  2146 |   }
+  2147 | 
+  2148 |   async clickOnStaffTab() {
+  2149 |     await this.staffTab.click();
+  2150 |     await this.page.waitForLoadState("domcontentloaded");
+  2151 |   }
+  2152 | 
+  2153 |   async verifyStatusAtExamineeGeneralInfoPopUp(expectedStatus: string) {
+  2154 |     const popup = this.page.locator("div[role='dialog']");
+  2155 |     const statusText = await popup.locator("span[class*='TestAssignmentModule_mcs_marker']").first().getAttribute('data-status');
+  2156 |     expect.soft(statusText.trim(), 'Examinee status should match').toBe(expectedStatus);
+  2157 |   }
+  2158 | 
+  2159 |   async verifySubtestsSuccessfullyAppliedPopupContent() {
+  2160 |     await expect.soft(this.page.locator("//h2[text()='Subtests Successfully Applied!']"), 'Subtests Applied heading should be visible').toBeVisible();
+  2161 |     await expect.soft(this.page.locator("//p[text()='Your additional subtest(s) have been successfully added to your assignment. Only ']"), 'Subtests Applied body text A should be visible').toBeVisible();
+  2162 |     await expect.soft(this.page.locator("//p[text()=' remain to administer this assignment before the 90 day norming window closes.']"), 'Subtests Applied body text B should be visible').toBeVisible();
+  2163 |   }
+  2164 | 
+  2165 |   async verifyDeleteOptionIsNotVisible() {
+  2166 |     await this.clickFollowingRowElipsisButton(0);
+  2167 |     await expect.soft(this.deleteButton, 'Delete button should not be visible').toBeHidden();
+  2168 |   }
+  2169 | 
+  2170 |   async verifyHoverTextForDaysLeftToEdit() {
+  2171 |     const table = this.page.locator("table[aria-label='Available Assignments']");
+  2172 |     const daysLeftElementHoverText = await table.locator("//th[text()='Days Left to Edit']/div").textContent();
+  2173 |     RawValueLogger.log("Days Left to Edit Hover Text", daysLeftElementHoverText);
+  2174 |     expect.soft(daysLeftElementHoverText, "Days left hover text should contain 'days'").toEqual("You can edit this assignment for up to 90 days after testing begins.");
+  2175 |   }
+  2176 | 
+  2177 |   async verifyHoverTextForEarliestDateOfTesting() {
+  2178 |     const table = this.page.locator("table[aria-label='Available Assignments']");
+  2179 |     const earliestDateOfTestingHoverText = await table.locator("//th[text()='Earliest Date of Testing']/div").textContent();
+  2180 |     RawValueLogger.log("Earliest Date of Testing Hover Text", earliestDateOfTestingHoverText);
+  2181 |     expect.soft(earliestDateOfTestingHoverText, "Earliest date of testing hover text should contain 'earliest date of testing'").toEqual("First day of testing, marking the beginning of the 90-day window to complete all tests.");
+  2182 |   }
+  2183 | 
+  2184 |   async verifyActiveViewColumnHeaderHoverTexts() {
+  2185 |     const table = this.page.locator("table[aria-label='Available Assignments']");
+  2186 | 
+  2187 |     const examineeHoverText = await table.locator("//th[text()='Examinee']/div").textContent();
+  2188 |     RawValueLogger.log("Examinee Column Header Hover Text", examineeHoverText);
+```

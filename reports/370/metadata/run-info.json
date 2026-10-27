@@ -1,0 +1,1 @@
+{"runNumber":"370","timestamp":"20261027_123710","runReason":"Running AE01 SMOKE","environment":"stage","browser":"chrome","testPattern":"((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments|@TestSetVerification|@ChatBot"}
