@@ -1,0 +1,240 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/adminPortal/AdminPortalLicensePage.spec.ts >> ADM-001 - Customer Licenses page reflects the activated org and matches the subscription API
+- Location: src/tests/functional/subscriptions/adminPortal/AdminPortalLicensePage.spec.ts:24:5
+
+# Error details
+
+```
+TimeoutError: locator.fill: Timeout 60000ms exceeded.
+Call log:
+  - waiting for getByPlaceholder('Username')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Bad gateway Error code 502" [level=1] [ref=e5]:
+      - generic [ref=e6]: Bad gateway
+      - text: Error code 502
+    - generic [ref=e7]:
+      - text: Visit
+      - link "cloudflare.com" [ref=e8] [cursor=pointer]:
+        - /url: https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=adminstg.riversidescore.com
+      - text: for more information.
+    - generic [ref=e9]: 2026-10-28 16:41:15 UTC
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - text: You
+      - heading "Browser" [level=3] [ref=e17]
+      - text: Working
+    - generic [ref=e18]:
+      - link [ref=e20] [cursor=pointer]:
+        - /url: https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=adminstg.riversidescore.com
+      - text: Minneapolis
+      - heading "Cloudflare" [level=3] [ref=e23]:
+        - link "Cloudflare" [ref=e24] [cursor=pointer]:
+          - /url: https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=adminstg.riversidescore.com
+      - text: Working
+    - generic [ref=e25]:
+      - text: adminstg.riversidescore.com
+      - heading "Host" [level=3] [ref=e29]
+      - text: Error
+  - generic [ref=e31]:
+    - generic [ref=e32]:
+      - heading "What happened?" [level=2] [ref=e33]
+      - paragraph [ref=e34]: The web server reported a bad gateway error.
+    - generic [ref=e35]:
+      - heading "What can I do?" [level=2] [ref=e36]
+      - paragraph [ref=e37]: Please try again in a few minutes.
+  - paragraph [ref=e39]:
+    - generic [ref=e40]:
+      - text: "Cloudflare Ray ID:"
+      - strong [ref=e41]: a51b62ff1b02acea
+    - text: •
+    - generic [ref=e42]:
+      - text: "Your IP:"
+      - button "Click to reveal" [ref=e43] [cursor=pointer]
+      - text: •
+    - generic [ref=e44]:
+      - text: Performance & security by
+      - link "Cloudflare" [ref=e45] [cursor=pointer]:
+        - /url: https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=adminstg.riversidescore.com
+```
+
+# Test source
+
+```ts
+  1   | import { expect, Page } from '@playwright/test';
+  2   | import { getAdminCredentials, getSiteUrl } from '../utils/testData';
+  3   | import Locators from '../utils/locators';
+  4   | import { RawValueLogger } from '../utils/rawValueLogger';
+  5   | 
+  6   | export interface AdminSubscriptionModel {
+  7   |   SubscriptionId: number;
+  8   |   OrganizationId: number;
+  9   |   OrganizationName: string;
+  10  |   SubscriptionQuantity: number;
+  11  |   BurnedSubTests: number;
+  12  |   RemainingSubTests: number;
+  13  |   SubscriptionFrom: string;
+  14  |   SubscriptionTo: string;
+  15  |   SubscriptionOrderNo: string | null;
+  16  |   SubscriptionTypeId: number;
+  17  |   ClinicalQualLevelId: number;
+  18  |   AutoRenew: number;
+  19  |   CustomerOrgId: string | null;
+  20  |   ParentCustomerId: string | null;
+  21  |   RollOverCount: number;
+  22  |   IsSubtestAccessFeePaid: boolean;
+  23  |   IsNonverbalCognitiveIndexAccess: boolean;
+  24  |   MaxEndDate: string | null;
+  25  |   HasPriorSubscription: number;
+  26  |   IsExpired: boolean;
+  27  |   IsLapsed: boolean;
+  28  |   EmailAddress: string | null;
+  29  | }
+  30  | 
+  31  | export const SUBSCRIPTION_TYPE_ID = {
+  32  |   unlimited: 1,
+  33  |   subtest: 2,
+  34  |   multiYear18Month: 3,
+  35  |   multiYear30Month: 4,
+  36  | } as const;
+  37  | 
+  38  | export const CLINICAL_QUAL_LEVEL_ID = {
+  39  |   allow: 1,
+  40  |   deny: 2,
+  41  | } as const;
+  42  | 
+  43  | export const ADMIN_SALES_ORDER_MAX_LENGTH = 10;
+  44  | 
+  45  | // §1 — see adminPortalPage.notes.md
+  46  | export function generateDemoSalesOrderNumber(): string {
+  47  |   return `Aut${Date.now().toString(36).slice(-7)}`;
+  48  | }
+  49  | 
+  50  | export default class AdminPortalPage extends Locators {
+  51  |   constructor(public page: Page) {
+  52  |     super(page);
+  53  |   }
+  54  | 
+  55  |   async loginToAdminSite(username: string | any, password: string | any) {
+  56  |     console.log(`Trying to login as ${username} ...\n`);
+  57  |     await this.page.goto(getAdminCredentials().url);
+  58  |     await this.page.waitForLoadState();
+  59  |     if (await this.adminUserNameFaux.isVisible()) {
+  60  |       await this.adminUserNameFaux.click();
+  61  |     }
+> 62  |     await this.adminUserName.fill(username);
+      |                              ^ TimeoutError: locator.fill: Timeout 60000ms exceeded.
+  63  |     if (await this.adminPassWordFaux.isVisible()) {
+  64  |       await this.adminPassWordFaux.click();
+  65  |     }
+  66  |     await this.adminPassWord.fill(password);
+  67  |     await this.adminLoginButton.click();
+  68  |     await this.page.waitForLoadState();
+  69  |     await this.page.waitForTimeout(3000);
+  70  | 
+  71  |     console.log(`Login successful ... \n`);
+  72  |   }
+  73  |   async navigateToSearchOrganization(orgName: string) {
+  74  |     await this.page.waitForTimeout(3000);
+  75  |     await this.organization.click();
+  76  |     await this.page.waitForLoadState();
+  77  |     await this.searchEditOrg.last().click();
+  78  |     await this.page.waitForLoadState();
+  79  |     await this.searchOrgName.fill(orgName);
+  80  |     await this.page.waitForLoadState();
+  81  |     await this.orgSearchButton.click();
+  82  |     await this.page.waitForLoadState();
+  83  |   }
+  84  |   async navigateToLicensePage(orgName: string) {
+  85  |     await this.page.waitForTimeout(3000);
+  86  |     await this.page
+  87  |       .locator(
+  88  |         "//table[@class='search-results']//descendant::td[text()='" +
+  89  |           orgName +
+  90  |           "']//parent::tr//descendant::a[text()='License']"
+  91  |       )
+  92  |       .click();
+  93  |     await this.page.waitForLoadState();
+  94  |   }
+  95  |   async getSubscriptionOrderNumber(): Promise<string> {
+  96  |     return await this.subOrderNUmber.inputValue();
+  97  |   }
+  98  |   async goToAccountNotes() {
+  99  |     await this.page.waitForTimeout(3000);
+  100 |     await this.accountNotesTab.click();
+  101 |     await this.page.waitForLoadState();
+  102 |   }
+  103 |   async getSubscriptionModel(): Promise<AdminSubscriptionModel> {
+  104 |     await this.licenseSaveButton.waitFor({ state: 'visible', timeout: 60_000 });
+  105 |     const model = await this.page.evaluate(
+  106 |       () => (window as unknown as { subscriptionModel: AdminSubscriptionModel }).subscriptionModel
+  107 |     );
+  108 |     if (!model) {
+  109 |       throw new Error('subscriptionModel is not on the page - the Customer Licenses page did not load as expected.');
+  110 |     }
+  111 |     RawValueLogger.log('Admin licence page subscriptionModel', model);
+  112 |     return model;
+  113 |   }
+  114 | 
+  115 |   async verifyOrganizationName(expectedOrgName: string) {
+  116 |     await expect.soft(this.licenseOrganizationNameLink, 'admin licence page org name').toHaveText(expectedOrgName);
+  117 |   }
+  118 | 
+  119 |   async verifySubscriptionTypeSelected(expectedTypeId: number) {
+  120 |     const radios: Record<number, typeof this.licenseTypeUnlimitedRadio> = {
+  121 |       [SUBSCRIPTION_TYPE_ID.unlimited]: this.licenseTypeUnlimitedRadio,
+  122 |       [SUBSCRIPTION_TYPE_ID.subtest]: this.licenseTypeSubtestRadio,
+  123 |       [SUBSCRIPTION_TYPE_ID.multiYear18Month]: this.licenseTypeMultiYear18MonthRadio,
+  124 |       [SUBSCRIPTION_TYPE_ID.multiYear30Month]: this.licenseTypeMultiYear30MonthRadio,
+  125 |     };
+  126 |     await expect.soft(radios[expectedTypeId], `subscription type ${expectedTypeId} selected`).toBeChecked();
+  127 |   }
+  128 | 
+  129 |   async verifyMultiYearTypesCannotBeSelected() {
+  130 |     await expect.soft(this.licenseTypeMultiYear18MonthRadio, '18-month radio disabled').toBeDisabled();
+  131 |     await expect.soft(this.licenseTypeMultiYear30MonthRadio, '30-month radio disabled').toBeDisabled();
+  132 |   }
+  133 | 
+  134 |   async verifyAutoRenew(expectedOn: boolean) {
+  135 |     const expected = expectedOn ? this.licenseAutoRenewOnRadio : this.licenseAutoRenewOffRadio;
+  136 |     await expect.soft(expected, `auto-renew ${expectedOn ? 'On' : 'Off'} selected`).toBeChecked();
+  137 |   }
+  138 | 
+  139 |   async verifyCognitiveTestAccess(expectedAllow: boolean) {
+  140 |     const expected = expectedAllow ? this.licenseCognitiveAllowRadio : this.licenseCognitiveDenyRadio;
+  141 |     await expect.soft(expected, `cognitive access ${expectedAllow ? 'Allow' : 'Deny'} selected`).toBeChecked();
+  142 |   }
+  143 | 
+  144 |   async verifyNonverbalCognitiveAccess(expectedAllow: boolean) {
+  145 |     const expected = expectedAllow ? this.licenseNonverbalAllowRadio : this.licenseNonverbalDenyRadio;
+  146 |     await expect.soft(expected, `nonverbal access ${expectedAllow ? 'Allow' : 'Deny'} selected`).toBeChecked();
+  147 |   }
+  148 | 
+  149 |   async verifySubtestAccessFee(expectedPaid: boolean) {
+  150 |     const expected = expectedPaid ? this.licenseAccessFeeYesRadio : this.licenseAccessFeeNoRadio;
+  151 |     await expect.soft(expected, `Subtest Access Fee ${expectedPaid ? 'Yes' : 'No'} selected`).toBeChecked();
+  152 |   }
+  153 | 
+  154 |   async verifySubtestAccessFeeHidden() {
+  155 |     await expect.soft(this.licenseAccessFeeYesRadio, 'Subtest Access Fee Yes hidden').toBeHidden();
+  156 |     await expect.soft(this.licenseAccessFeeNoRadio, 'Subtest Access Fee No hidden').toBeHidden();
+  157 |   }
+  158 | 
+  159 |   async setSubtestAccessFee(paid: boolean) {
+  160 |     await (paid ? this.licenseAccessFeeYesLabel : this.licenseAccessFeeNoLabel).click();
+  161 |   }
+  162 | 
+```
