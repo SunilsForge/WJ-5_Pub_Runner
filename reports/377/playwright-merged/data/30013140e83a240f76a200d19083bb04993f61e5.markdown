@@ -1,0 +1,388 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/adminPortal/AdminPortalCognitiveAccess.spec.ts >> QF-016 - Cognitive clusters disappear once cognitive access is revoked from the admin portal
+- Location: src/tests/functional/subscriptions/adminPortal/AdminPortalCognitiveAccess.spec.ts:25:5
+
+# Error details
+
+```
+Error: ClinicalQualLevelId
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 2
+Received: 1
+```
+
+```
+Error: cognitive access Deny selected
+
+expect(locator).toBeChecked() failed
+
+Locator:  locator('#radiobox-deny')
+Expected: checked
+Received: unchecked
+Timeout:  60000ms
+
+Call log:
+  - cognitive access Deny selected with timeout 60000ms
+  - waiting for locator('#radiobox-deny')
+    63 × locator resolved to <input value="2" type="radio" class="checkmark" id="radiobox-deny" name="ClinicalQualLevelId" onchange="checkedChanged(this);"/>
+       - unexpected value "unchecked"
+
+```
+
+```
+Error: CognitiveTesting after revoke
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: false
+Received: true
+```
+
+```
+Error: expect(locator).toHaveCount(expected) failed
+
+Locator:  locator('div.TestSetCreate_mcs_level1Name[data-clusterid=\'COG\']')
+Expected: 0
+Received: 1
+Timeout:  60000ms
+
+Call log:
+  - Expect "soft toHaveCount" with timeout 60000ms
+  - waiting for locator('div.TestSetCreate_mcs_level1Name[data-clusterid=\'COG\']')
+    63 × locator resolved to 1 element
+       - unexpected value "1"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - list [ref=e6]:
+    - listitem
+    - listitem [ref=e7]:
+      - generic [ref=e8]: soli soli
+    - listitem [ref=e9]:
+      - link "Log Out" [ref=e10] [cursor=pointer]:
+        - /url: javascript:document.getElementById('logoutForm').submit()
+  - list [ref=e12]:
+    - listitem [ref=e13]:
+      - link "Dashboard" [ref=e14] [cursor=pointer]:
+        - /url: /Home/Dashboard
+    - listitem [ref=e15]:
+      - link "Organizations" [ref=e16] [cursor=pointer]:
+        - /url: /Navigation/Landing/185
+    - listitem [ref=e17]:
+      - link "Program Coordinator" [ref=e18] [cursor=pointer]:
+        - /url: /Navigation/Landing/207
+    - listitem [ref=e19]:
+      - link "Partner" [ref=e20] [cursor=pointer]:
+        - /url: /Navigation/Landing/218
+    - listitem [ref=e21]:
+      - link "Administration" [ref=e22] [cursor=pointer]:
+        - /url: /Navigation/Landing/188
+  - generic [ref=e23]:
+    - generic [ref=e25]:
+      - generic:
+        - generic [ref=e26]: Organizations
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - link "Add" [ref=e29] [cursor=pointer]:
+              - /url: /Organization/OrganizationProfileForm
+          - listitem [ref=e30]:
+            - link "Search/Edit" [ref=e31] [cursor=pointer]:
+              - /url: /Organization/Search
+    - generic [ref=e33]:
+      - heading "Customer Licenses" [level=2] [ref=e34]
+      - list [ref=e35]:
+        - listitem [ref=e36]:
+          - link "WJ V" [ref=e37] [cursor=pointer]:
+            - /url: /Customer/CustomerLicensing?OrganizationID=65683&ProductID=18&isDisableStatus=True&isDistributor=False
+      - generic [ref=e38]:
+        - heading "WJ V" [level=2] [ref=e39]
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - text: "Organization Name:"
+            - link "Location_SubAut29Oct261540404bp" [ref=e42] [cursor=pointer]:
+              - /url: /Organization/OrganizationProfileForm?OrganizationID=65683
+          - list [ref=e43]:
+            - listitem [ref=e44]:
+              - link "Subscriptions" [ref=e45] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e46]:
+              - link "Renewals" [ref=e47] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e48]:
+              - link "Account Notes" [ref=e49] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - text: Subscription Type*
+                - generic [ref=e55]:
+                  - generic [ref=e56] [cursor=pointer]:
+                    - radio [checked] [ref=e57]
+                    - text: WJ V Unlimited
+                  - generic [ref=e58] [cursor=pointer]:
+                    - radio [disabled] [ref=e59]
+                    - text: WJ V Subtest
+                  - generic [ref=e60] [cursor=pointer]:
+                    - radio [disabled] [ref=e61]
+                    - text: Multi-Year Unlimited 18-month
+                  - generic [ref=e62] [cursor=pointer]:
+                    - radio [disabled] [ref=e63]
+                    - text: Multi-Year Unlimited 30-month
+              - generic [ref=e65]:
+                - generic [ref=e66]: Subscription Sales Order Number*
+                - textbox [ref=e68]: SO292847
+              - generic [ref=e69]:
+                - text: Auto-Renew
+                - generic [ref=e70]:
+                  - generic [ref=e71] [cursor=pointer]:
+                    - radio "On" [checked] [ref=e72]
+                    - text: "On"
+                  - generic [ref=e73] [cursor=pointer]:
+                    - radio "Off" [ref=e74]
+                    - text: "Off"
+              - generic [ref=e75]:
+                - text: Cognitive Test Access
+                - generic [ref=e76]:
+                  - generic [ref=e77] [cursor=pointer]:
+                    - radio "Allow" [checked] [ref=e78]
+                    - text: Allow
+                  - generic [ref=e79] [cursor=pointer]:
+                    - radio "Deny" [ref=e80]
+                    - text: Deny
+            - generic [ref=e82]:
+              - text: Nonverbal Cognitive Ability Index Access*
+              - generic [ref=e84] [cursor=pointer]:
+                - radio "Allow" [ref=e85]
+                - text: Allow
+              - generic [ref=e87] [cursor=pointer]:
+                - radio "Deny" [checked] [ref=e88]
+                - text: Deny
+            - generic [ref=e89]:
+              - table [ref=e92]:
+                - rowgroup [ref=e93]:
+                  - row "Start Date End Date" [ref=e94]:
+                    - columnheader "Start Date" [ref=e95]
+                    - columnheader "End Date" [ref=e96]
+                - rowgroup [ref=e97]:
+                  - row "10/29/2026 10/28/2027" [ref=e98]:
+                    - cell "10/29/2026" [ref=e99]:
+                      - textbox [ref=e101]: 10/29/2026
+                    - cell "10/28/2027" [ref=e103]:
+                      - textbox [ref=e105]: 10/28/2027
+              - generic [ref=e107]:
+                - generic [ref=e108]: Activation Contact
+                - generic [ref=e109]: First Name Angelina Last Name SubAut29Oct261540404bp Email sunil.adeptpros+SubAut29Oct261540404bp@gmail.com
+              - button "Remove Access" [ref=e111] [cursor=pointer]
+            - generic [ref=e113]:
+              - button "Cancel" [ref=e114] [cursor=pointer]
+              - button "Save"
+  - generic [ref=e116]:
+    - list [ref=e117]:
+      - listitem [ref=e118]:
+        - link "Dashboard" [ref=e119] [cursor=pointer]:
+          - /url: /Home/Dashboard
+      - listitem [ref=e120]:
+        - link "Organizations" [ref=e121] [cursor=pointer]:
+          - /url: /Navigation/Landing/185
+      - listitem [ref=e122]:
+        - link "Program Coordinator" [ref=e123] [cursor=pointer]:
+          - /url: /Navigation/Landing/207
+      - listitem [ref=e124]:
+        - link "Partner" [ref=e125] [cursor=pointer]:
+          - /url: /Navigation/Landing/218
+      - listitem [ref=e126]:
+        - link "Administration" [ref=e127] [cursor=pointer]:
+          - /url: /Navigation/Landing/188
+    - paragraph [ref=e128]:
+      - generic [ref=e129]:
+        - text: Copyright © 2014 by The Riverside Publishing Company. • All rights reserved. • (800) 323-9540 •
+        - link "www.riversideinsights.com" [ref=e130] [cursor=pointer]:
+          - /url: http://www.riversideinsights.com
+    - generic [ref=e131]:
+      - link "Terms of Use" [ref=e132] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - link "Privacy Policy" [ref=e133] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+```
+
+# Test source
+
+```ts
+  1   | import {  expect, Page } from "@playwright/test";
+  2   | import Locators from "../utils/locators";
+  3   | import DashBoardPage from "./dashboardPage";
+  4   | import { faker } from "@faker-js/faker";
+  5   | import { RawValueLogger } from "../utils/rawValueLogger";
+  6   | 
+  7   | export default class TestSetsPage extends Locators{
+  8   | 
+  9   |   private dashboardPage: DashBoardPage;
+  10  |      constructor(public page: Page) {
+  11  |       super(page);
+  12  |       this.dashboardPage = new DashBoardPage(this.page);
+  13  |   }
+  14  | 
+  15  | static tSetName: string;
+  16  | 
+  17  |      async clickTestSetsOnMenu() {
+  18  |       await this.testSetButton.click();
+  19  |    }
+  20  |   async clickOnCreateNewTestSetButton() {
+  21  |     await this.createNewTestSetButton.click();
+  22  |   }
+  23  |   async clickOnAllTestsTab() {
+  24  |     await this.allTestsButton.click({delay: 2000});
+  25  |   }
+  26  | 
+  27  |   async clickOnClustersTab() {
+  28  |     await this.clustersTabButton.click({ delay: 2000 });
+  29  |   }
+  30  | 
+  31  |   async openTestSetCreation() {
+  32  |     await this.clickTestSetsOnMenu();
+  33  |     await this.page.waitForLoadState('domcontentloaded');
+  34  |     await this.clickOnCreateNewTestSetButton();
+  35  |     await this.page.waitForLoadState('domcontentloaded');
+  36  |   }
+  37  | 
+  38  |   clusterGroupsInSection(clusterId: string) {
+  39  |     return this.page.locator(
+  40  |       `//div[@data-clusterid='${clusterId}'][contains(@class,'level1Name')]` +
+  41  |       `/parent::div/following-sibling::div[contains(@class,'level2')]//button[@aria-label]`
+  42  |     );
+  43  |   }
+  44  | 
+  45  |   private clusterSection(clusterId: string) {
+  46  |     switch (clusterId) {
+  47  |       case 'COG':
+  48  |         return this.cognitiveAbilitiesSection;
+  49  |       case 'ACH':
+  50  |         return this.achievementSection;
+  51  |       case 'VTL':
+  52  |         return this.virtualTestLibrarySection;
+  53  |       default:
+  54  |         throw new Error(`Unknown cluster section '${clusterId}' — expected COG, ACH or VTL.`);
+  55  |     }
+  56  |   }
+  57  | 
+  58  |   async verifyClusterSectionVisible(clusterId: string) {
+  59  |     await expect.soft(this.clusterSection(clusterId)).toBeVisible();
+  60  |   }
+  61  | 
+  62  |   async verifyClusterSectionAbsent(clusterId: string) {
+> 63  |     await expect.soft(this.clusterSection(clusterId)).toHaveCount(0);
+      |                                                       ^ Error: expect(locator).toHaveCount(expected) failed
+  64  |   }
+  65  | 
+  66  |   async getClusterGroupNames(clusterId: string): Promise<string[]> {
+  67  |     const groups = this.clusterGroupsInSection(clusterId);
+  68  |     await expect
+  69  |       .poll(async () => await groups.count(), {
+  70  |         message: `Waiting for cluster groups under section ${clusterId}`,
+  71  |         timeout: 15_000,
+  72  |       })
+  73  |       .toBeGreaterThan(0);
+  74  |     return (await groups.evaluateAll(nodes => nodes.map(n => n.getAttribute('aria-label') ?? ''))).filter(Boolean);
+  75  |   }
+  76  | 
+  77  |   async getAllTestNames(): Promise<string[]> {
+  78  |     await expect
+  79  |       .poll(async () => await this.testSetLevel3Checkboxes.count(), {
+  80  |         message: 'Waiting for the All Tests list to render',
+  81  |         timeout: 15_000,
+  82  |       })
+  83  |       .toBeGreaterThan(0);
+  84  |     return (
+  85  |       await this.testSetLevel3Checkboxes.evaluateAll(nodes => nodes.map(n => n.getAttribute('aria-label') ?? ''))
+  86  |     ).filter(Boolean);
+  87  |   }
+  88  | 
+  89  |   async clickClose() {
+  90  |     await this.page.waitForTimeout(2000);
+  91  |     await this.timerCloseButton.click();
+  92  |   }
+  93  | 
+  94  |   async selectAllTests(): Promise<void> {
+  95  |     await this.page.waitForLoadState('domcontentloaded');
+  96  |     await this.page.waitForTimeout(1000);
+  97  | 
+  98  |     await expect
+  99  |       .poll(
+  100 |         async () => await this.checkboxes.count(),
+  101 |         {
+  102 |           message: 'Waiting for checkbox count to be greater than 0',
+  103 |           timeout: 10_000
+  104 |         }
+  105 |       )
+  106 |       .toBeGreaterThan(0);
+  107 | 
+  108 |     const checkboxCount = await this.checkboxes.count();
+  109 |     RawValueLogger.log(`Found ${checkboxCount} checkboxes`);
+  110 | 
+  111 |     for (let i = 0; i < checkboxCount; i++) {
+  112 |       if (i === 7 || i === 24) continue;
+  113 | 
+  114 |       const checkbox = this.checkboxes.nth(i);
+  115 |       await checkbox.scrollIntoViewIfNeeded();
+  116 |       await checkbox.click();
+  117 |     }
+  118 |   }
+  119 | 
+  120 | 
+  121 |   async selectTheRequiredTests(testname: string | string[]) {
+  122 | 
+  123 |     await this.page.waitForLoadState('domcontentloaded');
+  124 |     await this.page.waitForTimeout(1000);
+  125 | 
+  126 |     await expect
+  127 |       .poll(
+  128 |         async () => await this.checkboxes.count(),
+  129 |         {
+  130 |           message: 'Waiting for checkbox count to be greater than 0',
+  131 |           timeout: 10_000
+  132 |         }
+  133 |       )
+  134 |       .toBeGreaterThan(0);
+  135 | 
+  136 |     const checkboxCount = await this.checkboxes.count();
+  137 |     console.log(`Found ${checkboxCount} checkboxes`);
+  138 |     const testNames = Array.isArray(testname) ? testname : [testname];
+  139 |     const defaultExcludedTests = ["Oral Vocabulary–Antonyms", "General Information–What"];
+  140 |     const checkboxLabels: string[] = [];
+  141 |     for (let i = 0; i < checkboxCount; i++) {
+  142 |       checkboxLabels.push((await this.checkboxes.nth(i).getAttribute("aria-label")) ?.trim() ?? "");
+  143 |     }
+  144 |     for (const name of testNames) {
+  145 |       const matchIndex = checkboxLabels.findIndex(label =>
+  146 |         label === name &&
+  147 |         (!defaultExcludedTests.includes(label) || testNames.includes(label))
+  148 |       );
+  149 | 
+  150 |       if (matchIndex === -1) {
+  151 |         console.log(`No matching checkbox found for: ${name}`);
+  152 |         continue;
+  153 |       }
+  154 | 
+  155 |       await this.checkboxes.nth(matchIndex).click();
+  156 |       console.log(`Selected test: ${checkboxLabels[matchIndex]}`);
+  157 |     }
+  158 |   }
+  159 | 
+  160 | async createRandomTestSetWithAllTheTests(testname?:string) {
+  161 |   await this.page.bringToFront();
+  162 |   await this.clickTestSetsOnMenu();
+  163 |   await this.clickOnCreateNewTestSetButton();
+```
