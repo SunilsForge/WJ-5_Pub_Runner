@@ -1,0 +1,1538 @@
+{
+  "config": {
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+        "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "commitHash": "4245983c6c3e7095325b1c507d0ecc13eb620593",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/40823326039"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 17,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "test_dataExport/SWRTFL_Pub.spec.ts",
+      "file": "test_dataExport/SWRTFL_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "SWRTFL.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/SWRTFL_Pub.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For Ages 4 to 6 - Test Items Score Entry With All Maximum Score Conduct test and validate report",
+              "ok": false,
+              "tags": [
+                "SWRTFL",
+                "TestDe",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1042606,
+                      "error": {
+                        "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N71571A4502\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N71571A4502\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N71571A4502\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N71571A4502\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                        "stack": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N71571A4502\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N71571A4502\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N71571A4502\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N71571A4502\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/SWRTFL_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                          "column": 109,
+                          "line": 43
+                        },
+                        "snippet": "   at ../utils/reportDownload.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m downloadButtonLocator \u001b[33m=\u001b[39m reportRowLocator\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label=\"Download/Print\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m expect(downloadButtonLocator\u001b[33m,\u001b[39m \u001b[32m`Download/Print for \"${expectedReportName}\" never became clickable.`\u001b[39m)\u001b[33m.\u001b[39mtoBeEnabled(\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[33mDOWNLOAD_ENABLED_TIMEOUT_IN_MS\u001b[39m }\n \u001b[90m 45 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                            "column": 109,
+                            "line": 43
+                          },
+                          "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N71571A4502\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N71571A4502\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N71571A4502\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N71571A4502\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n   at ../utils/reportDownload.ts:43\n\n  41 |\n  42 |   const downloadButtonLocator = reportRowLocator.locator('button[aria-label=\"Download/Print\"]');\n> 43 |   await expect(downloadButtonLocator, `Download/Print for \"${expectedReportName}\" never became clickable.`).toBeEnabled(\n     |                                                                                                             ^\n  44 |     { timeout: DOWNLOAD_ENABLED_TIMEOUT_IN_MS }\n  45 |   );\n  46 |\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/SWRTFL_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S17:W0] Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S17:W0] Login successful for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N71571A4502\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N71571A4502/dataFiles/Test_DataExport_AutoFilter_Template_N71571A4502.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N71571A4502 FirstName=Antonina LastName =N71571A4502 Age = 10/29/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N71571A4502\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Fluency\n"
+                        },
+                        {
+                          "text": "Demonstration 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item C, Trial 1\n"
+                        },
+                        {
+                          "text": "Test Introduction\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Time is up.\n"
+                        },
+                        {
+                          "text": "{\n  \u001b[32m'Demonstration 1'\u001b[39m: { RT: \u001b[33m0.007\u001b[39m, Delivered_Order: \u001b[33m0\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m: { RT: \u001b[33m0.055\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m'[Correct]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m: { RT: \u001b[33m0.039\u001b[39m, Delivered_Order: \u001b[33m2\u001b[39m, Response: \u001b[32m'[Correct]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Sample Item C, Trial 1'\u001b[39m: { RT: \u001b[33m0.038\u001b[39m, Delivered_Order: \u001b[33m3\u001b[39m, Response: \u001b[32m'[Correct]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Test Introduction'\u001b[39m: { RT: \u001b[33m0.063\u001b[39m, Delivered_Order: \u001b[33m4\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Test Items'\u001b[39m: { RT: \u001b[33m0.006\u001b[39m, Delivered_Order: \u001b[33m5\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Page 2'\u001b[39m: { RT: \u001b[33m0.083\u001b[39m, Delivered_Order: \u001b[33m6\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  \u001b[32m'Page 3'\u001b[39m: { RT: \u001b[33m0.123\u001b[39m, Delivered_Order: \u001b[33m7\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  \u001b[32m'Page 4'\u001b[39m: { RT: \u001b[33m0.161\u001b[39m, Delivered_Order: \u001b[33m8\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  \u001b[32m'Page 5'\u001b[39m: { RT: \u001b[33m0.195\u001b[39m, Delivered_Order: \u001b[33m9\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  \u001b[32m'Page 6'\u001b[39m: { RT: \u001b[33m0.271\u001b[39m, Delivered_Order: \u001b[33m10\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  Total: { RT: \u001b[33m0.282\u001b[39m, Delivered_Order: \u001b[33m11\u001b[39m, Response: \u001b[32m'40'\u001b[39m, Score: \u001b[33m40\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N71571A4502/dataFiles/Test_DataExport_AutoFilter_Template_N71571A4502.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N71571A4502\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N71571A4502/dataFiles/Test_DataExport_AutoFilter_Template_N71571A4502.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N71571A4502\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N71571A4502/dataFiles/Test_DataExport_AutoFilter_Template_N71571A4502.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N71571A4502\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N71571A4502 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 1 for fetching the report failed. 2 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N71571A4502\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N71571A4502\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N71571A4502\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N71571A4502\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N71571A4502 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 2 for fetching the report failed. 1 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N71571A4502\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N71571A4502\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N71571A4502\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N71571A4502\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N71571A4502 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 3 for fetching the report failed. 0 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N71571A4502\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N71571A4502\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N71571A4502\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N71571A4502\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-10-29T05:27:27.497Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated testData Filter Template (N71571A4502)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome/attachments/Generated-testData-Filter-Template-N71571A4502--bf4b3e94564f6d39b1316798f3dee1e6c016e9ef.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                        "column": 109,
+                        "line": 43
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1042677,
+                      "error": {
+                        "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N72455A96149\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N72455A96149\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N72455A96149\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N72455A96149\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                        "stack": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N72455A96149\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N72455A96149\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N72455A96149\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N72455A96149\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/SWRTFL_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                          "column": 109,
+                          "line": 43
+                        },
+                        "snippet": "   at ../utils/reportDownload.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m downloadButtonLocator \u001b[33m=\u001b[39m reportRowLocator\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label=\"Download/Print\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m expect(downloadButtonLocator\u001b[33m,\u001b[39m \u001b[32m`Download/Print for \"${expectedReportName}\" never became clickable.`\u001b[39m)\u001b[33m.\u001b[39mtoBeEnabled(\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[33mDOWNLOAD_ENABLED_TIMEOUT_IN_MS\u001b[39m }\n \u001b[90m 45 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                            "column": 109,
+                            "line": 43
+                          },
+                          "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N72455A96149\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N72455A96149\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N72455A96149\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N72455A96149\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n   at ../utils/reportDownload.ts:43\n\n  41 |\n  42 |   const downloadButtonLocator = reportRowLocator.locator('button[aria-label=\"Download/Print\"]');\n> 43 |   await expect(downloadButtonLocator, `Download/Print for \"${expectedReportName}\" never became clickable.`).toBeEnabled(\n     |                                                                                                             ^\n  44 |     { timeout: DOWNLOAD_ENABLED_TIMEOUT_IN_MS }\n  45 |   );\n  46 |\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/SWRTFL_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S17:W1] Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S17:W1] Login successful for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N72455A96149\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N72455A96149/dataFiles/Test_DataExport_AutoFilter_Template_N72455A96149.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N72455A96149 FirstName=Elyssa LastName =N72455A96149 Age = 10/29/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N72455A96149\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Fluency\n"
+                        },
+                        {
+                          "text": "Demonstration 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item C, Trial 1\n"
+                        },
+                        {
+                          "text": "Test Introduction\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Time is up.\n"
+                        },
+                        {
+                          "text": "{\n  \u001b[32m'Demonstration 1'\u001b[39m: { RT: \u001b[33m0.008\u001b[39m, Delivered_Order: \u001b[33m0\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m: { RT: \u001b[33m0.049\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m'[Correct]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m: { RT: \u001b[33m0.055\u001b[39m, Delivered_Order: \u001b[33m2\u001b[39m, Response: \u001b[32m'[Correct]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Sample Item C, Trial 1'\u001b[39m: { RT: \u001b[33m0.042\u001b[39m, Delivered_Order: \u001b[33m3\u001b[39m, Response: \u001b[32m'[Correct]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Test Introduction'\u001b[39m: { RT: \u001b[33m0.032\u001b[39m, Delivered_Order: \u001b[33m4\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Test Items'\u001b[39m: { RT: \u001b[33m0.007\u001b[39m, Delivered_Order: \u001b[33m5\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Page 2'\u001b[39m: { RT: \u001b[33m0.074\u001b[39m, Delivered_Order: \u001b[33m6\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  \u001b[32m'Page 3'\u001b[39m: { RT: \u001b[33m0.113\u001b[39m, Delivered_Order: \u001b[33m7\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  \u001b[32m'Page 4'\u001b[39m: { RT: \u001b[33m0.152\u001b[39m, Delivered_Order: \u001b[33m8\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  \u001b[32m'Page 5'\u001b[39m: { RT: \u001b[33m0.192\u001b[39m, Delivered_Order: \u001b[33m9\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  \u001b[32m'Page 6'\u001b[39m: { RT: \u001b[33m0.23\u001b[39m, Delivered_Order: \u001b[33m10\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  Total: { RT: \u001b[33m0.247\u001b[39m, Delivered_Order: \u001b[33m11\u001b[39m, Response: \u001b[32m'40'\u001b[39m, Score: \u001b[33m40\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N72455A96149/dataFiles/Test_DataExport_AutoFilter_Template_N72455A96149.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N72455A96149\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N72455A96149/dataFiles/Test_DataExport_AutoFilter_Template_N72455A96149.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N72455A96149\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N72455A96149/dataFiles/Test_DataExport_AutoFilter_Template_N72455A96149.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N72455A96149\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N72455A96149 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 1 for fetching the report failed. 2 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N72455A96149\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N72455A96149\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N72455A96149\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N72455A96149\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N72455A96149 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 2 for fetching the report failed. 1 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N72455A96149\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N72455A96149\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N72455A96149\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N72455A96149\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N72455A96149 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 3 for fetching the report failed. 0 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N72455A96149\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N72455A96149\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N72455A96149\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N72455A96149\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 1,
+                      "startTime": "2026-10-29T05:45:02.722Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated testData Filter Template (N72455A96149)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome-retry1/attachments/Generated-testData-Filter-Template-N72455A96149--562f346fd8e4e5508d8573e9577fbef6c4c860b4.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                        "column": 109,
+                        "line": 43
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1042297,
+                      "error": {
+                        "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N11416A80526\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N11416A80526\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N11416A80526\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N11416A80526\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                        "stack": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N11416A80526\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N11416A80526\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N11416A80526\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N11416A80526\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/SWRTFL_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                          "column": 109,
+                          "line": 43
+                        },
+                        "snippet": "   at ../utils/reportDownload.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m downloadButtonLocator \u001b[33m=\u001b[39m reportRowLocator\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label=\"Download/Print\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m expect(downloadButtonLocator\u001b[33m,\u001b[39m \u001b[32m`Download/Print for \"${expectedReportName}\" never became clickable.`\u001b[39m)\u001b[33m.\u001b[39mtoBeEnabled(\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[33mDOWNLOAD_ENABLED_TIMEOUT_IN_MS\u001b[39m }\n \u001b[90m 45 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                            "column": 109,
+                            "line": 43
+                          },
+                          "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N11416A80526\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N11416A80526\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N11416A80526\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N11416A80526\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n   at ../utils/reportDownload.ts:43\n\n  41 |\n  42 |   const downloadButtonLocator = reportRowLocator.locator('button[aria-label=\"Download/Print\"]');\n> 43 |   await expect(downloadButtonLocator, `Download/Print for \"${expectedReportName}\" never became clickable.`).toBeEnabled(\n     |                                                                                                             ^\n  44 |     { timeout: DOWNLOAD_ENABLED_TIMEOUT_IN_MS }\n  45 |   );\n  46 |\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/SWRTFL_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S17:W2] Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S17:W2] Login successful for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N11416A80526\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11416A80526/dataFiles/Test_DataExport_AutoFilter_Template_N11416A80526.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N11416A80526 FirstName=Marlene LastName =N11416A80526 Age = 10/29/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N11416A80526\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Sentence Writing Fluency\n"
+                        },
+                        {
+                          "text": "Demonstration 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item C, Trial 1\n"
+                        },
+                        {
+                          "text": "Test Introduction\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Time is up.\n"
+                        },
+                        {
+                          "text": "{\n  \u001b[32m'Demonstration 1'\u001b[39m: { RT: \u001b[33m0.008\u001b[39m, Delivered_Order: \u001b[33m0\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Sample Item A, Trial 1'\u001b[39m: { RT: \u001b[33m0.051\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m'[Correct]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Sample Item B, Trial 1'\u001b[39m: { RT: \u001b[33m0.046\u001b[39m, Delivered_Order: \u001b[33m2\u001b[39m, Response: \u001b[32m'[Correct]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Sample Item C, Trial 1'\u001b[39m: { RT: \u001b[33m0.042\u001b[39m, Delivered_Order: \u001b[33m3\u001b[39m, Response: \u001b[32m'[Correct]'\u001b[39m, Score: \u001b[33m1\u001b[39m },\n  \u001b[32m'Test Introduction'\u001b[39m: { RT: \u001b[33m0.037\u001b[39m, Delivered_Order: \u001b[33m4\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Test Items'\u001b[39m: { RT: \u001b[33m0.006\u001b[39m, Delivered_Order: \u001b[33m5\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Page 2'\u001b[39m: { RT: \u001b[33m0.107\u001b[39m, Delivered_Order: \u001b[33m6\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  \u001b[32m'Page 3'\u001b[39m: { RT: \u001b[33m0.152\u001b[39m, Delivered_Order: \u001b[33m7\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  \u001b[32m'Page 4'\u001b[39m: { RT: \u001b[33m0.188\u001b[39m, Delivered_Order: \u001b[33m8\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  \u001b[32m'Page 5'\u001b[39m: { RT: \u001b[33m0.222\u001b[39m, Delivered_Order: \u001b[33m9\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  \u001b[32m'Page 6'\u001b[39m: { RT: \u001b[33m0.268\u001b[39m, Delivered_Order: \u001b[33m10\u001b[39m, Response: \u001b[32m'8'\u001b[39m, Score: \u001b[33m8\u001b[39m },\n  Total: { RT: \u001b[33m0.276\u001b[39m, Delivered_Order: \u001b[33m11\u001b[39m, Response: \u001b[32m'40'\u001b[39m, Score: \u001b[33m40\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11416A80526/dataFiles/Test_DataExport_AutoFilter_Template_N11416A80526.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N11416A80526\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11416A80526/dataFiles/Test_DataExport_AutoFilter_Template_N11416A80526.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N11416A80526\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11416A80526/dataFiles/Test_DataExport_AutoFilter_Template_N11416A80526.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N11416A80526\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N11416A80526 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 1 for fetching the report failed. 2 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N11416A80526\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N11416A80526\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N11416A80526\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N11416A80526\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N11416A80526 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 2 for fetching the report failed. 1 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N11416A80526\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N11416A80526\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N11416A80526\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N11416A80526\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N11416A80526 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 3 for fetching the report failed. 0 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N11416A80526\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N11416A80526\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N11416A80526\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N11416A80526\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 2,
+                      "startTime": "2026-10-29T06:02:37.969Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated testData Filter Template (N11416A80526)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome-retry2/attachments/Generated-testData-Filter-Template-N11416A80526--a948b0edd06b0c3593e0e6e21ea6f11110f1be0a.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome-retry2/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome-retry2/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-SWRTFL_Pub-a3d1d-ct-test-and-validate-report-chrome-retry2/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                        "column": 109,
+                        "line": 43
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "345c42602485c90ae78b-a2801813dd585f4ef93d",
+              "file": "test_dataExport/SWRTFL_Pub.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "test_dataExport/WRTSMP_Pub.spec.ts",
+      "file": "test_dataExport/WRTSMP_Pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "WRTSMP.W5PA Test Data Export Automation ",
+          "file": "test_dataExport/WRTSMP_Pub.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For Ages 5 to 7 - All correct End Test Scenario For Block A, Block B And Block C Conduct test and validate report",
+              "ok": false,
+              "tags": [
+                "WRTSMP",
+                "TestDe",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 819171,
+                      "error": {
+                        "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N44505A99366\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N44505A99366\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N44505A99366\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N44505A99366\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                        "stack": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N44505A99366\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N44505A99366\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N44505A99366\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N44505A99366\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/WRTSMP_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                          "column": 109,
+                          "line": 43
+                        },
+                        "snippet": "   at ../utils/reportDownload.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m downloadButtonLocator \u001b[33m=\u001b[39m reportRowLocator\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label=\"Download/Print\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m expect(downloadButtonLocator\u001b[33m,\u001b[39m \u001b[32m`Download/Print for \"${expectedReportName}\" never became clickable.`\u001b[39m)\u001b[33m.\u001b[39mtoBeEnabled(\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[33mDOWNLOAD_ENABLED_TIMEOUT_IN_MS\u001b[39m }\n \u001b[90m 45 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                            "column": 109,
+                            "line": 43
+                          },
+                          "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N44505A99366\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N44505A99366\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N44505A99366\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N44505A99366\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n   at ../utils/reportDownload.ts:43\n\n  41 |\n  42 |   const downloadButtonLocator = reportRowLocator.locator('button[aria-label=\"Download/Print\"]');\n> 43 |   await expect(downloadButtonLocator, `Download/Print for \"${expectedReportName}\" never became clickable.`).toBeEnabled(\n     |                                                                                                             ^\n  44 |     { timeout: DOWNLOAD_ENABLED_TIMEOUT_IN_MS }\n  45 |   );\n  46 |\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/WRTSMP_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S17:W3] Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S17:W3] Login successful for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N44505A99366\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N44505A99366/dataFiles/Test_DataExport_AutoFilter_Template_N44505A99366.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N44505A99366 FirstName=Ari LastName =N44505A99366 Age = 10/29/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N44505A99366\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22639|Ages 5 to 7|22640,22641\n"
+                        },
+                        {
+                          "text": "Current Screen: Introduction 1\n"
+                        },
+                        {
+                          "text": "Current Screen: Introduction 2\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 1\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 2\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 3\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 4\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 5\n"
+                        },
+                        {
+                          "text": "Current Screen: Introduction 3\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 6\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 7\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 8\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 9\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 10\n"
+                        },
+                        {
+                          "text": "Current Screen: \n"
+                        },
+                        {
+                          "text": "Current Screen: Item 11\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 12\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 13\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 14\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 15\n"
+                        },
+                        {
+                          "text": "Current Screen: \n"
+                        },
+                        {
+                          "text": "Current Screen: Test Complete\n"
+                        },
+                        {
+                          "text": "Final Data: {\n  \u001b[32m'Introduction 1'\u001b[39m: { RT: \u001b[33m1.025\u001b[39m, Delivered_Order: \u001b[33m0\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Introduction 2'\u001b[39m: { RT: \u001b[33m1.025\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 1'\u001b[39m: {\n    RT: \u001b[33m0.062\u001b[39m,\n    Delivered_Order: \u001b[33m2\u001b[39m,\n    Response: \u001b[32m'The response is a single word that accurately identifies the picture. The word is reasonable and recognizable (e.g., sn. su, snn, snu, sun, son). Accept letter reversals (e.g., reversed s), letter transpositions, and misspellings. Ignore extra letters.'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 2'\u001b[39m: {\n    RT: \u001b[33m0.058\u001b[39m,\n    Delivered_Order: \u001b[33m3\u001b[39m,\n    Response: \u001b[32m'The response begins with c or k, or with the correct letter for any other reasonable responses. The word that is recognizable (e.g., ca, cr, cra, kar, ka, kr, kra). Accept letter reversals (e.g., reversed c). Accept letter transpositions, but the response must begin with correct letter.'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 3'\u001b[39m: {\n    RT: \u001b[33m0.085\u001b[39m,\n    Delivered_Order: \u001b[33m4\u001b[39m,\n    Response: \u001b[32m'The response identifies the man as a king, prince, or any reasonable synonym. The word is recongizable. The response begins with the correct letter or the correct letter sound (i.e., /k/ or hard /c/). Accept letter reversals (e.g., q for p). Accept letter transpositions, but the response must begin with the correct letter.'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 4'\u001b[39m: {\n    RT: \u001b[33m0.104\u001b[39m,\n    Delivered_Order: \u001b[33m5\u001b[39m,\n    Response: \u001b[32m'The response is a single word that identifies store or reasonable synonym. The word is recognizable (e.g., store/stor, market/markit, mart/mrt, shop/shp). Accept letter reversals (e.g., reversed s), letter transpositions, and misspellings. Ignore extra letters.'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 5'\u001b[39m: {\n    RT: \u001b[33m0.091\u001b[39m,\n    Delivered_Order: \u001b[33m6\u001b[39m,\n    Response: \u001b[32m'The response contains two words, one indicating that the object is a ball and the other describing the ball. Both words are recognizable (e.g., soccer (sawker) ball (bal, dall), round (rond, rownd) ball (bal, dall), big ball (big bal). Both words begin with the correct letters. Accept letter reversals (e.g., d for b).'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Introduction 3'\u001b[39m: { RT: \u001b[33m1.029\u001b[39m, Delivered_Order: \u001b[33m7\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 6'\u001b[39m: { RT: \u001b[33m1.027\u001b[39m, Delivered_Order: \u001b[33m8\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 7'\u001b[39m: { RT: \u001b[33m1.025\u001b[39m, Delivered_Order: \u001b[33m9\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 8'\u001b[39m: { RT: \u001b[33m1.039\u001b[39m, Delivered_Order: \u001b[33m10\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 9'\u001b[39m: { RT: \u001b[33m1.044\u001b[39m, Delivered_Order: \u001b[33m11\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 10'\u001b[39m: { RT: \u001b[33m1.027\u001b[39m, Delivered_Order: \u001b[33m12\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Block B Total'\u001b[39m: { RT: \u001b[33m8.061\u001b[39m, Delivered_Order: \u001b[33m15\u001b[39m, Response: \u001b[32m'10'\u001b[39m, Score: \u001b[33m10\u001b[39m },\n  \u001b[32m'Item 11'\u001b[39m: { RT: \u001b[33m1.054\u001b[39m, Delivered_Order: \u001b[33m22\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 12'\u001b[39m: { RT: \u001b[33m1.03\u001b[39m, Delivered_Order: \u001b[33m23\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 13'\u001b[39m: { RT: \u001b[33m1.03\u001b[39m, Delivered_Order: \u001b[33m24\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 14'\u001b[39m: { RT: \u001b[33m1.026\u001b[39m, Delivered_Order: \u001b[33m25\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 15'\u001b[39m: { RT: \u001b[33m1.052\u001b[39m, Delivered_Order: \u001b[33m26\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Block C Total'\u001b[39m: { RT: \u001b[33m8.079\u001b[39m, Delivered_Order: \u001b[33m17\u001b[39m, Response: \u001b[32m'10'\u001b[39m, Score: \u001b[33m10\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N44505A99366/dataFiles/Test_DataExport_AutoFilter_Template_N44505A99366.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N44505A99366\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N44505A99366/dataFiles/Test_DataExport_AutoFilter_Template_N44505A99366.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N44505A99366\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N44505A99366/dataFiles/Test_DataExport_AutoFilter_Template_N44505A99366.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N44505A99366\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N44505A99366 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 1 for fetching the report failed. 2 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N44505A99366\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N44505A99366\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N44505A99366\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N44505A99366\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N44505A99366 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 2 for fetching the report failed. 1 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N44505A99366\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N44505A99366\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N44505A99366\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N44505A99366\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N44505A99366 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 3 for fetching the report failed. 0 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N44505A99366\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N44505A99366\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N44505A99366\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N44505A99366\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:20:12.906Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated testData Filter Template (N44505A99366)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome/attachments/Generated-testData-Filter-Template-N44505A99366--002b620bfa4d97d32240e41fbe65f15fdee76836.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                        "column": 109,
+                        "line": 43
+                      }
+                    },
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 207236,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\n    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\n    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\n    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixtures.ts:159:26)",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
+                          "column": 39,
+                          "line": 62
+                        },
+                        "snippet": "   at ../pages/wj5_login.page.ts:62\n\n\u001b[0m \u001b[90m 60 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msafeClickWj5Tyle(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwj5Tyle)\u001b[33m;\u001b[39m\n \u001b[90m 61 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForLoadingToDisappear()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcreateTestAssignment\u001b[33m.\u001b[39mwaitFor({\n \u001b[90m    |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m         state\u001b[33m:\u001b[39m \u001b[32m\"visible\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 64 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 65 |\u001b[39m       })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
+                            "column": 39,
+                            "line": 62
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n\n   at ../pages/wj5_login.page.ts:62\n\n  60 |       await this.safeClickWj5Tyle(this.wj5Tyle);\n  61 |       await this.waitForLoadingToDisappear();\n> 62 |       await this.createTestAssignment.waitFor({\n     |                                       ^\n  63 |         state: \"visible\",\n  64 |         timeout: 30000,\n  65 |       });\n    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\n    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\n    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\n    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixtures.ts:159:26)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S17:W4] Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Login failed for 07PwAut25Ex_01: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:62:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixtures.ts:159:26\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m62\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@75'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@75'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1793255728007\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixtures.ts:159:26)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        },
+                        {
+                          "text": "[S17:W4] Login attempt 1 failed for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Login failed for 07PwAut25Ex_01: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:62:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixtures.ts:159:26\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m62\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@94'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@94'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1793255786400\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixtures.ts:159:26)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        },
+                        {
+                          "text": "[S17:W4] Login attempt 2 failed for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Login failed for 07PwAut25Ex_01: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:62:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixtures.ts:159:26\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m62\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@113'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@113'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1793255844478\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixtures.ts:159:26)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        },
+                        {
+                          "text": "[S17:W4] Login attempt 3 failed for 07PwAut25Ex_01\n"
+                        }
+                      ],
+                      "retry": 1,
+                      "startTime": "2026-10-29T06:34:04.431Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
+                        "column": 39,
+                        "line": 62
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 819730,
+                      "error": {
+                        "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N50591A55490\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N50591A55490\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N50591A55490\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N50591A55490\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                        "stack": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N50591A55490\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N50591A55490\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N50591A55490\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N50591A55490\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/WRTSMP_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                          "column": 109,
+                          "line": 43
+                        },
+                        "snippet": "   at ../utils/reportDownload.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m downloadButtonLocator \u001b[33m=\u001b[39m reportRowLocator\u001b[33m.\u001b[39mlocator(\u001b[32m'button[aria-label=\"Download/Print\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m expect(downloadButtonLocator\u001b[33m,\u001b[39m \u001b[32m`Download/Print for \"${expectedReportName}\" never became clickable.`\u001b[39m)\u001b[33m.\u001b[39mtoBeEnabled(\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[33mDOWNLOAD_ENABLED_TIMEOUT_IN_MS\u001b[39m }\n \u001b[90m 45 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                            "column": 109,
+                            "line": 43
+                          },
+                          "message": "Error: Download/Print for \"Test_DataExport_AutoFilter_Template_N50591A55490\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N50591A55490\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N50591A55490\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N50591A55490\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n   at ../utils/reportDownload.ts:43\n\n  41 |\n  42 |   const downloadButtonLocator = reportRowLocator.locator('button[aria-label=\"Download/Print\"]');\n> 43 |   await expect(downloadButtonLocator, `Download/Print for \"${expectedReportName}\" never became clickable.`).toBeEnabled(\n     |                                                                                                             ^\n  44 |     { timeout: DOWNLOAD_ENABLED_TIMEOUT_IN_MS }\n  45 |   );\n  46 |\n    at downloadReportFromLibrary (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts:43:109)\n    at Wj5DashboardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_dashBoard.page.ts:719:22)\n    at pRetry.retries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/test_dataExport/WRTSMP_Pub.spec.ts:116:13)\n    at RetryOperation._fn (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/p-retry/index.js:55:20)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S17:W5] Login successful for 07PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S17:W5] Login successful for 07PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N50591A55490\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N50591A55490/dataFiles/Test_DataExport_AutoFilter_Template_N50591A55490.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N50591A55490 FirstName=Laury LastName =N50591A55490 Age = 10/29/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N50591A55490\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22639|Ages 5 to 7|22640,22641\n"
+                        },
+                        {
+                          "text": "Current Screen: Introduction 1\n"
+                        },
+                        {
+                          "text": "Current Screen: Introduction 2\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 1\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 2\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 3\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 4\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 5\n"
+                        },
+                        {
+                          "text": "Current Screen: Introduction 3\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 6\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 7\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 8\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 9\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 10\n"
+                        },
+                        {
+                          "text": "Current Screen: \n"
+                        },
+                        {
+                          "text": "Current Screen: Item 11\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 12\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 13\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 14\n"
+                        },
+                        {
+                          "text": "Current Screen: Item 15\n"
+                        },
+                        {
+                          "text": "Current Screen: \n"
+                        },
+                        {
+                          "text": "Current Screen: Test Complete\n"
+                        },
+                        {
+                          "text": "Final Data: {\n  \u001b[32m'Introduction 1'\u001b[39m: { RT: \u001b[33m1.025\u001b[39m, Delivered_Order: \u001b[33m0\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Introduction 2'\u001b[39m: { RT: \u001b[33m1.022\u001b[39m, Delivered_Order: \u001b[33m1\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 1'\u001b[39m: {\n    RT: \u001b[33m0.062\u001b[39m,\n    Delivered_Order: \u001b[33m2\u001b[39m,\n    Response: \u001b[32m'The response is a single word that accurately identifies the picture. The word is reasonable and recognizable (e.g., sn. su, snn, snu, sun, son). Accept letter reversals (e.g., reversed s), letter transpositions, and misspellings. Ignore extra letters.'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 2'\u001b[39m: {\n    RT: \u001b[33m0.058\u001b[39m,\n    Delivered_Order: \u001b[33m3\u001b[39m,\n    Response: \u001b[32m'The response begins with c or k, or with the correct letter for any other reasonable responses. The word that is recognizable (e.g., ca, cr, cra, kar, ka, kr, kra). Accept letter reversals (e.g., reversed c). Accept letter transpositions, but the response must begin with correct letter.'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 3'\u001b[39m: {\n    RT: \u001b[33m0.057\u001b[39m,\n    Delivered_Order: \u001b[33m4\u001b[39m,\n    Response: \u001b[32m'The response identifies the man as a king, prince, or any reasonable synonym. The word is recongizable. The response begins with the correct letter or the correct letter sound (i.e., /k/ or hard /c/). Accept letter reversals (e.g., q for p). Accept letter transpositions, but the response must begin with the correct letter.'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 4'\u001b[39m: {\n    RT: \u001b[33m0.062\u001b[39m,\n    Delivered_Order: \u001b[33m5\u001b[39m,\n    Response: \u001b[32m'The response is a single word that identifies store or reasonable synonym. The word is recognizable (e.g., store/stor, market/markit, mart/mrt, shop/shp). Accept letter reversals (e.g., reversed s), letter transpositions, and misspellings. Ignore extra letters.'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Item 5'\u001b[39m: {\n    RT: \u001b[33m0.043\u001b[39m,\n    Delivered_Order: \u001b[33m6\u001b[39m,\n    Response: \u001b[32m'The response contains two words, one indicating that the object is a ball and the other describing the ball. Both words are recognizable (e.g., soccer (sawker) ball (bal, dall), round (rond, rownd) ball (bal, dall), big ball (big bal). Both words begin with the correct letters. Accept letter reversals (e.g., d for b).'\u001b[39m,\n    Score: \u001b[33m1\u001b[39m\n  },\n  \u001b[32m'Introduction 3'\u001b[39m: { RT: \u001b[33m1.023\u001b[39m, Delivered_Order: \u001b[33m7\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 6'\u001b[39m: { RT: \u001b[33m1.021\u001b[39m, Delivered_Order: \u001b[33m8\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 7'\u001b[39m: { RT: \u001b[33m1.021\u001b[39m, Delivered_Order: \u001b[33m9\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 8'\u001b[39m: { RT: \u001b[33m1.022\u001b[39m, Delivered_Order: \u001b[33m10\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 9'\u001b[39m: { RT: \u001b[33m1.048\u001b[39m, Delivered_Order: \u001b[33m11\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 10'\u001b[39m: { RT: \u001b[33m1.023\u001b[39m, Delivered_Order: \u001b[33m12\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Block B Total'\u001b[39m: { RT: \u001b[33m8.051\u001b[39m, Delivered_Order: \u001b[33m15\u001b[39m, Response: \u001b[32m'10'\u001b[39m, Score: \u001b[33m10\u001b[39m },\n  \u001b[32m'Item 11'\u001b[39m: { RT: \u001b[33m1.022\u001b[39m, Delivered_Order: \u001b[33m22\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 12'\u001b[39m: { RT: \u001b[33m1.022\u001b[39m, Delivered_Order: \u001b[33m23\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 13'\u001b[39m: { RT: \u001b[33m1.027\u001b[39m, Delivered_Order: \u001b[33m24\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 14'\u001b[39m: { RT: \u001b[33m1.022\u001b[39m, Delivered_Order: \u001b[33m25\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Item 15'\u001b[39m: { RT: \u001b[33m1.021\u001b[39m, Delivered_Order: \u001b[33m26\u001b[39m, Response: \u001b[32m''\u001b[39m, Score: \u001b[33m0\u001b[39m },\n  \u001b[32m'Block C Total'\u001b[39m: { RT: \u001b[33m8.071\u001b[39m, Delivered_Order: \u001b[33m17\u001b[39m, Response: \u001b[32m'10'\u001b[39m, Score: \u001b[33m10\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N50591A55490/dataFiles/Test_DataExport_AutoFilter_Template_N50591A55490.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N50591A55490\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N50591A55490/dataFiles/Test_DataExport_AutoFilter_Template_N50591A55490.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N50591A55490\n"
+                        },
+                        {
+                          "text": "My Test Assignments is visible\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N50591A55490/dataFiles/Test_DataExport_AutoFilter_Template_N50591A55490.csv\n"
+                        },
+                        {
+                          "text": "Already on Report Library page, skipping navigation.\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Test_DataExport_AutoFilter_Template_N50591A55490\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N50591A55490 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 1 for fetching the report failed. 2 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N50591A55490\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N50591A55490\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N50591A55490\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N50591A55490\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N50591A55490 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 2 for fetching the report failed. 1 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N50591A55490\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N50591A55490\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N50591A55490\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N50591A55490\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Row for Test_DataExport_AutoFilter_Template_N50591A55490 never reached \"Status Completed\"; proceeding with the newest matching row. Check the Status cell's aria-label if this recurs.\n"
+                        },
+                        {
+                          "text": "Attempt 3 for fetching the report failed. 0 retries left. Download/Print for \"Test_DataExport_AutoFilter_Template_N50591A55490\" never became clickable.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N50591A55490\"])').first().locator('button[aria-label=\"Download/Print\"]')\nExpected: enabled\nReceived: disabled\nTimeout:  60000ms\n\nCall log:\n\u001b[2m  - Download/Print for \"Test_DataExport_AutoFilter_Template_N50591A55490\" never became clickable. with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.defaultRow[role=\"row\"]:has(div.detail-cell-container[aria-label=\"Report Name Test_DataExport_AutoFilter_Template_N50591A55490\"])').first().locator('button[aria-label=\"Download/Print\"]')\u001b[22m\n\u001b[2m    63 × locator resolved to <button disabled tabindex=\"0\" role=\"gridcell\" aria-label=\"Download/Print\" class=\"link-button detail-cell-link\"> Download/Print </button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 2,
+                      "startTime": "2026-10-29T06:37:41.229Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated testData Filter Template (N50591A55490)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome-retry2/attachments/Generated-testData-Filter-Template-N50591A55490--c0851ed794bbe95ff73f68b2c009dff9aa481b60.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome-retry2/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome-retry2/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/test_dataExport-WRTSMP_Pub-478a2-ct-test-and-validate-report-chrome-retry2/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/reportDownload.ts",
+                        "column": 109,
+                        "line": 43
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f731557d089e99f91181-4cb3d5ed434920b7d019",
+              "file": "test_dataExport/WRTSMP_Pub.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-29T05:27:10.826Z",
+    "duration": 5061301.972,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
