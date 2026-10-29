@@ -1,0 +1,18 @@
+# Claude Code agent session/config — never commit
+.claude/
+
+# intentionally stopped by sunil
+ai
+AGENTS*
+config
+
+# ── LEGACY — not needed, to be cleared later (listed 2026-09-24) ─────────────
+# Nothing in the pipelines uses these. Kept on disk for now; delete when convenient.
+# Stale draft of the workflow, superseded by playwright-tests.yml (never committed)
+.github/workflows/playwright-tests.txt
+# May 2026 local dashboard smoke-test helpers + their generated output (never committed)
+.smoke-test-dashboard/
+smoke*
+# March 2025 pipeline, disabled and unused. NOTE: this one is already TRACKED, so this
+# line does not hide it — when clearing, run: git rm .github/workflows/wj-5_sharding_options.yml.disabled
+.github/workflows/wj-5_sharding_options.yml.disabled

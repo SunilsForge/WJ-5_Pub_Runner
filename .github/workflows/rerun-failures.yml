@@ -219,29 +219,22 @@ jobs:
         with:
           name: rerun-slices
           path: slices
-      - name: Checkout runner repo for template
+      - name: Checkout runner repo for shared scripts & template
         uses: actions/checkout@v5
         with:
           path: runner-repo
       - name: List each shard's slice
+        # Each shard's tests = its pre-computed slice. With SLICES_DIR set,
+        # list-shards.sh places each slice as test-results/.last-run.json and lists
+        # it with --last-failed (no --shard), serially, mirroring the real rerun.
+        # Same failure check + serial retry as the main map.
         shell: bash
         env:
           TEST_ENV: ${{ inputs.environment }}
           PROJECT: ${{ inputs.browser }}
-          N: ${{ needs.collect.outputs.shard_count }}
-        run: |
-          mkdir -p dist-map test-results
-          # Each shard's tests = its pre-computed slice. --last-failed reads the
-          # single test-results/.last-run.json, so place each slice then list, one
-          # at a time (serial, no shared-file clobber). Mirrors the real rerun.
-          for i in $(seq 1 "$N"); do
-            cp "slices/shard-${i}.json" test-results/.last-run.json
-            PLAYWRIGHT_JSON_OUTPUT_NAME="dist-map/shard-${i}.json" \
-              npx cross-env test="${TEST_ENV}" npx playwright test \
-                --list --reporter=json --last-failed --project="${PROJECT}" >/dev/null 2>&1 || true
-            [ -s "dist-map/shard-${i}.json" ] || echo "::warning::no list output for slice ${i}"
-          done
-          echo "Listed $(ls dist-map/shard-*.json 2>/dev/null | wc -l) of $N slices"
+          SHARD_COUNT: ${{ needs.collect.outputs.shard_count }}
+          SLICES_DIR: slices
+        run: bash runner-repo/.github/scripts/list-shards.sh
       - name: Build HTML distribution map
         env:
           SHARD_COUNT: ${{ needs.collect.outputs.shard_count }}

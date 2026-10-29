@@ -24,30 +24,51 @@ function collect(suites, acc) {
   }
 }
 
+// A shard's list is "failed" when its JSON is missing, unparseable, or carries
+// Playwright `errors` (list-shards.sh already retried it once). Its count is then
+// unknown, so it's shown as such rather than as a misleading 0. Zero specs on its
+// own is NOT a failure: Playwright can leave a shard empty when a big file group
+// spans its range.
+const stripAnsi = (s) => String(s).replace(/\u001b\[[0-9;]*m/g, "");
 const shards = [];
 for (let i = 1; i <= N; i++) {
   const f = path.join(DIR, `shard-${i}.json`);
   const specs = [];
-  if (fs.existsSync(f)) {
+  let failed = null;
+  if (!fs.existsSync(f) || !fs.statSync(f).size) {
+    failed = "no list output";
+  } else {
     try {
-      collect(JSON.parse(fs.readFileSync(f, "utf8")).suites || [], specs);
+      const j = JSON.parse(fs.readFileSync(f, "utf8"));
+      collect(j.suites || [], specs);
+      const errs = j.errors || [];
+      if (errs.length) failed = errs.slice(0, 3).map((e) => stripAnsi(e.message || e.value || JSON.stringify(e)).slice(0, 500)).join("\n\n");
     } catch (e) {
       console.error("parse fail", f, e.message);
+      failed = "unparseable JSON: " + e.message;
     }
   }
-  shards.push({ shard: i, specs });
+  shards.push({ shard: i, specs, failed });
 }
 
+const failedShards = shards.filter((s) => s.failed).map((s) => s.shard);
 const totalTests = shards.reduce((a, s) => a + s.specs.length, 0);
+// With failed shards the real total is unknown; what we have is a lower bound.
+const totalLabel = failedShards.length ? `≥ ${totalTests}` : String(totalTests);
 const tagFreq = {};
 for (const sh of shards) for (const sp of sh.specs) for (const t of sp.tags) tagFreq[t] = (tagFreq[t] || 0) + 1;
 const tagRows = Object.entries(tagFreq).sort((a, b) => b[1] - a[1]);
 
-const counts = shards.map((s) => s.specs.length);
-const min = Math.min(...counts), max = Math.max(...counts);
+const counts = shards.filter((s) => !s.failed).map((s) => s.specs.length);
+const min = counts.length ? Math.min(...counts) : 0, max = counts.length ? Math.max(...counts) : 0;
+const minMax = counts.length ? min + "–" + max : "–";
+const failNote = failedShards.length
+  ? `Listing failed for shard${failedShards.length > 1 ? "s" : ""} ${failedShards.join(", ")} even after a retry, so ${failedShards.length > 1 ? "their" : "its"} test count is unknown and the total is a lower bound. This affects only this preview, not the real shard runs. See the listing step's log for the error.`
+  : "";
 
 const summaryRows = shards
   .map((s) => {
+    if (s.failed) return `<tr class="failed"><td>${s.shard}</td><td>⚠ list failed</td><td>–</td></tr>`;
     const files = new Set(s.specs.map((x) => x.file)).size;
     const flag = s.specs.length === 0 ? ' class="empty"' : s.specs.length === max && max !== min ? ' class="heavy"' : "";
     return `<tr${flag}><td>${s.shard}</td><td>${s.specs.length}</td><td>${files}</td></tr>`;
@@ -63,6 +84,13 @@ const shardSections = shards
       })
       .join("");
     const files = new Set(s.specs.map((x) => x.file)).size;
+    if (s.failed) {
+      return `<details open>
+      <summary>Shard ${s.shard} — <b>⚠ list failed</b> (count unknown)</summary>
+      <pre class="err">${esc(s.failed)}</pre>
+      ${s.specs.length ? `<p class="empty-note">Partial list (${s.specs.length} tests) before the error:</p><table class="detail"><thead><tr><th>#</th><th>Test</th><th>File:Line</th><th>Tags</th></tr></thead><tbody>${rows}</tbody></table>` : ""}
+    </details>`;
+    }
     return `<details${s.specs.length === 0 ? "" : " open"}>
       <summary>Shard ${s.shard} — <b>${s.specs.length}</b> tests, ${files} files</summary>
       ${s.specs.length ? `<table class="detail"><thead><tr><th>#</th><th>Test</th><th>File:Line</th><th>Tags</th></tr></thead><tbody>${rows}</tbody></table>` : '<p class="empty-note">No tests assigned to this shard.</p>'}
@@ -79,19 +107,20 @@ const html = tpl
   .split("__PATTERN__").join(esc(process.env.TEST_PATTERN || ""))
   .split("__DIST__").join(process.env.DISTRIBUTE_BY_TEST === "true" ? "ON" : "OFF")
   .split("__SHARD_COUNT__").join(String(N))
-  .split("__TOTAL_TESTS__").join(String(totalTests))
-  .split("__MIN_MAX__").join(min + "–" + max)
+  .split("__TOTAL_TESTS__").join(esc(totalLabel))
+  .split("__MIN_MAX__").join(minMax)
+  .split("<!-- WARNING -->").join(failNote ? `<div class="warn">⚠ ${esc(failNote)}</div>` : "")
   .split("<!-- SUMMARY_ROWS -->").join(summaryRows)
   .split("<!-- TAG_ROWS -->").join(tagRowsHtml)
   .split("<!-- SHARD_SECTIONS -->").join(shardSections);
 
 fs.mkdirSync(DIR, { recursive: true });
 fs.writeFileSync(path.join(DIR, "index.html"), html);
-console.log("Wrote dist-map/index.html —", totalTests, "tests across", N, "shards");
+console.log("Wrote dist-map/index.html —", totalLabel, "tests across", N, "shards" + (failedShards.length ? ` (list failed: ${failedShards.join(", ")})` : ""));
 
 const sp = process.env.GITHUB_STEP_SUMMARY;
 if (sp) {
-  let md = `## Shard Distribution Map\n\n${totalTests} tests · ${N} shards · ${min}–${max} tests/shard\n\n| Shard | Tests | Files |\n|--:|--:|--:|\n`;
-  md += shards.map((s) => `| ${s.shard} | ${s.specs.length} | ${new Set(s.specs.map((x) => x.file)).size} |`).join("\n");
+  let md = `## Shard Distribution Map\n\n${failNote ? `> ⚠ ${failNote}\n\n` : ""}${totalLabel} tests · ${N} shards · ${minMax} tests/shard\n\n| Shard | Tests | Files |\n|--:|--:|--:|\n`;
+  md += shards.map((s) => (s.failed ? `| ${s.shard} | ⚠ list failed | – |` : `| ${s.shard} | ${s.specs.length} | ${new Set(s.specs.map((x) => x.file)).size} |`)).join("\n");
   fs.appendFileSync(sp, md + "\n");
 }

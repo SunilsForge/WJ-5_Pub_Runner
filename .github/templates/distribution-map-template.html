@@ -15,6 +15,9 @@
     .summary td:not(:first-child){text-align:right}
     tr.empty{color:#8c959f;background:#fbfcfd}
     tr.heavy{background:#fff8e5}
+    tr.failed{background:#ffebe9;color:#cf222e;font-weight:600}
+    .warn{background:#fff8c5;border:1px solid #d4a72c;border-radius:6px;padding:10px 14px;margin-bottom:20px;font-size:14px}
+    pre.err{background:#ffebe9;color:#82071e;border-radius:6px;padding:8px 12px;font-size:12px;white-space:pre-wrap;word-break:break-word}
     details{background:#fff;border:1px solid #eaeef2;border-radius:6px;margin:8px 0;padding:4px 12px}
     summary{cursor:pointer;padding:8px 0;font-size:14px}
     table.detail{width:100%;margin:8px 0 12px}
@@ -34,6 +37,7 @@
     Pattern <code>__PATTERN__</code> &middot;
     Per-test distribution: <code>__DIST__</code>
   </div>
+  <!-- WARNING -->
   <div class="cards">
     <div class="card"><b>__SHARD_COUNT__</b>shards</div>
     <div class="card"><b>__TOTAL_TESTS__</b>total tests</div>
