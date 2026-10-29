@@ -322,7 +322,7 @@
           ],
           "tests": [
             {
-              "timeout": 600000,
+              "timeout": 900000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chrome",
@@ -332,7 +332,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 142254,
+                  "duration": 138961,
                   "errors": [],
                   "stdout": [
                     {
@@ -348,13 +348,13 @@
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N43680A77150\n"
+                      "text": "Examinee ID N8652A92112\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N43680A77150/dataFiles/Score_DataExport_AutoFilter_Template_N43680A77150.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N8652A92112/dataFiles/Score_DataExport_AutoFilter_Template_N8652A92112.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N43680A77150 FirstName=Kaley LastName =N43680A77150 Age = 10/29/2024\n"
+                      "text": "Successfully added an Examinee  ID =N8652A92112 FirstName=Lizeth LastName =N8652A92112 Age = 10/29/2024\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -363,7 +363,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N43680A77150\n"
+                      "text": "Successfully selected examinee: N8652A92112\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -389,170 +389,18 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-29T05:27:46.939Z",
+                  "startTime": "2026-10-29T11:55:20.682Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "Generated wLookUp Filter Template (N43680A77150)",
+                      "name": "Generated wLookUp Filter Template (N8652A92112)",
                       "contentType": "text/csv",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N43680A77150--de7c68e0144876e6c33a532acf8ce3ef58c3c32f.csv"
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N8652A92112--08bc37e06f7283dee3bc27062a6fc1d1ac1e6519.csv"
                     }
                   ]
-                },
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 176792,
-                  "error": {
-                    "message": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n",
-                    "stack": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\n    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\n    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\n    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)",
-                    "location": {
-                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
-                      "column": 39,
-                      "line": 62
-                    },
-                    "snippet": "   at ../pages/wj5_login.page.ts:62\n\n\u001b[0m \u001b[90m 60 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msafeClickWj5Tyle(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwj5Tyle)\u001b[33m;\u001b[39m\n \u001b[90m 61 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForLoadingToDisappear()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcreateTestAssignment\u001b[33m.\u001b[39mwaitFor({\n \u001b[90m    |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m         state\u001b[33m:\u001b[39m \u001b[32m\"visible\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 64 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 65 |\u001b[39m       })\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
-                        "column": 39,
-                        "line": 62
-                      },
-                      "message": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n\n   at ../pages/wj5_login.page.ts:62\n\n  60 |       await this.safeClickWj5Tyle(this.wj5Tyle);\n  61 |       await this.waitForLoadingToDisappear();\n> 62 |       await this.createTestAssignment.waitFor({\n     |                                       ^\n  63 |         state: \"visible\",\n  64 |         timeout: 30000,\n  65 |       });\n    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\n    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\n    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\n    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
-                    }
-                  ],
-                  "stderr": [
-                    {
-                      "text": "Login failed for S09PwAut25Ex_02: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:62:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m62\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@47'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@47'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1793252632637\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
-                    },
-                    {
-                      "text": "[S8:W1] Login attempt 1 failed for S09PwAut25Ex_02\n"
-                    },
-                    {
-                      "text": "Login failed for S09PwAut25Ex_02: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:62:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m62\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@66'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@66'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1793252691961\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
-                    },
-                    {
-                      "text": "[S8:W1] Login attempt 2 failed for S09PwAut25Ex_02\n"
-                    },
-                    {
-                      "text": "Login failed for S09PwAut25Ex_02: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:62:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m62\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@85'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@85'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1793252750076\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
-                    },
-                    {
-                      "text": "[S8:W1] Login attempt 3 failed for S09PwAut25Ex_02\n"
-                    }
-                  ],
-                  "retry": 1,
-                  "startTime": "2026-10-29T05:42:53.295Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry1/test-failed-1.png"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry1/error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry1/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
-                    "column": 39,
-                    "line": 62
-                  }
-                },
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 175853,
-                  "error": {
-                    "message": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n",
-                    "stack": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\n    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\n    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\n    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)",
-                    "location": {
-                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
-                      "column": 39,
-                      "line": 62
-                    },
-                    "snippet": "   at ../pages/wj5_login.page.ts:62\n\n\u001b[0m \u001b[90m 60 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msafeClickWj5Tyle(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwj5Tyle)\u001b[33m;\u001b[39m\n \u001b[90m 61 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForLoadingToDisappear()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcreateTestAssignment\u001b[33m.\u001b[39mwaitFor({\n \u001b[90m    |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m         state\u001b[33m:\u001b[39m \u001b[32m\"visible\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 64 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 65 |\u001b[39m       })\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
-                        "column": 39,
-                        "line": 62
-                      },
-                      "message": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n\n   at ../pages/wj5_login.page.ts:62\n\n  60 |       await this.safeClickWj5Tyle(this.wj5Tyle);\n  61 |       await this.waitForLoadingToDisappear();\n> 62 |       await this.createTestAssignment.waitFor({\n     |                                       ^\n  63 |         state: \"visible\",\n  64 |         timeout: 30000,\n  65 |       });\n    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\n    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\n    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\n    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
-                    }
-                  ],
-                  "stderr": [
-                    {
-                      "text": "Login failed for S09PwAut25Ex_02: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:62:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m62\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@47'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@47'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1793252811698\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
-                    },
-                    {
-                      "text": "[S8:W2] Login attempt 1 failed for S09PwAut25Ex_02\n"
-                    },
-                    {
-                      "text": "Login failed for S09PwAut25Ex_02: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:62:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m62\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@66'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@66'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1793252870089\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
-                    },
-                    {
-                      "text": "[S8:W2] Login attempt 2 failed for S09PwAut25Ex_02\n"
-                    },
-                    {
-                      "text": "Login failed for S09PwAut25Ex_02: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:62:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m62\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@85'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@85'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1793252928185\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
-                    },
-                    {
-                      "text": "[S8:W2] Login attempt 3 failed for S09PwAut25Ex_02\n"
-                    }
-                  ],
-                  "retry": 2,
-                  "startTime": "2026-10-29T05:45:52.379Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry2/test-failed-1.png"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry2/error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-f5ab8-st-data-for-InProgress-sets-chrome-retry2/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
-                    "column": 39,
-                    "line": 62
-                  }
                 }
               ],
-              "status": "flaky"
+              "status": "expected"
             }
           ],
           "id": "ed18dc26dc5c1351a836-a91349b67f51d4577e3b",
@@ -580,7 +428,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 170930,
+                  "duration": 169283,
                   "errors": [],
                   "stdout": [
                     {
@@ -596,13 +444,13 @@
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N79304A59859\n"
+                      "text": "Examinee ID N42167A16521\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N79304A59859/dataFiles/Score_DataExport_AutoFilter_Template_N79304A59859.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N42167A16521/dataFiles/Score_DataExport_AutoFilter_Template_N42167A16521.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N79304A59859 FirstName=Hilda LastName =N79304A59859 Age = 10/29/2022\n"
+                      "text": "Successfully added an Examinee  ID =N42167A16521 FirstName=Osborne LastName =N42167A16521 Age = 10/29/2022\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -611,7 +459,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N79304A59859\n"
+                      "text": "Successfully selected examinee: N42167A16521\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -652,41 +500,15 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-29T05:30:09.830Z",
+                  "startTime": "2026-10-29T11:57:40.249Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "Generated wLookUp Filter Template (N79304A59859)",
+                      "name": "Generated wLookUp Filter Template (N42167A16521)",
                       "contentType": "text/csv",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6fb69-st-data-for-InProgress-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N79304A59859--f12c6b136c003debdc2c1dfaffca5a6c61e07839.csv"
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6fb69-st-data-for-InProgress-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N42167A16521--af4d6066d29a863399c61509c33ec801c7fadac8.csv"
                     }
                   ]
-                },
-                {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-10-29T05:45:51.126Z",
-                  "annotations": [],
-                  "attachments": []
-                },
-                {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 2,
-                  "startTime": "2026-10-29T05:48:49.262Z",
-                  "annotations": [],
-                  "attachments": []
                 }
               ],
               "status": "expected"
@@ -717,7 +539,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 210649,
+                  "duration": 208099,
                   "errors": [],
                   "stdout": [
                     {
@@ -733,13 +555,13 @@
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N97645A82871\n"
+                      "text": "Examinee ID N63705A58204\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N97645A82871/dataFiles/Score_DataExport_AutoFilter_Template_N97645A82871.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N63705A58204/dataFiles/Score_DataExport_AutoFilter_Template_N63705A58204.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N97645A82871 FirstName=Dayton LastName =N97645A82871 Age = 04/29/2022\n"
+                      "text": "Successfully added an Examinee  ID =N63705A58204 FirstName=Joesph LastName =N63705A58204 Age = 04/29/2022\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -748,7 +570,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N97645A82871\n"
+                      "text": "Successfully selected examinee: N63705A58204\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -867,41 +689,15 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-29T05:33:00.810Z",
+                  "startTime": "2026-10-29T12:00:29.578Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "Generated wLookUp Filter Template (N97645A82871)",
+                      "name": "Generated wLookUp Filter Template (N63705A58204)",
                       "contentType": "text/csv",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N97645A82871--deff5a562a31354fd91fcf0c9bc340bdc17be69f.csv"
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-bf991-st-data-for-InProgress-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N63705A58204--212a50dc20777c524745fc7ef2b8e6cd988586bf.csv"
                     }
                   ]
-                },
-                {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-10-29T05:45:51.126Z",
-                  "annotations": [],
-                  "attachments": []
-                },
-                {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 2,
-                  "startTime": "2026-10-29T05:48:49.263Z",
-                  "annotations": [],
-                  "attachments": []
                 }
               ],
               "status": "expected"
@@ -932,7 +728,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 164026,
+                  "duration": 145300,
                   "errors": [],
                   "stdout": [
                     {
@@ -948,13 +744,13 @@
                       "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                     },
                     {
-                      "text": "Examinee ID N54104A56838\n"
+                      "text": "Examinee ID N12120A7864\n"
                     },
                     {
-                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N54104A56838/dataFiles/Score_DataExport_AutoFilter_Template_N54104A56838.csv successfully.\n"
+                      "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N12120A7864/dataFiles/Score_DataExport_AutoFilter_Template_N12120A7864.csv successfully.\n"
                     },
                     {
-                      "text": "Successfully added an Examinee  ID =N54104A56838 FirstName=Titus LastName =N54104A56838 Age = 10/29/2024\n"
+                      "text": "Successfully added an Examinee  ID =N12120A7864 FirstName=Isai LastName =N12120A7864 Age = 10/29/2024\n"
                     },
                     {
                       "text": "Found 62 checkboxes\n"
@@ -963,7 +759,7 @@
                       "text": "Selected test: Academic Vocabulary\n"
                     },
                     {
-                      "text": "Successfully selected examinee: N54104A56838\n"
+                      "text": "Successfully selected examinee: N12120A7864\n"
                     },
                     {
                       "text": "Academic Vocabulary\n"
@@ -989,41 +785,15 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-29T05:36:31.516Z",
+                  "startTime": "2026-10-29T12:03:57.736Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "Generated wLookUp Filter Template (N54104A56838)",
+                      "name": "Generated wLookUp Filter Template (N12120A7864)",
                       "contentType": "text/csv",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N54104A56838--7d920f61866693fd1bd3e337693eddc249d37d3d.csv"
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-4ae11-est-data-for-Submitted-sets-chrome/attachments/Generated-wLookUp-Filter-Template-N12120A7864--b4907009de1ff33274c2ddd0e00e38481d9cfe13.csv"
                     }
                   ]
-                },
-                {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-10-29T05:45:51.126Z",
-                  "annotations": [],
-                  "attachments": []
-                },
-                {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 2,
-                  "startTime": "2026-10-29T05:48:49.263Z",
-                  "annotations": [],
-                  "attachments": []
                 }
               ],
               "status": "expected"
@@ -1036,7 +806,7 @@
         },
         {
           "title": "Validate Dashboard Test Assignments functionality Part_B",
-          "ok": false,
+          "ok": true,
           "tags": [
             "DashboardTestAssignments_B",
             "Smoke",
@@ -1044,7 +814,7 @@
           ],
           "tests": [
             {
-              "timeout": 600000,
+              "timeout": 480000,
               "annotations": [
                 {
                   "type": "original user story, automation user story",
@@ -1063,28 +833,9 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 208232,
-                  "error": {
-                    "message": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n",
-                    "stack": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\n    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\n    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\n    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)",
-                    "location": {
-                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
-                      "column": 39,
-                      "line": 62
-                    },
-                    "snippet": "   at ../pages/wj5_login.page.ts:62\n\n\u001b[0m \u001b[90m 60 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msafeClickWj5Tyle(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwj5Tyle)\u001b[33m;\u001b[39m\n \u001b[90m 61 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForLoadingToDisappear()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcreateTestAssignment\u001b[33m.\u001b[39mwaitFor({\n \u001b[90m    |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m         state\u001b[33m:\u001b[39m \u001b[32m\"visible\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 64 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 65 |\u001b[39m       })\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
-                        "column": 39,
-                        "line": 62
-                      },
-                      "message": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n\n   at ../pages/wj5_login.page.ts:62\n\n  60 |       await this.safeClickWj5Tyle(this.wj5Tyle);\n  61 |       await this.waitForLoadingToDisappear();\n> 62 |       await this.createTestAssignment.waitFor({\n     |                                       ^\n  63 |         state: \"visible\",\n  64 |         timeout: 30000,\n  65 |       });\n    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\n    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\n    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\n    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 268927,
+                  "errors": [],
                   "stdout": [
                     {
                       "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
@@ -1097,30 +848,71 @@
                     },
                     {
                       "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for S09PwAut25Ex_02\n"
+                    },
+                    {
+                      "text": "[S8:W0] Login successful for S09PwAut25Ex_02\n"
                     }
                   ],
-                  "stderr": [
-                    {
-                      "text": "Login failed for S09PwAut25Ex_02: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:62:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m62\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@67'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@67'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1793252438726\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
-                    },
-                    {
-                      "text": "[S8:W0] Login attempt 1 failed for S09PwAut25Ex_02\n"
-                    },
-                    {
-                      "text": "Login failed for S09PwAut25Ex_02: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:62:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m62\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@86'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@86'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1793252497751\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
-                    },
-                    {
-                      "text": "[S8:W0] Login attempt 2 failed for S09PwAut25Ex_02\n"
-                    },
-                    {
-                      "text": "Login failed for S09PwAut25Ex_02: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Create New Test Assignment\\']') to be visible\u001b[22m\n\n    at Wj5LoginPage.loginToRiversideScore \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/pages/wj5_login.page.ts:62:39\u001b[90m)\u001b[39m\n    at loginUserWithRetries \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/auth/UserAuthentication.ts:23:7\u001b[90m)\u001b[39m\n    at setupUserContext \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/utils/user/UserContext.ts:22:5\u001b[90m)\u001b[39m\n    at Object.wj5examiner \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/base/basePageFixture.ts:59:30\u001b[90m)\u001b[39m {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts'\u001b[39m,\n      line: \u001b[33m62\u001b[39m,\n      column: \u001b[33m39\u001b[39m,\n      function: \u001b[32m'Wj5LoginPage.loginToRiversideScore'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m\"//button[text()='Create New Test Assignment']\"\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@105'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@105'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('//button[text()=\\\\'Create New Test Assignment\\\\']')\"\u001b[39m,\n      _parentStep: \u001b[36m[TestStepInfoImpl]\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1793252555866\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text()=\\\\'Create New Test Assignment\\\\']') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at Wj5LoginPage.loginToRiversideScore (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts:62:39)\\n'\u001b[39m +\n        \u001b[32m'    at loginUserWithRetries (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/auth/UserAuthentication.ts:23:7)\\n'\u001b[39m +\n        \u001b[32m'    at setupUserContext (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/user/UserContext.ts:22:5)\\n'\u001b[39m +\n        \u001b[32m'    at Object.wj5examiner (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/base/basePageFixture.ts:59:30)'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
-                    },
-                    {
-                      "text": "[S8:W0] Login attempt 3 failed for S09PwAut25Ex_02\n"
-                    }
-                  ],
+                  "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-29T05:39:15.583Z",
+                  "steps": [
+                    {
+                      "title": "Verify submitted test set has 90 Days left to edit and verify hover text on dashboard and examinee screen",
+                      "duration": 28448
+                    },
+                    {
+                      "title": "Examiner:- Verify we can not edit the examinee name or test set when the status is \"In Progress\"",
+                      "duration": 34266
+                    },
+                    {
+                      "title": "Examiner:- Expire In Progress test to achieve - assignment line has gone to its greyed out inactive state after the 90-day editing window has passed and these assignments cannot be launched for status \"In Progress\"",
+                      "duration": 22336
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible",
+                      "duration": 12412
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"NO\" button",
+                      "duration": 129
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up",
+                      "duration": 6301
+                    },
+                    {
+                      "title": "Examiner:- Verify \"Expired\" status turns to \"Closed\" and subscription subtest count is increased, Also verify Hovertext on \"Earlier Date of testing\"",
+                      "duration": 13191
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment line has gone to its inactive state and \"generate reports\" icon is visible at Examinee management page",
+                      "duration": 7910
+                    },
+                    {
+                      "title": "Examiner:- Verify test assignment Expired popup and click \"YES\" button will open \"Create a Report\" pop up at Examinee General Info popup and consumes a subtest",
+                      "duration": 15561
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality \"Inprogress\" When clicked \"No\"",
+                      "duration": 20328
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality \"Inprogress\" When clicked \"Proceed\"",
+                      "duration": 19497
+                    },
+                    {
+                      "title": "Examiner:- Verify Delete Test Assignment functionality is not visible for \"Submitted\"",
+                      "duration": 5226
+                    },
+                    {
+                      "title": "AH:- Verify ah cant delete examiner \"Inprogress\" test assignment",
+                      "duration": 15376
+                    }
+                  ],
+                  "startTime": "2026-10-29T12:06:23.079Z",
                   "annotations": [
                     {
                       "type": "original user story, automation user story",
@@ -1132,62 +924,10 @@
                       }
                     }
                   ],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/test-failed-2.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/test-failed-1.png"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-b264c-nments-functionality-Part-B-chrome/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_login.page.ts",
-                    "column": 39,
-                    "line": 62
-                  }
-                },
-                {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-10-29T05:45:51.126Z",
-                  "annotations": [],
-                  "attachments": []
-                },
-                {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 2,
-                  "startTime": "2026-10-29T05:48:49.263Z",
-                  "annotations": [],
                   "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "ed18dc26dc5c1351a836-856fcf7f0a9195f6efdf",
@@ -1200,11 +940,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-29T05:27:29.187Z",
-    "duration": 1280114.579,
-    "expected": 3,
+    "startTime": "2026-10-29T11:55:04.674Z",
+    "duration": 947856.9870000001,
+    "expected": 5,
     "skipped": 0,
-    "unexpected": 1,
-    "flaky": 1
+    "unexpected": 0,
+    "flaky": 0
   }
 }

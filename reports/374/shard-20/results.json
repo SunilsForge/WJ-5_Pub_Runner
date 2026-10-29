@@ -350,7 +350,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2332361,
+                      "duration": 2302384,
                       "errors": [],
                       "stdout": [
                         {
@@ -366,25 +366,25 @@
                           "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                         },
                         {
-                          "text": "Examinee ID N17851A7410\n"
+                          "text": "Examinee ID N74601A41272\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N17851A7410 FirstName=Cecile LastName =N17851A7410 Age = 10/29/2019\n"
+                          "text": "Successfully added an Examinee  ID =N74601A41272 FirstName=Hank LastName =N74601A41272 Age = 10/29/2019\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N17851A7410\n"
+                          "text": "Successfully selected examinee: N74601A41272\n"
                         },
                         {
                           "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
                         },
                         {
-                          "text": "Examinee ID N82312A96012\n"
+                          "text": "Examinee ID N16787A56021\n"
                         },
                         {
-                          "text": "Successfully added an Examinee  ID =N82312A96012 FirstName=Hollis LastName =N82312A96012 Age = 10/29/2017\n"
+                          "text": "Successfully added an Examinee  ID =N16787A56021 FirstName=Delbert LastName =N16787A56021 Age = 10/29/2017\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N82312A96012\n"
+                          "text": "Successfully selected examinee: N16787A56021\n"
                         },
                         {
                           "text": "Successfully selected examinee: N59994A6340, Alexander\n"
@@ -435,10 +435,10 @@
                           "text": "Clicked Join Session button.\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N17851A7410\n"
+                          "text": "Successfully selected examinee: N74601A41272\n"
                         },
                         {
-                          "text": "Successfully selected examinee: N82312A96012\n"
+                          "text": "Successfully selected examinee: N16787A56021\n"
                         },
                         {
                           "text": "Successfully selected examinee: N59994A6340, Alexander\n"
@@ -578,134 +578,134 @@
                       "steps": [
                         {
                           "title": "Setup: Get Old Examinee from dashboard",
-                          "duration": 23469
+                          "duration": 21977
                         },
                         {
                           "title": "Setup: Create New Examinee 1 + assign Broad Achievement",
-                          "duration": 43054
+                          "duration": 43237
                         },
                         {
                           "title": "Setup: Create New Examinee 2 + assign Broad Achievement",
-                          "duration": 42958
+                          "duration": 43122
                         },
                         {
                           "title": "Setup: Assign Broad Achievement to Old Examinee",
-                          "duration": 24219
+                          "duration": 24397
                         },
                         {
                           "title": "S1: Open New Examinee 1 → capture baseline + verify 9 tests",
-                          "duration": 97590
+                          "duration": 97901
                         },
                         {
                           "title": "S1: Open Old Examinee → verify test list matches",
-                          "duration": 97603
+                          "duration": 97752
                         },
                         {
                           "title": "S1: Re-open Old Examinee → verify still intact",
-                          "duration": 98357
+                          "duration": 97520
                         },
                         {
                           "title": "S1: Open New Examinee 2 → verify test list matches",
-                          "duration": 107351
+                          "duration": 97541
                         },
                         {
                           "title": "S1: Re-open New Examinee 2 → verify test set still intact",
-                          "duration": 109882
+                          "duration": 97577
                         },
                         {
                           "title": "S2 Setup: Create custom test set with 19 tests",
-                          "duration": 71145
+                          "duration": 65231
                         },
                         {
                           "title": "S2 Setup: Assign custom test set to New Examinee 1",
-                          "duration": 21795
+                          "duration": 21843
                         },
                         {
                           "title": "S2 Setup: Assign custom test set to New Examinee 2",
-                          "duration": 25520
+                          "duration": 25254
                         },
                         {
                           "title": "S2 Setup: Assign custom test set to Old Examinee",
-                          "duration": 24204
+                          "duration": 24267
                         },
                         {
                           "title": "S2: Open New Examinee 1 (custom) → capture baseline + verify 19 tests",
-                          "duration": 100539
+                          "duration": 98839
                         },
                         {
                           "title": "S2: Open Old Examinee (custom) → verify",
-                          "duration": 100515
+                          "duration": 99136
                         },
                         {
                           "title": "S2: Re-open Old Examinee (custom) → verify still intact",
-                          "duration": 98730
+                          "duration": 98836
                         },
                         {
                           "title": "S2: Open New Examinee 2 (custom) → verify",
-                          "duration": 98855
+                          "duration": 98794
                         },
                         {
                           "title": "S2: Re-open New Examinee 2 (custom) → verify test set still intact",
-                          "duration": 98764
+                          "duration": 99394
                         },
                         {
                           "title": "S3: Semi-administer Calculation for New Examinee 1 (default test set)",
-                          "duration": 144613
+                          "duration": 145005
                         },
                         {
                           "title": "S3: Open Old Examinee (default) → verify NO in-progress carryover",
-                          "duration": 97599
+                          "duration": 98527
                         },
                         {
                           "title": "S3: Open New Examinee 1 in Review Mode (from dashboard) → verify Calculation is In Progress",
-                          "duration": 22414
+                          "duration": 22460
                         },
                         {
                           "title": "S3: Reopen New Examinee 1 from dashboard → verify left nav + in-progress status",
-                          "duration": 92506
+                          "duration": 92576
                         },
                         {
                           "title": "S3: Complete the in-progress Calculation test (5 wrong → ceiling)",
-                          "duration": 20962
+                          "duration": 21267
                         },
                         {
                           "title": "S3: Enter Review Mode → verify Calculation now Complete + test list = 9",
-                          "duration": 7480
+                          "duration": 7625
                         },
                         {
                           "title": "S4: Open Old Examinee (custom) → verify 19 tests + semi-administer Calculation",
-                          "duration": 148093
+                          "duration": 148339
                         },
                         {
                           "title": "S4: Open New Examinee 2 (custom) → verify NO in-progress carryover",
-                          "duration": 99763
+                          "duration": 99369
                         },
                         {
                           "title": "S4: Open Old Examinee in Review Mode (from dashboard) → verify Calculation In Progress + 19 tests",
-                          "duration": 22356
+                          "duration": 22593
                         },
                         {
                           "title": "S4: Reopen Old Examinee → verify left nav + complete Calculation",
-                          "duration": 114801
+                          "duration": 115101
                         },
                         {
                           "title": "S4: Review Mode → verify Calculation Complete + test list = 19",
-                          "duration": 7601
+                          "duration": 7622
                         },
                         {
                           "title": "S5: Verify New Examinee 2 default test set via direct launch",
-                          "duration": 97423
+                          "duration": 97715
                         },
                         {
                           "title": "S5: Verify New Examinee 2 custom test set via direct launch",
-                          "duration": 98761
+                          "duration": 99136
                         },
                         {
                           "title": "S5: Verify New Examinee 2 default test set via Review Mode (from dashboard)",
-                          "duration": 22456
+                          "duration": 22476
                         }
                       ],
-                      "startTime": "2026-10-29T05:27:33.044Z",
+                      "startTime": "2026-10-29T11:55:34.801Z",
                       "annotations": [
                         {
                           "type": "Original customer issue, Automation user story",
@@ -735,8 +735,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-29T05:27:16.168Z",
-    "duration": 2350365.182,
+    "startTime": "2026-10-29T11:55:15.674Z",
+    "duration": 2322675.27,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
