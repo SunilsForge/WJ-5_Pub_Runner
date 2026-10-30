@@ -1,0 +1,428 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/adminPortal/AdminPortalAutoRenew.spec.ts >> SDT-035 - Auto-Renew set to Off in the admin portal shows as OFF on the WJ V Settings page
+- Location: src/tests/functional/subscriptions/adminPortal/AdminPortalAutoRenew.spec.ts:24:5
+
+# Error details
+
+```
+Error: AutoRenew persisted as Off
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: 1
+```
+
+```
+Error: auto-renew Off selected
+
+expect(locator).toBeChecked() failed
+
+Locator:  locator('#radiobox-off')
+Expected: checked
+Received: unchecked
+Timeout:  60000ms
+
+Call log:
+  - auto-renew Off selected with timeout 60000ms
+  - waiting for locator('#radiobox-off')
+    63 × locator resolved to <input value="0" type="radio" name="AutoRenew" class="checkmark" id="radiobox-off" onchange="checkedChanged(this);"/>
+       - unexpected value "unchecked"
+
+```
+
+```
+Error: API autoRenew
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: false
+Received: true
+```
+
+```
+Error: AUTO RENEWAL STATUS
+
+expect(locator).toContainText(expected) failed
+
+Locator: locator('//div[contains(@class,\'subscription-details-container\')]//div[@class=\'sd-label\'][normalize-space()=\'AUTO RENEWAL STATUS\']/following-sibling::div[contains(@class,\'sd-value\')][1]')
+Expected substring: "OFF"
+Received string:    "ON"
+Timeout: 60000ms
+
+Call log:
+  - AUTO RENEWAL STATUS with timeout 60000ms
+  - waiting for locator('//div[contains(@class,\'subscription-details-container\')]//div[@class=\'sd-label\'][normalize-space()=\'AUTO RENEWAL STATUS\']/following-sibling::div[contains(@class,\'sd-value\')][1]')
+    63 × locator resolved to <div class="sd-value">ON</div>
+       - unexpected value "ON"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - list [ref=e6]:
+    - listitem
+    - listitem [ref=e7]:
+      - generic [ref=e8]: soli soli
+    - listitem [ref=e9]:
+      - link "Log Out" [ref=e10] [cursor=pointer]:
+        - /url: javascript:document.getElementById('logoutForm').submit()
+  - list [ref=e12]:
+    - listitem [ref=e13]:
+      - link "Dashboard" [ref=e14] [cursor=pointer]:
+        - /url: /Home/Dashboard
+    - listitem [ref=e15]:
+      - link "Organizations" [ref=e16] [cursor=pointer]:
+        - /url: /Navigation/Landing/185
+    - listitem [ref=e17]:
+      - link "Program Coordinator" [ref=e18] [cursor=pointer]:
+        - /url: /Navigation/Landing/207
+    - listitem [ref=e19]:
+      - link "Partner" [ref=e20] [cursor=pointer]:
+        - /url: /Navigation/Landing/218
+    - listitem [ref=e21]:
+      - link "Administration" [ref=e22] [cursor=pointer]:
+        - /url: /Navigation/Landing/188
+  - generic [ref=e23]:
+    - generic [ref=e25]:
+      - generic:
+        - generic [ref=e26]: Organizations
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - link "Add" [ref=e29] [cursor=pointer]:
+              - /url: /Organization/OrganizationProfileForm
+          - listitem [ref=e30]:
+            - link "Search/Edit" [ref=e31] [cursor=pointer]:
+              - /url: /Organization/Search
+    - generic [ref=e33]:
+      - heading "Customer Licenses" [level=2] [ref=e34]
+      - list [ref=e35]:
+        - listitem [ref=e36]:
+          - link "WJ V" [ref=e37] [cursor=pointer]:
+            - /url: /Customer/CustomerLicensing?OrganizationID=65737&ProductID=18&isDisableStatus=True&isDistributor=False
+      - generic [ref=e38]:
+        - heading "WJ V" [level=2] [ref=e39]
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - text: "Organization Name:"
+            - link "Location_SubAut30Oct260636089js" [ref=e42] [cursor=pointer]:
+              - /url: /Organization/OrganizationProfileForm?OrganizationID=65737
+          - list [ref=e43]:
+            - listitem [ref=e44]:
+              - link "Subscriptions" [ref=e45] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e46]:
+              - link "Renewals" [ref=e47] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e48]:
+              - link "Account Notes" [ref=e49] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - text: Subscription Type*
+                - generic [ref=e55]:
+                  - generic [ref=e56] [cursor=pointer]:
+                    - radio [checked] [ref=e57]
+                    - text: WJ V Unlimited
+                  - generic [ref=e58] [cursor=pointer]:
+                    - radio [disabled] [ref=e59]
+                    - text: WJ V Subtest
+                  - generic [ref=e60] [cursor=pointer]:
+                    - radio [disabled] [ref=e61]
+                    - text: Multi-Year Unlimited 18-month
+                  - generic [ref=e62] [cursor=pointer]:
+                    - radio [disabled] [ref=e63]
+                    - text: Multi-Year Unlimited 30-month
+              - generic [ref=e65]:
+                - generic [ref=e66]: Subscription Sales Order Number*
+                - textbox [ref=e68]: SO292847
+              - generic [ref=e69]:
+                - text: Auto-Renew
+                - generic [ref=e70]:
+                  - generic [ref=e71] [cursor=pointer]:
+                    - radio "On" [checked] [ref=e72]
+                    - text: "On"
+                  - generic [ref=e73] [cursor=pointer]:
+                    - radio "Off" [ref=e74]
+                    - text: "Off"
+              - generic [ref=e75]:
+                - text: Cognitive Test Access
+                - generic [ref=e76]:
+                  - generic [ref=e77] [cursor=pointer]:
+                    - radio "Allow" [checked] [ref=e78]
+                    - text: Allow
+                  - generic [ref=e79] [cursor=pointer]:
+                    - radio "Deny" [ref=e80]
+                    - text: Deny
+            - generic [ref=e82]:
+              - text: Nonverbal Cognitive Ability Index Access*
+              - generic [ref=e84] [cursor=pointer]:
+                - radio "Allow" [ref=e85]
+                - text: Allow
+              - generic [ref=e87] [cursor=pointer]:
+                - radio "Deny" [checked] [ref=e88]
+                - text: Deny
+            - generic [ref=e89]:
+              - table [ref=e92]:
+                - rowgroup [ref=e93]:
+                  - row "Start Date End Date" [ref=e94]:
+                    - columnheader "Start Date" [ref=e95]
+                    - columnheader "End Date" [ref=e96]
+                - rowgroup [ref=e97]:
+                  - row "10/30/2026 10/29/2027" [ref=e98]:
+                    - cell "10/30/2026" [ref=e99]:
+                      - textbox [ref=e101]: 10/30/2026
+                    - cell "10/29/2027" [ref=e103]:
+                      - textbox [ref=e105]: 10/29/2027
+              - generic [ref=e107]:
+                - generic [ref=e108]: Activation Contact
+                - generic [ref=e109]: First Name Arne Last Name SubAut30Oct260636089js Email sunil.adeptpros+SubAut30Oct260636089js@gmail.com
+              - button "Remove Access" [ref=e111] [cursor=pointer]
+            - generic [ref=e113]:
+              - button "Cancel" [ref=e114] [cursor=pointer]
+              - button "Save"
+  - generic [ref=e116]:
+    - list [ref=e117]:
+      - listitem [ref=e118]:
+        - link "Dashboard" [ref=e119] [cursor=pointer]:
+          - /url: /Home/Dashboard
+      - listitem [ref=e120]:
+        - link "Organizations" [ref=e121] [cursor=pointer]:
+          - /url: /Navigation/Landing/185
+      - listitem [ref=e122]:
+        - link "Program Coordinator" [ref=e123] [cursor=pointer]:
+          - /url: /Navigation/Landing/207
+      - listitem [ref=e124]:
+        - link "Partner" [ref=e125] [cursor=pointer]:
+          - /url: /Navigation/Landing/218
+      - listitem [ref=e126]:
+        - link "Administration" [ref=e127] [cursor=pointer]:
+          - /url: /Navigation/Landing/188
+    - paragraph [ref=e128]:
+      - generic [ref=e129]:
+        - text: Copyright © 2014 by The Riverside Publishing Company. • All rights reserved. • (800) 323-9540 •
+        - link "www.riversideinsights.com" [ref=e130] [cursor=pointer]:
+          - /url: http://www.riversideinsights.com
+    - generic [ref=e131]:
+      - link "Terms of Use" [ref=e132] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - link "Privacy Policy" [ref=e133] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+```
+
+# Test source
+
+```ts
+  926  |     await this.subscriptionDetailsStartDateValue.waitFor({ state: 'visible', timeout: 60_000 });
+  927  |   }
+  928  | 
+  929  |   // §5 — see subscriptionActivationPage.notes.md
+  930  |   async verifySubscriptionDatesNotResetToEpoch() {
+  931  |     await this.subscriptionDetailsStartDateValue.waitFor({ state: 'visible', timeout: 30_000 });
+  932  |     const start = ((await this.subscriptionDetailsStartDateValue.textContent()) ?? '').trim();
+  933  |     const end = ((await this.subscriptionDetailsExpirationDateValue.textContent()) ?? '').trim();
+  934  |     RawValueLogger.log('Subscription details dates', { start, end });
+  935  |     expect.soft(start, 'START DATE not reset to the epoch').not.toContain('1970');
+  936  |     expect.soft(end, 'EXPIRATION DATE not reset to the epoch').not.toContain('1970');
+  937  |   }
+  938  | 
+  939  |   async logRemainingSubtestsState(): Promise<string> {
+  940  |     const count = await this.subscriptionDetailsRemainingSubtestsValue.count();
+  941  |     const value = count > 0 ? ((await this.subscriptionDetailsRemainingSubtestsValue.textContent()) ?? '').trim() : null;
+  942  |     RawValueLogger.log('REMAINING SUBTESTS state', { rendered: count > 0, value });
+  943  |     return value ?? '<row not rendered>';
+  944  |   }
+  945  | 
+  946  |   async verifyRemainingSubtestsHidden() {
+  947  |     await expect.soft(this.subscriptionDetailsRemainingSubtestsValue, 'REMAINING SUBTESTS hidden').toHaveCount(0);
+  948  |   }
+  949  | 
+  950  |   async verifyRemainingSubtests(expected: string) {
+  951  |     await this.subscriptionDetailsRemainingSubtestsValue.waitFor({ state: 'visible', timeout: 30_000 });
+  952  |     const actual = (await this.subscriptionDetailsRemainingSubtestsValue.textContent()) ?? '';
+  953  |     RawValueLogger.log('REMAINING SUBTESTS', { expected, actual });
+  954  |     // §6 — see subscriptionActivationPage.notes.md
+  955  |     expect.soft(actual.trim(), 'REMAINING SUBTESTS is not blank').not.toBe('');
+  956  |     expect.soft(actual.trim(), 'REMAINING SUBTESTS').toBe(expected);
+  957  |   }
+  958  | 
+  959  |   private tooltipIconForField(label: string) {
+  960  |     return this.page.locator(
+  961  |       `//div[contains(@class,'subscription-details-container')]` +
+  962  |         `//div[contains(@class,'sd-row-cell')][.//div[normalize-space()='${label}']]` +
+  963  |         `//button[contains(@class,'Tooltip_mcs_icon')]`
+  964  |     );
+  965  |   }
+  966  | 
+  967  |   // §7 — see subscriptionActivationPage.notes.md
+  968  |   async verifyFieldTooltip(label: string, expectedCopy: string) {
+  969  |     const icon = this.tooltipIconForField(label);
+  970  |     await expect.soft(icon, `${label} tooltip icon`).toBeVisible();
+  971  |     await icon.hover();
+  972  | 
+  973  |     const tooltip = icon.locator("div[data-info='true']");
+  974  |     await expect.soft(tooltip, `${label} tooltip is shown on hover`).toBeVisible();
+  975  |     await expect.soft(tooltip, `${label} tooltip copy`).toHaveText(expectedCopy);
+  976  |   }
+  977  | 
+  978  |   // §4 — see subscriptionActivationPage.notes.md
+  979  |   async verifyRolloverTooltip() {
+  980  |     const icon = this.subscriptionDetailsRolloverTooltipIcon;
+  981  |     await expect.soft(icon, 'rollover tooltip icon').toBeVisible();
+  982  |     await icon.hover();
+  983  | 
+  984  |     const tooltip = icon.locator("div[data-info='true']");
+  985  |     await expect.soft(tooltip, 'rollover tooltip is shown on hover').toBeVisible();
+  986  |     const copy = ((await tooltip.textContent()) ?? '').trim();
+  987  |     const label = ((await this.subscriptionDetailsRolloverLabel.textContent()) ?? '').trim();
+  988  |     RawValueLogger.log('SDT-027/043 rollover tooltip', { label, copy });
+  989  | 
+  990  |     expect
+  991  |       .soft(copy, 'SDT-027 rollover tooltip copy')
+  992  |       .toMatch(
+  993  |         /^These subtests will automatically roll over into your next subscription cycle of \d{2}\/\d{2}\/\d{4} - \d{2}\/\d{2}\/\d{4}\. This quantity will be based on purchases made within the last 4 months of your active subscription\.$/
+  994  |       );
+  995  | 
+  996  |     const cycleDates = copy.match(/\d{2}\/\d{2}\/\d{4}/g) ?? [];
+  997  |     const labelExpiry = (label.match(/\d{2}\/\d{2}\/\d{4}/) ?? [])[0];
+  998  |     expect.soft(cycleDates.length, 'tooltip names a start and an end date').toBe(2);
+  999  |     if (cycleDates.length === 2 && labelExpiry) {
+  1000 |       const [cycleStart, cycleEnd] = cycleDates;
+  1001 |       expect.soft(cycleEnd, 'SDT-043 tooltip cycle end matches the label EXPIRES date').toBe(labelExpiry);
+  1002 |       expect
+  1003 |         .soft(cycleEnd, 'SDT-043 cycle spans one subscription cycle, not two (BUG-26900)')
+  1004 |         .toBe(expectedEndForStart(cycleStart));
+  1005 |     }
+  1006 |   }
+  1007 | 
+  1008 |   // §8 — see subscriptionActivationPage.notes.md
+  1009 |   async verifyTermsAndConditionsLink(expectedUrl: string) {
+  1010 |     await expect.soft(this.subscriptionDetailsTermsLink, 'Terms and Conditions link').toBeVisible();
+  1011 |     await expect.soft(this.subscriptionDetailsTermsLink, 'link text').toHaveText('Terms and Conditions');
+  1012 |     await expect.soft(this.subscriptionDetailsTermsLink, 'link href').toHaveAttribute('href', expectedUrl);
+  1013 |     await expect.soft(this.subscriptionDetailsTermsLink, 'opens in a new tab').toHaveAttribute('target', '_blank');
+  1014 | 
+  1015 |     const [popup] = await Promise.all([
+  1016 |       this.page.context().waitForEvent('page'),
+  1017 |       this.subscriptionDetailsTermsLink.click(),
+  1018 |     ]);
+  1019 |     RawValueLogger.log('SDT-011 terms popup', { url: popup.url() });
+  1020 |     expect.soft(popup.url(), 'Terms of Use page opened').toContain('terms-of-use');
+  1021 |     await popup.close();
+  1022 |   }
+  1023 | 
+  1024 |   async verifyAutoRenewalStatus(expected: 'ON' | 'OFF') {
+  1025 |     await this.subscriptionDetailsAutoRenewalStatusValue.waitFor({ state: 'visible', timeout: 30_000 });
+> 1026 |     await expect.soft(this.subscriptionDetailsAutoRenewalStatusValue, 'AUTO RENEWAL STATUS').toContainText(expected);
+       |                                                                                              ^ Error: AUTO RENEWAL STATUS
+  1027 |   }
+  1028 | 
+  1029 |   // §9 — see subscriptionActivationPage.notes.md
+  1030 |   async verifyRolloverFieldIsAbsent() {
+  1031 |     await this.subscriptionDetailsSubscriptionUsageHeading.waitFor({ state: 'visible', timeout: 30_000 });
+  1032 |     await expect.soft(this.subscriptionDetailsRolloverLabel, 'CURRENT SUBTEST ROLLOVER hidden').toHaveCount(0);
+  1033 |   }
+  1034 | 
+  1035 |   async verifySubtestErrorPopup(activationCode: string) {
+  1036 |     await this.gotoActivationUrl(activationCode);
+  1037 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  1038 |     await expect.soft(this.activationCustomerNameText).toBeVisible();
+  1039 |   }
+  1040 | 
+  1041 |   async ensureSubtestWindowState(
+  1042 |     user: ExistingUser,
+  1043 |     window: 'addon' | 'rollover'
+  1044 |   ): Promise<{ summary: OrgSubscriptionSummary; extras: OrgSubscriptionExtras }> {
+  1045 |     const subApi = new subscriptionApi(this.page, toApiCreds(user));
+  1046 |     const endDate = window === 'addon'
+  1047 |       ? addDaysToServerTodayMMDDYYYY(150)
+  1048 |       : addDaysToServerTodayMMDDYYYY(60);
+  1049 |     await subApi.updateSubscriptionDetails(user.username, endDate, false);
+  1050 |     const [summary, extras] = await subApi.getOrgSubscriptionDetails(user.username);
+  1051 |     return { summary, extras };
+  1052 |   }
+  1053 | 
+  1054 |   async createFreshOrg(
+  1055 |     seedScenario: ActivationCode,
+  1056 |     formData: SubscriptionActivationFormData,
+  1057 |     signOutAfter = true
+  1058 |   ): Promise<void> {
+  1059 |     await this.resetActivationStateAndLand(seedScenario);
+  1060 |     await this.selectCreateLoginAndProceed();
+  1061 |     await this.fillContactInfo(formData);
+  1062 |     await this.fillUsernameAndPassword(formData);
+  1063 |     await this.fillLocationAndSubmit(formData);
+  1064 |     await this.confirmActivation();
+  1065 |     await this.dismiss2FAPopupIfPresent();
+  1066 |     await this.acceptTermsDialogIfPresent();
+  1067 |     if (!signOutAfter) {
+  1068 |       return;
+  1069 |     }
+  1070 |     await this.signOutFromHeader();
+  1071 |   }
+  1072 | 
+  1073 |   async verifyAddOnConfirmDetails(
+  1074 |     orgName: string,
+  1075 |     currentStartMMDDYYYY: string,
+  1076 |     currentEndMMDDYYYY: string,
+  1077 |     subtestCount: number
+  1078 |   ) {
+  1079 |     await expect.soft(this.confirmActivationHeading).toBeVisible();
+  1080 |     await expect.soft(this.confirmSubscriptionValueText).toContainText('Subtest Subscription');
+  1081 |     await expect.soft(this.confirmLocationNameValueText).toContainText(orgName);
+  1082 |     await expect.soft(this.confirmLocationNameValueText).toContainText(`${subtestCount} Subtests`);
+  1083 |     await expect.soft(this.confirmSubtestDescriptionNote).toBeVisible();
+  1084 |     await expect.soft(this.confirmStartDateInput).toHaveValue(currentStartMMDDYYYY);
+  1085 |     await expect.soft(this.confirmStartDateInput).toBeDisabled();
+  1086 |     await expect.soft(this.confirmEndDateInput).toHaveValue(currentEndMMDDYYYY);
+  1087 |     await expect.soft(this.confirmEndDateInput).toBeDisabled();
+  1088 |   }
+  1089 | 
+  1090 |   async verifySubtestPoolApiState(
+  1091 |     owner: ApiOrgOwner,
+  1092 |     expectedRemaining: number,
+  1093 |     expectedRollover?: number
+  1094 |   ) {
+  1095 |     const subApi = new subscriptionApi(this.page, toApiCreds(owner));
+  1096 |     const [, extras] = await subApi.getOrgSubscriptionDetails(owner.username);
+  1097 |     RawValueLogger.log('Subtest pool API state', {
+  1098 |       remainingSubtests: extras.remainingSubtests,
+  1099 |       subtestsRollover: extras.subtestsRollover,
+  1100 |       rolloverStartDate: extras.rolloverStartDate,
+  1101 |       rolloverEndDate: extras.rolloverEndDate,
+  1102 |     });
+  1103 |     expect.soft(extras.remainingSubtests, 'remainingSubtests').toBe(expectedRemaining);
+  1104 |     if (expectedRollover !== undefined) {
+  1105 |       expect.soft(extras.subtestsRollover, 'subtestsRollover').toBe(expectedRollover);
+  1106 |     }
+  1107 |   }
+  1108 | 
+  1109 |   async verifyAbandonedCodeIsAvailable(scenario: ActivationCode) {
+  1110 |     await this.gotoActivationUrl(scenario.activationCode);
+  1111 |     await this.whiteLoadingIcon.waitFor({ state: 'hidden', timeout: 90000 });
+  1112 |     await expect.soft(this.iNeedToCreateALoginSpan).toBeVisible();
+  1113 |   }
+  1114 | 
+  1115 |   async verifyRolloverSubscriptionDetailsPage(
+  1116 |     expirationDateMMDDYYYY: string,
+  1117 |     expectedRemainingSubtests: number,
+  1118 |     rolloverCount: number,
+  1119 |     rolloverExpiryMMDDYYYY: string
+  1120 |   ) {
+  1121 |     await this.openSubscriptionDetailsPage();
+  1122 |     await this.subscriptionDetailsExpirationDateValue.waitFor({ state: 'visible', timeout: 15000 });
+  1123 |     await expect.soft(this.subscriptionDetailsExpirationDateValue).toContainText(expirationDateMMDDYYYY);
+  1124 |     await expect.soft(this.subscriptionDetailsRemainingSubtestsValue).toHaveText(String(expectedRemainingSubtests));
+  1125 |     await expect.soft(this.subscriptionDetailsRolloverCountValue).toHaveText(String(rolloverCount));
+  1126 |     await expect.soft(this.subscriptionDetailsRolloverLabel).toContainText(rolloverExpiryMMDDYYYY);
+```
