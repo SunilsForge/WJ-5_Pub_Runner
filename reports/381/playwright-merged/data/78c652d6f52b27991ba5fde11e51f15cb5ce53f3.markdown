@@ -1,0 +1,306 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ReroutingandLeftNav/NUMPAT_Rerouting.spec.ts >>  NUMPAT Rerouting >> All Examinees - Sample Items Rerouting Scenario Test Rerouting
+- Location: src/tests/ReroutingandLeftNav/NUMPAT_Rerouting.spec.ts:10:9
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('//button[contains(text(),\'Start Practice Exercise\')]')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main "Clinical Login" [ref=e4]:
+    - generic [ref=e5]:
+      - img "Riverside Insights Logo" [ref=e6]
+      - heading "Looking for the Canadian login page? Click Here" [level=4] [ref=e8]:
+        - text: Looking for the Canadian login page?
+        - link "Click Here" [ref=e9] [cursor=pointer]:
+          - /url: https://ca.riversidescore.com
+      - heading "Riverside Updates" [level=1] [ref=e10]
+    - generic [ref=e11]:
+      - img "Riverside Score Logo" [ref=e12]
+      - form "Sign in details" [ref=e13]:
+        - generic [ref=e14]:
+          - text: USERNAME
+          - textbox "USERNAME" [active] [ref=e16]:
+            - /placeholder: Username
+          - generic [ref=e18]:
+            - text: PASSWORD
+            - textbox "PASSWORD" [ref=e20]:
+              - /placeholder: Password
+          - button "Sign In" [ref=e21] [cursor=pointer]
+          - generic [ref=e22]:
+            - button "Remember Me" [ref=e23] [cursor=pointer]: Remember Me
+            - link "Forgot my password" [ref=e26] [cursor=pointer]:
+              - /url: /forgot
+          - alert [ref=e27]: You have been logged out due to inactivity.
+        - generic [ref=e28]:
+          - heading "Are you looking to purchase our products?" [level=4] [ref=e29]
+          - link "Click Here!" [ref=e30] [cursor=pointer]:
+            - /url: https://riversideinsights.com/explore
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - text: For help accessing Riverside Score™, see the
+        - link "online help" [ref=e33] [cursor=pointer]:
+          - /url: https://onlinehelp.riversideinsights.com/Help/Riverside_Score/index.htm#t=Overview.htm
+        - text: for signing in.
+      - link "Check Platform Status" [ref=e35] [cursor=pointer]:
+        - /url: https://riversideinsights.com/platform-status
+  - contentinfo [ref=e36]:
+    - generic [ref=e37]: Footer region,
+    - link "w w w dot riverside insights dot com" [ref=e38] [cursor=pointer]:
+      - /url: https://www.riversideinsights.com
+      - img "Riverside Insights Website" [ref=e39]
+    - generic [ref=e40]:
+      - link "Riverside Insights Facebook" [ref=e41] [cursor=pointer]:
+        - /url: https://www.facebook.com/RiversideInsights/
+        - img "Riverside Insights Facebook" [ref=e42]
+      - link "Riverside Insights Twitter" [ref=e43] [cursor=pointer]:
+        - /url: https://twitter.com/1BillionLives
+        - img "Riverside Insights Twitter" [ref=e44]
+      - link "Riverside Insights LinkedIn" [ref=e45] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/riverside-insights/
+        - img "Riverside Insights LinkedIn" [ref=e46]
+      - link "Riverside Insights Instagram" [ref=e47] [cursor=pointer]:
+        - /url: https://www.instagram.com/riversideinsightsassessments/
+        - img "Riverside Insights Instagram" [ref=e48]
+    - generic [ref=e49]:
+      - img "WJ IV Mobile Data Solution" [ref=e50]
+      - button "Download Woodcock Johnson 4 Mobile App from Google Play" [ref=e51] [cursor=pointer]
+      - button "Download Woodcock Johnson 4 Mobile App from App Store" [ref=e52] [cursor=pointer]
+    - generic [ref=e53]:
+      - img "Bdi 3 Mobile Data Solution" [ref=e54]
+      - generic [ref=e55]:
+        - button "Download BDI-3 Mobile App from Microsoft Store" [ref=e56] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from Google Play" [ref=e57] [cursor=pointer]
+        - button "Download BDI-3 Mobile App from App Store" [ref=e58] [cursor=pointer]
+    - generic [ref=e59]:
+      - button "Leave Feedback" [ref=e60] [cursor=pointer]
+      - generic [ref=e61]: "|"
+      - link "Terms of Use" [ref=e62] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/terms-of-use
+      - generic [ref=e63]: "|"
+      - link "Privacy Policy" [ref=e64] [cursor=pointer]:
+        - /url: https://info.riversideinsights.com/privacy-assessment_policy
+    - generic [ref=e65]: Footer region end
+```
+
+# Test source
+
+```ts
+  6901 |           } else {
+  6902 |             await this.plainNextButtonOrEndButton.waitFor({ state: "visible", timeout: 50000 });
+  6903 |           }
+  6904 |         }
+  6905 |         await this.page.waitForTimeout(500);
+  6906 |       }
+  6907 |     } else if (testStemForm.match(/LWRTFL.W5PX/i)) {
+  6908 |       await this.page.waitForTimeout(1000);
+  6909 |       await this.startTimerButton.click();
+  6910 |       await this.stopTimerButton.click();
+  6911 |       await this.listOfScores.nth(0).click();
+  6912 |       await this.listOfScores.nth(0).fill("26");
+  6913 |       await this.submitButton.click();
+  6914 |       await this.page.waitForTimeout(2000);
+  6915 |       await this.startTimerButton.click();
+  6916 |       await this.stopTimerButton.click();
+  6917 |       await this.listOfScores.nth(1).click();
+  6918 |       await this.listOfScores.nth(1).fill("26");
+  6919 |       await this.submitButton.click();
+  6920 | 
+  6921 |     } else if (testStemForm.match(/SWRTFL.W5PB/i)) {
+  6922 |       await this.page.waitForTimeout(1000);
+  6923 |       await this.plainNextButtonOrEndButton.click();
+  6924 |       await this.page.waitForTimeout(1000);
+  6925 |       for (let i = 1; i <= 6; i++) {
+  6926 |         await this.incorrectOptionButton.nth(0).click();
+  6927 |         if (await this.plainNextButtonOrEndButton.isEnabled()) {
+  6928 |           await this.plainNextButtonOrEndButton.click();
+  6929 |         } else {
+  6930 |           await this.plainNextButtonOrEndButton.waitFor({ state: 'visible', timeout: 50000 });
+  6931 |         }
+  6932 |       }
+  6933 |     } else if (testStemForm.match(/MTHFLU.W5PB/i)) {
+  6934 |       await this.page.waitForTimeout(1000);
+  6935 |       await this.startPracticeAndStartTimerButton.click();
+  6936 |       await this.listOfScores.nth(0).click();
+  6937 |       await this.listOfScores.nth(0).fill("0");
+  6938 |         if (await this.plainNextButtonOrEndButton.isEnabled()) {
+  6939 |           await this.plainNextButtonOrEndButton.click();
+  6940 |         } else {
+  6941 |           await this.plainNextButtonOrEndButton.waitFor({ state: 'visible', timeout: 50000 });
+  6942 |         }
+  6943 |       }
+  6944 | 
+  6945 |     if ((await this.nextAndEndTestButton.textContent()) === "End Test") {
+  6946 |       await this.invalidateTestLink.click();
+  6947 |       await this.invalidateTestPopup.waitFor({ state: 'visible', timeout: 50000 });
+  6948 |       await this.invalidateTestHeader.isVisible();
+  6949 |       await this.invalidateTestSummary.isVisible();
+  6950 |       await this.areYouSureYesButton.click();
+  6951 |       if (addBackup) {
+  6952 |         await this.addBackUpFormLink.waitFor({ state: 'visible', timeout: 50000 });
+  6953 |         await this.addBackUpFormLink.click();
+  6954 |         await this.backUpFormAddedLabel.waitFor({ state: 'visible', timeout: 50000 });
+  6955 |         await this.invalidTestLabel.isVisible();
+  6956 |         await this.outComeValue.isVisible();
+  6957 |         if (testName1 !== 'undefined') {
+  6958 |           await this.beginNextTestButton.click();
+  6959 |           await this.clickOnLetsBeginButtonAndStartTest(testName1, SSP);
+  6960 |         }
+  6961 |       } else {
+  6962 |         await this.closeButton.nth(0).click();
+  6963 |       }
+  6964 |     }
+  6965 |   }
+  6966 |   async reroutingUsingLeftNavForTimerTests(
+  6967 |         typeOfTest: string,
+  6968 |         testStemForm: string,
+  6969 |         incorrectIndex: number,
+  6970 |         index: number,
+  6971 |         examinee_ID?: string,
+  6972 |         testName1?: string,
+  6973 |         
+  6974 |     ) {
+  6975 |         let incorrectCount = 0;
+  6976 |         const notesActions = [
+  6977 |             { note: "Item", selectOption: "item" },
+  6978 |             { note: "Test", selectOption: "test" },
+  6979 |             { note: "Test Set", selectOption: "testBlock" }
+  6980 |         ];
+  6981 |         await this.page.waitForTimeout(1000);
+  6982 |         while (await this.plainNextButtonOrEndButton.isVisible()) {
+  6983 |           await this.page.waitForTimeout(2000);
+  6984 |             const itemDetails: string = (await this.itemDetails.textContent())!;
+  6985 |             console.log(itemDetails);
+  6986 |             await this.page.waitForTimeout(1000);
+  6987 |             if (typeOfTest.match(/Sample Items Rerouting Scenario/i)) {
+  6988 |                 if (itemDetails.match(/Sample Item A, Trial 1/i)) {
+  6989 |                     await this.correctOptionButton.nth(0).click();
+  6990 |                 } else if (itemDetails.startsWith("Sample Item B, Trial 1")) {
+  6991 |                     await this.correctOptionButton.nth(0).click();
+  6992 |                     await this.plainNextButtonOrEndButton.click();
+  6993 |                     await this.leftNavCorrectAnswerContainer.nth(1).click();
+  6994 |                     await this.page.mouse.move(300, 600);
+  6995 |                     await this.page.waitForTimeout(1000);
+  6996 |                     await this.correctOptionButton.nth(0).click();
+  6997 |                     await this.incorrectOptionButton.nth(0).click();
+  6998 |                     await expect.soft(this.itemDetails1).toHaveText("Test Routing Change");
+  6999 |                     await this.continueButton.click();
+  7000 |                     await this.plainNextButtonOrEndButton.click();
+> 7001 |                     await this.startPracticeAndStartTimerButton.click();
+       |                                                                 ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  7002 |                     if (testStemForm.match(/LETPAT.W5PA/) || testStemForm.match(/LETPAT.W5PX/)) {
+  7003 |                         await this.verifyScoringAllPracticeExerciseItems('0', '1', '3', '5', '6', '7', '10', '12', '14', '15', '18', '19');
+  7004 |                     } else if (testStemForm.match(/NUMPAT.W5PA/) || testStemForm.match(/NUMPAT.W5PX/)) {
+  7005 |                         await this.verifyScoringAllPracticeExerciseItems('2', '3', '5', '6', '10', '12', '15', '18', '20', '24', '25', '26');
+  7006 |                     } else if (testStemForm.match(/SRDGFL.W5PA/) || testStemForm.match(/SRDGFL.W5PB/)) {
+  7007 |                         await this.verifyScoringAllPracticeExerciseItems('0', '3', '5', '6');
+  7008 |                     } else if (testStemForm.match(/WRDGFL.W5PA/) || testStemForm.match(/WRDGFL.W5PB/)) {
+  7009 |                         await this.verifyScoringAllPracticeExerciseItems('0', '1', '4', '5', '8', '9', '12', '14');
+  7010 |                     } else if (testStemForm.match(/MAGCMP.W5PX/) || testStemForm.match(/MAGCMP.W5PA/)) {
+  7011 |                         await this.verifyScoringAllPracticeExerciseItems('1', '3', '5', '6', '8', '11');
+  7012 |                     }
+  7013 |                     await this.doneOrNextButton.click();
+  7014 |                     await expect(this.itemDetails).toHaveText("Practice Exercise");
+  7015 |                     await expect(this.introductionError).toBeVisible();
+  7016 |                     await expect(this.inCorrectAnswerErrorMessage.nth(0)).toBeVisible();
+  7017 |                     expect(await this.inCorrectAnswerErrorMessage.nth(0).textContent()).toContain("Let’s do this one again.");
+  7018 |                     await this.doneOrNextButton.waitFor({ state: "visible" });
+  7019 |                     await this.page.waitForTimeout(3000);
+  7020 |                     await this.doneOrNextButton.click();
+  7021 |                 }
+  7022 |             } else if (typeOfTest.match(/Samples Items A And B rerouting Flow Scenario/i)) {
+  7023 |                 if (itemDetails.match(/Sample Item A, Trial 1/i)) {
+  7024 |                     await this.incorrectOptionButton.nth(0).click();
+  7025 |                 } else if (itemDetails.startsWith("Sample Item A, Trial 2")) {
+  7026 |                     await this.correctOptionButton.nth(0).click();
+  7027 |                 } else if (itemDetails.startsWith("Sample Item B, Trial 1")) {
+  7028 |                     await this.incorrectOptionButton.nth(0).click();
+  7029 |                 } else if (itemDetails.startsWith("Sample Item B, Trial 2")) {
+  7030 |                     await this.correctOptionButton.nth(0).click();
+  7031 |                     await this.plainNextButtonOrEndButton.click();
+  7032 |                     await this.leftNavIncorrectAnswerContainer.nth(1).click();
+  7033 |                     await this.page.mouse.move(300, 600);
+  7034 |                     await this.page.waitForTimeout(1000);
+  7035 |                     await this.incorrectOptionButton.nth(0).click();
+  7036 |                     await this.correctOptionButton.nth(0).click();
+  7037 |                     await expect(this.nextText).toHaveText("Practice Exercise");
+  7038 |                     await this.plainNextButtonOrEndButton.click();
+  7039 |                     await this.startPracticeAndStartTimerButton.click();
+  7040 |                     if (testStemForm.match(/LETPAT.W5PA/) || testStemForm.match(/LETPAT.W5PX/)) {
+  7041 |                         await this.verifyScoringAllPracticeExerciseItems('0', '1', '3', '5', '6', '7', '10', '12', '14', '15', '18', '19');
+  7042 |                     } else if (testStemForm.match(/NUMPAT.W5PA/) || testStemForm.match(/NUMPAT.W5PX/)) {
+  7043 |                         await this.verifyScoringAllPracticeExerciseItems('2', '3', '5', '6', '10', '12', '15', '18', '20', '24', '25', '26');
+  7044 |                     } else if (testStemForm.match(/SRDGFL.W5PA/) || testStemForm.match(/SRDGFL.W5PB/)) {
+  7045 |                         await this.verifyScoringAllPracticeExerciseItems('0', '3', '5', '6');
+  7046 |                     } else if (testStemForm.match(/WRDGFL.W5PA/) || testStemForm.match(/WRDGFL.W5PB/)) {
+  7047 |                         await this.verifyScoringAllPracticeExerciseItems('0', '1', '4', '5', '8', '9', '12', '14');
+  7048 |                     } else if (testStemForm.match(/MAGCMP.W5PX/) || testStemForm.match(/MAGCMP.W5PA/)) {
+  7049 |                         await this.verifyScoringAllPracticeExerciseItems('1', '3', '5', '6', '8', '11');
+  7050 |                     }
+  7051 |                     await this.doneOrNextButton.click();
+  7052 |                     await expect(this.itemDetails).toHaveText("Practice Exercise");
+  7053 |                     await expect(this.introductionError).toBeVisible();
+  7054 |                     await expect(this.inCorrectAnswerErrorMessage.nth(0)).toBeVisible();
+  7055 |                     expect(await this.inCorrectAnswerErrorMessage.nth(0).textContent()).toContain("Let’s do this one again.");
+  7056 |                     await this.doneOrNextButton.waitFor({ state: "visible" });
+  7057 |                     await this.page.waitForTimeout(3000);
+  7058 |                     await this.doneOrNextButton.click();
+  7059 |                 }
+  7060 |             } else if (typeOfTest.match(/Flag Item with Notes and Review scenario/i)) {
+  7061 |                 if (itemDetails.includes("Sample")) {
+  7062 |                     for (let i = 1; i <= incorrectIndex; i++) {
+  7063 |                         await this.page.waitForTimeout(2000);
+  7064 |                         await this.incorrectOptionButton.nth(0).click();
+  7065 |                         if (incorrectCount < 3 && incorrectCount < notesActions.length) {
+  7066 |                             await this.flagIcon.click();
+  7067 |                             await this.openNotesIcon.click();
+  7068 |                             const { note, selectOption } = notesActions[incorrectCount];
+  7069 |                             if (selectOption) {
+  7070 |                                 await this.page.getByRole('combobox').selectOption(selectOption);
+  7071 |                             }
+  7072 |                             await this.page.waitForTimeout(3000);
+  7073 |                             await this.notesText.fill(note);
+  7074 |                             await this.notesSaveButton.click();
+  7075 |                         }
+  7076 |                         incorrectCount++;
+  7077 |                         await this.plainNextButtonOrEndButton.click();
+  7078 |                     }
+  7079 |                     for (let i = 1; i <= index; i++) {
+  7080 |                         await this.flagItemOrScoreCheckItemOrEndTestReviewLink.first().click();
+  7081 |                         await this.flagIcon.click();
+  7082 |                         await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  7083 |                         if (i < index) {
+  7084 |                             await this.plainNextButtonOrEndButton.click();
+  7085 |                         }
+  7086 |                     }
+  7087 |                 }
+  7088 |             } else if (typeOfTest.match(/Review mode Verification scenario/i)) {
+  7089 |               await this.page.waitForTimeout(1000);
+  7090 |               await this.plainNextButtonOrEndButton.click();
+  7091 |               await this.correctOptionButton.nth(0).click();
+  7092 |               await this.plainNextButtonOrEndButton.click();
+  7093 |               await this.correctOptionButton.nth(0).click();
+  7094 |               await this.plainNextButtonOrEndButton.click();
+  7095 |               await this.startPracticeAndStartTimerButton.click();
+  7096 |               if (testStemForm.match(/LETPAT.W5PX/)) {
+  7097 |                 await this.verifyScoringAllPracticeExerciseItems('0', '1', '3', '5', '6', '7', '10', '12', '14', '15', '18', '19');
+  7098 |               } else if (testStemForm.match(/MAGCMP.W5PX/)) {
+  7099 |                 await this.verifyScoringAllPracticeExerciseItems('1', '3', '5', '7', '9', '10');
+  7100 |               }
+  7101 |               await this.doneOrNextButton.click();
+```

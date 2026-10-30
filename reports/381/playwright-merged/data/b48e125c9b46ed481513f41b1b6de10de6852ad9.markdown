@@ -1,0 +1,174 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: UIAndReports/NUMSEN_Single_BC5.spec.ts >>  NUMSEN UI And Reports >> Ages 10 to 11 - All correct SSP4 Test UI
+- Location: src/tests/UIAndReports/NUMSEN_Single_BC5.spec.ts:10:13
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('.item-text').getByText(/^Male.*/).first()
+    - locator resolved to <div class="item-text single-select">Male</div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - performing click action
+    - click action done
+    - waiting for scheduled navigations to finish
+
+```
+
+# Test source
+
+```ts
+  1   | import {  Page, devices,Browser, expect } from "@playwright/test";
+  2   | import Locators from "../utils/locators";
+  3   | import Utils from "../utils/utils";
+  4   | 
+  5   | const timestamp = Date.now();
+  6   | const firstName: string = `Fname${timestamp}`;
+  7   | const lastName: string = `lName${timestamp}`;
+  8   | const eId: string = `eI${timestamp}`;
+  9   | 
+  10  | 
+  11  | export default class AddExamineePage extends Locators{
+  12  | 
+  13  |     private utils: Utils;
+  14  |     constructor(public page: Page) {
+  15  |         super(page);
+  16  |     }
+  17  | 
+  18  |     async saveExaminee() {
+  19  |         await this.examineeSaveButton.click();
+  20  |         await this.examineeSaveOkButton.waitFor({state: "visible",timeout: 30000});
+  21  |         await this.examineeSaveOkButton.click();
+  22  |       }
+  23  |     async saveErrorPopup() {
+  24  | 
+  25  |         await this.addExamineePopUpCloseIcon.click();
+  26  |         await this.saveErrorPopupHeader.waitFor({ state: "visible" });
+  27  |         await this.saveErrorPopupMessage.isVisible();
+  28  |         await this.demoYesButton.isVisible();
+  29  |         await this.demoNoButton.isVisible();
+  30  |         await this.demoNoButton.click();
+  31  |         await this.addExamineeTitle1.isVisible();
+  32  |         await this.addExamineeTitle2.isVisible();
+  33  |     }
+  34  |     async selectGender(value: string) {
+  35  |         await this.page.locator("div[role='dialog'] button[class='select-box']").click();
+  36  |         await this.page
+  37  |           .locator(".item-text")
+  38  |           .getByText(new RegExp(`^${value}.*`))
+  39  |           .first()
+> 40  |           .click();
+      |            ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  41  |       }
+  42  |     async verifyElementsOnGeneralInformationTab(type: string) {
+  43  | 
+  44  |         if(type =="Add Examinee") {
+  45  |             await this.page.bringToFront();
+  46  |             await this.page.waitForTimeout(3000);
+  47  |             await this.examinees.click({timeout: 2 * 60 * 1000});
+  48  |             await this.page.waitForTimeout(3000);
+  49  |             await this.addExaminee.click();
+  50  |             await this.loadingIcon.waitFor({state: "hidden"});
+  51  |             await this.addExamineeTitle1.isVisible();
+  52  |             await this.addExamineeTitle2.isVisible();
+  53  |             await this.examineeLastName.isVisible();
+  54  |             await this.examineeFirstName.isVisible();
+  55  |             await this.examineeDateOfBirth.isVisible();
+  56  |             await this.examineeDateOfBirthInputLabel.nth(1).isVisible();
+  57  |             await this.examineeDateOfBirthCalendarIcon.nth(1).isVisible();
+  58  |             await this.examineeGender.isVisible();
+  59  |             await this.examineeGendarInputLabel.isVisible();
+  60  |             await this.examineeGendarInputLabel.click();
+  61  |             const genderValues = ['Male', 'Female', 'Unspecified'];
+  62  |             await this.page.waitForTimeout(1000);
+  63  |             const values = await this.selectResultFromDropDown.allTextContents();
+  64  |             expect(values).toEqual(genderValues);
+  65  |             await this.requiredFields.isVisible();
+  66  |             await this.examineeId.isVisible();
+  67  |             await this.examineeSaveButton.isVisible();
+  68  |             await this.examineeSaveAndAddAnotherButton.isVisible();
+  69  |             await expect(this.examineeSaveButton).toHaveAttribute("disabled", "");
+  70  |             await expect(this.examineeSaveAndAddAnotherButton).toHaveAttribute("disabled", "");
+  71  |         } else {
+  72  |             await this.loadingIcon.waitFor({ state: "hidden" });
+  73  |             await this.editExamineeTitle.isVisible();
+  74  |             await this.addExamineeTitle2.isVisible();
+  75  |             await this.examineeLastName.isVisible();
+  76  |             await expect.soft(this.examineeFirstName).toHaveValue(firstName+"Test");
+  77  |             await expect.soft(this.examineeLastName).toHaveValue(lastName+"Test");
+  78  |             await this.examineeFirstName.isVisible();
+  79  |             await this.examineeDateOfBirth.isVisible();
+  80  |             await this.examineeDateOfBirthInputLabel.nth(1).isVisible();
+  81  |             await this.examineeDateOfBirthCalendarIcon.nth(1).isVisible();
+  82  |             await this.examineeGender.isVisible();
+  83  |             await this.examineeGendarInputLabel.isVisible();
+  84  |             await this.requiredFields.isVisible();
+  85  |             await this.examineeId.isVisible();
+  86  |             await this.examineeSaveButton.isVisible();
+  87  |             await this.examineeSaveButton.isEnabled();
+  88  |         }
+  89  |     }
+  90  |     async verifyDropDownValues(expectedOptions: string[],index:number,value:string,index1:number)
+  91  |     {
+  92  |         await this.dropDown.nth(index).click();
+  93  |         await this.page.waitForTimeout(2000);
+  94  |         const options = this.page.locator("//label[text()='"+value+"']/following-sibling::div['"+index1+"']/descendant::ul/child::li/descendant::div");
+  95  | 
+  96  |         await expect(options.first()).toBeVisible();
+  97  | 
+  98  |         const actualOptions = (await options.allTextContents()).map(t => t.trim());
+  99  | 
+  100 |         expect(actualOptions).toEqual(expectedOptions);
+  101 | 
+  102 |     }
+  103 |     async verifyElementsOnDemographicsOrProgramsTab(type:string) {
+  104 | 
+  105 |         await this.demographicsTab.click();
+  106 |         await this.page.waitForTimeout(3000);
+  107 |         await this.demographicsHeader.waitFor({ state: "visible" });
+  108 |         await this.primaryLanguageHeader.isVisible();
+  109 |         await this.dropDown.nth(0).click();
+  110 |         await this.page.waitForTimeout(2000);
+  111 |         const expectedRaceOptions = [
+  112 |             'American Indian or Alaska Native',
+  113 |             'Asian',
+  114 |             'Black or African American',
+  115 |             'Native Hawaiian or Other Pacific Islander',
+  116 |             'White',
+  117 |             'Other',
+  118 |             'Native Hawaiian or Pacific Islander',
+  119 |             'Prefer not to say',
+  120 |             'Prefer to describe as',
+  121 |             'American Indian or Alaskan Native',
+  122 |             'Black/African American',
+  123 |             'Hispanic or Latinx',
+  124 |             'Two or More Races'
+  125 |         ];
+  126 |         await this.verifyDropDownValues(expectedRaceOptions,1,"Race",2);
+  127 |         await this.dropDown.nth(1).click();
+  128 |         await this.raceLabel.isVisible();
+  129 |         await this.yesLabel.nth(0).isVisible();
+  130 |         await this.yesLabel.nth(1).isVisible();
+  131 |         await this.yesLabel.nth(2).isVisible();
+  132 |         const expectedEthnicityOptions = [
+  133 |             'Not Spanish/Hispanic/Latino',
+  134 |             'Spanish/Hispanic/Latino',
+  135 |             'No, not of Hispanic, Latino, or Spanish origin',
+  136 |             'Yes, of Hispanic origin',
+  137 |             'Yes, of Latino origin',
+  138 |             'Yes, of Spanish origin',
+  139 |             'Prefer not to say',
+  140 |             'Ethnicity field not included on the form'
+```
