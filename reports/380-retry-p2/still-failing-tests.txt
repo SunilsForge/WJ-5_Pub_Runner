@@ -1,0 +1,7 @@
+Still failing after rerun pass 2 (main run #380) — 1 test(s)
+
+1. All Examinees - VWKMEM Sample Items Correct and then Incorrect Scenario Test Rerouting
+   ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
+
+Affected spec files (1):
+  ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
