@@ -1,0 +1,26 @@
+Still failing after rerun pass 1 (main run #380) — 9 test(s)
+
+1. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/ANLSYN_Rerouting.spec.ts
+2. All Examinees - Sample Items Rerouting Scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Rerouting.spec.ts
+3. Ages 4 to 7 - Score Error Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+4. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Rerouting.spec.ts
+5. All Examinees - VWKMEM Sample Items Correct and then Incorrect Scenario Test Rerouting
+   ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
+6. All Examinees - ANLSYN Sample Items Correct and then Incorrect Scenario Test Rerouting
+   ReroutingandLeftNav/ANLSYN_Rerouting.spec.ts
+7. All Examinees - VWKMEM Review mode Verification scenario Test Rerouting
+   ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
+8. Ages 4 to 7 - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+9. Grade 3 to Adult - BLKROT Sample Items Correct and then Incorrect Scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+
+Affected spec files (4):
+  ReroutingandLeftNav/ANLSYN_Rerouting.spec.ts
+  ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+  ReroutingandLeftNav/LETPAT_Rerouting.spec.ts
+  ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
