@@ -50,6 +50,7 @@ on:
           - "25"
           - "40"
           - "95"
+          - "138"
       distribute_by_test:
         description: "Balance shards by test count, not spec file. Affects only UIAndReports & ReroutingandLeftNav."
         required: false
@@ -61,7 +62,7 @@ on:
         default: false
         type: boolean
       rerun_passes:
-        description: "Rerun passes (needs rerun_failed). Each pass retries the last pass's failures; stops once clean. 2+ = final pass runs in slow-mo."
+        description: "Rerun passes (needs rerun_failed). Each pass retries the last pass's failures; stops once clean. The last 2 passes run in slow-mo (so 1–2 = all)."
         required: false
         default: "1"
         type: choice
@@ -72,7 +73,7 @@ on:
           - "4"
           - "5"
       final_pass_slowmo_ms:
-        description: "Slow-mo (ms) on the LAST rerun pass only, to settle timing-flaky tests. Needs rerun_passes 2+. That pass also gets 2x the test timeout."
+        description: "Slow-mo (ms) on the LAST 2 rerun passes (every pass if rerun_passes is 1–2), to settle timing-flaky tests. Slow passes get 2x the test timeout."
         required: false
         default: "500"
         type: choice

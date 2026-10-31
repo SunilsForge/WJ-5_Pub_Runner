@@ -11,14 +11,13 @@
 #   PROJECT      Playwright --project (browser)
 #   GREP         optional --grep pattern      (main pipeline)
 #   SLICES_DIR   rerun pipeline: dir holding slices/shard-<i>.json (the
-#                .last-run.json shape). Each slice is placed as
-#                test-results/.last-run.json and listed with --last-failed and
-#                no --shard. Forces serial listing (one shared .last-run.json).
-#   CONCURRENCY  parallel lists (main pipeline only)            [default 4]
+#                .last-run.json shape). Each slice is placed as .last-run.json in
+#                its OWN --output dir (dist-map/out/shard-<i>) and listed with
+#                --last-failed and no --shard, so slices list in parallel too.
+#   CONCURRENCY  parallel lists                                 [default 4]
 set -uo pipefail
 N="${SHARD_COUNT:-1}"
 CC="${CONCURRENCY:-4}"
-[ -n "${SLICES_DIR:-}" ] && CC=1
 mkdir -p dist-map/logs
 
 # Prints why a list JSON is unusable (missing, unparseable, or carrying
@@ -51,10 +50,13 @@ list_shard() {
       echo "slice file ${SLICES_DIR}/shard-${i}.json not found" > "dist-map/logs/shard-${i}.log"
       return
     fi
-    # Each slice already holds only its shard's tests, so no --shard.
-    mkdir -p test-results
-    cp "${SLICES_DIR}/shard-${i}.json" test-results/.last-run.json
-    args+=(--last-failed)
+    # Each slice already holds only its shard's tests, so no --shard. --last-failed
+    # reads .last-run.json from the --output dir, so a per-slice dir keeps parallel
+    # lists from clobbering each other (and leaves test-results/ alone).
+    local out="dist-map/out/shard-${i}"
+    mkdir -p "$out"
+    cp "${SLICES_DIR}/shard-${i}.json" "$out/.last-run.json"
+    args+=(--last-failed --output="$out")
   else
     args+=(--shard="${i}/${N}")
     [ -n "${GREP:-}" ] && args+=(--grep "${GREP}")

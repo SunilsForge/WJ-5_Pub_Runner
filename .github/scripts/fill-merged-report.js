@@ -128,8 +128,8 @@ const rerunRows = setup.rerunFailed
       row("🔂", "Rerun passes", esc(String(passes))),
       row(
         "🐢",
-        "Final-pass slow-mo",
-        passes >= 2 ? `${esc(setup.finalPassSlowmoMs || "500")} ms on pass ${passes} (2× timeout)` : "not used (needs 2+ passes)"
+        "Slow-mo (last 2 passes)",
+        `${esc(setup.finalPassSlowmoMs || "500")} ms on ${passes <= 2 ? (passes === 1 ? "pass 1" : "passes 1–2") : `passes ${passes - 1}–${passes}`} (2× timeout)`
       ),
     ]
   : [row("🔄", "Auto-rerun failures", pill("off", "off"))];
