@@ -8,10 +8,10 @@ on:
         required: true
         default: "20"
         type: string
-      branch: # New input
+      branch:
         description: "Branch in SunilsForge/WJ-5_Pub to test"
         required: true
-        default: "main" # Default to main branch
+        default: "main"
         type: string
       environment:
         description: "Test environment (prodCanada/ prod/ prodTest/ stage/ qa)"
@@ -50,6 +50,7 @@ on:
           - "25"
           - "40"
           - "95"
+          - "138"
       distribute_by_test:
         description: "Balance shards by test count, not spec file. Affects only UIAndReports & ReroutingandLeftNav."
         required: false
@@ -61,7 +62,7 @@ on:
         default: false
         type: boolean
       rerun_passes:
-        description: "Rerun passes (needs rerun_failed). Each pass retries the last pass's failures; stops once clean. 2+ = final pass runs in slow-mo."
+        description: "Rerun passes (needs rerun_failed). Each pass retries the last pass's failures; stops once clean. The last 2 passes run in slow-mo (so 1–2 = all)."
         required: false
         default: "1"
         type: choice
@@ -72,7 +73,7 @@ on:
           - "4"
           - "5"
       final_pass_slowmo_ms:
-        description: "Slow-mo (ms) on the LAST rerun pass only, to settle timing-flaky tests. Needs rerun_passes 2+. That pass also gets 2x the test timeout."
+        description: "Slow-mo (ms) on the LAST 2 rerun passes (every pass if rerun_passes is 1–2), to settle timing-flaky tests. Slow passes get 2x the test timeout."
         required: false
         default: "500"
         type: choice
@@ -158,11 +159,7 @@ permissions:
   id-token: write
   actions: write # allows the trigger-rerun job to dispatch the rerun-failures workflow
 
-# Keep the existing jobs (prepare, test, merge-reports) unchanged
-# Only modify the deploy-report job
-
 jobs:
-  # [prepare, test, merge-reports jobs unchanged as per your instruction]
   prepare:
     runs-on: ubuntu-24.04
     outputs:
@@ -219,17 +216,17 @@ jobs:
           ref: ${{ github.event.inputs.branch }}
           fetch-depth: 1
 
+      # After the test-repo checkout (which cleans the workspace), never before.
+      - name: Checkout runner repo for shared scripts & template
+        uses: actions/checkout@v5
+        with:
+          path: runner-repo
+
       - name: "Enable per-test distribution (mirror test job)"
-        # Same codemod as the test job so the previewed distribution matches the
-        # actual run (test-level for the two folders when the toggle is on).
+        # Same script as the test job so the previewed distribution matches the run.
         if: ${{ inputs.distribute_by_test }}
         shell: bash
-        run: |
-          set -euo pipefail
-          for dir in "src/tests/UIAndReports" "src/tests/ReroutingandLeftNav"; do
-            [ -d "$dir" ] || continue
-            grep -rl 'mode: *"default"' "$dir" | xargs -r sed -i 's/mode: *"default"/mode: "parallel"/g'
-          done
+        run: bash runner-repo/.github/scripts/distribute-by-test.sh
 
       - name: Set up Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v5
@@ -238,11 +235,6 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm ci
-
-      - name: Checkout runner repo for shared scripts & template
-        uses: actions/checkout@v5
-        with:
-          path: runner-repo
 
       - name: Compute per-shard test lists
         shell: bash
@@ -289,46 +281,24 @@ jobs:
           ref: ${{ github.event.inputs.branch }}
           fetch-depth: 1
 
-      - name: "Enable per-test distribution (UIAndReports & ReroutingandLeftNav only)"
-        # OPT-IN. When distribute_by_test is checked, flip the two target folders'
-        # describes from serial (`mode: "default"`, which pins a whole spec file to
-        # one shard) to `mode: "parallel"`, so Playwright's --shard distributes their
-        # individual scenarios by COUNT across shards instead of by whole file.
-        #
-        # Scope is deliberately limited to these two folders by path — no other folder
-        # is read or modified, and we do NOT touch the global `fullyParallel` config,
-        # so test_dataExport / functional / derived_scores / etc. keep their exact
-        # current file-level flow whether this toggle is on or off.
-        #
-        # This edits ONLY the ephemeral CI checkout — nothing is committed to WJ-5_Pub.
-        # Every shard runs this identically, so Playwright's deterministic sharding
-        # stays consistent across shards.
+      # After the test-repo checkout (which cleans the workspace), never before.
+      # Lands in runner-repo/, outside Playwright's testDir (./src/tests).
+      - name: Checkout runner repo for shared scripts
         if: ${{ inputs.distribute_by_test }}
-        # The Playwright container's default shell is sh (dash); pin bash so
-        # `set -o pipefail` and `mapfile` are available.
+        uses: actions/checkout@v5
+        with:
+          path: runner-repo
+
+      - name: "Enable per-test distribution (UIAndReports & ReroutingandLeftNav only)"
+        # OPT-IN. Flips the two folders' describes from serial to parallel so --shard
+        # balances their scenarios by count. Ephemeral checkout only; see the script.
+        # REQUIRE_CHANGES fails the shard if nothing changed (would mis-distribute).
+        if: ${{ inputs.distribute_by_test }}
+        # The Playwright container's default shell is sh (dash); pin bash.
         shell: bash
-        run: |
-          set -euo pipefail
-          echo "distribute_by_test = ON — rewriting describe mode 'default' -> 'parallel' in target folders."
-          total=0
-          for dir in "src/tests/UIAndReports" "src/tests/ReroutingandLeftNav"; do
-            if [ ! -d "$dir" ]; then
-              echo "::warning::target folder not found: $dir (skipping)"
-              continue
-            fi
-            # Only files that actually contain the serial marker
-            mapfile -t files < <(grep -rl 'mode: *"default"' "$dir" || true)
-            for f in "${files[@]}"; do
-              sed -i 's/mode: *"default"/mode: "parallel"/g' "$f"
-              total=$((total + 1))
-            done
-            echo "  $dir: updated ${#files[@]} file(s)"
-          done
-          echo "Total spec files switched to parallel: $total"
-          if [ "$total" -eq 0 ]; then
-            echo "::error::distribute_by_test was ON but no files were changed — aborting so the run isn't silently mis-distributed."
-            exit 1
-          fi
+        env:
+          REQUIRE_CHANGES: "true"
+        run: bash runner-repo/.github/scripts/distribute-by-test.sh
 
       - name: Collect System Information
         run: |
@@ -355,9 +325,10 @@ jobs:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
       - name: Install dependencies
-        run: |
-          npm ci
-          npx playwright install-deps
+        # No `playwright install-deps`: the v1.59.1 container already ships every
+        # browser's OS dependencies. `install <browser>` below still fetches the
+        # browser itself (branded Chrome isn't in the image).
+        run: npm ci
       - name: Install Playwright browsers
         run: npx playwright install ${{ inputs.browser }}
       - name: Run Playwright tests
@@ -573,7 +544,10 @@ jobs:
           BLOB_COUNT=$(ls all-blob-reports/ 2>/dev/null | wc -l)
           if [ "$BLOB_COUNT" -gt 0 ]; then
             echo "Found $BLOB_COUNT blob file(s) — generating native merged report..."
-            npx playwright merge-reports --reporter=html all-blob-reports || true
+            # Pinned: this job has no npm ci, so a bare `npx playwright` would fetch the
+            # LATEST release. Blobs must be merged by the version that wrote them —
+            # keep in lockstep with the container image (same as the rerun publish).
+            npx playwright@1.59.1 merge-reports --reporter=html all-blob-reports || true
             # Playwright outputs to playwright-report/ by default
             if [ -d "playwright-report" ]; then
               mv playwright-report merged-report/playwright-merged
@@ -595,116 +569,9 @@ jobs:
         # Backwards-compatible: if this step fails, deploy-report falls back to the existing CURRENT_RUN shape.
         if: always()
         continue-on-error: true
-        run: |
-          node << 'SCRIPT'
-          const fs = require('fs');
-          const path = require('path');
-
-          const artifactsDir = 'all-artifacts';
-          let shardDirs = [];
-          try {
-            shardDirs = fs.readdirSync(artifactsDir)
-              .filter(d => d.startsWith('playwright-report-shard-'))
-              .sort((a, b) => parseInt(a.split('-').pop()) - parseInt(b.split('-').pop()));
-          } catch (e) {
-            console.warn('No artifacts directory — writing empty summary files');
-          }
-
-          let totalTests = 0, totalPassed = 0, totalFailed = 0, totalSkipped = 0, totalFlaky = 0;
-          let durationMs = 0;
-          const failures = [];
-          const flakyTests = [];
-
-          // Strip ANSI escape codes — keep parity with notify job
-          function stripAnsi(str) {
-            return String(str || '').replace(/\x1b\[[0-9;]*m/g, '');
-          }
-          // Normalize error message so grouping is stable across runs
-          function normalizeError(msg) {
-            return msg
-              .replace(/'[^']*'/g, "'...'")
-              .replace(/"[^"]*"/g, '"..."')
-              .replace(/\d+ms/g, 'Nms')
-              .replace(/locator\('[^']*'\)/g, "locator('...')")
-              .replace(/\d+/g, 'N')
-              .substring(0, 150);
-          }
-          function walkSuites(suites) {
-            for (const suite of (suites || [])) {
-              if (suite.suites) walkSuites(suite.suites);
-              for (const spec of (suite.specs || [])) {
-                for (const test of (spec.tests || [])) {
-                  totalTests++;
-                  if (test.status === 'expected') {
-                    totalPassed++;
-                  } else if (test.status === 'unexpected') {
-                    totalFailed++;
-                    const lastResult = test.results?.[test.results.length - 1];
-                    const rawMsg = stripAnsi(lastResult?.error?.message || 'Unknown error');
-                    const firstLine = rawMsg.split('\n')[0].trim().substring(0, 200);
-                    failures.push({
-                      title: spec.title,
-                      file: spec.file || '',
-                      errorType: normalizeError(firstLine),
-                      errorFirstLine: firstLine
-                    });
-                  } else if (test.status === 'flaky') {
-                    totalFlaky++;
-                    flakyTests.push({ title: spec.title, file: spec.file || '' });
-                  } else if (test.status === 'skipped') {
-                    totalSkipped++;
-                  }
-                  // Sum per-test duration across all attempts for the run-level duration metric
-                  for (const r of (test.results || [])) {
-                    if (typeof r.duration === 'number') durationMs += r.duration;
-                  }
-                }
-              }
-            }
-          }
-
-          for (const dir of shardDirs) {
-            const jsonPath = path.join(artifactsDir, dir, 'results.json');
-            if (!fs.existsSync(jsonPath)) {
-              console.warn('Missing', jsonPath);
-              continue;
-            }
-            try {
-              const report = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
-              walkSuites(report.suites || []);
-              // Prefer stats.duration if Playwright provides it — it's wall-clock per shard
-              if (report.stats && typeof report.stats.duration === 'number') {
-                // overwrite the per-test sum for this shard by re-summing only if stats unavailable;
-                // we keep durationMs as sum-of-test-durations above for consistency (test work, not wall-clock).
-              }
-            } catch (e) {
-              console.error('Could not parse', jsonPath, '-', e.message);
-            }
-          }
-
-          // Group failures by normalized error type
-          const groupedMap = {};
-          for (const f of failures) {
-            if (!groupedMap[f.errorType]) groupedMap[f.errorType] = { errorType: f.errorType, count: 0, errorFirstLine: f.errorFirstLine, tests: [] };
-            groupedMap[f.errorType].count++;
-            groupedMap[f.errorType].tests.push({ title: f.title, file: f.file });
-          }
-          const failureGroups = Object.values(groupedMap).sort((a, b) => b.count - a.count);
-
-          fs.mkdirSync('merged-report', { recursive: true });
-          const counts = { totalTests, totalPassed, totalFailed, totalSkipped, totalFlaky, durationMs };
-          fs.writeFileSync('merged-report/run-counts.json', JSON.stringify(counts));
-          console.log('Wrote run-counts.json:', counts);
-
-          const summary = {
-            generatedAt: new Date().toISOString(),
-            counts,
-            failureGroups,
-            flakyTests
-          };
-          fs.writeFileSync('merged-report/dashboard-summary.json', JSON.stringify(summary));
-          console.log('Wrote dashboard-summary.json with', failureGroups.length, 'failure groups,', flakyTests.length, 'flaky tests');
-          SCRIPT
+        # Also writes results-summary/results-summary.json (detailed failures for Slack),
+        # uploaded below as a tiny artifact so notify needn't re-download every shard.
+        run: node runner-repo/.github/scripts/parse-results.js
 
       - name: Build per-test Results Table
         # Renders merged-report/results-table.html (Passed/Failed/Flaky/Skipped for
@@ -722,6 +589,15 @@ jobs:
           name: merged-playwright-report
           path: merged-report/
           retention-days: 90
+
+      - name: Upload results summary (for Slack)
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: results-summary
+          path: results-summary/
+          if-no-files-found: ignore
+          retention-days: 30
 
       - name: Create All-Index artifact
         run: |
@@ -744,7 +620,6 @@ jobs:
           path: all-index/
           retention-days: 90
 
-  # The deploy-report job is completely rewritten
   deploy-report:
     name: Deploy Report to GitHub Pages
     timeout-minutes: 10
@@ -937,127 +812,13 @@ jobs:
         run: bash runner-repo/.github/scripts/build-actions-run-map.sh site-deploy/actions-runs.json
 
       - name: Handle large files in deploy view
-        run: |
-          cd gh-pages
-          DEPLOY_DIR="../site-deploy"
-          RUN_DIR="$DEPLOY_DIR/reports/${{ steps.run-info.outputs.run_number }}"
-          mkdir -p "$RUN_DIR/large-files-info"
-          echo "Checking for large files..."
-          max_file_size=$((100 * 1024 * 1024)) # 100MB in bytes
-          # Start empty — this runs after the gh-pages push now, so an older committed
-          # copy of the list must not leak previous runs' entries into this run's page.
-          : > large_files_list.txt
-          find ../new-report -type f -size +${max_file_size}c | while read -r file; do
-            file_size=$(du -b "$file" | cut -f1)
-            file_size_mb=$(echo "scale=2; $file_size / 1048576" | bc)
-            relative_path=${file#../new-report/}
-            echo "Large file detected: $relative_path ($file_size_mb MB)"
-            echo "Large file detected: $relative_path ($file_size_mb MB)" >> large_files_list.txt
-          done
-          if [ -s large_files_list.txt ]; then
-            cp large_files_list.txt "$RUN_DIR/large-files-info/"
-            cat > "$RUN_DIR/large-files-info/index.html" << EOF
-            <!DOCTYPE html>
-            <html>
-            <head>
-              <title>Large Files Information</title>
-              <style>
-                body { font-family: -apple-system, system-ui, sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; }
-                .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin-bottom: 20px; }
-                .info-box { background: #e7f5fe; border-left: 4px solid #0366d6; padding: 15px; margin-bottom: 20px; }
-                table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-                th, td { text-align: left; padding: 8px; border-bottom: 1px solid #ddd; }
-                th { background-color: #f6f8fa; }
-                .artifact-link { display: inline-block; background: #0366d6; color: white; padding: 6px 12px; 
-                                text-decoration: none; border-radius: 4px; margin-top: 10px; }
-                .artifact-link:hover { background: #0258b8; }
-              </style>
-            </head>
-            <body>
-              <h1>Large Files Excluded from GitHub Pages</h1>
-              <div class="warning">
-                <h3>⚠️ Some files were too large to be included in the GitHub Pages deployment</h3>
-                <p>GitHub has a 100MB file size limit for regular Git repositories. The files listed below exceeded this limit 
-                and were excluded from the deployment.</p>
-              </div>
-              <div class="info-box">
-                <h3>📋 Access Complete Artifacts</h3>
-                <p>You can access the complete test results, including these large files, from the GitHub Actions artifacts.</p>
-                <p>The artifacts are stored for 90 days and contain all test results, including videos, traces, and screenshots.</p>
-                <p>To download the artifacts:</p>
-                <ol>
-                  <li>Go to the GitHub Actions run page (link below)</li>
-                  <li>Scroll down to the "Artifacts" section</li>
-                  <li>Download the artifact that includes your files of interest</li>
-                </ol>
-                <p><strong>Note:</strong> Large video and trace files are typically most useful for debugging test failures.</p>
-              </div>
-              <h2>Excluded Files</h2>
-              <table>
-                <tr>
-                  <th>File Path</th>
-                  <th>Size</th>
-                </tr>
-            EOF
-            while IFS= read -r line; do
-              if [[ $line == Large\ file\ detected:* ]]; then
-                file_path=$(echo "$line" | sed 's/Large file detected: \(.*\) (\(.*\) MB)/\1/')
-                file_size=$(echo "$line" | sed 's/Large file detected: \(.*\) (\(.*\) MB)/\2/')
-                echo "          <tr>
-                  <td>$file_path</td>
-                  <td>$file_size MB</td>
-                </tr>" >> "$RUN_DIR/large-files-info/index.html"
-                placeholder_dir=$(dirname "$RUN_DIR/$file_path")
-                mkdir -p "$placeholder_dir"
-                placeholder_file_html="${placeholder_dir}/$(basename "${file_path%.*}").html"
-                cat > "$placeholder_file_html" << EOF_PLACEHOLDER
-                <!DOCTYPE html>
-                <html>
-                <head>
-                  <title>Large File Placeholder</title>
-                  <style>
-                    body { font-family: -apple-system, system-ui, sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; text-align: center; }
-                    .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin-bottom: 20px; text-align: left; }
-                    .info { margin: 30px 0; }
-                    .link { display: inline-block; background: #0366d6; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; }
-                    .link:hover { background: #0258b8; }
-                  </style>
-                </head>
-                <body>
-                  <h1>Large File Placeholder</h1>
-                  <div class="warning">
-                    <h3>⚠️ This file was too large to be included in GitHub Pages</h3>
-                    <p>The original file <strong>$(basename "$file_path")</strong> is $file_size MB, which exceeds GitHub's 100MB limit.</p>
-                  </div>
-                  <div class="info">
-                    <p>Please refer to the GitHub Actions artifacts to access the complete file.</p>
-                  </div>
-                  <a href="../../large-files-info/index.html" class="link">View All Large Files Info</a>
-                </body>
-                </html>
-          EOF_PLACEHOLDER
-              fi
-            done < large_files_list.txt
-            cat >> "$RUN_DIR/large-files-info/index.html" << EOF
-              </table>
-              <a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" 
-                 class="artifact-link" target="_blank" style="font-size: 16px; padding: 12px 24px; text-align: center; display: block; margin: 20px auto; max-width: 300px;">
-                📥 Download Complete Artifacts
-              </a>
-              <p style="text-align: center; margin-top: 5px; color: #586069;">Artifacts include all videos, traces, and large files</p>
-            </body>
-            </html>
-          EOF
-            if [ -f "$RUN_DIR/index.html" ]; then
-              sed -i '/<body>/a \
-              <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0;"> \
-                <h3 style="margin-top: 0;">⚠️ Some files were too large to be included in this report</h3> \
-                <p>Some large files from test results have been excluded from this GitHub Pages deployment due to GitHub file size limits.</p> \
-                <p><a href="large-files-info/index.html" style="color: #0366d6;">View information about excluded files</a></p> \
-              </div>' "$RUN_DIR/index.html"
-            fi
-          fi
-
+        # Files > 100 MB were skipped by apply-main-run.sh; this documents them on the
+        # run's page (info page, per-file placeholders, banner). No-op when none.
+        env:
+          NEW_REPORT_DIR: ${{ github.workspace }}/new-report
+          RUN_DIR: ${{ github.workspace }}/site-deploy/reports/${{ steps.run-info.outputs.run_number }}
+          ACTIONS_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node runner-repo/.github/scripts/build-large-files-info.js
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
@@ -1107,22 +868,40 @@ jobs:
     needs: [test, deploy-report]
     runs-on: ubuntu-latest
     steps:
-      - name: Download shard report artifacts
-        # NOTE: do NOT use `pattern: playwright-report-shard-*` here.
-        # When only one artifact matches the pattern (shard_count: 1), download-artifact@v4+
-        # skips the per-artifact subdirectory and extracts files directly into `path`.
-        # The downstream `startsWith('playwright-report-shard-')` filter then finds nothing,
-        # leading to all-zero counts in Slack/Step Summary on single-shard runs.
-        # Downloading everything (like the merge-reports job does) guarantees per-artifact
-        # subdirectories regardless of shard_count. The extra small artifacts are filtered out.
+      - name: Download results summary
+        # Small artifact written by merge-reports (parse-results.js) — replaces
+        # re-downloading every shard artifact (~1.5 min on a 20-shard run).
+        id: summary
+        continue-on-error: true
         uses: actions/download-artifact@v7
         with:
-          path: all-artifacts
+          name: results-summary
+          path: results-summary
+
+      - name: Checkout runner repo for scripts
+        uses: actions/checkout@v5
+        with:
+          path: runner-repo
 
       - name: Set up Node.js
         uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
+
+      # Fallback when merge-reports failed before writing the summary: parse the
+      # shard artifacts here, as notify used to. NOTE: do NOT use `pattern:` —
+      # with one shard download-artifact flattens the directory and every count
+      # becomes zero (PR #23). Download everything; the script filters by name.
+      - name: Download shard report artifacts (fallback)
+        if: steps.summary.outcome != 'success'
+        uses: actions/download-artifact@v7
+        with:
+          path: all-artifacts
+      - name: Parse shard results (fallback)
+        if: steps.summary.outcome != 'success'
+        env:
+          DASHBOARD_OUT: ""
+        run: node runner-repo/.github/scripts/parse-results.js
 
       - name: Parse results and notify Slack
         env:
@@ -1134,316 +913,7 @@ jobs:
           RUN_REASON: ${{ github.event.inputs.run_reason }}
           TEST_NEEDS_RESULT: ${{ needs.test.result }}
           PAGES_URL: ${{ needs.deploy-report.outputs.pages_url }}
-        run: |
-          node << 'SCRIPT'
-          const fs = require('fs');
-          const path = require('path');
-          const https = require('https');
-          const { URL } = require('url');
-
-          // ── Parse all shard results.json files ──
-          const artifactsDir = 'all-artifacts';
-          let shardDirs = [];
-          try {
-            shardDirs = fs.readdirSync(artifactsDir)
-              .filter(d => d.startsWith('playwright-report-shard-'))
-              .sort((a, b) => {
-                const numA = parseInt(a.split('-').pop());
-                const numB = parseInt(b.split('-').pop());
-                return numA - numB;
-              });
-          } catch (e) {
-            console.error('Could not read artifacts directory:', e.message);
-          }
-
-          let totalPassed = 0;
-          let totalFailed = 0;
-          let totalSkipped = 0;
-          let totalFlaky = 0;
-          let totalTests = 0;
-          let shardsWithJson = 0;
-          const shardsMissingJson = [];
-          const failures = [];
-
-          // Strip ANSI escape codes (terminal colors) so errors render cleanly in Slack/GitHub
-          function stripAnsi(str) {
-            return str.replace(/\u001b\[[0-9;]*m/g, '').replace(/\x1b\[[0-9;]*m/g, '');
-          }
-
-          // Normalize error message for grouping: strip specific values, keep the pattern
-          function normalizeError(msg) {
-            return msg
-              .replace(/'[^']*'/g, "'...'")
-              .replace(/"[^"]*"/g, '"..."')
-              .replace(/\d+ms/g, 'Nms')
-              .replace(/locator\('[^']*'\)/g, "locator('...')")
-              .replace(/\d+/g, 'N')
-              .substring(0, 150);
-          }
-
-          // Recursively walk Playwright JSON report suites to extract test results
-          function walkSuites(suites) {
-            for (const suite of (suites || [])) {
-              if (suite.suites) walkSuites(suite.suites);
-              for (const spec of (suite.specs || [])) {
-                for (const test of (spec.tests || [])) {
-                  totalTests++;
-                  // Playwright statuses: expected=passed, unexpected=failed, flaky, skipped
-                  if (test.status === 'expected') {
-                    totalPassed++;
-                  } else if (test.status === 'unexpected') {
-                    totalFailed++;
-                    const lastResult = test.results?.[test.results.length - 1];
-                    const rawMsg = lastResult?.error?.message || 'No error message available';
-                    const rawStack = lastResult?.error?.stack || '';
-                    const cleanMsg = stripAnsi(rawMsg);
-                    const cleanStack = stripAnsi(rawStack);
-                    const msgLines = cleanMsg.split('\n').map(l => l.trim()).filter(Boolean);
-                    const stackLines = cleanStack.split('\n').map(l => l.trim()).filter(Boolean);
-
-                    // Line 1: error type (e.g., "TimeoutError: locator.fill: Timeout 60000ms exceeded.")
-                    const errorType = msgLines[0] || 'Unknown error';
-                    // Call log line: "- waiting for getByLabel('First Name*,...')"
-                    const callLogLine = msgLines.find(l => l.startsWith('- waiting for') || l.startsWith('- locator'));
-                    // File + line from stack trace: "at ../pages/wj5_dashBoard.page.ts:233"
-                    // Check both message and stack — Playwright puts the location in the stack
-                    const allLines = [...msgLines, ...stackLines];
-                    const fileLine = allLines.find(l => /^at\s+/.test(l) && /\.(page|spec|ts|js)[:\d]*/.test(l));
-
-                    // Build detailed error: type + what it was doing + where
-                    let detailedError = errorType.substring(0, 200);
-                    if (callLogLine) detailedError += '\n' + callLogLine.substring(0, 200);
-                    if (fileLine) detailedError += '\n' + fileLine.substring(0, 200);
-
-                    failures.push({
-                      title: spec.title,
-                      file: spec.file || '',
-                      error: detailedError,
-                      errorType: normalizeError(errorType)
-                    });
-                  } else if (test.status === 'flaky') {
-                    totalFlaky++;
-                  } else if (test.status === 'skipped') {
-                    totalSkipped++;
-                  }
-                }
-              }
-            }
-          }
-
-          for (const dir of shardDirs) {
-            const jsonPath = path.join(artifactsDir, dir, 'results.json');
-            if (!fs.existsSync(jsonPath)) {
-              shardsMissingJson.push(dir.split('-').pop());
-              console.warn(`Warning: ${jsonPath} not found`);
-              continue;
-            }
-            try {
-              const report = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
-              shardsWithJson++;
-              walkSuites(report.suites || []);
-            } catch (e) {
-              console.error(`Error parsing ${jsonPath}:`, e.message);
-              shardsMissingJson.push(dir.split('-').pop());
-            }
-          }
-
-          // ── Determine overall status ──
-          const overallFailed = totalFailed > 0 || process.env.TEST_NEEDS_RESULT === 'failure';
-          const statusText = overallFailed ? 'FAILED' : 'PASSED';
-
-          // ── Group failures by normalized error type (most frequent first) ──
-          const grouped = {};
-          for (const f of failures) {
-            const key = f.errorType;
-            if (!grouped[key]) grouped[key] = [];
-            grouped[key].push(f);
-          }
-          const groupedEntries = Object.entries(grouped)
-            .sort((a, b) => b[1].length - a[1].length);
-
-          // ── Build URLs ──
-          const repo = process.env.GITHUB_REPOSITORY;
-          const runId = process.env.GITHUB_RUN_ID;
-          const runNumber = process.env.GITHUB_RUN_NUMBER;
-          const owner = process.env.GITHUB_REPOSITORY_OWNER;
-          const repoName = repo.split('/')[1];
-          const actionsUrl = `https://github.com/${repo}/actions/runs/${runId}`;
-          // Use actual deployed URL from deploy-report job; fall back to convention if deploy was skipped
-          const pagesUrl = process.env.PAGES_URL || `https://${owner}.github.io/${repoName}/`;
-
-          // ── Write GitHub Step Summary (markdown table in Actions UI) ──
-          let summary = `## ${overallFailed ? '\u{1F534}' : '\u{1F7E2}'} Playwright Test Results — Run #${runNumber}\n\n`;
-          summary += `**Environment:** ${process.env.TEST_ENV} | **Browser:** ${process.env.BROWSER} | **Shards:** ${process.env.SHARD_COUNT}\n\n`;
-          summary += `| Metric | Count |\n|---|---|\n`;
-          summary += `| Total | ${totalTests} |\n`;
-          summary += `| Passed | ${totalPassed} |\n`;
-          summary += `| Failed | ${totalFailed} |\n`;
-          summary += `| Skipped | ${totalSkipped} |\n`;
-          summary += `| Flaky | ${totalFlaky} |\n\n`;
-          if (groupedEntries.length > 0) {
-            // Helper: escape pipe chars and replace newlines with <br> for markdown table cells
-            function mdCell(str) {
-              return str.replace(/\|/g, '\\|').replace(/\n/g, '<br>');
-            }
-
-            // Section A: Grouped by error type
-            summary += `### Failure Analysis\n\n`;
-            summary += `| Sl.No | Test Cases | Count | Error Reason |\n|---|---|---|---|\n`;
-            groupedEntries.forEach(([errorType, tests], idx) => {
-              const tcList = tests.map(t => `${mdCell(t.title)} (${mdCell(t.file)})`).join(', ');
-              // Show detailed error — use <br> outside backticks so HTML renders properly
-              const errorParts = tests[0].error.split('\n').map(l => l.replace(/\|/g, '\\|'));
-              const detailedError = errorParts.map(p => `\`${p}\``).join('<br>');
-              summary += `| ${idx + 1} | ${tcList} | ${tests.length} | ${detailedError} |\n`;
-            });
-            summary += '\n';
-
-            // Section B: Detailed per-TC failures
-            summary += `### Detailed Failures\n\n`;
-            summary += `| # | Test Case | File | Error |\n|---|---|---|---|\n`;
-            failures.forEach((f, idx) => {
-              const errorParts = f.error.split('\n').map(l => l.replace(/\|/g, '\\|'));
-              const detailedError = errorParts.map(p => `\`${p}\``).join('<br>');
-              summary += `| ${idx + 1} | ${mdCell(f.title)} | ${mdCell(f.file)} | ${detailedError} |\n`;
-            });
-            summary += '\n';
-          }
-          summary += `[Full Report](${pagesUrl}) | [Actions Run](${actionsUrl})\n`;
-
-          const summaryPath = process.env.GITHUB_STEP_SUMMARY;
-          if (summaryPath) {
-            fs.appendFileSync(summaryPath, summary);
-            console.log('Wrote GitHub Step Summary');
-          }
-
-          // ── Build Slack Block Kit message ──
-          const blocks = [
-            {
-              type: 'header',
-              text: {
-                type: 'plain_text',
-                text: `${overallFailed ? '\u{1F534}' : '\u{1F7E2}'} Playwright Run #${runNumber} — ${statusText}`,
-                emoji: true
-              }
-            },
-            {
-              type: 'section',
-              fields: [
-                { type: 'mrkdwn', text: `*Environment:*\n${process.env.TEST_ENV}` },
-                { type: 'mrkdwn', text: `*Browser:*\n${process.env.BROWSER}` },
-                { type: 'mrkdwn', text: `*Shards:*\n${process.env.SHARD_COUNT}` },
-                { type: 'mrkdwn', text: `*Reason:*\n${process.env.RUN_REASON || 'N/A'}` }
-              ]
-            },
-            {
-              type: 'section',
-              fields: [
-                { type: 'mrkdwn', text: `*Total:* ${totalTests}` },
-                { type: 'mrkdwn', text: `*Passed:* ${totalPassed} :white_check_mark:` },
-                { type: 'mrkdwn', text: `*Failed:* ${totalFailed} :x:` },
-                { type: 'mrkdwn', text: `*Skipped:* ${totalSkipped} :fast_forward:  *Flaky:* ${totalFlaky} :warning:` }
-              ]
-            }
-          ];
-
-          // Warn if some shards had no JSON results
-          if (shardsMissingJson.length > 0) {
-            blocks.push({
-              type: 'context',
-              elements: [{
-                type: 'mrkdwn',
-                text: `:warning: JSON results missing for shard(s): ${shardsMissingJson.join(', ')}. Counts may be incomplete.`
-              }]
-            });
-          }
-
-          // Add simple grouped failure summary for Slack (detailed tables are in GitHub Step Summary)
-          if (groupedEntries.length > 0) {
-            blocks.push({ type: 'divider' });
-            let failText = groupedEntries.slice(0, 10)
-              .map(([ , tests], idx) => {
-                const errorFirstLine = tests[0].error.split('\n')[0];
-                return `${idx + 1}. \`${errorFirstLine}\` — *${tests.length} test(s)*`;
-              })
-              .join('\n');
-            if (groupedEntries.length > 10) {
-              failText += `\n_...and ${groupedEntries.length - 10} more error groups_`;
-            }
-            blocks.push({
-              type: 'section',
-              text: { type: 'mrkdwn', text: `*Failed Tests (grouped by error):*\n${failText}` }
-            });
-          }
-
-          // Action buttons linking to full report and Actions run
-          blocks.push({ type: 'divider' });
-          blocks.push({
-            type: 'actions',
-            elements: [
-              {
-                type: 'button',
-                text: { type: 'plain_text', text: 'Full Report', emoji: true },
-                url: pagesUrl,
-                style: 'primary'
-              },
-              {
-                type: 'button',
-                text: { type: 'plain_text', text: 'GitHub Actions Run', emoji: true },
-                url: actionsUrl
-              }
-            ]
-          });
-
-          // ── Send Slack webhook ──
-          const webhookUrl = process.env.SLACK_WEBHOOK_URL;
-          if (!webhookUrl) {
-            console.log('SLACK_WEBHOOK_URL not set — skipping Slack notification.');
-            console.log('Message payload (for dry-run verification):');
-            console.log(JSON.stringify({ blocks }, null, 2));
-            process.exit(0);
-          }
-
-          const payload = JSON.stringify({ blocks });
-          const parsed = new URL(webhookUrl);
-
-          const req = https.request({
-            hostname: parsed.hostname,
-            port: 443,
-            path: parsed.pathname,
-            method: 'POST',
-            timeout: 15000, // 15s timeout to avoid hanging if Slack is unresponsive
-            headers: {
-              'Content-Type': 'application/json',
-              'Content-Length': Buffer.byteLength(payload)
-            }
-          }, (res) => {
-            let body = '';
-            res.on('data', chunk => body += chunk);
-            res.on('end', () => {
-              if (res.statusCode === 200) {
-                console.log('Slack notification sent successfully');
-              } else {
-                console.error(`Slack webhook returned ${res.statusCode}: ${body}`);
-                process.exit(1);
-              }
-            });
-          });
-
-          req.on('timeout', () => {
-            console.error('Slack webhook timed out after 15s');
-            req.destroy();
-            process.exit(1);
-          });
-
-          req.on('error', (e) => {
-            console.error('Failed to send Slack notification:', e.message);
-            process.exit(1);
-          });
-
-          req.write(payload);
-          req.end();
-          SCRIPT
+        run: node runner-repo/.github/scripts/notify-slack.js
 
   # After the main run has fully finished (tests + Pages deploy + Slack), and ONLY
   # if the rerun_failed checkbox was ticked, dispatch the separate rerun-failures
