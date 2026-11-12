@@ -330,7 +330,17 @@ jobs:
         # browser itself (branded Chrome isn't in the image).
         run: npm ci
       - name: Install Playwright browsers
-        run: npx playwright install ${{ inputs.browser }}
+        # Retries ride out transient apt/CDN blips (run 43033324245: apt couldn't
+        # resolve archive.ubuntu.com mid-install). A no-op cost when the network is fine.
+        env:
+          BROWSER: ${{ inputs.browser }}
+        run: |
+          for attempt in 1 2 3; do
+            npx playwright install "$BROWSER" && exit 0
+            [ "$attempt" -lt 3 ] && { echo "::warning::browser install attempt $attempt failed — retrying in $((attempt * 20))s"; sleep $((attempt * 20)); }
+          done
+          echo "::error::browser install failed after 3 attempts"
+          exit 1
       - name: Run Playwright tests
         id: run_tests
         continue-on-error: true
