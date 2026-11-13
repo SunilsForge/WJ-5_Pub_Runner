@@ -306,7 +306,17 @@ jobs:
         # No `playwright install-deps`: the container already ships the OS deps.
         run: npm ci
       - name: Install Playwright browser
-        run: npx playwright install ${{ inputs.browser }}
+        # Retries ride out transient apt/CDN blips (run 43033324245: apt couldn't
+        # resolve archive.ubuntu.com mid-install). A no-op cost when the network is fine.
+        env:
+          BROWSER: ${{ inputs.browser }}
+        run: |
+          for attempt in 1 2 3; do
+            npx playwright install "$BROWSER" && exit 0
+            [ "$attempt" -lt 3 ] && { echo "::warning::browser install attempt $attempt failed — retrying in $((attempt * 20))s"; sleep $((attempt * 20)); }
+          done
+          echo "::error::browser install failed after 3 attempts"
+          exit 1
 
       - name: Restore per-shard slices
         uses: actions/download-artifact@v7
