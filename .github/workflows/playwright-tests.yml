@@ -151,7 +151,7 @@ env:
   SLOW_MODE_DELAY_IN_MS: 0
   CI: "true"
   PLAYWRIGHT_WORKERS: 1
-  NODE_VERSION: "20"
+  NODE_VERSION: "22"
 
 permissions:
   contents: write
@@ -206,7 +206,7 @@ jobs:
     needs: prepare
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.59.1-noble
+      image: mcr.microsoft.com/playwright:v1.65.1-noble
     steps:
       - name: Checkout private repository
         uses: actions/checkout@v5
@@ -267,7 +267,7 @@ jobs:
     name: "Shard ${{ matrix.shard }}"
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.59.1-noble
+      image: mcr.microsoft.com/playwright:v1.65.1-noble
     strategy:
       fail-fast: false
       matrix: ${{fromJson(needs.prepare.outputs.matrix)}}
@@ -325,7 +325,7 @@ jobs:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
       - name: Install dependencies
-        # No `playwright install-deps`: the v1.59.1 container already ships every
+        # No `playwright install-deps`: the v1.65.1 container already ships every
         # browser's OS dependencies. `install <browser>` below still fetches the
         # browser itself (branded Chrome isn't in the image).
         run: npm ci
@@ -557,7 +557,7 @@ jobs:
             # Pinned: this job has no npm ci, so a bare `npx playwright` would fetch the
             # LATEST release. Blobs must be merged by the version that wrote them —
             # keep in lockstep with the container image (same as the rerun publish).
-            npx playwright@1.59.1 merge-reports --reporter=html all-blob-reports || true
+            npx playwright@1.65.1 merge-reports --reporter=html all-blob-reports || true
             # Playwright outputs to playwright-report/ by default
             if [ -d "playwright-report" ]; then
               mv playwright-report merged-report/playwright-merged
