@@ -1,0 +1,548 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: functional/subscriptions/adminPortal/AdminPortalCognitiveAccess.spec.ts >> QF-016 - Cognitive clusters disappear once cognitive access is revoked from the admin portal
+- Location: src/tests/functional/subscriptions/adminPortal/AdminPortalCognitiveAccess.spec.ts:25:1
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('div.TestSetCreate_mcs_level1Name[data-clusterid=\'COG\']')
+Expected: visible
+Timeout: 60000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "soft toBeVisible" locator('div.TestSetCreate_mcs_level1Name[data-clusterid=\'COG\']') with timeout 60000ms
+  - waiting for locator('div.TestSetCreate_mcs_level1Name[data-clusterid=\'COG\']')
+
+```
+
+```yaml
+- banner "Clinical Products Header":
+  - button "Skip to main Content"
+  - link "Back to product selection":
+    - /url: /products
+  - text: Riverside Insights Logo
+  - heading "Hello Adolfo SubAut17Nov26152555nxt" [level=2]:
+    - text: Hello
+    - button "Adolfo SubAut17Nov26152555nxt"
+  - navigation:
+    - button "Contact Us"
+    - button "| WJ V Settings"
+    - button "| Sign Out"
+- navigation "Navigation toolbar":
+  - menubar:
+    - menuitem "Dashboard"
+    - menuitem "Test Sets"
+    - menuitem "Examinees"
+    - menuitem "Staff"
+    - menuitem "Reports":
+      - text: Reports
+      - menu
+    - menuitem "Resources"
+  - switch "Offline Mode": "OFF"
+  - text: Offline Mode
+- main:
+  - heading "TEST SET CREATION" [level=1]
+  - heading "Untitled Test Set Edit" [level=2]:
+    - text: Untitled Test Set
+    - button "Edit":
+      - img "Edit"
+  - img
+  - text: "Time Estimate: 0 min"
+  - list
+  - log
+  - button "Cancel"
+  - button "Save" [disabled]
+  - navigation:
+    - tablist:
+      - tab "Clusters" [selected]
+      - tab "All Tests"
+      - tab "Test Sets"
+  - text: Tests of Cognitive Abilities
+  - link "Selective Testing Table":
+    - /url: ./documents/wjv/WJV_COG_Selective_Testing_Table.pdf
+  - button "General Intelligence Clusters":
+    - img
+  - text: General Intelligence Clusters
+  - button "CHC Broad Ability Clusters":
+    - img
+  - text: CHC Broad Ability Clusters
+  - button "CHC Narrow Ability and Clinical Clusters":
+    - img
+  - text: CHC Narrow Ability and Clinical Clusters Tests of Achievement
+  - link "Selective Testing Table":
+    - /url: ./documents/wjv/WJV_ACH_Selective_Testing_Table.pdf
+  - button "Oral Language Clusters":
+    - img
+  - text: Oral Language Clusters
+  - button "Reading Clusters":
+    - img
+  - text: Reading Clusters
+  - button "Math Clusters":
+    - img
+  - text: Math Clusters
+  - button "Writing Clusters":
+    - img
+  - text: Writing Clusters
+  - button "Cross-Domain Achievement Clusters":
+    - img
+  - text: Cross-Domain Achievement Clusters Virtual Test Library
+  - link "Selective Testing Table":
+    - /url: ./documents/wjv/WJV_VTL_Selective_Testing_Table.pdf
+  - button "CHC Broad Ability Clusters":
+    - img
+  - text: CHC Broad Ability Clusters
+  - button "CHC Narrow Ability and Clinical Clusters":
+    - img
+  - text: CHC Narrow Ability and Clinical Clusters
+- contentinfo:
+  - text: Footer region,
+  - link "Riverside Insights Website":
+    - /url: https://www.riversideinsights.com
+    - img "Riverside Insights Website"
+  - link "Riverside Insights Facebook":
+    - /url: https://www.facebook.com/RiversideInsights/
+    - img "Riverside Insights Facebook"
+  - link "Riverside Insights Twitter":
+    - /url: https://twitter.com/1BillionLives
+    - img "Riverside Insights Twitter"
+  - link "Riverside Insights LinkedIn":
+    - /url: https://www.linkedin.com/company/riverside-insights/
+    - img "Riverside Insights LinkedIn"
+  - link "Riverside Insights Instagram":
+    - /url: https://www.instagram.com/riversideinsightsassessments/
+    - img "Riverside Insights Instagram"
+  - button "Leave Feedback"
+  - link "Terms of Use":
+    - /url: https://info.riversideinsights.com/terms-of-use
+  - link "Privacy Policy":
+    - /url: https://info.riversideinsights.com/privacy-assessment_policy
+  - text: Footer region end
+```
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('div.TestSetCreate_mcs_level1Name[data-clusterid=\'ACH\']')
+Expected: visible
+Timeout: 60000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "soft toBeVisible" locator('div.TestSetCreate_mcs_level1Name[data-clusterid=\'ACH\']') with timeout 60000ms
+  - waiting for locator('div.TestSetCreate_mcs_level1Name[data-clusterid=\'ACH\']')
+
+```
+
+```yaml
+- banner "Clinical Products Header":
+  - button "Skip to main Content"
+  - link "Back to product selection":
+    - /url: /products
+  - text: Riverside Insights Logo
+  - heading "Hello Adolfo SubAut17Nov26152555nxt" [level=2]:
+    - text: Hello
+    - button "Adolfo SubAut17Nov26152555nxt"
+  - navigation:
+    - button "Contact Us"
+    - button "| WJ V Settings"
+    - button "| Sign Out"
+- navigation "Navigation toolbar":
+  - menubar:
+    - menuitem "Dashboard"
+    - menuitem "Test Sets"
+    - menuitem "Examinees"
+    - menuitem "Staff"
+    - menuitem "Reports":
+      - text: Reports
+      - menu
+    - menuitem "Resources"
+  - switch "Offline Mode": "OFF"
+  - text: Offline Mode
+- main:
+  - heading "TEST SET CREATION" [level=1]
+  - heading "Untitled Test Set Edit" [level=2]:
+    - text: Untitled Test Set
+    - button "Edit":
+      - img "Edit"
+  - img
+  - text: "Time Estimate: 0 min"
+  - list
+  - log
+  - button "Cancel"
+  - button "Save" [disabled]
+  - navigation:
+    - tablist:
+      - tab "Clusters" [selected]
+      - tab "All Tests"
+      - tab "Test Sets"
+  - text: Tests of Cognitive Abilities
+  - link "Selective Testing Table":
+    - /url: ./documents/wjv/WJV_COG_Selective_Testing_Table.pdf
+  - button "General Intelligence Clusters":
+    - img
+  - text: General Intelligence Clusters
+  - button "CHC Broad Ability Clusters":
+    - img
+  - text: CHC Broad Ability Clusters
+  - button "CHC Narrow Ability and Clinical Clusters":
+    - img
+  - text: CHC Narrow Ability and Clinical Clusters Tests of Achievement
+  - link "Selective Testing Table":
+    - /url: ./documents/wjv/WJV_ACH_Selective_Testing_Table.pdf
+  - button "Oral Language Clusters":
+    - img
+  - text: Oral Language Clusters
+  - button "Reading Clusters":
+    - img
+  - text: Reading Clusters
+  - button "Math Clusters":
+    - img
+  - text: Math Clusters
+  - button "Writing Clusters":
+    - img
+  - text: Writing Clusters
+  - button "Cross-Domain Achievement Clusters":
+    - img
+  - text: Cross-Domain Achievement Clusters Virtual Test Library
+  - link "Selective Testing Table":
+    - /url: ./documents/wjv/WJV_VTL_Selective_Testing_Table.pdf
+  - button "CHC Broad Ability Clusters":
+    - img
+  - text: CHC Broad Ability Clusters
+  - button "CHC Narrow Ability and Clinical Clusters":
+    - img
+  - text: CHC Narrow Ability and Clinical Clusters
+- contentinfo:
+  - text: Footer region,
+  - link "Riverside Insights Website":
+    - /url: https://www.riversideinsights.com
+    - img "Riverside Insights Website"
+  - link "Riverside Insights Facebook":
+    - /url: https://www.facebook.com/RiversideInsights/
+    - img "Riverside Insights Facebook"
+  - link "Riverside Insights Twitter":
+    - /url: https://twitter.com/1BillionLives
+    - img "Riverside Insights Twitter"
+  - link "Riverside Insights LinkedIn":
+    - /url: https://www.linkedin.com/company/riverside-insights/
+    - img "Riverside Insights LinkedIn"
+  - link "Riverside Insights Instagram":
+    - /url: https://www.instagram.com/riversideinsightsassessments/
+    - img "Riverside Insights Instagram"
+  - button "Leave Feedback"
+  - link "Terms of Use":
+    - /url: https://info.riversideinsights.com/terms-of-use
+  - link "Privacy Policy":
+    - /url: https://info.riversideinsights.com/privacy-assessment_policy
+  - text: Footer region end
+```
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('div.TestSetCreate_mcs_level1Name[data-clusterid=\'ACH\']')
+Expected: visible
+Timeout: 60000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "soft toBeVisible" locator('div.TestSetCreate_mcs_level1Name[data-clusterid=\'ACH\']') with timeout 60000ms
+  - waiting for locator('div.TestSetCreate_mcs_level1Name[data-clusterid=\'ACH\']')
+
+```
+
+```yaml
+- banner "Clinical Products Header":
+  - button "Skip to main Content"
+  - link "Back to product selection":
+    - /url: /products
+  - text: Riverside Insights Logo
+  - heading "Hello Adolfo SubAut17Nov26152555nxt" [level=2]:
+    - text: Hello
+    - button "Adolfo SubAut17Nov26152555nxt"
+  - navigation:
+    - button "Contact Us"
+    - button "| WJ V Settings"
+    - button "| Sign Out"
+- navigation "Navigation toolbar":
+  - menubar:
+    - menuitem "Dashboard"
+    - menuitem "Test Sets"
+    - menuitem "Examinees"
+    - menuitem "Staff"
+    - menuitem "Reports":
+      - text: Reports
+      - menu
+    - menuitem "Resources"
+  - switch "Offline Mode": "OFF"
+  - text: Offline Mode
+- main:
+  - heading "TEST SET CREATION" [level=1]
+  - heading "Untitled Test Set Edit" [level=2]:
+    - text: Untitled Test Set
+    - button "Edit":
+      - img "Edit"
+  - img
+  - text: "Time Estimate: 0 min"
+  - list
+  - log
+  - button "Cancel"
+  - button "Save" [disabled]
+  - navigation:
+    - tablist:
+      - tab "Clusters" [selected]
+      - tab "All Tests"
+      - tab "Test Sets"
+  - text: Tests of Achievement
+  - link "Selective Testing Table":
+    - /url: ./documents/wjv/WJV_ACH_Selective_Testing_Table.pdf
+  - button "Oral Language Clusters":
+    - img
+  - text: Oral Language Clusters
+  - button "Reading Clusters":
+    - img
+  - text: Reading Clusters
+  - button "Math Clusters":
+    - img
+  - text: Math Clusters
+  - button "Writing Clusters":
+    - img
+  - text: Writing Clusters
+  - button "Cross-Domain Achievement Clusters":
+    - img
+  - text: Cross-Domain Achievement Clusters Virtual Test Library
+  - link "Selective Testing Table":
+    - /url: ./documents/wjv/WJV_VTL_Selective_Testing_Table.pdf
+  - button "CHC Broad Ability Clusters":
+    - img
+  - text: CHC Broad Ability Clusters
+  - button "CHC Narrow Ability and Clinical Clusters":
+    - img
+  - text: CHC Narrow Ability and Clinical Clusters
+- contentinfo:
+  - text: Footer region,
+  - link "Riverside Insights Website":
+    - /url: https://www.riversideinsights.com
+    - img "Riverside Insights Website"
+  - link "Riverside Insights Facebook":
+    - /url: https://www.facebook.com/RiversideInsights/
+    - img "Riverside Insights Facebook"
+  - link "Riverside Insights Twitter":
+    - /url: https://twitter.com/1BillionLives
+    - img "Riverside Insights Twitter"
+  - link "Riverside Insights LinkedIn":
+    - /url: https://www.linkedin.com/company/riverside-insights/
+    - img "Riverside Insights LinkedIn"
+  - link "Riverside Insights Instagram":
+    - /url: https://www.instagram.com/riversideinsightsassessments/
+    - img "Riverside Insights Instagram"
+  - button "Leave Feedback"
+  - link "Terms of Use":
+    - /url: https://info.riversideinsights.com/terms-of-use
+  - link "Privacy Policy":
+    - /url: https://info.riversideinsights.com/privacy-assessment_policy
+  - text: Footer region end
+```
+
+```
+Error: Waiting for cluster groups under section ACH
+
+Waiting for cluster groups under section ACH
+
+expect(received).toBeGreaterThan(expected)
+
+Expected: > 0
+Received:   0
+
+Call Log:
+- Timeout 15000ms exceeded while waiting on the predicate
+```
+
+# Test source
+
+```ts
+  1   | import {  expect, Page } from "@playwright/test";
+  2   | import Locators from "../utils/locators";
+  3   | import DashBoardPage from "./dashboardPage";
+  4   | import { faker } from "@faker-js/faker";
+  5   | import { RawValueLogger } from "../utils/rawValueLogger";
+  6   | 
+  7   | export default class TestSetsPage extends Locators{
+  8   | 
+  9   |   private dashboardPage: DashBoardPage;
+  10  |      constructor(public page: Page) {
+  11  |       super(page);
+  12  |       this.dashboardPage = new DashBoardPage(this.page);
+  13  |   }
+  14  | 
+  15  | static tSetName: string;
+  16  | 
+  17  |      async clickTestSetsOnMenu() {
+  18  |       await this.testSetButton.click();
+  19  |    }
+  20  |   async clickOnCreateNewTestSetButton() {
+  21  |     await this.createNewTestSetButton.click();
+  22  |   }
+  23  |   async clickOnAllTestsTab() {
+  24  |     await this.allTestsButton.click({delay: 2000});
+  25  |   }
+  26  | 
+  27  |   async clickOnClustersTab() {
+  28  |     await this.clustersTabButton.click({ delay: 2000 });
+  29  |   }
+  30  | 
+  31  |   async openTestSetCreation() {
+  32  |     await this.clickTestSetsOnMenu();
+  33  |     await this.page.waitForLoadState('domcontentloaded');
+  34  |     await this.clickOnCreateNewTestSetButton();
+  35  |     await this.page.waitForLoadState('domcontentloaded');
+  36  |   }
+  37  | 
+  38  |   clusterGroupsInSection(clusterId: string) {
+  39  |     return this.page.locator(
+  40  |       `//div[@data-clusterid='${clusterId}'][contains(@class,'level1Name')]` +
+  41  |       `/parent::div/following-sibling::div[contains(@class,'level2')]//button[@aria-label]`
+  42  |     );
+  43  |   }
+  44  | 
+  45  |   private clusterSection(clusterId: string) {
+  46  |     switch (clusterId) {
+  47  |       case 'COG':
+  48  |         return this.cognitiveAbilitiesSection;
+  49  |       case 'ACH':
+  50  |         return this.achievementSection;
+  51  |       case 'VTL':
+  52  |         return this.virtualTestLibrarySection;
+  53  |       default:
+  54  |         throw new Error(`Unknown cluster section '${clusterId}' — expected COG, ACH or VTL.`);
+  55  |     }
+  56  |   }
+  57  | 
+  58  |   async verifyClusterSectionVisible(clusterId: string) {
+  59  |     await expect.soft(this.clusterSection(clusterId)).toBeVisible();
+  60  |   }
+  61  | 
+  62  |   async verifyClusterSectionAbsent(clusterId: string) {
+  63  |     await expect.soft(this.clusterSection(clusterId)).toHaveCount(0);
+  64  |   }
+  65  | 
+  66  |   async getClusterGroupNames(clusterId: string): Promise<string[]> {
+  67  |     const groups = this.clusterGroupsInSection(clusterId);
+  68  |     await expect
+  69  |       .poll(async () => await groups.count(), {
+  70  |         message: `Waiting for cluster groups under section ${clusterId}`,
+  71  |         timeout: 15_000,
+  72  |       })
+> 73  |       .toBeGreaterThan(0);
+      |        ^ Error: Waiting for cluster groups under section ACH
+  74  |     return (await groups.evaluateAll(nodes => nodes.map(n => n.getAttribute('aria-label') ?? ''))).filter(Boolean);
+  75  |   }
+  76  | 
+  77  |   async getAllTestNames(): Promise<string[]> {
+  78  |     await expect
+  79  |       .poll(async () => await this.testSetLevel3Checkboxes.count(), {
+  80  |         message: 'Waiting for the All Tests list to render',
+  81  |         timeout: 15_000,
+  82  |       })
+  83  |       .toBeGreaterThan(0);
+  84  |     return (
+  85  |       await this.testSetLevel3Checkboxes.evaluateAll(nodes => nodes.map(n => n.getAttribute('aria-label') ?? ''))
+  86  |     ).filter(Boolean);
+  87  |   }
+  88  | 
+  89  |   async clickClose() {
+  90  |     await this.page.waitForTimeout(2000);
+  91  |     await this.timerCloseButton.click();
+  92  |   }
+  93  | 
+  94  |   async selectAllTests(): Promise<void> {
+  95  |     await this.page.waitForLoadState('domcontentloaded');
+  96  |     await this.page.waitForTimeout(1000);
+  97  | 
+  98  |     await expect
+  99  |       .poll(
+  100 |         async () => await this.checkboxes.count(),
+  101 |         {
+  102 |           message: 'Waiting for checkbox count to be greater than 0',
+  103 |           timeout: 10_000
+  104 |         }
+  105 |       )
+  106 |       .toBeGreaterThan(0);
+  107 | 
+  108 |     const checkboxCount = await this.checkboxes.count();
+  109 |     RawValueLogger.log(`Found ${checkboxCount} checkboxes`);
+  110 | 
+  111 |     for (let i = 0; i < checkboxCount; i++) {
+  112 |       if (i === 7 || i === 24) continue;
+  113 | 
+  114 |       const checkbox = this.checkboxes.nth(i);
+  115 |       await checkbox.scrollIntoViewIfNeeded();
+  116 |       await checkbox.click();
+  117 |     }
+  118 |   }
+  119 | 
+  120 | 
+  121 |   async selectTheRequiredTests(testname: string | string[]) {
+  122 | 
+  123 |     await this.page.waitForLoadState('domcontentloaded');
+  124 |     await this.page.waitForTimeout(1000);
+  125 | 
+  126 |     await expect
+  127 |       .poll(
+  128 |         async () => await this.checkboxes.count(),
+  129 |         {
+  130 |           message: 'Waiting for checkbox count to be greater than 0',
+  131 |           timeout: 10_000
+  132 |         }
+  133 |       )
+  134 |       .toBeGreaterThan(0);
+  135 | 
+  136 |     const checkboxCount = await this.checkboxes.count();
+  137 |     console.log(`Found ${checkboxCount} checkboxes`);
+  138 |     const testNames = Array.isArray(testname) ? testname : [testname];
+  139 |     const defaultExcludedTests = ["Oral Vocabulary–Antonyms", "General Information–What"];
+  140 |     const checkboxLabels: string[] = [];
+  141 |     for (let i = 0; i < checkboxCount; i++) {
+  142 |       checkboxLabels.push((await this.checkboxes.nth(i).getAttribute("aria-label")) ?.trim() ?? "");
+  143 |     }
+  144 |     for (const name of testNames) {
+  145 |       const matchIndex = checkboxLabels.findIndex(label =>
+  146 |         label === name &&
+  147 |         (!defaultExcludedTests.includes(label) || testNames.includes(label))
+  148 |       );
+  149 | 
+  150 |       if (matchIndex === -1) {
+  151 |         console.log(`No matching checkbox found for: ${name}`);
+  152 |         continue;
+  153 |       }
+  154 | 
+  155 |       await this.checkboxes.nth(matchIndex).click();
+  156 |       console.log(`Selected test: ${checkboxLabels[matchIndex]}`);
+  157 |     }
+  158 |   }
+  159 | 
+  160 | async createRandomTestSetWithAllTheTests(testname?:string) {
+  161 |   await this.page.bringToFront();
+  162 |   await this.clickTestSetsOnMenu();
+  163 |   await this.clickOnCreateNewTestSetButton();
+  164 |   await this.clickOnAllTestsTab();
+  165 |   if(testname) {
+  166 |     await this.selectTheRequiredTests(testname);
+  167 |   } else {
+  168 |     await this.selectAllTests();
+  169 |   }
+  170 |   await this.clickOnSaveButton();
+  171 |   TestSetsPage.tSetName = `${faker.person.fullName()}_${Date.now()}`;
+  172 |   await this.testSetName.fill(TestSetsPage.tSetName);
+  173 |   await this.clickOnSaveTestSetNameButton.click();
+```
