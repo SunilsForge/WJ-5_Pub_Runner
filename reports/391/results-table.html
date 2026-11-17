@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Results Table — Run #391</title>
+  <style>
+    body{font-family:-apple-system,system-ui,sans-serif;margin:24px;background:#f6f8fa;color:#1b1f24}
+    h1{margin:0 0 4px}
+    h2{margin-top:24px}
+    .meta{color:#57606a;margin-bottom:8px}
+    .back{display:inline-block;margin-bottom:14px;color:#0969da;text-decoration:none;font-size:13px}
+    .cards{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0 20px}
+    .card{background:#fff;border:1px solid #eaeef2;border-radius:6px;padding:12px 18px;min-width:90px}
+    .card b{display:block;font-size:24px}
+    .pass b{color:#1a7f37}
+    .fail b{color:#cf222e}
+    .flake b{color:#9a6700}
+    .skip b{color:#57606a}
+    table{border-collapse:collapse;background:#fff;border-radius:6px;overflow:hidden;width:100%;margin:8px 0 20px;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+    th,td{padding:7px 12px;border-bottom:1px solid #eaeef2;text-align:left;font-size:13px}
+    th{background:#f0f3f6}
+    .mono{font-family:ui-monospace,monospace;color:#57606a}
+    .empty{color:#8c959f;font-style:italic}
+    .btn{display:inline-block;background:#0969da;color:#fff;padding:8px 14px;border-radius:6px;text-decoration:none;font-size:13px;margin:0 0 16px}
+  </style>
+</head>
+<body>
+  <a class="back" href="./index.html">&larr; Back to merged report</a>
+  <h1>Results Table &mdash; Run #391</h1>
+  <div class="meta">Env <code>prod</code> &middot; Browser <code>chrome</code> &middot; (?=.*@DerivedScores)(?=.*@ACDAPP)(?=.*@Smoke)|(?=.*@TestDe)(?=.*@CALC)(?=.*@Smoke)|(?=.*@ScoreReport)(?=.*@LSTCMP)|(?=.*@Rerouting)(?=.*@SWRTFL)(?=.*@Smoke)|@SingleLookup|@ExamineeInformation|@DashboardTestAssignments_A|(?=.*@ReviewMode)(?=.*@NotStarted)|@TestSetVerification|(?=.*@ChatBot)(?=.*@Aut_Eng_01)|@PostConfirmation|@Merge_WLookup2</div>
+  <a class="btn" href="./playwright-merged/index.html">Open full Playwright report &rarr;</a>
+  <div class="cards">
+    <div class="card"><b>19</b>total</div>
+    <div class="card pass"><b>12</b>passed</div>
+    <div class="card fail"><b>7</b>failed</div>
+    <div class="card flake"><b>0</b>flaky</div>
+    <div class="card skip"><b>0</b>skipped</div>
+  </div>
+  <h2>Passed</h2>
+  <table><thead><tr><th>#</th><th>Test</th><th>File</th></tr></thead><tbody><tr><td>1</td><td>For PSGCMP - Age - All incorrect scenario,APPROB - Age - All incorrect scenario,WRTSMP - Age - All correct scenario Complete The ACDAPP cluster &amp; generate report</td><td class="mono">derived_scores(compounds &amp; clusters)/ACDAPP_cluster_pub.spec.ts</td></tr><tr><td>2</td><td>For PSGCMP - K12 - All correct scenario,APPROB - K12 - Attain Quick Basal Ceiling scenario,WRTSMP - K12 - All incorrect scenario Complete The ACDAPP cluster &amp; generate report</td><td class="mono">derived_scores(compounds &amp; clusters)/ACDAPP_cluster_pub.spec.ts</td></tr><tr><td>3</td><td>All Examinees - 20 correct scenario Test UI</td><td class="mono">UIAndReports/SEMRET_Single_Timer.spec.ts</td></tr><tr><td>4</td><td>All Examinees - Wait until timer is up and do nothing scenario Test UI</td><td class="mono">UIAndReports/SEMRET_Single_Timer.spec.ts</td></tr><tr><td>5</td><td>All Examinees - 10 correct scenario Test UI</td><td class="mono">UIAndReports/SEMRET_Single_Timer.spec.ts</td></tr><tr><td>6</td><td>All Examinees - Validate Item score texts by clicking add and minus buttons after timer runs out Test UI</td><td class="mono">UIAndReports/SEMRET_Single_Timer.spec.ts</td></tr><tr><td>7</td><td>PV-022/023/024 - After activation the confirm popup does not re-appear and the link reads Activated</td><td class="mono">functional/subscriptions/lockedDates/PostConfirmationBehaviour.spec.ts</td></tr><tr><td>8</td><td>Verify test set integrity across default/custom sets, examinee switching, mid-administration, and review mode</td><td class="mono">functional/testSets/TestSetVerification.spec.ts</td></tr><tr><td>9</td><td>Merge Assignments Scenario - Merge two Rapid Phoneme Naming assignments with different scores and verify WLookup Report on merged assignment Functional UI, </td><td class="mono">functional/MergeAssignments/MergeAssignments_RPDPHO_RPDNUMBackUp.spec.ts</td></tr><tr><td>10</td><td>Preschool to Kindergarten - All correct SSP1 Test UI</td><td class="mono">functional/reviewMode/ReviewModeNotStartedTests.spec.ts</td></tr><tr><td>11</td><td>All Examinees - Flag Item with Notes and Review scenario for Score Later Test Rerouting</td><td class="mono">ReroutingandLeftNav/SWRTFL_Rerouting.spec.ts</td></tr><tr><td>12</td><td>All Examinees - Score Later Error Scenario Test Rerouting</td><td class="mono">ReroutingandLeftNav/SWRTFL_Rerouting.spec.ts</td></tr></tbody></table>
+  <h2>Failed</h2>
+  <table><thead><tr><th>#</th><th>Test</th><th>File</th></tr></thead><tbody><tr><td>1</td><td>Generate a Score Report for Word Document (.docx)</td><td class="mono">ScoreReports/ACH_LSTCMP_ScoreReport.spec.ts</td></tr><tr><td>2</td><td>Generate a Score Report for Webpage (HTML)</td><td class="mono">ScoreReports/ACH_LSTCMP_ScoreReport.spec.ts</td></tr><tr><td>3</td><td>For Ages 4 to 6 - All correct scenario Conduct test and validate report</td><td class="mono">test_dataExport/CALC_Pub.spec.ts</td></tr><tr><td>4</td><td>Validate Dashboard Test Assignments functionality</td><td class="mono">functional/dashboard/testAssignments_A.spec.ts</td></tr><tr><td>5</td><td>Validate Chat Bot functionality when logged in as AH user and at login page</td><td class="mono">functional/chatBotTest.spec.ts</td></tr><tr><td>6</td><td>Examinee Information - Add, Edit, Search,Delete Test UI</td><td class="mono">functional/ExamineeInformation.spec.ts</td></tr><tr><td>7</td><td>Merge Assignments Scenario - Merge two Rapid Number Naming (Backup Form) assignments with different scores and verify WLookup Report on merged assignment Functional UI, </td><td class="mono">functional/MergeAssignments/MergeAssignments_RPDPHO_RPDNUMBackUp.spec.ts</td></tr></tbody></table>
+  <h2>Flaky (failed then passed on retry)</h2>
+  <table><thead><tr><th>#</th><th>Test</th><th>File</th></tr></thead><tbody><tr><td colspan="3" class="empty">none</td></tr></tbody></table>
+  <h2>Skipped</h2>
+  <table><thead><tr><th>#</th><th>Test</th><th>File</th></tr></thead><tbody><tr><td colspan="3" class="empty">none</td></tr></tbody></table>
+</body>
+</html>

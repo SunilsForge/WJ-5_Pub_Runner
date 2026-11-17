@@ -1,0 +1,558 @@
+{
+  "config": {
+    "argv": [
+      "/__t/node/22.23.4/x64/bin/node",
+      "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "(?=.*@DerivedScores)(?=.*@ACDAPP)(?=.*@Smoke)|(?=.*@TestDe)(?=.*@CALC)(?=.*@Smoke)|(?=.*@ScoreReport)(?=.*@LSTCMP)|(?=.*@Rerouting)(?=.*@SWRTFL)(?=.*@Smoke)|@SingleLookup|@ExamineeInformation|@DashboardTestAssignments_A|(?=.*@ReviewMode)(?=.*@NotStarted)|@TestSetVerification|(?=.*@ChatBot)(?=.*@Aut_Eng_01)|@PostConfirmation|@Merge_WLookup2",
+      "--project=chrome",
+      "--shard=4/20",
+      "--workers=1",
+      "--retries=0",
+      "--reporter=html,json,blob"
+    ],
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+        "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "commitHash": "f7e559940054e7c1f47484b7f158e51ce53f5b0e",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44080477281"
+          },
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "snapshotDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000,
+        "use": {
+          "actionTimeout": 60000,
+          "navigationTimeout": 60000,
+          "ignoreHTTPSErrors": true,
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "trace": "off",
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--disable-dev-shm-usage"
+            ],
+            "logger": {},
+            "slowMo": 0
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 4,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/ExamineeInformation.spec.ts",
+      "file": "functional/ExamineeInformation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Add,Edit and Delete Examinee",
+          "file": "functional/ExamineeInformation.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Examinee Information - Add, Edit, Search,Delete Test UI",
+              "ok": false,
+              "tags": [
+                "ExamineeInformation",
+                "Functional",
+                "Smoke",
+                "AE_05"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 356353,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\\'Tests\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button aria-label=\"Tests\" class=\"plain-button\" aria-expanded=\"false\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\\'Tests\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button aria-label=\"Tests\" class=\"plain-button\" aria-expanded=\"false\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n\n    at CommonTestPage.clickOnLeftNavTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:10297:36)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/ExamineeInformation.spec.ts:31:17",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 36,
+                          "line": 10297
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:10297\n\n  10295 |   async clickOnLeftNavTests() {\n  10296 |     await this.mainNavigation.click();\n> 10297 |     await this.mainNavigationTests.click();\n        |                                    ^\n  10298 |   }\n  10299 |\n  10300 |   async getLeftNavTestNames(): Promise<string[]> {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 36,
+                            "line": 10297
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[aria-label=\\'Tests\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button aria-label=\"Tests\" class=\"plain-button\" aria-expanded=\"false\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n\n\n   at ../page/commonTestPage.ts:10297\n\n  10295 |   async clickOnLeftNavTests() {\n  10296 |     await this.mainNavigation.click();\n> 10297 |     await this.mainNavigationTests.click();\n        |                                    ^\n  10298 |   }\n  10299 |\n  10300 |   async getLeftNavTestNames(): Promise<string[]> {\n    at CommonTestPage.clickOnLeftNavTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:10297:36)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/ExamineeInformation.spec.ts:31:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S4:W0] Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S4:W0] Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N68166A2940\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N68166A2940/dataFiles/Score_DataExport_AutoFilter_Template_N68166A2940.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N68166A2940 FirstName=Einar LastName =N68166A2940 Age = 11/17/2024\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N68166A2940\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Accept button not found, but sloth icon is visible. Proceeding.\n"
+                        },
+                        {
+                          "text": "Test \"Academic Vocabulary\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 15542|Preschool to Grade 2|\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T12:10:38.846Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N68166A2940)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-ExamineeInforma-bf934--Edit-Search-Delete-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N68166A2940--af01acd566cdecb8ec1ae07ceede4b972089503b.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-ExamineeInforma-bf934--Edit-Search-Delete-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-ExamineeInforma-bf934--Edit-Search-Delete-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-ExamineeInforma-bf934--Edit-Search-Delete-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-ExamineeInforma-bf934--Edit-Search-Delete-Test-UI-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 36,
+                        "line": 10297
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "bad43cb8ca9eca81c06e-e4007d139a90b925437a",
+              "file": "functional/ExamineeInformation.spec.ts",
+              "line": 10,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-17T12:10:26.516Z",
+    "duration": 369373.625,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
