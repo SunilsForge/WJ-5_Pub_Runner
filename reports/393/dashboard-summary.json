@@ -1,0 +1,1 @@
+{"generatedAt":"2026-11-19T19:28:52.090Z","counts":{"totalTests":67,"totalPassed":63,"totalFailed":0,"totalSkipped":3,"totalFlaky":1,"durationMs":7774513},"failureGroups":[],"flakyTests":[{"title":"CID-001 - An org cannot redeem an activation code belonging to a different NetSuite customer","file":"functional/subscriptions/SubscriptionActivationCustomerIdMismatch.spec.ts"}]}
