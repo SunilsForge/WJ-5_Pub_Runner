@@ -1,0 +1,1267 @@
+{
+  "config": {
+    "argv": [
+      "/__t/node/22.23.5/x64/bin/node",
+      "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments|@TestSetVerification",
+      "--project=chrome",
+      "--shard=4/20",
+      "--workers=1",
+      "--retries=2",
+      "--reporter=html,json,blob"
+    ],
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+        "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "snapshotDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000,
+        "use": {
+          "actionTimeout": 60000,
+          "navigationTimeout": 60000,
+          "ignoreHTTPSErrors": true,
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "trace": "off",
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--disable-dev-shm-usage"
+            ],
+            "logger": {},
+            "slowMo": 0
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 4,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts",
+      "file": "derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " MTHCAL cluster Derived Export Automation ",
+          "file": "derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts",
+          "line": 25,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For MTHFLU - Age - All correct scenario,CALC - Age - All correct scenario Complete The MTHCAL cluster & generate report",
+              "ok": false,
+              "tags": [
+                "MTHCAL",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1500000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 400697,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts:109:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 1206
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 1206
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts:109:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S4:W0] Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S4:W0] Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N83334A41428\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N83334A41428/dataFiles/Derived_Score_AutoFilter_Template_N83334A41428.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N83334A41428 FirstName=Donny LastName =N83334A41428 Age = 11/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N83334A41428\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Math Facts Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14914|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MTHFLU - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "Test Introduction\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-20T08:11:42.688Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N83334A41428)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome/attachments/Generated-derived-Filter-Template-N83334A41428--4017b26117b52f0beb6fc0f2792ae36cad203372.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 1206
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 400251,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts:109:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 1206
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 1206
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts:109:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S4:W1] Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S4:W1] Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N83073A47844\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N83073A47844/dataFiles/Derived_Score_AutoFilter_Template_N83073A47844.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N83073A47844 FirstName=Georgette LastName =N83073A47844 Age = 11/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N83073A47844\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Math Facts Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14914|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MTHFLU - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "Test Introduction\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-20T08:18:25.019Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N83073A47844)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome-retry1/attachments/Generated-derived-Filter-Template-N83073A47844--cf0fefced68b7d9d94d39e7b4a307d72eb032784.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 1206
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 400158,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts:109:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 1206
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 1206
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts:109:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S4:W2] Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S4:W2] Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N62032A2861\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N62032A2861/dataFiles/Derived_Score_AutoFilter_Template_N62032A2861.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N62032A2861 FirstName=Kaelyn LastName =N62032A2861 Age = 11/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N62032A2861\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Math Facts Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14914|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MTHFLU - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "Test Introduction\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-11-20T08:25:06.644Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N62032A2861)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome-retry2/attachments/Generated-derived-Filter-Template-N62032A2861--dc91a5edaa38928ccc6ad77ebbdca7973b5e9872.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome-retry2/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome-retry2/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8f47b-CAL-cluster-generate-report-chrome-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 1206
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0487f251ae722f0287d0-191824655b739940baf1",
+              "file": "derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "For MTHFLU - K12 - All incorrect scenario,CALC - K12 - All incorrect scenario Complete The MTHCAL cluster & generate report",
+              "ok": false,
+              "tags": [
+                "MTHCAL",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1500000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 215301,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts:109:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 1206
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 1206
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts:109:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S4:W3] Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S4:W3] Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N5952A72696\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N5952A72696/dataFiles/Derived_Score_AutoFilter_Template_N5952A72696.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N5952A72696 FirstName=Glenda LastName =N5952A72696 Age = 11/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N5952A72696\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Math Facts Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14914|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MTHFLU - K12 - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-20T08:31:48.187Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N5952A72696)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome/attachments/Generated-derived-Filter-Template-N5952A72696--5fdde29ed6a451508a0be2e1d4de3d6b0902e419.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 1206
+                      }
+                    },
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 215473,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts:109:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 1206
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 1206
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts:109:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S4:W4] Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S4:W4] Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N40125A74550\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N40125A74550/dataFiles/Derived_Score_AutoFilter_Template_N40125A74550.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N40125A74550 FirstName=Watson LastName =N40125A74550 Age = 11/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N40125A74550\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Math Facts Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14914|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MTHFLU - K12 - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-20T08:35:24.887Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N40125A74550)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome-retry1/attachments/Generated-derived-Filter-Template-N40125A74550--a3452c79f56117540cf178f1d7c47b8e095670df.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 1206
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 216626,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts:109:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 1206
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 1206
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts:109:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S4:W5] Login successful for S05PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S4:W5] Login successful for S05PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N17856A91462\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N17856A91462/dataFiles/Derived_Score_AutoFilter_Template_N17856A91462.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N17856A91462 FirstName=Reed LastName =N17856A91462 Age = 11/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N17856A91462\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Math Facts Fluency\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 14914|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MTHFLU - K12 - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-11-20T08:39:01.750Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N17856A91462)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome-retry2/attachments/Generated-derived-Filter-Template-N17856A91462--ac5ba145fd29588fd6c8df7008f98f1e42063ba6.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome-retry2/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome-retry2/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-16fc2-CAL-cluster-generate-report-chrome-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 1206
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0487f251ae722f0287d0-16ed96c14cbb5364aaa8",
+              "file": "derived_scores(compounds & clusters)/MTHCAL_cluster_pub.spec.ts",
+              "line": 27,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-20T08:11:32.150Z",
+    "duration": 1866740.347,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

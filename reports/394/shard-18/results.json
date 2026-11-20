@@ -1,0 +1,1567 @@
+{
+  "config": {
+    "argv": [
+      "/__t/node/22.23.5/x64/bin/node",
+      "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments|@TestSetVerification",
+      "--project=chrome",
+      "--shard=18/20",
+      "--workers=1",
+      "--retries=2",
+      "--reporter=html,json,blob"
+    ],
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+        "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "snapshotDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000,
+        "use": {
+          "actionTimeout": 60000,
+          "navigationTimeout": 60000,
+          "ignoreHTTPSErrors": true,
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "trace": "off",
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--disable-dev-shm-usage"
+            ],
+            "logger": {},
+            "slowMo": 0
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 18,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/dashboard/testAssignments_A.spec.ts",
+      "file": "functional/dashboard/testAssignments_A.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Validate Dashboard Test Assignments functionality",
+          "ok": false,
+          "tags": [
+            "DashboardTestAssignments_A",
+            "Smoke",
+            "Aut_Eng_01"
+          ],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                    "line": 0,
+                    "column": 0
+                  }
+                },
+                {
+                  "type": "original user story, automation user story",
+                  "description": "24006_24067_24927, 28823_29687",
+                  "location": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                    "line": 21,
+                    "column": 1
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 471077,
+                  "error": {
+                    "message": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Freda's Rapid Automatized Naming (RAN)Rapid Picture NamingRapid Letter NamingRapid Phoneme NamingRapid Number NamingRapid Quantity NamingAcademic Facts\"\u001b[39m",
+                    "stack": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Freda's Rapid Automatized Naming (RAN)Rapid Picture NamingRapid Letter NamingRapid Phoneme NamingRapid Number NamingRapid Quantity NamingAcademic Facts\"\u001b[39m\n    at DashBoardPage.verifyTestSetNameIsUpdated (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1503:8)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:91:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:89:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 8,
+                      "line": 1503
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:1503\n\n  1501 |     expect\n  1502 |       .soft(firstRowDetails.testSet, \"Test set dosent contain +1 more\")\n> 1503 |       .toContain(\"+1 more\");\n       |        ^\n  1504 |\n  1505 |   }\n  1506 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 8,
+                        "line": 1503
+                      },
+                      "message": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Freda's Rapid Automatized Naming (RAN)Rapid Picture NamingRapid Letter NamingRapid Phoneme NamingRapid Number NamingRapid Quantity NamingAcademic Facts\"\u001b[39m\n\n   at ../page/dashboardPage.ts:1503\n\n  1501 |     expect\n  1502 |       .soft(firstRowDetails.testSet, \"Test set dosent contain +1 more\")\n> 1503 |       .toContain(\"+1 more\");\n       |        ^\n  1504 |\n  1505 |   }\n  1506 |\n    at DashBoardPage.verifyTestSetNameIsUpdated (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1503:8)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:91:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:89:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 66,
+                        "line": 1560
+                      },
+                      "message": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m\n\n   at ../page/dashboardPage.ts:1560\n\n  1558 |\n  1559 |     for (let i = 0; i < columnHeaders.length; i++) {\n> 1560 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);\n       |                                                                  ^\n  1561 |     }\n  1562 |   }\n  1563 |\n    at DashBoardPage.verifyAllTheColumnsAreVisible (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1560:66)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:94:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 66,
+                        "line": 1560
+                      },
+                      "message": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m\n\n   at ../page/dashboardPage.ts:1560\n\n  1558 |\n  1559 |     for (let i = 0; i < columnHeaders.length; i++) {\n> 1560 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);\n       |                                                                  ^\n  1561 |     }\n  1562 |   }\n  1563 |\n    at DashBoardPage.verifyAllTheColumnsAreVisible (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1560:66)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:101:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:98:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 50,
+                        "line": 2047
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('button#edit_test_set')\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2047\n\n  2045 |     const currentTestSet = (await dialog.locator(\"//div[contains(@class,'TestAssignment')]/h4[text()='Test Set']/following-sibling::span\").textContent()) ?? '';\n  2046 |     const targetTestSet = currentTestSet.trim() === testSetName.trim() ? 'Form A' : testSetName;\n> 2047 |     await dialog.locator(\"button#edit_test_set\").click();\n       |                                                  ^\n  2048 |     await dialog.locator(\"button[class='select-box']\").click();\n  2049 |     await dialog.locator(\"[placeholder='Search...']\").fill(targetTestSet);\n  2050 |     await dialog.locator(\"div[class='item-text single-select']\").first().click();\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2047:50)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1702:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1659:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 08PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S18:W0] Login successful for 08PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 08PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S18:W0] Login successful for 08PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N67041A17896\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N67041A17896 FirstName=Kathlyn LastName =N67041A17896 Age = 11/20/2021\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N67041A17896\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N28266A63454\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N28266A63454 FirstName=Ignacio LastName =N28266A63454 Age = 11/20/2020\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N28266A63454\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N24767A45517\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N24767A45517 FirstName=Alexandre LastName =N24767A45517 Age = 11/20/2019\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N24767A45517\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N96426A87403\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N96426A87403 FirstName=Freda LastName =N96426A87403 Age = 11/20/2018\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N96426A87403\n"
+                    },
+                    {
+                      "text": "Dashbard Page: The apis response issue TimeoutError: page.waitForResponse: Timeout 60000ms exceeded while waiting for event \"response\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Verify newly added test assignment is displayed at the top of the table and also Verify \"Create New Test Assignment\" from Dashboard",
+                      "duration": 218357
+                    },
+                    {
+                      "title": "Verify add test to test set functionality and The table is ordered by the mostly recently “interacted” test assignment at the top",
+                      "duration": 84804,
+                      "error": {
+                        "message": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Freda's Rapid Automatized Naming (RAN)Rapid Picture NamingRapid Letter NamingRapid Phoneme NamingRapid Number NamingRapid Quantity NamingAcademic Facts\"\u001b[39m",
+                        "stack": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Freda's Rapid Automatized Naming (RAN)Rapid Picture NamingRapid Letter NamingRapid Phoneme NamingRapid Number NamingRapid Quantity NamingAcademic Facts\"\u001b[39m\n    at DashBoardPage.verifyTestSetNameIsUpdated (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1503:8)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:91:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:89:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 8,
+                          "line": 1503
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1503\n\n  1501 |     expect\n  1502 |       .soft(firstRowDetails.testSet, \"Test set dosent contain +1 more\")\n> 1503 |       .toContain(\"+1 more\");\n       |        ^\n  1504 |\n  1505 |   }\n  1506 |"
+                      }
+                    },
+                    {
+                      "title": "Verify all the 5 Columns are visible",
+                      "duration": 7,
+                      "error": {
+                        "message": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m",
+                        "stack": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m\n    at DashBoardPage.verifyAllTheColumnsAreVisible (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1560:66)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:94:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 66,
+                          "line": 1560
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1560\n\n  1558 |\n  1559 |     for (let i = 0; i < columnHeaders.length; i++) {\n> 1560 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);\n       |                                                                  ^\n  1561 |     }\n  1562 |   }\n  1563 |"
+                      }
+                    },
+                    {
+                      "title": "Verify Closed columns are correctly displayed",
+                      "duration": 9712,
+                      "error": {
+                        "message": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m",
+                        "stack": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m\n    at DashBoardPage.verifyAllTheColumnsAreVisible (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1560:66)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:101:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:98:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 66,
+                          "line": 1560
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1560\n\n  1558 |\n  1559 |     for (let i = 0; i < columnHeaders.length; i++) {\n> 1560 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);\n       |                                                                  ^\n  1561 |     }\n  1562 |   }\n  1563 |"
+                      }
+                    },
+                    {
+                      "title": "Verify edited test assignment 'Examinee name and test set' is displayed at the top of the table",
+                      "duration": 83060,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('button#edit_test_set')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('button#edit_test_set')\u001b[22m\n\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2047:50)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1702:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1659:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 50,
+                          "line": 2047
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:2047\n\n  2045 |     const currentTestSet = (await dialog.locator(\"//div[contains(@class,'TestAssignment')]/h4[text()='Test Set']/following-sibling::span\").textContent()) ?? '';\n  2046 |     const targetTestSet = currentTestSet.trim() === testSetName.trim() ? 'Form A' : testSetName;\n> 2047 |     await dialog.locator(\"button#edit_test_set\").click();\n       |                                                  ^\n  2048 |     await dialog.locator(\"button[class='select-box']\").click();\n  2049 |     await dialog.locator(\"[placeholder='Search...']\").fill(targetTestSet);\n  2050 |     await dialog.locator(\"div[class='item-text single-select']\").first().click();"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-11-20T08:11:34.555Z",
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    },
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927, 28823_29687",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                        "line": 21,
+                        "column": 1
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/test-failed-2.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 8,
+                    "line": 1503
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 470728,
+                  "error": {
+                    "message": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Kyra's Dyslexia Test SetPicture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\"\u001b[39m",
+                    "stack": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Kyra's Dyslexia Test SetPicture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\"\u001b[39m\n    at DashBoardPage.verifyTestSetNameIsUpdated (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1503:8)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:91:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:89:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 8,
+                      "line": 1503
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:1503\n\n  1501 |     expect\n  1502 |       .soft(firstRowDetails.testSet, \"Test set dosent contain +1 more\")\n> 1503 |       .toContain(\"+1 more\");\n       |        ^\n  1504 |\n  1505 |   }\n  1506 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 8,
+                        "line": 1503
+                      },
+                      "message": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Kyra's Dyslexia Test SetPicture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\"\u001b[39m\n\n   at ../page/dashboardPage.ts:1503\n\n  1501 |     expect\n  1502 |       .soft(firstRowDetails.testSet, \"Test set dosent contain +1 more\")\n> 1503 |       .toContain(\"+1 more\");\n       |        ^\n  1504 |\n  1505 |   }\n  1506 |\n    at DashBoardPage.verifyTestSetNameIsUpdated (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1503:8)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:91:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:89:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 66,
+                        "line": 1560
+                      },
+                      "message": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m\n\n   at ../page/dashboardPage.ts:1560\n\n  1558 |\n  1559 |     for (let i = 0; i < columnHeaders.length; i++) {\n> 1560 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);\n       |                                                                  ^\n  1561 |     }\n  1562 |   }\n  1563 |\n    at DashBoardPage.verifyAllTheColumnsAreVisible (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1560:66)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:94:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 66,
+                        "line": 1560
+                      },
+                      "message": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m\n\n   at ../page/dashboardPage.ts:1560\n\n  1558 |\n  1559 |     for (let i = 0; i < columnHeaders.length; i++) {\n> 1560 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);\n       |                                                                  ^\n  1561 |     }\n  1562 |   }\n  1563 |\n    at DashBoardPage.verifyAllTheColumnsAreVisible (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1560:66)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:101:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:98:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 50,
+                        "line": 2047
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('button#edit_test_set')\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2047\n\n  2045 |     const currentTestSet = (await dialog.locator(\"//div[contains(@class,'TestAssignment')]/h4[text()='Test Set']/following-sibling::span\").textContent()) ?? '';\n  2046 |     const targetTestSet = currentTestSet.trim() === testSetName.trim() ? 'Form A' : testSetName;\n> 2047 |     await dialog.locator(\"button#edit_test_set\").click();\n       |                                                  ^\n  2048 |     await dialog.locator(\"button[class='select-box']\").click();\n  2049 |     await dialog.locator(\"[placeholder='Search...']\").fill(targetTestSet);\n  2050 |     await dialog.locator(\"div[class='item-text single-select']\").first().click();\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2047:50)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1702:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1659:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 08PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S18:W1] Login successful for 08PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 08PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S18:W1] Login successful for 08PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N14564A9266\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N14564A9266 FirstName=Kyra LastName =N14564A9266 Age = 11/20/2021\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N14564A9266\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N39922A83096\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N39922A83096 FirstName=Preston LastName =N39922A83096 Age = 11/20/2020\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N39922A83096\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N30946A37679\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N30946A37679 FirstName=Marcia LastName =N30946A37679 Age = 11/20/2019\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N30946A37679\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N77723A8748\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N77723A8748 FirstName=Floyd LastName =N77723A8748 Age = 11/20/2018\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N77723A8748\n"
+                    },
+                    {
+                      "text": "Dashbard Page: The apis response issue TimeoutError: page.waitForResponse: Timeout 60000ms exceeded while waiting for event \"response\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Verify newly added test assignment is displayed at the top of the table and also Verify \"Create New Test Assignment\" from Dashboard",
+                      "duration": 218036
+                    },
+                    {
+                      "title": "Verify add test to test set functionality and The table is ordered by the mostly recently “interacted” test assignment at the top",
+                      "duration": 84805,
+                      "error": {
+                        "message": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Kyra's Dyslexia Test SetPicture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\"\u001b[39m",
+                        "stack": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Kyra's Dyslexia Test SetPicture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\"\u001b[39m\n    at DashBoardPage.verifyTestSetNameIsUpdated (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1503:8)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:91:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:89:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 8,
+                          "line": 1503
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1503\n\n  1501 |     expect\n  1502 |       .soft(firstRowDetails.testSet, \"Test set dosent contain +1 more\")\n> 1503 |       .toContain(\"+1 more\");\n       |        ^\n  1504 |\n  1505 |   }\n  1506 |"
+                      }
+                    },
+                    {
+                      "title": "Verify all the 5 Columns are visible",
+                      "duration": 5,
+                      "error": {
+                        "message": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m",
+                        "stack": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m\n    at DashBoardPage.verifyAllTheColumnsAreVisible (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1560:66)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:94:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 66,
+                          "line": 1560
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1560\n\n  1558 |\n  1559 |     for (let i = 0; i < columnHeaders.length; i++) {\n> 1560 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);\n       |                                                                  ^\n  1561 |     }\n  1562 |   }\n  1563 |"
+                      }
+                    },
+                    {
+                      "title": "Verify Closed columns are correctly displayed",
+                      "duration": 9717,
+                      "error": {
+                        "message": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m",
+                        "stack": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m\n    at DashBoardPage.verifyAllTheColumnsAreVisible (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1560:66)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:101:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:98:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 66,
+                          "line": 1560
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1560\n\n  1558 |\n  1559 |     for (let i = 0; i < columnHeaders.length; i++) {\n> 1560 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);\n       |                                                                  ^\n  1561 |     }\n  1562 |   }\n  1563 |"
+                      }
+                    },
+                    {
+                      "title": "Verify edited test assignment 'Examinee name and test set' is displayed at the top of the table",
+                      "duration": 83059,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('button#edit_test_set')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('button#edit_test_set')\u001b[22m\n\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2047:50)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1702:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1659:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 50,
+                          "line": 2047
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:2047\n\n  2045 |     const currentTestSet = (await dialog.locator(\"//div[contains(@class,'TestAssignment')]/h4[text()='Test Set']/following-sibling::span\").textContent()) ?? '';\n  2046 |     const targetTestSet = currentTestSet.trim() === testSetName.trim() ? 'Form A' : testSetName;\n> 2047 |     await dialog.locator(\"button#edit_test_set\").click();\n       |                                                  ^\n  2048 |     await dialog.locator(\"button[class='select-box']\").click();\n  2049 |     await dialog.locator(\"[placeholder='Search...']\").fill(targetTestSet);\n  2050 |     await dialog.locator(\"div[class='item-text single-select']\").first().click();"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-11-20T08:19:27.084Z",
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    },
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927, 28823_29687",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                        "line": 21,
+                        "column": 1
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome-retry1/test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 8,
+                    "line": 1503
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 410673,
+                  "error": {
+                    "message": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Tyrese's Dyslexia Test SetPicture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\"\u001b[39m",
+                    "stack": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Tyrese's Dyslexia Test SetPicture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\"\u001b[39m\n    at DashBoardPage.verifyTestSetNameIsUpdated (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1503:8)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:91:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:89:5",
+                    "location": {
+                      "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                      "column": 8,
+                      "line": 1503
+                    },
+                    "snippet": "   at ../page/dashboardPage.ts:1503\n\n  1501 |     expect\n  1502 |       .soft(firstRowDetails.testSet, \"Test set dosent contain +1 more\")\n> 1503 |       .toContain(\"+1 more\");\n       |        ^\n  1504 |\n  1505 |   }\n  1506 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 8,
+                        "line": 1503
+                      },
+                      "message": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Tyrese's Dyslexia Test SetPicture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\"\u001b[39m\n\n   at ../page/dashboardPage.ts:1503\n\n  1501 |     expect\n  1502 |       .soft(firstRowDetails.testSet, \"Test set dosent contain +1 more\")\n> 1503 |       .toContain(\"+1 more\");\n       |        ^\n  1504 |\n  1505 |   }\n  1506 |\n    at DashBoardPage.verifyTestSetNameIsUpdated (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1503:8)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:91:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:89:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 66,
+                        "line": 1560
+                      },
+                      "message": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m\n\n   at ../page/dashboardPage.ts:1560\n\n  1558 |\n  1559 |     for (let i = 0; i < columnHeaders.length; i++) {\n> 1560 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);\n       |                                                                  ^\n  1561 |     }\n  1562 |   }\n  1563 |\n    at DashBoardPage.verifyAllTheColumnsAreVisible (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1560:66)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:94:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 66,
+                        "line": 1560
+                      },
+                      "message": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m\n\n   at ../page/dashboardPage.ts:1560\n\n  1558 |\n  1559 |     for (let i = 0; i < columnHeaders.length; i++) {\n> 1560 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);\n       |                                                                  ^\n  1561 |     }\n  1562 |   }\n  1563 |\n    at DashBoardPage.verifyAllTheColumnsAreVisible (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1560:66)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:101:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:98:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 50,
+                        "line": 2047
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('button#edit_test_set')\u001b[22m\n\n\n   at ../page/dashboardPage.ts:2047\n\n  2045 |     const currentTestSet = (await dialog.locator(\"//div[contains(@class,'TestAssignment')]/h4[text()='Test Set']/following-sibling::span\").textContent()) ?? '';\n  2046 |     const targetTestSet = currentTestSet.trim() === testSetName.trim() ? 'Form A' : testSetName;\n> 2047 |     await dialog.locator(\"button#edit_test_set\").click();\n       |                                                  ^\n  2048 |     await dialog.locator(\"button[class='select-box']\").click();\n  2049 |     await dialog.locator(\"[placeholder='Search...']\").fill(targetTestSet);\n  2050 |     await dialog.locator(\"div[class='item-text single-select']\").first().click();\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2047:50)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1702:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1659:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 08PwAut25AH\n"
+                    },
+                    {
+                      "text": "[S18:W2] Login successful for 08PwAut25AH\n"
+                    },
+                    {
+                      "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                    },
+                    {
+                      "text": "Login successful for 08PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "[S18:W2] Login successful for 08PwAut25Ex_01\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N17609A28764\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N17609A28764 FirstName=Tyrese LastName =N17609A28764 Age = 11/20/2021\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N17609A28764\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N96907A68546\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N96907A68546 FirstName=Kirsten LastName =N96907A68546 Age = 11/20/2020\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N96907A68546\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N75005A18770\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N75005A18770 FirstName=Virginie LastName =N75005A18770 Age = 11/20/2019\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N75005A18770\n"
+                    },
+                    {
+                      "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                    },
+                    {
+                      "text": "Examinee ID N56261A96862\n"
+                    },
+                    {
+                      "text": "Successfully added an Examinee  ID =N56261A96862 FirstName=Jessyca LastName =N56261A96862 Age = 11/20/2018\n"
+                    },
+                    {
+                      "text": "Successfully selected examinee: N56261A96862\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 2,
+                  "steps": [
+                    {
+                      "title": "Verify newly added test assignment is displayed at the top of the table and also Verify \"Create New Test Assignment\" from Dashboard",
+                      "duration": 218030
+                    },
+                    {
+                      "title": "Verify add test to test set functionality and The table is ordered by the mostly recently “interacted” test assignment at the top",
+                      "duration": 24852,
+                      "error": {
+                        "message": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Tyrese's Dyslexia Test SetPicture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\"\u001b[39m",
+                        "stack": "Error: Test set dosent contain +1 more\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"+1 more\"\u001b[39m\nReceived string:    \u001b[31m\"Tyrese's Dyslexia Test SetPicture VocabularyLetter-Word IdentificationSpellingWord AttackSentence Reading FluencyWord Reading FluencySpelling of SoundsOral ReadingAcademic Vocabulary...\"\u001b[39m\n    at DashBoardPage.verifyTestSetNameIsUpdated (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1503:8)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:91:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:89:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 8,
+                          "line": 1503
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1503\n\n  1501 |     expect\n  1502 |       .soft(firstRowDetails.testSet, \"Test set dosent contain +1 more\")\n> 1503 |       .toContain(\"+1 more\");\n       |        ^\n  1504 |\n  1505 |   }\n  1506 |"
+                      }
+                    },
+                    {
+                      "title": "Verify all the 5 Columns are visible",
+                      "duration": 5,
+                      "error": {
+                        "message": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m",
+                        "stack": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m\n    at DashBoardPage.verifyAllTheColumnsAreVisible (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1560:66)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:95:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:94:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 66,
+                          "line": 1560
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1560\n\n  1558 |\n  1559 |     for (let i = 0; i < columnHeaders.length; i++) {\n> 1560 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);\n       |                                                                  ^\n  1561 |     }\n  1562 |   }\n  1563 |"
+                      }
+                    },
+                    {
+                      "title": "Verify Closed columns are correctly displayed",
+                      "duration": 9708,
+                      "error": {
+                        "message": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m",
+                        "stack": "Error: Column 1 header mismatch\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Test Set\"\u001b[39m\nReceived string:    \u001b[31m\"Assignment NameThe name given to this test assignment.\"\u001b[39m\n    at DashBoardPage.verifyAllTheColumnsAreVisible (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1560:66)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:101:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:98:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 66,
+                          "line": 1560
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:1560\n\n  1558 |\n  1559 |     for (let i = 0; i < columnHeaders.length; i++) {\n> 1560 |       expect.soft(actualTexts[i], `Column ${i} header mismatch`).toContain(columnHeaders[i]);\n       |                                                                  ^\n  1561 |     }\n  1562 |   }\n  1563 |"
+                      }
+                    },
+                    {
+                      "title": "Verify edited test assignment 'Examinee name and test set' is displayed at the top of the table",
+                      "duration": 83043,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('button#edit_test_set')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div[role=\\'dialog\\']').locator('button#edit_test_set')\u001b[22m\n\n    at DashBoardPage.changeTestSetInEditTestAssignmentPopUp (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:2047:50)\n    at DashBoardPage.editTestSet (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1702:5)\n    at DashBoardPage.verifyEditedTestAssignmentIsDisplayedAtTheTopOfTheTable (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:1659:5)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:107:7\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts:106:5",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 50,
+                          "line": 2047
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:2047\n\n  2045 |     const currentTestSet = (await dialog.locator(\"//div[contains(@class,'TestAssignment')]/h4[text()='Test Set']/following-sibling::span\").textContent()) ?? '';\n  2046 |     const targetTestSet = currentTestSet.trim() === testSetName.trim() ? 'Form A' : testSetName;\n> 2047 |     await dialog.locator(\"button#edit_test_set\").click();\n       |                                                  ^\n  2048 |     await dialog.locator(\"button[class='select-box']\").click();\n  2049 |     await dialog.locator(\"[placeholder='Search...']\").fill(targetTestSet);\n  2050 |     await dialog.locator(\"div[class='item-text single-select']\").first().click();"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-11-20T08:27:19.043Z",
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    },
+                    {
+                      "type": "original user story, automation user story",
+                      "description": "24006_24067_24927, 28823_29687",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/dashboard/testAssignments_A.spec.ts",
+                        "line": 21,
+                        "column": 1
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome-retry2/test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome-retry2/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-dashboard-testA-6c033-t-Assignments-functionality-chrome-retry2/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                    "column": 8,
+                    "line": 1503
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8fc2817f86ae5d361ccf-dbe5ee4a50b6cd1a6bea",
+          "file": "functional/dashboard/testAssignments_A.spec.ts",
+          "line": 21,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+      "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verify review mode for my 'In Progress' test assignments",
+          "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Administer a selective test and leave the test in diff statuses as a part of 'in progress' test assignment validation",
+              "ok": false,
+              "tags": [
+                "Smoke",
+                "ReviewMode",
+                "InProgressTestAssignments",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 2400000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 413724,
+                      "error": {
+                        "message": "Error: Failed to select test \"Analysis-Synthesis\" after 3 attempts.",
+                        "stack": "Error: Failed to select test \"Analysis-Synthesis\" after 3 attempts.\n    at CommonTestPage.selectTestFromNextTestDd (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:10363:11)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:123:11",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 11,
+                          "line": 10363
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:10363\n\n  10361 |\n  10362 |     RawValueLogger.log('all attempts exhausted', { testName, maxAttempts });\n> 10363 |     throw new Error(`Failed to select test \"${testName}\" after ${maxAttempts} attempts.`);\n        |           ^\n  10364 |   }\n  10365 |\n  10366 |   async searchForSupplementalTestAndAdd(testName: string) {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 11,
+                            "line": 10363
+                          },
+                          "message": "Error: Failed to select test \"Analysis-Synthesis\" after 3 attempts.\n\n   at ../page/commonTestPage.ts:10363\n\n  10361 |\n  10362 |     RawValueLogger.log('all attempts exhausted', { testName, maxAttempts });\n> 10363 |     throw new Error(`Failed to select test \"${testName}\" after ${maxAttempts} attempts.`);\n        |           ^\n  10364 |   }\n  10365 |\n  10366 |   async searchForSupplementalTestAndAdd(testName: string) {\n    at CommonTestPage.selectTestFromNextTestDd (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:10363:11)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:123:11"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W3] Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N60486A31684\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N60486A31684 FirstName=Russ LastName =N60486A31684 Age = 11/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N60486A31684\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-20T08:34:10.964Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-a56e8--test-assignment-validation-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-a56e8--test-assignment-validation-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-a56e8--test-assignment-validation-chrome/error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-a56e8--test-assignment-validation-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 11,
+                        "line": 10363
+                      }
+                    },
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 413088,
+                      "error": {
+                        "message": "Error: Failed to select test \"Analysis-Synthesis\" after 3 attempts.",
+                        "stack": "Error: Failed to select test \"Analysis-Synthesis\" after 3 attempts.\n    at CommonTestPage.selectTestFromNextTestDd (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:10363:11)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:123:11",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 11,
+                          "line": 10363
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:10363\n\n  10361 |\n  10362 |     RawValueLogger.log('all attempts exhausted', { testName, maxAttempts });\n> 10363 |     throw new Error(`Failed to select test \"${testName}\" after ${maxAttempts} attempts.`);\n        |           ^\n  10364 |   }\n  10365 |\n  10366 |   async searchForSupplementalTestAndAdd(testName: string) {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 11,
+                            "line": 10363
+                          },
+                          "message": "Error: Failed to select test \"Analysis-Synthesis\" after 3 attempts.\n\n   at ../page/commonTestPage.ts:10363\n\n  10361 |\n  10362 |     RawValueLogger.log('all attempts exhausted', { testName, maxAttempts });\n> 10363 |     throw new Error(`Failed to select test \"${testName}\" after ${maxAttempts} attempts.`);\n        |           ^\n  10364 |   }\n  10365 |\n  10366 |   async searchForSupplementalTestAndAdd(testName: string) {\n    at CommonTestPage.selectTestFromNextTestDd (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:10363:11)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:123:11"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W4] Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N21000A80254\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N21000A80254 FirstName=Frieda LastName =N21000A80254 Age = 11/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N21000A80254\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-20T08:41:05.738Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-a56e8--test-assignment-validation-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-a56e8--test-assignment-validation-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-a56e8--test-assignment-validation-chrome-retry1/error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-a56e8--test-assignment-validation-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 11,
+                        "line": 10363
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 414047,
+                      "error": {
+                        "message": "Error: Failed to select test \"Analysis-Synthesis\" after 3 attempts.",
+                        "stack": "Error: Failed to select test \"Analysis-Synthesis\" after 3 attempts.\n    at CommonTestPage.selectTestFromNextTestDd (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:10363:11)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:123:11",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 11,
+                          "line": 10363
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:10363\n\n  10361 |\n  10362 |     RawValueLogger.log('all attempts exhausted', { testName, maxAttempts });\n> 10363 |     throw new Error(`Failed to select test \"${testName}\" after ${maxAttempts} attempts.`);\n        |           ^\n  10364 |   }\n  10365 |\n  10366 |   async searchForSupplementalTestAndAdd(testName: string) {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 11,
+                            "line": 10363
+                          },
+                          "message": "Error: Failed to select test \"Analysis-Synthesis\" after 3 attempts.\n\n   at ../page/commonTestPage.ts:10363\n\n  10361 |\n  10362 |     RawValueLogger.log('all attempts exhausted', { testName, maxAttempts });\n> 10363 |     throw new Error(`Failed to select test \"${testName}\" after ${maxAttempts} attempts.`);\n        |           ^\n  10364 |   }\n  10365 |\n  10366 |   async searchForSupplementalTestAndAdd(testName: string) {\n    at CommonTestPage.selectTestFromNextTestDd (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:10363:11)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts:123:11"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S18:W5] Login successful for 08PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N96255A37578\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N96255A37578 FirstName=Seth LastName =N96255A37578 Age = 11/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N96255A37578\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Academic Vocabulary\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16478|Ages 4 to 7|\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-11-20T08:47:59.874Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-a56e8--test-assignment-validation-chrome-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-a56e8--test-assignment-validation-chrome-retry2/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-a56e8--test-assignment-validation-chrome-retry2/error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-reviewMode-InPr-a56e8--test-assignment-validation-chrome-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 11,
+                        "line": 10363
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2c839c71415aac1f8fd0-98bf6782be6d7d46548e",
+              "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+              "line": 41,
+              "column": 3
+            },
+            {
+              "title": "Validate different scenarios for 'In Progress' test assignment in review mode",
+              "ok": true,
+              "tags": [
+                "ReviewMode",
+                "InProgressTestAssignments",
+                "Smoke",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    },
+                    {
+                      "type": "Original user story, Automation user story",
+                      "description": "27994, (29273, 29290)",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/reviewMode/InProgressTestAssignments.spec.ts",
+                        "line": 180,
+                        "column": 3
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-20T08:41:05.107Z",
+                      "annotations": [],
+                      "attachments": []
+                    },
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-20T08:47:59.202Z",
+                      "annotations": [],
+                      "attachments": []
+                    },
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-11-20T08:54:54.368Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2c839c71415aac1f8fd0-836fc9345793af6c3fb1",
+              "file": "functional/reviewMode/InProgressTestAssignments.spec.ts",
+              "line": 180,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-20T08:11:25.647Z",
+    "duration": 2608753.774,
+    "expected": 0,
+    "skipped": 1,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

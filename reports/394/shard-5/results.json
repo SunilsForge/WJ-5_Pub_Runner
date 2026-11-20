@@ -1,0 +1,2089 @@
+{
+  "config": {
+    "argv": [
+      "/__t/node/22.23.4/x64/bin/node",
+      "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments|@TestSetVerification",
+      "--project=chrome",
+      "--shard=5/20",
+      "--workers=1",
+      "--retries=2",
+      "--reporter=html,json,blob"
+    ],
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+        "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/44700388217"
+          },
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "snapshotDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000,
+        "use": {
+          "actionTimeout": 60000,
+          "navigationTimeout": 60000,
+          "ignoreHTTPSErrors": true,
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "trace": "off",
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--disable-dev-shm-usage"
+            ],
+            "logger": {},
+            "slowMo": 0
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 5,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts",
+      "file": "derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "NUMCON cluster Derived Export Automation ",
+          "file": "derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts",
+          "line": 21,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For MAGCMP - Age - All correct scenario,NUMSEN - Age - All incorrect scenario Complete The NUMCON cluster & generate report",
+              "ok": false,
+              "tags": [
+                "NUMCON",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1500000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 254667,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts:107:19",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 1206
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 1206
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts:107:19"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S5:W0] Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S5:W0] Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N66319A66217\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66319A66217/dataFiles/Derived_Score_AutoFilter_Template_N66319A66217.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N66319A66217 FirstName=Frida LastName =N66319A66217 Age = 11/20/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N66319A66217\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Magnitude Comparison\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MAGCMP - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-20T08:11:32.915Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N66319A66217)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome/attachments/Generated-derived-Filter-Template-N66319A66217--c116d53fd06e520cf898b12ed51d559adedb2cf4.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 1206
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 254089,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts:107:19",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 1206
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 1206
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts:107:19"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S5:W1] Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S5:W1] Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N11463A5171\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N11463A5171/dataFiles/Derived_Score_AutoFilter_Template_N11463A5171.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N11463A5171 FirstName=Casandra LastName =N11463A5171 Age = 11/20/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N11463A5171\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Magnitude Comparison\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MAGCMP - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-20T08:15:48.831Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N11463A5171)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome-retry1/attachments/Generated-derived-Filter-Template-N11463A5171--59398e66596e911d986b5b398e5ed92a083a8bf4.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 1206
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 254966,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts:107:19",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 1206
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 1206
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[starts-with(text(), \\'Age Equivalent\\')]/b')\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:1206\n\n  1204 |       await this.page\n  1205 |         .locator(\"//span[starts-with(text(), 'Age Equivalent')]/b\")\n> 1206 |         .textContent()\n       |          ^\n  1207 |     ).trim();\n  1208 |     let GE: string = (\n  1209 |       await this.page\n    at wj5TestDerivedScoresPage.get_AE_GE_FromEndTestPopup (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1206:10)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:1193:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts:107:19"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S5:W2] Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S5:W2] Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N56748A73603\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N56748A73603/dataFiles/Derived_Score_AutoFilter_Template_N56748A73603.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N56748A73603 FirstName=Florencio LastName =N56748A73603 Age = 11/20/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N56748A73603\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Magnitude Comparison\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test MAGCMP - Age - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-11-20T08:20:04.070Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N56748A73603)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome-retry2/attachments/Generated-derived-Filter-Template-N56748A73603--1efa47955570bfa4bdef98ed341269eb52de415b.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome-retry2/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome-retry2/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-37a2c-CON-cluster-generate-report-chrome-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 1206
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "64200b3008bf1114e8f2-4cff63aad429d14a27da",
+              "file": "derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts",
+              "line": 23,
+              "column": 5
+            },
+            {
+              "title": "For NUMSEN - K12 - All correct scenario,MAGCMP - K12 - All correct scenario Complete The NUMCON cluster & generate report",
+              "ok": false,
+              "tags": [
+                "NUMCON",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1500000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 198282,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts:107:57",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 986
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 986
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts:107:57"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S5:W3] Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S5:W3] Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N32735A13300\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N32735A13300/dataFiles/Derived_Score_AutoFilter_Template_N32735A13300.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N32735A13300 FirstName=Cleora LastName =N32735A13300 Age = 11/20/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N32735A13300\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Number Sense\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 5\n"
+                        },
+                        {
+                          "text": "selected ssp is = 23260|Ages 4 to 5|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-20T08:24:20.078Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N32735A13300)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome/attachments/Generated-derived-Filter-Template-N32735A13300--478c4d817d3842c70e2af7dfc8018d0859326cda.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 986
+                      }
+                    },
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 198906,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts:107:57",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 986
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 986
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts:107:57"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S5:W4] Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S5:W4] Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N98499A86915\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N98499A86915/dataFiles/Derived_Score_AutoFilter_Template_N98499A86915.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N98499A86915 FirstName=Rahsaan LastName =N98499A86915 Age = 11/20/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N98499A86915\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Number Sense\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 5\n"
+                        },
+                        {
+                          "text": "selected ssp is = 23260|Ages 4 to 5|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-20T08:27:39.426Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N98499A86915)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome-retry1/attachments/Generated-derived-Filter-Template-N98499A86915--45966027652d026a2dbb406d2db979fd18ec433b.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 986
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 197719,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts:107:57",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 986
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 986
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts:107:57"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S5:W5] Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S5:W5] Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N94799A77269\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N94799A77269/dataFiles/Derived_Score_AutoFilter_Template_N94799A77269.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N94799A77269 FirstName=Emmitt LastName =N94799A77269 Age = 11/20/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N94799A77269\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Number Sense\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 5\n"
+                        },
+                        {
+                          "text": "selected ssp is = 23260|Ages 4 to 5|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-11-20T08:30:59.421Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N94799A77269)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome-retry2/attachments/Generated-derived-Filter-Template-N94799A77269--b0dcdaa95987a40908b0a87aadc2d6b17be9a36a.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome-retry2/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome-retry2/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-9c073-CON-cluster-generate-report-chrome-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 986
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "64200b3008bf1114e8f2-a348856fabec5f72279a",
+              "file": "derived_scores(compounds & clusters)/NUMCON_cluster_pub.spec.ts",
+              "line": 23,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts",
+      "file": "derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " PHNAWR cluster Derived Export Automation ",
+          "file": "derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts",
+          "line": 25,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For SNDBLN - Age - Attain Quick Basal Ceiling scenario,SEGMNT - Age - All correct scenario Complete The PHNAWR cluster & generate report",
+              "ok": false,
+              "tags": [
+                "PHNAWR",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 193764,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts:106:51",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 986
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 986
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts:106:51"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S5:W6] Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S5:W6] Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N70008A10816\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N70008A10816/dataFiles/Derived_Score_AutoFilter_Template_N70008A10816.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N70008A10816 FirstName=Dasia LastName =N70008A10816 Age = 11/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N70008A10816\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Sound Blending\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16210|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-20T08:34:18.284Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N70008A10816)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome/attachments/Generated-derived-Filter-Template-N70008A10816--86beba1c7a663de6b565308f691160f45284c9e2.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 986
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 194118,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts:106:51",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 986
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 986
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts:106:51"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S5:W7] Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S5:W7] Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N6044A15161\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N6044A15161/dataFiles/Derived_Score_AutoFilter_Template_N6044A15161.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N6044A15161 FirstName=Asa LastName =N6044A15161 Age = 11/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N6044A15161\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Sound Blending\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16210|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-20T08:37:33.154Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N6044A15161)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome-retry1/attachments/Generated-derived-Filter-Template-N6044A15161--299cc55d1d3caaad988bf237e34ed8c808a07d45.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 986
+                      }
+                    },
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 192882,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts:106:51",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 986
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 986
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts:106:51"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S5:W8] Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S5:W8] Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N96081A44250\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N96081A44250/dataFiles/Derived_Score_AutoFilter_Template_N96081A44250.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N96081A44250 FirstName=Lamont LastName =N96081A44250 Age = 11/20/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N96081A44250\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Sound Blending\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16210|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-11-20T08:40:48.458Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N96081A44250)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome-retry2/attachments/Generated-derived-Filter-Template-N96081A44250--b71058e9c18c53e7f4ff94c391521a6747046956.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome-retry2/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome-retry2/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e14f1-AWR-cluster-generate-report-chrome-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 986
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "55123c516606fb4e25ae-352eebf3065ade0be182",
+              "file": "derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "For SNDBLN - K12 - All correct scenario,SEGMNT - K12 - All incorrect scenario Complete The PHNAWR cluster & generate report",
+              "ok": false,
+              "tags": [
+                "PHNAWR",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 192910,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts:106:51",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 986
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 986
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts:106:51"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S5:W9] Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S5:W9] Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N26751A51532\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N26751A51532/dataFiles/Derived_Score_AutoFilter_Template_N26751A51532.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N26751A51532 FirstName=Katelynn LastName =N26751A51532 Age = 11/20/2018\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N26751A51532\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Sound Blending\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16210|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-20T08:44:02.381Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N26751A51532)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome/attachments/Generated-derived-Filter-Template-N26751A51532--75f49d5214d5e10f010af3b50f753f83c85e25ec.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 986
+                      }
+                    },
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 193602,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts:106:51",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 986
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 986
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts:106:51"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S5:W10] Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S5:W10] Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N39037A49153\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N39037A49153/dataFiles/Derived_Score_AutoFilter_Template_N39037A49153.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N39037A49153 FirstName=Ward LastName =N39037A49153 Age = 11/20/2018\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N39037A49153\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Sound Blending\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16210|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-20T08:47:16.433Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N39037A49153)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome-retry1/attachments/Generated-derived-Filter-Template-N39037A49153--b2a90217c6bb66d3c10144c8343fee5dbf522b8e.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 986
+                      }
+                    },
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 193333,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts:106:51",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                          "column": 10,
+                          "line": 986
+                        },
+                        "snippet": "   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                            "column": 10,
+                            "line": 986
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.items-container div span.item-text').last()\u001b[22m\n\n\n   at ../pages/wj5_test.derivedScores.page.ts:986\n\n  984 |         .locator(\".items-container div span.item-text\")\n  985 |         .last()\n> 986 |         .textContent();\n      |          ^\n  987 |       const itemNumber: number = parseInt(lastItemNumber.split(\" \")[1], 10);\n  988 |       console.log(`the last item number is = ${itemNumber}`);\n  989 |       this.scoreMap.clear();\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:986:10)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts:106:51"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S5:W11] Login successful for S06PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S5:W11] Login successful for S06PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N89368A66492\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N89368A66492/dataFiles/Derived_Score_AutoFilter_Template_N89368A66492.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N89368A66492 FirstName=Raymundo LastName =N89368A66492 Age = 11/20/2018\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N89368A66492\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Sound Blending\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 16210|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-11-20T08:50:31.163Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N89368A66492)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome-retry2/attachments/Generated-derived-Filter-Template-N89368A66492--6dc43173a70915a2840ba4c1eca32aecad40066c.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome-retry2/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome-retry2/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-e912f-AWR-cluster-generate-report-chrome-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts",
+                        "column": 10,
+                        "line": 986
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "55123c516606fb4e25ae-626c112dcceab32da35c",
+              "file": "derived_scores(compounds & clusters)/PHNAWR_cluster_pub.spec.ts",
+              "line": 27,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-20T08:11:24.362Z",
+    "duration": 2540639.4,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}
