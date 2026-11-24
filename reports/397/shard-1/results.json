@@ -1,0 +1,1979 @@
+{
+  "config": {
+    "argv": [
+      "/__t/node/22.23.5/x64/bin/node",
+      "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      " ((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments|@TestSetVerification",
+      "--project=chrome",
+      "--shard=1/20",
+      "--workers=1",
+      "--retries=1",
+      "--reporter=html,json,blob"
+    ],
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+        "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "commitHash": "e68db2e02977dbecabb5b8cf0939baa974290eb0",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45349912769"
+          },
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "snapshotDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000,
+        "use": {
+          "actionTimeout": 60000,
+          "navigationTimeout": 60000,
+          "ignoreHTTPSErrors": true,
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "trace": "retain-on-first-failure",
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--disable-dev-shm-usage"
+            ],
+            "logger": {},
+            "slowMo": 0
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 1,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts",
+      "file": "derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "ACDAPP cluster Derived Export Automation ",
+          "file": "derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts",
+          "line": 24,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For PSGCMP - Age - All incorrect scenario,APPROB - Age - All incorrect scenario,WRTSMP - Age - All correct scenario Complete The ACDAPP cluster & generate report",
+              "ok": false,
+              "tags": [
+                "ACDAPP",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 480000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 261609,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScoresForACDAPPCluster (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:2352:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts:105:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                          "column": 44,
+                          "line": 30
+                        },
+                        "snippet": "   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                            "column": 44,
+                            "line": 30
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n\n   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScoresForACDAPPCluster (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:2352:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts:105:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W0] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N16037A81032\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N16037A81032/dataFiles/Derived_Score_AutoFilter_Template_N16037A81032.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N16037A81032 FirstName=Lawrence LastName =N16037A81032 Age = 11/24/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N16037A81032\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22557|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Map(11) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^0000000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores IN = {\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m403.31\u001b[39m, Semw: \u001b[33m15.38\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Applied Problems\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Age 4\n"
+                        },
+                        {
+                          "text": "selected ssp is = 27455|Age 4|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-24T07:42:37.450Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N16037A81032)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-c23a3-APP-cluster-generate-report-chrome/attachments/Generated-derived-Filter-Template-N16037A81032--85de943b08106fa16479fcd364cd16bd471c0180.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-c23a3-APP-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-c23a3-APP-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-c23a3-APP-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-c23a3-APP-cluster-generate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-c23a3-APP-cluster-generate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                        "column": 44,
+                        "line": 30
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 225076,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScoresForACDAPPCluster (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:2352:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts:105:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                          "column": 44,
+                          "line": 30
+                        },
+                        "snippet": "   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                            "column": 44,
+                            "line": 30
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n\n   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScoresForACDAPPCluster (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:2352:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts:105:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W1] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W1] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N95404A70683\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N95404A70683/dataFiles/Derived_Score_AutoFilter_Template_N95404A70683.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N95404A70683 FirstName=Humberto LastName =N95404A70683 Age = 11/24/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N95404A70683\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22557|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - Age - All incorrect scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Map(11) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'0'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'<4y0m'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'<GK.0'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^0000000@<4y0m<GK.0\n"
+                        },
+                        {
+                          "text": "scores IN = {\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m0\u001b[39m, Wabil: \u001b[33m403.31\u001b[39m, Semw: \u001b[33m15.38\u001b[39m, AE: \u001b[32m'<4y0m'\u001b[39m, GE: \u001b[32m'<GK.0'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Applied Problems\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Age 4\n"
+                        },
+                        {
+                          "text": "selected ssp is = 27455|Age 4|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-24T07:47:08.130Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N95404A70683)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-c23a3-APP-cluster-generate-report-chrome-retry1/attachments/Generated-derived-Filter-Template-N95404A70683--e2bb58761145889a485cb886d35e8928bbb46540.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-c23a3-APP-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-c23a3-APP-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-c23a3-APP-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-c23a3-APP-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                        "column": 44,
+                        "line": 30
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "29cfd6cfbd9051d19413-78f44b84d08272dda77e",
+              "file": "derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts",
+              "line": 26,
+              "column": 5
+            },
+            {
+              "title": "For PSGCMP - K12 - All correct scenario,APPROB - K12 - Attain Quick Basal Ceiling scenario,WRTSMP - K12 - All incorrect scenario Complete The ACDAPP cluster & generate report",
+              "ok": false,
+              "tags": [
+                "ACDAPP",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 480000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 339411,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScoresForACDAPPCluster (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:2352:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts:105:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                          "column": 44,
+                          "line": 30
+                        },
+                        "snippet": "   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                            "column": 44,
+                            "line": 30
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n\n   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScoresForACDAPPCluster (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:2352:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts:105:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W2] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W2] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N73995A94873\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N73995A94873/dataFiles/Derived_Score_AutoFilter_Template_N73995A94873.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N73995A94873 FirstName=Emile LastName =N73995A94873 Age = 11/24/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N73995A94873\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22557|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - K12 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Map(42) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^11111111111111111111111111111111111111@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores IN = {\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m38\u001b[39m, Wabil: \u001b[33m557.89\u001b[39m, Semw: \u001b[33m14.85\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Applied Problems\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Age 4\n"
+                        },
+                        {
+                          "text": "selected ssp is = 27455|Age 4|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-24T07:50:54.231Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N73995A94873)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8c475-APP-cluster-generate-report-chrome/attachments/Generated-derived-Filter-Template-N73995A94873--437af01027502c834c650b67bb8452ceb07e6681.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8c475-APP-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8c475-APP-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8c475-APP-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8c475-APP-cluster-generate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8c475-APP-cluster-generate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                        "column": 44,
+                        "line": 30
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 326058,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScoresForACDAPPCluster (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:2352:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts:105:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                          "column": 44,
+                          "line": 30
+                        },
+                        "snippet": "   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                            "column": 44,
+                            "line": 30
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n\n   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScoresForACDAPPCluster (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:2352:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts:105:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W3] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W3] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N79072A75169\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N79072A75169/dataFiles/Derived_Score_AutoFilter_Template_N79072A75169.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N79072A75169 FirstName=Jaeden LastName =N79072A75169 Age = 11/24/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N79072A75169\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Passage Comprehension\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 6\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22557|Ages 4 to 6|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        },
+                        {
+                          "text": "Type Of test PSGCMP - K12 - All correct scenario \n\n"
+                        },
+                        {
+                          "text": "Item 1\n"
+                        },
+                        {
+                          "text": "Item 2\n"
+                        },
+                        {
+                          "text": "Item 3\n"
+                        },
+                        {
+                          "text": "Item 4\n"
+                        },
+                        {
+                          "text": "Item 5\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        },
+                        {
+                          "text": "Item 21\n"
+                        },
+                        {
+                          "text": "Item 22\n"
+                        },
+                        {
+                          "text": "Item 23\n"
+                        },
+                        {
+                          "text": "Item 24\n"
+                        },
+                        {
+                          "text": "Item 25\n"
+                        },
+                        {
+                          "text": "Item 26\n"
+                        },
+                        {
+                          "text": "Item 27\n"
+                        },
+                        {
+                          "text": "Item 28\n"
+                        },
+                        {
+                          "text": "Item 29\n"
+                        },
+                        {
+                          "text": "Item 30\n"
+                        },
+                        {
+                          "text": "Item 31\n"
+                        },
+                        {
+                          "text": "Item 32\n"
+                        },
+                        {
+                          "text": "Item 33\n"
+                        },
+                        {
+                          "text": "Item 34\n"
+                        },
+                        {
+                          "text": "Item 35\n"
+                        },
+                        {
+                          "text": "Item 36\n"
+                        },
+                        {
+                          "text": "Item 37\n"
+                        },
+                        {
+                          "text": "Item 38\n"
+                        },
+                        {
+                          "text": "Map(42) {\n  \u001b[32m' '\u001b[39m => \u001b[32m'^'\u001b[39m,\n  \u001b[32m'Item 1'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 2'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 3'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 4'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 5'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 6'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 7'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 8'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 9'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 10'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 11'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 12'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 13'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 14'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 15'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 16'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 17'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 18'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 19'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 20'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 21'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 22'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 23'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 24'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 25'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 26'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 27'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 28'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 29'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 30'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 31'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 32'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 33'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 34'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 35'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 36'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 37'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Item 38'\u001b[39m => \u001b[32m'1'\u001b[39m,\n  \u001b[32m'Breaker'\u001b[39m => \u001b[32m'@'\u001b[39m,\n  \u001b[32m'AE'\u001b[39m => \u001b[32m'>29y'\u001b[39m,\n  \u001b[32m'GE'\u001b[39m => \u001b[32m'>G12.9'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "scoreValuesString ^11111111111111111111111111111111111111@>29y>G12.9\n"
+                        },
+                        {
+                          "text": "scores IN = {\n  \u001b[32m'PSGCMP.W5PA'\u001b[39m: { wScores: \u001b[33m38\u001b[39m, Wabil: \u001b[33m557.89\u001b[39m, Semw: \u001b[33m14.85\u001b[39m, AE: \u001b[32m'>29y'\u001b[39m, GE: \u001b[32m'>G12.9'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Applied Problems\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Age 4\n"
+                        },
+                        {
+                          "text": "selected ssp is = 27455|Age 4|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-24T07:56:43.557Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N79072A75169)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8c475-APP-cluster-generate-report-chrome-retry1/attachments/Generated-derived-Filter-Template-N79072A75169--01b321a4d7b029c5cb2fb38735d0a2d9bb4e170c.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8c475-APP-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8c475-APP-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8c475-APP-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-8c475-APP-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                        "column": 44,
+                        "line": 30
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "29cfd6cfbd9051d19413-49b9aaef82111e42244e",
+              "file": "derived_scores(compounds & clusters)/ACDAPP_cluster_pub.spec.ts",
+              "line": 26,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts",
+      "file": "derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " AWKMEM cluster Derived Export Automation ",
+          "file": "derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts",
+          "line": 24,
+          "column": 6,
+          "specs": [
+            {
+              "title": "For VRBATN - Age - All correct scenario,NUMREV - Age - All correct scenario Complete The AWKMEM cluster & generate report",
+              "ok": false,
+              "tags": [
+                "AWKMEM",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 202229,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:984:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts:105:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                          "column": 44,
+                          "line": 30
+                        },
+                        "snippet": "   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                            "column": 44,
+                            "line": 30
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n\n   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:984:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts:105:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W4] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W4] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N15860A89984\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N15860A89984/dataFiles/Derived_Score_AutoFilter_Template_N15860A89984.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N15860A89984 FirstName=Alan LastName =N15860A89984 Age = 11/24/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N15860A89984\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Verbal Attention\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 8\n"
+                        },
+                        {
+                          "text": "selected ssp is = 12924|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-24T08:02:10.656Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N15860A89984)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-0c1ac-MEM-cluster-generate-report-chrome/attachments/Generated-derived-Filter-Template-N15860A89984--828962863e1a16fa4a56985db124f32a7f84c15c.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-0c1ac-MEM-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-0c1ac-MEM-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-0c1ac-MEM-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-0c1ac-MEM-cluster-generate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-0c1ac-MEM-cluster-generate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                        "column": 44,
+                        "line": 30
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 193544,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:984:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts:105:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                          "column": 44,
+                          "line": 30
+                        },
+                        "snippet": "   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                            "column": 44,
+                            "line": 30
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n\n   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:984:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts:105:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W5] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W5] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N42557A67279\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N42557A67279/dataFiles/Derived_Score_AutoFilter_Template_N42557A67279.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N42557A67279 FirstName=Helmer LastName =N42557A67279 Age = 11/24/2021\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N42557A67279\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Verbal Attention\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 8\n"
+                        },
+                        {
+                          "text": "selected ssp is = 12924|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-24T08:05:41.357Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N42557A67279)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-0c1ac-MEM-cluster-generate-report-chrome-retry1/attachments/Generated-derived-Filter-Template-N42557A67279--7189ca2aec8e292af034f2d63d40e3de0201a60c.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-0c1ac-MEM-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-0c1ac-MEM-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-0c1ac-MEM-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-0c1ac-MEM-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                        "column": 44,
+                        "line": 30
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7505def4db2f4de8831a-f8d881b7d79e370eab38",
+              "file": "derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts",
+              "line": 26,
+              "column": 5
+            },
+            {
+              "title": "For VRBATN - K12 - All correct scenario,NUMREV - K12 - All correct scenario Complete The AWKMEM cluster & generate report",
+              "ok": false,
+              "tags": [
+                "AWKMEM",
+                "Smoke",
+                "DerivedScores",
+                "Aut_Eng_01"
+              ],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 202451,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:984:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts:105:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                          "column": 44,
+                          "line": 30
+                        },
+                        "snippet": "   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                            "column": 44,
+                            "line": 30
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n\n   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:984:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts:105:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W6] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W6] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N78565A29578\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N78565A29578/dataFiles/Derived_Score_AutoFilter_Template_N78565A29578.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N78565A29578 FirstName=Beth LastName =N78565A29578 Age = 11/24/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N78565A29578\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Verbal Attention\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 8\n"
+                        },
+                        {
+                          "text": "selected ssp is = 12924|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-24T08:08:55.925Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N78565A29578)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-d3528-MEM-cluster-generate-report-chrome/attachments/Generated-derived-Filter-Template-N78565A29578--cf1649a184aa42d6eadbf516acd65cdca8d1fb8d.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-d3528-MEM-cluster-generate-report-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-d3528-MEM-cluster-generate-report-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-d3528-MEM-cluster-generate-report-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-d3528-MEM-cluster-generate-report-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-d3528-MEM-cluster-generate-report-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                        "column": 44,
+                        "line": 30
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 193122,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:984:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts:105:13",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                          "column": 44,
+                          "line": 30
+                        },
+                        "snippet": "   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                            "column": 44,
+                            "line": 30
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div.item-button-container > button[role=\"menuitem\"] > span').last()\u001b[22m\n\n\n   at ../utils/basePageUtils.ts:30\n\n  28 |     await expect(loc.itemNavToggle).toHaveAttribute('aria-expanded', 'true');\n  29 |   }\n> 30 |   return (await loc.itemsContainerLastSpan.textContent())?.trim();\n     |                                            ^\n  31 | }\n  32 |\n    at getLastItemText (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts:30:44)\n    at wj5TestDerivedScoresPage.completeTheTakenTestForDerivedScores (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/pages/wj5_test.derivedScores.page.ts:984:30)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts:105:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S1:W7] Login successful for S02PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "[S1:W7] Login successful for S02PwAut25Ex_02\n"
+                        },
+                        {
+                          "text": "Trying to add an Examinee \n\n"
+                        },
+                        {
+                          "text": "Examinee ID N8695A61722\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N8695A61722/dataFiles/Derived_Score_AutoFilter_Template_N8695A61722.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N8695A61722 FirstName=Jeremy LastName =N8695A61722 Age = 11/24/2022\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N8695A61722\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Validating test name...\n"
+                        },
+                        {
+                          "text": "Text content: \"Verbal Attention\"\n"
+                        },
+                        {
+                          "text": "Waiting for 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Clicking 'Let's Begin' button...\n"
+                        },
+                        {
+                          "text": "Setting SSP to: Ages 4 to 8\n"
+                        },
+                        {
+                          "text": "selected ssp is = 12924|Ages 4 to 8|\n"
+                        },
+                        {
+                          "text": "Clicking 'Start Test' button...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-24T08:12:26.903Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated derived Filter Template (N8695A61722)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-d3528-MEM-cluster-generate-report-chrome-retry1/attachments/Generated-derived-Filter-Template-N8695A61722--1b92b99e9428f76705c47d83f61c04b7d5bd4e57.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-d3528-MEM-cluster-generate-report-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-d3528-MEM-cluster-generate-report-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-d3528-MEM-cluster-generate-report-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/derived_scores(compounds &-d3528-MEM-cluster-generate-report-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/utils/basePageUtils.ts",
+                        "column": 44,
+                        "line": 30
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7505def4db2f4de8831a-2d44e0d6c1f8e4652c9d",
+              "file": "derived_scores(compounds & clusters)/AWKMEM_cluster_pub.spec.ts",
+              "line": 26,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-24T07:42:29.299Z",
+    "duration": 1991145.147,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,1 @@
+{"runNumber":"397","timestamp":"20261124_074123","runReason":"Running AE01 SMOKE in STAEG after left nav item nad the ed test popup fix ","environment":"stage","browser":"chrome","testPattern":" ((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments|@TestSetVerification"}
