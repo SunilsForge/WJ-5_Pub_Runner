@@ -11,8 +11,11 @@ set -euo pipefail
 
 mkdir -p "reports/${RUN_NUMBER}"
 # Heavy media and files > 100 MB stay in the Actions artifacts (Pages/git limits).
+# KEEP IN SYNC with build-lite-report.sh (it pre-applies this filter for the lite artifact).
+# large-files-manifest.tsv is the lite artifact's internal list for build-large-files-info.js.
 rsync -a --exclude="*.zip" --exclude="*.mp4" --exclude="*.webm" \
   --exclude="*.gif" --exclude="*.trace" --exclude="*.webp" --max-size=100M \
+  --exclude="/large-files-manifest.tsv" \
   "${NEW_REPORT_DIR}/" "reports/${RUN_NUMBER}/"
 
 # Upsert by runNumber, newest main run first (reruns sort with their parent).

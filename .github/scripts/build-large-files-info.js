@@ -27,7 +27,17 @@ if (!RUN_DIR) {
 }
 
 const large = [];
-(function walk(dir) {
+// Lite artifact (build-lite-report.sh): the >100 MB files were left out, so their list
+// comes from the manifest. Full artifact (fallback download): walk the files themselves.
+const MANIFEST = path.join(NEW_REPORT_DIR, "large-files-manifest.tsv");
+if (fs.existsSync(MANIFEST)) {
+  for (const line of fs.readFileSync(MANIFEST, "utf8").split("\n")) {
+    const tab = line.indexOf("\t");
+    if (tab < 1) continue;
+    const size = Number(line.slice(0, tab));
+    if (size > MAX_BYTES) large.push({ rel: line.slice(tab + 1), sizeMb: toMb(size) });
+  }
+} else (function walk(dir) {
   let entries = [];
   try {
     entries = fs.readdirSync(dir, { withFileTypes: true });

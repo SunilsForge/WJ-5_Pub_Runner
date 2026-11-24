@@ -600,6 +600,20 @@ jobs:
           path: merged-report/
           retention-days: 90
 
+      - name: Build lite report for Pages deploy
+        # The full artifact above is unchanged (traces/videos stay downloadable from Actions).
+        # deploy-report only publishes what apply-main-run.sh keeps — no traces/videos, no
+        # files > 100 MB — so it gets a copy with that exact filter pre-applied instead of
+        # the multi-GB full report (run 45426781367 timed out downloading 4.3 GB).
+        run: bash runner-repo/.github/scripts/build-lite-report.sh merged-report merged-report-lite
+
+      - name: Upload lite report artifact (for deploy-report)
+        uses: actions/upload-artifact@v6
+        with:
+          name: merged-playwright-report-lite
+          path: merged-report-lite/
+          retention-days: 90
+
       - name: Upload results summary (for Slack)
         if: always()
         uses: actions/upload-artifact@v6
@@ -632,7 +646,8 @@ jobs:
 
   deploy-report:
     name: Deploy Report to GitHub Pages
-    timeout-minutes: 10
+    # Normally ~3 min. Headroom covers the full-report fallback download below on a slow day.
+    timeout-minutes: 25
     if: always()
     needs: [prepare, merge-reports]
     runs-on: ubuntu-latest
@@ -679,7 +694,45 @@ jobs:
             echo "Initializing gh-pages branch..."
           fi
 
-      - name: Download merged report
+      # Download the lite report (MBs; same content gh-pages gets), retrying once, and
+      # fall back to the full merged-playwright-report if the lite one is missing (e.g.
+      # merge-reports failed after the full upload) or both attempts fail.
+      # Each attempt has its own timeout, so a stalled transfer can't eat the job budget.
+      - name: Download lite report (attempt 1)
+        id: dl-lite-1
+        continue-on-error: true
+        timeout-minutes: 5
+        uses: actions/download-artifact@v7
+        with:
+          name: merged-playwright-report-lite
+          path: new-report
+
+      - name: Clear partial download before retry
+        if: steps.dl-lite-1.outcome != 'success'
+        run: |
+          echo "::warning::Lite report download attempt 1 failed — retrying in 15s"
+          rm -rf new-report
+          sleep 15
+
+      - name: Download lite report (attempt 2)
+        id: dl-lite-2
+        if: steps.dl-lite-1.outcome != 'success'
+        continue-on-error: true
+        timeout-minutes: 5
+        uses: actions/download-artifact@v7
+        with:
+          name: merged-playwright-report-lite
+          path: new-report
+
+      - name: Clear partial download before full-report fallback
+        if: steps.dl-lite-1.outcome != 'success' && steps.dl-lite-2.outcome != 'success'
+        run: |
+          echo "::warning::Lite report unavailable — falling back to the full merged report (slower)"
+          rm -rf new-report
+
+      - name: Download full merged report (fallback)
+        if: steps.dl-lite-1.outcome != 'success' && steps.dl-lite-2.outcome != 'success'
+        timeout-minutes: 15
         uses: actions/download-artifact@v7
         with:
           name: merged-playwright-report
