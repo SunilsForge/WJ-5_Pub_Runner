@@ -1,0 +1,1 @@
+{"runNumber":"402","timestamp":"20261126_122815","runReason":"NUMCON add-test checkbox + MTHCAL mini report AE/GE (101aa25)","environment":"stage","browser":"chrome","testPattern":"((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))"}
