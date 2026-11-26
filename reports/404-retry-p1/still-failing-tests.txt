@@ -1,0 +1,149 @@
+Still failing after rerun pass 1 (main run #404) — 67 test(s)
+
+1. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/ANLSYN_Rerouting.spec.ts
+2. All Examinees - Test Items 5 Correct 5 Incorrect scenario Test UI
+   UIAndReports/LETPAT_Single_Timer.spec.ts
+3. Grades 3 to 6 - Block B&C&A End Test Scenario Test UI
+   UIAndReports/WRTSMP_Single_Scorelater.spec.ts
+4. Preschool to Grade 2 - Block A 5 correct and 4 incorrect scenario Test UI
+   UIAndReports/BLKROT_Multi_BC6.spec.ts
+5. Ages 8 to 13 - End Test Scenario Block B And A Test UI
+   UIAndReports/SWRTAC_Single_ScoreLater.spec.ts
+6. Above Average Adult - Block D&E&C End Test Scenario Test UI
+   UIAndReports/WRTSMP_Single_Scorelater.spec.ts
+7. Ages 4 to 7 - Block A and Block B All correct Scenario Test UI
+   UIAndReports/BLKROT_Multi_BC6.spec.ts
+8. Grade 9 to Above Average Adult - End Test Scenario For Block C Test UI
+   UIAndReports/SWRTAC_Single_ScoreLater.spec.ts
+9. Above Average Adult - Block D&E End Test Scenario Test UI
+   UIAndReports/WRTSMP_Single_Scorelater.spec.ts
+10. Grade 3 to Adult - BLKROT Block B 2 correct & Block A All Incorrect then Block B 1 correct Scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+11. Preschool to Grade 2 - Block A All correct and Block B All incorrect Scenario Test UI
+   UIAndReports/BLKROT_Multi_BC6.spec.ts
+12. Ages 14 to Above Average Adult - Block C And B End Test Scenario Test UI
+   UIAndReports/SWRTAC_Single_ScoreLater.spec.ts
+13. Ages 8 to Adult - Flag Item with Notes and Review scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+14. Ages 8 to Adult - Block B Basal and ceiling scenario with 6 incorrect Test UI
+   UIAndReports/BLKROT_Multi_BC6.spec.ts
+15. All Examinees - Sample Items End Test Flow scenario Test UI
+   UIAndReports/VWKMEM_Single_Block.spec.ts
+16. Grade 3 to Adult - BLKROT Sample Items Correct and then Incorrect Scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+17. Grade 3 to Adult - Block B 6 correct and 6 incorrect scenario Test UI
+   UIAndReports/BLKROT_Multi_BC6.spec.ts
+18. All Examinees - Answer only one sample item Test UI
+   UIAndReports/VWKMEM_Single_Block.spec.ts
+19. All Examinees - ANLSYN Sample Items Correct and then Incorrect Scenario Test Rerouting
+   ReroutingandLeftNav/ANLSYN_Rerouting.spec.ts
+20. Ages 8 to Adult - BLKROT Sample Items Incorrect and then Correct Scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+21. All Examinees - Practice exercise end test scenario with 1 correct Test UI
+   UIAndReports/VWKMEM_Single_Block.spec.ts
+22. All Examinees - ANLSYN Sample Items Incorrect and then Correct Scenario Test Rerouting
+   ReroutingandLeftNav/ANLSYN_Rerouting.spec.ts
+23. All Examinees - Sample Items Rerouting Scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Rerouting.spec.ts
+24. All Examinees - Practice exercise end test scenario with all incorrect Test UI
+   UIAndReports/VWKMEM_Single_Block.spec.ts
+25. Ages 4 to 7 - Flag Item with Notes and Review scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+26. All Examinees - Samples Items A And B rerouting Flow Scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Rerouting.spec.ts
+27. All Examinees - Practice exercise 2 correct scenario with Items 1 and 2 incorrect Test UI
+   UIAndReports/VWKMEM_Single_Block.spec.ts
+28. All Examinees - Flag Item with Notes and Review scenario Test Rerouting
+   ReroutingandLeftNav/LETPAT_Rerouting.spec.ts
+29. Ages 8 to Adult - Block B All correct scenario Test UI
+   UIAndReports/BLKROT_Multi_BC6.spec.ts
+30. All Examinees - Practice exercise 2 correct scenario with Items 1 to 10 correct Test UI
+   UIAndReports/VWKMEM_Single_Block.spec.ts
+31. Ages 4 to 7 - Flag Item with Notes and Review scenario for Score Later for SSP1 Test Rerouting
+   ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts
+32. Grade 3 to Adult - Block B and Block A All incorrect Scenario Test UI
+   UIAndReports/BLKROT_Multi_BC6.spec.ts
+33. All Examinees - Practice exercise 4 correct scenario with Items 1 and 2 incorrect Test UI
+   UIAndReports/VWKMEM_Single_Block.spec.ts
+34. All Examinees - First and Last item check Scenario Test Rerouting
+   ReroutingandLeftNav/ANLSYN_Rerouting.spec.ts
+35. All Examinees - Test Items All incorrect scenario Test UI
+   UIAndReports/LETPAT_Single_Timer.spec.ts
+36. Ages 8 to 11 - Block B&C End Test Scenario Test UI
+   UIAndReports/WRTSMP_Single_Scorelater.spec.ts
+37. Ages 8 to 13 - Flag Item with Notes and Review scenario for Score Later SSP2 Test Rerouting
+   ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts
+38. Ages 8 to Adult - Block B 4 correct and Block A 6 correct Scenario Test UI
+   UIAndReports/BLKROT_Multi_BC6.spec.ts
+39. All Examinees - Practice exercise 4 correct scenario with Items 1 to 10 correct Test UI
+   UIAndReports/VWKMEM_Single_Block.spec.ts
+40. Ages 14 to Above Average Adult - Flag Item with Notes and Review scenario for Score Later SSP3 Test Rerouting
+   ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts
+41. Grade 3 to Adult - Block B 5 correct and 6 incorrect scenario Test UI
+   UIAndReports/BLKROT_Multi_BC6.spec.ts
+42. Ages 5 to 7 - Block A Discontinue Scenario WRTSMP Test UI
+   UIAndReports/WRTSMP_Single_Scorelater.spec.ts
+43. All Examinees - VWKMEM Review mode Verification scenario Test Rerouting
+   ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
+44. Kindergarten to Grade 2 - Block A&B End Test Scenario Test UI
+   UIAndReports/WRTSMP_Single_Scorelater.spec.ts
+45. All Examinees - Test Items All correct scenario Test UI
+   UIAndReports/LETPAT_Single_Timer.spec.ts
+46. Ages 5 to 7 - Block A&B&C End Test Scenario Test UI
+   UIAndReports/WRTSMP_Single_Scorelater.spec.ts
+47. All Examinees - VWKMEM Sample Items Correct and then Incorrect Scenario Test Rerouting
+   ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
+48. All Examinees - Test Items When Timer Ran Out for First Item set Test UI
+   UIAndReports/LETPAT_Single_Timer.spec.ts
+49. Grades 3 to 6 - Block B&C&D End Test Scenario Test UI
+   UIAndReports/WRTSMP_Single_Scorelater.spec.ts
+50. All Examinees - VWKMEM Needs Attention Scenario Test Rerouting
+   ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
+51. All Examinees - Test Items When Timer Ran Out for Last Item set Test UI
+   UIAndReports/LETPAT_Single_Timer.spec.ts
+52. Age 12 to Average Adult - Block C&D&B End Test Scenario Test UI
+   UIAndReports/WRTSMP_Single_Scorelater.spec.ts
+53. All Examinees - VWKMEM Sample Item C Rerouting Scenario Test Rerouting
+   ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
+54. Preschool to Grade 2 - Block A End Test Scenario Test UI
+   UIAndReports/SWRTAC_Single_ScoreLater.spec.ts
+55. Grade 7 to Average Adult - Block C&D End Test Scenario Test UI
+   UIAndReports/WRTSMP_Single_Scorelater.spec.ts
+56. Ages 8 to 11 - Flag Item with Notes and Review scenario for Score Later for SSP2 Test Rerouting
+   ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts
+57. Ages 4 to 7 - End Test Scenario For Block A And B Test UI
+   UIAndReports/SWRTAC_Single_ScoreLater.spec.ts
+58. Age 12 to Average Adult - Block C&D&E End Test Scenario Test UI
+   UIAndReports/WRTSMP_Single_Scorelater.spec.ts
+59. Ages 4 to 7 - BLKROT Sample Items Incorrect and then Correct Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+60. Above Average Adult - Flag Item with Notes and Review scenario for Score Later for SSP4 Test Rerouting
+   ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts
+61. Grades 3 to 8 - End Test Scenario For Block B Test UI
+   UIAndReports/SWRTAC_Single_ScoreLater.spec.ts
+62. Preschool to Grade 2 - First and Last item check Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+63. Grade 3 to Adult - First and Last item check Scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+64. Grade 7 to Average Adult - Flag Item with Notes and Review scenario for Score Later for SSP3 Test Rerouting
+   ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts
+65. Preschool to Grade 2 - BLKROT Sample Items Correct and then Incorrect Scenario for SSP1 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+66. Ages 8 to Adult - Rerouting End Test scenario for SSP2 Test Rerouting
+   ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+67. Ages 4 to 7 - Block A End Test Scenario With All incorrect Test UI
+   UIAndReports/BLKROT_Multi_BC6.spec.ts
+
+Affected spec files (11):
+  ReroutingandLeftNav/ANLSYN_Rerouting.spec.ts
+  ReroutingandLeftNav/BLKROT_Rerouting.spec.ts
+  ReroutingandLeftNav/LETPAT_Rerouting.spec.ts
+  ReroutingandLeftNav/SWRTAC_Rerouting.spec.ts
+  ReroutingandLeftNav/VWKMEM_Rerouting.spec.ts
+  ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts
+  UIAndReports/BLKROT_Multi_BC6.spec.ts
+  UIAndReports/LETPAT_Single_Timer.spec.ts
+  UIAndReports/SWRTAC_Single_ScoreLater.spec.ts
+  UIAndReports/VWKMEM_Single_Block.spec.ts
+  UIAndReports/WRTSMP_Single_Scorelater.spec.ts
