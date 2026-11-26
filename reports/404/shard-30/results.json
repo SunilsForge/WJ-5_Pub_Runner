@@ -1,0 +1,1086 @@
+{
+  "config": {
+    "argv": [
+      "/__t/node/22.23.5/x64/bin/node",
+      "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "(?=.*@Aut_Eng_02)(?=.*@Smoke)",
+      "--project=chrome",
+      "--shard=30/40",
+      "--workers=1",
+      "--retries=1",
+      "--reporter=html,json,blob"
+    ],
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+        "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "snapshotDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000,
+        "use": {
+          "actionTimeout": 60000,
+          "navigationTimeout": 60000,
+          "ignoreHTTPSErrors": true,
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "trace": "off",
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--disable-dev-shm-usage"
+            ],
+            "logger": {},
+            "slowMo": 0
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 30,
+      "total": 40
+    },
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+      "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " SWRTAC UI And Reports",
+          "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Ages 8 to 13 - End Test Scenario Block B And A Test UI",
+              "ok": false,
+              "tags": [
+                "SWRTAC123",
+                "Single123",
+                "ScoreLater",
+                "AUT_ENG_02",
+                "Smoke",
+                "UIAndReports"
+              ],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 272868,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Score Later\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Score Later\\']')\u001b[22m\n\n    at CommonTestPage.completeTheTakenTestForSentenceWritingAccuracy (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:8150:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:25:17",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 33,
+                          "line": 8150
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:8150\n\n  8148 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText(\"End Test\");\n  8149 |           await this.plainNextButtonOrEndButton.click();\n> 8150 |           await this.scoreLater.click();\n       |                                 ^\n  8151 |           await this.listOfScores.nth(0).fill(\"0\");\n  8152 |           await this.listOfScores.nth(1).fill(\"0\");\n  8153 |           await this.listOfScores.nth(2).fill(\"0\");"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 33,
+                            "line": 8150
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Score Later\\']')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:8150\n\n  8148 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText(\"End Test\");\n  8149 |           await this.plainNextButtonOrEndButton.click();\n> 8150 |           await this.scoreLater.click();\n       |                                 ^\n  8151 |           await this.listOfScores.nth(0).fill(\"0\");\n  8152 |           await this.listOfScores.nth(1).fill(\"0\");\n  8153 |           await this.listOfScores.nth(2).fill(\"0\");\n    at CommonTestPage.completeTheTakenTestForSentenceWritingAccuracy (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:8150:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:25:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 51PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S30:W0] Login successful for 51PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 51PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S30:W0] Login successful for 51PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N37328A32167\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N37328A32167/dataFiles/Score_DataExport_AutoFilter_Template_N37328A32167.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N37328A32167 FirstName=Rossie LastName =N37328A32167 Age = 11/26/2001\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N37328A32167\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Sentence Writing Accuracy\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22503|Ages 8 to 13|22527,22528,22529\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T19:12:02.498Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N37328A32167)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N37328A32167--a34ad5753e48015a7fe2e8ff6dadb9ae0c0c0e76.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 33,
+                        "line": 8150
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 271966,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Score Later\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Score Later\\']')\u001b[22m\n\n    at CommonTestPage.completeTheTakenTestForSentenceWritingAccuracy (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:8150:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:25:17",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 33,
+                          "line": 8150
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:8150\n\n  8148 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText(\"End Test\");\n  8149 |           await this.plainNextButtonOrEndButton.click();\n> 8150 |           await this.scoreLater.click();\n       |                                 ^\n  8151 |           await this.listOfScores.nth(0).fill(\"0\");\n  8152 |           await this.listOfScores.nth(1).fill(\"0\");\n  8153 |           await this.listOfScores.nth(2).fill(\"0\");"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 33,
+                            "line": 8150
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Score Later\\']')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:8150\n\n  8148 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText(\"End Test\");\n  8149 |           await this.plainNextButtonOrEndButton.click();\n> 8150 |           await this.scoreLater.click();\n       |                                 ^\n  8151 |           await this.listOfScores.nth(0).fill(\"0\");\n  8152 |           await this.listOfScores.nth(1).fill(\"0\");\n  8153 |           await this.listOfScores.nth(2).fill(\"0\");\n    at CommonTestPage.completeTheTakenTestForSentenceWritingAccuracy (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:8150:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:25:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 51PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S30:W1] Login successful for 51PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 51PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S30:W1] Login successful for 51PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N66249A33910\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N66249A33910/dataFiles/Score_DataExport_AutoFilter_Template_N66249A33910.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N66249A33910 FirstName=Einar LastName =N66249A33910 Age = 11/26/2001\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N66249A33910\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Sentence Writing Accuracy\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22503|Ages 8 to 13|22527,22528,22529\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 7\n"
+                        },
+                        {
+                          "text": "Item 8\n"
+                        },
+                        {
+                          "text": "Item 9\n"
+                        },
+                        {
+                          "text": "Item 10\n"
+                        },
+                        {
+                          "text": "Item 11\n"
+                        },
+                        {
+                          "text": "Item 12\n"
+                        },
+                        {
+                          "text": "Item 13\n"
+                        },
+                        {
+                          "text": "Item 14\n"
+                        },
+                        {
+                          "text": "Item 15\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-26T19:16:37.112Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N66249A33910)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N66249A33910--2993e54b2a3b824bde4f7c85a4b1981739e91207.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-1e669-nario-Block-B-And-A-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 33,
+                        "line": 8150
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "28ec93b372d028e75e16-cde09f78cb5778cee845",
+              "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+              "line": 10,
+              "column": 9
+            },
+            {
+              "title": "Grade 9 to Above Average Adult - End Test Scenario For Block C Test UI",
+              "ok": false,
+              "tags": [
+                "SWRTAC123",
+                "Single123",
+                "ScoreLater",
+                "AUT_ENG_02",
+                "Smoke",
+                "UIAndReports"
+              ],
+              "tests": [
+                {
+                  "timeout": 1800000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 242812,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Score Later\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Score Later\\']')\u001b[22m\n\n    at CommonTestPage.completeTheTakenTestForSentenceWritingAccuracy (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:8180:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:25:17",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 33,
+                          "line": 8180
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:8180\n\n  8178 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText(\"End Test\");\n  8179 |           await this.plainNextButtonOrEndButton.click();\n> 8180 |           await this.scoreLater.click();\n       |                                 ^\n  8181 |           await this.listOfScores.nth(0).fill(\"5\");\n  8182 |           await this.listOfScores.nth(1).fill(\"5\");\n  8183 |           await this.listOfScores.nth(2).fill(\"5\");"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 33,
+                            "line": 8180
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Score Later\\']')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:8180\n\n  8178 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText(\"End Test\");\n  8179 |           await this.plainNextButtonOrEndButton.click();\n> 8180 |           await this.scoreLater.click();\n       |                                 ^\n  8181 |           await this.listOfScores.nth(0).fill(\"5\");\n  8182 |           await this.listOfScores.nth(1).fill(\"5\");\n  8183 |           await this.listOfScores.nth(2).fill(\"5\");\n    at CommonTestPage.completeTheTakenTestForSentenceWritingAccuracy (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:8180:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:25:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 51PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S30:W2] Login successful for 51PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 51PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S30:W2] Login successful for 51PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N3582A47513\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N3582A47513/dataFiles/Score_DataExport_AutoFilter_Template_N3582A47513.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N3582A47513 FirstName=Anais LastName =N3582A47513 Age = 05/28/2001\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N3582A47513\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Sentence Writing Accuracy\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22503|Grade 9 to Above Average Adult|22527,22528,22545\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T19:21:10.625Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N3582A47513)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N3582A47513--581b8b042113d44477172ec106fde99bf90f1097.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 33,
+                        "line": 8180
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 242653,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Score Later\\']')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Score Later\\']')\u001b[22m\n\n    at CommonTestPage.completeTheTakenTestForSentenceWritingAccuracy (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:8180:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:25:17",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 33,
+                          "line": 8180
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:8180\n\n  8178 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText(\"End Test\");\n  8179 |           await this.plainNextButtonOrEndButton.click();\n> 8180 |           await this.scoreLater.click();\n       |                                 ^\n  8181 |           await this.listOfScores.nth(0).fill(\"5\");\n  8182 |           await this.listOfScores.nth(1).fill(\"5\");\n  8183 |           await this.listOfScores.nth(2).fill(\"5\");"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 33,
+                            "line": 8180
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Score Later\\']')\u001b[22m\n\n\n   at ../page/commonTestPage.ts:8180\n\n  8178 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText(\"End Test\");\n  8179 |           await this.plainNextButtonOrEndButton.click();\n> 8180 |           await this.scoreLater.click();\n       |                                 ^\n  8181 |           await this.listOfScores.nth(0).fill(\"5\");\n  8182 |           await this.listOfScores.nth(1).fill(\"5\");\n  8183 |           await this.listOfScores.nth(2).fill(\"5\");\n    at CommonTestPage.completeTheTakenTestForSentenceWritingAccuracy (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:8180:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:25:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 51PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S30:W3] Login successful for 51PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 51PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S30:W3] Login successful for 51PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N90750A13316\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N90750A13316/dataFiles/Score_DataExport_AutoFilter_Template_N90750A13316.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N90750A13316 FirstName=Myrna LastName =N90750A13316 Age = 05/28/2001\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N90750A13316\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Sentence Writing Accuracy\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Sentence Writing Accuracy\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22503|Grade 9 to Above Average Adult|22527,22528,22545\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 5\n"
+                        },
+                        {
+                          "text": "Item 17\n"
+                        },
+                        {
+                          "text": "Item 18\n"
+                        },
+                        {
+                          "text": "Item 19\n"
+                        },
+                        {
+                          "text": "Item 20\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-26T19:25:14.995Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N90750A13316)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N90750A13316--af15566aeeb0e048d320cd3ef3a0038c79a61fce.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-SWRTAC_Single-2dac5-cenario-For-Block-C-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 33,
+                        "line": 8180
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "28ec93b372d028e75e16-e607a20157a55a0c7434",
+              "file": "UIAndReports/SWRTAC_Single_ScoreLater.spec.ts",
+              "line": 10,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-26T19:11:51.947Z",
+    "duration": 1046269.5530000001,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,1298 @@
+{
+  "config": {
+    "argv": [
+      "/__t/node/22.23.5/x64/bin/node",
+      "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "(?=.*@Aut_Eng_02)(?=.*@Smoke)",
+      "--project=chrome",
+      "--shard=25/40",
+      "--workers=1",
+      "--retries=1",
+      "--reporter=html,json,blob"
+    ],
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+        "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "snapshotDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000,
+        "use": {
+          "actionTimeout": 60000,
+          "navigationTimeout": 60000,
+          "ignoreHTTPSErrors": true,
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "trace": "off",
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--disable-dev-shm-usage"
+            ],
+            "logger": {},
+            "slowMo": 0
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 25,
+      "total": 40
+    },
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "UIAndReports/LETPAT_Single_Timer.spec.ts",
+      "file": "UIAndReports/LETPAT_Single_Timer.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " LETPAT UI And Reports",
+          "file": "UIAndReports/LETPAT_Single_Timer.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "All Examinees - Test Items When Timer Ran Out for First Item set Test UI",
+              "ok": false,
+              "tags": [
+                "LETPATUI",
+                "Single",
+                "Timer",
+                "AUT_ENG_02",
+                "Smoke",
+                "UIAndReports"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 357004,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 200000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Time is up.\\']') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 200000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Time is up.\\']') to be visible\u001b[22m\n\n    at CommonTestPage.completeTheTakenTestForTimerTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:1068:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:25:9",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 33,
+                          "line": 1068
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:1068\n\n  1066 |           await this.timerActive.isEnabled();\n  1067 |           await expect(this.startTheTimerAndDisplayTheTestItemsButton).toHaveAttribute(\"disabled\", \"\");\n> 1068 |           await this.timeUpView.waitFor({ state: \"visible\", timeout: 200000 });\n       |                                 ^\n  1069 |           await this.timerCloseButton.click();\n  1070 |         }\n  1071 |       } else if (typeOfTest.match(/Test Items When Timer Ran Out for Last Item set/i)) {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 33,
+                            "line": 1068
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 200000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Time is up.\\']') to be visible\u001b[22m\n\n\n   at ../page/commonTestPage.ts:1068\n\n  1066 |           await this.timerActive.isEnabled();\n  1067 |           await expect(this.startTheTimerAndDisplayTheTestItemsButton).toHaveAttribute(\"disabled\", \"\");\n> 1068 |           await this.timeUpView.waitFor({ state: \"visible\", timeout: 200000 });\n       |                                 ^\n  1069 |           await this.timerCloseButton.click();\n  1070 |         }\n  1071 |       } else if (typeOfTest.match(/Test Items When Timer Ran Out for Last Item set/i)) {\n    at CommonTestPage.completeTheTakenTestForTimerTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:1068:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:25:9"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 61PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S25:W0] Login successful for 61PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 61PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S25:W0] Login successful for 61PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N28852A61497\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N28852A61497/dataFiles/Score_DataExport_AutoFilter_Template_N28852A61497.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N28852A61497 FirstName=Pietro LastName =N28852A61497 Age = 11/26/2017\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Letter-Pattern Matching\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N28852A61497\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Letter-Pattern Matching\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Letter-Pattern Matching\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T19:12:00.418Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N28852A61497)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-68236--for-First-Item-set-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N28852A61497--842d0a85307835332b02280b979701f668840e83.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-68236--for-First-Item-set-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-68236--for-First-Item-set-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-68236--for-First-Item-set-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-68236--for-First-Item-set-Test-UI-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 33,
+                        "line": 1068
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 646998,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..')\nExpected substring: \u001b[32m\"00\"\u001b[39m\nReceived string:    \u001b[31m\"Standard Score–\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..') with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    123 × locator resolved to <div class=\"MiniReport_mcs_miniReportCell\">…</div>\u001b[22m\n\u001b[2m        - unexpected value \"Standard Score–\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..')\nExpected substring: \u001b[32m\"00\"\u001b[39m\nReceived string:    \u001b[31m\"Standard Score–\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..') with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    123 × locator resolved to <div class=\"MiniReport_mcs_miniReportCell\">…</div>\u001b[22m\n\u001b[2m        - unexpected value \"Standard Score–\"\u001b[22m\n\n    at checkScoreRow (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11307:22)\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11309:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:32:11",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 22,
+                          "line": 11307
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:11307\n\n  11305 |                 await expect\n  11306 |                     .soft(modal.getByText(label, { exact: true }).locator(\"..\"))\n> 11307 |                     .toContainText(value);\n        |                      ^\n  11308 |             };\n  11309 |             await checkScoreRow(\"Standard Score\", standardScore);\n  11310 |             await checkScoreRow(\"Percentile Rank\", percentileRank);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 22,
+                            "line": 11307
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..')\nExpected substring: \u001b[32m\"00\"\u001b[39m\nReceived string:    \u001b[31m\"Standard Score–\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..') with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    123 × locator resolved to <div class=\"MiniReport_mcs_miniReportCell\">…</div>\u001b[22m\n\u001b[2m        - unexpected value \"Standard Score–\"\u001b[22m\n\n\n   at ../page/commonTestPage.ts:11307\n\n  11305 |                 await expect\n  11306 |                     .soft(modal.getByText(label, { exact: true }).locator(\"..\"))\n> 11307 |                     .toContainText(value);\n        |                      ^\n  11308 |             };\n  11309 |             await checkScoreRow(\"Standard Score\", standardScore);\n  11310 |             await checkScoreRow(\"Percentile Rank\", percentileRank);\n    at checkScoreRow (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11307:22)\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11309:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:32:11"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 22,
+                            "line": 11307
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').getByText('Percentile Rank', { exact: true }).locator('..')\nExpected substring: \u001b[32m\"00\"\u001b[39m\nReceived string:    \u001b[31m\"Percentile Rank–\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByRole('dialog').getByText('Percentile Rank', { exact: true }).locator('..') with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByText('Percentile Rank', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    123 × locator resolved to <div class=\"MiniReport_mcs_miniReportCell\">…</div>\u001b[22m\n\u001b[2m        - unexpected value \"Percentile Rank–\"\u001b[22m\n\n\n   at ../page/commonTestPage.ts:11307\n\n  11305 |                 await expect\n  11306 |                     .soft(modal.getByText(label, { exact: true }).locator(\"..\"))\n> 11307 |                     .toContainText(value);\n        |                      ^\n  11308 |             };\n  11309 |             await checkScoreRow(\"Standard Score\", standardScore);\n  11310 |             await checkScoreRow(\"Percentile Rank\", percentileRank);\n    at checkScoreRow (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11307:22)\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11310:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:32:11"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 22,
+                            "line": 11307
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').getByText('Age Equivalent', { exact: true }).locator('..')\nExpected substring: \u001b[32m\"<4y0m\"\u001b[39m\nReceived string:    \u001b[31m\"Age Equivalent–\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByRole('dialog').getByText('Age Equivalent', { exact: true }).locator('..') with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByText('Age Equivalent', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    123 × locator resolved to <div class=\"MiniReport_mcs_miniReportCell\">…</div>\u001b[22m\n\u001b[2m        - unexpected value \"Age Equivalent–\"\u001b[22m\n\n\n   at ../page/commonTestPage.ts:11307\n\n  11305 |                 await expect\n  11306 |                     .soft(modal.getByText(label, { exact: true }).locator(\"..\"))\n> 11307 |                     .toContainText(value);\n        |                      ^\n  11308 |             };\n  11309 |             await checkScoreRow(\"Standard Score\", standardScore);\n  11310 |             await checkScoreRow(\"Percentile Rank\", percentileRank);\n    at checkScoreRow (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11307:22)\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11311:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:32:11"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 22,
+                            "line": 11307
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').getByText('Grade Equivalent', { exact: true }).locator('..')\nExpected substring: \u001b[32m\"<GK.0\"\u001b[39m\nReceived string:    \u001b[31m\"Grade Equivalent–\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByRole('dialog').getByText('Grade Equivalent', { exact: true }).locator('..') with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByText('Grade Equivalent', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    123 × locator resolved to <div class=\"MiniReport_mcs_miniReportCell\">…</div>\u001b[22m\n\u001b[2m        - unexpected value \"Grade Equivalent–\"\u001b[22m\n\n\n   at ../page/commonTestPage.ts:11307\n\n  11305 |                 await expect\n  11306 |                     .soft(modal.getByText(label, { exact: true }).locator(\"..\"))\n> 11307 |                     .toContainText(value);\n        |                      ^\n  11308 |             };\n  11309 |             await checkScoreRow(\"Standard Score\", standardScore);\n  11310 |             await checkScoreRow(\"Percentile Rank\", percentileRank);\n    at checkScoreRow (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11307:22)\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11312:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:32:11"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 61PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S25:W1] Login successful for 61PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 61PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S25:W1] Login successful for 61PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N15978A95316\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N15978A95316/dataFiles/Score_DataExport_AutoFilter_Template_N15978A95316.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N15978A95316 FirstName=Concepcion LastName =N15978A95316 Age = 11/26/2017\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Letter-Pattern Matching\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N15978A95316\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Letter-Pattern Matching\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Letter-Pattern Matching\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Used “self-talk” strategy'\u001b[39m,\n  \u001b[32m'Used self-monitoring to maintain consistent and efficient pace'\u001b[39m,\n  \u001b[32m'Displayed sustained concentration and effort throughout this test'\u001b[39m,\n  \u001b[32m'Displayed balance between speed and accuracy'\u001b[39m,\n  \u001b[32m'Did not work quickly'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N15978A95316/dataFiles/Score_DataExport_AutoFilter_Template_N15978A95316.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N15978A95316\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N15978A95316; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "Download event on https://stage.riversidescore.com/home/reports/reportcenter/4 - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N15978A95316.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N15978A95316/downloads/wLookUp_N15978A95316_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N15978A95316/downloads/wLookUp_N15978A95316_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N15978A95316/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N15978A95316', Available files: [Score_DataExport_AutoFilter_Template_N15978A95316_Decile.txt, Score_DataExport_AutoFilter_Template_N15978A95316_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N15978A95316_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N15978A95316_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N15978A95316/downloads/extracted/Score_DataExport_AutoFilter_Template_N15978A95316_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N15978A95316\"],[\"dateOfTest\",\"2026-11-26\"],[\"testName\",\"Letter-Pattern Matching\"],[\"testStemForm\",\"LETPAT.W5PA\"],[\"lookUpModel\",\"SingleTable\"],[\"sumItemScores\",\"\"],[\"baselCredit\",\"\"],[\"wLookUp\",\"\"],[\"wScore\",\"\"],[\"SEMW\",\"\"],[\"WlkpAdminItems\",\"\"],[\"scoreFlag\",\"[!C]\"],[\"scoreString\",\"\"]]\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N15978A95316 <> N15978A95316\n"
+                        },
+                        {
+                          "text": "2 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-11-26 <> 2026-11-26\n"
+                        },
+                        {
+                          "text": "3 Test Name ->  value from the RunTime VS downloaded file is =  Letter-Pattern Matching <> Letter-Pattern Matching\n"
+                        },
+                        {
+                          "text": "4 TEst stem form ->  value from the RunTime VS downloaded file is =  LETPAT.W5PA <> LETPAT.W5PA\n"
+                        },
+                        {
+                          "text": "5 Look Up Model ->  value from the RunTime VS downloaded file is =  SingleTable <> SingleTable\n"
+                        },
+                        {
+                          "text": "6 Sum Item Scores ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "7 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "8 wLookUp ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "9 WLkpAdminItems ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "10 Score Flag ->  value from the RunTime VS downloaded file is =  [!C] <> [!C]\n"
+                        },
+                        {
+                          "text": "11 wScore ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "12 semW ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "13 Score String ->  value from the RunTime VS downloaded file is =   <> \n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:256:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:324:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6891:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:50:11 {\n  log: [\n    \u001b[32m\"  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    \u001b[32m'    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>'\u001b[39m,\n    \u001b[32m'  - attempting click action'\u001b[39m,\n    \u001b[32m'    2 × waiting for element to be visible, enabled and stable'\u001b[39m,\n    \u001b[32m'      - element is not visible'\u001b[39m,\n    \u001b[32m'    - retrying click action'\u001b[39m,\n    \u001b[32m'    - waiting 20ms'\u001b[39m,\n    \u001b[32m'    2 × waiting for element to be visible, enabled and stable'\u001b[39m,\n    \u001b[32m'      - element is not visible'\u001b[39m,\n    \u001b[32m'    - retrying click action'\u001b[39m,\n    \u001b[32m'      - waiting 100ms'\u001b[39m,\n    \u001b[32m'    116 × waiting for element to be visible, enabled and stable'\u001b[39m,\n    \u001b[32m'        - element is not visible'\u001b[39m,\n    \u001b[32m'      - retrying click action'\u001b[39m,\n    \u001b[32m'        - waiting 500ms'\u001b[39m\n  ],\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    stack: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ],\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m'Click'\u001b[39m,\n    subtitle: \u001b[32m\"locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    params: {\n      locator: \u001b[32m\"locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'gbwq@409'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'gbwq@409'\u001b[39m,\n      _title: \u001b[32m'Click'\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1795721325850\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:256:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:324:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6891:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:50:11'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 1,
+                      "startTime": "2026-11-26T19:17:59.079Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N15978A95316)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-68236--for-First-Item-set-Test-UI-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N15978A95316--89502fe60df1ad970d710511b40607580df9dcc0.csv"
+                        },
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-68236--for-First-Item-set-Test-UI-chrome-retry1/attachments/Downloaded-Zip-file-5199575b567ae3df3fa8dca9f630ed012ff15fa1.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-68236--for-First-Item-set-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-68236--for-First-Item-set-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-68236--for-First-Item-set-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-68236--for-First-Item-set-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 22,
+                        "line": 11307
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1ac1a1970f9746368502-a71aa098d9804f659f87",
+              "file": "UIAndReports/LETPAT_Single_Timer.spec.ts",
+              "line": 10,
+              "column": 5
+            },
+            {
+              "title": "All Examinees - Test Items When Timer Ran Out for Last Item set Test UI",
+              "ok": false,
+              "tags": [
+                "LETPATUI",
+                "Single",
+                "Timer",
+                "AUT_ENG_02",
+                "Smoke",
+                "UIAndReports"
+              ],
+              "tests": [
+                {
+                  "timeout": 720000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 409503,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 250000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Time is up.\\']') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 250000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Time is up.\\']') to be visible\u001b[22m\n\n    at CommonTestPage.completeTheTakenTestForTimerTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:1207:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:25:9",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 33,
+                          "line": 1207
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:1207\n\n  1205 |             await this.activateTabletControlButton.click();\n  1206 |           }\n> 1207 |           await this.timeUpView.waitFor({ state: \"visible\", timeout: 250000 });\n       |                                 ^\n  1208 |           await this.timerCloseButton.click();\n  1209 |         }\n  1210 |       } else {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 33,
+                            "line": 1207
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 250000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//b[text()=\\'Time is up.\\']') to be visible\u001b[22m\n\n\n   at ../page/commonTestPage.ts:1207\n\n  1205 |             await this.activateTabletControlButton.click();\n  1206 |           }\n> 1207 |           await this.timeUpView.waitFor({ state: \"visible\", timeout: 250000 });\n       |                                 ^\n  1208 |           await this.timerCloseButton.click();\n  1209 |         }\n  1210 |       } else {\n    at CommonTestPage.completeTheTakenTestForTimerTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:1207:33)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:25:9"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 61PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S25:W2] Login successful for 61PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 61PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S25:W2] Login successful for 61PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N91834A92987\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N91834A92987/dataFiles/Score_DataExport_AutoFilter_Template_N91834A92987.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N91834A92987 FirstName=Stephania LastName =N91834A92987 Age = 05/28/2017\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Letter-Pattern Matching\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N91834A92987\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Letter-Pattern Matching\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Letter-Pattern Matching\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T19:28:47.653Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N91834A92987)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-b2c1c-t-for-Last-Item-set-Test-UI-chrome/attachments/Generated-wLookUp-Filter-Template-N91834A92987--78031ce93fe47e10d4efe4d7df12ab3374b9c331.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-b2c1c-t-for-Last-Item-set-Test-UI-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-b2c1c-t-for-Last-Item-set-Test-UI-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-b2c1c-t-for-Last-Item-set-Test-UI-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-b2c1c-t-for-Last-Item-set-Test-UI-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 33,
+                        "line": 1207
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 527674,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..')\nExpected substring: \u001b[32m\"00\"\u001b[39m\nReceived string:    \u001b[31m\"Standard Score113\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..') with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    123 × locator resolved to <div class=\"MiniReport_mcs_miniReportCell\">…</div>\u001b[22m\n\u001b[2m        - unexpected value \"Standard Score113\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..')\nExpected substring: \u001b[32m\"00\"\u001b[39m\nReceived string:    \u001b[31m\"Standard Score113\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..') with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    123 × locator resolved to <div class=\"MiniReport_mcs_miniReportCell\">…</div>\u001b[22m\n\u001b[2m        - unexpected value \"Standard Score113\"\u001b[22m\n\n    at checkScoreRow (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11307:22)\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11309:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:32:11",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 22,
+                          "line": 11307
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:11307\n\n  11305 |                 await expect\n  11306 |                     .soft(modal.getByText(label, { exact: true }).locator(\"..\"))\n> 11307 |                     .toContainText(value);\n        |                      ^\n  11308 |             };\n  11309 |             await checkScoreRow(\"Standard Score\", standardScore);\n  11310 |             await checkScoreRow(\"Percentile Rank\", percentileRank);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 22,
+                            "line": 11307
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..')\nExpected substring: \u001b[32m\"00\"\u001b[39m\nReceived string:    \u001b[31m\"Standard Score113\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..') with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByText('Standard Score', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    123 × locator resolved to <div class=\"MiniReport_mcs_miniReportCell\">…</div>\u001b[22m\n\u001b[2m        - unexpected value \"Standard Score113\"\u001b[22m\n\n\n   at ../page/commonTestPage.ts:11307\n\n  11305 |                 await expect\n  11306 |                     .soft(modal.getByText(label, { exact: true }).locator(\"..\"))\n> 11307 |                     .toContainText(value);\n        |                      ^\n  11308 |             };\n  11309 |             await checkScoreRow(\"Standard Score\", standardScore);\n  11310 |             await checkScoreRow(\"Percentile Rank\", percentileRank);\n    at checkScoreRow (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11307:22)\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11309:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:32:11"
+                        },
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 22,
+                            "line": 11307
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog').getByText('Percentile Rank', { exact: true }).locator('..')\nExpected substring: \u001b[32m\"\u001b[7m0\u001b[27m0\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mPercentile Rank8\u001b[27m0\"\u001b[39m\nTimeout: 60000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByRole('dialog').getByText('Percentile Rank', { exact: true }).locator('..') with timeout 60000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByText('Percentile Rank', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    123 × locator resolved to <div class=\"MiniReport_mcs_miniReportCell\">…</div>\u001b[22m\n\u001b[2m        - unexpected value \"Percentile Rank80\"\u001b[22m\n\n\n   at ../page/commonTestPage.ts:11307\n\n  11305 |                 await expect\n  11306 |                     .soft(modal.getByText(label, { exact: true }).locator(\"..\"))\n> 11307 |                     .toContainText(value);\n        |                      ^\n  11308 |             };\n  11309 |             await checkScoreRow(\"Standard Score\", standardScore);\n  11310 |             await checkScoreRow(\"Percentile Rank\", percentileRank);\n    at checkScoreRow (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11307:22)\n    at CommonTestPage.validateEndTestPopUpTextContent (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:11310:19)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:32:11"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 61PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S25:W3] Login successful for 61PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 61PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S25:W3] Login successful for 61PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N200A99980\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N200A99980/dataFiles/Score_DataExport_AutoFilter_Template_N200A99980.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N200A99980 FirstName=Tyler LastName =N200A99980 Age = 05/28/2017\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Letter-Pattern Matching\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N200A99980\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Letter-Pattern Matching\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Letter-Pattern Matching\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Sample Item A, Trial 1\n"
+                        },
+                        {
+                          "text": "Sample Item B, Trial 1\n"
+                        },
+                        {
+                          "text": "Practice Exercise\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "Test Items\n"
+                        },
+                        {
+                          "text": "[\n  \u001b[32m'Used “self-talk” strategy'\u001b[39m,\n  \u001b[32m'Used self-monitoring to maintain consistent and efficient pace'\u001b[39m,\n  \u001b[32m'Displayed sustained concentration and effort throughout this test'\u001b[39m,\n  \u001b[32m'Displayed balance between speed and accuracy'\u001b[39m,\n  \u001b[32m'Did not work quickly'\u001b[39m,\n  \u001b[32m'None of the above'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "welcomeTextToBeVisable called\n"
+                        },
+                        {
+                          "text": "Uploading template: /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N200A99980/dataFiles/Score_DataExport_AutoFilter_Template_N200A99980.csv\n"
+                        },
+                        {
+                          "text": "Not on Report Library page, navigating there...\n"
+                        },
+                        {
+                          "text": "Navigation appeared to fail but we're on the Report Library page, continuing...\n"
+                        },
+                        {
+                          "text": "Looking for report row with name: Score_DataExport_AutoFilter_Template_N200A99980\n"
+                        },
+                        {
+                          "text": "Download/Print click 1 of 2 for Score_DataExport_AutoFilter_Template_N200A99980; waiting 90s for the file.\n"
+                        },
+                        {
+                          "text": "Download event on https://stage.riversidescore.com/home/reports/reportcenter/4 - suggestedFilename=\"Score_DataExport_AutoFilter_Template_N200A99980.zip\"\n"
+                        },
+                        {
+                          "text": "Saving downloaded file to: generated/N200A99980/downloads/wLookUp_N200A99980_Exports.zip\n"
+                        },
+                        {
+                          "text": "The download path and the extracted path locations are /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N200A99980/downloads/wLookUp_N200A99980_Exports.zip and /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N200A99980/downloads/extracted\n"
+                        },
+                        {
+                          "text": "File successfully extracted.\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Called with exportType: 'wLookUp', examineeID: 'N200A99980', Available files: [Score_DataExport_AutoFilter_Template_N200A99980_Decile.txt, Score_DataExport_AutoFilter_Template_N200A99980_WLookup.txt, manifest.txt]\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType ('wLookUp'): Expecting exact filename: Score_DataExport_AutoFilter_Template_N200A99980_WLookup.txt\n"
+                        },
+                        {
+                          "text": "[DEBUG] selectFileByExportType: Final selected file (exact match): Score_DataExport_AutoFilter_Template_N200A99980_WLookup.txt\n"
+                        },
+                        {
+                          "text": "requiredFileName /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N200A99980/downloads/extracted/Score_DataExport_AutoFilter_Template_N200A99980_WLookup.txt\n"
+                        },
+                        {
+                          "text": "reqWlookUpMap - - > [[\"examineeID\",\"N200A99980\"],[\"dateOfTest\",\"2026-11-26\"],[\"testName\",\"Letter-Pattern Matching\"],[\"testStemForm\",\"LETPAT.W5PA\"],[\"lookUpModel\",\"SingleTable\"],[\"sumItemScores\",\"50\"],[\"baselCredit\",\"0\"],[\"wLookUp\",\"50\"],[\"wScore\",\"521.19\"],[\"SEMW\",\"5.28\"],[\"WlkpAdminItems\",\"\"],[\"scoreFlag\",\"\"],[\"scoreString\",\"^10,00,10,00,10,00,10,00,10,00\"]]\n"
+                        },
+                        {
+                          "text": "1 Examinee ID ->  value from the RunTime VS downloaded file is =  N200A99980 <> N200A99980\n"
+                        },
+                        {
+                          "text": "2 Date Of Test ->  value from the RunTime VS downloaded file is =  2026-11-26 <> 2026-11-26\n"
+                        },
+                        {
+                          "text": "3 Test Name ->  value from the RunTime VS downloaded file is =  Letter-Pattern Matching <> Letter-Pattern Matching\n"
+                        },
+                        {
+                          "text": "4 TEst stem form ->  value from the RunTime VS downloaded file is =  LETPAT.W5PA <> LETPAT.W5PA\n"
+                        },
+                        {
+                          "text": "5 Look Up Model ->  value from the RunTime VS downloaded file is =  SingleTable <> SingleTable\n"
+                        },
+                        {
+                          "text": "6 Sum Item Scores ->  value from the RunTime VS downloaded file is =  50 <> 50\n"
+                        },
+                        {
+                          "text": "7 Basal Credit ->  value from the RunTime VS downloaded file is =  0 <> 0\n"
+                        },
+                        {
+                          "text": "8 wLookUp ->  value from the RunTime VS downloaded file is =  50 <> 50\n"
+                        },
+                        {
+                          "text": "9 WLkpAdminItems ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "10 Score Flag ->  value from the RunTime VS downloaded file is =   <> \n"
+                        },
+                        {
+                          "text": "11 wScore ->  value from the RunTime VS downloaded file is =  521.19 <> 521.19\n"
+                        },
+                        {
+                          "text": "12 semW ->  value from the RunTime VS downloaded file is =  5.28 <> 5.28\n"
+                        },
+                        {
+                          "text": "13 Score String ->  value from the RunTime VS downloaded file is =  ^10,00,10,00,10,00,10,00,10,00 <> ^10,00,10,00,10,00,10,00,10,00\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Navigation error: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text() = \\'Report Library\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    116 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at DashBoardPage.goToTheMainMenuChildPage \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:256:17\u001b[90m)\u001b[39m\n    at DashBoardPage.clickOnTheExamineeReportToDownload \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/dashboardPage.ts:324:9\u001b[90m)\u001b[39m\n    at CommonTestPage.validateWLookUpReport \u001b[90m(/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/page/commonTestPage.ts:6891:5\u001b[90m)\u001b[39m\n    at \u001b[90m/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/\u001b[39msrc/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:50:11 {\n  log: [\n    \u001b[32m\"  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    \u001b[32m'    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>'\u001b[39m,\n    \u001b[32m'  - attempting click action'\u001b[39m,\n    \u001b[32m'    2 × waiting for element to be visible, enabled and stable'\u001b[39m,\n    \u001b[32m'      - element is not visible'\u001b[39m,\n    \u001b[32m'    - retrying click action'\u001b[39m,\n    \u001b[32m'    - waiting 20ms'\u001b[39m,\n    \u001b[32m'    2 × waiting for element to be visible, enabled and stable'\u001b[39m,\n    \u001b[32m'      - element is not visible'\u001b[39m,\n    \u001b[32m'    - retrying click action'\u001b[39m,\n    \u001b[32m'      - waiting 100ms'\u001b[39m,\n    \u001b[32m'    116 × waiting for element to be visible, enabled and stable'\u001b[39m,\n    \u001b[32m'        - element is not visible'\u001b[39m,\n    \u001b[32m'      - retrying click action'\u001b[39m,\n    \u001b[32m'        - waiting 500ms'\u001b[39m\n  ],\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    stack: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ],\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m'Click'\u001b[39m,\n    subtitle: \u001b[32m\"locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m,\n    params: {\n      locator: \u001b[32m\"locator('//button[text() = \\\\'Report Library\\\\']').first()\"\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'lqwb@626'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'lqwb@626'\u001b[39m,\n      _title: \u001b[32m'Click'\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1795722266062\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 60000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('//button[text() = \\\\'Report Library\\\\']').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\x1B[2m    - locator resolved to <button hidden=\"\" tabindex=\"-1\" type=\"button\" role=\"menuitem\" data-selected=\"false\" class=\"subitem-magenta\">Report Library</button>\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - attempting click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - waiting 20ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    2 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - waiting 100ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m    116 × waiting for element to be visible, enabled and stable\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - element is not visible\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m      - retrying click action\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m        - waiting 500ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.goToTheMainMenuChildPage (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:256:17)\\n'\u001b[39m +\n        \u001b[32m'    at DashBoardPage.clickOnTheExamineeReportToDownload (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:324:9)\\n'\u001b[39m +\n        \u001b[32m'    at CommonTestPage.validateWLookUpReport (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:6891:5)\\n'\u001b[39m +\n        \u001b[32m'    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/UIAndReports/LETPAT_Single_Timer.spec.ts:50:11'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 1,
+                      "startTime": "2026-11-26T19:35:38.681Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N200A99980)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-b2c1c-t-for-Last-Item-set-Test-UI-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N200A99980--7e50b05619138d23eec58eb8eb9da329ba6ca49b.csv"
+                        },
+                        {
+                          "name": "Downloaded Zip file",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-b2c1c-t-for-Last-Item-set-Test-UI-chrome-retry1/attachments/Downloaded-Zip-file-977a7eba8b56803e200e082eea2d865b2aaa0685.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-b2c1c-t-for-Last-Item-set-Test-UI-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-b2c1c-t-for-Last-Item-set-Test-UI-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-b2c1c-t-for-Last-Item-set-Test-UI-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/UIAndReports-LETPAT_Single-b2c1c-t-for-Last-Item-set-Test-UI-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 22,
+                        "line": 11307
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1ac1a1970f9746368502-9410ef2bb7e3f50e1684",
+              "file": "UIAndReports/LETPAT_Single_Timer.spec.ts",
+              "line": 10,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-26T19:11:49.328Z",
+    "duration": 1957567.064,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

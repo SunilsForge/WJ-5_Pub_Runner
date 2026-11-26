@@ -1,0 +1,1304 @@
+{
+  "config": {
+    "argv": [
+      "/__t/node/22.23.5/x64/bin/node",
+      "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "(?=.*@Aut_Eng_02)(?=.*@Smoke)",
+      "--project=chrome",
+      "--shard=11/40",
+      "--workers=1",
+      "--retries=1",
+      "--reporter=html,json,blob"
+    ],
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+        "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45881661441"
+          },
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "snapshotDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000,
+        "use": {
+          "actionTimeout": 60000,
+          "navigationTimeout": 60000,
+          "ignoreHTTPSErrors": true,
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "trace": "off",
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--disable-dev-shm-usage"
+            ],
+            "logger": {},
+            "slowMo": 0
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 11,
+      "total": 40
+    },
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+      "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " WRTSMP Left Nav and Rerouting",
+          "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Ages 8 to 11 - Flag Item with Notes and Review scenario for Score Later for SSP2 Test Rerouting",
+              "ok": false,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 234937,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'link-button\\']').nth(1)\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'link-button\\']').nth(1)\u001b[22m\n\n    at CommonTestPage.handleSessionFlowForSWRTACAndWRTSMPAndSWRTFL (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5683:75)\n    at CommonTestPage.reroutingUsingLeftNavForScoreLaterTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5862:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:25:17",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 75,
+                          "line": 5683
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:5683\n\n  5681 |\n  5682 |           for (let k = 0; k < 3; k++) {\n> 5683 |             await this.flagItemOrScoreCheckItemOrEndTestReviewLink.nth(1).click();\n       |                                                                           ^\n  5684 |             await this.flagIcon.click();\n  5685 |             await this.plainNextButtonOrEndButton.click();\n  5686 |           }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 75,
+                            "line": 5683
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'link-button\\']').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:5683\n\n  5681 |\n  5682 |           for (let k = 0; k < 3; k++) {\n> 5683 |             await this.flagItemOrScoreCheckItemOrEndTestReviewLink.nth(1).click();\n       |                                                                           ^\n  5684 |             await this.flagIcon.click();\n  5685 |             await this.plainNextButtonOrEndButton.click();\n  5686 |           }\n    at CommonTestPage.handleSessionFlowForSWRTACAndWRTSMPAndSWRTFL (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5683:75)\n    at CommonTestPage.reroutingUsingLeftNavForScoreLaterTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5862:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:25:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 62PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S11:W0] Login successful for 62PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 62PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S11:W0] Login successful for 62PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N89604A3865\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N89604A3865/dataFiles/Score_DataExport_AutoFilter_Template_N89604A3865.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N89604A3865 FirstName=Sasha LastName =N89604A3865 Age = 11/26/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N89604A3865\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22639|Ages 8 to 11|22646,22647\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Current Item: Item 6\n"
+                        },
+                        {
+                          "text": "Parsed item number: 6\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 6: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 7\n"
+                        },
+                        {
+                          "text": "Parsed item number: 7\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 7: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 8\n"
+                        },
+                        {
+                          "text": "Parsed item number: 8\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 8: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 9\n"
+                        },
+                        {
+                          "text": "Parsed item number: 9\n"
+                        },
+                        {
+                          "text": "Current Item: Item 10\n"
+                        },
+                        {
+                          "text": "Parsed item number: 10\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11\n"
+                        },
+                        {
+                          "text": "Parsed item number: 11\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12\n"
+                        },
+                        {
+                          "text": "Parsed item number: 12\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13\n"
+                        },
+                        {
+                          "text": "Parsed item number: 13\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14\n"
+                        },
+                        {
+                          "text": "Parsed item number: 14\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15\n"
+                        },
+                        {
+                          "text": "Parsed item number: 15\n"
+                        },
+                        {
+                          "text": "Last item (15) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T19:21:08.351Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N89604A3865)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-dbaa6-ter-for-SSP2-Test-Rerouting-chrome/attachments/Generated-wLookUp-Filter-Template-N89604A3865--b5fea74f462af39d81223637133a71087a5f5fa7.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-dbaa6-ter-for-SSP2-Test-Rerouting-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-dbaa6-ter-for-SSP2-Test-Rerouting-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-dbaa6-ter-for-SSP2-Test-Rerouting-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-dbaa6-ter-for-SSP2-Test-Rerouting-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 75,
+                        "line": 5683
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 233921,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'link-button\\']').nth(1)\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'link-button\\']').nth(1)\u001b[22m\n\n    at CommonTestPage.handleSessionFlowForSWRTACAndWRTSMPAndSWRTFL (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5683:75)\n    at CommonTestPage.reroutingUsingLeftNavForScoreLaterTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5862:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:25:17",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 75,
+                          "line": 5683
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:5683\n\n  5681 |\n  5682 |           for (let k = 0; k < 3; k++) {\n> 5683 |             await this.flagItemOrScoreCheckItemOrEndTestReviewLink.nth(1).click();\n       |                                                                           ^\n  5684 |             await this.flagIcon.click();\n  5685 |             await this.plainNextButtonOrEndButton.click();\n  5686 |           }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 75,
+                            "line": 5683
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'link-button\\']').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:5683\n\n  5681 |\n  5682 |           for (let k = 0; k < 3; k++) {\n> 5683 |             await this.flagItemOrScoreCheckItemOrEndTestReviewLink.nth(1).click();\n       |                                                                           ^\n  5684 |             await this.flagIcon.click();\n  5685 |             await this.plainNextButtonOrEndButton.click();\n  5686 |           }\n    at CommonTestPage.handleSessionFlowForSWRTACAndWRTSMPAndSWRTFL (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5683:75)\n    at CommonTestPage.reroutingUsingLeftNavForScoreLaterTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5862:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:25:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 62PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S11:W1] Login successful for 62PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 62PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S11:W1] Login successful for 62PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N92205A88681\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N92205A88681/dataFiles/Score_DataExport_AutoFilter_Template_N92205A88681.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N92205A88681 FirstName=Rosella LastName =N92205A88681 Age = 11/26/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N92205A88681\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22639|Ages 8 to 11|22646,22647\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 6\n"
+                        },
+                        {
+                          "text": "Current Item: Item 6\n"
+                        },
+                        {
+                          "text": "Parsed item number: 6\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 6: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 7\n"
+                        },
+                        {
+                          "text": "Parsed item number: 7\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 7: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 8\n"
+                        },
+                        {
+                          "text": "Parsed item number: 8\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 8: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 9\n"
+                        },
+                        {
+                          "text": "Parsed item number: 9\n"
+                        },
+                        {
+                          "text": "Current Item: Item 10\n"
+                        },
+                        {
+                          "text": "Parsed item number: 10\n"
+                        },
+                        {
+                          "text": "Current Item: Item 11\n"
+                        },
+                        {
+                          "text": "Parsed item number: 11\n"
+                        },
+                        {
+                          "text": "Current Item: Item 12\n"
+                        },
+                        {
+                          "text": "Parsed item number: 12\n"
+                        },
+                        {
+                          "text": "Current Item: Item 13\n"
+                        },
+                        {
+                          "text": "Parsed item number: 13\n"
+                        },
+                        {
+                          "text": "Current Item: Item 14\n"
+                        },
+                        {
+                          "text": "Parsed item number: 14\n"
+                        },
+                        {
+                          "text": "Current Item: Item 15\n"
+                        },
+                        {
+                          "text": "Parsed item number: 15\n"
+                        },
+                        {
+                          "text": "Last item (15) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-26T19:25:04.464Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N92205A88681)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-dbaa6-ter-for-SSP2-Test-Rerouting-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N92205A88681--38ea97a63c8c77f56db967f757c1ba26f205f862.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-dbaa6-ter-for-SSP2-Test-Rerouting-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-dbaa6-ter-for-SSP2-Test-Rerouting-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-dbaa6-ter-for-SSP2-Test-Rerouting-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-dbaa6-ter-for-SSP2-Test-Rerouting-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 75,
+                        "line": 5683
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-bf9c2249a8ebfdf29b1f",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 9
+            },
+            {
+              "title": "Above Average Adult - Flag Item with Notes and Review scenario for Score Later for SSP4 Test Rerouting",
+              "ok": false,
+              "tags": [
+                "WRTSMP",
+                "Rerouting",
+                "AUT_ENG_02",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 231702,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'link-button\\']').nth(1)\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'link-button\\']').nth(1)\u001b[22m\n\n    at CommonTestPage.handleSessionFlowForSWRTACAndWRTSMPAndSWRTFL (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5683:75)\n    at CommonTestPage.reroutingUsingLeftNavForScoreLaterTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5862:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:25:17",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 75,
+                          "line": 5683
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:5683\n\n  5681 |\n  5682 |           for (let k = 0; k < 3; k++) {\n> 5683 |             await this.flagItemOrScoreCheckItemOrEndTestReviewLink.nth(1).click();\n       |                                                                           ^\n  5684 |             await this.flagIcon.click();\n  5685 |             await this.plainNextButtonOrEndButton.click();\n  5686 |           }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 75,
+                            "line": 5683
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'link-button\\']').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:5683\n\n  5681 |\n  5682 |           for (let k = 0; k < 3; k++) {\n> 5683 |             await this.flagItemOrScoreCheckItemOrEndTestReviewLink.nth(1).click();\n       |                                                                           ^\n  5684 |             await this.flagIcon.click();\n  5685 |             await this.plainNextButtonOrEndButton.click();\n  5686 |           }\n    at CommonTestPage.handleSessionFlowForSWRTACAndWRTSMPAndSWRTFL (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5683:75)\n    at CommonTestPage.reroutingUsingLeftNavForScoreLaterTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5862:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:25:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 62PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S11:W2] Login successful for 62PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 62PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S11:W2] Login successful for 62PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N24729A69262\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N24729A69262/dataFiles/Score_DataExport_AutoFilter_Template_N24729A69262.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N24729A69262 FirstName=Rafaela LastName =N24729A69262 Age = 11/26/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N24729A69262\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22639|Above Average Adult|22646,22661\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16\n"
+                        },
+                        {
+                          "text": "Parsed item number: 16\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 16: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17\n"
+                        },
+                        {
+                          "text": "Parsed item number: 17\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 17: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18\n"
+                        },
+                        {
+                          "text": "Parsed item number: 18\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 18: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19\n"
+                        },
+                        {
+                          "text": "Parsed item number: 19\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20\n"
+                        },
+                        {
+                          "text": "Parsed item number: 20\n"
+                        },
+                        {
+                          "text": "Current Item: Item 21\n"
+                        },
+                        {
+                          "text": "Parsed item number: 21\n"
+                        },
+                        {
+                          "text": "Current Item: Item 22\n"
+                        },
+                        {
+                          "text": "Parsed item number: 22\n"
+                        },
+                        {
+                          "text": "Current Item: Item 23\n"
+                        },
+                        {
+                          "text": "Parsed item number: 23\n"
+                        },
+                        {
+                          "text": "Current Item: Item 24\n"
+                        },
+                        {
+                          "text": "Parsed item number: 24\n"
+                        },
+                        {
+                          "text": "Current Item: Item 25\n"
+                        },
+                        {
+                          "text": "Parsed item number: 25\n"
+                        },
+                        {
+                          "text": "Last item (25) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T19:28:59.404Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N24729A69262)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-17dd5-ter-for-SSP4-Test-Rerouting-chrome/attachments/Generated-wLookUp-Filter-Template-N24729A69262--161985adf83310d94af3ebfc42e730bbb6bc96c4.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-17dd5-ter-for-SSP4-Test-Rerouting-chrome/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-17dd5-ter-for-SSP4-Test-Rerouting-chrome/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-17dd5-ter-for-SSP4-Test-Rerouting-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-17dd5-ter-for-SSP4-Test-Rerouting-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 75,
+                        "line": 5683
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 233725,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'link-button\\']').nth(1)\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'link-button\\']').nth(1)\u001b[22m\n\n    at CommonTestPage.handleSessionFlowForSWRTACAndWRTSMPAndSWRTFL (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5683:75)\n    at CommonTestPage.reroutingUsingLeftNavForScoreLaterTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5862:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:25:17",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                          "column": 75,
+                          "line": 5683
+                        },
+                        "snippet": "   at ../page/commonTestPage.ts:5683\n\n  5681 |\n  5682 |           for (let k = 0; k < 3; k++) {\n> 5683 |             await this.flagItemOrScoreCheckItemOrEndTestReviewLink.nth(1).click();\n       |                                                                           ^\n  5684 |             await this.flagIcon.click();\n  5685 |             await this.plainNextButtonOrEndButton.click();\n  5686 |           }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                            "column": 75,
+                            "line": 5683
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@class=\\'link-button\\']').nth(1)\u001b[22m\n\n\n   at ../page/commonTestPage.ts:5683\n\n  5681 |\n  5682 |           for (let k = 0; k < 3; k++) {\n> 5683 |             await this.flagItemOrScoreCheckItemOrEndTestReviewLink.nth(1).click();\n       |                                                                           ^\n  5684 |             await this.flagIcon.click();\n  5685 |             await this.plainNextButtonOrEndButton.click();\n  5686 |           }\n    at CommonTestPage.handleSessionFlowForSWRTACAndWRTSMPAndSWRTFL (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5683:75)\n    at CommonTestPage.reroutingUsingLeftNavForScoreLaterTests (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts:5862:15)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts:25:17"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 62PwAut25AH\n"
+                        },
+                        {
+                          "text": "[S11:W3] Login successful for 62PwAut25AH\n"
+                        },
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_02\n"
+                        },
+                        {
+                          "text": "Login successful for 62PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S11:W3] Login successful for 62PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N18336A64379\n"
+                        },
+                        {
+                          "text": "Data has been written to the /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/generated/N18336A64379/dataFiles/Score_DataExport_AutoFilter_Template_N18336A64379.csv successfully.\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N18336A64379 FirstName=Leopoldo LastName =N18336A64379 Age = 11/26/2022\n"
+                        },
+                        {
+                          "text": "Found 62 checkboxes\n"
+                        },
+                        {
+                          "text": "Selected test: Written Language Samples\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N18336A64379\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Attempt 1: Checking accept button readiness.\n"
+                        },
+                        {
+                          "text": "Accept button is enabled. Clicking now.\n"
+                        },
+                        {
+                          "text": "Sloth icon detected. Accept process completed.\n"
+                        },
+                        {
+                          "text": "Test \"Written Language Samples\" is already selected and disabled; closing menu\n"
+                        },
+                        {
+                          "text": "Written Language Samples\n"
+                        },
+                        {
+                          "text": "selected ssp is = 22639|Above Average Adult|22646,22661\n"
+                        },
+                        {
+                          "text": "Introduction 1\n"
+                        },
+                        {
+                          "text": "Introduction 3\n"
+                        },
+                        {
+                          "text": "Item 16\n"
+                        },
+                        {
+                          "text": "Current Item: Item 16\n"
+                        },
+                        {
+                          "text": "Parsed item number: 16\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 16: Item\n"
+                        },
+                        {
+                          "text": "Current Item: Item 17\n"
+                        },
+                        {
+                          "text": "Parsed item number: 17\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 17: Test\n"
+                        },
+                        {
+                          "text": "Current Item: Item 18\n"
+                        },
+                        {
+                          "text": "Parsed item number: 18\n"
+                        },
+                        {
+                          "text": "Flagged & added note for item 18: Test Set\n"
+                        },
+                        {
+                          "text": "Current Item: Item 19\n"
+                        },
+                        {
+                          "text": "Parsed item number: 19\n"
+                        },
+                        {
+                          "text": "Current Item: Item 20\n"
+                        },
+                        {
+                          "text": "Parsed item number: 20\n"
+                        },
+                        {
+                          "text": "Current Item: Item 21\n"
+                        },
+                        {
+                          "text": "Parsed item number: 21\n"
+                        },
+                        {
+                          "text": "Current Item: Item 22\n"
+                        },
+                        {
+                          "text": "Parsed item number: 22\n"
+                        },
+                        {
+                          "text": "Current Item: Item 23\n"
+                        },
+                        {
+                          "text": "Parsed item number: 23\n"
+                        },
+                        {
+                          "text": "Current Item: Item 24\n"
+                        },
+                        {
+                          "text": "Parsed item number: 24\n"
+                        },
+                        {
+                          "text": "Current Item: Item 25\n"
+                        },
+                        {
+                          "text": "Parsed item number: 25\n"
+                        },
+                        {
+                          "text": "Last item (25) reached. Ending session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-26T19:32:52.077Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Generated wLookUp Filter Template (N18336A64379)",
+                          "contentType": "text/csv",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-17dd5-ter-for-SSP4-Test-Rerouting-chrome-retry1/attachments/Generated-wLookUp-Filter-Template-N18336A64379--8343b16da8e6a16ac22d3c793db51869ccc4b542.csv"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-17dd5-ter-for-SSP4-Test-Rerouting-chrome-retry1/test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-17dd5-ter-for-SSP4-Test-Rerouting-chrome-retry1/test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-17dd5-ter-for-SSP4-Test-Rerouting-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/ReroutingandLeftNav-WRTSMP-17dd5-ter-for-SSP4-Test-Rerouting-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/commonTestPage.ts",
+                        "column": 75,
+                        "line": 5683
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0755368bed21c030d6bb-f21fcd0c4ca706106c5c",
+              "file": "ReroutingandLeftNav/WRTSMP_Rerouting.spec.ts",
+              "line": 10,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-26T19:21:01.474Z",
+    "duration": 944722.842,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

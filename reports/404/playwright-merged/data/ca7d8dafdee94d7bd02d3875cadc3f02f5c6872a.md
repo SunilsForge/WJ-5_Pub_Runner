@@ -1,0 +1,763 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: UIAndReports/SWRTAC_Single_ScoreLater.spec.ts >>  SWRTAC UI And Reports >> Ages 8 to 13 - End Test Scenario Block B And A Test UI
+- Location: src/tests/UIAndReports/SWRTAC_Single_ScoreLater.spec.ts:10:9
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('//b[text()=\'Score Later\']')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e1]:
+        - banner "Clinical Products Header" [ref=e2]:
+          - generic [ref=e3]:
+            - button "Skip to main Content" [ref=e4]
+            - link "Back to product selection" [ref=e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=e6]: Riverside Insights Logo
+            - generic [ref=e7]:
+              - heading "Hello 51Pw Aut25AH" [level=2] [ref=e8]:
+                - generic [ref=e9]: Hello
+                - button "51Pw Aut25AH" [ref=e10] [cursor=pointer]
+              - navigation [ref=e13]:
+                - button "Contact Us" [ref=e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=e15] [cursor=pointer]
+                - button "| Sign Out" [ref=e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=e17]:
+          - menubar [ref=e19]:
+            - menuitem "Dashboard" [ref=e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=e25] [cursor=pointer]
+            - menuitem "Staff" [ref=e27] [cursor=pointer]
+            - menuitem "Reports" [ref=e29] [cursor=pointer]:
+              - text: Reports
+              - menu
+            - menuitem "Resources" [ref=e33] [cursor=pointer]
+          - generic [ref=e34]:
+            - switch "Offline Mode" [ref=e35] [cursor=pointer]: "OFF"
+            - generic [ref=e36]: Offline Mode
+        - main [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: NEW!
+              - generic [ref=e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=e44] [cursor=pointer]: ✕
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - heading "My Test Assignments" [level=1] [ref=e47]
+                - button "Create New Test Assignment" [ref=e48] [cursor=pointer]
+              - generic [ref=e49]:
+                - generic [ref=e52]:
+                  - textbox [ref=e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=e54] [cursor=pointer]
+                - generic [ref=e55]:
+                  - button "Active" [ref=e56] [cursor=pointer]
+                  - button "Closed" [ref=e57] [cursor=pointer]
+              - table "Available Assignments" [ref=e59]:
+                - rowgroup [ref=e66]:
+                  - row [ref=e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=e68]: Examinee
+                    - columnheader "The name given to this test assignment." [ref=e69]: Assignment Name
+                    - columnheader "Number of days remaining to edit this assignment." [ref=e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=e72]: Actions
+                - rowgroup [ref=e73]:
+                  - row [ref=e74] [cursor=pointer]:
+                    - cell [ref=e75]:
+                      - button "Begin assignment Weldon's Edna Gusikowski_1793356057932 for N33206A12054, Weldon" [disabled] [ref=e76]:
+                        - generic [ref=e77]: N33206A12054, Weldon
+                    - cell [ref=e78]:
+                      - generic [ref=e79]:
+                        - button "Weldon's Edna Gusikowski_1793356057932" [disabled] [ref=e80]
+                        - button "More info" [ref=e82]
+                    - cell [ref=e83]:
+                      - button "63 days" [disabled] [ref=e84]
+                    - cell [ref=e85]:
+                      - button "● Submitted" [disabled] [ref=e86]:
+                        - generic [ref=e87]: ●
+                        - text: Submitted
+                    - cell [ref=e88]:
+                      - button "Edit Assignment" [disabled] [ref=e89]
+                      - button "Add Tests" [disabled] [ref=e90]
+                      - button "Assignment actions" [ref=e91]
+                  - row [ref=e92] [cursor=pointer]:
+                    - cell [ref=e93]:
+                      - button "Begin assignment Macey's Mr. Glen Hudson_1793355737528 for N90726A62380, Macey" [disabled] [ref=e94]:
+                        - generic [ref=e95]: N90726A62380, Macey
+                    - cell [ref=e96]:
+                      - generic [ref=e97]:
+                        - button "Macey's Mr. Glen Hudson_1793355737528" [disabled] [ref=e98]
+                        - button "More info" [ref=e100]
+                    - cell [ref=e101]:
+                      - button "63 days" [disabled] [ref=e102]
+                    - cell [ref=e103]:
+                      - button "● Submitted" [disabled] [ref=e104]:
+                        - generic [ref=e105]: ●
+                        - text: Submitted
+                    - cell [ref=e106]:
+                      - button "Edit Assignment" [disabled] [ref=e107]
+                      - button "Add Tests" [disabled] [ref=e108]
+                      - button "Assignment actions" [ref=e109]
+                  - row [ref=e110] [cursor=pointer]:
+                    - cell [ref=e111]:
+                      - button "Begin assignment Ezekiel's Marian Ferry_1793355418367 for N56693A39932, Ezekiel" [disabled] [ref=e112]:
+                        - generic [ref=e113]: N56693A39932, Ezekiel
+                    - cell [ref=e114]:
+                      - generic [ref=e115]:
+                        - button "Ezekiel's Marian Ferry_1793355418367" [disabled] [ref=e116]
+                        - button "More info" [ref=e118]
+                    - cell [ref=e119]:
+                      - button "63 days" [disabled] [ref=e120]
+                    - cell [ref=e121]:
+                      - button "● Submitted" [disabled] [ref=e122]:
+                        - generic [ref=e123]: ●
+                        - text: Submitted
+                    - cell [ref=e124]:
+                      - button "Edit Assignment" [disabled] [ref=e125]
+                      - button "Add Tests" [disabled] [ref=e126]
+                      - button "Assignment actions" [ref=e127]
+                  - row [ref=e128] [cursor=pointer]:
+                    - cell [ref=e129]:
+                      - button "Begin assignment Evangeline's Raymond Vandervort_1793354940506 for N38715A59132, Evangeline" [disabled] [ref=e130]:
+                        - generic [ref=e131]: N38715A59132, Evangeline
+                    - cell [ref=e132]:
+                      - generic [ref=e133]:
+                        - button "Evangeline's Raymond Vandervort_1793354940506" [disabled] [ref=e134]
+                        - button "More info" [ref=e136]
+                    - cell [ref=e137]:
+                      - button "63 days" [disabled] [ref=e138]
+                    - cell [ref=e139]:
+                      - button "● Submitted" [disabled] [ref=e140]:
+                        - generic [ref=e141]: ●
+                        - text: Submitted
+                    - cell [ref=e142]:
+                      - button "Edit Assignment" [disabled] [ref=e143]
+                      - button "Add Tests" [disabled] [ref=e144]
+                      - button "Assignment actions" [ref=e145]
+                  - row [ref=e146] [cursor=pointer]:
+                    - cell [ref=e147]:
+                      - button "Begin assignment Sterling's Grady Stracke-Upton_1790685571617 for N6053A39365, Sterling" [disabled] [ref=e148]:
+                        - generic [ref=e149]: N6053A39365, Sterling
+                    - cell [ref=e150]:
+                      - generic [ref=e151]:
+                        - button "Sterling's Grady Stracke-Upton_1790685571617" [disabled] [ref=e152]
+                        - button "More info" [ref=e154]
+                    - cell [ref=e155]:
+                      - button "32 days" [disabled] [ref=e156]
+                    - cell [ref=e157]:
+                      - button "● Submitted" [disabled] [ref=e158]:
+                        - generic [ref=e159]: ●
+                        - text: Submitted
+                    - cell [ref=e160]:
+                      - button "Edit Assignment" [disabled] [ref=e161]
+                      - button "Add Tests" [disabled] [ref=e162]
+                      - button "Assignment actions" [ref=e163]
+                  - row [ref=e164] [cursor=pointer]:
+                    - cell [ref=e165]:
+                      - button "Begin assignment Jed's May Konopelski-Koss_1790685127853 for N31697A42654, Jed" [disabled] [ref=e166]:
+                        - generic [ref=e167]: N31697A42654, Jed
+                    - cell [ref=e168]:
+                      - generic [ref=e169]:
+                        - button "Jed's May Konopelski-Koss_1790685127853" [disabled] [ref=e170]
+                        - button "More info" [ref=e172]
+                    - cell [ref=e173]:
+                      - button "32 days" [disabled] [ref=e174]
+                    - cell [ref=e175]:
+                      - button "● Submitted" [disabled] [ref=e176]:
+                        - generic [ref=e177]: ●
+                        - text: Submitted
+                    - cell [ref=e178]:
+                      - button "Edit Assignment" [disabled] [ref=e179]
+                      - button "Add Tests" [disabled] [ref=e180]
+                      - button "Assignment actions" [ref=e181]
+                  - row [ref=e182] [cursor=pointer]:
+                    - cell [ref=e183]:
+                      - button "Begin assignment Mustafa's Irvin Frami_1790684785190 for N17609A65479, Mustafa" [disabled] [ref=e184]:
+                        - generic [ref=e185]: N17609A65479, Mustafa
+                    - cell [ref=e186]:
+                      - generic [ref=e187]:
+                        - button "Mustafa's Irvin Frami_1790684785190" [disabled] [ref=e188]
+                        - button "More info" [ref=e190]
+                    - cell [ref=e191]:
+                      - button "32 days" [disabled] [ref=e192]
+                    - cell [ref=e193]:
+                      - button "● Submitted" [disabled] [ref=e194]:
+                        - generic [ref=e195]: ●
+                        - text: Submitted
+                    - cell [ref=e196]:
+                      - button "Edit Assignment" [disabled] [ref=e197]
+                      - button "Add Tests" [disabled] [ref=e198]
+                      - button "Assignment actions" [ref=e199]
+                  - row [ref=e200] [cursor=pointer]:
+                    - cell [ref=e201]:
+                      - button "Begin assignment Nora's Wayne Kessler_1790684781735 for N25074A21431, Nora" [disabled] [ref=e202]:
+                        - generic [ref=e203]: N25074A21431, Nora
+                    - cell [ref=e204]:
+                      - generic [ref=e205]:
+                        - button "Nora's Wayne Kessler_1790684781735" [disabled] [ref=e206]
+                        - button "More info" [ref=e208]
+                    - cell [ref=e209]:
+                      - button "32 days" [disabled] [ref=e210]
+                    - cell [ref=e211]:
+                      - button "● In Progress" [disabled] [ref=e212]:
+                        - generic [ref=e213]: ●
+                        - text: In Progress
+                    - cell [ref=e214]:
+                      - button "Edit Assignment" [disabled] [ref=e215]
+                      - button "Add Tests" [disabled] [ref=e216]
+                      - button "Assignment actions" [ref=e217]
+                  - row [ref=e218] [cursor=pointer]:
+                    - cell [ref=e219]:
+                      - button "Begin assignment Ezekiel's Gene Hills Jr._1790684457520 for N8754A18235, Ezekiel" [disabled] [ref=e220]:
+                        - generic [ref=e221]: N8754A18235, Ezekiel
+                    - cell [ref=e222]:
+                      - generic [ref=e223]:
+                        - button "Ezekiel's Gene Hills Jr._1790684457520" [disabled] [ref=e224]
+                        - button "More info" [ref=e226]
+                    - cell [ref=e227]:
+                      - button "32 days" [disabled] [ref=e228]
+                    - cell [ref=e229]:
+                      - button "● Submitted" [disabled] [ref=e230]:
+                        - generic [ref=e231]: ●
+                        - text: Submitted
+                    - cell [ref=e232]:
+                      - button "Edit Assignment" [disabled] [ref=e233]
+                      - button "Add Tests" [disabled] [ref=e234]
+                      - button "Assignment actions" [ref=e235]
+                  - row [ref=e236] [cursor=pointer]:
+                    - cell [ref=e237]:
+                      - button "Begin assignment Maymie's Thelma Prohaska_1790684197887 for N63175A94043, Maymie" [disabled] [ref=e238]:
+                        - generic [ref=e239]: N63175A94043, Maymie
+                    - cell [ref=e240]:
+                      - generic [ref=e241]:
+                        - button "Maymie's Thelma Prohaska_1790684197887" [disabled] [ref=e242]
+                        - button "More info" [ref=e244]
+                    - cell [ref=e245]:
+                      - button "32 days" [disabled] [ref=e246]
+                    - cell [ref=e247]:
+                      - button "● Submitted" [disabled] [ref=e248]:
+                        - generic [ref=e249]: ●
+                        - text: Submitted
+                    - cell [ref=e250]:
+                      - button "Edit Assignment" [disabled] [ref=e251]
+                      - button "Add Tests" [disabled] [ref=e252]
+                      - button "Assignment actions" [ref=e253]
+                  - row [ref=e254] [cursor=pointer]:
+                    - cell [ref=e255]:
+                      - button "Begin assignment Alec's Ollie Bartell_1790683943491 for N89437A35871, Alec" [disabled] [ref=e256]:
+                        - generic [ref=e257]: N89437A35871, Alec
+                    - cell [ref=e258]:
+                      - generic [ref=e259]:
+                        - button "Alec's Ollie Bartell_1790683943491" [disabled] [ref=e260]
+                        - button "More info" [ref=e262]
+                    - cell [ref=e263]:
+                      - button "32 days" [disabled] [ref=e264]
+                    - cell [ref=e265]:
+                      - button "● Submitted" [disabled] [ref=e266]:
+                        - generic [ref=e267]: ●
+                        - text: Submitted
+                    - cell [ref=e268]:
+                      - button "Edit Assignment" [disabled] [ref=e269]
+                      - button "Add Tests" [disabled] [ref=e270]
+                      - button "Assignment actions" [ref=e271]
+                  - row [ref=e272] [cursor=pointer]:
+                    - cell [ref=e273]:
+                      - button "Begin assignment Royal's Jon Gutmann_1790683517628 for N34028A36149, Royal" [disabled] [ref=e274]:
+                        - generic [ref=e275]: N34028A36149, Royal
+                    - cell [ref=e276]:
+                      - generic [ref=e277]:
+                        - button "Royal's Jon Gutmann_1790683517628" [disabled] [ref=e278]
+                        - button "More info" [ref=e280]
+                    - cell [ref=e281]:
+                      - button "32 days" [disabled] [ref=e282]
+                    - cell [ref=e283]:
+                      - button "● In Progress" [disabled] [ref=e284]:
+                        - generic [ref=e285]: ●
+                        - text: In Progress
+                    - cell [ref=e286]:
+                      - button "Edit Assignment" [disabled] [ref=e287]
+                      - button "Add Tests" [disabled] [ref=e288]
+                      - button "Assignment actions" [ref=e289]
+                  - row [ref=e290] [cursor=pointer]:
+                    - cell [ref=e291]:
+                      - button "Begin assignment Lazaro's Christian Wolf_1790683233604 for N93002A17344, Lazaro" [disabled] [ref=e292]:
+                        - generic [ref=e293]: N93002A17344, Lazaro
+                    - cell [ref=e294]:
+                      - generic [ref=e295]:
+                        - button "Lazaro's Christian Wolf_1790683233604" [disabled] [ref=e296]
+                        - button "More info" [ref=e298]
+                    - cell [ref=e299]:
+                      - button "32 days" [disabled] [ref=e300]
+                    - cell [ref=e301]:
+                      - button "● Submitted" [disabled] [ref=e302]:
+                        - generic [ref=e303]: ●
+                        - text: Submitted
+                    - cell [ref=e304]:
+                      - button "Edit Assignment" [disabled] [ref=e305]
+                      - button "Add Tests" [disabled] [ref=e306]
+                      - button "Assignment actions" [ref=e307]
+                  - row [ref=e308] [cursor=pointer]:
+                    - cell [ref=e309]:
+                      - button "Begin assignment Mabelle's Dr. Randal McGlynn_1790682824421 for N77107A77381, Mabelle" [disabled] [ref=e310]:
+                        - generic [ref=e311]: N77107A77381, Mabelle
+                    - cell [ref=e312]:
+                      - generic [ref=e313]:
+                        - button "Mabelle's Dr. Randal McGlynn_1790682824421" [disabled] [ref=e314]
+                        - button "More info" [ref=e316]
+                    - cell [ref=e317]:
+                      - button "32 days" [disabled] [ref=e318]
+                    - cell [ref=e319]:
+                      - button "● In Progress" [disabled] [ref=e320]:
+                        - generic [ref=e321]: ●
+                        - text: In Progress
+                    - cell [ref=e322]:
+                      - button "Edit Assignment" [disabled] [ref=e323]
+                      - button "Add Tests" [disabled] [ref=e324]
+                      - button "Assignment actions" [ref=e325]
+                  - row [ref=e326] [cursor=pointer]:
+                    - cell [ref=e327]:
+                      - button "Begin assignment Wilburn's Ian Runolfsson_1790682331439 for N95853A30628, Wilburn" [disabled] [ref=e328]:
+                        - generic [ref=e329]: N95853A30628, Wilburn
+                    - cell [ref=e330]:
+                      - generic [ref=e331]:
+                        - button "Wilburn's Ian Runolfsson_1790682331439" [disabled] [ref=e332]
+                        - button "More info" [ref=e334]
+                    - cell [ref=e335]:
+                      - button "32 days" [disabled] [ref=e336]
+                    - cell [ref=e337]:
+                      - button "● In Progress" [disabled] [ref=e338]:
+                        - generic [ref=e339]: ●
+                        - text: In Progress
+                    - cell [ref=e340]:
+                      - button "Edit Assignment" [disabled] [ref=e341]
+                      - button "Add Tests" [disabled] [ref=e342]
+                      - button "Assignment actions" [ref=e343]
+                  - row [ref=e344] [cursor=pointer]:
+                    - cell [ref=e345]:
+                      - button "Begin assignment Helene's Iris Klein_1790680993130 for N13056A97300, Helene" [disabled] [ref=e346]:
+                        - generic [ref=e347]: N13056A97300, Helene
+                    - cell [ref=e348]:
+                      - generic [ref=e349]:
+                        - button "Helene's Iris Klein_1790680993130" [disabled] [ref=e350]
+                        - button "More info" [ref=e352]
+                    - cell [ref=e353]:
+                      - button "32 days" [disabled] [ref=e354]
+                    - cell [ref=e355]:
+                      - button "● Submitted" [disabled] [ref=e356]:
+                        - generic [ref=e357]: ●
+                        - text: Submitted
+                    - cell [ref=e358]:
+                      - button "Edit Assignment" [disabled] [ref=e359]
+                      - button "Add Tests" [disabled] [ref=e360]
+                      - button "Assignment actions" [ref=e361]
+                  - row [ref=e362] [cursor=pointer]:
+                    - cell [ref=e363]:
+                      - button "Begin assignment Eulalia's Yvette Borer_1790680727110 for N15603A12049, Eulalia" [disabled] [ref=e364]:
+                        - generic [ref=e365]: N15603A12049, Eulalia
+                    - cell [ref=e366]:
+                      - generic [ref=e367]:
+                        - button "Eulalia's Yvette Borer_1790680727110" [disabled] [ref=e368]
+                        - button "More info" [ref=e370]
+                    - cell [ref=e371]:
+                      - button "—" [disabled] [ref=e372]
+                    - cell [ref=e373]:
+                      - button "● Not Started" [disabled] [ref=e374]:
+                        - generic [ref=e375]: ●
+                        - text: Not Started
+                    - cell [ref=e376]:
+                      - button "Edit Assignment" [disabled] [ref=e377]
+                      - button "Add Tests" [disabled] [ref=e378]
+                      - button "Assignment actions" [ref=e379]
+                  - row [ref=e380] [cursor=pointer]:
+                    - cell [ref=e381]:
+                      - button "Begin assignment Reanna's Kristi Leuschke_1790680453638 for N99250A67591, Reanna" [disabled] [ref=e382]:
+                        - generic [ref=e383]: N99250A67591, Reanna
+                    - cell [ref=e384]:
+                      - generic [ref=e385]:
+                        - button "Reanna's Kristi Leuschke_1790680453638" [disabled] [ref=e386]
+                        - button "More info" [ref=e388]
+                    - cell [ref=e389]:
+                      - button "32 days" [disabled] [ref=e390]
+                    - cell [ref=e391]:
+                      - button "● Submitted" [disabled] [ref=e392]:
+                        - generic [ref=e393]: ●
+                        - text: Submitted
+                    - cell [ref=e394]:
+                      - button "Edit Assignment" [disabled] [ref=e395]
+                      - button "Add Tests" [disabled] [ref=e396]
+                      - button "Assignment actions" [ref=e397]
+                  - row [ref=e398] [cursor=pointer]:
+                    - cell [ref=e399]:
+                      - button "Begin assignment Herminia's Hugo Schuster_1790680198514 for N99155A8185, Herminia" [disabled] [ref=e400]:
+                        - generic [ref=e401]: N99155A8185, Herminia
+                    - cell [ref=e402]:
+                      - generic [ref=e403]:
+                        - button "Herminia's Hugo Schuster_1790680198514" [disabled] [ref=e404]
+                        - button "More info" [ref=e406]
+                    - cell [ref=e407]:
+                      - button "32 days" [disabled] [ref=e408]
+                    - cell [ref=e409]:
+                      - button "● Submitted" [disabled] [ref=e410]:
+                        - generic [ref=e411]: ●
+                        - text: Submitted
+                    - cell [ref=e412]:
+                      - button "Edit Assignment" [disabled] [ref=e413]
+                      - button "Add Tests" [disabled] [ref=e414]
+                      - button "Assignment actions" [ref=e415]
+                  - row [ref=e416] [cursor=pointer]:
+                    - cell [ref=e417]:
+                      - button "Begin assignment Tressa's Ms. Marta Doyle IV_1790679878947 for N8539A70686, Tressa" [disabled] [ref=e418]:
+                        - generic [ref=e419]: N8539A70686, Tressa
+                    - cell [ref=e420]:
+                      - generic [ref=e421]:
+                        - button "Tressa's Ms. Marta Doyle IV_1790679878947" [disabled] [ref=e422]
+                        - button "More info" [ref=e424]
+                    - cell [ref=e425]:
+                      - button "32 days" [disabled] [ref=e426]
+                    - cell [ref=e427]:
+                      - button "● Submitted" [disabled] [ref=e428]:
+                        - generic [ref=e429]: ●
+                        - text: Submitted
+                    - cell [ref=e430]:
+                      - button "Edit Assignment" [disabled] [ref=e431]
+                      - button "Add Tests" [disabled] [ref=e432]
+                      - button "Assignment actions" [ref=e433]
+                  - row [aria-hidden] [ref=e434] [cursor=pointer]:
+                    - cell [ref=e435]
+                  - row [aria-hidden] [ref=e436] [cursor=pointer]:
+                    - cell [ref=e437]
+                  - row [aria-hidden] [ref=e438] [cursor=pointer]:
+                    - cell [ref=e439]
+                  - row [aria-hidden] [ref=e440] [cursor=pointer]:
+                    - cell [ref=e441]
+                  - row [aria-hidden] [ref=e442] [cursor=pointer]:
+                    - cell [ref=e443]
+                  - row [aria-hidden] [ref=e444] [cursor=pointer]:
+                    - cell [ref=e445]
+                  - row [aria-hidden] [ref=e446] [cursor=pointer]:
+                    - cell [ref=e447]
+                  - row [aria-hidden] [ref=e448] [cursor=pointer]:
+                    - cell [ref=e449]
+                  - row [aria-hidden] [ref=e450] [cursor=pointer]:
+                    - cell [ref=e451]
+                  - row [aria-hidden] [ref=e452] [cursor=pointer]:
+                    - cell [ref=e453]
+                  - row [aria-hidden] [ref=e454] [cursor=pointer]:
+                    - cell [ref=e455]
+                  - row [aria-hidden] [ref=e456] [cursor=pointer]:
+                    - cell [ref=e457]
+                  - row [aria-hidden] [ref=e458] [cursor=pointer]:
+                    - cell [ref=e459]
+                  - row [aria-hidden] [ref=e460] [cursor=pointer]:
+                    - cell [ref=e461]
+                  - row [aria-hidden] [ref=e462] [cursor=pointer]:
+                    - cell [ref=e463]
+                  - row [aria-hidden] [ref=e464] [cursor=pointer]:
+                    - cell [ref=e465]
+                  - row [aria-hidden] [ref=e466] [cursor=pointer]:
+                    - cell [ref=e467]
+                  - row [aria-hidden] [ref=e468] [cursor=pointer]:
+                    - cell [ref=e469]
+                  - row [aria-hidden] [ref=e470] [cursor=pointer]:
+                    - cell [ref=e471]
+                  - row [aria-hidden] [ref=e472] [cursor=pointer]:
+                    - cell [ref=e473]
+                  - row [aria-hidden] [ref=e474] [cursor=pointer]:
+                    - cell [ref=e475]
+                  - row [aria-hidden] [ref=e476] [cursor=pointer]:
+                    - cell [ref=e477]
+                  - row [aria-hidden] [ref=e478] [cursor=pointer]:
+                    - cell [ref=e479]
+                  - row [aria-hidden] [ref=e480] [cursor=pointer]:
+                    - cell [ref=e481]
+                  - row [aria-hidden] [ref=e482] [cursor=pointer]:
+                    - cell [ref=e483]
+                  - row [aria-hidden] [ref=e484] [cursor=pointer]:
+                    - cell [ref=e485]
+                  - row [aria-hidden] [ref=e486] [cursor=pointer]:
+                    - cell [ref=e487]
+                  - row [aria-hidden] [ref=e488] [cursor=pointer]:
+                    - cell [ref=e489]
+                  - row [aria-hidden] [ref=e490] [cursor=pointer]:
+                    - cell [ref=e491]
+                  - row [aria-hidden] [ref=e492] [cursor=pointer]:
+                    - cell [ref=e493]
+                  - row [aria-hidden] [ref=e494] [cursor=pointer]:
+                    - cell [ref=e495]
+                  - row [aria-hidden] [ref=e496] [cursor=pointer]:
+                    - cell [ref=e497]
+                  - row [aria-hidden] [ref=e498] [cursor=pointer]:
+                    - cell [ref=e499]
+                  - row [aria-hidden] [ref=e500] [cursor=pointer]:
+                    - cell [ref=e501]
+                  - row [aria-hidden] [ref=e502] [cursor=pointer]:
+                    - cell [ref=e503]
+            - generic [ref=e504]:
+              - heading "Notifications Center" [level=2] [ref=e512]
+              - generic [ref=e513]:
+                - heading "Resources" [level=3] [ref=e520]
+                - list [ref=e521]:
+                  - listitem [ref=e522]:
+                    - button [ref=e523] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=e524]
+                  - listitem [ref=e528]:
+                    - button [ref=e529] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=e530]
+                  - listitem [ref=e534]:
+                    - button [ref=e535] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=e536]
+                - button "View All" [ref=e541] [cursor=pointer]
+      - contentinfo [ref=e542]:
+        - generic [ref=e543]: Footer region,
+        - link [ref=e544] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=e545]
+        - generic [ref=e546]:
+          - link [ref=e547] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=e548]
+          - link [ref=e549] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=e550]
+          - link [ref=e551] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=e552]
+          - link [ref=e553] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=e554]
+        - generic [ref=e555]:
+          - button "Leave Feedback" [ref=e556] [cursor=pointer]
+          - generic [aria-hidden] [ref=e557]: "|"
+          - link "Terms of Use" [ref=e558] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [aria-hidden] [ref=e559]: "|"
+          - link "Privacy Policy" [ref=e560] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=e561]: Footer region end
+```
+
+# Test source
+
+```ts
+  8050 |         } 
+  8051 |         } else if (typeOfTest.match(/Block A End Test Scenario/i,)) {
+  8052 |         if (itemDetails.startsWith("Sample")) {
+  8053 |           await this.sampleInCorrectAnswerButton.nth(0).click();
+  8054 |           await this.sampleInCorrectAnswerButton.nth(2).click();
+  8055 |           await this.sampleInCorrectAnswerButton.nth(4).click();
+  8056 |           await this.sampleInCorrectAnswerButton.nth(6).click();
+  8057 |         } else if (/^Item [1-4]\b/.test(itemDetails)) {
+  8058 |           await this.audioPlayer.click();
+  8059 |         } else if (itemDetails === "Item 5") {
+  8060 |           await this.page.waitForTimeout(2000);
+  8061 |           await this.plainNextButtonOrEndButton.click();
+  8062 |           await this.scoreLater.click();
+  8063 |           await this.listOfScores.nth(0).fill("0");
+  8064 |           await this.listOfScores.nth(1).fill("0");
+  8065 |           await this.listOfScores.nth(2).fill("0");
+  8066 |           await this.listOfScores.nth(3).fill("0");
+  8067 |           await this.submitButton.click();
+  8068 |           await this.page.waitForTimeout(10000);
+  8069 |           expect.soft(await this.ScoreSubmitted.textContent()).toContain(AdministrationCompleteText);
+  8070 |           await this.scoreLaterContinue.click();
+  8071 |           await expect.soft(this.editScoresLink).toBeEnabled();
+  8072 |           await this.editScoresLink.click();
+  8073 |           await this.listOfScores.nth(0).fill("5"); 
+  8074 |           await this.submitButton.click();
+  8075 |           await this.scoreLaterContinue.click();
+  8076 |           break;
+  8077 |         }
+  8078 |         } else if (typeOfTest.match(/End Test Scenario For Block A And B/i,)) {
+  8079 |         if (itemDetails.startsWith("Sample")) {
+  8080 |           await this.sampleInCorrectAnswerButton.nth(0).click();
+  8081 |           await this.sampleInCorrectAnswerButton.nth(2).click();
+  8082 |           await this.sampleInCorrectAnswerButton.nth(4).click();
+  8083 |           await this.sampleInCorrectAnswerButton.nth(6).click();
+  8084 |         } else if (/^Item [1-4]\b/.test(itemDetails)) {
+  8085 |           await this.audioPlayer.click();
+  8086 |           await this.page.waitForTimeout(8000);
+  8087 |         } else if (itemDetails === "Item 5") {
+  8088 |           await this.page.waitForTimeout(2000);
+  8089 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  8090 |           await this.plainNextButtonOrEndButton.click();
+  8091 |           await this.scoreLater.click();
+  8092 |           await this.listOfScores.nth(0).fill("0");
+  8093 |           await this.listOfScores.nth(1).fill("0");
+  8094 |           await this.listOfScores.nth(2).fill("0");
+  8095 |           await this.listOfScores.nth(3).fill("0");
+  8096 |           await this.page.waitForTimeout(2000);
+  8097 |           await this.scoreLaterButton.click();
+  8098 |           await this.scoreLater.click();
+  8099 |           await this.listOfScores.nth(0).fill("5");
+  8100 |           await this.listOfScores.nth(1).fill("5");
+  8101 |           await this.listOfScores.nth(2).fill("5");
+  8102 |           await this.listOfScores.nth(3).fill("5");
+  8103 |           await this.page.waitForTimeout(2000);
+  8104 |           await this.submitButton.click();
+  8105 |           await this.page.waitForTimeout(2000);
+  8106 |          expect.soft(await this.ScoreSubmitted.textContent()).toContain(AdministerMoreText);
+  8107 |           await this.scoreLaterContinue.click();
+  8108 |           await this.letsBeginButton.click();
+  8109 |           await this.page.waitForTimeout(2000);
+  8110 |         }else if (/^Item (1[0-4]|[6-9])\b/.test(itemDetails)) {
+  8111 |           await this.audioPlayer.click();
+  8112 |           await this.page.waitForTimeout(8000);
+  8113 |          } else if (itemDetails === "Item 15") {
+  8114 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  8115 |           await this.plainNextButtonOrEndButton.click();
+  8116 |           await this.scoreLater.click();
+  8117 |           await this.page.waitForTimeout(1000);
+  8118 |           await this.listOfScores.nth(0).fill("5");
+  8119 |           await this.listOfScores.nth(1).fill("5");
+  8120 |           await this.listOfScores.nth(2).fill("5");
+  8121 |           await this.listOfScores.nth(3).fill("5");
+  8122 |           await this.page.waitForTimeout(2000);
+  8123 |           await this.submitButton.click();
+  8124 |           await this.scoreLaterContinue.click();
+  8125 |           break;
+  8126 |         }
+  8127 |         } else if (typeOfTest.match(/End Test Scenario For Block B/i,)) {
+  8128 |         if (/^Item (1[0-4]|[6-9])\b/.test(itemDetails)) {
+  8129 |           await this.audioPlayer.click();
+  8130 |         } else if (itemDetails === "Item 15") {
+  8131 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  8132 |           await this.plainNextButtonOrEndButton.click();
+  8133 |           await this.scoreLater.click();
+  8134 |           await this.listOfScores.nth(0).fill("4");
+  8135 |           await this.listOfScores.nth(1).fill("4");
+  8136 |           await this.listOfScores.nth(2).fill("4");
+  8137 |           await this.listOfScores.nth(3).fill("4");
+  8138 |           await this.submitButton.click();
+  8139 |           await this.page.waitForTimeout(10000);
+  8140 |           expect.soft(await this.ScoreSubmitted.textContent()).toContain(AdministrationCompleteText);
+  8141 |           await this.scoreLaterContinue.click();
+  8142 |           break;
+  8143 |         }
+  8144 |         } else if (typeOfTest.match(/End Test Scenario Block B And A/i,)) {
+  8145 |         if (/^Item (1[0-4]|[6-9])\b/.test(itemDetails)) {
+  8146 |           await this.audioPlayer.click();
+  8147 |         } else if (itemDetails === "Item 15") {
+  8148 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  8149 |           await this.plainNextButtonOrEndButton.click();
+> 8150 |           await this.scoreLater.click();
+       |                                 ^ TimeoutError: locator.click: Timeout 60000ms exceeded.
+  8151 |           await this.listOfScores.nth(0).fill("0");
+  8152 |           await this.listOfScores.nth(1).fill("0");
+  8153 |           await this.listOfScores.nth(2).fill("0");
+  8154 |           await this.listOfScores.nth(3).fill("0");
+  8155 |           await this.submitButton.click();
+  8156 |           await this.page.waitForTimeout(10000);
+  8157 |           expect.soft(await this.ScoreSubmitted.textContent()).toContain(AdministerMoreText);
+  8158 |           await this.scoreLaterContinue.click();
+  8159 |           await this.letsBeginButton.click();
+  8160 |         }else if (/^Item [1-4]\b/.test(itemDetails)) {
+  8161 |           await this.audioPlayer.click();
+  8162 |          } else if (itemDetails === "Item 5") {
+  8163 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  8164 |           await this.plainNextButtonOrEndButton.click();
+  8165 |           await this.scoreLater.click();
+  8166 |           await this.listOfScores.nth(0).fill("5");
+  8167 |           await this.listOfScores.nth(1).fill("5");
+  8168 |           await this.listOfScores.nth(2).fill("5");
+  8169 |           await this.listOfScores.nth(3).fill("5");
+  8170 |           await this.submitButton.click();
+  8171 |           await this.scoreLaterContinue.click();
+  8172 |           break;
+  8173 |         }
+  8174 |         } else if (typeOfTest.match(/End Test Scenario For Block C/i,)) {
+  8175 |         if (/^Item (1[6-9])\b/.test(itemDetails)) {
+  8176 |           await this.audioPlayer.click();
+  8177 |         } else if (itemDetails === "Item 20") {
+  8178 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  8179 |           await this.plainNextButtonOrEndButton.click();
+  8180 |           await this.scoreLater.click();
+  8181 |           await this.listOfScores.nth(0).fill("5");
+  8182 |           await this.listOfScores.nth(1).fill("5");
+  8183 |           await this.listOfScores.nth(2).fill("5");
+  8184 |           await this.listOfScores.nth(3).fill("5");
+  8185 |           await this.submitButton.click();
+  8186 |           await this.page.waitForTimeout(10000);
+  8187 |           expect.soft(await this.ScoreSubmitted.textContent()).toContain(AdministrationCompleteText);
+  8188 |           await this.scoreLaterContinue.click();
+  8189 |           break;
+  8190 |         }
+  8191 |         } else if (typeOfTest.match(/Block C And B End Test Scenario/i,)) {
+  8192 |         if (/^Item (1[6-9])\b/.test(itemDetails)) {
+  8193 |           await this.audioPlayer.click();
+  8194 |         } else if (itemDetails === "Item 20") {
+  8195 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  8196 |           await this.page.waitForTimeout(1000);
+  8197 |           await this.plainNextButtonOrEndButton.click();
+  8198 |           await this.scoreLater.click();
+  8199 |           await this.listOfScores.nth(0).fill("0");
+  8200 |           await this.listOfScores.nth(1).fill("0");
+  8201 |           await this.listOfScores.nth(2).fill("0");
+  8202 |           await this.listOfScores.nth(3).fill("0");
+  8203 |           await this.submitButton.click();
+  8204 |           await this.page.waitForTimeout(10000);
+  8205 |           expect.soft(await this.ScoreSubmitted.textContent()).toContain(AdministerMoreText);
+  8206 |           await this.scoreLaterContinue.click();
+  8207 |           await this.letsBeginButton.click();
+  8208 |         }else if (/^Item (1[0-4]|[6-9])\b/.test(itemDetails)) {
+  8209 |           await this.audioPlayer.click();
+  8210 |          } else if (itemDetails === "Item 15") {
+  8211 |           await expect.soft(this.plainNextButtonOrEndButton).toHaveText("End Test");
+  8212 |           await this.plainNextButtonOrEndButton.click();
+  8213 |           await this.scoreLater.click();
+  8214 |           await this.listOfScores.nth(0).fill("5");
+  8215 |           await this.listOfScores.nth(1).fill("5");
+  8216 |           await this.listOfScores.nth(2).fill("5");
+  8217 |           await this.listOfScores.nth(3).fill("5");
+  8218 |           await this.submitButton.click();
+  8219 |           await this.scoreLaterContinue.click();
+  8220 |           break;
+  8221 |         }
+  8222 |         
+  8223 |       } else {
+  8224 |         throw new Error(
+  8225 |           `The ${typeOfTest} didnt match with any of the conditions provided`
+  8226 |         );
+  8227 |       }
+  8228 |       await this.plainNextButtonOrEndButton.click();
+  8229 |       if (
+  8230 |         (await this.plainNextButtonOrEndButton.textContent()) === "End Test" &&
+  8231 |         !(typeOfTest.match(/End Test Scenario For Block A And B/i) && itemDetails === "Item 5")
+  8232 |       ) {
+  8233 |         break;
+  8234 |       }
+  8235 |     }
+  8236 |   }
+  8237 |    
+  8238 |   async reroutingUsingLeftNavForRapidTests(
+  8239 |     typeOfTest: string,
+  8240 |     incorrectIndex: number,
+  8241 |     index: number,
+  8242 |     examinee_ID: string,
+  8243 |     firstItem?: string | number,
+  8244 |     totalItems?: number,
+  8245 |     secondaryIncorrectIndex?: number,
+  8246 |     testName1?: string,
+  8247 | 
+  8248 |   ) {
+  8249 |     
+  8250 |     let incorrectCount = 0;
+```

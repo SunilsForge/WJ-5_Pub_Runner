@@ -1,0 +1,975 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: UIAndReports/BLKROT_Multi_BC6.spec.ts >>  BLKROT UI And Reports >> Ages 4 to 7 - Answer only one sample item for SSP1 Test UI
+- Location: src/tests/UIAndReports/BLKROT_Multi_BC6.spec.ts:10:5
+
+# Error details
+
+```
+Error: No matching row found where ExeeID contains "BLKROT.W5PA"
+```
+
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=f1e1]:
+        - banner "Clinical Products Header" [ref=f1e2]:
+          - generic [ref=f1e3]:
+            - button "Skip to main Content" [ref=f1e4]
+            - link "Back to product selection" [ref=f1e5] [cursor=pointer]:
+              - /url: /products
+            - generic [ref=f1e6]: Riverside Insights Logo
+            - generic [ref=f1e7]:
+              - heading "Hello 58Pw Aut25AH" [level=2] [ref=f1e8]:
+                - generic [ref=f1e9]: Hello
+                - button "58Pw Aut25AH" [ref=f1e10] [cursor=pointer]
+              - navigation [ref=f1e13]:
+                - button "Contact Us" [ref=f1e14] [cursor=pointer]
+                - button "| WJ V Settings" [ref=f1e15] [cursor=pointer]
+                - button "| Sign Out" [ref=f1e16] [cursor=pointer]
+        - navigation "Navigation toolbar" [ref=f1e17]:
+          - menubar [ref=f1e19]:
+            - menuitem "Dashboard" [ref=f1e21] [cursor=pointer]
+            - menuitem "Test Sets" [ref=f1e23] [cursor=pointer]
+            - menuitem "Examinees" [ref=f1e25] [cursor=pointer]
+            - menuitem "Staff" [ref=f1e27] [cursor=pointer]
+            - menuitem "Reports" [ref=f1e29] [cursor=pointer]:
+              - text: Reports
+              - menu
+            - menuitem "Resources" [ref=f1e33] [cursor=pointer]
+          - generic [ref=f1e34]:
+            - switch "Offline Mode" [ref=f1e35] [cursor=pointer]: "OFF"
+            - generic [ref=f1e36]: Offline Mode
+        - main [ref=f1e37]:
+          - generic [ref=f1e38]:
+            - generic [ref=f1e40]:
+              - generic [ref=f1e41]: NEW!
+              - generic [ref=f1e42]: Offline Mode is here, download your assignments and get started today!
+              - link "Read More" [ref=f1e43] [cursor=pointer]:
+                - /url: /media/OfflineMode.pdf
+              - button "Close" [ref=f1e44] [cursor=pointer]: ✕
+            - generic [ref=f1e45]:
+              - generic [ref=f1e46]:
+                - heading "My Test Assignments" [level=1] [ref=f1e47]
+                - button "Create New Test Assignment" [ref=f1e48] [cursor=pointer]
+              - generic [ref=f1e49]:
+                - generic [ref=f1e52]:
+                  - textbox [ref=f1e53]:
+                    - /placeholder: Search Test Assignments
+                  - button "Search Test Assignments" [ref=f1e54] [cursor=pointer]
+                - generic [ref=f1e55]:
+                  - button "Active" [ref=f1e56] [cursor=pointer]
+                  - button "Closed" [ref=f1e57] [cursor=pointer]
+              - table "Available Assignments" [ref=f1e59]:
+                - rowgroup [ref=f1e66]:
+                  - row [ref=f1e67]:
+                    - columnheader "This is the student or individual being assessed." [ref=f1e68]: Examinee
+                    - columnheader "The name given to this test assignment." [ref=f1e69]: Assignment Name
+                    - columnheader "Number of days remaining to edit this assignment." [ref=f1e70]: Days Left to Edit
+                    - columnheader "Status of the test assignment." [ref=f1e71]: Status
+                    - columnheader "Actions available are based on your role and test status." [ref=f1e72]: Actions
+                - rowgroup [ref=f1e73]:
+                  - row [ref=f1e74] [cursor=pointer]:
+                    - cell [ref=f1e75]:
+                      - button "Begin assignment Diana's Jody Thiel_1795720382892 for N48210A64822, Diana" [disabled] [ref=f1e76]:
+                        - generic [ref=f1e77]: N48210A64822, Diana
+                    - cell [ref=f1e78]:
+                      - generic [ref=f1e79]:
+                        - button "Diana's Jody Thiel_1795720382892" [disabled] [ref=f1e80]
+                        - button "More info" [ref=f1e82]
+                    - cell [ref=f1e83]:
+                      - button "90 days" [disabled] [ref=f1e84]
+                    - cell [ref=f1e85]:
+                      - button "● Submitted" [disabled] [ref=f1e86]:
+                        - generic [ref=f1e87]: ●
+                        - text: Submitted
+                    - cell [ref=f1e88]:
+                      - button "Edit Assignment" [disabled] [ref=f1e89]
+                      - button "Add Tests" [disabled] [ref=f1e90]
+                      - button "Assignment actions" [ref=f1e91]
+                  - row [ref=f1e92] [cursor=pointer]:
+                    - cell [ref=f1e93]:
+                      - button "Begin assignment Hubert's Jenny Romaguera_1795628968173 for N49455A89946, Hubert" [disabled] [ref=f1e94]:
+                        - generic [ref=f1e95]: N49455A89946, Hubert
+                    - cell [ref=f1e96]:
+                      - generic [ref=f1e97]:
+                        - button "Hubert's Jenny Romaguera_1795628968173" [disabled] [ref=f1e98]
+                        - button "More info" [ref=f1e100]
+                    - cell [ref=f1e101]:
+                      - button "—" [disabled] [ref=f1e102]
+                    - cell [ref=f1e103]:
+                      - button "● Not Started" [disabled] [ref=f1e104]:
+                        - generic [ref=f1e105]: ●
+                        - text: Not Started
+                    - cell [ref=f1e106]:
+                      - button "Edit Assignment" [disabled] [ref=f1e107]
+                      - button "Add Tests" [disabled] [ref=f1e108]
+                      - button "Assignment actions" [ref=f1e109]
+                  - row [ref=f1e110] [cursor=pointer]:
+                    - cell [ref=f1e111]:
+                      - button "Begin assignment Jason's Terence Barrows_1795628764704 for N37987A6338, Jason" [disabled] [ref=f1e112]:
+                        - generic [ref=f1e113]: N37987A6338, Jason
+                    - cell [ref=f1e114]:
+                      - generic [ref=f1e115]:
+                        - button "Jason's Terence Barrows_1795628764704" [disabled] [ref=f1e116]
+                        - button "More info" [ref=f1e118]
+                    - cell [ref=f1e119]:
+                      - button "—" [disabled] [ref=f1e120]
+                    - cell [ref=f1e121]:
+                      - button "● Not Started" [disabled] [ref=f1e122]:
+                        - generic [ref=f1e123]: ●
+                        - text: Not Started
+                    - cell [ref=f1e124]:
+                      - button "Edit Assignment" [disabled] [ref=f1e125]
+                      - button "Add Tests" [disabled] [ref=f1e126]
+                      - button "Assignment actions" [ref=f1e127]
+                  - row [ref=f1e128] [cursor=pointer]:
+                    - cell [ref=f1e129]:
+                      - button "Begin assignment Carmel's Vernon Gerlach_1795628561486 for N88027A77526, Carmel" [disabled] [ref=f1e130]:
+                        - generic [ref=f1e131]: N88027A77526, Carmel
+                    - cell [ref=f1e132]:
+                      - generic [ref=f1e133]:
+                        - button "Carmel's Vernon Gerlach_1795628561486" [disabled] [ref=f1e134]
+                        - button "More info" [ref=f1e136]
+                    - cell [ref=f1e137]:
+                      - button "—" [disabled] [ref=f1e138]
+                    - cell [ref=f1e139]:
+                      - button "● Not Started" [disabled] [ref=f1e140]:
+                        - generic [ref=f1e141]: ●
+                        - text: Not Started
+                    - cell [ref=f1e142]:
+                      - button "Edit Assignment" [disabled] [ref=f1e143]
+                      - button "Add Tests" [disabled] [ref=f1e144]
+                      - button "Assignment actions" [ref=f1e145]
+                  - row [ref=f1e146] [cursor=pointer]:
+                    - cell [ref=f1e147]:
+                      - button "Begin assignment Jayden's Lamar Kshlerin_1795628357671 for N97019A89300, Jayden" [disabled] [ref=f1e148]:
+                        - generic [ref=f1e149]: N97019A89300, Jayden
+                    - cell [ref=f1e150]:
+                      - generic [ref=f1e151]:
+                        - button "Jayden's Lamar Kshlerin_1795628357671" [disabled] [ref=f1e152]
+                        - button "More info" [ref=f1e154]
+                    - cell [ref=f1e155]:
+                      - button "—" [disabled] [ref=f1e156]
+                    - cell [ref=f1e157]:
+                      - button "● Not Started" [disabled] [ref=f1e158]:
+                        - generic [ref=f1e159]: ●
+                        - text: Not Started
+                    - cell [ref=f1e160]:
+                      - button "Edit Assignment" [disabled] [ref=f1e161]
+                      - button "Add Tests" [disabled] [ref=f1e162]
+                      - button "Assignment actions" [ref=f1e163]
+                  - row [ref=f1e164] [cursor=pointer]:
+                    - cell [ref=f1e165]:
+                      - button "Begin assignment Elinor's Michael Sauer_1795628153385 for N2495A98297, Elinor" [disabled] [ref=f1e166]:
+                        - generic [ref=f1e167]: N2495A98297, Elinor
+                    - cell [ref=f1e168]:
+                      - generic [ref=f1e169]:
+                        - button "Elinor's Michael Sauer_1795628153385" [disabled] [ref=f1e170]
+                        - button "More info" [ref=f1e172]
+                    - cell [ref=f1e173]:
+                      - button "—" [disabled] [ref=f1e174]
+                    - cell [ref=f1e175]:
+                      - button "● Not Started" [disabled] [ref=f1e176]:
+                        - generic [ref=f1e177]: ●
+                        - text: Not Started
+                    - cell [ref=f1e178]:
+                      - button "Edit Assignment" [disabled] [ref=f1e179]
+                      - button "Add Tests" [disabled] [ref=f1e180]
+                      - button "Assignment actions" [ref=f1e181]
+                  - row [ref=f1e182] [cursor=pointer]:
+                    - cell [ref=f1e183]:
+                      - button "Begin assignment Efren's Roosevelt Rempel_1795627950829 for N85919A34599, Efren" [disabled] [ref=f1e184]:
+                        - generic [ref=f1e185]: N85919A34599, Efren
+                    - cell [ref=f1e186]:
+                      - generic [ref=f1e187]:
+                        - button "Efren's Roosevelt Rempel_1795627950829" [disabled] [ref=f1e188]
+                        - button "More info" [ref=f1e190]
+                    - cell [ref=f1e191]:
+                      - button "—" [disabled] [ref=f1e192]
+                    - cell [ref=f1e193]:
+                      - button "● Not Started" [disabled] [ref=f1e194]:
+                        - generic [ref=f1e195]: ●
+                        - text: Not Started
+                    - cell [ref=f1e196]:
+                      - button "Edit Assignment" [disabled] [ref=f1e197]
+                      - button "Add Tests" [disabled] [ref=f1e198]
+                      - button "Assignment actions" [ref=f1e199]
+                  - row [ref=f1e200] [cursor=pointer]:
+                    - cell [ref=f1e201]:
+                      - button "Begin assignment Ernestina's Alton Effertz_1795627747654 for N40517A40841, Ernestina" [disabled] [ref=f1e202]:
+                        - generic [ref=f1e203]: N40517A40841, Ernestina
+                    - cell [ref=f1e204]:
+                      - generic [ref=f1e205]:
+                        - button "Ernestina's Alton Effertz_1795627747654" [disabled] [ref=f1e206]
+                        - button "More info" [ref=f1e208]
+                    - cell [ref=f1e209]:
+                      - button "—" [disabled] [ref=f1e210]
+                    - cell [ref=f1e211]:
+                      - button "● Not Started" [disabled] [ref=f1e212]:
+                        - generic [ref=f1e213]: ●
+                        - text: Not Started
+                    - cell [ref=f1e214]:
+                      - button "Edit Assignment" [disabled] [ref=f1e215]
+                      - button "Add Tests" [disabled] [ref=f1e216]
+                      - button "Assignment actions" [ref=f1e217]
+                  - row [ref=f1e218] [cursor=pointer]:
+                    - cell [ref=f1e219]:
+                      - button "Begin assignment Thurman's Hubert Stark_1795627542948 for N3745A70107, Thurman" [disabled] [ref=f1e220]:
+                        - generic [ref=f1e221]: N3745A70107, Thurman
+                    - cell [ref=f1e222]:
+                      - generic [ref=f1e223]:
+                        - button "Thurman's Hubert Stark_1795627542948" [disabled] [ref=f1e224]
+                        - button "More info" [ref=f1e226]
+                    - cell [ref=f1e227]:
+                      - button "—" [disabled] [ref=f1e228]
+                    - cell [ref=f1e229]:
+                      - button "● Not Started" [disabled] [ref=f1e230]:
+                        - generic [ref=f1e231]: ●
+                        - text: Not Started
+                    - cell [ref=f1e232]:
+                      - button "Edit Assignment" [disabled] [ref=f1e233]
+                      - button "Add Tests" [disabled] [ref=f1e234]
+                      - button "Assignment actions" [ref=f1e235]
+                  - row [ref=f1e236] [cursor=pointer]:
+                    - cell [ref=f1e237]:
+                      - button "Begin assignment Raphael's Ebony Langworth_1795627338724 for N81222A71050, Raphael" [disabled] [ref=f1e238]:
+                        - generic [ref=f1e239]: N81222A71050, Raphael
+                    - cell [ref=f1e240]:
+                      - generic [ref=f1e241]:
+                        - button "Raphael's Ebony Langworth_1795627338724" [disabled] [ref=f1e242]
+                        - button "More info" [ref=f1e244]
+                    - cell [ref=f1e245]:
+                      - button "—" [disabled] [ref=f1e246]
+                    - cell [ref=f1e247]:
+                      - button "● Not Started" [disabled] [ref=f1e248]:
+                        - generic [ref=f1e249]: ●
+                        - text: Not Started
+                    - cell [ref=f1e250]:
+                      - button "Edit Assignment" [disabled] [ref=f1e251]
+                      - button "Add Tests" [disabled] [ref=f1e252]
+                      - button "Assignment actions" [ref=f1e253]
+                  - row [ref=f1e254] [cursor=pointer]:
+                    - cell [ref=f1e255]:
+                      - button "Begin assignment Newell's Fred Swaniawski_1795627135308 for N82776A60916, Newell" [disabled] [ref=f1e256]:
+                        - generic [ref=f1e257]: N82776A60916, Newell
+                    - cell [ref=f1e258]:
+                      - generic [ref=f1e259]:
+                        - button "Newell's Fred Swaniawski_1795627135308" [disabled] [ref=f1e260]
+                        - button "More info" [ref=f1e262]
+                    - cell [ref=f1e263]:
+                      - button "—" [disabled] [ref=f1e264]
+                    - cell [ref=f1e265]:
+                      - button "● Not Started" [disabled] [ref=f1e266]:
+                        - generic [ref=f1e267]: ●
+                        - text: Not Started
+                    - cell [ref=f1e268]:
+                      - button "Edit Assignment" [disabled] [ref=f1e269]
+                      - button "Add Tests" [disabled] [ref=f1e270]
+                      - button "Assignment actions" [ref=f1e271]
+                  - row [ref=f1e272] [cursor=pointer]:
+                    - cell [ref=f1e273]:
+                      - button "Begin assignment Zoie's Darrell Blick_1795626933510 for N2545A91996, Zoie" [disabled] [ref=f1e274]:
+                        - generic [ref=f1e275]: N2545A91996, Zoie
+                    - cell [ref=f1e276]:
+                      - generic [ref=f1e277]:
+                        - button "Zoie's Darrell Blick_1795626933510" [disabled] [ref=f1e278]
+                        - button "More info" [ref=f1e280]
+                    - cell [ref=f1e281]:
+                      - button "—" [disabled] [ref=f1e282]
+                    - cell [ref=f1e283]:
+                      - button "● Not Started" [disabled] [ref=f1e284]:
+                        - generic [ref=f1e285]: ●
+                        - text: Not Started
+                    - cell [ref=f1e286]:
+                      - button "Edit Assignment" [disabled] [ref=f1e287]
+                      - button "Add Tests" [disabled] [ref=f1e288]
+                      - button "Assignment actions" [ref=f1e289]
+                  - row [ref=f1e290] [cursor=pointer]:
+                    - cell [ref=f1e291]:
+                      - button "Begin assignment Kevon's Ms. Shelia Grady_1795626729575 for N6472A10939, Kevon" [disabled] [ref=f1e292]:
+                        - generic [ref=f1e293]: N6472A10939, Kevon
+                    - cell [ref=f1e294]:
+                      - generic [ref=f1e295]:
+                        - button "Kevon's Ms. Shelia Grady_1795626729575" [disabled] [ref=f1e296]
+                        - button "More info" [ref=f1e298]
+                    - cell [ref=f1e299]:
+                      - button "—" [disabled] [ref=f1e300]
+                    - cell [ref=f1e301]:
+                      - button "● Not Started" [disabled] [ref=f1e302]:
+                        - generic [ref=f1e303]: ●
+                        - text: Not Started
+                    - cell [ref=f1e304]:
+                      - button "Edit Assignment" [disabled] [ref=f1e305]
+                      - button "Add Tests" [disabled] [ref=f1e306]
+                      - button "Assignment actions" [ref=f1e307]
+                  - row [ref=f1e308] [cursor=pointer]:
+                    - cell [ref=f1e309]:
+                      - button "Begin assignment Bradley's Randal Fahey_1795626527489 for N88212A92369, Bradley" [disabled] [ref=f1e310]:
+                        - generic [ref=f1e311]: N88212A92369, Bradley
+                    - cell [ref=f1e312]:
+                      - generic [ref=f1e313]:
+                        - button "Bradley's Randal Fahey_1795626527489" [disabled] [ref=f1e314]
+                        - button "More info" [ref=f1e316]
+                    - cell [ref=f1e317]:
+                      - button "—" [disabled] [ref=f1e318]
+                    - cell [ref=f1e319]:
+                      - button "● Not Started" [disabled] [ref=f1e320]:
+                        - generic [ref=f1e321]: ●
+                        - text: Not Started
+                    - cell [ref=f1e322]:
+                      - button "Edit Assignment" [disabled] [ref=f1e323]
+                      - button "Add Tests" [disabled] [ref=f1e324]
+                      - button "Assignment actions" [ref=f1e325]
+                  - row [ref=f1e326] [cursor=pointer]:
+                    - cell [ref=f1e327]:
+                      - button "Begin assignment Leilani's Miss Pat Kirlin IV_1795626321852 for N38846A63711, Leilani" [disabled] [ref=f1e328]:
+                        - generic [ref=f1e329]: N38846A63711, Leilani
+                    - cell [ref=f1e330]:
+                      - generic [ref=f1e331]:
+                        - button "Leilani's Miss Pat Kirlin IV_1795626321852" [disabled] [ref=f1e332]
+                        - button "More info" [ref=f1e334]
+                    - cell [ref=f1e335]:
+                      - button "—" [disabled] [ref=f1e336]
+                    - cell [ref=f1e337]:
+                      - button "● Not Started" [disabled] [ref=f1e338]:
+                        - generic [ref=f1e339]: ●
+                        - text: Not Started
+                    - cell [ref=f1e340]:
+                      - button "Edit Assignment" [disabled] [ref=f1e341]
+                      - button "Add Tests" [disabled] [ref=f1e342]
+                      - button "Assignment actions" [ref=f1e343]
+                  - row [ref=f1e344] [cursor=pointer]:
+                    - cell [ref=f1e345]:
+                      - button "Begin assignment Judd's Kristina Lindgren_1795626117617 for N99591A64305, Judd" [disabled] [ref=f1e346]:
+                        - generic [ref=f1e347]: N99591A64305, Judd
+                    - cell [ref=f1e348]:
+                      - generic [ref=f1e349]:
+                        - button "Judd's Kristina Lindgren_1795626117617" [disabled] [ref=f1e350]
+                        - button "More info" [ref=f1e352]
+                    - cell [ref=f1e353]:
+                      - button "—" [disabled] [ref=f1e354]
+                    - cell [ref=f1e355]:
+                      - button "● Not Started" [disabled] [ref=f1e356]:
+                        - generic [ref=f1e357]: ●
+                        - text: Not Started
+                    - cell [ref=f1e358]:
+                      - button "Edit Assignment" [disabled] [ref=f1e359]
+                      - button "Add Tests" [disabled] [ref=f1e360]
+                      - button "Assignment actions" [ref=f1e361]
+                  - row [ref=f1e362] [cursor=pointer]:
+                    - cell [ref=f1e363]:
+                      - button "Begin assignment Beulah's Lynn Fisher_1795625913232 for N88936A96714, Beulah" [disabled] [ref=f1e364]:
+                        - generic [ref=f1e365]: N88936A96714, Beulah
+                    - cell [ref=f1e366]:
+                      - generic [ref=f1e367]:
+                        - button "Beulah's Lynn Fisher_1795625913232" [disabled] [ref=f1e368]
+                        - button "More info" [ref=f1e370]
+                    - cell [ref=f1e371]:
+                      - button "—" [disabled] [ref=f1e372]
+                    - cell [ref=f1e373]:
+                      - button "● Not Started" [disabled] [ref=f1e374]:
+                        - generic [ref=f1e375]: ●
+                        - text: Not Started
+                    - cell [ref=f1e376]:
+                      - button "Edit Assignment" [disabled] [ref=f1e377]
+                      - button "Add Tests" [disabled] [ref=f1e378]
+                      - button "Assignment actions" [ref=f1e379]
+                  - row [ref=f1e380] [cursor=pointer]:
+                    - cell [ref=f1e381]:
+                      - button "Begin assignment Ona's Kelli Cassin-Kuvalis II_1795625708072 for N58331A17096, Ona" [disabled] [ref=f1e382]:
+                        - generic [ref=f1e383]: N58331A17096, Ona
+                    - cell [ref=f1e384]:
+                      - generic [ref=f1e385]:
+                        - button "Ona's Kelli Cassin-Kuvalis II_1795625708072" [disabled] [ref=f1e386]
+                        - button "More info" [ref=f1e388]
+                    - cell [ref=f1e389]:
+                      - button "—" [disabled] [ref=f1e390]
+                    - cell [ref=f1e391]:
+                      - button "● Not Started" [disabled] [ref=f1e392]:
+                        - generic [ref=f1e393]: ●
+                        - text: Not Started
+                    - cell [ref=f1e394]:
+                      - button "Edit Assignment" [disabled] [ref=f1e395]
+                      - button "Add Tests" [disabled] [ref=f1e396]
+                      - button "Assignment actions" [ref=f1e397]
+                  - row [ref=f1e398] [cursor=pointer]:
+                    - cell [ref=f1e399]:
+                      - button "Begin assignment Maureen's Trevor Kerluke_1795625503310 for N19208A22179, Maureen" [disabled] [ref=f1e400]:
+                        - generic [ref=f1e401]: N19208A22179, Maureen
+                    - cell [ref=f1e402]:
+                      - generic [ref=f1e403]:
+                        - button "Maureen's Trevor Kerluke_1795625503310" [disabled] [ref=f1e404]
+                        - button "More info" [ref=f1e406]
+                    - cell [ref=f1e407]:
+                      - button "—" [disabled] [ref=f1e408]
+                    - cell [ref=f1e409]:
+                      - button "● Not Started" [disabled] [ref=f1e410]:
+                        - generic [ref=f1e411]: ●
+                        - text: Not Started
+                    - cell [ref=f1e412]:
+                      - button "Edit Assignment" [disabled] [ref=f1e413]
+                      - button "Add Tests" [disabled] [ref=f1e414]
+                      - button "Assignment actions" [ref=f1e415]
+                  - row [ref=f1e416] [cursor=pointer]:
+                    - cell [ref=f1e417]:
+                      - button "Begin assignment Dallin's Carlton Anderson_1795625298772 for N6286A1654, Dallin" [disabled] [ref=f1e418]:
+                        - generic [ref=f1e419]: N6286A1654, Dallin
+                    - cell [ref=f1e420]:
+                      - generic [ref=f1e421]:
+                        - button "Dallin's Carlton Anderson_1795625298772" [disabled] [ref=f1e422]
+                        - button "More info" [ref=f1e424]
+                    - cell [ref=f1e425]:
+                      - button "—" [disabled] [ref=f1e426]
+                    - cell [ref=f1e427]:
+                      - button "● Not Started" [disabled] [ref=f1e428]:
+                        - generic [ref=f1e429]: ●
+                        - text: Not Started
+                    - cell [ref=f1e430]:
+                      - button "Edit Assignment" [disabled] [ref=f1e431]
+                      - button "Add Tests" [disabled] [ref=f1e432]
+                      - button "Assignment actions" [ref=f1e433]
+                  - row [ref=f1e434] [cursor=pointer]:
+                    - cell [ref=f1e435]:
+                      - button "Begin assignment Ollie's Mrs. Kristen Champlin_1795625094117 for N10482A57358, Ollie" [disabled] [ref=f1e436]:
+                        - generic [ref=f1e437]: N10482A57358, Ollie
+                    - cell [ref=f1e438]:
+                      - generic [ref=f1e439]:
+                        - button "Ollie's Mrs. Kristen Champlin_1795625094117" [disabled] [ref=f1e440]
+                        - button "More info" [ref=f1e442]
+                    - cell [ref=f1e443]:
+                      - button "—" [disabled] [ref=f1e444]
+                    - cell [ref=f1e445]:
+                      - button "● Not Started" [disabled] [ref=f1e446]:
+                        - generic [ref=f1e447]: ●
+                        - text: Not Started
+                    - cell [ref=f1e448]:
+                      - button "Edit Assignment" [disabled] [ref=f1e449]
+                      - button "Add Tests" [disabled] [ref=f1e450]
+                      - button "Assignment actions" [ref=f1e451]
+                  - row [aria-hidden] [ref=f1e452] [cursor=pointer]:
+                    - cell [ref=f1e453]
+                  - row [aria-hidden] [ref=f1e454] [cursor=pointer]:
+                    - cell [ref=f1e455]
+                  - row [aria-hidden] [ref=f1e456] [cursor=pointer]:
+                    - cell [ref=f1e457]
+                  - row [aria-hidden] [ref=f1e458] [cursor=pointer]:
+                    - cell [ref=f1e459]
+                  - row [aria-hidden] [ref=f1e460] [cursor=pointer]:
+                    - cell [ref=f1e461]
+                  - row [aria-hidden] [ref=f1e462] [cursor=pointer]:
+                    - cell [ref=f1e463]
+                  - row [aria-hidden] [ref=f1e464] [cursor=pointer]:
+                    - cell [ref=f1e465]
+                  - row [aria-hidden] [ref=f1e466] [cursor=pointer]:
+                    - cell [ref=f1e467]
+                  - row [aria-hidden] [ref=f1e468] [cursor=pointer]:
+                    - cell [ref=f1e469]
+                  - row [aria-hidden] [ref=f1e470] [cursor=pointer]:
+                    - cell [ref=f1e471]
+                  - row [aria-hidden] [ref=f1e472] [cursor=pointer]:
+                    - cell [ref=f1e473]
+                  - row [aria-hidden] [ref=f1e474] [cursor=pointer]:
+                    - cell [ref=f1e475]
+                  - row [aria-hidden] [ref=f1e476] [cursor=pointer]:
+                    - cell [ref=f1e477]
+                  - row [aria-hidden] [ref=f1e478] [cursor=pointer]:
+                    - cell [ref=f1e479]
+                  - row [aria-hidden] [ref=f1e480] [cursor=pointer]:
+                    - cell [ref=f1e481]
+                  - row [aria-hidden] [ref=f1e482] [cursor=pointer]:
+                    - cell [ref=f1e483]
+                  - row [aria-hidden] [ref=f1e484] [cursor=pointer]:
+                    - cell [ref=f1e485]
+                  - row [aria-hidden] [ref=f1e486] [cursor=pointer]:
+                    - cell [ref=f1e487]
+                  - row [aria-hidden] [ref=f1e488] [cursor=pointer]:
+                    - cell [ref=f1e489]
+                  - row [aria-hidden] [ref=f1e490] [cursor=pointer]:
+                    - cell [ref=f1e491]
+                  - row [aria-hidden] [ref=f1e492] [cursor=pointer]:
+                    - cell [ref=f1e493]
+                  - row [aria-hidden] [ref=f1e494] [cursor=pointer]:
+                    - cell [ref=f1e495]
+                  - row [aria-hidden] [ref=f1e496] [cursor=pointer]:
+                    - cell [ref=f1e497]
+                  - row [aria-hidden] [ref=f1e498] [cursor=pointer]:
+                    - cell [ref=f1e499]
+                  - row [aria-hidden] [ref=f1e500] [cursor=pointer]:
+                    - cell [ref=f1e501]
+                  - row [aria-hidden] [ref=f1e502] [cursor=pointer]:
+                    - cell [ref=f1e503]
+                  - row [aria-hidden] [ref=f1e504] [cursor=pointer]:
+                    - cell [ref=f1e505]
+                  - row [aria-hidden] [ref=f1e506] [cursor=pointer]:
+                    - cell [ref=f1e507]
+                  - row [aria-hidden] [ref=f1e508] [cursor=pointer]:
+                    - cell [ref=f1e509]
+                  - row [aria-hidden] [ref=f1e510] [cursor=pointer]:
+                    - cell [ref=f1e511]
+                  - row [aria-hidden] [ref=f1e512] [cursor=pointer]:
+                    - cell [ref=f1e513]
+                  - row [aria-hidden] [ref=f1e514] [cursor=pointer]:
+                    - cell [ref=f1e515]
+                  - row [aria-hidden] [ref=f1e516] [cursor=pointer]:
+                    - cell [ref=f1e517]
+                  - row [aria-hidden] [ref=f1e518] [cursor=pointer]:
+                    - cell [ref=f1e519]
+                  - row [aria-hidden] [ref=f1e520] [cursor=pointer]:
+                    - cell [ref=f1e521]
+                  - row [aria-hidden] [ref=f1e522] [cursor=pointer]:
+                    - cell [ref=f1e523]
+                  - row [aria-hidden] [ref=f1e524] [cursor=pointer]:
+                    - cell [ref=f1e525]
+                  - row [aria-hidden] [ref=f1e526] [cursor=pointer]:
+                    - cell [ref=f1e527]
+                  - row [aria-hidden] [ref=f1e528] [cursor=pointer]:
+                    - cell [ref=f1e529]
+                  - row [aria-hidden] [ref=f1e530] [cursor=pointer]:
+                    - cell [ref=f1e531]
+                  - row [aria-hidden] [ref=f1e532] [cursor=pointer]:
+                    - cell [ref=f1e533]
+                  - row [aria-hidden] [ref=f1e534] [cursor=pointer]:
+                    - cell [ref=f1e535]
+                  - row [aria-hidden] [ref=f1e536] [cursor=pointer]:
+                    - cell [ref=f1e537]
+                  - row [aria-hidden] [ref=f1e538] [cursor=pointer]:
+                    - cell [ref=f1e539]
+                  - row [aria-hidden] [ref=f1e540] [cursor=pointer]:
+                    - cell [ref=f1e541]
+                  - row [aria-hidden] [ref=f1e542] [cursor=pointer]:
+                    - cell [ref=f1e543]
+                  - row [aria-hidden] [ref=f1e544] [cursor=pointer]:
+                    - cell [ref=f1e545]
+                  - row [aria-hidden] [ref=f1e546] [cursor=pointer]:
+                    - cell [ref=f1e547]
+                  - row [aria-hidden] [ref=f1e548] [cursor=pointer]:
+                    - cell [ref=f1e549]
+                  - row [aria-hidden] [ref=f1e550] [cursor=pointer]:
+                    - cell [ref=f1e551]
+                  - row [aria-hidden] [ref=f1e552] [cursor=pointer]:
+                    - cell [ref=f1e553]
+                  - row [aria-hidden] [ref=f1e554] [cursor=pointer]:
+                    - cell [ref=f1e555]
+                  - row [aria-hidden] [ref=f1e556] [cursor=pointer]:
+                    - cell [ref=f1e557]
+                  - row [aria-hidden] [ref=f1e558] [cursor=pointer]:
+                    - cell [ref=f1e559]
+                  - row [aria-hidden] [ref=f1e560] [cursor=pointer]:
+                    - cell [ref=f1e561]
+                  - row [aria-hidden] [ref=f1e562] [cursor=pointer]:
+                    - cell [ref=f1e563]
+                  - row [aria-hidden] [ref=f1e564] [cursor=pointer]:
+                    - cell [ref=f1e565]
+                  - row [aria-hidden] [ref=f1e566] [cursor=pointer]:
+                    - cell [ref=f1e567]
+                  - row [aria-hidden] [ref=f1e568] [cursor=pointer]:
+                    - cell [ref=f1e569]
+                  - row [aria-hidden] [ref=f1e570] [cursor=pointer]:
+                    - cell [ref=f1e571]
+                  - row [aria-hidden] [ref=f1e572] [cursor=pointer]:
+                    - cell [ref=f1e573]
+                  - row [aria-hidden] [ref=f1e574] [cursor=pointer]:
+                    - cell [ref=f1e575]
+                  - row [aria-hidden] [ref=f1e576] [cursor=pointer]:
+                    - cell [ref=f1e577]
+                  - row [aria-hidden] [ref=f1e578] [cursor=pointer]:
+                    - cell [ref=f1e579]
+                  - row [aria-hidden] [ref=f1e580] [cursor=pointer]:
+                    - cell [ref=f1e581]
+                  - row [aria-hidden] [ref=f1e582] [cursor=pointer]:
+                    - cell [ref=f1e583]
+                  - row [aria-hidden] [ref=f1e584] [cursor=pointer]:
+                    - cell [ref=f1e585]
+                  - row [aria-hidden] [ref=f1e586] [cursor=pointer]:
+                    - cell [ref=f1e587]
+                  - row [aria-hidden] [ref=f1e588] [cursor=pointer]:
+                    - cell [ref=f1e589]
+                  - row [aria-hidden] [ref=f1e590] [cursor=pointer]:
+                    - cell [ref=f1e591]
+                  - row [aria-hidden] [ref=f1e592] [cursor=pointer]:
+                    - cell [ref=f1e593]
+                  - row [aria-hidden] [ref=f1e594] [cursor=pointer]:
+                    - cell [ref=f1e595]
+                  - row [aria-hidden] [ref=f1e596] [cursor=pointer]:
+                    - cell [ref=f1e597]
+                  - row [aria-hidden] [ref=f1e598] [cursor=pointer]:
+                    - cell [ref=f1e599]
+                  - row [aria-hidden] [ref=f1e600] [cursor=pointer]:
+                    - cell [ref=f1e601]
+                  - row [aria-hidden] [ref=f1e602] [cursor=pointer]:
+                    - cell [ref=f1e603]
+                  - row [aria-hidden] [ref=f1e604] [cursor=pointer]:
+                    - cell [ref=f1e605]
+                  - row [aria-hidden] [ref=f1e606] [cursor=pointer]:
+                    - cell [ref=f1e607]
+                  - row [aria-hidden] [ref=f1e608] [cursor=pointer]:
+                    - cell [ref=f1e609]
+                  - row [aria-hidden] [ref=f1e610] [cursor=pointer]:
+                    - cell [ref=f1e611]
+                  - row [aria-hidden] [ref=f1e612] [cursor=pointer]:
+                    - cell [ref=f1e613]
+                  - row [aria-hidden] [ref=f1e614] [cursor=pointer]:
+                    - cell [ref=f1e615]
+                  - row [aria-hidden] [ref=f1e616] [cursor=pointer]:
+                    - cell [ref=f1e617]
+                  - row [aria-hidden] [ref=f1e618] [cursor=pointer]:
+                    - cell [ref=f1e619]
+                  - row [aria-hidden] [ref=f1e620] [cursor=pointer]:
+                    - cell [ref=f1e621]
+                  - row [aria-hidden] [ref=f1e622] [cursor=pointer]:
+                    - cell [ref=f1e623]
+                  - row [aria-hidden] [ref=f1e624] [cursor=pointer]:
+                    - cell [ref=f1e625]
+                  - row [aria-hidden] [ref=f1e626] [cursor=pointer]:
+                    - cell [ref=f1e627]
+                  - row [aria-hidden] [ref=f1e628] [cursor=pointer]:
+                    - cell [ref=f1e629]
+                  - row [aria-hidden] [ref=f1e630] [cursor=pointer]:
+                    - cell [ref=f1e631]
+                  - row [aria-hidden] [ref=f1e632] [cursor=pointer]:
+                    - cell [ref=f1e633]
+                  - row [aria-hidden] [ref=f1e634] [cursor=pointer]:
+                    - cell [ref=f1e635]
+                  - row [aria-hidden] [ref=f1e636] [cursor=pointer]:
+                    - cell [ref=f1e637]
+                  - row [aria-hidden] [ref=f1e638] [cursor=pointer]:
+                    - cell [ref=f1e639]
+                  - row [aria-hidden] [ref=f1e640] [cursor=pointer]:
+                    - cell [ref=f1e641]
+                  - row [aria-hidden] [ref=f1e642] [cursor=pointer]:
+                    - cell [ref=f1e643]
+                  - row [aria-hidden] [ref=f1e644] [cursor=pointer]:
+                    - cell [ref=f1e645]
+                  - row [aria-hidden] [ref=f1e646] [cursor=pointer]:
+                    - cell [ref=f1e647]
+                  - row [aria-hidden] [ref=f1e648] [cursor=pointer]:
+                    - cell [ref=f1e649]
+                  - row [aria-hidden] [ref=f1e650] [cursor=pointer]:
+                    - cell [ref=f1e651]
+                  - row [aria-hidden] [ref=f1e652] [cursor=pointer]:
+                    - cell [ref=f1e653]
+                  - row [aria-hidden] [ref=f1e654] [cursor=pointer]:
+                    - cell [ref=f1e655]
+                  - row [aria-hidden] [ref=f1e656] [cursor=pointer]:
+                    - cell [ref=f1e657]
+                  - row [aria-hidden] [ref=f1e658] [cursor=pointer]:
+                    - cell [ref=f1e659]
+                  - row [aria-hidden] [ref=f1e660] [cursor=pointer]:
+                    - cell [ref=f1e661]
+                  - row [aria-hidden] [ref=f1e662] [cursor=pointer]:
+                    - cell [ref=f1e663]
+                  - row [aria-hidden] [ref=f1e664] [cursor=pointer]:
+                    - cell [ref=f1e665]
+                  - row [aria-hidden] [ref=f1e666] [cursor=pointer]:
+                    - cell [ref=f1e667]
+                  - row [aria-hidden] [ref=f1e668] [cursor=pointer]:
+                    - cell [ref=f1e669]
+                  - row [aria-hidden] [ref=f1e670] [cursor=pointer]:
+                    - cell [ref=f1e671]
+                  - row [aria-hidden] [ref=f1e672] [cursor=pointer]:
+                    - cell [ref=f1e673]
+                  - row [aria-hidden] [ref=f1e674] [cursor=pointer]:
+                    - cell [ref=f1e675]
+                  - row [aria-hidden] [ref=f1e676] [cursor=pointer]:
+                    - cell [ref=f1e677]
+                  - row [aria-hidden] [ref=f1e678] [cursor=pointer]:
+                    - cell [ref=f1e679]
+                  - row [aria-hidden] [ref=f1e680] [cursor=pointer]:
+                    - cell [ref=f1e681]
+                  - row [aria-hidden] [ref=f1e682] [cursor=pointer]:
+                    - cell [ref=f1e683]
+                  - row [aria-hidden] [ref=f1e684] [cursor=pointer]:
+                    - cell [ref=f1e685]
+                  - row [aria-hidden] [ref=f1e686] [cursor=pointer]:
+                    - cell [ref=f1e687]
+                  - row [aria-hidden] [ref=f1e688] [cursor=pointer]:
+                    - cell [ref=f1e689]
+                  - row [aria-hidden] [ref=f1e690] [cursor=pointer]:
+                    - cell [ref=f1e691]
+                  - row [aria-hidden] [ref=f1e692] [cursor=pointer]:
+                    - cell [ref=f1e693]
+                  - row [aria-hidden] [ref=f1e694] [cursor=pointer]:
+                    - cell [ref=f1e695]
+                  - row [aria-hidden] [ref=f1e696] [cursor=pointer]:
+                    - cell [ref=f1e697]
+                  - row [aria-hidden] [ref=f1e698] [cursor=pointer]:
+                    - cell [ref=f1e699]
+                  - row [aria-hidden] [ref=f1e700] [cursor=pointer]:
+                    - cell [ref=f1e701]
+                  - row [aria-hidden] [ref=f1e702] [cursor=pointer]:
+                    - cell [ref=f1e703]
+                  - row [aria-hidden] [ref=f1e704] [cursor=pointer]:
+                    - cell [ref=f1e705]
+                  - row [aria-hidden] [ref=f1e706] [cursor=pointer]:
+                    - cell [ref=f1e707]
+                  - row [aria-hidden] [ref=f1e708] [cursor=pointer]:
+                    - cell [ref=f1e709]
+              - navigation "Pagination" [ref=f1e710]:
+                - button "First page, disabled" [disabled] [ref=f1e711]: <<
+                - button "Previous page, disabled" [disabled] [ref=f1e712]: <
+                - button "Page 1" [ref=f1e713] [cursor=pointer]: "1"
+                - button "Page 2" [ref=f1e714] [cursor=pointer]: "2"
+                - button "Page 3" [ref=f1e715] [cursor=pointer]: "3"
+                - button "Page 4" [ref=f1e716] [cursor=pointer]: "4"
+                - button "Next page" [ref=f1e717] [cursor=pointer]: ">"
+                - button "Last page" [ref=f1e718] [cursor=pointer]: ">>"
+            - generic [ref=f1e719]:
+              - heading "Notifications Center" [level=2] [ref=f1e727]
+              - generic [ref=f1e728]:
+                - heading "Resources" [level=3] [ref=f1e735]
+                - list [ref=f1e736]:
+                  - listitem [ref=f1e737]:
+                    - button [ref=f1e738] [cursor=pointer]:
+                      - heading "Riverside Learn" [level=4] [ref=f1e739]
+                  - listitem [ref=f1e743]:
+                    - button [ref=f1e744] [cursor=pointer]:
+                      - heading "Onboarding Tutorial Videos" [level=4] [ref=f1e745]
+                  - listitem [ref=f1e749]:
+                    - button [ref=f1e750] [cursor=pointer]:
+                      - heading "Quick Reference Guides" [level=4] [ref=f1e751]
+                - button "View All" [ref=f1e756] [cursor=pointer]
+      - contentinfo [ref=f1e757]:
+        - generic [ref=f1e758]: Footer region,
+        - link [ref=f1e759] [cursor=pointer]:
+          - /url: https://www.riversideinsights.com
+          - img "Riverside Insights Website" [ref=f1e760]
+        - generic [ref=f1e761]:
+          - link [ref=f1e762] [cursor=pointer]:
+            - /url: https://www.facebook.com/RiversideInsights/
+            - img "Riverside Insights Facebook" [ref=f1e763]
+          - link [ref=f1e764] [cursor=pointer]:
+            - /url: https://twitter.com/1BillionLives
+            - img "Riverside Insights Twitter" [ref=f1e765]
+          - link [ref=f1e766] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/riverside-insights/
+            - img "Riverside Insights LinkedIn" [ref=f1e767]
+          - link [ref=f1e768] [cursor=pointer]:
+            - /url: https://www.instagram.com/riversideinsightsassessments/
+            - img "Riverside Insights Instagram" [ref=f1e769]
+        - generic [ref=f1e770]:
+          - button "Leave Feedback" [ref=f1e771] [cursor=pointer]
+          - generic [aria-hidden] [ref=f1e772]: "|"
+          - link "Terms of Use" [ref=f1e773] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/terms-of-use
+          - generic [aria-hidden] [ref=f1e774]: "|"
+          - link "Privacy Policy" [ref=f1e775] [cursor=pointer]:
+            - /url: https://info.riversideinsights.com/privacy-assessment_policy
+        - generic [ref=f1e776]: Footer region end
+```
+
+# Test source
+
+```ts
+  352 |     }
+  353 | 
+  354 |     const expectedReportName = getBaseTemplateName(exportType, examineeID);
+  355 | 
+  356 |     const download = await downloadReportFromLibrary(
+  357 |       this.page,
+  358 |       expectedReportName,
+  359 |     );
+  360 | 
+  361 |     const zipPath = getExamineeZipFilePath(exportType, examineeID);
+  362 |     console.log(`Saving downloaded file to: ${zipPath}`);
+  363 |     await download.saveAs(zipPath);
+  364 |     await testinfo.attach("Downloaded Zip file", {
+  365 |       path: zipPath,
+  366 |       contentType: "application/zip",
+  367 |     });
+  368 |   }
+  369 | 
+  370 |   private requiredFile: any;
+  371 |   private requiredFilePath: any;
+  372 |   private txtFileContent: string;
+  373 | 
+  374 |   private examineeIdSet: Set<string> = new Set();
+  375 |   private examinerIdSet: Set<string> = new Set();
+  376 | 
+  377 |   async validateTheDownloadedReportWithRunTimeDataForSingleAndMulti(
+  378 |     $TestName: string,
+  379 |     $SumOfItemScores: number,
+  380 |     $BasalCredit: number,
+  381 |     $WlookUp: number,
+  382 |     $Wscore: number,
+  383 |     $semW: number,
+  384 |     $WlookUpAdminItems: string,
+  385 |     $ScoreString: string,
+  386 |     $StemForm: string,
+  387 |     $LookUpModel: string,
+  388 |     $totalItems: number,
+  389 |     $scoreFlag: string, // pending
+  390 |   ) {
+  391 |     const rows: string[] = this.txtFileContent.trim().split("\n");
+  392 |     const headers: string[] | undefined = rows.shift()?.split("\t");
+  393 | 
+  394 |     const examinerID: number | undefined = headers?.indexOf("ExerID");
+  395 |     const examineeID: number | undefined = headers?.indexOf("ExeeID");
+  396 |     const dateOfTest: number | undefined = headers?.indexOf("EDOT");
+  397 |     const testNumber: number | undefined = headers?.indexOf("TestNum");
+  398 |     const testName: number | undefined = headers?.indexOf("TestName");
+  399 |     const testStemForm: number | undefined = headers?.indexOf("TestStemForm");
+  400 |     const lookUpModel: number | undefined = headers?.indexOf("LookupModel");
+  401 |     const sumItemScores: number | undefined = headers?.indexOf("SumItemScores");
+  402 |     const baselCredit: number | undefined = headers?.indexOf("BasalCredit");
+  403 |     const wLookUp: number | undefined = headers?.indexOf("WLookup");
+  404 |     const WLkpAdminItems: number | undefined =
+  405 |       headers?.indexOf("WLkpAdminItems");
+  406 |     const wScore: number | undefined = headers?.indexOf("WScore");
+  407 |     const SEMW: number | undefined = headers?.indexOf("SEMW");
+  408 |     const scoreFlag: number | undefined = headers?.indexOf("ScoreFlags");
+  409 |     const scoreString: number | undefined = headers?.indexOf("ScoreString");
+  410 | 
+  411 |     const headersArray: (number | undefined)[] = [
+  412 |       examineeID,
+  413 |       // examinerID, // No more used (24 Sep 2024)
+  414 |       scoreString,
+  415 |       testNumber,
+  416 |       dateOfTest,
+  417 |     ];
+  418 |     for (const i of headersArray) {
+  419 |       if (i === undefined || i === -1) {
+  420 |         throw new Error(
+  421 |           `Heading "${i}" or ItemName  not found in the extracted file`,
+  422 |         );
+  423 |       }
+  424 |     }
+  425 | 
+  426 |     //let examinerid: string = "";
+  427 |     let examineeid: string = "";
+  428 |     let dateoftest: string = "";
+  429 |     let testnumber: string = "";
+  430 |     let testname: string = "";
+  431 |     let teststemform: string = "";
+  432 |     let lookupmodel: string = "";
+  433 |     let sumitemscores: string = "";
+  434 |     let baselcredit: string = "";
+  435 |     let wlookup: string = "";
+  436 |     let wscore: string = "";
+  437 |     let semw: string = "";
+  438 |     let wlkpadminitems: string = "";
+  439 |     let scoreflag: string = "";
+  440 |     let scorestring: string = "";
+  441 | 
+  442 |      const targetMatch = $StemForm; // ← Use your match value here
+  443 |      const targetColumnIndex = testStemForm!;
+  444 | 
+  445 |      const matchedRow = rows.find((line) => {
+  446 |        const columns = line.split("\t");
+  447 |        const cellValue = columns[targetColumnIndex]?.trim();
+  448 |        return cellValue && cellValue.includes(targetMatch);
+  449 |      });
+  450 | 
+  451 |      if (!matchedRow) {
+> 452 |        throw new Error(`No matching row found where ExeeID contains "${targetMatch}"`);
+      |              ^ Error: No matching row found where ExeeID contains "BLKROT.W5PA"
+  453 |      }
+  454 |       const columnValues: string[] = matchedRow.split("\t");
+  455 | 
+  456 |       //examinerid = columnValues[examinerID!];
+  457 |       examineeid = columnValues[examineeID!];
+  458 |       dateoftest = columnValues[dateOfTest!];
+  459 |       testnumber = columnValues[testNumber!];
+  460 |       testname = columnValues[testName!];
+  461 |       teststemform = columnValues[testStemForm!];
+  462 |       lookupmodel = columnValues[lookUpModel!];
+  463 |       sumitemscores = columnValues[sumItemScores!];
+  464 |       baselcredit = columnValues[baselCredit!];
+  465 |       wlookup = columnValues[wLookUp!];
+  466 |       wscore = columnValues[wScore!];
+  467 |       semw = columnValues[SEMW!];
+  468 |       wlkpadminitems = columnValues[WLkpAdminItems!];
+  469 |       scoreflag = columnValues[scoreFlag!];
+  470 |       scorestring = columnValues[scoreString!] ?? "";
+  471 | 
+  472 |       if (testname !== "" && testname !== undefined && testname !== null) {
+  473 |         //this.reqWlookUpMap.set("examinerID", examinerid);
+  474 |         this.reqWlookUpMap.set("examineeID", examineeid);
+  475 |         this.reqWlookUpMap.set("dateOfTest", dateoftest);
+  476 |         this.reqWlookUpMap.set("testName", testname);
+  477 |         this.reqWlookUpMap.set("testStemForm", teststemform);
+  478 |         this.reqWlookUpMap.set("lookUpModel", lookupmodel);
+  479 |         this.reqWlookUpMap.set("sumItemScores", sumitemscores);
+  480 |         this.reqWlookUpMap.set("baselCredit", baselcredit);
+  481 |         this.reqWlookUpMap.set("wLookUp", wlookup);
+  482 |         this.reqWlookUpMap.set("wScore", wscore);
+  483 |         this.reqWlookUpMap.set("SEMW", semw);
+  484 |         this.reqWlookUpMap.set("WlkpAdminItems", wlkpadminitems);
+  485 |         this.reqWlookUpMap.set("scoreFlag", scoreflag);
+  486 |         this.reqWlookUpMap.set("scoreString", scorestring);
+  487 |       }
+  488 | 
+  489 |     const mapasJSON: string = JSON.stringify([...this.reqWlookUpMap]);
+  490 |     console.log("reqWlookUpMap - - >", mapasJSON);
+  491 | 
+  492 |     if (
+  493 |       examineeid == "" ||
+  494 |       examineeid == undefined ||
+  495 |       examineeid == null ||
+  496 |       examineeid.includes("No examinees meet the criteria specified.")
+  497 |     ) {
+  498 |       throw new Error(
+  499 |         "The Examinee ID assertion failed, probable cause the Report could be empty.",
+  500 |       );
+  501 |     }
+  502 | 
+  503 |     // //softAssertPrint(examinerid, examiner.examinerID, "Examiner ID");
+  504 |     softAssertPrint(examineeid, DashBoardPage.examineeID, "Examinee ID");
+  505 |     try {
+  506 |       softAssertPrint(
+  507 |         dateoftest,
+  508 |         await this.utils.getTheDOBYearsBack(0, "new Yark"),
+  509 |         "Date Of Test",
+  510 |       );
+  511 |     } catch (error) {
+  512 |       console.info(`\nSeems like there is a date mismatch  ${error}\n`);
+  513 |     }
+  514 | 
+  515 |     softAssertPrint(testname, $TestName, "Test Name");
+  516 |     softAssertPrint(teststemform, $StemForm, "TEst stem form");
+  517 |     softAssertPrint(lookupmodel, $LookUpModel, "Look Up Model");
+  518 |     softAssertPrint(Number(sumitemscores), $SumOfItemScores, "Sum Item Scores");
+  519 |     softAssertPrint(Number(baselcredit), $BasalCredit, "Basal Credit");
+  520 |     softAssertPrint(Number(wlookup), $WlookUp, "wLookUp");
+  521 |     softAssertPrint(wlkpadminitems, $WlookUpAdminItems, "WLkpAdminItems");
+  522 | 
+  523 |     softAssertPrint(scoreflag, $scoreFlag, "Score Flag");
+  524 |     softAssertPrint(Number(wscore), $Wscore, "wScore");
+  525 |     softAssertPrint(Number(semw), $semW, "semW");
+  526 |     softAssertPrint(scorestring, $ScoreString, "Score String");
+  527 |   }
+  528 | 
+  529 |   async getWScoreAndSemWByLookupScore(
+  530 |     // no need for now, need to check later
+  531 |     lookupScore: number,
+  532 |     scoreFlag: string,
+  533 |     typeOfTest: string,
+  534 |     negation: boolean,
+  535 |     testStemForm: string,
+  536 |   ): Promise<{ wScore: number; semW: number } | null> {
+  537 |     lookupScore = Math.abs(lookupScore);
+  538 | 
+  539 |     const result = getWabil_and_SEMW(`${testStemForm}`, lookupScore);
+  540 | 
+  541 |     if (
+  542 |       scoreFlag === "[!C]" &&
+  543 |       typeOfTest.match(/Answer only SampleItems (?:correct|incorrect)/i)
+  544 |     ) {
+  545 |       return { wScore: 0, semW: 0 };
+  546 |     } else if (result && negation) {
+  547 |       return { wScore: -result.W_Abil, semW: -result.SEMW };
+  548 |     } else if (result) {
+  549 |       return { wScore: result.W_Abil, semW: result.SEMW };
+  550 |     } else {
+  551 |       return null;
+  552 |     }
+```
