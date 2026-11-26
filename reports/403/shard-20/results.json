@@ -1,0 +1,917 @@
+{
+  "config": {
+    "argv": [
+      "/__t/node/22.23.5/x64/bin/node",
+      "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "((?=.*@Smoke)(?=.*(?:@TestDe|@DerivedScores)))|(?:@SubmittedTestAssignments)|(?:@InProgressTestAssignments)|@DashboardTestAssignments|@TestSetVerification",
+      "--project=chrome",
+      "--shard=20/20",
+      "--workers=1",
+      "--retries=1",
+      "--reporter=html,json,blob"
+    ],
+    "configFile": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/playwright.config.ts",
+    "rootDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+        "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+        "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "id": "adminPortal_chrome",
+        "name": "adminPortal_chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webKit",
+        "name": "webKit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium-setup",
+        "name": "ci-chromium-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-chromium",
+        "name": "ci-chromium",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox-setup",
+        "name": "ci-firefox-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-firefox",
+        "name": "ci-firefox",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit-setup",
+        "name": "ci-webkit-setup",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "id": "ci-webkit",
+        "name": "ci-webkit",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/commit/2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "commitHash": "2e3a2b8800a76f796a17a1b2c71363d382044f4c",
+            "buildHref": "https://github.com/SunilsForge/WJ-5_Pub_Runner/actions/runs/45857881724"
+          },
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "snapshotDir": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts",
+          "!UnitTest/*.test.ts"
+        ],
+        "timeout": 600000,
+        "use": {
+          "actionTimeout": 60000,
+          "navigationTimeout": 60000,
+          "ignoreHTTPSErrors": true,
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "trace": "retain-on-first-failure",
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--disable-dev-shm-usage"
+            ],
+            "logger": {},
+            "slowMo": 0
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html"
+      ],
+      [
+        "json"
+      ],
+      [
+        "blob"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 20,
+      "total": 20
+    },
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "functional/testSets/TestSetVerification.spec.ts",
+      "file": "functional/testSets/TestSetVerification.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Test Set Verification",
+          "file": "functional/testSets/TestSetVerification.spec.ts",
+          "line": 93,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify test set integrity across default/custom sets, examinee switching, mid-administration, and review mode",
+              "ok": false,
+              "tags": [
+                "TestSetVerification",
+                "Functional",
+                "Aut_Eng_01",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    },
+                    {
+                      "type": "Original customer issue, Automation user story",
+                      "description": "CLINICAL-30804, CLINICAL-31186 & CLINICAL-31587",
+                      "location": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                        "line": 96,
+                        "column": 3
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 857269,
+                      "error": {
+                        "message": "Error: locator.textContent: Error: strict mode violation: locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span') resolved to 10 elements:\n    1) <span title=\"Devante's AutoTest_bbli8t\" class=\"TestAssignmentModule_mcs_assignmentNameText\">Devante's AutoTest_bbli8t</span> aka getByRole('button', { name: 'Devante\\'s AutoTest_bbli8t', exact: true })\n    2) <span class=\"TestAssignmentModule_mcs_testListItem\">Academic Vocabulary</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    3) <span class=\"TestAssignmentModule_mcs_testListItem\">Analysis-Synthesis</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    4) <span class=\"TestAssignmentModule_mcs_testListItem\">Applied Problems</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    5) <span class=\"TestAssignmentModule_mcs_testListItem\">Calculation</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    6) <span class=\"TestAssignmentModule_mcs_testListItem\">Letter-Word Identification</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    7) <span class=\"TestAssignmentModule_mcs_testListItem\">Math Facts Fluency</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    8) <span class=\"TestAssignmentModule_mcs_testListItem\">Number Series</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    9) <span class=\"TestAssignmentModule_mcs_testListItem\">Oral Comprehension</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    10) <span class=\"TestAssignmentModule_mcs_testListItem\">Passage Comprehension</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span')\u001b[22m\n",
+                        "stack": "Error: locator.textContent: Error: strict mode violation: locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span') resolved to 10 elements:\n    1) <span title=\"Devante's AutoTest_bbli8t\" class=\"TestAssignmentModule_mcs_assignmentNameText\">Devante's AutoTest_bbli8t</span> aka getByRole('button', { name: 'Devante\\'s AutoTest_bbli8t', exact: true })\n    2) <span class=\"TestAssignmentModule_mcs_testListItem\">Academic Vocabulary</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    3) <span class=\"TestAssignmentModule_mcs_testListItem\">Analysis-Synthesis</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    4) <span class=\"TestAssignmentModule_mcs_testListItem\">Applied Problems</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    5) <span class=\"TestAssignmentModule_mcs_testListItem\">Calculation</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    6) <span class=\"TestAssignmentModule_mcs_testListItem\">Letter-Word Identification</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    7) <span class=\"TestAssignmentModule_mcs_testListItem\">Math Facts Fluency</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    8) <span class=\"TestAssignmentModule_mcs_testListItem\">Number Series</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    9) <span class=\"TestAssignmentModule_mcs_testListItem\">Oral Comprehension</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    10) <span class=\"TestAssignmentModule_mcs_testListItem\">Passage Comprehension</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span')\u001b[22m\n\n    at DashBoardPage.clickOnRowByTestSetName (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:843:72)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:341:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:339:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 72,
+                          "line": 843
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:843\n\n  841 |     for (let i = 0; i < rowCount; i++) {\n  842 |       const row = this.myTestAssignmentsRow.nth(i);\n> 843 |       const testSet = await row.locator('td:nth-child(2) button span').textContent();\n      |                                                                        ^\n  844 |       if (testSet?.trim() === testSetName) {\n  845 |         await row.locator('td:nth-child(1) button').click({ force: true });\n  846 |         await this.page.waitForTimeout(2000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 72,
+                            "line": 843
+                          },
+                          "message": "Error: locator.textContent: Error: strict mode violation: locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span') resolved to 10 elements:\n    1) <span title=\"Devante's AutoTest_bbli8t\" class=\"TestAssignmentModule_mcs_assignmentNameText\">Devante's AutoTest_bbli8t</span> aka getByRole('button', { name: 'Devante\\'s AutoTest_bbli8t', exact: true })\n    2) <span class=\"TestAssignmentModule_mcs_testListItem\">Academic Vocabulary</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    3) <span class=\"TestAssignmentModule_mcs_testListItem\">Analysis-Synthesis</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    4) <span class=\"TestAssignmentModule_mcs_testListItem\">Applied Problems</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    5) <span class=\"TestAssignmentModule_mcs_testListItem\">Calculation</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    6) <span class=\"TestAssignmentModule_mcs_testListItem\">Letter-Word Identification</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    7) <span class=\"TestAssignmentModule_mcs_testListItem\">Math Facts Fluency</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    8) <span class=\"TestAssignmentModule_mcs_testListItem\">Number Series</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    9) <span class=\"TestAssignmentModule_mcs_testListItem\">Oral Comprehension</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    10) <span class=\"TestAssignmentModule_mcs_testListItem\">Passage Comprehension</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span')\u001b[22m\n\n\n   at ../page/dashboardPage.ts:843\n\n  841 |     for (let i = 0; i < rowCount; i++) {\n  842 |       const row = this.myTestAssignmentsRow.nth(i);\n> 843 |       const testSet = await row.locator('td:nth-child(2) button span').textContent();\n      |                                                                        ^\n  844 |       if (testSet?.trim() === testSetName) {\n  845 |         await row.locator('td:nth-child(1) button').click({ force: true });\n  846 |         await this.page.waitForTimeout(2000);\n    at DashBoardPage.clickOnRowByTestSetName (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:843:72)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:341:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:339:7"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 10PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S20:W0] Login successful for 10PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N5720A79647\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N5720A79647 FirstName=Devante LastName =N5720A79647 Age = 11/26/2019\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N5720A79647\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N4948A56586\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N4948A56586 FirstName=Randy LastName =N4948A56586 Age = 11/26/2017\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N4948A56586\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N96773A51624, Marvin\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N5720A79647\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N4948A56586\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N96773A51624, Marvin\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Setup: Get Old Examinee from dashboard",
+                          "duration": 27742
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 1 + assign Broad Achievement",
+                          "duration": 59786
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 2 + assign Broad Achievement",
+                          "duration": 43131
+                        },
+                        {
+                          "title": "Setup: Assign Broad Achievement to Old Examinee",
+                          "duration": 25147
+                        },
+                        {
+                          "title": "S1: Open New Examinee 1 → capture baseline + verify 9 tests",
+                          "duration": 100935
+                        },
+                        {
+                          "title": "S1: Open Old Examinee → verify test list matches",
+                          "duration": 100679
+                        },
+                        {
+                          "title": "S1: Re-open Old Examinee → verify still intact",
+                          "duration": 101699
+                        },
+                        {
+                          "title": "S1: Open New Examinee 2 → verify test list matches",
+                          "duration": 104202
+                        },
+                        {
+                          "title": "S1: Re-open New Examinee 2 → verify test set still intact",
+                          "duration": 103972
+                        },
+                        {
+                          "title": "S2 Setup: Create custom test set with 19 tests",
+                          "duration": 66514
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 1",
+                          "duration": 21385
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 2",
+                          "duration": 27629
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to Old Examinee",
+                          "duration": 23264
+                        },
+                        {
+                          "title": "S2: Open New Examinee 1 (custom) → capture baseline + verify 19 tests",
+                          "duration": 7513,
+                          "error": {
+                            "message": "Error: locator.textContent: Error: strict mode violation: locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span') resolved to 10 elements:\n    1) <span title=\"Devante's AutoTest_bbli8t\" class=\"TestAssignmentModule_mcs_assignmentNameText\">Devante's AutoTest_bbli8t</span> aka getByRole('button', { name: 'Devante\\'s AutoTest_bbli8t', exact: true })\n    2) <span class=\"TestAssignmentModule_mcs_testListItem\">Academic Vocabulary</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    3) <span class=\"TestAssignmentModule_mcs_testListItem\">Analysis-Synthesis</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    4) <span class=\"TestAssignmentModule_mcs_testListItem\">Applied Problems</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    5) <span class=\"TestAssignmentModule_mcs_testListItem\">Calculation</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    6) <span class=\"TestAssignmentModule_mcs_testListItem\">Letter-Word Identification</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    7) <span class=\"TestAssignmentModule_mcs_testListItem\">Math Facts Fluency</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    8) <span class=\"TestAssignmentModule_mcs_testListItem\">Number Series</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    9) <span class=\"TestAssignmentModule_mcs_testListItem\">Oral Comprehension</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    10) <span class=\"TestAssignmentModule_mcs_testListItem\">Passage Comprehension</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span')\u001b[22m\n",
+                            "stack": "Error: locator.textContent: Error: strict mode violation: locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span') resolved to 10 elements:\n    1) <span title=\"Devante's AutoTest_bbli8t\" class=\"TestAssignmentModule_mcs_assignmentNameText\">Devante's AutoTest_bbli8t</span> aka getByRole('button', { name: 'Devante\\'s AutoTest_bbli8t', exact: true })\n    2) <span class=\"TestAssignmentModule_mcs_testListItem\">Academic Vocabulary</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    3) <span class=\"TestAssignmentModule_mcs_testListItem\">Analysis-Synthesis</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    4) <span class=\"TestAssignmentModule_mcs_testListItem\">Applied Problems</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    5) <span class=\"TestAssignmentModule_mcs_testListItem\">Calculation</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    6) <span class=\"TestAssignmentModule_mcs_testListItem\">Letter-Word Identification</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    7) <span class=\"TestAssignmentModule_mcs_testListItem\">Math Facts Fluency</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    8) <span class=\"TestAssignmentModule_mcs_testListItem\">Number Series</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    9) <span class=\"TestAssignmentModule_mcs_testListItem\">Oral Comprehension</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n    10) <span class=\"TestAssignmentModule_mcs_testListItem\">Passage Comprehension</span> aka getByTestId('386277').getByRole('button', { name: 'More info' })\n\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span')\u001b[22m\n\n    at DashBoardPage.clickOnRowByTestSetName (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:843:72)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:341:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:339:7",
+                            "location": {
+                              "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                              "column": 72,
+                              "line": 843
+                            },
+                            "snippet": "   at ../page/dashboardPage.ts:843\n\n  841 |     for (let i = 0; i < rowCount; i++) {\n  842 |       const row = this.myTestAssignmentsRow.nth(i);\n> 843 |       const testSet = await row.locator('td:nth-child(2) button span').textContent();\n      |                                                                        ^\n  844 |       if (testSet?.trim() === testSetName) {\n  845 |         await row.locator('td:nth-child(1) button').click({ force: true });\n  846 |         await this.page.waitForTimeout(2000);"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-11-26T16:22:13.369Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        },
+                        {
+                          "type": "Original customer issue, Automation user story",
+                          "description": "CLINICAL-30804, CLINICAL-31186 & CLINICAL-31587",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                            "line": 96,
+                            "column": 3
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-testSets-TestSe-1f22f-inistration-and-review-mode-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-testSets-TestSe-1f22f-inistration-and-review-mode-chrome/error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-testSets-TestSe-1f22f-inistration-and-review-mode-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-testSets-TestSe-1f22f-inistration-and-review-mode-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 72,
+                        "line": 843
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 806394,
+                      "error": {
+                        "message": "Error: locator.textContent: Error: strict mode violation: locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span') resolved to 10 elements:\n    1) <span title=\"Travis's AutoTest_ve48lh\" class=\"TestAssignmentModule_mcs_assignmentNameText\">Travis's AutoTest_ve48lh</span> aka getByRole('button', { name: 'Travis\\'s AutoTest_ve48lh', exact: true })\n    2) <span class=\"TestAssignmentModule_mcs_testListItem\">Academic Vocabulary</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    3) <span class=\"TestAssignmentModule_mcs_testListItem\">Analysis-Synthesis</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    4) <span class=\"TestAssignmentModule_mcs_testListItem\">Applied Problems</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    5) <span class=\"TestAssignmentModule_mcs_testListItem\">Calculation</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    6) <span class=\"TestAssignmentModule_mcs_testListItem\">Letter-Word Identification</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    7) <span class=\"TestAssignmentModule_mcs_testListItem\">Math Facts Fluency</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    8) <span class=\"TestAssignmentModule_mcs_testListItem\">Number Series</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    9) <span class=\"TestAssignmentModule_mcs_testListItem\">Oral Comprehension</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    10) <span class=\"TestAssignmentModule_mcs_testListItem\">Passage Comprehension</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span')\u001b[22m\n",
+                        "stack": "Error: locator.textContent: Error: strict mode violation: locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span') resolved to 10 elements:\n    1) <span title=\"Travis's AutoTest_ve48lh\" class=\"TestAssignmentModule_mcs_assignmentNameText\">Travis's AutoTest_ve48lh</span> aka getByRole('button', { name: 'Travis\\'s AutoTest_ve48lh', exact: true })\n    2) <span class=\"TestAssignmentModule_mcs_testListItem\">Academic Vocabulary</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    3) <span class=\"TestAssignmentModule_mcs_testListItem\">Analysis-Synthesis</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    4) <span class=\"TestAssignmentModule_mcs_testListItem\">Applied Problems</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    5) <span class=\"TestAssignmentModule_mcs_testListItem\">Calculation</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    6) <span class=\"TestAssignmentModule_mcs_testListItem\">Letter-Word Identification</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    7) <span class=\"TestAssignmentModule_mcs_testListItem\">Math Facts Fluency</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    8) <span class=\"TestAssignmentModule_mcs_testListItem\">Number Series</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    9) <span class=\"TestAssignmentModule_mcs_testListItem\">Oral Comprehension</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    10) <span class=\"TestAssignmentModule_mcs_testListItem\">Passage Comprehension</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span')\u001b[22m\n\n    at DashBoardPage.clickOnRowByTestSetName (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:843:72)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:341:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:339:7",
+                        "location": {
+                          "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                          "column": 72,
+                          "line": 843
+                        },
+                        "snippet": "   at ../page/dashboardPage.ts:843\n\n  841 |     for (let i = 0; i < rowCount; i++) {\n  842 |       const row = this.myTestAssignmentsRow.nth(i);\n> 843 |       const testSet = await row.locator('td:nth-child(2) button span').textContent();\n      |                                                                        ^\n  844 |       if (testSet?.trim() === testSetName) {\n  845 |         await row.locator('td:nth-child(1) button').click({ force: true });\n  846 |         await this.page.waitForTimeout(2000);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                            "column": 72,
+                            "line": 843
+                          },
+                          "message": "Error: locator.textContent: Error: strict mode violation: locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span') resolved to 10 elements:\n    1) <span title=\"Travis's AutoTest_ve48lh\" class=\"TestAssignmentModule_mcs_assignmentNameText\">Travis's AutoTest_ve48lh</span> aka getByRole('button', { name: 'Travis\\'s AutoTest_ve48lh', exact: true })\n    2) <span class=\"TestAssignmentModule_mcs_testListItem\">Academic Vocabulary</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    3) <span class=\"TestAssignmentModule_mcs_testListItem\">Analysis-Synthesis</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    4) <span class=\"TestAssignmentModule_mcs_testListItem\">Applied Problems</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    5) <span class=\"TestAssignmentModule_mcs_testListItem\">Calculation</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    6) <span class=\"TestAssignmentModule_mcs_testListItem\">Letter-Word Identification</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    7) <span class=\"TestAssignmentModule_mcs_testListItem\">Math Facts Fluency</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    8) <span class=\"TestAssignmentModule_mcs_testListItem\">Number Series</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    9) <span class=\"TestAssignmentModule_mcs_testListItem\">Oral Comprehension</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    10) <span class=\"TestAssignmentModule_mcs_testListItem\">Passage Comprehension</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span')\u001b[22m\n\n\n   at ../page/dashboardPage.ts:843\n\n  841 |     for (let i = 0; i < rowCount; i++) {\n  842 |       const row = this.myTestAssignmentsRow.nth(i);\n> 843 |       const testSet = await row.locator('td:nth-child(2) button span').textContent();\n      |                                                                        ^\n  844 |       if (testSet?.trim() === testSetName) {\n  845 |         await row.locator('td:nth-child(1) button').click({ force: true });\n  846 |         await this.page.waitForTimeout(2000);\n    at DashBoardPage.clickOnRowByTestSetName (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:843:72)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:341:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:339:7"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Loading credentials from CREDENTIAL_SET env var: Aut_Eng_01\n"
+                        },
+                        {
+                          "text": "Login successful for 10PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "[S20:W1] Login successful for 10PwAut25Ex_01\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N3901A29651\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N3901A29651 FirstName=Travis LastName =N3901A29651 Age = 11/26/2019\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N3901A29651\n"
+                        },
+                        {
+                          "text": "Trying to add an examinee at URL: https://stage.riversidescore.com/\n"
+                        },
+                        {
+                          "text": "Examinee ID N93776A14449\n"
+                        },
+                        {
+                          "text": "Successfully added an Examinee  ID =N93776A14449 FirstName=Ali LastName =N93776A14449 Age = 11/26/2017\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N93776A14449\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N96773A51624, Marvin\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Filling the session ID input box...\n"
+                        },
+                        {
+                          "text": "Attempt 1 to join the session.\n"
+                        },
+                        {
+                          "text": "Clicked Join Session button.\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N3901A29651\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N93776A14449\n"
+                        },
+                        {
+                          "text": "Successfully selected examinee: N96773A51624, Marvin\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Setup: Get Old Examinee from dashboard",
+                          "duration": 24820
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 1 + assign Broad Achievement",
+                          "duration": 39890
+                        },
+                        {
+                          "title": "Setup: Create New Examinee 2 + assign Broad Achievement",
+                          "duration": 41784
+                        },
+                        {
+                          "title": "Setup: Assign Broad Achievement to Old Examinee",
+                          "duration": 26190
+                        },
+                        {
+                          "title": "S1: Open New Examinee 1 → capture baseline + verify 9 tests",
+                          "duration": 100047
+                        },
+                        {
+                          "title": "S1: Open Old Examinee → verify test list matches",
+                          "duration": 99790
+                        },
+                        {
+                          "title": "S1: Re-open Old Examinee → verify still intact",
+                          "duration": 99812
+                        },
+                        {
+                          "title": "S1: Open New Examinee 2 → verify test list matches",
+                          "duration": 99782
+                        },
+                        {
+                          "title": "S1: Re-open New Examinee 2 → verify test set still intact",
+                          "duration": 101082
+                        },
+                        {
+                          "title": "S2 Setup: Create custom test set with 19 tests",
+                          "duration": 63117
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 1",
+                          "duration": 19964
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to New Examinee 2",
+                          "duration": 23693
+                        },
+                        {
+                          "title": "S2 Setup: Assign custom test set to Old Examinee",
+                          "duration": 22833
+                        },
+                        {
+                          "title": "S2: Open New Examinee 1 (custom) → capture baseline + verify 19 tests",
+                          "duration": 7461,
+                          "error": {
+                            "message": "Error: locator.textContent: Error: strict mode violation: locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span') resolved to 10 elements:\n    1) <span title=\"Travis's AutoTest_ve48lh\" class=\"TestAssignmentModule_mcs_assignmentNameText\">Travis's AutoTest_ve48lh</span> aka getByRole('button', { name: 'Travis\\'s AutoTest_ve48lh', exact: true })\n    2) <span class=\"TestAssignmentModule_mcs_testListItem\">Academic Vocabulary</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    3) <span class=\"TestAssignmentModule_mcs_testListItem\">Analysis-Synthesis</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    4) <span class=\"TestAssignmentModule_mcs_testListItem\">Applied Problems</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    5) <span class=\"TestAssignmentModule_mcs_testListItem\">Calculation</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    6) <span class=\"TestAssignmentModule_mcs_testListItem\">Letter-Word Identification</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    7) <span class=\"TestAssignmentModule_mcs_testListItem\">Math Facts Fluency</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    8) <span class=\"TestAssignmentModule_mcs_testListItem\">Number Series</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    9) <span class=\"TestAssignmentModule_mcs_testListItem\">Oral Comprehension</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    10) <span class=\"TestAssignmentModule_mcs_testListItem\">Passage Comprehension</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span')\u001b[22m\n",
+                            "stack": "Error: locator.textContent: Error: strict mode violation: locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span') resolved to 10 elements:\n    1) <span title=\"Travis's AutoTest_ve48lh\" class=\"TestAssignmentModule_mcs_assignmentNameText\">Travis's AutoTest_ve48lh</span> aka getByRole('button', { name: 'Travis\\'s AutoTest_ve48lh', exact: true })\n    2) <span class=\"TestAssignmentModule_mcs_testListItem\">Academic Vocabulary</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    3) <span class=\"TestAssignmentModule_mcs_testListItem\">Analysis-Synthesis</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    4) <span class=\"TestAssignmentModule_mcs_testListItem\">Applied Problems</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    5) <span class=\"TestAssignmentModule_mcs_testListItem\">Calculation</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    6) <span class=\"TestAssignmentModule_mcs_testListItem\">Letter-Word Identification</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    7) <span class=\"TestAssignmentModule_mcs_testListItem\">Math Facts Fluency</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    8) <span class=\"TestAssignmentModule_mcs_testListItem\">Number Series</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    9) <span class=\"TestAssignmentModule_mcs_testListItem\">Oral Comprehension</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n    10) <span class=\"TestAssignmentModule_mcs_testListItem\">Passage Comprehension</span> aka getByTestId('386332').getByRole('button', { name: 'More info' })\n\nCall log:\n\u001b[2m  - waiting for locator('div[class*=\\'TestAssignmentModule\\'] tbody > tr').first().locator('td:nth-child(2) button span')\u001b[22m\n\n    at DashBoardPage.clickOnRowByTestSetName (/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts:843:72)\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:341:9\n    at /__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts:339:7",
+                            "location": {
+                              "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                              "column": 72,
+                              "line": 843
+                            },
+                            "snippet": "   at ../page/dashboardPage.ts:843\n\n  841 |     for (let i = 0; i < rowCount; i++) {\n  842 |       const row = this.myTestAssignmentsRow.nth(i);\n> 843 |       const testSet = await row.locator('td:nth-child(2) button span').textContent();\n      |                                                                        ^\n  844 |       if (testSet?.trim() === testSetName) {\n  845 |         await row.locator('td:nth-child(1) button').click({ force: true });\n  846 |         await this.page.waitForTimeout(2000);"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-11-26T16:36:40.866Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        },
+                        {
+                          "type": "Original customer issue, Automation user story",
+                          "description": "CLINICAL-30804, CLINICAL-31186 & CLINICAL-31587",
+                          "location": {
+                            "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/tests/functional/testSets/TestSetVerification.spec.ts",
+                            "line": 96,
+                            "column": 3
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-testSets-TestSe-1f22f-inistration-and-review-mode-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-testSets-TestSe-1f22f-inistration-and-review-mode-chrome-retry1/error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/test-results/functional-testSets-TestSe-1f22f-inistration-and-review-mode-chrome-retry1/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/__w/WJ-5_Pub_Runner/WJ-5_Pub_Runner/src/page/dashboardPage.ts",
+                        "column": 72,
+                        "line": 843
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "cf0eb0cce83021816cd8-796a3d69c79e5f725e21",
+              "file": "functional/testSets/TestSetVerification.spec.ts",
+              "line": 96,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-26T16:22:00.483Z",
+    "duration": 1687386.2859999998,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
