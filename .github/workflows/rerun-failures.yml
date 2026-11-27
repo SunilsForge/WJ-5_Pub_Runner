@@ -121,16 +121,40 @@ jobs:
       - name: Download source run shard artifacts
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+          REPO: ${{ github.repository }}
         run: |
-          mkdir -p src-artifacts
           # Per-shard artifacts carry test-results/last-run.json. The pattern matches
           # BOTH the main run (playwright-report-shard-*) and a prior rerun pass
           # (rerun-report-shard-*), so chaining (pass N reruns pass N-1) works.
-          gh run download "${{ inputs.source_run_id }}" \
-            --repo "${{ github.repository }}" \
-            --pattern "*report-shard-*" \
-            --dir src-artifacts || echo "::warning::no shard artifacts found"
-          echo "Downloaded:"; ls src-artifacts 2>/dev/null || true
+          #
+          # Retried. A failed download used to be swallowed as "no shard artifacts", which
+          # makes the plan step see 0 failures and the rerun silently do nothing. `gh run
+          # download` exits non-zero both on a real error and when nothing matches, so on
+          # failure ask the API which it was: none exist -> old behaviour (warn, continue);
+          # they exist but won't download -> fail loudly after 3 tries.
+          for attempt in 1 2 3; do
+            rm -rf src-artifacts; mkdir -p src-artifacts
+            if gh run download "$SOURCE_RUN_ID" --repo "$REPO" \
+                 --pattern "*report-shard-*" --dir src-artifacts; then
+              echo "Downloaded:"; ls src-artifacts
+              exit 0
+            fi
+            # An API error here means "unknown", never "none" — retry rather than give up.
+            if names=$(gh api --paginate "repos/$REPO/actions/runs/$SOURCE_RUN_ID/artifacts?per_page=100" \
+                         --jq '.artifacts[] | select(.name | test("report-shard-[0-9]+$")) | .name'); then
+              n=$(printf '%s\n' "$names" | grep -c . || true)
+              if [ "$n" -eq 0 ]; then
+                echo "::warning::no shard artifacts found on run $SOURCE_RUN_ID"
+                exit 0
+              fi
+            else
+              n="unknown (artifact list API failed)"
+            fi
+            [ "$attempt" -lt 3 ] && { echo "::warning::download attempt $attempt failed (shard artifacts: $n) — retrying in $((attempt * 20))s"; sleep $((attempt * 20)); }
+          done
+          echo "::error::could not download the shard artifacts of run $SOURCE_RUN_ID after 3 attempts (shard artifacts: $n) — not treating this as 'no failures'"
+          exit 1
 
       - name: Aggregate failed test IDs & plan shards
         id: plan
@@ -234,7 +258,14 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
       - name: Install dependencies
-        run: npm ci
+        # Same retry as the browser install: rides out transient npm registry blips.
+        run: |
+          for attempt in 1 2 3; do
+            npm ci && exit 0
+            [ "$attempt" -lt 3 ] && { echo "::warning::npm ci attempt $attempt failed — retrying in $((attempt * 20))s"; sleep $((attempt * 20)); }
+          done
+          echo "::error::npm ci failed after 3 attempts"
+          exit 1
       - name: Restore per-shard slices
         uses: actions/download-artifact@v7
         with:
@@ -304,7 +335,14 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         # No `playwright install-deps`: the container already ships the OS deps.
-        run: npm ci
+        # Retried like the browser install (run #53 lost a shard to a failed npm ci).
+        run: |
+          for attempt in 1 2 3; do
+            npm ci && exit 0
+            [ "$attempt" -lt 3 ] && { echo "::warning::npm ci attempt $attempt failed — retrying in $((attempt * 20))s"; sleep $((attempt * 20)); }
+          done
+          echo "::error::npm ci failed after 3 attempts"
+          exit 1
       - name: Install Playwright browser
         # Retries ride out transient apt/CDN blips (run 43033324245: apt couldn't
         # resolve archive.ubuntu.com mid-install). A no-op cost when the network is fine.
@@ -398,14 +436,15 @@ jobs:
     if: always() && needs.collect.outputs.has_failures == 'true'
     runs-on: ubuntu-latest
     outputs:
-      pages_url: ${{ steps.deployment.outputs.page_url }}
+      # Whichever deploy attempt succeeded (see "Deploy to GitHub Pages" below).
+      pages_url: ${{ steps.deploy-1.outputs.page_url || steps.deploy-2.outputs.page_url || steps.deploy-3.outputs.page_url }}
       flaky: ${{ steps.classify.outputs.flaky }}
       still_failing: ${{ steps.classify.outputs.still_failing }}
       reran: ${{ steps.classify.outputs.reran }}
       should_chain: ${{ steps.chain.outputs.should_chain }}
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy-1.outputs.page_url || steps.deploy-2.outputs.page_url || steps.deploy-3.outputs.page_url }}
     steps:
       - name: Download all rerun artifacts
         uses: actions/download-artifact@v7
@@ -542,7 +581,9 @@ jobs:
         with:
           ref: gh-pages
           path: gh-pages
-          fetch-depth: 0
+          # Shallow: nothing reads gh-pages history (full clone = 500+ commits of reports,
+          # 1.5–10 min). gh-pages-push.sh commits/pushes on top of HEAD; fine when shallow.
+          fetch-depth: 1
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build rerun history entry
@@ -630,12 +671,49 @@ jobs:
           IDS=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" --jq '[.artifacts[] | select(.name == "github-pages") | .id] | .[]' 2>/dev/null) || true
           for AID in $IDS; do gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$AID" || true; done
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: site-deploy
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          # v4+ drops dotfiles by default; "true" keeps v3's exact packing (only .git/.github excluded).
+          include-hidden-files: "true"
+
+      # Same wait + 3-attempt deploy as the main pipeline: deploy-pages lists artifacts
+      # once with no retry and can miss one uploaded < 1s earlier (main runs #395/#402/#403).
+      - name: Wait until the Pages artifact is visible
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash runner-repo/.github/scripts/wait-for-artifact.sh github-pages
+      - name: Deploy to GitHub Pages (attempt 1)
+        id: deploy-1
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Wait before deploy retry
+        if: steps.deploy-1.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "::warning::Pages deploy attempt 1 failed — retrying in 30s"
+          sleep 30
+          bash runner-repo/.github/scripts/wait-for-artifact.sh github-pages
+      - name: Deploy to GitHub Pages (attempt 2)
+        id: deploy-2
+        if: steps.deploy-1.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Wait before final deploy retry
+        if: steps.deploy-1.outcome == 'failure' && steps.deploy-2.outcome == 'failure'
+        run: |
+          echo "::warning::Pages deploy attempt 2 failed — final attempt in 60s"
+          sleep 60
+      - name: Deploy to GitHub Pages (attempt 3)
+        # No continue-on-error: fails visibly. gh-pages already has this pass (pushed above).
+        id: deploy-3
+        if: steps.deploy-1.outcome == 'failure' && steps.deploy-2.outcome == 'failure'
+        uses: actions/deploy-pages@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -650,7 +728,12 @@ jobs:
     if: always() && needs.collect.outputs.has_failures == 'true' && needs.publish.outputs.should_chain == 'true'
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout runner repo for scripts
+        uses: actions/checkout@v5
+        with:
+          path: runner-repo
       - name: Dispatch next rerun pass
+        # Retried (with a duplicate guard) — one API blip here used to end the chain.
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Free-text inputs via env so quotes / $() in them are passed through verbatim.
@@ -663,8 +746,7 @@ jobs:
           # Carry the ORIGINAL main run id unchanged down the chain (fallback to
           # source_run_id if this pass was dispatched without one).
           ORIGIN="${{ inputs.origin_run_number }}"; ORIGIN="${ORIGIN:-${{ inputs.source_run_id }}}"
-          gh workflow run rerun-failures.yml \
-            --repo "${{ github.repository }}" \
+          bash runner-repo/.github/scripts/dispatch-with-retry.sh rerun-failures.yml \
             --ref "${{ github.ref_name }}" \
             -f source_run_id="${{ github.run_id }}" \
             -f origin_run_number="$ORIGIN" \
