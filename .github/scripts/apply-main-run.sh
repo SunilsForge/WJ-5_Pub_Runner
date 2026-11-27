@@ -44,3 +44,7 @@ echo "History updated with run ${RUN_NUMBER} ($(jq length run-history.json) entr
 
 # Fully static history page (loads run-history.json client-side).
 cp "$HISTORY_TEMPLATE" index.html
+
+# Archive report folders older than the retention window (keeps their small JSON +
+# an "archived" page; history and dashboard data are untouched). D-034.
+node "$(dirname "$0")/prune-old-reports.js"
