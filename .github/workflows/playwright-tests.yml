@@ -234,7 +234,14 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
       - name: Install dependencies
-        run: npm ci
+        # Same retry as the browser install: rides out transient npm registry blips.
+        run: |
+          for attempt in 1 2 3; do
+            npm ci && exit 0
+            [ "$attempt" -lt 3 ] && { echo "::warning::npm ci attempt $attempt failed — retrying in $((attempt * 20))s"; sleep $((attempt * 20)); }
+          done
+          echo "::error::npm ci failed after 3 attempts"
+          exit 1
 
       - name: Compute per-shard test lists
         shell: bash
@@ -328,7 +335,14 @@ jobs:
         # No `playwright install-deps`: the v1.65.1 container already ships every
         # browser's OS dependencies. `install <browser>` below still fetches the
         # browser itself (branded Chrome isn't in the image).
-        run: npm ci
+        # Retried like the browser install (npm ci wipes node_modules each try).
+        run: |
+          for attempt in 1 2 3; do
+            npm ci && exit 0
+            [ "$attempt" -lt 3 ] && { echo "::warning::npm ci attempt $attempt failed — retrying in $((attempt * 20))s"; sleep $((attempt * 20)); }
+          done
+          echo "::error::npm ci failed after 3 attempts"
+          exit 1
       - name: Install Playwright browsers
         # Retries ride out transient apt/CDN blips (run 43033324245: apt couldn't
         # resolve archive.ubuntu.com mid-install). A no-op cost when the network is fine.
@@ -646,16 +660,18 @@ jobs:
 
   deploy-report:
     name: Deploy Report to GitHub Pages
-    # Normally ~3 min. Headroom covers the full-report fallback download below on a slow day.
-    timeout-minutes: 25
+    # Normally ~2–3 min. Headroom covers the full-report fallback download and the
+    # Pages deploy retries below on a slow day.
+    timeout-minutes: 40
     if: always()
     needs: [prepare, merge-reports]
     runs-on: ubuntu-latest
     outputs:
-      pages_url: ${{ steps.deployment.outputs.page_url }}
+      # Whichever deploy attempt succeeded (see "Deploy to GitHub Pages" below).
+      pages_url: ${{ steps.deploy-1.outputs.page_url || steps.deploy-2.outputs.page_url || steps.deploy-3.outputs.page_url }}
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy-1.outputs.page_url || steps.deploy-2.outputs.page_url || steps.deploy-3.outputs.page_url }}
     steps:
       - name: Set Run Info
         id: run-info
@@ -679,7 +695,10 @@ jobs:
         with:
           ref: gh-pages
           path: gh-pages
-          fetch-depth: 0
+          # Shallow: nothing reads gh-pages history, and the full clone (500+ commits of
+          # reports) took 1.5–2.5 min — 10 min in run #372, which hit the job timeout.
+          # gh-pages-push.sh commits/pushes on top of HEAD; that works from a shallow clone.
+          fetch-depth: 1
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Initialize gh-pages if needed
@@ -915,13 +934,57 @@ jobs:
           fi
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ${{ steps.select-deploy.outputs.path }}
+          # v4+ drops dotfiles by default; "true" keeps v3's exact packing (only .git/.github excluded).
+          include-hidden-files: "true"
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      # deploy-pages lists the run's artifacts ONCE with no retry, and failed with
+      # 'No artifacts named "github-pages"' when that listing lagged the upload by < 1s
+      # (runs #395, #402, #403). So: wait until the artifact is listed, then up to 3
+      # attempts. A retry is safe — it just deploys the same artifact again.
+      - name: Wait until the Pages artifact is visible
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash runner-repo/.github/scripts/wait-for-artifact.sh github-pages
+
+      - name: Deploy to GitHub Pages (attempt 1)
+        id: deploy-1
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Wait before deploy retry
+        if: steps.deploy-1.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "::warning::Pages deploy attempt 1 failed — retrying in 30s"
+          sleep 30
+          bash runner-repo/.github/scripts/wait-for-artifact.sh github-pages
+
+      - name: Deploy to GitHub Pages (attempt 2)
+        id: deploy-2
+        if: steps.deploy-1.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Wait before final deploy retry
+        if: steps.deploy-1.outcome == 'failure' && steps.deploy-2.outcome == 'failure'
+        run: |
+          echo "::warning::Pages deploy attempt 2 failed — final attempt in 60s"
+          sleep 60
+
+      - name: Deploy to GitHub Pages (attempt 3)
+        # No continue-on-error: if this fails too, the job fails visibly. gh-pages already
+        # has this run (pushed above), so the next successful deploy will show it.
+        id: deploy-3
+        if: steps.deploy-1.outcome == 'failure' && steps.deploy-2.outcome == 'failure'
+        uses: actions/deploy-pages@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -989,7 +1052,13 @@ jobs:
     needs: [test, deploy-report, notify]
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout runner repo for scripts
+        uses: actions/checkout@v5
+        with:
+          path: runner-repo
+
       - name: Dispatch rerun-failures workflow
+        # Retried (with a duplicate guard) — one API blip here used to lose the whole rerun.
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Free-text inputs via env so quotes / $() in them are passed through verbatim.
@@ -998,8 +1067,7 @@ jobs:
           KEEP_LAST_RUNS: ${{ github.event.inputs.keep_last_runs }}
           RUN_REASON: ${{ github.event.inputs.run_reason }}
         run: |
-          gh workflow run rerun-failures.yml \
-            --repo "${{ github.repository }}" \
+          bash runner-repo/.github/scripts/dispatch-with-retry.sh rerun-failures.yml \
             --ref "${{ github.ref_name }}" \
             -f source_run_id="${{ github.run_id }}" \
             -f origin_run_number="${{ github.run_number }}" \
