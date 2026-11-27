@@ -810,6 +810,11 @@ jobs:
           NEW_REPORT_DIR: ${{ github.workspace }}/new-report
           CURRENT_RUN_FILE: ${{ github.workspace }}/current-run.json
           HISTORY_TEMPLATE: ${{ github.workspace }}/runner-repo/.github/templates/history-index-template.html
+          # Report-folder retention on gh-pages (prune-old-reports.js, D-034): full reports
+          # for the newest max(KEEP_REPORT_FOLDERS, keep_last_runs) main runs, plus all
+          # >= min_run when run_reason has that directive. Older folders are archived.
+          KEEP_REPORT_FOLDERS: "60"
+          KEEP_LAST_RUNS: ${{ inputs.keep_last_runs }}
         run: |
           bash runner-repo/.github/scripts/gh-pages-push.sh \
             "$GITHUB_WORKSPACE/runner-repo/.github/scripts/apply-main-run.sh" \
